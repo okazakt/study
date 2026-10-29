@@ -1,0 +1,13 @@
+{
+  "0001": {
+    "title": "Fallin For You",
+    "creator": "Flehmann",
+    "durationSeconds": 233.0672,
+    "baseBpm": 120,
+    "files": {
+      "audio": "0001/Fallin_For_You.mp3",
+      "chart": "0001/Fallin_For_You_rhythm_beat2.json",
+      "midi": "0001/Fallin_For_You_rhythm_beat2.mid"
+    }
+  }
+}
