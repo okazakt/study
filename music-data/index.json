@@ -8,6 +8,33 @@
       "audio": "0001/Fallin_For_You.mp3",
       "chart": "0001/Fallin_For_You_rhythm_beat2.json",
       "midi": "0001/Fallin_For_You_rhythm_beat2.mid"
+    },
+    "timing": {
+      "recommendedChartFormat": "json",
+      "timeReference": "decoded_audio_start",
+      "unit": "milliseconds",
+      "chartToAudioOffsetMs": 0,
+      "chartToAudioOffsetStatus": "provisional_from_chart_metadata_not_independently_audio_verified",
+      "offsetConvention": "targetAudioTimeSeconds = eventTimeSeconds + chartToAudioOffsetMs / 1000; positive values delay the chart",
+      "embeddedBeatGridOffsetMs": 117.33,
+      "embeddedBeatGridOffsetAlreadyApplied": true,
+      "localTimingCorrectionsAlreadyApplied": true,
+      "deviceCalibrationOffsetMs": null,
+      "deviceCalibrationStatus": "requires_runtime_calibration_per_device_and_audio_output",
+      "verification": {
+        "method": "Compare all MIDI note-on times after tempo-map conversion with JSON events in chronological order; inspect MP3 stream metadata",
+        "eventCount": 605,
+        "noteNumberMismatches": 0,
+        "midiTicksPerQuarterNote": 480,
+        "midiTempoMicrosecondsPerQuarterNote": 500000,
+        "midiMinusJsonMedianMs": -0.003333,
+        "midiMinusJsonMaxAbsoluteMs": 0.52,
+        "mp3StartTimeSeconds": 0,
+        "mp3SampleRateHz": 48000,
+        "chartReportedBeatMedianAbsoluteErrorMs": 7.23,
+        "chartReportedBeatMaxAbsoluteErrorMs": 37.65,
+        "audioBeatAlignmentIndependentlyVerified": false
+      }
     }
   }
 }
