@@ -1,0 +1,3019 @@
+[
+  {
+    "id": "jr_bio_001",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "細胞分裂",
+    "term_dummies": [
+      "受精",
+      "発芽",
+      "吸水",
+      "蒸散"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "1個の細胞が分かれて{{1}}個の細胞になる現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "3",
+          "4",
+          "6",
+          "8"
+        ]
+      }
+    ],
+    "note": "分裂前には遺伝情報が複製される。体細胞分裂と減数分裂を区別する。"
+  },
+  {
+    "id": "jr_bio_002",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "体細胞分裂",
+    "term_dummies": [
+      "減数分裂",
+      "受精",
+      "受粉",
+      "発生"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "体をつくる細胞が分かれる分裂で、分裂後の各細胞の染色体数は分裂前と{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "同じになる",
+        "dummies": [
+          "半分になる",
+          "2倍になる",
+          "4分の1になる",
+          "0になる"
+        ]
+      }
+    ],
+    "note": "成長や傷ついた部分の修復などに関係する。"
+  },
+  {
+    "id": "jr_bio_003",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "染色体",
+    "term_dummies": [
+      "葉緑体",
+      "細胞壁",
+      "液胞",
+      "細胞膜"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "細胞分裂のときに核の中にはっきり見えるひも状などの構造で、{{1}}を含む。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "DNA",
+        "dummies": [
+          "デンプン",
+          "セルロース",
+          "脂肪",
+          "クロロフィル"
+        ]
+      }
+    ],
+    "note": "通常、同じ種類の生物では体細胞の染色体数は一定である。染色体数の多さが生物の優劣を表すわけではない。"
+  },
+  {
+    "id": "jr_bio_004",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "体細胞分裂の過程",
+    "term_dummies": [
+      "減数分裂の過程",
+      "受精の過程",
+      "受粉の過程",
+      "発芽の過程"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "分裂前に染色体が複製され、分裂時に中央付近に並んだ後、複製された染色体が{{1}}に分かれて移動する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "細胞の両端",
+        "dummies": [
+          "細胞の中央だけ",
+          "細胞の外側",
+          "液胞の内部だけ",
+          "細胞壁の内部だけ"
+        ]
+      }
+    ],
+    "note": "図の並べ替えでは、染色体が見える段階、中央に並ぶ段階、両端に分かれる段階、二つの核ができる段階の順を確認する。"
+  },
+  {
+    "id": "jr_bio_005",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "生物の成長",
+    "term_dummies": [
+      "生物の遺伝",
+      "生物の進化",
+      "生物の分類",
+      "生物の受精"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "多細胞生物では、細胞分裂によって細胞の数が{{1}}ことと、それぞれの細胞が{{2}}ことによって体が大きくなる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "増える",
+        "dummies": [
+          "減る",
+          "必ず半分になる",
+          "変化しない",
+          "必ず0になる"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "大きくなる",
+        "dummies": [
+          "小さくなるだけである",
+          "細胞壁を失う",
+          "染色体をすべて失う",
+          "生殖細胞に変わる"
+        ]
+      }
+    ],
+    "note": "細胞の数の増加と、分裂後の細胞の大きさの増加を分けて考える。"
+  },
+  {
+    "id": "jr_bio_006",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "根の先端付近",
+    "term_dummies": [
+      "根毛が多い部分",
+      "根のつけ根",
+      "成熟した葉の中央",
+      "花粉が入ったやく"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "植物の体細胞分裂の観察によく用いる部分で、根冠のすぐ内側には{{1}}細胞が多い。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "分裂している",
+        "dummies": [
+          "受精している",
+          "光合成だけを行う",
+          "花粉をつくる",
+          "種子になる"
+        ]
+      }
+    ],
+    "note": "根の最先端の根冠と、細胞分裂が盛んな部分を混同しない。"
+  },
+  {
+    "id": "jr_bio_007",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "根の成長の観察",
+    "term_dummies": [
+      "葉の蒸散の観察",
+      "花粉管の観察",
+      "光合成の確認",
+      "種子の呼吸の確認"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "根に等間隔の印をつけて時間をおくと、主に{{1}}で印の間隔が広がり、伸びる場所を調べられる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "先端に近い部分",
+        "dummies": [
+          "つけ根だけ",
+          "根毛の先だけ",
+          "根全体で常に均等",
+          "根の外の水中"
+        ]
+      }
+    ],
+    "note": "根は主に先端近くで伸びる。分裂が盛んな場所と、細胞が大きく伸びる場所には位置の違いがある。"
+  },
+  {
+    "id": "jr_bio_008",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "塩酸処理",
+    "term_dummies": [
+      "ヨウ素液処理",
+      "エタノールによる脱色",
+      "石灰水による検出",
+      "ベネジクト液による検出"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "根の細胞分裂を観察するとき、うすい塩酸で処理して、細胞どうしを{{1}}する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "離れやすく",
+        "dummies": [
+          "強く結合させるように",
+          "光合成しやすく",
+          "受精しやすく",
+          "デンプンを蓄えやすく"
+        ]
+      }
+    ],
+    "note": "処理する温度や時間は実験の手順に従う。染色液の役割との区別が頻出する。"
+  },
+  {
+    "id": "jr_bio_009",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "酢酸オルセイン液",
+    "term_dummies": [
+      "ヨウ素液",
+      "ベネジクト液",
+      "石灰水",
+      "BTB溶液"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "細胞分裂の観察で、主に{{1}}を染めて見やすくする染色液。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "核や染色体",
+        "dummies": [
+          "デンプン粒",
+          "細胞間の水",
+          "酸素",
+          "二酸化炭素"
+        ]
+      }
+    ],
+    "note": "酢酸カーミン液なども用いられる。ヨウ素液は主にデンプンの検出に使う。"
+  },
+  {
+    "id": "jr_bio_010",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "押しつぶし法",
+    "term_dummies": [
+      "ろ過法",
+      "蒸留法",
+      "再結晶法",
+      "水上置換法"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "細胞分裂のプレパラート作製で、カバーガラスの上から静かに押し、細胞を{{1}}して観察しやすくする方法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "重なりにくく",
+        "dummies": [
+          "何層にも重なるように",
+          "大きく成長させるように",
+          "生殖細胞に変化させるように",
+          "染色体を増やすように"
+        ]
+      }
+    ],
+    "note": "カバーガラスを横にずらさず、ろ紙などを重ねて上から押す。"
+  },
+  {
+    "id": "jr_bio_011",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "細胞分裂の各段階の時間の推定",
+    "term_dummies": [
+      "染色体数による年齢の推定",
+      "細胞の大きさによる遺伝子数の推定",
+      "根の長さによる染色体数の推定",
+      "染色の濃さによる細胞数の推定"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "多数の細胞が同調せずに分裂している集団では、ある段階の細胞の割合が大きいほど、その段階にかかる時間は{{1}}と推定できる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "長い",
+        "dummies": [
+          "短い",
+          "必ず0である",
+          "必ず同じである",
+          "細胞数に反比例して短い"
+        ]
+      }
+    ],
+    "note": "同じ周期で分裂する細胞を十分多く調べるなどの前提が必要。細胞数の割合をそのまま使えるか、問題の条件を確認する。"
+  },
+  {
+    "id": "jr_bio_012",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "体細胞分裂による細胞数の計算",
+    "term_dummies": [
+      "減数分裂による染色体数の計算",
+      "受精による染色体数の計算",
+      "遺伝子の組合せの計算",
+      "顕微鏡の倍率の計算"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "1個の細胞から始め、すべての細胞が1回ずつ分裂することを3回繰り返すと、細胞数は{{1}}個になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "8",
+        "dummies": [
+          "3",
+          "4",
+          "6",
+          "16"
+        ]
+      }
+    ],
+    "note": "同じ条件でn回繰り返すと2のn乗個になる。体細胞分裂では各細胞の染色体数は保たれる。"
+  },
+  {
+    "id": "jr_bio_013",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "無性生殖",
+    "term_dummies": [
+      "有性生殖",
+      "受精",
+      "受粉",
+      "交配"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "{{1}}を行わずに新しい個体をつくる生殖。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "受精",
+        "dummies": [
+          "細胞分裂",
+          "呼吸",
+          "吸水",
+          "物質の取り入れ"
+        ]
+      }
+    ],
+    "note": "分裂や栄養生殖などがある。通常、子は親と同じ遺伝情報を受け継ぐ。"
+  },
+  {
+    "id": "jr_bio_014",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "分裂による生殖",
+    "term_dummies": [
+      "栄養生殖",
+      "種子による生殖",
+      "受粉",
+      "受精"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "アメーバなどで見られ、1個体が分かれることで{{1}}が増える無性生殖。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "個体の数",
+        "dummies": [
+          "各細胞の染色体数",
+          "各遺伝子の種類が必ず2倍に",
+          "受精卵の数だけ",
+          "花粉の数"
+        ]
+      }
+    ],
+    "note": "多細胞生物の体細胞が分裂しても、それだけで個体数が増えるとは限らない。"
+  },
+  {
+    "id": "jr_bio_015",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "出芽",
+    "term_dummies": [
+      "発芽",
+      "受粉",
+      "受精",
+      "減数分裂"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "酵母などで見られ、親の体の一部にできた{{1}}が成長して新しい個体になる無性生殖。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "芽のようなふくらみ",
+        "dummies": [
+          "受精卵",
+          "種子",
+          "花粉管",
+          "胚珠"
+        ]
+      }
+    ],
+    "note": "種子から芽が出る発芽とは異なる。ヒドラでも見られる。"
+  },
+  {
+    "id": "jr_bio_016",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "栄養生殖",
+    "term_dummies": [
+      "受精",
+      "受粉",
+      "種子による生殖",
+      "減数分裂"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "植物が根・茎・葉などの体の一部から新しい個体をつくる{{1}}生殖。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "無性",
+        "dummies": [
+          "有性",
+          "受精を伴う",
+          "生殖細胞の合体による",
+          "種子だけによる"
+        ]
+      }
+    ],
+    "note": "ジャガイモのいもは茎、サツマイモのいもは根。挿し木や株分けも利用例である。"
+  },
+  {
+    "id": "jr_bio_017",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "有性生殖",
+    "term_dummies": [
+      "無性生殖",
+      "栄養生殖",
+      "出芽",
+      "分裂による生殖"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "雌雄の{{1}}が合体する受精を伴って、新しい個体をつくる生殖。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生殖細胞",
+        "dummies": [
+          "体細胞だけ",
+          "葉緑体",
+          "細胞壁",
+          "根毛"
+        ]
+      }
+    ],
+    "note": "両親から遺伝子を受け継ぐため、子には遺伝子のさまざまな組合せが生じる。"
+  },
+  {
+    "id": "jr_bio_018",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "生殖細胞",
+    "term_dummies": [
+      "受精卵",
+      "表皮の細胞",
+      "根毛の細胞",
+      "孔辺細胞"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "有性生殖に関わる細胞で、動物では卵と精子、被子植物では卵細胞と{{1}}がある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "精細胞",
+        "dummies": [
+          "孔辺細胞",
+          "根毛",
+          "胚珠",
+          "子房"
+        ]
+      }
+    ],
+    "note": "花粉は精細胞そのものではない。花粉から伸びる花粉管によって精細胞が運ばれる。"
+  },
+  {
+    "id": "jr_bio_019",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "減数分裂",
+    "term_dummies": [
+      "体細胞分裂",
+      "受精",
+      "発生",
+      "受粉"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "生殖細胞ができる過程に関係する特別な分裂で、染色体数がもとの体細胞の{{1}}になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "半分",
+        "dummies": [
+          "同じ数",
+          "2倍",
+          "4倍",
+          "0"
+        ]
+      }
+    ],
+    "note": "中学で扱う代表的な生殖では、染色体数が半分の生殖細胞どうしが受精して、もとの数に戻る。"
+  },
+  {
+    "id": "jr_bio_020",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "受精",
+    "term_dummies": [
+      "受粉",
+      "発芽",
+      "蒸散",
+      "栄養生殖"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "雌雄の生殖細胞の{{1}}が合体すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "核",
+        "dummies": [
+          "細胞壁",
+          "液胞",
+          "葉緑体",
+          "根毛"
+        ]
+      }
+    ],
+    "note": "被子植物では卵細胞の核と精細胞の核が合体する。受粉だけでは受精が完了したとはいえない。"
+  },
+  {
+    "id": "jr_bio_021",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "受精卵",
+    "term_dummies": [
+      "卵",
+      "精子",
+      "花粉",
+      "精細胞"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "受精によってできた細胞で、{{1}}を繰り返して新しい個体へと成長する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "体細胞分裂",
+        "dummies": [
+          "減数分裂だけ",
+          "受粉",
+          "受精だけ",
+          "蒸散だけ"
+        ]
+      }
+    ],
+    "note": "通常、染色体を父親と母親から半数ずつ受け継ぐ。"
+  },
+  {
+    "id": "jr_bio_022",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "発生",
+    "term_dummies": [
+      "受粉",
+      "遺伝",
+      "進化",
+      "栄養生殖"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "{{1}}が細胞分裂を繰り返し、体のつくりを整えていく過程。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "受精卵",
+        "dummies": [
+          "花粉だけ",
+          "精子だけ",
+          "未受精の卵だけ",
+          "子房の壁だけ"
+        ]
+      }
+    ],
+    "note": "カエルなどでは、初期に全体の大きさがほとんど変わらず細胞数が増える様子が観察される。"
+  },
+  {
+    "id": "jr_bio_023",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "胚",
+    "term_dummies": [
+      "胚珠",
+      "子房",
+      "花粉",
+      "精細胞"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "動物では受精卵が分裂を始めてから自分で食物をとり始めるまでのものをいい、植物では受精卵から育ち、種子の中で{{1}}になる部分をいう。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "新しい植物の体",
+        "dummies": [
+          "果実の皮だけ",
+          "種皮だけ",
+          "花粉だけ",
+          "子房の壁だけ"
+        ]
+      }
+    ],
+    "note": "種子の胚は、発芽後に根・茎・葉となる部分をもつ。"
+  },
+  {
+    "id": "jr_bio_024",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "花粉管",
+    "term_dummies": [
+      "道管",
+      "師管",
+      "根毛",
+      "柱頭"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "受粉した花粉から胚珠に向かって伸び、{{1}}を卵細胞の近くまで運ぶ管。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "精細胞",
+        "dummies": [
+          "卵細胞",
+          "受精卵",
+          "胚",
+          "種子"
+        ]
+      }
+    ],
+    "note": "被子植物では、精細胞が外界の水中を泳いで卵細胞まで移動する必要がない。"
+  },
+  {
+    "id": "jr_bio_025",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "花粉管の伸長の観察",
+    "term_dummies": [
+      "根の細胞分裂の観察",
+      "デンプンの検出",
+      "蒸散量の測定",
+      "土壌動物の観察"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "適切な濃度の{{1}}を含む培地などに花粉をまき、時間をおいて花粉から伸びる管を顕微鏡で調べる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ショ糖",
+        "dummies": [
+          "塩酸",
+          "酢酸オルセイン",
+          "ヨウ素",
+          "水酸化ナトリウム"
+        ]
+      }
+    ],
+    "note": "ショ糖は花粉管が伸びるための養分となり、培地の濃度条件にも関係する。花粉の種類に適した条件を用いる。"
+  },
+  {
+    "id": "jr_bio_026",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "受精後の胚珠と子房の変化",
+    "term_dummies": [
+      "受粉後のやくと花糸の変化",
+      "発芽後の根毛と道管の変化",
+      "減数分裂後の核と染色体の変化",
+      "光合成後の葉と茎の変化"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "被子植物では、受精後に胚珠が{{1}}になり、子房が{{2}}になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "種子",
+        "dummies": [
+          "果実",
+          "花粉",
+          "柱頭",
+          "がく"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "果実",
+        "dummies": [
+          "種子",
+          "胚",
+          "精細胞",
+          "やく"
+        ]
+      }
+    ],
+    "note": "胚珠全体が胚になるのではなく、胚珠の中の受精卵が胚へと育つ。"
+  },
+  {
+    "id": "jr_bio_027",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の成長と生殖",
+    "term": "生殖に伴う染色体数の計算",
+    "term_dummies": [
+      "細胞数からの分裂回数の計算",
+      "遺伝の分離比の計算",
+      "顕微鏡の倍率の計算",
+      "個体数の増加率の計算"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "体細胞の染色体数が24本の動物では、通常、精子の染色体数は{{1}}本で、受精卵は{{2}}本になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "12",
+        "dummies": [
+          "6",
+          "24",
+          "36",
+          "48"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "24",
+        "dummies": [
+          "6",
+          "12",
+          "36",
+          "48"
+        ]
+      }
+    ],
+    "note": "体細胞分裂でできた各細胞も24本を保つ。生殖細胞の形成と受精による変化を区別する。"
+  },
+  {
+    "id": "jr_bio_028",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "形質",
+    "term_dummies": [
+      "遺伝子",
+      "染色体",
+      "生殖細胞",
+      "DNA"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "種子の形や花の色など、生物の{{1}}の特徴。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "形や性質",
+        "dummies": [
+          "生息場所だけ",
+          "個体数だけ",
+          "年齢だけ",
+          "食物の量だけ"
+        ]
+      }
+    ],
+    "note": "形質の現れ方には遺伝子だけでなく環境が関係する場合もある。"
+  },
+  {
+    "id": "jr_bio_029",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "遺伝",
+    "term_dummies": [
+      "進化",
+      "発生",
+      "受粉",
+      "変態"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "親の形質が{{1}}に伝わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "子",
+        "dummies": [
+          "同じ場所の無関係な個体",
+          "食物",
+          "周囲の土",
+          "捕食者すべて"
+        ]
+      }
+    ],
+    "note": "遺伝子が親から子に受け継がれることによって起こる。"
+  },
+  {
+    "id": "jr_bio_030",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "遺伝子",
+    "term_dummies": [
+      "細胞壁",
+      "液胞",
+      "葉緑体",
+      "細胞膜"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "形質に関わる遺伝情報を担い、{{1}}上にあるもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "染色体",
+        "dummies": [
+          "細胞壁",
+          "液胞",
+          "根毛",
+          "気孔"
+        ]
+      }
+    ],
+    "note": "一つの染色体には多数の遺伝子がある。一つの形質に複数の遺伝子が関わる場合もある。"
+  },
+  {
+    "id": "jr_bio_031",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "DNA",
+    "term_dummies": [
+      "デンプン",
+      "セルロース",
+      "ブドウ糖",
+      "脂肪"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "遺伝子の本体である物質で、日本語では{{1}}という。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "デオキシリボ核酸",
+        "dummies": [
+          "リボ核酸",
+          "アミノ酸",
+          "脂肪酸",
+          "炭酸"
+        ]
+      }
+    ],
+    "note": "一般に二重らせん構造をもつ。詳しい塩基配列や複製の仕組みは高校で学ぶ。"
+  },
+  {
+    "id": "jr_bio_032",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "対立形質",
+    "term_dummies": [
+      "相同器官",
+      "生殖細胞",
+      "食物連鎖",
+      "体細胞"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "エンドウの種子の丸形としわ形のように、同じ特徴について{{1}}現れる形質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "対照的に",
+        "dummies": [
+          "必ず同時に",
+          "成長後にだけ",
+          "環境だけによって",
+          "受精前にだけ"
+        ]
+      }
+    ],
+    "note": "種子の形と花の色のような、異なる特徴の組合せとは区別する。"
+  },
+  {
+    "id": "jr_bio_033",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "純系",
+    "term_dummies": [
+      "雑種",
+      "生殖細胞",
+      "受精卵",
+      "対立形質"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "エンドウで自家受粉を何代繰り返しても、注目する形質について{{1}}系統。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "同じ形質だけが現れる",
+        "dummies": [
+          "必ず二つの形質が3対1で現れる",
+          "形質が毎代逆転する",
+          "必ず中間の形質になる",
+          "遺伝子が失われる"
+        ]
+      }
+    ],
+    "note": "単純な一遺伝子のモデルでは、注目する遺伝子の組合せがAAまたはaaに相当する。"
+  },
+  {
+    "id": "jr_bio_034",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "自家受粉",
+    "term_dummies": [
+      "他家受粉",
+      "受精",
+      "栄養生殖",
+      "出芽"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "同じ花、または{{1}}の別の花の花粉が柱頭につくこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "同じ個体",
+        "dummies": [
+          "別の個体",
+          "別の種",
+          "別の科",
+          "動物の体"
+        ]
+      }
+    ],
+    "note": "エンドウは自然に自家受粉しやすい。自家受粉による種子づくりも有性生殖である。"
+  },
+  {
+    "id": "jr_bio_035",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "他家受粉",
+    "term_dummies": [
+      "自家受粉",
+      "栄養生殖",
+      "体細胞分裂",
+      "発芽"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "ある個体の花粉が、同じ種の{{1}}の花の柱頭につくこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "別の個体",
+        "dummies": [
+          "同じ個体だけ",
+          "同じ花だけ",
+          "同じ胚珠だけ",
+          "同じ子房の内部だけ"
+        ]
+      }
+    ],
+    "note": "人工的に交配するときは、必要に応じて受粉前にやくを取り除き、意図しない花粉がつかないようにする。"
+  },
+  {
+    "id": "jr_bio_036",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "顕性形質",
+    "term_dummies": [
+      "潜性形質",
+      "獲得形質",
+      "相同器官",
+      "生殖細胞"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "対立形質をもつ純系どうしを交配したとき、子に{{1}}形質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "現れる",
+        "dummies": [
+          "現れない",
+          "必ず半分だけ現れる",
+          "必ず途中で消える",
+          "親には存在しない"
+        ]
+      }
+    ],
+    "note": "旧称は優性形質。優れている、多く存在する、生存に有利であるという意味ではない。"
+  },
+  {
+    "id": "jr_bio_037",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "潜性形質",
+    "term_dummies": [
+      "顕性形質",
+      "相同器官",
+      "生殖細胞",
+      "純系"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "対立形質をもつ純系どうしを交配したとき、子に{{1}}形質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "現れない",
+        "dummies": [
+          "必ず現れる",
+          "必ず半分だけ現れる",
+          "新しく生じる",
+          "必ず中間として現れる"
+        ]
+      }
+    ],
+    "note": "旧称は劣性形質。形質が現れなくても、対応する遺伝子がなくなったわけではない。"
+  },
+  {
+    "id": "jr_bio_038",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "分離の法則",
+    "term_dummies": [
+      "質量保存の法則",
+      "定比例の法則",
+      "オームの法則",
+      "作用・反作用の法則"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "生殖細胞ができるとき、対になっている遺伝子が{{1}}、別々の生殖細胞に入るという規則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一つずつ分かれ",
+        "dummies": [
+          "対のまま移動し",
+          "すべて消失し",
+          "同じ種類に変化し",
+          "必ず4倍に増え"
+        ]
+      }
+    ],
+    "note": "Aaの個体からは、Aをもつ生殖細胞とaをもつ生殖細胞が通常1対1の割合でできる。"
+  },
+  {
+    "id": "jr_bio_039",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "メンデル",
+    "term_dummies": [
+      "ダーウィン",
+      "フック",
+      "パスツール",
+      "リンネ"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "{{1}}の交配実験を行い、遺伝の規則性を見いだした人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "エンドウ",
+        "dummies": [
+          "カエル",
+          "ゾウリムシ",
+          "アメーバ",
+          "ヒト"
+        ]
+      }
+    ],
+    "note": "対照的な形質があり、栽培しやすく、多数の子を調べられることなどが実験に適していた。"
+  },
+  {
+    "id": "jr_bio_040",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "純系どうしの交配",
+    "term_dummies": [
+      "雑種どうしの交配",
+      "検定交雑",
+      "栄養生殖",
+      "出芽"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "AAとaaを交配すると、子の遺伝子の組合せはすべて{{1}}となる。Aが顕性なら、子には{{2}}が現れる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "Aa",
+        "dummies": [
+          "AA",
+          "aa",
+          "Aだけ",
+          "aだけ"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "顕性形質",
+        "dummies": [
+          "潜性形質",
+          "必ず中間の形質",
+          "両親にない形質だけ",
+          "形質の消失"
+        ]
+      }
+    ],
+    "note": "以下の交配計算は、一対の遺伝子について完全な顕性・潜性の関係があるモデルを扱う。"
+  },
+  {
+    "id": "jr_bio_041",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "雑種どうしの交配",
+    "term_dummies": [
+      "純系どうしの交配",
+      "栄養生殖",
+      "分裂による生殖",
+      "出芽"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "Aaどうしを交配すると、子の遺伝子の組合せの比AA：Aa：aaは{{1}}、顕性形質：潜性形質の比は{{2}}になると期待される。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1：2：1",
+        "dummies": [
+          "3：1：0",
+          "1：1：1",
+          "2：1：1",
+          "1：3：1"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "3：1",
+        "dummies": [
+          "1：1",
+          "1：3",
+          "2：1",
+          "1：2"
+        ]
+      }
+    ],
+    "note": "AAとAaは同じ顕性形質を示す。実際の少数の子で必ずこの比になるわけではない。"
+  },
+  {
+    "id": "jr_bio_042",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "検定交雑",
+    "term_dummies": [
+      "自家受粉",
+      "栄養生殖",
+      "減数分裂",
+      "出芽"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "顕性形質を示す個体の遺伝子の組合せを調べるため、{{1}}の個体と交配する方法。調べる個体がAaなら、子の形質は顕性：潜性＝{{2}}になると期待される。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "aa",
+        "dummies": [
+          "AA",
+          "Aa",
+          "Aだけ",
+          "aだけ"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "1：1",
+        "dummies": [
+          "3：1",
+          "1：3",
+          "2：1",
+          "1：2"
+        ]
+      }
+    ],
+    "note": "名称は発展的だが、Aa×aaの交配計算は重要。少数の子がすべて顕性でも、親がAAと断定できるとは限らない。"
+  },
+  {
+    "id": "jr_bio_043",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "子の形質からの親の遺伝子の推定",
+    "term_dummies": [
+      "染色体数からの種の断定",
+      "個体数からの年齢の推定",
+      "体重からの遺伝子数の推定",
+      "細胞の大きさからの親子判定"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "Aが顕性のモデルで、顕性形質を示す両親からaaの子が生まれた場合、両親の遺伝子の組合せはともに{{1}}である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "Aa",
+        "dummies": [
+          "AA",
+          "aa",
+          "Aだけ",
+          "aだけ"
+        ]
+      }
+    ],
+    "note": "aaの子は、両親からaを一つずつ受け取ったと考える。"
+  },
+  {
+    "id": "jr_bio_044",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "遺伝の確率と期待個体数",
+    "term_dummies": [
+      "体細胞分裂の回数",
+      "染色体の複製回数",
+      "花粉管の伸長速度",
+      "胚の成長率"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "Aaどうしの交配で子が200個体できるとき、aaの子の期待個体数は{{1}}個体である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "50",
+        "dummies": [
+          "25",
+          "75",
+          "100",
+          "150"
+        ]
+      }
+    ],
+    "note": "aaになる確率1/4に200をかける。期待値なので、実際の個体数が必ず50になるわけではない。"
+  },
+  {
+    "id": "jr_bio_045",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "顕性形質の個体における遺伝子の割合",
+    "term_dummies": [
+      "全個体における潜性形質の割合",
+      "生殖細胞における染色体数",
+      "体細胞における分裂期の割合",
+      "種子における発芽率"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "Aaどうしの交配でできた子のうち、顕性形質を示す個体だけに注目すると、AA：Aaは{{1}}になると期待される。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1：2",
+        "dummies": [
+          "1：1",
+          "2：1",
+          "3：1",
+          "1：3"
+        ]
+      }
+    ],
+    "note": "全体の比AA：Aa：aa＝1：2：1からaaを除いて考える。顕性形質の個体のうちAaは2/3である。"
+  },
+  {
+    "id": "jr_bio_046",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝の規則性と遺伝子",
+    "term": "遺伝子を調べる技術の利用",
+    "term_dummies": [
+      "栄養生殖だけによる品種の維持",
+      "顕微鏡の倍率変更",
+      "花粉の風による運搬",
+      "光合成量の測定"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "品種改良や医療、個体の識別などに利用され、DNAの{{1}}を調べることが手がかりになる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "配列の違い",
+        "dummies": [
+          "染色前の色だけ",
+          "溶液の温度だけ",
+          "細胞壁の厚さだけ",
+          "個体の体重だけ"
+        ]
+      }
+    ],
+    "note": "遺伝情報は個人に関わる情報でもある。すべての病気や形質が一つの遺伝子だけで決まるわけではない。"
+  },
+  {
+    "id": "jr_bio_047",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "進化",
+    "term_dummies": [
+      "成長",
+      "発生",
+      "変態",
+      "学習"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "生物の集団の遺伝的な特徴が、{{1}}変化していくこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "世代を重ねる間に",
+        "dummies": [
+          "一個体の成長だけで",
+          "一日の運動だけで",
+          "一回の食事だけで",
+          "一回の学習だけで"
+        ]
+      }
+    ],
+    "note": "個体の成長や変態と区別する。進化は必ず複雑になることや、優れた生物になることを意味しない。"
+  },
+  {
+    "id": "jr_bio_048",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "共通の祖先",
+    "term_dummies": [
+      "現在の捕食者",
+      "同じ場所の生産者",
+      "現在の競争相手",
+      "同じ大きさの生物"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "異なる生物の間に基本的な体のつくりなどの共通点があることは、それらが過去の{{1}}から分かれてきたことを示す手がかりになる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "同じ祖先",
+        "dummies": [
+          "同じ捕食者",
+          "同じ食物だけ",
+          "同じ気温だけ",
+          "同じ寿命の個体"
+        ]
+      }
+    ],
+    "note": "現生のある生物が、別の現生生物の直接の祖先であると単純に考えない。"
+  },
+  {
+    "id": "jr_bio_049",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "相同器官",
+    "term_dummies": [
+      "相似器官",
+      "生殖器官",
+      "感覚器官",
+      "消化器官"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "現在の形やはたらきが異なっていても、{{1}}が共通する器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "基本的なつくりと進化上の起源",
+        "dummies": [
+          "大きさと重さだけ",
+          "色と模様だけ",
+          "現在のはたらきだけ",
+          "使う時間だけ"
+        ]
+      }
+    ],
+    "note": "ヒトの腕、クジラの胸びれ、コウモリの翼は、前あしとして基本的な骨の配置が共通する。"
+  },
+  {
+    "id": "jr_bio_050",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "相似器官",
+    "term_dummies": [
+      "相同器官",
+      "退化器官",
+      "生殖器官",
+      "排出器官"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "鳥の翼と昆虫の翅のように、はたらきが似ていても、基本的なつくりや{{1}}が異なる器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "進化上の起源",
+        "dummies": [
+          "使用する目的だけ",
+          "空気を受ける性質だけ",
+          "動く方向だけ",
+          "生息する高さだけ"
+        ]
+      }
+    ],
+    "note": "発展・資料読解向け。同じはたらきであることだけでは、相同器官とは判断できない。"
+  },
+  {
+    "id": "jr_bio_051",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "化石による進化の証拠",
+    "term_dummies": [
+      "天気図による気団の判定",
+      "地震波による震源の推定",
+      "岩石の色による鉱物の判定",
+      "月の満ち欠けによる時刻の推定"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "異なる時代の地層から見つかる生物の体のつくりを比較すると、生物が{{1}}変化してきたことを調べられる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "長い時間をかけて",
+        "dummies": [
+          "一日のうちに必ず",
+          "一個体の運動だけで",
+          "受粉の瞬間だけで",
+          "すべて同じ方向に"
+        ]
+      }
+    ],
+    "note": "化石記録には欠落がある。化石が見つからないことだけで、その時代に生物がいなかったとは断定できない。"
+  },
+  {
+    "id": "jr_bio_052",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "始祖鳥",
+    "term_dummies": [
+      "アンモナイト",
+      "三葉虫",
+      "フズリナ",
+      "ナウマンゾウ"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "羽毛や翼という鳥類に見られる特徴と、{{1}}などの特徴をあわせもつ化石生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "歯や長い尾",
+        "dummies": [
+          "乳腺や体毛",
+          "えらやうろこだけ",
+          "外骨格や触角",
+          "殻や外とう膜"
+        ]
+      }
+    ],
+    "note": "鳥類と爬虫類の進化上の関係を考える手がかり。現在の鳥類すべての直接の祖先と断定する必要はない。"
+  },
+  {
+    "id": "jr_bio_053",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "脊椎動物の進化と陸上生活",
+    "term_dummies": [
+      "被子植物の受粉と結実",
+      "菌類の分解と吸収",
+      "昆虫の脱皮と変態",
+      "単細胞生物の分裂"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "脊椎動物の陸上生活への広がりには、空気中での呼吸に適した{{1}}や、体を支えるあしなどの発達が関係する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "肺",
+        "dummies": [
+          "えらだけ",
+          "側線だけ",
+          "ひれの膜だけ",
+          "浮き袋だけ"
+        ]
+      }
+    ],
+    "note": "現在の魚類がそのまま現在の両生類になったという意味ではない。共通祖先から枝分かれした関係として捉える。"
+  },
+  {
+    "id": "jr_bio_054",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "陸上での繁殖への適応",
+    "term_dummies": [
+      "水中でのえら呼吸への適応",
+      "光合成への適応",
+      "栄養生殖への適応",
+      "落葉による越冬への適応"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "爬虫類や鳥類では、殻のある卵などによって胚を{{1}}から守り、陸上でも繁殖できる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "乾燥",
+        "dummies": [
+          "光合成",
+          "蒸留",
+          "受粉",
+          "減数分裂"
+        ]
+      }
+    ],
+    "note": "両生類の多くは繁殖に水場を必要とする。哺乳類の多くは胎生だが、例外もある。"
+  },
+  {
+    "id": "jr_bio_055",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "系統樹",
+    "term_dummies": [
+      "食物網",
+      "柱状図",
+      "天気図",
+      "細胞分裂の周期図"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "生物が共通祖先から分かれてきた道筋を枝分かれで表し、枝の分岐点は{{1}}に対応する図。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "共通祖先",
+        "dummies": [
+          "捕食者",
+          "絶滅した全生物",
+          "最も優れた現生生物",
+          "同じ生息場所"
+        ]
+      }
+    ],
+    "note": "枝の左右の位置だけで近縁性を判断しない。時間の目盛りがない図では、枝の長さが時間を表すとは限らない。"
+  },
+  {
+    "id": "jr_bio_056",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "自然選択",
+    "term_dummies": [
+      "人工選択",
+      "体細胞分裂",
+      "自家受粉",
+      "栄養生殖"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "遺伝する特徴の違いによって生存や繁殖に差が生じ、その環境で子を残しやすい特徴が、世代を重ねると集団内で{{1}}なること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "多く",
+        "dummies": [
+          "必ず少なく",
+          "直ちに0に",
+          "必ず全個体で同一に",
+          "環境に関係なく一定に"
+        ]
+      }
+    ],
+    "note": "発展・資料読解向け。生物が必要に応じて意図的に遺伝子を変えるという意味ではない。"
+  },
+  {
+    "id": "jr_bio_057",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "生物の種類の多様性と進化",
+    "term": "変異",
+    "term_dummies": [
+      "受粉",
+      "食物連鎖",
+      "蒸散",
+      "発芽"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "同じ種の個体間に見られる形質の違い。進化を考えるときは、その違いが{{1}}かどうかが重要になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "遺伝する",
+        "dummies": [
+          "目立つ色である",
+          "必ず大型である",
+          "運動で生じた",
+          "一日以内に消える"
+        ]
+      }
+    ],
+    "note": "形質の違いには遺伝子の違いによるものと環境によるものがある。運動で発達した筋肉などがそのまま子に伝わるわけではない。"
+  },
+  {
+    "id": "jr_bio_058",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "生態系",
+    "term_dummies": [
+      "個体",
+      "器官",
+      "細胞",
+      "染色体"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "ある地域の生物と、それを取り巻く光・水・空気・土などの{{1}}を、相互の関わりとともに捉えたまとまり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生物以外の環境",
+        "dummies": [
+          "生殖細胞だけ",
+          "捕食者だけ",
+          "同じ種の個体だけ",
+          "遺伝子だけ"
+        ]
+      }
+    ],
+    "note": "森林、湖、干潟など、さまざまな規模のまとまりを対象にできる。"
+  },
+  {
+    "id": "jr_bio_059",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "食物連鎖",
+    "term_dummies": [
+      "物質循環",
+      "受粉",
+      "遺伝",
+      "細胞分裂"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "生物どうしの{{1}}という関係が、鎖のようにつながったもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "食べる・食べられる",
+        "dummies": [
+          "親になる・子になる",
+          "受粉する・受粉される",
+          "分裂する・合体する",
+          "吸水する・蒸散する"
+        ]
+      }
+    ],
+    "note": "物質やエネルギーの移動を表す図では、一般に食べられる側から食べる側へ矢印を描く。問題中の凡例を優先する。"
+  },
+  {
+    "id": "jr_bio_060",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "食物網",
+    "term_dummies": [
+      "系統樹",
+      "食物連鎖",
+      "細胞分裂",
+      "分離の法則"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "複数の{{1}}が複雑に結びつき、網の目のようになった食う・食われる関係。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "食物連鎖",
+        "dummies": [
+          "染色体",
+          "花粉管",
+          "相同器官",
+          "生殖細胞"
+        ]
+      }
+    ],
+    "note": "一つの種の増減が、直接の捕食者や餌以外にも影響することがある。"
+  },
+  {
+    "id": "jr_bio_061",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "生産者",
+    "term_dummies": [
+      "消費者",
+      "分解者",
+      "捕食者",
+      "被食者"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "植物や藻類など、光合成によって{{1}}から有機物をつくる生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "二酸化炭素と水",
+        "dummies": [
+          "酸素とデンプン",
+          "タンパク質と脂肪",
+          "デンプンとブドウ糖",
+          "酸素と窒素だけ"
+        ]
+      }
+    ],
+    "note": "中学では主に光合成を行う生物を扱う。生産者も呼吸を行う。"
+  },
+  {
+    "id": "jr_bio_062",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "消費者",
+    "term_dummies": [
+      "生産者",
+      "無機物",
+      "太陽光",
+      "葉緑体"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "ほかの生物やその生物がつくった{{1}}を取り入れて生活する生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "有機物",
+        "dummies": [
+          "酸素だけ",
+          "窒素だけ",
+          "水だけ",
+          "二酸化炭素だけ"
+        ]
+      }
+    ],
+    "note": "草食動物も肉食動物も含まれる。分解者も、広い意味では消費者に含められる。"
+  },
+  {
+    "id": "jr_bio_063",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "分解者",
+    "term_dummies": [
+      "生産者",
+      "光源",
+      "無機物",
+      "生殖細胞"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "生物の遺骸や排出物などに含まれる有機物を分解し、最終的に{{1}}に戻すはたらきを担う生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "無機物",
+        "dummies": [
+          "染色体",
+          "花粉",
+          "種子",
+          "葉緑体"
+        ]
+      }
+    ],
+    "note": "主に菌類や細菌類が担う。分解によって生じた無機物は、生産者に再び利用される。"
+  },
+  {
+    "id": "jr_bio_064",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "菌類",
+    "term_dummies": [
+      "細菌類",
+      "植物",
+      "昆虫類",
+      "魚類"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "カビやキノコなどの仲間で、多くは{{1}}と呼ばれる細い糸状の構造からなり、有機物を分解して養分を吸収する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "菌糸",
+        "dummies": [
+          "根毛",
+          "道管",
+          "師管",
+          "花粉管"
+        ]
+      }
+    ],
+    "note": "酵母も菌類だが、主に単細胞で生活する。菌類は植物や細菌類とは異なる仲間である。"
+  },
+  {
+    "id": "jr_bio_065",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "細菌類",
+    "term_dummies": [
+      "菌類",
+      "種子植物",
+      "節足動物",
+      "軟体動物"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "乳酸菌や大腸菌などの仲間で、{{1}}をもたない単細胞生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "核膜に包まれた核",
+        "dummies": [
+          "細胞膜",
+          "遺伝情報",
+          "細胞質",
+          "DNA"
+        ]
+      }
+    ],
+    "note": "核膜に包まれた核はないが、DNAはある。分解者としてはたらくもののほか、さまざまな生活をするものがいる。"
+  },
+  {
+    "id": "jr_bio_066",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "土壌動物",
+    "term_dummies": [
+      "植物プランクトン",
+      "種子植物",
+      "細菌類",
+      "菌類"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "ミミズやトビムシなど、土や落ち葉の中で生活する動物。落ち葉などを細かくして、{{1}}による分解を助けるものがいる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "菌類や細菌類",
+        "dummies": [
+          "種子や果実",
+          "花粉や胚珠",
+          "根毛や気孔",
+          "肺やえら"
+        ]
+      }
+    ],
+    "note": "土壌動物には捕食性のものもいる。すべてが落ち葉を食べるわけではない。"
+  },
+  {
+    "id": "jr_bio_067",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "ツルグレン装置",
+    "term_dummies": [
+      "ガスバーナー",
+      "メスシリンダー",
+      "電流計",
+      "蒸留装置"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "落ち葉や土を上から照らし、土壌動物が{{1}}を避けて下へ移動する性質を利用して採集する装置。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "光や熱、乾燥",
+        "dummies": [
+          "酸素や水分のすべて",
+          "重力そのもの",
+          "有機物のすべて",
+          "低温や暗さだけ"
+        ]
+      }
+    ],
+    "note": "発展・資料読解向け。照明の熱などで乾燥が進むことも採集に関係する。"
+  },
+  {
+    "id": "jr_bio_068",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "土の微生物によるデンプンの分解実験",
+    "term_dummies": [
+      "葉の光合成によるデンプン生成実験",
+      "だ液の温度による体積変化実験",
+      "根の細胞分裂の染色実験",
+      "花粉管の伸長観察"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "土を混ぜた水の上澄み液と、それを十分に加熱して冷ました液にデンプン液を加えて比較する。一定時間後、{{1}}でデンプンが残っているか調べる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ヨウ素液",
+        "dummies": [
+          "石灰水",
+          "酢酸オルセイン液",
+          "BTB溶液",
+          "食塩水"
+        ]
+      }
+    ],
+    "note": "温度、時間、液量、デンプン量などをそろえる。加熱処理した液は、微生物などのはたらきを失わせた比較対象として用いる。"
+  },
+  {
+    "id": "jr_bio_069",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "土壌生物の呼吸の確認",
+    "term_dummies": [
+      "花粉の受粉の確認",
+      "染色体の複製の確認",
+      "葉の蒸散の確認",
+      "種子の遺伝子型の確認"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "土を入れた容器で生じる気体を調べ、石灰水が{{1}}ことから、呼吸で生じた二酸化炭素を確認する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "白くにごる",
+        "dummies": [
+          "青紫色になる",
+          "赤褐色の沈殿を生じる",
+          "必ず青色になる",
+          "銀色に光る"
+        ]
+      }
+    ],
+    "note": "初めから含まれる二酸化炭素や、温度・土の量などを考慮する。加熱処理した土などとの比較が手がかりになる。"
+  },
+  {
+    "id": "jr_bio_070",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "生態ピラミッド",
+    "term_dummies": [
+      "系統樹",
+      "食物網",
+      "地層の柱状図",
+      "細胞分裂の周期図"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "食物連鎖の各段階の量を積み重ねて表す図で、一般に上位の消費者ほど、利用できる{{1}}が少なくなる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "エネルギー",
+        "dummies": [
+          "染色体の本数",
+          "遺伝子の種類",
+          "細胞膜の枚数",
+          "生殖細胞の染色体数"
+        ]
+      }
+    ],
+    "note": "個体数、現存量、エネルギーのどれを示す図か確認する。個体数や現存量の図は、条件によって逆転する場合がある。"
+  },
+  {
+    "id": "jr_bio_071",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "捕食・被食関係と個体数の変動",
+    "term_dummies": [
+      "自家受粉と種子の形",
+      "減数分裂と染色体数",
+      "相同器官と骨の配置",
+      "発生と細胞の分化"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "餌が増えると、それを食べる動物が{{1}}増え、その後、餌が減ることで捕食者も減る場合がある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "時間をおいて",
+        "dummies": [
+          "必ず同時に同数だけ",
+          "餌より必ず先に",
+          "餌と無関係に一定数だけ",
+          "必ず一世代で絶滅するほど"
+        ]
+      }
+    ],
+    "note": "個体数のグラフでは、増減の順序と時間差に注目する。実際にはほかの餌や気象条件なども影響する。"
+  },
+  {
+    "id": "jr_bio_072",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "食物網の変化の推論",
+    "term_dummies": [
+      "遺伝子の分離比の推論",
+      "細胞分裂の順序の推論",
+      "地層の堆積順序の推論",
+      "受精卵の染色体数の推論"
+    ],
+    "difficulty": {
+      "term_to_explanation": "発展",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "草を草食動物が食べ、その草食動物を肉食動物が食べる単純な関係では、肉食動物の減少により草食動物が増え、草は{{1}}なる可能性がある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "少なく",
+        "dummies": [
+          "必ず多く",
+          "必ず同じ量に",
+          "必ず直ちに0に",
+          "必ず別の種に"
+        ]
+      }
+    ],
+    "note": "ほかの関係や環境条件を一定とした推論である。複雑な食物網では、複数の経路を確認する。"
+  },
+  {
+    "id": "jr_bio_073",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "炭素の循環",
+    "term_dummies": [
+      "エネルギーの一方向の流れ",
+      "水の電気分解",
+      "染色体の分配",
+      "花粉の運搬"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "大気中などの二酸化炭素は{{1}}で有機物に取り込まれ、有機物中の炭素は呼吸や燃焼などで再び{{2}}として環境に戻る。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "光合成",
+        "dummies": [
+          "呼吸",
+          "蒸散",
+          "受粉",
+          "減数分裂"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "二酸化炭素",
+        "dummies": [
+          "酸素",
+          "窒素",
+          "水素",
+          "食塩"
+        ]
+      }
+    ],
+    "note": "有機物中の炭素は、食物連鎖や遺骸・排出物を通じても移動する。"
+  },
+  {
+    "id": "jr_bio_074",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "生態系におけるエネルギーの流れ",
+    "term_dummies": [
+      "炭素の循環",
+      "水の循環",
+      "窒素の循環",
+      "染色体の分配"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "多くの生態系では太陽の光エネルギーが生産者に取り込まれ、食物連鎖を通じて移動し、最終的には主に{{1}}として周囲に散らばる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱",
+        "dummies": [
+          "新しい太陽光",
+          "染色体",
+          "窒素",
+          "種子"
+        ]
+      }
+    ],
+    "note": "物質は循環するが、エネルギーは同じようには循環しない。次の段階にすべてのエネルギーが移るわけではない。"
+  },
+  {
+    "id": "jr_bio_075",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然界のつながり",
+    "term": "光合成量と呼吸量の関係",
+    "term_dummies": [
+      "蒸散量と降水量の関係",
+      "受粉数と染色体数の関係",
+      "分裂回数と遺伝子の種類の関係",
+      "捕食者数と細胞数の関係"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "同じ時間で光合成による有機物の生成量が10g、呼吸による消費量が4gなら、有機物の正味の増加量は{{1}}gである。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "6",
+        "dummies": [
+          "4",
+          "10",
+          "14",
+          "40"
+        ]
+      }
+    ],
+    "note": "正味の増加量＝光合成による生成量－呼吸による消費量。グラフの値が光合成全体か、見かけの量かを確認する。"
+  },
+  {
+    "id": "jr_bio_076",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "自然浄化",
+    "term_dummies": [
+      "富栄養化",
+      "生物濃縮",
+      "温室効果",
+      "砂漠化"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "川などに流入した有機物が、微生物による{{1}}や沈殿などによって減り、水質が回復するはたらき。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "分解",
+        "dummies": [
+          "受粉",
+          "減数分裂",
+          "光の反射",
+          "染色体の複製"
+        ]
+      }
+    ],
+    "note": "浄化能力には限界がある。有機物が多すぎると、微生物の呼吸で水中の酸素が不足することがある。"
+  },
+  {
+    "id": "jr_bio_077",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "富栄養化",
+    "term_dummies": [
+      "自然浄化",
+      "生物濃縮",
+      "酸性雨",
+      "オゾン層の破壊"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "水域に{{1}}などの栄養塩類が増えること。植物プランクトンの異常増殖や、その遺骸の分解に伴う{{2}}不足につながる場合がある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "窒素やリンを含む物質",
+        "dummies": [
+          "酸素だけ",
+          "砂や小石だけ",
+          "水素やヘリウム",
+          "食塩だけ"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "酸素",
+        "dummies": [
+          "二酸化炭素",
+          "窒素",
+          "メタン",
+          "水素"
+        ]
+      }
+    ],
+    "note": "アオコや赤潮などの発生に関係する。すべての赤潮が有毒とは限らないが、酸素不足などで被害が出ることがある。"
+  },
+  {
+    "id": "jr_bio_078",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "生物濃縮",
+    "term_dummies": [
+      "富栄養化",
+      "自然浄化",
+      "光合成",
+      "栄養生殖"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "分解・排出されにくい物質が生物の体内に蓄積し、食物連鎖を通じて{{1}}の生物で高濃度になる場合がある現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "上位",
+        "dummies": [
+          "下位だけ",
+          "生産者だけ",
+          "同じ種だけ",
+          "最も小型だけ"
+        ]
+      }
+    ],
+    "note": "すべての物質が同じように濃縮されるわけではない。物質の性質と食う・食われる関係を確認する。"
+  },
+  {
+    "id": "jr_bio_079",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "指標生物",
+    "term_dummies": [
+      "生産者",
+      "純系",
+      "外来種",
+      "化石生物"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "生息する生物の種類などを手がかりに、その場所の{{1}}を推定するときに用いる生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "環境の状態",
+        "dummies": [
+          "すべての個体の年齢",
+          "地球の年齢",
+          "すべての生物の遺伝子型",
+          "翌日の天気"
+        ]
+      }
+    ],
+    "note": "川の水質調査では水生生物などを用いる。複数の種類や数を、調査方法の基準に従って評価する。"
+  },
+  {
+    "id": "jr_bio_080",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "水生生物による水質調査",
+    "term_dummies": [
+      "花粉による受精の観察",
+      "染色体による細胞周期の測定",
+      "化石による地質年代の推定",
+      "気孔による風向の測定"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "カワゲラ類が多い場所とイトミミズ類が多い場所を比較すると、一般に{{1}}が多い場所のほうが、有機物による汚れが少ない水環境の目安になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "カワゲラ類",
+        "dummies": [
+          "イトミミズ類",
+          "サカマキガイ",
+          "セスジユスリカ類",
+          "アメリカザリガニ"
+        ]
+      }
+    ],
+    "note": "水温、流速、川底の状態も分布に影響する。一種類が見つかっただけで水質を断定しない。"
+  },
+  {
+    "id": "jr_bio_081",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "環境調査における条件の統一",
+    "term_dummies": [
+      "調査ごとの採集時間の変更",
+      "結果に合わせた地点の除外",
+      "生物名の推測だけによる記録",
+      "一回だけの測定による断定"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "地点間の生物の数を比較するときは、採集面積や採集時間、方法などを{{1}}、できるだけ繰り返して調べる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "そろえ",
+        "dummies": [
+          "毎回変え",
+          "記録せず",
+          "結果に合わせて選び",
+          "多い地点だけ増やし"
+        ]
+      }
+    ],
+    "note": "季節や天候も記録する。観察された関連だけで原因を断定せず、ほかの条件の影響も考える。"
+  },
+  {
+    "id": "jr_bio_082",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "外来種",
+    "term_dummies": [
+      "在来種",
+      "絶滅種",
+      "純系",
+      "生産者"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "もともとその地域にいなかったが、{{1}}によってほかの地域から持ち込まれた生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "人間の活動",
+        "dummies": [
+          "通常の季節移動だけ",
+          "自然な海流による移動だけ",
+          "自然な風による移動だけ",
+          "その地域での体細胞分裂だけ"
+        ]
+      }
+    ],
+    "note": "国内の別地域から持ち込まれた場合も含む。すべての外来種が大きな被害を与えるわけではない。"
+  },
+  {
+    "id": "jr_bio_083",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "外来種による生態系への影響",
+    "term_dummies": [
+      "化石による年代の推定",
+      "自家受粉による純系の維持",
+      "減数分裂による染色体数の半減",
+      "蒸散による水の放出"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "持ち込まれた生物が在来種を捕食したり、餌や生息場所をめぐって{{1}}したりして、生態系を変える場合がある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "競争",
+        "dummies": [
+          "受粉",
+          "減数分裂",
+          "脱色",
+          "発芽"
+        ]
+      }
+    ],
+    "note": "近縁な在来種との交雑によって、地域の遺伝的な特徴に影響する場合もある。飼育生物を野外に放さないことが重要である。"
+  },
+  {
+    "id": "jr_bio_084",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "生物多様性",
+    "term_dummies": [
+      "個体数の一時的な増加",
+      "一品種だけの大量栽培",
+      "染色体数の一律な増加",
+      "すべての生物の大型化"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "生態系の多様性、種の多様性、同じ種の中の{{1}}の多様性などを含む、生物のさまざまな違い。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "遺伝子",
+        "dummies": [
+          "体細胞の染色体数だけ",
+          "年齢だけ",
+          "食事の時刻だけ",
+          "体の向きだけ"
+        ]
+      }
+    ],
+    "note": "単に個体数が多いこととは異なる。生息場所と、生物どうしのつながりを保つことも重要である。"
+  },
+  {
+    "id": "jr_bio_085",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "絶滅危惧種",
+    "term_dummies": [
+      "絶滅種",
+      "外来種",
+      "純系",
+      "指標生物"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "explanation_template": "個体数の減少や生息環境の悪化などによって、{{1}}おそれがある種。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "絶滅する",
+        "dummies": [
+          "必ず外来種になる",
+          "必ず顕性形質だけになる",
+          "必ず染色体数が倍になる",
+          "必ず無性生殖に変わる"
+        ]
+      }
+    ],
+    "note": "生息場所の保全、乱獲の防止、外来種への対策などが必要になる。すでに絶滅した種とは区別する。"
+  },
+  {
+    "id": "jr_bio_086",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "生態系サービス",
+    "term_dummies": [
+      "生物濃縮",
+      "富栄養化",
+      "遺伝子の分離",
+      "細胞分裂の同調"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "食料や木材の供給、水質の浄化、昆虫による{{1}}など、人間が生態系から受ける恵み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "送粉",
+        "dummies": [
+          "染色体の複製",
+          "石油の燃焼",
+          "金属の精錬",
+          "水の電気分解"
+        ]
+      }
+    ],
+    "note": "資料読解で扱われる用語。洪水の緩和や、自然との触れ合いによる文化的な恵みなども含まれる。"
+  },
+  {
+    "id": "jr_bio_087",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "地球温暖化による生物への影響",
+    "term_dummies": [
+      "受精による染色体数の回復",
+      "体細胞分裂による細胞数の増加",
+      "花粉管による精細胞の運搬",
+      "純系どうしの交配による雑種の形成"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "気温や海水温の上昇は、生物の分布や繁殖の時期を変え、生物どうしの{{1}}にも影響することがある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "食う・食われる関係",
+        "dummies": [
+          "遺伝暗号を必ず一斉に変えること",
+          "染色体数を必ず半分にすること",
+          "全個体を純系にすること",
+          "核を必ず消失させること"
+        ]
+      }
+    ],
+    "note": "分布の移動、開花と送粉者の活動時期のずれ、サンゴの白化などが資料で扱われる。地域や生物によって影響は異なる。"
+  },
+  {
+    "id": "jr_bio_088",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "生息地の分断",
+    "term_dummies": [
+      "食物網の拡大",
+      "自然浄化の促進",
+      "遺伝子の複製",
+      "栄養生殖"
+    ],
+    "difficulty": {
+      "term_to_explanation": "標準",
+      "explanation_to_term": "発展"
+    },
+    "explanation_template": "道路や開発などによって生息場所が分けられ、個体の{{1}}や集団間の交流が妨げられること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "移動",
+        "dummies": [
+          "体細胞内のDNA複製だけ",
+          "細胞内の呼吸だけ",
+          "すべての光合成",
+          "すべての減数分裂"
+        ]
+      }
+    ],
+    "note": "小さく孤立した集団では絶滅の危険が高まる場合がある。生物の移動経路を確保することが対策の一つとなる。"
+  },
+  {
+    "id": "jr_bio_089",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "自然環境の調査と保全",
+    "term": "持続可能な社会",
+    "term_dummies": [
+      "資源を無制限に消費する社会",
+      "生物を一種類だけにする社会",
+      "すべての自然を人工物に置き換える社会",
+      "将来の環境を考慮しない社会"
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "標準"
+    },
+    "explanation_template": "現在の生活を支えながら、{{1}}も必要な資源や豊かな環境を利用できるようにする社会。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "将来の世代",
+        "dummies": [
+          "現在の一部の人だけ",
+          "一つの地域の人だけ",
+          "一つの産業だけ",
+          "現在の消費者だけ"
+        ]
+      }
+    ],
+    "note": "生物多様性の保全、資源の適切な利用、環境負荷の低減を、科学的な根拠と社会的な条件の両面から考える。"
+  }
+]
