@@ -2,6 +2,24 @@
 
 `index.json` はフォルダIDごとの楽曲情報です。`durationSeconds` は秒、`baseBpm` は基本テンポです。
 
+## 曲ごとのアジャスト値
+
+各曲の `index.json` エントリに `timing.chartToAudioOffsetMs` を必ず保持します。今後追加する曲も初期値は0とし、未検証であることを `chartToAudioOffsetStatus` に記録します。音源との同期確認後は補正値と検証状態を更新してください。
+
+- 単位はミリ秒です。正の値は譜面を遅らせ、負の値は早めます。例えば `25` は25ミリ秒遅らせ、`-25` は25ミリ秒早めます。
+- `chartToAudioOffsetAppliesTo` は `files` 内の対象キーを列挙します。0001ではJSON譜面（`chart`）とMIDI（`midi`）の両方に同じ補正を1回適用します。MIDIは先にテンポマップを使って秒へ変換します。
+- この値は曲全体の一定のズレを調整するものです。途中で変わるズレは譜面のイベント時刻を修正します。
+- 譜面JSONへ同じ追加補正を重複保存しません。譜面時刻へ補正を焼き込んだ場合は、インデックスの補正値をリセットまたは再計測します。
+- 端末補正はPWAの設定としてユーザー・端末・音声出力ごとに保存します。インデックスの `deviceCalibrationOffsetMs: null` は未計測の説明であり、ユーザー設定の保存先ではありません。
+
+```js
+// deviceOffsetMs はPWA設定から取得。正なら判定対象時刻を遅らせる仕様。
+const songOffsetMs = track.timing.chartToAudioOffsetMs ?? 0;
+const targetAudioTimeSeconds = event.time + (songOffsetMs + deviceOffsetMs) / 1000;
+```
+
+補正は判定・表示で一貫した規約を使い、同じ補正を二度適用しないでください。
+
 ## 0001: Fallin For You / Flehmann
 
 PWAのタップ判定にはJSONの `events[].time`（秒）を推奨します。MIDIも利用できますが、テンポマップとtickから秒への変換が必要です。両形式の605イベントの音符番号は一致し、時刻差は最大0.52ミリ秒です。MIDIは480 ticks/四分音符、120 BPMなので1 tickは約1.041667ミリ秒で、この差は丸めの範囲です。

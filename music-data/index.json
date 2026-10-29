@@ -34,7 +34,11 @@
         "chartReportedBeatMedianAbsoluteErrorMs": 7.23,
         "chartReportedBeatMaxAbsoluteErrorMs": 37.65,
         "audioBeatAlignmentIndependentlyVerified": false
-      }
+      },
+      "chartToAudioOffsetAppliesTo": [
+        "chart",
+        "midi"
+      ]
     }
   }
 }
