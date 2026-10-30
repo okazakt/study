@@ -74,6 +74,10 @@ function render() {
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
+  $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア。左からD F G H' : '白ノーツのタップエリア');
+  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; });
+  document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
+  document.querySelector('.play-hint').textContent = game.phase === 'read' ? '今は読む時間。タップはお休みです。' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツは、どこでもタップ。';
   $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
   $('question-number').textContent = game.phase === 'intro' ? '白ノーツはどこでもタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
@@ -95,8 +99,8 @@ function draw() {
   const dpr = window.devicePixelRatio || 1;
   if (canvas.width !== Math.round(width * dpr) || canvas.height !== Math.round(height * dpr)) { canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr); }
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, width, height);
-  const laneWidth = width / RULES.lanes, line = height - 40;
-  for (let i = 0; i < RULES.lanes; i++) {
+  const laneWidth = width / game.laneCount, line = height - 40;
+  for (let i = 0; i < game.laneCount; i++) {
     ctx.fillStyle = i % 2 ? '#ffffff04' : '#00000008'; ctx.fillRect(i * laneWidth, 0, laneWidth, height);
     ctx.strokeStyle = '#ffffff12'; ctx.beginPath(); ctx.moveTo(i * laneWidth, 0); ctx.lineTo(i * laneWidth, height); ctx.stroke();
     ctx.fillStyle = '#ffffff25'; ctx.font = '11px system-ui'; ctx.textAlign = 'center'; ctx.fillText(['D', 'F', 'G', 'H', 'J'][i], (i + .5) * laneWidth, height - 12);
@@ -125,7 +129,7 @@ function loop() {
   if (!audio.paused) frame = requestAnimationFrame(loop);
 }
 function tap(lane) {
-  if (screen !== 'play' || audio.paused || busy) return;
+  if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
   const q = game.question, first = game.firstTry, previousCount = game.correctCount;
   game.tap(lane, audio.currentTime);
   if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first });
@@ -135,7 +139,7 @@ $('play-stage').addEventListener('pointerdown', event => {
   const bounds = canvas.getBoundingClientRect();
   if (event.clientY < bounds.top || event.clientY > bounds.bottom) return;
   event.preventDefault();
-  tap(Math.max(0, Math.min(4, Math.floor((event.clientX - bounds.left) / bounds.width * RULES.lanes))));
+  tap(Math.max(0, Math.min(game.laneCount - 1, Math.floor((event.clientX - bounds.left) / bounds.width * game.laneCount))));
 });
 document.querySelectorAll('[data-lane]').forEach(button => button.addEventListener('pointerdown', event => { event.preventDefault(); tap(Number(button.dataset.lane)); }));
 // Prevent selection handles, long-press callouts and drag gestures while playing.

@@ -77,13 +77,12 @@ test('phase transitions discard stale notes without a penalty; finish forbids fu
   g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,0); assert.equal(g.phase,'ended');
 });
 
-test('easy chart has one first-beat note per bar, retaining timestamps and all four colors', () => {
+test('easy chart has one first-beat target per bar, retaining timestamps', () => {
   const selected = easyEvents(chart.events);
   assert.equal(selected.length,112);
   assert.equal(new Set(selected.map(e => e.bar)).size,selected.length);
   assert.ok(selected.every(e => e.beatInBar === 1 && e.beatPosition === 0 && chart.events.includes(e)));
   const g = new Game(questions,chart.events);
-  assert.deepEqual(g.events.slice(0,4).map(e => e.color),[0,1,2,3]);
   assert.deepEqual(g.events.map(e=>e.target),selected.map(e=>e.time));
   assert.equal(easyEvents([selected[0],selected[0]]).length,1);
 });
@@ -96,8 +95,40 @@ test('text and each choice finish in order before lifting, then colored notes ma
   }
   const g = new Game(questions,chart.events); g.changePhase('read',20);
   const end = 20 + g.reveal.duration;
-  g.update(end-.01); assert.equal(g.phase,'read'); assert.ok(g.notes.every(n=>n.color===null));
+  g.update(end-.01); assert.equal(g.phase,'read'); assert.deepEqual(g.notes,[]);
   const unchanged = JSON.stringify(g.notes); g.update(end-.01); assert.equal(JSON.stringify(g.notes),unchanged);
   g.update(end); assert.equal(g.phase,'answer'); assert.deepEqual(g.notes,[]);
   g.update(end+2); assert.ok(g.notes.every(n=>n.color!==null));
+});
+
+test('reading suppresses notes and ignores taps without losing combo or progress', () => {
+  const g = new Game(questions,chart.events); g.combo=9; g.changePhase('read',8);
+  for (let now=8;now<8+g.reveal.duration;now+=.1) {
+    g.update(now); assert.deepEqual(g.notes,[]);
+    g.tap(0,now); assert.equal(g.combo,9); assert.equal(g.rhythmScore,0);
+  }
+  assert.equal(g.lastJudgment,''); assert.deepEqual(g.counts,[0,0,0,0]);
+});
+test('answer rows offer four simultaneous colors, ordered like choices, one selection per row', () => {
+  const g = new Game(questions,chart.events); g.changePhase('answer',8);
+  assert.equal(g.laneCount,4);
+  const event=g.events.find(e=>e.target>=8+RULES.travelSeconds);
+  g.update(event.target-1);
+  const row=g.notes.filter(n=>n.rowId===event.id);
+  assert.equal(row.length,4); assert.deepEqual(row.map(n=>n.color),[0,1,2,3]);
+  assert.deepEqual(row.map(n=>n.lane),[0,1,2,3]); assert.ok(row.every(n=>n.target===event.target));
+  assert.ok(g.tap(1,event.target)); assert.equal(g.counts[1],1); assert.equal(g.rhythmScore,100);
+  assert.ok(row.every(n=>n.done));
+  g.tap(2,event.target); assert.equal(g.counts[2],0); assert.equal(g.rhythmScore,100);
+  const next=g.events.find(e=>e.target>event.target);
+  g.update(next.target-1); assert.equal(g.notes.filter(n=>!n.done).length,4);
+  g.tap(1,next.target); assert.equal(g.counts[1],2);
+});
+test('each color can confirm an answer on three successive rows', () => {
+  for (let color=0;color<4;color++) {
+    const g=new Game(questions,chart.events); g.changePhase('answer',8); g.question.correct=color;
+    const events=g.events.filter(e=>e.target>=8+RULES.travelSeconds).slice(0,3);
+    for (const e of events) { g.update(e.target-1); g.tap(color,e.target); }
+    assert.equal(g.correctCount,1); assert.equal(g.quizScore,1000); assert.equal(g.phase,'feedback');
+  }
 });

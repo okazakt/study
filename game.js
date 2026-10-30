@@ -1,5 +1,5 @@
 export const RULES = Object.freeze({ lanes: 5, tapsToAnswer: 3, introSeconds: 8,
-  charSeconds: 0.035, fadeSeconds: 0.2, choiceGapSeconds: 0.18, readHoldSeconds: 0.8, liftSeconds: 0.65,
+  charSeconds: 0.09, fadeSeconds: 0.45, choiceGapSeconds: 0.7, readHoldSeconds: 1.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
 export const COLORS = [
   { name: '赤', symbol: '●', value: '#ff7187' }, { name: '青', symbol: '◆', value: '#73b9ff' },
@@ -44,7 +44,7 @@ export function revealPlan(question) {
 export class Game {
   constructor(questions, events, offsetSeconds = 0, random = Math.random) {
     this.questions = shuffle(questions, random).map(q => makeQuestion(q, random));
-    this.events = easyEvents(events).map((event, i) => ({ target: event.time + offsetSeconds, lane: i % RULES.lanes, color: i % 4, id: i }));
+    this.events = easyEvents(events).map((event, i) => ({ target: event.time + offsetSeconds, id: i }));
     this.reveal = revealPlan(this.questions[0]);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
     this.rhythmScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
@@ -52,12 +52,13 @@ export class Game {
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '音楽に合わせて、白いノーツをタップ';
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
   }
+  get laneCount() { return this.phase === 'answer' ? COLORS.length : RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
   changePhase(phase, now) {
     this.phase = phase; this.phaseStart = now;
     // Phase-specific notes must never be interpreted as another question or color mode.
     this.notes = [];
-    if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '説明にあてはまる用語は？ 白ノーツはどこでもタップ'; }
+    if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '今はタップをお休み。問題と選択肢をゆっくり読もう'; }
     if (phase === 'answer') this.message = `答えの色を${RULES.tapsToAnswer}回タップ`;
   }
   update(now) {
@@ -78,18 +79,25 @@ export class Game {
     this.notes = this.notes.filter(note => now - note.target <= 0.3 && !note.done);
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
       const event = this.events[this.cursor++];
+      if (this.phase === 'read') continue;
       if (event.target < this.phaseStart + RULES.travelSeconds || event.target < now) continue;
-      this.notes.push({ ...event, color: this.phase === 'answer' ? event.color : null, done: false });
+      if (this.phase === 'answer') {
+        COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
+      } else this.notes.push({ ...event, lane: 0, color: null, done: false });
     }
   }
   judge(label, now) { this.lastJudgment = label; this.judgmentTime = now; }
   tap(lane, now) {
     if (this.phase === 'ended') return null;
     this.update(now);
+    if (this.phase === 'read') return null;
     const note = this.notes.filter(n => !n.done && (n.color === null || n.lane === lane) && Math.abs(n.target - now) <= RULES.goodWindow)
       .sort((a, b) => Math.abs(a.target - now) - Math.abs(b.target - now))[0];
     if (!note) { this.combo = 0; this.judge('空振り', now); return null; }
     note.done = true;
+    if (note.rowId !== undefined) {
+      for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
+    }
     const perfect = Math.abs(note.target - now) <= RULES.perfectWindow;
     this.rhythmScore += perfect ? 100 : 50;
     this.maxCombo = Math.max(this.maxCombo, ++this.combo);
