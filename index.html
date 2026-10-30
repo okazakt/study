@@ -4,26 +4,39 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#111a2b"><meta name="description" content="音楽にのって、暗記を楽しく。中高生のための学習リズムゲーム。">
   <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=0.14.0"><title>Study Beat — リズムで覚える</title>
+  <link rel="stylesheet" href="style.css?v=0.15.0"><title>Study Beat — リズムで覚える</title>
 </head>
 <body>
 <main>
   <header class="brand"><a href="./" aria-label="Study Beat ホーム">◈ STUDY<span>BEAT</span></a><span class="tag">LEARN IN RHYTHM</span><span id="connection" class="badge">PWA PROTOTYPE</span></header>
   <section id="home" class="home">
-    <div class="home-heading"><div class="eyebrow">音楽 × 暗記学習</div><span id="app-version" class="app-version" aria-label="アプリのバージョン">v0.14.0</span></div><div class="update-row"><button id="refresh-app" class="secondary">最新版を読み込む</button><a href="update.html" class="repair-link">更新を復旧する</a><span id="update-status" role="status"></span></div><h1>そのリズムが、<br><span>記憶になる。</span></h1>
+    <div class="home-heading"><div class="eyebrow">音楽 × 暗記学習</div><span id="app-version" class="app-version" aria-label="アプリのバージョン">v0.15.0</span></div><div class="update-row"><button id="refresh-app" class="secondary">最新版を読み込む</button><a href="update.html" class="repair-link">更新を復旧する</a><span id="update-status" role="status"></span></div><h1>そのリズムが、<br><span>記憶になる。</span></h1>
     <p class="lead">ビートにのってタップ。答えの色で正解へ。<br>いつもの暗記を、ちょっと夢中になる時間に。</p>
+    <section id="school-onboarding" class="learning-card" aria-labelledby="school-title">
+      <h2 id="school-title">はじめに、学校を選ぼう</h2><p>次回からは選んだ学校で開きます。設定から変更できます。</p>
+      <div class="school-options"><button data-school="中学" disabled>中学</button><button data-school="高校" disabled>高校</button></div>
+    </section>
+    <section id="study-menu" class="learning-card" hidden aria-labelledby="study-title">
+      <div class="learning-heading"><h2 id="study-title"><span id="school-label"></span>の学習</h2><button id="open-learning-settings" class="secondary" aria-haspopup="dialog">設定</button></div>
+      <h3>教科</h3><div id="subject-list" class="subject-list" aria-label="教科選択"></div>
+      <h3>学年・受験対策</h3><div id="course-list" class="course-list" aria-label="学年・受験用の選択"></div>
+      <div id="selected-course" class="selected-course" hidden><h3 id="selected-course-title"></h3><p id="course-coverage"></p>
+        <details id="section-picker"><summary>単元を選ぶ <span id="section-summary"></span></summary><label class="section-option"><input id="all-sections" type="checkbox">すべての単元</label><div id="section-list"></div></details>
+      </div>
+      <p id="selection-status" role="status" aria-live="polite"></p><p id="learning-storage-note" hidden>設定を保存できないため、次回は選び直してください。</p>
+    </section>
+    <div class="start-row"><button id="start" class="primary" disabled>データを読み込み中…</button><span>画面のレーンをタップしてプレイ</span></div>
     <div class="track-card"><div class="cover">♫<span>STUDY MIX / 001</span></div><div><span class="eyebrow">今回のプレイリスト</span><h2>Fallin For You</h2><p>1. Flehmann · 120 BPM · 3:53</p><h2>American Western Country</h2><p>2. The_Mountain · 95.703 BPM · 2:18</p><p>2曲続けてプレイ · 約6分12秒</p><span class="badge">中3 理科89件・国語38件 ＋ 中2 英語32件</span></div></div>
     <div class="steps"><div><b>01 / 読む</b><p>手元で問題をゆっくり読む。<br>順番に現れる選択肢を確認。</p></div><div><b>02 / 答える</b><p>4色が横一列に到着。<br>答えの色だけを3回タップ。</p></div><div><b>03 / つなぐ</b><p>リズムと一発正解。<br>2つのコンボをつなごう。</p></div></div>
-    <div class="start-row"><button id="start" class="primary" disabled>データを読み込み中…</button><span>画面のレーンをタップしてプレイ</span></div>
     <details><summary>タイミング調整・遊び方</summary><label>端末のタイミング補正（ms）<input id="offset" type="number" min="-500" max="500" step="10" value="0"></label><p>正の値でノーツを遅らせます。音声出力ごとに調整してください。保存はこのブラウザ内です。</p><p>色ノーツは表示されたレーンでタップ。白ノーツも流れてきたレーンでタップ。選ばない色は見送れます。</p></details>
     <details><summary>パソコンでの操作</summary><p>左から <kbd>D</kbd>・<kbd>F</kbd>・<kbd>G</kbd>・<kbd>H</kbd> キーでタップ、<kbd>Space</kbd> キーで一時停止・再開します。</p></details>
-    <p id="load-status" role="status"></p><p class="footnote">学年・科目・受験対策の選択は今後追加予定です。音源と譜面の同期は暫定値です。</p>
+    <p id="load-status" role="status"></p><p class="footnote">未収録の学年・教科は準備中です。受験用は現在の収録範囲から出題します。音源と譜面の同期は暫定値です。</p>
   </section>
   <section id="play" hidden>
     <div class="play-top"><div><b id="track-title">Fallin For You</b><small id="track-credit">1 / 2 · Flehmann</small></div><span id="time">0:00 / 3:53</span><button id="help" class="secondary" aria-haspopup="dialog">操作</button><button id="pause" class="secondary">一時停止</button><button id="quit" class="secondary">終了</button></div>
     <div class="scoreboard"><div>RHYTHM SCORE<strong id="rhythm-score">0</strong></div><div>RHYTHM COMBO<strong id="rhythm-combo">0</strong></div><div>QUIZ SCORE<strong id="quiz-score">0</strong></div><div>一発正解 COMBO<strong id="quiz-combo">0</strong></div></div>
     <div id="play-stage" class="play-stage"><div id="question-slot"></div><div id="question-panel" class="question-panel"><div class="question-meta"><span id="question-number"></span></div><p id="blank-instruction" class="blank-instruction" hidden></p><p id="question-task" class="question-task"></p><p id="question-context" class="question-context"></p><h2 id="prompt">まずはリズムにのろう</h2><div id="kanji-puzzle" class="kanji-puzzle" hidden aria-label="左の部品を選ぶ漢字"><span id="kanji-part" class="kanji-part"></span><span id="kanji-fixed"></span></div><p id="instruction" role="status" aria-live="polite"></p><div id="choices" class="choices"></div><p id="explanation"></p></div>
-    <div id="field" class="field" aria-label="4レーンのタップエリア"><canvas id="canvas"></canvas><div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite" hidden><strong id="quiz-symbol"></strong><span id="quiz-result-label"></span><span id="quiz-streak" class="quiz-streak" hidden></span></div><div id="tap-judgment" class="tap-judgment" role="status" aria-live="polite" hidden></div><div id="rhythm-streak" class="rhythm-streak" hidden><strong id="streak-count"></strong><span>COMBO</span></div><div id="pause-overlay" hidden>一時停止中<span>再開ボタンで続けよう</span></div></div>
+    <div id="field" class="field" aria-label="4レーンのタップエリア"><canvas id="canvas"></canvas><div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite" hidden><strong id="quiz-symbol"></strong><span id="quiz-result-label"></span></div><div id="tap-judgment" class="tap-judgment" role="status" aria-live="polite" hidden></div><div id="streak-pair" class="streak-pair" hidden><div id="rhythm-streak" class="rhythm-streak" hidden><strong id="streak-count"></strong><span>COMBO</span></div><div id="quiz-streak" class="quiz-streak" hidden><span>正解</span><strong id="quiz-streak-count"></strong><span>COMBO</span></div></div><div id="pause-overlay" hidden>一時停止中<span>再開ボタンで続けよう</span></div></div>
     </div>
     <div class="lane-keys" aria-label="タップ操作"><button data-lane="0" aria-label="左から1番目のレーン"></button><button data-lane="1" aria-label="左から2番目のレーン"></button><button data-lane="2" aria-label="左から3番目のレーン"></button><button data-lane="3" aria-label="左から4番目のレーン"></button></div>
     <p class="play-hint">白も色も、そのレーンでタップ。選ばない色は見送ってOK。</p>
@@ -31,6 +44,7 @@
   <section id="result" class="result" hidden><span class="eyebrow">SESSION COMPLETE</span><h1>今日のビートを、<br><span>記憶に。</span></h1><p id="result-reason"></p><div id="result-stats" class="result-stats"></div><h2>今回の学習記録</h2><ul id="review"></ul><button id="again" class="primary">もう一度プレイ</button><button id="back" class="secondary">ホームへ</button></section>
   <footer>STUDY BEAT <span>リズムで覚える、小さな積み重ね。</span></footer>
 </main>
-<dialog id="controls-help" aria-labelledby="controls-title"><h2 id="controls-title">操作方法</h2><p>流れてきたノーツのレーン、または画面下の大きなボタンをタイミングよくタップします。</p><p>回答は、答えの色だけを3回タップ。</p><h3>パソコンの場合</h3><p>左から <kbd>D</kbd>・<kbd>F</kbd>・<kbd>G</kbd>・<kbd>H</kbd> キーでタップ。<kbd>Space</kbd> キーで一時停止・再開できます。</p><button id="close-help" class="primary">閉じる</button></dialog>
-<audio id="audio" preload="auto"></audio><script type="module" src="app.js?v=0.14.0"></script>
+<dialog id="learning-settings" aria-labelledby="learning-settings-title"><h2 id="learning-settings-title">学習設定</h2><label>学校区分<select id="school-setting"><option value="中学">中学</option><option value="高校">高校</option></select></label><p>学校ごとの選択範囲を、このブラウザに保存します。</p><button id="close-learning-settings" class="primary">閉じる</button></dialog>
+<dialog id="controls-help" aria-labelledby="controls-title"><h2 id="controls-title">操作方法</h2><p>流れてきたノーツのレーン、または画面下の大きなボタンをタイミングよくタップします。</p><p>回答は、答えの色だけを3回タップ。手元の「正解 COMBO」は一発正解の連続回数です。</p><h3>パソコンの場合</h3><p>左から <kbd>D</kbd>・<kbd>F</kbd>・<kbd>G</kbd>・<kbd>H</kbd> キーでタップ。<kbd>Space</kbd> キーで一時停止・再開できます。</p><button id="close-help" class="primary">閉じる</button></dialog>
+<audio id="audio" preload="auto"></audio><script type="module" src="app.js?v=0.15.0"></script>
 </body></html>

@@ -1,10 +1,13 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.14.0';
-const VERSION = '0.14.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.15.0';
+import { buildCatalog, normalizePreferences, selectQuestions } from './learning.js?v=0.15.0';
+const VERSION = '0.15.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let questionKey = '';
 let characters = [], choiceElements = [];
+let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
+try { savedLearning = JSON.parse(localStorage.getItem('study-beat-learning-v1') || 'null'); } catch { /* Use the first-run school selector. */ }
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 try { $('offset').value = localStorage.getItem('study-beat-offset-ms') || '0'; } catch { /* Private browsing may disable storage. */ }
 $('offset').addEventListener('change', () => {
@@ -14,6 +17,88 @@ $('offset').addEventListener('change', () => {
 const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; if (next === 'home') checkForUpdate(); };
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(`${path}?v=${VERSION}`); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
+const selection = () => preferences?.profiles[preferences.school];
+const selectedQuestions = () => dataReady ? selectQuestions(questions, preferences.school, selection(), catalog) : [];
+function saveLearning() {
+  try { localStorage.setItem('study-beat-learning-v1', JSON.stringify(preferences)); }
+  catch { $('learning-storage-note').hidden = false; }
+}
+function refreshStart() {
+  const count = selectedQuestions().length;
+  $('start').disabled = busy || !count;
+  $('start').textContent = count ? 'プレイをはじめる →' : !preferences?.school ? '学校を選んでください' : selection() ? '単元を選んでください' : '学ぶ範囲を選んでください';
+}
+function setSchool(school) {
+  if (!dataReady) return;
+  preferences.school = school;
+  activeSubject = catalog.find(course => course.id === selection()?.id)?.subject || '';
+  saveLearning(); renderLearning();
+}
+function renderLearning() {
+  const school = preferences.school;
+  $('school-onboarding').hidden = !!school; $('study-menu').hidden = !school;
+  if (!school) { refreshStart(); return; }
+  $('school-label').textContent = school; $('school-setting').value = school;
+  const courses = catalog.filter(course => course.school === school);
+  const subjects = [...new Set(courses.map(course => course.subject))];
+  if (!subjects.includes(activeSubject)) activeSubject = courses.find(course => course.count)?.subject || subjects[0];
+  $('subject-list').replaceChildren();
+  for (const subject of subjects) {
+    const button = document.createElement('button'); button.type = 'button'; button.textContent = subject;
+    button.setAttribute('aria-pressed', String(subject === activeSubject));
+    button.addEventListener('click', () => {
+      if (activeSubject !== subject) { activeSubject = subject; preferences.profiles[school] = null; saveLearning(); }
+      renderLearning();
+    });
+    $('subject-list').append(button);
+  }
+  $('course-list').replaceChildren();
+  for (const course of courses.filter(course => course.subject === activeSubject)) {
+    const button = document.createElement('button'); button.type = 'button'; button.dataset.course = course.id;
+    button.disabled = !course.count; button.setAttribute('aria-pressed', String(course.id === selection()?.id));
+    const title = document.createElement('strong'); title.textContent = course.label;
+    const detail = document.createElement('span'); detail.textContent = course.count ? `${course.count}件${course.year === 'exam' ? ` · 収録 ${course.grades.join('・')}` : ''}` : '準備中';
+    button.append(title, detail);
+    button.addEventListener('click', () => {
+      if (selection()?.id !== course.id) { preferences.profiles[school] = { id: course.id, sections: null }; saveLearning(); }
+      renderLearning();
+    });
+    $('course-list').append(button);
+  }
+  const entry = selection(), course = courses.find(course => course.id === entry?.id);
+  $('selected-course').hidden = !course;
+  const count = selectedQuestions().length;
+  if (course) {
+    $('selected-course-title').textContent = `${course.label}を出題`;
+    const fields = [...new Set(questions.filter(item => course.ids.includes(item.id)).map(item => item.field))];
+    $('course-coverage').textContent = `現在の収録：${course.grades.join('・')}／${fields.join('・')} · ${course.count}項目${course.year === 'exam' ? '（未収録の学年・分野は含みません）' : ''}`;
+    const selected = entry.sections === null ? course.sections.map(section => section.key) : entry.sections;
+    $('section-summary').textContent = selected.length === course.sections.length ? '（すべて）' : `（${selected.length} / ${course.sections.length}）`;
+    $('all-sections').checked = selected.length === course.sections.length;
+    $('all-sections').indeterminate = selected.length > 0 && selected.length < course.sections.length;
+    $('section-list').replaceChildren();
+    for (const section of course.sections) {
+      const label = document.createElement('label'); label.className = 'section-option';
+      const input = document.createElement('input'); input.type = 'checkbox'; input.checked = selected.includes(section.key); input.dataset.section = section.key;
+      input.addEventListener('change', () => {
+        const keys = new Set(entry.sections === null ? course.sections.map(part => part.key) : entry.sections);
+        input.checked ? keys.add(section.key) : keys.delete(section.key);
+        entry.sections = keys.size === course.sections.length ? null : [...keys]; saveLearning(); renderLearning();
+      });
+      const text = document.createElement('span'); text.textContent = `${section.label}（${section.count}件）`;
+      label.append(input, text); $('section-list').append(label);
+    }
+  }
+  $('selection-status').textContent = course ? count ? `選択範囲：${count}項目から出題します。` : '単元を1つ以上選んでください。'
+    : !courses.some(course => course.count) ? `${school}の問題は準備中です。設定から学校を変更できます。`
+    : courses.some(course => course.subject === activeSubject && course.count) ? '学年または受験用を選んでください。' : `${activeSubject}の問題は準備中です。ほかの教科を選んでください。`;
+  refreshStart();
+}
+$('all-sections').addEventListener('change', () => { selection().sections = $('all-sections').checked ? null : []; saveLearning(); renderLearning(); });
+document.querySelectorAll('[data-school]').forEach(button => button.addEventListener('click', () => setSchool(button.dataset.school)));
+$('open-learning-settings').addEventListener('click', () => $('learning-settings').showModal());
+$('close-learning-settings').addEventListener('click', () => $('learning-settings').close());
+$('school-setting').addEventListener('change', () => setSchool($('school-setting').value));
 const playbackTime = () => track.start + audio.currentTime;
 function selectTrack(index) {
   trackIndex = index; track = playlist.tracks[index];
@@ -29,18 +114,23 @@ async function load() {
     playlist = makePlaylist(entries);
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
     selectTrack(0);
-    $('start').disabled = false; $('start').textContent = 'プレイをはじめる →';
+    catalog = buildCatalog(questions); preferences = normalizePreferences(savedLearning, catalog);
+    activeSubject = catalog.find(course => course.id === selection()?.id)?.subject || '';
+    dataReady = true; document.querySelectorAll('[data-school]').forEach(button => { button.disabled = false; });
+    renderLearning();
   } catch (error) { $('load-status').textContent = `データの読み込みに失敗しました。ページを再読み込みしてください。 (${error.message})`; }
 }
 async function start() {
-  if (busy) return; busy = true; $('start').disabled = true;
+  if (busy) return;
+  const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
+  busy = true; $('start').disabled = true;
   cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
-  game = new Game(questions, playlist.events, offsetMs / 1000, Math.random, playlist.duration);
+  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration);
   history = []; questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
-  finally { busy = false; $('start').disabled = false; $('pause').disabled = false; }
+  finally { busy = false; refreshStart(); $('pause').disabled = false; }
 }
 function appendCharacters(element, text, start, segments = [{ text }]) {
   element.replaceChildren(); element.setAttribute('aria-label', text);
@@ -161,8 +251,10 @@ function render() {
   const rhythmPulse = reducedMotion.matches ? 0 : Math.max(0, 1 - (game.time - game.judgmentTime) / 0.35);
   rhythmStreak.style.setProperty('--pulse', rhythmPulse);
   const quizStreak = $('quiz-streak');
-  quizStreak.hidden = !resultVisible || !result.correct || !game.firstTry || game.quizCombo < 2;
-  quizStreak.textContent = `${game.quizCombo} 一発正解 COMBO`;
+  quizStreak.hidden = game.quizCombo < 2;
+  $('quiz-streak-count').textContent = game.quizCombo;
+  $('streak-pair').hidden = game.combo < 2 && game.quizCombo < 2;
+  $('streak-pair').classList.toggle('paired', game.combo >= 2 && game.quizCombo >= 2);
   const quizPulse = reducedMotion.matches || !result ? 0 : Math.max(0, 1 - (game.time - result.time) / 0.6);
   quizStreak.style.setProperty('--pulse', quizPulse);
 }
