@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.19.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.19.0';
-const VERSION = '0.19.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.19.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.19.1';
+const VERSION = '0.19.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -14,43 +14,94 @@ $('offset').addEventListener('change', () => {
   $('offset').value = Math.max(-500, Math.min(500, Number($('offset').value) || 0));
   try { localStorage.setItem('study-beat-offset-ms', $('offset').value); } catch { /* Play remains available. */ }
 });
-// A short, quiet synthesized woodblock; independent of the song clock.
-let tapAudio, tapSoundEnabled = true;
-try { tapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off'; } catch {}
+// Short percussion with a clear attack, independent of the song clock.
+let tapAudio, tapNoise, tapSoundEnabled = true, tapVolume = 55;
+try {
+  tapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off';
+  const saved = localStorage.getItem('study-beat-tap-volume');
+  if (saved !== null && Number.isFinite(Number(saved))) tapVolume = Math.max(0, Math.min(100, Number(saved)));
+} catch {}
+function soundStatus(message) {
+  for (const prefix of ['', 'help-']) $(`${prefix}tap-audio-status`).textContent = message;
+}
 for (const id of ['tap-sound', 'help-tap-sound']) {
   $(id).checked = tapSoundEnabled;
   $(id).addEventListener('change', () => {
     tapSoundEnabled = $(id).checked;
     for (const other of ['tap-sound', 'help-tap-sound']) $(other).checked = tapSoundEnabled;
     try { localStorage.setItem('study-beat-tap-sound', tapSoundEnabled ? 'on' : 'off'); } catch {}
-    if (tapSoundEnabled) prepareTapAudio();
+    soundStatus(tapSoundEnabled ? '' : 'タップ音はオフです');
+    if (tapSoundEnabled) prepareTapAudio()?.catch(() => {});
   });
 }
+for (const prefix of ['', 'help-']) {
+  const slider = $(`${prefix}tap-volume`);
+  slider.value = tapVolume; $(`${prefix}tap-volume-value`).value = `${tapVolume}%`;
+  slider.addEventListener('input', () => {
+    tapVolume = Number(slider.value);
+    for (const other of ['', 'help-']) {
+      $(`${other}tap-volume`).value = tapVolume;
+      $(`${other}tap-volume-value`).value = `${tapVolume}%`;
+    }
+    try { localStorage.setItem('study-beat-tap-volume', String(tapVolume)); } catch {}
+  });
+  $(`${prefix}tap-preview`).addEventListener('click', () => playTapSound(true));
+}
 function prepareTapAudio() {
-  if (!tapSoundEnabled) return;
+  if (!tapSoundEnabled) return null;
+  try {
+    // On supported iOS versions use the same playback category as the music.
+    if (navigator.audioSession) navigator.audioSession.type = 'playback';
+  } catch { /* Not supported on every browser. */ }
   try {
     const Context = window.AudioContext || window.webkitAudioContext;
-    if (!Context) return;
-    tapAudio ||= new Context({ latencyHint: 'interactive' });
-    if (tapAudio.state === 'suspended') tapAudio.resume().catch(() => {});
-  } catch { /* Sound is optional. */ }
+    if (!Context) { soundStatus('このブラウザではタップ音を再生できません'); return null; }
+    if (!tapAudio || tapAudio.state === 'closed') { tapAudio = new Context({ latencyHint: 'interactive' }); tapNoise = null; }
+    // Safari may report interrupted after another audio session or backgrounding.
+    return tapAudio.state !== 'running' ? tapAudio.resume() : Promise.resolve();
+  } catch { soundStatus('タップ音を再生できません。試聴をもう一度押してください'); return null; }
 }
-function playTapSound() {
-  prepareTapAudio();
-  if (!tapSoundEnabled || tapAudio?.state !== 'running') return;
-  try {
-    const t = tapAudio.currentTime, oscillator = tapAudio.createOscillator(), gain = tapAudio.createGain();
-    oscillator.type = 'sine';
-    oscillator.frequency.setValueAtTime(720, t);
-    oscillator.frequency.exponentialRampToValueAtTime(230, t + .045);
-    gain.gain.setValueAtTime(.0001, t);
-    gain.gain.exponentialRampToValueAtTime(.055, t + .002);
-    gain.gain.exponentialRampToValueAtTime(.0001, t + .055);
-    oscillator.connect(gain); gain.connect(tapAudio.destination);
-    oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); };
-    oscillator.start(t); oscillator.stop(t + .06);
-  } catch { /* Sound must never interrupt scoring. */ }
+function emitTapSound() {
+  const t = tapAudio.currentTime, gain = tapAudio.createGain(), tone = tapAudio.createOscillator();
+  gain.gain.setValueAtTime(tapVolume / 100 * .4, t); gain.connect(tapAudio.destination);
+  const envelope = tapAudio.createGain();
+  envelope.gain.setValueAtTime(.0001, t);
+  envelope.gain.exponentialRampToValueAtTime(.8, t + .002);
+  envelope.gain.exponentialRampToValueAtTime(.0001, t + .085);
+  tone.type = 'triangle'; tone.frequency.setValueAtTime(1100, t);
+  tone.frequency.exponentialRampToValueAtTime(480, t + .055);
+  tone.connect(envelope); envelope.connect(gain);
+  if (!tapNoise) {
+    tapNoise = tapAudio.createBuffer(1, Math.ceil(tapAudio.sampleRate * .04), tapAudio.sampleRate);
+    const data = tapNoise.getChannelData(0);
+    for (let i = 0; i < data.length; i++) data[i] = (Math.random() * 2 - 1) * .3 * (1 - i / data.length) ** 2;
+  }
+  const noise = tapAudio.createBufferSource(), filter = tapAudio.createBiquadFilter();
+  noise.buffer = tapNoise; filter.type = 'highpass'; filter.frequency.value = 1400;
+  noise.connect(filter); filter.connect(gain);
+  noise.onended = () => { noise.disconnect(); filter.disconnect(); };
+  tone.onended = () => { tone.disconnect(); envelope.disconnect(); gain.disconnect(); };
+  noise.start(t); tone.start(t); tone.stop(t + .09);
 }
+function playTapSound(preview = false) {
+  if (!tapSoundEnabled) { if (preview) soundStatus('タップ音をオンにして試聴してください'); return; }
+  if (!tapVolume) { if (preview) soundStatus('タップ音量を上げて試聴してください'); return; }
+  const requested = performance.now();
+  const play = () => {
+    if (!tapSoundEnabled || !tapVolume) return;
+    if (tapAudio?.state !== 'running') { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); return; }
+    if (!preview && (performance.now() - requested > 100 || screen !== 'play' || audio.paused || !['intro','answer','rhythm','outro'].includes(game.phase))) return;
+    try { emitTapSound(); if (preview) soundStatus('試聴しました'); }
+    catch { soundStatus('タップ音を再生できません。もう一度試聴してください'); }
+  };
+  const ready = prepareTapAudio();
+  if (tapAudio?.state === 'running') { ready?.catch(() => {}); play(); }
+  else ready?.then(play).catch(() => { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); });
+}
+// A touch-end gesture also unlocks audio on browsers that restrict pointer-down.
+document.addEventListener('touchend', () => {
+  if (screen === 'play') prepareTapAudio()?.catch(() => {});
+}, { passive: true });
 const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; if (next === 'home') checkForUpdate(); };
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(`${path}?v=${VERSION}`); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
@@ -175,7 +226,7 @@ async function load() {
 async function start() {
   if (busy) return;
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
-  prepareTapAudio();
+  prepareTapAudio()?.catch(() => {});
   busy = true; $('start').disabled = true;
   cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
@@ -385,7 +436,7 @@ function pause() {
 async function togglePause() {
   if (busy || screen !== 'play') return;
   if (!audio.paused) { pause(); return; }
-  prepareTapAudio();
+  prepareTapAudio()?.catch(() => {});
   busy = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { game.message = '再生できませんでした。再開を押して再試行してください。'; render(); }
