@@ -6,7 +6,7 @@ const read=path=>JSON.parse(readFileSync(new URL('../'+path,import.meta.url)));
 const japanese=read('quiz-data/junior_japanese.json');
 const all=[...read('quiz-data/junior_science.json'),...read('quiz-data/junior_english.json'),...japanese];
 test('Japanese initial set includes all requested forms with four unique choices',()=>{
- assert.equal(japanese.length,38);const generated=japanese.flatMap(q=>makeJapaneseQuestions(q));assert.equal(generated.length,76);
+ assert.equal(japanese.length,38);const generated=japanese.flatMap(q=>makeJapaneseQuestions(q));assert.equal(generated.length,93);
  assert.equal(new Set(all.map(q=>q.id)).size,159);
  for(const q of generated){assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);assert.equal(q.choices[q.correct],q.answer);assert.ok(q.sourceId);assert.ok(!q.prompt.includes('{{'));}
  for(const field of ['現代文文法','古文文法','漢文文法']){
@@ -15,23 +15,33 @@ test('Japanese initial set includes all requested forms with four unique choices
  }
  for(const item of japanese.filter(q=>q.kind==='idiom'))assert.deepEqual(new Set(makeJapaneseQuestions(item).map(q=>q.mode)),new Set(['japanese_definition','japanese_term']));
 });
-test('kanji writing uses glyphs and partial diagrams without showing the completed answer',()=>{
+test('kanji writing asks every glyph in order without revealing the remaining pieces',()=>{
  for(const item of japanese.filter(q=>q.kind==='kanji')){
-  const [reading,writing]=makeJapaneseQuestions(item);
+  const [reading,...writing]=makeJapaneseQuestions(item);
   assert.equal(reading.answer,item.reading);assert.ok(reading.prompt.includes(item.word));
-  assert.equal(writing.mode,'kanji_component');assert.equal(writing.answer,item.component);assert.equal(writing.diagram.fixed,item.fixed_component);
-  assert.ok(writing.choices.every(c=>Array.from(c).length===1));
-  assert.ok(!writing.prompt.includes(item.character));assert.ok(!writing.task.includes(item.character));assert.ok(writing.note.includes(item.character));
+  assert.equal(writing.length,item.writing_parts.length);
+  for(const [i,q] of writing.entries()){
+   assert.equal(q.mode,'kanji_component');assert.equal(q.answer,item.writing_parts[i].answer);
+   assert.equal(q.blankPosition,i+1);assert.equal(q.blankTotal,writing.length);assert.equal(q.continuation,i>0);
+   assert.ok(q.choices.every(c=>Array.from(c).length===1));assert.equal(q.diagram.parts.filter(p=>p.state==='active').length,1);
+   assert.ok(!q.prompt.includes(item.character));assert.ok(!q.task.includes(item.character));
+   if(i<writing.length-1)assert.equal(q.note,'');else assert.ok(q.note.includes(item.character));
+   for(const [j,part] of q.diagram.parts.entries()){
+    assert.equal(part.state,j<i?'solved':j===i?'active':'pending');
+    const [x,y,w,h]=part.box;assert.ok(x>=0&&y>=0&&w>0&&h>0&&x+w<=100&&y+h<=100);
+   }
+  }
  }
  const shokei=japanese.find(q=>q.word==='憧憬');assert.ok(!shokei.reading_dummies.includes('どうけい'));
+ assert.deepEqual(makeJapaneseQuestions(shokei).slice(1).map(q=>q.answer),['忄','立','里']);
 });
 test('50 shuffled full queues space same-source variants across subjects and at the cycle boundary',()=>{
  for(let seed=1;seed<=50;seed++){
   let state=seed;const random=()=>((state=(state*1664525+1013904223)>>>0)/4294967296);
-  const queue=makeQuestionQueue(all,random);assert.equal(queue.length,409);
+  const queue=makeQuestionQueue(all,random);assert.equal(queue.length,426);
   const units=[];
   for(const [i,q] of queue.entries()){
-   if(q.continuation){assert.ok(['spelling','term_to_explanation'].includes(q.mode));assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(q.blankPosition,queue[i-1].blankPosition+1);continue;}
+   if(q.continuation){assert.ok(['spelling','term_to_explanation','kanji_component'].includes(q.mode));assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(q.blankPosition,queue[i-1].blankPosition+1);continue;}
    units.push(q);
   }
   for(let i=0;i<units.length;i++)for(let gap=1;gap<=3;gap++)assert.notEqual(units[i].sourceId,units[(i+gap)%units.length].sourceId,`seed ${seed}, ${i}, gap ${gap}`);
@@ -55,6 +65,20 @@ test('a three-blank grammar explanation stays together, retries errors, and comp
   for(let n=0;n<3;n++)hit(g.question.correct);
   assert.equal(g.phase,'feedback');now+=RULES.feedbackSeconds;g.update(now);
   if(stage<3){assert.equal(g.question.blankPosition,stage+1);assert.equal(g.reveal.continuation,true);assert.equal(g.reveal.duration,RULES.readHoldSeconds);}
+ }
+ assert.notEqual(g.question.sourceId,item.id);assert.equal(g.correctCount,3);
+});
+
+test('kanji stages stay together through retries and only finish after the final component',()=>{
+ const item=japanese.find(q=>q.character==='憧'),g=new Game([item,...japanese.filter(q=>q.kind==='idiom')],[],0,()=>.5);
+ g.questionIndex=g.questions.findIndex(q=>q.sourceId===item.id&&q.mode==='kanji_component');let now=0;
+ for(let stage=1;stage<=3;stage++){
+  assert.equal(g.question.sourceId,item.id);assert.equal(g.question.blankPosition,stage);g.changePhase('answer',now);
+  const hit=color=>{now+=1;g.notes.push({target:now,lane:color,color});g.tap(color,now);};
+  if(stage===2){for(let n=0;n<3;n++)hit((g.question.correct+1)%4);assert.equal(g.question.blankPosition,2);assert.equal(g.phase,'answer');}
+  for(let n=0;n<3;n++)hit(g.question.correct);assert.equal(g.phase,'feedback');
+  now+=RULES.feedbackSeconds;g.update(now);
+  if(stage<3){assert.equal(g.reveal.continuation,true);assert.equal(g.question.blankPosition,stage+1);}
  }
  assert.notEqual(g.question.sourceId,item.id);assert.equal(g.correctCount,3);
 });

@@ -43,8 +43,8 @@ test('Japanese and English menus include every requested type with all as a dist
  assert.deepEqual(practiceTypes('英語').map(t=>t.label),['単語和英','単語英和','単語綴り','熟語和英','熟語英和','全て']);
 });
 test('Japanese practice filters remove the other kanji direction and keep both grammar and idiom directions',()=>{
- const specs=[['kanji_write',12,['kanji_component']],['kanji_read',12,['kanji_reading']],['idiom',16,['japanese_term','japanese_definition']],
- ['modern',12,['explanation_to_term','term_to_explanation']],['classical',12,['explanation_to_term','term_to_explanation']],['kanbun',12,['explanation_to_term','term_to_explanation']],['all',76,null]];
+ const specs=[['kanji_write',29,['kanji_component']],['kanji_read',12,['kanji_reading']],['idiom',16,['japanese_term','japanese_definition']],
+ ['modern',12,['explanation_to_term','term_to_explanation']],['classical',12,['explanation_to_term','term_to_explanation']],['kanbun',12,['explanation_to_term','term_to_explanation']],['all',93,null]];
  for(const [type,count,modes] of specs){const queue=practiceQueue('中学:国語:3',type);assert.equal(queue.length,count);assert.ok(queue.every(q=>matchesPracticeQuestion(q,type)));if(modes)assert.deepEqual(new Set(queue.map(q=>q.mode)),new Set(modes));}
  assert.ok(practiceQueue('中学:国語:3','modern').every(q=>q.field==='現代文文法'));
  assert.ok(practiceQueue('中学:国語:3','classical').every(q=>q.field==='古文文法'));

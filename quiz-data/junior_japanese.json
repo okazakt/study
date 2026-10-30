@@ -17,14 +17,54 @@
     ],
     "sentence": "美しい景色に憧憬を抱く。",
     "writing_hint": "美しい景色への「しょうけい」。最初の漢字",
-    "component": "忄",
-    "component_dummies": [
-      "氵",
-      "扌",
-      "亻"
-    ],
-    "fixed_component": "童",
-    "note": "憧憬（しょうけい）。憧の左側は「忄」。"
+    "note": "憧憬（しょうけい）。憧の部品は「忄・立・里」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "忄",
+        "dummies": [
+          "氵",
+          "扌",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "立",
+        "dummies": [
+          "亠",
+          "音",
+          "辛"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "里",
+        "dummies": [
+          "田",
+          "重",
+          "由"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_002",
@@ -44,14 +84,54 @@
     ],
     "sentence": "慎重に判断する。",
     "writing_hint": "「しんちょう」に判断する。最初の漢字",
-    "component": "忄",
-    "component_dummies": [
-      "氵",
-      "扌",
-      "亻"
-    ],
-    "fixed_component": "真",
-    "note": "慎重（しんちょう）。慎の左側は「忄」。"
+    "note": "慎重（しんちょう）。慎の部品は「忄・十・具」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "忄",
+        "dummies": [
+          "氵",
+          "扌",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "十",
+        "dummies": [
+          "干",
+          "土",
+          "千"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          35
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "具",
+        "dummies": [
+          "貝",
+          "見",
+          "直"
+        ],
+        "box": [
+          40,
+          35,
+          60,
+          65
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_003",
@@ -71,14 +151,39 @@
     ],
     "sentence": "現状を慨嘆する。",
     "writing_hint": "現状を「がいたん」する。最初の漢字",
-    "component": "忄",
-    "component_dummies": [
-      "氵",
-      "扌",
-      "亻"
-    ],
-    "fixed_component": "既",
-    "note": "慨嘆（がいたん）。慨の左側は「忄」。"
+    "note": "慨嘆（がいたん）。慨の部品は「忄・既」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "忄",
+        "dummies": [
+          "氵",
+          "扌",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "既",
+        "dummies": [
+          "即",
+          "良",
+          "艮"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_004",
@@ -98,14 +203,54 @@
     ],
     "sentence": "船が海を漂流する。",
     "writing_hint": "船が海を「ひょうりゅう」する。最初の漢字",
-    "component": "氵",
-    "component_dummies": [
-      "冫",
-      "忄",
-      "扌"
-    ],
-    "fixed_component": "票",
-    "note": "漂流（ひょうりゅう）。漂の左側は「氵」。"
+    "note": "漂流（ひょうりゅう）。漂の部品は「氵・覀・示」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "氵",
+        "dummies": [
+          "冫",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "覀",
+        "dummies": [
+          "西",
+          "罒",
+          "酉"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          45
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "示",
+        "dummies": [
+          "木",
+          "禾",
+          "未"
+        ],
+        "box": [
+          40,
+          45,
+          60,
+          55
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_005",
@@ -125,14 +270,39 @@
     ],
     "sentence": "京都に滞在する。",
     "writing_hint": "京都に「たいざい」する。最初の漢字",
-    "component": "氵",
-    "component_dummies": [
-      "冫",
-      "忄",
-      "扌"
-    ],
-    "fixed_component": "帯",
-    "note": "滞在（たいざい）。滞の左側は「氵」。"
+    "note": "滞在（たいざい）。滞の部品は「氵・帯」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "氵",
+        "dummies": [
+          "冫",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "帯",
+        "dummies": [
+          "帝",
+          "常",
+          "帚"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_006",
@@ -152,14 +322,39 @@
     ],
     "sentence": "強い風に抵抗する。",
     "writing_hint": "強い風に「ていこう」する。最初の漢字",
-    "component": "扌",
-    "component_dummies": [
-      "忄",
-      "氵",
-      "亻"
-    ],
-    "fixed_component": "氐",
-    "note": "抵抗（ていこう）。抵の左側は「扌」。"
+    "note": "抵抗（ていこう）。抵の部品は「扌・氐」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "扌",
+        "dummies": [
+          "忄",
+          "氵",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "氐",
+        "dummies": [
+          "氏",
+          "底",
+          "互"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_007",
@@ -179,14 +374,39 @@
     ],
     "sentence": "弱い立場の人を擁護する。",
     "writing_hint": "弱い立場の人を「ようご」する。最初の漢字",
-    "component": "扌",
-    "component_dummies": [
-      "忄",
-      "氵",
-      "亻"
-    ],
-    "fixed_component": "雍",
-    "note": "擁護（ようご）。擁の左側は「扌」。"
+    "note": "擁護（ようご）。擁の部品は「扌・雍」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "扌",
+        "dummies": [
+          "忄",
+          "氵",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "雍",
+        "dummies": [
+          "隹",
+          "離",
+          "壅"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_008",
@@ -206,14 +426,54 @@
     ],
     "sentence": "卒業の儀式を行う。",
     "writing_hint": "卒業の「ぎしき」を行う。最初の漢字",
-    "component": "亻",
-    "component_dummies": [
-      "彳",
-      "忄",
-      "扌"
-    ],
-    "fixed_component": "義",
-    "note": "儀式（ぎしき）。儀の左側は「亻」。"
+    "note": "儀式（ぎしき）。儀の部品は「亻・羊・我」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "亻",
+        "dummies": [
+          "彳",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          35,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "羊",
+        "dummies": [
+          "美",
+          "半",
+          "米"
+        ],
+        "box": [
+          35,
+          0,
+          65,
+          45
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "我",
+        "dummies": [
+          "戈",
+          "找",
+          "伐"
+        ],
+        "box": [
+          35,
+          45,
+          65,
+          55
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_009",
@@ -233,14 +493,54 @@
     ],
     "sentence": "学習の基礎を固める。",
     "writing_hint": "学習の「きそ」を固める。二つ目の漢字",
-    "component": "石",
-    "component_dummies": [
-      "木",
-      "禾",
-      "礻"
-    ],
-    "fixed_component": "楚",
-    "note": "基礎（きそ）。礎の左側は「石」。"
+    "note": "基礎（きそ）。礎の部品は「石・林・疋」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "石",
+        "dummies": [
+          "木",
+          "禾",
+          "礻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "林",
+        "dummies": [
+          "森",
+          "木",
+          "禁"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          45
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "疋",
+        "dummies": [
+          "足",
+          "正",
+          "走"
+        ],
+        "box": [
+          40,
+          45,
+          60,
+          55
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_010",
@@ -260,14 +560,39 @@
     ],
     "sentence": "幼い子を優しく諭す。",
     "writing_hint": "幼い子を優しく「さとす」。最初の漢字",
-    "component": "言",
-    "component_dummies": [
-      "氵",
-      "忄",
-      "扌"
-    ],
-    "fixed_component": "俞",
-    "note": "諭す（さとす）。諭の左側は「言」。"
+    "note": "諭す（さとす）。諭の部品は「言・俞」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "言",
+        "dummies": [
+          "氵",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "俞",
+        "dummies": [
+          "合",
+          "余",
+          "前"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_011",
@@ -287,14 +612,39 @@
     ],
     "sentence": "不足を補う。",
     "writing_hint": "不足を「おぎなう」。最初の漢字",
-    "component": "衤",
-    "component_dummies": [
-      "礻",
-      "忄",
-      "扌"
-    ],
-    "fixed_component": "甫",
-    "note": "補う（おぎなう）。補の左側は「衤」。"
+    "note": "補う（おぎなう）。補の部品は「衤・甫」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "衤",
+        "dummies": [
+          "礻",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "甫",
+        "dummies": [
+          "用",
+          "甲",
+          "申"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_012",
@@ -314,14 +664,39 @@
     ],
     "sentence": "大きな損害を被る。",
     "writing_hint": "大きな損害を「こうむる」。最初の漢字",
-    "component": "衤",
-    "component_dummies": [
-      "礻",
-      "忄",
-      "扌"
-    ],
-    "fixed_component": "皮",
-    "note": "被る（こうむる）。被の左側は「衤」。"
+    "note": "被る（こうむる）。被の部品は「衤・皮」。",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "衤",
+        "dummies": [
+          "礻",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "皮",
+        "dummies": [
+          "支",
+          "波",
+          "彼"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ]
   },
   {
     "id": "jr_jp3_013",

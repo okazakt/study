@@ -54,7 +54,8 @@ export function makeQuestionQueue(items, random = Math.random, acceptQuestion = 
   const groups = ordered.map(item => {
     if (item.subject === '国語') {
       const questions = makeJapaneseQuestions(item, random);
-      return shuffle(item.kind === 'grammar' ? [questions.slice(0, -1), questions.slice(-1)] : questions.map(q => [q]), random);
+      return shuffle(item.kind === 'grammar' ? [questions.slice(0, -1), questions.slice(-1)]
+        : item.kind === 'kanji' ? [questions.slice(0, 1), questions.slice(1)] : questions.map(q => [q]), random);
     }
     if (item.english) return shuffle([[[makeEnglishQuestion(item, 'to_japanese', random)]], [[makeEnglishQuestion(item, 'to_english', random)]],
       item.phrase_blanks ? makePhraseQuestions(item, random).map(q => [q]) : [makeSpellingQuestions(item, random)]], random).flat();
@@ -78,9 +79,13 @@ export function makeJapaneseQuestions(item, random = Math.random) {
   };
   if (item.kind === 'kanji') return [
     question('kanji_reading', `「${item.word}」\n${item.sentence}`, item.reading, item.reading_dummies, 'かぎ括弧の語の読みを選ぼう'),
-    question('kanji_component', item.writing_hint, item.component, item.component_dummies, '？に入る字形を選んで漢字を完成させよう',
-      { diagram: { fixed: item.fixed_component, answer: item.component }, reviewLabel: `${item.writing_hint} · 字形`,
-        note: `完成：${item.character}。${item.note}` })
+    ...item.writing_parts.map((part, position) => question('kanji_component', item.writing_hint, part.answer, part.dummies, '部品を順に選ぼう',
+      { id: `${item.id}:kanji_component:${position + 1}`, blankIndex: position + 1, blankPosition: position + 1,
+        blankTotal: item.writing_parts.length, continuation: position > 0,
+        diagram: { parts: item.writing_parts.map((part, index) => ({ ...part, state: index < position ? 'solved' : index === position ? 'active' : 'pending' })) },
+        targetLabel: `強調された？（${part.position}）の字形を選択（${position + 1} / ${item.writing_parts.length}）`,
+        reviewLabel: `${item.writing_hint} · ${part.position}の字形（${position + 1} / ${item.writing_parts.length}）`,
+        note: position + 1 === item.writing_parts.length ? `完成：${item.character}。${item.note}` : '' }))
   ];
   if (item.kind === 'idiom') return [
     question('japanese_definition', item.term, item.definition, item.definition_dummies, 'この熟語の意味を選ぼう'),

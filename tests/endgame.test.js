@@ -49,3 +49,11 @@ test('fast play at 60 fps finishes the full playlist outside reading and answeri
   assert.equal(g.phase,'outro',`seed ${seed}`);assert.ok(g.correctCount>0);assert.equal(g.notes.length,0);
  }
 });
+test('kanji admission reserves every component through the completed glyph',()=>{
+ const item=read('quiz-data/junior_japanese.json').find(q=>q.character==='憧');
+ const g=new Game([item],playlist.events,0,()=>.5,playlist.duration,q=>q.mode==='kanji_component');
+ const start=8,ready=start+revealPlan(g.question).duration+RULES.travelSeconds;
+ const firstDone=g.events.filter(e=>e.target>=ready)[2].target+RULES.feedbackSeconds;
+ assert.ok(g.earliestCompletion(start)>firstDone+2*RULES.readHoldSeconds);
+ g.endTime=firstDone+.5;g.changePhase('read',start);assert.equal(g.phase,'outro');assert.equal(g.correctCount,0);
+});

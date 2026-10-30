@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.16.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.16.0';
-const VERSION = '0.16.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.17.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.17.0';
+const VERSION = '0.17.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -180,12 +180,22 @@ function renderQuestion() {
   $('blank-instruction').textContent = game.phase === 'feedback' ? `正解：${q.answer}` : q.targetLabel || '';
   const diagram = !intro && q.diagram;
   $('kanji-puzzle').hidden = !diagram;
-  $('kanji-puzzle').classList.toggle('completed', game.phase === 'feedback');
+  const completed = !!diagram && game.phase === 'feedback' && q.blankPosition === q.blankTotal;
+  $('kanji-puzzle').classList.toggle('completed', completed);
   if (diagram) {
-    $('kanji-part').hidden = game.phase === 'feedback';
-    $('kanji-part').textContent = '？';
-    $('kanji-fixed').textContent = game.phase === 'feedback' ? q.character : diagram.fixed;
-    $('kanji-puzzle').setAttribute('aria-label', game.phase === 'feedback' ? `完成：${q.character}` : `左が空欄、右の部品は${diagram.fixed}`);
+    $('kanji-puzzle').replaceChildren();
+    if (completed) $('kanji-puzzle').textContent = q.character;
+    else for (const part of diagram.parts) {
+      const solved = part.state === 'solved' || (part.state === 'active' && game.phase === 'feedback');
+      const piece = document.createElement('span'); piece.className = `kanji-piece ${solved ? 'solved' : part.state}`;
+      piece.dataset.position = part.position;
+      const [x,y,width,height] = part.box;
+      Object.assign(piece.style, {left:`calc(${x}% + 2px)`,top:`calc(${y}% + 2px)`,width:`calc(${width}% - 4px)`,height:`calc(${height}% - 4px)`});
+      const glyph = document.createElement('span'); glyph.textContent = solved ? part.answer : '？';
+      if (solved) { const size = height * 1.32 * 0.88; glyph.style.fontSize = `${size}px`; glyph.style.transform = `scaleX(${Math.min(1,width*1.44/size)})`; }
+      piece.append(glyph); $('kanji-puzzle').append(piece);
+    }
+    $('kanji-puzzle').setAttribute('aria-label', completed ? `完成：${q.character}` : `${q.targetLabel}。${diagram.parts.filter(part => part.state === 'solved').map(part => `${part.position}は${part.answer}`).join('、')}`);
   }
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
