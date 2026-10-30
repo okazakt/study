@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { Game, makeQuestion, RULES } from '../game.js';
+import { Game, makeQuestion, RULES, easyEvents, revealPlan } from '../game.js';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const questions = read('../quiz-data/junior_science.json');
 const track = read('../music-data/index.json')['0001'];
@@ -26,7 +26,7 @@ test('chart events use audio seconds and only the two extra offsets', () => {
   assert.ok(chart.events.every((e, i, all) => Number.isFinite(e.time) && e.time >= 0 && (!i || e.time >= all[i - 1].time)));
   assert.ok(chart.events.at(-1).time < track.durationSeconds);
   const g = new Game(questions, chart.events, .125);
-  assert.equal(g.events[0].target, chart.events[0].time + .125);
+  assert.equal(g.events[0].target, easyEvents(chart.events)[0].time + .125);
   for (const path of Object.values(track.files)) assert.ok(readFileSync(new URL(`../music-data/${path}`, import.meta.url)).length);
 });
 test('white notes accept every lane; perfect, good, misses and empty taps affect rhythm only', () => {
@@ -48,9 +48,10 @@ test('three correct color hits confirm one answer, with separate first-answer co
   assert.equal(g.phase,'feedback'); assert.equal(g.correctCount,1); assert.equal(g.quizScore,1000);
   assert.equal(g.quizCombo,1); assert.equal(g.combo,3);
   g.update(4 + RULES.feedbackSeconds); assert.equal(g.phase,'read'); assert.equal(g.questionIndex,1);
-  g.update(4 + RULES.feedbackSeconds + RULES.readSeconds); assert.equal(g.phase,'answer');
+  const answerStart = 4 + RULES.feedbackSeconds + g.reveal.duration;
+  g.update(answerStart); assert.equal(g.phase,'answer');
   const c2 = g.question.correct;
-  hit(g,c2,14); hit(g,c2,15); hit(g,c2,16);
+  hit(g,c2,answerStart+2); hit(g,c2,answerStart+3); hit(g,c2,answerStart+4);
   assert.equal(g.quizScore,2000); assert.equal(g.quizCombo,2); assert.equal(g.maxQuizCombo,2);
 });
 test('wrong answers keep the same question and colors, reset progress, and break only quiz combo', () => {
@@ -74,4 +75,29 @@ test('phase transitions discard stale notes without a penalty; finish forbids fu
   const g = fixture(); g.combo = 8; g.notes.push({target:8.1,color:null,lane:2}); g.update(RULES.introSeconds);
   assert.equal(g.phase,'read'); assert.equal(g.notes.length,0); assert.equal(g.combo,8);
   g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,0); assert.equal(g.phase,'ended');
+});
+
+test('easy chart has one first-beat note per bar, retaining timestamps and all four colors', () => {
+  const selected = easyEvents(chart.events);
+  assert.equal(selected.length,112);
+  assert.equal(new Set(selected.map(e => e.bar)).size,selected.length);
+  assert.ok(selected.every(e => e.beatInBar === 1 && e.beatPosition === 0 && chart.events.includes(e)));
+  const g = new Game(questions,chart.events);
+  assert.deepEqual(g.events.slice(0,4).map(e => e.color),[0,1,2,3]);
+  assert.deepEqual(g.events.map(e=>e.target),selected.map(e=>e.time));
+  assert.equal(easyEvents([selected[0],selected[0]]).length,1);
+});
+test('text and each choice finish in order before lifting, then colored notes may spawn', () => {
+  for (const q of questions) {
+    const plan = revealPlan(makeQuestion(q));
+    let previousEnd = plan.prompt.end;
+    for (const choice of plan.choices) { assert.ok(choice.start > previousEnd); previousEnd = choice.end; }
+    assert.ok(plan.liftStart > previousEnd); assert.equal(plan.duration,plan.liftStart+RULES.liftSeconds);
+  }
+  const g = new Game(questions,chart.events); g.changePhase('read',20);
+  const end = 20 + g.reveal.duration;
+  g.update(end-.01); assert.equal(g.phase,'read'); assert.ok(g.notes.every(n=>n.color===null));
+  const unchanged = JSON.stringify(g.notes); g.update(end-.01); assert.equal(JSON.stringify(g.notes),unchanged);
+  g.update(end); assert.equal(g.phase,'answer'); assert.deepEqual(g.notes,[]);
+  g.update(end+2); assert.ok(g.notes.every(n=>n.color!==null));
 });

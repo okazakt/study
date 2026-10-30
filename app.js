@@ -2,7 +2,9 @@ import { Game, RULES, COLORS } from './game.js';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, chart, track, game, frame, busy = false, history = [], screen = 'home';
-let cachedUI = '';
+let questionKey = '';
+let characters = [], choiceElements = [];
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 try { $('offset').value = localStorage.getItem('study-beat-offset-ms') || '0'; } catch { /* Private browsing may disable storage. */ }
 $('offset').addEventListener('change', () => {
   $('offset').value = Math.max(-500, Math.min(500, Number($('offset').value) || 0));
@@ -26,33 +28,66 @@ async function start() {
   cancelAnimationFrame(frame); audio.pause(); audio.currentTime = 0;
   const offsetMs = (track.timing.chartToAudioOffsetMs || 0) + (Number($('offset').value) || 0);
   game = new Game(questions, chart.events, offsetMs / 1000);
-  history = []; cachedUI = ''; show('play'); render(); draw(); $('pause').disabled = true;
+  history = []; questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
   finally { busy = false; $('start').disabled = false; $('pause').disabled = false; }
+}
+function appendCharacters(element, text, start) {
+  element.replaceChildren(); element.setAttribute('aria-label', text);
+  Array.from(text).forEach((character, index) => {
+    const span = document.createElement('span'); span.className = 'reveal-char';
+    span.textContent = character; span.setAttribute('aria-hidden', 'true'); element.append(span);
+    characters.push({ element: span, start: start + index * RULES.charSeconds });
+  });
+}
+function renderQuestion() {
+  const intro = game.phase === 'intro';
+  const key = `${intro}:${game.questionIndex}`;
+  if (key === questionKey) return;
+  questionKey = key; characters = []; choiceElements = []; $('choices').replaceChildren();
+  const q = game.question;
+  appendCharacters($('prompt'), intro ? 'まずはリズムにのろう' : q.prompt, game.reveal.prompt.start);
+  if (!intro) q.choices.forEach((choice, i) => {
+    const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
+    const symbol = document.createElement('span'); symbol.textContent = `${COLORS[i].symbol} `; symbol.setAttribute('aria-hidden', 'true'); el.append(symbol);
+    const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
+    const count = document.createElement('span'); count.className = 'count'; el.append(count);
+    choiceElements.push({ element: el, count, start: game.reveal.choices[i].start }); $('choices').append(el);
+  });
+}
+function positionQuestion(elapsed) {
+  const panel = $('question-panel');
+  // Reserve the final position, then place the same panel above the touch line.
+  $('question-slot').style.height = `${panel.offsetHeight}px`;
+  const stage = $('play-stage').getBoundingClientRect(), field = $('field').getBoundingClientRect();
+  const lower = Math.max(0, field.bottom - stage.top - 72 - panel.offsetHeight);
+  const progress = Math.max(0, Math.min(1, (elapsed - game.reveal.liftStart) / RULES.liftSeconds));
+  const ease = progress * progress * (3 - 2 * progress);
+  const lift = reducedMotion.matches ? (progress === 1 ? 1 : 0) : ease;
+  panel.style.transform = `translate3d(0,${game.phase === 'read' ? lower * (1 - lift) : 0}px,0)`;
 }
 function render() {
   $('rhythm-score').textContent = game.rhythmScore.toLocaleString(); $('rhythm-combo').textContent = game.combo;
   $('quiz-score').textContent = game.quizScore.toLocaleString(); $('quiz-combo').textContent = game.quizCombo;
   $('time').textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration || track.durationSeconds)}`;
-  const remaining = Math.max(0, Math.ceil(RULES.readSeconds - (game.time - game.phaseStart)));
-  const key = JSON.stringify([game.phase, game.questionIndex, game.counts, game.message, remaining]);
-  if (key === cachedUI) return; cachedUI = key;
-  const q = game.question;
-  $('phase-label').textContent = ({intro:'WARM UP',read:`READ · ${remaining}秒`,answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
+  renderQuestion();
+  const q = game.question, elapsed = game.time - game.phaseStart;
+  $('play').dataset.phase = game.phase;
+  $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
   $('question-number').textContent = game.phase === 'intro' ? '白ノーツはどこでもタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
-  $('prompt').textContent = game.phase === 'intro' ? 'まずはリズムにのろう' : q.prompt;
   $('instruction').textContent = game.message;
-  $('choices').replaceChildren();
-  if (game.phase !== 'intro') q.choices.forEach((choice, i) => {
-    const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
-    if (game.phase === 'feedback' && i === q.correct) el.classList.add('correct');
-    el.textContent = `${COLORS[i].symbol} ${COLORS[i].name} / ${choice}`;
-    const count = document.createElement('span'); count.className = 'count';
+  for (const character of characters) {
+    const opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
+    character.element.style.opacity = reducedMotion.matches ? Number(opacity > 0) : opacity;
+  }
+  choiceElements.forEach(({element, count, start}, i) => {
+    element.style.opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
+    element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
     count.textContent = '●'.repeat(game.counts[i]) + '○'.repeat(Math.max(0, RULES.tapsToAnswer - game.counts[i]));
-    el.append(count); $('choices').append(el);
   });
   $('explanation').textContent = game.phase === 'feedback' ? `${q.term}：${q.note}` : '';
+  positionQuestion(elapsed);
 }
 const canvas = $('canvas'); const ctx = canvas.getContext('2d');
 function draw() {
@@ -96,11 +131,15 @@ function tap(lane) {
   if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first });
   render(); draw();
 }
-$('field').addEventListener('pointerdown', event => {
-  event.preventDefault(); const bounds = canvas.getBoundingClientRect();
+$('play-stage').addEventListener('pointerdown', event => {
+  const bounds = canvas.getBoundingClientRect();
+  if (event.clientY < bounds.top || event.clientY > bounds.bottom) return;
+  event.preventDefault();
   tap(Math.max(0, Math.min(4, Math.floor((event.clientX - bounds.left) / bounds.width * RULES.lanes))));
 });
 document.querySelectorAll('[data-lane]').forEach(button => button.addEventListener('pointerdown', event => { event.preventDefault(); tap(Number(button.dataset.lane)); }));
+// Prevent selection handles, long-press callouts and drag gestures while playing.
+for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
 document.addEventListener('keydown', event => {
   if (screen !== 'play' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
   const lane = ['KeyD','KeyF','KeyG','KeyH','KeyJ'].indexOf(event.code);
@@ -139,8 +178,14 @@ $('back').addEventListener('click', () => show('home')); $('pause').addEventList
 $('quit').addEventListener('click', () => finish(false)); audio.addEventListener('ended', () => finish(true));
 audio.addEventListener('error', () => { if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
 document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
-window.addEventListener('resize', () => { if (screen === 'play') draw(); });
+window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } });
 if ('serviceWorker' in navigator) {
+  const hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController) return;
+    if (screen === 'home') location.reload();
+    else $('connection').textContent = '更新あり · 再読込で反映';
+  });
   navigator.serviceWorker.register('./sw.js').then(async registration => {
     if (registration.active) $('connection').textContent = 'PWA READY';
     const installing = registration.installing;

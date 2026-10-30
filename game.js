@@ -1,4 +1,5 @@
-export const RULES = Object.freeze({ lanes: 5, tapsToAnswer: 3, readSeconds: 6, introSeconds: 8,
+export const RULES = Object.freeze({ lanes: 5, tapsToAnswer: 3, introSeconds: 8,
+  charSeconds: 0.035, fadeSeconds: 0.2, choiceGapSeconds: 0.18, readHoldSeconds: 0.8, liftSeconds: 0.65,
   feedbackSeconds: 2.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
 export const COLORS = [
   { name: '赤', symbol: '●', value: '#ff7187' }, { name: '青', symbol: '◆', value: '#73b9ff' },
@@ -20,10 +21,31 @@ export function makeQuestion(item, random = Math.random) {
   const choices = shuffle([item.term, ...shuffle(dummies, random).slice(0, 3)], random);
   return { ...item, prompt: explanation, choices, correct: choices.indexOf(item.term) };
 }
+// Keep the original corrected timestamps; select just the first beat of each bar.
+export function easyEvents(events) {
+  const bars = new Set();
+  return events.filter(event => {
+    if (event.beatInBar !== 1 || event.beatPosition !== 0 || bars.has(event.bar)) return false;
+    bars.add(event.bar); return true;
+  });
+}
+export function revealPlan(question) {
+  let cursor = 0.2;
+  const segment = text => {
+    const start = cursor;
+    cursor += Math.max(0, Array.from(text).length - 1) * RULES.charSeconds + RULES.fadeSeconds;
+    return { start, end: cursor };
+  };
+  const prompt = segment(question.prompt);
+  const choices = question.choices.map(text => { cursor += RULES.choiceGapSeconds; return segment(text); });
+  const liftStart = cursor + RULES.readHoldSeconds;
+  return { prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + RULES.liftSeconds };
+}
 export class Game {
   constructor(questions, events, offsetSeconds = 0, random = Math.random) {
     this.questions = shuffle(questions, random).map(q => makeQuestion(q, random));
-    this.events = events.map((event, i) => ({ target: event.time + offsetSeconds, lane: i % RULES.lanes, color: i % 4, id: i }));
+    this.events = easyEvents(events).map((event, i) => ({ target: event.time + offsetSeconds, lane: i % RULES.lanes, color: i % 4, id: i }));
+    this.reveal = revealPlan(this.questions[0]);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
     this.rhythmScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
@@ -35,14 +57,14 @@ export class Game {
     this.phase = phase; this.phaseStart = now;
     // Phase-specific notes must never be interpreted as another question or color mode.
     this.notes = [];
-    if (phase === 'read') { this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '説明にあてはまる用語は？ まずは読もう'; }
+    if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '説明にあてはまる用語は？ 白ノーツはどこでもタップ'; }
     if (phase === 'answer') this.message = `答えの色を${RULES.tapsToAnswer}回タップ`;
   }
   update(now) {
     this.time = now;
     if (this.phase === 'ended') return;
     if (this.phase === 'intro' && now - this.phaseStart >= RULES.introSeconds) this.changePhase('read', now);
-    else if (this.phase === 'read' && now - this.phaseStart >= RULES.readSeconds) this.changePhase('answer', now);
+    else if (this.phase === 'read' && now - this.phaseStart >= this.reveal.duration) this.changePhase('answer', now);
     else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds) {
       this.questionIndex++; this.changePhase('read', now);
     }

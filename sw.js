@@ -1,8 +1,8 @@
-const CACHE = 'study-beat-v1';
+const CACHE = 'study-beat-v2';
 const ASSETS = ['./', './index.html', './style.css', './app.js', './game.js', './manifest.webmanifest',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './quiz-data/junior_science.json', './music-data/index.json',
   './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0001/Fallin_For_You.mp3'];
-self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
+self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS.map(url => new Request(url, { cache: 'reload' })))).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('study-beat-') && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
