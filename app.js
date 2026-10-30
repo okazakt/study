@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.20.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.20.0';
-const VERSION = '0.20.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.21.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.21.0';
+const VERSION = '0.21.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -46,6 +46,7 @@ for (const prefix of ['', 'help-']) {
     try { localStorage.setItem('study-beat-tap-volume', String(tapVolume)); } catch {}
   });
   $(`${prefix}tap-preview`).addEventListener('click', () => playTapSound(true));
+  $(`${prefix}tap-preview-miss`).addEventListener('click', () => playTapSound(true, 'MISS'));
 }
 function prepareTapAudio() {
   if (!tapSoundEnabled) return null;
@@ -61,8 +62,8 @@ function prepareTapAudio() {
     return tapAudio.state !== 'running' ? tapAudio.resume() : Promise.resolve();
   } catch { soundStatus('タップ音を再生できません。試聴をもう一度押してください'); return null; }
 }
-function emitTapSound() {
-  const t = tapAudio.currentTime, gain = tapAudio.createGain(), tone = tapAudio.createOscillator();
+function emitTapSound(judgment) {
+  const t = tapAudio.currentTime, gain = tapAudio.createGain();
   gain.gain.setValueAtTime(tapVolume / 100 * 4, t);
   // Tenfold amplification, with soft peak limiting for the upper volume range.
   const limiter = tapAudio.createWaveShaper(), curve = new Float32Array(4097);
@@ -70,8 +71,26 @@ function emitTapSound() {
     const x = i * 2 / (curve.length - 1) - 1, magnitude = Math.abs(x);
     curve[i] = Math.sign(x) * (magnitude <= .8 ? magnitude : .8 + .18 * Math.tanh((magnitude - .8) / .18));
   }
-  limiter.curve = curve; limiter.oversample = '2x';
+  limiter.curve = curve; limiter.oversample = 'none';
   gain.connect(limiter); limiter.connect(tapAudio.destination);
+  if (judgment !== 'MISS') {
+    const frequencies = [1567.98, 2093.00, 3135.96];
+    frequencies.forEach((frequency, index) => {
+      const tone = tapAudio.createOscillator(), envelope = tapAudio.createGain(), start = t + index * .018;
+      tone.type = 'sine'; tone.frequency.setValueAtTime(frequency, start);
+      envelope.gain.setValueAtTime(.0001, start);
+      envelope.gain.exponentialRampToValueAtTime(.22 / (1 + index * .3), start + .003);
+      envelope.gain.exponentialRampToValueAtTime(.0001, start + .16);
+      tone.connect(envelope); envelope.connect(gain);
+      tone.onended = () => {
+        tone.disconnect(); envelope.disconnect();
+        if (index === frequencies.length - 1) { gain.disconnect(); limiter.disconnect(); }
+      };
+      tone.start(start); tone.stop(start + .17);
+    });
+    return;
+  }
+  const tone = tapAudio.createOscillator();
   const envelope = tapAudio.createGain();
   envelope.gain.setValueAtTime(.0001, t);
   envelope.gain.exponentialRampToValueAtTime(.8, t + .002);
@@ -91,15 +110,15 @@ function emitTapSound() {
   tone.onended = () => { tone.disconnect(); envelope.disconnect(); gain.disconnect(); limiter.disconnect(); };
   noise.start(t); tone.start(t); tone.stop(t + .09);
 }
-function playTapSound(preview = false) {
+function playTapSound(preview = false, judgment = 'GOOD') {
   if (!tapSoundEnabled) { if (preview) soundStatus('タップ音をオンにして試聴してください'); return; }
   if (!tapVolume) { if (preview) soundStatus('タップ音量を上げて試聴してください'); return; }
   const requested = performance.now();
   const play = () => {
     if (!tapSoundEnabled || !tapVolume) return;
     if (tapAudio?.state !== 'running') { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); return; }
-    if (!preview && (performance.now() - requested > 100 || screen !== 'play' || audio.paused || !['intro','answer','rhythm','outro'].includes(game.phase))) return;
-    try { emitTapSound(); if (preview) soundStatus('試聴しました'); }
+    if (!preview && (performance.now() - requested > 100 || screen !== 'play' || audio.paused)) return;
+    try { emitTapSound(judgment); if (preview) soundStatus('試聴しました'); }
     catch { soundStatus('タップ音を再生できません。もう一度試聴してください'); }
   };
   const ready = prepareTapAudio();
@@ -245,20 +264,20 @@ async function start() {
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
   finally { busy = false; refreshStart(); $('pause').disabled = false; }
 }
-function appendCharacters(element, text, start, segments = [{ text }]) {
+function appendCharacters(element, text, start, segments = [{ text }], choice = false) {
   element.replaceChildren(); element.setAttribute('aria-label', text);
   let index = 0;
   for (const segment of segments) {
     const group = document.createElement('span');
     if (segment.state) {
       group.className = `blank-${segment.state}`; group.dataset.blankIndex = segment.index;
-      characters.push({ element: group, start: start + index * RULES.charSeconds });
+      characters.push({ choice, element: group, start: start + index * RULES.charSeconds });
     }
     element.append(group);
     for (const character of Array.from(segment.text)) {
       const span = document.createElement('span'); span.className = 'reveal-char';
       span.textContent = character; span.setAttribute('aria-hidden', 'true'); group.append(span);
-      characters.push({ element: span, start: start + index++ * RULES.charSeconds });
+      characters.push({ choice, element: span, start: start + index++ * RULES.charSeconds });
     }
   }
 }
@@ -298,7 +317,7 @@ function renderQuestion() {
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
     el.classList.toggle('is-glyph', q.mode === 'kanji_component');
-    const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
+    const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start, undefined, true); el.append(text);
     el.setAttribute('role', 'progressbar'); el.setAttribute('aria-label', choice);
     el.setAttribute('aria-valuemin', '0'); el.setAttribute('aria-valuemax', '100');
     choiceElements.push({ element: el, start: game.reveal.choices[i].start }); $('choices').append(el);
@@ -331,11 +350,11 @@ function render() {
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
-    const opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
+    const opacity = game.phase === 'read' && (!game.reveal.continuation || character.choice) ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
     character.element.style.opacity = reducedMotion.matches ? Number(opacity > 0) : opacity;
   }
   choiceElements.forEach(({element, start}, i) => {
-    element.style.opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
+    element.style.opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
     element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
     const progress = answerProgress(game.counts[i], game.requiredTaps);
     const strength = 0.08 + progress * 0.72;
@@ -417,8 +436,9 @@ function tap(lane) {
   if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
   game.update(playbackTime());
   const q = game.question, first = game.firstTry, previousCount = game.correctCount;
-  if (['intro', 'answer', 'rhythm', 'outro'].includes(game.phase)) playTapSound();
-  game.tap(lane, playbackTime());
+  const shouldSound = ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
+  const note = game.tap(lane, playbackTime());
+  if (shouldSound) playTapSound(false, note ? game.lastJudgment : 'MISS');
   if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer });
   render(); draw();
 }

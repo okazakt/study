@@ -64,7 +64,7 @@ test('a three-blank grammar explanation stays together, retries errors, and comp
   if(stage===2){for(let n=0;n<3;n++)hit((g.question.correct+1)%4);assert.equal(g.question.blankPosition,2);assert.equal(g.phase,'answer');}
   for(let n=0;n<3;n++)hit(g.question.correct);
   assert.equal(g.phase,'feedback');now+=RULES.feedbackSeconds;g.update(now);
-  if(stage<3){assert.equal(g.question.blankPosition,stage+1);assert.equal(g.reveal.continuation,true);assert.equal(g.reveal.duration,RULES.readHoldSeconds);}
+  if(stage<3){assert.equal(g.question.blankPosition,stage+1);assert.equal(g.reveal.continuation,true);assert.equal(g.reveal.duration,g.reveal.revealEnd+RULES.readHoldSeconds);}
  }
  assert.notEqual(g.question.sourceId,item.id);assert.equal(g.correctCount,3);
 });

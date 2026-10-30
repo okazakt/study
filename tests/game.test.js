@@ -234,14 +234,14 @@ test('wrong answers stay on the target blank; correct advances to the next blank
   g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,110);
 });
 
-test('the next explanation blank keeps all text visible without reanimation', () => {
+test('the next explanation blank keeps the prompt visible and schedules new choices', () => {
   for (const item of questions) {
     const blanks=makeBlankQuestions(item);
     for (const q of blanks) {
       assert.equal(q.context,item.term); assert.ok(!q.prompt.includes('穴')); assert.ok(!q.targetLabel.includes('穴'));
       assert.ok(!q.reviewLabel.includes('→')); const plan=revealPlan(q);
       if(q.blankPosition===1){assert.equal(plan.continuation,false);assert.ok(plan.context.end>plan.context.start);assert.ok(plan.prompt.start>plan.context.end);assert.ok(plan.choices[0].start>plan.prompt.end);}
-      else {assert.equal(plan.continuation,true);assert.equal(plan.duration,RULES.readHoldSeconds);assert.equal(plan.prompt.end,0);}
+      else {assert.equal(plan.continuation,true);assert.equal(plan.duration,plan.revealEnd+RULES.readHoldSeconds);assert.ok(plan.choices[0].start>0);assert.equal(plan.prompt.end,0);}
     }
     assert.equal(makeQuestion(item).context,''); assert.equal(makeQuestion(item).reviewLabel,item.term);
   }
@@ -498,4 +498,18 @@ test('answers award 50 plus first-answer streak times ten, retry earns 50, total
   const beforeRestart=g.quizScore;confirm(g.question.correct);
   assert.equal(g.quizScore-beforeRestart,60);assert.equal(g.quizCombo,1);
   assert.equal(g.correctCount,5);assert.equal(g.firstCount,4);
+});
+
+test('continuation reveals only new choices in order and waits before enabling notes',()=>{
+ const item=questions.find(q=>q.blanks.length>1),q=makeBlankQuestions(item)[1],plan=revealPlan(q);
+ assert.equal(plan.continuation,true);assert.deepEqual(plan.context,{start:0,end:0});assert.deepEqual(plan.prompt,{start:0,end:0});
+ for(let i=0;i<4;i++){
+  assert.ok(plan.choices[i].end>plan.choices[i].start);
+  if(i)assert.ok(plan.choices[i].start>=plan.choices[i-1].end+RULES.choiceGapSeconds-1e-9);
+ }
+ assert.equal(plan.revealEnd,plan.choices.at(-1).end);assert.equal(plan.duration,plan.revealEnd+RULES.readHoldSeconds);
+ const g=new Game([item],chart.events,0,()=>.5);g.questionIndex=g.questions.findIndex(q=>q.blankPosition===2);g.changePhase('read',8);
+ g.update(8+plan.revealEnd);assert.equal(g.phase,'read');assert.equal(g.notes.length,0);
+ g.tap(0,8+plan.revealEnd);assert.equal(g.judgments.MISS,0);
+ g.update(8+plan.duration+.01);assert.equal(g.phase,'answer');
 });

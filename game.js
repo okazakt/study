@@ -170,23 +170,19 @@ export function answerProgress(count, required) {
   return Math.max(0, Math.min(1, count / required));
 }
 export function revealPlan(question) {
-  if (question.continuation) {
-    return { continuation: true, context: { start: 0, end: 0 }, prompt: { start: 0, end: 0 },
-      choices: question.choices.map(() => ({ start: 0, end: 0 })), revealEnd: 0,
-      liftStart: 0, duration: RULES.readHoldSeconds };
-  }
+  const continuation = !!question.continuation;
   let cursor = 0.2;
   const segment = text => {
     const start = cursor;
     cursor += Math.max(0, Array.from(text).length - 1) * RULES.charSeconds + RULES.fadeSeconds;
     return { start, end: cursor };
   };
-  const context = question.context ? segment(question.task || question.context) : { start: 0, end: 0 };
-  if (question.context) cursor += RULES.choiceGapSeconds;
-  const prompt = segment(question.prompt);
+  const context = !continuation && question.context ? segment(question.task || question.context) : { start: 0, end: 0 };
+  if (!continuation && question.context) cursor += RULES.choiceGapSeconds;
+  const prompt = continuation ? { start: 0, end: 0 } : segment(question.prompt);
   const choices = question.choices.map(text => { cursor += RULES.choiceGapSeconds; return segment(text); });
   const liftStart = cursor + RULES.readHoldSeconds;
-  return { continuation: false, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + RULES.liftSeconds };
+  return { continuation, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + (continuation ? 0 : RULES.liftSeconds) };
 }
 export class Game {
   constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true) {
