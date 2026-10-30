@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {makeJapaneseQuestions,makeQuestionQueue,revealPlan} from '../game.js';
+import {Game, RULES, makeJapaneseQuestions,makeQuestionQueue,revealPlan} from '../game.js';
 const read=path=>JSON.parse(readFileSync(new URL('../'+path,import.meta.url)));
 const japanese=read('quiz-data/junior_japanese.json');
 const all=[...read('quiz-data/junior_science.json'),...read('quiz-data/junior_english.json'),...japanese];
@@ -31,7 +31,7 @@ test('50 shuffled full queues space same-source variants across subjects and at 
   const queue=makeQuestionQueue(all,random);assert.equal(queue.length,409);
   const units=[];
   for(const [i,q] of queue.entries()){
-   if(q.continuation){assert.equal(q.mode,'spelling');assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(q.blankPosition,queue[i-1].blankPosition+1);continue;}
+   if(q.continuation){assert.ok(['spelling','term_to_explanation'].includes(q.mode));assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(q.blankPosition,queue[i-1].blankPosition+1);continue;}
    units.push(q);
   }
   for(let i=0;i<units.length;i++)for(let gap=1;gap<=3;gap++)assert.notEqual(units[i].sourceId,units[(i+gap)%units.length].sourceId,`seed ${seed}, ${i}, gap ${gap}`);
@@ -40,4 +40,21 @@ test('50 shuffled full queues space same-source variants across subjects and at 
   assert.deepEqual(phrase.map(q=>q.prompt),['？ care of','take ？ of','take care ？']);
   for(const q of phrase)assert.equal(revealPlan(q).continuation,false);
  }
+});
+
+test('a three-blank grammar explanation stays together, retries errors, and completes before another source',()=>{
+ const item={...japanese.find(q=>q.kind==='grammar'),id:'test-three-blanks',explanation_template:'{{1}}、{{2}}、{{3}}。',
+  blanks:[1,2,3].map(index=>({index,answer:'正解'+index,dummies:['誤答A','誤答B','誤答C']}))};
+ const g=new Game([item,...japanese.filter(q=>q.kind==='kanji').slice(0,3)],[],0,()=>.5);
+ g.questionIndex=g.questions.findIndex(q=>q.sourceId===item.id&&q.mode==='term_to_explanation');
+ let now=0;
+ for(let stage=1;stage<=3;stage++){
+  assert.equal(g.question.sourceId,item.id);assert.equal(g.question.blankPosition,stage);g.changePhase('answer',now);
+  const hit=color=>{now+=1;g.notes.push({target:now,lane:color,color});g.tap(color,now);};
+  if(stage===2){for(let n=0;n<3;n++)hit((g.question.correct+1)%4);assert.equal(g.question.blankPosition,2);assert.equal(g.phase,'answer');}
+  for(let n=0;n<3;n++)hit(g.question.correct);
+  assert.equal(g.phase,'feedback');now+=RULES.feedbackSeconds;g.update(now);
+  if(stage<3){assert.equal(g.question.blankPosition,stage+1);assert.equal(g.reveal.continuation,true);assert.equal(g.reveal.duration,RULES.readHoldSeconds);}
+ }
+ assert.notEqual(g.question.sourceId,item.id);assert.equal(g.correctCount,3);
 });

@@ -39,7 +39,7 @@ export function makeBlankQuestions(item, random = Math.random) {
     }
     segments.push({ text: item.explanation_template.slice(cursor) });
     return { ...item, id: `${item.id}:blank:${blank.index}`, sourceId: item.id, mode: 'term_to_explanation',
-      blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length,
+      blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length, continuation: position > 0,
       answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
       prompt: segments.map(s => s.text).join(''), context: item.term, task: `「${item.term}」の説明を完成させよう`,
       targetLabel: `${position ? '次の' : '強調された'}？に入る語句を回答（${position + 1} / ${blanks.length}）`,
@@ -52,10 +52,13 @@ export function makeQuestionQueue(items, random = Math.random) {
   const ordered = [];
   for (let i = 0; i < Math.max(0, ...decks.map(deck => deck.length)); i++) for (const deck of decks) if (deck[i]) ordered.push(deck[i]);
   const groups = ordered.map(item => {
-    if (item.subject === '国語') return shuffle(makeJapaneseQuestions(item, random).map(q => [q]), random);
+    if (item.subject === '国語') {
+      const questions = makeJapaneseQuestions(item, random);
+      return shuffle(item.kind === 'grammar' ? [questions.slice(0, -1), questions.slice(-1)] : questions.map(q => [q]), random);
+    }
     if (item.english) return shuffle([[[makeEnglishQuestion(item, 'to_japanese', random)]], [[makeEnglishQuestion(item, 'to_english', random)]],
       item.phrase_blanks ? makePhraseQuestions(item, random).map(q => [q]) : [makeSpellingQuestions(item, random)]], random).flat();
-    return shuffle([makeBlankQuestions(item, random).map(q => [q]), [[makeQuestion(item, random)]]], random).flat();
+    return shuffle([makeBlankQuestions(item, random), [makeQuestion(item, random)]], random);
   });
   // One unit per source on each pass. Reuse the source order so shrinking
   // passes cannot put the same source at both sides of a pass boundary.

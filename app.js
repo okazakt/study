@@ -1,5 +1,5 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.13.0';
-const VERSION = '0.13.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.13.1';
+const VERSION = '0.13.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';

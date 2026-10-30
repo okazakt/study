@@ -210,14 +210,14 @@ test('all 97 blanks generate distinct four-choice questions with exactly one act
   }
   assert.equal(count,97);
 });
-test('science queue separates reverse directions and individual blanks by other sources', () => {
+test('science queue groups explanation blanks and separates reverse directions by other sources', () => {
   const queue=makeQuestionQueue(questions,()=>.5);assert.equal(queue.length,186);
   assert.equal(queue.filter(q=>q.mode==='explanation_to_term').length,89);
   assert.equal(queue.filter(q=>q.mode==='term_to_explanation').length,97);
-  for(let i=1;i<queue.length;i++)assert.notEqual(queue[i].sourceId,queue[i-1].sourceId);
+  for(let i=1;i<queue.length;i++)if(!queue[i].continuation)assert.notEqual(queue[i].sourceId,queue[i-1].sourceId);
   const multiple=questions.find(q=>q.blanks.length>1);
   const positions=queue.map((q,i)=>q.sourceId===multiple.id?i:-1).filter(i=>i>=0);
-  assert.ok(positions.every((p,i)=>i===0||p-positions[i-1]>3));
+  assert.equal(positions[1],positions[0]+1);assert.ok(positions[2]-positions[1]>3);
   const reversed=makeBlankQuestions({...multiple,blanks:[...multiple.blanks].reverse()});assert.deepEqual(reversed.map(q=>q.blankIndex),[1,2]);
 });
 test('wrong answers stay on the target blank; correct advances to the next blank before a new question', () => {
@@ -234,14 +234,14 @@ test('wrong answers stay on the target blank; correct advances to the next blank
   g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,1000);
 });
 
-test('returning to a separated science blank reveals its context again', () => {
+test('the next explanation blank keeps all text visible without reanimation', () => {
   for (const item of questions) {
     const blanks=makeBlankQuestions(item);
     for (const q of blanks) {
       assert.equal(q.context,item.term); assert.ok(!q.prompt.includes('穴')); assert.ok(!q.targetLabel.includes('穴'));
       assert.ok(!q.reviewLabel.includes('→')); const plan=revealPlan(q);
-      assert.equal(plan.continuation,false);assert.ok(plan.context.end>plan.context.start);
-      assert.ok(plan.prompt.start>plan.context.end);assert.ok(plan.choices[0].start>plan.prompt.end);
+      if(q.blankPosition===1){assert.equal(plan.continuation,false);assert.ok(plan.context.end>plan.context.start);assert.ok(plan.prompt.start>plan.context.end);assert.ok(plan.choices[0].start>plan.prompt.end);}
+      else {assert.equal(plan.continuation,true);assert.equal(plan.duration,RULES.readHoldSeconds);assert.equal(plan.prompt.end,0);}
     }
     assert.equal(makeQuestion(item).context,''); assert.equal(makeQuestion(item).reviewLabel,item.term);
   }
@@ -257,9 +257,10 @@ test('normal play fits eight white notes between groups and waits for final judg
   g.update(targets.at(-1).target+.5);assert.equal(g.phase,'rhythm');
   g.update(g.rhythmEnd+.01);assert.equal(g.phase,'read');assert.equal(g.questionIndex,1);assert.deepEqual(g.notes,[]);
 });
-test('separated blanks and phrases get normal play; only word spelling continues directly', () => {
+test('multiple explanation blanks continue directly before the normal-play break', () => {
   const item=questions.find(q=>q.blanks.length>1);const g=new Game([item],chart.events,0,()=>.5);
-  g.changePhase('feedback',20);g.update(22.5);assert.equal(g.phase,'rhythm');
+  g.changePhase('feedback',20);g.update(22.5);assert.equal(g.phase,'read');assert.equal(g.question.blankPosition,2);assert.equal(g.reveal.continuation,true);
+  g.changePhase('feedback',30);g.update(32.5);assert.equal(g.phase,'rhythm');
 });
 test('instructions match the requested action and all choices use reviewed three-dummy sets', () => {
   for(const item of questions){
