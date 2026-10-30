@@ -25,8 +25,8 @@
         "answer": "gr",
         "dummies": [
           "gl",
-          "gur",
-          "gul"
+          "jr",
+          "ga"
         ]
       },
       {
@@ -76,8 +76,8 @@
         "answer": "lan",
         "dummies": [
           "nal",
-          "lann",
-          "la"
+          "ran",
+          "lun"
         ]
       },
       {
@@ -85,8 +85,8 @@
         "answer": "gu",
         "dummies": [
           "ug",
-          "guu",
-          "g"
+          "ga",
+          "ju"
         ]
       },
       {
@@ -94,8 +94,8 @@
         "answer": "age",
         "dummies": [
           "ega",
-          "agee",
-          "ag"
+          "agi",
+          "uge"
         ]
       }
     ],
@@ -127,8 +127,8 @@
         "answer": "for",
         "dummies": [
           "rof",
-          "forr",
-          "fo"
+          "fol",
+          "fur"
         ]
       },
       {
@@ -136,8 +136,8 @@
         "answer": "ei",
         "dummies": [
           "ie",
-          "eii",
-          "e"
+          "ee",
+          "ii"
         ]
       },
       {
@@ -145,8 +145,8 @@
         "answer": "gn",
         "dummies": [
           "ng",
-          "gnn",
-          "g"
+          "gm",
+          "jn"
         ]
       }
     ],
@@ -178,8 +178,8 @@
         "answer": "cul",
         "dummies": [
           "luc",
-          "cull",
-          "cu"
+          "cur",
+          "cal"
         ]
       },
       {
@@ -187,8 +187,8 @@
         "answer": "tu",
         "dummies": [
           "ut",
-          "tuu",
-          "t"
+          "ta",
+          "du"
         ]
       },
       {
@@ -196,8 +196,8 @@
         "answer": "re",
         "dummies": [
           "er",
-          "ree",
-          "r"
+          "le",
+          "ri"
         ]
       }
     ],
@@ -229,8 +229,8 @@
         "answer": "ex",
         "dummies": [
           "xe",
-          "exx",
-          "e"
+          "ix",
+          "ea"
         ]
       },
       {
@@ -238,8 +238,8 @@
         "answer": "per",
         "dummies": [
           "rep",
-          "perr",
-          "pe"
+          "pel",
+          "pir"
         ]
       },
       {
@@ -247,8 +247,8 @@
         "answer": "ience",
         "dummies": [
           "ecnei",
-          "iencee",
-          "ienc"
+          "eence",
+          "iince"
         ]
       }
     ],
@@ -280,8 +280,8 @@
         "answer": "fu",
         "dummies": [
           "uf",
-          "fuu",
-          "f"
+          "fa",
+          "vu"
         ]
       },
       {
@@ -289,8 +289,8 @@
         "answer": "tu",
         "dummies": [
           "ut",
-          "tuu",
-          "t"
+          "ta",
+          "du"
         ]
       },
       {
@@ -298,8 +298,8 @@
         "answer": "re",
         "dummies": [
           "er",
-          "ree",
-          "r"
+          "le",
+          "ri"
         ]
       }
     ],
@@ -331,8 +331,8 @@
         "answer": "en",
         "dummies": [
           "ne",
-          "enn",
-          "e"
+          "in",
+          "em"
         ]
       },
       {
@@ -340,8 +340,8 @@
         "answer": "viron",
         "dummies": [
           "noriv",
-          "vironn",
-          "viro"
+          "vilon",
+          "veron"
         ]
       },
       {
@@ -349,8 +349,8 @@
         "answer": "ment",
         "dummies": [
           "tnem",
-          "mentt",
-          "men"
+          "mint",
+          "mend"
         ]
       }
     ],
@@ -382,8 +382,8 @@
         "answer": "na",
         "dummies": [
           "an",
-          "naa",
-          "n"
+          "nu",
+          "ma"
         ]
       },
       {
@@ -391,8 +391,8 @@
         "answer": "tu",
         "dummies": [
           "ut",
-          "tuu",
-          "t"
+          "ta",
+          "du"
         ]
       },
       {
@@ -400,8 +400,8 @@
         "answer": "re",
         "dummies": [
           "er",
-          "ree",
-          "r"
+          "le",
+          "ri"
         ]
       }
     ],
@@ -433,8 +433,8 @@
         "answer": "im",
         "dummies": [
           "mi",
-          "imm",
-          "i"
+          "em",
+          "in"
         ]
       },
       {
@@ -442,8 +442,8 @@
         "answer": "por",
         "dummies": [
           "rop",
-          "porr",
-          "po"
+          "pol",
+          "pur"
         ]
       },
       {
@@ -451,8 +451,8 @@
         "answer": "tant",
         "dummies": [
           "tnat",
-          "tantt",
-          "tan"
+          "tunt",
+          "dant"
         ]
       }
     ],
@@ -484,8 +484,8 @@
         "answer": "ne",
         "dummies": [
           "en",
-          "nee",
-          "n"
+          "ni",
+          "me"
         ]
       },
       {
@@ -493,8 +493,8 @@
         "answer": "ces",
         "dummies": [
           "sec",
-          "cess",
-          "ce"
+          "cis",
+          "ses"
         ]
       },
       {
@@ -502,8 +502,8 @@
         "answer": "sary",
         "dummies": [
           "yras",
-          "saryy",
-          "sar"
+          "saly",
+          "sury"
         ]
       }
     ],
@@ -535,8 +535,8 @@
         "answer": "dif",
         "dummies": [
           "fid",
-          "diff",
-          "di"
+          "def",
+          "div"
         ]
       },
       {
@@ -544,8 +544,8 @@
         "answer": "fer",
         "dummies": [
           "ref",
-          "ferr",
-          "fe"
+          "fel",
+          "fir"
         ]
       },
       {
@@ -553,8 +553,8 @@
         "answer": "ent",
         "dummies": [
           "tne",
-          "entt",
-          "en"
+          "int",
+          "end"
         ]
       }
     ],
@@ -585,18 +585,18 @@
         "index": 1,
         "answer": "pop",
         "dummies": [
-          "popp",
-          "po",
-          "pup"
+          "pup",
+          "poa",
+          "poe"
         ]
       },
       {
         "index": 2,
         "answer": "u",
         "dummies": [
-          "uu",
-          "ue",
-          "uh"
+          "a",
+          "e",
+          "i"
         ]
       },
       {
@@ -604,8 +604,8 @@
         "answer": "lar",
         "dummies": [
           "ral",
-          "larr",
-          "la"
+          "lal",
+          "rar"
         ]
       }
     ],
@@ -637,8 +637,8 @@
         "answer": "in",
         "dummies": [
           "ni",
-          "inn",
-          "i"
+          "en",
+          "im"
         ]
       },
       {
@@ -646,8 +646,8 @@
         "answer": "ter",
         "dummies": [
           "ret",
-          "terr",
-          "te"
+          "tel",
+          "tir"
         ]
       },
       {
@@ -655,8 +655,8 @@
         "answer": "esting",
         "dummies": [
           "gnitse",
-          "estingg",
-          "estin"
+          "esteng",
+          "isting"
         ]
       }
     ],
@@ -688,8 +688,8 @@
         "answer": "fa",
         "dummies": [
           "af",
-          "faa",
-          "f"
+          "fu",
+          "va"
         ]
       },
       {
@@ -697,8 +697,8 @@
         "answer": "mous",
         "dummies": [
           "suom",
-          "mouss",
-          "mou"
+          "muus",
+          "moas"
         ]
       }
     ],
@@ -730,17 +730,17 @@
         "answer": "re",
         "dummies": [
           "er",
-          "ree",
-          "r"
+          "le",
+          "ri"
         ]
       },
       {
         "index": 2,
         "answer": "mem",
         "dummies": [
-          "memm",
-          "me",
-          "mim"
+          "mim",
+          "nem",
+          "mea"
         ]
       },
       {
@@ -748,8 +748,8 @@
         "answer": "ber",
         "dummies": [
           "reb",
-          "berr",
-          "be"
+          "bel",
+          "bir"
         ]
       }
     ],
@@ -781,8 +781,8 @@
         "answer": "for",
         "dummies": [
           "rof",
-          "forr",
-          "fo"
+          "fol",
+          "fur"
         ]
       },
       {
@@ -790,8 +790,8 @@
         "answer": "get",
         "dummies": [
           "teg",
-          "gett",
-          "ge"
+          "git",
+          "ged"
         ]
       }
     ],
@@ -823,8 +823,8 @@
         "answer": "de",
         "dummies": [
           "ed",
-          "dee",
-          "d"
+          "di",
+          "da"
         ]
       },
       {
@@ -832,8 +832,8 @@
         "answer": "cide",
         "dummies": [
           "edic",
-          "cidee",
-          "cid"
+          "cede",
+          "cidi"
         ]
       }
     ],
@@ -865,8 +865,8 @@
         "answer": "in",
         "dummies": [
           "ni",
-          "inn",
-          "i"
+          "en",
+          "im"
         ]
       },
       {
@@ -874,8 +874,8 @@
         "answer": "vite",
         "dummies": [
           "etiv",
-          "vitee",
-          "vit"
+          "vete",
+          "viti"
         ]
       }
     ],
@@ -907,8 +907,8 @@
         "answer": "ar",
         "dummies": [
           "ra",
-          "arr",
-          "a"
+          "al",
+          "ur"
         ]
       },
       {
@@ -916,8 +916,8 @@
         "answer": "rive",
         "dummies": [
           "evir",
-          "rivee",
-          "riv"
+          "live",
+          "reve"
         ]
       }
     ],
@@ -949,8 +949,8 @@
         "answer": "prac",
         "dummies": [
           "carp",
-          "pracc",
-          "pra"
+          "plac",
+          "pruc"
         ]
       },
       {
@@ -958,8 +958,8 @@
         "answer": "tice",
         "dummies": [
           "ecit",
-          "ticee",
-          "tic"
+          "tece",
+          "tici"
         ]
       }
     ],
@@ -991,8 +991,8 @@
         "answer": "be",
         "dummies": [
           "eb",
-          "bee",
-          "b"
+          "bi",
+          "pe"
         ]
       },
       {
@@ -1000,8 +1000,8 @@
         "answer": "lieve",
         "dummies": [
           "eveil",
-          "lievee",
-          "liev"
+          "rieve",
+          "leeve"
         ]
       }
     ],
@@ -1032,9 +1032,9 @@
         "index": 1,
         "answer": "e",
         "dummies": [
-          "ee",
           "i",
-          "eh"
+          "a",
+          "o"
         ]
       },
       {
@@ -1042,8 +1042,8 @@
         "answer": "nough",
         "dummies": [
           "hguon",
-          "noughh",
-          "noug"
+          "nuugh",
+          "noagh"
         ]
       }
     ],
@@ -1075,8 +1075,8 @@
         "answer": "dur",
         "dummies": [
           "rud",
-          "durr",
-          "du"
+          "dul",
+          "dar"
         ]
       },
       {
@@ -1084,8 +1084,8 @@
         "answer": "ing",
         "dummies": [
           "gni",
-          "ingg",
-          "in"
+          "eng",
+          "img"
         ]
       }
     ],
@@ -1117,8 +1117,8 @@
         "answer": "with",
         "dummies": [
           "htiw",
-          "withh",
-          "wit"
+          "weth",
+          "widh"
         ]
       },
       {
@@ -1126,8 +1126,8 @@
         "answer": "out",
         "dummies": [
           "tuo",
-          "outt",
-          "ou"
+          "uut",
+          "oat"
         ]
       }
     ],
@@ -1159,8 +1159,8 @@
         "answer": "lo",
         "dummies": [
           "ol",
-          "loo",
-          "l"
+          "ro",
+          "lu"
         ]
       },
       {
@@ -1168,8 +1168,8 @@
         "answer": "ok",
         "dummies": [
           "ko",
-          "okk",
-          "o"
+          "uk",
+          "oa"
         ]
       },
       {
@@ -1177,8 +1177,8 @@
         "answer": "for",
         "dummies": [
           "rof",
-          "forr",
-          "fo"
+          "fol",
+          "fur"
         ]
       }
     ],
@@ -1210,8 +1210,8 @@
         "answer": "lo",
         "dummies": [
           "ol",
-          "loo",
-          "l"
+          "ro",
+          "lu"
         ]
       },
       {
@@ -1219,8 +1219,8 @@
         "answer": "ok",
         "dummies": [
           "ko",
-          "okk",
-          "o"
+          "uk",
+          "oa"
         ]
       },
       {
@@ -1228,8 +1228,8 @@
         "answer": "af",
         "dummies": [
           "fa",
-          "aff",
-          "a"
+          "uf",
+          "av"
         ]
       },
       {
@@ -1237,8 +1237,8 @@
         "answer": "ter",
         "dummies": [
           "ret",
-          "terr",
-          "te"
+          "tel",
+          "tir"
         ]
       }
     ],
@@ -1270,8 +1270,8 @@
         "answer": "be",
         "dummies": [
           "eb",
-          "bee",
-          "b"
+          "bi",
+          "pe"
         ]
       },
       {
@@ -1279,8 +1279,8 @@
         "answer": "in",
         "dummies": [
           "ni",
-          "inn",
-          "i"
+          "en",
+          "im"
         ]
       },
       {
@@ -1288,8 +1288,8 @@
         "answer": "ter",
         "dummies": [
           "ret",
-          "terr",
-          "te"
+          "tel",
+          "tir"
         ]
       },
       {
@@ -1297,8 +1297,8 @@
         "answer": "ested",
         "dummies": [
           "detse",
-          "estedd",
-          "este"
+          "isted",
+          "ected"
         ]
       },
       {
@@ -1306,8 +1306,8 @@
         "answer": "in",
         "dummies": [
           "ni",
-          "inn",
-          "i"
+          "en",
+          "im"
         ]
       }
     ],
@@ -1339,8 +1339,8 @@
         "answer": "be",
         "dummies": [
           "eb",
-          "bee",
-          "b"
+          "bi",
+          "pe"
         ]
       },
       {
@@ -1348,8 +1348,8 @@
         "answer": "go",
         "dummies": [
           "og",
-          "goo",
-          "g"
+          "gu",
+          "jo"
         ]
       },
       {
@@ -1357,8 +1357,8 @@
         "answer": "od",
         "dummies": [
           "do",
-          "odd",
-          "o"
+          "ud",
+          "oa"
         ]
       },
       {
@@ -1366,8 +1366,8 @@
         "answer": "at",
         "dummies": [
           "ta",
-          "att",
-          "a"
+          "ut",
+          "ad"
         ]
       }
     ],
@@ -1399,8 +1399,8 @@
         "answer": "ta",
         "dummies": [
           "at",
-          "taa",
-          "t"
+          "tu",
+          "da"
         ]
       },
       {
@@ -1408,8 +1408,8 @@
         "answer": "ke",
         "dummies": [
           "ek",
-          "kee",
-          "k"
+          "ki",
+          "ka"
         ]
       },
       {
@@ -1417,8 +1417,8 @@
         "answer": "ca",
         "dummies": [
           "ac",
-          "caa",
-          "c"
+          "cu",
+          "sa"
         ]
       },
       {
@@ -1426,8 +1426,8 @@
         "answer": "re",
         "dummies": [
           "er",
-          "ree",
-          "r"
+          "le",
+          "ri"
         ]
       },
       {
@@ -1435,8 +1435,8 @@
         "answer": "of",
         "dummies": [
           "fo",
-          "off",
-          "o"
+          "uf",
+          "ov"
         ]
       }
     ],
@@ -1467,9 +1467,9 @@
         "index": 1,
         "answer": "a",
         "dummies": [
-          "aa",
-          "ae",
-          "ah"
+          "u",
+          "e",
+          "i"
         ]
       },
       {
@@ -1477,8 +1477,8 @@
         "answer": "lot",
         "dummies": [
           "tol",
-          "lott",
-          "lo"
+          "rot",
+          "lut"
         ]
       },
       {
@@ -1486,8 +1486,8 @@
         "answer": "of",
         "dummies": [
           "fo",
-          "off",
-          "o"
+          "uf",
+          "ov"
         ]
       }
     ],
@@ -1519,8 +1519,8 @@
         "answer": "in",
         "dummies": [
           "ni",
-          "inn",
-          "i"
+          "en",
+          "im"
         ]
       },
       {
@@ -1528,8 +1528,8 @@
         "answer": "fr",
         "dummies": [
           "rf",
-          "frr",
-          "f"
+          "fl",
+          "vr"
         ]
       },
       {
@@ -1537,8 +1537,8 @@
         "answer": "ont",
         "dummies": [
           "tno",
-          "ontt",
-          "on"
+          "unt",
+          "ond"
         ]
       },
       {
@@ -1546,8 +1546,8 @@
         "answer": "of",
         "dummies": [
           "fo",
-          "off",
-          "o"
+          "uf",
+          "ov"
         ]
       }
     ],
@@ -1579,8 +1579,8 @@
         "answer": "for",
         "dummies": [
           "rof",
-          "forr",
-          "fo"
+          "fol",
+          "fur"
         ]
       },
       {
@@ -1588,8 +1588,8 @@
         "answer": "ex",
         "dummies": [
           "xe",
-          "exx",
-          "e"
+          "ix",
+          "ea"
         ]
       },
       {
@@ -1597,8 +1597,8 @@
         "answer": "am",
         "dummies": [
           "ma",
-          "amm",
-          "a"
+          "um",
+          "an"
         ]
       },
       {
@@ -1606,8 +1606,8 @@
         "answer": "ple",
         "dummies": [
           "elp",
-          "plee",
-          "pl"
+          "pre",
+          "pli"
         ]
       }
     ],

@@ -75,11 +75,16 @@ export function makeEnglishQuestion(item, direction, random = Math.random) {
     choices, correct: choices.indexOf(answer), reviewLabel: `${toJapanese ? item.english : item.japanese}` };
 }
 export function makeSpellingQuestions(item, random = Math.random) {
+  for (const blank of item.spelling) {
+    if (blank.dummies.some(value => Array.from(value).length !== Array.from(blank.answer).length)) {
+      throw new Error(`${item.id}: spelling choices must have the same length`);
+    }
+  }
   return makeBlankQuestions({ ...item, term: item.japanese, term_dummies: [],
     explanation_template: item.spelling_template, blanks: item.spelling }, random).map(q => ({
       ...q, id: `${item.id}:spelling:${q.blankIndex}`, mode: 'spelling',
       task: `「${item.japanese}」を表す英語の綴りを完成させよう`,
-      targetLabel: `${q.blankPosition > 1 ? '次の' : '強調された'}？に入る綴りを回答（${q.blankPosition} / ${q.blankTotal}）`,
+      targetLabel: `${q.blankPosition > 1 ? '次の' : '強調された'}？に入る${Array.from(q.answer).length}文字を回答（${q.blankPosition} / ${q.blankTotal}）`,
       note: q.blankPosition === q.blankTotal ? item.note : '',
       reviewLabel: `${item.japanese} · 綴り（${q.blankPosition} / ${q.blankTotal}）`
     }));
@@ -191,7 +196,7 @@ export class Game {
   tap(lane, now) {
     if (this.phase === 'ended') return null;
     this.update(now);
-    if (this.phase === 'read' || (this.phase === 'feedback' && !this.notes.length)) return null;
+    if (this.phase === 'read' || this.phase === 'feedback') return null;
     const note = this.notes.filter(n => !n.done && n.lane === lane && Math.abs(n.target - now) <= RULES.goodWindow)
       .sort((a, b) => Math.abs(a.target - now) - Math.abs(b.target - now))[0];
     if (!note) { this.combo = 0; this.judge('MISS', now); return null; }
@@ -211,6 +216,7 @@ export class Game {
           this.correctCount++;
           if (this.firstTry) { this.quizScore += 1000; this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
           this.message = this.firstTry ? '一発正解！ +1,000 pt' : '正解！ 覚えて次へ進もう';
+          this.notes = [];
           this.changePhase('feedback', now);
         } else {
           this.quizResult = { correct: false, time: now, choice: note.color };

@@ -169,12 +169,13 @@ test('correct and wrong answers keep explicit results separately from rhythm jud
   for (let t=5;t<=7;t++) hit(g,correct,t);
   assert.equal(g.quizResult.correct,true); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.phase,'feedback');
 });
-test('feedback does not generate short-lived white notes and drains any existing notes', () => {
+test('correct confirmation clears pending notes without misses or extra input during feedback', () => {
   const g=fixture(); g.changePhase('answer',0); const c=g.question.correct;
   hit(g,c,2); hit(g,c,3); g.notes.push({target:5,color:c,lane:1,rowId:99}); hit(g,c,4);
-  assert.equal(g.phase,'feedback'); assert.ok(g.notes.some(n=>n.rowId===99&&!n.done));
-  g.update(4.5); assert.ok(g.notes.some(n=>n.rowId===99));
-  g.tap(1,5); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.correctCount,1);
+  assert.equal(g.phase,'feedback'); assert.deepEqual(g.notes,[]);
+  assert.equal(g.lastJudgment,'PERFECT');const score=g.rhythmScore,combo=g.combo;
+  g.tap(1,4.5);g.update(5.2);assert.equal(g.lastJudgment,'PERFECT');
+  assert.equal(g.rhythmScore,score);assert.equal(g.combo,combo);assert.equal(g.correctCount,1);
   g.update(6.5); assert.equal(g.phase,'read');
   const real=new Game(questions,chart.events); real.changePhase('feedback',20);
   for(let t=20;t<22.5;t+=.05){ real.update(t); assert.deepEqual(real.notes,[]); }
@@ -294,15 +295,15 @@ test('answer progress is a bounded ratio and supports a future ten-tap question'
   assert.equal(g.phase,'answer');assert.equal(g.correctCount,0);assert.equal(answerProgress(g.counts[color],g.requiredTaps),.9);
   hit(g,color,11);assert.equal(g.phase,'feedback');assert.equal(g.correctCount,1);assert.equal(answerProgress(g.counts[color],g.requiredTaps),1);
 });
-test('higher-density rows remain playable through feedback without disappearing', () => {
+test('dense answer rows clear immediately on correct confirmation and retain the winning judgment', () => {
   const g=new Game([questions[0]],chart.events,0,()=>.5);g.changePhase('answer',8);
   const rows=g.events.filter(e=>e.target>=8+RULES.travelSeconds).slice(0,3);
   assert.ok(rows.every((e,i)=>i===0||e.target-rows[i-1].target<.55));
   for(const row of rows){g.update(Math.max(g.time,row.target-1));g.tap(g.question.correct,row.target);}
-  assert.equal(g.phase,'feedback');const pending=g.notes.filter(n=>!n.done);assert.ok(pending.length>=4);
-  const end=Math.max(...pending.map(n=>n.target));g.update(end+.17);assert.equal(g.lastJudgment,'MISS');
-  assert.equal(g.phase,'feedback');assert.equal(g.notes.length,0);assert.equal(g.correctCount,1);
-  g.update(end+.17+RULES.judgmentSeconds+.01);assert.equal(g.phase,'rhythm');
+  assert.equal(g.phase,'feedback');assert.deepEqual(g.notes,[]);assert.equal(g.lastJudgment,'PERFECT');
+  const time=rows.at(-1).target,combo=g.combo;
+  for(let t=time+.1;t<time+RULES.feedbackSeconds;t+=.1){g.update(t);assert.deepEqual(g.notes,[]);assert.equal(g.lastJudgment,'PERFECT');assert.equal(g.combo,combo);}
+  g.update(time+RULES.feedbackSeconds+.01);assert.equal(g.phase,'rhythm');
 });
 
 const english = read('../quiz-data/junior_english.json');
@@ -333,7 +334,7 @@ test('English data generates both translation directions and complete, unique sp
   }
   const ground=makeSpellingQuestions(english[0]);
   assert.deepEqual(ground.map(q=>q.answer),['gr','ou','nd']);
-  assert.deepEqual(new Set(ground[0].choices),new Set(['gr','gl','gur','gul']));
+  assert.ok(ground[0].choices.includes('gr'));assert.ok(ground[0].choices.includes('gl'));
 });
 test('mixed subjects expose all five formats early and keep spelling groups contiguous',()=>{
   const queue=makeQuestionQueue([...questions,...english],()=>.5);
@@ -362,4 +363,23 @@ test('spelling retries a wrong chunk and advances without rhythm or reanimation 
   for(let t=19;t<=21;t++)hit(g,g.question.correct,t);
   g.events=[{id:1,target:26,lane:0}];g.cursor=0;
   g.update(23.5);assert.equal(g.phase,'rhythm');assert.equal(g.correctCount,3);
+});
+
+test('all spelling alternatives have the requested length and cannot complete the target with another split',()=>{
+  for(const item of english){
+    const stages=makeSpellingQuestions(item);
+    for(const q of stages){
+      const position=item.spelling_template.indexOf('{{'+q.blankIndex+'}}');
+      const rest=item.spelling_template.slice(position).replace(/\{\{(\d+)\}\}/g,(_,n)=>item.spelling.find(b=>b.index===Number(n)).answer);
+      assert.ok(q.targetLabel.includes(`${q.answer.length}文字`));
+      for(const choice of q.choices){
+        assert.equal(choice.length,q.answer.length,`${item.english}: ${choice}`);
+        assert.equal(rest.startsWith(choice),choice===q.answer,`${item.english}: ambiguous ${choice}`);
+      }
+    }
+  }
+  const arrive=english.find(q=>q.english==='arrive');
+  const first=makeSpellingQuestions(arrive)[0];
+  assert.equal(first.answer,'ar');assert.ok(!first.choices.includes('arr'));assert.ok(!first.choices.includes('a'));
+  assert.throws(()=>makeSpellingQuestions({...arrive,spelling:arrive.spelling.map((b,i)=>i===0?{...b,dummies:['arr','ra','a']}:b)}),/same length/);
 });
