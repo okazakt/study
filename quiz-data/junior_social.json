@@ -28,7 +28,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "日本国憲法の三大原則の一つ。国会や内閣が主権をもつわけではない。"
+    "note": "日本国憲法の三大原則の一つ。国会や内閣が主権をもつわけではない。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_002",
@@ -59,7 +61,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "日本国憲法は、基本的人権を侵すことのできない永久の権利として保障している。"
+    "note": "日本国憲法は、基本的人権を侵すことのできない永久の権利として保障している。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_003",
@@ -90,7 +94,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "日本国憲法の三大原則の一つ。第9条の条文の三つの内容を区別して覚える。"
+    "note": "日本国憲法の三大原則の一つ。第9条の条文の三つの内容を区別して覚える。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_004",
@@ -121,7 +127,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "権力の集中と濫用を防ぎ、国民の自由や権利を守るためのしくみ。"
+    "note": "権力の集中と濫用を防ぎ、国民の自由や権利を守るためのしくみ。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_005",
@@ -152,7 +160,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "日本国憲法第41条。法律の制定、予算の議決、内閣総理大臣の指名などを行う。"
+    "note": "日本国憲法第41条。法律の制定、予算の議決、内閣総理大臣の指名などを行う。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_006",
@@ -183,7 +193,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "日本国憲法第65条。行政を行い、国会に対して連帯して責任を負う。"
+    "note": "日本国憲法第65条。行政を行い、国会に対して連帯して責任を負う。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_007",
@@ -214,7 +226,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "すべての司法権は、最高裁判所および法律の定める下級裁判所に属する。"
+    "note": "すべての司法権は、最高裁判所および法律の定める下級裁判所に属する。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_008",
@@ -245,7 +259,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "最高裁判所は違憲審査を行う終審裁判所で、「憲法の番人」とも呼ばれる。"
+    "note": "最高裁判所は違憲審査を行う終審裁判所で、「憲法の番人」とも呼ばれる。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_009",
@@ -276,7 +292,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "地方公共団体には都道府県や市町村があり、住民が首長や議員を選ぶ。"
+    "note": "地方公共団体には都道府県や市町村があり、住民が首長や議員を選ぶ。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_010",
@@ -307,7 +325,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "条例の制定・改廃の請求などがある。請求の種類によって必要な署名数や手続きは異なる。"
+    "note": "条例の制定・改廃の請求などがある。請求の種類によって必要な署名数や手続きは異なる。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_011",
@@ -338,7 +358,9 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "生存権のほか、教育を受ける権利、勤労の権利、労働基本権などがある。"
+    "note": "生存権のほか、教育を受ける権利、勤労の権利、労働基本権などがある。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   },
   {
     "id": "jr_civics3_012",
@@ -387,6 +409,8 @@
       "term_to_explanation": "基礎",
       "explanation_to_term": "基礎"
     },
-    "note": "教育の義務は、保護する子に普通教育を受けさせる義務。子ども自身に課された義務と混同しない。"
+    "note": "教育の義務は、保護する子に普通教育を受けさせる義務。子ども自身に課された義務と混同しない。",
+    "cloze_context": "",
+    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
   }
 ]

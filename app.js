@@ -1,10 +1,14 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.21.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.21.0';
-const VERSION = '0.21.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions } from './progress.js?v=0.22.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.22.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.22.0';
+const VERSION = '0.22.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let questionKey = '';
+let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
+let reviewQuestions = [], reviewIndex = 0, reviewSolved = false, reviewWrong = 0;
+try { learningHistory = normalizeHistory(JSON.parse(localStorage.getItem(HISTORY_KEY) || 'null')); } catch {}
 let characters = [], choiceElements = [];
 let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
 try { savedLearning = JSON.parse(localStorage.getItem('study-beat-learning-v1') || 'null'); } catch { /* Use the first-run school selector. */ }
@@ -129,7 +133,30 @@ function playTapSound(preview = false, judgment = 'GOOD') {
 document.addEventListener('touchend', () => {
   if (screen === 'play') prepareTapAudio()?.catch(() => {});
 }, { passive: true });
-const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; if (next === 'home') checkForUpdate(); };
+const show = next => {
+  screen = next; document.body.classList.toggle('playing', next === 'play');
+  document.documentElement.classList.toggle('play-locked', next === 'play');
+  for (const name of ['home', 'play', 'result', 'practice-review']) $(name).hidden = name !== next;
+  window.scrollTo(0, 0);
+  if (next === 'home') checkForUpdate();
+};
+function saveAnswer(q, correct, chosen, wrongBefore, kind = 'play') {
+  learningHistory = recordAnswer(learningHistory, q, {correct, chosen, wrongBefore, kind, session:sessionId, course:sessionScope?.id, version:VERSION});
+  try { localStorage.setItem(HISTORY_KEY, JSON.stringify(learningHistory)); }
+  catch { $('history-storage-note').hidden = false; }
+  if (kind === 'play') updateLearningLevel();
+}
+function updateLearningLevel() {
+  const level = learningLevel(learningHistory, sessionScope);
+  $('learning-level').textContent = level.value === null ? 'データ収集中' : level.value.toFixed(1);
+  $('learning-level').classList.toggle('collecting', level.value === null);
+  $('learning-level').title = `この教科・コースの直近${level.count}回答、異なる${level.distinct}問題。30回答・10問題から表示。`;
+  const delta = level.value !== null && levelPrevious !== null ? Math.round((level.value - levelPrevious) * 10) / 10 : 0;
+  $('learning-level-change').textContent = delta ? `${delta > 0 ? '↑ +' : '↓ '}${delta.toFixed(1)}` : '';
+  $('learning-level-change').dataset.direction = delta < 0 ? 'down' : 'up';
+  levelPrevious = level.value;
+}
+
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(`${path}?v=${VERSION}`); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
 const selection = () => preferences?.profiles[preferences.school];
@@ -259,7 +286,11 @@ async function start() {
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
   game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, question => matchesPracticeQuestion(question,practiceType));
-  history = []; questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
+  history = []; sessionResults = new Map(); sessionId = crypto.randomUUID();
+  const course = catalog.find(c => c.id === selection()?.id);
+  sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
+  levelPrevious = null; updateLearningLevel();
+  questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
   finally { busy = false; refreshStart(); $('pause').disabled = false; }
@@ -281,6 +312,26 @@ function appendCharacters(element, text, start, segments = [{ text }], choice = 
     }
   }
 }
+function renderKanji(puzzle, q, feedback = false) {
+  const diagram = q?.diagram; puzzle.hidden = !diagram;
+  const completed = !!diagram && feedback && q.blankPosition === q.blankTotal;
+  puzzle.classList.toggle('completed', completed);
+  if (diagram) {
+    puzzle.replaceChildren();
+    if (completed) puzzle.textContent = q.character;
+    else for (const part of diagram.parts) {
+      const solved = part.state === 'solved' || (part.state === 'active' && feedback);
+      const piece = document.createElement('span'); piece.className = `kanji-piece ${solved ? 'solved' : part.state}`;
+      piece.dataset.position = part.position;
+      const [x,y,width,height] = part.box;
+      Object.assign(piece.style, {left:`calc(${x}% + 2px)`,top:`calc(${y}% + 2px)`,width:`calc(${width}% - 4px)`,height:`calc(${height}% - 4px)`});
+      const glyph = document.createElement('span'); glyph.textContent = solved ? part.answer : '？';
+      if (solved) { const size = height * 0.80 * 0.88; glyph.style.fontSize = `${size}px`; glyph.style.transform = `scaleX(${Math.min(1,width*0.88/size)})`; }
+      piece.append(glyph); puzzle.append(piece);
+    }
+    puzzle.setAttribute('aria-label', completed ? `完成：${q.character}` : `${q.targetLabel}。${diagram.parts.filter(part => part.state === 'solved').map(part => `${part.position}は${part.answer}`).join('、')}`);
+  }
+}
 function renderQuestion() {
   const intro = ['intro', 'rhythm', 'outro'].includes(game.phase);
   const key = `${intro ? game.phase : 'question'}:${game.questionIndex}:${game.phase === 'feedback'}`;
@@ -294,26 +345,8 @@ function renderQuestion() {
   appendCharacters($('question-context'), intro || !q.context ? '' : q.task, game.reveal.context.start);
   $('blank-instruction').hidden = intro || !q.blankIndex;
   $('blank-instruction').textContent = game.phase === 'feedback' ? `正解：${q.answer}` : q.targetLabel || '';
-  const diagram = !intro && q.diagram;
-  $('kanji-puzzle').hidden = !diagram;
-  $('question-panel').classList.toggle('has-kanji', !!diagram);
-  const completed = !!diagram && game.phase === 'feedback' && q.blankPosition === q.blankTotal;
-  $('kanji-puzzle').classList.toggle('completed', completed);
-  if (diagram) {
-    $('kanji-puzzle').replaceChildren();
-    if (completed) $('kanji-puzzle').textContent = q.character;
-    else for (const part of diagram.parts) {
-      const solved = part.state === 'solved' || (part.state === 'active' && game.phase === 'feedback');
-      const piece = document.createElement('span'); piece.className = `kanji-piece ${solved ? 'solved' : part.state}`;
-      piece.dataset.position = part.position;
-      const [x,y,width,height] = part.box;
-      Object.assign(piece.style, {left:`calc(${x}% + 2px)`,top:`calc(${y}% + 2px)`,width:`calc(${width}% - 4px)`,height:`calc(${height}% - 4px)`});
-      const glyph = document.createElement('span'); glyph.textContent = solved ? part.answer : '？';
-      if (solved) { const size = height * 0.80 * 0.88; glyph.style.fontSize = `${size}px`; glyph.style.transform = `scaleX(${Math.min(1,width*0.88/size)})`; }
-      piece.append(glyph); $('kanji-puzzle').append(piece);
-    }
-    $('kanji-puzzle').setAttribute('aria-label', completed ? `完成：${q.character}` : `${q.targetLabel}。${diagram.parts.filter(part => part.state === 'solved').map(part => `${part.position}は${part.answer}`).join('、')}`);
-  }
+  $('question-panel').classList.toggle('has-kanji', !intro && !!q.diagram);
+  renderKanji($('kanji-puzzle'), intro ? null : q, game.phase === 'feedback');
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
     el.classList.toggle('is-glyph', q.mode === 'kanji_component');
@@ -336,8 +369,7 @@ function positionQuestion(elapsed) {
   panel.style.transform = `translate3d(0,${game.phase === 'read' && !game.reveal.continuation ? lower * (1 - lift) : 0}px,0)`;
 }
 function render() {
-  $('total-score').textContent = game.totalScore.toLocaleString(); $('rhythm-combo').textContent = game.combo;
-  $('quiz-combo').textContent = game.quizCombo;
+  $('total-score').textContent = game.totalScore.toLocaleString();
   $('time').textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration || track.durationSeconds)}`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
@@ -435,11 +467,18 @@ function loop() {
 function tap(lane) {
   if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
   game.update(playbackTime());
-  const q = game.question, first = game.firstTry, previousCount = game.correctCount;
+  const q = game.question, first = game.firstTry, previousCount = game.correctCount, previousWrong = game.wrongCount, occurrence = game.questionIndex;
   const shouldSound = ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
   const note = game.tap(lane, playbackTime());
   if (shouldSound) playTapSound(false, note ? game.lastJudgment : 'MISS');
-  if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer });
+  if (game.correctCount > previousCount || game.wrongCount > previousWrong) {
+    const result = sessionResults.get(occurrence) || {question:structuredClone(q), wrong:0, correct:false};
+    const correct = game.correctCount > previousCount;
+    saveAnswer(q, correct, q.choices[lane], result.wrong);
+    if (correct) result.correct = true; else result.wrong++;
+    sessionResults.set(occurrence, result);
+    if (correct) history.push({term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer, wrong:result.wrong});
+  }
   render(); draw();
 }
 $('play-stage').addEventListener('pointerdown', event => {
@@ -451,8 +490,23 @@ $('play-stage').addEventListener('pointerdown', event => {
 document.querySelectorAll('[data-lane]').forEach(button => button.addEventListener('pointerdown', event => { event.preventDefault(); tap(Number(button.dataset.lane)); }));
 // Prevent selection handles, long-press callouts and drag gestures while playing.
 for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
+let gestureY = 0;
+document.addEventListener('touchstart', event => { gestureY = event.touches[0]?.clientY || 0; }, {passive:true});
+function blockPageScroll(event, delta) {
+  if (screen !== 'play') return;
+  if (event.target.closest?.('dialog[open]')) return;
+  const panel = event.target.closest?.('#question-panel');
+  const canScroll = panel && panel.scrollHeight > panel.clientHeight + 1 && (delta > 0 ? panel.scrollTop + panel.clientHeight < panel.scrollHeight - 1 : panel.scrollTop > 0);
+  if (!canScroll) event.preventDefault();
+}
+document.addEventListener('touchmove', event => {
+  if (event.touches.length !== 1) return;
+  const y = event.touches[0].clientY; blockPageScroll(event, gestureY - y); gestureY = y;
+}, {passive:false});
+document.addEventListener('wheel', event => blockPageScroll(event, event.deltaY), {passive:false});
 document.addEventListener('keydown', event => {
   if ($('controls-help').open || screen !== 'play' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
+  if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.code)) event.preventDefault();
   const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
   if (lane >= 0) { event.preventDefault(); tap(lane); }
   if (event.code === 'Space') { event.preventDefault(); togglePause(); }
@@ -475,6 +529,7 @@ function finish(completed) {
   audio.pause(); cancelAnimationFrame(frame);
   if (completed) game.update(playbackTime());
   const unfinished = !['intro','feedback','rhythm','outro'].includes(game.phase) ? game.question.reviewLabel : null;
+  const unfinishedWrong = sessionResults.get(game.questionIndex)?.wrong || 0;
   const awards = game.achievements(completed, !!unfinished);
   game.finish(); show('result');
   $('result-awards').replaceChildren();
@@ -515,11 +570,61 @@ function finish(completed) {
     }
     $('result-stats').append(column);
   }
+  reviewQuestions = missedQuestions([...sessionResults.values()]);
+  $('start-review').disabled = !reviewQuestions.length;
+  $('review-availability').textContent = reviewQuestions.length ? `${reviewQuestions.length}問を音楽なしで復習できます。` : '今回は間違えた問題がありません。';
   $('review').replaceChildren();
-  for (const item of history) { const li = document.createElement('li'); li.textContent = `${item.first ? '一発正解' : '再挑戦で正解'} · ${item.label} — 正解：${item.answer} · ${item.note}`; $('review').append(li); }
-  if (unfinished) { const li = document.createElement('li'); li.textContent = `未回答 · ${unfinished}（集計対象外）`; $('review').append(li); }
+  for (const item of history) { const li = document.createElement('li'); li.textContent = `${item.first ? '一発正解' : '再挑戦で正解'} · ${item.label} — 正解：${item.answer} · お手付き${item.wrong}回 · ${item.note}`; $('review').append(li); }
+  if (unfinished) { const li = document.createElement('li'); li.textContent = `未回答 · ${unfinished}（正答数には含みません）· お手付き${unfinishedWrong}回`; $('review').append(li); }
   if (!history.length && !unfinished) { const li = document.createElement('li'); li.textContent = '今回はリズムプレイのみでした。'; $('review').append(li); }
 }
+function renderPractice() {
+  const q = reviewQuestions[reviewIndex];
+  $('practice-progress').textContent = q ? `${reviewIndex + 1} / ${reviewQuestions.length} · ${q.grade} ${q.subject}` : 'すべての問題を正解できました。';
+  $('practice-task').textContent = q?.task || '';
+  $('practice-target').textContent = q?.targetLabel || '';
+  $('practice-prompt').replaceChildren(); $('practice-choices').replaceChildren();
+  $('practice-feedback').textContent = q ? '' : '○ 復習完了！'; $('practice-explanation').textContent = '';
+  $('practice-next').hidden = !q; $('practice-next').disabled = true;
+  renderKanji($('practice-kanji'), q);
+  if (!q) return;
+  for (const segment of q.segments || [{text:q.prompt}]) {
+    const span = document.createElement('span'); span.textContent = segment.text;
+    if (segment.state) span.className = `blank-${segment.state}`;
+    $('practice-prompt').append(span);
+  }
+  q.choices.forEach((choice, index) => {
+    const button = document.createElement('button'); button.className = 'practice-answer'; button.textContent = choice;
+    button.addEventListener('click', () => {
+      if (reviewSolved) return;
+      const correct = index === q.correct;
+      saveAnswer(q, correct, choice, reviewWrong, 'review');
+      $('practice-feedback').textContent = correct ? '○ 正解！' : '✖ もう一度';
+      $('practice-feedback').dataset.result = correct ? 'correct' : 'wrong';
+      if (!correct) { reviewWrong++; return; }
+      reviewSolved = true;
+      for (const answer of $('practice-choices').children) answer.disabled = true;
+      button.classList.add('correct');
+      const source = questions.find(item => item.id === q.sourceId);
+      const explanation = source?.note || q.note || '正しい語句を確認して、次の問題へ進もう。';
+      $('practice-explanation').textContent = `正解：${q.answer}。${explanation}`;
+      if (q.segments) for (const span of $('practice-prompt').querySelectorAll('.blank-active')) { span.textContent = q.answer; span.className = 'blank-solved'; }
+      renderKanji($('practice-kanji'), q, true);
+      $('practice-next').disabled = false;
+    });
+    $('practice-choices').append(button);
+  });
+}
+$('start-review').addEventListener('click', () => {
+  if (!reviewQuestions.length) return;
+  audio.pause(); cancelAnimationFrame(frame); reviewIndex = 0; reviewSolved = false; reviewWrong = 0;
+  show('practice-review'); renderPractice();
+});
+$('practice-next').addEventListener('click', () => {
+  if (!reviewSolved) return;
+  reviewIndex++; reviewSolved = false; reviewWrong = 0; renderPractice(); window.scrollTo(0,0);
+});
+$('practice-back').addEventListener('click', () => show('result'));
 let resumeAfterHelp = false;
 $('help').addEventListener('click', () => { resumeAfterHelp = !audio.paused; pause(); $('controls-help').showModal(); });
 $('close-help').addEventListener('click', () => $('controls-help').close());

@@ -41,7 +41,7 @@ export function makeBlankQuestions(item, random = Math.random) {
     return { ...item, id: `${item.id}:blank:${blank.index}`, sourceId: item.id, mode: 'term_to_explanation',
       blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length, continuation: position > 0,
       answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
-      prompt: segments.map(s => s.text).join(''), context: item.term, task: `「${item.term}」の説明を完成させよう`,
+      prompt: segments.map(s => s.text).join(''), context: item.cloze_context || '', task: item.cloze_context ? `「${item.cloze_context}」の説明を完成させよう` : '説明文を完成させよう',
       targetLabel: `${position ? '次の' : '強調された'}？に入る語句を回答（${position + 1} / ${blanks.length}）`,
       reviewLabel: `${item.term} · ？（${position + 1} / ${blanks.length}）` };
   });
@@ -136,7 +136,7 @@ export function makeSpellingQuestions(item, random = Math.random) {
   }
   return makeBlankQuestions({ ...item, term: item.japanese, term_dummies: [],
     explanation_template: item.spelling_template, blanks: item.spelling }, random).map(q => ({
-      ...q, id: `${item.id}:spelling:${q.blankIndex}`, mode: 'spelling', continuation: q.blankPosition > 1,
+      ...q, id: `${item.id}:spelling:${q.blankIndex}`, mode: 'spelling', continuation: q.blankPosition > 1, context: item.japanese,
       task: `「${item.japanese}」を表す英語の綴りを完成させよう`,
       targetLabel: `${q.blankPosition > 1 ? '次の' : '強調された'}？に入る${Array.from(q.answer).length}文字を回答（${q.blankPosition} / ${q.blankTotal}）`,
       note: q.blankPosition === q.blankTotal ? item.note : '',

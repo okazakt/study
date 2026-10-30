@@ -198,7 +198,7 @@ test('all 97 blanks generate distinct four-choice questions with exactly one act
       const blank=item.blanks.find(b=>b.index===q.blankIndex);
       assert.equal(q.choices.length,4); assert.equal(new Set(q.choices).size,4);
       assert.equal(q.choices[q.correct],blank.answer); assert.equal(q.answer,blank.answer);
-      assert.ok(q.context.includes(item.term)); assert.ok(q.targetLabel.includes(`？`)); assert.ok(q.targetLabel.includes(`${q.blankPosition} / ${q.blankTotal}`));
+      assert.equal(q.context,item.cloze_context || ''); assert.ok(q.targetLabel.includes(`？`)); assert.ok(q.targetLabel.includes(`${q.blankPosition} / ${q.blankTotal}`));
       assert.equal(q.segments.filter(s=>s.state==='active').length,1);
       assert.ok(!q.prompt.includes('{{'));
       for (const segment of q.segments.filter(s=>s.index)) {
@@ -238,9 +238,9 @@ test('the next explanation blank keeps the prompt visible and schedules new choi
   for (const item of questions) {
     const blanks=makeBlankQuestions(item);
     for (const q of blanks) {
-      assert.equal(q.context,item.term); assert.ok(!q.prompt.includes('穴')); assert.ok(!q.targetLabel.includes('穴'));
+      assert.equal(q.context,item.cloze_context || ''); assert.ok(!q.prompt.includes('穴')); assert.ok(!q.targetLabel.includes('穴'));
       assert.ok(!q.reviewLabel.includes('→')); const plan=revealPlan(q);
-      if(q.blankPosition===1){assert.equal(plan.continuation,false);assert.ok(plan.context.end>plan.context.start);assert.ok(plan.prompt.start>plan.context.end);assert.ok(plan.choices[0].start>plan.prompt.end);}
+      if(q.blankPosition===1){assert.equal(plan.continuation,false);if(q.context){assert.ok(plan.context.end>plan.context.start);assert.ok(plan.prompt.start>plan.context.end);}else assert.equal(plan.context.end,0);assert.ok(plan.choices[0].start>plan.prompt.end);}
       else {assert.equal(plan.continuation,true);assert.equal(plan.duration,plan.revealEnd+RULES.readHoldSeconds);assert.ok(plan.choices[0].start>0);assert.equal(plan.prompt.end,0);}
     }
     assert.equal(makeQuestion(item).context,''); assert.equal(makeQuestion(item).reviewLabel,item.term);
@@ -268,7 +268,7 @@ test('instructions match the requested action and all choices use reviewed three
     assert.equal(makeQuestion(item).task,'次の説明にあてはまる用語を選ぼう');
     for(const q of makeBlankQuestions(item)){
       assert.equal(item.blanks.find(b=>b.index===q.blankIndex).dummies.length,3);
-      assert.equal(q.task,`「${item.term}」の説明を完成させよう`);
+      assert.equal(q.task,item.cloze_context ? `「${item.cloze_context}」の説明を完成させよう` : '説明文を完成させよう');
     }
   }
   const law=questions.find(q=>q.term==='分離の法則');
