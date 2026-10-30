@@ -13,7 +13,7 @@
     <div class="eyebrow">音楽 × 暗記学習</div><h1>そのリズムが、<br><span>記憶になる。</span></h1>
     <p class="lead">ビートにのってタップ。答えの色で正解へ。<br>いつもの暗記を、ちょっと夢中になる時間に。</p>
     <div class="track-card"><div class="cover">♫<span>STUDY MIX / 001</span></div><div><span class="eyebrow">今回のトラック</span><h2>Fallin For You</h2><p>Flehmann · 120 BPM · 3:53</p><span class="badge">中3 理科 · 89問から出題</span></div></div>
-    <div class="steps"><div><b>01 / READ</b><p>手元で問題をゆっくり読む。<br>読んでいる間はタップ不要。</p></div><div><b>02 / CHOOSE</b><p>4色が横一列に到着。<br>答えの色だけを3回タップ。</p></div><div><b>03 / CONNECT</b><p>リズムと一発正解。<br>2つのコンボをつなごう。</p></div></div>
+    <div class="steps"><div><b>01 / READ</b><p>手元で問題をゆっくり読む。<br>順番に現れる選択肢を確認。</p></div><div><b>02 / CHOOSE</b><p>4色が横一列に到着。<br>答えの色だけを3回タップ。</p></div><div><b>03 / CONNECT</b><p>リズムと一発正解。<br>2つのコンボをつなごう。</p></div></div>
     <div class="start-row"><button id="start" class="primary" disabled>データを読み込み中…</button><span>タッチ / キーボード D F G H</span></div>
     <details><summary>タイミング調整・遊び方</summary><label>端末のタイミング補正（ms）<input id="offset" type="number" min="-500" max="500" step="10" value="0"></label><p>正の値でノーツを遅らせます。音声出力ごとに調整してください。保存はこのブラウザ内です。</p><p>色ノーツは表示されたレーンでタップ。白ノーツも流れてきたレーンでタップ。選ばない色は見送れます。</p></details>
     <p id="load-status" role="status"></p><p class="footnote">学年・科目・受験対策の選択は今後追加予定です。音源と譜面の同期は暫定値です。</p>
@@ -22,7 +22,7 @@
     <div class="play-top"><div><span class="eyebrow">NOW PLAYING</span><b>Fallin For You</b></div><span id="time">0:00 / 3:53</span><button id="pause" class="secondary">一時停止</button><button id="quit" class="secondary">終了</button></div>
     <div class="scoreboard"><div>RHYTHM SCORE<strong id="rhythm-score">0</strong></div><div>RHYTHM COMBO<strong id="rhythm-combo">0</strong></div><div>QUIZ SCORE<strong id="quiz-score">0</strong></div><div>一発正解 COMBO<strong id="quiz-combo">0</strong></div></div>
     <div id="play-stage" class="play-stage"><div id="question-slot"></div><div id="question-panel" class="question-panel"><div class="question-meta"><span id="phase-label" class="badge">WARM UP</span><span id="question-number"></span></div><h2 id="prompt">まずはリズムにのろう</h2><p id="instruction" role="status" aria-live="polite"></p><div id="choices" class="choices"></div><p id="explanation"></p></div>
-    <div id="field" class="field" aria-label="4レーンのタップエリア。左からD F G Hキーでも操作できます。"><canvas id="canvas"></canvas><div id="pause-overlay" hidden>PAUSED<span>再開ボタンで続けよう</span></div></div>
+    <div id="field" class="field" aria-label="4レーンのタップエリア。左からD F G Hキーでも操作できます。"><canvas id="canvas"></canvas><div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite" hidden><strong id="quiz-symbol"></strong><span id="quiz-result-label"></span></div><div id="tap-judgment" class="tap-judgment" role="status" aria-live="polite" hidden></div><div id="pause-overlay" hidden>PAUSED<span>再開ボタンで続けよう</span></div></div>
     </div>
     <div class="lane-keys" aria-label="タップ操作"><button data-lane="0">D</button><button data-lane="1">F</button><button data-lane="2">G</button><button data-lane="3">H</button></div>
     <p class="play-hint">白も色も、そのレーンでタップ。選ばない色は見送ってOK。</p>

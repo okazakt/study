@@ -1,6 +1,6 @@
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
-  feedbackSeconds: 2.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
+  feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
 export const COLORS = [
   { name: '赤', value: '#ff7187' }, { name: '青', value: '#73b9ff' },
   { name: '黄', value: '#ffda79' }, { name: '緑', value: '#71e1bc' }
@@ -54,50 +54,55 @@ export class Game {
     this.rhythmScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
+    this.quizResult = null;
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
   }
   get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
   changePhase(phase, now) {
     this.phase = phase; this.phaseStart = now;
-    // Phase-specific notes must never be interpreted as another question or color mode.
-    this.notes = [];
-    if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '今はタップをお休み。問題と選択肢をゆっくり読もう'; }
+    if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
     if (phase === 'answer') this.message = `答えの色を${RULES.tapsToAnswer}回タップ`;
   }
   update(now) {
     this.time = now;
     if (this.phase === 'ended') return;
-    if (this.phase === 'intro' && now - this.phaseStart >= RULES.introSeconds) this.changePhase('read', now);
-    else if (this.phase === 'read' && now - this.phaseStart >= this.reveal.duration) this.changePhase('answer', now);
-    else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds) {
-      this.questionIndex++; this.changePhase('read', now);
+    if (this.phase === 'read' && now - this.phaseStart >= this.reveal.duration) this.changePhase('answer', now);
+    while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
+      const event = this.events[this.cursor++];
+      if (!['intro', 'answer'].includes(this.phase)) continue;
+      if (event.target < this.phaseStart + RULES.travelSeconds) continue;
+      // Do not launch a note that cannot be judged and displayed before the intro ends.
+      if (this.phase === 'intro' && event.target + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
+      if (this.phase === 'answer') {
+        COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
+      } else this.notes.push({ ...event, color: null, done: false });
     }
     for (const note of this.notes) {
       if (!note.done && now - note.target > RULES.goodWindow) {
         note.done = true;
-        // Other colors are choices, not mandatory rhythm targets.
-        if (note.color === null) { this.combo = 0; this.judge('MISS', now); }
+        // An unanswered four-color row is one miss; unchosen siblings are not misses.
+        if (note.rowId !== undefined) {
+          for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
+        }
+        this.combo = 0; this.judge('MISS', now);
       }
     }
-    this.notes = this.notes.filter(note => now - note.target <= 0.3 && !note.done);
-    while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
-      const event = this.events[this.cursor++];
-      if (this.phase === 'read') continue;
-      if (event.target < this.phaseStart + RULES.travelSeconds || event.target < now) continue;
-      if (this.phase === 'answer') {
-        COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
-      } else this.notes.push({ ...event, color: null, done: false });
+    this.notes = this.notes.filter(note => !note.done);
+    const settled = !this.notes.length && now - this.judgmentTime >= RULES.judgmentSeconds;
+    if (this.phase === 'intro' && now >= RULES.introSeconds && settled) this.changePhase('read', now);
+    else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds && settled) {
+      this.questionIndex++; this.changePhase('read', now);
     }
   }
   judge(label, now) { this.lastJudgment = label; this.judgmentTime = now; }
   tap(lane, now) {
     if (this.phase === 'ended') return null;
     this.update(now);
-    if (this.phase === 'read') return null;
+    if (this.phase === 'read' || (this.phase === 'feedback' && !this.notes.length)) return null;
     const note = this.notes.filter(n => !n.done && n.lane === lane && Math.abs(n.target - now) <= RULES.goodWindow)
       .sort((a, b) => Math.abs(a.target - now) - Math.abs(b.target - now))[0];
-    if (!note) { this.combo = 0; this.judge('空振り', now); return null; }
+    if (!note) { this.combo = 0; this.judge('MISS', now); return null; }
     note.done = true;
     if (note.rowId !== undefined) {
       for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
@@ -110,11 +115,13 @@ export class Game {
       this.counts[note.color]++;
       if (this.counts[note.color] === RULES.tapsToAnswer) {
         if (note.color === this.question.correct) {
+          this.quizResult = { correct: true, time: now, choice: note.color };
           this.correctCount++;
           if (this.firstTry) { this.quizScore += 1000; this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
           this.message = this.firstTry ? '一発正解！ +1,000 pt' : '正解！ 覚えて次へ進もう';
           this.changePhase('feedback', now);
         } else {
+          this.quizResult = { correct: false, time: now, choice: note.color };
           this.firstTry = false; this.quizCombo = 0; this.counts = [0, 0, 0, 0];
           this.message = 'もう一度！ 正解だと思う色を3回タップ';
         }

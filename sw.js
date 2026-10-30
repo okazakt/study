@@ -1,4 +1,4 @@
-const CACHE = 'study-beat-v4';
+const CACHE = 'study-beat-v5';
 const ASSETS = ['./', './index.html', './style.css', './app.js', './game.js', './manifest.webmanifest',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './quiz-data/junior_science.json', './music-data/index.json',
   './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0001/Fallin_For_You.mp3'];

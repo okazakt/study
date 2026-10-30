@@ -76,7 +76,7 @@ function render() {
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア。左からD F G H' : '白ノーツのタップエリア');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
-  document.querySelector('.play-hint').textContent = game.phase === 'read' ? '今は読む時間。タップはお休みです。' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツが流れてきたレーンをタップ。';
+  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツが流れてきたレーンをタップ。';
   $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
   $('question-number').textContent = game.phase === 'intro' ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
@@ -90,6 +90,18 @@ function render() {
     count.textContent = `${game.counts[i]} / ${RULES.tapsToAnswer}`;
   });
   $('explanation').textContent = game.phase === 'feedback' ? `${q.term}：${q.note}` : '';
+  const result = game.quizResult;
+  const resultVisible = result && (game.phase === 'feedback' || game.time - result.time < RULES.wrongResultSeconds);
+  $('quiz-feedback').hidden = !resultVisible;
+  if (resultVisible) {
+    $('quiz-feedback').dataset.result = result.correct ? 'correct' : 'wrong';
+    $('quiz-symbol').textContent = result.correct ? '⭕️' : '✖️';
+    $('quiz-result-label').textContent = result.correct ? '正解！' : '不正解 · もう一度';
+  }
+  const judgmentVisible = game.lastJudgment && game.time - game.judgmentTime < RULES.judgmentSeconds;
+  $('tap-judgment').hidden = !judgmentVisible;
+  $('tap-judgment').textContent = game.lastJudgment;
+  $('tap-judgment').dataset.judgment = game.lastJudgment;
   positionQuestion(elapsed);
 }
 const canvas = $('canvas'); const ctx = canvas.getContext('2d');
@@ -116,10 +128,7 @@ function draw() {
     ctx.shadowColor = ctx.fillStyle; ctx.shadowBlur = 12;
     ctx.beginPath(); ctx.roundRect(x, y - 10, w, 20, 5); ctx.fill(); ctx.shadowBlur = 0;
   }
-  if (audio.currentTime - game.judgmentTime < .55) {
-    ctx.font = 'bold 21px system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = game.lastJudgment === 'PERFECT' ? '#a8f07d' : '#eef2fa';
-    ctx.fillText(game.lastJudgment, width / 2, line - 44);
-  }
+
 }
 function loop() {
   if (!game || screen !== 'play') return;

@@ -65,19 +65,23 @@ test('wrong answers keep the same question and colors, reset progress, and break
   hit(g,q.correct,5); hit(g,q.correct,6); hit(g,q.correct,7);
   assert.equal(g.correctCount,1); assert.equal(g.firstCount,0); assert.equal(g.quizScore,0); assert.equal(g.phase,'feedback');
 });
-test('avoiding other colors is allowed; counts are independent until an answer is confirmed', () => {
-  const g = fixture(); g.changePhase('answer',0); const c = g.question.correct;
-  hit(g,c,2); g.notes.push({target:3,color:(c+1)%4,lane:0}); g.update(3.2);
-  assert.equal(g.combo,1); assert.equal(g.counts[c],1);
-  hit(g,(c+1)%4,4); hit(g,c,5); hit(g,c,6);
+test('unchosen sibling colors are not misses and counts remain independent', () => {
+  const g=new Game(questions,chart.events); g.changePhase('answer',8); const c=g.question.correct;
+  const events=g.events.filter(e=>e.target>=8+RULES.travelSeconds).slice(0,4);
+  for (let i=0;i<events.length;i++) {
+    const e=events[i]; g.update(e.target-1); g.tap(i===1?(c+1)%4:c,e.target);
+    g.update(e.target+.2); assert.notEqual(g.lastJudgment,'MISS');
+  }
   assert.equal(g.phase,'feedback'); assert.equal(g.firstCount,1);
 });
-test('phase transitions discard stale notes without a penalty; finish forbids further scoring', () => {
-  const g = fixture(); g.combo = 8; g.notes.push({target:8.1,color:null,lane:2}); g.update(RULES.introSeconds);
-  assert.equal(g.phase,'read'); assert.equal(g.notes.length,0); assert.equal(g.combo,8);
-  g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,0); assert.equal(g.phase,'ended');
+test('a transition waits for the final note and its judgment instead of discarding it', () => {
+  const g = fixture(); g.combo=8; g.notes.push({target:8.1,color:null,lane:2});
+  g.update(8); assert.equal(g.phase,'intro'); assert.equal(g.notes.length,1);
+  g.tap(2,8.1); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.combo,9);
+  g.update(8.8); assert.equal(g.phase,'intro');
+  g.update(9.01); assert.equal(g.phase,'read'); assert.equal(g.notes.length,0);
+  g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,100); assert.equal(g.phase,'ended');
 });
-
 test('easy chart has one first-beat target per bar, retaining timestamps', () => {
   const selected = easyEvents(chart.events);
   assert.equal(selected.length,112);
@@ -148,4 +152,38 @@ test('all phases keep four lanes and white notes use shuffled single lanes', () 
   assert.equal(g.notes[0].lane,event.lane);
   assert.equal(g.tap((event.lane+1)%4,event.target),null);
   assert.equal(g.rhythmScore,0); assert.ok(g.tap(event.lane,event.target)); assert.equal(g.rhythmScore,100);
+});
+
+test('missing an entire answer row reports one MISS, but a successful row reports none', () => {
+  const g=new Game(questions,chart.events); g.changePhase('answer',8); g.combo=5;
+  const event=g.events.find(e=>e.target>=8+RULES.travelSeconds); g.update(event.target-1);
+  let misses=0; const judge=g.judge.bind(g); g.judge=(label,time)=>{ if(label==='MISS')misses++; judge(label,time); };
+  g.update(event.target+RULES.goodWindow+.01);
+  assert.equal(misses,1); assert.equal(g.lastJudgment,'MISS'); assert.equal(g.combo,0); assert.deepEqual(g.counts,[0,0,0,0]);
+  g.tap(0,event.target+.4); assert.equal(g.lastJudgment,'MISS');
+});
+test('correct and wrong answers keep explicit results separately from rhythm judgments', () => {
+  const g=fixture(); g.changePhase('answer',0); const correct=g.question.correct;
+  for (let t=2;t<=4;t++) hit(g,(correct+1)%4,t);
+  assert.equal(g.quizResult.correct,false); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.phase,'answer');
+  for (let t=5;t<=7;t++) hit(g,correct,t);
+  assert.equal(g.quizResult.correct,true); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.phase,'feedback');
+});
+test('feedback does not generate short-lived white notes and drains any existing notes', () => {
+  const g=fixture(); g.changePhase('answer',0); const c=g.question.correct;
+  hit(g,c,2); hit(g,c,3); g.notes.push({target:5,color:c,lane:1,rowId:99}); hit(g,c,4);
+  assert.equal(g.phase,'feedback'); assert.ok(g.notes.some(n=>n.rowId===99&&!n.done));
+  g.update(4.5); assert.ok(g.notes.some(n=>n.rowId===99));
+  g.tap(1,5); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.correctCount,1);
+  g.update(6.5); assert.equal(g.phase,'read');
+  const real=new Game(questions,chart.events); real.changePhase('feedback',20);
+  for(let t=20;t<22.5;t+=.05){ real.update(t); assert.deepEqual(real.notes,[]); }
+});
+test('intro scheduling leaves time to show final judgments; overdue events are not silently lost', () => {
+  const g=new Game(questions,chart.events); g.update(6.5);
+  assert.equal(g.lastJudgment,'MISS'); assert.equal(g.judgmentTime,6.5);
+  for(let t=6.5;t<=8;t+=.02) {
+    g.update(t); assert.ok(g.notes.every(n=>n.target+RULES.goodWindow+RULES.judgmentSeconds<=RULES.introSeconds));
+  }
+  g.update(8); assert.equal(g.phase,'read'); assert.deepEqual(g.notes,[]);
 });
