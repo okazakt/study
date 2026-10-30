@@ -9,3 +9,5 @@
 #play[data-continuation="true"] .blank-active{outline:2px solid #a8f07d;outline-offset:2px;background:#a8f07d35}
 
 .question-task{font-size:12px;color:#a8bcd3;line-height:1.7;margin:10px 0 5px}.question-task:empty{display:none}
+
+.home-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.app-version{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.5px}

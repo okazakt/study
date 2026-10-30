@@ -4,6 +4,10 @@
 
 PWAの実装・変更前に必ず [docs/pwa-spec.md](docs/pwa-spec.md) を読み、仕様に従ってください。未決定事項は確定済みとして扱わず、決定・変更した仕様は同ファイルへ反映してください。
 
+## 公開バージョン
+
+アプリを公開更新する際は `package.json` の `version` を更新し、`index.html` のトップ画面のバージョン表示と `sw.js` のキャッシュ名（`study-beat-v<version>`）を同じ値に揃えてください。仕様書のバージョン説明も更新してください。
+
 ## 音楽データの管理
 
 `music-data/` の楽曲追加・変更・同期調整を行う際は、作業前に必ず [music-data/README.md](music-data/README.md) を読み、その管理ルールに従ってください。
