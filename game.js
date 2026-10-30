@@ -1,4 +1,4 @@
-export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 3,
+export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
 export const COLORS = [
@@ -52,13 +52,18 @@ export function makeQuestionQueue(items, random = Math.random) {
   // Alternate directions by source group; keep all blanks of one explanation together.
   return blanks.flatMap((group, i) => [...group, terms[i]]);
 }
-// Keep the original corrected timestamps; select just the first beat of each bar.
+// Preserve source timestamps and keep every main beat, excluding subdivisions.
 export function easyEvents(events) {
-  const bars = new Set();
+  const beats = new Set();
   return events.filter(event => {
-    if (event.beatInBar !== 1 || event.beatPosition !== 0 || bars.has(event.bar)) return false;
-    bars.add(event.bar); return true;
+    const key = `${event.bar}:${event.beatInBar}`;
+    if (event.beatPosition !== 0 || !Number.isInteger(event.beatInBar) || event.beatInBar < 1 || event.beatInBar > 4 || beats.has(key)) return false;
+    beats.add(key); return true;
   });
+}
+export function answerProgress(count, required) {
+  if (!Number.isFinite(required) || required <= 0 || !Number.isFinite(count)) return 0;
+  return Math.max(0, Math.min(1, count / required));
 }
 export function revealPlan(question) {
   if (question.mode === 'term_to_explanation' && question.blankPosition > 1) {
@@ -95,6 +100,10 @@ export class Game {
     this.quizResult = null;
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
   }
+  get requiredTaps() {
+    const value = this.question.tapsToAnswer;
+    return Number.isInteger(value) && value > 0 ? value : RULES.tapsToAnswer;
+  }
   get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
   changePhase(phase, now) {
@@ -106,7 +115,7 @@ export class Game {
       this.rhythmTargets = new Set(targets.map(e => e.id));
       this.rhythmEnd = (targets.at(-1)?.target ?? now) + RULES.goodWindow + RULES.judgmentSeconds;
     }
-    if (phase === 'answer') this.message = `答えの色を${RULES.tapsToAnswer}回タップ`;
+    if (phase === 'answer') this.message = `答えの色を${this.requiredTaps}回タップ`;
   }
   update(now) {
     this.time = now;
@@ -164,7 +173,7 @@ export class Game {
     this.judge(perfect ? 'PERFECT' : 'GOOD', now);
     if (this.phase === 'answer' && note.color !== null) {
       this.counts[note.color]++;
-      if (this.counts[note.color] === RULES.tapsToAnswer) {
+      if (this.counts[note.color] >= this.requiredTaps) {
         if (note.color === this.question.correct) {
           this.quizResult = { correct: true, time: now, choice: note.color };
           this.correctCount++;
@@ -174,7 +183,7 @@ export class Game {
         } else {
           this.quizResult = { correct: false, time: now, choice: note.color };
           this.firstTry = false; this.quizCombo = 0; this.counts = [0, 0, 0, 0];
-          this.message = 'もう一度！ 正解だと思う色を3回タップ';
+          this.message = `もう一度！ 正解だと思う色を${this.requiredTaps}回タップ`;
         }
       }
     }

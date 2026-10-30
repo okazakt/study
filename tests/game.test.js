@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue } from '../game.js';
+import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress } from '../game.js';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const questions = read('../quiz-data/junior_science.json');
 const track = read('../music-data/index.json')['0001'];
@@ -82,11 +82,11 @@ test('a transition waits for the final note and its judgment instead of discardi
   g.update(9.01); assert.equal(g.phase,'read'); assert.equal(g.notes.length,0);
   g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,100); assert.equal(g.phase,'ended');
 });
-test('easy chart has one first-beat target per bar, retaining timestamps', () => {
+test('main-beat chart keeps every beat without subdivisions or duplicate times', () => {
   const selected = easyEvents(chart.events);
-  assert.equal(selected.length,112);
-  assert.equal(new Set(selected.map(e => e.bar)).size,selected.length);
-  assert.ok(selected.every(e => e.beatInBar === 1 && e.beatPosition === 0 && chart.events.includes(e)));
+  assert.equal(selected.length,450);
+  assert.equal(new Set(selected.map(e => `${e.bar}:${e.beatInBar}`)).size,selected.length);
+  assert.ok(selected.every(e => e.beatInBar >= 1 && e.beatInBar <= 4 && e.beatPosition === 0 && chart.events.includes(e)));
   const g = new Game(questions,chart.events);
   assert.deepEqual(g.events.map(e=>e.target),selected.map(e=>e.time));
   assert.equal(easyEvents([selected[0],selected[0]]).length,1);
@@ -126,7 +126,7 @@ test('answer rows offer four simultaneous colors, ordered like choices, one sele
   assert.ok(row.every(n=>n.done));
   g.tap(2,event.target); assert.equal(g.counts[2],0); assert.equal(g.rhythmScore,100);
   const next=g.events.find(e=>e.target>event.target);
-  g.update(next.target-1); assert.equal(g.notes.filter(n=>!n.done).length,4);
+  g.update(next.target-1); assert.equal(g.notes.filter(n=>!n.done&&n.rowId===next.id).length,4);
   g.tap(1,next.target); assert.equal(g.counts[1],2);
 });
 test('each color can confirm an answer on three successive rows', () => {
@@ -148,8 +148,8 @@ test('all phases keep four lanes and white notes use shuffled single lanes', () 
   }
   g.changePhase('intro',0);
   const event=g.events[0]; g.update(event.target-1);
-  assert.equal(g.notes.length,1); assert.equal(g.notes[0].color,null);
-  assert.equal(g.notes[0].lane,event.lane);
+  assert.equal(g.notes.filter(n=>n.id===event.id).length,1); assert.equal(g.notes.find(n=>n.id===event.id).color,null);
+  assert.equal(g.notes.find(n=>n.id===event.id).lane,event.lane);
   assert.equal(g.tap((event.lane+1)%4,event.target),null);
   assert.equal(g.rhythmScore,0); assert.ok(g.tap(event.lane,event.target)); assert.equal(g.rhythmScore,100);
 });
@@ -160,7 +160,7 @@ test('missing an entire answer row reports one MISS, but a successful row report
   let misses=0; const judge=g.judge.bind(g); g.judge=(label,time)=>{ if(label==='MISS')misses++; judge(label,time); };
   g.update(event.target+RULES.goodWindow+.01);
   assert.equal(misses,1); assert.equal(g.lastJudgment,'MISS'); assert.equal(g.combo,0); assert.deepEqual(g.counts,[0,0,0,0]);
-  g.tap(0,event.target+.4); assert.equal(g.lastJudgment,'MISS');
+  g.tap(0,event.target+.24); assert.equal(g.lastJudgment,'MISS');
 });
 test('correct and wrong answers keep explicit results separately from rhythm judgments', () => {
   const g=fixture(); g.changePhase('answer',0); const correct=g.question.correct;
@@ -256,13 +256,13 @@ test('terms reveal before explanation; the next blank keeps all text visible in 
   }
 });
 
-test('normal play fits three white notes between groups and waits for final judgment', () => {
+test('normal play fits eight white notes between groups and waits for final judgment', () => {
   const g=new Game([questions[0]],chart.events,0,()=>.5);g.changePhase('feedback',20);
   g.update(22.5);assert.equal(g.phase,'rhythm');assert.equal(g.questionIndex,0);
-  const targets=g.events.filter(e=>g.rhythmTargets.has(e.id));assert.equal(targets.length,3);
+  const targets=g.events.filter(e=>g.rhythmTargets.has(e.id));assert.equal(targets.length,8);
   const quizScore=g.quizScore;
   for(const e of targets){g.update(e.target-1);const note=g.notes.find(n=>n.id===e.id);assert.ok(note);assert.equal(note.color,null);g.tap(e.lane,e.target);}
-  assert.equal(g.quizScore,quizScore);assert.equal(g.rhythmScore,300);assert.equal(g.phase,'rhythm');
+  assert.equal(g.quizScore,quizScore);assert.equal(g.rhythmScore,800);assert.equal(g.phase,'rhythm');
   g.update(targets.at(-1).target+.5);assert.equal(g.phase,'rhythm');
   g.update(g.rhythmEnd+.01);assert.equal(g.phase,'read');assert.equal(g.questionIndex,1);assert.deepEqual(g.notes,[]);
 });
@@ -283,4 +283,24 @@ test('instructions match the requested action and all choices use reviewed three
   const law=questions.find(q=>q.term==='分離の法則');
   assert.deepEqual(new Set(law.term_dummies),new Set(['独立の法則','顕性の法則','伴性遺伝']));
   const gene=questions.find(q=>q.term==='DNA');assert.ok(gene.term_dummies.includes('RNA'));assert.ok(!gene.term_dummies.includes('デンプン'));
+});
+
+test('answer progress is a bounded ratio and supports a future ten-tap question', () => {
+  assert.equal(answerProgress(0,3),0);assert.equal(answerProgress(1,3),1/3);assert.equal(answerProgress(3,3),1);
+  assert.equal(answerProgress(1,10),.1);assert.equal(answerProgress(5,10),.5);assert.equal(answerProgress(9,10),.9);
+  assert.equal(answerProgress(12,10),1);assert.equal(answerProgress(-2,10),0);assert.equal(answerProgress(1,0),0);
+  const g=fixture();g.question.tapsToAnswer=10;g.changePhase('answer',0);const color=g.question.correct;
+  for(let n=1;n<=9;n++)hit(g,color,n+1);
+  assert.equal(g.phase,'answer');assert.equal(g.correctCount,0);assert.equal(answerProgress(g.counts[color],g.requiredTaps),.9);
+  hit(g,color,11);assert.equal(g.phase,'feedback');assert.equal(g.correctCount,1);assert.equal(answerProgress(g.counts[color],g.requiredTaps),1);
+});
+test('higher-density rows remain playable through feedback without disappearing', () => {
+  const g=new Game([questions[0]],chart.events,0,()=>.5);g.changePhase('answer',8);
+  const rows=g.events.filter(e=>e.target>=8+RULES.travelSeconds).slice(0,3);
+  assert.ok(rows.every((e,i)=>i===0||e.target-rows[i-1].target<.55));
+  for(const row of rows){g.update(Math.max(g.time,row.target-1));g.tap(g.question.correct,row.target);}
+  assert.equal(g.phase,'feedback');const pending=g.notes.filter(n=>!n.done);assert.ok(pending.length>=4);
+  const end=Math.max(...pending.map(n=>n.target));g.update(end+.17);assert.equal(g.lastJudgment,'MISS');
+  assert.equal(g.phase,'feedback');assert.equal(g.notes.length,0);assert.equal(g.correctCount,1);
+  g.update(end+.17+RULES.judgmentSeconds+.01);assert.equal(g.phase,'rhythm');
 });

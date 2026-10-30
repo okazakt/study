@@ -1,4 +1,4 @@
-import { Game, RULES, COLORS } from './game.js';
+import { Game, RULES, COLORS, answerProgress } from './game.js';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, chart, track, game, frame, busy = false, history = [], screen = 'home';
@@ -66,8 +66,9 @@ function renderQuestion() {
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
     const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
-    const count = document.createElement('span'); count.className = 'count'; el.append(count);
-    choiceElements.push({ element: el, count, start: game.reveal.choices[i].start }); $('choices').append(el);
+    el.setAttribute('role', 'progressbar'); el.setAttribute('aria-label', choice);
+    el.setAttribute('aria-valuemin', '0'); el.setAttribute('aria-valuemax', '100');
+    choiceElements.push({ element: el, start: game.reveal.choices[i].start }); $('choices').append(el);
   });
 }
 function positionQuestion(elapsed) {
@@ -93,17 +94,29 @@ function render() {
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア' : '白ノーツのタップエリア');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
-  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツが流れてきたレーンをタップ。';
+  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '白ノーツが流れてきたレーンをタップ。';
   $('question-number').textContent = ['intro', 'rhythm'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
     const opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
     character.element.style.opacity = reducedMotion.matches ? Number(opacity > 0) : opacity;
   }
-  choiceElements.forEach(({element, count, start}, i) => {
+  choiceElements.forEach(({element, start}, i) => {
     element.style.opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
     element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
-    count.textContent = `${game.counts[i]} / ${RULES.tapsToAnswer}`;
+    const progress = answerProgress(game.counts[i], game.requiredTaps);
+    const strength = 0.08 + progress * 0.72;
+    element.style.setProperty('--choice-strength', `${strength * 100}%`);
+    element.dataset.progress = progress;
+    element.setAttribute('aria-valuenow', String(Math.round(progress * 100)));
+    // Choose a readable foreground as each pastel background becomes stronger.
+    const rgb = COLORS[i].value.match(/[a-f\d]{2}/gi).map(hex => parseInt(hex, 16));
+    const channel = value => value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+    const luminance = values => values.map(value => channel(value / 255)).reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+    const background = luminance(rgb.map((value, index) => value * strength + [20, 30, 48][index] * (1 - strength)));
+    const dark = luminance([16, 26, 42]);
+    const darkContrast = (background + 0.05) / (dark + 0.05), lightContrast = 1.05 / (background + 0.05);
+    element.style.color = Math.max(darkContrast, lightContrast) < 4.5 ? '#000000' : darkContrast >= lightContrast ? '#101a2a' : '#ffffff';
   });
   $('explanation').textContent = game.phase === 'feedback'
     ? q.mode === 'term_to_explanation' && q.blankPosition < q.blankTotal ? `正解：${q.answer}` : `正解：${q.answer} · ${q.note}`
@@ -137,13 +150,14 @@ function draw() {
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
   for (const note of game.notes) {
     if (note.done) continue;
+    const noteHeight = Math.min(20, Math.max(10, line * 0.22));
     const y = line * (1 - (note.target - audio.currentTime) / RULES.travelSeconds);
     const white = note.color === null;
     const x = note.lane * laneWidth + 8;
     const w = laneWidth - 16;
     ctx.fillStyle = white ? '#e5edf7' : COLORS[note.color].value;
     ctx.shadowColor = ctx.fillStyle; ctx.shadowBlur = 12;
-    ctx.beginPath(); ctx.roundRect(x, y - 10, w, 20, 5); ctx.fill(); ctx.shadowBlur = 0;
+    ctx.beginPath(); ctx.roundRect(x, y - noteHeight / 2, w, noteHeight, 5); ctx.fill(); ctx.shadowBlur = 0;
   }
 
 }
