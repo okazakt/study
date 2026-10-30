@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.19.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.19.1';
-const VERSION = '0.19.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.19.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.19.2';
+const VERSION = '0.19.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -63,7 +63,15 @@ function prepareTapAudio() {
 }
 function emitTapSound() {
   const t = tapAudio.currentTime, gain = tapAudio.createGain(), tone = tapAudio.createOscillator();
-  gain.gain.setValueAtTime(tapVolume / 100 * .4, t); gain.connect(tapAudio.destination);
+  gain.gain.setValueAtTime(tapVolume / 100 * 4, t);
+  // Tenfold amplification, with soft peak limiting for the upper volume range.
+  const limiter = tapAudio.createWaveShaper(), curve = new Float32Array(4097);
+  for (let i = 0; i < curve.length; i++) {
+    const x = i * 2 / (curve.length - 1) - 1, magnitude = Math.abs(x);
+    curve[i] = Math.sign(x) * (magnitude <= .8 ? magnitude : .8 + .18 * Math.tanh((magnitude - .8) / .18));
+  }
+  limiter.curve = curve; limiter.oversample = '2x';
+  gain.connect(limiter); limiter.connect(tapAudio.destination);
   const envelope = tapAudio.createGain();
   envelope.gain.setValueAtTime(.0001, t);
   envelope.gain.exponentialRampToValueAtTime(.8, t + .002);
@@ -80,7 +88,7 @@ function emitTapSound() {
   noise.buffer = tapNoise; filter.type = 'highpass'; filter.frequency.value = 1400;
   noise.connect(filter); filter.connect(gain);
   noise.onended = () => { noise.disconnect(); filter.disconnect(); };
-  tone.onended = () => { tone.disconnect(); envelope.disconnect(); gain.disconnect(); };
+  tone.onended = () => { tone.disconnect(); envelope.disconnect(); gain.disconnect(); limiter.disconnect(); };
   noise.start(t); tone.start(t); tone.stop(t + .09);
 }
 function playTapSound(preview = false) {
