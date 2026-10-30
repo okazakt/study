@@ -1,7 +1,8 @@
-const CACHE = 'study-beat-v0.10.1';
+const CACHE = 'study-beat-v0.11.0';
 const ASSETS = ['./', './index.html', './style.css', './app.js', './game.js', './manifest.webmanifest',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './quiz-data/junior_science.json', './quiz-data/junior_english.json', './music-data/index.json',
-  './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0001/Fallin_For_You.mp3'];
+  './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0001/Fallin_For_You.mp3',
+  './music-data/0002/the_mountain_rhythm_beat2.json', './music-data/0002/the_mountain-american-western-country-496543.mp3'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS.map(url => new Request(url, { cache: 'reload' })))).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('study-beat-') && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {

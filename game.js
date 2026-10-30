@@ -94,9 +94,22 @@ export function easyEvents(events) {
   const beats = new Set();
   return events.filter(event => {
     const key = `${event.bar}:${event.beatInBar}`;
-    if (event.beatPosition !== 0 || !Number.isInteger(event.beatInBar) || event.beatInBar < 1 || event.beatInBar > 4 || beats.has(key)) return false;
+    const main = event.beatPosition === 0 || (event.beatPosition === undefined && ['beat', 'accent', 'downbeat'].includes(event.type));
+    if (!main || !Number.isInteger(event.beatInBar) || event.beatInBar < 1 || event.beatInBar > 4 || beats.has(key)) return false;
     beats.add(key); return true;
   });
+}
+export function makePlaylist(entries) {
+  let duration = 0;
+  const tracks = entries.map(({ id, track, chart }) => {
+    const start = duration;
+    duration += track.durationSeconds;
+    return { id, ...track, start, events: easyEvents(chart.events).map(event => ({
+      ...event, time: start + event.time + (track.timing.chartToAudioOffsetMs || 0) / 1000,
+      bar: `${id}:${event.bar}`
+    })) };
+  });
+  return { tracks, duration, events: tracks.flatMap(track => track.events) };
 }
 export function answerProgress(count, required) {
   if (!Number.isFinite(required) || required <= 0 || !Number.isFinite(count)) return 0;

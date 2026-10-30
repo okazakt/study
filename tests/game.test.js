@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress, makeEnglishQuestion, makeSpellingQuestions } from '../game.js';
+import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress, makeEnglishQuestion, makeSpellingQuestions, makePlaylist } from '../game.js';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const questions = read('../quiz-data/junior_science.json');
 const track = read('../music-data/index.json')['0001'];
@@ -382,4 +382,36 @@ test('all spelling alternatives have the requested length and cannot complete th
   const first=makeSpellingQuestions(arrive)[0];
   assert.equal(first.answer,'ar');assert.ok(!first.choices.includes('arr'));assert.ok(!first.choices.includes('a'));
   assert.throws(()=>makeSpellingQuestions({...arrive,spelling:arrive.spelling.map((b,i)=>i===0?{...b,dummies:['arr','ra','a']}:b)}),/same length/);
+});
+
+const secondTrack=read('../music-data/index.json')['0002'];
+const secondChart=read(`../music-data/${secondTrack.files.chart}`);
+test('second track reads all main beats without interpreting offbeats as primary beats',()=>{
+  assert.equal(secondTrack.title,'American Western Country');assert.equal(secondTrack.creator,'The_Mountain');
+  assert.equal(secondChart.events.length,420);assert.equal(easyEvents(secondChart.events).length,211);
+  assert.ok(easyEvents(secondChart.events).every(e=>['beat','accent'].includes(e.type)));
+  assert.ok(secondChart.events.every((e,i,all)=>e.time>=0&&e.time<secondTrack.durationSeconds&&(!i||e.time>=all[i-1].time)));
+  for(const file of Object.values(secondTrack.files))assert.ok(readFileSync(new URL(`../music-data/${file}`,import.meta.url)).length);
+});
+test('playlist preserves both charts, applies per-song and device offsets once, and retains distinct bars',()=>{
+  const p=makePlaylist([{id:'0001',track:{...track,timing:{chartToAudioOffsetMs:25}},chart},
+    {id:'0002',track:{...secondTrack,timing:{chartToAudioOffsetMs:-35}},chart:secondChart}]);
+  assert.equal(p.tracks[1].start,track.durationSeconds);assert.equal(p.duration,track.durationSeconds+secondTrack.durationSeconds);
+  assert.equal(p.events.length,661);assert.equal(easyEvents(p.events).length,661);
+  assert.equal(p.events[0].time,easyEvents(chart.events)[0].time+.025);
+  assert.equal(p.events[450].time,track.durationSeconds+easyEvents(secondChart.events)[0].time-.035);
+  const g=new Game(questions,p.events,.1);assert.equal(g.events[450].target,p.events[450].time+.1);
+  assert.equal(g.events.length,661);
+});
+test('continuous song clock keeps answer progress and reading animation through a track boundary',()=>{
+  const p=makePlaylist([{id:'0001',track,chart},{id:'0002',track:secondTrack,chart:secondChart}]);
+  const g=new Game(questions,p.events);g.changePhase('answer',track.durationSeconds-1);
+  g.rhythmScore=500;g.quizScore=1000;g.combo=4;g.quizCombo=1;g.counts=[1,2,0,0];g.firstTry=false;
+  g.cursor=g.events.findIndex(e=>e.target>track.durationSeconds);
+  g.update(track.durationSeconds-.01);g.update(p.tracks[1].start+.01);
+  assert.equal(g.phase,'answer');assert.deepEqual(g.counts,[1,2,0,0]);assert.equal(g.rhythmScore,500);
+  assert.equal(g.quizScore,1000);assert.equal(g.combo,4);assert.equal(g.quizCombo,1);assert.equal(g.firstTry,false);
+  g.changePhase('read',track.durationSeconds-1);const plan=g.reveal;
+  g.update(p.tracks[1].start+.01);assert.equal(g.phase,'read');assert.equal(g.reveal,plan);
+  assert.equal(g.phaseStart,track.durationSeconds-1);
 });

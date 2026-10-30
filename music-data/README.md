@@ -37,3 +37,12 @@ const targetAudioTimeSeconds = event.time + track.timing.chartToAudioOffsetMs / 
 MP3を再生し、その再生位置を唯一の時間基準としてイベントを処理してください。MIDIやJavaScriptのタイマーを別々に起動する方式は避けます。HTMLAudioElementなら `currentTime` を参照し、Web Audioなら音源の開始時刻と同じAudioContextの時計でスケジュールします。MIDIはタップイベントの入力データとして扱い、音声再生は不要です。
 
 端末・音声出力・Bluetooth・入力・描画による遅延はファイルだけでは確定できません。`deviceCalibrationOffsetMs` は未計測のためnullです。PWAで実際にタップして調整し、端末と音声出力ごとに保存する想定です。音源補正と端末補正を重複適用しないようにしてください。
+
+
+## 0002: American Western Country / The_Mountain
+
+ユーザー提供のMP3・JSON・MIDIを原本のまま格納しています。MP3は44.1kHz、開始時刻0秒、長さ138.788563秒（ffprobe）。JSONは420イベントで、主拍211件（beat 158、accent 53）、offbeat 205、fill 4です。基本テンポは95.703 BPMですが、実行時に一定BPMから再計算せず、音源先頭基準のevents[].timeをそのまま使います。
+
+`beatPosition` はありません。PWAはtypeがbeatまたはaccentのイベントを主拍として選択します。offbeatとfillは現在の難易度では使用しません。譜面メタデータには小節位相が推定値である旨の記載があります。追加補正は暫定0ms。音声との独立した同期測定・MIDIとJSONの一致検証は未実施であり、検証済みとは扱いません。
+
+PWAの暫定プレイリストは0001→0002。曲ごとの秒を「先行曲のdurationSeconds合計 + 現在曲のaudio.currentTime」へ変換し、問題・得点・回答進捗を継続します。曲の追加補正は各曲のイベントに一度、端末補正は全イベントに一度加えます。JSONやMIDIの原本へ補正を焼き込みません。

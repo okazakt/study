@@ -1,7 +1,7 @@
-import { Game, RULES, COLORS, answerProgress } from './game.js';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
-let questions, chart, track, game, frame, busy = false, history = [], screen = 'home';
+let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let questionKey = '';
 let characters = [], choiceElements = [];
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -13,21 +13,29 @@ $('offset').addEventListener('change', () => {
 const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; };
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(path); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
+const playbackTime = () => track.start + audio.currentTime;
+function selectTrack(index) {
+  trackIndex = index; track = playlist.tracks[index];
+  audio.src = `./music-data/${track.files.audio}`;
+  $('track-title').textContent = track.title;
+  $('track-credit').textContent = `${index + 1} / ${playlist.tracks.length} · ${track.creator}`;
+}
 async function load() {
   try {
     const [index, quiz, english] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json')]);
-    track = index['0001']; questions = [...quiz, ...english];
-    chart = await json(`./music-data/${track.files.chart}`);
-    if (!questions.length || !chart.events.length) throw new Error('データが空です');
-    audio.src = `./music-data/${track.files.audio}`;
+    questions = [...quiz, ...english];
+    const entries = await Promise.all(['0001', '0002'].map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
+    playlist = makePlaylist(entries);
+    if (!questions.length || !playlist.events.length) throw new Error('データが空です');
+    selectTrack(0);
     $('start').disabled = false; $('start').textContent = 'プレイをはじめる →';
   } catch (error) { $('load-status').textContent = `データの読み込みに失敗しました。ページを再読み込みしてください。 (${error.message})`; }
 }
 async function start() {
   if (busy) return; busy = true; $('start').disabled = true;
-  cancelAnimationFrame(frame); audio.pause(); audio.currentTime = 0;
-  const offsetMs = (track.timing.chartToAudioOffsetMs || 0) + (Number($('offset').value) || 0);
-  game = new Game(questions, chart.events, offsetMs / 1000);
+  cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
+  const offsetMs = Number($('offset').value) || 0;
+  game = new Game(questions, playlist.events, offsetMs / 1000);
   history = []; questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
@@ -151,7 +159,7 @@ function draw() {
   for (const note of game.notes) {
     if (note.done) continue;
     const noteHeight = Math.min(20, Math.max(10, line * 0.22));
-    const y = line * (1 - (note.target - audio.currentTime) / RULES.travelSeconds);
+    const y = line * (1 - (note.target - playbackTime()) / RULES.travelSeconds);
     const white = note.color === null;
     const x = note.lane * laneWidth + 8;
     const w = laneWidth - 16;
@@ -163,13 +171,13 @@ function draw() {
 }
 function loop() {
   if (!game || screen !== 'play') return;
-  game.update(audio.currentTime); render(); draw();
+  game.update(playbackTime()); render(); draw();
   if (!audio.paused) frame = requestAnimationFrame(loop);
 }
 function tap(lane) {
   if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
   const q = game.question, first = game.firstTry, previousCount = game.correctCount;
-  game.tap(lane, audio.currentTime);
+  game.tap(lane, playbackTime());
   if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer });
   render(); draw();
 }
@@ -221,7 +229,23 @@ $('close-help').addEventListener('click', () => $('controls-help').close());
 $('controls-help').addEventListener('close', () => { if (resumeAfterHelp) { resumeAfterHelp = false; togglePause(); } });
 $('start').addEventListener('click', start); $('again').addEventListener('click', start);
 $('back').addEventListener('click', () => show('home')); $('pause').addEventListener('click', togglePause);
-$('quit').addEventListener('click', () => finish(false)); audio.addEventListener('ended', () => finish(true));
+$('quit').addEventListener('click', () => finish(false));
+audio.addEventListener('ended', async () => {
+  if (screen !== 'play' || busy) return;
+  if (trackIndex + 1 >= playlist.tracks.length) { finish(true); return; }
+  busy = true; cancelAnimationFrame(frame);
+  selectTrack(trackIndex + 1);
+  game.update(playbackTime()); render(); draw();
+  try {
+    if (document.hidden || $('controls-help').open) { pause(); return; }
+    await audio.play();
+    if (screen !== 'play') { audio.pause(); return; }
+    if (document.hidden || $('controls-help').open) { pause(); return; }
+    $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop();
+  } catch {
+    pause(); game.message = '次の曲を再生できませんでした。再開を押してください。'; render();
+  } finally { busy = false; }
+});
 audio.addEventListener('error', () => { if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
 document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
 window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } });

@@ -40,5 +40,37 @@
         "midi"
       ]
     }
+  },
+  "0002": {
+    "title": "American Western Country",
+    "creator": "The_Mountain",
+    "durationSeconds": 138.788563,
+    "baseBpm": 95.703,
+    "files": {
+      "audio": "0002/the_mountain-american-western-country-496543.mp3",
+      "chart": "0002/the_mountain_rhythm_beat2.json",
+      "midi": "0002/the_mountain_rhythm_beat2.mid"
+    },
+    "timing": {
+      "recommendedChartFormat": "json",
+      "timeReference": "decoded_audio_start",
+      "unit": "milliseconds",
+      "chartToAudioOffsetMs": 0,
+      "chartToAudioOffsetStatus": "provisional_from_chart_metadata_not_independently_audio_verified",
+      "chartToAudioOffsetAppliesTo": [
+        "chart",
+        "midi"
+      ],
+      "offsetConvention": "targetAudioTimeSeconds = eventTimeSeconds + chartToAudioOffsetMs / 1000; positive values delay the chart",
+      "deviceCalibrationOffsetMs": null,
+      "deviceCalibrationStatus": "requires_runtime_calibration_per_device_and_audio_output",
+      "verification": {
+        "eventCount": 420,
+        "mp3StartTimeSeconds": 0,
+        "mp3SampleRateHz": 44100,
+        "audioBeatAlignmentIndependentlyVerified": false,
+        "midiJsonAlignmentVerified": false
+      }
+    }
   }
 }
