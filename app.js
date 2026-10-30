@@ -33,21 +33,32 @@ async function start() {
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
   finally { busy = false; $('start').disabled = false; $('pause').disabled = false; }
 }
-function appendCharacters(element, text, start) {
+function appendCharacters(element, text, start, segments = [{ text }]) {
   element.replaceChildren(); element.setAttribute('aria-label', text);
-  Array.from(text).forEach((character, index) => {
-    const span = document.createElement('span'); span.className = 'reveal-char';
-    span.textContent = character; span.setAttribute('aria-hidden', 'true'); element.append(span);
-    characters.push({ element: span, start: start + index * RULES.charSeconds });
-  });
+  let index = 0;
+  for (const segment of segments) {
+    const group = document.createElement('span');
+    if (segment.state) { group.className = `blank-${segment.state}`; group.dataset.blankIndex = segment.index; }
+    element.append(group);
+    for (const character of Array.from(segment.text)) {
+      const span = document.createElement('span'); span.className = 'reveal-char';
+      span.textContent = character; span.setAttribute('aria-hidden', 'true'); group.append(span);
+      characters.push({ element: span, start: start + index++ * RULES.charSeconds });
+    }
+  }
 }
 function renderQuestion() {
   const intro = game.phase === 'intro';
-  const key = `${intro}:${game.questionIndex}`;
+  const key = `${intro}:${game.questionIndex}:${game.phase === 'feedback'}`;
   if (key === questionKey) return;
   questionKey = key; characters = []; choiceElements = []; $('choices').replaceChildren();
   const q = game.question;
-  appendCharacters($('prompt'), intro ? 'まずはリズムにのろう' : q.prompt, game.reveal.prompt.start);
+  const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
+  const prompt = intro ? 'まずはリズムにのろう' : segments ? segments.map(s => s.text).join('') : q.prompt;
+  appendCharacters($('prompt'), prompt, game.reveal.prompt.start, intro ? undefined : segments);
+  $('question-context').textContent = intro ? '' : q.context;
+  $('blank-instruction').hidden = intro || !q.blankIndex;
+  $('blank-instruction').textContent = game.phase === 'feedback' ? `穴${q.blankIndex}の正解：${q.answer}` : q.targetLabel || '';
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
     const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
@@ -89,7 +100,9 @@ function render() {
     element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
     count.textContent = `${game.counts[i]} / ${RULES.tapsToAnswer}`;
   });
-  $('explanation').textContent = game.phase === 'feedback' ? `${q.term}：${q.note}` : '';
+  $('explanation').textContent = game.phase === 'feedback'
+    ? q.mode === 'term_to_explanation' && q.blankPosition < q.blankTotal ? `正解：${q.answer}` : `正解：${q.answer} · ${q.note}`
+    : '';
   const result = game.quizResult;
   const resultVisible = result && (game.phase === 'feedback' || game.time - result.time < RULES.wrongResultSeconds);
   $('quiz-feedback').hidden = !resultVisible;
@@ -139,7 +152,7 @@ function tap(lane) {
   if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
   const q = game.question, first = game.firstTry, previousCount = game.correctCount;
   game.tap(lane, audio.currentTime);
-  if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first });
+  if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer });
   render(); draw();
 }
 $('play-stage').addEventListener('pointerdown', event => {
@@ -172,7 +185,7 @@ async function togglePause() {
 function finish(completed) {
   if (screen !== 'play') return;
   audio.pause(); cancelAnimationFrame(frame);
-  const unfinished = game.phase !== 'intro' && game.phase !== 'feedback' ? game.question.term : null;
+  const unfinished = game.phase !== 'intro' && game.phase !== 'feedback' ? game.question.reviewLabel : null;
   game.finish(); show('result');
   $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
   $('result-stats').replaceChildren();
@@ -180,7 +193,7 @@ function finish(completed) {
     const div = document.createElement('div'); div.textContent = label; const strong = document.createElement('strong'); strong.textContent = value; div.append(strong); $('result-stats').append(div);
   });
   $('review').replaceChildren();
-  for (const item of history) { const li = document.createElement('li'); li.textContent = `${item.first ? '一発正解' : '再挑戦で正解'} · ${item.term} — ${item.note}`; $('review').append(li); }
+  for (const item of history) { const li = document.createElement('li'); li.textContent = `${item.first ? '一発正解' : '再挑戦で正解'} · ${item.label} — 正解：${item.answer} · ${item.note}`; $('review').append(li); }
   if (unfinished) { const li = document.createElement('li'); li.textContent = `未回答 · ${unfinished}（集計対象外）`; $('review').append(li); }
   if (!history.length && !unfinished) { const li = document.createElement('li'); li.textContent = '今回はウォームアップのみでした。'; $('review').append(li); }
 }

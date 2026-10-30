@@ -19,7 +19,38 @@ export function makeQuestion(item, random = Math.random) {
   const dummies = [...new Set(item.term_dummies)].filter(term => term !== item.term);
   if (dummies.length < 3) throw new Error(`${item.id}: insufficient choices`);
   const choices = shuffle([item.term, ...shuffle(dummies, random).slice(0, 3)], random);
-  return { ...item, prompt: explanation, choices, correct: choices.indexOf(item.term) };
+  return { ...item, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '解説 → 用語', reviewLabel: `解説→用語 · ${item.term}` };
+}
+export function makeBlankQuestions(item, random = Math.random) {
+  const blanks = [...item.blanks].sort((a, b) => a.index - b.index);
+  return blanks.map((blank, position) => {
+    const candidates = [...new Set(blank.dummies)].filter(value => value !== blank.answer);
+    if (candidates.length < 3) throw new Error(`${item.id}: insufficient choices for blank ${blank.index}`);
+    const choices = shuffle([blank.answer, ...shuffle(candidates, random).slice(0, 3)], random);
+    const segments = [];
+    let cursor = 0;
+    for (const match of item.explanation_template.matchAll(/\{\{(\d+)\}\}/g)) {
+      if (match.index > cursor) segments.push({ text: item.explanation_template.slice(cursor, match.index) });
+      const index = Number(match[1]), target = blanks.find(b => b.index === index);
+      if (!target) throw new Error(`${item.id}: missing blank ${index}`);
+      const state = index < blank.index ? 'solved' : index === blank.index ? 'active' : 'pending';
+      segments.push({ text: state === 'solved' ? target.answer : `［穴${index}］`, state, index });
+      cursor = match.index + match[0].length;
+    }
+    segments.push({ text: item.explanation_template.slice(cursor) });
+    return { ...item, id: `${item.id}:blank:${blank.index}`, sourceId: item.id, mode: 'term_to_explanation',
+      blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length,
+      answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
+      prompt: segments.map(s => s.text).join(''), context: `用語 → 解説の穴埋め · ${item.term}`,
+      targetLabel: `今回は穴${blank.index}を回答（${position + 1} / ${blanks.length}）`,
+      reviewLabel: `穴埋め · ${item.term} · 穴${blank.index}` };
+  });
+}
+export function makeQuestionQueue(items, random = Math.random) {
+  const terms = shuffle(items, random).map(item => makeQuestion(item, random));
+  const blanks = shuffle(items, random).map(item => makeBlankQuestions(item, random));
+  // Alternate directions by source group; keep all blanks of one explanation together.
+  return blanks.flatMap((group, i) => [...group, terms[i]]);
 }
 // Keep the original corrected timestamps; select just the first beat of each bar.
 export function easyEvents(events) {
@@ -43,7 +74,7 @@ export function revealPlan(question) {
 }
 export class Game {
   constructor(questions, events, offsetSeconds = 0, random = Math.random) {
-    this.questions = shuffle(questions, random).map(q => makeQuestion(q, random));
+    this.questions = makeQuestionQueue(questions, random);
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
       if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
@@ -67,7 +98,7 @@ export class Game {
   update(now) {
     this.time = now;
     if (this.phase === 'ended') return;
-    if (this.phase === 'read' && now - this.phaseStart >= this.reveal.duration) this.changePhase('answer', now);
+    if (this.phase === 'read' && now - this.phaseStart + 1e-9 >= this.reveal.duration) this.changePhase('answer', now);
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
       const event = this.events[this.cursor++];
       if (!['intro', 'answer'].includes(this.phase)) continue;

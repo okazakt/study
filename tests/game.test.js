@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { Game, makeQuestion, RULES, easyEvents, revealPlan } from '../game.js';
+import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue } from '../game.js';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const questions = read('../quiz-data/junior_science.json');
 const track = read('../music-data/index.json')['0001'];
@@ -186,4 +186,54 @@ test('intro scheduling leaves time to show final judgments; overdue events are n
     g.update(t); assert.ok(g.notes.every(n=>n.target+RULES.goodWindow+RULES.judgmentSeconds<=RULES.introSeconds));
   }
   g.update(8); assert.equal(g.phase,'read'); assert.deepEqual(g.notes,[]);
+});
+
+test('all 97 blanks generate distinct four-choice questions with exactly one active target', () => {
+  let count=0;
+  for (const item of questions) {
+    const blanks=makeBlankQuestions(item); count+=blanks.length;
+    assert.equal(blanks.length,item.blanks.length);
+    for (const q of blanks) {
+      const blank=item.blanks.find(b=>b.index===q.blankIndex);
+      assert.equal(q.choices.length,4); assert.equal(new Set(q.choices).size,4);
+      assert.equal(q.choices[q.correct],blank.answer); assert.equal(q.answer,blank.answer);
+      assert.ok(q.context.includes(item.term)); assert.ok(q.targetLabel.includes(`穴${blank.index}`));
+      assert.equal(q.segments.filter(s=>s.state==='active').length,1);
+      assert.ok(!q.prompt.includes('{{'));
+      for (const segment of q.segments.filter(s=>s.index)) {
+        const target=item.blanks.find(b=>b.index===segment.index);
+        if(segment.index<q.blankIndex){assert.equal(segment.state,'solved');assert.equal(segment.text,target.answer);}
+        else {assert.equal(segment.text,`［穴${segment.index}］`);assert.notEqual(segment.text,target.answer);}
+      }
+    }
+  }
+  assert.equal(count,97);
+});
+test('question queue alternates direction by group and keeps multiple blanks in numeric order', () => {
+  const queue=makeQuestionQueue(questions,()=>.5); assert.equal(queue.length,186);
+  assert.equal(queue.filter(q=>q.mode==='explanation_to_term').length,89);
+  assert.equal(queue.filter(q=>q.mode==='term_to_explanation').length,97);
+  let index=0;
+  for(let group=0;group<89;group++) {
+    const first=queue[index];assert.equal(first.mode,'term_to_explanation');assert.equal(first.blankPosition,1);
+    for(let i=0;i<first.blankTotal;i++) {const q=queue[index++];assert.equal(q.sourceId,first.sourceId);assert.equal(q.blankPosition,i+1);}
+    assert.equal(queue[index++].mode,'explanation_to_term');
+  }
+  assert.equal(index,queue.length);
+  const multiple=questions.find(q=>q.blanks.length>1);
+  const reversed=makeBlankQuestions({...multiple,blanks:[...multiple.blanks].reverse()});
+  assert.deepEqual(reversed.map(q=>q.blankIndex),[1,2]);
+});
+test('wrong answers stay on the target blank; correct advances to the next blank before a new question', () => {
+  const item=questions.find(q=>q.blanks.length>1), g=new Game([item],[],0,()=>.5);
+  g.changePhase('answer',0); assert.equal(g.question.blankIndex,1);
+  for(let t=2;t<=4;t++)hit(g,(g.question.correct+1)%4,t);
+  assert.equal(g.questionIndex,0);assert.equal(g.question.blankIndex,1);assert.equal(g.phase,'answer');
+  for(let t=5;t<=7;t++)hit(g,g.question.correct,t);
+  g.update(9.5); assert.equal(g.phase,'read');assert.equal(g.question.blankIndex,2);
+  assert.deepEqual(g.counts,[0,0,0,0]);assert.ok(g.question.prompt.includes(item.blanks[0].answer));
+  assert.ok(g.question.targetLabel.includes('穴2'));
+  const time=9.5+g.reveal.duration;g.update(time);
+  for(let t=time+2;t<=time+4;t++)hit(g,g.question.correct,t);
+  g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,1000);
 });
