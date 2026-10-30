@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "jr_jp3_001",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "憧憬",
+    "character": "憧",
+    "reading": "しょうけい",
+    "reading_dummies": [
+      "しょうげい",
+      "しょうけん",
+      "とうけい"
+    ],
+    "sentence": "美しい景色に憧憬を抱く。",
+    "writing_hint": "美しい景色への「しょうけい」。最初の漢字",
+    "component": "忄",
+    "component_dummies": [
+      "氵",
+      "扌",
+      "亻"
+    ],
+    "fixed_component": "童",
+    "note": "憧憬（しょうけい）。憧の左側は「忄」。"
+  },
+  {
+    "id": "jr_jp3_002",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "慎重",
+    "character": "慎",
+    "reading": "しんちょう",
+    "reading_dummies": [
+      "しんじゅう",
+      "しんじょう",
+      "じんちょう"
+    ],
+    "sentence": "慎重に判断する。",
+    "writing_hint": "「しんちょう」に判断する。最初の漢字",
+    "component": "忄",
+    "component_dummies": [
+      "氵",
+      "扌",
+      "亻"
+    ],
+    "fixed_component": "真",
+    "note": "慎重（しんちょう）。慎の左側は「忄」。"
+  },
+  {
+    "id": "jr_jp3_003",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "慨嘆",
+    "character": "慨",
+    "reading": "がいたん",
+    "reading_dummies": [
+      "かいたん",
+      "がいだん",
+      "かいだん"
+    ],
+    "sentence": "現状を慨嘆する。",
+    "writing_hint": "現状を「がいたん」する。最初の漢字",
+    "component": "忄",
+    "component_dummies": [
+      "氵",
+      "扌",
+      "亻"
+    ],
+    "fixed_component": "既",
+    "note": "慨嘆（がいたん）。慨の左側は「忄」。"
+  },
+  {
+    "id": "jr_jp3_004",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "漂流",
+    "character": "漂",
+    "reading": "ひょうりゅう",
+    "reading_dummies": [
+      "ひょうりょう",
+      "びょうりゅう",
+      "ひゅうりゅう"
+    ],
+    "sentence": "船が海を漂流する。",
+    "writing_hint": "船が海を「ひょうりゅう」する。最初の漢字",
+    "component": "氵",
+    "component_dummies": [
+      "冫",
+      "忄",
+      "扌"
+    ],
+    "fixed_component": "票",
+    "note": "漂流（ひょうりゅう）。漂の左側は「氵」。"
+  },
+  {
+    "id": "jr_jp3_005",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "滞在",
+    "character": "滞",
+    "reading": "たいざい",
+    "reading_dummies": [
+      "ていざい",
+      "たいさい",
+      "たいぜい"
+    ],
+    "sentence": "京都に滞在する。",
+    "writing_hint": "京都に「たいざい」する。最初の漢字",
+    "component": "氵",
+    "component_dummies": [
+      "冫",
+      "忄",
+      "扌"
+    ],
+    "fixed_component": "帯",
+    "note": "滞在（たいざい）。滞の左側は「氵」。"
+  },
+  {
+    "id": "jr_jp3_006",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "抵抗",
+    "character": "抵",
+    "reading": "ていこう",
+    "reading_dummies": [
+      "たいこう",
+      "ていごう",
+      "しこう"
+    ],
+    "sentence": "強い風に抵抗する。",
+    "writing_hint": "強い風に「ていこう」する。最初の漢字",
+    "component": "扌",
+    "component_dummies": [
+      "忄",
+      "氵",
+      "亻"
+    ],
+    "fixed_component": "氐",
+    "note": "抵抗（ていこう）。抵の左側は「扌」。"
+  },
+  {
+    "id": "jr_jp3_007",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "擁護",
+    "character": "擁",
+    "reading": "ようご",
+    "reading_dummies": [
+      "おうご",
+      "ようこ",
+      "ゆうご"
+    ],
+    "sentence": "弱い立場の人を擁護する。",
+    "writing_hint": "弱い立場の人を「ようご」する。最初の漢字",
+    "component": "扌",
+    "component_dummies": [
+      "忄",
+      "氵",
+      "亻"
+    ],
+    "fixed_component": "雍",
+    "note": "擁護（ようご）。擁の左側は「扌」。"
+  },
+  {
+    "id": "jr_jp3_008",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "儀式",
+    "character": "儀",
+    "reading": "ぎしき",
+    "reading_dummies": [
+      "ぎじき",
+      "きしき",
+      "よしき"
+    ],
+    "sentence": "卒業の儀式を行う。",
+    "writing_hint": "卒業の「ぎしき」を行う。最初の漢字",
+    "component": "亻",
+    "component_dummies": [
+      "彳",
+      "忄",
+      "扌"
+    ],
+    "fixed_component": "義",
+    "note": "儀式（ぎしき）。儀の左側は「亻」。"
+  },
+  {
+    "id": "jr_jp3_009",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "基礎",
+    "character": "礎",
+    "reading": "きそ",
+    "reading_dummies": [
+      "きしょう",
+      "きせき",
+      "きさ"
+    ],
+    "sentence": "学習の基礎を固める。",
+    "writing_hint": "学習の「きそ」を固める。二つ目の漢字",
+    "component": "石",
+    "component_dummies": [
+      "木",
+      "禾",
+      "礻"
+    ],
+    "fixed_component": "楚",
+    "note": "基礎（きそ）。礎の左側は「石」。"
+  },
+  {
+    "id": "jr_jp3_010",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "諭す",
+    "character": "諭",
+    "reading": "さとす",
+    "reading_dummies": [
+      "ためす",
+      "うながす",
+      "ほどこす"
+    ],
+    "sentence": "幼い子を優しく諭す。",
+    "writing_hint": "幼い子を優しく「さとす」。最初の漢字",
+    "component": "言",
+    "component_dummies": [
+      "氵",
+      "忄",
+      "扌"
+    ],
+    "fixed_component": "俞",
+    "note": "諭す（さとす）。諭の左側は「言」。"
+  },
+  {
+    "id": "jr_jp3_011",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "補う",
+    "character": "補",
+    "reading": "おぎなう",
+    "reading_dummies": [
+      "つくろう",
+      "まかなう",
+      "あがなう"
+    ],
+    "sentence": "不足を補う。",
+    "writing_hint": "不足を「おぎなう」。最初の漢字",
+    "component": "衤",
+    "component_dummies": [
+      "礻",
+      "忄",
+      "扌"
+    ],
+    "fixed_component": "甫",
+    "note": "補う（おぎなう）。補の左側は「衤」。"
+  },
+  {
+    "id": "jr_jp3_012",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "漢字",
+    "kind": "kanji",
+    "word": "被る",
+    "character": "被",
+    "reading": "こうむる",
+    "reading_dummies": [
+      "かぶせる",
+      "こうぶる",
+      "こおむる"
+    ],
+    "sentence": "大きな損害を被る。",
+    "writing_hint": "大きな損害を「こうむる」。最初の漢字",
+    "component": "衤",
+    "component_dummies": [
+      "礻",
+      "忄",
+      "扌"
+    ],
+    "fixed_component": "皮",
+    "note": "被る（こうむる）。被の左側は「衤」。"
+  },
+  {
+    "id": "jr_jp3_013",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "推敲",
+    "definition": "文章の字句や表現を何度も練り直すこと。",
+    "term_dummies": [
+      "校閲",
+      "要約",
+      "引用"
+    ],
+    "definition_dummies": [
+      "誤字や事実関係を点検すること。",
+      "文章の要点を短くまとめること。",
+      "他人の文章を引いて使うこと。"
+    ],
+    "note": "推敲：文章の字句や表現を何度も練り直すこと。"
+  },
+  {
+    "id": "jr_jp3_014",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "比喩",
+    "definition": "ある物事を、別の物事にたとえて表現すること。",
+    "term_dummies": [
+      "倒置",
+      "反復",
+      "省略"
+    ],
+    "definition_dummies": [
+      "通常の語順を入れ替えて印象を強めること。",
+      "同じ語句を繰り返して印象を強めること。",
+      "文の一部を省いて余韻などを生むこと。"
+    ],
+    "note": "比喩：ある物事を、別の物事にたとえて表現すること。"
+  },
+  {
+    "id": "jr_jp3_015",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "示唆",
+    "definition": "はっきり言わずに、それとなく示すこと。",
+    "term_dummies": [
+      "明示",
+      "断言",
+      "詳述"
+    ],
+    "definition_dummies": [
+      "内容をはっきり示すこと。",
+      "確かなこととして言い切ること。",
+      "内容を細かく述べること。"
+    ],
+    "note": "示唆：はっきり言わずに、それとなく示すこと。"
+  },
+  {
+    "id": "jr_jp3_016",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "葛藤",
+    "definition": "相反する気持ちや立場の間で迷い、対立すること。",
+    "term_dummies": [
+      "妥協",
+      "共感",
+      "決断"
+    ],
+    "definition_dummies": [
+      "互いに譲り合って折り合うこと。",
+      "他人の気持ちを自分のことのように感じること。",
+      "迷いを断ち切り、はっきり決めること。"
+    ],
+    "note": "葛藤：相反する気持ちや立場の間で迷い、対立すること。"
+  },
+  {
+    "id": "jr_jp3_017",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "温故知新",
+    "definition": "昔の事柄を学び直して、新しい知識や道理を得ること。",
+    "term_dummies": [
+      "知行合一",
+      "旧態依然",
+      "日進月歩"
+    ],
+    "definition_dummies": [
+      "学んだことをすぐに実行すること。",
+      "古い状態のままで進歩がないこと。",
+      "日や月がたつごとに絶えず進歩すること。"
+    ],
+    "note": "温故知新：昔の事柄を学び直して、新しい知識や道理を得ること。"
+  },
+  {
+    "id": "jr_jp3_018",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "試行錯誤",
+    "definition": "試みと失敗を繰り返し、解決方法を見つけること。",
+    "term_dummies": [
+      "創意工夫",
+      "臨機応変",
+      "用意周到"
+    ],
+    "definition_dummies": [
+      "新しい考えや方法を生み出すこと。",
+      "状況に合わせて適切に対応を変えること。",
+      "準備が細部まで行き届いていること。"
+    ],
+    "note": "試行錯誤：試みと失敗を繰り返し、解決方法を見つけること。"
+  },
+  {
+    "id": "jr_jp3_019",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "臨機応変",
+    "definition": "その場の状況に応じて、適切に対応を変えること。",
+    "term_dummies": [
+      "試行錯誤",
+      "首尾一貫",
+      "優柔不断"
+    ],
+    "definition_dummies": [
+      "試みと失敗を繰り返して解決を目指すこと。",
+      "初めから終わりまで考えや態度を変えないこと。",
+      "決断力に乏しく、なかなか決められないこと。"
+    ],
+    "note": "臨機応変：その場の状況に応じて、適切に対応を変えること。"
+  },
+  {
+    "id": "jr_jp3_020",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "熟語・四字熟語",
+    "kind": "idiom",
+    "term": "異口同音",
+    "definition": "多くの人が口をそろえて同じことを言うこと。",
+    "term_dummies": [
+      "賛否両論",
+      "十人十色",
+      "自画自賛"
+    ],
+    "definition_dummies": [
+      "賛成と反対の両方の意見があること。",
+      "考えや好みが人それぞれ違うこと。",
+      "自分のしたことを自分で褒めること。"
+    ],
+    "note": "異口同音：多くの人が口をそろえて同じことを言うこと。"
+  },
+  {
+    "id": "jr_jp3_021",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "現代文文法",
+    "kind": "grammar",
+    "term": "尊敬語",
+    "term_dummies": [
+      "謙譲語",
+      "丁寧語",
+      "美化語"
+    ],
+    "explanation_template": "動作をする{{1}}を高めて敬意を表す言葉。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "相手や第三者",
+        "dummies": [
+          "自分",
+          "聞き手だけ",
+          "動作の対象だけ"
+        ]
+      }
+    ],
+    "note": "動作をする相手や第三者を高めて敬意を表す言葉。"
+  },
+  {
+    "id": "jr_jp3_022",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "現代文文法",
+    "kind": "grammar",
+    "term": "謙譲語",
+    "term_dummies": [
+      "尊敬語",
+      "丁寧語",
+      "美化語"
+    ],
+    "explanation_template": "自分側の動作をへりくだって述べ、その動作の{{1}}を高める言葉。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "向かう先の相手",
+        "dummies": [
+          "動作をする自分",
+          "場所そのもの",
+          "話題と無関係な人"
+        ]
+      }
+    ],
+    "note": "自分側の動作をへりくだって述べ、その動作の向かう先の相手を高める言葉。"
+  },
+  {
+    "id": "jr_jp3_023",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "現代文文法",
+    "kind": "grammar",
+    "term": "丁寧語",
+    "term_dummies": [
+      "尊敬語",
+      "謙譲語",
+      "美化語"
+    ],
+    "explanation_template": "「です」「ます」などで、{{1}}に丁寧に述べる言葉。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "聞き手",
+        "dummies": [
+          "動作の主体だけ",
+          "物の持ち主だけ",
+          "自分自身だけ"
+        ]
+      }
+    ],
+    "note": "「です」「ます」などで、聞き手に丁寧に述べる言葉。"
+  },
+  {
+    "id": "jr_jp3_024",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "現代文文法",
+    "kind": "grammar",
+    "term": "助詞",
+    "term_dummies": [
+      "助動詞",
+      "連体詞",
+      "接続詞"
+    ],
+    "explanation_template": "付属語のうち、{{1}}がなく、語と語の関係などを示す品詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "活用",
+        "dummies": [
+          "主語",
+          "意味",
+          "音節"
+        ]
+      }
+    ],
+    "note": "付属語のうち、活用がなく、語と語の関係などを示す品詞。"
+  },
+  {
+    "id": "jr_jp3_025",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "現代文文法",
+    "kind": "grammar",
+    "term": "助動詞",
+    "term_dummies": [
+      "助詞",
+      "副詞",
+      "連体詞"
+    ],
+    "explanation_template": "付属語のうち、{{1}}があり、打ち消し・受け身などの意味を添える品詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "活用",
+        "dummies": [
+          "独立した主語",
+          "独立した文節",
+          "必ず五段活用"
+        ]
+      }
+    ],
+    "note": "付属語のうち、活用があり、打ち消し・受け身などの意味を添える品詞。"
+  },
+  {
+    "id": "jr_jp3_026",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "現代文文法",
+    "kind": "grammar",
+    "term": "連体詞",
+    "term_dummies": [
+      "副詞",
+      "形容詞",
+      "接続詞"
+    ],
+    "explanation_template": "自立語で活用がなく、「この」「ある」のように主に{{1}}を修飾する品詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "体言",
+        "dummies": [
+          "用言",
+          "文全体",
+          "接続語"
+        ]
+      }
+    ],
+    "note": "自立語で活用がなく、「この」「ある」のように主に体言を修飾する品詞。"
+  },
+  {
+    "id": "jr_jp3_027",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古文文法",
+    "kind": "grammar",
+    "term": "係り結び",
+    "term_dummies": [
+      "音便",
+      "掛詞",
+      "序詞"
+    ],
+    "explanation_template": "「ぞ・なむ・や・か」の結びは{{1}}、「こそ」の結びは已然形になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "連体形",
+        "dummies": [
+          "終止形",
+          "連用形",
+          "未然形"
+        ]
+      }
+    ],
+    "note": "「ぞ・なむ・や・か」の結びは連体形、「こそ」の結びは已然形になる。"
+  },
+  {
+    "id": "jr_jp3_028",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古文文法",
+    "kind": "grammar",
+    "term": "已然形＋ば",
+    "term_dummies": [
+      "未然形＋ば",
+      "連用形＋き",
+      "終止形＋べし"
+    ],
+    "explanation_template": "古文で已然形に「ば」が付くと、主に「{{1}}」という確定条件を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "〜ので・〜すると",
+        "dummies": [
+          "もし〜ならば",
+          "〜したい",
+          "〜してはならない"
+        ]
+      }
+    ],
+    "note": "古文で已然形に「ば」が付くと、主に「〜ので・〜すると」という確定条件を表す。"
+  },
+  {
+    "id": "jr_jp3_029",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古文文法",
+    "kind": "grammar",
+    "term": "未然形＋ば",
+    "term_dummies": [
+      "已然形＋ば",
+      "連用形＋たり",
+      "連体形＋を"
+    ],
+    "explanation_template": "古文で未然形に「ば」が付くと、「{{1}}」という仮定条件を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "もし〜ならば",
+        "dummies": [
+          "〜ので",
+          "〜したところ",
+          "〜にもかかわらず"
+        ]
+      }
+    ],
+    "note": "古文で未然形に「ば」が付くと、「もし〜ならば」という仮定条件を表す。"
+  },
+  {
+    "id": "jr_jp3_030",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古文文法",
+    "kind": "grammar",
+    "term": "打消の助動詞「ず」",
+    "term_dummies": [
+      "過去の助動詞「き」",
+      "完了の助動詞「たり」",
+      "推量の助動詞「む」"
+    ],
+    "explanation_template": "古文の「ず」は主に「{{1}}」の意味を表す助動詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "〜ない",
+        "dummies": [
+          "〜た",
+          "〜たい",
+          "〜だろう"
+        ]
+      }
+    ],
+    "note": "古文の「ず」は主に「〜ない」の意味を表す助動詞。"
+  },
+  {
+    "id": "jr_jp3_031",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古文文法",
+    "kind": "grammar",
+    "term": "過去の助動詞「き」",
+    "term_dummies": [
+      "打消の助動詞「ず」",
+      "推量の助動詞「む」",
+      "希望の助動詞「たし」"
+    ],
+    "explanation_template": "古文の「き」は、原則として話し手が直接経験した{{1}}を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "過去",
+        "dummies": [
+          "打消",
+          "推量",
+          "願望"
+        ]
+      }
+    ],
+    "note": "古文の「き」は、原則として話し手が直接経験した過去を表す。"
+  },
+  {
+    "id": "jr_jp3_032",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古文文法",
+    "kind": "grammar",
+    "term": "完了の助動詞「たり」",
+    "term_dummies": [
+      "過去の助動詞「き」",
+      "打消の助動詞「ず」",
+      "推量の助動詞「む」"
+    ],
+    "explanation_template": "古文の「たり」は「〜てしまった」という完了や、「{{1}}」という存続を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "〜ている",
+        "dummies": [
+          "〜たい",
+          "〜ない",
+          "〜ならば"
+        ]
+      }
+    ],
+    "note": "古文の「たり」は「〜てしまった」という完了や、「〜ている」という存続を表す。"
+  },
+  {
+    "id": "jr_jp3_033",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文文法",
+    "kind": "grammar",
+    "term": "レ点",
+    "term_dummies": [
+      "一二点",
+      "送り仮名",
+      "句読点"
+    ],
+    "explanation_template": "漢文でレ点があると、すぐ{{1}}の字を先に読み、元の字に返って読む。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "下",
+        "dummies": [
+          "上",
+          "右",
+          "左"
+        ]
+      }
+    ],
+    "note": "漢文でレ点があると、すぐ下の字を先に読み、元の字に返って読む。"
+  },
+  {
+    "id": "jr_jp3_034",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文文法",
+    "kind": "grammar",
+    "term": "一二点",
+    "term_dummies": [
+      "レ点",
+      "送り仮名",
+      "置き字"
+    ],
+    "explanation_template": "漢文では「{{1}}」の付いた字を読んでから、「二」の付いた字へ返る。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一",
+        "dummies": [
+          "三",
+          "上",
+          "下"
+        ]
+      }
+    ],
+    "note": "漢文では「一」の付いた字を読んでから、「二」の付いた字へ返る。"
+  },
+  {
+    "id": "jr_jp3_035",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文文法",
+    "kind": "grammar",
+    "term": "再読文字「未」",
+    "term_dummies": [
+      "再読文字「将」",
+      "再読文字「須」",
+      "否定の「不」"
+    ],
+    "explanation_template": "「未」は「{{1}}」と読み、漢字一字を二度に分けて読む。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "いまだ〜ず",
+        "dummies": [
+          "まさに〜べし",
+          "すべからく〜べし",
+          "かつて〜ず"
+        ]
+      }
+    ],
+    "note": "「未」は「いまだ〜ず」と読み、漢字一字を二度に分けて読む。"
+  },
+  {
+    "id": "jr_jp3_036",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文文法",
+    "kind": "grammar",
+    "term": "否定の「不」",
+    "term_dummies": [
+      "使役の「使」",
+      "再読文字「未」",
+      "反語の「豈」"
+    ],
+    "explanation_template": "漢文の「不」は書き下し文で「{{1}}」などと読み、否定を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "〜ず",
+        "dummies": [
+          "〜たり",
+          "〜べし",
+          "〜んや"
+        ]
+      }
+    ],
+    "note": "漢文の「不」は書き下し文で「〜ず」などと読み、否定を表す。"
+  },
+  {
+    "id": "jr_jp3_037",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文文法",
+    "kind": "grammar",
+    "term": "反語",
+    "term_dummies": [
+      "疑問",
+      "使役",
+      "比較"
+    ],
+    "explanation_template": "「豈〜乎」は「あに〜んや」と読み、「〜だろうか、{{1}}」という意味を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "いや、〜ない",
+        "dummies": [
+          "きっと〜だ",
+          "ぜひ〜したい",
+          "もし〜ならば"
+        ]
+      }
+    ],
+    "note": "「豈〜乎」は「あに〜んや」と読み、「〜だろうか、いや、〜ない」という意味を表す。"
+  },
+  {
+    "id": "jr_jp3_038",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文文法",
+    "kind": "grammar",
+    "term": "使役",
+    "term_dummies": [
+      "受身",
+      "否定",
+      "反語"
+    ],
+    "explanation_template": "漢文の「使」は「〜をして〜{{1}}」と読み、人に動作をさせる意味を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "しむ",
+        "dummies": [
+          "ず",
+          "たり",
+          "べし"
+        ]
+      }
+    ],
+    "note": "漢文の「使」は「〜をして〜しむ」と読み、人に動作をさせる意味を表す。"
+  }
+]

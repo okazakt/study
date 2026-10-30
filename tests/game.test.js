@@ -210,20 +210,15 @@ test('all 97 blanks generate distinct four-choice questions with exactly one act
   }
   assert.equal(count,97);
 });
-test('question queue alternates direction by group and keeps multiple blanks in numeric order', () => {
-  const queue=makeQuestionQueue(questions,()=>.5); assert.equal(queue.length,186);
+test('science queue separates reverse directions and individual blanks by other sources', () => {
+  const queue=makeQuestionQueue(questions,()=>.5);assert.equal(queue.length,186);
   assert.equal(queue.filter(q=>q.mode==='explanation_to_term').length,89);
   assert.equal(queue.filter(q=>q.mode==='term_to_explanation').length,97);
-  let index=0;
-  for(let group=0;group<89;group++) {
-    const first=queue[index];assert.equal(first.mode,'term_to_explanation');assert.equal(first.blankPosition,1);
-    for(let i=0;i<first.blankTotal;i++) {const q=queue[index++];assert.equal(q.sourceId,first.sourceId);assert.equal(q.blankPosition,i+1);}
-    assert.equal(queue[index++].mode,'explanation_to_term');
-  }
-  assert.equal(index,queue.length);
+  for(let i=1;i<queue.length;i++)assert.notEqual(queue[i].sourceId,queue[i-1].sourceId);
   const multiple=questions.find(q=>q.blanks.length>1);
-  const reversed=makeBlankQuestions({...multiple,blanks:[...multiple.blanks].reverse()});
-  assert.deepEqual(reversed.map(q=>q.blankIndex),[1,2]);
+  const positions=queue.map((q,i)=>q.sourceId===multiple.id?i:-1).filter(i=>i>=0);
+  assert.ok(positions.every((p,i)=>i===0||p-positions[i-1]>3));
+  const reversed=makeBlankQuestions({...multiple,blanks:[...multiple.blanks].reverse()});assert.deepEqual(reversed.map(q=>q.blankIndex),[1,2]);
 });
 test('wrong answers stay on the target blank; correct advances to the next blank before a new question', () => {
   const item=questions.find(q=>q.blanks.length>1), g=new Game([item],[],0,()=>.5);
@@ -239,19 +234,14 @@ test('wrong answers stay on the target blank; correct advances to the next blank
   g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,1000);
 });
 
-test('terms reveal before explanation; the next blank keeps all text visible in the upper panel', () => {
+test('returning to a separated science blank reveals its context again', () => {
   for (const item of questions) {
     const blanks=makeBlankQuestions(item);
     for (const q of blanks) {
       assert.equal(q.context,item.term); assert.ok(!q.prompt.includes('穴')); assert.ok(!q.targetLabel.includes('穴'));
       assert.ok(!q.reviewLabel.includes('→')); const plan=revealPlan(q);
-      if (q.blankPosition===1) {
-        assert.equal(plan.continuation,false); assert.ok(plan.context.end>plan.context.start);
-        assert.ok(plan.prompt.start>plan.context.end); assert.ok(plan.choices[0].start>plan.prompt.end);
-      } else {
-        assert.equal(plan.continuation,true); assert.equal(plan.duration,RULES.readHoldSeconds);
-        assert.equal(plan.prompt.end,0); assert.ok(plan.choices.every(c=>c.end===0));
-      }
+      assert.equal(plan.continuation,false);assert.ok(plan.context.end>plan.context.start);
+      assert.ok(plan.prompt.start>plan.context.end);assert.ok(plan.choices[0].start>plan.prompt.end);
     }
     assert.equal(makeQuestion(item).context,''); assert.equal(makeQuestion(item).reviewLabel,item.term);
   }
@@ -267,10 +257,9 @@ test('normal play fits eight white notes between groups and waits for final judg
   g.update(targets.at(-1).target+.5);assert.equal(g.phase,'rhythm');
   g.update(g.rhythmEnd+.01);assert.equal(g.phase,'read');assert.equal(g.questionIndex,1);assert.deepEqual(g.notes,[]);
 });
-test('multiple blanks continue directly and new groups get a rhythm break', () => {
+test('separated blanks and phrases get normal play; only word spelling continues directly', () => {
   const item=questions.find(q=>q.blanks.length>1);const g=new Game([item],chart.events,0,()=>.5);
-  g.changePhase('feedback',20);g.update(22.5);assert.equal(g.phase,'read');assert.equal(g.question.blankPosition,2);
-  g.changePhase('feedback',30);g.update(32.5);assert.equal(g.phase,'rhythm');assert.equal(g.question.blankPosition,2);
+  g.changePhase('feedback',20);g.update(22.5);assert.equal(g.phase,'rhythm');
 });
 test('instructions match the requested action and all choices use reviewed three-dummy sets', () => {
   for(const item of questions){
@@ -341,10 +330,10 @@ test('mixed subjects expose all five formats early and keep spelling groups cont
   const queue=makeQuestionQueue([...questions,...english],()=>.5);
   const expected=186+64+english.reduce((n,q)=>n+(q.spelling||q.phrase_blanks).length,0);
   assert.equal(queue.length,expected);
-  assert.ok(queue.slice(0,15).some(q=>q.mode==='to_english'));assert.ok(queue.slice(0,15).some(q=>q.mode==='to_japanese'));assert.equal(new Set(queue.map(q=>q.mode)).size,6);
+  assert.ok(queue.slice(0,15).some(q=>q.subject==='英語'));assert.ok(queue.slice(0,15).some(q=>q.subject==='理科'));assert.equal(new Set(queue.map(q=>q.mode)).size,6);
   for(let i=0;i<queue.length;i++){
     const q=queue[i];
-    if(['spelling','phrase'].includes(q.mode)&&q.blankPosition>1){assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(queue[i-1].blankPosition,q.blankPosition-1);}
+    if(q.mode==='spelling'&&q.blankPosition>1){assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(queue[i-1].blankPosition,q.blankPosition-1);}
   }
 });
 test('spelling retries a wrong chunk and advances without rhythm or reanimation until complete',()=>{
@@ -426,7 +415,7 @@ test('all idioms ask whole words with the other words visible; take care of cove
       const words=item.english.split(' ');words[q.blankIndex-1]='？';
       assert.equal(q.prompt,words.join(' '));assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);
       assert.equal(q.answer,item.english.split(' ')[q.blankIndex-1]);assert.equal(q.choices[q.correct],q.answer);
-      assert.equal(q.segments.filter(s=>s.state==='active').length,1);assert.equal(revealPlan(q).continuation,i>0);
+      assert.equal(q.segments.filter(s=>s.state==='active').length,1);assert.equal(revealPlan(q).continuation,false);
       assert.ok(q.targetLabel.includes('単語'));assert.ok(!q.targetLabel.includes('文字'));
     }
   }
@@ -438,5 +427,5 @@ test('all idioms ask whole words with the other words visible; take care of cove
   for(let t=2;t<=4;t++)hit(g,(g.question.correct+1)%4,t);
   assert.equal(g.question.blankPosition,1);assert.equal(g.phase,'answer');
   for(let t=5;t<=7;t++)hit(g,g.question.correct,t);
-  g.update(9.5);assert.equal(g.question.prompt,'take ？ of');assert.equal(g.reveal.continuation,true);assert.deepEqual(g.counts,[0,0,0,0]);
+  g.update(9.5);assert.equal(g.question.prompt,'take ？ of');assert.equal(g.reveal.continuation,false);assert.deepEqual(g.counts,[0,0,0,0]);
 });

@@ -19,7 +19,7 @@ export function makeQuestion(item, random = Math.random) {
   const dummies = [...new Set(item.term_dummies)].filter(term => term !== item.term);
   if (dummies.length < 3) throw new Error(`${item.id}: insufficient choices`);
   const choices = shuffle([item.term, ...shuffle(dummies, random).slice(0, 3)], random);
-  return { ...item, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '', task: '次の説明にあてはまる用語を選ぼう', reviewLabel: item.term };
+  return { ...item, sourceId: item.id, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '', task: '次の説明にあてはまる用語を選ぼう', reviewLabel: item.term };
 }
 export function makeBlankQuestions(item, random = Math.random) {
   const blanks = [...item.blanks].sort((a, b) => a.index - b.index);
@@ -47,19 +47,44 @@ export function makeBlankQuestions(item, random = Math.random) {
   });
 }
 export function makeQuestionQueue(items, random = Math.random) {
-  const science = items.filter(item => !item.english), english = items.filter(item => item.english);
-  const groups = [
-    shuffle(science, random).map(item => makeBlankQuestions(item, random)),
-    shuffle(science, random).map(item => [makeQuestion(item, random)]),
-    shuffle(english, random).map(item => [makeEnglishQuestion(item, 'to_japanese', random)]),
-    shuffle(english, random).map(item => [makeEnglishQuestion(item, 'to_english', random)]),
-    shuffle(english, random).map(item => item.phrase_blanks ? makePhraseQuestions(item, random) : makeSpellingQuestions(item, random))
-  ];
+  const subjects = [...new Set(items.map(item => item.subject))];
+  const decks = subjects.map(subject => shuffle(items.filter(item => item.subject === subject), random));
+  const ordered = [];
+  for (let i = 0; i < Math.max(0, ...decks.map(deck => deck.length)); i++) for (const deck of decks) if (deck[i]) ordered.push(deck[i]);
+  const groups = ordered.map(item => {
+    if (item.subject === '国語') return shuffle(makeJapaneseQuestions(item, random).map(q => [q]), random);
+    if (item.english) return shuffle([[[makeEnglishQuestion(item, 'to_japanese', random)]], [[makeEnglishQuestion(item, 'to_english', random)]],
+      item.phrase_blanks ? makePhraseQuestions(item, random).map(q => [q]) : [makeSpellingQuestions(item, random)]], random).flat();
+    return shuffle([makeBlankQuestions(item, random).map(q => [q]), [[makeQuestion(item, random)]]], random).flat();
+  });
+  // One unit per source on each pass. Reuse the source order so shrinking
+  // passes cannot put the same source at both sides of a pass boundary.
   const queue = [];
-  for (let i = 0; i < Math.max(...groups.map(group => group.length)); i++) {
+  for (let i = 0; i < Math.max(0, ...groups.map(group => group.length)); i++) {
     for (const group of groups) if (group[i]) queue.push(...group[i]);
   }
   return queue;
+}
+export function makeJapaneseQuestions(item, random = Math.random) {
+  const question = (mode, prompt, answer, dummies, task, extra = {}) => {
+    const candidates = [...new Set(dummies)].filter(value => value !== answer);
+    if (candidates.length < 3) throw new Error(`${item.id}: insufficient Japanese choices`);
+    const choices = shuffle([answer, ...shuffle(candidates, random).slice(0, 3)], random);
+    return { ...item, id: `${item.id}:${mode}`, sourceId: item.id, mode, prompt, answer, choices,
+      correct: choices.indexOf(answer), context: '', task, reviewLabel: prompt, ...extra };
+  };
+  if (item.kind === 'kanji') return [
+    question('kanji_reading', `「${item.word}」\n${item.sentence}`, item.reading, item.reading_dummies, 'かぎ括弧の語の読みを選ぼう'),
+    question('kanji_component', item.writing_hint, item.component, item.component_dummies, '？に入る字形を選んで漢字を完成させよう',
+      { diagram: { fixed: item.fixed_component, answer: item.component }, reviewLabel: `${item.writing_hint} · 字形`,
+        note: `完成：${item.character}。${item.note}` })
+  ];
+  if (item.kind === 'idiom') return [
+    question('japanese_definition', item.term, item.definition, item.definition_dummies, 'この熟語の意味を選ぼう'),
+    question('japanese_term', item.definition, item.term, item.term_dummies, 'この説明にあてはまる熟語を選ぼう')
+  ];
+  if (item.kind === 'grammar') return [...makeBlankQuestions(item, random), makeQuestion(item, random)];
+  throw new Error(`${item.id}: unknown Japanese kind`);
 }
 export function makePhraseQuestions(item, random = Math.random) {
   const words = item.english.split(' ');
@@ -103,7 +128,7 @@ export function makeSpellingQuestions(item, random = Math.random) {
   }
   return makeBlankQuestions({ ...item, term: item.japanese, term_dummies: [],
     explanation_template: item.spelling_template, blanks: item.spelling }, random).map(q => ({
-      ...q, id: `${item.id}:spelling:${q.blankIndex}`, mode: 'spelling',
+      ...q, id: `${item.id}:spelling:${q.blankIndex}`, mode: 'spelling', continuation: q.blankPosition > 1,
       task: `「${item.japanese}」を表す英語の綴りを完成させよう`,
       targetLabel: `${q.blankPosition > 1 ? '次の' : '強調された'}？に入る${Array.from(q.answer).length}文字を回答（${q.blankPosition} / ${q.blankTotal}）`,
       note: q.blankPosition === q.blankTotal ? item.note : '',
@@ -137,7 +162,7 @@ export function answerProgress(count, required) {
   return Math.max(0, Math.min(1, count / required));
 }
 export function revealPlan(question) {
-  if (question.blankPosition > 1) {
+  if (question.continuation) {
     return { continuation: true, context: { start: 0, end: 0 }, prompt: { start: 0, end: 0 },
       choices: question.choices.map(() => ({ start: 0, end: 0 })), revealEnd: 0,
       liftStart: 0, duration: RULES.readHoldSeconds };
@@ -218,7 +243,7 @@ export class Game {
     if (this.phase === 'intro' && now >= RULES.introSeconds && settled) this.changePhase('read', now);
     else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds && settled) {
       const next = this.questions[(this.questionIndex + 1) % this.questions.length];
-      if (next.sourceId === this.question.sourceId && next.mode === this.question.mode && next.blankPosition > 1) {
+      if (next.sourceId === this.question.sourceId && next.mode === this.question.mode && next.continuation) {
         this.questionIndex++; this.changePhase('read', now);
       } else if (this.events.slice(this.cursor).some(e => e.target >= now + RULES.travelSeconds)) this.changePhase('rhythm', now);
       else { this.questionIndex++; this.changePhase('read', now); }

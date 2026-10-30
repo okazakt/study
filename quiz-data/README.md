@@ -27,3 +27,12 @@
 ## 熟語の単語穴埋め
 
 熟語8件は`spelling_template`/`spelling`の文字分割を使わず、`phrase_blanks[]`で出題位置（1から始まる単語番号）・`answer`・`dummies`3件を指定します。対象以外の単語は表示し、指定した位置を順番に1つずつ出題します。take care ofはtake/care/ofの全3か所が対象です。候補の文字数は揃える必要はありません。同じ意味になる別表現（例えばfor exampleに対するfor instance）を誤答にしないでください。
+
+## 中3国語と出題の間隔
+
+`junior_japanese.json` は中3の復習・入試向け初期セット38件です。漢字12件（読み・字形選択の24問）、熟語／四字熟語8件（両方向16問）、現代文・古文・漢文文法各6件（両方向36問）の計76問を生成します。教科書の配当は異なり、全範囲の網羅や特定教科書準拠は保証しません。
+
+- `kind: kanji`：`word`・`reading`・`reading_dummies`・`sentence`で読み。`writing_hint`・`character`・`component`・`component_dummies`・`fixed_component`で左の部品の字形を選ぶ。候補は部首名でなく字形。完成漢字は回答前の本文に書かない。読みの別の正答をダミーにしない（憧憬の「どうけい」は誤答にしない）。
+- `kind: idiom`：`term`・`definition`と各方向3候補。正解の言い換え、上位概念に含まれる別の正答をダミーにしない。
+- `kind: grammar`：理科と共通の`explanation_template`・`blanks`・`term_dummies`。
+- 同じidの読み／書き・説明／用語・和訳／英訳・各穴は、別題材を挟んで出す。題材ごとの巡回順を固定し、科目別のシャッフルを混ぜる。英単語の文字綴りだけは1単位として順に連続回答する。熟語の穴は連続させない。

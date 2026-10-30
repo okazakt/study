@@ -1,5 +1,5 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.12.0';
-const VERSION = '0.12.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.13.0';
+const VERSION = '0.13.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -23,8 +23,8 @@ function selectTrack(index) {
 }
 async function load() {
   try {
-    const [index, quiz, english] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json')]);
-    questions = [...quiz, ...english];
+    const [index, quiz, english, japanese] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json')]);
+    questions = [...quiz, ...english, ...japanese];
     const entries = await Promise.all(['0001', '0002'].map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     playlist = makePlaylist(entries);
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
@@ -72,8 +72,18 @@ function renderQuestion() {
   appendCharacters($('question-context'), intro || !q.context ? '' : q.task, game.reveal.context.start);
   $('blank-instruction').hidden = intro || !q.blankIndex;
   $('blank-instruction').textContent = game.phase === 'feedback' ? `正解：${q.answer}` : q.targetLabel || '';
+  const diagram = !intro && q.diagram;
+  $('kanji-puzzle').hidden = !diagram;
+  $('kanji-puzzle').classList.toggle('completed', game.phase === 'feedback');
+  if (diagram) {
+    $('kanji-part').hidden = game.phase === 'feedback';
+    $('kanji-part').textContent = '？';
+    $('kanji-fixed').textContent = game.phase === 'feedback' ? q.character : diagram.fixed;
+    $('kanji-puzzle').setAttribute('aria-label', game.phase === 'feedback' ? `完成：${q.character}` : `左が空欄、右の部品は${diagram.fixed}`);
+  }
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
+    el.classList.toggle('is-glyph', q.mode === 'kanji_component');
     const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
     el.setAttribute('role', 'progressbar'); el.setAttribute('aria-label', choice);
     el.setAttribute('aria-valuemin', '0'); el.setAttribute('aria-valuemax', '100');
