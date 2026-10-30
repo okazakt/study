@@ -38,7 +38,8 @@ test('app installation activates without downloading audio, including when audio
   const w = worker(); w.failAudio(true); await w.run('install'); await w.run('activate');
   assert.equal(w.skipped,true); assert.ok(!w.calls.some(call => call.url.endsWith('.mp3')));
   await w.run('message',{data:{type:'CACHE_MEDIA'}}); assert.ok(w.messages.includes('MEDIA_ERROR'));
-  assert.ok(await (await w.caches.open('study-beat-v0.17.0')).match('app.js?v=0.17.0'));
+  const {version} = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
+  assert.ok(await (await w.caches.open(`study-beat-v${version}`)).match(`app.js?v=${version}`));
 });
 test('navigation obtains network page without HTTP cache and falls back offline for query URLs', async () => {
   const w = worker(); await w.run('install');
