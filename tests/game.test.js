@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress, makeEnglishQuestion, makeSpellingQuestions, makePlaylist } from '../game.js';
+import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress, makeEnglishQuestion, makeSpellingQuestions, makePlaylist, makePhraseQuestions } from '../game.js';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const questions = read('../quiz-data/junior_science.json');
 const track = read('../music-data/index.json')['0001'];
@@ -319,6 +319,7 @@ test('English data generates both translation directions and complete, unique sp
       assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);
       assert.equal(q.choices[q.correct],q.answer);
     }
+    if(item.phrase_blanks) continue;
     const stages=makeSpellingQuestions(item);
     assert.ok(stages.length>=2);
     const complete=item.spelling_template.replace(/\{\{(\d+)\}\}/g,(_,n)=>item.spelling.find(b=>b.index===Number(n)).answer);
@@ -338,12 +339,12 @@ test('English data generates both translation directions and complete, unique sp
 });
 test('mixed subjects expose all five formats early and keep spelling groups contiguous',()=>{
   const queue=makeQuestionQueue([...questions,...english],()=>.5);
-  const expected=186+64+english.reduce((n,q)=>n+q.spelling.length,0);
+  const expected=186+64+english.reduce((n,q)=>n+(q.spelling||q.phrase_blanks).length,0);
   assert.equal(queue.length,expected);
-  assert.equal(new Set(queue.slice(0,15).map(q=>q.mode)).size,5);
+  assert.ok(queue.slice(0,15).some(q=>q.mode==='to_english'));assert.ok(queue.slice(0,15).some(q=>q.mode==='to_japanese'));assert.equal(new Set(queue.map(q=>q.mode)).size,6);
   for(let i=0;i<queue.length;i++){
     const q=queue[i];
-    if(q.mode==='spelling'&&q.blankPosition>1){assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(queue[i-1].blankPosition,q.blankPosition-1);}
+    if(['spelling','phrase'].includes(q.mode)&&q.blankPosition>1){assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(queue[i-1].blankPosition,q.blankPosition-1);}
   }
 });
 test('spelling retries a wrong chunk and advances without rhythm or reanimation until complete',()=>{
@@ -367,6 +368,7 @@ test('spelling retries a wrong chunk and advances without rhythm or reanimation 
 
 test('all spelling alternatives have the requested length and cannot complete the target with another split',()=>{
   for(const item of english){
+    if(item.phrase_blanks) continue;
     const stages=makeSpellingQuestions(item);
     for(const q of stages){
       const position=item.spelling_template.indexOf('{{'+q.blankIndex+'}}');
@@ -414,4 +416,27 @@ test('continuous song clock keeps answer progress and reading animation through 
   g.changePhase('read',track.durationSeconds-1);const plan=g.reveal;
   g.update(p.tracks[1].start+.01);assert.equal(g.phase,'read');assert.equal(g.reveal,plan);
   assert.equal(g.phaseStart,track.durationSeconds-1);
+});
+
+test('all idioms ask whole words with the other words visible; take care of covers all three positions',()=>{
+  let count=0;
+  for(const item of english.filter(q=>q.phrase_blanks)){
+    assert.equal(item.spelling,undefined);const stages=makePhraseQuestions(item);count+=stages.length;
+    for(const [i,q] of stages.entries()){
+      const words=item.english.split(' ');words[q.blankIndex-1]='？';
+      assert.equal(q.prompt,words.join(' '));assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);
+      assert.equal(q.answer,item.english.split(' ')[q.blankIndex-1]);assert.equal(q.choices[q.correct],q.answer);
+      assert.equal(q.segments.filter(s=>s.state==='active').length,1);assert.equal(revealPlan(q).continuation,i>0);
+      assert.ok(q.targetLabel.includes('単語'));assert.ok(!q.targetLabel.includes('文字'));
+    }
+  }
+  assert.equal(count,21);
+  const item=english.find(q=>q.english==='take care of'),stages=makePhraseQuestions(item);
+  assert.deepEqual(stages.map(q=>q.prompt),['？ care of','take ？ of','take care ？']);
+  assert.deepEqual(stages.map(q=>q.answer),['take','care','of']);
+  const g=new Game([item],[],0,()=>.5);g.questionIndex=g.questions.findIndex(q=>q.mode==='phrase');g.changePhase('answer',0);
+  for(let t=2;t<=4;t++)hit(g,(g.question.correct+1)%4,t);
+  assert.equal(g.question.blankPosition,1);assert.equal(g.phase,'answer');
+  for(let t=5;t<=7;t++)hit(g,g.question.correct,t);
+  g.update(9.5);assert.equal(g.question.prompt,'take ？ of');assert.equal(g.reveal.continuation,true);assert.deepEqual(g.counts,[0,0,0,0]);
 });

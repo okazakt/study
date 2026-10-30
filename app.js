@@ -1,5 +1,5 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.11.1';
-const VERSION = '0.11.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.12.0';
+const VERSION = '0.12.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -251,8 +251,32 @@ audio.addEventListener('error', () => { if (screen === 'play') { pause(); game.m
 document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
 window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } });
 let registration, updateAvailable = false;
+let updateCheck;
 async function checkForUpdate() {
-  try { await registration?.update(); } catch { /* Offline play remains available. */ }
+  if (updateCheck) return updateCheck;
+  registration?.update().catch(() => {});
+  updateCheck = (async () => {
+    try {
+      const url = new URL('./version.json', location.href); url.searchParams.set('check', Date.now());
+      const response = await fetch(url, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+      if (!response.ok) return;
+      const { version } = await response.json();
+      if (!/^\d+\.\d+\.\d+$/.test(version)) return;
+      const next = version.split('.').map(Number), current = VERSION.split('.').map(Number);
+      const index = next.findIndex((part, i) => part !== current[i]);
+      if (index < 0 || next[index] < current[index]) return;
+      updateAvailable = true;
+      $('connection').textContent = `更新あり · v${version}`;
+      if (screen !== 'home') return;
+      if (new URL(location.href).searchParams.get('release') === version) {
+        $('update-status').textContent = '切り替わらない場合は「更新を復旧する」をお試しください。'; return;
+      }
+      const target = new URL('./', location.href);
+      target.searchParams.set('release', version); target.searchParams.set('update', Date.now());
+      location.replace(target.href);
+    } catch { /* Offline play remains available. */ }
+  })().finally(() => { updateCheck = null; });
+  return updateCheck;
 }
 $('refresh-app').addEventListener('click', async () => {
   $('refresh-app').disabled = true; $('update-status').textContent = '最新版を確認しています…';
@@ -285,4 +309,6 @@ if ('serviceWorker' in navigator) {
   }).catch(() => { $('connection').textContent = 'ONLINE MODE'; });
   document.addEventListener('visibilitychange', () => { if (!document.hidden) checkForUpdate(); });
 }
+window.addEventListener('online', checkForUpdate);
+checkForUpdate();
 load();

@@ -1152,37 +1152,27 @@
       "〜の世話をする",
       "〜を楽しみに待つ"
     ],
-    "spelling_template": "{{1}}{{2}} {{3}}",
-    "spelling": [
+    "note": "look for：〜を探す。",
+    "phrase_blanks": [
       {
         "index": 1,
-        "answer": "lo",
+        "answer": "look",
         "dummies": [
-          "ol",
-          "ro",
-          "lu"
+          "stand",
+          "pay",
+          "leave"
         ]
       },
       {
         "index": 2,
-        "answer": "ok",
-        "dummies": [
-          "ko",
-          "uk",
-          "oa"
-        ]
-      },
-      {
-        "index": 3,
         "answer": "for",
         "dummies": [
-          "rof",
-          "fol",
-          "fur"
+          "at",
+          "after",
+          "into"
         ]
       }
-    ],
-    "note": "look for：〜を探す。"
+    ]
   },
   {
     "id": "jr_en2_026",
@@ -1203,46 +1193,27 @@
       "〜を見上げる",
       "〜を調べる"
     ],
-    "spelling_template": "{{1}}{{2}} {{3}}{{4}}",
-    "spelling": [
+    "note": "look after：〜の世話をする。",
+    "phrase_blanks": [
       {
         "index": 1,
-        "answer": "lo",
+        "answer": "look",
         "dummies": [
-          "ol",
-          "ro",
-          "lu"
+          "run",
+          "ask",
+          "take"
         ]
       },
       {
         "index": 2,
-        "answer": "ok",
+        "answer": "after",
         "dummies": [
-          "ko",
-          "uk",
-          "oa"
-        ]
-      },
-      {
-        "index": 3,
-        "answer": "af",
-        "dummies": [
-          "fa",
-          "uf",
-          "av"
-        ]
-      },
-      {
-        "index": 4,
-        "answer": "ter",
-        "dummies": [
-          "ret",
-          "tel",
-          "tir"
+          "for",
+          "at",
+          "into"
         ]
       }
-    ],
-    "note": "look after：〜の世話をする。"
+    ]
   },
   {
     "id": "jr_en2_027",
@@ -1263,55 +1234,36 @@
       "〜を恐れている",
       "〜で有名だ"
     ],
-    "spelling_template": "{{1}} {{2}}{{3}}{{4}} {{5}}",
-    "spelling": [
+    "note": "be interested in：〜に興味がある。",
+    "phrase_blanks": [
       {
         "index": 1,
         "answer": "be",
         "dummies": [
-          "eb",
-          "bi",
-          "pe"
+          "do",
+          "have",
+          "take"
         ]
       },
       {
         "index": 2,
-        "answer": "in",
+        "answer": "interested",
         "dummies": [
-          "ni",
-          "en",
-          "im"
+          "interesting",
+          "afraid",
+          "proud"
         ]
       },
       {
         "index": 3,
-        "answer": "ter",
-        "dummies": [
-          "ret",
-          "tel",
-          "tir"
-        ]
-      },
-      {
-        "index": 4,
-        "answer": "ested",
-        "dummies": [
-          "detse",
-          "isted",
-          "ected"
-        ]
-      },
-      {
-        "index": 5,
         "answer": "in",
         "dummies": [
-          "ni",
-          "en",
-          "im"
+          "on",
+          "at",
+          "of"
         ]
       }
-    ],
-    "note": "be interested in：〜に興味がある。"
+    ]
   },
   {
     "id": "jr_en2_028",
@@ -1332,46 +1284,36 @@
       "〜に遅れる",
       "〜を誇りに思う"
     ],
-    "spelling_template": "{{1}} {{2}}{{3}} {{4}}",
-    "spelling": [
+    "note": "be good at：〜が得意だ。",
+    "phrase_blanks": [
       {
         "index": 1,
         "answer": "be",
         "dummies": [
-          "eb",
-          "bi",
-          "pe"
+          "do",
+          "have",
+          "take"
         ]
       },
       {
         "index": 2,
-        "answer": "go",
+        "answer": "good",
         "dummies": [
-          "og",
-          "gu",
-          "jo"
+          "poor",
+          "late",
+          "ready"
         ]
       },
       {
         "index": 3,
-        "answer": "od",
-        "dummies": [
-          "do",
-          "ud",
-          "oa"
-        ]
-      },
-      {
-        "index": 4,
         "answer": "at",
         "dummies": [
-          "ta",
-          "ut",
-          "ad"
+          "by",
+          "from",
+          "of"
         ]
       }
-    ],
-    "note": "be good at：〜が得意だ。"
+    ]
   },
   {
     "id": "jr_en2_029",
@@ -1392,55 +1334,36 @@
       "〜を楽しみに待つ",
       "〜に気をつける"
     ],
-    "spelling_template": "{{1}}{{2}} {{3}}{{4}} {{5}}",
-    "spelling": [
+    "note": "take care of：〜の世話をする。",
+    "phrase_blanks": [
       {
         "index": 1,
-        "answer": "ta",
+        "answer": "take",
         "dummies": [
-          "at",
-          "tu",
-          "da"
+          "make",
+          "give",
+          "get"
         ]
       },
       {
         "index": 2,
-        "answer": "ke",
+        "answer": "care",
         "dummies": [
-          "ek",
-          "ki",
-          "ka"
+          "part",
+          "place",
+          "time"
         ]
       },
       {
         "index": 3,
-        "answer": "ca",
-        "dummies": [
-          "ac",
-          "cu",
-          "sa"
-        ]
-      },
-      {
-        "index": 4,
-        "answer": "re",
-        "dummies": [
-          "er",
-          "le",
-          "ri"
-        ]
-      },
-      {
-        "index": 5,
         "answer": "of",
         "dummies": [
-          "fo",
-          "uf",
-          "ov"
+          "for",
+          "to",
+          "at"
         ]
       }
-    ],
-    "note": "take care of：〜の世話をする。"
+    ]
   },
   {
     "id": "jr_en2_030",
@@ -1461,37 +1384,36 @@
       "すべての",
       "一つもない"
     ],
-    "spelling_template": "{{1}} {{2}} {{3}}",
-    "spelling": [
+    "note": "a lot of：たくさんの。",
+    "phrase_blanks": [
       {
         "index": 1,
         "answer": "a",
         "dummies": [
-          "u",
-          "e",
-          "i"
+          "an",
+          "at",
+          "in"
         ]
       },
       {
         "index": 2,
         "answer": "lot",
         "dummies": [
-          "tol",
-          "rot",
-          "lut"
+          "cup",
+          "kind",
+          "pair"
         ]
       },
       {
         "index": 3,
         "answer": "of",
         "dummies": [
-          "fo",
-          "uf",
-          "ov"
+          "in",
+          "at",
+          "to"
         ]
       }
-    ],
-    "note": "a lot of：たくさんの。"
+    ]
   },
   {
     "id": "jr_en2_031",
@@ -1512,46 +1434,36 @@
       "〜の隣に",
       "〜の向かいに"
     ],
-    "spelling_template": "{{1}} {{2}}{{3}} {{4}}",
-    "spelling": [
+    "note": "in front of：〜の前に（位置）。",
+    "phrase_blanks": [
       {
         "index": 1,
         "answer": "in",
         "dummies": [
-          "ni",
-          "en",
-          "im"
+          "on",
+          "at",
+          "by"
         ]
       },
       {
         "index": 2,
-        "answer": "fr",
+        "answer": "front",
         "dummies": [
-          "rf",
-          "fl",
-          "vr"
+          "back",
+          "side",
+          "middle"
         ]
       },
       {
         "index": 3,
-        "answer": "ont",
-        "dummies": [
-          "tno",
-          "unt",
-          "ond"
-        ]
-      },
-      {
-        "index": 4,
         "answer": "of",
         "dummies": [
-          "fo",
-          "uf",
-          "ov"
+          "to",
+          "at",
+          "for"
         ]
       }
-    ],
-    "note": "in front of：〜の前に（位置）。"
+    ]
   },
   {
     "id": "jr_en2_032",
@@ -1572,45 +1484,26 @@
       "その結果",
       "言い換えると"
     ],
-    "spelling_template": "{{1}} {{2}}{{3}}{{4}}",
-    "spelling": [
+    "note": "for example：例えば。",
+    "phrase_blanks": [
       {
         "index": 1,
         "answer": "for",
         "dummies": [
-          "rof",
-          "fol",
-          "fur"
+          "in",
+          "on",
+          "at"
         ]
       },
       {
         "index": 2,
-        "answer": "ex",
+        "answer": "example",
         "dummies": [
-          "xe",
-          "ix",
-          "ea"
-        ]
-      },
-      {
-        "index": 3,
-        "answer": "am",
-        "dummies": [
-          "ma",
-          "um",
-          "an"
-        ]
-      },
-      {
-        "index": 4,
-        "answer": "ple",
-        "dummies": [
-          "elp",
-          "pre",
-          "pli"
+          "reason",
+          "purpose",
+          "sale"
         ]
       }
-    ],
-    "note": "for example：例えば。"
+    ]
   }
 ]

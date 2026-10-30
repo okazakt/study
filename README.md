@@ -25,3 +25,5 @@ npm test
 英語は英語から和訳、日本語から英訳、綴りを順番に完成させる3形式を出題します。例：ground は gr → ou → nd。教科書によって配当学年は異なるため、中2向けの初期セットとして収録しています。
 
 現在は Fallin For You / Flehmann → American Western Country / The_Mountain の順で連続再生します。曲間で回答進捗・得点・コンボを引き継ぎ、2曲目終了で結果を表示します。
+
+熟語は単語単位の穴埋めです。take care ofなら「？ care of」「take ？ of」「take care ？」を順番に答えます。古い画面が残る場合はホームの「更新を復旧する」、または `update.html` を開いてください。タイミング設定と音源キャッシュを維持して本体を更新します。

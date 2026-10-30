@@ -53,13 +53,34 @@ export function makeQuestionQueue(items, random = Math.random) {
     shuffle(science, random).map(item => [makeQuestion(item, random)]),
     shuffle(english, random).map(item => [makeEnglishQuestion(item, 'to_japanese', random)]),
     shuffle(english, random).map(item => [makeEnglishQuestion(item, 'to_english', random)]),
-    shuffle(english, random).map(item => makeSpellingQuestions(item, random))
+    shuffle(english, random).map(item => item.phrase_blanks ? makePhraseQuestions(item, random) : makeSpellingQuestions(item, random))
   ];
   const queue = [];
   for (let i = 0; i < Math.max(...groups.map(group => group.length)); i++) {
     for (const group of groups) if (group[i]) queue.push(...group[i]);
   }
   return queue;
+}
+export function makePhraseQuestions(item, random = Math.random) {
+  const words = item.english.split(' ');
+  const blanks = [...item.phrase_blanks].sort((a, b) => a.index - b.index);
+  return blanks.map((blank, i) => {
+    if (words[blank.index - 1] !== blank.answer) throw new Error(`${item.id}: phrase position mismatch`);
+    const candidates = [...new Set(blank.dummies)].filter(word => word !== blank.answer);
+    if (candidates.length < 3) throw new Error(`${item.id}: insufficient phrase choices`);
+    const choices = shuffle([blank.answer, ...shuffle(candidates, random).slice(0, 3)], random);
+    const segments = words.flatMap((word, index) => [
+      ...(index ? [{ text: ' ' }] : []),
+      index + 1 === blank.index ? { text: '？', state: 'active', index: blank.index } : { text: word }
+    ]);
+    return { ...item, id: `${item.id}:phrase:${blank.index}`, sourceId: item.id, mode: 'phrase', term: item.japanese,
+      blankIndex: blank.index, blankPosition: i + 1, blankTotal: blanks.length,
+      answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
+      prompt: segments.map(s => s.text).join(''), context: item.japanese,
+      task: `「${item.japanese}」を表す熟語を完成させよう`,
+      targetLabel: `強調された？に入る単語を回答（${i + 1} / ${blanks.length}）`,
+      note: i + 1 === blanks.length ? item.note : '', reviewLabel: `${item.japanese} · 単語（${i + 1} / ${blanks.length}）` };
+  });
 }
 export function makeEnglishQuestion(item, direction, random = Math.random) {
   if (!['to_japanese', 'to_english'].includes(direction)) throw new Error('Unknown English direction');
