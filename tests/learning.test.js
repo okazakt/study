@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 import {buildCatalog,normalizePreferences,selectQuestions,sectionKey,practiceTypes,matchesPracticeQuestion} from '../learning.js';
 import {Game,makeQuestionQueue} from '../game.js';
 const read=name=>JSON.parse(readFileSync(new URL('../quiz-data/'+name+'.json',import.meta.url)));
-const items=[...read('junior_science'),...read('junior_english'),...read('junior_japanese')],catalog=buildCatalog(items);
+const items=[...read('junior_science'),...read('junior_english'),...read('junior_japanese'),...read('junior_math'),...read('junior_social')],catalog=buildCatalog(items);
 const course=id=>catalog.find(c=>c.id===id);
 test('catalog exposes actual grade coverage and keeps absent grades and high school unavailable',()=>{
  assert.equal(course('中学:理科:3').count,89);assert.equal(course('中学:国語:3').count,38);assert.equal(course('中学:英語:2').count,32);
@@ -66,4 +66,18 @@ test('practice choice is persisted and legacy or invalid choices default to all'
  const saved=normalizePreferences({school:'中学',profiles:{中学:{id:'中学:英語:2',sections:null,practiceType:'word_en_ja'}}},catalog);
  assert.equal(JSON.parse(JSON.stringify(saved)).profiles['中学'].practiceType,'word_en_ja');
  for(const type of [undefined,'missing','kanji_write'])assert.equal(normalizePreferences({school:'中学',profiles:{中学:{id:'中学:英語:2',sections:null,practiceType:type}}},catalog).profiles['中学'].practiceType,'all');
+});
+
+test('math and social samples enable only their grades, exams and selected units',()=>{
+ for(const [subject,year,units] of [['数学',2,5],['社会',3,4]]){
+  const c=course(`中学:${subject}:${year}`);assert.equal(c.count,12);assert.equal(c.sections.length,units);
+  for(const grade of [1,2,3])assert.equal(course(`中学:${subject}:${grade}`).count,grade===year?12:0);
+  const exam=course(`中学:${subject}:exam`);assert.equal(exam.count,12);assert.deepEqual(exam.grades,[`中${year}`]);
+  for(const section of c.sections){
+   const selected=selectQuestions(items,'中学',{id:c.id,sections:[section.key]},catalog);
+   assert.equal(selected.length,section.count);assert.ok(selected.every(q=>q.subject===subject));
+   const queue=makeQuestionQueue(selected);assert.ok(queue.every(q=>sectionKey(q)===section.key));
+   assert.deepEqual(new Set(queue.map(q=>q.mode)),new Set(['explanation_to_term','term_to_explanation']));
+  }
+ }
 });

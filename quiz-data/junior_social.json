@@ -1,0 +1,392 @@
+[
+  {
+    "id": "jr_civics3_001",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "日本国憲法",
+    "term": "国民主権",
+    "term_dummies": [
+      "天皇主権",
+      "議会主権",
+      "内閣主権"
+    ],
+    "explanation_template": "国の政治のあり方を最終的に決める権力である主権が、{{1}}にあるという原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国民",
+        "dummies": [
+          "天皇",
+          "内閣",
+          "裁判所"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "日本国憲法の三大原則の一つ。国会や内閣が主権をもつわけではない。"
+  },
+  {
+    "id": "jr_civics3_002",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "日本国憲法",
+    "term": "基本的人権",
+    "term_dummies": [
+      "参政権",
+      "社会権",
+      "請求権"
+    ],
+    "explanation_template": "人が{{1}}もつ、人間らしく生きるための権利の総称。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生まれながらに",
+        "dummies": [
+          "選挙権を得て初めて",
+          "納税して初めて",
+          "成年になって初めて"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "日本国憲法は、基本的人権を侵すことのできない永久の権利として保障している。"
+  },
+  {
+    "id": "jr_civics3_003",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "日本国憲法",
+    "term": "平和主義",
+    "term_dummies": [
+      "国民主権",
+      "立憲主義",
+      "議院内閣制"
+    ],
+    "explanation_template": "戦争の放棄・戦力の不保持・交戦権の否認を定める日本国憲法第{{1}}条に表れている原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "9",
+        "dummies": [
+          "25",
+          "41",
+          "96"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "日本国憲法の三大原則の一つ。第9条の条文の三つの内容を区別して覚える。"
+  },
+  {
+    "id": "jr_civics3_004",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国の政治",
+    "term": "三権分立",
+    "term_dummies": [
+      "議院内閣制",
+      "地方自治",
+      "国民主権"
+    ],
+    "explanation_template": "国の権力を、立法・行政・{{1}}に分け、互いに抑制し合うしくみ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "司法",
+        "dummies": [
+          "選挙",
+          "地方自治",
+          "財政"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "権力の集中と濫用を防ぎ、国民の自由や権利を守るためのしくみ。"
+  },
+  {
+    "id": "jr_civics3_005",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国の政治",
+    "term": "国会",
+    "term_dummies": [
+      "内閣",
+      "裁判所",
+      "地方議会"
+    ],
+    "explanation_template": "衆議院と参議院からなり、国権の最高機関で、国の唯一の{{1}}機関とされる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "立法",
+        "dummies": [
+          "行政",
+          "司法",
+          "諮問"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "日本国憲法第41条。法律の制定、予算の議決、内閣総理大臣の指名などを行う。"
+  },
+  {
+    "id": "jr_civics3_006",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国の政治",
+    "term": "内閣",
+    "term_dummies": [
+      "国会",
+      "最高裁判所",
+      "会計検査院"
+    ],
+    "explanation_template": "内閣総理大臣とその他の国務大臣で組織され、国の{{1}}権を担う機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "行政",
+        "dummies": [
+          "立法",
+          "司法",
+          "憲法改正の発議"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "日本国憲法第65条。行政を行い、国会に対して連帯して責任を負う。"
+  },
+  {
+    "id": "jr_civics3_007",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国の政治",
+    "term": "裁判所",
+    "term_dummies": [
+      "国会",
+      "内閣",
+      "地方議会"
+    ],
+    "explanation_template": "具体的な争いについて法に基づいて判断し、国の{{1}}権を担う機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "司法",
+        "dummies": [
+          "立法",
+          "行政",
+          "課税"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "すべての司法権は、最高裁判所および法律の定める下級裁判所に属する。"
+  },
+  {
+    "id": "jr_civics3_008",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国の政治",
+    "term": "違憲審査権",
+    "term_dummies": [
+      "法律の制定権",
+      "内閣不信任決議権",
+      "予算の議決権"
+    ],
+    "explanation_template": "裁判所が、法律や命令などが{{1}}に違反していないかを審査する権限。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "憲法",
+        "dummies": [
+          "選挙公約",
+          "内閣の方針",
+          "国会の慣例"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "最高裁判所は違憲審査を行う終審裁判所で、「憲法の番人」とも呼ばれる。"
+  },
+  {
+    "id": "jr_civics3_009",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治",
+    "term": "地方自治",
+    "term_dummies": [
+      "中央集権",
+      "三権分立",
+      "議院内閣制"
+    ],
+    "explanation_template": "地域の政治を、その地域の{{1}}の意思に基づいて行うこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "住民",
+        "dummies": [
+          "内閣総理大臣",
+          "最高裁判所裁判官",
+          "衆議院議長"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "地方公共団体には都道府県や市町村があり、住民が首長や議員を選ぶ。"
+  },
+  {
+    "id": "jr_civics3_010",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治",
+    "term": "直接請求権",
+    "term_dummies": [
+      "選挙権",
+      "被選挙権",
+      "国民審査権"
+    ],
+    "explanation_template": "住民が一定数の{{1}}を集め、条例の制定・改廃や議会の解散などを請求できる権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "署名",
+        "dummies": [
+          "寄付金",
+          "国会の議決",
+          "裁判所の判決"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "条例の制定・改廃の請求などがある。請求の種類によって必要な署名数や手続きは異なる。"
+  },
+  {
+    "id": "jr_civics3_011",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "人権と義務",
+    "term": "社会権",
+    "term_dummies": [
+      "自由権",
+      "参政権",
+      "請求権"
+    ],
+    "explanation_template": "人間らしい生活の保障を国に求める権利。日本国憲法第25条の{{1}}などが含まれる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生存権",
+        "dummies": [
+          "選挙権",
+          "裁判を受ける権利",
+          "信教の自由"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "生存権のほか、教育を受ける権利、勤労の権利、労働基本権などがある。"
+  },
+  {
+    "id": "jr_civics3_012",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "人権と義務",
+    "term": "国民の三大義務",
+    "term_dummies": [
+      "日本国憲法の三大原則",
+      "労働三権",
+      "国の三権"
+    ],
+    "explanation_template": "日本国憲法に定める国民の三大義務は、子に{{1}}義務、{{2}}の義務、{{3}}の義務である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "普通教育を受けさせる",
+        "dummies": [
+          "普通教育を受ける",
+          "投票をさせる",
+          "職業を決めさせる"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "勤労",
+        "dummies": [
+          "投票",
+          "兵役",
+          "立候補"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "納税",
+        "dummies": [
+          "寄付",
+          "貯蓄",
+          "国債購入"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "教育の義務は、保護する子に普通教育を受けさせる義務。子ども自身に課された義務と混同しない。"
+  }
+]

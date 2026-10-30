@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.19.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.19.2';
-const VERSION = '0.19.2';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.20.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.20.0';
+const VERSION = '0.20.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -219,8 +219,8 @@ function selectTrack(index) {
 }
 async function load() {
   try {
-    const [index, quiz, english, japanese] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json')]);
-    questions = [...quiz, ...english, ...japanese];
+    const [index, quiz, english, japanese, math, social] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json')]);
+    questions = [...quiz, ...english, ...japanese, ...math, ...social];
     const entries = await Promise.all(['0001', '0002'].map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     playlist = makePlaylist(entries);
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');

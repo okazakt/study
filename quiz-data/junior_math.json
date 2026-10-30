@@ -1,0 +1,383 @@
+[
+  {
+    "id": "jr_math2_001",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "三角形の合同",
+    "term": "三角形の合同条件（3辺）",
+    "term_dummies": [
+      "三角形の相似条件（3角）",
+      "二等辺三角形の定義",
+      "平行四辺形の定義"
+    ],
+    "explanation_template": "2つの三角形で、対応する3組の{{1}}がそれぞれ等しければ合同である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "辺",
+        "dummies": [
+          "内角",
+          "外角",
+          "辺の長さの比"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "3組の角が等しいだけでは、大きさまで等しいとは限らない。"
+  },
+  {
+    "id": "jr_math2_002",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "三角形の合同",
+    "term": "三角形の合同条件（2辺と角）",
+    "term_dummies": [
+      "三角形の合同条件（3辺）",
+      "三角形の合同条件（1辺と角）",
+      "三角形の相似条件（2角）"
+    ],
+    "explanation_template": "2つの三角形で、対応する{{1}}とその間の角が、それぞれ等しければ合同である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2組の辺",
+        "dummies": [
+          "1組の辺",
+          "2組の角",
+          "1組の角"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "角は、等しい2辺にはさまれた角である必要がある。"
+  },
+  {
+    "id": "jr_math2_003",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "三角形の合同",
+    "term": "三角形の合同条件（1辺と角）",
+    "term_dummies": [
+      "三角形の合同条件（2辺と角）",
+      "三角形の合同条件（3辺）",
+      "三角形の相似条件（3辺の比）"
+    ],
+    "explanation_template": "2つの三角形で、対応する1組の辺とその{{1}}が、それぞれ等しければ合同である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "両端の角",
+        "dummies": [
+          "一方の端の角",
+          "一方の端の外角",
+          "両端の角の和"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "1組の辺と、その辺の両端にある2組の角を確かめる。"
+  },
+  {
+    "id": "jr_math2_004",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "多角形と角",
+    "term": "三角形の内角の和",
+    "term_dummies": [
+      "三角形の外角の性質",
+      "多角形の外角の和",
+      "四角形の内角の和"
+    ],
+    "explanation_template": "三角形の3つの内角の和は{{1}}である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "180°",
+        "dummies": [
+          "90°",
+          "270°",
+          "360°"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "どのような形の三角形でも、内角の和は180°。"
+  },
+  {
+    "id": "jr_math2_005",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "多角形と角",
+    "term": "三角形の外角の性質",
+    "term_dummies": [
+      "三角形の内角の和",
+      "対頂角の性質",
+      "二等辺三角形の底角の性質"
+    ],
+    "explanation_template": "三角形の1つの外角は、それと隣り合わない2つの内角の{{1}}に等しい。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "和",
+        "dummies": [
+          "差",
+          "積",
+          "平均"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "外角と隣り合う内角の和が180°であることから説明できる。"
+  },
+  {
+    "id": "jr_math2_006",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "多角形と角",
+    "term": "多角形の内角の和",
+    "term_dummies": [
+      "多角形の外角の和",
+      "三角形の外角の性質",
+      "平行線の同位角の性質"
+    ],
+    "explanation_template": "n角形（nは3以上の整数）の内角の和は、{{1}}×{{2}}で求められる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "(n−2)",
+        "dummies": [
+          "(n−1)",
+          "n",
+          "(n＋2)"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "180°",
+        "dummies": [
+          "90°",
+          "270°",
+          "360°"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "1つの頂点から対角線を引くと、n−2個の三角形に分けられる。"
+  },
+  {
+    "id": "jr_math2_007",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "多角形と角",
+    "term": "多角形の外角の和",
+    "term_dummies": [
+      "多角形の内角の和",
+      "三角形の内角の和",
+      "三角形の外角の性質"
+    ],
+    "explanation_template": "凸多角形の各頂点で、同じ向きに1つずつとった外角の和は{{1}}である。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "360°",
+        "dummies": [
+          "180°",
+          "540°",
+          "720°"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "辺の数にかかわらず、1周すると向きは360°変わる。"
+  },
+  {
+    "id": "jr_math2_008",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "平行線と角",
+    "term": "同位角",
+    "term_dummies": [
+      "錯角",
+      "対頂角",
+      "三角形の外角"
+    ],
+    "explanation_template": "2直線に1本の直線が交わるとき、2つの交点で同じ位置にできる角。もとの2直線が平行なら、これらの角は{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "等しい",
+        "dummies": [
+          "必ず異なる",
+          "必ず2倍になる",
+          "必ず半分になる"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "平行線の同位角は等しい。同位角が等しければ2直線は平行である。"
+  },
+  {
+    "id": "jr_math2_009",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "平行線と角",
+    "term": "錯角",
+    "term_dummies": [
+      "同位角",
+      "対頂角",
+      "三角形の外角"
+    ],
+    "explanation_template": "2直線に1本の直線が交わるとき、もとの2直線の内側で、交わる直線をはさんで反対側にできる角。もとの2直線が平行なら、これらの角は{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "等しい",
+        "dummies": [
+          "必ず異なる",
+          "必ず2倍になる",
+          "必ず半分になる"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "平行線の錯角は等しい。錯角が等しければ2直線は平行である。"
+  },
+  {
+    "id": "jr_math2_010",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "三角形の性質",
+    "term": "二等辺三角形の底角の性質",
+    "term_dummies": [
+      "三角形の内角の和",
+      "正三角形の各内角",
+      "三角形の外角の性質"
+    ],
+    "explanation_template": "2つの辺が等しい三角形では、その2辺に対する{{1}}が等しい。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2つの角",
+        "dummies": [
+          "頂角と底角",
+          "3つの内角すべて",
+          "頂角と外角"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "二等辺三角形の2つの底角は等しい。逆に、2つの角が等しい三角形は二等辺三角形である。"
+  },
+  {
+    "id": "jr_math2_011",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "平行四辺形",
+    "term": "平行四辺形の対辺の性質",
+    "term_dummies": [
+      "平行四辺形の対角の性質",
+      "平行四辺形の対角線の性質",
+      "ひし形の対角線の性質"
+    ],
+    "explanation_template": "平行四辺形では、向かい合う2組の辺は、それぞれ{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "長さが等しい",
+        "dummies": [
+          "互いに垂直である",
+          "長さが必ず2倍になる",
+          "必ず1点で交わる"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "平行四辺形では対辺が等しく、対角もそれぞれ等しい。隣り合う辺は等しいとは限らない。"
+  },
+  {
+    "id": "jr_math2_012",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "平行四辺形",
+    "term": "平行四辺形の対角線の性質",
+    "term_dummies": [
+      "長方形の対角線の長さの性質",
+      "ひし形の対角線の直交性",
+      "平行四辺形の対辺の性質"
+    ],
+    "explanation_template": "平行四辺形の2本の対角線は、それぞれの{{1}}で交わる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中点",
+        "dummies": [
+          "3等分点",
+          "端点",
+          "4等分点"
+        ]
+      }
+    ],
+    "difficulty": {
+      "term_to_explanation": "基礎",
+      "explanation_to_term": "基礎"
+    },
+    "note": "対角線は互いを二等分する。長さが等しいことや、垂直に交わることは一般には成り立たない。"
+  }
+]
