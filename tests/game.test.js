@@ -255,3 +255,32 @@ test('terms reveal before explanation; the next blank keeps all text visible in 
     assert.equal(makeQuestion(item).context,''); assert.equal(makeQuestion(item).reviewLabel,item.term);
   }
 });
+
+test('normal play fits three white notes between groups and waits for final judgment', () => {
+  const g=new Game([questions[0]],chart.events,0,()=>.5);g.changePhase('feedback',20);
+  g.update(22.5);assert.equal(g.phase,'rhythm');assert.equal(g.questionIndex,0);
+  const targets=g.events.filter(e=>g.rhythmTargets.has(e.id));assert.equal(targets.length,3);
+  const quizScore=g.quizScore;
+  for(const e of targets){g.update(e.target-1);const note=g.notes.find(n=>n.id===e.id);assert.ok(note);assert.equal(note.color,null);g.tap(e.lane,e.target);}
+  assert.equal(g.quizScore,quizScore);assert.equal(g.rhythmScore,300);assert.equal(g.phase,'rhythm');
+  g.update(targets.at(-1).target+.5);assert.equal(g.phase,'rhythm');
+  g.update(g.rhythmEnd+.01);assert.equal(g.phase,'read');assert.equal(g.questionIndex,1);assert.deepEqual(g.notes,[]);
+});
+test('multiple blanks continue directly and new groups get a rhythm break', () => {
+  const item=questions.find(q=>q.blanks.length>1);const g=new Game([item],chart.events,0,()=>.5);
+  g.changePhase('feedback',20);g.update(22.5);assert.equal(g.phase,'read');assert.equal(g.question.blankPosition,2);
+  g.changePhase('feedback',30);g.update(32.5);assert.equal(g.phase,'rhythm');assert.equal(g.question.blankPosition,2);
+});
+test('instructions match the requested action and all choices use reviewed three-dummy sets', () => {
+  for(const item of questions){
+    assert.equal(item.term_dummies.length,3);
+    assert.equal(makeQuestion(item).task,'次の説明にあてはまる用語を選ぼう');
+    for(const q of makeBlankQuestions(item)){
+      assert.equal(item.blanks.find(b=>b.index===q.blankIndex).dummies.length,3);
+      assert.equal(q.task,`「${item.term}」の説明を完成させよう`);
+    }
+  }
+  const law=questions.find(q=>q.term==='分離の法則');
+  assert.deepEqual(new Set(law.term_dummies),new Set(['独立の法則','顕性の法則','伴性遺伝']));
+  const gene=questions.find(q=>q.term==='DNA');assert.ok(gene.term_dummies.includes('RNA'));assert.ok(!gene.term_dummies.includes('デンプン'));
+});

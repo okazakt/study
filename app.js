@@ -51,15 +51,16 @@ function appendCharacters(element, text, start, segments = [{ text }]) {
   }
 }
 function renderQuestion() {
-  const intro = game.phase === 'intro';
-  const key = `${intro}:${game.questionIndex}:${game.phase === 'feedback'}`;
+  const intro = game.phase === 'intro' || game.phase === 'rhythm';
+  const key = `${game.phase === 'rhythm' ? 'rhythm' : intro}:${game.questionIndex}:${game.phase === 'feedback'}`;
   if (key === questionKey) return;
   questionKey = key; characters = []; choiceElements = []; $('choices').replaceChildren();
   const q = game.question;
   const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
-  const prompt = intro ? 'まずはリズムにのろう' : segments ? segments.map(s => s.text).join('') : q.prompt;
+  const prompt = intro ? (game.phase === 'rhythm' ? 'リズムにのって、次の問題へ' : 'まずはリズムにのろう') : segments ? segments.map(s => s.text).join('') : q.prompt;
   appendCharacters($('prompt'), prompt, game.reveal.prompt.start, intro ? undefined : segments);
-  appendCharacters($('question-context'), intro ? '' : q.context, game.reveal.context.start);
+  $('question-task').textContent = intro || q.context ? '' : q.task;
+  appendCharacters($('question-context'), intro || !q.context ? '' : q.task, game.reveal.context.start);
   $('blank-instruction').hidden = intro || !q.blankIndex;
   $('blank-instruction').textContent = game.phase === 'feedback' ? `正解：${q.answer}` : q.targetLabel || '';
   if (!intro) q.choices.forEach((choice, i) => {
@@ -92,8 +93,8 @@ function render() {
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツが流れてきたレーンをタップ。';
-  $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
-  $('question-number').textContent = game.phase === 'intro' ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
+  $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',rhythm:'RHYTHM · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
+  $('question-number').textContent = ['intro', 'rhythm'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
     const opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
@@ -189,7 +190,7 @@ async function togglePause() {
 function finish(completed) {
   if (screen !== 'play') return;
   audio.pause(); cancelAnimationFrame(frame);
-  const unfinished = game.phase !== 'intro' && game.phase !== 'feedback' ? game.question.reviewLabel : null;
+  const unfinished = !['intro','feedback','rhythm'].includes(game.phase) ? game.question.reviewLabel : null;
   game.finish(); show('result');
   $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
   $('result-stats').replaceChildren();

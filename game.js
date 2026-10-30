@@ -1,4 +1,4 @@
-export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8,
+export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 3,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
 export const COLORS = [
@@ -19,7 +19,7 @@ export function makeQuestion(item, random = Math.random) {
   const dummies = [...new Set(item.term_dummies)].filter(term => term !== item.term);
   if (dummies.length < 3) throw new Error(`${item.id}: insufficient choices`);
   const choices = shuffle([item.term, ...shuffle(dummies, random).slice(0, 3)], random);
-  return { ...item, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '', reviewLabel: item.term };
+  return { ...item, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '', task: '次の説明にあてはまる用語を選ぼう', reviewLabel: item.term };
 }
 export function makeBlankQuestions(item, random = Math.random) {
   const blanks = [...item.blanks].sort((a, b) => a.index - b.index);
@@ -41,7 +41,7 @@ export function makeBlankQuestions(item, random = Math.random) {
     return { ...item, id: `${item.id}:blank:${blank.index}`, sourceId: item.id, mode: 'term_to_explanation',
       blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length,
       answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
-      prompt: segments.map(s => s.text).join(''), context: item.term,
+      prompt: segments.map(s => s.text).join(''), context: item.term, task: `「${item.term}」の説明を完成させよう`,
       targetLabel: `${position ? '次の' : '強調された'}？に入る語句を回答（${position + 1} / ${blanks.length}）`,
       reviewLabel: `${item.term} · ？（${position + 1} / ${blanks.length}）` };
   });
@@ -72,7 +72,7 @@ export function revealPlan(question) {
     cursor += Math.max(0, Array.from(text).length - 1) * RULES.charSeconds + RULES.fadeSeconds;
     return { start, end: cursor };
   };
-  const context = question.context ? segment(question.context) : { start: 0, end: 0 };
+  const context = question.context ? segment(question.task || question.context) : { start: 0, end: 0 };
   if (question.context) cursor += RULES.choiceGapSeconds;
   const prompt = segment(question.prompt);
   const choices = question.choices.map(text => { cursor += RULES.choiceGapSeconds; return segment(text); });
@@ -100,6 +100,12 @@ export class Game {
   changePhase(phase, now) {
     this.phase = phase; this.phaseStart = now;
     if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
+    if (phase === 'rhythm') {
+      this.quizResult = null; this.message = '';
+      const targets = this.events.slice(this.cursor).filter(e => e.target >= now + RULES.travelSeconds).slice(0, RULES.rhythmNotes);
+      this.rhythmTargets = new Set(targets.map(e => e.id));
+      this.rhythmEnd = (targets.at(-1)?.target ?? now) + RULES.goodWindow + RULES.judgmentSeconds;
+    }
     if (phase === 'answer') this.message = `答えの色を${RULES.tapsToAnswer}回タップ`;
   }
   update(now) {
@@ -108,7 +114,8 @@ export class Game {
     if (this.phase === 'read' && now - this.phaseStart + 1e-9 >= this.reveal.duration) this.changePhase('answer', now);
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
       const event = this.events[this.cursor++];
-      if (!['intro', 'answer'].includes(this.phase)) continue;
+      if (!['intro', 'answer', 'rhythm'].includes(this.phase)) continue;
+      if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
       if (this.phase === 'intro' && event.target + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
@@ -130,6 +137,12 @@ export class Game {
     const settled = !this.notes.length && now - this.judgmentTime >= RULES.judgmentSeconds;
     if (this.phase === 'intro' && now >= RULES.introSeconds && settled) this.changePhase('read', now);
     else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds && settled) {
+      const next = this.questions[(this.questionIndex + 1) % this.questions.length];
+      if (next.mode === 'term_to_explanation' && next.blankPosition > 1) {
+        this.questionIndex++; this.changePhase('read', now);
+      } else if (this.events.slice(this.cursor).some(e => e.target >= now + RULES.travelSeconds)) this.changePhase('rhythm', now);
+      else { this.questionIndex++; this.changePhase('read', now); }
+    } else if (this.phase === 'rhythm' && now >= this.rhythmEnd && settled) {
       this.questionIndex++; this.changePhase('read', now);
     }
   }

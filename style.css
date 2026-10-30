@@ -7,3 +7,5 @@
 .question-context{margin:10px 0 4px;font-size:13px;font-weight:750;color:#c2d2e7;overflow-wrap:anywhere}.question-context:not([aria-label]),.question-context[aria-label=""]{display:none}.blank-instruction{margin:7px 0;color:#a8f07d;font-size:13px;font-weight:800}.blank-active{background:#a8f07d25;border-bottom:3px solid #a8f07d;color:#d2ffb7;border-radius:3px;padding:1px 3px;white-space:nowrap}.blank-pending{color:#8c9cb3;border-bottom:1px dashed #8c9cb3;white-space:nowrap}.blank-solved{color:#a8f07d}
 
 #play[data-continuation="true"] .blank-active{outline:2px solid #a8f07d;outline-offset:2px;background:#a8f07d35}
+
+.question-task{font-size:12px;color:#a8bcd3;line-height:1.7;margin:10px 0 5px}.question-task:empty{display:none}
