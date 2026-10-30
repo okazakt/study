@@ -29,9 +29,10 @@ test('chart events use audio seconds and only the two extra offsets', () => {
   assert.equal(g.events[0].target, easyEvents(chart.events)[0].time + .125);
   for (const path of Object.values(track.files)) assert.ok(readFileSync(new URL(`../music-data/${path}`, import.meta.url)).length);
 });
-test('white notes accept every lane; perfect, good, misses and empty taps affect rhythm only', () => {
+test('white notes require their lane; perfect, good, misses and empty taps affect rhythm only', () => {
   const g = fixture(); g.notes = [{target:2, color:null, lane:0}];
-  g.tap(4, 2); assert.equal(g.rhythmScore, 100); assert.equal(g.combo, 1);
+  assert.equal(g.tap(3, 2),null); assert.equal(g.rhythmScore,0);
+  g.tap(0, 2); assert.equal(g.rhythmScore, 100); assert.equal(g.combo, 1);
   hit(g, null, 3, .12); assert.equal(g.rhythmScore, 150); assert.equal(g.combo, 2);
   g.notes.push({target:4,color:null,lane:0}); g.update(4.17); assert.equal(g.combo, 0);
   hit(g, null, 5); g.tap(0, 5.5); assert.equal(g.combo, 0); assert.equal(g.quizScore, 0);
@@ -131,4 +132,20 @@ test('each color can confirm an answer on three successive rows', () => {
     for (const e of events) { g.update(e.target-1); g.tap(color,e.target); }
     assert.equal(g.correctCount,1); assert.equal(g.quizScore,1000); assert.equal(g.phase,'feedback');
   }
+});
+
+test('all phases keep four lanes and white notes use shuffled single lanes', () => {
+  const g = new Game(questions,chart.events,0,()=>.5);
+  for (const phase of ['intro','read','answer','feedback']) { g.changePhase(phase,0); assert.equal(g.laneCount,4); }
+  for (let i=0;i<g.events.length;i+=4) {
+    const lanes=g.events.slice(i,i+4).map(e=>e.lane);
+    assert.equal(new Set(lanes).size,lanes.length);
+    assert.ok(lanes.every(l=>l>=0&&l<4));
+  }
+  g.changePhase('intro',0);
+  const event=g.events[0]; g.update(event.target-1);
+  assert.equal(g.notes.length,1); assert.equal(g.notes[0].color,null);
+  assert.equal(g.notes[0].lane,event.lane);
+  assert.equal(g.tap((event.lane+1)%4,event.target),null);
+  assert.equal(g.rhythmScore,0); assert.ok(g.tap(event.lane,event.target)); assert.equal(g.rhythmScore,100);
 });

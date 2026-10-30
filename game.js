@@ -1,9 +1,9 @@
-export const RULES = Object.freeze({ lanes: 5, tapsToAnswer: 3, introSeconds: 8,
-  charSeconds: 0.09, fadeSeconds: 0.45, choiceGapSeconds: 0.7, readHoldSeconds: 1.5, liftSeconds: 0.65,
+export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8,
+  charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
 export const COLORS = [
-  { name: '赤', symbol: '●', value: '#ff7187' }, { name: '青', symbol: '◆', value: '#73b9ff' },
-  { name: '黄', symbol: '▲', value: '#ffda79' }, { name: '緑', symbol: '■', value: '#71e1bc' }
+  { name: '赤', value: '#ff7187' }, { name: '青', value: '#73b9ff' },
+  { name: '黄', value: '#ffda79' }, { name: '緑', value: '#71e1bc' }
 ];
 export function shuffle(values, random = Math.random) {
   const result = [...values];
@@ -44,15 +44,19 @@ export function revealPlan(question) {
 export class Game {
   constructor(questions, events, offsetSeconds = 0, random = Math.random) {
     this.questions = shuffle(questions, random).map(q => makeQuestion(q, random));
-    this.events = easyEvents(events).map((event, i) => ({ target: event.time + offsetSeconds, id: i }));
+    let lanes = [];
+    this.events = easyEvents(events).map((event, i) => {
+      if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
+      return { target: event.time + offsetSeconds, id: i, lane: lanes.pop() };
+    });
     this.reveal = revealPlan(this.questions[0]);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
     this.rhythmScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
-    this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '音楽に合わせて、白いノーツをタップ';
+    this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
   }
-  get laneCount() { return this.phase === 'answer' ? COLORS.length : RULES.lanes; }
+  get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
   changePhase(phase, now) {
     this.phase = phase; this.phaseStart = now;
@@ -83,7 +87,7 @@ export class Game {
       if (event.target < this.phaseStart + RULES.travelSeconds || event.target < now) continue;
       if (this.phase === 'answer') {
         COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
-      } else this.notes.push({ ...event, lane: 0, color: null, done: false });
+      } else this.notes.push({ ...event, color: null, done: false });
     }
   }
   judge(label, now) { this.lastJudgment = label; this.judgmentTime = now; }
@@ -91,7 +95,7 @@ export class Game {
     if (this.phase === 'ended') return null;
     this.update(now);
     if (this.phase === 'read') return null;
-    const note = this.notes.filter(n => !n.done && (n.color === null || n.lane === lane) && Math.abs(n.target - now) <= RULES.goodWindow)
+    const note = this.notes.filter(n => !n.done && n.lane === lane && Math.abs(n.target - now) <= RULES.goodWindow)
       .sort((a, b) => Math.abs(a.target - now) - Math.abs(b.target - now))[0];
     if (!note) { this.combo = 0; this.judge('空振り', now); return null; }
     note.done = true;

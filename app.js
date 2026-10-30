@@ -50,7 +50,6 @@ function renderQuestion() {
   appendCharacters($('prompt'), intro ? 'まずはリズムにのろう' : q.prompt, game.reveal.prompt.start);
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
-    const symbol = document.createElement('span'); symbol.textContent = `${COLORS[i].symbol} `; symbol.setAttribute('aria-hidden', 'true'); el.append(symbol);
     const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
     const count = document.createElement('span'); count.className = 'count'; el.append(count);
     choiceElements.push({ element: el, count, start: game.reveal.choices[i].start }); $('choices').append(el);
@@ -77,9 +76,9 @@ function render() {
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア。左からD F G H' : '白ノーツのタップエリア');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
-  document.querySelector('.play-hint').textContent = game.phase === 'read' ? '今は読む時間。タップはお休みです。' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツは、どこでもタップ。';
+  document.querySelector('.play-hint').textContent = game.phase === 'read' ? '今は読む時間。タップはお休みです。' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツが流れてきたレーンをタップ。';
   $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
-  $('question-number').textContent = game.phase === 'intro' ? '白ノーツはどこでもタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
+  $('question-number').textContent = game.phase === 'intro' ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
     const opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
@@ -88,7 +87,7 @@ function render() {
   choiceElements.forEach(({element, count, start}, i) => {
     element.style.opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
     element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
-    count.textContent = '●'.repeat(game.counts[i]) + '○'.repeat(Math.max(0, RULES.tapsToAnswer - game.counts[i]));
+    count.textContent = `${game.counts[i]} / ${RULES.tapsToAnswer}`;
   });
   $('explanation').textContent = game.phase === 'feedback' ? `${q.term}：${q.note}` : '';
   positionQuestion(elapsed);
@@ -103,7 +102,7 @@ function draw() {
   for (let i = 0; i < game.laneCount; i++) {
     ctx.fillStyle = i % 2 ? '#ffffff04' : '#00000008'; ctx.fillRect(i * laneWidth, 0, laneWidth, height);
     ctx.strokeStyle = '#ffffff12'; ctx.beginPath(); ctx.moveTo(i * laneWidth, 0); ctx.lineTo(i * laneWidth, height); ctx.stroke();
-    ctx.fillStyle = '#ffffff25'; ctx.font = '11px system-ui'; ctx.textAlign = 'center'; ctx.fillText(['D', 'F', 'G', 'H', 'J'][i], (i + .5) * laneWidth, height - 12);
+    ctx.fillStyle = '#ffffff25'; ctx.font = '11px system-ui'; ctx.textAlign = 'center'; ctx.fillText(['D', 'F', 'G', 'H'][i], (i + .5) * laneWidth, height - 12);
   }
   ctx.fillStyle = '#a8f07d10'; ctx.fillRect(0, line - 13, width, 26);
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
@@ -111,12 +110,11 @@ function draw() {
     if (note.done) continue;
     const y = line * (1 - (note.target - audio.currentTime) / RULES.travelSeconds);
     const white = note.color === null;
-    const x = white ? 8 : note.lane * laneWidth + 8;
-    const w = white ? width - 16 : laneWidth - 16;
+    const x = note.lane * laneWidth + 8;
+    const w = laneWidth - 16;
     ctx.fillStyle = white ? '#e5edf7' : COLORS[note.color].value;
     ctx.shadowColor = ctx.fillStyle; ctx.shadowBlur = 12;
     ctx.beginPath(); ctx.roundRect(x, y - 10, w, 20, 5); ctx.fill(); ctx.shadowBlur = 0;
-    if (!white) { ctx.fillStyle = '#172033'; ctx.font = 'bold 14px system-ui'; ctx.fillText(COLORS[note.color].symbol, x + w / 2, y + 5); }
   }
   if (audio.currentTime - game.judgmentTime < .55) {
     ctx.font = 'bold 21px system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = game.lastJudgment === 'PERFECT' ? '#a8f07d' : '#eef2fa';
@@ -146,7 +144,7 @@ document.querySelectorAll('[data-lane]').forEach(button => button.addEventListen
 for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
 document.addEventListener('keydown', event => {
   if (screen !== 'play' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
-  const lane = ['KeyD','KeyF','KeyG','KeyH','KeyJ'].indexOf(event.code);
+  const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
   if (lane >= 0) { event.preventDefault(); tap(lane); }
   if (event.code === 'Space') { event.preventDefault(); togglePause(); }
 });
