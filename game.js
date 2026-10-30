@@ -184,8 +184,9 @@ export function revealPlan(question) {
   return { continuation: false, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + RULES.liftSeconds };
 }
 export class Game {
-  constructor(questions, events, offsetSeconds = 0, random = Math.random) {
+  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity) {
     this.questions = makeQuestionQueue(questions, random);
+    this.endTime = endTime;
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
       if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
@@ -205,8 +206,26 @@ export class Game {
   }
   get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
+  earliestCompletion(now) {
+    let time = now, cursor = this.cursor;
+    for (let step = 0; step < this.questions.length; step++) {
+      const q = this.questions[(this.questionIndex + step) % this.questions.length];
+      if (step && !(q.continuation && q.sourceId === this.question.sourceId && q.mode === this.question.mode)) break;
+      const ready = time + revealPlan(q).duration + RULES.travelSeconds;
+      const taps = Number.isInteger(q.tapsToAnswer) && q.tapsToAnswer > 0 ? q.tapsToAnswer : RULES.tapsToAnswer;
+      while (cursor < this.events.length && this.events[cursor].target < ready) cursor++;
+      const last = this.events[cursor + taps - 1];
+      if (!last) return Infinity;
+      time = last.target + RULES.feedbackSeconds;
+      cursor += taps;
+    }
+    return time;
+  }
   changePhase(phase, now) {
+    if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)
+      && this.earliestCompletion(now) + 0.25 > this.endTime) phase = 'outro';
     this.phase = phase; this.phaseStart = now;
+    if (phase === 'outro') { this.quizResult = null; this.message = ''; this.counts = [0, 0, 0, 0]; }
     if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
     if (phase === 'rhythm') {
       this.quizResult = null; this.message = '';
@@ -222,11 +241,12 @@ export class Game {
     if (this.phase === 'read' && now - this.phaseStart + 1e-9 >= this.reveal.duration) this.changePhase('answer', now);
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
       const event = this.events[this.cursor++];
-      if (!['intro', 'answer', 'rhythm'].includes(this.phase)) continue;
+      if (!['intro', 'answer', 'rhythm', 'outro'].includes(this.phase)) continue;
       if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
       if (this.phase === 'intro' && event.target + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
+      if (this.phase === 'outro' && event.target + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
       if (this.phase === 'answer') {
         COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
       } else this.notes.push({ ...event, color: null, done: false });

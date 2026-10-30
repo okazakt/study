@@ -1,5 +1,5 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.13.1';
-const VERSION = '0.13.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.14.0';
+const VERSION = '0.14.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -36,7 +36,7 @@ async function start() {
   if (busy) return; busy = true; $('start').disabled = true;
   cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
-  game = new Game(questions, playlist.events, offsetMs / 1000);
+  game = new Game(questions, playlist.events, offsetMs / 1000, Math.random, playlist.duration);
   history = []; questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
@@ -60,13 +60,13 @@ function appendCharacters(element, text, start, segments = [{ text }]) {
   }
 }
 function renderQuestion() {
-  const intro = game.phase === 'intro' || game.phase === 'rhythm';
-  const key = `${game.phase === 'rhythm' ? 'rhythm' : intro}:${game.questionIndex}:${game.phase === 'feedback'}`;
+  const intro = ['intro', 'rhythm', 'outro'].includes(game.phase);
+  const key = `${intro ? game.phase : 'question'}:${game.questionIndex}:${game.phase === 'feedback'}`;
   if (key === questionKey) return;
   questionKey = key; $('question-panel').scrollTop = 0; characters = []; choiceElements = []; $('choices').replaceChildren();
   const q = game.question;
   const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
-  const prompt = intro ? (game.phase === 'rhythm' ? 'リズムにのって、次の問題へ' : 'まずはリズムにのろう') : segments ? segments.map(s => s.text).join('') : q.prompt;
+  const prompt = intro ? (game.phase === 'outro' ? '最後までリズムをつなごう' : game.phase === 'rhythm' ? 'リズムにのって、次の問題へ' : 'まずはリズムにのろう') : segments ? segments.map(s => s.text).join('') : q.prompt;
   appendCharacters($('prompt'), prompt, game.reveal.prompt.start, intro ? undefined : segments);
   $('question-task').textContent = intro || q.context ? '' : q.task;
   appendCharacters($('question-context'), intro || !q.context ? '' : q.task, game.reveal.context.start);
@@ -114,7 +114,7 @@ function render() {
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '白ノーツが流れてきたレーンをタップ。';
-  $('question-number').textContent = ['intro', 'rhythm'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
+  $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
     const opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
@@ -153,6 +153,18 @@ function render() {
   $('tap-judgment').textContent = game.lastJudgment;
   $('tap-judgment').dataset.judgment = game.lastJudgment;
   positionQuestion(elapsed);
+  $('field').classList.toggle('compact-feedback', $('field').clientHeight < 190);
+  const rhythmStreak = $('rhythm-streak');
+  rhythmStreak.hidden = game.combo < 2;
+  $('streak-count').textContent = game.combo;
+  rhythmStreak.classList.toggle('milestone', game.combo > 0 && game.combo % 10 === 0);
+  const rhythmPulse = reducedMotion.matches ? 0 : Math.max(0, 1 - (game.time - game.judgmentTime) / 0.35);
+  rhythmStreak.style.setProperty('--pulse', rhythmPulse);
+  const quizStreak = $('quiz-streak');
+  quizStreak.hidden = !resultVisible || !result.correct || !game.firstTry || game.quizCombo < 2;
+  quizStreak.textContent = `${game.quizCombo} 一発正解 COMBO`;
+  const quizPulse = reducedMotion.matches || !result ? 0 : Math.max(0, 1 - (game.time - result.time) / 0.6);
+  quizStreak.style.setProperty('--pulse', quizPulse);
 }
 const canvas = $('canvas'); const ctx = canvas.getContext('2d');
 function draw() {
@@ -222,7 +234,7 @@ async function togglePause() {
 function finish(completed) {
   if (screen !== 'play') return;
   audio.pause(); cancelAnimationFrame(frame);
-  const unfinished = !['intro','feedback','rhythm'].includes(game.phase) ? game.question.reviewLabel : null;
+  const unfinished = !['intro','feedback','rhythm','outro'].includes(game.phase) ? game.question.reviewLabel : null;
   game.finish(); show('result');
   $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
   $('result-stats').replaceChildren();
@@ -232,7 +244,7 @@ function finish(completed) {
   $('review').replaceChildren();
   for (const item of history) { const li = document.createElement('li'); li.textContent = `${item.first ? '一発正解' : '再挑戦で正解'} · ${item.label} — 正解：${item.answer} · ${item.note}`; $('review').append(li); }
   if (unfinished) { const li = document.createElement('li'); li.textContent = `未回答 · ${unfinished}（集計対象外）`; $('review').append(li); }
-  if (!history.length && !unfinished) { const li = document.createElement('li'); li.textContent = '今回はウォームアップのみでした。'; $('review').append(li); }
+  if (!history.length && !unfinished) { const li = document.createElement('li'); li.textContent = '今回はリズムプレイのみでした。'; $('review').append(li); }
 }
 let resumeAfterHelp = false;
 $('help').addEventListener('click', () => { resumeAfterHelp = !audio.paused; pause(); $('controls-help').showModal(); });
