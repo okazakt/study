@@ -202,6 +202,7 @@ export class Game {
     this.rhythmScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
+    this.judgments = { PERFECT: 0, GOOD: 0, MISS: 0 }; this.wrongCount = 0;
     this.quizResult = null;
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
   }
@@ -279,7 +280,7 @@ export class Game {
       this.questionIndex++; this.changePhase('read', now);
     }
   }
-  judge(label, now) { this.lastJudgment = label; this.judgmentTime = now; }
+  judge(label, now) { this.judgments[label]++; this.lastJudgment = label; this.judgmentTime = now; }
   tap(lane, now) {
     if (this.phase === 'ended') return null;
     this.update(now);
@@ -307,12 +308,19 @@ export class Game {
           this.changePhase('feedback', now);
         } else {
           this.quizResult = { correct: false, time: now, choice: note.color };
+          this.wrongCount++;
           this.firstTry = false; this.quizCombo = 0; this.counts = [0, 0, 0, 0];
           this.message = `もう一度！ 正解だと思う色を${this.requiredTaps}回タップ`;
         }
       }
     }
     return note;
+  }
+  achievements(completed, unfinished = false) {
+    const { PERFECT, GOOD, MISS } = this.judgments;
+    const rhythm = completed && PERFECT + GOOD > 0 && MISS === 0;
+    const quiz = completed && !unfinished && this.correctCount > 0 && this.wrongCount === 0;
+    return { rhythm, quiz, double: rhythm && quiz, allPerfect: rhythm && GOOD === 0 };
   }
   finish() { this.phase = 'ended'; this.notes = []; }
 }

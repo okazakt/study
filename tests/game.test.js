@@ -430,3 +430,42 @@ test('all idioms ask whole words with the other words visible; take care of cove
   for(let t=5;t<=7;t++)hit(g,g.question.correct,t);
   g.update(9.5);assert.equal(g.question.prompt,'take ？ of');assert.equal(g.reveal.continuation,false);assert.deepEqual(g.counts,[0,0,0,0]);
 });
+
+test('result counters count timing judgments, empty taps and one miss per colored row', () => {
+  const g = fixture();
+  g.notes.push({target:2,lane:0,color:null,done:false}); g.tap(0,2);
+  g.notes.push({target:3,lane:1,color:null,done:false}); g.tap(1,3.12);
+  g.tap(3,4);
+  assert.deepEqual(g.judgments,{PERFECT:1,GOOD:1,MISS:1});
+  g.phase='answer'; g.phaseStart=0;
+  for(let lane=0;lane<4;lane++)g.notes.push({target:5,lane,color:lane,rowId:77,done:false});
+  g.update(5.2); g.update(5.3);
+  assert.deepEqual(g.judgments,{PERFECT:1,GOOD:1,MISS:2});
+  g.changePhase('read',6);g.tap(0,6);g.finish();g.tap(0,7);
+  assert.deepEqual(g.judgments,{PERFECT:1,GOOD:1,MISS:2});
+});
+test('wrong answers count per confirmation, retries count once each, cleared notes add no miss', () => {
+  const g=fixture();g.changePhase('answer',0);
+  const wrong=(g.question.correct+1)%4;
+  hit(g,wrong,2);hit(g,wrong,3);assert.equal(g.wrongCount,0);
+  hit(g,wrong,4);assert.equal(g.wrongCount,1);
+  for(const t of [5,6,7])hit(g,wrong,t);
+  assert.equal(g.wrongCount,2);
+  hit(g,g.question.correct,8);hit(g,g.question.correct,9);
+  g.notes.push({target:11,lane:1,color:1,rowId:100,done:false});
+  hit(g,g.question.correct,10);g.update(11.3);
+  assert.equal(g.correctCount,1);assert.equal(g.firstCount,0);
+  assert.deepEqual(g.judgments,{PERFECT:9,GOOD:0,MISS:0});
+});
+test('completion awards require complete positive play with no mistakes or unanswered question', () => {
+  const g=fixture();
+  assert.deepEqual(g.achievements(true),{rhythm:false,quiz:false,double:false,allPerfect:false});
+  g.judgments.PERFECT=9;g.judgments.GOOD=1;g.correctCount=2;
+  assert.deepEqual(g.achievements(false),{rhythm:false,quiz:false,double:false,allPerfect:false});
+  assert.deepEqual(g.achievements(true),{rhythm:true,quiz:true,double:true,allPerfect:false});
+  assert.equal(g.achievements(true,true).quiz,false);
+  g.judgments.GOOD=0;assert.equal(g.achievements(true).allPerfect,true);
+  g.wrongCount=1;assert.equal(g.achievements(true).quiz,false);
+  g.judgments.MISS=1;assert.equal(g.achievements(true).rhythm,false);
+  const fresh=fixture();assert.equal(fresh.wrongCount,0);assert.equal(fresh.judgments.PERFECT,0);
+});

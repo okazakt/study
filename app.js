@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.17.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.17.1';
-const VERSION = '0.17.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.18.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.18.0';
+const VERSION = '0.18.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -14,6 +14,43 @@ $('offset').addEventListener('change', () => {
   $('offset').value = Math.max(-500, Math.min(500, Number($('offset').value) || 0));
   try { localStorage.setItem('study-beat-offset-ms', $('offset').value); } catch { /* Play remains available. */ }
 });
+// A short, quiet synthesized woodblock; independent of the song clock.
+let tapAudio, tapSoundEnabled = true;
+try { tapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off'; } catch {}
+for (const id of ['tap-sound', 'help-tap-sound']) {
+  $(id).checked = tapSoundEnabled;
+  $(id).addEventListener('change', () => {
+    tapSoundEnabled = $(id).checked;
+    for (const other of ['tap-sound', 'help-tap-sound']) $(other).checked = tapSoundEnabled;
+    try { localStorage.setItem('study-beat-tap-sound', tapSoundEnabled ? 'on' : 'off'); } catch {}
+    if (tapSoundEnabled) prepareTapAudio();
+  });
+}
+function prepareTapAudio() {
+  if (!tapSoundEnabled) return;
+  try {
+    const Context = window.AudioContext || window.webkitAudioContext;
+    if (!Context) return;
+    tapAudio ||= new Context({ latencyHint: 'interactive' });
+    if (tapAudio.state === 'suspended') tapAudio.resume().catch(() => {});
+  } catch { /* Sound is optional. */ }
+}
+function playTapSound() {
+  prepareTapAudio();
+  if (!tapSoundEnabled || tapAudio?.state !== 'running') return;
+  try {
+    const t = tapAudio.currentTime, oscillator = tapAudio.createOscillator(), gain = tapAudio.createGain();
+    oscillator.type = 'sine';
+    oscillator.frequency.setValueAtTime(720, t);
+    oscillator.frequency.exponentialRampToValueAtTime(230, t + .045);
+    gain.gain.setValueAtTime(.0001, t);
+    gain.gain.exponentialRampToValueAtTime(.055, t + .002);
+    gain.gain.exponentialRampToValueAtTime(.0001, t + .055);
+    oscillator.connect(gain); gain.connect(tapAudio.destination);
+    oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); };
+    oscillator.start(t); oscillator.stop(t + .06);
+  } catch { /* Sound must never interrupt scoring. */ }
+}
 const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; if (next === 'home') checkForUpdate(); };
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(`${path}?v=${VERSION}`); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
@@ -138,6 +175,7 @@ async function load() {
 async function start() {
   if (busy) return;
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
+  prepareTapAudio();
   busy = true; $('start').disabled = true;
   cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
@@ -318,7 +356,9 @@ function loop() {
 }
 function tap(lane) {
   if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
+  game.update(playbackTime());
   const q = game.question, first = game.firstTry, previousCount = game.correctCount;
+  if (['intro', 'answer', 'rhythm', 'outro'].includes(game.phase)) playTapSound();
   game.tap(lane, playbackTime());
   if (game.correctCount > previousCount) history.push({ term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer });
   render(); draw();
@@ -345,6 +385,7 @@ function pause() {
 async function togglePause() {
   if (busy || screen !== 'play') return;
   if (!audio.paused) { pause(); return; }
+  prepareTapAudio();
   busy = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { game.message = '再生できませんでした。再開を押して再試行してください。'; render(); }
@@ -353,11 +394,24 @@ async function togglePause() {
 function finish(completed) {
   if (screen !== 'play') return;
   audio.pause(); cancelAnimationFrame(frame);
+  if (completed) game.update(playbackTime());
   const unfinished = !['intro','feedback','rhythm','outro'].includes(game.phase) ? game.question.reviewLabel : null;
+  const awards = game.achievements(completed, !!unfinished);
   game.finish(); show('result');
+  $('result-awards').replaceChildren();
+  const praise = [];
+  if (awards.double) praise.push(['ダブルパーフェクト！', 'リズムも回答も、最後までミスなし。見事な完走！']);
+  if (awards.rhythm) praise.push(['リズム フルコンボ！', awards.allPerfect ? 'ALL PERFECT · 全タップが最高判定！' : 'ノーミスでビートをつなぎ切った！']);
+  if (awards.quiz) praise.push(['全問一発正解！', 'お手付きゼロ。知識も集中力もばっちり！']);
+  $('result-awards').hidden = !praise.length;
+  $('result-awards').classList.toggle('double-perfect', awards.double);
+  for (const [title, detail] of praise) {
+    const card = document.createElement('div'), heading = document.createElement('h2'), text = document.createElement('p');
+    heading.textContent = title; text.textContent = detail; card.append(heading, text); $('result-awards').append(card);
+  }
   $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
   $('result-stats').replaceChildren();
-  [['リズムスコア', game.rhythmScore.toLocaleString()],['学習スコア（一発正解）',game.quizScore.toLocaleString()],['最大リズムコンボ',game.maxCombo],['最大一発正解コンボ',game.maxQuizCombo],['正解した問題',`${game.correctCount}問`],['一発正解',`${game.firstCount}問`]].forEach(([label,value]) => {
+  [['リズムスコア', game.rhythmScore.toLocaleString()],['学習スコア（一発正解）',game.quizScore.toLocaleString()],['最大リズムコンボ',game.maxCombo],['最大一発正解コンボ',game.maxQuizCombo],['リズム PERFECT',`${game.judgments.PERFECT}回`],['リズム GOOD',`${game.judgments.GOOD}回`],['リズム MISS',`${game.judgments.MISS}回`],['正答回数',`${game.correctCount}回`],['お手付き（誤答確定）',`${game.wrongCount}回`],['一発正解',`${game.firstCount}問`]].forEach(([label,value]) => {
     const div = document.createElement('div'); div.textContent = label; const strong = document.createElement('strong'); strong.textContent = value; div.append(strong); $('result-stats').append(div);
   });
   $('review').replaceChildren();
