@@ -46,7 +46,7 @@ export function makeBlankQuestions(item, random = Math.random) {
       reviewLabel: `${item.term} · ？（${position + 1} / ${blanks.length}）` };
   });
 }
-export function makeQuestionQueue(items, random = Math.random) {
+export function makeQuestionQueue(items, random = Math.random, acceptQuestion = () => true) {
   const subjects = [...new Set(items.map(item => item.subject))];
   const decks = subjects.map(subject => shuffle(items.filter(item => item.subject === subject), random));
   const ordered = [];
@@ -59,7 +59,7 @@ export function makeQuestionQueue(items, random = Math.random) {
     if (item.english) return shuffle([[[makeEnglishQuestion(item, 'to_japanese', random)]], [[makeEnglishQuestion(item, 'to_english', random)]],
       item.phrase_blanks ? makePhraseQuestions(item, random).map(q => [q]) : [makeSpellingQuestions(item, random)]], random).flat();
     return shuffle([makeBlankQuestions(item, random), [makeQuestion(item, random)]], random);
-  });
+  }).map(units => units.map(group => group.filter(acceptQuestion)).filter(group => group.length));
   // One unit per source on each pass. Reuse the source order so shrinking
   // passes cannot put the same source at both sides of a pass boundary.
   const queue = [];
@@ -184,8 +184,8 @@ export function revealPlan(question) {
   return { continuation: false, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + RULES.liftSeconds };
 }
 export class Game {
-  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity) {
-    this.questions = makeQuestionQueue(questions, random);
+  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true) {
+    this.questions = makeQuestionQueue(questions, random, acceptQuestion);
     this.endTime = endTime;
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {

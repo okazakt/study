@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.15.0';
-import { buildCatalog, normalizePreferences, selectQuestions } from './learning.js?v=0.15.0';
-const VERSION = '0.15.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.16.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.16.0';
+const VERSION = '0.16.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -60,7 +60,7 @@ function renderLearning() {
     const detail = document.createElement('span'); detail.textContent = course.count ? `${course.count}件${course.year === 'exam' ? ` · 収録 ${course.grades.join('・')}` : ''}` : '準備中';
     button.append(title, detail);
     button.addEventListener('click', () => {
-      if (selection()?.id !== course.id) { preferences.profiles[school] = { id: course.id, sections: null }; saveLearning(); }
+      if (selection()?.id !== course.id) { preferences.profiles[school] = { id: course.id, sections: null, practiceType: selection()?.practiceType || 'all' }; saveLearning(); }
       renderLearning();
     });
     $('course-list').append(button);
@@ -70,20 +70,35 @@ function renderLearning() {
   const count = selectedQuestions().length;
   if (course) {
     $('selected-course-title').textContent = `${course.label}を出題`;
-    const fields = [...new Set(questions.filter(item => course.ids.includes(item.id)).map(item => item.field))];
-    $('course-coverage').textContent = `現在の収録：${course.grades.join('・')}／${fields.join('・')} · ${course.count}項目${course.year === 'exam' ? '（未収録の学年・分野は含みません）' : ''}`;
-    const selected = entry.sections === null ? course.sections.map(section => section.key) : entry.sections;
-    $('section-summary').textContent = selected.length === course.sections.length ? '（すべて）' : `（${selected.length} / ${course.sections.length}）`;
-    $('all-sections').checked = selected.length === course.sections.length;
-    $('all-sections').indeterminate = selected.length > 0 && selected.length < course.sections.length;
+    const practiceItems = questions.filter(item => course.ids.includes(item.id) && matchesPracticeItem(item,entry.practiceType || 'all'));
+    const fields = [...new Set(practiceItems.map(item => item.field))], grades = [...new Set(practiceItems.map(item => item.grade))];
+    $('course-coverage').textContent = `現在の収録：${grades.join('・')}／${fields.join('・')} · ${practiceItems.length}項目${course.year === 'exam' ? '（未収録の学年・分野は含みません）' : ''}`;
+    const options = practiceTypes(course.subject);
+    $('practice-picker').hidden = options.length === 1;
+    $('practice-list').replaceChildren();
+    for (const option of options) {
+      const button = document.createElement('button'); button.type = 'button'; button.dataset.practice = option.id; button.textContent = option.label;
+      button.setAttribute('aria-pressed', String(option.id === (entry.practiceType || 'all')));
+      button.addEventListener('click', () => {
+        if (entry.practiceType !== option.id) { entry.practiceType = option.id; entry.sections = null; saveLearning(); }
+        renderLearning();
+      });
+      $('practice-list').append(button);
+    }
+    const allowedSections = new Set(practiceItems.map(sectionKey));
+    const availableSections = course.sections.filter(section => allowedSections.has(section.key));
+    const selected = entry.sections === null ? availableSections.map(section => section.key) : entry.sections.filter(key => allowedSections.has(key));
+    $('section-summary').textContent = selected.length === availableSections.length ? '（すべて）' : `（${selected.length} / ${availableSections.length}）`;
+    $('all-sections').checked = selected.length === availableSections.length;
+    $('all-sections').indeterminate = selected.length > 0 && selected.length < availableSections.length;
     $('section-list').replaceChildren();
-    for (const section of course.sections) {
+    for (const section of availableSections) {
       const label = document.createElement('label'); label.className = 'section-option';
       const input = document.createElement('input'); input.type = 'checkbox'; input.checked = selected.includes(section.key); input.dataset.section = section.key;
       input.addEventListener('change', () => {
-        const keys = new Set(entry.sections === null ? course.sections.map(part => part.key) : entry.sections);
+        const keys = new Set(entry.sections === null ? availableSections.map(part => part.key) : selected);
         input.checked ? keys.add(section.key) : keys.delete(section.key);
-        entry.sections = keys.size === course.sections.length ? null : [...keys]; saveLearning(); renderLearning();
+        entry.sections = keys.size === availableSections.length ? null : [...keys]; saveLearning(); renderLearning();
       });
       const text = document.createElement('span'); text.textContent = `${section.label}（${section.count}件）`;
       label.append(input, text); $('section-list').append(label);
@@ -126,7 +141,8 @@ async function start() {
   busy = true; $('start').disabled = true;
   cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
-  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration);
+  const practiceType = selection()?.practiceType || 'all';
+  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, question => matchesPracticeQuestion(question,practiceType));
   history = []; questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
   try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
