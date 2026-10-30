@@ -11,3 +11,27 @@
 .question-task{font-size:12px;color:#a8bcd3;line-height:1.7;margin:10px 0 5px}.question-task:empty{display:none}
 
 .home-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.app-version{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.5px}
+
+/* Reclaim the footer and key-label space for the touch controls. */
+body.playing main{height:100dvh;width:100%;display:flex;flex-direction:column}
+body.playing .brand{padding:12px 0;flex-shrink:0}
+body.playing footer{display:none}
+body.playing #play{display:flex;flex-direction:column;flex:1;min-height:0;width:100%;padding-bottom:env(safe-area-inset-bottom,0px)}
+body.playing .play-top{flex-shrink:0;padding:10px 0}
+body.playing .play-top>div{min-width:0}
+body.playing .play-top b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0}
+body.playing .scoreboard{flex-shrink:0}
+body.playing .play-stage{display:flex;flex-direction:column;flex:1;min-height:0;margin-top:8px}
+body.playing #question-panel{min-height:0;overflow-y:auto;pointer-events:auto;touch-action:pan-y}
+body.playing #question-slot{min-height:0;flex-shrink:0}
+body.playing .field{height:auto;min-height:100px;flex:1;margin-top:8px}
+body.playing .question-meta{justify-content:flex-end}
+body.playing .question-meta:has(#question-number:empty){display:none}
+body.playing .lane-keys{flex:0 0 clamp(88px,13dvh,120px);margin:6px 0 0;gap:6px}
+body.playing .lane-keys button{min-height:88px;padding:0;border-radius:9px;border:1px solid color-mix(in srgb,var(--lane-color) 40%,#273b54);background:linear-gradient(color-mix(in srgb,var(--lane-color) 16%,#17263b),#17263b);box-shadow:inset 0 3px var(--lane-color)}
+body.playing .lane-keys button:active{background:color-mix(in srgb,var(--lane-color) 40%,#17263b)}
+body.playing .play-hint{display:none}
+#controls-help{max-width:420px;width:calc(100% - 36px);border:1px solid #ffffff30;border-radius:14px;padding:24px;background:#141e30;color:#e9f0fa;line-height:1.8}
+#controls-help::backdrop{background:#050b17cc}
+#controls-help h2{margin:0 0 12px;font-size:22px}#controls-help h3{font-size:15px;margin-bottom:6px}#controls-help p{font-size:14px;color:#bdcbe0}#controls-help button{margin-top:12px}
+kbd{display:inline-block;border:1px solid #ffffff30;border-radius:4px;background:#24344d;padding:0 5px;font:inherit;font-size:.9em}

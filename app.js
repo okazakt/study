@@ -10,7 +10,7 @@ $('offset').addEventListener('change', () => {
   $('offset').value = Math.max(-500, Math.min(500, Number($('offset').value) || 0));
   try { localStorage.setItem('study-beat-offset-ms', $('offset').value); } catch { /* Play remains available. */ }
 });
-const show = next => { screen = next; for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; };
+const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; };
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(path); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
 async function load() {
@@ -54,7 +54,7 @@ function renderQuestion() {
   const intro = game.phase === 'intro' || game.phase === 'rhythm';
   const key = `${game.phase === 'rhythm' ? 'rhythm' : intro}:${game.questionIndex}:${game.phase === 'feedback'}`;
   if (key === questionKey) return;
-  questionKey = key; characters = []; choiceElements = []; $('choices').replaceChildren();
+  questionKey = key; $('question-panel').scrollTop = 0; characters = []; choiceElements = []; $('choices').replaceChildren();
   const q = game.question;
   const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
   const prompt = intro ? (game.phase === 'rhythm' ? 'リズムにのって、次の問題へ' : 'まずはリズムにのろう') : segments ? segments.map(s => s.text).join('') : q.prompt;
@@ -72,6 +72,7 @@ function renderQuestion() {
 }
 function positionQuestion(elapsed) {
   const panel = $('question-panel');
+  panel.style.maxHeight = `${Math.max(100, $('play-stage').clientHeight - 112)}px`;
   // Reserve the final position, then place the same panel above the touch line.
   $('question-slot').style.height = `${panel.offsetHeight}px`;
   const stage = $('play-stage').getBoundingClientRect(), field = $('field').getBoundingClientRect();
@@ -89,11 +90,10 @@ function render() {
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
   $('play').dataset.continuation = game.reveal.continuation;
-  $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア。左からD F G H' : '白ノーツのタップエリア');
-  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; });
+  $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア' : '白ノーツのタップエリア');
+  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? '4色が横一列に到着。答えの色だけを3回タップ。' : '白ノーツが流れてきたレーンをタップ。';
-  $('phase-label').textContent = ({intro:'WARM UP · 4拍に1回',rhythm:'RHYTHM · 4拍に1回',read:'READ',answer:'ANSWER · 答えの色を3回',feedback:'CORRECT'})[game.phase] || '';
   $('question-number').textContent = ['intro', 'rhythm'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
@@ -132,7 +132,6 @@ function draw() {
   for (let i = 0; i < game.laneCount; i++) {
     ctx.fillStyle = i % 2 ? '#ffffff04' : '#00000008'; ctx.fillRect(i * laneWidth, 0, laneWidth, height);
     ctx.strokeStyle = '#ffffff12'; ctx.beginPath(); ctx.moveTo(i * laneWidth, 0); ctx.lineTo(i * laneWidth, height); ctx.stroke();
-    ctx.fillStyle = '#ffffff25'; ctx.font = '11px system-ui'; ctx.textAlign = 'center'; ctx.fillText(['D', 'F', 'G', 'H'][i], (i + .5) * laneWidth, height - 12);
   }
   ctx.fillStyle = '#a8f07d10'; ctx.fillRect(0, line - 13, width, 26);
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
@@ -170,7 +169,7 @@ document.querySelectorAll('[data-lane]').forEach(button => button.addEventListen
 // Prevent selection handles, long-press callouts and drag gestures while playing.
 for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
 document.addEventListener('keydown', event => {
-  if (screen !== 'play' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
+  if ($('controls-help').open || screen !== 'play' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
   const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
   if (lane >= 0) { event.preventDefault(); tap(lane); }
   if (event.code === 'Space') { event.preventDefault(); togglePause(); }
@@ -202,6 +201,10 @@ function finish(completed) {
   if (unfinished) { const li = document.createElement('li'); li.textContent = `未回答 · ${unfinished}（集計対象外）`; $('review').append(li); }
   if (!history.length && !unfinished) { const li = document.createElement('li'); li.textContent = '今回はウォームアップのみでした。'; $('review').append(li); }
 }
+let resumeAfterHelp = false;
+$('help').addEventListener('click', () => { resumeAfterHelp = !audio.paused; pause(); $('controls-help').showModal(); });
+$('close-help').addEventListener('click', () => $('controls-help').close());
+$('controls-help').addEventListener('close', () => { if (resumeAfterHelp) { resumeAfterHelp = false; togglePause(); } });
 $('start').addEventListener('click', start); $('again').addEventListener('click', start);
 $('back').addEventListener('click', () => show('home')); $('pause').addEventListener('click', togglePause);
 $('quit').addEventListener('click', () => finish(false)); audio.addEventListener('ended', () => finish(true));
