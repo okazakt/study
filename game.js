@@ -210,6 +210,7 @@ export class Game {
     const value = this.question.tapsToAnswer;
     return Number.isInteger(value) && value > 0 ? value : RULES.tapsToAnswer;
   }
+  get totalScore() { return this.rhythmScore + this.quizScore; }
   get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
   earliestCompletion(now) {
@@ -293,8 +294,8 @@ export class Game {
       for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
     }
     const perfect = Math.abs(note.target - now) <= RULES.perfectWindow;
-    this.rhythmScore += perfect ? 100 : 50;
     this.maxCombo = Math.max(this.maxCombo, ++this.combo);
+    this.rhythmScore += (perfect ? 10 : 5) + this.combo;
     this.judge(perfect ? 'PERFECT' : 'GOOD', now);
     if (this.phase === 'answer' && note.color !== null) {
       this.counts[note.color]++;
@@ -302,8 +303,10 @@ export class Game {
         if (note.color === this.question.correct) {
           this.quizResult = { correct: true, time: now, choice: note.color };
           this.correctCount++;
-          if (this.firstTry) { this.quizScore += 1000; this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
-          this.message = this.firstTry ? '一発正解！ +1,000 pt' : '正解！ 覚えて次へ進もう';
+          if (this.firstTry) { this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
+          const points = 50 + (this.firstTry ? this.quizCombo * 10 : 0);
+          this.quizScore += points;
+          this.message = `${this.firstTry ? '一発正解！' : '正解！'} +${points} pt`;
           this.notes = [];
           this.changePhase('feedback', now);
         } else {

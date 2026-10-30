@@ -50,9 +50,9 @@ test('navigation obtains network page without HTTP cache and falls back offline 
 test('audio migrates from previous cache, survives cleanup and serves offline byte ranges', async () => {
   const w = worker(), old = await w.caches.open('study-beat-v0.11.0');
   for(const path of ['music-data/0001/Fallin_For_You.mp3','music-data/0002/the_mountain-american-western-country-496543.mp3']) await old.put(path,new Response('0123456789'));
-  await w.caches.open('study-beat-v0.18.0');
+  await w.caches.open('study-beat-v999.0.0');
   await w.run('install'); w.online(false); await w.run('message',{data:{type:'CACHE_MEDIA'}});
-  assert.ok((await w.caches.keys()).includes('study-beat-v0.18.0'));
+  assert.ok((await w.caches.keys()).includes('study-beat-v999.0.0'));
   assert.equal(w.messages.at(-1),'MEDIA_READY');assert.ok(!(await w.caches.keys()).includes('study-beat-v0.11.0'));
   const response=await w.request('music-data/0002/the_mountain-american-western-country-496543.mp3',{headers:{Range:'bytes=2-5'}});
   assert.equal(response.status,206);assert.equal(await response.text(),'2345');assert.equal(response.headers.get('Content-Range'),'bytes 2-5/10');

@@ -32,8 +32,8 @@ test('chart events use audio seconds and only the two extra offsets', () => {
 test('white notes require their lane; perfect, good, misses and empty taps affect rhythm only', () => {
   const g = fixture(); g.notes = [{target:2, color:null, lane:0}];
   assert.equal(g.tap(3, 2),null); assert.equal(g.rhythmScore,0);
-  g.tap(0, 2); assert.equal(g.rhythmScore, 100); assert.equal(g.combo, 1);
-  hit(g, null, 3, .12); assert.equal(g.rhythmScore, 150); assert.equal(g.combo, 2);
+  g.tap(0, 2); assert.equal(g.rhythmScore, 11); assert.equal(g.combo, 1);
+  hit(g, null, 3, .12); assert.equal(g.rhythmScore, 18); assert.equal(g.combo, 2);
   g.notes.push({target:4,color:null,lane:0}); g.update(4.17); assert.equal(g.combo, 0);
   hit(g, null, 5); g.tap(0, 5.5); assert.equal(g.combo, 0); assert.equal(g.quizScore, 0);
 });
@@ -46,14 +46,14 @@ test('wrong lane and out-of-window taps do not consume a colored note', () => {
 test('three correct color hits confirm one answer, with separate first-answer combo', () => {
   const g = fixture(); g.changePhase('answer', 0); const c = g.question.correct;
   hit(g,c,2); hit(g,c,3); assert.equal(g.correctCount,0); hit(g,c,4);
-  assert.equal(g.phase,'feedback'); assert.equal(g.correctCount,1); assert.equal(g.quizScore,1000);
+  assert.equal(g.phase,'feedback'); assert.equal(g.correctCount,1); assert.equal(g.quizScore,60);
   assert.equal(g.quizCombo,1); assert.equal(g.combo,3);
   g.update(4 + RULES.feedbackSeconds); assert.equal(g.phase,'read'); assert.equal(g.questionIndex,1);
   const answerStart = 4 + RULES.feedbackSeconds + g.reveal.duration;
   g.update(answerStart); assert.equal(g.phase,'answer');
   const c2 = g.question.correct;
   hit(g,c2,answerStart+2); hit(g,c2,answerStart+3); hit(g,c2,answerStart+4);
-  assert.equal(g.quizScore,2000); assert.equal(g.quizCombo,2); assert.equal(g.maxQuizCombo,2);
+  assert.equal(g.quizScore,130); assert.equal(g.quizCombo,2); assert.equal(g.maxQuizCombo,2);
 });
 test('wrong answers keep the same question and colors, reset progress, and break only quiz combo', () => {
   const g = fixture(); g.changePhase('answer',0); g.quizCombo = 2;
@@ -63,7 +63,7 @@ test('wrong answers keep the same question and colors, reset progress, and break
   assert.equal(g.firstTry,false); assert.equal(g.quizCombo,0); assert.equal(g.combo,3);
   assert.deepEqual(g.counts,[0,0,0,0]);
   hit(g,q.correct,5); hit(g,q.correct,6); hit(g,q.correct,7);
-  assert.equal(g.correctCount,1); assert.equal(g.firstCount,0); assert.equal(g.quizScore,0); assert.equal(g.phase,'feedback');
+  assert.equal(g.correctCount,1); assert.equal(g.firstCount,0); assert.equal(g.quizScore,50); assert.equal(g.phase,'feedback');
 });
 test('unchosen sibling colors are not misses and counts remain independent', () => {
   const g=new Game(questions,chart.events); g.changePhase('answer',8); const c=g.question.correct;
@@ -80,7 +80,7 @@ test('a transition waits for the final note and its judgment instead of discardi
   g.tap(2,8.1); assert.equal(g.lastJudgment,'PERFECT'); assert.equal(g.combo,9);
   g.update(8.8); assert.equal(g.phase,'intro');
   g.update(9.01); assert.equal(g.phase,'read'); assert.equal(g.notes.length,0);
-  g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,100); assert.equal(g.phase,'ended');
+  g.finish(); hit(g,null,10); assert.equal(g.rhythmScore,19); assert.equal(g.phase,'ended');
 });
 test('main-beat chart keeps every beat without subdivisions or duplicate times', () => {
   const selected = easyEvents(chart.events);
@@ -122,9 +122,9 @@ test('answer rows offer four simultaneous colors, ordered like choices, one sele
   const row=g.notes.filter(n=>n.rowId===event.id);
   assert.equal(row.length,4); assert.deepEqual(row.map(n=>n.color),[0,1,2,3]);
   assert.deepEqual(row.map(n=>n.lane),[0,1,2,3]); assert.ok(row.every(n=>n.target===event.target));
-  assert.ok(g.tap(1,event.target)); assert.equal(g.counts[1],1); assert.equal(g.rhythmScore,100);
+  assert.ok(g.tap(1,event.target)); assert.equal(g.counts[1],1); assert.equal(g.rhythmScore,11);
   assert.ok(row.every(n=>n.done));
-  g.tap(2,event.target); assert.equal(g.counts[2],0); assert.equal(g.rhythmScore,100);
+  g.tap(2,event.target); assert.equal(g.counts[2],0); assert.equal(g.rhythmScore,11);
   const next=g.events.find(e=>e.target>event.target);
   g.update(next.target-1); assert.equal(g.notes.filter(n=>!n.done&&n.rowId===next.id).length,4);
   g.tap(1,next.target); assert.equal(g.counts[1],2);
@@ -134,7 +134,7 @@ test('each color can confirm an answer on three successive rows', () => {
     const g=new Game(questions,chart.events); g.changePhase('answer',8); g.question.correct=color;
     const events=g.events.filter(e=>e.target>=8+RULES.travelSeconds).slice(0,3);
     for (const e of events) { g.update(e.target-1); g.tap(color,e.target); }
-    assert.equal(g.correctCount,1); assert.equal(g.quizScore,1000); assert.equal(g.phase,'feedback');
+    assert.equal(g.correctCount,1); assert.equal(g.quizScore,60); assert.equal(g.phase,'feedback');
   }
 });
 
@@ -151,7 +151,7 @@ test('all phases keep four lanes and white notes use shuffled single lanes', () 
   assert.equal(g.notes.filter(n=>n.id===event.id).length,1); assert.equal(g.notes.find(n=>n.id===event.id).color,null);
   assert.equal(g.notes.find(n=>n.id===event.id).lane,event.lane);
   assert.equal(g.tap((event.lane+1)%4,event.target),null);
-  assert.equal(g.rhythmScore,0); assert.ok(g.tap(event.lane,event.target)); assert.equal(g.rhythmScore,100);
+  assert.equal(g.rhythmScore,0); assert.ok(g.tap(event.lane,event.target)); assert.equal(g.rhythmScore,11);
 });
 
 test('missing an entire answer row reports one MISS, but a successful row reports none', () => {
@@ -231,7 +231,7 @@ test('wrong answers stay on the target blank; correct advances to the next blank
   assert.ok(g.question.targetLabel.includes('2 / 2'));
   const time=9.5+g.reveal.duration;g.update(time);
   for(let t=time+2;t<=time+4;t++)hit(g,g.question.correct,t);
-  g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,1000);
+  g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,110);
 });
 
 test('the next explanation blank keeps all text visible without reanimation', () => {
@@ -253,7 +253,7 @@ test('normal play fits eight white notes between groups and waits for final judg
   const targets=g.events.filter(e=>g.rhythmTargets.has(e.id));assert.equal(targets.length,8);
   const quizScore=g.quizScore;
   for(const e of targets){g.update(e.target-1);const note=g.notes.find(n=>n.id===e.id);assert.ok(note);assert.equal(note.color,null);g.tap(e.lane,e.target);}
-  assert.equal(g.quizScore,quizScore);assert.equal(g.rhythmScore,800);assert.equal(g.phase,'rhythm');
+  assert.equal(g.quizScore,quizScore);assert.equal(g.rhythmScore,116);assert.equal(g.phase,'rhythm');
   g.update(targets.at(-1).target+.5);assert.equal(g.phase,'rhythm');
   g.update(g.rhythmEnd+.01);assert.equal(g.phase,'read');assert.equal(g.questionIndex,1);assert.deepEqual(g.notes,[]);
 });
@@ -468,4 +468,34 @@ test('completion awards require complete positive play with no mistakes or unans
   g.wrongCount=1;assert.equal(g.achievements(true).quiz,false);
   g.judgments.MISS=1;assert.equal(g.achievements(true).rhythm,false);
   const fresh=fixture();assert.equal(fresh.wrongCount,0);assert.equal(fresh.judgments.PERFECT,0);
+});
+
+test('rhythm score adds base plus the new combo and starts from one after MISS', () => {
+  const g=fixture();hit(g,null,2);hit(g,null,3);
+  const before=g.totalScore;hit(g,null,4,.12);
+  assert.equal(g.combo,3);assert.equal(g.totalScore-before,8);
+  assert.equal(g.rhythmScore,11+12+8);
+  g.tap(0,5);const afterMiss=g.totalScore;assert.equal(afterMiss,31);
+  hit(g,null,6,.12);assert.equal(g.combo,1);assert.equal(g.totalScore-afterMiss,6);
+  g.notes.push({target:7,lane:0,color:null});g.update(7.2);const beforePerfect=g.totalScore;
+  hit(g,null,8);assert.equal(g.totalScore-beforePerfect,11);
+});
+test('answers award 50 plus first-answer streak times ten, retry earns 50, total includes timing points', () => {
+  const g=fixture();let now=2;
+  const confirm=color=>{for(let i=0;i<3;i++)hit(g,color,now++);};
+  for(let stage=1;stage<=3;stage++){
+    g.changePhase('answer',now-2);g.firstTry=true;const before=g.quizScore;
+    confirm(g.question.correct);assert.equal(g.quizScore-before,50+stage*10);
+    assert.equal(g.quizCombo,stage);assert.equal(g.totalScore,g.rhythmScore+g.quizScore);
+    now+=3;g.questionIndex++;
+  }
+  assert.equal(g.quizScore,210);
+  g.changePhase('answer',now-2);g.firstTry=true;
+  const beforeWrong=g.quizScore;confirm((g.question.correct+1)%4);confirm((g.question.correct+1)%4);
+  assert.equal(g.quizScore,beforeWrong);assert.equal(g.wrongCount,2);assert.equal(g.quizCombo,0);
+  confirm(g.question.correct);assert.equal(g.quizScore-beforeWrong,50);assert.equal(g.quizCombo,0);
+  now+=3;g.questionIndex++;g.changePhase('answer',now-2);g.firstTry=true;
+  const beforeRestart=g.quizScore;confirm(g.question.correct);
+  assert.equal(g.quizScore-beforeRestart,60);assert.equal(g.quizCombo,1);
+  assert.equal(g.correctCount,5);assert.equal(g.firstCount,4);
 });

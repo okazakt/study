@@ -1,6 +1,6 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.18.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.18.0';
-const VERSION = '0.18.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.19.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.19.0';
+const VERSION = '0.19.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -258,8 +258,8 @@ function positionQuestion(elapsed) {
   panel.style.transform = `translate3d(0,${game.phase === 'read' && !game.reveal.continuation ? lower * (1 - lift) : 0}px,0)`;
 }
 function render() {
-  $('rhythm-score').textContent = game.rhythmScore.toLocaleString(); $('rhythm-combo').textContent = game.combo;
-  $('quiz-score').textContent = game.quizScore.toLocaleString(); $('quiz-combo').textContent = game.quizCombo;
+  $('total-score').textContent = game.totalScore.toLocaleString(); $('rhythm-combo').textContent = game.combo;
+  $('quiz-combo').textContent = game.quizCombo;
   $('time').textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration || track.durationSeconds)}`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
@@ -411,9 +411,31 @@ function finish(completed) {
   }
   $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
   $('result-stats').replaceChildren();
-  [['リズムスコア', game.rhythmScore.toLocaleString()],['学習スコア（一発正解）',game.quizScore.toLocaleString()],['最大リズムコンボ',game.maxCombo],['最大一発正解コンボ',game.maxQuizCombo],['リズム PERFECT',`${game.judgments.PERFECT}回`],['リズム GOOD',`${game.judgments.GOOD}回`],['リズム MISS',`${game.judgments.MISS}回`],['正答回数',`${game.correctCount}回`],['お手付き（誤答確定）',`${game.wrongCount}回`],['一発正解',`${game.firstCount}問`]].forEach(([label,value]) => {
-    const div = document.createElement('div'); div.textContent = label; const strong = document.createElement('strong'); strong.textContent = value; div.append(strong); $('result-stats').append(div);
-  });
+  $('result-total-score').textContent = game.totalScore.toLocaleString();
+  const rhythmBase = game.judgments.PERFECT * 10 + game.judgments.GOOD * 5;
+  const quizBase = game.correctCount * 50;
+  const columns = [
+    ['リズム', [
+      ['リズム得点', game.rhythmScore.toLocaleString()], ['基本点', rhythmBase.toLocaleString()],
+      ['コンボ加算', (game.rhythmScore - rhythmBase).toLocaleString()], ['最大リズムコンボ', game.maxCombo],
+      ['PERFECT', `${game.judgments.PERFECT}回`], ['GOOD', `${game.judgments.GOOD}回`], ['MISS', `${game.judgments.MISS}回`]
+    ]],
+    ['問題', [
+      ['正解得点', game.quizScore.toLocaleString()], ['基本点', quizBase.toLocaleString()],
+      ['コンボ加算', (game.quizScore - quizBase).toLocaleString()], ['最大一発正解コンボ', game.maxQuizCombo],
+      ['正答回数', `${game.correctCount}回`], ['お手付き回数', `${game.wrongCount}回`], ['一発正解', `${game.firstCount}回`]
+    ]]
+  ];
+  for (const [title, entries] of columns) {
+    const column = document.createElement('section'), heading = document.createElement('h2');
+    column.className = 'result-column'; column.setAttribute('aria-label', `${title}の成績`);
+    heading.textContent = title; column.append(heading);
+    for (const [label, value] of entries) {
+      const div = document.createElement('div'), strong = document.createElement('strong');
+      div.textContent = label; strong.textContent = value; div.append(strong); column.append(div);
+    }
+    $('result-stats').append(column);
+  }
   $('review').replaceChildren();
   for (const item of history) { const li = document.createElement('li'); li.textContent = `${item.first ? '一発正解' : '再挑戦で正解'} · ${item.label} — 正解：${item.answer} · ${item.note}`; $('review').append(li); }
   if (unfinished) { const li = document.createElement('li'); li.textContent = `未回答 · ${unfinished}（集計対象外）`; $('review').append(li); }
