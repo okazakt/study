@@ -47,10 +47,42 @@ export function makeBlankQuestions(item, random = Math.random) {
   });
 }
 export function makeQuestionQueue(items, random = Math.random) {
-  const terms = shuffle(items, random).map(item => makeQuestion(item, random));
-  const blanks = shuffle(items, random).map(item => makeBlankQuestions(item, random));
-  // Alternate directions by source group; keep all blanks of one explanation together.
-  return blanks.flatMap((group, i) => [...group, terms[i]]);
+  const science = items.filter(item => !item.english), english = items.filter(item => item.english);
+  const groups = [
+    shuffle(science, random).map(item => makeBlankQuestions(item, random)),
+    shuffle(science, random).map(item => [makeQuestion(item, random)]),
+    shuffle(english, random).map(item => [makeEnglishQuestion(item, 'to_japanese', random)]),
+    shuffle(english, random).map(item => [makeEnglishQuestion(item, 'to_english', random)]),
+    shuffle(english, random).map(item => makeSpellingQuestions(item, random))
+  ];
+  const queue = [];
+  for (let i = 0; i < Math.max(...groups.map(group => group.length)); i++) {
+    for (const group of groups) if (group[i]) queue.push(...group[i]);
+  }
+  return queue;
+}
+export function makeEnglishQuestion(item, direction, random = Math.random) {
+  if (!['to_japanese', 'to_english'].includes(direction)) throw new Error('Unknown English direction');
+  const toJapanese = direction === 'to_japanese';
+  const answer = toJapanese ? item.japanese : item.english;
+  const dummies = toJapanese ? item.japanese_dummies : item.english_dummies;
+  const candidates = [...new Set(dummies)].filter(value => value !== answer);
+  if (candidates.length < 3) throw new Error(`${item.id}: insufficient translation choices`);
+  const choices = shuffle([answer, ...shuffle(candidates, random).slice(0, 3)], random);
+  return { ...item, id: `${item.id}:${direction}`, sourceId: item.id, mode: direction,
+    term: item.english, answer, prompt: toJapanese ? item.english : item.japanese,
+    task: toJapanese ? 'この英語の意味を選ぼう' : 'この意味にあてはまる英語を選ぼう', context: '',
+    choices, correct: choices.indexOf(answer), reviewLabel: `${toJapanese ? item.english : item.japanese}` };
+}
+export function makeSpellingQuestions(item, random = Math.random) {
+  return makeBlankQuestions({ ...item, term: item.japanese, term_dummies: [],
+    explanation_template: item.spelling_template, blanks: item.spelling }, random).map(q => ({
+      ...q, id: `${item.id}:spelling:${q.blankIndex}`, mode: 'spelling',
+      task: `「${item.japanese}」を表す英語の綴りを完成させよう`,
+      targetLabel: `${q.blankPosition > 1 ? '次の' : '強調された'}？に入る綴りを回答（${q.blankPosition} / ${q.blankTotal}）`,
+      note: q.blankPosition === q.blankTotal ? item.note : '',
+      reviewLabel: `${item.japanese} · 綴り（${q.blankPosition} / ${q.blankTotal}）`
+    }));
 }
 // Preserve source timestamps and keep every main beat, excluding subdivisions.
 export function easyEvents(events) {
@@ -66,7 +98,7 @@ export function answerProgress(count, required) {
   return Math.max(0, Math.min(1, count / required));
 }
 export function revealPlan(question) {
-  if (question.mode === 'term_to_explanation' && question.blankPosition > 1) {
+  if (question.blankPosition > 1) {
     return { continuation: true, context: { start: 0, end: 0 }, prompt: { start: 0, end: 0 },
       choices: question.choices.map(() => ({ start: 0, end: 0 })), revealEnd: 0,
       liftStart: 0, duration: RULES.readHoldSeconds };
@@ -147,7 +179,7 @@ export class Game {
     if (this.phase === 'intro' && now >= RULES.introSeconds && settled) this.changePhase('read', now);
     else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds && settled) {
       const next = this.questions[(this.questionIndex + 1) % this.questions.length];
-      if (next.mode === 'term_to_explanation' && next.blankPosition > 1) {
+      if (next.sourceId === this.question.sourceId && next.mode === this.question.mode && next.blankPosition > 1) {
         this.questionIndex++; this.changePhase('read', now);
       } else if (this.events.slice(this.cursor).some(e => e.target >= now + RULES.travelSeconds)) this.changePhase('rhythm', now);
       else { this.questionIndex++; this.changePhase('read', now); }

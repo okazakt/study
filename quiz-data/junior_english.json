@@ -1,0 +1,1616 @@
+[
+  {
+    "id": "jr_en2_001",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "ground",
+    "japanese": "地面",
+    "english_dummies": [
+      "floor",
+      "wall",
+      "roof"
+    ],
+    "japanese_dummies": [
+      "空",
+      "壁",
+      "屋根"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "gr",
+        "dummies": [
+          "gl",
+          "gur",
+          "gul"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ou",
+        "dummies": [
+          "uo",
+          "au",
+          "ow"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "nd",
+        "dummies": [
+          "nt",
+          "dn",
+          "ng"
+        ]
+      }
+    ],
+    "note": "ground：地面。"
+  },
+  {
+    "id": "jr_en2_002",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "language",
+    "japanese": "言語",
+    "english_dummies": [
+      "culture",
+      "history",
+      "custom"
+    ],
+    "japanese_dummies": [
+      "文化",
+      "歴史",
+      "習慣"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lan",
+        "dummies": [
+          "nal",
+          "lann",
+          "la"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "gu",
+        "dummies": [
+          "ug",
+          "guu",
+          "g"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "age",
+        "dummies": [
+          "ega",
+          "agee",
+          "ag"
+        ]
+      }
+    ],
+    "note": "language：言語。"
+  },
+  {
+    "id": "jr_en2_003",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "foreign",
+    "japanese": "外国の",
+    "english_dummies": [
+      "local",
+      "domestic",
+      "international"
+    ],
+    "japanese_dummies": [
+      "地元の",
+      "国内の",
+      "国際的な"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "for",
+        "dummies": [
+          "rof",
+          "forr",
+          "fo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ei",
+        "dummies": [
+          "ie",
+          "eii",
+          "e"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "gn",
+        "dummies": [
+          "ng",
+          "gnn",
+          "g"
+        ]
+      }
+    ],
+    "note": "foreign：外国の。"
+  },
+  {
+    "id": "jr_en2_004",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "culture",
+    "japanese": "文化",
+    "english_dummies": [
+      "language",
+      "nature",
+      "technology"
+    ],
+    "japanese_dummies": [
+      "言語",
+      "自然",
+      "技術"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cul",
+        "dummies": [
+          "luc",
+          "cull",
+          "cu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tu",
+        "dummies": [
+          "ut",
+          "tuu",
+          "t"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "ree",
+          "r"
+        ]
+      }
+    ],
+    "note": "culture：文化。"
+  },
+  {
+    "id": "jr_en2_005",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "experience",
+    "japanese": "経験",
+    "english_dummies": [
+      "plan",
+      "opinion",
+      "promise"
+    ],
+    "japanese_dummies": [
+      "予定",
+      "意見",
+      "約束"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ex",
+        "dummies": [
+          "xe",
+          "exx",
+          "e"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "per",
+        "dummies": [
+          "rep",
+          "perr",
+          "pe"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ience",
+        "dummies": [
+          "ecnei",
+          "iencee",
+          "ienc"
+        ]
+      }
+    ],
+    "note": "experience：経験。"
+  },
+  {
+    "id": "jr_en2_006",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "future",
+    "japanese": "未来",
+    "english_dummies": [
+      "past",
+      "present",
+      "moment"
+    ],
+    "japanese_dummies": [
+      "過去",
+      "現在",
+      "瞬間"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fu",
+        "dummies": [
+          "uf",
+          "fuu",
+          "f"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tu",
+        "dummies": [
+          "ut",
+          "tuu",
+          "t"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "ree",
+          "r"
+        ]
+      }
+    ],
+    "note": "future：未来。"
+  },
+  {
+    "id": "jr_en2_007",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "environment",
+    "japanese": "環境",
+    "english_dummies": [
+      "weather",
+      "population",
+      "industry"
+    ],
+    "japanese_dummies": [
+      "天気",
+      "人口",
+      "産業"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "en",
+        "dummies": [
+          "ne",
+          "enn",
+          "e"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "viron",
+        "dummies": [
+          "noriv",
+          "vironn",
+          "viro"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ment",
+        "dummies": [
+          "tnem",
+          "mentt",
+          "men"
+        ]
+      }
+    ],
+    "note": "environment：環境。"
+  },
+  {
+    "id": "jr_en2_008",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "nature",
+    "japanese": "自然",
+    "english_dummies": [
+      "culture",
+      "society",
+      "science"
+    ],
+    "japanese_dummies": [
+      "文化",
+      "社会",
+      "科学"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "na",
+        "dummies": [
+          "an",
+          "naa",
+          "n"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tu",
+        "dummies": [
+          "ut",
+          "tuu",
+          "t"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "ree",
+          "r"
+        ]
+      }
+    ],
+    "note": "nature：自然。"
+  },
+  {
+    "id": "jr_en2_009",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "important",
+    "japanese": "重要な",
+    "english_dummies": [
+      "necessary",
+      "popular",
+      "useful"
+    ],
+    "japanese_dummies": [
+      "必要な",
+      "人気のある",
+      "役に立つ"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "im",
+        "dummies": [
+          "mi",
+          "imm",
+          "i"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "por",
+        "dummies": [
+          "rop",
+          "porr",
+          "po"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tant",
+        "dummies": [
+          "tnat",
+          "tantt",
+          "tan"
+        ]
+      }
+    ],
+    "note": "important：重要な。"
+  },
+  {
+    "id": "jr_en2_010",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "necessary",
+    "japanese": "必要な",
+    "english_dummies": [
+      "important",
+      "possible",
+      "special"
+    ],
+    "japanese_dummies": [
+      "重要な",
+      "可能な",
+      "特別な"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ne",
+        "dummies": [
+          "en",
+          "nee",
+          "n"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ces",
+        "dummies": [
+          "sec",
+          "cess",
+          "ce"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "sary",
+        "dummies": [
+          "yras",
+          "saryy",
+          "sar"
+        ]
+      }
+    ],
+    "note": "necessary：必要な。"
+  },
+  {
+    "id": "jr_en2_011",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "different",
+    "japanese": "異なる",
+    "english_dummies": [
+      "similar",
+      "equal",
+      "usual"
+    ],
+    "japanese_dummies": [
+      "似ている",
+      "等しい",
+      "普通の"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dif",
+        "dummies": [
+          "fid",
+          "diff",
+          "di"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "fer",
+        "dummies": [
+          "ref",
+          "ferr",
+          "fe"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ent",
+        "dummies": [
+          "tne",
+          "entt",
+          "en"
+        ]
+      }
+    ],
+    "note": "different：異なる。"
+  },
+  {
+    "id": "jr_en2_012",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "popular",
+    "japanese": "人気のある",
+    "english_dummies": [
+      "famous",
+      "special",
+      "kind"
+    ],
+    "japanese_dummies": [
+      "有名な",
+      "特別な",
+      "親切な"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pop",
+        "dummies": [
+          "popp",
+          "po",
+          "pup"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "u",
+        "dummies": [
+          "uu",
+          "ue",
+          "uh"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "lar",
+        "dummies": [
+          "ral",
+          "larr",
+          "la"
+        ]
+      }
+    ],
+    "note": "popular：人気のある。"
+  },
+  {
+    "id": "jr_en2_013",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "interesting",
+    "japanese": "興味深い",
+    "english_dummies": [
+      "excited",
+      "boring",
+      "surprised"
+    ],
+    "japanese_dummies": [
+      "興奮した",
+      "退屈な",
+      "驚いた"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "in",
+        "dummies": [
+          "ni",
+          "inn",
+          "i"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ter",
+        "dummies": [
+          "ret",
+          "terr",
+          "te"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "esting",
+        "dummies": [
+          "gnitse",
+          "estingg",
+          "estin"
+        ]
+      }
+    ],
+    "note": "interesting：興味深い。"
+  },
+  {
+    "id": "jr_en2_014",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "famous",
+    "japanese": "有名な",
+    "english_dummies": [
+      "popular",
+      "usual",
+      "rare"
+    ],
+    "japanese_dummies": [
+      "人気のある",
+      "普通の",
+      "珍しい"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fa",
+        "dummies": [
+          "af",
+          "faa",
+          "f"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mous",
+        "dummies": [
+          "suom",
+          "mouss",
+          "mou"
+        ]
+      }
+    ],
+    "note": "famous：有名な。"
+  },
+  {
+    "id": "jr_en2_015",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "remember",
+    "japanese": "思い出す",
+    "english_dummies": [
+      "forget",
+      "imagine",
+      "explain"
+    ],
+    "japanese_dummies": [
+      "忘れる",
+      "想像する",
+      "説明する"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "ree",
+          "r"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mem",
+        "dummies": [
+          "memm",
+          "me",
+          "mim"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ber",
+        "dummies": [
+          "reb",
+          "berr",
+          "be"
+        ]
+      }
+    ],
+    "note": "remember：思い出す。"
+  },
+  {
+    "id": "jr_en2_016",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "forget",
+    "japanese": "忘れる",
+    "english_dummies": [
+      "remember",
+      "decide",
+      "notice"
+    ],
+    "japanese_dummies": [
+      "思い出す",
+      "決める",
+      "気づく"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "for",
+        "dummies": [
+          "rof",
+          "forr",
+          "fo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "get",
+        "dummies": [
+          "teg",
+          "gett",
+          "ge"
+        ]
+      }
+    ],
+    "note": "forget：忘れる。"
+  },
+  {
+    "id": "jr_en2_017",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "decide",
+    "japanese": "決める",
+    "english_dummies": [
+      "hope",
+      "try",
+      "plan"
+    ],
+    "japanese_dummies": [
+      "望む",
+      "試す",
+      "計画する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "de",
+        "dummies": [
+          "ed",
+          "dee",
+          "d"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "cide",
+        "dummies": [
+          "edic",
+          "cidee",
+          "cid"
+        ]
+      }
+    ],
+    "note": "decide：決める。"
+  },
+  {
+    "id": "jr_en2_018",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "invite",
+    "japanese": "招待する",
+    "english_dummies": [
+      "visit",
+      "introduce",
+      "join"
+    ],
+    "japanese_dummies": [
+      "訪問する",
+      "紹介する",
+      "参加する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "in",
+        "dummies": [
+          "ni",
+          "inn",
+          "i"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "vite",
+        "dummies": [
+          "etiv",
+          "vitee",
+          "vit"
+        ]
+      }
+    ],
+    "note": "invite：招待する。"
+  },
+  {
+    "id": "jr_en2_019",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "arrive",
+    "japanese": "到着する",
+    "english_dummies": [
+      "leave",
+      "pass",
+      "return"
+    ],
+    "japanese_dummies": [
+      "出発する",
+      "通り過ぎる",
+      "戻る"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ar",
+        "dummies": [
+          "ra",
+          "arr",
+          "a"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rive",
+        "dummies": [
+          "evir",
+          "rivee",
+          "riv"
+        ]
+      }
+    ],
+    "note": "arrive：到着する。"
+  },
+  {
+    "id": "jr_en2_020",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "practice",
+    "japanese": "練習する",
+    "english_dummies": [
+      "prepare",
+      "teach",
+      "win"
+    ],
+    "japanese_dummies": [
+      "準備する",
+      "教える",
+      "試合に勝つ"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "prac",
+        "dummies": [
+          "carp",
+          "pracc",
+          "pra"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tice",
+        "dummies": [
+          "ecit",
+          "ticee",
+          "tic"
+        ]
+      }
+    ],
+    "note": "practice：練習する。"
+  },
+  {
+    "id": "jr_en2_021",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "believe",
+    "japanese": "信じる",
+    "english_dummies": [
+      "doubt",
+      "know",
+      "hope"
+    ],
+    "japanese_dummies": [
+      "疑う",
+      "知っている",
+      "望む"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "be",
+        "dummies": [
+          "eb",
+          "bee",
+          "b"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lieve",
+        "dummies": [
+          "eveil",
+          "lievee",
+          "liev"
+        ]
+      }
+    ],
+    "note": "believe：信じる。"
+  },
+  {
+    "id": "jr_en2_022",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "enough",
+    "japanese": "十分な",
+    "english_dummies": [
+      "few",
+      "all",
+      "little"
+    ],
+    "japanese_dummies": [
+      "少数の",
+      "すべての",
+      "ほとんどない"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "e",
+        "dummies": [
+          "ee",
+          "i",
+          "eh"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nough",
+        "dummies": [
+          "hguon",
+          "noughh",
+          "noug"
+        ]
+      }
+    ],
+    "note": "enough：十分な。"
+  },
+  {
+    "id": "jr_en2_023",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "during",
+    "japanese": "〜の間ずっと",
+    "english_dummies": [
+      "before",
+      "after",
+      "by"
+    ],
+    "japanese_dummies": [
+      "〜の前に",
+      "〜の後に",
+      "〜までに"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dur",
+        "dummies": [
+          "rud",
+          "durr",
+          "du"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ing",
+        "dummies": [
+          "gni",
+          "ingg",
+          "in"
+        ]
+      }
+    ],
+    "note": "during：〜の間ずっと。"
+  },
+  {
+    "id": "jr_en2_024",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "基本語彙",
+    "english": "without",
+    "japanese": "〜なしで",
+    "english_dummies": [
+      "with",
+      "for",
+      "instead of"
+    ],
+    "japanese_dummies": [
+      "〜と一緒に",
+      "〜のために",
+      "〜の代わりに"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "with",
+        "dummies": [
+          "htiw",
+          "withh",
+          "wit"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "out",
+        "dummies": [
+          "tuo",
+          "outt",
+          "ou"
+        ]
+      }
+    ],
+    "note": "without：〜なしで。"
+  },
+  {
+    "id": "jr_en2_025",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "look for",
+    "japanese": "〜を探す",
+    "english_dummies": [
+      "look at",
+      "look after",
+      "look forward to"
+    ],
+    "japanese_dummies": [
+      "〜を見る",
+      "〜の世話をする",
+      "〜を楽しみに待つ"
+    ],
+    "spelling_template": "{{1}}{{2}} {{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lo",
+        "dummies": [
+          "ol",
+          "loo",
+          "l"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ok",
+        "dummies": [
+          "ko",
+          "okk",
+          "o"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "for",
+        "dummies": [
+          "rof",
+          "forr",
+          "fo"
+        ]
+      }
+    ],
+    "note": "look for：〜を探す。"
+  },
+  {
+    "id": "jr_en2_026",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "look after",
+    "japanese": "〜の世話をする",
+    "english_dummies": [
+      "look for",
+      "look up",
+      "look into"
+    ],
+    "japanese_dummies": [
+      "〜を探す",
+      "〜を見上げる",
+      "〜を調べる"
+    ],
+    "spelling_template": "{{1}}{{2}} {{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lo",
+        "dummies": [
+          "ol",
+          "loo",
+          "l"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ok",
+        "dummies": [
+          "ko",
+          "okk",
+          "o"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "af",
+        "dummies": [
+          "fa",
+          "aff",
+          "a"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "ter",
+        "dummies": [
+          "ret",
+          "terr",
+          "te"
+        ]
+      }
+    ],
+    "note": "look after：〜の世話をする。"
+  },
+  {
+    "id": "jr_en2_027",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "be interested in",
+    "japanese": "〜に興味がある",
+    "english_dummies": [
+      "be good at",
+      "be afraid of",
+      "be famous for"
+    ],
+    "japanese_dummies": [
+      "〜が得意だ",
+      "〜を恐れている",
+      "〜で有名だ"
+    ],
+    "spelling_template": "{{1}} {{2}}{{3}}{{4}} {{5}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "be",
+        "dummies": [
+          "eb",
+          "bee",
+          "b"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "in",
+        "dummies": [
+          "ni",
+          "inn",
+          "i"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ter",
+        "dummies": [
+          "ret",
+          "terr",
+          "te"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "ested",
+        "dummies": [
+          "detse",
+          "estedd",
+          "este"
+        ]
+      },
+      {
+        "index": 5,
+        "answer": "in",
+        "dummies": [
+          "ni",
+          "inn",
+          "i"
+        ]
+      }
+    ],
+    "note": "be interested in：〜に興味がある。"
+  },
+  {
+    "id": "jr_en2_028",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "be good at",
+    "japanese": "〜が得意だ",
+    "english_dummies": [
+      "be interested in",
+      "be late for",
+      "be proud of"
+    ],
+    "japanese_dummies": [
+      "〜に興味がある",
+      "〜に遅れる",
+      "〜を誇りに思う"
+    ],
+    "spelling_template": "{{1}} {{2}}{{3}} {{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "be",
+        "dummies": [
+          "eb",
+          "bee",
+          "b"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "go",
+        "dummies": [
+          "og",
+          "goo",
+          "g"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "od",
+        "dummies": [
+          "do",
+          "odd",
+          "o"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "at",
+        "dummies": [
+          "ta",
+          "att",
+          "a"
+        ]
+      }
+    ],
+    "note": "be good at：〜が得意だ。"
+  },
+  {
+    "id": "jr_en2_029",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "take care of",
+    "japanese": "〜の世話をする",
+    "english_dummies": [
+      "take part in",
+      "look forward to",
+      "be careful of"
+    ],
+    "japanese_dummies": [
+      "〜に参加する",
+      "〜を楽しみに待つ",
+      "〜に気をつける"
+    ],
+    "spelling_template": "{{1}}{{2}} {{3}}{{4}} {{5}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ta",
+        "dummies": [
+          "at",
+          "taa",
+          "t"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ke",
+        "dummies": [
+          "ek",
+          "kee",
+          "k"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ca",
+        "dummies": [
+          "ac",
+          "caa",
+          "c"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "ree",
+          "r"
+        ]
+      },
+      {
+        "index": 5,
+        "answer": "of",
+        "dummies": [
+          "fo",
+          "off",
+          "o"
+        ]
+      }
+    ],
+    "note": "take care of：〜の世話をする。"
+  },
+  {
+    "id": "jr_en2_030",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "a lot of",
+    "japanese": "たくさんの",
+    "english_dummies": [
+      "a little",
+      "all of",
+      "none of"
+    ],
+    "japanese_dummies": [
+      "少しの",
+      "すべての",
+      "一つもない"
+    ],
+    "spelling_template": "{{1}} {{2}} {{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "a",
+        "dummies": [
+          "aa",
+          "ae",
+          "ah"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lot",
+        "dummies": [
+          "tol",
+          "lott",
+          "lo"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "of",
+        "dummies": [
+          "fo",
+          "off",
+          "o"
+        ]
+      }
+    ],
+    "note": "a lot of：たくさんの。"
+  },
+  {
+    "id": "jr_en2_031",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "in front of",
+    "japanese": "〜の前に（位置）",
+    "english_dummies": [
+      "behind",
+      "next to",
+      "across from"
+    ],
+    "japanese_dummies": [
+      "〜の後ろに",
+      "〜の隣に",
+      "〜の向かいに"
+    ],
+    "spelling_template": "{{1}} {{2}}{{3}} {{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "in",
+        "dummies": [
+          "ni",
+          "inn",
+          "i"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "fr",
+        "dummies": [
+          "rf",
+          "frr",
+          "f"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ont",
+        "dummies": [
+          "tno",
+          "ontt",
+          "on"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "of",
+        "dummies": [
+          "fo",
+          "off",
+          "o"
+        ]
+      }
+    ],
+    "note": "in front of：〜の前に（位置）。"
+  },
+  {
+    "id": "jr_en2_032",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "基本語彙",
+    "english": "for example",
+    "japanese": "例えば",
+    "english_dummies": [
+      "however",
+      "as a result",
+      "in other words"
+    ],
+    "japanese_dummies": [
+      "しかしながら",
+      "その結果",
+      "言い換えると"
+    ],
+    "spelling_template": "{{1}} {{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "for",
+        "dummies": [
+          "rof",
+          "forr",
+          "fo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ex",
+        "dummies": [
+          "xe",
+          "exx",
+          "e"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "am",
+        "dummies": [
+          "ma",
+          "amm",
+          "a"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "ple",
+        "dummies": [
+          "elp",
+          "plee",
+          "pl"
+        ]
+      }
+    ],
+    "note": "for example：例えば。"
+  }
+]

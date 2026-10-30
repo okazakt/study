@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress } from '../game.js';
+import { Game, makeQuestion, RULES, easyEvents, revealPlan, makeBlankQuestions, makeQuestionQueue, answerProgress, makeEnglishQuestion, makeSpellingQuestions } from '../game.js';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const questions = read('../quiz-data/junior_science.json');
 const track = read('../music-data/index.json')['0001'];
@@ -303,4 +303,63 @@ test('higher-density rows remain playable through feedback without disappearing'
   const end=Math.max(...pending.map(n=>n.target));g.update(end+.17);assert.equal(g.lastJudgment,'MISS');
   assert.equal(g.phase,'feedback');assert.equal(g.notes.length,0);assert.equal(g.correctCount,1);
   g.update(end+.17+RULES.judgmentSeconds+.01);assert.equal(g.phase,'rhythm');
+});
+
+const english = read('../quiz-data/junior_english.json');
+test('English data generates both translation directions and complete, unique spelling stages', () => {
+  assert.equal(english.length,32);
+  assert.equal(english.filter(q=>q.field==='熟語').length,8);
+  assert.equal(new Set([...questions,...english].map(q=>q.id)).size,121);
+  for(const item of english){
+    for(const direction of ['to_japanese','to_english']){
+      const q=makeEnglishQuestion(item,direction);
+      assert.equal(q.answer,direction==='to_japanese'?item.japanese:item.english);
+      assert.equal(q.prompt,direction==='to_japanese'?item.english:item.japanese);
+      assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);
+      assert.equal(q.choices[q.correct],q.answer);
+    }
+    const stages=makeSpellingQuestions(item);
+    assert.ok(stages.length>=2);
+    const complete=item.spelling_template.replace(/\{\{(\d+)\}\}/g,(_,n)=>item.spelling.find(b=>b.index===Number(n)).answer);
+    assert.equal(complete,item.english);
+    for(const [i,q] of stages.entries()){
+      assert.equal(q.blankPosition,i+1);assert.equal(new Set(q.choices).size,4);
+      assert.equal(q.choices.length,4);assert.equal(q.choices[q.correct],item.spelling[i].answer);
+      assert.equal(q.segments.filter(s=>s.state==='active').length,1);
+      for(const segment of q.segments.filter(s=>s.index)) assert.equal(segment.text,segment.index<=i?item.spelling[segment.index-1].answer:'？');
+      assert.equal(revealPlan(q).continuation,i>0);
+      if(i<stages.length-1){assert.equal(q.note,'');assert.ok(!q.task.includes(item.english));assert.ok(!q.reviewLabel.includes(item.english));}
+    }
+  }
+  const ground=makeSpellingQuestions(english[0]);
+  assert.deepEqual(ground.map(q=>q.answer),['gr','ou','nd']);
+  assert.deepEqual(new Set(ground[0].choices),new Set(['gr','gl','gur','gul']));
+});
+test('mixed subjects expose all five formats early and keep spelling groups contiguous',()=>{
+  const queue=makeQuestionQueue([...questions,...english],()=>.5);
+  const expected=186+64+english.reduce((n,q)=>n+q.spelling.length,0);
+  assert.equal(queue.length,expected);
+  assert.equal(new Set(queue.slice(0,15).map(q=>q.mode)).size,5);
+  for(let i=0;i<queue.length;i++){
+    const q=queue[i];
+    if(q.mode==='spelling'&&q.blankPosition>1){assert.equal(queue[i-1].sourceId,q.sourceId);assert.equal(queue[i-1].blankPosition,q.blankPosition-1);}
+  }
+});
+test('spelling retries a wrong chunk and advances without rhythm or reanimation until complete',()=>{
+  const g=new Game([english[0]],[],0,()=>.5);
+  g.questionIndex=g.questions.findIndex(q=>q.mode==='spelling');g.changePhase('answer',0);
+  const start=g.questionIndex;
+  for(let t=2;t<=4;t++)hit(g,(g.question.correct+1)%4,t);
+  assert.equal(g.questionIndex,start);assert.equal(g.question.blankPosition,1);assert.equal(g.phase,'answer');
+  for(let t=5;t<=7;t++)hit(g,g.question.correct,t);
+  g.update(9.5);assert.equal(g.phase,'read');assert.equal(g.question.blankPosition,2);
+  assert.equal(g.reveal.continuation,true);assert.equal(g.question.prompt,'gr？？');
+  assert.deepEqual(g.counts,[0,0,0,0]);
+  g.changePhase('answer',10);
+  for(let t=12;t<=14;t++)hit(g,g.question.correct,t);
+  g.update(16.5);assert.equal(g.question.blankPosition,3);assert.equal(g.question.prompt,'grou？');
+  g.changePhase('answer',17);
+  for(let t=19;t<=21;t++)hit(g,g.question.correct,t);
+  g.events=[{id:1,target:26,lane:0}];g.cursor=0;
+  g.update(23.5);assert.equal(g.phase,'rhythm');assert.equal(g.correctCount,3);
 });

@@ -15,8 +15,8 @@ const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(s
 async function json(path) { const r = await fetch(path); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
 async function load() {
   try {
-    const [index, quiz] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json')]);
-    track = index['0001']; questions = quiz;
+    const [index, quiz, english] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json')]);
+    track = index['0001']; questions = [...quiz, ...english];
     chart = await json(`./music-data/${track.files.chart}`);
     if (!questions.length || !chart.events.length) throw new Error('データが空です');
     audio.src = `./music-data/${track.files.audio}`;
@@ -119,7 +119,7 @@ function render() {
     element.style.color = Math.max(darkContrast, lightContrast) < 4.5 ? '#000000' : darkContrast >= lightContrast ? '#101a2a' : '#ffffff';
   });
   $('explanation').textContent = game.phase === 'feedback'
-    ? q.mode === 'term_to_explanation' && q.blankPosition < q.blankTotal ? `正解：${q.answer}` : `正解：${q.answer} · ${q.note}`
+    ? q.blankPosition < q.blankTotal ? `正解：${q.answer}` : `正解：${q.answer} · ${q.note}`
     : '';
   const result = game.quizResult;
   const resultVisible = result && (game.phase === 'feedback' || game.time - result.time < RULES.wrongResultSeconds);
