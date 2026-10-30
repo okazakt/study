@@ -1,4 +1,5 @@
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.11.1';
+const VERSION = '0.11.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -10,9 +11,9 @@ $('offset').addEventListener('change', () => {
   $('offset').value = Math.max(-500, Math.min(500, Number($('offset').value) || 0));
   try { localStorage.setItem('study-beat-offset-ms', $('offset').value); } catch { /* Play remains available. */ }
 });
-const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; };
+const show = next => { screen = next; document.body.classList.toggle('playing', next === 'play'); for (const name of ['home', 'play', 'result']) $(name).hidden = name !== next; if (next === 'home') checkForUpdate(); };
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
-async function json(path) { const r = await fetch(path); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
+async function json(path) { const r = await fetch(`${path}?v=${VERSION}`); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
 const playbackTime = () => track.start + audio.currentTime;
 function selectTrack(index) {
   trackIndex = index; track = playlist.tracks[index];
@@ -249,17 +250,39 @@ audio.addEventListener('ended', async () => {
 audio.addEventListener('error', () => { if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
 document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
 window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } });
+let registration, updateAvailable = false;
+async function checkForUpdate() {
+  try { await registration?.update(); } catch { /* Offline play remains available. */ }
+}
+$('refresh-app').addEventListener('click', async () => {
+  $('refresh-app').disabled = true; $('update-status').textContent = '最新版を確認しています…';
+  try {
+    const url = new URL('./', location.href); url.searchParams.set('update', Date.now());
+    const response = await fetch(url, { cache: 'no-store' });
+    if (!response.ok || response.headers.get('X-Study-Offline')) throw new Error('offline');
+    location.replace(url.href);
+  } catch {
+    $('update-status').textContent = '更新を取得できませんでした。通信を確認して、もう一度お試しください。';
+    $('refresh-app').disabled = false;
+  }
+});
 if ('serviceWorker' in navigator) {
   const hadController = !!navigator.serviceWorker.controller;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     if (!hadController) return;
     if (screen === 'home') location.reload();
-    else $('connection').textContent = '更新あり · 再読込で反映';
+    else { updateAvailable = true; $('connection').textContent = '更新あり · ホームから更新'; }
   });
-  navigator.serviceWorker.register('./sw.js').then(async registration => {
-    if (registration.active) $('connection').textContent = 'PWA READY';
-    const installing = registration.installing;
-    installing?.addEventListener('statechange', () => { if (installing.state === 'activated') $('connection').textContent = 'OFFLINE READY'; });
+  navigator.serviceWorker.addEventListener('message', event => {
+    if (updateAvailable) return;
+    const labels = { MEDIA_LOADING: 'オフライン保存中', MEDIA_READY: 'OFFLINE READY', MEDIA_ERROR: 'オンラインで利用可能' };
+    if (labels[event.data?.type]) $('connection').textContent = labels[event.data.type];
+  });
+  navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(async value => {
+    registration = value; checkForUpdate();
+    const ready = await navigator.serviceWorker.ready;
+    ready.active?.postMessage({ type: 'CACHE_MEDIA' });
   }).catch(() => { $('connection').textContent = 'ONLINE MODE'; });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) checkForUpdate(); });
 }
 load();

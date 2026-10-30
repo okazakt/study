@@ -6,7 +6,7 @@ PWAの実装・変更前に必ず [docs/pwa-spec.md](docs/pwa-spec.md) を読み
 
 ## 公開バージョン
 
-アプリを公開更新する際は `package.json` の `version` を更新し、`index.html` のトップ画面のバージョン表示と `sw.js` のキャッシュ名（`study-beat-v<version>`）を同じ値に揃えてください。仕様書のバージョン説明も更新してください。
+アプリを公開更新する際は `package.json` の `version` を更新し、`index.html` のトップ画面のバージョン表示と `sw.js` のキャッシュ名（`study-beat-v<version>`）を同じ値に揃えてください。仕様書のバージョン説明も更新してください。`app.js`と`sw.js`の`VERSION`、`index.html`のCSS・JS URL、`app.js`のgame.js importの`?v=`も同じ値に揃えてください。
 
 ## 音楽データの管理
 
