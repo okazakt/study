@@ -197,13 +197,13 @@ test('all 97 blanks generate distinct four-choice questions with exactly one act
       const blank=item.blanks.find(b=>b.index===q.blankIndex);
       assert.equal(q.choices.length,4); assert.equal(new Set(q.choices).size,4);
       assert.equal(q.choices[q.correct],blank.answer); assert.equal(q.answer,blank.answer);
-      assert.ok(q.context.includes(item.term)); assert.ok(q.targetLabel.includes(`穴${blank.index}`));
+      assert.ok(q.context.includes(item.term)); assert.ok(q.targetLabel.includes(`？`)); assert.ok(q.targetLabel.includes(`${q.blankPosition} / ${q.blankTotal}`));
       assert.equal(q.segments.filter(s=>s.state==='active').length,1);
       assert.ok(!q.prompt.includes('{{'));
       for (const segment of q.segments.filter(s=>s.index)) {
         const target=item.blanks.find(b=>b.index===segment.index);
         if(segment.index<q.blankIndex){assert.equal(segment.state,'solved');assert.equal(segment.text,target.answer);}
-        else {assert.equal(segment.text,`［穴${segment.index}］`);assert.notEqual(segment.text,target.answer);}
+        else {assert.equal(segment.text,'？');assert.notEqual(segment.text,target.answer);}
       }
     }
   }
@@ -232,8 +232,26 @@ test('wrong answers stay on the target blank; correct advances to the next blank
   for(let t=5;t<=7;t++)hit(g,g.question.correct,t);
   g.update(9.5); assert.equal(g.phase,'read');assert.equal(g.question.blankIndex,2);
   assert.deepEqual(g.counts,[0,0,0,0]);assert.ok(g.question.prompt.includes(item.blanks[0].answer));
-  assert.ok(g.question.targetLabel.includes('穴2'));
+  assert.ok(g.question.targetLabel.includes('2 / 2'));
   const time=9.5+g.reveal.duration;g.update(time);
   for(let t=time+2;t<=time+4;t++)hit(g,g.question.correct,t);
   g.update(time+6.5);assert.equal(g.question.mode,'explanation_to_term');assert.equal(g.correctCount,2);assert.equal(g.quizScore,1000);
+});
+
+test('terms reveal before explanation; the next blank keeps all text visible in the upper panel', () => {
+  for (const item of questions) {
+    const blanks=makeBlankQuestions(item);
+    for (const q of blanks) {
+      assert.equal(q.context,item.term); assert.ok(!q.prompt.includes('穴')); assert.ok(!q.targetLabel.includes('穴'));
+      assert.ok(!q.reviewLabel.includes('→')); const plan=revealPlan(q);
+      if (q.blankPosition===1) {
+        assert.equal(plan.continuation,false); assert.ok(plan.context.end>plan.context.start);
+        assert.ok(plan.prompt.start>plan.context.end); assert.ok(plan.choices[0].start>plan.prompt.end);
+      } else {
+        assert.equal(plan.continuation,true); assert.equal(plan.duration,RULES.readHoldSeconds);
+        assert.equal(plan.prompt.end,0); assert.ok(plan.choices.every(c=>c.end===0));
+      }
+    }
+    assert.equal(makeQuestion(item).context,''); assert.equal(makeQuestion(item).reviewLabel,item.term);
+  }
 });

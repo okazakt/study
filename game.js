@@ -19,7 +19,7 @@ export function makeQuestion(item, random = Math.random) {
   const dummies = [...new Set(item.term_dummies)].filter(term => term !== item.term);
   if (dummies.length < 3) throw new Error(`${item.id}: insufficient choices`);
   const choices = shuffle([item.term, ...shuffle(dummies, random).slice(0, 3)], random);
-  return { ...item, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '解説 → 用語', reviewLabel: `解説→用語 · ${item.term}` };
+  return { ...item, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '', reviewLabel: item.term };
 }
 export function makeBlankQuestions(item, random = Math.random) {
   const blanks = [...item.blanks].sort((a, b) => a.index - b.index);
@@ -34,16 +34,16 @@ export function makeBlankQuestions(item, random = Math.random) {
       const index = Number(match[1]), target = blanks.find(b => b.index === index);
       if (!target) throw new Error(`${item.id}: missing blank ${index}`);
       const state = index < blank.index ? 'solved' : index === blank.index ? 'active' : 'pending';
-      segments.push({ text: state === 'solved' ? target.answer : `［穴${index}］`, state, index });
+      segments.push({ text: state === 'solved' ? target.answer : '？', state, index });
       cursor = match.index + match[0].length;
     }
     segments.push({ text: item.explanation_template.slice(cursor) });
     return { ...item, id: `${item.id}:blank:${blank.index}`, sourceId: item.id, mode: 'term_to_explanation',
       blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length,
       answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
-      prompt: segments.map(s => s.text).join(''), context: `用語 → 解説の穴埋め · ${item.term}`,
-      targetLabel: `今回は穴${blank.index}を回答（${position + 1} / ${blanks.length}）`,
-      reviewLabel: `穴埋め · ${item.term} · 穴${blank.index}` };
+      prompt: segments.map(s => s.text).join(''), context: item.term,
+      targetLabel: `${position ? '次の' : '強調された'}？に入る語句を回答（${position + 1} / ${blanks.length}）`,
+      reviewLabel: `${item.term} · ？（${position + 1} / ${blanks.length}）` };
   });
 }
 export function makeQuestionQueue(items, random = Math.random) {
@@ -61,16 +61,23 @@ export function easyEvents(events) {
   });
 }
 export function revealPlan(question) {
+  if (question.mode === 'term_to_explanation' && question.blankPosition > 1) {
+    return { continuation: true, context: { start: 0, end: 0 }, prompt: { start: 0, end: 0 },
+      choices: question.choices.map(() => ({ start: 0, end: 0 })), revealEnd: 0,
+      liftStart: 0, duration: RULES.readHoldSeconds };
+  }
   let cursor = 0.2;
   const segment = text => {
     const start = cursor;
     cursor += Math.max(0, Array.from(text).length - 1) * RULES.charSeconds + RULES.fadeSeconds;
     return { start, end: cursor };
   };
+  const context = question.context ? segment(question.context) : { start: 0, end: 0 };
+  if (question.context) cursor += RULES.choiceGapSeconds;
   const prompt = segment(question.prompt);
   const choices = question.choices.map(text => { cursor += RULES.choiceGapSeconds; return segment(text); });
   const liftStart = cursor + RULES.readHoldSeconds;
-  return { prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + RULES.liftSeconds };
+  return { continuation: false, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + RULES.liftSeconds };
 }
 export class Game {
   constructor(questions, events, offsetSeconds = 0, random = Math.random) {

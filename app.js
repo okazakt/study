@@ -38,7 +38,10 @@ function appendCharacters(element, text, start, segments = [{ text }]) {
   let index = 0;
   for (const segment of segments) {
     const group = document.createElement('span');
-    if (segment.state) { group.className = `blank-${segment.state}`; group.dataset.blankIndex = segment.index; }
+    if (segment.state) {
+      group.className = `blank-${segment.state}`; group.dataset.blankIndex = segment.index;
+      characters.push({ element: group, start: start + index * RULES.charSeconds });
+    }
     element.append(group);
     for (const character of Array.from(segment.text)) {
       const span = document.createElement('span'); span.className = 'reveal-char';
@@ -56,9 +59,9 @@ function renderQuestion() {
   const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
   const prompt = intro ? 'まずはリズムにのろう' : segments ? segments.map(s => s.text).join('') : q.prompt;
   appendCharacters($('prompt'), prompt, game.reveal.prompt.start, intro ? undefined : segments);
-  $('question-context').textContent = intro ? '' : q.context;
+  appendCharacters($('question-context'), intro ? '' : q.context, game.reveal.context.start);
   $('blank-instruction').hidden = intro || !q.blankIndex;
-  $('blank-instruction').textContent = game.phase === 'feedback' ? `穴${q.blankIndex}の正解：${q.answer}` : q.targetLabel || '';
+  $('blank-instruction').textContent = game.phase === 'feedback' ? `正解：${q.answer}` : q.targetLabel || '';
   if (!intro) q.choices.forEach((choice, i) => {
     const el = document.createElement('div'); el.className = 'choice'; el.style.setProperty('--color', COLORS[i].value);
     const text = document.createElement('span'); appendCharacters(text, choice, game.reveal.choices[i].start); el.append(text);
@@ -75,7 +78,7 @@ function positionQuestion(elapsed) {
   const progress = Math.max(0, Math.min(1, (elapsed - game.reveal.liftStart) / RULES.liftSeconds));
   const ease = progress * progress * (3 - 2 * progress);
   const lift = reducedMotion.matches ? (progress === 1 ? 1 : 0) : ease;
-  panel.style.transform = `translate3d(0,${game.phase === 'read' ? lower * (1 - lift) : 0}px,0)`;
+  panel.style.transform = `translate3d(0,${game.phase === 'read' && !game.reveal.continuation ? lower * (1 - lift) : 0}px,0)`;
 }
 function render() {
   $('rhythm-score').textContent = game.rhythmScore.toLocaleString(); $('rhythm-combo').textContent = game.combo;
@@ -84,6 +87,7 @@ function render() {
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
+  $('play').dataset.continuation = game.reveal.continuation;
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア。左からD F G H' : '白ノーツのタップエリア');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
@@ -92,11 +96,11 @@ function render() {
   $('question-number').textContent = game.phase === 'intro' ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
-    const opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
+    const opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
     character.element.style.opacity = reducedMotion.matches ? Number(opacity > 0) : opacity;
   }
   choiceElements.forEach(({element, count, start}, i) => {
-    element.style.opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
+    element.style.opacity = game.phase === 'read' && !game.reveal.continuation ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
     element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
     count.textContent = `${game.counts[i]} / ${RULES.tapsToAnswer}`;
   });
