@@ -1,7 +1,7 @@
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests } from './progress.js?v=0.23.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.23.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.23.0';
-const VERSION = '0.23.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.24.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.24.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.24.0';
+const VERSION = '0.24.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -12,6 +12,7 @@ try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) |
 let reviewQuestions = [], reviewIndex = 0, reviewSolved = false, reviewWrong = 0;
 try { learningHistory = normalizeHistory(JSON.parse(localStorage.getItem(HISTORY_KEY) || 'null')); } catch {}
 let characters = [], choiceElements = [];
+let catalogQuestions = [], reviewRun = '';
 let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
 try { savedLearning = JSON.parse(localStorage.getItem('study-beat-learning-v1') || 'null'); } catch { /* Use the first-run school selector. */ }
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -141,10 +142,10 @@ const show = next => {
   document.documentElement.classList.toggle('play-locked', next === 'play');
   for (const name of ['home', 'play', 'result', 'practice-review']) $(name).hidden = name !== next;
   window.scrollTo(0, 0);
-  if (next === 'home') checkForUpdate();
+  if (next === 'home') { if (dataReady) renderLearning(); checkForUpdate(); }
 };
 function saveAnswer(q, correct, chosen, wrongBefore, kind = 'play') {
-  learningHistory = recordAnswer(learningHistory, q, {correct, chosen, wrongBefore, kind, session:sessionId, course:sessionScope?.id, version:VERSION});
+  learningHistory = recordAnswer(learningHistory, q, {correct, chosen, wrongBefore, kind, session:sessionId, course:sessionScope?.id, version:VERSION, attempt:kind === 'play' ? `${sessionId}:play:${game.questionIndex}` : `${reviewRun}:${reviewIndex}`});
   try { localStorage.setItem(HISTORY_KEY, JSON.stringify(learningHistory)); }
   catch { $('history-storage-note').hidden = false; }
   if (kind === 'play') updateLearningLevel();
@@ -202,7 +203,9 @@ function renderLearning() {
     const button = document.createElement('button'); button.type = 'button'; button.dataset.course = course.id;
     button.disabled = !course.count; button.setAttribute('aria-pressed', String(course.id === selection()?.id));
     const title = document.createElement('strong'); title.textContent = course.label;
-    const detail = document.createElement('span'); detail.textContent = course.count ? `${course.count}件${course.year === 'exam' ? ` · 収録 ${course.grades.join('・')}` : ''}` : '準備中';
+    const coverage = questionCoverage(catalogQuestions.filter(q=>course.ids.includes(q.sourceId)), learningHistory);
+    const detail = document.createElement('span'); detail.textContent = course.count ? `解いた ${coverage.solved} / ${coverage.total}問` : '準備中';
+    if (course.count && course.year === 'exam') detail.append(document.createElement('br'), `収録 ${course.grades.join('・')}`);
     button.append(title, detail);
     button.addEventListener('click', () => {
       if (selection()?.id !== course.id) { preferences.profiles[school] = { id: course.id, sections: null, practiceType: selection()?.practiceType || 'all' }; saveLearning(); }
@@ -230,6 +233,7 @@ function renderLearning() {
       });
       $('practice-list').append(button);
     }
+    const generated = catalogQuestions.filter(q=>course.ids.includes(q.sourceId) && matchesPracticeQuestion(q,entry.practiceType || 'all'));
     const allowedSections = new Set(practiceItems.map(sectionKey));
     const availableSections = course.sections.filter(section => allowedSections.has(section.key));
     const selected = entry.sections === null ? availableSections.map(section => section.key) : entry.sections.filter(key => allowedSections.has(key));
@@ -245,11 +249,14 @@ function renderLearning() {
         input.checked ? keys.add(section.key) : keys.delete(section.key);
         entry.sections = keys.size === availableSections.length ? null : [...keys]; saveLearning(); renderLearning();
       });
-      const text = document.createElement('span'); text.textContent = `${section.label}（${section.count}件）`;
+      const text = document.createElement('span'); const coverage = questionCoverage(generated.filter(q=>sectionKey(q)===section.key),learningHistory);
+      text.textContent = `${section.label}（解いた ${coverage.solved} / ${coverage.total}問）`;
       label.append(input, text); $('section-list').append(label);
     }
   }
-  $('selection-status').textContent = course ? count ? `選択範囲：${count}項目から出題します。` : '単元を1つ以上選んでください。'
+  const selectedIds = new Set(selectedQuestions().map(item=>item.id));
+  const selectedCoverage = questionCoverage(catalogQuestions.filter(q=>selectedIds.has(q.sourceId) && matchesPracticeQuestion(q,selection()?.practiceType || 'all')),learningHistory);
+  $('selection-status').textContent = course ? count ? `選択範囲：解いた ${selectedCoverage.solved} / ${selectedCoverage.total}問` : '単元を1つ以上選んでください。'
     : !courses.some(course => course.count) ? `${school}の問題は準備中です。設定から学校を変更できます。`
     : courses.some(course => course.subject === activeSubject && course.count) ? '学年または受験用を選んでください。' : `${activeSubject}の問題は準備中です。ほかの教科を選んでください。`;
   refreshStart();
@@ -274,6 +281,7 @@ async function load() {
     playlist = makePlaylist(entries);
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
     selectTrack(0);
+    catalogQuestions = makeQuestionQueue(questions, () => .5);
     catalog = buildCatalog(questions); preferences = normalizePreferences(savedLearning, catalog);
     activeSubject = catalog.find(course => course.id === selection()?.id)?.subject || '';
     dataReady = true; document.querySelectorAll('[data-school]').forEach(button => { button.disabled = false; });
@@ -288,7 +296,9 @@ async function start() {
   cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
-  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, question => matchesPracticeQuestion(question,practiceType));
+  const accept = question => matchesPracticeQuestion(question,practiceType);
+  const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory);
+  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, accept, picker);
   history = []; sessionResults = new Map(); sessionId = crypto.randomUUID();
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
@@ -638,7 +648,7 @@ function renderPractice() {
 }
 $('start-review').addEventListener('click', () => {
   if (!reviewQuestions.length) return;
-  audio.pause(); cancelAnimationFrame(frame); reviewIndex = 0; reviewSolved = false; reviewWrong = 0;
+  audio.pause(); cancelAnimationFrame(frame); reviewRun = crypto.randomUUID(); reviewIndex = 0; reviewSolved = false; reviewWrong = 0;
   show('practice-review'); renderPractice();
 });
 $('practice-next').addEventListener('click', () => {

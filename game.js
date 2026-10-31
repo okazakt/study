@@ -185,8 +185,9 @@ export function revealPlan(question) {
   return { continuation, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + (continuation ? 0 : RULES.liftSeconds) };
 }
 export class Game {
-  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true) {
-    this.questions = makeQuestionQueue(questions, random, acceptQuestion);
+  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null) {
+    this.pickUnit = pickUnit;
+    this.questions = pickUnit ? pickUnit() : makeQuestionQueue(questions, random, acceptQuestion);
     this.endTime = endTime;
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
@@ -225,6 +226,7 @@ export class Game {
     return time;
   }
   changePhase(phase, now) {
+    if (phase === 'read' && this.pickUnit && this.questionIndex >= this.questions.length) this.questions.push(...this.pickUnit());
     if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)
       && this.earliestCompletion(now) + 0.25 > this.endTime) phase = 'outro';
     this.phase = phase; this.phaseStart = now;
