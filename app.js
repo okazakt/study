@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.27.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.27.2';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.27.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.27.2';
-const VERSION = '0.27.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.28.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.28.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.28.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.28.0';
+const VERSION = '0.28.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -18,6 +18,7 @@ let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
 try { savedLearning = JSON.parse(localStorage.getItem('study-beat-learning-v1') || 'null'); } catch { /* Use the first-run school selector. */ }
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let timingPersistence = true;
+let tuningPattern = [];
 let timingSettings = normalizeTiming(null), tuningSession = null, tuningConsumed = new Set(), tuningRound = 0, tuningLastTime = 0, tuningMessage = '', tuningFeedback = '', tuningFeedbackAt = -10, tuningGeneration = 0, tuningStarting = false;
 try { timingSettings = normalizeTiming(JSON.parse(localStorage.getItem(TIMING_KEY) || 'null'), localStorage.getItem('study-beat-offset-ms')); } catch {}
 const signedMs = n => `${Math.round(n) > 0 ? '+' : ''}${Math.round(n)}ms`;
@@ -364,7 +365,8 @@ function resetTuning(initialMs = effectiveOffset(timingSettings)) {
   tuningGeneration++; tuningStarting = false; audio.pause(); cancelAnimationFrame(frame);
   selectTrack(Number($('tuning-track').value)); audio.currentTime = 0; audio.loop = true; audio.playbackRate = tuningRate();
   audio.preservesPitch = true;
-  tuningSession = new TimingCalibrator(initialMs); tuningConsumed.clear(); tuningRound = 0; tuningLastTime = 0; tuningFeedback = ''; tuningMessage = '開始して、曲の拍に合わせて繰り返しタップしてください。';
+  tuningPattern = calibrationPattern(tuningBeats());
+  tuningSession = new TimingCalibrator(initialMs,true); tuningConsumed.clear(); tuningRound = 0; tuningLastTime = 0; tuningFeedback = ''; tuningMessage = 'ノーツに合わせてタップしてください。休みの間は押さず、次のノーツを待ちましょう。';
   $('tuning-play').disabled = false; renderTuning();
 }
 function renderTuning() {
@@ -377,7 +379,9 @@ function renderTuning() {
   $('tuning-normal').disabled = !state.ready || rate === 1 || tuningStarting;
   $('tuning-tap').disabled = audio.paused || tuningStarting;
   $('tuning-play').textContent = audio.paused ? (audio.currentTime ? '再開' : '開始') : '一時停止';
-  $('tuning-status').textContent = tuningMessage || (state.ready ? `安定しました。推定 ${signedMs(state.estimateMs)}。保存するか、さらにタップして確認できます。` : state.count < 8 ? '最初は様子を見ています。曲の拍を聴いてタップしてください。' : `調整中。${state.excluded}回の外れ値を除外。安定するまで続けてください。`);
+  $('tuning-status').textContent = tuningMessage || (state.ready ? `安定しました。推定 ${signedMs(state.estimateMs)}。保存するか、さらにタップして確認できます。` : state.count < 8 ? '最初は様子を見ています。曲の拍を聴いてタップしてください。' : `調整中。休み明けの確認 ${state.anchorCount} / 4回 · ${state.excluded}回の外れ値を除外。`);
+  const near = tuningPattern.some(p=>Math.abs((audio.currentTime-p.base)/rate*1000-tuningSession.appliedMs)<500);
+  $('tuning-tap').textContent = near ? 'ノーツに合わせてタップ' : '休み · 次のノーツを待とう';
   $('tuning-judgment').textContent = audio.currentTime - tuningFeedbackAt < .65 * rate ? tuningFeedback : '';
   drawTuning();
 }
@@ -387,11 +391,11 @@ function drawTuning() {
   ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,rect.width,rect.height);
   const line = rect.height-28, now = audio.currentTime, rate = tuningRate();
   ctx.fillStyle = '#a8f07d18'; ctx.fillRect(0,line-10,rect.width,20);ctx.strokeStyle='#a8f07d';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(0,line);ctx.lineTo(rect.width,line);ctx.stroke();
-  for (const beat of tuningBeats()) {
+  for (const {base:beat,anchor} of tuningPattern) {
     const target = beat + tuningSession.appliedMs/1000*rate, remaining = target-now;
     if (remaining>2.4*rate || remaining<-.4*rate) continue;
     const y = line*(1-remaining/(2.4*rate));
-    ctx.fillStyle='#eef5ff';ctx.shadowColor='#a8f07d';ctx.shadowBlur=8;ctx.beginPath();ctx.roundRect(rect.width*.18,y-7,rect.width*.64,14,5);ctx.fill();ctx.shadowBlur=0;
+    ctx.fillStyle=anchor?'#a8f07d':'#eef5ff';ctx.shadowColor='#a8f07d';ctx.shadowBlur=8;ctx.beginPath();ctx.roundRect(rect.width*.18,y-7,rect.width*.64,14,5);ctx.fill();ctx.shadowBlur=0;
   }
 }
 function tuningLoop() {
@@ -423,12 +427,12 @@ function pauseTuning() {
 }
 function tuningTap() {
   if (screen !== 'tuning' || audio.paused || tuningStarting) return;
-  const now = audio.currentTime, match = matchCalibrationBeat(tuningBeats(),now,tuningRate(),tuningSession.appliedMs,tuningConsumed,tuningRound);
+  const now = audio.currentTime, match = matchCalibrationBeat(tuningBeats(),now,tuningRate(),tuningSession.appliedMs,tuningConsumed,tuningRound,tuningPattern);
   tuningFeedbackAt = now;
   playTapSound();
-  if (!match) { tuningFeedback = '準備中・対象の拍なし'; renderTuning(); return; }
+  if (!match) { tuningFeedback = '準備中・休み（計測対象外）'; renderTuning(); return; }
   tuningConsumed.add(match.id);
-  const result = tuningSession.add(match.sampleMs,match.id);
+  const result = tuningSession.add(match.sampleMs,match.id,match.anchor);
   tuningMessage = '';
   tuningFeedback = result.accepted ? Math.abs(match.errorMs)<=80 ? 'PERFECT' : `${Math.round(Math.abs(match.errorMs))}ms ${match.errorMs>0?'遅め':'早め'}` : 'このタップは調整に使いません';
   renderTuning();
@@ -444,7 +448,7 @@ $('tuning-normal').addEventListener('click',()=>{const initial=tuningSession.sta
 $('tuning-save').addEventListener('click',()=>{
   const state = tuningSession.status(); if (!state.ready) return;
   pauseTuning();
-  timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(state.estimateMs),method:'calibrated',sampleCount:state.inliers,excluded:state.excluded,spreadMs:Math.round(state.spreadMs),playbackRate:tuningRate(),verifiedAtNormalSpeed:tuningRate()===1,trackId:track.id,measuredAt:new Date().toISOString(),baselineAtMeasurement:defaultTimingOffset(timingSettings.activeOutput)};
+  timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(state.estimateMs),method:'calibrated',patternVersion:2,anchorCount:state.anchorCount,sampleCount:state.inliers,excluded:state.excluded,spreadMs:Math.round(state.spreadMs),playbackRate:tuningRate(),verifiedAtNormalSpeed:tuningRate()===1,trackId:track.id,measuredAt:new Date().toISOString(),baselineAtMeasurement:defaultTimingOffset(timingSettings.activeOutput)};
   tuningSession.appliedMs = clampOffset(state.estimateMs);
   const saved = persistTiming(); syncTimingUi();
   tuningMessage = `${signedMs(state.estimateMs)}を${saved?'保存しました。次回から適用します。':'今回のみ適用しました。ブラウザへ保存できませんでした。'}`;

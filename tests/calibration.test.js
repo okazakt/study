@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {TimingCalibrator,matchCalibrationBeat,normalizeTiming,effectiveOffset,timingReport,analyzeTiming} from '../calibration.js';
+import {TimingCalibrator,calibrationPattern,matchCalibrationBeat,normalizeTiming,effectiveOffset,timingReport,analyzeTiming} from '../calibration.js';
 test('slow playback samples normalize to the same real-world delay without applying the song offset twice',()=>{
  const beats=Array.from({length:20},(_,i)=>i*.5+.11733+.025);
  for(const rate of [.5,.75,1]){
@@ -61,4 +61,53 @@ test('old wired output migrates to the shared active value without losing Blueto
  const fallback=normalizeTiming({version:1,activeOutput:'bluetooth',profiles:{wired:{offsetMs:-115},bluetooth:{offsetMs:55}}});
  assert.equal(effectiveOffset(fallback,'speaker'),-115);assert.equal(effectiveOffset(fallback),55);
  assert.equal(effectiveOffset(normalizeTiming(JSON.parse(JSON.stringify(migrated)))),-101);
+});
+
+
+test('calibration patterns insert rests and isolated references with varying phrase lengths',()=>{
+ const beats=Array.from({length:100},(_,i)=>i*.5),pattern=calibrationPattern(beats);
+ assert.deepEqual(pattern.slice(0,5).map(p=>p.index),[4,5,6,7,12]);
+ assert.deepEqual(pattern.filter(p=>p.anchor).slice(0,4).map(p=>p.index),[12,24,38,51]);
+ assert.ok(!pattern.some(p=>p.index===9));
+ for(const anchor of pattern.filter(p=>p.anchor))for(const p of pattern)if(p!==anchor)assert.ok(Math.abs(p.index-anchor.index)>=4);
+ assert.deepEqual(calibrationPattern([]),[]);
+});
+test('rests and duplicate references are excluded while isolated taps detect an absolute one-beat shift',()=>{
+ const beats=Array.from({length:100},(_,i)=>i*.5),pattern=calibrationPattern(beats);
+ for(const rate of [.5,.75,1])for(const delay of [-400,400]){
+  const m=matchCalibrationBeat(beats,beats[12]+delay/1000*rate,rate,delay>0?-100:100,new Set(),0,pattern);
+  assert.equal(m.index,12);assert.equal(m.anchor,true);assert.ok(Math.abs(m.sampleMs-delay)<1e-7);
+  assert.equal(matchCalibrationBeat(beats,beats[12]+delay/1000*rate,rate,0,new Set([m.id]),0,pattern),null);
+ }
+ assert.equal(matchCalibrationBeat(beats,beats[9],1,0,new Set(),0,pattern),null);
+ assert.equal(matchCalibrationBeat(beats,beats[2],1,0,new Set(),0,pattern),null);
+});
+test('repeated continuous taps cannot enable saving without isolated reference confirmation',()=>{
+ const c=new TimingCalibrator(0,true);
+ for(let i=0;i<100;i++)c.add(100+(i%3-1),String(i));
+ assert.equal(c.status().ready,false);assert.equal(c.status().anchorCount,0);
+ for(let i=0;i<4;i++)c.add(100,'anchor'+i,true);
+ assert.equal(c.status().ready,true);
+});
+test('references override a stable one-beat alias and eventually converge at every playback speed',()=>{
+ const beats=Array.from({length:1600},(_,i)=>i*.5),pattern=calibrationPattern(beats);
+ for(const rate of [.5,.75,1])for(const delay of [-400,400]){
+  const c=new TimingCalibrator(delay>0?-100:100,true),used=new Set();
+  let anchors=0;
+  for(const p of pattern){
+   const m=matchCalibrationBeat(beats,p.base+delay/1000*rate,rate,c.appliedMs,used,0,pattern);
+   if(!m)continue;
+   used.add(m.id);if(m.anchor)anchors++;
+   c.add(m.sampleMs,m.id,m.anchor);
+   if(anchors<4)assert.equal(c.status().ready,false);
+  }
+  assert.equal(c.status().ready,true,JSON.stringify({rate,delay,status:c.status()}));
+  assert.ok(Math.abs(c.status().estimateMs-delay)<1e-6);assert.ok(Math.abs(c.appliedMs-delay)<12);assert.ok(c.status().referenceCorrections>0);
+ }
+});
+test('erratic reference taps cannot validate an otherwise steady continuous rhythm',()=>{
+ const c=new TimingCalibrator(0,true);
+ for(let i=0;i<120;i++)c.add(0,'steady'+i);
+ for(let i=0;i<16;i++)c.add(i%2?-400:400,'anchor'+i,true);
+ assert.equal(c.status().anchorReady,false);assert.equal(c.status().ready,false);
 });
