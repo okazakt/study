@@ -1,11 +1,12 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.34.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.34.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.34.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.34.0';
-const VERSION = '0.34.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.35.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.35.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain } from './game.js?v=0.35.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.35.0';
+const VERSION = '0.35.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
+let session, musicContext, musicGain;
 let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
@@ -60,6 +61,27 @@ function selectTimingOutput(output) {
   if (!tapSoundEnabled && tapAudio && tapAudio.state !== 'closed') tapAudio.suspend().catch(() => {});
   if (screen === 'tuning') resetTuning();
 }
+// Route music once through a gain node (HTML volume alone is ignored on iOS).
+function prepareMusicAudio() {
+  try { if(navigator.audioSession && navigator.audioSession.type!=='playback')navigator.audioSession.type='playback'; } catch {}
+  const Context=window.AudioContext || window.webkitAudioContext;
+  if(!Context)return Promise.resolve();
+  if(!musicContext){
+    const context=new Context({latencyHint:'interactive'}),gain=context.createGain();
+    const source=context.createMediaElementSource(audio);
+    source.connect(gain);gain.connect(context.destination);
+    musicContext=context;musicGain=gain;
+    context.addEventListener('statechange',()=>{
+      if(screen==='play' && !busy && !audio.paused && context.state!=='running')interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
+    });
+  }
+  return musicContext.state!=='running'?musicContext.resume():Promise.resolve();
+}
+function setMusicGain(value) {
+  if(musicGain)musicGain.gain.value=value;
+  else audio.volume=value;
+}
+function suspendMusicAudio() { musicContext?.suspend().catch(()=>{}); }
 // Short percussion with a clear attack, independent of the song clock.
 let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, speakerTapSoundEnabled = true, tapVolume = 55;
 try {
@@ -375,13 +397,14 @@ async function start() {
   const accept = question => matchesPracticeQuestion(question,practiceType);
   history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = []; ghostPressTimes.fill(-Infinity);
   const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory, Math.random, () => sessionResults.values());
-  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, accept, picker);
+  session=sessionPlan(playlist.duration);setMusicGain(1);
+  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, session.endTime, accept, picker, session.fadeStart);
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
   questionKey = ''; show('play'); render(); draw();
-  try { await audio.play(); if (screen !== 'play') { audio.pause(); return; } if (document.hidden) { interruptPlay(); return; } prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); loop(); }
-  catch { if (screen === 'play') { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
+  try { await Promise.all([prepareMusicAudio(),audio.play()]); if (screen !== 'play') { audio.pause(); return; } if (document.hidden) { interruptPlay(); return; } prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); loop(); }
+  catch { if (screen === 'play') { audio.pause();suspendMusicAudio();show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
   finally { busy = false; refreshStart(); }
 }
 function tuningRate() { return Number($('tuning-rate').value); }
@@ -389,7 +412,7 @@ function tuningBeats() { return track.events.map(event => event.time - track.sta
 function resetTuning(initialMs = effectiveOffset(timingSettings)) {
   tuningGeneration++; tuningStarting = false; audio.pause(); cancelAnimationFrame(frame);
   selectTrack(Number($('tuning-track').value)); audio.currentTime = 0; audio.loop = true; audio.playbackRate = tuningRate();
-  audio.preservesPitch = true;
+  audio.preservesPitch = true;setMusicGain(1);
   tuningPattern = calibrationPattern(tuningBeats()); tuningPressTime = -Infinity;
   tuningSession = new TimingCalibrator(initialMs,true); tuningConsumed.clear(); tuningRound = 0; tuningLastTime = 0; tuningFeedback = ''; tuningMessage = 'ノーツに合わせてタップしてください。休みの間は押さず、次のノーツを待ちましょう。';
   $('tuning-play').disabled = false; renderTuning();
@@ -487,16 +510,16 @@ async function playTuning() {
   const generation = tuningGeneration; tuningStarting = true; $('tuning-play').disabled = true;
   audio.playbackRate = tuningRate(); audio.loop = true;
   try {
-    await audio.play();
+    await Promise.all([prepareMusicAudio(),audio.play()]);
     if (screen !== 'tuning' || generation !== tuningGeneration) return;
     if (document.hidden) { pauseTuning(); return; }
     prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     tuningMessage = ''; tuningStarting = false; tuningLoop();
-  } catch { if (screen === 'tuning' && generation === tuningGeneration) tuningMessage = '音楽を再生できません。開始を押して再試行してください。'; }
+  } catch { if (screen === 'tuning' && generation === tuningGeneration) {audio.pause();suspendMusicAudio();tuningMessage = '音楽を再生できません。開始を押して再試行してください。';} }
   finally { if (generation === tuningGeneration) { tuningStarting = false; $('tuning-play').disabled = false; renderTuning(); } }
 }
 function pauseTuning() {
-  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
+  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe); suspendMusicAudio();
   const context = tapAudio;
   if (context && context.state !== 'closed') context.suspend().catch(() => { if (tapAudio === context) tapAudioNeedsReset = true; });
   tuningMessage = '一時停止中。再開を押すと続けられます。'; renderTuning();
@@ -531,7 +554,7 @@ $('tuning-save').addEventListener('click',()=>{
   renderTuning(); openTimingReport();
   if (!saved) $('timing-copy-status').textContent = 'ブラウザへ保存できませんでした。今回のみ適用しています。設定値はコピーできます。';
 });
-$('tuning-back').addEventListener('click',()=>{tuningGeneration++;audio.pause();cancelAnimationFrame(frame);audio.loop=false;audio.playbackRate=1;show('home');});
+$('tuning-back').addEventListener('click',()=>{tuningGeneration++;audio.pause();suspendMusicAudio();cancelAnimationFrame(frame);audio.loop=false;audio.playbackRate=1;show('home');});
 function openTimingReport() {
   const report = timingReport(timingSettings); if (!report) return;
   $('timing-report-summary').textContent = `補正 ${signedMs(report.offsetMs)}／共通初期基準候補 ${signedMs(report.recommendedBaselineMs)} · ${report.verifiedAtNormalSpeed?'通常速度でも確認済み':report.method==='calibrated'?'スロー計測（通常速度は未確認）':'手動設定'}`;
@@ -618,7 +641,7 @@ function positionQuestion(elapsed) {
 }
 function render() {
   $('total-score').textContent = game.totalScore.toLocaleString();
-  $('time').textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration || track.durationSeconds)}`;
+  $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${formatTime(session.endTime)}`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
@@ -710,11 +733,14 @@ function draw() {
 }
 function loop() {
   if (!game || screen !== 'play') return;
-  game.update(playbackTime()); render(); draw();
+  const now=playbackTime();
+  game.update(Math.min(now,session.endTime));setMusicGain(sessionGain(now,session));render();draw();
+  if(now>=session.endTime){finish(true);return;}
   if (!audio.paused) frame = requestAnimationFrame(loop);
 }
 function tap(lane) {
   if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
+  if(playbackTime()>=session.endTime){finish(true);return;}
   game.update(playbackTime());
   const q = game.question, first = game.firstTry, previousCount = game.correctCount, previousWrong = game.wrongCount, occurrence = game.questionIndex;
   const shouldSound = ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
@@ -780,10 +806,10 @@ function renderBest(element, key, records) {
 }
 function finish(completed, reason=null) {
   if (screen !== 'play') return;
-  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
+  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe); suspendMusicAudio();
   const context = tapAudio;
   if (context && context.state !== 'closed') context.suspend().catch(() => {});
-  if (completed) game.update(playbackTime());
+  if (completed) game.update(Math.min(playbackTime(),session.endTime));
   const unfinished = !['intro','feedback','rhythm','outro'].includes(game.phase) ? game.question.reviewLabel : null;
   const unfinishedWrong = sessionResults.get(game.questionIndex)?.wrong || 0;
   const awards = game.achievements(completed, !!unfinished);
@@ -901,13 +927,13 @@ $('back').addEventListener('click', () => show('home'));
 $('quit').addEventListener('click', () => finish(false));
 audio.addEventListener('ended', async () => {
   if (screen !== 'play' || busy) return;
-  if (trackIndex + 1 >= playlist.tracks.length) { finish(true); return; }
+  if (playbackTime()>=session.endTime || trackIndex + 1 >= playlist.tracks.length) { finish(true); return; }
   busy = true; cancelAnimationFrame(frame);
   selectTrack(trackIndex + 1);
   game.update(playbackTime()); render(); draw();
   try {
     if (document.hidden) { interruptPlay(); return; }
-    await audio.play();
+    await Promise.all([prepareMusicAudio(),audio.play()]);
     prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     if (screen !== 'play') { audio.pause(); return; }
     if (document.hidden) { interruptPlay(); return; }

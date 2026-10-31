@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {Game,RULES,makePlaylist,revealPlan} from '../game.js';
+import {Game,RULES,makePlaylist,revealPlan,sessionPlan,sessionGain} from '../game.js';
 const read=path=>JSON.parse(readFileSync(new URL('../'+path,import.meta.url)));
 const items=read('quiz-data/junior_science.json');const tracks=read('music-data/index.json');
 const playlist=makePlaylist(Object.entries(tracks).map(([id,track])=>({id,track,chart:read('music-data/'+track.files.chart)})));
@@ -56,4 +56,31 @@ test('kanji admission reserves every component through the completed glyph',()=>
  const firstDone=g.events.filter(e=>e.target>=ready)[2].target+RULES.feedbackSeconds;
  assert.ok(g.earliestCompletion(start)>firstDone+2*RULES.readHoldSeconds);
  g.endTime=firstDone+.5;g.changePhase('read',start);assert.equal(g.phase,'outro');assert.equal(g.correctCount,0);
+});
+
+
+test('sessions cap at five minutes and linearly fade the last three seconds',()=>{
+ const plan=sessionPlan(playlist.duration);assert.deepEqual(plan,{endTime:300,fadeStart:297});
+ assert.equal(sessionGain(0,plan),1);assert.equal(sessionGain(296,plan),1);assert.equal(sessionGain(297,plan),1);
+ assert.equal(sessionGain(298.5,plan),.5);assert.equal(sessionGain(300,plan),0);assert.equal(sessionGain(301,plan),0);
+ assert.deepEqual(sessionPlan(playlist.duration,180),{endTime:180,fadeStart:177});
+});
+test('a playlist within the limit finishes naturally rather than fading early',()=>{
+ for(const seconds of [120,300]){const plan=sessionPlan(seconds);assert.equal(plan.endTime,seconds);assert.equal(plan.fadeStart,seconds);assert.equal(sessionGain(seconds-.001,plan),1);assert.equal(sessionGain(seconds,plan),0);}
+});
+test('quiz admission reserves the fade interval while white notes can continue until the limit',()=>{
+ const g=create();g.endTime=300;g.questionEndTime=297;
+ const now=Array.from({length:3000},(_,i)=>i/10).find(now=>g.earliestCompletion(now)>297 && g.earliestCompletion(now)+.25<=300);
+ assert.ok(Number.isFinite(now));
+ const normal=create();normal.endTime=300;normal.changePhase('read',now);assert.equal(normal.phase,'read');
+ g.changePhase('read',now);assert.equal(g.phase,'outro');
+ let seen=0;for(let t=297;t<=300;t+=1/60){g.update(t);seen+=g.notes.length;for(const note of g.notes)assert.ok(note.target+RULES.goodWindow+RULES.judgmentSeconds<=300);}
+ assert.ok(seen>0);
+});
+test('all phases avoid generating notes whose judgment display would cross the session end',()=>{
+ for(const phase of ['answer','rhythm','outro']){
+  const g=create();g.endTime=300;g.changePhase(phase,296);
+  for(let t=296;t<=300.01;t+=1/60){g.update(t);for(const note of g.notes)assert.ok(note.target+RULES.goodWindow+RULES.judgmentSeconds<=300);}
+  assert.equal(g.notes.length,0);
+ }
 });

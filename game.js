@@ -1,6 +1,16 @@
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
+export const SESSION = Object.freeze({durationSeconds:300,fadeSeconds:3});
+export function sessionPlan(playlistSeconds, limit=SESSION.durationSeconds) {
+  const endTime=Math.min(playlistSeconds,limit);
+  return {endTime,fadeStart:playlistSeconds>limit?Math.max(0,endTime-SESSION.fadeSeconds):endTime};
+}
+export function sessionGain(now, plan) {
+  if(now>=plan.endTime)return 0;
+  if(plan.fadeStart>=plan.endTime)return 1;
+  return Math.max(0,Math.min(1,(plan.endTime-now)/(plan.endTime-plan.fadeStart)));
+}
 // Positive errors are late; the judgment center matches the corrected target.
 export const timingError = (target, now) => now - (target + RULES.judgmentOffsetSeconds);
 export const COLORS = [
@@ -188,10 +198,10 @@ export function revealPlan(question) {
   return { continuation, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + (continuation ? 0 : RULES.liftSeconds) };
 }
 export class Game {
-  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null) {
+  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null, questionEndTime = Infinity) {
     this.pickUnit = pickUnit;
     this.questions = pickUnit ? pickUnit() : makeQuestionQueue(questions, random, acceptQuestion);
-    this.endTime = endTime;
+    this.endTime = endTime; this.questionEndTime = questionEndTime;
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
       if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
@@ -231,7 +241,7 @@ export class Game {
   changePhase(phase, now) {
     if (phase === 'read' && this.pickUnit && this.questionIndex >= this.questions.length) this.questions.push(...this.pickUnit());
     if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)
-      && this.earliestCompletion(now) + 0.25 > this.endTime) phase = 'outro';
+      && this.earliestCompletion(now) + 0.25 > Math.min(this.endTime,this.questionEndTime)) phase = 'outro';
     this.phase = phase; this.phaseStart = now;
     if (phase === 'outro') { this.quizResult = null; this.message = ''; this.counts = [0, 0, 0, 0]; }
     if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
@@ -254,7 +264,7 @@ export class Game {
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
       if (this.phase === 'intro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
-      if (this.phase === 'outro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
+      if (event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
       if (this.phase === 'answer') {
         COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
       } else this.notes.push({ ...event, color: null, done: false });
