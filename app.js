@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.29.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.29.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.29.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.29.0';
-const VERSION = '0.29.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.30.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.30.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.30.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.30.0';
+const VERSION = '0.30.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -403,12 +403,29 @@ function renderTuning() {
   $('tuning-judgment').textContent = audio.currentTime - tuningFeedbackAt < .65 * rate ? tuningFeedback : '';
   drawTuning();
 }
+// A translucent receiver stays centered exactly on the judgment line.
+function drawGhost(context, x, line, width, height, color, pulse=0) {
+  context.save();
+  const w=width*(1+.08*pulse), h=height*(1+.18*pulse);
+  context.fillStyle=color; context.strokeStyle=color;
+  context.globalAlpha=.13+.09*pulse;
+  context.beginPath();context.roundRect(x+(width-w)/2,line-h/2,w,h,5);context.fill();
+  context.globalAlpha=.48+.16*pulse;context.lineWidth=1.3;
+  context.stroke();context.restore();
+}
+function ghostPulse(target, now, rate=1) {
+  if (audio.paused || reducedMotion.matches) return 0;
+  const elapsed=(now-target)/rate;
+  return elapsed>=0 && elapsed<.18 ? (1-elapsed/.18)**2 : 0;
+}
 function drawTuning() {
   const canvas = $('tuning-canvas'), ctx = canvas.getContext('2d'), rect = canvas.getBoundingClientRect(), dpr = devicePixelRatio || 1;
   if (canvas.width !== Math.round(rect.width*dpr) || canvas.height !== Math.round(rect.height*dpr)) { canvas.width = Math.round(rect.width*dpr); canvas.height = Math.round(rect.height*dpr); }
   ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,rect.width,rect.height);
   const line = rect.height-28, now = audio.currentTime, rate = tuningRate();
   ctx.fillStyle = '#a8f07d18'; ctx.fillRect(0,line-10,rect.width,20);ctx.strokeStyle='#a8f07d';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(0,line);ctx.lineTo(rect.width,line);ctx.stroke();
+  const pulse=tuningPattern.reduce((max,p)=>Math.max(max,ghostPulse(p.base+tuningSession.appliedMs/1000*rate,now,rate)),0);
+  drawGhost(ctx,rect.width*.18,line,rect.width*.64,14,'#e5edf7',pulse);
   for (const {base:beat,anchor} of tuningPattern) {
     const target = beat + tuningSession.appliedMs/1000*rate, remaining = target-now;
     if (remaining>2.4*rate || remaining<-.4*rate) continue;
@@ -568,7 +585,7 @@ function render() {
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア' : '白ノーツのタップエリア');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
-  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '白ノーツが流れてきたレーンをタップ。';
+  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
@@ -636,6 +653,21 @@ function draw() {
   }
   ctx.fillStyle = '#a8f07d10'; ctx.fillRect(0, line - 13, width, 26);
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
+  if (['intro','answer','rhythm','outro'].includes(game.phase)) {
+    const now=playbackTime(), pulses=Array(game.laneCount).fill(0);
+    // Use the chart events rather than live notes so a successful early tap
+    // does not remove the receiver's pulse on that beat.
+    for (const event of game.events) {
+      const pulse=ghostPulse(event.target,now);
+      if (!pulse || event.target<game.phaseStart+RULES.travelSeconds) continue;
+      if (game.phase==='rhythm' && !game.rhythmTargets.has(event.id)) continue;
+      if (game.phase==='intro' && event.target+RULES.goodWindow+RULES.judgmentSeconds>RULES.introSeconds) continue;
+      if (game.phase==='outro' && event.target+RULES.goodWindow+RULES.judgmentSeconds>game.endTime) continue;
+      if (game.phase==='answer')pulses.fill(Math.max(pulses[0],pulse));
+      else pulses[event.lane]=Math.max(pulses[event.lane],pulse);
+    }
+    for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'?COLORS[lane].value:'#e5edf7',pulses[lane]);
+  }
   for (const note of game.notes) {
     if (note.done) continue;
     const noteHeight = Math.min(20, Math.max(10, line * 0.22));
