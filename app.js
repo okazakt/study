@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.28.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.28.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.28.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.28.0';
-const VERSION = '0.28.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.29.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.29.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.29.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.29.0';
+const VERSION = '0.29.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -17,7 +17,7 @@ let catalogQuestions = [], reviewRun = '';
 let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
 try { savedLearning = JSON.parse(localStorage.getItem('study-beat-learning-v1') || 'null'); } catch { /* Use the first-run school selector. */ }
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-let timingPersistence = true;
+let timingPersistence = true, outputConfirmed = false;
 let tuningPattern = [];
 let timingSettings = normalizeTiming(null), tuningSession = null, tuningConsumed = new Set(), tuningRound = 0, tuningLastTime = 0, tuningMessage = '', tuningFeedback = '', tuningFeedbackAt = -10, tuningGeneration = 0, tuningStarting = false;
 try { timingSettings = normalizeTiming(JSON.parse(localStorage.getItem(TIMING_KEY) || 'null'), localStorage.getItem('study-beat-offset-ms')); } catch {}
@@ -25,8 +25,7 @@ const signedMs = n => `${Math.round(n) > 0 ? '+' : ''}${Math.round(n)}ms`;
 for (const id of ['timing-output','tuning-output']) {
   for (const [key,label] of OUTPUTS) { const option = document.createElement('option'); option.value = key; option.textContent = label; $(id).append(option); }
   $(id).addEventListener('change', () => {
-    timingSettings.activeOutput = $(id).value; persistTiming(); syncTimingUi();
-    if (screen === 'tuning') resetTuning();
+    selectTimingOutput($(id).value);
   });
 }
 function persistTiming() {
@@ -47,26 +46,45 @@ $('offset').addEventListener('change', () => {
   timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(Number($('offset').value)||0),method:'manual'};
   persistTiming(); syncTimingUi();
 });
+function selectTimingOutput(output) {
+  timingSettings.activeOutput = output;
+  tapSoundEnabled = output === 'bluetooth' ? false : speakerTapSoundEnabled;
+  persistTiming(); syncTimingUi(); syncSoundUi();
+  if (!tapSoundEnabled && tapAudio && tapAudio.state !== 'closed') tapAudio.suspend().catch(() => {});
+  if (screen === 'tuning') resetTuning();
+}
 // Short percussion with a clear attack, independent of the song clock.
-let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, tapVolume = 55;
+let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, speakerTapSoundEnabled = true, tapVolume = 55;
 try {
-  tapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off';
+  speakerTapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off';
   const saved = localStorage.getItem('study-beat-tap-volume');
   if (saved !== null && Number.isFinite(Number(saved))) tapVolume = Math.max(0, Math.min(100, Number(saved)));
 } catch {}
+tapSoundEnabled = timingSettings.activeOutput === 'bluetooth' ? false : speakerTapSoundEnabled;
+function syncSoundUi() {
+  for (const id of ['tap-sound','help-tap-sound','tuning-tap-sound']) $(id).checked = tapSoundEnabled;
+  const bluetooth = timingSettings.activeOutput === 'bluetooth';
+  $('bluetooth-notice').hidden = !bluetooth;
+  $('bluetooth-notice').textContent = tapSoundEnabled ? 'Bluetoothのタップ音はオンです（遅れて聞こえるため非推奨）。チューニングモードで変更できます。' : 'Bluetoothイヤホンではタップ音が遅れて聞こえるため、タップ音はオフになります。チューニングモードで変更できます。';
+  $('tuning-sound-note').textContent = bluetooth ? 'Bluetoothは遅れて聞こえるためオフ推奨' : '';
+  soundStatus(tapSoundEnabled ? '' : 'タップ音はオフです');
+}
 function soundStatus(message) {
   for (const prefix of ['', 'help-']) $(`${prefix}tap-audio-status`).textContent = message;
 }
-for (const id of ['tap-sound', 'help-tap-sound']) {
+for (const id of ['tap-sound', 'help-tap-sound', 'tuning-tap-sound']) {
   $(id).checked = tapSoundEnabled;
   $(id).addEventListener('change', () => {
     tapSoundEnabled = $(id).checked;
-    for (const other of ['tap-sound', 'help-tap-sound']) $(other).checked = tapSoundEnabled;
-    try { localStorage.setItem('study-beat-tap-sound', tapSoundEnabled ? 'on' : 'off'); } catch {}
-    soundStatus(tapSoundEnabled ? '' : 'タップ音はオフです');
+    if (timingSettings.activeOutput !== 'bluetooth') {
+      speakerTapSoundEnabled = tapSoundEnabled;
+      try { localStorage.setItem('study-beat-tap-sound', tapSoundEnabled ? 'on' : 'off'); } catch {}
+    }
+    syncSoundUi();
     if (tapSoundEnabled) prepareTapAudio()?.catch(() => {});
   });
 }
+syncSoundUi();
 for (const prefix of ['', 'help-']) {
   const slider = $(`${prefix}tap-volume`);
   slider.value = tapVolume; $(`${prefix}tap-volume-value`).value = `${tapVolume}%`;
@@ -220,7 +238,7 @@ function saveLearning() {
 }
 function refreshStart() {
   const count = selectedQuestions().length;
-  $('start').disabled = busy || !count;
+  $('start').disabled = !outputConfirmed || busy || !count;
   $('start').textContent = count ? 'プレイをはじめる →' : !preferences?.school ? '学校を選んでください' : selection() ? '単元を選んでください' : '学ぶ範囲を選んでください';
 }
 function setSchool(school) {
@@ -331,7 +349,7 @@ async function load() {
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
     selectTrack(0);
     playlist.tracks.forEach((song,i) => { const option = document.createElement('option'); option.value = i; option.textContent = song.title; $('tuning-track').append(option); });
-    $('open-tuning').disabled = false;
+    $('open-tuning').disabled = !outputConfirmed;
     catalogQuestions = makeQuestionQueue(questions, () => .5);
     catalog = buildCatalog(questions); preferences = normalizePreferences(savedLearning, catalog);
     activeSubject = catalog.find(course => course.id === selection()?.id)?.subject || '';
@@ -340,7 +358,7 @@ async function load() {
   } catch (error) { $('load-status').textContent = `データの読み込みに失敗しました。ページを再読み込みしてください。 (${error.message})`; }
 }
 async function start() {
-  if (busy) return;
+  if (busy || !outputConfirmed) return;
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
   prepareTapAudio()?.catch(() => {});
   busy = true; $('start').disabled = true;
@@ -438,7 +456,7 @@ function tuningTap() {
   renderTuning();
 }
 $('open-tuning').addEventListener('click', () => {
-  if (!playlist) return;
+  if (!playlist || !outputConfirmed) return;
   audio.pause(); cancelAnimationFrame(frame); $('tuning-track').value = trackIndex; $('tuning-rate').value = '1'; show('tuning'); resetTuning();
 });
 $('tuning-play').addEventListener('click',playTuning);
@@ -916,3 +934,13 @@ if ('serviceWorker' in navigator) {
 window.addEventListener('online', checkForUpdate);
 checkForUpdate();
 load();
+
+$('audio-output-dialog').addEventListener('cancel', event => event.preventDefault());
+for (const button of document.querySelectorAll('[data-output-choice]')) {
+  button.setAttribute('aria-pressed', String(button.dataset.outputChoice === timingSettings.activeOutput));
+  button.addEventListener('click', () => {
+    selectTimingOutput(button.dataset.outputChoice); outputConfirmed = true;
+    $('audio-output-dialog').close(); refreshStart(); $('open-tuning').disabled = !playlist;
+  });
+}
+$('audio-output-dialog').showModal();

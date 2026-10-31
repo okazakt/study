@@ -1,7 +1,7 @@
 // Shared speaker/wired baseline from the pilot; Bluetooth stays independent.
 // Saved absolute device values always override their output baseline.
 export const DEFAULT_TIMING_OFFSET_MS = -101;
-export const DEFAULT_TIMING_OFFSETS_MS = Object.freeze({speaker:DEFAULT_TIMING_OFFSET_MS,bluetooth:92,other:0});
+export const DEFAULT_TIMING_OFFSETS_MS = Object.freeze({speaker:DEFAULT_TIMING_OFFSET_MS,bluetooth:108,other:0});
 export const outputKey = output => output === 'wired' ? 'speaker' : output;
 export const defaultTimingOffset = output => DEFAULT_TIMING_OFFSETS_MS[outputKey(output)] ?? 0;
 export const TIMING_KEY = 'study-beat-timing-v1';
