@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.35.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.35.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain } from './game.js?v=0.35.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.35.0';
-const VERSION = '0.35.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.36.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.36.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain, SESSION } from './game.js?v=0.36.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.36.0';
+const VERSION = '0.36.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -398,7 +398,7 @@ async function start() {
   history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = []; ghostPressTimes.fill(-Infinity);
   const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory, Math.random, () => sessionResults.values());
   session=sessionPlan(playlist.duration);setMusicGain(1);
-  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, session.endTime, accept, picker, session.fadeStart);
+  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, session.endTime, accept, picker, session.fadeStart, SESSION.tapGoal);
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
@@ -642,6 +642,7 @@ function positionQuestion(elapsed) {
 function render() {
   $('total-score').textContent = game.totalScore.toLocaleString();
   $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${formatTime(session.endTime)}`;
+  $('tap-progress').textContent = `成功タップ ${game.successfulTaps} / ${game.tapGoal}回`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
@@ -839,6 +840,7 @@ function finish(completed, reason=null) {
   $('result-reason').textContent = reason || (completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。');
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
+  $('result-taps').textContent = `成功タップ ${game.successfulTaps} / ${game.tapGoal}回`;
   const rhythmBase = game.rhythmBaseScore;
   const quizBase = game.correctCount * 50;
   const columns = [

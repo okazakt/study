@@ -1,7 +1,7 @@
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
-export const SESSION = Object.freeze({durationSeconds:300,fadeSeconds:3});
+export const SESSION = Object.freeze({durationSeconds:300,fadeSeconds:3,tapGoal:120,minWhiteInterval:.22});
 export function sessionPlan(playlistSeconds, limit=SESSION.durationSeconds) {
   const endTime=Math.min(playlistSeconds,limit);
   return {endTime,fadeStart:playlistSeconds>limit?Math.max(0,endTime-SESSION.fadeSeconds):endTime};
@@ -198,15 +198,26 @@ export function revealPlan(question) {
   return { continuation, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + (continuation ? 0 : RULES.liftSeconds) };
 }
 export class Game {
-  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null, questionEndTime = Infinity) {
+  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null, questionEndTime = Infinity, tapGoal = null) {
     this.pickUnit = pickUnit;
     this.questions = pickUnit ? pickUnit() : makeQuestionQueue(questions, random, acceptQuestion);
     this.endTime = endTime; this.questionEndTime = questionEndTime;
+    this.tapGoal=Number.isInteger(tapGoal) && tapGoal>0 && Number.isFinite(endTime)?tapGoal:null;
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
       if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
       return { target: event.time + offsetSeconds, id: i, lane: lanes.pop() };
     });
+    if(this.tapGoal){
+      const main=this.events,extra=[];
+      for(let i=0;i<main.length-1;i++){
+        const left=main[i],right=main[i+1],gap=right.target-left.target;
+        if(gap<SESSION.minWhiteInterval*2 || gap>1.5)continue;
+        const choices=[0,1,2,3].filter(lane=>lane!==left.lane && lane!==right.lane);
+        extra.push({target:(left.target+right.target)/2,id:`half:${left.id}`,lane:choices[Math.floor(random()*choices.length)],half:true});
+      }
+      this.events=[...main,...extra].sort((a,b)=>a.target-b.target);
+    }
     this.reveal = revealPlan(this.questions[0]);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
     this.rhythmScore = 0; this.rhythmBaseScore = 0; this.rhythmComboScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
@@ -215,23 +226,48 @@ export class Game {
     this.judgments = { PERFECT: 0, GOOD: 0, MISS: 0 }; this.wrongCount = 0;
     this.quizResult = null;
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
+    if(this.tapGoal)this.planWhites(0,Math.min(RULES.introSeconds,this.endTime));
   }
   get requiredTaps() {
     const value = this.question.tapsToAnswer;
     return Number.isInteger(value) && value > 0 ? value : RULES.tapsToAnswer;
   }
+  get successfulTaps() { return this.judgments.PERFECT+this.judgments.GOOD; }
+  pendingWhites() { return this.notes.filter(n=>!n.done && n.color===null).length; }
+  whiteSlots(now,end=this.endTime){
+    return this.events.slice(this.cursor).filter(e=>e.target+1e-9>=now+RULES.travelSeconds && e.target+RULES.judgmentOffsetSeconds+RULES.goodWindow+RULES.judgmentSeconds<=end+1e-9);
+  }
+  unitTaps(){
+    let taps=0;
+    for(let step=0;step<this.questions.length;step++){
+      const q=this.questions[(this.questionIndex+step)%this.questions.length];
+      if(step && !(q.continuation && q.sourceId===this.question.sourceId && q.mode===this.question.mode))break;
+      taps+=Number.isInteger(q.tapsToAnswer) && q.tapsToAnswer>0?q.tapsToAnswer:RULES.tapsToAnswer;
+    }
+    return taps;
+  }
+  planWhites(now,end){
+    this.whitePhaseEnd=end;
+    const remaining=Math.max(0,this.tapGoal-this.successfulTaps-this.pendingWhites());
+    const desired=this.phase==='outro'?this.tapGoal:Math.round(this.tapGoal*Math.min(end,this.endTime)/this.endTime);
+    const needed=Math.min(remaining,Math.max(this.phase==='outro'?0:1,desired-this.successfulTaps-this.pendingWhites()));
+    const slots=this.whiteSlots(now,end),main=slots.filter(e=>!e.half),pool=main.length>=needed?main:slots;
+    const count=Math.min(needed,pool.length);
+    this.whiteTargets=new Set(Array.from({length:count},(_,i)=>pool[Math.floor((i+1)*pool.length/count)-1].id));
+  }
   get totalScore() { return this.rhythmScore + this.quizScore; }
   get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
   earliestCompletion(now) {
-    let time = now, cursor = this.cursor;
+    let time = now, cursor = 0;
+    const events=this.events.slice(this.cursor).filter(e=>!e.half);
     for (let step = 0; step < this.questions.length; step++) {
       const q = this.questions[(this.questionIndex + step) % this.questions.length];
       if (step && !(q.continuation && q.sourceId === this.question.sourceId && q.mode === this.question.mode)) break;
       const ready = time + revealPlan(q).duration + RULES.travelSeconds;
       const taps = Number.isInteger(q.tapsToAnswer) && q.tapsToAnswer > 0 ? q.tapsToAnswer : RULES.tapsToAnswer;
-      while (cursor < this.events.length && this.events[cursor].target < ready) cursor++;
-      const last = this.events[cursor + taps - 1];
+      while (cursor < events.length && events[cursor].target < ready) cursor++;
+      const last = events[cursor + taps - 1];
       if (!last) return Infinity;
       time = last.target + RULES.feedbackSeconds;
       cursor += taps;
@@ -240,16 +276,24 @@ export class Game {
   }
   changePhase(phase, now) {
     if (phase === 'read' && this.pickUnit && this.questionIndex >= this.questions.length) this.questions.push(...this.pickUnit());
-    if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)
-      && this.earliestCompletion(now) + 0.25 > Math.min(this.endTime,this.questionEndTime)) phase = 'outro';
+    if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)){
+      const completion=this.earliestCompletion(now),taps=this.unitTaps();
+      if(completion+.25>Math.min(this.endTime,this.questionEndTime) || this.tapGoal &&
+        (this.successfulTaps+taps>this.tapGoal || this.whiteSlots(completion).length<this.tapGoal-this.successfulTaps-taps))phase='outro';
+    }
     this.phase = phase; this.phaseStart = now;
     if (phase === 'outro') { this.quizResult = null; this.message = ''; this.counts = [0, 0, 0, 0]; }
     if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
     if (phase === 'rhythm') {
       this.quizResult = null; this.message = '';
-      const targets = this.events.slice(this.cursor).filter(e => e.target >= now + RULES.travelSeconds).slice(0, RULES.rhythmNotes);
+      const targets = this.events.slice(this.cursor).filter(e => !e.half && e.target >= now + RULES.travelSeconds).slice(0, RULES.rhythmNotes);
       this.rhythmTargets = new Set(targets.map(e => e.id));
       this.rhythmEnd = (targets.at(-1)?.target ?? now) + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds;
+    }
+    if(this.tapGoal && ['intro','rhythm','outro'].includes(phase)){
+      const end=phase==='intro'?Math.min(RULES.introSeconds,this.endTime):phase==='outro'?this.endTime:Math.min(this.rhythmEnd,this.endTime);
+      this.planWhites(now,end);
+      if(phase==='rhythm' && this.whiteSlots(end).length<this.tapGoal-this.successfulTaps-this.pendingWhites()-this.whiteTargets.size){this.changePhase('outro',now);return;}
     }
     if (phase === 'answer') this.message = `答えの色を${this.requiredTaps}回タップ`;
   }
@@ -260,7 +304,10 @@ export class Game {
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
       const event = this.events[this.cursor++];
       if (!['intro', 'answer', 'rhythm', 'outro'].includes(this.phase)) continue;
-      if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
+      if(this.phase==='answer' && event.half)continue;
+      if(this.tapGoal && this.phase!=='answer'){
+        if(!this.whiteTargets.has(event.id) || this.successfulTaps+this.pendingWhites()>=this.tapGoal)continue;
+      }else if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
       if (this.phase === 'intro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
@@ -269,9 +316,10 @@ export class Game {
         COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
       } else this.notes.push({ ...event, color: null, done: false });
     }
+    let whiteMiss=false;
     for (const note of this.notes) {
       if (!note.done && timingError(note.target, now) > RULES.goodWindow + 1e-9) {
-        note.done = true;
+        note.done = true;if(note.color===null)whiteMiss=true;
         // An unanswered four-color row is one miss; unchosen siblings are not misses.
         if (note.rowId !== undefined) {
           for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
@@ -280,6 +328,7 @@ export class Game {
       }
     }
     this.notes = this.notes.filter(note => !note.done);
+    if(whiteMiss && this.tapGoal && ['intro','rhythm','outro'].includes(this.phase))this.planWhites(now,this.whitePhaseEnd);
     const settled = !this.notes.length && now - this.judgmentTime >= RULES.judgmentSeconds;
     if (this.phase === 'intro' && now >= RULES.introSeconds && settled) this.changePhase('read', now);
     else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds && settled) {
