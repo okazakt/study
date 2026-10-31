@@ -61,7 +61,7 @@ test('public version and versioned app references agree',()=>{
   const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');const version=JSON.parse(read('package.json')).version;
   assert.ok(read('index.html').includes(`v${version}`));
   for(const file of ['style.css','app.js'])assert.ok(read('index.html').includes(`${file}?v=${version}`));
-  assert.ok(read('app.js').includes(`game.js?v=${version}`));assert.ok(read('app.js').includes(`learning.js?v=${version}`));assert.ok(source.includes("'./learning.js'"));assert.ok(source.includes("'./progress.js'"));assert.ok(read('app.js').includes(`progress.js?v=${version}`));
+  assert.ok(read('app.js').includes(`game.js?v=${version}`));assert.ok(read('app.js').includes(`learning.js?v=${version}`));assert.ok(source.includes("'./learning.js'"));assert.ok(source.includes("'./progress.js'"));assert.ok(source.includes("'./calibration.js'"));assert.ok(read('app.js').includes(`calibration.js?v=${version}`));assert.ok(read('app.js').includes(`progress.js?v=${version}`));
   for(const file of ['sw.js','app.js'])assert.ok(read(file).includes(`const VERSION = '${version}'`));
   assert.ok(source.includes(`study-beat-v${version}`));assert.equal(JSON.parse(read('version.json')).version,version);
 });

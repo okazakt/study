@@ -1,7 +1,7 @@
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
-  feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: -0.003 });
-// Positive errors are late; the judgment center precedes the visual target by 3ms.
+  feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
+// Positive errors are late; the judgment center matches the corrected target.
 export const timingError = (target, now) => now - (target + RULES.judgmentOffsetSeconds);
 export const COLORS = [
   { name: '赤', value: '#ff7187' }, { name: '青', value: '#73b9ff' },

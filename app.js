@@ -1,7 +1,8 @@
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.25.1';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.25.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.25.1';
-const VERSION = '0.25.1';
+import { TIMING_KEY, OUTPUTS, DEFAULT_TIMING_OFFSET_MS, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.26.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.26.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.26.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.26.0';
+const VERSION = '0.26.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -16,10 +17,34 @@ let catalogQuestions = [], reviewRun = '';
 let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
 try { savedLearning = JSON.parse(localStorage.getItem('study-beat-learning-v1') || 'null'); } catch { /* Use the first-run school selector. */ }
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-try { $('offset').value = localStorage.getItem('study-beat-offset-ms') || '0'; } catch { /* Private browsing may disable storage. */ }
+let timingPersistence = true;
+let timingSettings = normalizeTiming(null), tuningSession = null, tuningConsumed = new Set(), tuningRound = 0, tuningLastTime = 0, tuningMessage = '', tuningFeedback = '', tuningFeedbackAt = -10, tuningGeneration = 0, tuningStarting = false;
+try { timingSettings = normalizeTiming(JSON.parse(localStorage.getItem(TIMING_KEY) || 'null'), localStorage.getItem('study-beat-offset-ms')); } catch {}
+const signedMs = n => `${Math.round(n) > 0 ? '+' : ''}${Math.round(n)}ms`;
+for (const id of ['timing-output','tuning-output']) {
+  for (const [key,label] of OUTPUTS) { const option = document.createElement('option'); option.value = key; option.textContent = label; $(id).append(option); }
+  $(id).addEventListener('change', () => {
+    timingSettings.activeOutput = $(id).value; persistTiming(); syncTimingUi();
+    if (screen === 'tuning') resetTuning();
+  });
+}
+function persistTiming() {
+  try {
+    localStorage.setItem(TIMING_KEY, JSON.stringify(timingSettings));
+    localStorage.setItem('study-beat-offset-ms', String(effectiveOffset(timingSettings)));
+    timingPersistence = true; return true;
+  } catch { timingPersistence = false; return false; }
+}
+function syncTimingUi() {
+  const output = timingSettings.activeOutput, profile = timingSettings.profiles[output];
+  $('timing-output').value = output; $('tuning-output').value = output; $('offset').value = effectiveOffset(timingSettings);
+  $('timing-saved').textContent = `適用値 ${signedMs(effectiveOffset(timingSettings))}（${!timingPersistence ? '保存できません・今回のみ' : profile ? '保存済み' : '共通初期値'}）`;
+  $('open-timing-report').disabled = !profile;
+}
+syncTimingUi();
 $('offset').addEventListener('change', () => {
-  $('offset').value = Math.max(-500, Math.min(500, Number($('offset').value) || 0));
-  try { localStorage.setItem('study-beat-offset-ms', $('offset').value); } catch { /* Play remains available. */ }
+  timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(Number($('offset').value)||0),method:'manual'};
+  persistTiming(); syncTimingUi();
 });
 // Short percussion with a clear attack, independent of the song clock.
 let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, tapVolume = 55;
@@ -160,9 +185,9 @@ document.addEventListener('touchend', () => {
 const show = next => {
   const previousScreen = screen;
   if (next !== 'result') { clearTimeout(resultTimer); resultTimer = undefined; $('result-details').classList.remove('revealed'); }
-  screen = next; document.body.classList.toggle('playing', next === 'play');
-  document.documentElement.classList.toggle('play-locked', next === 'play');
-  for (const name of ['home', 'play', 'result', 'practice-review']) $(name).hidden = name !== next;
+  screen = next; document.body.classList.toggle('playing', next === 'play' || next === 'tuning');
+  document.documentElement.classList.toggle('play-locked', next === 'play' || next === 'tuning');
+  for (const name of ['home', 'play', 'result', 'practice-review', 'tuning']) $(name).hidden = name !== next;
   if (next === 'result' && previousScreen === 'practice-review') $('result-details').hidden = false;
   window.scrollTo(0, 0);
   if (next === 'home') { if (dataReady) renderLearning(); checkForUpdate(); }
@@ -304,6 +329,8 @@ async function load() {
     playlist = makePlaylist(entries);
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
     selectTrack(0);
+    playlist.tracks.forEach((song,i) => { const option = document.createElement('option'); option.value = i; option.textContent = song.title; $('tuning-track').append(option); });
+    $('open-tuning').disabled = false;
     catalogQuestions = makeQuestionQueue(questions, () => .5);
     catalog = buildCatalog(questions); preferences = normalizePreferences(savedLearning, catalog);
     activeSubject = catalog.find(course => course.id === selection()?.id)?.subject || '';
@@ -316,7 +343,7 @@ async function start() {
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
   prepareTapAudio()?.catch(() => {});
   busy = true; $('start').disabled = true;
-  cancelAnimationFrame(frame); audio.pause(); selectTrack(0); audio.currentTime = 0;
+  cancelAnimationFrame(frame); audio.pause(); audio.loop = false; audio.playbackRate = 1; selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
   const accept = question => matchesPracticeQuestion(question,practiceType);
@@ -331,6 +358,105 @@ async function start() {
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
   finally { busy = false; refreshStart(); $('pause').disabled = false; }
 }
+function tuningRate() { return Number($('tuning-rate').value); }
+function tuningBeats() { return track.events.map(event => event.time - track.start); }
+function resetTuning(initialMs = effectiveOffset(timingSettings)) {
+  tuningGeneration++; tuningStarting = false; audio.pause(); cancelAnimationFrame(frame);
+  selectTrack(Number($('tuning-track').value)); audio.currentTime = 0; audio.loop = true; audio.playbackRate = tuningRate();
+  audio.preservesPitch = true;
+  tuningSession = new TimingCalibrator(initialMs); tuningConsumed.clear(); tuningRound = 0; tuningLastTime = 0; tuningFeedback = ''; tuningMessage = '開始して、曲の拍に合わせて繰り返しタップしてください。';
+  $('tuning-play').disabled = false; renderTuning();
+}
+function renderTuning() {
+  if (!tuningSession) return;
+  const state = tuningSession.status(), rate = tuningRate();
+  $('tuning-applied').textContent = signedMs(state.appliedMs);
+  $('tuning-count').textContent = `${state.inliers} / 32`;
+  $('tuning-spread').textContent = state.count ? `${Math.round(state.spreadMs)}ms` : '—';
+  $('tuning-save').disabled = !state.ready || tuningStarting;
+  $('tuning-normal').disabled = !state.ready || rate === 1 || tuningStarting;
+  $('tuning-tap').disabled = audio.paused || tuningStarting;
+  $('tuning-play').textContent = audio.paused ? (audio.currentTime ? '再開' : '開始') : '一時停止';
+  $('tuning-status').textContent = tuningMessage || (state.ready ? `安定しました。推定 ${signedMs(state.estimateMs)}。保存するか、さらにタップして確認できます。` : state.count < 8 ? '最初は様子を見ています。曲の拍を聴いてタップしてください。' : `調整中。${state.excluded}回の外れ値を除外。安定するまで続けてください。`);
+  $('tuning-judgment').textContent = audio.currentTime - tuningFeedbackAt < .65 * rate ? tuningFeedback : '';
+  drawTuning();
+}
+function drawTuning() {
+  const canvas = $('tuning-canvas'), ctx = canvas.getContext('2d'), rect = canvas.getBoundingClientRect(), dpr = devicePixelRatio || 1;
+  if (canvas.width !== Math.round(rect.width*dpr) || canvas.height !== Math.round(rect.height*dpr)) { canvas.width = Math.round(rect.width*dpr); canvas.height = Math.round(rect.height*dpr); }
+  ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,rect.width,rect.height);
+  const line = rect.height-28, now = audio.currentTime, rate = tuningRate();
+  ctx.fillStyle = '#a8f07d18'; ctx.fillRect(0,line-10,rect.width,20);ctx.strokeStyle='#a8f07d';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(0,line);ctx.lineTo(rect.width,line);ctx.stroke();
+  for (const beat of tuningBeats()) {
+    const target = beat + tuningSession.appliedMs/1000*rate, remaining = target-now;
+    if (remaining>2.4*rate || remaining<-.4*rate) continue;
+    const y = line*(1-remaining/(2.4*rate));
+    ctx.fillStyle='#eef5ff';ctx.shadowColor='#a8f07d';ctx.shadowBlur=8;ctx.beginPath();ctx.roundRect(rect.width*.18,y-7,rect.width*.64,14,5);ctx.fill();ctx.shadowBlur=0;
+  }
+}
+function tuningLoop() {
+  if (screen !== 'tuning') return;
+  if (audio.currentTime < tuningLastTime-1) { tuningRound++;tuningConsumed.clear(); }
+  tuningLastTime = audio.currentTime; renderTuning();
+  if (!audio.paused) frame = requestAnimationFrame(tuningLoop);
+}
+async function playTuning() {
+  if (screen !== 'tuning' || tuningStarting) return;
+  if (!audio.paused) { pauseTuning(); return; }
+  const generation = tuningGeneration; tuningStarting = true; $('tuning-play').disabled = true;
+  audio.playbackRate = tuningRate(); audio.loop = true;
+  try {
+    await audio.play();
+    if (screen !== 'tuning' || generation !== tuningGeneration) return;
+    if (document.hidden) { pauseTuning(); return; }
+    tuningMessage = ''; tuningStarting = false; tuningLoop();
+  } catch { if (screen === 'tuning' && generation === tuningGeneration) tuningMessage = '音楽を再生できません。開始を押して再試行してください。'; }
+  finally { if (generation === tuningGeneration) { tuningStarting = false; $('tuning-play').disabled = false; renderTuning(); } }
+}
+function pauseTuning() {
+  audio.pause(); cancelAnimationFrame(frame); tuningMessage = '一時停止中。再開を押すと続けられます。'; renderTuning();
+}
+function tuningTap() {
+  if (screen !== 'tuning' || audio.paused || tuningStarting) return;
+  const now = audio.currentTime, match = matchCalibrationBeat(tuningBeats(),now,tuningRate(),tuningSession.appliedMs,tuningConsumed,tuningRound);
+  tuningFeedbackAt = now;
+  if (!match) { tuningFeedback = '準備中・対象の拍なし'; renderTuning(); return; }
+  tuningConsumed.add(match.id);
+  const result = tuningSession.add(match.sampleMs,match.id);
+  tuningMessage = '';
+  tuningFeedback = result.accepted ? Math.abs(match.errorMs)<=80 ? 'PERFECT' : `${Math.round(Math.abs(match.errorMs))}ms ${match.errorMs>0?'遅め':'早め'}` : 'このタップは調整に使いません';
+  renderTuning();
+}
+$('open-tuning').addEventListener('click', () => {
+  if (!playlist) return;
+  audio.pause(); cancelAnimationFrame(frame); $('tuning-track').value = trackIndex; $('tuning-rate').value = '0.5'; show('tuning'); resetTuning();
+});
+$('tuning-play').addEventListener('click',playTuning);
+for (const id of ['tuning-rate','tuning-track']) $(id).addEventListener('change',()=>resetTuning());
+for (const id of ['tuning-tap','tuning-field']) $(id).addEventListener('pointerdown',event=>{event.preventDefault();tuningTap();});
+$('tuning-normal').addEventListener('click',()=>{const initial=tuningSession.status().estimateMs;$('tuning-rate').value='1';resetTuning(initial);playTuning();});
+$('tuning-save').addEventListener('click',()=>{
+  const state = tuningSession.status(); if (!state.ready) return;
+  pauseTuning();
+  timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(state.estimateMs),method:'calibrated',sampleCount:state.inliers,excluded:state.excluded,spreadMs:Math.round(state.spreadMs),playbackRate:tuningRate(),verifiedAtNormalSpeed:tuningRate()===1,trackId:track.id,measuredAt:new Date().toISOString(),baselineAtMeasurement:DEFAULT_TIMING_OFFSET_MS};
+  tuningSession.appliedMs = clampOffset(state.estimateMs);
+  const saved = persistTiming(); syncTimingUi();
+  tuningMessage = `${signedMs(state.estimateMs)}を${saved?'保存しました。次回から適用します。':'今回のみ適用しました。ブラウザへ保存できませんでした。'}`;
+  renderTuning(); openTimingReport();
+  if (!saved) $('timing-copy-status').textContent = 'ブラウザへ保存できませんでした。今回のみ適用しています。設定値はコピーできます。';
+});
+$('tuning-back').addEventListener('click',()=>{tuningGeneration++;audio.pause();cancelAnimationFrame(frame);audio.loop=false;audio.playbackRate=1;show('home');});
+function openTimingReport() {
+  const report = timingReport(timingSettings); if (!report) return;
+  $('timing-report-summary').textContent = `補正 ${signedMs(report.offsetMs)}／共通初期基準候補 ${signedMs(report.recommendedBaselineMs)} · ${report.verifiedAtNormalSpeed?'通常速度でも確認済み':report.method==='calibrated'?'スロー計測（通常速度は未確認）':'手動設定'}`;
+  $('timing-report-text').value = JSON.stringify(report,null,2); $('timing-copy-status').textContent = ''; $('timing-report-dialog').showModal();
+}
+$('open-timing-report').addEventListener('click',openTimingReport);
+$('close-timing-report').addEventListener('click',()=>$('timing-report-dialog').close());
+$('copy-timing-report').addEventListener('click',async()=>{
+  try { await navigator.clipboard.writeText($('timing-report-text').value); $('timing-copy-status').textContent='コピーしました。'; }
+  catch { $('timing-report-text').focus();$('timing-report-text').select();$('timing-copy-status').textContent=document.execCommand('copy')?'コピーしました。':'選択した設定値をコピーしてください。'; }
+});
 function appendCharacters(element, text, start, segments = [{ text }], choice = false) {
   element.replaceChildren(); element.setAttribute('aria-label', text);
   let index = 0;
@@ -529,7 +655,7 @@ for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEve
 let gestureY = 0;
 document.addEventListener('touchstart', event => { gestureY = event.touches[0]?.clientY || 0; }, {passive:true});
 function blockPageScroll(event, delta) {
-  if (screen !== 'play') return;
+  if (screen !== 'play' && screen !== 'tuning') return;
   if (event.target.closest?.('dialog[open]')) return;
   const panel = event.target.closest?.('#question-panel');
   const canScroll = panel && panel.scrollHeight > panel.clientHeight + 1 && (delta > 0 ? panel.scrollTop + panel.clientHeight < panel.scrollHeight - 1 : panel.scrollTop > 0);
@@ -541,6 +667,10 @@ document.addEventListener('touchmove', event => {
 }, {passive:false});
 document.addEventListener('wheel', event => blockPageScroll(event, event.deltaY), {passive:false});
 document.addEventListener('keydown', event => {
+  if (screen === 'tuning') {
+    if (!$('timing-report-dialog').open && !event.repeat && !event.ctrlKey && !event.metaKey && !event.altKey && ['Space','KeyD','KeyF','KeyG','KeyH'].includes(event.code) && !['INPUT','SELECT','TEXTAREA'].includes(event.target.tagName)) { event.preventDefault(); tuningTap(); }
+    return;
+  }
   if ($('controls-help').open || screen !== 'play' || event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
   if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.code)) event.preventDefault();
   const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
@@ -548,6 +678,7 @@ document.addEventListener('keydown', event => {
   if (event.code === 'Space') { event.preventDefault(); togglePause(); }
 });
 function pause() {
+  if (screen === 'tuning') { pauseTuning(); return; }
   if (screen !== 'play') return;
   audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
   const context = tapAudio;
@@ -706,13 +837,13 @@ audio.addEventListener('ended', async () => {
     pause(); game.message = '次の曲を再生できませんでした。再開を押してください。'; render();
   } finally { busy = false; }
 });
-audio.addEventListener('error', () => { if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
+audio.addEventListener('error', () => { if (screen === 'tuning') { pauseTuning(); tuningMessage='音楽を読み込めません。接続を確認してください。';renderTuning(); } if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) { tapAudioNeedsReset = true; pause(); }
 });
 window.addEventListener('pagehide', () => { tapAudioNeedsReset = true; pause(); });
 window.addEventListener('blur', () => { tapAudioNeedsReset = true; });
-window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } });
+window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } else if (screen === 'tuning') renderTuning(); });
 let registration, updateAvailable = false;
 let updateCheck;
 async function checkForUpdate() {
