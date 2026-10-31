@@ -81,3 +81,8 @@ test('math and social samples enable only their grades, exams and selected units
   }
  }
 });
+
+test('subject menus preserve the requested language math science social order',()=>{
+ assert.deepEqual([...new Set(catalog.filter(c=>c.school==='中学').map(c=>c.subject))],['国語','英語','数学','理科','社会']);
+ assert.deepEqual([...new Set(catalog.filter(c=>c.school==='高校').map(c=>c.subject))],['国語','英語','数学','理科','地歴・公民']);
+});

@@ -55,12 +55,12 @@ test('three correct color hits confirm one answer, with separate first-answer co
   hit(g,c2,answerStart+2); hit(g,c2,answerStart+3); hit(g,c2,answerStart+4);
   assert.equal(g.quizScore,130); assert.equal(g.quizCombo,2); assert.equal(g.maxQuizCombo,2);
 });
-test('wrong answers keep the same question and colors, reset progress, and break only quiz combo', () => {
+test('wrong answers keep the same question and colors, reset progress, and break both combos', () => {
   const g = fixture(); g.changePhase('answer',0); g.quizCombo = 2;
   const q = g.question, wrong = (q.correct + 1) % 4;
   hit(g,wrong,2); hit(g,wrong,3); hit(g,wrong,4);
   assert.equal(g.phase,'answer'); assert.equal(g.question,q); assert.equal(g.questionIndex,0);
-  assert.equal(g.firstTry,false); assert.equal(g.quizCombo,0); assert.equal(g.combo,3);
+  assert.equal(g.firstTry,false); assert.equal(g.quizCombo,0); assert.equal(g.combo,0);
   assert.deepEqual(g.counts,[0,0,0,0]);
   hit(g,q.correct,5); hit(g,q.correct,6); hit(g,q.correct,7);
   assert.equal(g.correctCount,1); assert.equal(g.firstCount,0); assert.equal(g.quizScore,50); assert.equal(g.phase,'feedback');
@@ -122,9 +122,9 @@ test('answer rows offer four simultaneous colors, ordered like choices, one sele
   const row=g.notes.filter(n=>n.rowId===event.id);
   assert.equal(row.length,4); assert.deepEqual(row.map(n=>n.color),[0,1,2,3]);
   assert.deepEqual(row.map(n=>n.lane),[0,1,2,3]); assert.ok(row.every(n=>n.target===event.target));
-  assert.ok(g.tap(1,event.target)); assert.equal(g.counts[1],1); assert.equal(g.rhythmScore,11);
+  assert.ok(g.tap(1,event.target)); assert.equal(g.counts[1],1); assert.equal(g.rhythmScore,2);
   assert.ok(row.every(n=>n.done));
-  g.tap(2,event.target); assert.equal(g.counts[2],0); assert.equal(g.rhythmScore,11);
+  g.tap(2,event.target); assert.equal(g.counts[2],0); assert.equal(g.rhythmScore,2);
   const next=g.events.find(e=>e.target>event.target);
   g.update(next.target-1); assert.equal(g.notes.filter(n=>!n.done&&n.rowId===next.id).length,4);
   g.tap(1,next.target); assert.equal(g.counts[1],2);
@@ -512,4 +512,23 @@ test('continuation reveals only new choices in order and waits before enabling n
  g.update(8+plan.revealEnd);assert.equal(g.phase,'read');assert.equal(g.notes.length,0);
  g.tap(0,8+plan.revealEnd);assert.equal(g.judgments.MISS,0);
  g.update(8+plan.duration+.01);assert.equal(g.phase,'answer');
+});
+
+test('colored hits use fixed one/two points, wrong confirmation resets both combos and voids full-combo praise',()=>{
+ const g=fixture();g.changePhase('answer',0);g.combo=99;g.quizCombo=4;const wrong=(g.question.correct+1)%4;
+ hit(g,wrong,2,.12);assert.equal(g.rhythmScore,1);
+ hit(g,wrong,3);assert.equal(g.rhythmScore,3);
+ hit(g,wrong,4);assert.equal(g.rhythmScore,5);assert.equal(g.combo,0);assert.equal(g.quizCombo,0);assert.equal(g.wrongCount,1);
+ assert.equal(g.judgments.MISS,0);assert.equal(g.achievements(true).rhythm,false);
+ hit(g,g.question.correct,5);assert.equal(g.combo,1);assert.equal(g.rhythmScore,7);assert.equal(g.rhythmComboScore,0);
+ g.changePhase('outro',6);hit(g,null,8);assert.equal(g.rhythmScore,19);assert.equal(g.rhythmBaseScore,17);assert.equal(g.rhythmComboScore,2);
+ assert.equal(g.rhythmScore,g.rhythmBaseScore+g.rhythmComboScore);
+});
+test('deliberately repeating wrong color answers cannot build an unbroken rhythm streak or outscore prompt correct play',()=>{
+ const good=fixture(),bad=fixture();good.changePhase('answer',0);bad.changePhase('answer',0);
+ for(let t=2;t<=4;t++)hit(good,good.question.correct,t);
+ good.changePhase('outro',5);for(let t=6;t<18;t++)hit(good,null,t);
+ for(let t=2;t<17;t++)hit(bad,(bad.question.correct+1)%4,t);
+ assert.equal(bad.wrongCount,5);assert.equal(bad.combo,0);assert.equal(bad.maxCombo,3);assert.equal(bad.rhythmScore,30);
+ assert.ok(good.totalScore>bad.totalScore);assert.equal(good.correctCount,1);
 });

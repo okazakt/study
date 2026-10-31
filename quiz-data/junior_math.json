@@ -29,8 +29,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "3組の角が等しいだけでは、大きさまで等しいとは限らない。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "三角形の合同条件",
+    "cloze_context_reason": "（3辺）が正答の辺を示すため、条件の内訳だけ伏せる。"
   },
   {
     "id": "jr_math2_002",
@@ -62,8 +62,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "角は、等しい2辺にはさまれた角である必要がある。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "三角形の合同条件",
+    "cloze_context_reason": "（2辺と角）が正答の2組の辺を示すため、条件の内訳だけ伏せる。"
   },
   {
     "id": "jr_math2_003",
@@ -95,8 +95,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "1組の辺と、その辺の両端にある2組の角を確かめる。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "三角形の合同条件",
+    "cloze_context_reason": "（1辺と角）が回答対象の条件を示すため、条件の内訳だけ伏せる。"
   },
   {
     "id": "jr_math2_004",
@@ -128,8 +128,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "どのような形の三角形でも、内角の和は180°。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "三角形の内角の和",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_005",
@@ -161,8 +161,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "外角と隣り合う内角の和が180°であることから説明できる。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "三角形の外角の性質",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_006",
@@ -203,8 +203,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "1つの頂点から対角線を引くと、n−2個の三角形に分けられる。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "多角形の内角の和",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_007",
@@ -236,8 +236,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "辺の数にかかわらず、1周すると向きは360°変わる。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "多角形の外角の和",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_008",
@@ -269,8 +269,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "平行線の同位角は等しい。同位角が等しければ2直線は平行である。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "同位角",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_009",
@@ -302,8 +302,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "平行線の錯角は等しい。錯角が等しければ2直線は平行である。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "錯角",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_010",
@@ -335,8 +335,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "二等辺三角形の2つの底角は等しい。逆に、2つの角が等しい三角形は二等辺三角形である。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "二等辺三角形の底角の性質",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_011",
@@ -368,8 +368,8 @@
       "explanation_to_term": "基礎"
     },
     "note": "平行四辺形では対辺が等しく、対角もそれぞれ等しい。隣り合う辺は等しいとは限らない。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "平行四辺形の対辺の性質",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   },
   {
     "id": "jr_math2_012",
@@ -401,7 +401,7 @@
       "explanation_to_term": "基礎"
     },
     "note": "対角線は互いを二等分する。長さが等しいことや、垂直に交わることは一般には成り立たない。",
-    "cloze_context": "",
-    "cloze_context_reason": "本文と選択肢だけで対象・条件を特定できるため、テーマを表示しない。"
+    "cloze_context": "平行四辺形の対角線の性質",
+    "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
   }
 ]

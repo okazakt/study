@@ -1,5 +1,5 @@
 export const SCHOOLS = ['中学', '高校'];
-const subjects = { 中学: ['理科', '英語', '国語', '数学', '社会'], 高校: ['国語', '数学', '英語', '理科', '地歴・公民'] };
+const subjects = { 中学: ['国語', '英語', '数学', '理科', '社会'], 高校: ['国語', '英語', '数学', '理科', '地歴・公民'] };
 export const sectionKey = item => JSON.stringify([item.field, item.unit]);
 export function practiceTypes(subject) {
   const options = subject === '国語' ? [['kanji_write','漢字書き'],['kanji_read','漢字読み'],['idiom','熟語'],['modern','現代文法'],['classical','古文'],['kanbun','漢文']]

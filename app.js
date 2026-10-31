@@ -1,7 +1,7 @@
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.24.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.24.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.24.0';
-const VERSION = '0.24.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.25.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.25.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.25.0';
+const VERSION = '0.25.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -137,10 +137,12 @@ document.addEventListener('touchend', () => {
   if (screen === 'play') prepareTapAudio()?.catch(() => {});
 }, { passive: true });
 const show = next => {
+  const previousScreen = screen;
   if (next !== 'result') { clearTimeout(resultTimer); resultTimer = undefined; $('result-details').classList.remove('revealed'); }
   screen = next; document.body.classList.toggle('playing', next === 'play');
   document.documentElement.classList.toggle('play-locked', next === 'play');
   for (const name of ['home', 'play', 'result', 'practice-review']) $(name).hidden = name !== next;
+  if (next === 'result' && previousScreen === 'practice-review') $('result-details').hidden = false;
   window.scrollTo(0, 0);
   if (next === 'home') { if (dataReady) renderLearning(); checkForUpdate(); }
 };
@@ -575,12 +577,12 @@ function finish(completed) {
   $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
-  const rhythmBase = game.judgments.PERFECT * 10 + game.judgments.GOOD * 5;
+  const rhythmBase = game.rhythmBaseScore;
   const quizBase = game.correctCount * 50;
   const columns = [
     ['リズム', [
       ['リズム得点', game.rhythmScore.toLocaleString()], ['基本点', rhythmBase.toLocaleString()],
-      ['コンボ加算', (game.rhythmScore - rhythmBase).toLocaleString()], ['最大リズムコンボ', game.maxCombo, 'rhythmCombo'],
+      ['コンボ加算', game.rhythmComboScore.toLocaleString()], ['最大リズムコンボ', game.maxCombo, 'rhythmCombo'],
       ['PERFECT', `${game.judgments.PERFECT}回`], ['GOOD', `${game.judgments.GOOD}回`], ['MISS', `${game.judgments.MISS}回`]
     ]],
     ['問題', [

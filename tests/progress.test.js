@@ -44,9 +44,9 @@ test('history pruning retains cumulative totals, invalid histories safely reset'
  state=recordAnswer(state,q,{correct:true});assert.equal(state.events.length,10000);assert.equal(state.questions[questionKey(q)].correct,10001);
  assert.equal(normalizeHistory({version:99}).events.length,0);assert.equal(normalizeHistory({version:1,questions:{bad:{correct:-1}},events:[null,{}]}).questions.bad.correct,0);
 });
-test('audited cloze topics are hidden by default and necessary language prompts remain available',()=>{
+test('cloze themes are visible by default while explicit answer-bearing parts are removed',()=>{
  const all=['science','japanese','math','social'].flatMap(read).filter(x=>x.explanation_template);
- assert.equal(all.length,131);assert.equal(all.filter(x=>x.cloze_context).length,7);
+ assert.equal(all.length,131);assert.equal(all.filter(x=>x.cloze_context).length,131);
  for(const item of all){
   assert.equal(typeof item.cloze_context,'string');assert.ok(item.cloze_context_reason.length>0);
   for(const generated of makeBlankQuestions(item)){
@@ -56,7 +56,7 @@ test('audited cloze topics are hidden by default and necessary language prompts 
  }
  const english=read('english');assert.ok(makeSpellingQuestions(english.find(x=>x.spelling))[0].context);
  assert.ok(makePhraseQuestions(english.find(x=>x.phrase_blanks))[0].context);
- const unseen={...read('math')[0]};delete unseen.cloze_context;assert.equal(makeBlankQuestions(unseen)[0].context,'');
+ const unseen={...read('math')[0]};delete unseen.cloze_context;assert.equal(makeBlankQuestions(unseen)[0].context,unseen.term);
 });
 
 test('personal bests persist independent values, increase strictly and ignore zeros and invalid values',async()=>{
@@ -70,4 +70,11 @@ test('personal bests persist independent values, increase strictly and ignore ze
  assert.deepEqual(restored,first.best);
  assert.deepEqual(updateBests(null,{totalScore:0,rhythmCombo:0,quizCombo:0}).updated,{totalScore:false,rhythmCombo:false,quizCombo:false});
  assert.deepEqual(normalizeBests({totalScore:-1,rhythmCombo:Infinity,quizCombo:'9'}),{totalScore:0,rhythmCombo:0,quizCombo:0});
+});
+
+test('human rights topic is restored and answer-bearing theme fragments alone are generalized',()=>{
+ const rights=read('social').find(q=>q.term==='基本的人権');assert.equal(makeBlankQuestions(rights)[0].context,'基本的人権');
+ const math=read('math');for(const item of math.filter(q=>q.unit==='三角形の合同'))assert.equal(makeBlankQuestions(item)[0].context,'三角形の合同条件');
+ const past=read('japanese').find(q=>q.id==='jr_jp3_031');assert.equal(makeBlankQuestions(past)[0].context,'古文の助動詞「き」');assert.ok(!makeBlankQuestions(past)[0].context.includes('過去'));
+ const normal=read('math').find(q=>q.term==='三角形の内角の和');assert.equal(makeBlankQuestions(normal)[0].context,normal.term);
 });

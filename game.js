@@ -22,6 +22,7 @@ export function makeQuestion(item, random = Math.random) {
   return { ...item, sourceId: item.id, mode: 'explanation_to_term', answer: item.term, prompt: explanation, choices, correct: choices.indexOf(item.term), context: '', task: '次の説明にあてはまる用語を選ぼう', reviewLabel: item.term };
 }
 export function makeBlankQuestions(item, random = Math.random) {
+  const context = item.cloze_context === undefined ? item.term : item.cloze_context;
   const blanks = [...item.blanks].sort((a, b) => a.index - b.index);
   return blanks.map((blank, position) => {
     const candidates = [...new Set(blank.dummies)].filter(value => value !== blank.answer);
@@ -41,7 +42,7 @@ export function makeBlankQuestions(item, random = Math.random) {
     return { ...item, id: `${item.id}:blank:${blank.index}`, sourceId: item.id, mode: 'term_to_explanation',
       blankIndex: blank.index, blankPosition: position + 1, blankTotal: blanks.length, continuation: position > 0,
       answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
-      prompt: segments.map(s => s.text).join(''), context: item.cloze_context || '', task: item.cloze_context ? `「${item.cloze_context}」の説明を完成させよう` : '説明文を完成させよう',
+      prompt: segments.map(s => s.text).join(''), context, task: context ? `「${context}」の説明を完成させよう` : '説明文を完成させよう',
       targetLabel: `${position ? '次の' : '強調された'}？に入る語句を回答（${position + 1} / ${blanks.length}）`,
       reviewLabel: `${item.term} · ？（${position + 1} / ${blanks.length}）` };
   });
@@ -196,7 +197,7 @@ export class Game {
     });
     this.reveal = revealPlan(this.questions[0]);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
-    this.rhythmScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
+    this.rhythmScore = 0; this.rhythmBaseScore = 0; this.rhythmComboScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
     this.judgments = { PERFECT: 0, GOOD: 0, MISS: 0 }; this.wrongCount = 0;
@@ -293,7 +294,11 @@ export class Game {
     }
     const perfect = Math.abs(note.target - now) <= RULES.perfectWindow;
     this.maxCombo = Math.max(this.maxCombo, ++this.combo);
-    this.rhythmScore += (perfect ? 10 : 5) + this.combo;
+    const colored = this.phase === 'answer' && note.color !== null;
+    const base = perfect ? (colored ? 2 : 10) : (colored ? 1 : 5);
+    const bonus = colored ? 0 : this.combo;
+    this.rhythmBaseScore += base; this.rhythmComboScore += bonus;
+    this.rhythmScore += base + bonus;
     this.judge(perfect ? 'PERFECT' : 'GOOD', now);
     if (this.phase === 'answer' && note.color !== null) {
       this.counts[note.color]++;
@@ -310,7 +315,7 @@ export class Game {
         } else {
           this.quizResult = { correct: false, time: now, choice: note.color };
           this.wrongCount++;
-          this.firstTry = false; this.quizCombo = 0; this.counts = [0, 0, 0, 0];
+          this.firstTry = false; this.quizCombo = 0; this.combo = 0; this.counts = [0, 0, 0, 0];
           this.message = `もう一度！ 正解だと思う色を${this.requiredTaps}回タップ`;
         }
       }
@@ -319,7 +324,7 @@ export class Game {
   }
   achievements(completed, unfinished = false) {
     const { PERFECT, GOOD, MISS } = this.judgments;
-    const rhythm = completed && PERFECT + GOOD > 0 && MISS === 0;
+    const rhythm = completed && PERFECT + GOOD > 0 && MISS === 0 && this.wrongCount === 0;
     const quiz = completed && !unfinished && this.correctCount > 0 && this.wrongCount === 0;
     return { rhythm, quiz, double: rhythm && quiz, allPerfect: rhythm && GOOD === 0 };
   }
