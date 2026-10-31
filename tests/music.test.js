@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sessionMusic,musicCredit,seededRandom,sessionPlan,easyEvents} from '../game.js';
+import {sessionMusic,normalizeMusicSelection,musicCredit,seededRandom,sessionPlan,easyEvents} from '../game.js';
 const entry=(id,duration=100)=>({id,track:{title:id,creator:'artist',durationSeconds:duration,files:{audio:id+'.mp3'},timing:{chartToAudioOffsetMs:25}},chart:{events:[{time:1,type:'beat',bar:1,beatInBar:1}]}});
 test('random music fills the session, shuffles without repetition per bag and keeps continuous adjusted events',()=>{
  const entries=['a','b','c'].map(id=>entry(id)),first=new Set();
@@ -24,4 +24,22 @@ test('credit instructions are preserved verbatim; unspecified or blank credits s
  const track={title:'Song',creator:'Artist'};
  assert.equal(musicCredit(track),'Song / Artist');assert.equal(musicCredit({...track,creditText:'  '}),'Song / Artist');
  assert.equal(musicCredit({...track,creditText:'Song by Artist\nLicense: supplied text'}),'Song by Artist\nLicense: supplied text');
+});
+
+test('selected songs shuffle only within the saved subset, without repeat before exhausting it',()=>{
+ const entries=['a','b','c','d'].map(id=>entry(id));const first=new Set();
+ for(let seed=1;seed<=40;seed++){
+  const p=sessionMusic(entries,['b','d'],seededRandom(seed*100003),650);
+  first.add(p.tracks[0].id);
+  assert.ok(p.tracks.every(t=>['b','d'].includes(t.id)));
+  for(let i=1;i<p.tracks.length;i++)assert.notEqual(p.tracks[i-1].id,p.tracks[i].id);
+ }
+ assert.equal(first.size,2);
+ assert.deepEqual(sessionMusic(entries,['c']).tracks.map(t=>t.id),['c','c','c']);
+});
+test('saved music selection migrates legacy fixed songs and handles missing or duplicate IDs',()=>{
+ assert.deepEqual(normalizeMusicSelection('a',['a','b']),['a']);
+ assert.deepEqual(normalizeMusicSelection(['b','b','removed'],['a','b']),['b']);
+ for(const value of [null,'',[],['removed'],{},4])assert.equal(normalizeMusicSelection(value,['a','b']),null);
+ assert.ok(sessionMusic([entry('a')],['removed']).duration>=300);
 });

@@ -1,14 +1,17 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.39.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.39.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.39.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.39.0';
-const VERSION = '0.39.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.40.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.40.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.40.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.40.0';
+const VERSION = '0.40.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let session, musicContext, musicGain, musicEntries=[], tuningTracks=[], playedTracks=[];
-let fixedMusic='';
-try { fixedMusic=localStorage.getItem('study-beat-fixed-music-v1') || ''; } catch {}
+let selectedMusic=null;
+try {
+  const saved=localStorage.getItem('study-beat-music-selection-v2');
+  selectedMusic=saved===null?localStorage.getItem('study-beat-fixed-music-v1'):JSON.parse(saved);
+} catch {}
 let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
@@ -367,10 +370,23 @@ $('all-sections').addEventListener('change', () => { selection().sections = $('a
 document.querySelectorAll('[data-school]').forEach(button => button.addEventListener('click', () => setSchool(button.dataset.school)));
 $('open-learning-settings').addEventListener('click', () => $('learning-settings').showModal());
 $('close-learning-settings').addEventListener('click', () => $('learning-settings').close());
-$('music-selection').addEventListener('change',()=>{
-  fixedMusic=$('music-selection').value;
-  try { localStorage.setItem('study-beat-fixed-music-v1',fixedMusic);$('music-storage-note').hidden=true; }
+function saveMusicSelection(){
+  try { localStorage.setItem('study-beat-music-selection-v2',JSON.stringify(selectedMusic));$('music-storage-note').hidden=true; }
   catch { $('music-storage-note').hidden=false; }
+}
+function renderMusicSelection(){
+  $('music-selection').value=selectedMusic?'selected':'all';
+  $('music-list').hidden=!selectedMusic;
+  for(const input of $('music-list').querySelectorAll('input'))input.checked=!!selectedMusic?.includes(input.value);
+}
+$('music-selection').addEventListener('change',()=>{
+  selectedMusic=$('music-selection').value==='selected'?musicEntries.map(e=>e.id):null;
+  $('music-selection-note').textContent='';saveMusicSelection();renderMusicSelection();
+});
+$('music-list').addEventListener('change',event=>{
+  const chosen=[...$('music-list').querySelectorAll('input:checked')].map(input=>input.value);
+  if(!chosen.length){event.target.checked=true;$('music-selection-note').textContent='少なくとも1曲選んでください。';return;}
+  selectedMusic=chosen;$('music-selection-note').textContent='';saveMusicSelection();
 });
 $('school-setting').addEventListener('change', () => setSchool($('school-setting').value));
 const playbackTime = () => track.start + audio.currentTime;
@@ -387,9 +403,13 @@ async function load() {
     const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     musicEntries=entries;
     playlist = makePlaylist(entries); tuningTracks=playlist.tracks;
-    if(!entries.some(e=>e.id===fixedMusic))fixedMusic='';
-    for(const {id,track:song} of entries){const option=document.createElement('option');option.value=id;option.textContent=`${song.title} / ${song.creator}`;$('music-selection').append(option);}
-    $('music-selection').value=fixedMusic;
+    selectedMusic=normalizeMusicSelection(selectedMusic,entries.map(e=>e.id));
+    for(const {id,track:song} of entries){
+      const label=document.createElement('label'),input=document.createElement('input'),text=document.createElement('span');
+      input.type='checkbox';input.value=id;text.textContent=`${song.title} / ${song.creator}`;
+      label.append(input,text);$('music-list').append(label);
+    }
+    renderMusicSelection();saveMusicSelection();
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
     selectTrack(0);
     tuningTracks.forEach((song,i) => { const option = document.createElement('option'); option.value = i; option.textContent = song.title; $('tuning-track').append(option); });
@@ -406,7 +426,7 @@ async function start() {
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
   prepareTapAudio()?.catch(() => {});
   busy = true; $('start').disabled = true;
-  playlist=sessionMusic(musicEntries,fixedMusic);playedTracks=[];
+  playlist=sessionMusic(musicEntries,selectedMusic);playedTracks=[];
   cancelAnimationFrame(frame); audio.pause(); audio.loop = false; audio.playbackRate = 1; selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';

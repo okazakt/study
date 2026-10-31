@@ -179,15 +179,21 @@ export function easyEvents(events) {
     beats.add(key); return true;
   });
 }
+export function normalizeMusicSelection(value, availableIds) {
+  const ids=Array.isArray(value)?value:typeof value==='string'&&value?[value]:[];
+  const selected=[...new Set(ids.filter(id=>availableIds.includes(id)))];
+  return selected.length?selected:null;
+}
 // Build enough music for one session. Random mode uses shuffled bags, avoiding
 // immediate repeats across bags when multiple tracks are available.
-export function sessionMusic(entries, fixedId='', random=Math.random, seconds=SESSION.durationSeconds) {
+export function sessionMusic(entries, selection='', random=Math.random, seconds=SESSION.durationSeconds) {
   const valid=entries.filter(e=>Number.isFinite(e.track.durationSeconds)&&e.track.durationSeconds>0);
   if(!valid.length)return makePlaylist([]);
-  const fixed=valid.find(e=>e.id===fixedId), chosen=[];
+  const ids=normalizeMusicSelection(selection,valid.map(e=>e.id));
+  const pool=ids?valid.filter(e=>ids.includes(e.id)):valid, chosen=[];
   let duration=0;
   while(duration<seconds){
-    const bag=fixed?[fixed]:[...valid];
+    const bag=[...pool];
     for(let i=bag.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[bag[i],bag[j]]=[bag[j],bag[i]];}
     if(bag.length>1&&chosen.at(-1)?.id===bag[0].id)[bag[0],bag[1]]=[bag[1],bag[0]];
     for(const entry of bag){chosen.push(entry);duration+=entry.track.durationSeconds;if(duration>=seconds)break;}
