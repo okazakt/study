@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.32.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.32.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.32.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.32.0';
-const VERSION = '0.32.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.33.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.33.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.33.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.33.0';
+const VERSION = '0.33.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -372,10 +372,10 @@ async function start() {
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
-  questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
-  try { await audio.play(); prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
-  catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
-  finally { busy = false; refreshStart(); $('pause').disabled = false; }
+  questionKey = ''; show('play'); render(); draw();
+  try { await audio.play(); if (screen !== 'play') { audio.pause(); return; } if (document.hidden) { interruptPlay(); return; } prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); loop(); }
+  catch { if (screen === 'play') { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
+  finally { busy = false; refreshStart(); }
 }
 function tuningRate() { return Number($('tuning-rate').value); }
 function tuningBeats() { return track.events.map(event => event.time - track.start); }
@@ -760,33 +760,22 @@ document.addEventListener('keydown', event => {
   if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.code)) event.preventDefault();
   const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
   if (lane >= 0) { event.preventDefault(); tap(lane); }
-  if (event.code === 'Space') { event.preventDefault(); togglePause(); }
+  if (event.code === 'Space') event.preventDefault();
 });
-function pause() {
+function interruptPlay(reason='画面の切替によりプレイを終了しました。ここまでの回答は記録済みです。') {
   if (screen === 'tuning') { pauseTuning(); return; }
-  if (screen !== 'play') return;
-  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
-  const context = tapAudio;
-  if (context && context.state !== 'closed') context.suspend().catch(() => { if (tapAudio === context) tapAudioNeedsReset = true; });
-  $('pause').textContent = '再開'; $('pause-overlay').hidden = false;
-}
-async function togglePause() {
-  if (busy || screen !== 'play') return;
-  if (!audio.paused) { pause(); return; }
-  prepareTapAudio(true)?.catch(() => {});
-  busy = true;
-  try { await audio.play(); prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
-  catch { game.message = '再生できませんでした。再開を押して再試行してください。'; render(); }
-  finally { busy = false; }
+  if (screen === 'play') finish(false,reason);
 }
 function renderBest(element, key, records) {
   element.replaceChildren();
   const value = document.createElement('span'); value.textContent = `自己ベスト ${records.best[key].toLocaleString()}`; element.append(value);
   if (records.updated[key]) { const badge = document.createElement('b'); badge.textContent = '自己ベスト更新'; element.append(badge); }
 }
-function finish(completed) {
+function finish(completed, reason=null) {
   if (screen !== 'play') return;
-  audio.pause(); cancelAnimationFrame(frame);
+  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
+  const context = tapAudio;
+  if (context && context.state !== 'closed') context.suspend().catch(() => {});
   if (completed) game.update(playbackTime());
   const unfinished = !['intro','feedback','rhythm','outro'].includes(game.phase) ? game.question.reviewLabel : null;
   const unfinishedWrong = sessionResults.get(game.questionIndex)?.wrong || 0;
@@ -814,7 +803,7 @@ function finish(completed) {
     const card = document.createElement('div'), heading = document.createElement('h2'), text = document.createElement('p');
     heading.textContent = title; text.textContent = detail; card.append(heading, text); $('result-awards').append(card);
   }
-  $('result-reason').textContent = completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。';
+  $('result-reason').textContent = reason || (completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。');
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
   const rhythmBase = game.rhythmBaseScore;
@@ -898,12 +887,10 @@ $('practice-next').addEventListener('click', () => {
   reviewIndex++; reviewSolved = false; reviewWrong = 0; renderPractice(); window.scrollTo(0,0);
 });
 $('practice-back').addEventListener('click', () => show('result'));
-let resumeAfterHelp = false;
-$('help').addEventListener('click', () => { resumeAfterHelp = !audio.paused; pause(); $('controls-help').showModal(); });
+$('help').addEventListener('click', () => { if (screen === 'home') $('controls-help').showModal(); });
 $('close-help').addEventListener('click', () => $('controls-help').close());
-$('controls-help').addEventListener('close', () => { if (resumeAfterHelp) { resumeAfterHelp = false; togglePause(); } });
 $('start').addEventListener('click', start); $('again').addEventListener('click', start);
-$('back').addEventListener('click', () => show('home')); $('pause').addEventListener('click', togglePause);
+$('back').addEventListener('click', () => show('home'));
 $('quit').addEventListener('click', () => finish(false));
 audio.addEventListener('ended', async () => {
   if (screen !== 'play' || busy) return;
@@ -912,22 +899,25 @@ audio.addEventListener('ended', async () => {
   selectTrack(trackIndex + 1);
   game.update(playbackTime()); render(); draw();
   try {
-    if (document.hidden || $('controls-help').open) { pause(); return; }
+    if (document.hidden) { interruptPlay(); return; }
     await audio.play();
     prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     if (screen !== 'play') { audio.pause(); return; }
-    if (document.hidden || $('controls-help').open) { pause(); return; }
-    $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop();
+    if (document.hidden) { interruptPlay(); return; }
+    loop();
   } catch {
-    pause(); game.message = '次の曲を再生できませんでした。再開を押してください。'; render();
+    if (screen === 'play') interruptPlay('次の曲を再生できなかったため終了しました。ここまでの回答は記録済みです。');
   } finally { busy = false; }
 });
-audio.addEventListener('error', () => { if (screen === 'tuning') { pauseTuning(); tuningMessage='音楽を読み込めません。接続を確認してください。';renderTuning(); } if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
+audio.addEventListener('error', () => { if (screen === 'tuning') { pauseTuning(); tuningMessage='音楽を読み込めません。接続を確認してください。';renderTuning(); } if (screen === 'play') interruptPlay('音声を読み込めなかったため終了しました。ここまでの回答は記録済みです。'); });
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) { tapAudioNeedsReset = true; pause(); }
+  if (document.hidden) { tapAudioNeedsReset = true; interruptPlay(); }
 });
-window.addEventListener('pagehide', () => { tapAudioNeedsReset = true; pause(); });
-window.addEventListener('blur', () => { tapAudioNeedsReset = true; });
+window.addEventListener('pagehide', () => { tapAudioNeedsReset = true; interruptPlay(); });
+window.addEventListener('blur', () => { tapAudioNeedsReset = true; if (screen === 'play') interruptPlay(); });
+for (const type of ['pause','waiting']) audio.addEventListener(type, () => {
+  if (screen === 'play' && !busy && !audio.ended) interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
+});
 window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } else if (screen === 'tuning') renderTuning(); });
 let registration, updateAvailable = false;
 let updateCheck;
