@@ -114,6 +114,6 @@ html.play-locked{height:100%;overflow:hidden;overscroll-behavior:none}body.playi
 
 .result-music{margin:28px 0;padding:18px 20px;border:1px solid #ffffff20;border-radius:10px;background:var(--panel)}.result-music ul{list-style:none;padding:0;margin:0}.result-music li+li{margin-top:18px}.result-music strong{color:#eef2fa}.result-music p{white-space:pre-wrap;overflow-wrap:anywhere;color:var(--muted);margin:6px 0 0;line-height:1.7;font-size:13px}
 
-.answer-bonus-detail{display:block;color:var(--muted);font-size:11px;line-height:1.6;margin-top:8px}
+
 
 .music-list{margin:16px 0;border:1px solid #ffffff30;border-radius:8px;padding:12px;min-width:0}.music-list label{display:flex!important;align-items:center;gap:12px;padding:12px 4px;line-height:1.6}.music-list input{width:20px;height:20px;flex-shrink:0;margin:0;accent-color:var(--accent)}.music-list span{overflow-wrap:anywhere;min-width:0}#music-selection-note{color:#ffda79}

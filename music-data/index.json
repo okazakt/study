@@ -39,6 +39,11 @@
         "chart",
         "midi"
       ]
+    },
+    "playback": {
+      "startSeconds": 0,
+      "endSeconds": 230.95,
+      "analysis": "ffmpeg silencedetect -50dB, 0.15s: trailing silence starts 230.894s; 56ms margin retained"
     }
   },
   "0002": {
@@ -71,6 +76,11 @@
         "audioBeatAlignmentIndependentlyVerified": false,
         "midiJsonAlignmentVerified": false
       }
+    },
+    "playback": {
+      "startSeconds": 0.7,
+      "endSeconds": 135.59,
+      "analysis": "ffmpeg silencedetect -50dB, 0.15s: leading silence ends 0.751587s, trailing silence starts 135.528844s; about 50-60ms margins retained"
     }
   }
 }

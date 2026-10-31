@@ -1,12 +1,13 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.40.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.40.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.40.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.40.0';
-const VERSION = '0.40.0';
+import { MusicPlayer } from './music-player.js?v=0.41.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.41.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.41.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.41.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.41.0';
+const VERSION = '0.41.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
-let session, musicContext, musicGain, musicEntries=[], tuningTracks=[], playedTracks=[];
+let session, musicContext, musicGain, musicPlayer, musicEntries=[], tuningTracks=[], playedTracks=[];
 let selectedMusic=null;
 try {
   const saved=localStorage.getItem('study-beat-music-selection-v2');
@@ -81,7 +82,7 @@ function prepareMusicAudio() {
     source.connect(gain);gain.connect(context.destination);
     musicContext=context;musicGain=gain;
     context.addEventListener('statechange',()=>{
-      if(screen==='play' && !busy && !audio.paused && context.state!=='running')interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
+      if(screen==='play' && !busy && (musicPlayer?.running || !audio.paused) && context.state!=='running')interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
     });
   }
   return musicContext.state!=='running'?musicContext.resume():Promise.resolve();
@@ -166,7 +167,7 @@ function verifyTapAudioClock() {
   if (!context || !tapSoundEnabled) return;
   const before = context.currentTime;
   tapAudioProbe = setTimeout(() => {
-    if (tapAudio !== context || document.hidden || !['play','tuning'].includes(screen) || audio.paused) return;
+    if (tapAudio !== context || document.hidden || !['play','tuning'].includes(screen) || !musicIsPlaying()) return;
     // Some mobile contexts report running even though their audio clock is stuck.
     if (context.state !== 'running' || context.currentTime <= before + .001) tapAudioNeedsReset = true;
   }, 150);
@@ -227,7 +228,7 @@ function playTapSound(preview = false, judgment = 'GOOD') {
   const play = () => {
     if (!tapSoundEnabled || !tapVolume || tapAudio !== requestedContext) return;
     if (tapAudio?.state !== 'running') { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); return; }
-    if (!preview && (performance.now() - requested > 100 || !['play','tuning'].includes(screen) || audio.paused)) return;
+    if (!preview && (performance.now() - requested > 100 || !['play','tuning'].includes(screen) || !musicIsPlaying())) return;
     try { emitTapSound(judgment); if (preview) soundStatus('試聴しました'); }
     catch { soundStatus('タップ音を再生できません。もう一度試聴してください'); }
   };
@@ -389,7 +390,8 @@ $('music-list').addEventListener('change',event=>{
   selectedMusic=chosen;$('music-selection-note').textContent='';saveMusicSelection();
 });
 $('school-setting').addEventListener('change', () => setSchool($('school-setting').value));
-const playbackTime = () => track.start + audio.currentTime;
+const musicIsPlaying=()=>screen==='play'&&musicPlayer ? musicPlayer.running && musicContext.state==='running' : !audio.paused;
+const playbackTime = () => screen==='play'&&musicPlayer ? musicPlayer.time : track.start + audio.currentTime-(track.mediaStart||0);
 function selectTrack(index, tuning=false) {
   trackIndex = index; track = (tuning ? tuningTracks : playlist.tracks)[index];
   audio.src = `./music-data/${track.files.audio}`;
@@ -402,7 +404,7 @@ async function load() {
     questions = [...quiz, ...english, ...japanese, ...math, ...social];
     const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     musicEntries=entries;
-    playlist = makePlaylist(entries); tuningTracks=playlist.tracks;
+    playlist = makePlaylist(entries); tuningTracks=makePlaylist(entries,{trim:false}).tracks;
     selectedMusic=normalizeMusicSelection(selectedMusic,entries.map(e=>e.id));
     for(const {id,track:song} of entries){
       const label=document.createElement('label'),input=document.createElement('input'),text=document.createElement('span');
@@ -426,7 +428,8 @@ async function start() {
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
   prepareTapAudio()?.catch(() => {});
   busy = true; $('start').disabled = true;
-  playlist=sessionMusic(musicEntries,selectedMusic);playedTracks=[];
+  musicPlayer?.stop();if(musicPlayer)musicPlayer.stoppedTime=0;
+  playlist=sessionMusic(musicEntries,selectedMusic,Math.random,SESSION.durationSeconds,{trim:!!(window.AudioContext||window.webkitAudioContext)});playedTracks=[];
   cancelAnimationFrame(frame); audio.pause(); audio.loop = false; audio.playbackRate = 1; selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
@@ -448,8 +451,21 @@ async function start() {
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
   questionKey = ''; show('play'); render(); draw();
-  try { await Promise.all([prepareMusicAudio(),audio.play()]); if (screen !== 'play') { audio.pause(); return; } if (document.hidden) { interruptPlay(); return; } playedTracks.push(track); prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); loop(); }
-  catch { if (screen === 'play') { audio.pause();suspendMusicAudio();show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
+  try {
+    $('instruction').textContent='楽曲を準備しています…';
+    await prepareMusicAudio();
+    if(musicContext){
+      musicPlayer ||= new MusicPlayer(musicContext,musicGain);
+      await musicPlayer.prepare(playlist);
+      if(screen!=='play')return;
+      if(document.hidden){interruptPlay();return;}
+      musicPlayer.start(playlist,session.endTime);
+    }else await audio.play();
+    if (screen !== 'play') { musicPlayer?.stop();audio.pause(); return; }
+    if (document.hidden) { interruptPlay(); return; }
+    playedTracks.push(track);prepareTapAudio()?.catch(() => {});verifyTapAudioClock();loop();
+  }
+  catch { if (screen === 'play') { musicPlayer?.stop();audio.pause();suspendMusicAudio();show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
   finally { busy = false; refreshStart(); }
 }
 function tuningRate() { return Number($('tuning-rate').value); }
@@ -564,7 +580,7 @@ async function playTuning() {
   finally { if (generation === tuningGeneration) { tuningStarting = false; $('tuning-play').disabled = false; renderTuning(); } }
 }
 function pauseTuning() {
-  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe); suspendMusicAudio();
+  musicPlayer?.stop();audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe); suspendMusicAudio();
   const context = tapAudio;
   if (context && context.state !== 'closed') context.suspend().catch(() => { if (tapAudio === context) tapAudioNeedsReset = true; });
   tuningMessage = '一時停止中。再開を押すと続けられます。'; renderTuning();
@@ -779,12 +795,18 @@ function draw() {
 function loop() {
   if (!game || screen !== 'play') return;
   const now=playbackTime();
+  if(musicPlayer){
+    while(trackIndex+1<playlist.tracks.length && now>=playlist.tracks[trackIndex+1].start){
+      track=playlist.tracks[++trackIndex];playedTracks.push(track);
+      $('track-title').textContent=track.title;$('track-credit').textContent=`${trackIndex+1} / ${playlist.tracks.length} · ${track.creator}`;
+    }
+  }
   game.update(Math.min(now,session.endTime));setMusicGain(sessionGain(now,session));render();draw();
   if(now>=session.endTime){finish(true);return;}
-  if (!audio.paused) frame = requestAnimationFrame(loop);
+  if (musicIsPlaying()) frame = requestAnimationFrame(loop);
 }
 function tap(lane) {
-  if (screen !== 'play' || audio.paused || busy || lane >= game.laneCount) return;
+  if (screen !== 'play' || !musicIsPlaying() || busy || lane >= game.laneCount) return;
   if(playbackTime()>=session.endTime){finish(true);return;}
   game.update(playbackTime());
   const q = game.question, first = game.firstTry, previousCount = game.correctCount, previousWrong = game.wrongCount, occurrence = game.questionIndex;
@@ -851,7 +873,7 @@ function renderBest(element, key, records) {
 }
 function finish(completed, reason=null) {
   if (screen !== 'play') return;
-  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe); suspendMusicAudio();
+  musicPlayer?.stop();audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe); suspendMusicAudio();
   const context = tapAudio;
   if (context && context.state !== 'closed') context.suspend().catch(() => {});
   if (completed) game.update(Math.min(playbackTime(),session.endTime));
@@ -898,13 +920,13 @@ function finish(completed, reason=null) {
     ['リズム', [
       ['最大リズムコンボ',game.maxCombo,'rhythmCombo'],
       ['PERFECT',`${game.judgments.PERFECT}回`],['GOOD',`${game.judgments.GOOD}回`],
-      ['白ノーツ得点',score.netWhite.toLocaleString()],['コンボボーナス',score.whiteBonus.toLocaleString()],
+      ['白ノーツ得点',score.netWhite.toLocaleString()],['コンボボーナス',(score.whiteBonus+score.colorBonus).toLocaleString()],
       ['ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`]
     ]],
     ['学習', [
       ['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],
       ['一発回答数',`${game.firstCount}回`],['誤答が発生した回答数',`${wrongAnswers}回`],
-      ['正答得点',score.answer.toLocaleString()],['カラー得点',score.netColor.toLocaleString()],['コンボボーナス',score.colorBonus.toLocaleString()],
+      ['正答得点',score.baseAnswer.toLocaleString()],['正解コンボボーナス',score.answerBonus.toLocaleString()],['カラー得点',score.netColor.toLocaleString()],
       ['お手つき回数',`${game.wrongCount}回`]
     ]]
   ];
@@ -915,10 +937,6 @@ function finish(completed, reason=null) {
     for (const [label, value, bestKey] of entries) {
       const div = document.createElement('div'), strong = document.createElement('strong');
       div.textContent = label; strong.textContent = value; div.append(strong);
-      if(label==='正答得点'){
-        const detail=document.createElement('small');detail.className='answer-bonus-detail';
-        detail.textContent=`うち正解コンボボーナス ${score.answerBonus.toLocaleString()}`;div.append(detail);
-      }
       if (bestKey) { const badge = document.createElement('span'); badge.className = 'personal-best'; renderBest(badge, bestKey, records); div.append(badge); }
       column.append(div);
     }
@@ -985,18 +1003,17 @@ $('start').addEventListener('click', start); $('again').addEventListener('click'
 $('back').addEventListener('click', () => show('home'));
 $('quit').addEventListener('click', () => finish(false));
 audio.addEventListener('ended', async () => {
-  if (screen !== 'play' || busy) return;
+  if (screen !== 'play' || busy || musicPlayer) return;
   if (playbackTime()>=session.endTime || trackIndex + 1 >= playlist.tracks.length) { finish(true); return; }
   busy = true; cancelAnimationFrame(frame);
   selectTrack(trackIndex + 1);
-  game.update(playbackTime()); render(); draw();
   try {
     if (document.hidden) { interruptPlay(); return; }
     await Promise.all([prepareMusicAudio(),audio.play()]);
     prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     if (screen !== 'play') { audio.pause(); return; }
     if (document.hidden) { interruptPlay(); return; }
-    playedTracks.push(track); loop();
+    playedTracks.push(track);game.update(playbackTime());render();draw();loop();
   } catch {
     if (screen === 'play') interruptPlay('次の曲を再生できなかったため終了しました。ここまでの回答は記録済みです。');
   } finally { busy = false; }
@@ -1008,7 +1025,7 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pagehide', () => { tapAudioNeedsReset = true; interruptPlay(); });
 window.addEventListener('blur', () => { tapAudioNeedsReset = true; if (screen === 'play') interruptPlay(); });
 for (const type of ['pause','waiting']) audio.addEventListener(type, () => {
-  if (screen === 'play' && !busy && !audio.ended) interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
+  if (screen === 'play' && !musicPlayer && !busy && !audio.ended) interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
 });
 window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } else if (screen === 'tuning') renderTuning(); });
 let registration, updateAvailable = false;

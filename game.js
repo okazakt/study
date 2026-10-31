@@ -179,6 +179,12 @@ export function easyEvents(events) {
     beats.add(key); return true;
   });
 }
+export function trackPlaybackBounds(track, trim=true){
+  const duration=track.durationSeconds;
+  const start=trim?Math.max(0,Math.min(duration,Number(track.playback?.startSeconds)||0)):0;
+  const end=trim?Math.max(start,Math.min(duration,Number(track.playback?.endSeconds)||duration)):duration;
+  return end>start?{start,end,duration:end-start}:{start:0,end:duration,duration};
+}
 export function normalizeMusicSelection(value, availableIds) {
   const ids=Array.isArray(value)?value:typeof value==='string'&&value?[value]:[];
   const selected=[...new Set(ids.filter(id=>availableIds.includes(id)))];
@@ -186,7 +192,7 @@ export function normalizeMusicSelection(value, availableIds) {
 }
 // Build enough music for one session. Random mode uses shuffled bags, avoiding
 // immediate repeats across bags when multiple tracks are available.
-export function sessionMusic(entries, selection='', random=Math.random, seconds=SESSION.durationSeconds) {
+export function sessionMusic(entries, selection='', random=Math.random, seconds=SESSION.durationSeconds, options={}) {
   const valid=entries.filter(e=>Number.isFinite(e.track.durationSeconds)&&e.track.durationSeconds>0);
   if(!valid.length)return makePlaylist([]);
   const ids=normalizeMusicSelection(selection,valid.map(e=>e.id));
@@ -196,21 +202,24 @@ export function sessionMusic(entries, selection='', random=Math.random, seconds=
     const bag=[...pool];
     for(let i=bag.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[bag[i],bag[j]]=[bag[j],bag[i]];}
     if(bag.length>1&&chosen.at(-1)?.id===bag[0].id)[bag[0],bag[1]]=[bag[1],bag[0]];
-    for(const entry of bag){chosen.push(entry);duration+=entry.track.durationSeconds;if(duration>=seconds)break;}
+    for(const entry of bag){chosen.push(entry);duration+=trackPlaybackBounds(entry.track,options.trim!==false).duration;if(duration>=seconds)break;}
   }
-  return makePlaylist(chosen);
+  return makePlaylist(chosen,options);
 }
 export function musicCredit(track) {
   return typeof track.creditText==='string'&&track.creditText.trim() ? track.creditText : `${track.title} / ${track.creator}`;
 }
 
-export function makePlaylist(entries) {
+export function makePlaylist(entries,{trim=true}={}) {
   let duration = 0;
   const tracks = entries.map(({ id, track, chart }, occurrence) => {
     const start = duration;
-    duration += track.durationSeconds;
-    return { id, ...track, start, events: easyEvents(chart.events).map(event => ({
-      ...event, time: start + event.time + (track.timing.chartToAudioOffsetMs || 0) / 1000,
+    const bounds=trackPlaybackBounds(track,trim);
+    duration += bounds.duration;
+    return { id, ...track, start, durationSeconds:bounds.duration,mediaStart:bounds.start,mediaEnd:bounds.end,
+      events: easyEvents(chart.events).map(event=>({...event,time:event.time+(track.timing.chartToAudioOffsetMs || 0)/1000}))
+      .filter(event=>event.time>=bounds.start && event.time<bounds.end).map(event => ({
+      ...event, time: start + event.time - bounds.start,
       bar: `${id}:${occurrence}:${event.bar}`
     })) };
   });

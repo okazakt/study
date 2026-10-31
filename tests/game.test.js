@@ -387,7 +387,7 @@ test('second track reads all main beats without interpreting offbeats as primary
 });
 test('playlist preserves both charts, applies per-song and device offsets once, and retains distinct bars',()=>{
   const p=makePlaylist([{id:'0001',track:{...track,timing:{chartToAudioOffsetMs:25}},chart},
-    {id:'0002',track:{...secondTrack,timing:{chartToAudioOffsetMs:-35}},chart:secondChart}]);
+    {id:'0002',track:{...secondTrack,timing:{chartToAudioOffsetMs:-35}},chart:secondChart}],{trim:false});
   assert.equal(p.tracks[1].start,track.durationSeconds);assert.equal(p.duration,track.durationSeconds+secondTrack.durationSeconds);
   assert.equal(p.events.length,661);assert.equal(easyEvents(p.events).length,661);
   assert.equal(p.events[0].time,easyEvents(chart.events)[0].time+.025);
@@ -397,15 +397,15 @@ test('playlist preserves both charts, applies per-song and device offsets once, 
 });
 test('continuous song clock keeps answer progress and reading animation through a track boundary',()=>{
   const p=makePlaylist([{id:'0001',track,chart},{id:'0002',track:secondTrack,chart:secondChart}]);
-  const g=new Game(questions,p.events);g.changePhase('answer',track.durationSeconds-1);
+  const g=new Game(questions,p.events);g.changePhase('answer',p.tracks[1].start-1);
   g.rhythmScore=500;g.quizScore=1000;g.combo=4;g.quizCombo=1;g.counts=[1,2,0,0];g.firstTry=false;
-  g.cursor=g.events.findIndex(e=>e.target>track.durationSeconds);
-  g.update(track.durationSeconds-.01);g.update(p.tracks[1].start+.01);
+  g.cursor=g.events.findIndex(e=>e.target>p.tracks[1].start);
+  g.update(p.tracks[1].start-.01);g.update(p.tracks[1].start+.01);
   assert.equal(g.phase,'answer');assert.deepEqual(g.counts,[1,2,0,0]);assert.equal(g.rhythmScore,500);
   assert.equal(g.quizScore,1000);assert.equal(g.combo,4);assert.equal(g.quizCombo,1);assert.equal(g.firstTry,false);
-  g.changePhase('read',track.durationSeconds-1);const plan=g.reveal;
+  g.changePhase('read',p.tracks[1].start-1);const plan=g.reveal;
   g.update(p.tracks[1].start+.01);assert.equal(g.phase,'read');assert.equal(g.reveal,plan);
-  assert.equal(g.phaseStart,track.durationSeconds-1);
+  assert.equal(g.phaseStart,p.tracks[1].start-1);
 });
 
 test('all idioms ask whole words with the other words visible; take care of covers all three positions',()=>{
