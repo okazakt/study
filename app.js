@@ -1,12 +1,12 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.30.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.30.2';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.30.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.30.2';
-const VERSION = '0.30.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.31.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.31.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.31.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.31.0';
+const VERSION = '0.31.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
-let questionKey = '';
+let questionKey = '', hitEffects = [];
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
 try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) || 'null')); } catch {}
@@ -366,7 +366,7 @@ async function start() {
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
   const accept = question => matchesPracticeQuestion(question,practiceType);
-  history = []; sessionResults = new Map(); sessionId = crypto.randomUUID();
+  history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = [];
   const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory, Math.random, () => sessionResults.values());
   game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, accept, picker);
   const course = catalog.find(c => c.id === selection()?.id);
@@ -411,6 +411,40 @@ function drawGhost(context, x, line, width, height, color) {
   context.beginPath();context.roundRect(x,line-height/2,width,height,5);context.fill();
   context.globalAlpha=.48;context.lineWidth=1.3;
   context.stroke();context.restore();
+}
+function drawHitFeedback(context, line, laneWidth, now) {
+  hitEffects = hitEffects.filter(effect => now-effect.time < (effect.judgment==='PERFECT' ? .46 : .28));
+  for(const effect of hitEffects){
+    const perfect=effect.judgment==='PERFECT', duration=perfect ? .46 : .28;
+    const progress=Math.max(0,(now-effect.time)/duration), fade=(1-progress)**2;
+    const x=(effect.lane+.5)*laneWidth, radius=Math.min(52,laneWidth*.58);
+    const color=perfect?'#ffe6a1':'#b8e7ff';
+    context.save();
+    context.beginPath();context.rect(effect.lane*laneWidth+2,Math.max(0,line-52),laneWidth-4,76);context.clip();
+    const glow=context.createRadialGradient(x,line,0,x,line,radius);
+    glow.addColorStop(0,perfect?'#ffe6a170':'#b8e7ff48');glow.addColorStop(1,'#ffffff00');
+    context.globalAlpha=fade*(reducedMotion.matches ? .5 : 1);context.fillStyle=glow;
+    context.fillRect(x-radius,line-radius,radius*2,radius*2);
+    context.strokeStyle=color;context.shadowColor=color;context.shadowBlur=perfect?12:6;
+    context.globalAlpha=fade*(perfect ? .85 : .55);context.lineWidth=perfect?1.8:1;
+    const height=Math.min(20,Math.max(10,line*.22));
+    context.beginPath();context.roundRect(effect.lane*laneWidth+8,line-height/2,laneWidth-16,height,5);context.stroke();
+    if(!reducedMotion.matches){
+      const count=perfect?8:3;
+      for(let i=0;i<count;i++){
+        const direction=(i/(count-1)-.5)*2;
+        const px=x+direction*Math.min(laneWidth*.39,30)*( .35+.65*progress);
+        const py=line-4-(1-Math.abs(direction)*.35)*(6+(perfect?32:19)*progress);
+        const size=perfect?2.5+(i%2):1.8;
+        context.globalAlpha=fade*(perfect ? .95 : .65);context.fillStyle=color;context.beginPath();
+        if(perfect && i%2===0){
+          context.moveTo(px,py-size*1.5);context.lineTo(px,py+size*1.5);
+          context.moveTo(px-size,py);context.lineTo(px+size,py);context.stroke();
+        }else{context.arc(px,py,size*(1-.35*progress),0,Math.PI*2);context.fill();}
+      }
+    }
+    context.restore();
+  }
 }
 function drawTuning() {
   const canvas = $('tuning-canvas'), ctx = canvas.getContext('2d'), rect = canvas.getBoundingClientRect(), dpr = devicePixelRatio || 1;
@@ -658,7 +692,7 @@ function draw() {
     ctx.shadowColor = ctx.fillStyle; ctx.shadowBlur = 12;
     ctx.beginPath(); ctx.roundRect(x, y - noteHeight / 2, w, noteHeight, 5); ctx.fill(); ctx.shadowBlur = 0;
   }
-
+  drawHitFeedback(ctx,line,laneWidth,game.time);
 }
 function loop() {
   if (!game || screen !== 'play') return;
@@ -671,6 +705,10 @@ function tap(lane) {
   const q = game.question, first = game.firstTry, previousCount = game.correctCount, previousWrong = game.wrongCount, occurrence = game.questionIndex;
   const shouldSound = ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
   const note = game.tap(lane, playbackTime());
+  if (note && ['GOOD','PERFECT'].includes(game.lastJudgment)) {
+    hitEffects.push({lane,judgment:game.lastJudgment,time:game.time});
+    if(hitEffects.length>24)hitEffects.shift();
+  }
   if (shouldSound) playTapSound(false, note ? game.lastJudgment : 'MISS');
   if (game.correctCount > previousCount || game.wrongCount > previousWrong) {
     const result = sessionResults.get(occurrence) || {question:structuredClone(q), wrong:0, correct:false};
