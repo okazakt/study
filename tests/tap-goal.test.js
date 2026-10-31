@@ -38,12 +38,12 @@ test('outro distributes only the remaining count and uses offbeats to reach exac
  assert.ok(playWhite(g,290)>0);assert.equal(g.successfulTaps,120);assert.equal(g.notes.length,0);
  const capped=create();capped.judgments.PERFECT=120;capped.changePhase('outro',250);assert.equal(capped.whiteTargets.size,0);playWhite(capped,250);assert.equal(capped.successfulTaps,120);
 });
-test('missed white notes are compensated using future slots without removing in-flight notes',()=>{
+test('missed white notes consume the quota without adding replacements or removing in-flight notes',()=>{
  const g=create();g.judgments.PERFECT=100;g.changePhase('outro',280);
  const first=g.events.find(e=>g.whiteTargets.has(e.id));
  g.update(first.target-.05);const other=g.notes.filter(n=>n.id!==first.id).map(n=>n.id);assert.ok(other.length>0);
- g.update(first.target+.17);assert.equal(g.judgments.MISS,1);for(const id of other)assert.ok(g.notes.some(n=>n.id===id));
- playWhite(g,first.target+.17);assert.equal(g.successfulTaps,120);
+ const planned=[...g.whiteTargets];g.update(first.target+.17);assert.equal(g.judgments.MISS,1);assert.deepEqual([...g.whiteTargets],planned);for(const id of other)assert.ok(g.notes.some(n=>n.id===id));
+ playWhite(g,first.target+.17);assert.equal(g.successfulTaps,119);assert.equal(g.countedTaps,120);
 });
 test('quiz admission reserves enough final white slots and the remaining answer budget',()=>{
  const g=create();
@@ -60,9 +60,9 @@ test('an ongoing multi-hole unit continues even if retries have exceeded the tap
 test('all five subjects can finish at exactly 120 successful taps without timing misses',()=>{
  for(const subject of ['japanese','english','math','science','social'])for(let seed=1;seed<=5;seed++)assert.equal(simulateSession(read('quiz-data/junior_'+subject+'.json'),seed).taps,120,subject+seed);
 });
-test('early missed taps are compensated while long late answers may leave no adjustment time',()=>{
+test('missed notes count toward 120 while delayed answers may leave no adjustment time',()=>{
  const items=read('quiz-data/junior_math.json');
- assert.equal(simulateSession(items,1,0,{missFirst:3}).taps,120);
+ const missed=simulateSession(items,1,0,{missFirst:3});assert.equal(missed.taps,117);assert.equal(missed.counted,120);assert.equal(missed.missed,3);
  const slow=simulateSession(items,1,0,{answerDelay:1000});assert.ok(slow.taps<120);assert.equal(slow.answers,0);
 });
 
@@ -80,4 +80,11 @@ test('retries can exceed the goal rather than cutting off an active answer',()=>
  assert.equal(g.successfulTaps,122);assert.equal(g.wrongCount,1);assert.equal(g.phase,'answer');
  for(let i=0;i<3;i++){const now=294+i*.5;g.notes=[{target:now,lane:g.question.correct,color:g.question.correct}];g.tap(g.question.correct,now);}
  assert.equal(g.correctCount,1);assert.equal(g.successfulTaps,125);assert.equal(g.phase,'feedback');
+});
+
+test('a missed four-color row consumes exactly one opportunity and empty presses consume none',()=>{
+ const g=create();g.changePhase('answer',10);g.events=[];g.cursor=0;
+ g.notes=[0,1,2,3].map(lane=>({target:12,lane,color:lane,rowId:1}));
+ g.update(12.17);assert.equal(g.countedTaps,1);assert.equal(g.missedNotes,1);assert.equal(g.judgments.MISS,1);assert.equal(g.colorJudgments,1);
+ g.tap(0,13);g.tap(1,13);assert.equal(g.countedTaps,1);assert.equal(g.emptyMisses,2);assert.equal(g.judgments.MISS,3);
 });

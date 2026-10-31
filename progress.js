@@ -81,6 +81,7 @@ export function missedQuestions(results) {
 }
 
 export const BEST_KEY = 'study-beat-bests-v1';
+export const SCORE_BEST_KEY = 'study-beat-score-best-v2';
 export function normalizeBests(raw) {
   return {totalScore:count(raw?.totalScore),rhythmCombo:count(raw?.rhythmCombo),quizCombo:count(raw?.quizCombo)};
 }

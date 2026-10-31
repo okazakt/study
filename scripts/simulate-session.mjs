@@ -34,7 +34,7 @@ export function simulateSession(items,seed,retryEvery=0,{missFirst=0,answerDelay
  }
  if(!retryEvery && !answerDelay)assert.ok(!['read','answer','feedback'].includes(game.phase),game.phase);
  assert.equal(color,rows*4);
- return {objects:white+color,white,color,colorRows:rows,rows:white+rows,taps,answers:game.correctCount};
+ return {objects:white+color,white,color,colorRows:rows,rows:white+rows,taps,counted:game.countedTaps,missed:game.missedNotes,answers:game.correctCount};
 }
 const subjects=[['国語','japanese'],['英語','english'],['数学','math'],['理科','science'],['社会','social']];
 if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href)for(const retryEvery of [0,5]){
@@ -42,8 +42,8 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href)for(
  for(const [subject,file] of subjects){
   const results=Array.from({length:100},(_,i)=>simulateSession(read('quiz-data/junior_'+file+'.json'),i+1,retryEvery));totals.push(...results);
   const avg=Object.fromEntries(Object.keys(results[0]).map(key=>[key,Math.round(results.reduce((n,r)=>n+r[key],0)/results.length*10)/10]));
-  courses.push({subject,...avg,atGoal:results.filter(r=>r.taps===SESSION.tapGoal).length,minTaps:Math.min(...results.map(r=>r.taps)),maxTaps:Math.max(...results.map(r=>r.taps)),minObjects:Math.min(...results.map(r=>r.objects)),maxObjects:Math.max(...results.map(r=>r.objects))});
+  courses.push({subject,...avg,atGoal:results.filter(r=>r.counted===SESSION.tapGoal).length,minTaps:Math.min(...results.map(r=>r.taps)),maxTaps:Math.max(...results.map(r=>r.taps)),minObjects:Math.min(...results.map(r=>r.objects)),maxObjects:Math.max(...results.map(r=>r.objects))});
  }
  const overall=Object.fromEntries(Object.keys(totals[0]).map(key=>[key,Math.round(totals.reduce((n,r)=>n+r[key],0)/totals.length*10)/10]));
- console.log(JSON.stringify({tapGoal:SESSION.tapGoal,model:retryEvery?'every fifth answer retries once':'all first try, immediate perfect taps',durationSeconds:plan.endTime,runs:totals.length,atGoal:totals.filter(r=>r.taps===SESSION.tapGoal).length,minTaps:Math.min(...totals.map(r=>r.taps)),maxTaps:Math.max(...totals.map(r=>r.taps)),courses,overall},null,2));
+ console.log(JSON.stringify({tapGoal:SESSION.tapGoal,model:retryEvery?'every fifth answer retries once':'all first try, immediate perfect taps',durationSeconds:plan.endTime,runs:totals.length,atGoal:totals.filter(r=>r.counted===SESSION.tapGoal).length,minTaps:Math.min(...totals.map(r=>r.taps)),maxTaps:Math.max(...totals.map(r=>r.taps)),courses,overall},null,2));
 }

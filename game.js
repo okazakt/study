@@ -11,6 +11,19 @@ export function sessionGain(now, plan) {
   if(plan.fadeStart>=plan.endTime)return 1;
   return Math.max(0,Math.min(1,(plan.endTime-now)/(plan.endTime-plan.fadeStart)));
 }
+export const SCORE = Object.freeze({white:5000,color:1000,answer:4000,answerRates:Object.freeze([1,.8,.5,0])});
+export function seededRandom(seed){return()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);}
+export function perfectReference(game,onCorrect=()=>{}){
+  for(let tick=0;tick<=game.endTime*60;tick++){
+    const now=tick/60;game.update(now);
+    const note=game.notes.find(n=>!n.done && n.target<=now && Math.abs(n.target-now)<.08 && (n.color===null || n.lane===game.question.correct));
+    if(!note)continue;
+    const q=game.question,index=game.questionIndex,before=game.correctCount;
+    game.tap(note.lane,now);
+    if(game.correctCount>before)onCorrect(q,index,now);
+  }
+  return {questions:game.correctCount,white:game.whiteJudgments,color:game.colorEligibleJudgments};
+}
 // Positive errors are late; the judgment center matches the corrected target.
 export const timingError = (target, now) => now - (target + RULES.judgmentOffsetSeconds);
 export const COLORS = [
@@ -224,6 +237,9 @@ export class Game {
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
     this.judgments = { PERFECT: 0, GOOD: 0, MISS: 0 }; this.wrongCount = 0;
+    this.missedNotes=0;this.emptyMisses=0;this.whiteJudgments=0;this.colorJudgments=0;
+    this.whiteUnits=0;this.colorUnits=0;this.answerUnits=0;this.colorRowsUsed=0;this.stageWrongCount=0;
+    this.colorEligibleJudgments=0;this.startedQuestions=new Set();this.colorCapacityStarted=0;this.scorePlan=null;
     this.quizResult = null;
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
     if(this.tapGoal)this.planWhites(0,Math.min(RULES.introSeconds,this.endTime));
@@ -233,6 +249,34 @@ export class Game {
     return Number.isInteger(value) && value > 0 ? value : RULES.tapsToAnswer;
   }
   get successfulTaps() { return this.judgments.PERFECT+this.judgments.GOOD; }
+  get countedTaps(){return this.successfulTaps+this.missedNotes;}
+  // The UI supplies an ideal-run reference; standalone callers keep legacy scoring.
+  get scoreBreakdown(){
+    if(!this.scorePlan)return null;
+    const whiteDen=Math.max(1,this.scorePlan.white,this.whiteJudgments);
+    const colorDen=Math.max(1,this.scorePlan.color,this.colorCapacityStarted);
+    const answerDen=Math.max(1,this.scorePlan.questions,this.startedQuestions.size);
+    const white=Math.floor(SCORE.white*Math.min(1,this.whiteUnits/whiteDen)+1e-8);
+    const color=Math.floor(SCORE.color*Math.min(1,this.colorUnits/colorDen)+1e-8);
+    const answer=Math.floor(SCORE.answer*Math.min(1,this.answerUnits/answerDen)+1e-8);
+    const rhythm=Math.floor((white+color)*this.countedTaps/Math.max(1,this.countedTaps+this.emptyMisses)+1e-8);
+    return {white,color,answer,penalty:white+color-rhythm,rhythm,total:rhythm+answer};
+  }
+  refreshScore(){
+    const s=this.scoreBreakdown;if(!s)return;
+    this.rhythmScore=s.rhythm;this.rhythmBaseScore=s.white+s.color;this.rhythmComboScore=0;this.quizScore=s.answer;
+  }
+  resolveNote(note,label){
+    const quality=label==='PERFECT'?1:label==='GOOD' ? .5 : 0;
+    if(label==='MISS')this.missedNotes++;
+    if(note.color===null){this.whiteJudgments++;this.whiteUnits+=quality;}
+    else{
+      this.colorJudgments++;
+      if(this.colorRowsUsed<this.requiredTaps){this.colorUnits+=quality;this.colorEligibleJudgments++;}
+      this.colorRowsUsed++;
+    }
+    this.refreshScore();
+  }
   pendingWhites() { return this.notes.filter(n=>!n.done && n.color===null).length; }
   whiteSlots(now,end=this.endTime){
     return this.events.slice(this.cursor).filter(e=>e.target+1e-9>=now+RULES.travelSeconds && e.target+RULES.judgmentOffsetSeconds+RULES.goodWindow+RULES.judgmentSeconds<=end+1e-9);
@@ -248,9 +292,9 @@ export class Game {
   }
   planWhites(now,end){
     this.whitePhaseEnd=end;
-    const remaining=Math.max(0,this.tapGoal-this.successfulTaps-this.pendingWhites());
+    const remaining=Math.max(0,this.tapGoal-this.countedTaps-this.pendingWhites());
     const desired=this.phase==='outro'?this.tapGoal:Math.round(this.tapGoal*Math.min(end,this.endTime)/this.endTime);
-    const needed=Math.min(remaining,Math.max(this.phase==='outro'?0:1,desired-this.successfulTaps-this.pendingWhites()));
+    const needed=Math.min(remaining,Math.max(this.phase==='outro'?0:1,desired-this.countedTaps-this.pendingWhites()));
     const slots=this.whiteSlots(now,end),main=slots.filter(e=>!e.half),pool=main.length>=needed?main:slots;
     const count=Math.min(needed,pool.length);
     this.whiteTargets=new Set(Array.from({length:count},(_,i)=>pool[Math.floor((i+1)*pool.length/count)-1].id));
@@ -279,11 +323,14 @@ export class Game {
     if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)){
       const completion=this.earliestCompletion(now),taps=this.unitTaps();
       if(completion+.25>Math.min(this.endTime,this.questionEndTime) || this.tapGoal &&
-        (this.successfulTaps+taps>this.tapGoal || this.whiteSlots(completion).length<this.tapGoal-this.successfulTaps-taps))phase='outro';
+        (this.countedTaps+taps>this.tapGoal || this.whiteSlots(completion).length<this.tapGoal-this.countedTaps-taps))phase='outro';
     }
     this.phase = phase; this.phaseStart = now;
     if (phase === 'outro') { this.quizResult = null; this.message = ''; this.counts = [0, 0, 0, 0]; }
-    if (phase === 'read') { this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
+    if (phase === 'read') {
+      this.colorRowsUsed=0;this.stageWrongCount=0;
+      if(!this.startedQuestions.has(this.questionIndex)){this.startedQuestions.add(this.questionIndex);this.colorCapacityStarted+=this.requiredTaps;}
+      this.refreshScore();this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
     if (phase === 'rhythm') {
       this.quizResult = null; this.message = '';
       const targets = this.events.slice(this.cursor).filter(e => !e.half && e.target >= now + RULES.travelSeconds).slice(0, RULES.rhythmNotes);
@@ -293,7 +340,7 @@ export class Game {
     if(this.tapGoal && ['intro','rhythm','outro'].includes(phase)){
       const end=phase==='intro'?Math.min(RULES.introSeconds,this.endTime):phase==='outro'?this.endTime:Math.min(this.rhythmEnd,this.endTime);
       this.planWhites(now,end);
-      if(phase==='rhythm' && this.whiteSlots(end).length<this.tapGoal-this.successfulTaps-this.pendingWhites()-this.whiteTargets.size){this.changePhase('outro',now);return;}
+      if(phase==='rhythm' && this.whiteSlots(end).length<this.tapGoal-this.countedTaps-this.pendingWhites()-this.whiteTargets.size){this.changePhase('outro',now);return;}
     }
     if (phase === 'answer') this.message = `答えの色を${this.requiredTaps}回タップ`;
   }
@@ -306,7 +353,7 @@ export class Game {
       if (!['intro', 'answer', 'rhythm', 'outro'].includes(this.phase)) continue;
       if(this.phase==='answer' && event.half)continue;
       if(this.tapGoal && this.phase!=='answer'){
-        if(!this.whiteTargets.has(event.id) || this.successfulTaps+this.pendingWhites()>=this.tapGoal)continue;
+        if(!this.whiteTargets.has(event.id) || this.countedTaps+this.pendingWhites()>=this.tapGoal)continue;
       }else if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
@@ -316,19 +363,17 @@ export class Game {
         COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
       } else this.notes.push({ ...event, color: null, done: false });
     }
-    let whiteMiss=false;
     for (const note of this.notes) {
       if (!note.done && timingError(note.target, now) > RULES.goodWindow + 1e-9) {
-        note.done = true;if(note.color===null)whiteMiss=true;
+        note.done = true;
         // An unanswered four-color row is one miss; unchosen siblings are not misses.
         if (note.rowId !== undefined) {
           for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
         }
-        this.combo = 0; this.judge('MISS', now);
+        this.combo = 0; this.judge('MISS', now);this.resolveNote(note,'MISS');
       }
     }
     this.notes = this.notes.filter(note => !note.done);
-    if(whiteMiss && this.tapGoal && ['intro','rhythm','outro'].includes(this.phase))this.planWhites(now,this.whitePhaseEnd);
     const settled = !this.notes.length && now - this.judgmentTime >= RULES.judgmentSeconds;
     if (this.phase === 'intro' && now >= RULES.introSeconds && settled) this.changePhase('read', now);
     else if (this.phase === 'feedback' && now - this.phaseStart >= RULES.feedbackSeconds && settled) {
@@ -348,7 +393,7 @@ export class Game {
     if (this.phase === 'read' || this.phase === 'feedback') return null;
     const note = this.notes.filter(n => !n.done && n.lane === lane && Math.abs(timingError(n.target, now)) <= RULES.goodWindow + 1e-9)
       .sort((a, b) => Math.abs(timingError(a.target, now)) - Math.abs(timingError(b.target, now)))[0];
-    if (!note) { this.combo = 0; this.judge('MISS', now); return null; }
+    if (!note) { this.combo = 0; this.judge('MISS', now);this.emptyMisses++;this.refreshScore();return null; }
     note.done = true;
     if (note.rowId !== undefined) {
       for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
@@ -358,9 +403,8 @@ export class Game {
     const colored = this.phase === 'answer' && note.color !== null;
     const base = perfect ? (colored ? 2 : 10) : (colored ? 1 : 5);
     const bonus = colored ? 0 : this.combo;
-    this.rhythmBaseScore += base; this.rhythmComboScore += bonus;
-    this.rhythmScore += base + bonus;
-    this.judge(perfect ? 'PERFECT' : 'GOOD', now);
+    if(!this.scorePlan){this.rhythmBaseScore += base; this.rhythmComboScore += bonus;this.rhythmScore += base + bonus;}
+    this.judge(perfect ? 'PERFECT' : 'GOOD', now);this.resolveNote(note,perfect?'PERFECT':'GOOD');
     if (this.phase === 'answer' && note.color !== null) {
       this.counts[note.color]++;
       if (this.counts[note.color] >= this.requiredTaps) {
@@ -368,14 +412,16 @@ export class Game {
           this.quizResult = { correct: true, time: now, choice: note.color };
           this.correctCount++;
           if (this.firstTry) { this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
-          const points = 50 + (this.firstTry ? this.quizCombo * 10 : 0);
-          this.quizScore += points;
+          let points;
+          if(this.scorePlan){
+            const before=this.quizScore;this.answerUnits+=SCORE.answerRates[Math.min(this.stageWrongCount,3)];this.refreshScore();points=this.quizScore-before;
+          }else{points=50+(this.firstTry?this.quizCombo*10:0);this.quizScore+=points;}
           this.message = `${this.firstTry ? '一発正解！' : '正解！'} +${points} pt`;
           this.notes = [];
           this.changePhase('feedback', now);
         } else {
           this.quizResult = { correct: false, time: now, choice: note.color };
-          this.wrongCount++;
+          this.wrongCount++;this.stageWrongCount++;
           this.firstTry = false; this.quizCombo = 0; this.combo = 0; this.counts = [0, 0, 0, 0];
           this.message = `もう一度！ 正解だと思う色を${this.requiredTaps}回タップ`;
         }

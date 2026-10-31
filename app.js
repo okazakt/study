@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.36.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.36.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain, SESSION } from './game.js?v=0.36.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.36.0';
-const VERSION = '0.36.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.37.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.37.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.37.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.37.0';
+const VERSION = '0.37.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -10,7 +10,7 @@ let session, musicContext, musicGain;
 let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
-try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) || 'null')); } catch {}
+try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) || 'null'));personalBests.totalScore=Number(localStorage.getItem(SCORE_BEST_KEY)) || 0; } catch {}
 let reviewQuestions = [], reviewIndex = 0, reviewSolved = false, reviewWrong = 0;
 try {
   const stored=localStorage.getItem(HISTORY_KEY), raw=JSON.parse(stored || 'null');
@@ -396,9 +396,18 @@ async function start() {
   const practiceType = selection()?.practiceType || 'all';
   const accept = question => matchesPracticeQuestion(question,practiceType);
   history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = []; ghostPressTimes.fill(-Infinity);
-  const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory, Math.random, () => sessionResults.values());
   session=sessionPlan(playlist.duration);setMusicGain(1);
-  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, session.endTime, accept, picker, session.fadeStart, SESSION.tapGoal);
+  const seed=crypto.getRandomValues(new Uint32Array(1))[0],epoch=Date.now();
+  const createGame=(getHistory,getResults)=>{
+    const random=seededRandom(seed),picker=createAdaptivePicker(makeQuestionQueue(filtered,random,accept),getHistory,random,getResults);
+    return new Game(filtered,playlist.events,offsetMs/1000,random,session.endTime,accept,picker,session.fadeStart,SESSION.tapGoal);
+  };
+  let referenceHistory=structuredClone(learningHistory);const referenceResults=new Map();
+  const reference=perfectReference(createGame(()=>referenceHistory,()=>referenceResults.values()),(q,index,time)=>{
+    referenceHistory=recordAnswer(referenceHistory,q,{correct:true,chosen:q.answer,time:epoch+time*1000,attempt:'reference:'+index});
+    referenceResults.set(index,{question:q,correct:true,wrong:0});
+  });
+  game=createGame(()=>learningHistory,()=>sessionResults.values());game.scorePlan=reference;game.refreshScore();
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
@@ -642,7 +651,7 @@ function positionQuestion(elapsed) {
 function render() {
   $('total-score').textContent = game.totalScore.toLocaleString();
   $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${formatTime(session.endTime)}`;
-  $('tap-progress').textContent = `成功タップ ${game.successfulTaps} / ${game.tapGoal}回`;
+  $('tap-progress').textContent = `判定ノーツ ${game.countedTaps} / ${game.tapGoal}回`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
@@ -818,7 +827,7 @@ function finish(completed, reason=null) {
   clearTimeout(resultTimer); $('result-details').hidden = true; $('result-details').classList.remove('revealed');
   const records = updateBests(personalBests, {totalScore:game.totalScore, rhythmCombo:game.maxCombo, quizCombo:game.maxQuizCombo});
   personalBests = records.best;
-  try { localStorage.setItem(BEST_KEY, JSON.stringify(personalBests)); }
+  try { const legacy=normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY)||'null'));localStorage.setItem(BEST_KEY,JSON.stringify({...personalBests,totalScore:legacy.totalScore}));localStorage.setItem(SCORE_BEST_KEY,String(personalBests.totalScore)); }
   catch { $('history-storage-note').hidden = false; }
   show('result');
   renderBest($('result-score-best'), 'totalScore', records);
@@ -840,19 +849,19 @@ function finish(completed, reason=null) {
   $('result-reason').textContent = reason || (completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。');
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
-  $('result-taps').textContent = `成功タップ ${game.successfulTaps} / ${game.tapGoal}回`;
-  const rhythmBase = game.rhythmBaseScore;
-  const quizBase = game.correctCount * 50;
+  $('result-taps').textContent = `判定ノーツ ${game.countedTaps} / ${game.tapGoal}回`;
+  const score=game.scoreBreakdown;
   const columns = [
-    ['リズム', [
-      ['リズム得点', game.rhythmScore.toLocaleString()], ['基本点', rhythmBase.toLocaleString()],
-      ['コンボ加算', game.rhythmComboScore.toLocaleString()], ['最大リズムコンボ', game.maxCombo, 'rhythmCombo'],
-      ['PERFECT', `${game.judgments.PERFECT}回`], ['GOOD', `${game.judgments.GOOD}回`], ['MISS', `${game.judgments.MISS}回`]
+    ['白ノーツ・リズム', [
+      ['白ノーツ得点（満点5,000）',score.white.toLocaleString()],['空振り減点',`−${score.penalty}`],
+      ['最大リズムコンボ',game.maxCombo,'rhythmCombo'],['PERFECT',`${game.judgments.PERFECT}回`],
+      ['GOOD',`${game.judgments.GOOD}回`],['ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`],['判定済みノーツ',`${game.countedTaps}回`]
     ]],
     ['問題', [
-      ['正解得点', game.quizScore.toLocaleString()], ['基本点', quizBase.toLocaleString()],
-      ['コンボ加算', (game.quizScore - quizBase).toLocaleString()], ['最大一発正解コンボ', game.maxQuizCombo, 'quizCombo'],
-      ['正答回数', `${game.correctCount}回`], ['一発正解', `${game.firstCount}回`], ['お手付き回数', `${game.wrongCount}回`]
+      ['問題得点（満点5,000）',(score.color+score.answer).toLocaleString()],['カラー得点（満点1,000）',score.color.toLocaleString()],
+      ['正答得点（満点4,000）',score.answer.toLocaleString()],['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],
+      ['正答回数',`${game.correctCount}回`],['一発正解',`${game.firstCount}回`],['お手付き回数',`${game.wrongCount}回`],
+      ['一発正解時の基準問題数',`${game.scorePlan.questions}問`]
     ]]
   ];
   for (const [title, entries] of columns) {
