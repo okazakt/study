@@ -179,14 +179,33 @@ export function easyEvents(events) {
     beats.add(key); return true;
   });
 }
+// Build enough music for one session. Random mode uses shuffled bags, avoiding
+// immediate repeats across bags when multiple tracks are available.
+export function sessionMusic(entries, fixedId='', random=Math.random, seconds=SESSION.durationSeconds) {
+  const valid=entries.filter(e=>Number.isFinite(e.track.durationSeconds)&&e.track.durationSeconds>0);
+  if(!valid.length)return makePlaylist([]);
+  const fixed=valid.find(e=>e.id===fixedId), chosen=[];
+  let duration=0;
+  while(duration<seconds){
+    const bag=fixed?[fixed]:[...valid];
+    for(let i=bag.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[bag[i],bag[j]]=[bag[j],bag[i]];}
+    if(bag.length>1&&chosen.at(-1)?.id===bag[0].id)[bag[0],bag[1]]=[bag[1],bag[0]];
+    for(const entry of bag){chosen.push(entry);duration+=entry.track.durationSeconds;if(duration>=seconds)break;}
+  }
+  return makePlaylist(chosen);
+}
+export function musicCredit(track) {
+  return typeof track.creditText==='string'&&track.creditText.trim() ? track.creditText : `${track.title} / ${track.creator}`;
+}
+
 export function makePlaylist(entries) {
   let duration = 0;
-  const tracks = entries.map(({ id, track, chart }) => {
+  const tracks = entries.map(({ id, track, chart }, occurrence) => {
     const start = duration;
     duration += track.durationSeconds;
     return { id, ...track, start, events: easyEvents(chart.events).map(event => ({
       ...event, time: start + event.time + (track.timing.chartToAudioOffsetMs || 0) / 1000,
-      bar: `${id}:${event.bar}`
+      bar: `${id}:${occurrence}:${event.bar}`
     })) };
   });
   return { tracks, duration, events: tracks.flatMap(track => track.events) };
@@ -238,6 +257,7 @@ export class Game {
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
     this.judgments = { PERFECT: 0, GOOD: 0, MISS: 0 }; this.wrongCount = 0;
     this.missedNotes=0;this.emptyMisses=0;this.whiteJudgments=0;this.colorJudgments=0;
+    this.whiteComboBonus=0;this.colorComboBonus=0;this.answerComboBonus=0;
     this.whiteUnits=0;this.colorUnits=0;this.answerUnits=0;this.colorRowsUsed=0;this.stageWrongCount=0;
     this.colorEligibleJudgments=0;this.startedQuestions=new Set();this.colorCapacityStarted=0;this.scorePlan=null;
     this.quizResult = null;
@@ -262,11 +282,13 @@ export class Game {
     const rhythm=Math.floor((white+color)*this.countedTaps/Math.max(1,this.countedTaps+this.emptyMisses)+1e-8);
     const netWhite=Math.floor(white*this.countedTaps/Math.max(1,this.countedTaps+this.emptyMisses)+1e-8);
     const netColor=rhythm-netWhite;
-    return {white,color,netWhite,netColor,answer,penalty:white+color-rhythm,rhythm,total:rhythm+answer};
+    const whiteBonus=this.whiteComboBonus,colorBonus=this.colorComboBonus,answerBonus=this.answerComboBonus;
+    return {white,color,netWhite,netColor,baseAnswer:answer,answer:answer+answerBonus,whiteBonus,colorBonus,answerBonus,
+      penalty:white+color-rhythm,rhythm:rhythm+whiteBonus+colorBonus,total:rhythm+whiteBonus+colorBonus+answer+answerBonus};
   }
   refreshScore(){
     const s=this.scoreBreakdown;if(!s)return;
-    this.rhythmScore=s.rhythm;this.rhythmBaseScore=s.white+s.color;this.rhythmComboScore=0;this.quizScore=s.answer;
+    this.rhythmScore=s.rhythm;this.rhythmBaseScore=s.white+s.color;this.rhythmComboScore=s.whiteBonus+s.colorBonus;this.quizScore=s.answer;
   }
   resolveNote(note,label){
     const quality=label==='PERFECT'?1:label==='GOOD' ? .5 : 0;
@@ -406,6 +428,10 @@ export class Game {
     const base = perfect ? (colored ? 2 : 10) : (colored ? 1 : 5);
     const bonus = colored ? 0 : this.combo;
     if(!this.scorePlan){this.rhythmBaseScore += base; this.rhythmComboScore += bonus;this.rhythmScore += base + bonus;}
+    if(this.scorePlan){
+      if(note.color===null)this.whiteComboBonus+=this.combo;
+      else if(this.colorRowsUsed<this.requiredTaps)this.colorComboBonus+=this.combo;
+    }
     this.judge(perfect ? 'PERFECT' : 'GOOD', now);this.resolveNote(note,perfect?'PERFECT':'GOOD');
     if (this.phase === 'answer' && note.color !== null) {
       this.counts[note.color]++;
@@ -414,11 +440,12 @@ export class Game {
           this.quizResult = { correct: true, time: now, choice: note.color };
           this.correctCount++;
           if (this.firstTry) { this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
-          let points;
           if(this.scorePlan){
-            const before=this.quizScore;this.answerUnits+=SCORE.answerRates[Math.min(this.stageWrongCount,3)];this.refreshScore();points=this.quizScore-before;
-          }else{points=50+(this.firstTry?this.quizCombo*10:0);this.quizScore+=points;}
-          this.message = `${this.firstTry ? '一発正解！' : '正解！'} +${points} pt`;
+            this.answerUnits+=SCORE.answerRates[Math.min(this.stageWrongCount,3)];
+            if(this.firstTry)this.answerComboBonus+=this.quizCombo*10;
+            this.refreshScore();
+          }else{this.quizScore+=50+(this.firstTry?this.quizCombo*10:0);}
+          this.message = this.firstTry ? '一発正解！' : '正解！';
           this.notes = [];
           this.changePhase('feedback', now);
         } else {

@@ -1,12 +1,14 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.38.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.38.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.38.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.38.0';
-const VERSION = '0.38.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.39.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.39.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.39.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.39.0';
+const VERSION = '0.39.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
-let session, musicContext, musicGain;
+let session, musicContext, musicGain, musicEntries=[], tuningTracks=[], playedTracks=[];
+let fixedMusic='';
+try { fixedMusic=localStorage.getItem('study-beat-fixed-music-v1') || ''; } catch {}
 let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
@@ -365,10 +367,15 @@ $('all-sections').addEventListener('change', () => { selection().sections = $('a
 document.querySelectorAll('[data-school]').forEach(button => button.addEventListener('click', () => setSchool(button.dataset.school)));
 $('open-learning-settings').addEventListener('click', () => $('learning-settings').showModal());
 $('close-learning-settings').addEventListener('click', () => $('learning-settings').close());
+$('music-selection').addEventListener('change',()=>{
+  fixedMusic=$('music-selection').value;
+  try { localStorage.setItem('study-beat-fixed-music-v1',fixedMusic);$('music-storage-note').hidden=true; }
+  catch { $('music-storage-note').hidden=false; }
+});
 $('school-setting').addEventListener('change', () => setSchool($('school-setting').value));
 const playbackTime = () => track.start + audio.currentTime;
-function selectTrack(index) {
-  trackIndex = index; track = playlist.tracks[index];
+function selectTrack(index, tuning=false) {
+  trackIndex = index; track = (tuning ? tuningTracks : playlist.tracks)[index];
   audio.src = `./music-data/${track.files.audio}`;
   $('track-title').textContent = track.title;
   $('track-credit').textContent = `${index + 1} / ${playlist.tracks.length} · ${track.creator}`;
@@ -377,11 +384,15 @@ async function load() {
   try {
     const [index, quiz, english, japanese, math, social] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json')]);
     questions = [...quiz, ...english, ...japanese, ...math, ...social];
-    const entries = await Promise.all(['0001', '0002'].map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
-    playlist = makePlaylist(entries);
+    const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
+    musicEntries=entries;
+    playlist = makePlaylist(entries); tuningTracks=playlist.tracks;
+    if(!entries.some(e=>e.id===fixedMusic))fixedMusic='';
+    for(const {id,track:song} of entries){const option=document.createElement('option');option.value=id;option.textContent=`${song.title} / ${song.creator}`;$('music-selection').append(option);}
+    $('music-selection').value=fixedMusic;
     if (!questions.length || !playlist.events.length) throw new Error('データが空です');
     selectTrack(0);
-    playlist.tracks.forEach((song,i) => { const option = document.createElement('option'); option.value = i; option.textContent = song.title; $('tuning-track').append(option); });
+    tuningTracks.forEach((song,i) => { const option = document.createElement('option'); option.value = i; option.textContent = song.title; $('tuning-track').append(option); });
     $('open-tuning').disabled = !outputConfirmed;
     catalogQuestions = makeQuestionQueue(questions, () => .5);
     catalog = buildCatalog(questions); preferences = normalizePreferences(savedLearning, catalog);
@@ -395,6 +406,7 @@ async function start() {
   const filtered = selectedQuestions(); if (!filtered.length) { refreshStart(); return; }
   prepareTapAudio()?.catch(() => {});
   busy = true; $('start').disabled = true;
+  playlist=sessionMusic(musicEntries,fixedMusic);playedTracks=[];
   cancelAnimationFrame(frame); audio.pause(); audio.loop = false; audio.playbackRate = 1; selectTrack(0); audio.currentTime = 0;
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
@@ -416,7 +428,7 @@ async function start() {
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
   questionKey = ''; show('play'); render(); draw();
-  try { await Promise.all([prepareMusicAudio(),audio.play()]); if (screen !== 'play') { audio.pause(); return; } if (document.hidden) { interruptPlay(); return; } prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); loop(); }
+  try { await Promise.all([prepareMusicAudio(),audio.play()]); if (screen !== 'play') { audio.pause(); return; } if (document.hidden) { interruptPlay(); return; } playedTracks.push(track); prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); loop(); }
   catch { if (screen === 'play') { audio.pause();suspendMusicAudio();show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
   finally { busy = false; refreshStart(); }
 }
@@ -424,7 +436,7 @@ function tuningRate() { return Number($('tuning-rate').value); }
 function tuningBeats() { return track.events.map(event => event.time - track.start); }
 function resetTuning(initialMs = effectiveOffset(timingSettings)) {
   tuningGeneration++; tuningStarting = false; audio.pause(); cancelAnimationFrame(frame);
-  selectTrack(Number($('tuning-track').value)); audio.currentTime = 0; audio.loop = true; audio.playbackRate = tuningRate();
+  selectTrack(Number($('tuning-track').value),true); audio.currentTime = 0; audio.loop = true; audio.playbackRate = tuningRate();
   audio.preservesPitch = true;setMusicGain(1);
   tuningPattern = calibrationPattern(tuningBeats()); tuningPressTime = -Infinity;
   tuningSession = new TimingCalibrator(initialMs,true); tuningConsumed.clear(); tuningRound = 0; tuningLastTime = 0; tuningFeedback = ''; tuningMessage = 'ノーツに合わせてタップしてください。休みの間は押さず、次のノーツを待ちましょう。';
@@ -551,7 +563,7 @@ function tuningTap() {
 }
 $('open-tuning').addEventListener('click', () => {
   if (!playlist || !outputConfirmed) return;
-  audio.pause(); cancelAnimationFrame(frame); $('tuning-track').value = trackIndex; $('tuning-rate').value = '1'; show('tuning'); resetTuning();
+  audio.pause(); cancelAnimationFrame(frame); $('tuning-track').value = Math.max(0,tuningTracks.findIndex(song=>song.id===track?.id)); $('tuning-rate').value = '1'; show('tuning'); resetTuning();
 });
 $('tuning-play').addEventListener('click',playTuning);
 for (const id of ['tuning-rate','tuning-track']) $(id).addEventListener('change',()=>resetTuning());
@@ -655,7 +667,6 @@ function positionQuestion(elapsed) {
 function render() {
   $('total-score').textContent = game.totalScore.toLocaleString();
   $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${formatTime(session.endTime)}`;
-  $('tap-progress').textContent = `判定ノーツ ${game.countedTaps} / ${game.tapGoal}回`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
@@ -851,6 +862,14 @@ function finish(completed, reason=null) {
     heading.textContent = title; text.textContent = detail; card.append(heading, text); $('result-awards').append(card);
   }
   $('result-reason').textContent = reason || (completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。');
+  $('result-music-list').replaceChildren();
+  const seenMusic=new Set();
+  for(const song of playedTracks){
+    if(seenMusic.has(song.id))continue;seenMusic.add(song.id);
+    const item=document.createElement('li'),title=document.createElement('strong'),credit=document.createElement('p');
+    title.textContent=song.title;credit.textContent=musicCredit(song);item.append(title,credit);$('result-music-list').append(item);
+  }
+  $('result-music').hidden=!seenMusic.size;
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
   const score=game.scoreBreakdown;
@@ -859,13 +878,13 @@ function finish(completed, reason=null) {
     ['リズム', [
       ['最大リズムコンボ',game.maxCombo,'rhythmCombo'],
       ['PERFECT',`${game.judgments.PERFECT}回`],['GOOD',`${game.judgments.GOOD}回`],
-      ['白ノーツ得点',score.netWhite.toLocaleString()],
+      ['白ノーツ得点',score.netWhite.toLocaleString()],['コンボボーナス',score.whiteBonus.toLocaleString()],
       ['ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`]
     ]],
     ['学習', [
       ['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],
       ['一発回答数',`${game.firstCount}回`],['誤答が発生した回答数',`${wrongAnswers}回`],
-      ['正答得点',score.answer.toLocaleString()],['カラー得点',score.netColor.toLocaleString()],
+      ['正答得点',score.answer.toLocaleString()],['カラー得点',score.netColor.toLocaleString()],['コンボボーナス',score.colorBonus.toLocaleString()],
       ['お手つき回数',`${game.wrongCount}回`]
     ]]
   ];
@@ -876,6 +895,10 @@ function finish(completed, reason=null) {
     for (const [label, value, bestKey] of entries) {
       const div = document.createElement('div'), strong = document.createElement('strong');
       div.textContent = label; strong.textContent = value; div.append(strong);
+      if(label==='正答得点'){
+        const detail=document.createElement('small');detail.className='answer-bonus-detail';
+        detail.textContent=`うち正解コンボボーナス ${score.answerBonus.toLocaleString()}`;div.append(detail);
+      }
       if (bestKey) { const badge = document.createElement('span'); badge.className = 'personal-best'; renderBest(badge, bestKey, records); div.append(badge); }
       column.append(div);
     }
@@ -953,7 +976,7 @@ audio.addEventListener('ended', async () => {
     prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     if (screen !== 'play') { audio.pause(); return; }
     if (document.hidden) { interruptPlay(); return; }
-    loop();
+    playedTracks.push(track); loop();
   } catch {
     if (screen === 'play') interruptPlay('次の曲を再生できなかったため終了しました。ここまでの回答は記録済みです。');
   } finally { busy = false; }
