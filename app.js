@@ -1,12 +1,12 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.31.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.31.1';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.31.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.31.1';
-const VERSION = '0.31.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.32.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.32.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.32.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.32.0';
+const VERSION = '0.32.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
-let questionKey = '', hitEffects = [];
+let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
 try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) || 'null')); } catch {}
@@ -366,7 +366,7 @@ async function start() {
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
   const accept = question => matchesPracticeQuestion(question,practiceType);
-  history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = [];
+  history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = []; ghostPressTimes.fill(-Infinity);
   const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory, Math.random, () => sessionResults.values());
   game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, accept, picker);
   const course = catalog.find(c => c.id === selection()?.id);
@@ -383,7 +383,7 @@ function resetTuning(initialMs = effectiveOffset(timingSettings)) {
   tuningGeneration++; tuningStarting = false; audio.pause(); cancelAnimationFrame(frame);
   selectTrack(Number($('tuning-track').value)); audio.currentTime = 0; audio.loop = true; audio.playbackRate = tuningRate();
   audio.preservesPitch = true;
-  tuningPattern = calibrationPattern(tuningBeats());
+  tuningPattern = calibrationPattern(tuningBeats()); tuningPressTime = -Infinity;
   tuningSession = new TimingCalibrator(initialMs,true); tuningConsumed.clear(); tuningRound = 0; tuningLastTime = 0; tuningFeedback = ''; tuningMessage = 'ノーツに合わせてタップしてください。休みの間は押さず、次のノーツを待ちましょう。';
   $('tuning-play').disabled = false; renderTuning();
 }
@@ -404,11 +404,16 @@ function renderTuning() {
   drawTuning();
 }
 // A translucent receiver stays centered exactly on the judgment line.
-function drawGhost(context, x, line, width, height, color) {
+function pressAmount(pressedAt, now, rate=1) {
+  const elapsed=(now-pressedAt)/rate;
+  return !reducedMotion.matches && elapsed>=0 && elapsed<.16 ? (1-elapsed/.16)**2 : 0;
+}
+function drawGhost(context, x, line, width, height, color, press=0) {
   context.save();
   context.fillStyle=color; context.strokeStyle=color;
   context.globalAlpha=.13;
-  context.beginPath();context.roundRect(x,line-height/2,width,height,5);context.fill();
+  const w=width*(1+.1*press), h=height*(1+.25*press);
+  context.beginPath();context.roundRect(x+(width-w)/2,line-h/2,w,h,5);context.fill();
   context.globalAlpha=.48;context.lineWidth=1.3;
   context.stroke();context.restore();
 }
@@ -454,7 +459,7 @@ function drawTuning() {
   ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,rect.width,rect.height);
   const line = rect.height-28, now = audio.currentTime, rate = tuningRate();
   ctx.fillStyle = '#a8f07d18'; ctx.fillRect(0,line-10,rect.width,20);ctx.strokeStyle='#a8f07d';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(0,line);ctx.lineTo(rect.width,line);ctx.stroke();
-  drawGhost(ctx,rect.width*.18,line,rect.width*.64,14,'#e5edf7');
+  drawGhost(ctx,rect.width*.18,line,rect.width*.64,14,'#e5edf7',pressAmount(tuningPressTime,now,rate));
   for (const {base:beat,anchor} of tuningPattern) {
     const target = beat + tuningSession.appliedMs/1000*rate, remaining = target-now;
     if (remaining>2.4*rate || remaining<-.4*rate) continue;
@@ -464,7 +469,7 @@ function drawTuning() {
 }
 function tuningLoop() {
   if (screen !== 'tuning') return;
-  if (audio.currentTime < tuningLastTime-1) { tuningRound++;tuningConsumed.clear(); }
+  if (audio.currentTime < tuningLastTime-1) { tuningRound++;tuningConsumed.clear();tuningPressTime=-Infinity; }
   tuningLastTime = audio.currentTime; renderTuning();
   if (!audio.paused) frame = requestAnimationFrame(tuningLoop);
 }
@@ -492,7 +497,7 @@ function pauseTuning() {
 function tuningTap() {
   if (screen !== 'tuning' || audio.paused || tuningStarting) return;
   const now = audio.currentTime, match = matchCalibrationBeat(tuningBeats(),now,tuningRate(),tuningSession.appliedMs,tuningConsumed,tuningRound,tuningPattern);
-  tuningFeedbackAt = now;
+  tuningFeedbackAt = now; tuningPressTime = now;
   playTapSound();
   if (!match) { tuningFeedback = '準備中・休み（計測対象外）'; renderTuning(); return; }
   tuningConsumed.add(match.id);
@@ -682,7 +687,7 @@ function draw() {
   }
   ctx.fillStyle = '#a8f07d10'; ctx.fillRect(0, line - 13, width, 26);
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
-  for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'?COLORS[lane].value:'#e5edf7');
+  for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'?COLORS[lane].value:'#e5edf7',pressAmount(ghostPressTimes[lane],game.time));
   for (const note of game.notes) {
     if (note.done) continue;
     const noteHeight = Math.min(20, Math.max(10, line * 0.22));
@@ -706,6 +711,7 @@ function tap(lane) {
   game.update(playbackTime());
   const q = game.question, first = game.firstTry, previousCount = game.correctCount, previousWrong = game.wrongCount, occurrence = game.questionIndex;
   const shouldSound = ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
+  ghostPressTimes[lane] = game.time;
   const note = game.tap(lane, playbackTime());
   if (note && ['GOOD','PERFECT'].includes(game.lastJudgment)) {
     hitEffects.push({lane,judgment:game.lastJudgment,time:game.time});
