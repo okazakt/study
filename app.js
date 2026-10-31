@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.37.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.37.1';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.37.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.37.1';
-const VERSION = '0.37.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.38.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.38.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.38.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.38.0';
+const VERSION = '0.38.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -853,19 +853,20 @@ function finish(completed, reason=null) {
   $('result-reason').textContent = reason || (completed ? '最後までおつかれさま！' : 'ここまでの学習を記録しました。');
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
-  $('result-taps').textContent = `判定ノーツ ${game.countedTaps} / ${game.tapGoal}回`;
   const score=game.scoreBreakdown;
+  const wrongAnswers=[...sessionResults.values()].filter(result=>result.wrong>0).length;
   const columns = [
-    ['白ノーツ・リズム', [
-      ['白ノーツ得点（満点5,000）',score.white.toLocaleString()],['空振り減点',`−${score.penalty}`],
-      ['最大リズムコンボ',game.maxCombo,'rhythmCombo'],['PERFECT',`${game.judgments.PERFECT}回`],
-      ['GOOD',`${game.judgments.GOOD}回`],['ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`],['判定済みノーツ',`${game.countedTaps}回`]
+    ['リズム', [
+      ['最大リズムコンボ',game.maxCombo,'rhythmCombo'],
+      ['PERFECT',`${game.judgments.PERFECT}回`],['GOOD',`${game.judgments.GOOD}回`],
+      ['白ノーツ得点',score.netWhite.toLocaleString()],
+      ['ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`]
     ]],
-    ['問題', [
-      ['問題得点（満点5,000）',(score.color+score.answer).toLocaleString()],['カラー得点（満点1,000）',score.color.toLocaleString()],
-      ['正答得点（満点4,000）',score.answer.toLocaleString()],['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],
-      ['正答回数',`${game.correctCount}回`],['一発正解',`${game.firstCount}回`],['お手付き回数',`${game.wrongCount}回`],
-      ['一発正解時の基準問題数',`${game.scorePlan.questions}問`]
+    ['学習', [
+      ['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],
+      ['一発回答数',`${game.firstCount}回`],['誤答が発生した回答数',`${wrongAnswers}回`],
+      ['正答得点',score.answer.toLocaleString()],['カラー得点',score.netColor.toLocaleString()],
+      ['お手つき回数',`${game.wrongCount}回`]
     ]]
   ];
   for (const [title, entries] of columns) {

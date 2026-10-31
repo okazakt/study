@@ -18,7 +18,7 @@ test('fixed white and question budgets give the same 10000 points at different q
  for(const questions of [5,8,15]){
   const g=create(questions);g.whiteJudgments=g.scorePlan.white;g.whiteUnits=g.scorePlan.white;
   g.colorEligibleJudgments=g.scorePlan.color;g.colorUnits=g.scorePlan.color;g.answerUnits=questions;
-  g.judgments.PERFECT=g.whiteJudgments+g.colorUnits;g.refreshScore();assert.equal(g.totalScore,10000);assert.deepEqual(g.scoreBreakdown,{white:5000,color:1000,answer:4000,penalty:0,rhythm:6000,total:10000});
+  g.judgments.PERFECT=g.whiteJudgments+g.colorUnits;g.refreshScore();assert.equal(g.totalScore,10000);assert.deepEqual(g.scoreBreakdown,{white:5000,color:1000,netWhite:5000,netColor:1000,answer:4000,penalty:0,rhythm:6000,total:10000});
  }
 });
 test('answer points use 100, 80, 50, and zero percent after confirmed wrong answers',()=>{
@@ -76,5 +76,22 @@ test('every subject gets the same full score under its own ideal question count'
   const data=read('quiz-data/junior_'+subject+'.json');
   const factory=()=>{const random=seededRandom(21);let h=normalizeHistory(null);const results=new Map();const picker=createAdaptivePicker(makeQuestionQueue(data,random),()=>h,random,()=>results.values());const g=new Game(data,playlist.events,0,random,300,()=>true,picker,297,120);return {g,done:(q,index,time)=>{h=recordAnswer(h,q,{correct:true,time:time*1000,attempt:'q'+index});results.set(index,{question:q,correct:true,wrong:0});}};};
   const ideal=factory(),reference=perfectReference(ideal.g,ideal.done),actual=factory();actual.g.scorePlan=reference;perfectReference(actual.g,actual.done);assert.equal(actual.g.totalScore,10000,subject);assert.equal(actual.g.countedTaps,120,subject);
+ }
+});
+
+test('displayed white and color scores include empty-miss deductions and add up to total',()=>{
+ const g=create(8);g.scorePlan={questions:8,white:96,color:24};
+ g.whiteJudgments=82;g.whiteUnits=69;g.colorUnits=21;g.answerUnits=7.1;
+ g.judgments.PERFECT=92;g.judgments.GOOD=22;g.missedNotes=6;g.emptyMisses=3;g.refreshScore();
+ const s=g.scoreBreakdown;
+ assert.equal(s.netWhite,3505);assert.equal(s.netColor,854);assert.equal(s.answer,3550);
+ assert.equal(s.total,7909);assert.equal(s.netWhite+s.netColor+s.answer,g.totalScore);
+});
+test('deducted component scores remain nonnegative and consistent at zero and extreme empty misses',()=>{
+ const g=create();
+ for(const empty of [0,1,100000])for(const units of [0,.5,1]){
+  g.emptyMisses=empty;g.whiteUnits=units;g.colorUnits=units;g.judgments.PERFECT=units?2:0;
+  const s=g.scoreBreakdown;assert.ok(s.netWhite>=0);assert.ok(s.netColor>=0);
+  assert.equal(s.netWhite+s.netColor+s.answer,s.total);
  }
 });

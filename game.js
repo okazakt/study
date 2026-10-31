@@ -260,7 +260,9 @@ export class Game {
     const color=Math.floor(SCORE.color*Math.min(1,this.colorUnits/colorDen)+1e-8);
     const answer=Math.floor(SCORE.answer*Math.min(1,this.answerUnits/answerDen)+1e-8);
     const rhythm=Math.floor((white+color)*this.countedTaps/Math.max(1,this.countedTaps+this.emptyMisses)+1e-8);
-    return {white,color,answer,penalty:white+color-rhythm,rhythm,total:rhythm+answer};
+    const netWhite=Math.floor(white*this.countedTaps/Math.max(1,this.countedTaps+this.emptyMisses)+1e-8);
+    const netColor=rhythm-netWhite;
+    return {white,color,netWhite,netColor,answer,penalty:white+color-rhythm,rhythm,total:rhythm+answer};
   }
   refreshScore(){
     const s=this.scoreBreakdown;if(!s)return;
