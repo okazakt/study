@@ -1,7 +1,7 @@
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.25.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.25.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.25.0';
-const VERSION = '0.25.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.25.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.25.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.25.1';
+const VERSION = '0.25.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -22,7 +22,7 @@ $('offset').addEventListener('change', () => {
   try { localStorage.setItem('study-beat-offset-ms', $('offset').value); } catch { /* Play remains available. */ }
 });
 // Short percussion with a clear attack, independent of the song clock.
-let tapAudio, tapNoise, tapSoundEnabled = true, tapVolume = 55;
+let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, tapVolume = 55;
 try {
   tapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off';
   const saved = localStorage.getItem('study-beat-tap-volume');
@@ -55,19 +55,39 @@ for (const prefix of ['', 'help-']) {
   $(`${prefix}tap-preview`).addEventListener('click', () => playTapSound(true));
   $(`${prefix}tap-preview-miss`).addEventListener('click', () => playTapSound(true, 'MISS'));
 }
-function prepareTapAudio() {
+function prepareTapAudio(fresh = false) {
   if (!tapSoundEnabled) return null;
   try {
     // On supported iOS versions use the same playback category as the music.
-    if (navigator.audioSession) navigator.audioSession.type = 'playback';
+    if (navigator.audioSession && navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback';
   } catch { /* Not supported on every browser. */ }
   try {
     const Context = window.AudioContext || window.webkitAudioContext;
     if (!Context) { soundStatus('このブラウザではタップ音を再生できません'); return null; }
-    if (!tapAudio || tapAudio.state === 'closed') { tapAudio = new Context({ latencyHint: 'interactive' }); tapNoise = null; }
+    if (fresh || tapAudioNeedsReset || !tapAudio || tapAudio.state === 'closed') {
+      const old = tapAudio; tapAudio = null; tapNoise = null; tapAudioNeedsReset = false;
+      if (old && old.state !== 'closed') old.close().catch(() => {});
+      tapAudio = new Context({ latencyHint: 'interactive' });
+    }
     // Safari may report interrupted after another audio session or backgrounding.
-    return tapAudio.state !== 'running' ? tapAudio.resume() : Promise.resolve();
-  } catch { soundStatus('タップ音を再生できません。試聴をもう一度押してください'); return null; }
+    const context = tapAudio;
+    const ready = context.state !== 'running' ? context.resume() : Promise.resolve();
+    return ready.catch(error => {
+      if (tapAudio === context) tapAudioNeedsReset = true;
+      throw error;
+    });
+  } catch { tapAudioNeedsReset = true; soundStatus('タップ音を再生できません。試聴をもう一度押してください'); return null; }
+}
+function verifyTapAudioClock() {
+  clearTimeout(tapAudioProbe);
+  const context = tapAudio;
+  if (!context || !tapSoundEnabled) return;
+  const before = context.currentTime;
+  tapAudioProbe = setTimeout(() => {
+    if (tapAudio !== context || document.hidden || screen !== 'play' || audio.paused) return;
+    // Some mobile contexts report running even though their audio clock is stuck.
+    if (context.state !== 'running' || context.currentTime <= before + .001) tapAudioNeedsReset = true;
+  }, 150);
 }
 function emitTapSound(judgment) {
   const t = tapAudio.currentTime, gain = tapAudio.createGain();
@@ -121,14 +141,15 @@ function playTapSound(preview = false, judgment = 'GOOD') {
   if (!tapSoundEnabled) { if (preview) soundStatus('タップ音をオンにして試聴してください'); return; }
   if (!tapVolume) { if (preview) soundStatus('タップ音量を上げて試聴してください'); return; }
   const requested = performance.now();
+  let requestedContext;
   const play = () => {
-    if (!tapSoundEnabled || !tapVolume) return;
+    if (!tapSoundEnabled || !tapVolume || tapAudio !== requestedContext) return;
     if (tapAudio?.state !== 'running') { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); return; }
     if (!preview && (performance.now() - requested > 100 || screen !== 'play' || audio.paused)) return;
     try { emitTapSound(judgment); if (preview) soundStatus('試聴しました'); }
     catch { soundStatus('タップ音を再生できません。もう一度試聴してください'); }
   };
-  const ready = prepareTapAudio();
+  const ready = prepareTapAudio(); requestedContext = tapAudio;
   if (tapAudio?.state === 'running') { ready?.catch(() => {}); play(); }
   else ready?.then(play).catch(() => { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); });
 }
@@ -306,7 +327,7 @@ async function start() {
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
   questionKey = ''; show('play'); render(); draw(); $('pause').disabled = true;
-  try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
+  try { await audio.play(); prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; }
   finally { busy = false; refreshStart(); $('pause').disabled = false; }
 }
@@ -528,14 +549,17 @@ document.addEventListener('keydown', event => {
 });
 function pause() {
   if (screen !== 'play') return;
-  audio.pause(); cancelAnimationFrame(frame); $('pause').textContent = '再開'; $('pause-overlay').hidden = false;
+  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
+  const context = tapAudio;
+  if (context && context.state !== 'closed') context.suspend().catch(() => { if (tapAudio === context) tapAudioNeedsReset = true; });
+  $('pause').textContent = '再開'; $('pause-overlay').hidden = false;
 }
 async function togglePause() {
   if (busy || screen !== 'play') return;
   if (!audio.paused) { pause(); return; }
-  prepareTapAudio()?.catch(() => {});
+  prepareTapAudio(true)?.catch(() => {});
   busy = true;
-  try { await audio.play(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
+  try { await audio.play(); prepareTapAudio()?.catch(() => {}); verifyTapAudioClock(); $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop(); }
   catch { game.message = '再生できませんでした。再開を押して再試行してください。'; render(); }
   finally { busy = false; }
 }
@@ -674,6 +698,7 @@ audio.addEventListener('ended', async () => {
   try {
     if (document.hidden || $('controls-help').open) { pause(); return; }
     await audio.play();
+    prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     if (screen !== 'play') { audio.pause(); return; }
     if (document.hidden || $('controls-help').open) { pause(); return; }
     $('pause').textContent = '一時停止'; $('pause-overlay').hidden = true; loop();
@@ -682,7 +707,11 @@ audio.addEventListener('ended', async () => {
   } finally { busy = false; }
 });
 audio.addEventListener('error', () => { if (screen === 'play') { pause(); game.message = '音声の読み込みに失敗しました。接続を確認してください。'; render(); } });
-document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) { tapAudioNeedsReset = true; pause(); }
+});
+window.addEventListener('pagehide', () => { tapAudioNeedsReset = true; pause(); });
+window.addEventListener('blur', () => { tapAudioNeedsReset = true; });
 window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } });
 let registration, updateAvailable = false;
 let updateCheck;

@@ -1,6 +1,8 @@
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
-  feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16 });
+  feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: -0.003 });
+// Positive errors are late; the judgment center precedes the visual target by 3ms.
+export const timingError = (target, now) => now - (target + RULES.judgmentOffsetSeconds);
 export const COLORS = [
   { name: '赤', value: '#ff7187' }, { name: '青', value: '#73b9ff' },
   { name: '黄', value: '#ffda79' }, { name: '緑', value: '#71e1bc' }
@@ -237,7 +239,7 @@ export class Game {
       this.quizResult = null; this.message = '';
       const targets = this.events.slice(this.cursor).filter(e => e.target >= now + RULES.travelSeconds).slice(0, RULES.rhythmNotes);
       this.rhythmTargets = new Set(targets.map(e => e.id));
-      this.rhythmEnd = (targets.at(-1)?.target ?? now) + RULES.goodWindow + RULES.judgmentSeconds;
+      this.rhythmEnd = (targets.at(-1)?.target ?? now) + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds;
     }
     if (phase === 'answer') this.message = `答えの色を${this.requiredTaps}回タップ`;
   }
@@ -251,14 +253,14 @@ export class Game {
       if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
-      if (this.phase === 'intro' && event.target + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
-      if (this.phase === 'outro' && event.target + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
+      if (this.phase === 'intro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
+      if (this.phase === 'outro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
       if (this.phase === 'answer') {
         COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
       } else this.notes.push({ ...event, color: null, done: false });
     }
     for (const note of this.notes) {
-      if (!note.done && now - note.target > RULES.goodWindow) {
+      if (!note.done && timingError(note.target, now) > RULES.goodWindow + 1e-9) {
         note.done = true;
         // An unanswered four-color row is one miss; unchosen siblings are not misses.
         if (note.rowId !== undefined) {
@@ -285,14 +287,14 @@ export class Game {
     if (this.phase === 'ended') return null;
     this.update(now);
     if (this.phase === 'read' || this.phase === 'feedback') return null;
-    const note = this.notes.filter(n => !n.done && n.lane === lane && Math.abs(n.target - now) <= RULES.goodWindow)
-      .sort((a, b) => Math.abs(a.target - now) - Math.abs(b.target - now))[0];
+    const note = this.notes.filter(n => !n.done && n.lane === lane && Math.abs(timingError(n.target, now)) <= RULES.goodWindow + 1e-9)
+      .sort((a, b) => Math.abs(timingError(a.target, now)) - Math.abs(timingError(b.target, now)))[0];
     if (!note) { this.combo = 0; this.judge('MISS', now); return null; }
     note.done = true;
     if (note.rowId !== undefined) {
       for (const sibling of this.notes) if (sibling.rowId === note.rowId) sibling.done = true;
     }
-    const perfect = Math.abs(note.target - now) <= RULES.perfectWindow;
+    const perfect = Math.abs(timingError(note.target, now)) <= RULES.perfectWindow + 1e-9;
     this.maxCombo = Math.max(this.maxCombo, ++this.combo);
     const colored = this.phase === 'answer' && note.color !== null;
     const base = perfect ? (colored ? 2 : 10) : (colored ? 1 : 5);

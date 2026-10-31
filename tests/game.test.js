@@ -532,3 +532,18 @@ test('deliberately repeating wrong color answers cannot build an unbroken rhythm
  assert.equal(bad.wrongCount,5);assert.equal(bad.combo,0);assert.equal(bad.maxCombo,3);assert.equal(bad.rhythmScore,30);
  assert.ok(good.totalScore>bad.totalScore);assert.equal(good.correctCount,1);
 });
+
+test('judgment center moves three milliseconds early without shifting chart targets or changing widths',async()=>{
+ const {timingError}=await import('../game.js');assert.equal(RULES.judgmentOffsetSeconds,-.003);
+ assert.equal(RULES.perfectWindow,.08);assert.equal(RULES.goodWindow,.16);assert.ok(Math.abs(timingError(2,1.997))<1e-12);
+ const shifted=new Game(questions,chart.events,.1);assert.equal(shifted.events[0].target,easyEvents(chart.events)[0].time+.1);
+ const cases=[[-.083,'PERFECT'],[-.082,'PERFECT'],[.077,'PERFECT'],[.078,'GOOD'],[-.163,'GOOD'],[-.164,'MISS'],[.157,'GOOD'],[.158,'MISS']];
+ for(const colored of [false,true])for(const [offset,label] of cases){
+  const g=fixture();if(colored)g.changePhase('answer',0);
+  hit(g,colored?g.question.correct:null,2,offset);assert.equal(g.lastJudgment,label,`${colored?'color':'white'} ${offset}`);
+ }
+});
+test('late miss deadline also moves three milliseconds earlier and a missed color row counts once',()=>{
+ const g=fixture();g.notes=[{target:2,lane:0,color:null,done:false}];g.update(2.157);assert.equal(g.notes.length,1);g.update(2.1571);assert.equal(g.notes.length,0);assert.equal(g.judgments.MISS,1);
+ const c=fixture();c.changePhase('answer',0);c.notes=Array.from({length:4},(_,lane)=>({target:2,lane,color:lane,rowId:1,done:false}));c.update(2.158);assert.equal(c.judgments.MISS,1);
+});
