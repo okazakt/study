@@ -33,25 +33,25 @@ test('warmup, duplicate presses, out-of-range taps and unmatched beats do not co
 });
 test('saved absolute values override a later common baseline rather than adding to it',()=>{
  const settings=normalizeTiming({version:1,activeOutput:'speaker',profiles:{speaker:{offsetMs:120,method:'calibrated'}}});
- assert.equal(effectiveOffset(settings,'speaker'),120);assert.equal(effectiveOffset(settings,'bluetooth'),0);
+ assert.equal(effectiveOffset(settings,'speaker'),120);assert.equal(effectiveOffset(settings,'bluetooth'),92);
  assert.equal(normalizeTiming(JSON.parse(JSON.stringify(settings))).profiles.speaker.offsetMs,120);
  const report=timingReport(settings);assert.equal(report.recommendedBaselineMs,120);assert.equal(report.offsetMs,120);
 });
 test('manual legacy values migrate once, outputs remain independent, and invalid input falls back safely',()=>{
  const legacy=normalizeTiming(null,'-30');assert.equal(effectiveOffset(legacy),-30);
  assert.equal(effectiveOffset(legacy,'wired'),-30);
- const noProfile=normalizeTiming({version:1,activeOutput:'bluetooth',profiles:{}},'90');assert.equal(effectiveOffset(noProfile),0);
+ const noProfile=normalizeTiming({version:1,activeOutput:'bluetooth',profiles:{}},'90');assert.equal(effectiveOffset(noProfile),92);
  assert.equal(normalizeTiming({version:1,activeOutput:'bad',profiles:{speaker:{offsetMs:900}}}).profiles.speaker.offsetMs,500);
  assert.equal(effectiveOffset(normalizeTiming(null,'not-a-number')),-101);
 });
 
-test('speaker and wired headphones share the pilot default while Bluetooth has an independent zero baseline',()=>{
+test('speaker and wired headphones share the pilot default while Bluetooth has its independent pilot baseline',()=>{
  const defaults=normalizeTiming(null);
  assert.equal(effectiveOffset(defaults,'speaker'),-101);assert.equal(effectiveOffset(defaults,'wired'),-101);
- assert.equal(effectiveOffset(defaults,'bluetooth'),0);assert.equal(effectiveOffset(defaults,'other'),0);
+ assert.equal(effectiveOffset(defaults,'bluetooth'),92);assert.equal(effectiveOffset(defaults,'other'),0);
  defaults.profiles.speaker={offsetMs:-125,method:'calibrated'};defaults.profiles.bluetooth={offsetMs:80,method:'calibrated'};
  assert.equal(effectiveOffset(defaults,'wired'),-125);assert.equal(effectiveOffset(defaults,'bluetooth'),80);
- assert.equal(timingReport(defaults,'speaker').currentBaselineMs,-101);assert.equal(timingReport(defaults,'bluetooth').currentBaselineMs,0);
+ assert.equal(timingReport(defaults,'speaker').currentBaselineMs,-101);assert.equal(timingReport(defaults,'bluetooth').currentBaselineMs,92);
 });
 test('old wired output migrates to the shared active value without losing Bluetooth settings or adding the baseline',()=>{
  const old={version:1,activeOutput:'wired',profiles:{speaker:{offsetMs:0},wired:{offsetMs:-101,method:'calibrated'},bluetooth:{offsetMs:75}}};
