@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.31.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.31.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.31.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.31.0';
-const VERSION = '0.31.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.31.1';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.31.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.31.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.31.1';
+const VERSION = '0.31.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -420,7 +420,7 @@ function drawHitFeedback(context, line, laneWidth, now) {
     const x=(effect.lane+.5)*laneWidth, radius=Math.min(52,laneWidth*.58);
     const color=perfect?'#ffe6a1':'#b8e7ff';
     context.save();
-    context.beginPath();context.rect(effect.lane*laneWidth+2,Math.max(0,line-52),laneWidth-4,76);context.clip();
+    context.beginPath();context.rect(effect.lane*laneWidth+2,Math.max(0,line-(perfect?38:52)),laneWidth-4,76);context.clip();
     const glow=context.createRadialGradient(x,line,0,x,line,radius);
     glow.addColorStop(0,perfect?'#ffe6a170':'#b8e7ff48');glow.addColorStop(1,'#ffffff00');
     context.globalAlpha=fade*(reducedMotion.matches ? .5 : 1);context.fillStyle=glow;
@@ -433,8 +433,10 @@ function drawHitFeedback(context, line, laneWidth, now) {
       const count=perfect?8:3;
       for(let i=0;i<count;i++){
         const direction=(i/(count-1)-.5)*2;
-        const px=x+direction*Math.min(laneWidth*.39,30)*( .35+.65*progress);
-        const py=line-4-(1-Math.abs(direction)*.35)*(6+(perfect?32:19)*progress);
+        const angle=-Math.PI/2+i*Math.PI/4;
+        const distance=Math.min(26,laneWidth*.32)*(.35+.65*progress);
+        const px=perfect ? x+Math.cos(angle)*distance : x+direction*Math.min(laneWidth*.39,30)*(.35+.65*progress);
+        const py=perfect ? line+Math.sin(angle)*distance : line-4-(1-Math.abs(direction)*.35)*(6+19*progress);
         const size=perfect?2.5+(i%2):1.8;
         context.globalAlpha=fade*(perfect ? .95 : .65);context.fillStyle=color;context.beginPath();
         if(perfect && i%2===0){
