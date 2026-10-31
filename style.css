@@ -49,7 +49,6 @@ kbd{display:inline-block;border:1px solid #ffffff30;border-radius:4px;background
 
 .update-row{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:12px}.update-row button{font-size:12px}.update-row span{font-size:12px;color:var(--muted)}
 
-.repair-link{font-size:12px;color:var(--accent)}
 /* Kanji components are shown as written forms, never radical names. */
 .kanji-puzzle{display:grid;grid-template-columns:42% 58%;align-items:center;width:132px;height:108px;margin:12px auto;font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP",serif;font-size:82px;line-height:1;text-align:center}.kanji-part{font-family:system-ui,sans-serif;font-size:40px;border:2px dashed var(--accent);border-radius:6px;padding:14px 0;color:var(--accent)}.kanji-puzzle.completed{display:block;color:var(--accent)}.choice.is-glyph{font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP",serif;font-size:42px;min-height:72px}
 /* Each successful tap pulses by the audio clock, so pause also freezes the effect. */

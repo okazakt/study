@@ -88,20 +88,38 @@ export function questionCoverage(questions, state) {
   const keys=new Set(questions.map(questionKey));
   return {total:keys.size,solved:[...keys].filter(key=>answered(state.questions[key])).length};
 }
-export function createAdaptivePicker(questions, getHistory, random=Math.random) {
+export function createAdaptivePicker(questions, getHistory, random=Math.random, getSessionResults=null) {
   const units=[];
   for(const q of questions){
     const previous=units.at(-1);
     if(q.continuation && previous && previous[0].sourceId===q.sourceId && previous[0].mode===q.mode)previous.push(q);
     else units.push([q]);
   }
-  const recentSources=[];
+  const recentSources=[], seen=new Set();
   return () => {
     if(!units.length)throw new Error('No question candidates');
+    // Session filtering precedes the topic cooldown: a fresh reverse question
+    // must win over repeating a different topic merely to preserve spacing.
+    let pool=units;
+    if(getSessionResults){
+      const directions=new Map();
+      for(const {question:q,correct,wrong} of getSessionResults()){
+        const key=JSON.stringify([q.sourceId || q.id,q.mode]);
+        const status=directions.get(key) || {correct:false,wrong:false};
+        status.correct ||= !!correct; status.wrong ||= wrong>0;
+        directions.set(key,status);
+      }
+      const fresh=units.filter(unit=>!unit.some(q=>{
+        if(seen.has(questionKey(q)))return true;
+        const reverse=inverseModes[q.mode] && directions.get(JSON.stringify([q.sourceId || q.id,inverseModes[q.mode]]));
+        return reverse?.correct && !reverse.wrong;
+      }));
+      if(fresh.length)pool=fresh;
+    }
     let candidates=[], cooldown=Math.min(3,recentSources.length);
     while(!candidates.length){
       const blocked=new Set(cooldown ? recentSources.slice(-cooldown):[]);
-      candidates=units.filter(unit=>!blocked.has(unit[0].sourceId));
+      candidates=pool.filter(unit=>!blocked.has(unit[0].sourceId));
       if(!cooldown)break;
       cooldown--;
     }
@@ -112,6 +130,7 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random) 
     let target=random()*total, category=available.findLastIndex(weight=>weight>0);
     for(let i=0;i<available.length;i++){target-=available[i];if(target<0){category=i;break;}}
     const group=groups[category], unit=group[Math.floor(random()*group.length)];
+    if(getSessionResults)for(const q of unit)seen.add(questionKey(q));
     recentSources.push(unit[0].sourceId);if(recentSources.length>3)recentSources.shift();
     // Keep stable identities but shuffle the color positions on every appearance.
     return unit.map(q=>{

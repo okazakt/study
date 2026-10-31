@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.26.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.26.1';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.26.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.26.1';
-const VERSION = '0.26.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.27.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.27.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.27.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.27.0';
+const VERSION = '0.27.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -347,9 +347,9 @@ async function start() {
   const offsetMs = Number($('offset').value) || 0;
   const practiceType = selection()?.practiceType || 'all';
   const accept = question => matchesPracticeQuestion(question,practiceType);
-  const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory);
-  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, accept, picker);
   history = []; sessionResults = new Map(); sessionId = crypto.randomUUID();
+  const picker = createAdaptivePicker(makeQuestionQueue(filtered,Math.random,accept), () => learningHistory, Math.random, () => sessionResults.values());
+  game = new Game(filtered, playlist.events, offsetMs / 1000, Math.random, playlist.duration, accept, picker);
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
@@ -863,7 +863,7 @@ async function checkForUpdate() {
       $('connection').textContent = `更新あり · v${version}`;
       if (screen !== 'home') return;
       if (new URL(location.href).searchParams.get('release') === version) {
-        $('update-status').textContent = '切り替わらない場合は「更新を復旧する」をお試しください。'; return;
+        $('update-status').textContent = '最新版への切替を確認中です。少し待ってから「最新版を読み込む」をお試しください。'; return;
       }
       const target = new URL('./', location.href);
       target.searchParams.set('release', version); target.searchParams.set('update', Date.now());

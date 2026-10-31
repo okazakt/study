@@ -105,3 +105,43 @@ test('reverse priority follows explicit language and kanji pairs and includes re
   assert.equal(category({...q,mode:'spelling'},state),1);
  }
 });
+
+test('session avoids every shown question and successful reverse while fresh alternatives remain',()=>{
+ const qs=Array.from({length:8},(_,i)=>({...base,id:`topic${i}`,sourceId:`topic${i}`}));
+ const results=[],pick=createAdaptivePicker(qs.flatMap(q=>[q,inverse(q)]),()=>normalizeHistory(null),()=>0,()=>results);
+ const sources=new Set();
+ for(let i=0;i<8;i++){
+  const [q]=pick();assert.ok(!sources.has(q.sourceId));sources.add(q.sourceId);
+  results.push({question:q,correct:true,wrong:0});
+ }
+ // All fresh alternatives exhausted: another draw must still be possible.
+ assert.ok(pick()[0]);
+});
+test('a failed direction leaves its reverse eligible and relaxes topic spacing before session exclusions',()=>{
+ const other={...base,id:'other',sourceId:'other'},results=[];
+ const pick=createAdaptivePicker([base,inverse(base),other],()=>normalizeHistory(null),()=>0,()=>results);
+ assert.equal(pick()[0].mode,base.mode);
+ results.push({question:base,correct:true,wrong:1});
+ assert.equal(pick()[0].sourceId,'other');
+ results.push({question:other,correct:true,wrong:0});
+ const [q]=pick();assert.equal(q.sourceId,base.sourceId);assert.equal(q.mode,inverse(base).mode);
+});
+test('session keeps multi-hole units intact and an error in any stage permits the reverse',()=>{
+ const first={...base,mode:'term_to_explanation',blankIndex:1};
+ const second={...first,blankIndex:2,continuation:true};
+ const other={...base,id:'other',sourceId:'other'},results=[];
+ const pick=createAdaptivePicker([first,second,base,other],()=>normalizeHistory(null),()=>0,()=>results);
+ assert.deepEqual(pick().map(q=>q.blankIndex),[1,2]);
+ results.push({question:first,correct:true,wrong:0},{question:second,correct:true,wrong:2});
+ assert.equal(pick()[0].sourceId,'other');
+ assert.equal(pick()[0].mode,base.mode);
+});
+test('a new play resets session exclusions while historical priorities remain active',()=>{
+ const state=record(normalizeHistory(null),base,true,'old-play');
+ const other={...base,id:'other',sourceId:'other'};
+ const pick=createAdaptivePicker([base,other],()=>state,()=>.99,()=>[]);
+ assert.equal(pick()[0].sourceId,base.sourceId);assert.equal(pick()[0].sourceId,'other');
+ const next=createAdaptivePicker([base,other],()=>state,()=>.99,()=>[]);
+ assert.equal(next()[0].sourceId,base.sourceId);
+ assert.equal(category(base,state),5);
+});
