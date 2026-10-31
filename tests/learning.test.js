@@ -77,7 +77,7 @@ test('math and social samples enable only their grades, exams and selected units
    const selected=selectQuestions(items,'中学',{id:c.id,sections:[section.key]},catalog);
    assert.equal(selected.length,section.count);assert.ok(selected.every(q=>q.subject===subject));
    const queue=makeQuestionQueue(selected);assert.ok(queue.every(q=>sectionKey(q)===section.key));
-   assert.deepEqual(new Set(queue.map(q=>q.mode)),new Set(['explanation_to_term','term_to_explanation']));
+   assert.deepEqual(new Set(queue.map(q=>q.mode)),new Set(subject==='数学'?['term_to_explanation']:['explanation_to_term','term_to_explanation']));
   }
  }
 });

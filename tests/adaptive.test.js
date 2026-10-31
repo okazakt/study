@@ -66,7 +66,7 @@ test('coverage counts direction and hole keys once, including wrong-only and rev
  const q=base,rev=inverse(base),second={...rev,blankIndex:2};let state=normalizeHistory(null);
  state=record(state,q,false,'one');state=record(state,q,true,'one',1);state=record(state,rev,true,'review',0,'review');
  assert.deepEqual(questionCoverage([q,rev,second,q],state),{solved:2,total:3});
- const item=JSON.parse(readFileSync(new URL('../quiz-data/junior_math.json',import.meta.url)));assert.equal(questionCoverage(makeQuestionQueue(item),state).total,25);
+ const item=JSON.parse(readFileSync(new URL('../quiz-data/junior_math.json',import.meta.url)));assert.equal(questionCoverage(makeQuestionQueue(item),state).total,13);
 });
 test('older records reconstruct repeated mistakes as one failure and migrate known recent success',()=>{
  let old=normalizeHistory(null);

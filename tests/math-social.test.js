@@ -15,7 +15,7 @@ test('new samples resolve every blank and provide distinct four-choice answers i
    if(q.mode==='term_to_explanation')assert.equal(q.segments.filter(s=>s.state==='active').length,1);
   }
  }
- assert.equal(makeQuestionQueue(math).length,25);assert.equal(makeQuestionQueue(social).length,26);
+ assert.equal(makeQuestionQueue(math).length,13);assert.equal(makeQuestionQueue(social).length,26);
 });
 test('sample content includes all three congruence criteria and correctly scoped civic institutions and duties',()=>{
  const congruence=math.filter(q=>q.unit==='三角形の合同');assert.equal(congruence.length,3);
@@ -38,4 +38,16 @@ test('multi-part formulas and duties retain every continuation through actual ga
   }
   assert.equal(g.correctCount,item.blanks.length);
  }
+});
+
+test('math only presents explanation blanks, including new grades, while other subjects retain reverse questions',()=>{
+ const future={...math[0],id:'future_math',grade:'中3',term_dummies:[]};
+ for(const items of [math,[future],[...math,...social]]){
+  const queue=makeQuestionQueue(items,()=>.5),mathQuestions=queue.filter(q=>q.subject==='数学');
+  assert.ok(mathQuestions.length);assert.ok(mathQuestions.every(q=>q.mode==='term_to_explanation'));
+  assert.equal(mathQuestions.length,items.filter(q=>q.subject==='数学').reduce((n,item)=>n+item.blanks.length,0));
+ }
+ assert.ok(makeQuestionQueue(social).some(q=>q.mode==='explanation_to_term'));
+ const multi=math.find(q=>q.blanks.length>1),parts=makeQuestionQueue([multi]);
+ assert.deepEqual(parts.map(q=>q.blankIndex),multi.blanks.map(b=>b.index));assert.equal(parts[1].continuation,true);
 });

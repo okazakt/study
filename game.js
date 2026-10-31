@@ -83,6 +83,7 @@ export function makeQuestionQueue(items, random = Math.random, acceptQuestion = 
       return shuffle(item.kind === 'grammar' ? [questions.slice(0, -1), questions.slice(-1)]
         : item.kind === 'kanji' ? [questions.slice(0, 1), questions.slice(1)] : questions.map(q => [q]), random);
     }
+    if (item.subject === '数学') return [makeBlankQuestions(item, random)];
     if (item.english) return shuffle([[[makeEnglishQuestion(item, 'to_japanese', random)]], [[makeEnglishQuestion(item, 'to_english', random)]],
       item.phrase_blanks ? makePhraseQuestions(item, random).map(q => [q]) : [makeSpellingQuestions(item, random)]], random).flat();
     return shuffle([makeBlankQuestions(item, random), [makeQuestion(item, random)]], random);
