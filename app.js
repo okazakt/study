@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.27.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.27.1';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.27.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.27.1';
-const VERSION = '0.27.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.27.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.27.2';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.27.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.27.2';
+const VERSION = '0.27.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -109,7 +109,7 @@ function verifyTapAudioClock() {
   if (!context || !tapSoundEnabled) return;
   const before = context.currentTime;
   tapAudioProbe = setTimeout(() => {
-    if (tapAudio !== context || document.hidden || screen !== 'play' || audio.paused) return;
+    if (tapAudio !== context || document.hidden || !['play','tuning'].includes(screen) || audio.paused) return;
     // Some mobile contexts report running even though their audio clock is stuck.
     if (context.state !== 'running' || context.currentTime <= before + .001) tapAudioNeedsReset = true;
   }, 150);
@@ -170,7 +170,7 @@ function playTapSound(preview = false, judgment = 'GOOD') {
   const play = () => {
     if (!tapSoundEnabled || !tapVolume || tapAudio !== requestedContext) return;
     if (tapAudio?.state !== 'running') { if (preview) soundStatus('音を開始できません。もう一度試聴してください'); return; }
-    if (!preview && (performance.now() - requested > 100 || screen !== 'play' || audio.paused)) return;
+    if (!preview && (performance.now() - requested > 100 || !['play','tuning'].includes(screen) || audio.paused)) return;
     try { emitTapSound(judgment); if (preview) soundStatus('試聴しました'); }
     catch { soundStatus('タップ音を再生できません。もう一度試聴してください'); }
   };
@@ -180,7 +180,7 @@ function playTapSound(preview = false, judgment = 'GOOD') {
 }
 // A touch-end gesture also unlocks audio on browsers that restrict pointer-down.
 document.addEventListener('touchend', () => {
-  if (screen === 'play') prepareTapAudio()?.catch(() => {});
+  if (screen === 'play' || screen === 'tuning') prepareTapAudio()?.catch(() => {});
 }, { passive: true });
 const show = next => {
   const previousScreen = screen;
@@ -403,23 +403,29 @@ function tuningLoop() {
 async function playTuning() {
   if (screen !== 'tuning' || tuningStarting) return;
   if (!audio.paused) { pauseTuning(); return; }
+  prepareTapAudio(true)?.catch(() => {});
   const generation = tuningGeneration; tuningStarting = true; $('tuning-play').disabled = true;
   audio.playbackRate = tuningRate(); audio.loop = true;
   try {
     await audio.play();
     if (screen !== 'tuning' || generation !== tuningGeneration) return;
     if (document.hidden) { pauseTuning(); return; }
+    prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     tuningMessage = ''; tuningStarting = false; tuningLoop();
   } catch { if (screen === 'tuning' && generation === tuningGeneration) tuningMessage = '音楽を再生できません。開始を押して再試行してください。'; }
   finally { if (generation === tuningGeneration) { tuningStarting = false; $('tuning-play').disabled = false; renderTuning(); } }
 }
 function pauseTuning() {
-  audio.pause(); cancelAnimationFrame(frame); tuningMessage = '一時停止中。再開を押すと続けられます。'; renderTuning();
+  audio.pause(); cancelAnimationFrame(frame); clearTimeout(tapAudioProbe);
+  const context = tapAudio;
+  if (context && context.state !== 'closed') context.suspend().catch(() => { if (tapAudio === context) tapAudioNeedsReset = true; });
+  tuningMessage = '一時停止中。再開を押すと続けられます。'; renderTuning();
 }
 function tuningTap() {
   if (screen !== 'tuning' || audio.paused || tuningStarting) return;
   const now = audio.currentTime, match = matchCalibrationBeat(tuningBeats(),now,tuningRate(),tuningSession.appliedMs,tuningConsumed,tuningRound);
   tuningFeedbackAt = now;
+  playTapSound();
   if (!match) { tuningFeedback = '準備中・対象の拍なし'; renderTuning(); return; }
   tuningConsumed.add(match.id);
   const result = tuningSession.add(match.sampleMs,match.id);
