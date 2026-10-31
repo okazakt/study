@@ -1,9 +1,9 @@
-import { MusicPlayer } from './music-player.js?v=0.41.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.41.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.41.1';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.41.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.41.1';
-const VERSION = '0.41.1';
+import { MusicPlayer } from './music-player.js?v=0.41.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.41.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.41.2';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.41.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.41.2';
+const VERSION = '0.41.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -310,7 +310,7 @@ function renderLearning() {
     button.disabled = !course.count; button.setAttribute('aria-pressed', String(course.id === selection()?.id));
     const title = document.createElement('strong'); title.textContent = course.label;
     const coverage = questionCoverage(catalogQuestions.filter(q=>course.ids.includes(q.sourceId)), learningHistory);
-    const detail = document.createElement('span'); detail.textContent = course.count ? `解いた ${coverage.solved} / ${coverage.total}問` : '準備中';
+    const detail = document.createElement('span'); detail.textContent = course.count ? `出題済み ${coverage.solved} / ${coverage.total}問` : '準備中';
     if (course.count && course.year === 'exam') detail.append(document.createElement('br'), `収録 ${course.grades.join('・')}`);
     button.append(title, detail);
     button.addEventListener('click', () => {
@@ -356,13 +356,13 @@ function renderLearning() {
         entry.sections = keys.size === availableSections.length ? null : [...keys]; saveLearning(); renderLearning();
       });
       const text = document.createElement('span'); const coverage = questionCoverage(generated.filter(q=>sectionKey(q)===section.key),learningHistory);
-      text.textContent = `${section.label}（解いた ${coverage.solved} / ${coverage.total}問）`;
+      text.textContent = `${section.label}（出題済み ${coverage.solved} / ${coverage.total}問）`;
       label.append(input, text); $('section-list').append(label);
     }
   }
   const selectedIds = new Set(selectedQuestions().map(item=>item.id));
   const selectedCoverage = questionCoverage(catalogQuestions.filter(q=>selectedIds.has(q.sourceId) && matchesPracticeQuestion(q,selection()?.practiceType || 'all')),learningHistory);
-  $('selection-status').textContent = course ? count ? `選択範囲：解いた ${selectedCoverage.solved} / ${selectedCoverage.total}問` : '単元を1つ以上選んでください。'
+  $('selection-status').textContent = course ? count ? `選択範囲：出題済み ${selectedCoverage.solved} / ${selectedCoverage.total}問` : '単元を1つ以上選んでください。'
     : !courses.some(course => course.count) ? `${school}の問題は準備中です。設定から学校を変更できます。`
     : courses.some(course => course.subject === activeSubject && course.count) ? '学年または受験用を選んでください。' : `${activeSubject}の問題は準備中です。ほかの教科を選んでください。`;
   refreshStart();
