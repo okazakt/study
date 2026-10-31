@@ -1,21 +1,29 @@
-// Common baseline for unconfigured outputs. Pilot results can update this value
-// in a later release; saved absolute device values always override it.
-export const DEFAULT_TIMING_OFFSET_MS = 0;
+// Shared speaker/wired baseline from the pilot; Bluetooth stays independent.
+// Saved absolute device values always override their output baseline.
+export const DEFAULT_TIMING_OFFSET_MS = -101;
+export const DEFAULT_TIMING_OFFSETS_MS = Object.freeze({speaker:DEFAULT_TIMING_OFFSET_MS,bluetooth:0,other:0});
+export const outputKey = output => output === 'wired' ? 'speaker' : output;
+export const defaultTimingOffset = output => DEFAULT_TIMING_OFFSETS_MS[outputKey(output)] ?? 0;
 export const TIMING_KEY = 'study-beat-timing-v1';
-export const OUTPUTS = [['speaker','本体スピーカー'],['wired','有線イヤホン'],['bluetooth','Bluetooth'],['other','その他']];
+export const OUTPUTS = [['speaker','スピーカー・有線ヘッドホン'],['bluetooth','Bluetooth'],['other','その他']];
 export const clampOffset = value => Math.max(-500,Math.min(500,Math.round(value)));
 const median = values => { const a=[...values].sort((x,y)=>x-y),i=Math.floor(a.length/2);return a.length ? (a.length%2?a[i]:(a[i-1]+a[i])/2) : 0; };
 export function normalizeTiming(raw, legacy = null) {
   const profiles={};
   if(raw?.version===1)for(const [key] of OUTPUTS){
-    const p=raw.profiles?.[key];
+    let p=raw.profiles?.[key];
+    if(key==='speaker'){
+      const ordered=raw.activeOutput==='wired'?[raw.profiles?.wired,p]:[p,raw.profiles?.wired];
+      p=ordered.find(profile=>profile && Number.isFinite(profile.offsetMs));
+    }
     if(p && Number.isFinite(p.offsetMs))profiles[key]={...p,offsetMs:clampOffset(p.offsetMs)};
   }
-  const activeOutput=OUTPUTS.some(([key])=>key===raw?.activeOutput)?raw.activeOutput:'speaker';
+  const requested=outputKey(raw?.activeOutput);
+  const activeOutput=OUTPUTS.some(([key])=>key===requested)?requested:'speaker';
   if(raw?.version!==1 && legacy!==null && legacy!=='' && Number.isFinite(Number(legacy)))profiles[activeOutput]={offsetMs:clampOffset(Number(legacy)),method:'manual'};
   return {version:1,activeOutput,profiles};
 }
-export const effectiveOffset = (settings, output=settings.activeOutput, baseline=DEFAULT_TIMING_OFFSET_MS) => settings.profiles[output]?.offsetMs ?? baseline;
+export const effectiveOffset = (settings, output=settings.activeOutput) => settings.profiles[outputKey(output)]?.offsetMs ?? defaultTimingOffset(output);
 export function analyzeTiming(values) {
   const center=median(values),mad=median(values.map(v=>Math.abs(v-center))),limit=Math.max(25,3*1.4826*mad);
   const inliers=values.filter(v=>Math.abs(v-center)<=limit);
@@ -54,6 +62,7 @@ export function matchCalibrationBeat(beats, now, rate, appliedMs, used=new Set()
   return Math.abs(best.errorMs)<=Math.min(490,interval/rate*1000*.49)?best:null;
 }
 export function timingReport(settings, output=settings.activeOutput){
+  output=outputKey(output);
   const profile=settings.profiles[output];
-  return profile ? {type:'study-beat-timing',algorithm:1,output,offsetMs:profile.offsetMs,recommendedBaselineMs:profile.offsetMs,currentBaselineMs:DEFAULT_TIMING_OFFSET_MS,...profile} : null;
+  return profile ? {type:'study-beat-timing',algorithm:1,output,offsetMs:profile.offsetMs,recommendedBaselineMs:profile.offsetMs,currentBaselineMs:defaultTimingOffset(output),...profile} : null;
 }

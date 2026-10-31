@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, DEFAULT_TIMING_OFFSET_MS, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.26.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.26.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.26.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.26.0';
-const VERSION = '0.26.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, matchCalibrationBeat, timingReport } from './calibration.js?v=0.26.1';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.26.1';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.26.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.26.1';
+const VERSION = '0.26.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -438,7 +438,7 @@ $('tuning-normal').addEventListener('click',()=>{const initial=tuningSession.sta
 $('tuning-save').addEventListener('click',()=>{
   const state = tuningSession.status(); if (!state.ready) return;
   pauseTuning();
-  timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(state.estimateMs),method:'calibrated',sampleCount:state.inliers,excluded:state.excluded,spreadMs:Math.round(state.spreadMs),playbackRate:tuningRate(),verifiedAtNormalSpeed:tuningRate()===1,trackId:track.id,measuredAt:new Date().toISOString(),baselineAtMeasurement:DEFAULT_TIMING_OFFSET_MS};
+  timingSettings.profiles[timingSettings.activeOutput] = {offsetMs:clampOffset(state.estimateMs),method:'calibrated',sampleCount:state.inliers,excluded:state.excluded,spreadMs:Math.round(state.spreadMs),playbackRate:tuningRate(),verifiedAtNormalSpeed:tuningRate()===1,trackId:track.id,measuredAt:new Date().toISOString(),baselineAtMeasurement:defaultTimingOffset(timingSettings.activeOutput)};
   tuningSession.appliedMs = clampOffset(state.estimateMs);
   const saved = persistTiming(); syncTimingUi();
   tuningMessage = `${signedMs(state.estimateMs)}を${saved?'保存しました。次回から適用します。':'今回のみ適用しました。ブラウザへ保存できませんでした。'}`;
