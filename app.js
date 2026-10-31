@@ -1,12 +1,14 @@
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions } from './progress.js?v=0.22.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.22.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.22.0';
-const VERSION = '0.22.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests } from './progress.js?v=0.23.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist } from './game.js?v=0.23.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.23.0';
+const VERSION = '0.23.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let questionKey = '';
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
+let personalBests = normalizeBests(null), resultTimer;
+try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) || 'null')); } catch {}
 let reviewQuestions = [], reviewIndex = 0, reviewSolved = false, reviewWrong = 0;
 try { learningHistory = normalizeHistory(JSON.parse(localStorage.getItem(HISTORY_KEY) || 'null')); } catch {}
 let characters = [], choiceElements = [];
@@ -134,6 +136,7 @@ document.addEventListener('touchend', () => {
   if (screen === 'play') prepareTapAudio()?.catch(() => {});
 }, { passive: true });
 const show = next => {
+  if (next !== 'result') { clearTimeout(resultTimer); resultTimer = undefined; $('result-details').classList.remove('revealed'); }
   screen = next; document.body.classList.toggle('playing', next === 'play');
   document.documentElement.classList.toggle('play-locked', next === 'play');
   for (const name of ['home', 'play', 'result', 'practice-review']) $(name).hidden = name !== next;
@@ -524,6 +527,11 @@ async function togglePause() {
   catch { game.message = '再生できませんでした。再開を押して再試行してください。'; render(); }
   finally { busy = false; }
 }
+function renderBest(element, key, records) {
+  element.replaceChildren();
+  const value = document.createElement('span'); value.textContent = `自己ベスト ${records.best[key].toLocaleString()}`; element.append(value);
+  if (records.updated[key]) { const badge = document.createElement('b'); badge.textContent = '自己ベスト更新'; element.append(badge); }
+}
 function finish(completed) {
   if (screen !== 'play') return;
   audio.pause(); cancelAnimationFrame(frame);
@@ -531,7 +539,18 @@ function finish(completed) {
   const unfinished = !['intro','feedback','rhythm','outro'].includes(game.phase) ? game.question.reviewLabel : null;
   const unfinishedWrong = sessionResults.get(game.questionIndex)?.wrong || 0;
   const awards = game.achievements(completed, !!unfinished);
-  game.finish(); show('result');
+  game.finish();
+  clearTimeout(resultTimer); $('result-details').hidden = true; $('result-details').classList.remove('revealed');
+  const records = updateBests(personalBests, {totalScore:game.totalScore, rhythmCombo:game.maxCombo, quizCombo:game.maxQuizCombo});
+  personalBests = records.best;
+  try { localStorage.setItem(BEST_KEY, JSON.stringify(personalBests)); }
+  catch { $('history-storage-note').hidden = false; }
+  show('result');
+  renderBest($('result-score-best'), 'totalScore', records);
+  resultTimer = setTimeout(() => {
+    if (screen !== 'result') return;
+    $('result-details').hidden = false; $('result-details').classList.add('revealed'); resultTimer = undefined;
+  }, 1200);
   $('result-awards').replaceChildren();
   const praise = [];
   if (awards.double) praise.push(['ダブルパーフェクト！', 'リズムも回答も、最後までミスなし。見事な完走！']);
@@ -551,22 +570,24 @@ function finish(completed) {
   const columns = [
     ['リズム', [
       ['リズム得点', game.rhythmScore.toLocaleString()], ['基本点', rhythmBase.toLocaleString()],
-      ['コンボ加算', (game.rhythmScore - rhythmBase).toLocaleString()], ['最大リズムコンボ', game.maxCombo],
+      ['コンボ加算', (game.rhythmScore - rhythmBase).toLocaleString()], ['最大リズムコンボ', game.maxCombo, 'rhythmCombo'],
       ['PERFECT', `${game.judgments.PERFECT}回`], ['GOOD', `${game.judgments.GOOD}回`], ['MISS', `${game.judgments.MISS}回`]
     ]],
     ['問題', [
       ['正解得点', game.quizScore.toLocaleString()], ['基本点', quizBase.toLocaleString()],
-      ['コンボ加算', (game.quizScore - quizBase).toLocaleString()], ['最大一発正解コンボ', game.maxQuizCombo],
-      ['正答回数', `${game.correctCount}回`], ['お手付き回数', `${game.wrongCount}回`], ['一発正解', `${game.firstCount}回`]
+      ['コンボ加算', (game.quizScore - quizBase).toLocaleString()], ['最大一発正解コンボ', game.maxQuizCombo, 'quizCombo'],
+      ['正答回数', `${game.correctCount}回`], ['一発正解', `${game.firstCount}回`], ['お手付き回数', `${game.wrongCount}回`]
     ]]
   ];
   for (const [title, entries] of columns) {
     const column = document.createElement('section'), heading = document.createElement('h2');
     column.className = 'result-column'; column.setAttribute('aria-label', `${title}の成績`);
     heading.textContent = title; column.append(heading);
-    for (const [label, value] of entries) {
+    for (const [label, value, bestKey] of entries) {
       const div = document.createElement('div'), strong = document.createElement('strong');
-      div.textContent = label; strong.textContent = value; div.append(strong); column.append(div);
+      div.textContent = label; strong.textContent = value; div.append(strong);
+      if (bestKey) { const badge = document.createElement('span'); badge.className = 'personal-best'; renderBest(badge, bestKey, records); div.append(badge); }
+      column.append(div);
     }
     $('result-stats').append(column);
   }

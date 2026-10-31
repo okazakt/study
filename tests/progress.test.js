@@ -58,3 +58,16 @@ test('audited cloze topics are hidden by default and necessary language prompts 
  assert.ok(makePhraseQuestions(english.find(x=>x.phrase_blanks))[0].context);
  const unseen={...read('math')[0]};delete unseen.cloze_context;assert.equal(makeBlankQuestions(unseen)[0].context,'');
 });
+
+test('personal bests persist independent values, increase strictly and ignore zeros and invalid values',async()=>{
+ const {normalizeBests,updateBests}=await import('../progress.js');
+ const first=updateBests(null,{totalScore:100,rhythmCombo:10,quizCombo:3});
+ assert.deepEqual(first.updated,{totalScore:true,rhythmCombo:true,quizCombo:true});
+ const restored=normalizeBests(JSON.parse(JSON.stringify(first.best)));
+ const next=updateBests(restored,{totalScore:100,rhythmCombo:12,quizCombo:2});
+ assert.deepEqual(next.updated,{totalScore:false,rhythmCombo:true,quizCombo:false});
+ assert.deepEqual(next.best,{totalScore:100,rhythmCombo:12,quizCombo:3});
+ assert.deepEqual(restored,first.best);
+ assert.deepEqual(updateBests(null,{totalScore:0,rhythmCombo:0,quizCombo:0}).updated,{totalScore:false,rhythmCombo:false,quizCombo:false});
+ assert.deepEqual(normalizeBests({totalScore:-1,rhythmCombo:Infinity,quizCombo:'9'}),{totalScore:0,rhythmCombo:0,quizCombo:0});
+});

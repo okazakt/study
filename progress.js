@@ -30,3 +30,13 @@ export function missedQuestions(results) {
     seen.add(key);return true;
   }).map(result=>result.question);
 }
+
+export const BEST_KEY = 'study-beat-bests-v1';
+export function normalizeBests(raw) {
+  return {totalScore:count(raw?.totalScore),rhythmCombo:count(raw?.rhythmCombo),quizCombo:count(raw?.quizCombo)};
+}
+export function updateBests(previous, current) {
+  const best = normalizeBests(previous), values = normalizeBests(current), updated = {};
+  for (const key of Object.keys(best)) { updated[key] = values[key] > best[key]; best[key] = Math.max(best[key], values[key]); }
+  return {best, updated};
+}
