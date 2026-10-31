@@ -2,24 +2,67 @@
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
 const count = n => Number.isSafeInteger(n) && n >= 0 ? n : 0;
+// Recover one row per question occurrence, including older retry records that
+// predate stable attempt IDs. Missing old details remain explicitly unknown.
+function eventAttempts(events) {
+  const grouped=new Map(), identities=new Map();
+  for(const [i,event] of events.entries()){
+    const rows=grouped.get(event.key) || [], last=rows.at(-1);
+    const byId=identities.get(event.key) || new Map();
+    let row=event.attempt ? byId.get(event.attempt) : null;
+    if(!event.attempt && last && !last.solved && last.kind===event.kind && last.session===(event.session || '') && event.wrongBefore!==0 && !(event.correct && !event.wrongBefore))row=last;
+    if(!row){row={attempt:event.attempt || `legacy:${event.key}:${i}`,correct:true,solved:false,wrongCount:0,kind:event.kind,session:event.session || ''};rows.push(row);byId.set(row.attempt,row);}
+    if(!event.attempt && !Number.isSafeInteger(event.wrongBefore))row.uncertain=true;
+    row.correct &&= event.correct && !event.wrongBefore;
+    row.solved=event.correct;row.wrongCount=Math.max(row.wrongCount+(event.correct?0:1),count(event.wrongBefore)+(event.correct?0:1));
+    row.chosen=event.chosen ?? null;row.time=Number.isFinite(event.time)?event.time:null;
+    grouped.set(event.key,rows);identities.set(event.key,byId);
+  }
+  return grouped;
+}
+function recentResult(row, recovered=null){
+  const source=recovered ? {...row,...recovered,correct:row.correct && recovered.correct} : row;
+  const correct=!!source.correct;
+  const solved=typeof source.solved==='boolean'?source.solved:correct?true:null;
+  const wrongCount=Math.max(count(source.wrongCount),correct?0:1);
+  return {attempt:source.attempt,correct,solved,wrongCount,chosen:source.chosen ?? null,time:Number.isFinite(source.time)?source.time:null,kind:['play','review'].includes(source.kind)?source.kind:null};
+}
 export function normalizeHistory(raw) {
   if (raw?.version !== 1) return {version:1, questions:{}, events:[]};
-  const questions = Object.fromEntries(Object.entries(raw.questions || {}).filter(([,q])=>q && typeof q==='object').map(([key,q])=>[key,{...q,correct:count(q.correct),wrong:count(q.wrong),first:count(q.first),reviewCorrect:count(q.reviewCorrect),reviewWrong:count(q.reviewWrong),recent:Array.isArray(q.recent)?q.recent.filter(r=>r && typeof r.attempt==='string' && typeof r.correct==='boolean').slice(-3):[]}]));
   const events = (Array.isArray(raw.events) ? raw.events : []).filter(e=>e && typeof e.key==='string' && typeof e.correct==='boolean' && ['play','review'].includes(e.kind) && typeof e.subject==='string' && typeof e.grade==='string').slice(-10000);
-  return {version:1,questions,events};
+  const recovered=eventAttempts(events);
+  const questions=Object.fromEntries(Object.entries(raw.questions || {}).filter(([,q])=>q && typeof q==='object').map(([key,q])=>{
+    const row={...q,correct:count(q.correct),wrong:count(q.wrong),first:count(q.first),reviewCorrect:count(q.reviewCorrect),reviewWrong:count(q.reviewWrong)};
+    const attempts=recovered.get(key) || [], byId=new Map(attempts.map(a=>[a.attempt,a]));
+    const recent=Array.isArray(q.recent)?q.recent.filter(r=>r && typeof r.attempt==='string' && typeof r.correct==='boolean').slice(-3):[];
+    const tail=attempts.slice(-recent.length);
+    const legacyAligned=recent.length>0 && tail.length===recent.length && recent.every((r,i)=>r.attempt.startsWith('legacy:') && r.correct===tail[i].correct);
+    row.recent=recent.length?recent.map((r,i)=>recentResult(r,byId.get(r.attempt) || (legacyAligned?tail[i]:null))):attempts.slice(-3).map(r=>recentResult(r));
+    const completed=row.correct+row.reviewCorrect;
+    const confirmedFloor=Math.max(row.correct,row.wrong>0?1:0)+Math.max(row.reviewCorrect,row.reviewWrong>0?1:0);
+    const lowerBound=Math.max(confirmedFloor,completed+attempts.filter(a=>!a.solved).length,attempts.length,row.recent.length);
+    row.answerCount=Math.max(count(q.answerCount),lowerBound);
+    row.answerCountEstimated=typeof q.answerCountEstimated==='boolean'?q.answerCountEstimated:!(!attempts.some(a=>a.uncertain) && attempts.filter(a=>a.solved).length===completed && attempts.reduce((n,a)=>n+a.wrongCount,0)===row.wrong+row.reviewWrong);
+    row.lastAt=Math.max(Number.isFinite(q.lastAt)?q.lastAt:0,...attempts.map(a=>a.time ?? 0));
+    return [key,row];
+  }));
+  return {version:1, questions, events};
 }
 export function recordAnswer(state, q, {correct, chosen, wrongBefore=0, kind='play', session='', course='', time=Date.now(), version='', attempt=''}={}) {
-  const key=questionKey(q), old=state.questions[key] || {correct:0,wrong:0,first:0,reviewCorrect:0,reviewWrong:0};
+  const key=questionKey(q);
+  let old=state.questions[key] || {correct:0,wrong:0,first:0,reviewCorrect:0,reviewWrong:0,answerCount:0,answerCountEstimated:false,recent:[]};
+  if(!Number.isSafeInteger(old.answerCount))old=normalizeHistory(state).questions[key];
   const meta={key,sourceId:q.sourceId || q.id,mode:q.mode,blankIndex:q.blankIndex || 0,school:q.school_level,subject:q.subject,grade:q.grade,label:q.reviewLabel,answer:q.answer};
   const entry={...old,...meta,lastAt:time};
-  if(kind==='review') entry[correct?'reviewCorrect':'reviewWrong']++;
-  else {entry[correct?'correct':'wrong']++;if(correct && !wrongBefore)entry.first++;}
   const attemptId = attempt || `${session}:${kind}:${time}:${old.correct+old.wrong+old.reviewCorrect+old.reviewWrong}`;
-  const previousRecent = old.recent?.length ? old.recent : buildPriorityIndex(state).recent.get(key) || [];
-  const recent = previousRecent.map((r,i)=>({...r,attempt:r.attempt || `legacy:${key}:${time}:${i}`}));
-  if (recent.at(-1)?.attempt === attemptId) recent[recent.length-1] = {attempt:attemptId,correct:recent.at(-1).correct && !!correct && !wrongBefore};
-  else recent.push({attempt:attemptId,correct:!!correct && !wrongBefore});
-  entry.recent = recent.slice(-3);
+  const previousRecent=old.recent?.length?old.recent:(eventAttempts(state.events).get(key) || []).slice(-3).map(r=>recentResult(r));
+  const recent=previousRecent.map(r=>({...r})),previous=recent.at(-1)?.attempt===attemptId?recent.at(-1):null;
+  const result={attempt:attemptId,correct:(previous?.correct ?? true) && !!correct && !wrongBefore,solved:!!correct,wrongCount:Math.max(count(previous?.wrongCount)+(correct?0:1),wrongBefore+(correct?0:1)),chosen:chosen ?? null,time,kind};
+  if(previous)recent[recent.length-1]=result;else recent.push(result);
+  entry.answerCount=count(old.answerCount)+(previous?0:1);
+  entry.recent=recent.slice(-3);
+  if(kind==='review') entry[correct?'reviewCorrect':'reviewWrong']++;
+  else {entry[correct?'correct':'wrong']++;if(correct && result.correct)entry.first++;}
   const event={...meta,correct:!!correct,chosen,wrongBefore,kind,session,course,time,version,attempt:attemptId};
   return {version:1,questions:{...state.questions,[key]:entry},events:[...state.events,event].slice(-10000)};
 }
@@ -51,22 +94,7 @@ export const PRIORITY_WEIGHTS = [35,25,18,15,5,2];
 const inverseModes = {explanation_to_term:'term_to_explanation',term_to_explanation:'explanation_to_term',to_english:'to_japanese',to_japanese:'to_english',japanese_term:'japanese_definition',japanese_definition:'japanese_term',kanji_reading:'kanji_component',kanji_component:'kanji_reading'};
 const answered = row => !!row && ['correct','wrong','reviewCorrect','reviewWrong'].some(key=>count(row[key])>0);
 export function buildPriorityIndex(state) {
-  const reverse = new Map(), recent = new Map(), pending = new Set();
-  // Reconstruct older histories that predate per-attempt identifiers.
-  for (const event of state.events) {
-    const rows = recent.get(event.key) || [];
-    if(event.attempt){
-      if(rows.at(-1)?.attempt===event.attempt) rows[rows.length-1].correct &&= event.correct && !event.wrongBefore;
-      else rows.push({attempt:event.attempt,correct:event.correct && !event.wrongBefore});
-    } else if (!event.correct) {
-      if(!pending.has(event.key))rows.push({correct:false});
-      pending.add(event.key);
-    } else {
-      if(!pending.has(event.key) || !event.wrongBefore)rows.push({correct:!event.wrongBefore});
-      pending.delete(event.key);
-    }
-    recent.set(event.key,rows.slice(-3));
-  }
+  const reverse = new Map(), recent = new Map([...eventAttempts(state.events)].map(([key,rows])=>[key,rows.slice(-3).map(r=>recentResult(r))]));
   for(const row of Object.values(state.questions)) {
     if(!answered(row))continue;
     const key=JSON.stringify([row.sourceId,row.mode]), previous=reverse.get(key)||{correct:0,wrong:0};
@@ -87,6 +115,15 @@ export function priorityCategory(q, index) {
 export function questionCoverage(questions, state) {
   const keys=new Set(questions.map(questionKey));
   return {total:keys.size,solved:[...keys].filter(key=>answered(state.questions[key])).length};
+}
+function selectionRank(q,index){
+  const key=questionKey(q),row=index.state.questions[key],recent=row?.recent?.length?row.recent:index.recent.get(key) || [];
+  let failures=0;for(let i=recent.length-1;i>=0 && !recent[i].correct;i--)failures++;
+  return [-failures,count(row?.answerCount),Number.isFinite(row?.lastAt)?row.lastAt:0];
+}
+const compareRank=(a,b)=>a[0]-b[0] || a[1]-b[1] || a[2]-b[2];
+function unitRank(unit,category,index){
+  return unit.filter(q=>priorityCategory(q,index)===category).map(q=>selectionRank(q,index)).sort(compareRank)[0];
 }
 export function createAdaptivePicker(questions, getHistory, random=Math.random, getSessionResults=null) {
   const units=[];
@@ -129,7 +166,10 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
     const available=groups.map((group,i)=>group.length?PRIORITY_WEIGHTS[i]:0),total=available.reduce((a,b)=>a+b,0);
     let target=random()*total, category=available.findLastIndex(weight=>weight>0);
     for(let i=0;i<available.length;i++){target-=available[i];if(target<0){category=i;break;}}
-    const group=groups[category], unit=group[Math.floor(random()*group.length)];
+    const ranked=groups[category].map(unit=>({unit,rank:unitRank(unit,category+1,index)}));
+    const best=ranked.reduce((a,b)=>compareRank(a.rank,b.rank)<=0?a:b).rank;
+    const tied=ranked.filter(candidate=>compareRank(candidate.rank,best)===0);
+    const unit=tied[Math.floor(random()*tied.length)].unit;
     if(getSessionResults)for(const q of unit)seen.add(questionKey(q));
     recentSources.push(unit[0].sourceId);if(recentSources.length>3)recentSources.shift();
     // Keep stable identities but shuffle the color positions on every appearance.

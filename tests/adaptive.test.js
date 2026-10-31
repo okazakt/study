@@ -145,3 +145,38 @@ test('a new play resets session exclusions while historical priorities remain ac
  assert.equal(next()[0].sourceId,base.sourceId);
  assert.equal(category(base,state),5);
 });
+
+
+test('recent consecutive failures outrank distant successes and lower frequency within the error category',()=>{
+ const forgotten={...base,sourceId:'forgotten'},other={...base,sourceId:'other'};let state=normalizeHistory(null);
+ for(let i=0;i<20;i++)state=recordAnswer(state,forgotten,{correct:true,time:i+1,attempt:'success'+i});
+ for(let i=0;i<2;i++)state=recordAnswer(state,forgotten,{correct:false,time:100+i,attempt:'recent-error'+i});
+ state=recordAnswer(state,other,{correct:false,time:1,attempt:'old-error'});
+ assert.equal(category(forgotten,state),4);assert.equal(category(other,state),4);
+ assert.equal(createAdaptivePicker([other,forgotten],()=>state,()=>0)()[0].sourceId,'forgotten');
+});
+test('equally ranked questions favor fewer occurrences before older last response time',()=>{
+ const rare={...base,sourceId:'rare'},frequent={...base,sourceId:'frequent'};let state=normalizeHistory(null);
+ state=recordAnswer(state,rare,{correct:true,time:1000,attempt:'rare'});
+ for(let i=0;i<2;i++)state=recordAnswer(state,frequent,{correct:true,time:i+1,attempt:'frequent'+i});
+ assert.equal(category(rare,state),5);assert.equal(category(frequent,state),5);
+ assert.equal(createAdaptivePicker([frequent,rare],()=>state,()=>0)()[0].sourceId,'rare');
+});
+test('equal occurrence counts favor the oldest response and exact ties remain randomized',()=>{
+ const old={...base,sourceId:'old'},newer={...base,sourceId:'new'};let state=normalizeHistory(null);
+ state=recordAnswer(state,old,{correct:true,time:100,attempt:'old'});
+ state=recordAnswer(state,newer,{correct:true,time:200,attempt:'new'});
+ assert.equal(createAdaptivePicker([newer,old],()=>state,()=>0)()[0].sourceId,'old');
+ state.questions[questionKey(newer)].lastAt=100;
+ assert.equal(createAdaptivePicker([old,newer],()=>state,()=>0)()[0].sourceId,'old');
+ assert.equal(createAdaptivePicker([old,newer],()=>state,()=>.999)()[0].sourceId,'new');
+});
+test('unit tie-breaking uses the urgent stage and still returns every continuation',()=>{
+ const first={...base,sourceId:'unit',mode:'term_to_explanation',blankIndex:1};
+ const second={...first,blankIndex:2,continuation:true},other={...base,sourceId:'other'};let state=normalizeHistory(null);
+ for(let i=0;i<3;i++)state=record(state,first,true,'mastered'+i);
+ for(let i=0;i<2;i++)state=record(state,second,false,'error'+i);
+ state=record(state,other,false,'other-error');
+ const unit=createAdaptivePicker([other,first,second],()=>state,()=>0)();
+ assert.equal(unit.length,2);assert.deepEqual(unit.map(q=>q.blankIndex),[1,2]);
+});

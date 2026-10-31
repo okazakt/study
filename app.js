@@ -1,8 +1,8 @@
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.33.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.33.0';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.33.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.33.0';
-const VERSION = '0.33.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.34.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.34.0';
+import { Game, RULES, COLORS, answerProgress, makePlaylist, makeQuestionQueue } from './game.js?v=0.34.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.34.0';
+const VERSION = '0.34.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -11,7 +11,14 @@ let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sess
 let personalBests = normalizeBests(null), resultTimer;
 try { personalBests = normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY) || 'null')); } catch {}
 let reviewQuestions = [], reviewIndex = 0, reviewSolved = false, reviewWrong = 0;
-try { learningHistory = normalizeHistory(JSON.parse(localStorage.getItem(HISTORY_KEY) || 'null')); } catch {}
+try {
+  const stored=localStorage.getItem(HISTORY_KEY), raw=JSON.parse(stored || 'null');
+  learningHistory=normalizeHistory(raw);
+  if(raw?.version===1 && stored!==JSON.stringify(learningHistory)){
+    try { localStorage.setItem(HISTORY_KEY,JSON.stringify(learningHistory)); }
+    catch { $('history-storage-note').hidden=false; }
+  }
+} catch {}
 let characters = [], choiceElements = [];
 let catalogQuestions = [], reviewRun = '';
 let catalog, preferences, activeSubject = '', dataReady = false, savedLearning;
