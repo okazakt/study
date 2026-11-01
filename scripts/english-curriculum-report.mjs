@@ -12,12 +12,13 @@ lines.push('','## 2026年度に使用する教科書','','使用年度2026と、
 '| ONE WORLD／教育出版 | 3学年の公開語彙DBと現行の年間計画を照合し、一部語彙の単元選択に対応 | 未一致語・語義・活用形・固有名詞・連語等の確認と素材補充。文法・読解の教科書紐付けは未対応 |',
 '| Here We Go!／光村図書 | 単元系統表を取得・版を確認 | 単元別語彙の照合と対応は未完了 |',
 '| BLUE SKY／啓林館 | 書誌確認 | [公式メンテナンス表示](https://www.shinko-keirin.co.jp/maintenance.html)へ転送されるため、単元別語彙は未照合 |',
-'','## 語彙照合の結果と限界','',`- ONE WORLD：文字列の語・語句${audit.oneWorld.totalEntries}件。正規化した訳語の一致${audit.oneWorld.senseConfirmed}件、綴りは一致するが語義要確認${audit.oneWorld.senseReview}件、綴り未一致${audit.oneWorld.headwordUnmatched}件。`,
+'','## 語彙照合の結果と限界','',`- ONE WORLD：文字列の語・語句${audit.oneWorld.totalEntries}件。語義確認済み${audit.oneWorld.senseConfirmed}件（正規化一致${audit.oneWorld.exactSenseConfirmed}件・行別の同義確認${audit.oneWorld.reviewedSenseConfirmed}件）、綴りは一致するが語義要確認${audit.oneWorld.senseReview}件、綴り未一致${audit.oneWorld.headwordUnmatched}件。`,
 `- NEW HORIZON：3シート計${audit.newHorizon.totalEntries}行を照合し、綴り一致は${audit.newHorizon.headwordMatched}行。語義・単元の確認済み件数ではない。`,
 '- 行数は異なる語義・活用形・固有名詞・連語等を含み、異なり語数や不足素材数とは異なる。未一致をそのまま必修の不足語数として扱わない。',
 '- ONE WORLDは全単語・語句シートの主たる初出ページを、年間計画のページ範囲に当てる。欄外の別初出や、単元本文に再登場する既習語の全件対応ではない。暫定的な共通配当学年でなく、教科書の学年で絞る。',
 '- care「世話」と既存の動詞「気にかける」、kind「種類」と既存の「親切な」等、綴りだけ一致する別義は紐付けない。正規化一致以外の同義語も自動承認しない。',
-'- 529種類の既存素材に、計529か所の確認済み初出対応を登録。学年ごとの対応素材は1年301、2年140、3年88。語義一致620行の一部は対象単元のページ範囲外などの理由で、実際の選択肢へ入れない。',
+'__MAPPED_COUNTS__',
+'- 行別確認は [語義確認台帳](../../textbook-data/one-world-reviewed.json) に保持。承認314行、明示的保留10行。原本全体・原文語義・既存素材の語義をハッシュで固定し、変更時は再確認する。自動で同義語を展開しない。',
 '- 全行の分類・原シートの行番号・未解決候補は [語彙照合台帳](english-textbook-audit.json)。原本の日本語訳は公開台帳へ転載せず、対応先のIDと判断分類を保持。',
 '','## 使い方','','設定で「中学英語の教科書（2026年度使用）」からONE WORLDを選ぶ。ホームで学年または受験用を選び、教科書の単元を複数選択する。範囲はブラウザに保存。単語英和・和英・綴り等の形式と併用できる。確認済み問題のない形式・単元は選べず、空選択で共通問題に戻すことはしない。共通問題へ戻すときは、設定で教科書指定を解除する。',
 '','## 再現と更新','','原資料は取得元リンクから `/tmp/study-textbooks` 等へダウンロードし、`python3 scripts/textbook-audit.py /tmp/study-textbooks` で対応表を再生成（作業用にopenpyxlが必要。アプリには不要）。現行の可視シートだけを扱い、Excelに含まれる古い案や非表示シートを使わない。原本SHA-256が変わった場合は処理を止め、版・更新内容・語義・ページを確認してから対応表を更新する。',
@@ -26,7 +27,7 @@ lines.push('','## 2026年度に使用する教科書','','使用年度2026と、
 // Derive correspondence counts from the actual manifest rather than editorial constants.
 const owBooks=textbooks.books.filter(b=>b.series==='one-world');
 const mapped=new Set(owBooks.flatMap(b=>b.units.flatMap(u=>u.items.map(r=>r.sourceId))));
-const index=lines.findIndex(s=>s.startsWith('- 529種類'));
+const index=lines.findIndex(s=>s==='__MAPPED_COUNTS__');
 if(index>=0)lines[index]=`- ${mapped.size}種類の既存素材に計${owBooks.reduce((n,b)=>n+b.units.reduce((m,u)=>m+u.items.length,0),0)}か所の確認済み初出対応を登録。学年別の対応は${[1,2,3].map(year=>`${year}年${owBooks.filter(b=>b.year===year).reduce((n,b)=>n+b.units.reduce((m,u)=>m+u.items.length,0),0)}`).join('、')}。語義一致${audit.oneWorld.senseConfirmed}行の一部はページ範囲外等のため、選択へ入れない。`;
 writeFileSync(new URL('../docs/content/english-verification.md',import.meta.url),lines.join('\n'));
 console.log(`Curriculum ${curriculum.criteria.length} criteria; textbook mapped ${mapped.size} materials`);

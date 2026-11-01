@@ -1,0 +1,2925 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-01",
+  "source": "ow.xlsx",
+  "sourceSha256": "292952923d91f2a93ad182045e51b103fea750d737eb64aee147a5a1ea81c538",
+  "policy": "各行の既存素材と出版社の語義を読んで照合。承認は当該行・当該語義だけに有効。別義・品詞違い・資料の不整合は保留。自動の同義語展開ではない。",
+  "decisions": [
+    {
+      "row": 38,
+      "headword": "accurate",
+      "sourceId": "jr_en_sup_word_accurate",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "80862d845343e015c158e802c587615e3384c5a588cd3a306daad6652125e837",
+      "materialSenseSha256": "2105ff2ed83f359432de03bd30f4d430ab5277ded91178faf86806788a915e1e"
+    },
+    {
+      "row": 57,
+      "headword": "afraid",
+      "sourceId": "jr_en_core_word_afraid",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "7ca02af074ab3c2a4a13a9e73c2922ff56ee47f9dca1c49162886db4ffe438b0",
+      "materialSenseSha256": "cf04fc83d6b229fe0d1a496f5078cbb3bf87a3b67673e6bb9e2a007d93a58abd"
+    },
+    {
+      "row": 61,
+      "headword": "after",
+      "sourceId": "jr_en_ext_word_after",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b8147781871334e196247c80c3c82ba40b565a1bfe4ebe6ebe5d3c5fa88bfaf9",
+      "materialSenseSha256": "5d3173c187c732d4a99e5d8008f9f64fb1eee9a5abddada0dc26e68b70040367"
+    },
+    {
+      "row": 68,
+      "headword": "ago",
+      "sourceId": "jr_en_sup_word_ago",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8c8827052d68b70ca1f100685d30c8a547624cc4026c24c7f6b9c946973ef61a",
+      "materialSenseSha256": "33469e427d333092f3fd8c2b57a39fd0b2f37885442900b7985c3a9b60da62ef"
+    },
+    {
+      "row": 95,
+      "headword": "always",
+      "sourceId": "jr_en_ext_word_always",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b611939d875af97f2fdf17c4d6b84314d997ccd0084a5d85836b90d920ca59f6",
+      "materialSenseSha256": "cec4ebdfc2990023b924af1b632fd681914f28408c10185b9279cb58a8459521"
+    },
+    {
+      "row": 102,
+      "headword": "among",
+      "sourceId": "jr_en_ext_word_among",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "eb06ba25ee9daed922d4bb4e10822820679929a9ab9ce7d4039e08c90db788a6",
+      "materialSenseSha256": "b2a53a1f13a8b0631a372a10d34db1ffeba9afe2b459e91c2e6b624a30a31913"
+    },
+    {
+      "row": 117,
+      "headword": "another",
+      "sourceId": "jr_en_sup_word_another",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "49d5209dd0cc9163068d3b96f9691e5ab2a9cec3e4bc52e71ee006129f3a1cdb",
+      "materialSenseSha256": "41fc410b09fd40391e988614ee7d99c646e5ff0e45851dc7bfd9ad08b07fda3f"
+    },
+    {
+      "row": 118,
+      "headword": "answer",
+      "sourceId": "jr_en_core_word_answer",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "936f5db54fa94a0fdf8dfb58b8af8413b004b6dfab4738948656cf1d1affb2dd",
+      "materialSenseSha256": "2048b25ba54436e12525628945e422b1d93b82e24793f134b886a449e4d58688"
+    },
+    {
+      "row": 126,
+      "headword": "anyway",
+      "sourceId": "jr_en_v2_word_anyway",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "50db2fc264833cf6dc2d91c9d1c21d27149cd48ce381ad6f720b923bde831279",
+      "materialSenseSha256": "032d596eb1a25ddab44ef1a55c92f89d6b790981816c8c2b61a16d5012b970a8"
+    },
+    {
+      "row": 130,
+      "headword": "apple",
+      "sourceId": "jr_en_core_word_apple",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d4289e934a9f9693ab7c4be0bc62c8f1933ae0df842e5dde6b9ccb2139648a11",
+      "materialSenseSha256": "a738bfa64edc5143a36d96b36d7bc50613ca4e2964d25d0144f4c3eeb0447ea7"
+    },
+    {
+      "row": 142,
+      "headword": "around",
+      "sourceId": "jr_en_ext_word_around",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "254f51518c0bced8cfc406d07677065a8b26441e4f0dde4869509df43c466fa2",
+      "materialSenseSha256": "91b4a63b5bbfa9320803c59f9f67edab1ca8ed1b0dd4298cbf6d4bc2cd96829a"
+    },
+    {
+      "row": 157,
+      "headword": "ask",
+      "sourceId": "jr_en_core_word_ask",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "596257403419d90c17bfd4769dab32cd7e0f5b4897e45c267cdd1147ee5d52e4",
+      "materialSenseSha256": "304407b17c633f18869c832ea6e2a8be7dc6fdf5df64a68790a68ebbe4dd239c"
+    },
+    {
+      "row": 165,
+      "headword": "at first",
+      "sourceId": "jr_en_ext_phrase_at_first",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2d86422e4436cc1b5893bca4936d19433c121982b29d6d452a3d9891dbe5c79f",
+      "materialSenseSha256": "5fc2520b75d76582b91d5aaf44fa580921bc5ae38e97daa075e8c9964d8b8fe5"
+    },
+    {
+      "row": 166,
+      "headword": "at home",
+      "sourceId": "jr_en_core_phrase_at_home",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d915aeb4170aa6c8528640ed20e8de36048fc3911e6d997a6f74f05501e825fb",
+      "materialSenseSha256": "bbf91fbb72769656cd5e845c979ad1fc782c29716e0a067b61d70548e90106b6"
+    },
+    {
+      "row": 169,
+      "headword": "at that time",
+      "sourceId": "jr_en_core_phrase_at_that_time",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "bf7cf8885e95cf0ce3a59b861079df407fcfe1132ae37db0c8b99ec05453c42a",
+      "materialSenseSha256": "60b40872b7a5601724611987118b0e841e11cc515108f7c12122a8d7266844db"
+    },
+    {
+      "row": 215,
+      "headword": "basic",
+      "sourceId": "jr_en_sup_word_basic",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "33004e24be09d15362e9a7ef01be269f0329cdf5f562414dedb2b129bfb1c94d",
+      "materialSenseSha256": "4b1aa3206b8fe10966377ec4a5a6064851e4b4df90616ddf028de6ddc3d5ce74"
+    },
+    {
+      "row": 218,
+      "headword": "bat",
+      "sourceId": "jr_en_sup_word_bat",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ce5e0590475e89c45fa5cf4d3ac44248371592d31ee9b56bd335c6df41a2520b",
+      "materialSenseSha256": "5768ed49ca0d5445201eec90db614eae08ac0077fa576521845bab35138a1c1b"
+    },
+    {
+      "row": 241,
+      "headword": "beach",
+      "sourceId": "jr_en_ext_word_beach",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b0ef19559ba7735dadd59feb646bab8b81e845fd354ee1349229c3b351e387c7",
+      "materialSenseSha256": "e5e7b4cdf77c62b4e7bc7656d09a39d4ab0ba90fd7eb08bd551b234233022adb"
+    },
+    {
+      "row": 254,
+      "headword": "begin",
+      "sourceId": "jr_en_core_word_begin",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "22baefa5888fa87f758a64f9c8a11e296c86d3a1bc8b5cb7f92a519feba739bb",
+      "materialSenseSha256": "a00b66dd134a2755ac9efaff65ea5b40604646add63d3ec4969bfea1aef092cd"
+    },
+    {
+      "row": 256,
+      "headword": "behind",
+      "sourceId": "jr_en_v2_word_behind",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9454e7125234450efaedd7cfd6f78e949ee68a11d5f98aeb8b860f36e5729797",
+      "materialSenseSha256": "e6116b113607c902345b5b082a162eaf40c0dd901ce93335051389017e9da0ee"
+    },
+    {
+      "row": 265,
+      "headword": "between",
+      "sourceId": "jr_en_ext_word_between",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2a151e8b70d6186d547323c9c8a3bb082413236f764e2c21e4fc1e60cf307d8c",
+      "materialSenseSha256": "20306775173def30e27575aee1814a6a47479a6e8cb266e5f589810a982c50c5"
+    },
+    {
+      "row": 279,
+      "headword": "bite",
+      "sourceId": "jr_en_sup_word_bite",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f1c84c70bd7175619ee9d431dab8a5bae113679f726fabb2a26199f433038d68",
+      "materialSenseSha256": "b2fadb8803700d8c883a28c36ada05b8142f9f4bf0206a5cf265e2fccec56a6f"
+    },
+    {
+      "row": 281,
+      "headword": "black",
+      "sourceId": "jr_en_v2_word_black",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "53b6e1f0f83b56f6e8d8f8b551564c231855cff2a2adda5c078720fd48473b08",
+      "materialSenseSha256": "7ba8ca083aca2c11167b376f20750d5c0b43f5e7c1aaac283db0437fc88a4e6a"
+    },
+    {
+      "row": 284,
+      "headword": "blind",
+      "sourceId": "jr_en_sup_word_blind",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e99c2a0936d1fd9ee498d993a70f741710035e0f72c4eaf57c96a989f99ad551",
+      "materialSenseSha256": "483aaf00ef600c6f74dd6a7ef8eae6207ec49807ddc70b51bafc1ac209b73e66"
+    },
+    {
+      "row": 287,
+      "headword": "blue",
+      "sourceId": "jr_en_v2_word_blue",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "58b0d9b6a5b76f7a6b78bcd6715dc15b06e9d7460e998770736913f6ccb8b9aa",
+      "materialSenseSha256": "79bd6a85ae65180a9be77e9dbc26f93e20f70df2a72562838c5a195a354fba06"
+    },
+    {
+      "row": 290,
+      "headword": "boarding",
+      "sourceId": "jr_en_v2_word_boarding",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "fbcbf817fcf365e2520c78d9951742c04ecfa6faa5e74011488f4e2b29df3487",
+      "materialSenseSha256": "119f1ba08136efb88ede908a15a3b104a911e0c8409f0664b2a3bfe1d85a2bf5"
+    },
+    {
+      "row": 291,
+      "headword": "boat",
+      "sourceId": "jr_en_core_word_boat",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "119bf2576e12d573e63f011d36c0cde9379c17d22e4a2daa7839a0155b934634",
+      "materialSenseSha256": "b7a022f9edcb719c6cc8c4de868250837266909308920849f7931d6b02f55613"
+    },
+    {
+      "row": 321,
+      "headword": "breath",
+      "sourceId": "jr_en_ext_word_breath",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "280e12a8d2af24145fd548159f4b0340227bb071f5ea8dc22de9a5a6457efa68",
+      "materialSenseSha256": "82dfa80e6a35d16bebc6df5d791b4223103f21288ede220a57985e4118afcbd2"
+    },
+    {
+      "row": 333,
+      "headword": "brown",
+      "sourceId": "jr_en_v2_word_brown",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "150ab23beaf460a4d2492c02761e1540613c14051ffd75e183eecc3c310456f2",
+      "materialSenseSha256": "f67ff5a280bf972411321f36c49dd5fc65682d1e4c2cb2398ca86211612769b8"
+    },
+    {
+      "row": 380,
+      "headword": "car",
+      "sourceId": "jr_en_core_word_car",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e63c54d663b8177886850de166826062e9e1c1ba929fc946966dc77de13fd31c",
+      "materialSenseSha256": "fb60a25de4c5a5a6d7fd622f6e448b8b51686dd3a7a486f152ee0eaa80cfa8a3"
+    },
+    {
+      "row": 383,
+      "headword": "career",
+      "sourceId": "jr_en_sup_word_career",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d50f05cf851445eeccac2ba99b891a98aeaf2e3ea113eafd2c83cb07b20218da",
+      "materialSenseSha256": "164d5871983c8687a7b7f1567c2c78678ba7d6c5146cbfd1e62d94334e04e8b0"
+    },
+    {
+      "row": 388,
+      "headword": "carrot",
+      "sourceId": "jr_en_core_word_carrot",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c785525f101eebc9fb4a8dd25021a9a174bd6be3284897f3cf05a1b4ec9116c1",
+      "materialSenseSha256": "c07f0efe2a5672f3a98811b84d43cd6be50942a2678fd9282c272399fd1cef03"
+    },
+    {
+      "row": 397,
+      "headword": "cat",
+      "sourceId": "jr_en_core_word_cat",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5f3f53d9cabace2d7ec766b76b6f480f714b25d345d476e2deaf51ddf81f623b",
+      "materialSenseSha256": "6db2a97aa1d846397aa6c7031df9ed7b9ec50973964e138c9c1cabf4298e9695"
+    },
+    {
+      "row": 405,
+      "headword": "celebrate",
+      "sourceId": "jr_en_audit_word_celebrate",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1252914da0cad6b285fd932189f7ee380eff06f7c719192d4035c06d3ee8e24a",
+      "materialSenseSha256": "54c8f4e047486bf5d0988c5fa89d4cb0f8126615a93ff8a0da773991cffee3f0"
+    },
+    {
+      "row": 418,
+      "headword": "charity",
+      "sourceId": "jr_en_sup_word_charity",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "305d8f0f559fad5d1b586501f7b1a0a0f453fc0fc06476f094dcc9155180c8be",
+      "materialSenseSha256": "fd6bc45bd625fe2cd7e9e026a083c5066114e9a9c0b8fc1a32dc394ff16e89ab"
+    },
+    {
+      "row": 420,
+      "headword": "cheap",
+      "sourceId": "jr_en_ext_word_cheap",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "685cf10081c8b3f7b35a700a9925e52aeb03719572b83da19e06e1df0ec4abc1",
+      "materialSenseSha256": "19533c6fd902065fa3be1144b2c3b10d9fe3e2caf0e1adcdae65a787afdb7cbb"
+    },
+    {
+      "row": 425,
+      "headword": "cherry",
+      "sourceId": "jr_en_sup_word_cherry",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "dc9f7279fe87f0d3b1480cbe1ba0cdaf74a001cf8799c7df3050130528fe97b0",
+      "materialSenseSha256": "d57751782f6c1e07a7c5118f7753a1a5e258887e5b78c7c09300012e74d4af15"
+    },
+    {
+      "row": 463,
+      "headword": "clock",
+      "sourceId": "jr_en_v2_word_clock",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6fd2f3add204d8076914a6ebe7c2ae0e15a89bd4abd4ef96aea9450a3e2973f9",
+      "materialSenseSha256": "fc807fab500fbc942eb59f2000c03985d1ba14fd32ebf78a76a239bebcf04df5"
+    },
+    {
+      "row": 465,
+      "headword": "closet",
+      "sourceId": "jr_en_sup_word_closet",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8a5d7313cd344caa29f0c76817a45c72e1f0595e0541cfe9355da3c0c4dce568",
+      "materialSenseSha256": "dad6f476c3072c172601b4ee7da231df3418d494f55b19ca772c260a5cec44b3"
+    },
+    {
+      "row": 483,
+      "headword": "come back",
+      "sourceId": "jr_en_sup_phrase_come_back",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5420891521afc46b7ede9ab415de3e63eca15f7e4fb61f079c1fd8d91c4d7940",
+      "materialSenseSha256": "7b5a408115bb8f5f63e29c0f359792d545156a5862ed65404d1ccebb2ad939b6"
+    },
+    {
+      "row": 489,
+      "headword": "comedian",
+      "sourceId": "jr_en_v2_word_comedian",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b00c3475bffe26a34e91046284c450990608dde9bb073d42e09db0ad3979be3f",
+      "materialSenseSha256": "46ab0482a4247ee6c6ded06ca14a356ef53a2ea1669ad6ef653c3bf5d4b48265"
+    },
+    {
+      "row": 497,
+      "headword": "communicate",
+      "sourceId": "jr_en_sup_word_communicate",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "624cc38e658dd8902f9567bfc76d3b53368124d875d9496be4dbc355d3171778",
+      "materialSenseSha256": "20a5f2de516a4eb65362cb2dfeb6ad51684c577d812906a8fc9167d8935da2dd"
+    },
+    {
+      "row": 506,
+      "headword": "computer",
+      "sourceId": "jr_en_core_word_computer",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5fe9c0fb811b747930596c97942dcfb09ea9883022957b45fd594938144bde4b",
+      "materialSenseSha256": "b0a8d8877499d09a34611ecdca370d7d519929b2b9689b2a6eec26ee0b787ee2"
+    },
+    {
+      "row": 508,
+      "headword": "concert",
+      "sourceId": "jr_en_core_word_concert",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "49b34a8a3cf6575cacef74ff109a60aff08a1f828c8b6cd28327d69c89694f80",
+      "materialSenseSha256": "a337df1243e22fb691020271d4e73fef772bd85218a0dcea4670502b44fd99df"
+    },
+    {
+      "row": 532,
+      "headword": "corner",
+      "sourceId": "jr_en_core_word_corner",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9edd7c3259b3f39af0dbf5ad6f8ad83315c383df1b5f7083df2b60d87c820e36",
+      "materialSenseSha256": "8097c48d159a1fc951a838ecbc0caf28c9c85f6460e8b8dcb5fb72157d5009f4"
+    },
+    {
+      "row": 548,
+      "headword": "cow",
+      "sourceId": "jr_en_core_word_cow",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "fd3dfdc79319bb9fc62a224c137b04c2a9229e7c91d1a08b66f9635c7d0acea2",
+      "materialSenseSha256": "e93cd9f5c7bea3c2fd60b37db3de3ec498cfee6a8ed39ea89dbabe01297ad1b2"
+    },
+    {
+      "row": 555,
+      "headword": "cross",
+      "sourceId": "jr_en_ext_word_cross",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "0d8cb7c31210c8b0bc62b3c4fb35d47e2f69e866739b694aa1ebff57380dc97c",
+      "materialSenseSha256": "aca282f144524fede50eb30131fe3253104cd78d9b5f33b412c11ed6082cba16"
+    },
+    {
+      "row": 557,
+      "headword": "cucumber",
+      "sourceId": "jr_en_ext_word_cucumber",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4dc99354c0dff33e52dc3a2707b4af55aa6cf4a85c3d8bf362b9cd21a812d440",
+      "materialSenseSha256": "9e3286602f66c4223765cfe8dd8fc9c8d86aa19f55a51160aa7ac194f2cad93c"
+    },
+    {
+      "row": 559,
+      "headword": "cultural",
+      "sourceId": "jr_en_ext_word_cultural",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6e42199181d168720b5dd78aff10b5285c15aa2eaad85a3f47fad689bf694653",
+      "materialSenseSha256": "f7d954207c8610d6f24305e8a75b90aca9b1f3f031700ed8ab4d9a09183a5e03"
+    },
+    {
+      "row": 574,
+      "headword": "damage",
+      "sourceId": "jr_en_audit_word_damage",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "98dceb607ff70996ae16223c6df75c3c59a4bffda6f4ce715c277a79cfe60a82",
+      "materialSenseSha256": "6546e172ac9750f4488edaa485eb5aa58c4b4c90abbb47f8e701aa72026b5576"
+    },
+    {
+      "row": 577,
+      "headword": "dancer",
+      "sourceId": "jr_en_v2_word_dancer",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6a86079fb8f6d7977e79309ab675926966480f4c728f8aa640a5e219f35281ea",
+      "materialSenseSha256": "b2a26924778e0d01613fc2891e77ecdcaafc90e35786f9d120e0723c0f690d44"
+    },
+    {
+      "row": 585,
+      "headword": "dead",
+      "sourceId": "jr_en_sup_word_dead",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "cf76e0e3b33318b8863ccc3e36372732cffaa281161620d96748675742cdd34b",
+      "materialSenseSha256": "75b217eb8f4d22ba47f94363d30213a6a39740e47cd12a5b03e2cde531ed8ad1"
+    },
+    {
+      "row": 594,
+      "headword": "decrease",
+      "sourceId": "jr_en_core_word_decrease",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c7c64ce8bfb3d1e6afd21b640d0e8ff1262104079f054ad0aaa5dfea6e064e9d",
+      "materialSenseSha256": "1729ed6456e4b28e97813ffd56d6ba438b2491040bd863f5f3c0b89c21279dce"
+    },
+    {
+      "row": 605,
+      "headword": "design",
+      "sourceId": "jr_en_v2_word_design",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "af84e791679de47a1b5aed22f8cdc6749c4856e01f8a4c12a479e5e5bdfad0a4",
+      "materialSenseSha256": "2ae70eb1a406a648b31dfd9cc8ff0e32e657c3ba9547aa693d83c03518bd0a1e"
+    },
+    {
+      "row": 608,
+      "headword": "dessert",
+      "sourceId": "jr_en_v2_word_dessert",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "3a0602b737470901772205848a3aa544577c6c23fa9a103d582e84fb4c49c26f",
+      "materialSenseSha256": "64a202e234cacb6a462bb43a813661ae09f4d2fcd13f2003a3009d5539a090bd"
+    },
+    {
+      "row": 624,
+      "headword": "different",
+      "sourceId": "jr_en2_011",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8505519832c04d1ca016079e5513cc599cd901765e3d508da50cdedc811c437a",
+      "materialSenseSha256": "724933686c502f3b192f9d7f2cdd861e258effed59ecc30be6c2212f0d633480"
+    },
+    {
+      "row": 631,
+      "headword": "dirty",
+      "sourceId": "jr_en_ext_word_dirty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1923b3a2b6db05a46cf448fa70515172221e21f16c7ede6ecea7fb2a954e2552",
+      "materialSenseSha256": "5145e29a096b05c3d483eff2054ca009d6829ada35afdd1fbe236ed5e730755b"
+    },
+    {
+      "row": 632,
+      "headword": "disagree",
+      "sourceId": "jr_en_audit_word_disagree",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4a5bffdbd9e8c7bd593d4bb4126e134c1e9f3ee6180bda7adeeec04c336cc46a",
+      "materialSenseSha256": "3b6243236f36b98018eabfc5e32569afe7157b5a6fcedbbbf3f9c2ecd79b4aa3"
+    },
+    {
+      "row": 637,
+      "headword": "discuss",
+      "sourceId": "jr_en_core_word_discuss",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "fddd0f5982397ce50b063744be580002b6c3a3e6b5efa80bcbee3c48ea23980a",
+      "materialSenseSha256": "62dba4dbb81b058decb9e753242613e43e00723b073fabe2ef0a2dfeea315058"
+    },
+    {
+      "row": 638,
+      "headword": "discussion",
+      "sourceId": "jr_en_v2_word_discussion",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "afd5b8477d7ff329cd78b6c1a314f96f3e2617053b95cccb41d104bcde3abaea",
+      "materialSenseSha256": "b592760b298449b33878ac049f52dc7850f25a13308a824b90d35d463e320ee0"
+    },
+    {
+      "row": 639,
+      "headword": "disease",
+      "sourceId": "jr_en_sup_word_disease",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "621aa21e805895168739cc1bc5459513997a0cacfecf010b31f3a5877045f9d6",
+      "materialSenseSha256": "a247364996a1ce082f517a87a1a9e5f63e455cc55d49050cf72423cc8a4df3b9"
+    },
+    {
+      "row": 644,
+      "headword": "doctor",
+      "sourceId": "jr_en_core_word_doctor",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a9f15b25835f959be86e49337fa56cda21f579aa7f78492687e54be69e862455",
+      "materialSenseSha256": "58bb9184e12b66d56cd67fa2074e6f9b5bf30ba3d0955be6901a4b6cb1dd9861"
+    },
+    {
+      "row": 648,
+      "headword": "dog",
+      "sourceId": "jr_en_core_word_dog",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "89887b6c3e1d168c471c2a54356dd3e103920c14c658e004dc7a4fff339da6a3",
+      "materialSenseSha256": "9eae1f65c2eabd09e10453f1893c9784bf9a1574f50e17f1d3b681456477f889"
+    },
+    {
+      "row": 659,
+      "headword": "down",
+      "sourceId": "jr_en_v2_word_down",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ada2072988ba5c6e9bcd56ac0c4dfd99beed2a64eb7bbd89a5a993c06c32b406",
+      "materialSenseSha256": "8c4a3d2ce8b3eccdd4301c77567f3f03abf230a80ea435606cb3ead10cd32004"
+    },
+    {
+      "row": 663,
+      "headword": "draw",
+      "sourceId": "jr_en_v2_word_draw",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ee59db6c3a5d2f592d7b1c6235ba9bf01280126679f095e8ca9b10c0dbbd2322",
+      "materialSenseSha256": "990a266db7a93e213e486ad55a0d0076cdede634fd1b2f52ae7451bb05b590a0"
+    },
+    {
+      "row": 666,
+      "headword": "dress",
+      "sourceId": "jr_en_core_word_dress",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "524c94dd0cf5a26c8a395283fc1a375aab661ce1ded40ea01b5f14e9ce7a589a",
+      "materialSenseSha256": "aa67d0fd6673c13eb649e68ae2fca07cf6e7967c0e136ef807fdadefe54517c8"
+    },
+    {
+      "row": 670,
+      "headword": "drive",
+      "sourceId": "jr_en_audit_word_drive",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ee2527650ca71487e851a4b8605a99e6683d875223b6f63a915dcbe3aace2744",
+      "materialSenseSha256": "a089132833cbf98fbe5955b71033ad7c6e3abd18c5d590d4f4bf3d7d0c6b5701"
+    },
+    {
+      "row": 674,
+      "headword": "drought",
+      "sourceId": "jr_en_core_word_drought",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "cd16401535c77e3a7378681f9b808ddace4b923cd65a5b818b306ac5d3fa986e",
+      "materialSenseSha256": "013e91ca9d2908f4291a185f920bfc8430c8b0ff039cc53921c2dcae69f8aa65"
+    },
+    {
+      "row": 681,
+      "headword": "during",
+      "sourceId": "jr_en2_023",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2a151e8b70d6186d547323c9c8a3bb082413236f764e2c21e4fc1e60cf307d8c",
+      "materialSenseSha256": "7d4c7808e0e7de1bc60f9419e2218d8600ee2eabee40ca2e8d4b1ad7ec45f138"
+    },
+    {
+      "row": 688,
+      "headword": "earn",
+      "sourceId": "jr_en_audit_word_earn",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "40d3a06955acc552b273cebc011f043e0ca1bd27e34f7b0d3aabba74af43a93c",
+      "materialSenseSha256": "404d5a5a341fcc14f918afcbb39f6a22c3b322b9378fe5efc45c44bebdbfba56"
+    },
+    {
+      "row": 693,
+      "headword": "east",
+      "sourceId": "jr_en_ext_word_east",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "23b09b3a834d1a66c3c3005d09f5ec13f82ce0144f9966c4880693271272d542",
+      "materialSenseSha256": "d5caf2eb524711486ecb256e3c209ef122f97637d9b81567911b8f40b0c3b0b5"
+    },
+    {
+      "row": 698,
+      "headword": "edge",
+      "sourceId": "jr_en_ext_word_edge",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "745f869deb30960cdc0d959d692705fbb306d5de2438cf2e639e0f4434b7e98e",
+      "materialSenseSha256": "91b9a5bf5869af072eabc27159b13551378b6255726b11147b769edda016f48c"
+    },
+    {
+      "row": 706,
+      "headword": "eight",
+      "sourceId": "jr_en_sup_word_eight",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f91d8e390ca598e5763fd2c45fa20fdcb874060989e2d6f0e78e79ce1715db67",
+      "materialSenseSha256": "9f5d72f4708832aec0daa2f8cb8dd6f377723611d439876f3044efc08b05cefc"
+    },
+    {
+      "row": 707,
+      "headword": "eighteen",
+      "sourceId": "jr_en_sup_word_eighteen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1b0b09969666c924ff2f56a433e86310e1826ac305e169f128e7912646c95dd5",
+      "materialSenseSha256": "7f50aa877148ccb2128defa9b677b9ef3121bd3215b043d5c96da6e0232554fd"
+    },
+    {
+      "row": 709,
+      "headword": "eighth",
+      "sourceId": "jr_en_sup_word_eighth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1ab122c90e8f3f5c64c4ab092906c54a872e61c005145bf5c2efbba53a74c9bb",
+      "materialSenseSha256": "046af420e4819890a334128682ad9aed51f3824bce93105cc7c5629ee3955e52"
+    },
+    {
+      "row": 710,
+      "headword": "eighty",
+      "sourceId": "jr_en_sup_word_eighty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "7746295bd096c06b60cbb26ef6fb4f9dc0c3ab37fb68fd0f3154cda06721774a",
+      "materialSenseSha256": "b125baa7c89726a4d20729603e94d77d88cfe0e5eb25dab7d6d82c54b590f302"
+    },
+    {
+      "row": 711,
+      "headword": "electric",
+      "sourceId": "jr_en_sup_word_electric",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c2517117ce62e78b2d2820810ac6af2a3a38be35f3bc4b15caeecd97ad60838b",
+      "materialSenseSha256": "29b9663e8b2db1a04fa217b96229cb21914695e9e7a4eb7fa915795214da3443"
+    },
+    {
+      "row": 714,
+      "headword": "electronic",
+      "sourceId": "jr_en_sup_word_electronic",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c3636ca66a6da90cb2f50cae77342845acbb369d56503d2fdb1ab2ef6741312e",
+      "materialSenseSha256": "b490d36c9818698de4cbbe49a59319362c8ea3fc43f33eea7478c9bb7939cf4d"
+    },
+    {
+      "row": 718,
+      "headword": "eleven",
+      "sourceId": "jr_en_sup_word_eleven",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8982731b7752a704c72f2c2bc1f15e5f0b341f357734a8ea0f41e4581a1f73af",
+      "materialSenseSha256": "9e1f7bfdf04ca2f6615f8e5466d0349bd4a11260ead32c2edc86167e368b6bef"
+    },
+    {
+      "row": 719,
+      "headword": "eleventh",
+      "sourceId": "jr_en_sup_word_eleventh",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a2e6de57f88ca70fda2c164accba9aa7e93dc03c4f55d73da00fa4133f7da4a5",
+      "materialSenseSha256": "a7d64f95cd8f1c2dc8ff97409d8cffc96bcedc49ba61549574cfd72459079699"
+    },
+    {
+      "row": 721,
+      "headword": "else",
+      "sourceId": "jr_en_v2_word_else",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8028216b9ee3058d167500d97441b3c104c7a1f4dcf9ac130f7d797f69a088cc",
+      "materialSenseSha256": "4157f2ded622165d4f12bb22d533eb32e6174b3290a921b94b8ac8061a161b97"
+    },
+    {
+      "row": 722,
+      "headword": "email",
+      "sourceId": "jr_en_sup_word_email",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "18ecf047ce0ec36cc739bd6ef09e985549a68d6ec6fb9a3b5084625aea48717d",
+      "materialSenseSha256": "c254b5a32564fa9e732fda4c4833dbb833bafb495234d315fa2d982798cd7f61"
+    },
+    {
+      "row": 727,
+      "headword": "emotional",
+      "sourceId": "jr_en_sup_word_emotional",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1d9619330267f92f3b38afcc307aae2b0de4856a8fd68116432c7141a7856488",
+      "materialSenseSha256": "d20f261df98685ef3c6455d3ac3f1c90cc6c9c53d22c085808896e5f1ab35995"
+    },
+    {
+      "row": 737,
+      "headword": "entrance",
+      "sourceId": "jr_en_ext_word_entrance",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9821aab5a45c2b24fa159506ab010d15d211600e46ce3ba687b4d18572ce52cc",
+      "materialSenseSha256": "52a38baa6f22791d9b3f1f15f3c45b5472171b428226ebc8831e4be37fd2e095"
+    },
+    {
+      "row": 742,
+      "headword": "equipment",
+      "sourceId": "jr_en_ext_word_equipment",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "cefaac372ca882597c96f9f65a592b8fcdb16bcbe8894b5bd0a071e940f1c839",
+      "materialSenseSha256": "53387e64bdb24b63ede8864faef2c52f260bd2bd1a917da6f2559ffb31131015"
+    },
+    {
+      "row": 746,
+      "headword": "essential",
+      "sourceId": "jr_en_ext_word_essential",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e7660bd62d15ff5ed839f2de49e3737372b864350f290038b70fc652ca5f719f",
+      "materialSenseSha256": "8f5e9f1de291e7206f4197181ea5928e36b5abe0bc6927f462d322731fedb367"
+    },
+    {
+      "row": 756,
+      "headword": "eventually",
+      "sourceId": "jr_en_v2_word_eventually",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "051b30339158b5e111e481e4215407d4adee036579a9daf9f1d3c5d3170ec901",
+      "materialSenseSha256": "962e1a335a7ec973dfa79f5877d93f1ddaed3fe6039d52ffd364e1c61c38685e"
+    },
+    {
+      "row": 759,
+      "headword": "every",
+      "sourceId": "jr_en_ext_word_every",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1075f5fa35483c4a74aaf516753f6fed5554acb5c3ca61ccaf1452f3acdf6def",
+      "materialSenseSha256": "fe904a4abd7c1304d104be57fed3a22000d15c579ad44e3685484eddd5810a45"
+    },
+    {
+      "row": 763,
+      "headword": "everyone",
+      "sourceId": "jr_en_sup_word_everyone",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "0d2f3d1dc80d52ff150b4ef2c5e21dbdbaf1790dc1a1144bd3f4767d24241f03",
+      "materialSenseSha256": "a1cda71efb7b068b9c9fba7c68f6748af40739ce72f721248a3c317cda1e83cf"
+    },
+    {
+      "row": 764,
+      "headword": "everything",
+      "sourceId": "jr_en_sup_word_everything",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b55eb06d25e14a36c179b5ab27d5f570f0f32d7ed970dffcdd8997ec022d0f9a",
+      "materialSenseSha256": "f3379141c1b12feabd2665892f0b2372d993ba88487a220861ac29ca194110b0"
+    },
+    {
+      "row": 765,
+      "headword": "everywhere",
+      "sourceId": "jr_en_ext_word_everywhere",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b242e4be2c23c83dffe44135f0d70f1e3e9a3f08e4f54bde7f642ce9d3c9025b",
+      "materialSenseSha256": "05311687873a25c31e055e653339aa30a352a86bc883cdf15522543de2942a25"
+    },
+    {
+      "row": 771,
+      "headword": "excellent",
+      "sourceId": "jr_en_v2_word_excellent",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4d541953d8b873882f8fe339f50acf35deb548e1f377e4d73634b48b6130aa26",
+      "materialSenseSha256": "c2bcb01ebae3d9fc6b4a87ea09c5681b7c6e4c4e18885f938151a177575e1fe7"
+    },
+    {
+      "row": 773,
+      "headword": "exciting",
+      "sourceId": "jr_en_ext_word_exciting",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e84e6426d2936c3a5ed314b0610a55f69986cb8670f1e9f44b9b3ea375e8c0da",
+      "materialSenseSha256": "c26ec6a64b25eec9f3753ca99bdd9610b77ff2cb550217d94bce593f64582322"
+    },
+    {
+      "row": 780,
+      "headword": "expense",
+      "sourceId": "jr_en_ext_word_expense",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "014f66a7e6073d44b933e898582cc698e76c79d393eaf4816cab0d3f0195147c",
+      "materialSenseSha256": "b96729c3da49fb006d8b752bd866d7c70bbbb3e35c27ce7d90d813f5be96cae2"
+    },
+    {
+      "row": 784,
+      "headword": "explain",
+      "sourceId": "jr_en_core_word_explain",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "bc88a3deef487107758fe780956121942c6c88d1a22b494d91d264e54bfcec13",
+      "materialSenseSha256": "7abce84d20d5b3be2fd27bf34f0941164762ef85ffefc766a7ebfe7026c134b5"
+    },
+    {
+      "row": 794,
+      "headword": "false",
+      "sourceId": "jr_en_v2_word_false",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d80fe14429581e013b35636a3e949897cbded00033a280a768371f374db52709",
+      "materialSenseSha256": "e6344f0da4d6a202bf6fb10c1b2f4bd715c7018fd1e8708fd71a5aca12366723"
+    },
+    {
+      "row": 801,
+      "headword": "farmer",
+      "sourceId": "jr_en_core_word_farmer",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5685fc85128cdeeb56497c8fd30767d30df6ac907c5ea7b77d455580df3f910e",
+      "materialSenseSha256": "4f170cd92aa6dfab5dccaf81e112a15458bdbba0f49db01f43c92bf1d3238ecc"
+    },
+    {
+      "row": 809,
+      "headword": "father",
+      "sourceId": "jr_en_core_word_father",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ca4c64d9ae27fa4a3aed5e26d996530a881d4808d85e5d4aed7483957e9be44f",
+      "materialSenseSha256": "28d21c793d90936d5c484d2d170bbe8caf16367d3a981156cde8f371977fa26b"
+    },
+    {
+      "row": 814,
+      "headword": "feed",
+      "sourceId": "jr_en_sup_word_feed",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "bcc2b1d3344dfb35e55903de5ae62c25def0d51183a087736b1739e5a01bc46d",
+      "materialSenseSha256": "d61dff901b72ef4ca573af3b6f7fe1ec384c509420b28252a2c54b892e85f524"
+    },
+    {
+      "row": 822,
+      "headword": "fever",
+      "sourceId": "jr_en_ext_word_fever",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "34ceaffd8849892915f015641d163dbcb67ac7405a386a62908f964c81c759a6",
+      "materialSenseSha256": "67ac45270f0edb0abd442f71980ef766432cb0e69aa65f6ba8d396ec0069f9d6"
+    },
+    {
+      "row": 823,
+      "headword": "few",
+      "sourceId": "jr_en_ext_word_few",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "60f335168bb274207cfb47b1c135aa1859f98c4dd7cf33f9da50ffe3cb1d452e",
+      "materialSenseSha256": "a315fa38d5c4eaa82603b04e12d987f63957640e648687546d8478f3535e0e18"
+    },
+    {
+      "row": 827,
+      "headword": "fifteen",
+      "sourceId": "jr_en_sup_word_fifteen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "0c85b2b94c6c32eec8dc5e30583eb955b6d328750a8a70763a7246f12eb56931",
+      "materialSenseSha256": "2040056e295d2a1b9d2d31aa1e2d6e824de30b3ff5c963ebed9b62f6e7ef5406"
+    },
+    {
+      "row": 829,
+      "headword": "fifth",
+      "sourceId": "jr_en_sup_word_fifth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e4eba6d92cc19dd4d1204125181976a3f4ac2728f15f40fc19e20663b46820ce",
+      "materialSenseSha256": "994b58b8f6a0d630475a593c03b3154a71945e4b51b0bdecd974fd6a2f3fac91"
+    },
+    {
+      "row": 830,
+      "headword": "fifty",
+      "sourceId": "jr_en_sup_word_fifty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "39920253e2b523024ffd645c6ed0c75ee75d10c25e14db1e84e66b1d2deef074",
+      "materialSenseSha256": "7c2c959671e8eeee21d30c3c11fe51b2fc123370d0dd2db238520c1cabbba243"
+    },
+    {
+      "row": 840,
+      "headword": "finally",
+      "sourceId": "jr_en_ext_word_finally",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "32fcff8614fb5ae33a23aada59cdf4fa720f01a789473503188c3c17e645e0d6",
+      "materialSenseSha256": "db70ca8ca0b79638871d36a728bb2ac985a3020217144482db16e0dcff641705"
+    },
+    {
+      "row": 842,
+      "headword": "find out",
+      "sourceId": "jr_en_sup_phrase_find_out",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c92f8d888b3827540113a40355ba38ea7c24693e2e9ba2922ce0682089bb3857",
+      "materialSenseSha256": "6af166cf9fba31d102e78e836fc207d2bfa020422245f95e52d78fae3ae488b6"
+    },
+    {
+      "row": 850,
+      "headword": "first",
+      "sourceId": "jr_en_sup_word_first",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "dfbc12749036bfdaf71daaaeb2c3ec0b13797b4e92a0d50912bae0e7cce01c49",
+      "materialSenseSha256": "ac5a1cd8017360db0532198885ab36e6976b2e7bd98d22573e1eab15190b738c"
+    },
+    {
+      "row": 857,
+      "headword": "five",
+      "sourceId": "jr_en_sup_word_five",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b75e5fa1f5e4c1924242067d53848526dc709ebb07de881596e44ce0dd34a19c",
+      "materialSenseSha256": "db0add43343b22109bfb752f5c8d15c7593616d4a973bea7ed8f91d3c772a721"
+    },
+    {
+      "row": 872,
+      "headword": "follow",
+      "sourceId": "jr_en_sup_word_follow",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "38cf160e0204e8de6aebf29ffdec6ab7ed5663f90c3a4b35bfeb43caf4995e29",
+      "materialSenseSha256": "7b4aa01dfedb4959d41d27f2328385bfdab4b745c95753e4bb87565c2d3cb405"
+    },
+    {
+      "row": 876,
+      "headword": "foot",
+      "sourceId": "jr_en_core_word_foot",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5b76d055140807c3968774332e807f343594871e974c674ebcca7d46a60728e3",
+      "materialSenseSha256": "375534081707d56d29420d2b6922f100db03a036e0e02313d2e613f1143a53e1"
+    },
+    {
+      "row": 881,
+      "headword": "for example",
+      "sourceId": "jr_en2_032",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1455934d056611d49603db98218e61bb0201bb6ab94e7da7a1d2fd3160c9ba25",
+      "materialSenseSha256": "8560ba0f40cdc0b4bebdf7fc153c064fa6173cd79c1a86485624b04482150a28"
+    },
+    {
+      "row": 894,
+      "headword": "forty",
+      "sourceId": "jr_en_sup_word_forty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "58e454ead5093fde67242cb66cf312e9f0b6be701e083577e403833afed51773",
+      "materialSenseSha256": "685de01231ba5b96877c94cb87f5b399e2ad3a755ba1b90ed3c353ddf41a6b92"
+    },
+    {
+      "row": 900,
+      "headword": "four",
+      "sourceId": "jr_en_sup_word_four",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4e24e3608d23b0440a91b950bba562cc4d78ea9936232372d8570c4705bfe4dd",
+      "materialSenseSha256": "e4a97301882573b99eb3270b4c62d23645d10ea34aeff8c1b3258fd1c739a90d"
+    },
+    {
+      "row": 901,
+      "headword": "fourteen",
+      "sourceId": "jr_en_sup_word_fourteen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "70a092d0b7d7590e5ee7e24818669e0cd99cea62e81e2d4c4dac058b3b40098c",
+      "materialSenseSha256": "1dedc4450516c65f676b9ab8fc32910e4ecf41be80bfb62c32ccceb93f29f925"
+    },
+    {
+      "row": 903,
+      "headword": "fourth",
+      "sourceId": "jr_en_sup_word_fourth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "25540e2597918787afb815f33e8bb023aad3e394fc0f6f7df500d8fb17340504",
+      "materialSenseSha256": "1804ed788eb67d1478e1b288fb41d21787afe28b9adcd8fc36e52d1a1731af57"
+    },
+    {
+      "row": 924,
+      "headword": "from",
+      "sourceId": "jr_en_sup_word_from",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f172578883938a879274a41452084cce040c19abf572f3f4db728196b5f7adf2",
+      "materialSenseSha256": "3acd723562701ae79129bef7fce7a54e5730b850f6c4122cc09fd4749f4f6d63"
+    },
+    {
+      "row": 928,
+      "headword": "fruit",
+      "sourceId": "jr_en_v2_word_fruit",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a5f89b360d07222941175816d3f5ddfe04312b06d9cd5580e5eb18707065bb37",
+      "materialSenseSha256": "2c4f8380f6ef78b4d6381ec41810352395a2092ddeac2ade8b962f0507d536ca"
+    },
+    {
+      "row": 938,
+      "headword": "garbage",
+      "sourceId": "jr_en_ext_word_garbage",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "670b994c5c5b1fe7f3841042dbc04e58f359849eb9e852fe6024a71b7a515a90",
+      "materialSenseSha256": "26dec6789de96d00036346b27f4fa8e0433f44e6512500fb6b03dc7cfe41fe3b"
+    },
+    {
+      "row": 952,
+      "headword": "get off",
+      "sourceId": "jr_en_core_phrase_get_off",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f79e924f15a77cb3e3e0c9647bc8dcc87cd73c441a8b7b977550d4aded4f2c09",
+      "materialSenseSha256": "758d4b41545030cd80b2b35a34b16231b026e718c13ec88d384e22fca97f622c"
+    },
+    {
+      "row": 956,
+      "headword": "get up",
+      "sourceId": "jr_english_core_phrase_get_up",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "13b5cd292d16bcbefeb9b5670ea4883e0236c5e5c46d9d5eabd28009c58930e1",
+      "materialSenseSha256": "779d8ece731df366680aabbc6d06c0cbb2d11411d6041ce0018e8a96dcfd4867"
+    },
+    {
+      "row": 958,
+      "headword": "gift",
+      "sourceId": "jr_en_core_word_gift",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "00d66064830b609be9a56b6dc1000a16f7aad99189307e57adb4f396b0d43084",
+      "materialSenseSha256": "542d5e6d424dc5294afdafd6cd56af3d9085a35696f9c5a1f3472ebad1e7a8a1"
+    },
+    {
+      "row": 960,
+      "headword": "give",
+      "sourceId": "jr_en_core_word_give",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "08f907eba33247555e119a76da4b485f710200de38dd5240ad77be007b114a45",
+      "materialSenseSha256": "17f6e340502386696148f731315f3a51b08aeaec5fadfe82fe26972da188de16"
+    },
+    {
+      "row": 966,
+      "headword": "global",
+      "sourceId": "jr_en_core_word_global",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e3e6a6a8bfbea6ab6c65bc00605eac102a64e6972bcc1c8ac08daee336e30de3",
+      "materialSenseSha256": "b6cdd104a24ba7c18f6ff0c286cf73d3fbf22faa480c25794deaa3feba3fde6c"
+    },
+    {
+      "row": 970,
+      "headword": "go",
+      "sourceId": "jr_en_core_word_go",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d74a571ffab4df17d50c773bc15f694a93ee3da5adf89b9d416907a68fcbe7e6",
+      "materialSenseSha256": "0fe2e065dfa9b8577f8d5c6d566350b32bf554214e5c1921f67b310e960a47bf"
+    },
+    {
+      "row": 975,
+      "headword": "go shopping",
+      "sourceId": "jr_en_sup_phrase_go_shopping",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1a02064e2d623202ed0db8f50cb31218ac6fe0181e87174f7e928b80815f0568",
+      "materialSenseSha256": "9fe7aec795e2cd9f63b5bafca500b529a7a4d105b701d21f4ff3b351aeeeab1b"
+    },
+    {
+      "row": 1006,
+      "headword": "grape",
+      "sourceId": "jr_en_core_word_grape",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "190867f66c369315ae588a9ab7ef8857208dfc6601b64ac0dd33e9cc8278afc3",
+      "materialSenseSha256": "76cac91ae173fabaacf7da2cb781aeffb217d88f1f5b4b5c2fc936387df38dae"
+    },
+    {
+      "row": 1009,
+      "headword": "gray",
+      "sourceId": "jr_en_v2_word_gray",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6f4fb1d7e34dbfed31ed5f00e602edaf5b37ecc4c00327239404ee28d57fdfee",
+      "materialSenseSha256": "9f53101013e37e7bfe4cd6c1252bb107af6a5420fbaf405f0a5e8e1bc8912620"
+    },
+    {
+      "row": 1011,
+      "headword": "green",
+      "sourceId": "jr_en_v2_word_green",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "993e772030e7952ecbbf63ced848370feaaca0fb24e50fb79fc40f1735b906dd",
+      "materialSenseSha256": "b942c7bd710386ea76c2ef1e958af82257734bf6164298f6138305e070f20dc7"
+    },
+    {
+      "row": 1022,
+      "headword": "grow up",
+      "sourceId": "jr_en_sup_phrase_grow_up",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "7bf99fe688ee13fda5a55c2a41568b30324ee7d77c15e62f9e2230ee1bc955dd",
+      "materialSenseSha256": "44a0fdc5ae07baf9b1a51c54e857fb1e6184f68215ee8f6d75334b56315d0e1b"
+    },
+    {
+      "row": 1025,
+      "headword": "guess",
+      "sourceId": "jr_en_core_word_guess",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "948d7da7ffed54a05da3e32151abd8d82b388ee19707319a7660a7c3e015e040",
+      "materialSenseSha256": "2a98948774b6fa80d08f360561a563761a9d43a132a2bd6867b002765bab2e29"
+    },
+    {
+      "row": 1026,
+      "headword": "guest",
+      "sourceId": "jr_en_core_word_guest",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a4610c71cacb59a13cccf6c570fef60368dd03eb1a4eb9acd96e431478405882",
+      "materialSenseSha256": "5fa17dbb868651c30cded822e9d0739a310f5ac14a2d7aee57f8097345d1bb39"
+    },
+    {
+      "row": 1055,
+      "headword": "hat",
+      "sourceId": "jr_en_core_word_hat",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f16ae12f43557967da06c7ba887a8d39c87d2d9b47011e751e6cd7d379ea962b",
+      "materialSenseSha256": "8fcf18e2e3520e0ace66804113648a7760bca44edb803821b8e00f30be38ff0f"
+    },
+    {
+      "row": 1062,
+      "headword": "he",
+      "sourceId": "jr_en_sup_word_he",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b7359997ce8b6e541d57e14b7de9379a2a4c6c55df44c6f5b284194225b991ec",
+      "materialSenseSha256": "2c398d517ca0a460ea4b9d0226c7373191d7d9b605af8ad7ec815b17a87264aa"
+    },
+    {
+      "row": 1066,
+      "headword": "heal",
+      "sourceId": "jr_en_audit_word_heal",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "fa5178a4f5b0153d56e51dd857540976a3c52a1648dd86e9afdb1725896c16b0",
+      "materialSenseSha256": "30a3e0ff35de41d48f97d02c8fe996e288291b521db6aa7116b74c81732ca40a"
+    },
+    {
+      "row": 1068,
+      "headword": "hear",
+      "sourceId": "jr_en_core_word_hear",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "baf42f751e2111cf25ed3108fded39efb4b6c8eb623fc7f90f873131afe09937",
+      "materialSenseSha256": "ef95a22258396f1746ded1620f08597da7474b84a28b4909ccac02b1b5b4ed99"
+    },
+    {
+      "row": 1071,
+      "headword": "hearing",
+      "sourceId": "jr_en_v2_word_hearing",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "33d0988de5192c772d83c14c441376ae51af36030fcdce88304304e5db7193ec",
+      "materialSenseSha256": "7c3c8e1a97a0dd20b2698c667a5fb39c61b98d264a9d476d082c71716a6f0b4c"
+    },
+    {
+      "row": 1083,
+      "headword": "help",
+      "sourceId": "jr_en_audit_word_help",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "534cf5b88e1319c4599000b7d94a6478c394161f7332c605263b3a5188309d5d",
+      "materialSenseSha256": "27c4cf61e35b82a58dc6769d6082ff0a9e3a6988efe38b5e8e96a232fcfd9608"
+    },
+    {
+      "row": 1086,
+      "headword": "here",
+      "sourceId": "jr_en_ext_word_here",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1233d395c814159b26bd528d0204ba394e1b9e32ebdd5adb764b0ac32967367f",
+      "materialSenseSha256": "6fec792ed069ccd7929f97188302ca2c66c6c186de2923270a9a409816c52bd8"
+    },
+    {
+      "row": 1095,
+      "headword": "high",
+      "sourceId": "jr_en_core_word_high",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c7277a1db69cd78100bf9fc73edb89945d0989448972bc704f2b7eb1a81ce4fc",
+      "materialSenseSha256": "24993b081221bc57b3b7d7e55a2836d542abff02eee47eca9998599541ddf07b"
+    },
+    {
+      "row": 1100,
+      "headword": "him",
+      "sourceId": "jr_en_sup_word_him",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e91cb8ad3841e4dd0c624dd44dd185ef8f6d0c5c8862a20941cc09390a4f2f94",
+      "materialSenseSha256": "46fb449d9435ab250ca24ac0aae1a224350b14eaf889be617a91cc036f8ca7ef"
+    },
+    {
+      "row": 1127,
+      "headword": "host",
+      "sourceId": "jr_en_v2_word_host",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5d4f1fbe4edeeb17abdabc31a72016e8170b97fa1c432f17f8aa14f8c6c17902",
+      "materialSenseSha256": "9077b0426bd86810dc8fc466786168d2da78beca33afd20e0333d70739aa079f"
+    },
+    {
+      "row": 1132,
+      "headword": "hour",
+      "sourceId": "jr_en_core_word_hour",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9b310f22013673fd4988d310cb84189d05ee38806dee8b2f0fd618390f8055a9",
+      "materialSenseSha256": "1c5030e1c8da53923aa265fbac500b6bdf8776d8f0107732f17aba308581960f"
+    },
+    {
+      "row": 1133,
+      "headword": "house",
+      "sourceId": "jr_en_core_word_house",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9ecfbe9bf43fa6a88e07bfdaeed10b6859af80f240fa28f5366cd13abd7ef187",
+      "materialSenseSha256": "6e6c7e097445fc6c15ba50dead3a2d8d9e213e82f6521fbf96772791f51469ae"
+    },
+    {
+      "row": 1137,
+      "headword": "however",
+      "sourceId": "jr_en_v2_word_however",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "553208ca21da52101a0578fa3048f7f4096695943740edc19ca5a1e5730991b7",
+      "materialSenseSha256": "eb2a333b002377b39019c4dc8f965e3dd8a378f91a04a17dea57a4b73503cf89"
+    },
+    {
+      "row": 1142,
+      "headword": "hundred",
+      "sourceId": "jr_en_sup_word_hundred",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c6ded3dcadbb488ec066912f7f345b490e163b4e0afac237633ba28fcb923b0b",
+      "materialSenseSha256": "33cb1934cf5178bf5bb87fa7dc50831cc72d099490b2c58c9e92626e3017401f"
+    },
+    {
+      "row": 1143,
+      "headword": "hungry",
+      "sourceId": "jr_en_core_word_hungry",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "bc292fa7e485170db81dcecbc3a934b816def2ce6f3ba1e630ce00992da9c34d",
+      "materialSenseSha256": "746ae74b2554592e30ac5cc80e788a0e99107c8d99cccba5c614e51c725ed120"
+    },
+    {
+      "row": 1144,
+      "headword": "hunt",
+      "sourceId": "jr_en_sup_word_hunt",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "67cb81127b12df0e5438a45f5ddd28f73fb2bea98d610f204ed1daf7643e29cb",
+      "materialSenseSha256": "2f862c938e3c9eb18473905937b51db598161c08d04dcd8b5a367b2a200090e0"
+    },
+    {
+      "row": 1146,
+      "headword": "I",
+      "sourceId": "jr_en_sup_word_i",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9cd3095dd38f63fa4062e9d8f9a33c81f5f09737e3ef4ae2dbf42504a3a27405",
+      "materialSenseSha256": "c9c7e2946c1d222ed38c54449eec44a164d5560bbdf07a8efad32a7b5d0450b3"
+    },
+    {
+      "row": 1155,
+      "headword": "if",
+      "sourceId": "jr_en_ext_word_if",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "928f6bb6aae2ad1e095588af2a762b03d70b8c5a5fb187f4a65d5934b10d7812",
+      "materialSenseSha256": "5e195c34f1ba7af0d5bf9ddb40d1b38116ea4180e8bfe4d9ac4daddec1e329b5"
+    },
+    {
+      "row": 1161,
+      "headword": "immediately",
+      "sourceId": "jr_en_v2_word_immediately",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5a01db7dbd8828405836e3444464ed8d463c8f5723a9e18bc8943db64924aea3",
+      "materialSenseSha256": "3ccf7275ca06b78b102db28da41929c83bac6e9a8fab8c8537acfaa3df4bd055"
+    },
+    {
+      "row": 1167,
+      "headword": "improve",
+      "sourceId": "jr_en_core_word_improve",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "38ee7556c5126393901849c8a5402db1dc377b8e74541abcfcb6ac0fc797999c",
+      "materialSenseSha256": "17b3985bfe66f40dcd7641d9a38a19997fce98ac764b5305dc0d38c03411fc43"
+    },
+    {
+      "row": 1171,
+      "headword": "in danger",
+      "sourceId": "jr_en_ext_phrase_in_danger",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "37da78c3cc8b5d00b33d26b9d1382d50a1df759e5c9b1b9e38b3015e4329aa6c",
+      "materialSenseSha256": "5f0373396736ba64337cd18a88876b28b7dc543595b22ba8a2343cb79d3e77e5"
+    },
+    {
+      "row": 1172,
+      "headword": "in fact",
+      "sourceId": "jr_en_core_phrase_in_fact",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "3941605bca873e6fc4c4d76249f087b0dd67d7e3ede091d6c1f90944fbd2bc51",
+      "materialSenseSha256": "7293e83bd422bd87f0305499299a3bf4ef49af872298f2037620e6d879ee6cab"
+    },
+    {
+      "row": 1180,
+      "headword": "in the future",
+      "sourceId": "jr_en_core_phrase_in_the_future",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "91b68c7b159e88665964a1f7da71a36f80fd3680d56bce8670bf90809a1e6344",
+      "materialSenseSha256": "c78ba51eb0237e21005e13b12958a488daf4075b8c3cce2ee1c7e5f507bade59"
+    },
+    {
+      "row": 1199,
+      "headword": "inside",
+      "sourceId": "jr_en_ext_word_inside",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "3fb18f4d49b31730dcf030f900eab5761650d4d6f75b94f9486e43162fae08d9",
+      "materialSenseSha256": "f2b58fbc7c82152851d157c0aae69edb553e61cc43ba6582c8edd010db5857e5"
+    },
+    {
+      "row": 1211,
+      "headword": "Internet",
+      "sourceId": "jr_en_sup_word_internet",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9e51aba8d2898420ee317ef14ffb26644901d8b8879cf2b01504c627d9f6fad5",
+      "materialSenseSha256": "e6dacdc75cfb596d84366414cb18dbd95ec86c201e8cf8ce137febeb21c2898b"
+    },
+    {
+      "row": 1213,
+      "headword": "into",
+      "sourceId": "jr_en_sup_word_into",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "aa2799a0846c44079d2f383643e849903e90b7db4c000e6c67e4941e4024d087",
+      "materialSenseSha256": "0994841a22f53b24ec5360dafd3f47e3ed96c9e0fdcc4e999a40573640eb5186"
+    },
+    {
+      "row": 1227,
+      "headword": "it",
+      "sourceId": "jr_en_sup_word_it",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "83b07dfb616dea36fbfecd9d23d8ca0048ae431569cf900e38e1be07452c156b",
+      "materialSenseSha256": "bb7be319a948c385041dfa6ccd48ca375f660c6c703509584af0a9b759790c87"
+    },
+    {
+      "row": 1234,
+      "headword": "jacket",
+      "sourceId": "jr_en_core_word_jacket",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "7330e6881880272daf43ff1c3c82421e60aaadf4d7ec4eb85ace4a6316d9433c",
+      "materialSenseSha256": "ae4809b272bb98174dbc2b2ee7358143b599b11a335518bb088f33bbe628c659"
+    },
+    {
+      "row": 1303,
+      "headword": "know",
+      "sourceId": "jr_en_core_word_know",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "de46f09e61ecd66594d84063e1e0c41d59f34a803212e04c04f881c8bf2d378e",
+      "materialSenseSha256": "5cb5d7536fd4f93ecaa6f1675933ee77888ca7645a3d7ecc10de61d0634615fc"
+    },
+    {
+      "row": 1325,
+      "headword": "large",
+      "sourceId": "jr_en_v2_word_large",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "26cf3c4b3cfbd8c090f036331dec855211f5af0ba22244d510612e6500763d9e",
+      "materialSenseSha256": "568f47522d03f3fc5a58aa2003c7ed993889772eb939f60a9aba254970e55481"
+    },
+    {
+      "row": 1331,
+      "headword": "later",
+      "sourceId": "jr_en_sup_word_later",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "470fe24ebb8bb5dae8c047df27122be6442326667f491d6a944360c3c1378730",
+      "materialSenseSha256": "680ece8d8b8b9a036370038804bc44a920f879b031f0df9f29b934f639f3414a"
+    },
+    {
+      "row": 1357,
+      "headword": "let",
+      "sourceId": "jr_en_audit_word_let",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "444aafecce68a5391b75964d5a967d102271c6ab2072d9db145e40d24307cbdd",
+      "materialSenseSha256": "752b7f087445543e9cd01eef86b9f443ba29d5c3c4c8b8944d9a4af490d42191"
+    },
+    {
+      "row": 1363,
+      "headword": "level",
+      "sourceId": "jr_en_ext_word_level",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "839b10c766277b0984dad2cb3aa3fe96146aa33cab5996c3905c379551918996",
+      "materialSenseSha256": "e97c63d635460ea560249ea990586c6012ac491c2f7f1ddfc2c86f0615d8959a"
+    },
+    {
+      "row": 1383,
+      "headword": "listen",
+      "sourceId": "jr_en_core_word_listen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d9291ccba400db30a740fa6a877a740f939f30503930152aeb24244597b680d2",
+      "materialSenseSha256": "608226d816742c1ff1b2bb3ea6cef5b599240bb9e69fe5b4de9b93f1f3f0ea07"
+    },
+    {
+      "row": 1395,
+      "headword": "lonely",
+      "sourceId": "jr_en_ext_word_lonely",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e58b470745215a845a71c31263d658cababc542e54bfc35b1685ecb7503d242a",
+      "materialSenseSha256": "40cc33e97217ba38de0e8f481843e4410073fecebfcc2e085224b875b8e8677e"
+    },
+    {
+      "row": 1413,
+      "headword": "low",
+      "sourceId": "jr_en_core_word_low",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "049cfda34c48cf71b98a50a58ffd0c5103e43ccdcb6e2d8486e9c2cd6e56300b",
+      "materialSenseSha256": "b7841fac3eb3b0ec4eb3b450e3b8f91658047d438f8875935e2adacb08f19a4e"
+    },
+    {
+      "row": 1428,
+      "headword": "make",
+      "sourceId": "jr_en_core_word_make",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "56e29ccdc6ed055e1724d11e2a7e9c34a0f3eb375cdf239b7cc55c0dd3c85c2e",
+      "materialSenseSha256": "083fde200a47b18250563539dd8d4d38ccdf644257b0b36195ffb5f1d4d2fbe8"
+    },
+    {
+      "row": 1430,
+      "headword": "make a mistake",
+      "sourceId": "jr_en_sup_phrase_make_a_mistake",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4aced3b1360edcd5572111e51e622ab775f60abba1741bc717d881a4b3535ae7",
+      "materialSenseSha256": "9efadb8a2fc5ae7463040faa11766fcc501cd21180f68822775c23e77f06a4ba"
+    },
+    {
+      "row": 1438,
+      "headword": "manager",
+      "sourceId": "jr_en_v2_word_manager",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "acbc1f29e01a4871ec632163bb4ad30625155926fd9390f1703f7f5cb50e7fb4",
+      "materialSenseSha256": "64daf513f287eabd8a89bb0a17effc75c2c33f80eaf0ca0d85929bd09b42710a"
+    },
+    {
+      "row": 1444,
+      "headword": "many",
+      "sourceId": "jr_en_ext_word_many",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9f4d93b3e8f950646bc4cefe919551e211341703bf6bddc46fa8a0700c1eae81",
+      "materialSenseSha256": "40b63ee4e690694de21b5161af9571a9a41e4e90cfc5e2b3c1dd9eeac9becf01"
+    },
+    {
+      "row": 1451,
+      "headword": "marker",
+      "sourceId": "jr_en_sup_word_marker",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d5f208dc7b13ce0210d0e01ffa1f7f0f7b219027780a37b898b7a23b2ee4d9fd",
+      "materialSenseSha256": "40459f615934fe71826b90040e44c817af45acbc35d85a3bbaf57c495c72f3a4"
+    },
+    {
+      "row": 1468,
+      "headword": "me",
+      "sourceId": "jr_en_sup_word_me",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9a8d3ac4e232f170f9fb357afbf656eb195d5a698c0dc7b5a1c3ff97eda7487c",
+      "materialSenseSha256": "13ad18cf332a0c3991e79de194ab023b614bf710409c5b6dc87ae7449ceb1879"
+    },
+    {
+      "row": 1478,
+      "headword": "medical",
+      "sourceId": "jr_en_ext_word_medical",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "df4e2fa8ca6830f4f8689375d61af0db79ae4b92534542b3df225da97bbb8d6a",
+      "materialSenseSha256": "73e7db0dfa2cfeba9f54fe3518ccc977ee1792beab77cb8c0d02a38844413a0f"
+    },
+    {
+      "row": 1488,
+      "headword": "member",
+      "sourceId": "jr_en_core_word_member",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "3efe4316ebd0bfd0e655afa8566ad2097cef52bab5a4867eac96881dd43270c1",
+      "materialSenseSha256": "aed6eb64236fd9307fde9810a4d28430eed5bf6b2a18829a9dd73ed45c7aba71"
+    },
+    {
+      "row": 1494,
+      "headword": "menu",
+      "sourceId": "jr_en_v2_word_menu",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6f3443ca32a16492ca004f31a9b9534dc5ec9e9cf07633b9aa0be2086f8907c7",
+      "materialSenseSha256": "6b5149787a91796da5a6bfa353874f63702cf8d43d10c453655de521b9f2a5dd"
+    },
+    {
+      "row": 1510,
+      "headword": "million",
+      "sourceId": "jr_en_sup_word_million",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a180e80743b35906645133c4c71419b178e593928c00d62d5535ea048a590e9d",
+      "materialSenseSha256": "960b6035e6cfe280a27f1c3a9711494e572c10a369dfefe5a695dfaa344e17f5"
+    },
+    {
+      "row": 1519,
+      "headword": "mistake",
+      "sourceId": "jr_en_ext_word_mistake",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "dcecadb19dfb2f6a4252763bb7c83ffc1fa93b45de56e0ae520da969bd61c744",
+      "materialSenseSha256": "ac4df9161bbe34148672c3f43906a83d73eff279e1e4595dfcffe9d4e1a55fd7"
+    },
+    {
+      "row": 1532,
+      "headword": "moon",
+      "sourceId": "jr_en_core_word_moon",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "478c6d77ab2e572d73022b60735921688543a193bc45e162f70a3e3e40912715",
+      "materialSenseSha256": "e429ef305f64d3e5fd03217559c824ef148e5f731ecdca23913dea452b58bfa8"
+    },
+    {
+      "row": 1544,
+      "headword": "mother",
+      "sourceId": "jr_en_core_word_mother",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1a3205c3a91ea555ab36f084cb91354c1cff5546c554391e74bd7b0aa5af2823",
+      "materialSenseSha256": "1018e562bcb0d5439a77d8aa7d54e5d4bf8759a203b57139c5824a6bec596fe5"
+    },
+    {
+      "row": 1546,
+      "headword": "mouse",
+      "sourceId": "jr_en_core_word_mouse",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "14701d5b0f9b898d417f40ae43bef016bc09730204940978655099153b3be1e0",
+      "materialSenseSha256": "b1a885d545d81748400246a90215ffb5b41397cc2fed46a58b278de573e4b4ba"
+    },
+    {
+      "row": 1559,
+      "headword": "mushroom",
+      "sourceId": "jr_en_ext_word_mushroom",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f3fdef2a8ee8ad3806cceb91e6cfd86d743b8f6659b5e57ff6a0729e7d17f05e",
+      "materialSenseSha256": "56ce245516e0a6d05bfae233d6e7f93444e0ad5ffc6920f8e8c833b99eef9e8c"
+    },
+    {
+      "row": 1593,
+      "headword": "nervous",
+      "sourceId": "jr_en_sup_word_nervous",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "65bb827a704c4b21cbc514b8dcb621c378a98d6c42447ffa1cc354b6e2f1db87",
+      "materialSenseSha256": "deeb9a7d82a0c704740dd224f009431ebce44a2726da529af31b32cc3e137ba4"
+    },
+    {
+      "row": 1605,
+      "headword": "nice",
+      "sourceId": "jr_en_audit_word_nice",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "91b5f3c34b380110729b91bcdd44a9d820c361b2826a920442fdffccf324d0f4",
+      "materialSenseSha256": "bb720573599cb6d9b00e01ce5a1fc34f21639da0fe9c36b533991a3ebfdc6e87"
+    },
+    {
+      "row": 1607,
+      "headword": "nickname",
+      "sourceId": "jr_en_v2_word_nickname",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e2c4bd17bf445490ac2daf1dea0e72a684127ac001258412dc0472af5d5e85d7",
+      "materialSenseSha256": "eeb9770a425d491d28def3478c2c542107fe3473f17f798fa0984e3e0cfad1b2"
+    },
+    {
+      "row": 1613,
+      "headword": "nineteen",
+      "sourceId": "jr_en_sup_word_nineteen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "77c24dd65ea7ec726816466819faac2eaff9c30456658fa15a6db8c75014ac69",
+      "materialSenseSha256": "d0d58ed8caced316a7c9a4b85dc649eb38e5bdc302cb2a88dbb82ed8640b21e2"
+    },
+    {
+      "row": 1615,
+      "headword": "ninety",
+      "sourceId": "jr_en_sup_word_ninety",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "74e41843c72d08530ca8740b87ee58851c76d5992a99976f641f89fcd9147b1f",
+      "materialSenseSha256": "3e4cda1825ee0042dc00f2cb5b0b72506735b8d702b6590129ca8919af9bedea"
+    },
+    {
+      "row": 1616,
+      "headword": "ninth",
+      "sourceId": "jr_en_sup_word_ninth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "987b506ee3e26fe1de8a0d05e578c78cd28d0b5713adf6c2f32b08da9f8563a7",
+      "materialSenseSha256": "268fadeec9f760ba77d56c07935917a7217fcf239f9bc65cedea6603c623fb14"
+    },
+    {
+      "row": 1617,
+      "headword": "no",
+      "sourceId": "jr_en_sup_word_no",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "0ccb19e3ac75e1f3b40809fa6f3994ac301afc0dac56853679e7222df1d41036",
+      "materialSenseSha256": "4bc48d40b5e673dd646e5922c32466368db65b9f506460c403871e9855c84b81"
+    },
+    {
+      "row": 1619,
+      "headword": "nobody",
+      "sourceId": "jr_en_sup_word_nobody",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6aaf6b685424dfcc32933f7bf96e1fa33965be0378963d844cac86086ad6b1b7",
+      "materialSenseSha256": "2e96a59630622d6cbaf792db8329cd1e8021be339aa2ade33f43841594447001"
+    },
+    {
+      "row": 1620,
+      "headword": "noodle",
+      "sourceId": "jr_en_core_word_noodle",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4bb3270cfb8583f536d0242ec5a928037f436b22450ccd37f2e300e8214418cf",
+      "materialSenseSha256": "44dc4e6389b20b130442106cb03e88b663aa3740a2ccff84dfdc66c30759d629"
+    },
+    {
+      "row": 1634,
+      "headword": "nothing",
+      "sourceId": "jr_en_sup_word_nothing",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "fcb1a5320065f4cffc3f1146895ea69a5f85d5e19ed0ad0b63cadef954645dd6",
+      "materialSenseSha256": "465a9cbcf762c98169d6f1d99651aac0a9b15f4efa3fe32ab0a2d317abba814a"
+    },
+    {
+      "row": 1643,
+      "headword": "nursery",
+      "sourceId": "jr_en_v2_word_nursery",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "03228e9d349ef8e70eba5681487111d40e24d53a42947023573d4435bb75f302",
+      "materialSenseSha256": "5bfbde8f5b7dd508037c4328a35099927f34172049684a6b23ec889f81f91a1e"
+    },
+    {
+      "row": 1649,
+      "headword": "ocean",
+      "sourceId": "jr_en_ext_word_ocean",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ee4af0dc173cbaa9863bc472554713bfd7997b0602e8f11db52dd997117533e9",
+      "materialSenseSha256": "3255c72d3847acf0526f2a678f4badacc782603e278b9bda662448226011fcca"
+    },
+    {
+      "row": 1686,
+      "headword": "onion",
+      "sourceId": "jr_en_core_word_onion",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6e9ec4a91fa3170fa4b70b87bc04a23f6444bd2030c0783488e6e6fbd6c62595",
+      "materialSenseSha256": "c78975d4e1117797af9bb5626b981f3d8fed434319996f238a86a8799cfd53ff"
+    },
+    {
+      "row": 1688,
+      "headword": "only",
+      "sourceId": "jr_en_v2_word_only",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "557269acd2d9c3dd6cac65fb4abe7ff1cef4359fba0bd95560d00304f72ade99",
+      "materialSenseSha256": "535c3896677a69a33e3c4a475eb20450643b179069a1d62409a6a0fd7708bc29"
+    },
+    {
+      "row": 1695,
+      "headword": "orange",
+      "sourceId": "jr_en_core_word_orange",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e6e1c33835dc72c8bb382c94033e34a7aa4daefc91421bec6b87cd9c9e480504",
+      "materialSenseSha256": "676d7597baab13511909034dcb605d05bbdff88c502773211e2292b195000eac"
+    },
+    {
+      "row": 1709,
+      "headword": "outside",
+      "sourceId": "jr_en_ext_word_outside",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6ad1eced24800331349a2c43ff131691d2ed2859608732ae7bdd414da5aafdf4",
+      "materialSenseSha256": "e22b8044d1c0cbcb78831dd2d4479cc6a21a72746b4a8b4f51490f854bcc8b33"
+    },
+    {
+      "row": 1722,
+      "headword": "paint",
+      "sourceId": "jr_en_core_word_paint",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8aaee7e4e1dbee758e8ba3620514f35cfc796a32b8c247de548d5795d43458d1",
+      "materialSenseSha256": "4fff35b6a07fb00444adcd034a85b827b1e203348cdf54be81df52ef5d45f028"
+    },
+    {
+      "row": 1752,
+      "headword": "pay",
+      "sourceId": "jr_en_core_word_pay",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "734ac07e5f5861e68766826fe332bc896f5b31ad42776fa77af7d1f5b7025ecd",
+      "materialSenseSha256": "cb7524e1146db8d66ac5124afa8bb4e111ebf806580c7d7d2fa45d59916b67db"
+    },
+    {
+      "row": 1756,
+      "headword": "peach",
+      "sourceId": "jr_en_core_word_peach",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "7c9e444014180cfba47b1be29d9ad367fa783ee3fb738d65fc7faa96a3b53326",
+      "materialSenseSha256": "37b4a0d9a2491b8d70303c0e8582c6eb80c28e95f719ab83d21663f57c0e94d1"
+    },
+    {
+      "row": 1764,
+      "headword": "people",
+      "sourceId": "jr_en_ext_word_people",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "cc96c7294c1e1d354eab6299646c515de5f637c45801f5360981f6c65d5aa467",
+      "materialSenseSha256": "82e97a5a1ac0b524c2a84b495b652412400479b9c89c6a2f1300a4e8a6ca7d46"
+    },
+    {
+      "row": 1777,
+      "headword": "pet",
+      "sourceId": "jr_en_sup_word_pet",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d3ced7aa0bcdf71f38fae58cda2ba75d887a54627028e2dbca50f879a3acb7d2",
+      "materialSenseSha256": "3b5f28af9405d054ac6877b0f39316742667fbdcc2f460448e40ce4a88e3e67f"
+    },
+    {
+      "row": 1796,
+      "headword": "pig",
+      "sourceId": "jr_en_core_word_pig",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5e396e749805c79b2491a94c9df2e58366c58fb2755f36d763b2c0bea19ac843",
+      "materialSenseSha256": "192f89de718e1d8ea673ef934b608a19a865dca9b6467575c659ca08c0b85b65"
+    },
+    {
+      "row": 1800,
+      "headword": "pink",
+      "sourceId": "jr_en_v2_word_pink",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "01378cd089c71347a8da5227448cf031a1d6d80135312d64870d2a2e4078a650",
+      "materialSenseSha256": "b3cc82e5c648a30ced60a922ece0f9648fbdbbc0d11ef7a6cce0792f11339c68"
+    },
+    {
+      "row": 1810,
+      "headword": "plastic",
+      "sourceId": "jr_en_ext_word_plastic",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1530e46afe1db438cd991b67293540a38c4eaaedc980209c91f8816781b92b29",
+      "materialSenseSha256": "1a8eaf3b0182de3a699683112ae10cb245722f4eefc56c3df39223a1cb476952"
+    },
+    {
+      "row": 1829,
+      "headword": "political",
+      "sourceId": "jr_en_ext_word_political",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9384d68f83224b6257baac2016734ce4eedb170f0426339aa3f27a23d955d1c6",
+      "materialSenseSha256": "5e222cb3503e84ac4a06b0b939590c3d222fcb632358feb80bc8a84bf186148c"
+    },
+    {
+      "row": 1835,
+      "headword": "popular",
+      "sourceId": "jr_en2_012",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4bdd589be7b4227745da9e3fce3e49a75c84132c1fa4b9b49a8011d61b64ba86",
+      "materialSenseSha256": "186575c4fc64bc62754fe06d2106b849713a8dd35439667976554b9cd49ceabd"
+    },
+    {
+      "row": 1846,
+      "headword": "potato",
+      "sourceId": "jr_en_core_word_potato",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "7dc8bf4ecea1f864d9a88c44d224fc853bea253de25976fa7102082a59d88d2a",
+      "materialSenseSha256": "33e20e171a269df48d7787c4d7b74fdaf840dfe67d21a655da9088e2da0351b6"
+    },
+    {
+      "row": 1855,
+      "headword": "prefer",
+      "sourceId": "jr_en_ext_word_prefer",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c74420f05a9529d9b8d8aaf7becae8993be77233bba25818008d7967d09b4da7",
+      "materialSenseSha256": "5687eb4195f597482dc5ae7ae5bd71edbe330b719f719e99ed79cd4a828573e9"
+    },
+    {
+      "row": 1857,
+      "headword": "prepare",
+      "sourceId": "jr_en_core_word_prepare",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "299440d99b8eb2bcd7e454434e2da39059584ac9f9c1471bded9d1ad0a263af2",
+      "materialSenseSha256": "b8d5df5e418ec9aa135fc4f27aab840d4085add4be310a0d3f446cdc6d578772"
+    },
+    {
+      "row": 1860,
+      "headword": "president",
+      "sourceId": "jr_en_v2_word_president",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ece9410973534df1117d0f8be96a6021a208ecd3fb98753d63868c51522cd337",
+      "materialSenseSha256": "4f47243633103abccf6af95616624c7d38c4349560c56b4d3a8e1da90dbfd41e"
+    },
+    {
+      "row": 1867,
+      "headword": "prison",
+      "sourceId": "jr_en_v2_word_prison",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "018ea4eb759f76766451ff7b54b8549a40273946c5b748674f25e97c5cb81fad",
+      "materialSenseSha256": "f2a7b684a17eb53453d1cf3c6b0e08d7bc9191e0c550481d7991b0e7a74d81b8"
+    },
+    {
+      "row": 1876,
+      "headword": "professor",
+      "sourceId": "jr_en_v2_word_professor",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e",
+      "materialSenseSha256": "fdcb1e51a5b7f4cfa838696208ee4c8a6f31ec2e78e3a520c8ba1dbb661f6266"
+    },
+    {
+      "row": 1886,
+      "headword": "pumpkin",
+      "sourceId": "jr_en_ext_word_pumpkin",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ce0541d2eb2378db52cd21e261cf47fc13f9bb5bf70e2b7a33c8df1a3d006f28",
+      "materialSenseSha256": "9d5548abaa162c6021548a34d8e95d2fddd96daef1dda9b50853993403096cca"
+    },
+    {
+      "row": 1888,
+      "headword": "purple",
+      "sourceId": "jr_en_v2_word_purple",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "290c82734a7423b88a5660dd9e15d2b0484cad377bdbcefd057afa015e1c7d05",
+      "materialSenseSha256": "16f9bedff51ef272b9f3f3cdc72d044df0577cfa8262a67af75c80ddb8f163af"
+    },
+    {
+      "row": 1890,
+      "headword": "put",
+      "sourceId": "jr_en_audit_word_put",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e0a3845b30db02321b6320598ee5d16ee71356ec5a4a69016fc927b2fa9ede8a",
+      "materialSenseSha256": "8d7d9fabb68dad9e7c7f401878057c4c0029452e2173cd59df16355fb32dd6f4"
+    },
+    {
+      "row": 1896,
+      "headword": "quickly",
+      "sourceId": "jr_en_ext_word_quickly",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5a01db7dbd8828405836e3444464ed8d463c8f5723a9e18bc8943db64924aea3",
+      "materialSenseSha256": "4118363f3c0f6d75bda1d5a0df8257ce91f7a543a3bff5edb9383a595998be30"
+    },
+    {
+      "row": 1900,
+      "headword": "rabbit",
+      "sourceId": "jr_en_core_word_rabbit",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2107912f19973db2d483044ed5d7368e567aa4e7dbaf0bf99fdaacbd1cae8d48",
+      "materialSenseSha256": "a1cddbde0c2aec9efc64b9942b1161b665e57b0642118612ca25e76320bec35b"
+    },
+    {
+      "row": 1906,
+      "headword": "rainy",
+      "sourceId": "jr_en_core_word_rainy",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2e49482a4a9f8670d734d55dcb291d117d43cb85506065867f66029104ac1efe",
+      "materialSenseSha256": "9df661b70f789e28d03e3394912a8876dcd21519c32974a447faa1d92259789f"
+    },
+    {
+      "row": 1907,
+      "headword": "raise",
+      "sourceId": "jr_en_audit_word_raise",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8e34dd347447539256d9f33978862f70474270c5813d4ed81d11c8cdbec15511",
+      "materialSenseSha256": "1dfc75add42d6c5d0d4e926c2de5991a51a0a0539248ec3fe0cda3c7ad99c787"
+    },
+    {
+      "row": 1910,
+      "headword": "read",
+      "sourceId": "jr_en_core_word_read",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "57c749541a8ccccf875169474123a1b379ee7631b0d051111b511cd08b8a8f00",
+      "materialSenseSha256": "c907a420313c025ded99ed6c9cd512372a8fda4711ef1091b7c6399f3788d535"
+    },
+    {
+      "row": 1922,
+      "headword": "recess",
+      "sourceId": "jr_en_sup_word_recess",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "76d2c6ea01a14e57df3866482504e4ec6cbd410d1bbeee0e8173a9fc5bf8e864",
+      "materialSenseSha256": "7d8cf248384524fb0e16ae7bc0efdd6ae9782992058ef3d4ccde55b57e7879e5"
+    },
+    {
+      "row": 1925,
+      "headword": "recommend",
+      "sourceId": "jr_en_audit_word_recommend",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4da25ed3664ea49d09764f799fa4f2b595d48a60b2b58371647f167d91d27d53",
+      "materialSenseSha256": "bc4a4dcf5f6804006d95ece567c6bd066d3a48a06751a3d87dee87df1edfd3a8"
+    },
+    {
+      "row": 1929,
+      "headword": "recover",
+      "sourceId": "jr_en_audit_word_recover",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b43abc3109e6794b06100428acfd35ffa9a2ad3e5085a5ccec397ef0f626c258",
+      "materialSenseSha256": "efe38861847d4b8c17d0a3e09e1abd8b48c9e8e807cf8d295970c2ae4440a6e8"
+    },
+    {
+      "row": 1931,
+      "headword": "recycle",
+      "sourceId": "jr_en_ext_word_recycle",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "eedf89874e3e3c82f39b656a7d3dcaf3a450eb2f577c9f05c975e37fe58a17c3",
+      "materialSenseSha256": "34a4f3a7982c5db0bcceeb7a2ead2395cb14bb697ffa567d32dfb91ed3a99bef"
+    },
+    {
+      "row": 1933,
+      "headword": "red",
+      "sourceId": "jr_en_v2_word_red",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8f9e52c976ec02f2ad771a690340eaa84dfbf21f770ca607f4e51e672174a4d9",
+      "materialSenseSha256": "b1450740e05c0c993c4d943881fc2ab7ce94bd900003ed6cd64e902284c193ef"
+    },
+    {
+      "row": 1934,
+      "headword": "reduce",
+      "sourceId": "jr_en_core_word_reduce",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "366d051d4436e36c23ecf587491602b9254e72d6f224846ee4df43f7473ca830",
+      "materialSenseSha256": "2028a4abe24ae03c713f86b8d9d3f40ef41361fae413b1811f5216eaced9ed39"
+    },
+    {
+      "row": 1975,
+      "headword": "rich",
+      "sourceId": "jr_en_ext_word_rich",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "441dea423ea10e11b1aaf24477a333b98a17b4bae49e70794c5ee540f004b8ec",
+      "materialSenseSha256": "19f0710dc9a947b01c1ab8acda34800d7da33b890562d3166138d0f7ad2b223c"
+    },
+    {
+      "row": 1976,
+      "headword": "ride",
+      "sourceId": "jr_en_sup_word_ride",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5da8396a11a78f1237a29dd65b263122b308fdba7ace8579b2360210782e260e",
+      "materialSenseSha256": "ee6e1bec957704229275c38762548c5723768da7e174fa4ef5bed59768390b87"
+    },
+    {
+      "row": 1979,
+      "headword": "rise",
+      "sourceId": "jr_en_audit_word_rise",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d1f1ff9416668966a220c0fa05c414e3776f2a93561811fc6eec06af873a86ef",
+      "materialSenseSha256": "ce92060a24726ce0d9b75eec78692b5fd26ad6b7d5fb5564d964e3dd893f437e"
+    },
+    {
+      "row": 1981,
+      "headword": "risk",
+      "sourceId": "jr_en_ext_word_risk",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "96467feafaaa40f732dfd43931ff97862e5d6c72084fc72368430d6749bc70d9",
+      "materialSenseSha256": "a39f8ecefc83fe2aebc3c97a5f4524783602bd288f8a9a16e61a84937e3ac890"
+    },
+    {
+      "row": 1998,
+      "headword": "route",
+      "sourceId": "jr_en_v2_word_route",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a094bfc0cf2fb505f5106552fb7c202138e4d15299e7270bc807d47cc2477add",
+      "materialSenseSha256": "32bb0e8f206fa57337cb1b87873baba2d0a33ee6f2b7db3e15523b579ac8fd4a"
+    },
+    {
+      "row": 2074,
+      "headword": "send",
+      "sourceId": "jr_en_core_word_send",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f5d7531f87e25389f1e2137ba025e9dbcfd04b7cc1ab0d3cd03076df73870e31",
+      "materialSenseSha256": "ed78008a9d3e92ea7b48bd29c7de00e22b1be90916fb288d5655c63cacea8340"
+    },
+    {
+      "row": 2090,
+      "headword": "seven",
+      "sourceId": "jr_en_sup_word_seven",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "cad06925db4f5498d03d754f9e6cedee32e280c0e93a76796c02eeb19c10a828",
+      "materialSenseSha256": "0d898a884dcf688786f0ecd9c10055aadc289308ac8545f6c9d037698c59c803"
+    },
+    {
+      "row": 2091,
+      "headword": "seventeen",
+      "sourceId": "jr_en_sup_word_seventeen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d5a0cae6c9873d754be3591ddbf109b6fc67c01ef2226aba6207fb69d68d0b0c",
+      "materialSenseSha256": "7e2e74976d8b25dabc3e6aba3d27f883d449acf92795dcb5598c04e02a03452c"
+    },
+    {
+      "row": 2093,
+      "headword": "seventh",
+      "sourceId": "jr_en_sup_word_seventh",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "42f777e3be749ecf705a6cfff864074b2d9a195b7ab04ac3a3d88fb0e24626f8",
+      "materialSenseSha256": "f57aa44da17d81599e68fdf637cefd58e1dbcfc75d74370deb00a9643b1735ea"
+    },
+    {
+      "row": 2094,
+      "headword": "seventy",
+      "sourceId": "jr_en_sup_word_seventy",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a90c00b381bab5ecf49c36f3ccd223e4b5bc12d55131567045647984d979d83e",
+      "materialSenseSha256": "4a3144d8518e900096f90a788bc0e53817c8984c52dfc57f567f7ba71fdd5c42"
+    },
+    {
+      "row": 2105,
+      "headword": "she",
+      "sourceId": "jr_en_sup_word_she",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "90fc2ff890c86f9a15470c16efa61f2284de66ba6dc60058e9f58522b13e6ff9",
+      "materialSenseSha256": "bf733816de21ce2c4c0aeffe4dd9d6004b1dd1c9e17c24eb58a00c1fce12e90b"
+    },
+    {
+      "row": 2112,
+      "headword": "ship",
+      "sourceId": "jr_en_sup_word_ship",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "15b7f7a95c1ccdcb5ba8bbff0800d2f57c7325758e591d02fd433dffccdd208c",
+      "materialSenseSha256": "37c67d13d615262e6b0fc4ddbb28c59889752cfe6696d01525edfe9965fc1442"
+    },
+    {
+      "row": 2145,
+      "headword": "silver",
+      "sourceId": "jr_en_ext_word_silver",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4c2400156bbec5a067231d4015ca17b6cb4abcb6e5ecb395935f4dc093192d13",
+      "materialSenseSha256": "40544fdd46800230a8f6bc788a29abbe9edb06e1bcac85bdb830f38a53115815"
+    },
+    {
+      "row": 2146,
+      "headword": "similar",
+      "sourceId": "jr_english_core_vocab_similar",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "60fa42d5c68bca41e39c197a4ca03b858e644477d0390a8c366056f9f44ba751",
+      "materialSenseSha256": "48d7b0c3e45cb7db58d2bf149d3c5065d6a0ceeced9c7fa81114be67415ee184"
+    },
+    {
+      "row": 2148,
+      "headword": "since",
+      "sourceId": "jr_en_ext_word_since",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "967a1db866430ae09258cfb185ac5238ce0b3ee6a7b8a794f30e33270ac4fd73",
+      "materialSenseSha256": "6e851438de8723d23215f39880f438eb6bc47070b285f8cef55e3964512549a1"
+    },
+    {
+      "row": 2150,
+      "headword": "sing",
+      "sourceId": "jr_en_v2_word_sing",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1939227e2720aab7d795ce82bd74ca885eeaf81a7b33073aded67ac73b84271f",
+      "materialSenseSha256": "e33bfd941e556f10667a3ba39feaa92c291cf064053cb1d6218a0214dd63c23d"
+    },
+    {
+      "row": 2154,
+      "headword": "sit",
+      "sourceId": "jr_en_core_word_sit",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "221796c83232e06403941ee95d1130278b3e05e3a727f20ff341486bddb396bd",
+      "materialSenseSha256": "436ffaa232a70860faba209d05f83331a985324d5d26177baa51acedc1cdd9d3"
+    },
+    {
+      "row": 2159,
+      "headword": "six",
+      "sourceId": "jr_en_sup_word_six",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "29a8eb15ce3f0dd021563acaacb335cea960fb8fb2e38cb91618f6e6192d6059",
+      "materialSenseSha256": "ff33c42439123f06cdb7feef9b776730e6b0d4bc8d078cba372fd6cb5461b213"
+    },
+    {
+      "row": 2160,
+      "headword": "sixteen",
+      "sourceId": "jr_en_sup_word_sixteen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "db614bbc8cedc3237734f7f1a78d2feaadd14babac2886a1bb2fa91575ae36b2",
+      "materialSenseSha256": "41c2e17f33387220b66da9a8825243c42079f1a731718b00f3746dc669ad496e"
+    },
+    {
+      "row": 2162,
+      "headword": "sixth",
+      "sourceId": "jr_en_sup_word_sixth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "40d5c88c24bfa93793d0ee515b6875035e8e8475f87674442628d151885d34da",
+      "materialSenseSha256": "dcb97bb49d0b4d416664ef5b2e87b0f4e89d9b1eb5f54734740779c3e19016ef"
+    },
+    {
+      "row": 2163,
+      "headword": "sixty",
+      "sourceId": "jr_en_sup_word_sixty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2f3f1443a05233a1d3dd9e2b2b13755523ce701f688bfbb165305263d6e28b02",
+      "materialSenseSha256": "57e6a53840790fd998793966b600dc7a270e4243fbeefcdbd4cbe5eb341c16f6"
+    },
+    {
+      "row": 2216,
+      "headword": "soon",
+      "sourceId": "jr_en_ext_word_soon",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2151fc6439f582e07c0319e869fbba1ddf3ba28d11194db6ee1f8701aea6c5b5",
+      "materialSenseSha256": "6ac75798a01719ece00d66102437cc439d97428e91c05368404efee303cef434"
+    },
+    {
+      "row": 2217,
+      "headword": "sorry",
+      "sourceId": "jr_en_sup_word_sorry",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a4d52581f1366e5fbf7e7cdd7f7d4bbe4dcc1db289ed2066d725fd89d309a43e",
+      "materialSenseSha256": "6381b86ef57b5c72b28a980f3dec0fee947d9dc9a890b493e74849520416f848"
+    },
+    {
+      "row": 2222,
+      "headword": "sour",
+      "sourceId": "jr_en_ext_word_sour",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b039967bcc36bd7664078d513ff1f38a1410f3521c19f77f8b3ea9bf4c69c8ba",
+      "materialSenseSha256": "2dc212b3c4f297b685f584eff6458642818966ac221fe17bfec8d61f87bf750f"
+    },
+    {
+      "row": 2227,
+      "headword": "souvenir",
+      "sourceId": "jr_en_v2_word_souvenir",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "01b00303c2b61fd6feef5f728e02ee5e6a621b788c7be7c1e795ee3ad5818250",
+      "materialSenseSha256": "631453321c1a89878ffdf8723fac15f7982f895d91f0a9d0f007e01625a9a9c2"
+    },
+    {
+      "row": 2238,
+      "headword": "speak",
+      "sourceId": "jr_en_core_word_speak",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ada8f9ee758f5be09eef1be45ab7da864abe08c51b3efd76fdfc2a5fb18b3d3c",
+      "materialSenseSha256": "b57b1625db7fe0a75752b3f98d82de50a999404490fe9cfb1621964b583fbe50"
+    },
+    {
+      "row": 2245,
+      "headword": "spend",
+      "sourceId": "jr_en_core_word_spend",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "abbcbfe04849cecbb2d865a299d11d8aa2b03bee0217a2a057b73c2d4a6f675a",
+      "materialSenseSha256": "cc757fa563225247f9586f577a2a43ed74c002447853af776733b579ac09ad99"
+    },
+    {
+      "row": 2271,
+      "headword": "stand",
+      "sourceId": "jr_en_core_word_stand",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ecb47ad72b8b8ca7893271cf6a11c2f1390a73740eab45149ac181a8bbb23e93",
+      "materialSenseSha256": "575e3efe507fee16ec0528f73b74c3bcff09f46063703772a78995dba31edc73"
+    },
+    {
+      "row": 2284,
+      "headword": "stay up",
+      "sourceId": "jr_en_sup_phrase_stay_up",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6893d8fad8c94f5eb2ef70dfc6d30a6a237f94175ca21ebc919c58345b4075a3",
+      "materialSenseSha256": "51ffdecfdb07646a90624192f8aadf0b4ef724c39b171460dffd46ee3a618604"
+    },
+    {
+      "row": 2293,
+      "headword": "still",
+      "sourceId": "jr_en_ext_word_still",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d6bcac1c31115441900debb89bd60ecdf223170fb2d0e6e88bfd7da0835beeee",
+      "materialSenseSha256": "fa68da8a0dd8b0acb689bef1b8205d4e6cde551479cb5b9581d9af5031d2a97b"
+    },
+    {
+      "row": 2307,
+      "headword": "strawberry",
+      "sourceId": "jr_en_core_word_strawberry",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2b8db40b5fd07e7c34a38114456f6714fd90d850c37b3f196ebbce1cd8ada6a8",
+      "materialSenseSha256": "90da561d72207a7cf224cbfadc254a71e047aa0d57b34b9bc116641937f8c99a"
+    },
+    {
+      "row": 2311,
+      "headword": "strength",
+      "sourceId": "jr_en_v2_word_strength",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2787c4e40623033ec18ae4d1ae70cf136384644a4771bfae69e3798fe53828be",
+      "materialSenseSha256": "fbcb58af6f4d018b9b3cbeba9b903d09d10e16525924970b3d043846739d390a"
+    },
+    {
+      "row": 2318,
+      "headword": "studio",
+      "sourceId": "jr_en_v2_word_studio",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "806c2feebb62da69c229d938ccc93608fde40c040867fd969e3e36b475646fa1",
+      "materialSenseSha256": "980634afc37e83f5a3417e66303292c6c6f4d79a56ea85b4becb623594cc8492"
+    },
+    {
+      "row": 2319,
+      "headword": "study",
+      "sourceId": "jr_en_core_word_study",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "21668e068bf942f74b9d818b71c7d4ee1075c49a62fc68839fe3e71040181501",
+      "materialSenseSha256": "9d94bd8241e777c9d149213a7cbb9f5eba96d0bf38703e57b16282484422e2bf"
+    },
+    {
+      "row": 2336,
+      "headword": "supermarket",
+      "sourceId": "jr_en_core_word_supermarket",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "241e509bd48828a447abf2b662af30fb0447c1b257a9a0547cbbbe5eda2e24cf",
+      "materialSenseSha256": "1dd6d057679abe3901b18b2df0abb6a8664d399c9b921759672d30ad832edb61"
+    },
+    {
+      "row": 2344,
+      "headword": "surprising",
+      "sourceId": "jr_en_ext_word_surprising",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f293c596c5d8fd4e5a3144151bb9134765d80afcec092428d40918b9ab81149a",
+      "materialSenseSha256": "844cc4e063df89f267afb39bc120887982c1e3438a45825dc0d39f91f86272f7"
+    },
+    {
+      "row": 2381,
+      "headword": "tall",
+      "sourceId": "jr_en_ext_word_tall",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "30e8e7dfa23aae118c8be8b832af57243bad5444e09c4b402372a7de4c8734e4",
+      "materialSenseSha256": "389f218bf5802404ca2ff07abf56da8908ae7de2197c69596ae9886498a88cfd"
+    },
+    {
+      "row": 2401,
+      "headword": "tell",
+      "sourceId": "jr_en_audit_word_tell",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "675f3dc719f61f55c550c17c99bf9500bb9663124099269d6cdb2869c921ff54",
+      "materialSenseSha256": "4a759cde3b8080cbfe31d7ae0500ea9f28b19397411734c8ff4e17976485737b"
+    },
+    {
+      "row": 2404,
+      "headword": "ten",
+      "sourceId": "jr_en_sup_word_ten",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6be5226f8d55b578733e1249fcf92115e73e7c71d503715530f2caad83ed3694",
+      "materialSenseSha256": "a43bb834124dd83476ca7c1d6c6b3629ecaeb48c7f180fc694cb512bb6beeb51"
+    },
+    {
+      "row": 2406,
+      "headword": "tenth",
+      "sourceId": "jr_en_sup_word_tenth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "5b7134c3d2c71435e2b2c74ef12fcbe755b0743fbab54bf061498c68357ffaac",
+      "materialSenseSha256": "83ce00211ebf3b9a857a926a2b8be0245cfd400061fbcc74ba19fba8b16d6fa8"
+    },
+    {
+      "row": 2437,
+      "headword": "them",
+      "sourceId": "jr_en_sup_word_them",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ec3c93971126aad58dac21132a3c81c4260c6c72d42d3912153ff682f8239344",
+      "materialSenseSha256": "fb6efbd1b9c3f8baa227a79d86cf31e89a873daccf5d8e10aaddaa4560f7f5e6"
+    },
+    {
+      "row": 2438,
+      "headword": "theme",
+      "sourceId": "jr_en_v2_word_theme",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e94d83648592e6fb82c83226733e8eae5471f075bcf42fcf3af450400290739d",
+      "materialSenseSha256": "9a1d219eac5149b4e17b76e7998f8a9cf3f29b9ba9059150a871392eeb4976a8"
+    },
+    {
+      "row": 2441,
+      "headword": "there",
+      "sourceId": "jr_en_ext_word_there",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "259dfdd0a980f130e422eb27337d897f01b9a33df7cda754f58f701cf26d1f13",
+      "materialSenseSha256": "72a01d6feb7aa8b0f0ff20b61d61c8513dc6493d4dd677dbc4eeb10a07ffa748"
+    },
+    {
+      "row": 2444,
+      "headword": "therefore",
+      "sourceId": "jr_en_v2_word_therefore",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "bdd2ad269dbcc84b40155211291e2b55fd51352b3cd9020e625f4a99d761cb58",
+      "materialSenseSha256": "cceb3aedefffce4884756534972cf1f5114ec9ce6aec3df330a4980d0a87aabf"
+    },
+    {
+      "row": 2446,
+      "headword": "these",
+      "sourceId": "jr_en_sup_word_these",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "40b7b5b45c9454b41e1893bc08831f887dbe4fd0e806e66190b691ec5c549493",
+      "materialSenseSha256": "32089977906971cda4e242a39d36844e3273777c435433a04a100e3155b7e2bc"
+    },
+    {
+      "row": 2448,
+      "headword": "they",
+      "sourceId": "jr_en_sup_word_they",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c11e2293a7a027512558974fe89e0c61332f583eb1c27e7406e3ca4ba797a240",
+      "materialSenseSha256": "1fa3c4a5a74301117066ec13e25033888bd33680492fdf7f439b887df150db9f"
+    },
+    {
+      "row": 2450,
+      "headword": "thick",
+      "sourceId": "jr_en_ext_word_thick",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "a905ab69b6b8406462d8bf1ce4130de497ba66b6832b9a307478b4c8c93996d2",
+      "materialSenseSha256": "6035600e2c0a73790a517e4de3ca883d97fe264ca91f8c40d7833459f56dfd50"
+    },
+    {
+      "row": 2457,
+      "headword": "third",
+      "sourceId": "jr_en_sup_word_third",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "83058f32af91e41ba5e54cca12628c34e549a8ccdce78e76bc4288a53d1414cc",
+      "materialSenseSha256": "47738c2e1834bd1d91ad84afbb86d19a556d250130bdca9c99864ec0246487c9"
+    },
+    {
+      "row": 2461,
+      "headword": "thirteen",
+      "sourceId": "jr_en_sup_word_thirteen",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b06e1fd1d57ada59d962050cc35b4b4e0597d42df36443358da5ca1132a4af05",
+      "materialSenseSha256": "af5e474606804737f58f729d5b6068edd61ad33d0d85dbde76056e3809bf634a"
+    },
+    {
+      "row": 2464,
+      "headword": "thirty",
+      "sourceId": "jr_en_sup_word_thirty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "52d96bae5b6ee650f11420f1569ae56478dc494be7ae9466a5311ba5bd683f1e",
+      "materialSenseSha256": "2b37cdf8ef2a15add0756b432b41243e6c6012e8f16036fd38cc49d56fb418f0"
+    },
+    {
+      "row": 2469,
+      "headword": "thousand",
+      "sourceId": "jr_en_sup_word_thousand",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "30d7b2e4bae83e94c457b846d2ec9009a2c1b7344f8bdd271579468230494e92",
+      "materialSenseSha256": "a056ba1db53fb12a9b2abba1b87c168abbe414e7b9972b3b5f145e4811daed59"
+    },
+    {
+      "row": 2471,
+      "headword": "three",
+      "sourceId": "jr_en_sup_word_three",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8bbb542540fad4e9df6e875f2a8431ba1ed04d528139c44ea68aad1b75acb15c",
+      "materialSenseSha256": "a5a662a30914b8a8f29be91d59f1c3f0f0f42f7560c545d8fc4180fa906a8019"
+    },
+    {
+      "row": 2474,
+      "headword": "throughout",
+      "sourceId": "jr_en_v2_word_throughout",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "74a22b2cc07fc015f280c4d2c7e8ad6b20d5ff05acd72b31147d5b6f15e18c78",
+      "materialSenseSha256": "6677e7990b31a97c87ae5a22ef062c493597d57f7ddee8d3abb7570446c45efb"
+    },
+    {
+      "row": 2492,
+      "headword": "together",
+      "sourceId": "jr_en_ext_word_together",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c5d33de6b97679ae891a4414217e6b58490ae4e6200fea96f090e6b2c854bf64",
+      "materialSenseSha256": "cbeae259fab2ded77a5ae4d20aad77ef1a51f932e12d9bb15ff5eaccf59dc9b0"
+    },
+    {
+      "row": 2498,
+      "headword": "tomorrow",
+      "sourceId": "jr_en_core_word_tomorrow",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6fdd239788dafa3c8b49f6d315033a19c3319ba58872c3abfa929f60aa2e0f68",
+      "materialSenseSha256": "98fb3a344ce2c37421147218efb949e593853cb7d8b4437eea725f44176e0075"
+    },
+    {
+      "row": 2509,
+      "headword": "total",
+      "sourceId": "jr_en_ext_word_total",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "30b018faf7a77ab7a55c92644ff244c3548953ee70ebaa0f2d677ea32fbdd5d4",
+      "materialSenseSha256": "7cd6867d86452999176f3b1596aa846e2860b9352d4c72d5aadbb02b479a789c"
+    },
+    {
+      "row": 2538,
+      "headword": "try",
+      "sourceId": "jr_en_sup_word_try",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "acaf323f0612664ce743222f6a1cc2d5f7f542907a0b4150d07ee2945d18a176",
+      "materialSenseSha256": "0df34aa3811fac7aa06c1edefa252b3af9f0589229c81920d4119aa420559809"
+    },
+    {
+      "row": 2551,
+      "headword": "twelfth",
+      "sourceId": "jr_en_sup_word_twelfth",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8e540bf906fe11097f187c8abb384dca02d02124c1919094695eee3dc92a84a1",
+      "materialSenseSha256": "0822a4ca7fd35a45d5c0c6baee8878c8aa0e814875de095533da8c3d245e0cca"
+    },
+    {
+      "row": 2552,
+      "headword": "twelve",
+      "sourceId": "jr_en_sup_word_twelve",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "398bc388615166514e0baf7b98ddd7dac3acd27eb9016ad6c48ea0cc4bd3a0d8",
+      "materialSenseSha256": "c1e7b18792b1b968e1d7148f941bc2bbedeba8e986c43ed500d82c33ce50c94b"
+    },
+    {
+      "row": 2554,
+      "headword": "twenty",
+      "sourceId": "jr_en_sup_word_twenty",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "2e85e9eebfa9f2150f199ac72a1495e79d7e44af4314fe3a1e1eaf6deb1e525c",
+      "materialSenseSha256": "8a5addf0d1125e9fa8bb3b9d1e9b57d7c4bd3159b7a2ffbea73c1cb73d80f76a"
+    },
+    {
+      "row": 2565,
+      "headword": "two",
+      "sourceId": "jr_en_sup_word_two",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "301f2f11d33db95aa10cd1b311231a1d56392305ab2c28805cd76bc4bea50f71",
+      "materialSenseSha256": "e21d33258ca9a7ec13013b79ee3c34d4af489656ed60eeb4a67d22c7f0721a1f"
+    },
+    {
+      "row": 2575,
+      "headword": "under",
+      "sourceId": "jr_en_ext_word_under",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ebd8288a090180b81c1e97bf350c83cc2c6c6fd71a000dadbe579507685dfef7",
+      "materialSenseSha256": "45cac32f531f75dfaf6930a0bd44f3e804d9a38bb432f2ceef0023ba306496e2"
+    },
+    {
+      "row": 2576,
+      "headword": "understand",
+      "sourceId": "jr_en_core_word_understand",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d737fde4bffaa3a514fd0071aaad2b7045884f0db977c6b52901e052f5d7fa8d",
+      "materialSenseSha256": "2ddcd50d4c1d036467343248638909c9ad76626802f34f5ff87aaaf015448885"
+    },
+    {
+      "row": 2593,
+      "headword": "us",
+      "sourceId": "jr_en_sup_word_us",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "feb221bd84afee316b9d86c6dcaa0e2c225dc91e51414499cfaea6e2b1e3cd9c",
+      "materialSenseSha256": "1570a98eef32cc20c47a5d86fa9083ea80091bda8e5e08b8267568321f766284"
+    },
+    {
+      "row": 2597,
+      "headword": "useful",
+      "sourceId": "jr_en_core_word_useful",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f08498cb459d25c4dcc28f7e0049b7454a6598d18e3e10d56baa70289292bc5a",
+      "materialSenseSha256": "015781a52b6d1a8128c42132b566b39a386858438d543ec392a07ae025e2cd01"
+    },
+    {
+      "row": 2598,
+      "headword": "usually",
+      "sourceId": "jr_en_ext_word_usually",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "24722b08d9f40c0f5ee00fd2abdfceb60824877f1cfe899c853edbfaf9da1756",
+      "materialSenseSha256": "4009b6d99dc44217d30d4436738c546b2f96603bfa10e0414f4d0f9ed6141f01"
+    },
+    {
+      "row": 2604,
+      "headword": "valuable",
+      "sourceId": "jr_en_ext_word_valuable",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "03da6d0b81f18ba7d9bb0aaa63878f119b7ccd916f3206a0c581fe2a26e4d943",
+      "materialSenseSha256": "6dbb61bb95bdefda755c00c554bd9e0ad900a9495036d4cb43daa6f2a4877c3e"
+    },
+    {
+      "row": 2609,
+      "headword": "various",
+      "sourceId": "jr_en_v2_word_various",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8807d0f8ed3f05c5896eda5b08b5fef21ee490c04060dd7725c7efdb2c64cce2",
+      "materialSenseSha256": "907b86d61a637d062c2cd62ae83e61387453f1f00a499d315297ab1776b40c99"
+    },
+    {
+      "row": 2628,
+      "headword": "visit",
+      "sourceId": "jr_en_core_word_visit",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e58574b548ea52e3991dc6d9156fe4f676f0609641269e67bfd1cd3030f0e038",
+      "materialSenseSha256": "368033e7428f0587a01af573461df1e633394c8de9f3bb9996326a4a973853db"
+    },
+    {
+      "row": 2636,
+      "headword": "wake",
+      "sourceId": "jr_en_core_word_wake",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c0aa5975f506659b4dbfdbc9cb9f86683f26c2e53528202c9c2fa16cd932ba54",
+      "materialSenseSha256": "fc6e77ac2f640674c6eac82458f2e041a09e208edc6763da2b9bea0ae6918bc6"
+    },
+    {
+      "row": 2637,
+      "headword": "wake up",
+      "sourceId": "jr_en_sup_phrase_wake_up",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "269223a847b28b9eb34f35d638a06435e15ff5a9c1e1627b65a480b900f73f21",
+      "materialSenseSha256": "6cf05848d7806e24f7f77bedc26fd26f4d54b06c22080db7c22efd2a2662c909"
+    },
+    {
+      "row": 2660,
+      "headword": "we",
+      "sourceId": "jr_en_sup_word_we",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b45f9ae0b4d2620386d52bc287511cb653be86a698ffa99c5bfe98d874f6ff13",
+      "materialSenseSha256": "47b0b8fa0bfc1a620eb61cb74579c7c6000e41a9645031fd2b98764a2cbe521c"
+    },
+    {
+      "row": 2662,
+      "headword": "wear",
+      "sourceId": "jr_en_sup_word_wear",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "12375349722ae870e482b15267e70a9822756f53a3b14c0072224a0907ccc04a",
+      "materialSenseSha256": "813ce6c684fa5f668b6c0c8020e4a26cf3191ed2d5aaef6c9c06edb7c3d1a1a9"
+    },
+    {
+      "row": 2679,
+      "headword": "wetland",
+      "sourceId": "jr_en_v2_word_wetland",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "edc0df7b08f4559f882b9e8a29ed62766c2b4d24987e86c959da6224f696d47a",
+      "materialSenseSha256": "39745dc77661d96cee0d1ad6fa3b1662f5ce843612b0ba6552bc609c8a847875"
+    },
+    {
+      "row": 2695,
+      "headword": "where",
+      "sourceId": "jr_en_sup_word_where",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "41b67fe3c11a76b1f9c8f31890681d339226cbab7e865d3d4877a0e7e349e199",
+      "materialSenseSha256": "4e661ab44f63056728820599b1bb99f7ddd354e8d95430192e344b02e4f9d0eb"
+    },
+    {
+      "row": 2700,
+      "headword": "white",
+      "sourceId": "jr_en_v2_word_white",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c382772f805770982e0e098a0d15cbeb2ab7728e76dd7e5d90e0a4853f0c84f0",
+      "materialSenseSha256": "91e9a6f0c7c5376c491101a969bbbf70e07a12b2ca88f954c7695a4436620f86"
+    },
+    {
+      "row": 2716,
+      "headword": "win",
+      "sourceId": "jr_en_core_word_win",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "04675f529dc6574557cc04742629919ba92ba13b4847592105ed931221ab3dbc",
+      "materialSenseSha256": "d82c40f56f4d975352e35b16694afbddd8b49861c3035a465b2d6f37326215ed"
+    },
+    {
+      "row": 2723,
+      "headword": "wish",
+      "sourceId": "jr_en_audit_word_wish",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "cc0c0cf69f1bcf3f748086982eae14ab08b5f1aa8385e60d3abe5f61f89a095a",
+      "materialSenseSha256": "0bb971697dbe9bfd89dd14bafa11e5f8d445ff1439bdd3bf3edb2dccfd14fcf4"
+    },
+    {
+      "row": 2725,
+      "headword": "without",
+      "sourceId": "jr_en2_024",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "157a6d2c80539c9d8998038bae7fcbb2c75021639454f42d75246317f2b7d8af",
+      "materialSenseSha256": "b364ee514f56fe485ba4b7caecd53de0ff336729dafc79842d6e97e5db532ca7"
+    },
+    {
+      "row": 2730,
+      "headword": "wonder",
+      "sourceId": "jr_en_ext_word_wonder",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c1a81499eeed2a0fb07bd33c0ed2ccd522463d406cbca8ac1a9a8b0955f0ca92",
+      "materialSenseSha256": "0439a2c914763826feeb554fe5b5d5568723a6abb1c22be46b1428eb7fe8034f"
+    },
+    {
+      "row": 2736,
+      "headword": "work",
+      "sourceId": "jr_en_core_word_work",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "c27b50ee44e00df06e9b883c965fca9001a12d920af5ebfd7d054980ad79c326",
+      "materialSenseSha256": "d47c122f8dff8e9068d4edb922445d565ca3dceb64c5ede80f3764d961a72879"
+    },
+    {
+      "row": 2757,
+      "headword": "write",
+      "sourceId": "jr_en_core_word_write",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6d44059a81ee233939b12fbaf46bd3164a7d50eda5131ddccbe01bacec4381c2",
+      "materialSenseSha256": "32eb1a199da02187bb4ff25ab72c2a6bc8ed50a37c23878134b284d6925233ca"
+    },
+    {
+      "row": 2761,
+      "headword": "yard",
+      "sourceId": "jr_en_v2_word_yard",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "81b3ed91bd5c0b74a7f03afe96257499f4bc3364a21070d70067d3b5f211e6cc",
+      "materialSenseSha256": "039c6816340049eb1a4c57866fde63d08efc18f3bb0e0e0474bbae87086d71ec"
+    },
+    {
+      "row": 2765,
+      "headword": "yellow",
+      "sourceId": "jr_en_v2_word_yellow",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9aae0b95ccd081a5e6e7686e9f40dc9b92a96dcc93ee755970ae87e4d26d84ca",
+      "materialSenseSha256": "5386784107a8de0ef44bc6ce8877cfd597ad7296d825cee3f27ed0fe4e52157d"
+    },
+    {
+      "row": 2767,
+      "headword": "yes",
+      "sourceId": "jr_en_sup_word_yes",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "e09e606a3ea6e9d26833324119e7bd91eb7d839cdec5726162a6584ea500a92b",
+      "materialSenseSha256": "cccfafbea6bd61d73180482dfa50f9b6fd2138d84a52ff451fded533e090dc70"
+    },
+    {
+      "row": 2769,
+      "headword": "yet",
+      "sourceId": "jr_en_ext_word_yet",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "9d231b1c5d2d1d2896314686f7e0254158d72991620e30b9c4556b2e7dcf5f62",
+      "materialSenseSha256": "109d649d471a5904461ea672ffa5f7cd832b2e52b2653961b842c58b9b51261c"
+    },
+    {
+      "row": 30,
+      "headword": "above",
+      "sourceId": "jr_en_ext_word_above",
+      "decision": "hold",
+      "reason": "source_gloss_requires_context",
+      "publisherMeaningSha256": "fee903f245245b99544c5ff9edc32974eef088472b9b3e51107d094ab1e9fca6",
+      "materialSenseSha256": "080728bed7de247b99883fb76779d974690ab49eb237068d23880b2c17e63184"
+    },
+    {
+      "row": 377,
+      "headword": "cap",
+      "sourceId": "jr_en_sup_word_cap",
+      "decision": "hold",
+      "reason": "source_gloss_requires_context",
+      "publisherMeaningSha256": "206abf4a700a35fcf37e5fe1187ee8753e6debb984bc03888fe768f9adefff58",
+      "materialSenseSha256": "7a5cef2272c26edf862522ed33da175ec6b49678ea5b6463463e5264e8f67ba6"
+    },
+    {
+      "row": 382,
+      "headword": "care",
+      "sourceId": "jr_en_audit_word_care",
+      "decision": "hold",
+      "reason": "noun_verb_different_sense",
+      "publisherMeaningSha256": "08c797cc1226e8a970acffac9609471a00ccb6706e781b5582a131b8cac653a3",
+      "materialSenseSha256": "58b20b7d8dd3875f7fde654f232f8c18291223a5bdf21937457592be6f3fbf2d"
+    },
+    {
+      "row": 1295,
+      "headword": "kind",
+      "sourceId": "jr_en_core_word_kind",
+      "decision": "hold",
+      "reason": "kind_type_not_kind_friendly",
+      "publisherMeaningSha256": "32c421ae4cbfbcc837e1aad328965832594fe75fea87497ec66b96af3e551aaa",
+      "materialSenseSha256": "e914856da599064ce8cadb1f282d72393a641dfa7dcbe983609c4c0ab9c545e3"
+    },
+    {
+      "row": 1612,
+      "headword": "nine",
+      "sourceId": "jr_en_sup_word_nine",
+      "decision": "hold",
+      "reason": "source_number_inconsistency",
+      "publisherMeaningSha256": "6be5226f8d55b578733e1249fcf92115e73e7c71d503715530f2caad83ed3694",
+      "materialSenseSha256": "bb6f351250ffafdedb8c380ce145ffd95ef1c54ead714d21e829d53adcda3980"
+    },
+    {
+      "row": 1338,
+      "headword": "lead",
+      "sourceId": "jr_en_audit_word_lead",
+      "decision": "hold",
+      "reason": "lead_metal_not_verb",
+      "publisherMeaningSha256": "9c7ced45765dcc45b573db734dfbd9ac81bf82f6b9664eedf2b6060fbeccb9d2",
+      "materialSenseSha256": "99a71c40f4efb2d7f64e3a122f3b50f9b28dc1c008d764d6746668b8b50f8867"
+    },
+    {
+      "row": 2701,
+      "headword": "White",
+      "sourceId": "jr_en_v2_word_white",
+      "decision": "hold",
+      "reason": "proper_name_not_color",
+      "publisherMeaningSha256": "11dfdcae3e891800981d9720122ecbb9332400ce066e96a82ceadb5757a83b1d",
+      "materialSenseSha256": "91e9a6f0c7c5376c491101a969bbbf70e07a12b2ca88f954c7695a4436620f86"
+    },
+    {
+      "row": 1463,
+      "headword": "may",
+      "sourceId": "jr_en_core_word_may",
+      "decision": "hold",
+      "reason": "modal_may_not_month",
+      "publisherMeaningSha256": "1219fac9bafd4556694f989cadfadafe8fed6794c0987bc7f15b494525c025eb",
+      "materialSenseSha256": "6d9494586eb73960d66a69c0e51d4cc048a51ab7c7181b43aa0a55b8c4a496aa"
+    },
+    {
+      "row": 1404,
+      "headword": "look up",
+      "sourceId": "jr_en_sup_phrase_look_up",
+      "decision": "hold",
+      "reason": "look_up_direction_not_dictionary",
+      "publisherMeaningSha256": "406c25510f6ac3ed5a72f3a741b06868871b500081d1782824d8d4a117d516c5",
+      "materialSenseSha256": "975d721d704b2b36e37f6308d5294da1a6e81a1c9bc6638ea0d0ffafc359d3ad"
+    },
+    {
+      "row": 2658,
+      "headword": "wave",
+      "sourceId": "jr_en_v2_word_wave",
+      "decision": "hold",
+      "reason": "wave_verb_not_noun",
+      "publisherMeaningSha256": "120bad7cf1f0776a32281b28a43c69cb8cb393d4aa42635d2f04b801da4a3076",
+      "materialSenseSha256": "0105ec3dae9d31021124dc6a3614c46c021a024f9602869d170f1680a3c960ac"
+    }
+  ]
+}

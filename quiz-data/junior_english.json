@@ -1057,7 +1057,7 @@
     "field": "英単語",
     "unit": "基本語彙",
     "english": "during",
-    "japanese": "〜の間ずっと",
+    "japanese": "〜の期間中に",
     "english_dummies": [
       "before",
       "after",
@@ -1089,7 +1089,7 @@
         ]
       }
     ],
-    "note": "during：〜の間ずっと。"
+    "note": "during：〜の期間中に。「期間中ずっと」を表すthroughoutとは区別する。"
   },
   {
     "id": "jr_en2_024",

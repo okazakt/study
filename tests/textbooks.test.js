@@ -1,5 +1,5 @@
 // Book filtering and curriculum/content checks; no five-minute simulation.
-import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync,readdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync,readdirSync} from 'node:fs';
 import {availableTextbookSeries,normalizeTextbookSettings,textbookBooks,textbookUnits,selectTextbookQuestions} from '../textbooks.js';
 import {makeQuestionQueue,makeChoiceQuestion} from '../game.js';import {choicePresentations} from '../choice-variants.js';
 import {questionKey,normalizeHistory,recordAnswer,questionCoverage} from '../progress.js';
@@ -17,10 +17,10 @@ test('2026 metadata distinguishes usage year, 2025 edition and six series across
 test('every selectable mapping resolves to a real lexical material and a documented nonoverlapping page range',()=>{
  for(const b of data.books){const ids=new Set();let end=0;
   for(const u of b.units){assert.ok(!ids.has(u.id));ids.add(u.id);assert.ok(u.pageStart>end);end=u.pageEnd;
-   for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.equal(row.evidence.method,'exact_normalized_sense');assert.ok(row.evidence.row>=8);assert.equal(row.evidence.source,'ow.xlsx');}
+   for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.ok(['exact_normalized_sense','reviewed_equivalent_sense'].includes(row.evidence.method));assert.ok(row.evidence.row>=8);assert.equal(row.evidence.source,'ow.xlsx');}
   }
  }
- const ow=report.oneWorld;assert.equal(ow.totalEntries,2778);assert.equal(ow.senseConfirmed,620);assert.equal(ow.senseConfirmed+ow.senseReview+ow.headwordUnmatched,ow.totalEntries);
+ const ow=report.oneWorld;assert.equal(ow.totalEntries,2778);assert.equal(ow.senseConfirmed,934);assert.equal(ow.exactSenseConfirmed,620);assert.equal(ow.reviewedSenseConfirmed,314);assert.equal(ow.reviewedHeld,10);assert.equal(ow.senseConfirmed+ow.senseReview+ow.headwordUnmatched,ow.totalEntries);
  assert.equal(report.newHorizon.totalEntries,2402);assert.equal(report.newHorizon.headwordMatched,1260);
 });
 test('same spelling with another meaning is excluded: care as noun and kind meaning type do not match existing senses',()=>{
@@ -57,4 +57,22 @@ test('national curriculum audit covers all 60 documented criteria without callin
 test('18 curriculum gap points provide 36 original, uniquely answerable presentations within the display budget',()=>{
  const added=items.filter(q=>q.content_batch==='english-curriculum-1');assert.equal(added.length,18);
  for(const item of added)for(const p of choicePresentations(item)){assert.equal(new Set([p.answer,...p.dummies]).size,4);assert.ok([p.answer,...p.dummies].every(s=>[...s].length<=30));assert.ok([...p.prompt+item.task+p.answer+p.dummies.join('')].length<=200,item.id);const q=makeChoiceQuestion(item,()=>.5);assert.equal(q.choices[q.correct],q.answer);}
+});
+
+test('manual sense approvals are pinned to source and current material hashes; holds never become selectable',()=>{
+ const ledger=read('textbook-data/one-world-reviewed.json'),sha=s=>createHash('sha256').update(s).digest('hex');
+ assert.equal(ledger.sourceSha256,data.sources.find(s=>s.id==='ow.xlsx').sha256);
+ assert.equal(data.reviewLedger.sha256,sha(readFileSync(new URL('../textbook-data/one-world-reviewed.json',import.meta.url))));
+ assert.equal(new Set(ledger.decisions.map(d=>d.row)).size,ledger.decisions.length);
+ const mappings=data.books.flatMap(b=>b.units.flatMap(u=>u.items));
+ for(const d of ledger.decisions){const item=by.get(d.sourceId),row=report.oneWorld.entries.find(r=>r.row===d.row);
+  assert.equal(d.materialSenseSha256,sha(item.english+'\0'+item.japanese));assert.equal(row.headword,d.headword);
+  assert.equal(row.status,d.decision==='approved'?'sense_confirmed':'sense_review');
+  const linked=mappings.filter(m=>m.evidence.row===d.row);
+  if(d.decision==='hold')assert.equal(linked.length,0);
+  else for(const m of linked){assert.equal(m.evidence.method,'reviewed_equivalent_sense');assert.equal(m.evidence.meaningSha256,d.publisherMeaningSha256);}
+ }
+ for(const row of [1612,1338,1463,1404,2658])assert.equal(report.oneWorld.entries.find(r=>r.row===row).status,'sense_review');
+ const during=items.find(q=>q.english==='during');assert.equal(during.japanese,'〜の期間中に');assert.ok(during.note.includes('throughout'));
+ for(const q of items)if(q.english_dummies?.includes('during'))assert.equal(q.japanese_dummies[q.english_dummies.indexOf('during')],during.japanese);
 });

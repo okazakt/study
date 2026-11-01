@@ -57,6 +57,14 @@ for g in [1,2,3]:
  assert len({u['id'] for u in book['units']})==len(book['units'])
  for i,u in enumerate(book['units']):
   if i:assert book['units'][i-1]['pageEnd']<u['pageStart'],(g,u)
+reviewPath=root/'textbook-data/one-world-reviewed.json'
+review=json.loads(reviewPath.read_text())
+assert review['version']==1 and review['source']=='ow.xlsx'
+assert review['sourceSha256']==hashlib.sha256((source/'ow.xlsx').read_bytes()).hexdigest(), 'Stale review source'
+reviews={r['row']:r for r in review['decisions']}
+assert len(reviews)==len(review['decisions']), 'Duplicate review row'
+consumed=set()
+reviewMeta=dict(path=str(reviewPath.relative_to(root)),sha256=hashlib.sha256(reviewPath.read_bytes()).hexdigest(),approved=sum(r['decision']=='approved' for r in reviews.values()),held=sum(r['decision']=='hold' for r in reviews.values()))
 wordreport=[];locations=[];seen_matches=set()
 sheet=openpyxl.load_workbook(source/'ow.xlsx',data_only=True).worksheets[0]
 assert '令和7年度版' in str(sheet.cell(2,1).value)
@@ -64,6 +72,15 @@ for rowno,row in enumerate(sheet.values,1):
  if rowno<8 or not isinstance(row[5],str):continue
  word=row[5];item=by.get(en(word));meaning=str(row[7] or '')
  match=bool(item and senses(item['japanese']) & senses(meaning))
+ method='exact_normalized_sense'
+ if rowno in reviews:
+  decision=reviews[rowno];consumed.add(rowno)
+  assert item and decision['sourceId']==item['id'] and decision['headword']==word, f'Stale review target: {rowno}'
+  assert decision['publisherMeaningSha256']==hashlib.sha256(meaning.encode()).hexdigest(), f'Stale publisher sense: {rowno}'
+  assert decision['materialSenseSha256']==hashlib.sha256((item['english']+'\0'+item['japanese']).encode()).hexdigest(), f'Stale material sense: {rowno}'
+  assert decision['decision'] in ('approved','hold')
+  match=decision['decision']=='approved'
+  method='reviewed_equivalent_sense' if match else 'reviewed_hold'
  category='sense_confirmed' if match else 'sense_review' if item else 'headword_unmatched'
  form=re.search(r'([A-Za-z]+)\s*の(?:過去形|過去分詞|複数形|比較級|最上級)',meaning)
  reviewType='matched' if match else 'different_or_unconfirmed_sense' if item else 'inflection_reference' if form and en(form.group(1)) in by else 'multiword_or_expression' if re.search(r'\s',word.strip()) else 'proper_name_or_capitalized' if word[:1].isupper() else 'headword_candidate'
@@ -83,10 +100,11 @@ for rowno,row in enumerate(sheet.values,1):
   if not match:unit['unresolvedEntries']+=1;continue
   identity=(book['id'],unit['id'],item['id'])
   if identity not in seen_matches:
-   unit['items'].append(dict(sourceId=item['id'],page=page,evidence=dict(source='ow.xlsx',sheet=sheet.title,row=rowno,method='exact_normalized_sense',meaningSha256=hashlib.sha256(meaning.encode()).hexdigest())))
+   unit['items'].append(dict(sourceId=item['id'],page=page,evidence=dict(source='ow.xlsx',sheet=sheet.title,row=rowno,method=method,meaningSha256=hashlib.sha256(meaning.encode()).hexdigest())))
    seen_matches.add(identity)
   mapped+=1
- wordreport.append(dict(headword=word,row=rowno,status=category,reviewType=reviewType,lemmaSourceId=by[en(form.group(1))]['id'] if form and en(form.group(1)) in by else None,sourceId=item['id'] if item else None,mappedLocations=mapped))
+ wordreport.append(dict(headword=word,row=rowno,status=category,matchMethod=method if match or rowno in reviews else None,reviewType=reviewType,lemmaSourceId=by[en(form.group(1))]['id'] if form and en(form.group(1)) in by else None,sourceId=item['id'] if item else None,mappedLocations=mapped))
+assert consumed==set(reviews), 'Unconsumed review rows'
 # NH has no unit/page association and includes separate senses with the same spelling.
 # Report headword overlap only: never claim meaning/unit confirmation from that file.
 nh=[]
@@ -95,10 +113,10 @@ for sheet in openpyxl.load_workbook(source/'nh.xlsx',data_only=True).worksheets:
  for rowno,row in enumerate(sheet.values,1):
   if rowno<2 or not isinstance(row[1],str):continue
   w=row[1];item=by.get(en(w));nh.append(dict(headword=w,sheet=sheet.title,row=rowno,status='headword_match_only' if item else 'headword_unmatched',sourceId=item['id'] if item else None))
-manifest=dict(version=1,usageYear=2026,editionYear=2025,checkedAt=checked,catalogSource='catalog.pdf',sources=provenance,books=books,
+manifest=dict(version=1,usageYear=2026,editionYear=2025,checkedAt=checked,catalogSource='catalog.pdf',sources=provenance,reviewLedger=reviewMeta,books=books,
  caveats=['出版社の監修・公認を意味しない。','対応は確認できた語義・初出ページに限定し、未対応語を含む。','教科書本文・訳文・問題・音声は転載せず、問題文と解説は独自素材を使う。','初出箇所の対応であり、その単元の全既習語・全出現語一覧ではない。'])
 (root/'textbook-data/english-2026.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-report=dict(checkedAt=checked,scope='公開資料の掲載語／初出ページと既存素材の照合。未一致は未収録語確定ではなく、活用形・語義・固有名詞・表記等の要確認を含む。',sources=provenance,oneWorld=dict(totalEntries=len(wordreport),senseConfirmed=sum(r['status']=='sense_confirmed' for r in wordreport),senseReview=sum(r['status']=='sense_review' for r in wordreport),headwordUnmatched=sum(r['status']=='headword_unmatched' for r in wordreport),entries=wordreport),newHorizon=dict(totalEntries=len(nh),headwordMatched=sum(r['status']=='headword_match_only' for r in nh),entries=nh))
+report=dict(checkedAt=checked,scope='公開資料の掲載語／初出ページと既存素材の照合。未一致は未収録語確定ではなく、活用形・語義・固有名詞・表記等の要確認を含む。',sources=provenance,oneWorld=dict(totalEntries=len(wordreport),exactSenseConfirmed=sum(r['status']=='sense_confirmed' and r['matchMethod']=='exact_normalized_sense' for r in wordreport),reviewedSenseConfirmed=sum(r['matchMethod']=='reviewed_equivalent_sense' for r in wordreport),reviewedHeld=reviewMeta['held'],senseConfirmed=sum(r['status']=='sense_confirmed' for r in wordreport),senseReview=sum(r['status']=='sense_review' for r in wordreport),headwordUnmatched=sum(r['status']=='headword_unmatched' for r in wordreport),entries=wordreport),newHorizon=dict(totalEntries=len(nh),headwordMatched=sum(r['status']=='headword_match_only' for r in nh),entries=nh))
 (root/'docs/content/english-textbook-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('OW', {k:v for k,v in report['oneWorld'].items() if k!='entries'})
 print('NH', {k:v for k,v in report['newHorizon'].items() if k!='entries'})
