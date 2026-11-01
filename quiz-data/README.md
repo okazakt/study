@@ -80,3 +80,5 @@
 - 同義語・別解を相互の誤答にしない。describe/express、cause/factor、appear/seem等の重なりを除外。熟語もtalk to/with、write down/out、depend on/upon、give up/inなどの別解が混ざらないよう対象位置と候補を編集する。
 - 各問題の内容・綴り・表示・分類は `npm run test:content` で検証する。進行ロジックの変更がないコンテンツ追加では5分プレイ全体の検証を実行しない。実行する検証範囲はPWA仕様書の最新方針に従う。
 - 教科書照合は未完了。共通語彙と入試向け発展語を含み、学年分類は暫定。
+
+- v0.50.0: `junior_english_application.json` は英文法36・短文読解24の適用問題。一方向のchoice形式を利用。学年は暫定、教科書未対応。

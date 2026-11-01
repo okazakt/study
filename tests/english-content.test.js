@@ -7,13 +7,13 @@ import {buildCatalog,selectQuestions,matchesPracticeQuestion,practiceTypes,secti
 import {normalizeHistory,recordAnswer,questionKey,questionCoverage,createAdaptivePicker} from '../progress.js';
 const read=name=>JSON.parse(readFileSync(new URL(`../quiz-data/${name}.json`,import.meta.url)));
 const extended=read('junior_english_extended');
-const all=['junior_japanese','junior_english','junior_math','junior_science','junior_social','junior_expansion','junior_english_core'].flatMap(read).concat(extended);
+const all=['junior_japanese','junior_english','junior_math','junior_science','junior_social','junior_expansion','junior_english_core','junior_english_application'].flatMap(read).concat(extended);
 const english=all.filter(item=>item.subject==='英語'),catalog=buildCatalog(all);
 test('extended English vocabulary and phrases have stable distinct identities without replacing previous items',()=>{
  assert.equal(extended.length,645);assert.equal(extended.filter(q=>q.field==='英単語').length,581);assert.equal(extended.filter(q=>q.field==='熟語').length,64);
  assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  const words=english.filter(q=>q.english);assert.equal(new Set(words.map(q=>q.english.toLowerCase())).size,words.length);
- assert.equal(english.length,1356);assert.equal(makeQuestionQueue(english,()=>.5).length,5037);
+ assert.equal(english.length,1416);assert.equal(makeQuestionQueue(english,()=>.5).length,5097);
  assert.ok(extended.every(q=>q.school_level==='中学'&&q.subject==='英語'&&['中2','中3'].includes(q.grade)));
 });
 test('each new generated question has four unique choices and stays inside its display budget',()=>{

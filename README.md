@@ -1,6 +1,6 @@
 # Study Beat
 
-中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の1,745素材（逆方向・段階回答を含め5,625問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.49.0で英語を645素材追加し、英語は1,356素材・5,037問になりました。受験範囲の網羅・教科書対応は未完了です。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
+中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の1,805素材（逆方向・段階回答を含め5,685問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.50.0で英文法・短文読解を60素材追加し、英語は1,416素材・5,097問になりました。受験範囲の網羅・教科書対応は未完了です。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
 
 ```sh
 npm start

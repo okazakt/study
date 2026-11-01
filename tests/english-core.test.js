@@ -7,13 +7,13 @@ import {normalizeHistory,recordAnswer,questionKey,questionCoverage,createAdaptiv
 import {simulateSession} from '../scripts/simulate-session.mjs';
 const read=name=>JSON.parse(readFileSync(new URL(`../quiz-data/${name}.json`,import.meta.url)));
 const core=read('junior_english_core');
-const all=['junior_japanese','junior_english','junior_math','junior_science','junior_social','junior_expansion'].flatMap(read).concat(core,read('junior_english_extended'));
+const all=['junior_japanese','junior_english','junior_math','junior_science','junior_social','junior_expansion'].flatMap(read).concat(core,read('junior_english_extended'),read('junior_english_application'));
 const english=all.filter(q=>q.subject==='英語'),catalog=buildCatalog(all);
 test('large English batch has stable unique identities and adds words phrases grammar and reading without duplicates',()=>{
  assert.equal(core.length,621);assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  assert.deepEqual(Object.fromEntries(['英単語','熟語','英文法','英文読解'].map(field=>[field,core.filter(q=>q.field===field).length])),{'英単語':505,'熟語':48,'英文法':60,'英文読解':8});
  const lexical=english.filter(q=>q.english);assert.equal(new Set(lexical.map(q=>q.english)).size,lexical.length);
- assert.equal(english.length,1356);assert.equal(makeQuestionQueue(english,()=>.5).length,5037);
+ assert.equal(english.length,1416);assert.equal(makeQuestionQueue(english,()=>.5).length,5097);
 });
 test('all generated English choices are distinct and fit the established content budget',()=>{
  assert.equal(choiceColumns({choices:['Thursday','Monday','Friday','Sunday']}),2);

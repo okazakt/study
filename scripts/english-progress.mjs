@@ -2,12 +2,12 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {makeQuestionQueue} from '../game.js';
 const read=file=>JSON.parse(readFileSync(new URL(`../quiz-data/${file}.json`,import.meta.url)));
-const items=[...read('junior_english'),...read('junior_expansion').filter(q=>q.subject==='英語'),...read('junior_english_core'),...read('junior_english_extended')];
+const items=[...read('junior_english'),...read('junior_expansion').filter(q=>q.subject==='英語'),...read('junior_english_core'),...read('junior_english_extended'),...read('junior_english_application')];
 const version=JSON.parse(readFileSync(new URL('../package.json',import.meta.url))).version;
 const targets=[['英単語',2200,2500],['熟語',150,300],['英文法',120,240],['英文読解',30,60]];
 const lines=['# 英語の完成に向けた進捗','',`v${version}時点。\`node scripts/english-progress.mjs\` で収録数を再生成する。**英語全体の網羅・2026年版教科書への対応は未完了。**`,'','## 現在の実数と数量の仮置き','','数量目標は前回の規模見積もりを作業用に分けたもの。公式な語彙リストでも、これに届けば必ず網羅できるという基準でもない。単語は小学校の復習語を含み、多義語・全出版社の差分で増減する。','','| 分類 | 現在の素材 | 生成問題数 | 数量目標の仮置き | 追加量の仮置き |','| --- | ---: | ---: | ---: | ---: |'];
 for(const [field,min,max] of targets){const rows=items.filter(q=>q.field===field);lines.push(`| ${field} | ${rows.length} | ${makeQuestionQueue(rows,()=>.5).length} | ${min}〜${max} | ${Math.max(0,min-rows.length)}〜${Math.max(0,max-rows.length)} |`);}
-lines.push('',`合計：${items.length}素材、${makeQuestionQueue(items,()=>.5).length}生成問題。`,'','第1回は621素材、第2回は単語581・熟語64の645素材を追加。第2回は中学の文章・会話で使う語、社会・科学・環境、行動・抽象語と頻出表現を優先。配当学年は暫定で、入試向けの発展語も含む。既存の素材IDと学習履歴は維持する。','','## 学年・単元ごとの収録','','配当学年は暫定の共通知識分類。2026年版教科書の掲載順や学年を保証しない。件数は独立した必須知識の数と同一ではない。','','| 学年 | 分類 | 単元 | 素材数 |','| --- | --- | --- | ---: |');
+lines.push('',`合計：${items.length}素材、${makeQuestionQueue(items,()=>.5).length}生成問題。`,'','第1回は621素材、第2回は単語581・熟語64の645素材を追加。第3回は英文法36・短文読解24の60素材を追加。第2回は中学の文章・会話で使う語、社会・科学・環境、行動・抽象語と頻出表現を優先。配当学年は暫定で、入試向けの発展語も含む。既存の素材IDと学習履歴は維持する。','','## 学年・単元ごとの収録','','配当学年は暫定の共通知識分類。2026年版教科書の掲載順や学年を保証しない。件数は独立した必須知識の数と同一ではない。','','| 学年 | 分類 | 単元 | 素材数 |','| --- | --- | --- | ---: |');
 for(const grade of ['中1','中2','中3'])for(const [field] of targets){
  const rows=items.filter(q=>q.grade===grade&&q.field===field);
  for(const unit of [...new Set(rows.map(q=>q.unit))])lines.push(`| ${grade} | ${field} | ${unit} | ${rows.filter(q=>q.unit===unit).length} |`);
@@ -16,7 +16,7 @@ lines.push('','## 内容ごとの完了条件と残作業','','| 対象 | 現在
 '| 単語 | 家族・学校・生活・自然・基本動詞から社会・科学までの共通語彙を拡充 | 中学の新出語彙の候補一覧を確定し、未収録語・多義語・品詞・不規則な活用を追加。既存語の別の意味を単純複製しない |',
 '| 熟語 | 日常動作・状態・位置・時・数量等を拡充。重要な1語を対象とする穴埋めも追加 | 頻出表現をさらに追加し、同義表現・複数の前置詞が正しくなるケースを継続点検 |',
 '| 文法 | 基本文、疑問・否定、名詞・代名詞、時制、助動詞、不定詞・動名詞、比較、接続、完了、受け身、分詞・関係詞、間接疑問、仮定法、感嘆・文型等を収録 | 基本文法の細かな項目台帳との対応付け、抜けと重複の整理、同じポイントの別文脈パターン、不規則変化や語形・語順の適用例を充足 |',
-'| 読解 | 指示語、時系列、理由、条件、否定の範囲、逆接、案内文、会話応答の短い適用例を追加 | 比較、主張と例、必要情報、言い換え、条件・数量の読み違いなどを追加。長文総合問題は通常プレイの対象外 |',
+'| 読解 | 指示語、時系列、理由、条件、否定の範囲、逆接、案内文、会話応答の短い適用例を追加 | 比較、主張と例、必要情報、言い換え、条件・数量などを追加済み。観点ごとの不足と別場面の例を確認。長文総合問題は通常プレイの対象外 |',
 '| 表現パターン管理 | 英語の汎用的な内部バリエーション管理は未実装 | 同じ学習ポイントを複数の文脈で練習し、履歴と出題数を共通化する |',
 '| 教科書対応 | 未収録 | 2026年版6種×3学年の書誌・単元・掲載語彙を実資料で照合し、対応表と単元選択へ反映。推測で対応済みにしない |',
 '','## 作問と検証の方針','','- 語彙は意味の混同が起きにくい同分野の候補を編集し、new/fresh、cold/cool、learn/studyなどの重なる意味を相互の誤答にしない。多義語は今回問う意味を限定する。',
