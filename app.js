@@ -1,11 +1,12 @@
-import {TEXTBOOK_KEY,availableTextbookSeries,normalizeTextbookSettings,textbookBooks,textbookUnits,selectTextbookQuestions} from './textbooks.js?v=0.57.0';
-import { ScreenWakeLock } from './wake-lock.js?v=0.57.0';
-import { MusicPlayer } from './music-player.js?v=0.57.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.57.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.57.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.57.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.57.0';
-const VERSION = '0.57.0';
+import {FocusGame} from './focus-game.js?v=0.58.0';
+import {TEXTBOOK_KEY,availableTextbookSeries,normalizeTextbookSettings,textbookBooks,textbookUnits,selectTextbookQuestions} from './textbooks.js?v=0.58.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.58.0';
+import { MusicPlayer } from './music-player.js?v=0.58.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.58.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.58.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.58.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.58.0';
+const VERSION = '0.58.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -534,14 +535,14 @@ async function start() {
   const seed=crypto.getRandomValues(new Uint32Array(1))[0],epoch=Date.now();
   const createGame=(getHistory,getResults)=>{
     const random=seededRandom(seed),picker=createAdaptivePicker(makeQuestionQueue(filtered,random,accept),getHistory,random,getResults);
-    return new Game(filtered,playlist.events,offsetMs/1000,random,session.endTime,accept,picker,session.fadeStart,RHYTHMS[gameplayOptions.rhythm].tapGoal,gameplayOptions);
+    return new (gameplayOptions.rhythm==='focus'?FocusGame:Game)(filtered,playlist.events,offsetMs/1000,random,session.endTime,accept,picker,session.fadeStart,RHYTHMS[gameplayOptions.rhythm].tapGoal,gameplayOptions);
   };
   let referenceHistory=structuredClone(learningHistory);const referenceResults=new Map();
-  const reference=perfectReference(createGame(()=>referenceHistory,()=>referenceResults.values()),(q,index,time)=>{
+  const reference=gameplayOptions.rhythm==='focus'?null:perfectReference(createGame(()=>referenceHistory,()=>referenceResults.values()),(q,index,time)=>{
     referenceHistory=recordAnswer(referenceHistory,q,{correct:true,chosen:q.answer,time:epoch+time*1000,attempt:'reference:'+index});
     referenceResults.set(index,{question:q,correct:true,wrong:0});
   });
-  game=createGame(()=>learningHistory,()=>sessionResults.values());game.scorePlan=reference;game.refreshScore();
+  game=createGame(()=>learningHistory,()=>sessionResults.values());if(!game.focus)game.scorePlan=reference;game.refreshScore();
   const course = catalog.find(c => c.id === selection()?.id);
   sessionScope = {id:course.id, school:course.school, subject:course.subject, year:course.year, grade:`${course.school === '中学' ? '中' : '高'}${course.year}`};
   levelPrevious = null; updateLearningLevel();
@@ -786,6 +787,7 @@ function renderQuestion() {
 }
 function positionQuestion(elapsed) {
   const panel = $('question-panel');
+  if(game.focus){panel.style.maxHeight=`${Math.max(100,$('play-stage').clientHeight-110)}px`;$('question-slot').style.height=`${panel.offsetHeight}px`;panel.style.transform='none';return;}
   panel.style.maxHeight = `${Math.max(100, $('play-stage').clientHeight - 112)}px`;
   // Reserve the final position, then place the same panel above the touch line.
   $('question-slot').style.height = `${panel.offsetHeight}px`;
@@ -801,12 +803,15 @@ function render() {
   $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${formatTime(session.endTime)}`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
+  $('play').classList.toggle('focus-mode',!!game.focus);
+  $('focus-wait').hidden=!game.focus;
+  if(game.focus)$('focus-wait').style.setProperty('--beat-pulse',reducedMotion.matches?0:game.pulse(game.time));
   $('play').dataset.phase = game.phase;
   $('play').dataset.continuation = game.reveal.continuation;
-  $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色のノーツ表示' : '白ノーツの表示');
-  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
+  $('field').setAttribute('aria-label', game.focus ? '回答結果とコンボ' : game.phase === 'answer' ? '4色のノーツ表示' : '白ノーツの表示');
+  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.disabled=!!game.focus&&game.phase!=='answer';button.setAttribute('aria-label',game.focus?`${COLORS[Number(button.dataset.lane)].name}の回答`:`左から${Number(button.dataset.lane)+1}番目のレーン`); button.style.setProperty('--lane-color', game.focus || game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
-  $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
+  $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? (game.focus?'拍に合わせてタップ':'白ノーツのレーンをタップ') : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
     const opacity = game.phase === 'read' && !game.reveal.instant && (!game.reveal.continuation || character.choice) ? Math.max(0, Math.min(1, (elapsed - character.start) / game.reveal.fadeSeconds)) : 1;
@@ -842,7 +847,7 @@ function render() {
   }
   const judgmentVisible = game.lastJudgment && game.time - game.judgmentTime < RULES.judgmentSeconds;
   $('tap-judgment').hidden = !judgmentVisible;
-  $('tap-judgment').textContent = game.lastJudgment;
+  $('tap-judgment').textContent = game.focus&&game.lastJudgment==='PERFECT'?'GREAT':game.lastJudgment;
   $('tap-judgment').dataset.judgment = game.lastJudgment;
   positionQuestion(elapsed);
   $('field').classList.toggle('compact-feedback', $('field').clientHeight < 190);
@@ -862,6 +867,7 @@ function render() {
 }
 const canvas = $('canvas'); const ctx = canvas.getContext('2d');
 function draw() {
+  if(game.focus)return;
   const { width, height } = canvas.getBoundingClientRect();
   const dpr = window.devicePixelRatio || 1;
   if (canvas.width !== Math.round(width * dpr) || canvas.height !== Math.round(height * dpr)) { canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr); }
@@ -903,12 +909,13 @@ function loop() {
 function tap(lane) {
   if (screen !== 'play' || !musicIsPlaying() || busy || lane >= game.laneCount) return;
   if(playbackTime()>=session.endTime){finish(true);return;}
-  game.update(playbackTime());
+  const now=playbackTime();game.update(now);
+  if(game.focus&&lane>=0&&game.phase!=='answer')return;
   const q = game.question, first = game.firstTry, previousCount = game.correctCount, previousWrong = game.wrongCount, occurrence = game.questionIndex;
-  const shouldSound = ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
-  ghostPressTimes[lane] = game.time;
-  const note = game.tap(lane, playbackTime());
-  if (note && ['GOOD','PERFECT'].includes(game.lastJudgment)) {
+  const shouldSound = game.focus || ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
+  if(lane>=0)ghostPressTimes[lane] = game.time;
+  const note = game.tap(lane, now);
+  if (!game.focus && note && ['GOOD','PERFECT'].includes(game.lastJudgment)) {
     hitEffects.push({lane,judgment:game.lastJudgment,time:game.time});
     if(hitEffects.length>24)hitEffects.shift();
   }
@@ -923,6 +930,7 @@ function tap(lane) {
   }
   render(); draw();
 }
+$('focus-wait').addEventListener('pointerdown',event=>{event.preventDefault();tap(-1);});
 document.querySelectorAll('[data-lane]').forEach(button => button.addEventListener('pointerdown', event => { event.preventDefault(); tap(Number(button.dataset.lane)); }));
 // Prevent selection handles, long-press callouts and drag gestures while playing.
 for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
@@ -949,7 +957,7 @@ document.addEventListener('keydown', event => {
   if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.code)) event.preventDefault();
   const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
   if (lane >= 0) { event.preventDefault(); tap(lane); }
-  if (event.code === 'Space') event.preventDefault();
+  if (event.code === 'Space') {event.preventDefault();if(game.focus)tap(-1);}
 });
 function interruptPlay(reason='画面の切替によりプレイを終了しました。ここまでの回答は記録済みです。') {
   if (screen === 'tuning') { pauseTuning(); return; }
@@ -1010,9 +1018,9 @@ function finish(completed, reason=null) {
   const columns = [
     ['リズム', [
       ['最大リズムコンボ',game.maxCombo,'rhythmCombo'],
-      ['PERFECT',`${game.judgments.PERFECT}回`],['GOOD',`${game.judgments.GOOD}回`],
-      ['白ノーツ得点',score.netWhite.toLocaleString()],['コンボボーナス',(score.whiteBonus+score.colorBonus).toLocaleString()],
-      ['ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`]
+      [game.focus?'GREAT':'PERFECT',`${game.judgments.PERFECT}回`],['GOOD',`${game.judgments.GOOD}回`],
+      [game.focus?'待機リズム得点':'白ノーツ得点',score.netWhite.toLocaleString()],['コンボボーナス',(score.whiteBonus+score.colorBonus).toLocaleString()],
+      [game.focus?'見逃しMISS':'ノーツMISS',`${game.missedNotes}回`],['空振りMISS',`${game.emptyMisses}回`]
     ]],
     ['学習', [
       ['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],

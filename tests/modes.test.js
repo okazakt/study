@@ -10,7 +10,7 @@ function create(options={}){return new Game(math,beats,0,seededRandom(91),300,()
 test('gameplay defaults preserve slow and easy and reject unknown saved values',()=>{
  assert.deepEqual(normalizeGameplayOptions(null),{speed:'slow',rhythm:'easy'});
  assert.deepEqual(normalizeGameplayOptions({speed:'invalid',rhythm:'hard'}),{speed:'slow',rhythm:'hard'});
- assert.deepEqual(Object.values(RHYTHMS).map(r=>r.tapGoal),[120,180,240]);
+ assert.deepEqual(Object.values(RHYTHMS).map(r=>r.tapGoal),[120,180,240,null]);
 });
 test('approved reading speeds use total visible text, exact midpoint and an included lift',()=>{
  for(const q of makeQuestionQueue(math)){
@@ -43,7 +43,7 @@ assert.equal(g.correctCount,1);assert.equal(g.quizResult.choice,g.question.corre
  }
 });
 test('hard answer pattern uses musical half-beats and unequal gaps, easy and normal keep main beats',()=>{
- for(const rhythm of Object.keys(RHYTHMS)){
+ for(const rhythm of Object.keys(RHYTHMS).filter(key=>key!=='focus')){
   const g=create({rhythm});const targets=g.events.filter(e=>g.answerEvent(e)).map(e=>e.target),gaps=targets.slice(1,20).map((t,i)=>t-targets[i]);
   if(rhythm==='hard'){assert.ok(new Set(gaps).size>1);assert.ok(g.events.some(e=>e.half&&g.answerEvent(e)));assert.ok(Math.min(...gaps)>=.25);}
   else{assert.deepEqual(new Set(gaps),new Set([.5]));assert.ok(g.events.filter(e=>g.answerEvent(e)).every(e=>!e.half));}
@@ -51,7 +51,7 @@ test('hard answer pattern uses musical half-beats and unequal gaps, easy and nor
 });
 test('all speed and rhythm combinations reach their goal under ideal play and higher rhythm gives higher combo rewards',()=>{
  const idx=read('music-data/index.json'),entries=Object.entries(idx).map(([id,track])=>({id,track,chart:read('music-data/'+track.files.chart)}));
- for(const subject of ['math','science','english','japanese','social'])for(const speed of Object.keys(SPEEDS))for(const rhythm of Object.keys(RHYTHMS)){
+ for(const subject of ['math','science','english','japanese','social'])for(const speed of Object.keys(SPEEDS))for(const rhythm of Object.keys(RHYTHMS).filter(key=>key!=='focus')){
   const items=read('quiz-data/junior_'+subject+'.json'),playlist=sessionMusic(entries,null,seededRandom(101));
   const factory=()=>{
    const random=seededRandom(87);let history=normalizeHistory(null);const results=new Map();

@@ -1,11 +1,11 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.57.0';
-import { materializeMathItem } from './math-variants.js?v=0.57.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.58.0';
+import { materializeMathItem } from './math-variants.js?v=0.58.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
 export const SESSION = Object.freeze({durationSeconds:300,fadeSeconds:3,tapGoal:120,minWhiteInterval:.22});
 export const SPEEDS=Object.freeze({slow:'ゆっくり',normal:'普通',fast:'速い',instant:'即答級'});
-export const RHYTHMS=Object.freeze({easy:{label:'イージー',tapGoal:120},normal:{label:'ノーマル',tapGoal:180},hard:{label:'ハード',tapGoal:240}});
+export const RHYTHMS=Object.freeze({easy:{label:'イージー',tapGoal:120},normal:{label:'ノーマル',tapGoal:180},hard:{label:'ハード',tapGoal:240},focus:{label:'学習集中モード',tapGoal:null}});
 export function normalizeGameplayOptions(value){return {speed:Object.hasOwn(SPEEDS,value?.speed)?value.speed:'slow',rhythm:Object.hasOwn(RHYTHMS,value?.rhythm)?value.rhythm:'easy'};}
 export function sessionPlan(playlistSeconds, limit=SESSION.durationSeconds) {
   const endTime=Math.min(playlistSeconds,limit);
@@ -484,11 +484,14 @@ export class Game {
       else if(this.colorRowsUsed<this.requiredTaps)this.colorComboBonus+=this.combo;
     }
     this.judge(perfect ? 'PERFECT' : 'GOOD', now);this.resolveNote(note,perfect?'PERFECT':'GOOD');
-    if (this.phase === 'answer' && note.color !== null) {
-      this.counts[note.color]++;
-      if (this.counts[note.color] >= this.requiredTaps) {
-        if (note.color === this.question.correct) {
-          this.quizResult = { correct: true, time: now, choice: note.color };
+    if (this.phase === 'answer' && note.color !== null) this.submitAnswer(note.color, now);
+    return note;
+  }
+  submitAnswer(color, now) {
+      this.counts[color]++;
+      if (this.counts[color] >= this.requiredTaps) {
+        if (color === this.question.correct) {
+          this.quizResult = { correct: true, time: now, choice: color };
           this.correctCount++;
           if (this.firstTry) { this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
           if(this.scorePlan){
@@ -500,14 +503,12 @@ export class Game {
           this.notes = [];
           this.changePhase('feedback', now);
         } else {
-          this.quizResult = { correct: false, time: now, choice: note.color };
+          this.quizResult = { correct: false, time: now, choice: color };
           this.wrongCount++;this.stageWrongCount++;
           this.firstTry = false; this.quizCombo = 0; this.combo = 0; this.counts = [0, 0, 0, 0];
           this.message = `もう一度！ 正解だと思う色を${this.requiredTaps}回タップ`;
         }
       }
-    }
-    return note;
   }
   achievements(completed, unfinished = false) {
     const { PERFECT, GOOD, MISS } = this.judgments;
