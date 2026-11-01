@@ -1,10 +1,10 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.43.1';
-import { MusicPlayer } from './music-player.js?v=0.43.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.43.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.43.1';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.43.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.43.1';
-const VERSION = '0.43.1';
+import { ScreenWakeLock } from './wake-lock.js?v=0.43.2';
+import { MusicPlayer } from './music-player.js?v=0.43.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.43.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.43.2';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.43.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.43.2';
+const VERSION = '0.43.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -256,19 +256,9 @@ function playTapSound(preview = false, judgment = 'GOOD') {
 document.addEventListener('touchend', () => {
   if (screen === 'play' || screen === 'tuning') prepareTapAudio()?.catch(() => {});
 }, { passive: true });
-function syncPlayViewport(){
-  const height=window.visualViewport?.height || window.innerHeight;
-  if(Number.isFinite(height)&&height>0)document.documentElement.style.setProperty('--play-viewport-height',`${height}px`);
-}
-window.visualViewport?.addEventListener('resize',()=>{
-  if(screen!=='play'&&screen!=='tuning')return;
-  syncPlayViewport();
-  if(screen==='play'){render();draw();}else renderTuning();
-});
 const show = next => {
   const previousScreen = screen;
   if (next !== 'result') { clearTimeout(resultTimer); resultTimer = undefined; $('result-details').classList.remove('revealed'); }
-  syncPlayViewport();
   screen = next;screenWakeLock.setEnabled(next==='play');
   document.body.classList.toggle('playing', next === 'play' || next === 'tuning');
   document.documentElement.classList.toggle('play-locked', next === 'play' || next === 'tuning');
@@ -1051,7 +1041,7 @@ window.addEventListener('blur', () => { tapAudioNeedsReset = true; if (screen ==
 for (const type of ['pause','waiting']) audio.addEventListener(type, () => {
   if (screen === 'play' && !musicPlayer && !busy && !audio.ended) interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
 });
-window.addEventListener('resize', () => { syncPlayViewport();if (screen === 'play') { render(); draw(); } else if (screen === 'tuning') renderTuning(); });
+window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } else if (screen === 'tuning') renderTuning(); });
 let registration, updateAvailable = false;
 let updateCheck;
 async function checkForUpdate() {
