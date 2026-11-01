@@ -2920,6 +2920,222 @@
       "reason": "wave_verb_not_noun",
       "publisherMeaningSha256": "120bad7cf1f0776a32281b28a43c69cb8cb393d4aa42635d2f04b801da4a3076",
       "materialSenseSha256": "0105ec3dae9d31021124dc6a3614c46c021a024f9602869d170f1680a3c960ac"
+    },
+    {
+      "row": 31,
+      "headword": "abroad",
+      "sourceId": "jr_en_tb_word_abroad",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "8f06feee5b765bc8ed8cc766e2aa18800a8d8770e5614cf9116a5155acfcef23",
+      "materialSenseSha256": "24664efced5c71ab81e8d16d8f82c0791c74b9761be79a29756335cd0ee4886c"
+    },
+    {
+      "row": 178,
+      "headword": "attachment",
+      "sourceId": "jr_en_tb_word_attachment",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "738a6a9fb5d6524c1a54e5cc634325e346648773fcc9e58fe9db7a1ce6170eb9",
+      "materialSenseSha256": "d2cada9f657006f2b747b59834081d70ee7dce44464cbe043bfa64b1e540bdc6"
+    },
+    {
+      "row": 354,
+      "headword": "cafeteria",
+      "sourceId": "jr_en_tb_word_cafeteria",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "d7ece8f3c4e936e57f9d0d7fe8c85cbcfa76245e81d164c00d350f74992f37b1",
+      "materialSenseSha256": "bedcc2480ed08bd57ff62fd02bc76dbeda87151e428b6799083c2002cf09921e"
+    },
+    {
+      "row": 498,
+      "headword": "communication",
+      "sourceId": "jr_en_tb_word_communication",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "69af22a0f4a20536196767d3bf0e418cc75b1cd454d709438a001b7fb4f3f615",
+      "materialSenseSha256": "bdbe71b87a8e6965eed7ca4ea1a0fcf327d19799fbd7b11624ebf4ec06570bc8"
+    },
+    {
+      "row": 627,
+      "headword": "difficulty",
+      "sourceId": "jr_en_tb_word_difficulty",
+      "decision": "hold",
+      "reason": "hardship_sense_requires_context",
+      "publisherMeaningSha256": "fb707d3e02daadbc623b176e86889bb3b26521ff0ed45ffd728da7f0ad5ed9b9",
+      "materialSenseSha256": "7bfce9f67fb70f7d454b685b49383a99bf73d2c1871ad8d023d32b97526c19ca"
+    },
+    {
+      "row": 870,
+      "headword": "flute",
+      "sourceId": "jr_en_tb_word_flute",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f1bca2dcef6ab58db0e22ab5b796f30a31cca28f2d32aee0b8a09295835544be",
+      "materialSenseSha256": "d9698a6cb6c0d06faa252f9e0c7fed08545bf86c9266cbdd909f02e4740fa1d0"
+    },
+    {
+      "row": 931,
+      "headword": "full",
+      "sourceId": "jr_en_tb_word_full",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "eb59c550f54f2e03f306960e5db38ba678a7a4bd64558a5255634f8da2a98f57",
+      "materialSenseSha256": "2bc6d40af3d4fe81d1da5a0cc75b6b6daedeb2c7dd591d932057786d9a946a0e"
+    },
+    {
+      "row": 935,
+      "headword": "funny",
+      "sourceId": "jr_en_tb_word_funny",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4590746f594ca63c929489a7f0f9b63cbbce586f0d55fcebe3cbb48a94b28f31",
+      "materialSenseSha256": "c46d132a834901b0556d2f7a67e6ca84da5f9e3ce9962ee735716ad7a259f363"
+    },
+    {
+      "row": 1005,
+      "headword": "grandparent",
+      "sourceId": "jr_en_tb_word_grandparent",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "773d8ef15496b86f319dcac558938e68672825ae65381fb94c7619912f0f8a41",
+      "materialSenseSha256": "fed3b36b726551b472b946d3faff3264b8b9c5b6a67fd5ce9b0bd77ef1ce86d9"
+    },
+    {
+      "row": 1038,
+      "headword": "hall",
+      "sourceId": "jr_en_tb_word_hall",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "05bda1298f0ca5b286ef3a8257d76c3e149c5f19522ff1526d9dcbcc0ad7baa7",
+      "materialSenseSha256": "2a72b253f6a01ae2e2d699125687553a0dbf9f7fd77318dbdb36d67bfc3dff6e"
+    },
+    {
+      "row": 1115,
+      "headword": "home",
+      "sourceId": "jr_en_tb_word_home",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4b6dbc54c42a8e0b045480ec6688369c9a757cbb430085c78f354f0eb525e136",
+      "materialSenseSha256": "dd7ab092145de5db91a3b8b91e3b86ea1c4a8d0d06d9a8bdc226f325d4589bab"
+    },
+    {
+      "row": 1288,
+      "headword": "kid",
+      "sourceId": "jr_en_tb_word_kid",
+      "decision": "hold",
+      "reason": "kid_verb_not_child_noun",
+      "publisherMeaningSha256": "c14f0cfa8cac2ad5f6940c91ec5e5d97db86b43924c3b5b06449b4c6ddb4ccc5",
+      "materialSenseSha256": "8ec67ff9f92af87f409a1dce6a9a982df5ebc3af67f80783d2445354b48d0ed8"
+    },
+    {
+      "row": 1318,
+      "headword": "lady",
+      "sourceId": "jr_en_tb_word_lady",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6a7ffd13b8ffd8d65c191997b7341efd732b82ae6fd6288e12a39ea2378e9ac7",
+      "materialSenseSha256": "b48f0e78b2242f1cd837530965bf4d4a0bc909d07d4f8d2f4ecfd7a8eb643ae0"
+    },
+    {
+      "row": 1437,
+      "headword": "man",
+      "sourceId": "jr_en_tb_word_man",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "b288b2075f557b069ec386017e2117d23846b6919879e46984cb669690eeeaa1",
+      "materialSenseSha256": "9a725fb7723a293c33428545781a0da82f1f3e1f679a4f222ea47216f5e4729c"
+    },
+    {
+      "row": 1477,
+      "headword": "media",
+      "sourceId": "jr_en_tb_word_media",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4b0f7e5a0c3254d767122fbb401c04eef1d17c1ddd33a2e3423488ca77de684c",
+      "materialSenseSha256": "b7f9ef6ffb8c6cc529167e2af8ac1ed7d5cd8aefe2478323b9f57352cd34fc83"
+    },
+    {
+      "row": 1549,
+      "headword": "movement",
+      "sourceId": "jr_en_tb_word_movement",
+      "decision": "hold",
+      "reason": "movement_activity_requires_context",
+      "publisherMeaningSha256": "e1ba21d79b75b58e76a315a4c41a261565b4ed48b4a22a7189cab15b08838bf4",
+      "materialSenseSha256": "98f18d0479f2deea0adf67d70d37d409c2a84942f8fad176cfa9eb09300911a8"
+    },
+    {
+      "row": 1594,
+      "headword": "network",
+      "sourceId": "jr_en_tb_word_network",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "ccea6a3319aaa624e8fecb6c569da2fd3dd6b6b06af38d0a19dcc05d130a4b5b",
+      "materialSenseSha256": "d208218f62acb5638f439e66075149e77998ebf1fb33a95f2865629fb476eafe"
+    },
+    {
+      "row": 1946,
+      "headword": "renewable",
+      "sourceId": "jr_en_tb_word_renewable",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "4b613f180e90ec7ebeeec4a9eef70d3465d638617250b2996271a0104dd0fec2",
+      "materialSenseSha256": "7c3f649b1f43e7c895095e6b11c7f07a8089d574fa37269ef399de45a10c0421"
+    },
+    {
+      "row": 1962,
+      "headword": "respond",
+      "sourceId": "jr_en_tb_word_respond",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6d22e1481235479d33506144084c5b939dfcedd2913a5154d6d8289662b22660",
+      "materialSenseSha256": "114ff199e469e4131d18f82fd007dbfbbecb57970ee28e51b45bb20a6a69d68e"
+    },
+    {
+      "row": 2059,
+      "headword": "seafood",
+      "sourceId": "jr_en_tb_word_seafood",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f398d7431a1561f18919888ccf7ec2250d4d460a78714eab1ff6e72132acbc69",
+      "materialSenseSha256": "246036886ad0698d59cb8af41006166b62f7cdd98d8f3649e6b0d3dacfe135fd"
+    },
+    {
+      "row": 2137,
+      "headword": "side",
+      "sourceId": "jr_en_tb_word_side",
+      "decision": "hold",
+      "reason": "side_location_vs_side_surface_requires_context",
+      "publisherMeaningSha256": "9ac1a5fffce73d58dca31f1620b33325bc0effabc0f5ef673a833d7ad43da646",
+      "materialSenseSha256": "b298ebb4ea3469ea1a88049395c5b03f529481c1006784fac029c87ecbdffb59"
+    },
+    {
+      "row": 2301,
+      "headword": "story",
+      "sourceId": "jr_en_tb_word_story",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "1040be9a1c77c58cbb9958d47d627e8c15c7751fef0adb24360850736ae41093",
+      "materialSenseSha256": "7e0c87d5d516b8c6239a6f963502805bd4d6238685700557091fa41852ed4e14"
+    },
+    {
+      "row": 2358,
+      "headword": "system",
+      "sourceId": "jr_en_tb_word_system",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "088462f65b7e8bc00db9fd7d87cf33cea200daceb9094dea9dc851b2a1851090",
+      "materialSenseSha256": "35d2b407b8f86326563db72b9105076dbae717c5791b681990da16a0e856e28f"
+    },
+    {
+      "row": 2727,
+      "headword": "woman",
+      "sourceId": "jr_en_tb_word_woman",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "6a7ffd13b8ffd8d65c191997b7341efd732b82ae6fd6288e12a39ea2378e9ac7",
+      "materialSenseSha256": "dd6ae3d2c79a8ec4125e79b3ca376e3ccb6d7ccbd4addd4c7527991583e48e40"
     }
   ]
 }

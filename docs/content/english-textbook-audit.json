@@ -53,12 +53,12 @@
   ],
   "oneWorld": {
     "totalEntries": 2778,
-    "exactSenseConfirmed": 620,
-    "reviewedSenseConfirmed": 314,
-    "reviewedHeld": 10,
-    "senseConfirmed": 934,
-    "senseReview": 164,
-    "headwordUnmatched": 1680,
+    "exactSenseConfirmed": 724,
+    "reviewedSenseConfirmed": 334,
+    "reviewedHeld": 14,
+    "senseConfirmed": 1058,
+    "senseReview": 168,
+    "headwordUnmatched": 1552,
     "entries": [
       {
         "headword": "(I) got it.",
@@ -283,12 +283,12 @@
       {
         "headword": "abroad",
         "row": 31,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_abroad",
+        "mappedLocations": 1
       },
       {
         "headword": "accident",
@@ -383,12 +383,12 @@
       {
         "headword": "action",
         "row": 41,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_action",
+        "mappedLocations": 1
       },
       {
         "headword": "active",
@@ -403,12 +403,12 @@
       {
         "headword": "activity",
         "row": 43,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_activity",
+        "mappedLocations": 1
       },
       {
         "headword": "actually",
@@ -703,12 +703,12 @@
       {
         "headword": "air",
         "row": 73,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_air",
+        "mappedLocations": 1
       },
       {
         "headword": "air conditioner",
@@ -863,12 +863,12 @@
       {
         "headword": "alone",
         "row": 89,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_alone",
+        "mappedLocations": 1
       },
       {
         "headword": "along",
@@ -1083,12 +1083,12 @@
       {
         "headword": "animal",
         "row": 111,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_animal",
+        "mappedLocations": 1
       },
       {
         "headword": "animated",
@@ -1113,12 +1113,12 @@
       {
         "headword": "animation",
         "row": 114,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_animation",
+        "mappedLocations": 1
       },
       {
         "headword": "announce(d)",
@@ -1303,12 +1303,12 @@
       {
         "headword": "apron",
         "row": 133,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_apron",
+        "mappedLocations": 1
       },
       {
         "headword": "aquarium",
@@ -1333,12 +1333,12 @@
       {
         "headword": "area",
         "row": 136,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_area",
+        "mappedLocations": 1
       },
       {
         "headword": "aren't",
@@ -1603,12 +1603,12 @@
       {
         "headword": "astronaut",
         "row": 163,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_astronaut",
+        "mappedLocations": 1
       },
       {
         "headword": "at",
@@ -1753,11 +1753,11 @@
       {
         "headword": "attachment",
         "row": 178,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_attachment",
         "mappedLocations": 0
       },
       {
@@ -1823,11 +1823,11 @@
       {
         "headword": "audio",
         "row": 185,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_audio",
         "mappedLocations": 0
       },
       {
@@ -1943,12 +1943,12 @@
       {
         "headword": "bad",
         "row": 197,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_bad",
+        "mappedLocations": 1
       },
       {
         "headword": "badminton",
@@ -2733,12 +2733,12 @@
       {
         "headword": "birthday",
         "row": 276,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_birthday",
+        "mappedLocations": 1
       },
       {
         "headword": "bit",
@@ -3083,11 +3083,11 @@
       {
         "headword": "bowling",
         "row": 311,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_bowling",
         "mappedLocations": 0
       },
       {
@@ -3513,22 +3513,22 @@
       {
         "headword": "cafeteria",
         "row": 354,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_cafeteria",
+        "mappedLocations": 1
       },
       {
         "headword": "cage",
         "row": 355,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_cage",
+        "mappedLocations": 1
       },
       {
         "headword": "cake",
@@ -3543,12 +3543,12 @@
       {
         "headword": "calculate",
         "row": 357,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_calculate",
+        "mappedLocations": 1
       },
       {
         "headword": "calculation(s)",
@@ -3603,12 +3603,12 @@
       {
         "headword": "calligraphy",
         "row": 363,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_calligraphy",
+        "mappedLocations": 1
       },
       {
         "headword": "came",
@@ -4123,12 +4123,12 @@
       {
         "headword": "chance",
         "row": 415,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_chance",
+        "mappedLocations": 1
       },
       {
         "headword": "change(s)",
@@ -4243,12 +4243,12 @@
       {
         "headword": "chess",
         "row": 427,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_chess",
+        "mappedLocations": 1
       },
       {
         "headword": "chick(s)",
@@ -4633,22 +4633,22 @@
       {
         "headword": "cloth",
         "row": 466,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_cloth",
         "mappedLocations": 0
       },
       {
         "headword": "clothes",
         "row": 467,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_clothes",
+        "mappedLocations": 1
       },
       {
         "headword": "cloudless",
@@ -4923,12 +4923,12 @@
       {
         "headword": "committee",
         "row": 495,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_committee",
+        "mappedLocations": 1
       },
       {
         "headword": "common",
@@ -4953,12 +4953,12 @@
       {
         "headword": "communication",
         "row": 498,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_communication",
+        "mappedLocations": 1
       },
       {
         "headword": "community",
@@ -5273,12 +5273,12 @@
       {
         "headword": "cooperation",
         "row": 530,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_cooperation",
+        "mappedLocations": 1
       },
       {
         "headword": "corn",
@@ -5613,12 +5613,12 @@
       {
         "headword": "curry",
         "row": 564,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_curry",
+        "mappedLocations": 1
       },
       {
         "headword": "curry and rice",
@@ -5673,12 +5673,12 @@
       {
         "headword": "cute",
         "row": 570,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_cute",
+        "mappedLocations": 1
       },
       {
         "headword": "cycle",
@@ -5703,12 +5703,12 @@
       {
         "headword": "dad",
         "row": 573,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_dad",
+        "mappedLocations": 1
       },
       {
         "headword": "damage",
@@ -5803,12 +5803,12 @@
       {
         "headword": "daughter",
         "row": 583,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_daughter",
+        "mappedLocations": 1
       },
       {
         "headword": "day(s)",
@@ -5963,12 +5963,12 @@
       {
         "headword": "delight",
         "row": 599,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_delight",
+        "mappedLocations": 1
       },
       {
         "headword": "deliver(ed)",
@@ -6093,12 +6093,12 @@
       {
         "headword": "development",
         "row": 612,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_development",
+        "mappedLocations": 1
       },
       {
         "headword": "Devil’s Pool",
@@ -6133,12 +6133,12 @@
       {
         "headword": "diary",
         "row": 616,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_diary",
+        "mappedLocations": 1
       },
       {
         "headword": "dictionary",
@@ -6203,12 +6203,12 @@
       {
         "headword": "difference",
         "row": 623,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_difference",
+        "mappedLocations": 1
       },
       {
         "headword": "different",
@@ -6243,11 +6243,11 @@
       {
         "headword": "difficulty",
         "row": 627,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_review",
+        "matchMethod": "reviewed_hold",
+        "reviewType": "different_or_unconfirmed_sense",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_difficulty",
         "mappedLocations": 0
       },
       {
@@ -6423,11 +6423,11 @@
       {
         "headword": "dodgeball",
         "row": 645,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_dodgeball",
         "mappedLocations": 0
       },
       {
@@ -6613,12 +6613,12 @@
       {
         "headword": "dream",
         "row": 664,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_dream",
+        "mappedLocations": 1
       },
       {
         "headword": "dream of ～",
@@ -6843,12 +6843,12 @@
       {
         "headword": "early",
         "row": 687,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_early",
+        "mappedLocations": 1
       },
       {
         "headword": "earn",
@@ -7523,12 +7523,12 @@
       {
         "headword": "event",
         "row": 755,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_event",
+        "mappedLocations": 1
       },
       {
         "headword": "eventually",
@@ -8673,11 +8673,11 @@
       {
         "headword": "flute",
         "row": 870,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_flute",
         "mappedLocations": 0
       },
       {
@@ -8703,12 +8703,12 @@
       {
         "headword": "food",
         "row": 873,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_food",
+        "mappedLocations": 1
       },
       {
         "headword": "food poisoning",
@@ -8873,12 +8873,12 @@
       {
         "headword": "forever",
         "row": 890,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_forever",
+        "mappedLocations": 1
       },
       {
         "headword": "forget",
@@ -9283,12 +9283,12 @@
       {
         "headword": "full",
         "row": 931,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_full",
+        "mappedLocations": 1
       },
       {
         "headword": "fully",
@@ -9323,12 +9323,12 @@
       {
         "headword": "funny",
         "row": 935,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_funny",
+        "mappedLocations": 1
       },
       {
         "headword": "future",
@@ -9403,12 +9403,12 @@
       {
         "headword": "gather",
         "row": 943,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_gather",
+        "mappedLocations": 1
       },
       {
         "headword": "gave",
@@ -9663,11 +9663,11 @@
       {
         "headword": "glue",
         "row": 969,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_glue",
         "mappedLocations": 0
       },
       {
@@ -10023,12 +10023,12 @@
       {
         "headword": "grandparent",
         "row": 1005,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_grandparent",
+        "mappedLocations": 1
       },
       {
         "headword": "grape",
@@ -10353,11 +10353,11 @@
       {
         "headword": "hall",
         "row": 1038,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_hall",
         "mappedLocations": 0
       },
       {
@@ -10483,12 +10483,12 @@
       {
         "headword": "harmonica",
         "row": 1051,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_harmonica",
+        "mappedLocations": 1
       },
       {
         "headword": "harness",
@@ -10643,12 +10643,12 @@
       {
         "headword": "health",
         "row": 1067,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_health",
+        "mappedLocations": 1
       },
       {
         "headword": "hear",
@@ -10763,12 +10763,12 @@
       {
         "headword": "height",
         "row": 1079,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_height",
+        "mappedLocations": 1
       },
       {
         "headword": "held",
@@ -11063,12 +11063,12 @@
       {
         "headword": "hobby",
         "row": 1109,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_hobby",
+        "mappedLocations": 1
       },
       {
         "headword": "hold",
@@ -11123,12 +11123,12 @@
       {
         "headword": "home",
         "row": 1115,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_home",
+        "mappedLocations": 1
       },
       {
         "headword": "home economics",
@@ -11163,12 +11163,12 @@
       {
         "headword": "hometown",
         "row": 1119,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_hometown",
+        "mappedLocations": 1
       },
       {
         "headword": "homework",
@@ -11313,12 +11313,12 @@
       {
         "headword": "housework",
         "row": 1134,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_housework",
+        "mappedLocations": 1
       },
       {
         "headword": "how",
@@ -11503,12 +11503,12 @@
       {
         "headword": "idea",
         "row": 1153,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_idea",
+        "mappedLocations": 1
       },
       {
         "headword": "identity",
@@ -11543,12 +11543,12 @@
       {
         "headword": "illustration",
         "row": 1157,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_illustration",
+        "mappedLocations": 1
       },
       {
         "headword": "I'm",
@@ -11613,12 +11613,12 @@
       {
         "headword": "importance",
         "row": 1164,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_importance",
+        "mappedLocations": 1
       },
       {
         "headword": "important",
@@ -11933,12 +11933,12 @@
       {
         "headword": "ink",
         "row": 1196,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_ink",
+        "mappedLocations": 1
       },
       {
         "headword": "innocent",
@@ -12563,12 +12563,12 @@
       {
         "headword": "joy",
         "row": 1259,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_joy",
+        "mappedLocations": 1
       },
       {
         "headword": "judgement",
@@ -12843,21 +12843,21 @@
       {
         "headword": "kid",
         "row": 1287,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_kid",
+        "mappedLocations": 1
       },
       {
         "headword": "kid",
         "row": 1288,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_review",
+        "matchMethod": "reviewed_hold",
+        "reviewType": "different_or_unconfirmed_sense",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_kid",
         "mappedLocations": 0
       },
       {
@@ -13153,11 +13153,11 @@
       {
         "headword": "lady",
         "row": 1318,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_lady",
         "mappedLocations": 0
       },
       {
@@ -13213,11 +13213,11 @@
       {
         "headword": "laptop",
         "row": 1324,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_laptop",
         "mappedLocations": 0
       },
       {
@@ -13643,12 +13643,12 @@
       {
         "headword": "life",
         "row": 1367,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_life",
+        "mappedLocations": 1
       },
       {
         "headword": "life-changing",
@@ -13865,8 +13865,8 @@
         "row": 1389,
         "status": "headword_unmatched",
         "matchMethod": null,
-        "reviewType": "headword_candidate",
-        "lemmaSourceId": null,
+        "reviewType": "inflection_reference",
+        "lemmaSourceId": "jr_en_tb_word_life",
         "sourceId": null,
         "mappedLocations": 0
       },
@@ -14113,11 +14113,11 @@
       {
         "headword": "luck",
         "row": 1414,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_luck",
         "mappedLocations": 0
       },
       {
@@ -14193,22 +14193,22 @@
       {
         "headword": "magnet",
         "row": 1422,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_magnet",
         "mappedLocations": 0
       },
       {
         "headword": "mailbox",
         "row": 1423,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_mailbox",
+        "mappedLocations": 1
       },
       {
         "headword": "main",
@@ -14343,12 +14343,12 @@
       {
         "headword": "man",
         "row": 1437,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_man",
+        "mappedLocations": 1
       },
       {
         "headword": "manager",
@@ -14743,12 +14743,12 @@
       {
         "headword": "media",
         "row": 1477,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_media",
+        "mappedLocations": 1
       },
       {
         "headword": "medical",
@@ -14895,8 +14895,8 @@
         "row": 1492,
         "status": "headword_unmatched",
         "matchMethod": null,
-        "reviewType": "headword_candidate",
-        "lemmaSourceId": null,
+        "reviewType": "inflection_reference",
+        "lemmaSourceId": "jr_en_tb_word_man",
         "sourceId": null,
         "mappedLocations": 0
       },
@@ -14993,12 +14993,12 @@
       {
         "headword": "middle",
         "row": 1502,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_middle",
+        "mappedLocations": 1
       },
       {
         "headword": "Middle East",
@@ -15213,12 +15213,12 @@
       {
         "headword": "mom",
         "row": 1524,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_mom",
+        "mappedLocations": 1
       },
       {
         "headword": "moment",
@@ -15253,12 +15253,12 @@
       {
         "headword": "money",
         "row": 1528,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_money",
+        "mappedLocations": 1
       },
       {
         "headword": "monk",
@@ -15463,22 +15463,22 @@
       {
         "headword": "movement",
         "row": 1549,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_review",
+        "matchMethod": "reviewed_hold",
+        "reviewType": "different_or_unconfirmed_sense",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_movement",
         "mappedLocations": 0
       },
       {
         "headword": "movie",
         "row": 1550,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_movie",
+        "mappedLocations": 1
       },
       {
         "headword": "Mr.",
@@ -15913,12 +15913,12 @@
       {
         "headword": "network",
         "row": 1594,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_network",
+        "mappedLocations": 1
       },
       {
         "headword": "never",
@@ -16373,12 +16373,12 @@
       {
         "headword": "nuclear",
         "row": 1640,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_nuclear",
+        "mappedLocations": 1
       },
       {
         "headword": "number",
@@ -17053,11 +17053,11 @@
       {
         "headword": "outlet",
         "row": 1708,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_outlet",
         "mappedLocations": 0
       },
       {
@@ -17203,11 +17203,11 @@
       {
         "headword": "painter",
         "row": 1723,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_painter",
         "mappedLocations": 0
       },
       {
@@ -17353,12 +17353,12 @@
       {
         "headword": "part",
         "row": 1738,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_part",
+        "mappedLocations": 1
       },
       {
         "headword": "partial",
@@ -17563,12 +17563,12 @@
       {
         "headword": "pen",
         "row": 1759,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_pen",
+        "mappedLocations": 1
       },
       {
         "headword": "pencil case",
@@ -17783,12 +17783,12 @@
       {
         "headword": "phone",
         "row": 1781,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_phone",
+        "mappedLocations": 1
       },
       {
         "headword": "photo",
@@ -17833,12 +17833,12 @@
       {
         "headword": "pianist",
         "row": 1786,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_pianist",
+        "mappedLocations": 1
       },
       {
         "headword": "piano",
@@ -17883,11 +17883,11 @@
       {
         "headword": "picnic",
         "row": 1791,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_picnic",
         "mappedLocations": 0
       },
       {
@@ -17923,12 +17923,12 @@
       {
         "headword": "piece",
         "row": 1795,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_piece",
+        "mappedLocations": 1
       },
       {
         "headword": "pig",
@@ -18033,12 +18033,12 @@
       {
         "headword": "place",
         "row": 1806,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_place",
+        "mappedLocations": 1
       },
       {
         "headword": "plan",
@@ -18133,12 +18133,12 @@
       {
         "headword": "player",
         "row": 1816,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_player",
+        "mappedLocations": 1
       },
       {
         "headword": "playground",
@@ -18173,12 +18173,12 @@
       {
         "headword": "poetry",
         "row": 1820,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_poetry",
+        "mappedLocations": 1
       },
       {
         "headword": "point",
@@ -18273,12 +18273,12 @@
       {
         "headword": "pollute",
         "row": 1830,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_pollute",
+        "mappedLocations": 1
       },
       {
         "headword": "pollution",
@@ -18663,12 +18663,12 @@
       {
         "headword": "prize",
         "row": 1869,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_prize",
+        "mappedLocations": 1
       },
       {
         "headword": "problem",
@@ -18713,12 +18713,12 @@
       {
         "headword": "production",
         "row": 1874,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_production",
+        "mappedLocations": 1
       },
       {
         "headword": "professional",
@@ -19253,11 +19253,11 @@
       {
         "headword": "recorder",
         "row": 1928,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_recorder",
         "mappedLocations": 0
       },
       {
@@ -19323,12 +19323,12 @@
       {
         "headword": "refrigerator",
         "row": 1935,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_refrigerator",
+        "mappedLocations": 1
       },
       {
         "headword": "regard",
@@ -19433,12 +19433,12 @@
       {
         "headword": "renewable",
         "row": 1946,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_renewable",
+        "mappedLocations": 1
       },
       {
         "headword": "renewable energy",
@@ -19593,12 +19593,12 @@
       {
         "headword": "respond",
         "row": 1962,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_respond",
+        "mappedLocations": 1
       },
       {
         "headword": "response",
@@ -19653,11 +19653,11 @@
       {
         "headword": "restroom",
         "row": 1968,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_restroom",
         "mappedLocations": 0
       },
       {
@@ -19993,11 +19993,11 @@
       {
         "headword": "rule",
         "row": 2002,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_rule",
         "mappedLocations": 0
       },
       {
@@ -20093,12 +20093,12 @@
       {
         "headword": "sadness",
         "row": 2012,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_sadness",
+        "mappedLocations": 1
       },
       {
         "headword": "safe",
@@ -20113,12 +20113,12 @@
       {
         "headword": "safety",
         "row": 2014,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_safety",
+        "mappedLocations": 1
       },
       {
         "headword": "said",
@@ -20173,11 +20173,11 @@
       {
         "headword": "sale",
         "row": 2020,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_sale",
         "mappedLocations": 0
       },
       {
@@ -20373,12 +20373,12 @@
       {
         "headword": "scary",
         "row": 2040,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_scary",
+        "mappedLocations": 1
       },
       {
         "headword": "scene(s)",
@@ -20563,11 +20563,11 @@
       {
         "headword": "seafood",
         "row": 2059,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_seafood",
         "mappedLocations": 0
       },
       {
@@ -21203,11 +21203,11 @@
       {
         "headword": "shorts",
         "row": 2123,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_shorts",
         "mappedLocations": 0
       },
       {
@@ -21343,11 +21343,11 @@
       {
         "headword": "side",
         "row": 2137,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_review",
+        "matchMethod": "reviewed_hold",
+        "reviewType": "different_or_unconfirmed_sense",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_side",
         "mappedLocations": 0
       },
       {
@@ -21613,12 +21613,12 @@
       {
         "headword": "size",
         "row": 2164,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_size",
+        "mappedLocations": 1
       },
       {
         "headword": "skate",
@@ -21733,12 +21733,12 @@
       {
         "headword": "sleepy",
         "row": 2176,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_sleepy",
+        "mappedLocations": 1
       },
       {
         "headword": "slice",
@@ -21783,21 +21783,21 @@
       {
         "headword": "smart",
         "row": 2181,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_smart",
+        "mappedLocations": 1
       },
       {
         "headword": "smartphone",
         "row": 2182,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_smartphone",
         "mappedLocations": 0
       },
       {
@@ -21963,22 +21963,22 @@
       {
         "headword": "softball",
         "row": 2199,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_softball",
         "mappedLocations": 0
       },
       {
         "headword": "solar",
         "row": 2200,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_solar",
+        "mappedLocations": 1
       },
       {
         "headword": "sold",
@@ -22713,11 +22713,11 @@
       {
         "headword": "stapler",
         "row": 2274,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_stapler",
         "mappedLocations": 0
       },
       {
@@ -22983,12 +22983,12 @@
       {
         "headword": "story",
         "row": 2301,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_story",
+        "mappedLocations": 1
       },
       {
         "headword": "storyteller",
@@ -23073,11 +23073,11 @@
       {
         "headword": "street",
         "row": 2310,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_street",
         "mappedLocations": 0
       },
       {
@@ -23303,12 +23303,12 @@
       {
         "headword": "sunlight",
         "row": 2333,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_sunlight",
+        "mappedLocations": 1
       },
       {
         "headword": "sunny",
@@ -23353,12 +23353,12 @@
       {
         "headword": "supply",
         "row": 2338,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_supply",
+        "mappedLocations": 1
       },
       {
         "headword": "support",
@@ -23553,12 +23553,12 @@
       {
         "headword": "system",
         "row": 2358,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_system",
+        "mappedLocations": 1
       },
       {
         "headword": "table",
@@ -24043,12 +24043,12 @@
       {
         "headword": "terrible",
         "row": 2407,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_terrible",
+        "mappedLocations": 1
       },
       {
         "headword": "terror",
@@ -24853,11 +24853,11 @@
       {
         "headword": "toast",
         "row": 2488,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_tb_word_toast",
         "mappedLocations": 0
       },
       {
@@ -25033,12 +25033,12 @@
       {
         "headword": "top",
         "row": 2506,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_top",
+        "mappedLocations": 1
       },
       {
         "headword": "topic",
@@ -25333,22 +25333,22 @@
       {
         "headword": "trumpet",
         "row": 2536,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_trumpet",
+        "mappedLocations": 1
       },
       {
         "headword": "truth",
         "row": 2537,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_truth",
+        "mappedLocations": 1
       },
       {
         "headword": "try",
@@ -25993,12 +25993,12 @@
       {
         "headword": "vacation",
         "row": 2602,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_vacation",
+        "mappedLocations": 1
       },
       {
         "headword": "Valentine’s Day",
@@ -26163,22 +26163,22 @@
       {
         "headword": "victory",
         "row": 2619,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_victory",
+        "mappedLocations": 1
       },
       {
         "headword": "video",
         "row": 2620,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_video",
+        "mappedLocations": 1
       },
       {
         "headword": "video game(s)",
@@ -26293,12 +26293,12 @@
       {
         "headword": "voice",
         "row": 2632,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_voice",
+        "mappedLocations": 1
       },
       {
         "headword": "voice actor",
@@ -26543,12 +26543,12 @@
       {
         "headword": "waterproof",
         "row": 2657,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_waterproof",
+        "mappedLocations": 1
       },
       {
         "headword": "wave",
@@ -27103,12 +27103,12 @@
       {
         "headword": "wildlife",
         "row": 2713,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_wildlife",
+        "mappedLocations": 1
       },
       {
         "headword": "will",
@@ -27243,20 +27243,20 @@
       {
         "headword": "woman",
         "row": 2727,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "headword_candidate",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_tb_word_woman",
+        "mappedLocations": 1
       },
       {
         "headword": "women",
         "row": 2728,
         "status": "headword_unmatched",
         "matchMethod": null,
-        "reviewType": "headword_candidate",
-        "lemmaSourceId": null,
+        "reviewType": "inflection_reference",
+        "lemmaSourceId": "jr_en_tb_word_woman",
         "sourceId": null,
         "mappedLocations": 0
       },
@@ -27844,7 +27844,7 @@
   },
   "newHorizon": {
     "totalEntries": 2402,
-    "headwordMatched": 1260,
+    "headwordMatched": 1344,
     "entries": [
       {
         "headword": "a",
@@ -27878,8 +27878,8 @@
         "headword": "abroad",
         "sheet": "本文Word List 単語一覧",
         "row": 6,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_abroad"
       },
       {
         "headword": "accept",
@@ -27913,8 +27913,8 @@
         "headword": "action",
         "sheet": "本文Word List 単語一覧",
         "row": 11,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_action"
       },
       {
         "headword": "active",
@@ -27927,8 +27927,8 @@
         "headword": "activity",
         "sheet": "本文Word List 単語一覧",
         "row": 13,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_activity"
       },
       {
         "headword": "actor",
@@ -28081,8 +28081,8 @@
         "headword": "air",
         "sheet": "本文Word List 単語一覧",
         "row": 35,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_air"
       },
       {
         "headword": "airport",
@@ -28123,8 +28123,8 @@
         "headword": "alone",
         "sheet": "本文Word List 単語一覧",
         "row": 41,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_alone"
       },
       {
         "headword": "along",
@@ -28242,8 +28242,8 @@
         "headword": "animal",
         "sheet": "本文Word List 単語一覧",
         "row": 58,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_animal"
       },
       {
         "headword": "animal-free",
@@ -28256,8 +28256,8 @@
         "headword": "animation",
         "sheet": "本文Word List 単語一覧",
         "row": 60,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_animation"
       },
       {
         "headword": "anime",
@@ -28361,8 +28361,8 @@
         "headword": "apron",
         "sheet": "本文Word List 単語一覧",
         "row": 75,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_apron"
       },
       {
         "headword": "architecture",
@@ -28382,8 +28382,8 @@
         "headword": "area",
         "sheet": "本文Word List 単語一覧",
         "row": 78,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_area"
       },
       {
         "headword": "arm",
@@ -28473,8 +28473,8 @@
         "headword": "astronaut",
         "sheet": "本文Word List 単語一覧",
         "row": 91,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_astronaut"
       },
       {
         "headword": "at",
@@ -28592,8 +28592,8 @@
         "headword": "bad",
         "sheet": "本文Word List 単語一覧",
         "row": 108,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_bad"
       },
       {
         "headword": "badminton",
@@ -28956,8 +28956,8 @@
         "headword": "birthday",
         "sheet": "本文Word List 単語一覧",
         "row": 160,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_birthday"
       },
       {
         "headword": "bitter",
@@ -29558,8 +29558,8 @@
         "headword": "chance",
         "sheet": "本文Word List 単語一覧",
         "row": 246,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_chance"
       },
       {
         "headword": "change",
@@ -29887,15 +29887,15 @@
         "headword": "cloth",
         "sheet": "本文Word List 単語一覧",
         "row": 293,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_cloth"
       },
       {
         "headword": "clothes",
         "sheet": "本文Word List 単語一覧",
         "row": 294,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_clothes"
       },
       {
         "headword": "clothing",
@@ -30426,8 +30426,8 @@
         "headword": "curry",
         "sheet": "本文Word List 単語一覧",
         "row": 370,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_curry"
       },
       {
         "headword": "cushion",
@@ -30461,15 +30461,15 @@
         "headword": "cute",
         "sheet": "本文Word List 単語一覧",
         "row": 375,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_cute"
       },
       {
         "headword": "dad",
         "sheet": "本文Word List 単語一覧",
         "row": 376,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_dad"
       },
       {
         "headword": "daily",
@@ -30545,8 +30545,8 @@
         "headword": "daughter",
         "sheet": "本文Word List 単語一覧",
         "row": 387,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_daughter"
       },
       {
         "headword": "day",
@@ -30846,8 +30846,8 @@
         "headword": "dodgeball",
         "sheet": "本文Word List 単語一覧",
         "row": 430,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_dodgeball"
       },
       {
         "headword": "does",
@@ -30965,8 +30965,8 @@
         "headword": "dream",
         "sheet": "本文Word List 単語一覧",
         "row": 447,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_dream"
       },
       {
         "headword": "drink",
@@ -31028,8 +31028,8 @@
         "headword": "early",
         "sheet": "本文Word List 単語一覧",
         "row": 456,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_early"
       },
       {
         "headword": "earn",
@@ -31392,8 +31392,8 @@
         "headword": "event",
         "sheet": "本文Word List 単語一覧",
         "row": 508,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_event"
       },
       {
         "headword": "eventually",
@@ -31959,8 +31959,8 @@
         "headword": "food",
         "sheet": "本文Word List 単語一覧",
         "row": 589,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_food"
       },
       {
         "headword": "for",
@@ -31994,8 +31994,8 @@
         "headword": "forever",
         "sheet": "本文Word List 単語一覧",
         "row": 594,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_forever"
       },
       {
         "headword": "forget",
@@ -32176,8 +32176,8 @@
         "headword": "full",
         "sheet": "本文Word List 単語一覧",
         "row": 620,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_full"
       },
       {
         "headword": "fun",
@@ -32190,8 +32190,8 @@
         "headword": "funny",
         "sheet": "本文Word List 単語一覧",
         "row": 622,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_funny"
       },
       {
         "headword": "fur",
@@ -32239,8 +32239,8 @@
         "headword": "gather",
         "sheet": "本文Word List 単語一覧",
         "row": 629,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_gather"
       },
       {
         "headword": "gave",
@@ -32358,8 +32358,8 @@
         "headword": "glue",
         "sheet": "本文Word List 単語一覧",
         "row": 646,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_glue"
       },
       {
         "headword": "go",
@@ -32463,8 +32463,8 @@
         "headword": "grandparent",
         "sheet": "本文Word List 単語一覧",
         "row": 661,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_grandparent"
       },
       {
         "headword": "grape",
@@ -32666,8 +32666,8 @@
         "headword": "harmonica",
         "sheet": "本文Word List 単語一覧",
         "row": 690,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_harmonica"
       },
       {
         "headword": "harmoniously",
@@ -32911,8 +32911,8 @@
         "headword": "home",
         "sheet": "本文Word List 単語一覧",
         "row": 725,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_home"
       },
       {
         "headword": "home economics",
@@ -32932,8 +32932,8 @@
         "headword": "hometown",
         "sheet": "本文Word List 単語一覧",
         "row": 728,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_hometown"
       },
       {
         "headword": "homework",
@@ -33121,8 +33121,8 @@
         "headword": "idea",
         "sheet": "本文Word List 単語一覧",
         "row": 755,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_idea"
       },
       {
         "headword": "if",
@@ -33156,8 +33156,8 @@
         "headword": "illustration",
         "sheet": "本文Word List 単語一覧",
         "row": 760,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_illustration"
       },
       {
         "headword": "image",
@@ -33282,8 +33282,8 @@
         "headword": "ink",
         "sheet": "本文Word List 単語一覧",
         "row": 778,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_ink"
       },
       {
         "headword": "inside",
@@ -33912,8 +33912,8 @@
         "headword": "life",
         "sheet": "本文Word List 単語一覧",
         "row": 868,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_life"
       },
       {
         "headword": "light",
@@ -34115,8 +34115,8 @@
         "headword": "luck",
         "sheet": "本文Word List 単語一覧",
         "row": 897,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_luck"
       },
       {
         "headword": "lullaby",
@@ -34157,8 +34157,8 @@
         "headword": "man",
         "sheet": "本文Word List 単語一覧",
         "row": 903,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_man"
       },
       {
         "headword": "manufacturer",
@@ -34381,8 +34381,8 @@
         "headword": "middle",
         "sheet": "本文Word List 単語一覧",
         "row": 935,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_middle"
       },
       {
         "headword": "mild",
@@ -34444,8 +34444,8 @@
         "headword": "mom",
         "sheet": "本文Word List 単語一覧",
         "row": 944,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_mom"
       },
       {
         "headword": "moment",
@@ -34472,8 +34472,8 @@
         "headword": "money",
         "sheet": "本文Word List 単語一覧",
         "row": 948,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_money"
       },
       {
         "headword": "monkey",
@@ -34591,15 +34591,15 @@
         "headword": "movement",
         "sheet": "本文Word List 単語一覧",
         "row": 965,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_movement"
       },
       {
         "headword": "movie",
         "sheet": "本文Word List 単語一覧",
         "row": 966,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_movie"
       },
       {
         "headword": "Mr.",
@@ -35004,8 +35004,8 @@
         "headword": "nuclear",
         "sheet": "本文Word List 単語一覧",
         "row": 1024,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_nuclear"
       },
       {
         "headword": "number",
@@ -35396,8 +35396,8 @@
         "headword": "part",
         "sheet": "本文Word List 単語一覧",
         "row": 1080,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_part"
       },
       {
         "headword": "party",
@@ -35473,8 +35473,8 @@
         "headword": "pen",
         "sheet": "本文Word List 単語一覧",
         "row": 1091,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_pen"
       },
       {
         "headword": "pencil",
@@ -35613,8 +35613,8 @@
         "headword": "piece",
         "sheet": "本文Word List 単語一覧",
         "row": 1111,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_piece"
       },
       {
         "headword": "pilot",
@@ -35648,8 +35648,8 @@
         "headword": "place",
         "sheet": "本文Word List 単語一覧",
         "row": 1116,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_place"
       },
       {
         "headword": "plan",
@@ -35697,8 +35697,8 @@
         "headword": "player",
         "sheet": "本文Word List 単語一覧",
         "row": 1123,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_player"
       },
       {
         "headword": "playful",
@@ -35760,8 +35760,8 @@
         "headword": "pollute",
         "sheet": "本文Word List 単語一覧",
         "row": 1132,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_pollute"
       },
       {
         "headword": "pollution",
@@ -36320,8 +36320,8 @@
         "headword": "recorder",
         "sheet": "本文Word List 単語一覧",
         "row": 1212,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_recorder"
       },
       {
         "headword": "rectangle",
@@ -36446,8 +36446,8 @@
         "headword": "renewable",
         "sheet": "本文Word List 単語一覧",
         "row": 1230,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_renewable"
       },
       {
         "headword": "repeat",
@@ -36551,8 +36551,8 @@
         "headword": "restroom",
         "sheet": "本文Word List 単語一覧",
         "row": 1245,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_restroom"
       },
       {
         "headword": "result",
@@ -36705,8 +36705,8 @@
         "headword": "rule",
         "sheet": "本文Word List 単語一覧",
         "row": 1267,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_rule"
       },
       {
         "headword": "ruler",
@@ -36915,8 +36915,8 @@
         "headword": "seafood",
         "sheet": "本文Word List 単語一覧",
         "row": 1297,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_seafood"
       },
       {
         "headword": "sea otter",
@@ -37279,8 +37279,8 @@
         "headword": "side",
         "sheet": "本文Word List 単語一覧",
         "row": 1349,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_side"
       },
       {
         "headword": "sidewalk",
@@ -37398,8 +37398,8 @@
         "headword": "size",
         "sheet": "本文Word List 単語一覧",
         "row": 1366,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_size"
       },
       {
         "headword": "skate",
@@ -37447,8 +37447,8 @@
         "headword": "sleepy",
         "sheet": "本文Word List 単語一覧",
         "row": 1373,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_sleepy"
       },
       {
         "headword": "slide",
@@ -37482,15 +37482,15 @@
         "headword": "smart",
         "sheet": "本文Word List 単語一覧",
         "row": 1378,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_smart"
       },
       {
         "headword": "smartphone",
         "sheet": "本文Word List 単語一覧",
         "row": 1379,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_smartphone"
       },
       {
         "headword": "smile",
@@ -37580,8 +37580,8 @@
         "headword": "softball",
         "sheet": "本文Word List 単語一覧",
         "row": 1392,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_softball"
       },
       {
         "headword": "sold",
@@ -37916,8 +37916,8 @@
         "headword": "stapler",
         "sheet": "本文Word List 単語一覧",
         "row": 1440,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_stapler"
       },
       {
         "headword": "star",
@@ -38028,8 +38028,8 @@
         "headword": "story",
         "sheet": "本文Word List 単語一覧",
         "row": 1456,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_story"
       },
       {
         "headword": "straight",
@@ -38063,8 +38063,8 @@
         "headword": "street",
         "sheet": "本文Word List 単語一覧",
         "row": 1461,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_street"
       },
       {
         "headword": "strong",
@@ -38175,8 +38175,8 @@
         "headword": "supply",
         "sheet": "本文Word List 単語一覧",
         "row": 1477,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_supply"
       },
       {
         "headword": "support",
@@ -38847,8 +38847,8 @@
         "headword": "top",
         "sheet": "本文Word List 単語一覧",
         "row": 1573,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_top"
       },
       {
         "headword": "topic",
@@ -39309,8 +39309,8 @@
         "headword": "vacation",
         "sheet": "本文Word List 単語一覧",
         "row": 1639,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_vacation"
       },
       {
         "headword": "value",
@@ -39379,8 +39379,8 @@
         "headword": "video",
         "sheet": "本文Word List 単語一覧",
         "row": 1649,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_video"
       },
       {
         "headword": "village",
@@ -39421,8 +39421,8 @@
         "headword": "voice",
         "sheet": "本文Word List 単語一覧",
         "row": 1655,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_voice"
       },
       {
         "headword": "volleyball",
@@ -39876,8 +39876,8 @@
         "headword": "woman",
         "sheet": "本文Word List 単語一覧",
         "row": 1720,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_woman"
       },
       {
         "headword": "won",
@@ -41360,15 +41360,15 @@
         "headword": "cafeteria",
         "sheet": "本文Word List外の語",
         "row": 50,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_cafeteria"
       },
       {
         "headword": "calligraphy",
         "sheet": "本文Word List外の語",
         "row": 51,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_calligraphy"
       },
       {
         "headword": "Canada Place",
@@ -41542,8 +41542,8 @@
         "headword": "communication",
         "sheet": "本文Word List外の語",
         "row": 76,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_communication"
       },
       {
         "headword": "community",
@@ -41766,15 +41766,15 @@
         "headword": "development",
         "sheet": "本文Word List外の語",
         "row": 108,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_development"
       },
       {
         "headword": "difficulty",
         "sheet": "本文Word List外の語",
         "row": 109,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_difficulty"
       },
       {
         "headword": "dig",
@@ -42676,8 +42676,8 @@
         "headword": "importance",
         "sheet": "本文Word List外の語",
         "row": 238,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_importance"
       },
       {
         "headword": "impossible",
@@ -42795,8 +42795,8 @@
         "headword": "joy",
         "sheet": "本文Word List外の語",
         "row": 255,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_joy"
       },
       {
         "headword": "jungle",
@@ -43411,8 +43411,8 @@
         "headword": "phone",
         "sheet": "本文Word List外の語",
         "row": 343,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_phone"
       },
       {
         "headword": "photography",
@@ -43432,8 +43432,8 @@
         "headword": "picnic",
         "sheet": "本文Word List外の語",
         "row": 346,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_picnic"
       },
       {
         "headword": "pictogram",
@@ -43572,8 +43572,8 @@
         "headword": "production",
         "sheet": "本文Word List外の語",
         "row": 366,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_production"
       },
       {
         "headword": "promote",
@@ -43908,8 +43908,8 @@
         "headword": "shorts",
         "sheet": "本文Word List外の語",
         "row": 414,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_shorts"
       },
       {
         "headword": "shot",
@@ -44251,8 +44251,8 @@
         "headword": "terrible",
         "sheet": "本文Word List外の語",
         "row": 463,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_terrible"
       },
       {
         "headword": "terrorism",
@@ -44622,8 +44622,8 @@
         "headword": "wildlife",
         "sheet": "本文Word List外の語",
         "row": 516,
-        "status": "headword_unmatched",
-        "sourceId": null
+        "status": "headword_match_only",
+        "sourceId": "jr_en_tb_word_wildlife"
       },
       {
         "headword": "wise",

@@ -27359,5 +27359,5601 @@
     ],
     "note": "subtract：引き算する。今回はこの意味で確認する。",
     "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_tb_word_dad",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な人・家族",
+    "english": "dad",
+    "japanese": "お父さん",
+    "english_dummies": [
+      "mom",
+      "daughter",
+      "grandparent"
+    ],
+    "japanese_dummies": [
+      "お母さん",
+      "娘",
+      "祖父または祖母"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dad",
+        "dummies": [
+          "add",
+          "dda",
+          "dud"
+        ]
+      }
+    ],
+    "note": "dad：お父さん。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_mom",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な人・家族",
+    "english": "mom",
+    "japanese": "お母さん",
+    "english_dummies": [
+      "dad",
+      "daughter",
+      "grandparent"
+    ],
+    "japanese_dummies": [
+      "お父さん",
+      "娘",
+      "祖父または祖母"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mom",
+        "dummies": [
+          "omm",
+          "mmo",
+          "mam"
+        ]
+      }
+    ],
+    "note": "mom：お母さん。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_daughter",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な人・家族",
+    "english": "daughter",
+    "japanese": "娘",
+    "english_dummies": [
+      "dad",
+      "mom",
+      "grandparent"
+    ],
+    "japanese_dummies": [
+      "お父さん",
+      "お母さん",
+      "祖父または祖母"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dau",
+        "dummies": [
+          "adu",
+          "dua",
+          "duu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ght",
+        "dummies": [
+          "hgt",
+          "gth",
+          "ghd"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "er",
+        "dummies": [
+          "re",
+          "el",
+          "ir"
+        ]
+      }
+    ],
+    "note": "daughter：娘。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_grandparent",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な人・家族",
+    "english": "grandparent",
+    "japanese": "祖父または祖母",
+    "english_dummies": [
+      "dad",
+      "mom",
+      "daughter"
+    ],
+    "japanese_dummies": [
+      "お父さん",
+      "お母さん",
+      "娘"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "gra",
+        "dummies": [
+          "rga",
+          "gar",
+          "gla"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ndp",
+        "dummies": [
+          "dnp",
+          "npd",
+          "ntp"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "are",
+        "dummies": [
+          "rae",
+          "aer",
+          "ale"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "nt",
+        "dummies": [
+          "tn",
+          "nd",
+          "mt"
+        ]
+      }
+    ],
+    "note": "grandparent：祖父または祖母。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_man",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人と社会",
+    "english": "man",
+    "japanese": "成人男性",
+    "english_dummies": [
+      "woman",
+      "kid",
+      "lady"
+    ],
+    "japanese_dummies": [
+      "成人女性",
+      "子ども",
+      "女性に対する丁寧な呼び方"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "man",
+        "dummies": [
+          "amn",
+          "mna",
+          "mun"
+        ]
+      }
+    ],
+    "note": "man：成人男性。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_woman",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人と社会",
+    "english": "woman",
+    "japanese": "成人女性",
+    "english_dummies": [
+      "man",
+      "kid",
+      "teacher"
+    ],
+    "japanese_dummies": [
+      "成人男性",
+      "子ども",
+      "教師"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "wom",
+        "dummies": [
+          "owm",
+          "wmo",
+          "wam"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "an",
+        "dummies": [
+          "na",
+          "un",
+          "am"
+        ]
+      }
+    ],
+    "note": "woman：成人女性。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_kid",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人と社会",
+    "english": "kid",
+    "japanese": "子ども",
+    "english_dummies": [
+      "man",
+      "woman",
+      "lady"
+    ],
+    "japanese_dummies": [
+      "成人男性",
+      "成人女性",
+      "女性に対する丁寧な呼び方"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "kid",
+        "dummies": [
+          "ikd",
+          "kdi",
+          "ked"
+        ]
+      }
+    ],
+    "note": "kid：子ども。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_lady",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人と社会",
+    "english": "lady",
+    "japanese": "女性に対する丁寧な呼び方",
+    "english_dummies": [
+      "man",
+      "teacher",
+      "kid"
+    ],
+    "japanese_dummies": [
+      "成人男性",
+      "教師",
+      "子ども"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lady",
+        "dummies": [
+          "aldy",
+          "lday",
+          "layd"
+        ]
+      }
+    ],
+    "note": "lady：女性に対する丁寧な呼び方。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_home",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "住まいと生活",
+    "english": "home",
+    "japanese": "自分の住む家",
+    "english_dummies": [
+      "hometown",
+      "housework",
+      "hobby"
+    ],
+    "japanese_dummies": [
+      "故郷",
+      "家事",
+      "趣味"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "home",
+        "dummies": [
+          "ohme",
+          "hmoe",
+          "hoem"
+        ]
+      }
+    ],
+    "note": "home：自分の住む家。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_hometown",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "住まいと生活",
+    "english": "hometown",
+    "japanese": "故郷",
+    "english_dummies": [
+      "home",
+      "housework",
+      "hobby"
+    ],
+    "japanese_dummies": [
+      "自分の住む家",
+      "家事",
+      "趣味"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hom",
+        "dummies": [
+          "ohm",
+          "hmo",
+          "ham"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "eto",
+        "dummies": [
+          "teo",
+          "eot",
+          "ito"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "wn",
+        "dummies": [
+          "nw",
+          "wm",
+          "wa"
+        ]
+      }
+    ],
+    "note": "hometown：故郷。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_housework",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "住まいと生活",
+    "english": "housework",
+    "japanese": "家事",
+    "english_dummies": [
+      "home",
+      "hometown",
+      "hobby"
+    ],
+    "japanese_dummies": [
+      "自分の住む家",
+      "故郷",
+      "趣味"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hou",
+        "dummies": [
+          "ohu",
+          "huo",
+          "hoa"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "sew",
+        "dummies": [
+          "esw",
+          "swe",
+          "siw"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ork",
+        "dummies": [
+          "rok",
+          "okr",
+          "olk"
+        ]
+      }
+    ],
+    "note": "housework：家事。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_hobby",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "住まいと生活",
+    "english": "hobby",
+    "japanese": "趣味",
+    "english_dummies": [
+      "home",
+      "hometown",
+      "housework"
+    ],
+    "japanese_dummies": [
+      "自分の住む家",
+      "故郷",
+      "家事"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hob",
+        "dummies": [
+          "ohb",
+          "hbo",
+          "hab"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "by",
+        "dummies": [
+          "yb",
+          "py",
+          "ba"
+        ]
+      }
+    ],
+    "note": "hobby：趣味。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_birthday",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学校と日常",
+    "english": "birthday",
+    "japanese": "誕生日",
+    "english_dummies": [
+      "diary",
+      "picnic",
+      "vacation"
+    ],
+    "japanese_dummies": [
+      "日記",
+      "ピクニック",
+      "休暇"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bir",
+        "dummies": [
+          "ibr",
+          "bri",
+          "bil"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "thd",
+        "dummies": [
+          "htd",
+          "tdh",
+          "dhd"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ay",
+        "dummies": [
+          "ya",
+          "uy",
+          "aa"
+        ]
+      }
+    ],
+    "note": "birthday：誕生日。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_diary",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学校と日常",
+    "english": "diary",
+    "japanese": "日記",
+    "english_dummies": [
+      "birthday",
+      "picnic",
+      "vacation"
+    ],
+    "japanese_dummies": [
+      "誕生日",
+      "ピクニック",
+      "休暇"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dia",
+        "dummies": [
+          "ida",
+          "dai",
+          "dea"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "diary：日記。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_picnic",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学校と日常",
+    "english": "picnic",
+    "japanese": "ピクニック",
+    "english_dummies": [
+      "birthday",
+      "diary",
+      "vacation"
+    ],
+    "japanese_dummies": [
+      "誕生日",
+      "日記",
+      "休暇"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pic",
+        "dummies": [
+          "ipc",
+          "pci",
+          "pec"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nic",
+        "dummies": [
+          "inc",
+          "nci",
+          "nec"
+        ]
+      }
+    ],
+    "note": "picnic：ピクニック。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_vacation",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学校と日常",
+    "english": "vacation",
+    "japanese": "休暇",
+    "english_dummies": [
+      "birthday",
+      "diary",
+      "picnic"
+    ],
+    "japanese_dummies": [
+      "誕生日",
+      "日記",
+      "ピクニック"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "vac",
+        "dummies": [
+          "avc",
+          "vca",
+          "vuc"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ati",
+        "dummies": [
+          "tai",
+          "ait",
+          "ate"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "on",
+        "dummies": [
+          "no",
+          "an",
+          "om"
+        ]
+      }
+    ],
+    "note": "vacation：休暇。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_area",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "場所と位置",
+    "english": "area",
+    "japanese": "地域",
+    "english_dummies": [
+      "place",
+      "street",
+      "side"
+    ],
+    "japanese_dummies": [
+      "場所",
+      "通り",
+      "側面"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "area",
+        "dummies": [
+          "raea",
+          "aera",
+          "arae"
+        ]
+      }
+    ],
+    "note": "area：地域。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_place",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "場所と位置",
+    "english": "place",
+    "japanese": "場所",
+    "english_dummies": [
+      "area",
+      "street",
+      "side"
+    ],
+    "japanese_dummies": [
+      "地域",
+      "通り",
+      "側面"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pla",
+        "dummies": [
+          "lpa",
+          "pal",
+          "pra"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ce",
+        "dummies": [
+          "ec",
+          "ci",
+          "ke"
+        ]
+      }
+    ],
+    "note": "place：場所。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_street",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "場所と位置",
+    "english": "street",
+    "japanese": "通り",
+    "english_dummies": [
+      "area",
+      "place",
+      "side"
+    ],
+    "japanese_dummies": [
+      "地域",
+      "場所",
+      "側面"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "str",
+        "dummies": [
+          "tsr",
+          "srt",
+          "stl"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "eet",
+        "dummies": [
+          "ete",
+          "iet",
+          "eed"
+        ]
+      }
+    ],
+    "note": "street：通り。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_side",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "場所と位置",
+    "english": "side",
+    "japanese": "側面",
+    "english_dummies": [
+      "area",
+      "place",
+      "street"
+    ],
+    "japanese_dummies": [
+      "地域",
+      "場所",
+      "通り"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "side",
+        "dummies": [
+          "isde",
+          "sdie",
+          "sied"
+        ]
+      }
+    ],
+    "note": "side：側面。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_pen",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な物",
+    "english": "pen",
+    "japanese": "ペン",
+    "english_dummies": [
+      "glue",
+      "ink",
+      "mailbox"
+    ],
+    "japanese_dummies": [
+      "のり",
+      "インク",
+      "郵便受け"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pen",
+        "dummies": [
+          "epn",
+          "pne",
+          "pin"
+        ]
+      }
+    ],
+    "note": "pen：ペン。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_glue",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な物",
+    "english": "glue",
+    "japanese": "のり",
+    "english_dummies": [
+      "pen",
+      "ink",
+      "mailbox"
+    ],
+    "japanese_dummies": [
+      "ペン",
+      "インク",
+      "郵便受け"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "glue",
+        "dummies": [
+          "lgue",
+          "gule",
+          "gleu"
+        ]
+      }
+    ],
+    "note": "glue：のり。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_ink",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な物",
+    "english": "ink",
+    "japanese": "インク",
+    "english_dummies": [
+      "pen",
+      "glue",
+      "mailbox"
+    ],
+    "japanese_dummies": [
+      "ペン",
+      "のり",
+      "郵便受け"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ink",
+        "dummies": [
+          "nik",
+          "ikn",
+          "enk"
+        ]
+      }
+    ],
+    "note": "ink：インク。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_mailbox",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な物",
+    "english": "mailbox",
+    "japanese": "郵便受け",
+    "english_dummies": [
+      "pen",
+      "glue",
+      "ink"
+    ],
+    "japanese_dummies": [
+      "ペン",
+      "のり",
+      "インク"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mai",
+        "dummies": [
+          "ami",
+          "mia",
+          "mae"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lbox",
+        "dummies": [
+          "blox",
+          "lobx",
+          "lbxo"
+        ]
+      }
+    ],
+    "note": "mailbox：郵便受け。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_clothes",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "衣類と身の回り",
+    "english": "clothes",
+    "japanese": "衣服",
+    "english_dummies": [
+      "cloth",
+      "apron",
+      "shorts"
+    ],
+    "japanese_dummies": [
+      "布",
+      "エプロン",
+      "半ズボン"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "clo",
+        "dummies": [
+          "lco",
+          "col",
+          "cro"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "thes",
+        "dummies": [
+          "htes",
+          "tehs",
+          "thse"
+        ]
+      }
+    ],
+    "note": "clothes：衣服。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_cloth",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "衣類と身の回り",
+    "english": "cloth",
+    "japanese": "布",
+    "english_dummies": [
+      "clothes",
+      "apron",
+      "shorts"
+    ],
+    "japanese_dummies": [
+      "衣服",
+      "エプロン",
+      "半ズボン"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "clo",
+        "dummies": [
+          "lco",
+          "col",
+          "cro"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "th",
+        "dummies": [
+          "ht",
+          "dh",
+          "ta"
+        ]
+      }
+    ],
+    "note": "cloth：布。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_apron",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "衣類と身の回り",
+    "english": "apron",
+    "japanese": "エプロン",
+    "english_dummies": [
+      "clothes",
+      "cloth",
+      "shorts"
+    ],
+    "japanese_dummies": [
+      "衣服",
+      "布",
+      "半ズボン"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "apr",
+        "dummies": [
+          "par",
+          "arp",
+          "apl"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "on",
+        "dummies": [
+          "no",
+          "an",
+          "om"
+        ]
+      }
+    ],
+    "note": "apron：エプロン。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_shorts",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "衣類と身の回り",
+    "english": "shorts",
+    "japanese": "半ズボン",
+    "english_dummies": [
+      "clothes",
+      "cloth",
+      "apron"
+    ],
+    "japanese_dummies": [
+      "衣服",
+      "布",
+      "エプロン"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sho",
+        "dummies": [
+          "hso",
+          "soh",
+          "sha"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rts",
+        "dummies": [
+          "trs",
+          "rst",
+          "lts"
+        ]
+      }
+    ],
+    "note": "shorts：半ズボン。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_food",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "食べ物の基本",
+    "english": "food",
+    "japanese": "食べ物",
+    "english_dummies": [
+      "curry",
+      "toast",
+      "recipe"
+    ],
+    "japanese_dummies": [
+      "カレー",
+      "トースト",
+      "料理の作り方"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "food",
+        "dummies": [
+          "ofod",
+          "fodo",
+          "faod"
+        ]
+      }
+    ],
+    "note": "food：食べ物。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_curry",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "食べ物の基本",
+    "english": "curry",
+    "japanese": "カレー",
+    "english_dummies": [
+      "food",
+      "toast",
+      "seafood"
+    ],
+    "japanese_dummies": [
+      "食べ物",
+      "トースト",
+      "魚介類"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cur",
+        "dummies": [
+          "ucr",
+          "cru",
+          "cul"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "curry：カレー。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_toast",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "食べ物の基本",
+    "english": "toast",
+    "japanese": "トースト",
+    "english_dummies": [
+      "food",
+      "curry",
+      "seafood"
+    ],
+    "japanese_dummies": [
+      "食べ物",
+      "カレー",
+      "魚介類"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "toa",
+        "dummies": [
+          "ota",
+          "tao",
+          "tou"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "st",
+        "dummies": [
+          "ts",
+          "ct",
+          "sd"
+        ]
+      }
+    ],
+    "note": "toast：トースト。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_seafood",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "食べ物の基本",
+    "english": "seafood",
+    "japanese": "魚介類",
+    "english_dummies": [
+      "recipe",
+      "curry",
+      "toast"
+    ],
+    "japanese_dummies": [
+      "料理の作り方",
+      "カレー",
+      "トースト"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sea",
+        "dummies": [
+          "esa",
+          "sae",
+          "sia"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "food",
+        "dummies": [
+          "ofod",
+          "fodo",
+          "faod"
+        ]
+      }
+    ],
+    "note": "seafood：魚介類。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_air",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "自然と生き物",
+    "english": "air",
+    "japanese": "空気",
+    "english_dummies": [
+      "animal",
+      "wildlife",
+      "sunlight"
+    ],
+    "japanese_dummies": [
+      "動物",
+      "野生動物",
+      "日光"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "air",
+        "dummies": [
+          "iar",
+          "ari",
+          "ail"
+        ]
+      }
+    ],
+    "note": "air：空気。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_animal",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "自然と生き物",
+    "english": "animal",
+    "japanese": "動物",
+    "english_dummies": [
+      "air",
+      "wildlife",
+      "sunlight"
+    ],
+    "japanese_dummies": [
+      "空気",
+      "野生動物",
+      "日光"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ani",
+        "dummies": [
+          "nai",
+          "ain",
+          "ane"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mal",
+        "dummies": [
+          "aml",
+          "mla",
+          "mar"
+        ]
+      }
+    ],
+    "note": "animal：動物。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_wildlife",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "自然と生き物",
+    "english": "wildlife",
+    "japanese": "野生動物",
+    "english_dummies": [
+      "air",
+      "animal",
+      "sunlight"
+    ],
+    "japanese_dummies": [
+      "空気",
+      "動物",
+      "日光"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "wil",
+        "dummies": [
+          "iwl",
+          "wli",
+          "wir"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "dli",
+        "dummies": [
+          "ldi",
+          "dil",
+          "dri"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "fe",
+        "dummies": [
+          "ef",
+          "fi",
+          "ve"
+        ]
+      }
+    ],
+    "note": "wildlife：野生動物。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_sunlight",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "自然と生き物",
+    "english": "sunlight",
+    "japanese": "日光",
+    "english_dummies": [
+      "air",
+      "animal",
+      "wildlife"
+    ],
+    "japanese_dummies": [
+      "空気",
+      "動物",
+      "野生動物"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sun",
+        "dummies": [
+          "usn",
+          "snu",
+          "san"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lig",
+        "dummies": [
+          "ilg",
+          "lgi",
+          "rig"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ht",
+        "dummies": [
+          "th",
+          "hd",
+          "ha"
+        ]
+      }
+    ],
+    "note": "sunlight：日光。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_idea",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えと出来事",
+    "english": "idea",
+    "japanese": "考え",
+    "english_dummies": [
+      "dream",
+      "story",
+      "event"
+    ],
+    "japanese_dummies": [
+      "夢",
+      "物語",
+      "行事"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "idea",
+        "dummies": [
+          "diea",
+          "ieda",
+          "idae"
+        ]
+      }
+    ],
+    "note": "idea：考え。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_dream",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えと出来事",
+    "english": "dream",
+    "japanese": "夢",
+    "english_dummies": [
+      "idea",
+      "story",
+      "event"
+    ],
+    "japanese_dummies": [
+      "考え",
+      "物語",
+      "行事"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dre",
+        "dummies": [
+          "rde",
+          "der",
+          "dle"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "am",
+        "dummies": [
+          "ma",
+          "um",
+          "an"
+        ]
+      }
+    ],
+    "note": "dream：夢。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_story",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えと出来事",
+    "english": "story",
+    "japanese": "物語",
+    "english_dummies": [
+      "idea",
+      "dream",
+      "event"
+    ],
+    "japanese_dummies": [
+      "考え",
+      "夢",
+      "行事"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sto",
+        "dummies": [
+          "tso",
+          "sot",
+          "sta"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "story：物語。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_event",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えと出来事",
+    "english": "event",
+    "japanese": "行事",
+    "english_dummies": [
+      "idea",
+      "dream",
+      "story"
+    ],
+    "japanese_dummies": [
+      "考え",
+      "夢",
+      "物語"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "eve",
+        "dummies": [
+          "vee",
+          "eev",
+          "ive"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nt",
+        "dummies": [
+          "tn",
+          "nd",
+          "mt"
+        ]
+      }
+    ],
+    "note": "event：行事。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_bad",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "感情と状態",
+    "english": "bad",
+    "japanese": "悪い",
+    "english_dummies": [
+      "cute",
+      "sleepy",
+      "full"
+    ],
+    "japanese_dummies": [
+      "かわいい",
+      "眠い",
+      "満腹の"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bad",
+        "dummies": [
+          "abd",
+          "bda",
+          "bud"
+        ]
+      }
+    ],
+    "note": "bad：悪い。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_cute",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "感情と状態",
+    "english": "cute",
+    "japanese": "かわいい",
+    "english_dummies": [
+      "bad",
+      "sleepy",
+      "full"
+    ],
+    "japanese_dummies": [
+      "悪い",
+      "眠い",
+      "満腹の"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cute",
+        "dummies": [
+          "ucte",
+          "ctue",
+          "cuet"
+        ]
+      }
+    ],
+    "note": "cute：かわいい。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_sleepy",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "感情と状態",
+    "english": "sleepy",
+    "japanese": "眠い",
+    "english_dummies": [
+      "bad",
+      "cute",
+      "full"
+    ],
+    "japanese_dummies": [
+      "悪い",
+      "かわいい",
+      "満腹の"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sle",
+        "dummies": [
+          "lse",
+          "sel",
+          "sre"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "epy",
+        "dummies": [
+          "pey",
+          "eyp",
+          "ipy"
+        ]
+      }
+    ],
+    "note": "sleepy：眠い。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_full",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "感情と状態",
+    "english": "full",
+    "japanese": "満腹の",
+    "english_dummies": [
+      "bad",
+      "cute",
+      "sleepy"
+    ],
+    "japanese_dummies": [
+      "悪い",
+      "かわいい",
+      "眠い"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "full",
+        "dummies": [
+          "ufll",
+          "flul",
+          "furl"
+        ]
+      }
+    ],
+    "note": "full：満腹の。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_funny",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の性質",
+    "english": "funny",
+    "japanese": "おかしい",
+    "english_dummies": [
+      "scary",
+      "smart",
+      "terrible"
+    ],
+    "japanese_dummies": [
+      "怖い",
+      "賢い",
+      "ひどい"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fun",
+        "dummies": [
+          "ufn",
+          "fnu",
+          "fan"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ny",
+        "dummies": [
+          "yn",
+          "my",
+          "na"
+        ]
+      }
+    ],
+    "note": "funny：おかしい。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_scary",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の性質",
+    "english": "scary",
+    "japanese": "怖い",
+    "english_dummies": [
+      "funny",
+      "smart",
+      "terrible"
+    ],
+    "japanese_dummies": [
+      "おかしい",
+      "賢い",
+      "ひどい"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sca",
+        "dummies": [
+          "csa",
+          "sac",
+          "scu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "scary：怖い。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_smart",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の性質",
+    "english": "smart",
+    "japanese": "賢い",
+    "english_dummies": [
+      "funny",
+      "scary",
+      "terrible"
+    ],
+    "japanese_dummies": [
+      "おかしい",
+      "怖い",
+      "ひどい"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sma",
+        "dummies": [
+          "msa",
+          "sam",
+          "smu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rt",
+        "dummies": [
+          "tr",
+          "lt",
+          "rd"
+        ]
+      }
+    ],
+    "note": "smart：賢い。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_terrible",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の性質",
+    "english": "terrible",
+    "japanese": "ひどい",
+    "english_dummies": [
+      "funny",
+      "scary",
+      "smart"
+    ],
+    "japanese_dummies": [
+      "おかしい",
+      "怖い",
+      "賢い"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ter",
+        "dummies": [
+          "etr",
+          "tre",
+          "tel"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rib",
+        "dummies": [
+          "irb",
+          "rbi",
+          "lib"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "le",
+        "dummies": [
+          "el",
+          "re",
+          "li"
+        ]
+      }
+    ],
+    "note": "terrible：ひどい。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_joy",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちと願い",
+    "english": "joy",
+    "japanese": "喜び",
+    "english_dummies": [
+      "fear",
+      "sadness",
+      "luck"
+    ],
+    "japanese_dummies": [
+      "恐れ",
+      "悲しみ",
+      "幸運"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "joy",
+        "dummies": [
+          "ojy",
+          "jyo",
+          "jay"
+        ]
+      }
+    ],
+    "note": "joy：喜び。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_delight",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちと願い",
+    "english": "delight",
+    "japanese": "大喜び",
+    "english_dummies": [
+      "fear",
+      "sadness",
+      "luck"
+    ],
+    "japanese_dummies": [
+      "恐れ",
+      "悲しみ",
+      "幸運"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "del",
+        "dummies": [
+          "edl",
+          "dle",
+          "der"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ight",
+        "dummies": [
+          "giht",
+          "ihgt",
+          "igth"
+        ]
+      }
+    ],
+    "note": "delight：大喜び。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_sadness",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちと願い",
+    "english": "sadness",
+    "japanese": "悲しみ",
+    "english_dummies": [
+      "joy",
+      "delight",
+      "luck"
+    ],
+    "japanese_dummies": [
+      "喜び",
+      "大喜び",
+      "幸運"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sad",
+        "dummies": [
+          "asd",
+          "sda",
+          "sud"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ness",
+        "dummies": [
+          "enss",
+          "nses",
+          "niss"
+        ]
+      }
+    ],
+    "note": "sadness：悲しみ。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_luck",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちと願い",
+    "english": "luck",
+    "japanese": "幸運",
+    "english_dummies": [
+      "joy",
+      "delight",
+      "sadness"
+    ],
+    "japanese_dummies": [
+      "喜び",
+      "大喜び",
+      "悲しみ"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "luck",
+        "dummies": [
+          "ulck",
+          "lcuk",
+          "lukc"
+        ]
+      }
+    ],
+    "note": "luck：幸運。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_voice",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音と映像",
+    "english": "voice",
+    "japanese": "声",
+    "english_dummies": [
+      "audio",
+      "video",
+      "movie"
+    ],
+    "japanese_dummies": [
+      "音声",
+      "動画",
+      "映画"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "voi",
+        "dummies": [
+          "ovi",
+          "vio",
+          "voe"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ce",
+        "dummies": [
+          "ec",
+          "ci",
+          "ke"
+        ]
+      }
+    ],
+    "note": "voice：声。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_audio",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音と映像",
+    "english": "audio",
+    "japanese": "音声",
+    "english_dummies": [
+      "voice",
+      "video",
+      "movie"
+    ],
+    "japanese_dummies": [
+      "声",
+      "動画",
+      "映画"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "aud",
+        "dummies": [
+          "uad",
+          "adu",
+          "uud"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "io",
+        "dummies": [
+          "oi",
+          "eo",
+          "ia"
+        ]
+      }
+    ],
+    "note": "audio：音声。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_video",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音と映像",
+    "english": "video",
+    "japanese": "動画",
+    "english_dummies": [
+      "voice",
+      "audio",
+      "movie"
+    ],
+    "japanese_dummies": [
+      "声",
+      "音声",
+      "映画"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "vid",
+        "dummies": [
+          "ivd",
+          "vdi",
+          "ved"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "eo",
+        "dummies": [
+          "oe",
+          "io",
+          "ea"
+        ]
+      }
+    ],
+    "note": "video：動画。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_movie",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音と映像",
+    "english": "movie",
+    "japanese": "映画",
+    "english_dummies": [
+      "voice",
+      "audio",
+      "video"
+    ],
+    "japanese_dummies": [
+      "声",
+      "音声",
+      "動画"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mov",
+        "dummies": [
+          "omv",
+          "mvo",
+          "mav"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ie",
+        "dummies": [
+          "ei",
+          "ee",
+          "ii"
+        ]
+      }
+    ],
+    "note": "movie：映画。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_chess",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "遊びとスポーツ",
+    "english": "chess",
+    "japanese": "チェス",
+    "english_dummies": [
+      "bowling",
+      "dodgeball",
+      "softball"
+    ],
+    "japanese_dummies": [
+      "ボウリング",
+      "ドッジボール",
+      "ソフトボール"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "che",
+        "dummies": [
+          "hce",
+          "ceh",
+          "chi"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ss",
+        "dummies": [
+          "cs",
+          "sa",
+          "se"
+        ]
+      }
+    ],
+    "note": "chess：チェス。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_bowling",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "遊びとスポーツ",
+    "english": "bowling",
+    "japanese": "ボウリング",
+    "english_dummies": [
+      "chess",
+      "dodgeball",
+      "softball"
+    ],
+    "japanese_dummies": [
+      "チェス",
+      "ドッジボール",
+      "ソフトボール"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bow",
+        "dummies": [
+          "obw",
+          "bwo",
+          "baw"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ling",
+        "dummies": [
+          "ilng",
+          "lnig",
+          "lign"
+        ]
+      }
+    ],
+    "note": "bowling：ボウリング。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_dodgeball",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "遊びとスポーツ",
+    "english": "dodgeball",
+    "japanese": "ドッジボール",
+    "english_dummies": [
+      "chess",
+      "bowling",
+      "softball"
+    ],
+    "japanese_dummies": [
+      "チェス",
+      "ボウリング",
+      "ソフトボール"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dod",
+        "dummies": [
+          "odd",
+          "ddo",
+          "dad"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "geb",
+        "dummies": [
+          "egb",
+          "gbe",
+          "gib"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "all",
+        "dummies": [
+          "lal",
+          "arl",
+          "ull"
+        ]
+      }
+    ],
+    "note": "dodgeball：ドッジボール。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_softball",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "遊びとスポーツ",
+    "english": "softball",
+    "japanese": "ソフトボール",
+    "english_dummies": [
+      "chess",
+      "bowling",
+      "dodgeball"
+    ],
+    "japanese_dummies": [
+      "チェス",
+      "ボウリング",
+      "ドッジボール"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sof",
+        "dummies": [
+          "osf",
+          "sfo",
+          "saf"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tba",
+        "dummies": [
+          "bta",
+          "tab",
+          "tbu"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ll",
+        "dummies": [
+          "rl",
+          "la",
+          "le"
+        ]
+      }
+    ],
+    "note": "softball：ソフトボール。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_money",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "買い物と暮らし",
+    "english": "money",
+    "japanese": "お金",
+    "english_dummies": [
+      "sale",
+      "price",
+      "size"
+    ],
+    "japanese_dummies": [
+      "特売",
+      "値段",
+      "大きさ"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mon",
+        "dummies": [
+          "omn",
+          "mno",
+          "man"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ey",
+        "dummies": [
+          "ye",
+          "iy",
+          "ea"
+        ]
+      }
+    ],
+    "note": "money：お金。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_sale",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "買い物と暮らし",
+    "english": "sale",
+    "japanese": "特売",
+    "english_dummies": [
+      "money",
+      "price",
+      "size"
+    ],
+    "japanese_dummies": [
+      "お金",
+      "値段",
+      "大きさ"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sale",
+        "dummies": [
+          "asle",
+          "slae",
+          "sael"
+        ]
+      }
+    ],
+    "note": "sale：特売。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_size",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "買い物と暮らし",
+    "english": "size",
+    "japanese": "大きさ",
+    "english_dummies": [
+      "money",
+      "sale",
+      "price"
+    ],
+    "japanese_dummies": [
+      "お金",
+      "特売",
+      "値段"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "size",
+        "dummies": [
+          "isze",
+          "szie",
+          "siez"
+        ]
+      }
+    ],
+    "note": "size：大きさ。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_action",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "活動と交流",
+    "english": "action",
+    "japanese": "動作",
+    "english_dummies": [
+      "activity",
+      "communication",
+      "cooperation"
+    ],
+    "japanese_dummies": [
+      "活動",
+      "意思の伝達",
+      "協力"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "act",
+        "dummies": [
+          "cat",
+          "atc",
+          "uct"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ion",
+        "dummies": [
+          "oin",
+          "ino",
+          "eon"
+        ]
+      }
+    ],
+    "note": "action：動作。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_activity",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "活動と交流",
+    "english": "activity",
+    "japanese": "活動",
+    "english_dummies": [
+      "action",
+      "communication",
+      "cooperation"
+    ],
+    "japanese_dummies": [
+      "動作",
+      "意思の伝達",
+      "協力"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "act",
+        "dummies": [
+          "cat",
+          "atc",
+          "uct"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ivi",
+        "dummies": [
+          "vii",
+          "iiv",
+          "evi"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ty",
+        "dummies": [
+          "yt",
+          "dy",
+          "ta"
+        ]
+      }
+    ],
+    "note": "activity：活動。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_communication",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "活動と交流",
+    "english": "communication",
+    "japanese": "意思の伝達",
+    "english_dummies": [
+      "action",
+      "activity",
+      "cooperation"
+    ],
+    "japanese_dummies": [
+      "動作",
+      "活動",
+      "協力"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "com",
+        "dummies": [
+          "ocm",
+          "cmo",
+          "cam"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mun",
+        "dummies": [
+          "umn",
+          "mnu",
+          "man"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ica",
+        "dummies": [
+          "cia",
+          "iac",
+          "eca"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "tion",
+        "dummies": [
+          "iton",
+          "toin",
+          "tino"
+        ]
+      }
+    ],
+    "note": "communication：意思の伝達。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_cooperation",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "活動と交流",
+    "english": "cooperation",
+    "japanese": "協力",
+    "english_dummies": [
+      "action",
+      "activity",
+      "communication"
+    ],
+    "japanese_dummies": [
+      "動作",
+      "活動",
+      "意思の伝達"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "coo",
+        "dummies": [
+          "oco",
+          "cao",
+          "koo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "per",
+        "dummies": [
+          "epr",
+          "pre",
+          "pel"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ati",
+        "dummies": [
+          "tai",
+          "ait",
+          "ate"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "on",
+        "dummies": [
+          "no",
+          "an",
+          "om"
+        ]
+      }
+    ],
+    "note": "cooperation：協力。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_difference",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学習と説明",
+    "english": "difference",
+    "japanese": "違い",
+    "english_dummies": [
+      "difficulty",
+      "importance",
+      "truth"
+    ],
+    "japanese_dummies": [
+      "難しさ",
+      "重要性",
+      "真実"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dif",
+        "dummies": [
+          "idf",
+          "dfi",
+          "def"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "fer",
+        "dummies": [
+          "efr",
+          "fre",
+          "fel"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ence",
+        "dummies": [
+          "nece",
+          "ecne",
+          "enec"
+        ]
+      }
+    ],
+    "note": "difference：違い。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_difficulty",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学習と説明",
+    "english": "difficulty",
+    "japanese": "難しさ",
+    "english_dummies": [
+      "difference",
+      "importance",
+      "truth"
+    ],
+    "japanese_dummies": [
+      "違い",
+      "重要性",
+      "真実"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dif",
+        "dummies": [
+          "idf",
+          "dfi",
+          "def"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "fic",
+        "dummies": [
+          "ifc",
+          "fci",
+          "fec"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ulty",
+        "dummies": [
+          "luty",
+          "utly",
+          "ulyt"
+        ]
+      }
+    ],
+    "note": "difficulty：難しさ。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_importance",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学習と説明",
+    "english": "importance",
+    "japanese": "重要性",
+    "english_dummies": [
+      "difference",
+      "difficulty",
+      "truth"
+    ],
+    "japanese_dummies": [
+      "違い",
+      "難しさ",
+      "真実"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "imp",
+        "dummies": [
+          "mip",
+          "ipm",
+          "emp"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ort",
+        "dummies": [
+          "rot",
+          "otr",
+          "olt"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ance",
+        "dummies": [
+          "nace",
+          "acne",
+          "anec"
+        ]
+      }
+    ],
+    "note": "importance：重要性。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_truth",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学習と説明",
+    "english": "truth",
+    "japanese": "真実",
+    "english_dummies": [
+      "difference",
+      "difficulty",
+      "importance"
+    ],
+    "japanese_dummies": [
+      "違い",
+      "難しさ",
+      "重要性"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "tru",
+        "dummies": [
+          "rtu",
+          "tur",
+          "tlu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "th",
+        "dummies": [
+          "ht",
+          "dh",
+          "ta"
+        ]
+      }
+    ],
+    "note": "truth：真実。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_health",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "健康と人",
+    "english": "health",
+    "japanese": "健康",
+    "english_dummies": [
+      "safety",
+      "height",
+      "life"
+    ],
+    "japanese_dummies": [
+      "安全",
+      "高さ",
+      "人生"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hea",
+        "dummies": [
+          "eha",
+          "hae",
+          "hia"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lth",
+        "dummies": [
+          "tlh",
+          "lht",
+          "rth"
+        ]
+      }
+    ],
+    "note": "health：健康。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_safety",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "健康と人",
+    "english": "safety",
+    "japanese": "安全",
+    "english_dummies": [
+      "health",
+      "height",
+      "life"
+    ],
+    "japanese_dummies": [
+      "健康",
+      "高さ",
+      "人生"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "saf",
+        "dummies": [
+          "asf",
+          "sfa",
+          "suf"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ety",
+        "dummies": [
+          "tey",
+          "eyt",
+          "ity"
+        ]
+      }
+    ],
+    "note": "safety：安全。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_height",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "健康と人",
+    "english": "height",
+    "japanese": "高さ",
+    "english_dummies": [
+      "health",
+      "safety",
+      "life"
+    ],
+    "japanese_dummies": [
+      "健康",
+      "安全",
+      "人生"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hei",
+        "dummies": [
+          "ehi",
+          "hie",
+          "hee"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ght",
+        "dummies": [
+          "hgt",
+          "gth",
+          "ghd"
+        ]
+      }
+    ],
+    "note": "height：高さ。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_life",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "健康と人",
+    "english": "life",
+    "japanese": "人生",
+    "english_dummies": [
+      "health",
+      "safety",
+      "height"
+    ],
+    "japanese_dummies": [
+      "健康",
+      "安全",
+      "高さ"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "life",
+        "dummies": [
+          "ilfe",
+          "lfie",
+          "lief"
+        ]
+      }
+    ],
+    "note": "life：人生。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_poetry",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "芸術と表現",
+    "english": "poetry",
+    "japanese": "詩",
+    "english_dummies": [
+      "calligraphy",
+      "animation",
+      "illustration"
+    ],
+    "japanese_dummies": [
+      "書道",
+      "アニメーション",
+      "イラスト"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "poe",
+        "dummies": [
+          "ope",
+          "peo",
+          "poi"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "try",
+        "dummies": [
+          "rty",
+          "tyr",
+          "tly"
+        ]
+      }
+    ],
+    "note": "poetry：詩。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_calligraphy",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "芸術と表現",
+    "english": "calligraphy",
+    "japanese": "書道",
+    "english_dummies": [
+      "poetry",
+      "animation",
+      "illustration"
+    ],
+    "japanese_dummies": [
+      "詩",
+      "アニメーション",
+      "イラスト"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cal",
+        "dummies": [
+          "acl",
+          "cla",
+          "car"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lig",
+        "dummies": [
+          "ilg",
+          "lgi",
+          "rig"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "rap",
+        "dummies": [
+          "arp",
+          "rpa",
+          "lap"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "hy",
+        "dummies": [
+          "yh",
+          "ha",
+          "he"
+        ]
+      }
+    ],
+    "note": "calligraphy：書道。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_animation",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "芸術と表現",
+    "english": "animation",
+    "japanese": "アニメーション",
+    "english_dummies": [
+      "poetry",
+      "calligraphy",
+      "illustration"
+    ],
+    "japanese_dummies": [
+      "詩",
+      "書道",
+      "イラスト"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ani",
+        "dummies": [
+          "nai",
+          "ain",
+          "ane"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mat",
+        "dummies": [
+          "amt",
+          "mta",
+          "mut"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ion",
+        "dummies": [
+          "oin",
+          "ino",
+          "eon"
+        ]
+      }
+    ],
+    "note": "animation：アニメーション。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_illustration",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "芸術と表現",
+    "english": "illustration",
+    "japanese": "イラスト",
+    "english_dummies": [
+      "poetry",
+      "calligraphy",
+      "animation"
+    ],
+    "japanese_dummies": [
+      "詩",
+      "書道",
+      "アニメーション"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ill",
+        "dummies": [
+          "lil",
+          "irl",
+          "ell"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ust",
+        "dummies": [
+          "sut",
+          "uts",
+          "ast"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "rat",
+        "dummies": [
+          "art",
+          "rta",
+          "lat"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "ion",
+        "dummies": [
+          "oin",
+          "ino",
+          "eon"
+        ]
+      }
+    ],
+    "note": "illustration：イラスト。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_flute",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音楽の道具",
+    "english": "flute",
+    "japanese": "フルート",
+    "english_dummies": [
+      "trumpet",
+      "harmonica",
+      "recorder"
+    ],
+    "japanese_dummies": [
+      "トランペット",
+      "ハーモニカ",
+      "リコーダー"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "flu",
+        "dummies": [
+          "lfu",
+          "ful",
+          "fru"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "te",
+        "dummies": [
+          "et",
+          "ti",
+          "de"
+        ]
+      }
+    ],
+    "note": "flute：フルート。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_trumpet",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音楽の道具",
+    "english": "trumpet",
+    "japanese": "トランペット",
+    "english_dummies": [
+      "flute",
+      "harmonica",
+      "recorder"
+    ],
+    "japanese_dummies": [
+      "フルート",
+      "ハーモニカ",
+      "リコーダー"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "tru",
+        "dummies": [
+          "rtu",
+          "tur",
+          "tlu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mpet",
+        "dummies": [
+          "pmet",
+          "mept",
+          "mpte"
+        ]
+      }
+    ],
+    "note": "trumpet：トランペット。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_harmonica",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音楽の道具",
+    "english": "harmonica",
+    "japanese": "ハーモニカ",
+    "english_dummies": [
+      "flute",
+      "trumpet",
+      "recorder"
+    ],
+    "japanese_dummies": [
+      "フルート",
+      "トランペット",
+      "リコーダー"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "har",
+        "dummies": [
+          "ahr",
+          "hra",
+          "hal"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mon",
+        "dummies": [
+          "omn",
+          "mno",
+          "man"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ica",
+        "dummies": [
+          "cia",
+          "iac",
+          "eca"
+        ]
+      }
+    ],
+    "note": "harmonica：ハーモニカ。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_recorder",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "音楽の道具",
+    "english": "recorder",
+    "japanese": "リコーダー",
+    "english_dummies": [
+      "flute",
+      "trumpet",
+      "harmonica"
+    ],
+    "japanese_dummies": [
+      "フルート",
+      "トランペット",
+      "ハーモニカ"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rec",
+        "dummies": [
+          "erc",
+          "rce",
+          "lec"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ord",
+        "dummies": [
+          "rod",
+          "odr",
+          "old"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "er",
+        "dummies": [
+          "re",
+          "el",
+          "ir"
+        ]
+      }
+    ],
+    "note": "recorder：リコーダー。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_player",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人の役割",
+    "english": "player",
+    "japanese": "選手",
+    "english_dummies": [
+      "painter",
+      "pianist",
+      "astronaut"
+    ],
+    "japanese_dummies": [
+      "画家",
+      "ピアニスト",
+      "宇宙飛行士"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pla",
+        "dummies": [
+          "lpa",
+          "pal",
+          "pra"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "yer",
+        "dummies": [
+          "eyr",
+          "yre",
+          "yel"
+        ]
+      }
+    ],
+    "note": "player：選手。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_painter",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人の役割",
+    "english": "painter",
+    "japanese": "画家",
+    "english_dummies": [
+      "player",
+      "pianist",
+      "astronaut"
+    ],
+    "japanese_dummies": [
+      "選手",
+      "ピアニスト",
+      "宇宙飛行士"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pai",
+        "dummies": [
+          "api",
+          "pia",
+          "pae"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nter",
+        "dummies": [
+          "tner",
+          "netr",
+          "ntre"
+        ]
+      }
+    ],
+    "note": "painter：画家。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_pianist",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人の役割",
+    "english": "pianist",
+    "japanese": "ピアニスト",
+    "english_dummies": [
+      "player",
+      "painter",
+      "astronaut"
+    ],
+    "japanese_dummies": [
+      "選手",
+      "画家",
+      "宇宙飛行士"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pia",
+        "dummies": [
+          "ipa",
+          "pai",
+          "pea"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nist",
+        "dummies": [
+          "inst",
+          "nsit",
+          "nits"
+        ]
+      }
+    ],
+    "note": "pianist：ピアニスト。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_astronaut",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "人の役割",
+    "english": "astronaut",
+    "japanese": "宇宙飛行士",
+    "english_dummies": [
+      "player",
+      "painter",
+      "pianist"
+    ],
+    "japanese_dummies": [
+      "選手",
+      "画家",
+      "ピアニスト"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ast",
+        "dummies": [
+          "sat",
+          "ats",
+          "ust"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ron",
+        "dummies": [
+          "orn",
+          "rno",
+          "lon"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "aut",
+        "dummies": [
+          "uat",
+          "atu",
+          "uut"
+        ]
+      }
+    ],
+    "note": "astronaut：宇宙飛行士。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_cafeteria",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な施設",
+    "english": "cafeteria",
+    "japanese": "セルフサービスの食堂",
+    "english_dummies": [
+      "restroom",
+      "hall",
+      "outlet"
+    ],
+    "japanese_dummies": [
+      "トイレ",
+      "ホール",
+      "コンセント"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "caf",
+        "dummies": [
+          "acf",
+          "cfa",
+          "cuf"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ete",
+        "dummies": [
+          "tee",
+          "eet",
+          "ite"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ria",
+        "dummies": [
+          "ira",
+          "rai",
+          "lia"
+        ]
+      }
+    ],
+    "note": "cafeteria：セルフサービスの食堂。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_restroom",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な施設",
+    "english": "restroom",
+    "japanese": "トイレ",
+    "english_dummies": [
+      "cafeteria",
+      "hall",
+      "outlet"
+    ],
+    "japanese_dummies": [
+      "セルフサービスの食堂",
+      "ホール",
+      "コンセント"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "res",
+        "dummies": [
+          "ers",
+          "rse",
+          "les"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tro",
+        "dummies": [
+          "rto",
+          "tor",
+          "tlo"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "om",
+        "dummies": [
+          "mo",
+          "am",
+          "on"
+        ]
+      }
+    ],
+    "note": "restroom：トイレ。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_hall",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な施設",
+    "english": "hall",
+    "japanese": "ホール",
+    "english_dummies": [
+      "cafeteria",
+      "restroom",
+      "outlet"
+    ],
+    "japanese_dummies": [
+      "セルフサービスの食堂",
+      "トイレ",
+      "コンセント"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hall",
+        "dummies": [
+          "ahll",
+          "hlal",
+          "harl"
+        ]
+      }
+    ],
+    "note": "hall：ホール。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_outlet",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な施設",
+    "english": "outlet",
+    "japanese": "コンセント",
+    "english_dummies": [
+      "cafeteria",
+      "restroom",
+      "hall"
+    ],
+    "japanese_dummies": [
+      "セルフサービスの食堂",
+      "トイレ",
+      "ホール"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "out",
+        "dummies": [
+          "uot",
+          "otu",
+          "oat"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "let",
+        "dummies": [
+          "elt",
+          "lte",
+          "ret"
+        ]
+      }
+    ],
+    "note": "outlet：コンセント。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_refrigerator",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "道具と設備",
+    "english": "refrigerator",
+    "japanese": "冷蔵庫",
+    "english_dummies": [
+      "stapler",
+      "magnet",
+      "cage"
+    ],
+    "japanese_dummies": [
+      "ホッチキス",
+      "磁石",
+      "かご"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ref",
+        "dummies": [
+          "erf",
+          "rfe",
+          "lef"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rig",
+        "dummies": [
+          "irg",
+          "rgi",
+          "lig"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "era",
+        "dummies": [
+          "rea",
+          "ear",
+          "ela"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "tor",
+        "dummies": [
+          "otr",
+          "tro",
+          "tol"
+        ]
+      }
+    ],
+    "note": "refrigerator：冷蔵庫。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_stapler",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "道具と設備",
+    "english": "stapler",
+    "japanese": "ホッチキス",
+    "english_dummies": [
+      "refrigerator",
+      "magnet",
+      "cage"
+    ],
+    "japanese_dummies": [
+      "冷蔵庫",
+      "磁石",
+      "かご"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sta",
+        "dummies": [
+          "tsa",
+          "sat",
+          "stu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "pler",
+        "dummies": [
+          "lper",
+          "pelr",
+          "plre"
+        ]
+      }
+    ],
+    "note": "stapler：ホッチキス。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_magnet",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "道具と設備",
+    "english": "magnet",
+    "japanese": "磁石",
+    "english_dummies": [
+      "refrigerator",
+      "stapler",
+      "cage"
+    ],
+    "japanese_dummies": [
+      "冷蔵庫",
+      "ホッチキス",
+      "かご"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mag",
+        "dummies": [
+          "amg",
+          "mga",
+          "mug"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "net",
+        "dummies": [
+          "ent",
+          "nte",
+          "nit"
+        ]
+      }
+    ],
+    "note": "magnet：磁石。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_cage",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "道具と設備",
+    "english": "cage",
+    "japanese": "かご",
+    "english_dummies": [
+      "refrigerator",
+      "stapler",
+      "magnet"
+    ],
+    "japanese_dummies": [
+      "冷蔵庫",
+      "ホッチキス",
+      "磁石"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cage",
+        "dummies": [
+          "acge",
+          "cgae",
+          "caeg"
+        ]
+      }
+    ],
+    "note": "cage：かご。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_chance",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "催しと結果",
+    "english": "chance",
+    "japanese": "機会",
+    "english_dummies": [
+      "prize",
+      "victory",
+      "rule"
+    ],
+    "japanese_dummies": [
+      "賞",
+      "勝利",
+      "規則"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cha",
+        "dummies": [
+          "hca",
+          "cah",
+          "chu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nce",
+        "dummies": [
+          "cne",
+          "nec",
+          "nci"
+        ]
+      }
+    ],
+    "note": "chance：機会。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_prize",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "催しと結果",
+    "english": "prize",
+    "japanese": "賞",
+    "english_dummies": [
+      "chance",
+      "victory",
+      "rule"
+    ],
+    "japanese_dummies": [
+      "機会",
+      "勝利",
+      "規則"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pri",
+        "dummies": [
+          "rpi",
+          "pir",
+          "pli"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ze",
+        "dummies": [
+          "ez",
+          "zi",
+          "za"
+        ]
+      }
+    ],
+    "note": "prize：賞。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_victory",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "催しと結果",
+    "english": "victory",
+    "japanese": "勝利",
+    "english_dummies": [
+      "chance",
+      "prize",
+      "rule"
+    ],
+    "japanese_dummies": [
+      "機会",
+      "賞",
+      "規則"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "vic",
+        "dummies": [
+          "ivc",
+          "vci",
+          "vec"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tory",
+        "dummies": [
+          "otry",
+          "troy",
+          "toyr"
+        ]
+      }
+    ],
+    "note": "victory：勝利。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_rule",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "催しと結果",
+    "english": "rule",
+    "japanese": "規則",
+    "english_dummies": [
+      "chance",
+      "prize",
+      "victory"
+    ],
+    "japanese_dummies": [
+      "機会",
+      "賞",
+      "勝利"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rule",
+        "dummies": [
+          "urle",
+          "rlue",
+          "ruel"
+        ]
+      }
+    ],
+    "note": "rule：規則。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_phone",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "情報と連絡",
+    "english": "phone",
+    "japanese": "電話",
+    "english_dummies": [
+      "smartphone",
+      "laptop",
+      "attachment"
+    ],
+    "japanese_dummies": [
+      "スマートフォン",
+      "ノートパソコン",
+      "添付ファイル"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pho",
+        "dummies": [
+          "hpo",
+          "poh",
+          "pha"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ne",
+        "dummies": [
+          "en",
+          "ni",
+          "me"
+        ]
+      }
+    ],
+    "note": "phone：電話。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_smartphone",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "情報と連絡",
+    "english": "smartphone",
+    "japanese": "スマートフォン",
+    "english_dummies": [
+      "phone",
+      "laptop",
+      "attachment"
+    ],
+    "japanese_dummies": [
+      "電話",
+      "ノートパソコン",
+      "添付ファイル"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sma",
+        "dummies": [
+          "msa",
+          "sam",
+          "smu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rtp",
+        "dummies": [
+          "trp",
+          "rpt",
+          "ltp"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "hone",
+        "dummies": [
+          "ohne",
+          "hnoe",
+          "hoen"
+        ]
+      }
+    ],
+    "note": "smartphone：スマートフォン。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_laptop",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "情報と連絡",
+    "english": "laptop",
+    "japanese": "ノートパソコン",
+    "english_dummies": [
+      "phone",
+      "smartphone",
+      "attachment"
+    ],
+    "japanese_dummies": [
+      "電話",
+      "スマートフォン",
+      "添付ファイル"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lap",
+        "dummies": [
+          "alp",
+          "lpa",
+          "rap"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "top",
+        "dummies": [
+          "otp",
+          "tpo",
+          "tap"
+        ]
+      }
+    ],
+    "note": "laptop：ノートパソコン。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_attachment",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "情報と連絡",
+    "english": "attachment",
+    "japanese": "添付ファイル",
+    "english_dummies": [
+      "phone",
+      "smartphone",
+      "laptop"
+    ],
+    "japanese_dummies": [
+      "電話",
+      "スマートフォン",
+      "ノートパソコン"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "att",
+        "dummies": [
+          "tat",
+          "utt",
+          "adt"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ach",
+        "dummies": [
+          "cah",
+          "ahc",
+          "uch"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ment",
+        "dummies": [
+          "emnt",
+          "mnet",
+          "metn"
+        ]
+      }
+    ],
+    "note": "attachment：添付ファイル。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_part",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の部分",
+    "english": "part",
+    "japanese": "部分",
+    "english_dummies": [
+      "piece",
+      "top",
+      "middle"
+    ],
+    "japanese_dummies": [
+      "かけら",
+      "てっぺん",
+      "真ん中"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "part",
+        "dummies": [
+          "aprt",
+          "prat",
+          "patr"
+        ]
+      }
+    ],
+    "note": "part：部分。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_piece",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の部分",
+    "english": "piece",
+    "japanese": "かけら",
+    "english_dummies": [
+      "part",
+      "top",
+      "middle"
+    ],
+    "japanese_dummies": [
+      "部分",
+      "てっぺん",
+      "真ん中"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pie",
+        "dummies": [
+          "ipe",
+          "pei",
+          "pee"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ce",
+        "dummies": [
+          "ec",
+          "ci",
+          "ke"
+        ]
+      }
+    ],
+    "note": "piece：かけら。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_top",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の部分",
+    "english": "top",
+    "japanese": "てっぺん",
+    "english_dummies": [
+      "part",
+      "piece",
+      "middle"
+    ],
+    "japanese_dummies": [
+      "部分",
+      "かけら",
+      "真ん中"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "top",
+        "dummies": [
+          "otp",
+          "tpo",
+          "tap"
+        ]
+      }
+    ],
+    "note": "top：てっぺん。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_middle",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "物事の部分",
+    "english": "middle",
+    "japanese": "真ん中",
+    "english_dummies": [
+      "part",
+      "piece",
+      "top"
+    ],
+    "japanese_dummies": [
+      "部分",
+      "かけら",
+      "てっぺん"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mid",
+        "dummies": [
+          "imd",
+          "mdi",
+          "med"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "dle",
+        "dummies": [
+          "lde",
+          "del",
+          "dre"
+        ]
+      }
+    ],
+    "note": "middle：真ん中。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_alone",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な表現",
+    "english": "alone",
+    "japanese": "ひとりで",
+    "english_dummies": [
+      "abroad",
+      "forever",
+      "early"
+    ],
+    "japanese_dummies": [
+      "外国で",
+      "永遠に",
+      "早く"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "alo",
+        "dummies": [
+          "lao",
+          "aol",
+          "aro"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ne",
+        "dummies": [
+          "en",
+          "ni",
+          "me"
+        ]
+      }
+    ],
+    "note": "alone：ひとりで。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_abroad",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な表現",
+    "english": "abroad",
+    "japanese": "外国で",
+    "english_dummies": [
+      "alone",
+      "forever",
+      "early"
+    ],
+    "japanese_dummies": [
+      "ひとりで",
+      "永遠に",
+      "早く"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "abr",
+        "dummies": [
+          "bar",
+          "arb",
+          "abl"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "oad",
+        "dummies": [
+          "aod",
+          "oda",
+          "oud"
+        ]
+      }
+    ],
+    "note": "abroad：外国で。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_forever",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な表現",
+    "english": "forever",
+    "japanese": "永遠に",
+    "english_dummies": [
+      "alone",
+      "abroad",
+      "early"
+    ],
+    "japanese_dummies": [
+      "ひとりで",
+      "外国で",
+      "早く"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "for",
+        "dummies": [
+          "ofr",
+          "fro",
+          "fol"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ever",
+        "dummies": [
+          "veer",
+          "eevr",
+          "evre"
+        ]
+      }
+    ],
+    "note": "forever：永遠に。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_early",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "身近な表現",
+    "english": "early",
+    "japanese": "早く",
+    "english_dummies": [
+      "alone",
+      "abroad",
+      "forever"
+    ],
+    "japanese_dummies": [
+      "ひとりで",
+      "外国で",
+      "永遠に"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ear",
+        "dummies": [
+          "aer",
+          "era",
+          "eal"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ly",
+        "dummies": [
+          "yl",
+          "ry",
+          "la"
+        ]
+      }
+    ],
+    "note": "early：早く。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_solar",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "環境と技術",
+    "english": "solar",
+    "japanese": "太陽の",
+    "english_dummies": [
+      "nuclear",
+      "renewable",
+      "waterproof"
+    ],
+    "japanese_dummies": [
+      "原子力の",
+      "再生可能な",
+      "防水の"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sol",
+        "dummies": [
+          "osl",
+          "slo",
+          "sor"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ar",
+        "dummies": [
+          "ra",
+          "al",
+          "ur"
+        ]
+      }
+    ],
+    "note": "solar：太陽の。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_nuclear",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "環境と技術",
+    "english": "nuclear",
+    "japanese": "原子力の",
+    "english_dummies": [
+      "solar",
+      "renewable",
+      "waterproof"
+    ],
+    "japanese_dummies": [
+      "太陽の",
+      "再生可能な",
+      "防水の"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "nuc",
+        "dummies": [
+          "unc",
+          "ncu",
+          "nac"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lear",
+        "dummies": [
+          "elar",
+          "laer",
+          "lera"
+        ]
+      }
+    ],
+    "note": "nuclear：原子力の。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_renewable",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "環境と技術",
+    "english": "renewable",
+    "japanese": "再生可能な",
+    "english_dummies": [
+      "solar",
+      "nuclear",
+      "waterproof"
+    ],
+    "japanese_dummies": [
+      "太陽の",
+      "原子力の",
+      "防水の"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ren",
+        "dummies": [
+          "ern",
+          "rne",
+          "len"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ewa",
+        "dummies": [
+          "wea",
+          "eaw",
+          "iwa"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ble",
+        "dummies": [
+          "lbe",
+          "bel",
+          "bre"
+        ]
+      }
+    ],
+    "note": "renewable：再生可能な。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_waterproof",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "環境と技術",
+    "english": "waterproof",
+    "japanese": "防水の",
+    "english_dummies": [
+      "solar",
+      "nuclear",
+      "renewable"
+    ],
+    "japanese_dummies": [
+      "太陽の",
+      "原子力の",
+      "再生可能な"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "wat",
+        "dummies": [
+          "awt",
+          "wta",
+          "wut"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "erp",
+        "dummies": [
+          "rep",
+          "epr",
+          "elp"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "roof",
+        "dummies": [
+          "orof",
+          "rofo",
+          "loof"
+        ]
+      }
+    ],
+    "note": "waterproof：防水の。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_media",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と情報",
+    "english": "media",
+    "japanese": "情報を伝える媒体",
+    "english_dummies": [
+      "network",
+      "system",
+      "committee"
+    ],
+    "japanese_dummies": [
+      "情報や人のつながりの網",
+      "仕組み",
+      "委員会"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "med",
+        "dummies": [
+          "emd",
+          "mde",
+          "mid"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ia",
+        "dummies": [
+          "ai",
+          "ea",
+          "iu"
+        ]
+      }
+    ],
+    "note": "media：情報を伝える媒体。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_network",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と情報",
+    "english": "network",
+    "japanese": "情報や人のつながりの網",
+    "english_dummies": [
+      "media",
+      "system",
+      "committee"
+    ],
+    "japanese_dummies": [
+      "情報を伝える媒体",
+      "仕組み",
+      "委員会"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "net",
+        "dummies": [
+          "ent",
+          "nte",
+          "nit"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "work",
+        "dummies": [
+          "owrk",
+          "wrok",
+          "wokr"
+        ]
+      }
+    ],
+    "note": "network：情報や人のつながりの網。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_system",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と情報",
+    "english": "system",
+    "japanese": "仕組み",
+    "english_dummies": [
+      "media",
+      "network",
+      "committee"
+    ],
+    "japanese_dummies": [
+      "情報を伝える媒体",
+      "情報や人のつながりの網",
+      "委員会"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sys",
+        "dummies": [
+          "yss",
+          "ssy",
+          "cys"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tem",
+        "dummies": [
+          "etm",
+          "tme",
+          "tim"
+        ]
+      }
+    ],
+    "note": "system：仕組み。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_committee",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と情報",
+    "english": "committee",
+    "japanese": "委員会",
+    "english_dummies": [
+      "media",
+      "network",
+      "system"
+    ],
+    "japanese_dummies": [
+      "情報を伝える媒体",
+      "情報や人のつながりの網",
+      "仕組み"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "com",
+        "dummies": [
+          "ocm",
+          "cmo",
+          "cam"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mit",
+        "dummies": [
+          "imt",
+          "mti",
+          "met"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tee",
+        "dummies": [
+          "ete",
+          "tie",
+          "dee"
+        ]
+      }
+    ],
+    "note": "committee：委員会。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_calculate",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "行動を表す動詞",
+    "english": "calculate",
+    "japanese": "計算する",
+    "english_dummies": [
+      "gather",
+      "pollute",
+      "respond"
+    ],
+    "japanese_dummies": [
+      "集まる",
+      "汚染する",
+      "返答する"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cal",
+        "dummies": [
+          "acl",
+          "cla",
+          "car"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "cul",
+        "dummies": [
+          "ucl",
+          "clu",
+          "cur"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ate",
+        "dummies": [
+          "tae",
+          "aet",
+          "ati"
+        ]
+      }
+    ],
+    "note": "calculate：計算する。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_gather",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "行動を表す動詞",
+    "english": "gather",
+    "japanese": "集まる",
+    "english_dummies": [
+      "calculate",
+      "pollute",
+      "respond"
+    ],
+    "japanese_dummies": [
+      "計算する",
+      "汚染する",
+      "返答する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "gat",
+        "dummies": [
+          "agt",
+          "gta",
+          "gut"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "her",
+        "dummies": [
+          "ehr",
+          "hre",
+          "hel"
+        ]
+      }
+    ],
+    "note": "gather：集まる。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_pollute",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "行動を表す動詞",
+    "english": "pollute",
+    "japanese": "汚染する",
+    "english_dummies": [
+      "calculate",
+      "gather",
+      "respond"
+    ],
+    "japanese_dummies": [
+      "計算する",
+      "集まる",
+      "返答する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pol",
+        "dummies": [
+          "opl",
+          "plo",
+          "por"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lute",
+        "dummies": [
+          "ulte",
+          "ltue",
+          "luet"
+        ]
+      }
+    ],
+    "note": "pollute：汚染する。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_respond",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "行動を表す動詞",
+    "english": "respond",
+    "japanese": "返答する",
+    "english_dummies": [
+      "calculate",
+      "gather",
+      "pollute"
+    ],
+    "japanese_dummies": [
+      "計算する",
+      "集まる",
+      "汚染する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "res",
+        "dummies": [
+          "ers",
+          "rse",
+          "les"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "pond",
+        "dummies": [
+          "opnd",
+          "pnod",
+          "podn"
+        ]
+      }
+    ],
+    "note": "respond：返答する。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_development",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と活動",
+    "english": "development",
+    "japanese": "開発",
+    "english_dummies": [
+      "production",
+      "movement",
+      "supply"
+    ],
+    "japanese_dummies": [
+      "生産",
+      "社会的な運動",
+      "供給"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dev",
+        "dummies": [
+          "edv",
+          "dve",
+          "div"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "elo",
+        "dummies": [
+          "leo",
+          "eol",
+          "ero"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "pme",
+        "dummies": [
+          "mpe",
+          "pem",
+          "pmi"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "nt",
+        "dummies": [
+          "tn",
+          "nd",
+          "mt"
+        ]
+      }
+    ],
+    "note": "development：開発。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_production",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と活動",
+    "english": "production",
+    "japanese": "生産",
+    "english_dummies": [
+      "development",
+      "movement",
+      "supply"
+    ],
+    "japanese_dummies": [
+      "開発",
+      "社会的な運動",
+      "供給"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pro",
+        "dummies": [
+          "rpo",
+          "por",
+          "plo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "duc",
+        "dummies": [
+          "udc",
+          "dcu",
+          "dac"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tion",
+        "dummies": [
+          "iton",
+          "toin",
+          "tino"
+        ]
+      }
+    ],
+    "note": "production：生産。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_movement",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と活動",
+    "english": "movement",
+    "japanese": "社会的な運動",
+    "english_dummies": [
+      "development",
+      "production",
+      "supply"
+    ],
+    "japanese_dummies": [
+      "開発",
+      "生産",
+      "供給"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mov",
+        "dummies": [
+          "omv",
+          "mvo",
+          "mav"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "eme",
+        "dummies": [
+          "mee",
+          "eem",
+          "ime"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "nt",
+        "dummies": [
+          "tn",
+          "nd",
+          "mt"
+        ]
+      }
+    ],
+    "note": "movement：社会的な運動。ここでは人々の取り組みを表す意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_tb_word_supply",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "社会と活動",
+    "english": "supply",
+    "japanese": "供給",
+    "english_dummies": [
+      "development",
+      "production",
+      "movement"
+    ],
+    "japanese_dummies": [
+      "開発",
+      "生産",
+      "社会的な運動"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sup",
+        "dummies": [
+          "usp",
+          "spu",
+          "sap"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ply",
+        "dummies": [
+          "lpy",
+          "pyl",
+          "pry"
+        ]
+      }
+    ],
+    "note": "supply：供給。この問題ではこの意味を確認する。",
+    "content_batch": "english-textbook-basics-1"
   }
 ]

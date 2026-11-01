@@ -56,9 +56,9 @@
   ],
   "reviewLedger": {
     "path": "textbook-data/one-world-reviewed.json",
-    "sha256": "57c724161be8b4a868959da86b52fb8e8cda9aece7d205cfe0203d9a0876e916",
-    "approved": 314,
-    "held": 10
+    "sha256": "0b89bffb458f23b3feb490dd7a0012060047b9756cde47067495a7c8b5d6a785",
+    "approved": 334,
+    "held": 14
   },
   "books": [
     {
@@ -287,6 +287,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_apron",
+              "page": 12,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 133,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "bb1f6eed1108067aa0c5e4f411c19b5391d98ab0e7d8428316b2d7368ff04e31"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_box",
               "page": 13,
               "evidence": {
@@ -405,6 +416,17 @@
                 "row": 1149,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "52364d87653a2607738a39db8f9fda3b948a3256bad83b19299ebd63bc9811e3"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_ink",
+              "page": 12,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1196,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "6fccac71e3fc42d7d4495a43143de1fb94352cce9187dc469748694818ea11c6"
               }
             },
             {
@@ -585,7 +607,7 @@
             }
           ],
           "listedEntries": 33,
-          "unresolvedEntries": 5
+          "unresolvedEntries": 3
         },
         {
           "id": "ow1-springboard-5",
@@ -662,6 +684,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_kid",
+              "page": 15,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1287,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "1e0fb7bad2b35deb01c470306458acba02ce5d080dfb8df904ff671acc164732"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_leg",
               "page": 15,
               "evidence": {
@@ -681,6 +714,17 @@
                 "row": 1446,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "401cafbae2d04b3ca791a9c495d2987754bf12a292a09ef239681cc0acf54ef2"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_pen",
+              "page": 15,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1759,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "f97642d4309f103c5f057ee00c3d792215963a61ec3075b2ec9dad2fc9f543c8"
               }
             },
             {
@@ -740,7 +784,7 @@
             }
           ],
           "listedEntries": 21,
-          "unresolvedEntries": 8
+          "unresolvedEntries": 6
         },
         {
           "id": "ow1-springboard-6",
@@ -792,6 +836,28 @@
                 "row": 189,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "5a2e5e4b12a42eb01500701dba9ceec80156e6a7516a2e6a39faf74d30eab4fc"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_birthday",
+              "page": 17,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 276,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "bfe2f4a9525f5ae8fbae167658a93d9fdf89193a7d665e2e68b57cc6dae6f6e9"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_calligraphy",
+              "page": 17,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 363,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "a7962cf3ef77b1b7b8d04fc485114183b10039747191a7a174e298f5a4d02f84"
               }
             },
             {
@@ -1236,7 +1302,7 @@
             }
           ],
           "listedEntries": 86,
-          "unresolvedEntries": 42
+          "unresolvedEntries": 40
         },
         {
           "id": "ow1-712f1d4f",
@@ -1753,6 +1819,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_trumpet",
+              "page": 23,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2536,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "67721548b5fb657092cfb37de5fd5df43c31842b303b5e80d905fdf56945166b"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_very",
               "page": 24,
               "evidence": {
@@ -1761,6 +1838,17 @@
                 "row": 2614,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "6e69dd98fabaa2509ba8a934b5e3a5d18fcaa81ecbcfe69c223148d78713a870"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_video",
+              "page": 28,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2620,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "b316ac066a8efd687edfb6a10b1e041c55cfaeaa982c13b468d386afcc7d25c5"
               }
             },
             {
@@ -1787,7 +1875,7 @@
             }
           ],
           "listedEntries": 116,
-          "unresolvedEntries": 68
+          "unresolvedEntries": 66
         },
         {
           "id": "ow1-lesson-2",
@@ -1797,6 +1885,39 @@
           "source": "ow-plan1.xlsx",
           "row": 22,
           "items": [
+            {
+              "sourceId": "jr_en_tb_word_action",
+              "page": 40,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 41,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "106dc995c9ed10a459edb3a439169827f94539b8d760f2d5c0ead4a11b605ae7"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_air",
+              "page": 42,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 73,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "a012d55156a458921c81902f5acc3047d16dc966d7f1150aa1f382143de697f7"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_animal",
+              "page": 40,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 111,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "76ec6b1487e7abe0c51d1c07dca4dba17eb456ba021cc24fba1f4e2a547d37b5"
+              }
+            },
             {
               "sourceId": "jr_en_ext_word_aquarium",
               "page": 33,
@@ -1875,6 +1996,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_chess",
+              "page": 38,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 427,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "bd82298bdb6d91f869b4bdd90f0d9f2430d2c07ef49234762f3b35cbaa728ba3"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_child",
               "page": 42,
               "evidence": {
@@ -1919,6 +2051,28 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_curry",
+              "page": 36,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 564,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "979d721bde0562115c0b5dee457e73f8b33607faca0e7ab5aa4f6d7fd91b1195"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_cute",
+              "page": 43,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 570,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "f161f8a1da3d9709b6a119b5218bb43561ca7d1adeaef280a41a78108900ce59"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_desk",
               "page": 44,
               "evidence": {
@@ -1960,6 +2114,17 @@
                 "row": 820,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "1fa75d1bc232da51b7f5ac249ec9e413b1521edc0315a1380b36fceb325cb5fb"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_food",
+              "page": 36,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 873,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "8728df0e51d90b35152829776603f158a1c1f4e35370a5756ad3ca2c421131b0"
               }
             },
             {
@@ -2128,6 +2293,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_movie",
+              "page": 40,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1550,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "d626ecafe6c45ab66be2a9996e00fd3f6c0b976eeb57cf04eb1474763428e094"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_musician",
               "page": 38,
               "evidence": {
@@ -2180,6 +2356,17 @@
                 "row": 1764,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "cc96c7294c1e1d354eab6299646c515de5f637c45801f5360981f6c65d5aa467"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_player",
+              "page": 35,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1816,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "36e52f2d91a3dcd097d0f1096783712e5b76259f244a14affe0c7e4183b84253"
               }
             },
             {
@@ -2437,7 +2624,7 @@
             }
           ],
           "listedEntries": 101,
-          "unresolvedEntries": 43
+          "unresolvedEntries": 34
         },
         {
           "id": "ow1-activities-plus-1",
@@ -2469,6 +2656,17 @@
           "source": "ow-plan1.xlsx",
           "row": 29,
           "items": [
+            {
+              "sourceId": "jr_en_tb_word_activity",
+              "page": 47,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 43,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "e1ba21d79b75b58e76a315a4c41a261565b4ed48b4a22a7189cab15b08838bf4"
+              }
+            },
             {
               "sourceId": "jr_en_ext_word_after",
               "page": 48,
@@ -2511,6 +2709,17 @@
                 "row": 166,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "d915aeb4170aa6c8528640ed20e8de36048fc3911e6d997a6f74f05501e825fb"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_bad",
+              "page": 52,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 197,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "1290c20bc70533ef03d6f7e71d473be0e0ce8861710aafa5ba4490f90776e704"
               }
             },
             {
@@ -2613,6 +2822,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_grandparent",
+              "page": 49,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1005,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "773d8ef15496b86f319dcac558938e68672825ae65381fb94c7619912f0f8a41"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_happy",
               "page": 51,
               "evidence": {
@@ -2621,6 +2841,17 @@
                 "row": 1048,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "762016f83534883b5dd09ac403ac0bf47b4c07c933d1a486b8b023522212e432"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_home",
+              "page": 56,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1115,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "4b6dbc54c42a8e0b045480ec6688369c9a757cbb430085c78f354f0eb525e136"
               }
             },
             {
@@ -2643,6 +2874,17 @@
                 "row": 1366,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "67f2d02b40160a6bb2aa97a6e3ac8963fea806362bbdbf839b02ef925111c641"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_life",
+              "page": 50,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1367,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "75c73d9ca035acb29b68e23c7494880c88c71c5d593a51f691630cab9ae2db00"
               }
             },
             {
@@ -2742,6 +2984,17 @@
                 "row": 2043,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "dc6e2aafeb9e125b69d1b143f05c66414e6e1a4f46c163a52a6d289efeef27c7"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_sleepy",
+              "page": 51,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2176,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "db52a1c6ac6fd4e2bc67dfee5158df78d25f092acd04a326725dcb55d5eec3ea"
               }
             },
             {
@@ -2878,7 +3131,7 @@
             }
           ],
           "listedEntries": 81,
-          "unresolvedEntries": 44
+          "unresolvedEntries": 38
         },
         {
           "id": "ow1-tips-for-writing-1",
@@ -3018,6 +3271,17 @@
                 "row": 857,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "b75e5fa1f5e4c1924242067d53848526dc709ebb07de881596e44ce0dd34a19c"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_funny",
+              "page": 60,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 935,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "4590746f594ca63c929489a7f0f9b63cbbce586f0d55fcebe3cbb48a94b28f31"
               }
             },
             {
@@ -3198,7 +3462,7 @@
             }
           ],
           "listedEntries": 48,
-          "unresolvedEntries": 21
+          "unresolvedEntries": 20
         },
         {
           "id": "ow1-project-1",
@@ -3385,6 +3649,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_prize",
+              "page": 80,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1869,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "94c3718c1e51338601a7cf3c3a6abc582b1035929104ed5b3279a61a07a76142"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_recess",
               "page": 78,
               "evidence": {
@@ -3474,7 +3749,7 @@
             }
           ],
           "listedEntries": 57,
-          "unresolvedEntries": 37
+          "unresolvedEntries": 36
         },
         {
           "id": "ow1-tips-for-listening-1",
@@ -3518,6 +3793,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_dad",
+              "page": 92,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 573,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "51089130533f1ee5ff13d6e93a267a19b5d31b6e44c2a47f0df357015462084d"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_dessert",
               "page": 88,
               "evidence": {
@@ -3540,6 +3826,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_early",
+              "page": 89,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 687,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "4b680ae793c4ec04697f710685d1b72e81b4f1d5428e7a07c5e642fcbc65859f"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_fact",
               "page": 93,
               "evidence": {
@@ -3559,6 +3856,17 @@
                 "row": 794,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "d80fe14429581e013b35636a3e949897cbded00033a280a768371f374db52709"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_full",
+              "page": 90,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 931,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "eb59c550f54f2e03f306960e5db38ba678a7a4bd64558a5255634f8da2a98f57"
               }
             },
             {
@@ -3636,6 +3944,17 @@
                 "row": 1512,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "f371e2db6d9112b31b87a14355d566033c2a0a4d50be9fa1d8fae45a86a8d449"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_mom",
+              "page": 92,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1524,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "4a951d5a64c956e8d79fe3532a1752abc0e9df343d72e627753c75d03df703a7"
               }
             },
             {
@@ -3727,6 +4046,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_story",
+              "page": 94,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2301,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "1040be9a1c77c58cbb9958d47d627e8c15c7751fef0adb24360850736ae41093"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_theirs",
               "page": 95,
               "evidence": {
@@ -3794,7 +4124,7 @@
             }
           ],
           "listedEntries": 70,
-          "unresolvedEntries": 43
+          "unresolvedEntries": 38
         },
         {
           "id": "ow1-tips-for-reading-1",
@@ -3894,6 +4224,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_area",
+              "page": 102,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 136,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "2fec9677bbfcf9ab92e671c7d30d5ea2292d833f046a9ba822c969b0f69d2c74"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_ask",
               "page": 104,
               "evidence": {
@@ -3924,6 +4265,39 @@
                 "row": 384,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "4efe4f4920bb768c71cac9a17cde76debae2f286a6f961a34617a59c35d83eb6"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_clothes",
+              "page": 100,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 467,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "3a28422f1f71d7f5d30038e3ec6d31a3069baf91d1371ea3fc34bf22fe56cec3"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_committee",
+              "page": 105,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 495,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "22f8d4d84c2618c8712302bd14856f1ffd4bd9e0b51b37100066e4b8b0b6561b"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_communication",
+              "page": 104,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 498,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "69af22a0f4a20536196767d3bf0e418cc75b1cd454d709438a001b7fb4f3f615"
               }
             },
             {
@@ -4048,6 +4422,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_idea",
+              "page": 100,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1153,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "8bfd188b5b0579f755a1597d0325740c2567f5346b77b2ad18853b9d8c04bfa8"
+              }
+            },
+            {
               "sourceId": "jr_en2_002",
               "page": 104,
               "evidence": {
@@ -4122,6 +4507,28 @@
                 "row": 1763,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "675a848453635cb7a860bd80f9c8d6c66f83a3b1abf8495d57e5ae312d8e7ed6"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_phone",
+              "page": 104,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1781,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "5154b7cf78edfe9c3375efd68245372da3349baf90ccb46c760aec79ac6002b4"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_place",
+              "page": 100,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1806,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "828d4cec1f3c370d76b912ed6787626802f9c4839812798912fefe46eb79ab7d"
               }
             },
             {
@@ -4291,7 +4698,7 @@
             }
           ],
           "listedEntries": 89,
-          "unresolvedEntries": 52
+          "unresolvedEntries": 45
         },
         {
           "id": "ow1-activities-plus-3",
@@ -4343,6 +4750,17 @@
                 "row": 57,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "7ca02af074ab3c2a4a13a9e73c2922ff56ee47f9dca1c49162886db4ffe438b0"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_alone",
+              "page": 113,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 89,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "8997bec52da56e26037fb9a7388dbc41b31c0da41349d78a04e26f5026423514"
               }
             },
             {
@@ -4479,7 +4897,7 @@
             }
           ],
           "listedEntries": 37,
-          "unresolvedEntries": 24
+          "unresolvedEntries": 23
         },
         {
           "id": "ow1-tips-for-reading-3",
@@ -4564,6 +4982,17 @@
                 "row": 626,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "eb1f0251178a2d09283213125ebb1ba8a86a2e5f6d3576dcac3a22e7c1307386"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_dream",
+              "page": 124,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 664,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "1544852c3a627c78ba7fddd5076db915d26925e4962a5dcc00edc94d40ae8ddb"
               }
             },
             {
@@ -4666,6 +5095,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_sunlight",
+              "page": 122,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2333,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "749528de0125f73a52ee5d52afaaacd314aff757067615f87c0ebbb07359a2ef"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_tower",
               "page": 124,
               "evidence": {
@@ -4711,7 +5151,7 @@
             }
           ],
           "listedEntries": 60,
-          "unresolvedEntries": 41
+          "unresolvedEntries": 39
         },
         {
           "id": "ow1-sing-along-2",
@@ -4796,6 +5236,28 @@
                 "row": 518,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "cbf762267cfb951ea834686812799b2ef3400303b0dbbe2e6afe794d5368338f"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_development",
+              "page": 130,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 612,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "437a172d7b13dbda65d23486ad1646d2050b4b50c99f494bffedd3df12bcbb66"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_difference",
+              "page": 135,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 623,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "25a3b903f2528df8192333d3fe378b896a773b1eb3467b08c11ebbab9510aa97"
               }
             },
             {
@@ -4906,6 +5368,17 @@
                 "row": 1664,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "181e6f6c57c6c2032dfe45aeeb40280119e0de00e5e9fb9a948550bb2cbcd5d2"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_production",
+              "page": 135,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1874,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "bef34327f303da2bb653f6ce114d21bab608e5729bf3f64d527ec6ceaeeef375"
               }
             },
             {
@@ -5053,7 +5526,7 @@
             }
           ],
           "listedEntries": 65,
-          "unresolvedEntries": 38
+          "unresolvedEntries": 35
         },
         {
           "id": "ow1-1c9cce4e",
@@ -5383,10 +5856,21 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "f3fbede620823047a130eb399d11ceb90c7fbe55e7355cf6575a72c261f48174"
               }
+            },
+            {
+              "sourceId": "jr_en_tb_word_woman",
+              "page": 144,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2727,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "6a7ffd13b8ffd8d65c191997b7341efd732b82ae6fd6288e12a39ea2378e9ac7"
+              }
             }
           ],
           "listedEntries": 31,
-          "unresolvedEntries": 18
+          "unresolvedEntries": 17
         },
         {
           "id": "ow1-further-reading",
@@ -5909,6 +6393,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_man",
+              "page": 17,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1437,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "b288b2075f557b069ec386017e2117d23846b6919879e46984cb669690eeeaa1"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_news",
               "page": 13,
               "evidence": {
@@ -5987,7 +6482,7 @@
             }
           ],
           "listedEntries": 55,
-          "unresolvedEntries": 37
+          "unresolvedEntries": 36
         },
         {
           "id": "ow2-activities-plus-1",
@@ -6208,6 +6703,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_illustration",
+              "page": 26,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1157,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "f5842681529afd988fc8041bae052d89a9dd57166d943d47f70240eabb07c933"
+              }
+            },
+            {
               "sourceId": "jr_en_core_phrase_in_the_future",
               "page": 26,
               "evidence": {
@@ -6227,6 +6733,28 @@
                 "row": 1363,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "839b10c766277b0984dad2cb3aa3fe96146aa33cab5996c3905c379551918996"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_nuclear",
+              "page": 29,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1640,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "227d9b4d72f109782f20db0925652d4760c04851cbfb1fa862fe7eb9bf0a735f"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_pollute",
+              "page": 28,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1830,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "09aff0bb98c708a881c6f835ad2abce09078510e958034518dfadc58ba12b87d"
               }
             },
             {
@@ -6252,6 +6780,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_renewable",
+              "page": 28,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1946,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "4b613f180e90ec7ebeeec4a9eef70d3465d638617250b2996271a0104dd0fec2"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_research",
               "page": 24,
               "evidence": {
@@ -6260,6 +6799,17 @@
                 "row": 1958,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "f8a3a6e3213fe93081d40d4f6b7e442823c326acd8761dead3312a6e38a6e6d6"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_solar",
+              "page": 29,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2200,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "2e789d9e7e45cf25654dd5cd0c3f4b9c35dfe836d1b6afca3451b69f55a1745f"
               }
             },
             {
@@ -6308,7 +6858,7 @@
             }
           ],
           "listedEntries": 66,
-          "unresolvedEntries": 42
+          "unresolvedEntries": 37
         },
         {
           "id": "ow2-tips-for-listening-1",
@@ -6462,6 +7012,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_smart",
+              "page": 34,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2181,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "fc52ce9cd2afcc05836b4188942de1f2e51c7a1886e0a620a3f340ed602a7528"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_solve",
               "page": 36,
               "evidence": {
@@ -6496,7 +7057,7 @@
             }
           ],
           "listedEntries": 47,
-          "unresolvedEntries": 32
+          "unresolvedEntries": 31
         },
         {
           "id": "ow2-activities-plus-2",
@@ -6651,6 +7212,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_height",
+              "page": 48,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1079,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "973fbf0812a8f622d6a331837a46bcde0d82be56fc799ac5305b80dd856f47ad"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_hour",
               "page": 47,
               "evidence": {
@@ -6739,6 +7311,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_waterproof",
+              "page": 47,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2657,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "fc44271f4b0db2710ca314148d8a94b7b3525d5615b0dc81e92c8aa01dbbd77d"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_white",
               "page": 49,
               "evidence": {
@@ -6751,7 +7334,7 @@
             }
           ],
           "listedEntries": 39,
-          "unresolvedEntries": 24
+          "unresolvedEntries": 22
         },
         {
           "id": "ow2-lesson-4",
@@ -6761,6 +7344,17 @@
           "source": "ow-plan2.xlsx",
           "row": 40,
           "items": [
+            {
+              "sourceId": "jr_en_tb_word_abroad",
+              "page": 53,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 31,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "8f06feee5b765bc8ed8cc766e2aa18800a8d8770e5614cf9116a5155acfcef23"
+              }
+            },
             {
               "sourceId": "jr_en_ext_word_beef",
               "page": 56,
@@ -6795,6 +7389,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_chance",
+              "page": 52,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 415,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "77c553a317ba53179324561b40706c8d4c3f03cd074c21b7a58221bb1cf91201"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_dangerous",
               "page": 59,
               "evidence": {
@@ -6814,6 +7419,17 @@
                 "row": 782,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "d8bcecf371011e0eb97b2c5f6a421b7833607f1075840166ca1ac907fcdf6ccc"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_health",
+              "page": 55,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1067,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "aa18b6dcd893d426bab738da1343f4a9b81b2f9f472d2b9349172569ff97a9e6"
               }
             },
             {
@@ -6906,7 +7522,7 @@
             }
           ],
           "listedEntries": 38,
-          "unresolvedEntries": 25
+          "unresolvedEntries": 22
         },
         {
           "id": "ow2-tips-for-speaking-2",
@@ -7027,6 +7643,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_part",
+              "page": 62,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1738,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "1bb5512d7923a6f19ea6400063de3bce42594f066cd3fb3ce328d543f32103a3"
+              }
+            },
+            {
               "sourceId": "jr_en_ext_word_pumpkin",
               "page": 62,
               "evidence": {
@@ -7046,6 +7673,17 @@
                 "row": 1944,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "75dc2f0d14226707fa5d754fbfd35b2c95b1d2542662246d3a9e43ace911bef3"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_scary",
+              "page": 64,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2040,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "55503c319a905bef5f2a2ada4d1c8553da0172ab249d5017ab9553fa5543fce2"
               }
             },
             {
@@ -7080,10 +7718,21 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "ad2a0cbc5af8df8e98ddc242515271b0549a98feb7aac47f8d1d29e871a792f7"
               }
+            },
+            {
+              "sourceId": "jr_en_tb_word_top",
+              "page": 62,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2506,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "41997a1d2a38dcca2246a27576aea49ee21ec751f77435a56f42d824b04d323c"
+              }
             }
           ],
           "listedEntries": 49,
-          "unresolvedEntries": 35
+          "unresolvedEntries": 32
         },
         {
           "id": "ow2-activities-plus-3",
@@ -7160,6 +7809,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_money",
+              "page": 77,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1528,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "90d5e37ab1e7632029196ec594aa6b4d3f1cc6c88da88eca1936573e5769f5ab"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_mountain",
               "page": 75,
               "evidence": {
@@ -7205,7 +7865,7 @@
             }
           ],
           "listedEntries": 50,
-          "unresolvedEntries": 43
+          "unresolvedEntries": 42
         },
         {
           "id": "ow2-a346ae84",
@@ -7371,6 +8031,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_event",
+              "page": 88,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 755,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "d5b1b9c03cd767fabde732b661d7491d8ac12f278d14b8d77485ad7d3b0b3ef1"
+              }
+            },
+            {
               "sourceId": "jr_en_ext_word_experiment",
               "page": 91,
               "evidence": {
@@ -7415,6 +8086,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_middle",
+              "page": 86,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1502,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "e0b386f5d491108bbed52e2d7fa4741c0a26b81eda3173d00ed9820c40924056"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_natural",
               "page": 90,
               "evidence": {
@@ -7434,6 +8116,17 @@
                 "row": 1678,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "8172bdfe91de13f1cb550df95634cc72ddbaf44722dd4527bb40532802631da3"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_pianist",
+              "page": 87,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1786,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "7e39022f778a12ceab59f74e863369baf6ab876f3d409d02241b749747bd4f14"
               }
             },
             {
@@ -7493,7 +8186,7 @@
             }
           ],
           "listedEntries": 61,
-          "unresolvedEntries": 45
+          "unresolvedEntries": 42
         },
         {
           "id": "ow2-activities-plus-4",
@@ -7545,6 +8238,17 @@
                 "row": 66,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "b106ba5d3a1b69326f999c085b704ab3ce70c9d938663d8f655a1b0099b4ddb9"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_animation",
+              "page": 104,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 114,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "9f0b34a7dab77508468e800bed82250bff8e9123cbc79c59063e1699e07124df"
               }
             },
             {
@@ -7625,6 +8329,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_media",
+              "page": 104,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1477,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "4b0f7e5a0c3254d767122fbb401c04eef1d17c1ddd33a2e3423488ca77de684c"
+              }
+            },
+            {
               "sourceId": "jr_en_ext_word_medical",
               "page": 101,
               "evidence": {
@@ -7681,7 +8396,7 @@
             }
           ],
           "listedEntries": 74,
-          "unresolvedEntries": 61
+          "unresolvedEntries": 59
         },
         {
           "id": "ow2-useful-expressions-2",
@@ -7725,6 +8440,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_size",
+              "page": 106,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2164,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "e47d784804d2bf6008cbd4ff50b88d7022b27fbc44ed770fa1e068d03348090e"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_skirt",
               "page": 106,
               "evidence": {
@@ -7737,7 +8463,7 @@
             }
           ],
           "listedEntries": 7,
-          "unresolvedEntries": 3
+          "unresolvedEntries": 2
         },
         {
           "id": "ow2-lesson-8",
@@ -7770,6 +8496,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_cage",
+              "page": 112,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 355,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "bf47d0c761d1bbc0975b7119cf46b755a5aaf38c3070fcaa88476c8bfb5fe634"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_car",
               "page": 115,
               "evidence": {
@@ -7789,6 +8526,17 @@
                 "row": 889,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "eccef7997d4b0d84450bb36c54cc6bb84131f45414ac3aecc1975a622dab0c57"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_gather",
+              "page": 113,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 943,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "0dda5f506e8395a6c41f86043711ab7496ed402fc16ee5eb00f3ce4f7be07b0e"
               }
             },
             {
@@ -7869,6 +8617,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_vacation",
+              "page": 111,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2602,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "39973c291393ef3232dd7131a2a04cfe2682cafed51f1d8229e211c748a307e4"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_win",
               "page": 111,
               "evidence": {
@@ -7892,7 +8651,7 @@
             }
           ],
           "listedEntries": 39,
-          "unresolvedEntries": 26
+          "unresolvedEntries": 23
         },
         {
           "id": "ow2-tips-for-reading-3",
@@ -8168,6 +8927,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_delight",
+              "page": 136,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 599,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "9a5163353e4b72555c0c1b44992d01bae2677aa7440e9ecbb579f1931105ffd0"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_discuss",
               "page": 135,
               "evidence": {
@@ -8290,7 +9060,7 @@
             }
           ],
           "listedEntries": 60,
-          "unresolvedEntries": 45
+          "unresolvedEntries": 44
         },
         {
           "id": "ow2-further-reading",
@@ -8345,6 +9115,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_cafeteria",
+              "page": 139,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 354,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "d7ece8f3c4e936e57f9d0d7fe8c85cbcfa76245e81d164c00d350f74992f37b1"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_candy",
               "page": 138,
               "evidence": {
@@ -8378,6 +9159,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_daughter",
+              "page": 139,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 583,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "e1d23da6bd6af9694c40926bf536f1835b052958f8013a4cb2e5a6c7b260fd5e"
+              }
+            },
+            {
               "sourceId": "jr_en_ext_word_factory",
               "page": 137,
               "evidence": {
@@ -8408,6 +9200,28 @@
                 "row": 885,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "25e40ba12072b0c7518390a4c8f15138c7911b4463f4967184a9f0f44880d40c"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_harmonica",
+              "page": 139,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1051,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "e57d1ad458902d6884eaa42705ce15617e9de73735a16721727d176bcf3e456d"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_mailbox",
+              "page": 142,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1423,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "f96cf10126e5f93e2ca15aca24812dca45eafa402c60018706d8ad581403a1c2"
               }
             },
             {
@@ -8500,7 +9314,7 @@
             }
           ],
           "listedEntries": 83,
-          "unresolvedEntries": 65
+          "unresolvedEntries": 61
         }
       ]
     },
@@ -8559,6 +9373,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_diary",
+              "page": 9,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 616,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "1130700ce280eec8eec08ee99239f1525c027d5ac3f307387aebad224b756ceb"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_doll",
               "page": 8,
               "evidence": {
@@ -8593,7 +9418,7 @@
             }
           ],
           "listedEntries": 18,
-          "unresolvedEntries": 13
+          "unresolvedEntries": 12
         },
         {
           "id": "ow3-lesson-1",
@@ -8945,10 +9770,21 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "edc0df7b08f4559f882b9e8a29ed62766c2b4d24987e86c959da6224f696d47a"
               }
+            },
+            {
+              "sourceId": "jr_en_tb_word_wildlife",
+              "page": 28,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2713,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "d8296fdd25b66e5324d7fbaa7ba750ef343d0ee23a173d006a0c7796738bc894"
+              }
             }
           ],
           "listedEntries": 45,
-          "unresolvedEntries": 33
+          "unresolvedEntries": 32
         },
         {
           "id": "ow3-tips-for-listening-1",
@@ -9125,6 +9961,28 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_piece",
+              "page": 40,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1795,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "c942b317c9620da0256441470c248d4749a19ee0051b367e29c49543c2e53937"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_safety",
+              "page": 36,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2014,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "afb63a620bdcff15d8cd88695b46731cc2206e8c25b5b53793c6f2c0080d6ed5"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_space",
               "page": 35,
               "evidence": {
@@ -9159,7 +10017,7 @@
             }
           ],
           "listedEntries": 55,
-          "unresolvedEntries": 44
+          "unresolvedEntries": 42
         },
         {
           "id": "ow3-activities-plus-2",
@@ -9302,6 +10160,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_network",
+              "page": 49,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1594,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "ccea6a3319aaa624e8fecb6c569da2fd3dd6b6b06af38d0a19dcc05d130a4b5b"
+              }
+            },
+            {
               "sourceId": "jr_english_core_vocab_peace",
               "page": 50,
               "evidence": {
@@ -9310,6 +10179,17 @@
                 "row": 1753,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "82cee9739b2c84a9a3981d72a337a2d575985d6521c0b9e00417d6abc1bf2dd4"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_sadness",
+              "page": 52,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2012,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "da2d906eac98183216c789507a2aa079744c914aaba1abe90530150e768d0991"
               }
             },
             {
@@ -9346,6 +10226,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_supply",
+              "page": 49,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2338,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "d18eee7486221e27a0cfd32fb43045d9a145506c504652f7cdca1835fe6ca0df"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_wheat",
               "page": 51,
               "evidence": {
@@ -9358,7 +10249,7 @@
             }
           ],
           "listedEntries": 73,
-          "unresolvedEntries": 59
+          "unresolvedEntries": 56
         },
         {
           "id": "ow3-lesson-4",
@@ -9388,6 +10279,17 @@
                 "row": 507,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "a24f502c764c34cbdc9a4acb6846fbcdd0ec8df364db062d220796720cd37d24"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_cooperation",
+              "page": 56,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 530,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "9d35f540c7e6dd22d5cea3c8138deb31e9f2289048b15179fb6a947f6afd5bd5"
               }
             },
             {
@@ -9510,10 +10412,32 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "03da6d0b81f18ba7d9bb0aaa63878f119b7ccd916f3206a0c581fe2a26e4d943"
               }
+            },
+            {
+              "sourceId": "jr_en_tb_word_victory",
+              "page": 58,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2619,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "ebdc267cdae18eb5b5343f7399c906edb6309e580c9307df6b19b8619d31e5cf"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_voice",
+              "page": 58,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2632,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "693e132f27eb39e775935c3d48e7729d35f038dc01b353b7eae2912b29a23d2c"
+              }
             }
           ],
           "listedEntries": 46,
-          "unresolvedEntries": 33
+          "unresolvedEntries": 30
         },
         {
           "id": "ow3-tips-for-writing-1",
@@ -9723,6 +10647,28 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_hobby",
+              "page": 79,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1109,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "681804a18cf8497b795f2bacdc18563951576302c46ab40af9d451b768e24e42"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_housework",
+              "page": 80,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1134,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "d2d3a3cc12aa2c3b93c07e1affea267345f24f8e05d4492bead57978e79c041d"
+              }
+            },
+            {
               "sourceId": "jr_en_audit_word_marry",
               "page": 80,
               "evidence": {
@@ -9779,7 +10725,7 @@
             }
           ],
           "listedEntries": 37,
-          "unresolvedEntries": 27
+          "unresolvedEntries": 25
         },
         {
           "id": "ow3-tips-for-speaking-2",
@@ -9900,6 +10846,28 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_refrigerator",
+              "page": 98,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1935,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "f24011c239f14c2841a62e24adcdedb08a6f20921dd4f3f9449ae5ad21b8a265"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_respond",
+              "page": 98,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1962,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "6d22e1481235479d33506144084c5b939dfcedd2913a5154d6d8289662b22660"
+              }
+            },
+            {
               "sourceId": "jr_english_core_vocab_responsibility",
               "page": 93,
               "evidence": {
@@ -9931,10 +10899,21 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "e10aa7742c29c4edf317b1bbad76d630b47618df62d73b27b4533b4436fe0089"
               }
+            },
+            {
+              "sourceId": "jr_en_tb_word_system",
+              "page": 93,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2358,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "088462f65b7e8bc00db9fd7d87cf33cea200daceb9094dea9dc851b2a1851090"
+              }
             }
           ],
           "listedEntries": 50,
-          "unresolvedEntries": 40
+          "unresolvedEntries": 37
         },
         {
           "id": "ow3-activities-plus-4",
@@ -9986,6 +10965,17 @@
                 "row": 587,
                 "method": "exact_normalized_sense",
                 "meaningSha256": "586af0c5092c7ad8c8372a9493731f602c94e3f3cd7c8eaa9985db02e43b2c8a"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_importance",
+              "page": 110,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1164,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "c4f435c05ef1386d46bd211b8d25eaedd3eb7140fcb4c86aee51a2aa819e2d86"
               }
             },
             {
@@ -10055,6 +11045,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_terrible",
+              "page": 109,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2407,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "a5a9460ac5ad935343d1013d6ad458493053372e6f417f4f77f71891fc3a5e01"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_tram",
               "page": 107,
               "evidence": {
@@ -10067,7 +11068,7 @@
             }
           ],
           "listedEntries": 53,
-          "unresolvedEntries": 44
+          "unresolvedEntries": 42
         },
         {
           "id": "ow3-further-reading-1",
@@ -10089,6 +11090,39 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_forever",
+              "page": 115,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 890,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "90f97a20ebe3d3caec9b688ad7ba9ce8f041156a7de7a5ad9b3b0f0284160cab"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_joy",
+              "page": 113,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1259,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "3ce61d4802bc001de7a7c1bd3ed8aafb4509648f1b68be0cc97fda5d292cc85c"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_poetry",
+              "page": 113,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1820,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "dadaa127c07bba9daf4b1560ebaef106a81f2f12f57046b045d4e88ae4df3a68"
+              }
+            },
+            {
               "sourceId": "jr_en_ext_word_prove",
               "page": 114,
               "evidence": {
@@ -10098,10 +11132,21 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "cdcfe4c0c60f822dd523e6042befbfbb28384c2b5be5237458c45eb975bf084b"
               }
+            },
+            {
+              "sourceId": "jr_en_tb_word_truth",
+              "page": 112,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2537,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "69cf83da7fa31f46474c4b8cdc8340249ded1e797d99c0b9c5d6b48a47248566"
+              }
             }
           ],
           "listedEntries": 18,
-          "unresolvedEntries": 16
+          "unresolvedEntries": 12
         },
         {
           "id": "ow3-further-reading-2",
@@ -10123,6 +11168,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_astronaut",
+              "page": 118,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 163,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "017b913d7ce27da9017a96f8458f9a4971382602a49736f81b87d126e23858df"
+              }
+            },
+            {
               "sourceId": "jr_en_core_phrase_at_that_time",
               "page": 117,
               "evidence": {
@@ -10131,6 +11187,17 @@
                 "row": 169,
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "bf7cf8885e95cf0ce3a59b861079df407fcfe1132ae37db0c8b99ec05453c42a"
+              }
+            },
+            {
+              "sourceId": "jr_en_tb_word_calculate",
+              "page": 119,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 357,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "600e6cd9ae8a25764e8366827cf634595db5ae12506893dee9c4f3d79d51f88f"
               }
             },
             {
@@ -10189,6 +11256,17 @@
               }
             },
             {
+              "sourceId": "jr_en_tb_word_hometown",
+              "page": 117,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1119,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "36586fbc35b3658ba2fab6f9e95706e09b839d2fd16a1b87e9caa409f49d9761"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_law",
               "page": 120,
               "evidence": {
@@ -10223,7 +11301,7 @@
             }
           ],
           "listedEntries": 74,
-          "unresolvedEntries": 64
+          "unresolvedEntries": 61
         },
         {
           "id": "ow3-further-reading-3",

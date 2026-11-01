@@ -20,8 +20,8 @@ test('every selectable mapping resolves to a real lexical material and a documen
    for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.ok(['exact_normalized_sense','reviewed_equivalent_sense'].includes(row.evidence.method));assert.ok(row.evidence.row>=8);assert.equal(row.evidence.source,'ow.xlsx');}
   }
  }
- const ow=report.oneWorld;assert.equal(ow.totalEntries,2778);assert.equal(ow.senseConfirmed,934);assert.equal(ow.exactSenseConfirmed,620);assert.equal(ow.reviewedSenseConfirmed,314);assert.equal(ow.reviewedHeld,10);assert.equal(ow.senseConfirmed+ow.senseReview+ow.headwordUnmatched,ow.totalEntries);
- assert.equal(report.newHorizon.totalEntries,2402);assert.equal(report.newHorizon.headwordMatched,1260);
+ const ow=report.oneWorld;assert.equal(ow.totalEntries,2778);assert.equal(ow.senseConfirmed,1058);assert.equal(ow.exactSenseConfirmed,724);assert.equal(ow.reviewedSenseConfirmed,334);assert.equal(ow.reviewedHeld,14);assert.equal(ow.senseConfirmed+ow.senseReview+ow.headwordUnmatched,ow.totalEntries);
+ assert.equal(report.newHorizon.totalEntries,2402);assert.equal(report.newHorizon.headwordMatched,1344);
 });
 test('same spelling with another meaning is excluded: care as noun and kind meaning type do not match existing senses',()=>{
  const care=report.oneWorld.entries.find(e=>e.headword==='care');assert.equal(care.status,'sense_review');

@@ -1,0 +1,898 @@
+{
+  "version": 1,
+  "batch": "english-textbook-basics-1",
+  "scope": "ONE WORLD公開語彙DBとの綴り未一致候補から基本語を選び独自に作問。全必修語彙の充足や全語義の対応を意味しない。",
+  "curriculumComplete": false,
+  "candidates": [
+    {
+      "sourceId": "jr_en_tb_word_dad",
+      "english": "dad",
+      "rows": [
+        573
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_mom",
+      "english": "mom",
+      "rows": [
+        1524
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_daughter",
+      "english": "daughter",
+      "rows": [
+        583
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_grandparent",
+      "english": "grandparent",
+      "rows": [
+        1005
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_man",
+      "english": "man",
+      "rows": [
+        1437
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_woman",
+      "english": "woman",
+      "rows": [
+        2727
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_kid",
+      "english": "kid",
+      "rows": [
+        1287,
+        1288
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_lady",
+      "english": "lady",
+      "rows": [
+        1318
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_home",
+      "english": "home",
+      "rows": [
+        1115
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_hometown",
+      "english": "hometown",
+      "rows": [
+        1119
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_housework",
+      "english": "housework",
+      "rows": [
+        1134
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_hobby",
+      "english": "hobby",
+      "rows": [
+        1109
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_birthday",
+      "english": "birthday",
+      "rows": [
+        276
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_diary",
+      "english": "diary",
+      "rows": [
+        616
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_picnic",
+      "english": "picnic",
+      "rows": [
+        1791
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_vacation",
+      "english": "vacation",
+      "rows": [
+        2602
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_area",
+      "english": "area",
+      "rows": [
+        136
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_place",
+      "english": "place",
+      "rows": [
+        1806
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_street",
+      "english": "street",
+      "rows": [
+        2310
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_side",
+      "english": "side",
+      "rows": [
+        2137
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_pen",
+      "english": "pen",
+      "rows": [
+        1759
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_glue",
+      "english": "glue",
+      "rows": [
+        969
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_ink",
+      "english": "ink",
+      "rows": [
+        1196
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_mailbox",
+      "english": "mailbox",
+      "rows": [
+        1423
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_clothes",
+      "english": "clothes",
+      "rows": [
+        467
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_cloth",
+      "english": "cloth",
+      "rows": [
+        466
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_apron",
+      "english": "apron",
+      "rows": [
+        133
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_shorts",
+      "english": "shorts",
+      "rows": [
+        2123
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_food",
+      "english": "food",
+      "rows": [
+        873
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_curry",
+      "english": "curry",
+      "rows": [
+        564
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_toast",
+      "english": "toast",
+      "rows": [
+        2488
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_seafood",
+      "english": "seafood",
+      "rows": [
+        2059
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_air",
+      "english": "air",
+      "rows": [
+        73
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_animal",
+      "english": "animal",
+      "rows": [
+        111
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_wildlife",
+      "english": "wildlife",
+      "rows": [
+        2713
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_sunlight",
+      "english": "sunlight",
+      "rows": [
+        2333
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_idea",
+      "english": "idea",
+      "rows": [
+        1153
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_dream",
+      "english": "dream",
+      "rows": [
+        664
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_story",
+      "english": "story",
+      "rows": [
+        2301
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_event",
+      "english": "event",
+      "rows": [
+        755
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_bad",
+      "english": "bad",
+      "rows": [
+        197
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_cute",
+      "english": "cute",
+      "rows": [
+        570
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_sleepy",
+      "english": "sleepy",
+      "rows": [
+        2176
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_full",
+      "english": "full",
+      "rows": [
+        931
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_funny",
+      "english": "funny",
+      "rows": [
+        935
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_scary",
+      "english": "scary",
+      "rows": [
+        2040
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_smart",
+      "english": "smart",
+      "rows": [
+        2181
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_terrible",
+      "english": "terrible",
+      "rows": [
+        2407
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_joy",
+      "english": "joy",
+      "rows": [
+        1259
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_delight",
+      "english": "delight",
+      "rows": [
+        599
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_sadness",
+      "english": "sadness",
+      "rows": [
+        2012
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_luck",
+      "english": "luck",
+      "rows": [
+        1414
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_voice",
+      "english": "voice",
+      "rows": [
+        2632
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_audio",
+      "english": "audio",
+      "rows": [
+        185
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_video",
+      "english": "video",
+      "rows": [
+        2620
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_movie",
+      "english": "movie",
+      "rows": [
+        1550
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_chess",
+      "english": "chess",
+      "rows": [
+        427
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_bowling",
+      "english": "bowling",
+      "rows": [
+        311
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_dodgeball",
+      "english": "dodgeball",
+      "rows": [
+        645
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_softball",
+      "english": "softball",
+      "rows": [
+        2199
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_money",
+      "english": "money",
+      "rows": [
+        1528
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_sale",
+      "english": "sale",
+      "rows": [
+        2020
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_size",
+      "english": "size",
+      "rows": [
+        2164
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_action",
+      "english": "action",
+      "rows": [
+        41
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_activity",
+      "english": "activity",
+      "rows": [
+        43
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_communication",
+      "english": "communication",
+      "rows": [
+        498
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_cooperation",
+      "english": "cooperation",
+      "rows": [
+        530
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_difference",
+      "english": "difference",
+      "rows": [
+        623
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_difficulty",
+      "english": "difficulty",
+      "rows": [
+        627
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_importance",
+      "english": "importance",
+      "rows": [
+        1164
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_truth",
+      "english": "truth",
+      "rows": [
+        2537
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_health",
+      "english": "health",
+      "rows": [
+        1067
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_safety",
+      "english": "safety",
+      "rows": [
+        2014
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_height",
+      "english": "height",
+      "rows": [
+        1079
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_life",
+      "english": "life",
+      "rows": [
+        1367
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_poetry",
+      "english": "poetry",
+      "rows": [
+        1820
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_calligraphy",
+      "english": "calligraphy",
+      "rows": [
+        363
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_animation",
+      "english": "animation",
+      "rows": [
+        114
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_illustration",
+      "english": "illustration",
+      "rows": [
+        1157
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_flute",
+      "english": "flute",
+      "rows": [
+        870
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_trumpet",
+      "english": "trumpet",
+      "rows": [
+        2536
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_harmonica",
+      "english": "harmonica",
+      "rows": [
+        1051
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_recorder",
+      "english": "recorder",
+      "rows": [
+        1928
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_player",
+      "english": "player",
+      "rows": [
+        1816
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_painter",
+      "english": "painter",
+      "rows": [
+        1723
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_pianist",
+      "english": "pianist",
+      "rows": [
+        1786
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_astronaut",
+      "english": "astronaut",
+      "rows": [
+        163
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_cafeteria",
+      "english": "cafeteria",
+      "rows": [
+        354
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_restroom",
+      "english": "restroom",
+      "rows": [
+        1968
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_hall",
+      "english": "hall",
+      "rows": [
+        1038
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_outlet",
+      "english": "outlet",
+      "rows": [
+        1708
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_refrigerator",
+      "english": "refrigerator",
+      "rows": [
+        1935
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_stapler",
+      "english": "stapler",
+      "rows": [
+        2274
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_magnet",
+      "english": "magnet",
+      "rows": [
+        1422
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_cage",
+      "english": "cage",
+      "rows": [
+        355
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_chance",
+      "english": "chance",
+      "rows": [
+        415
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_prize",
+      "english": "prize",
+      "rows": [
+        1869
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_victory",
+      "english": "victory",
+      "rows": [
+        2619
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_rule",
+      "english": "rule",
+      "rows": [
+        2002
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_phone",
+      "english": "phone",
+      "rows": [
+        1781
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_smartphone",
+      "english": "smartphone",
+      "rows": [
+        2182
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_laptop",
+      "english": "laptop",
+      "rows": [
+        1324
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_attachment",
+      "english": "attachment",
+      "rows": [
+        178
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_part",
+      "english": "part",
+      "rows": [
+        1738
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_piece",
+      "english": "piece",
+      "rows": [
+        1795
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_top",
+      "english": "top",
+      "rows": [
+        2506
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_middle",
+      "english": "middle",
+      "rows": [
+        1502
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_alone",
+      "english": "alone",
+      "rows": [
+        89
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_abroad",
+      "english": "abroad",
+      "rows": [
+        31
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_forever",
+      "english": "forever",
+      "rows": [
+        890
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_early",
+      "english": "early",
+      "rows": [
+        687
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_solar",
+      "english": "solar",
+      "rows": [
+        2200
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_nuclear",
+      "english": "nuclear",
+      "rows": [
+        1640
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_renewable",
+      "english": "renewable",
+      "rows": [
+        1946
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_waterproof",
+      "english": "waterproof",
+      "rows": [
+        2657
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_media",
+      "english": "media",
+      "rows": [
+        1477
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_network",
+      "english": "network",
+      "rows": [
+        1594
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_system",
+      "english": "system",
+      "rows": [
+        2358
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_committee",
+      "english": "committee",
+      "rows": [
+        495
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_calculate",
+      "english": "calculate",
+      "rows": [
+        357
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_gather",
+      "english": "gather",
+      "rows": [
+        943
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_pollute",
+      "english": "pollute",
+      "rows": [
+        1830
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_respond",
+      "english": "respond",
+      "rows": [
+        1962
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_development",
+      "english": "development",
+      "rows": [
+        612
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_production",
+      "english": "production",
+      "rows": [
+        1874
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_movement",
+      "english": "movement",
+      "rows": [
+        1549
+      ]
+    },
+    {
+      "sourceId": "jr_en_tb_word_supply",
+      "english": "supply",
+      "rows": [
+        2338
+      ]
+    }
+  ]
+}
