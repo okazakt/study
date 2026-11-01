@@ -6,12 +6,12 @@ import {makeQuestionQueue,makeEnglishQuestion,makeSpellingQuestions,makePhraseQu
 import {buildCatalog,selectQuestions,sectionKey,matchesPracticeQuestion} from '../learning.js';
 import {normalizeHistory,recordAnswer,questionKey,priorityCategory,buildPriorityIndex} from '../progress.js';
 const read=n=>JSON.parse(readFileSync(new URL(`../quiz-data/${n}.json`,import.meta.url)));
-const added=read('junior_english_supplement'),all=['junior_english','junior_expansion','junior_english_core','junior_english_extended','junior_english_application'].flatMap(read).filter(q=>q.subject==='英語').concat(added);
+const added=read('junior_english_supplement'),all=['junior_english','junior_expansion','junior_english_core','junior_english_extended','junior_english_application','junior_english_vocabulary2'].flatMap(read).filter(q=>q.subject==='英語').concat(added);
 test('supplement adds 511 words and 58 phrases, preserving earlier identities and unique headwords',()=>{
  assert.equal(added.length,569);assert.equal(added.filter(q=>q.field==='英単語').length,511);assert.equal(added.filter(q=>q.field==='熟語').length,58);
  assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  const lexical=all.filter(q=>q.english);assert.equal(new Set(lexical.map(q=>q.english.toLowerCase())).size,lexical.length);
- assert.equal(all.length,2033);assert.equal(makeQuestionQueue(all,()=>.5).length,7359);
+ assert.equal(all.length,2553);assert.equal(makeQuestionQueue(all,()=>.5).length,9576);
 });
 test('all 2214 new questions have four distinct choices and fit the content budget',()=>{
  const qs=makeQuestionQueue(added,()=>.5);assert.equal(qs.length,2214);

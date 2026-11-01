@@ -1,0 +1,38 @@
+// Content-only validation; no timed session or five-minute simulation.
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {makeQuestionQueue,makeSpellingQuestions,makeEnglishQuestion} from '../game.js';
+import {buildCatalog,selectQuestions,sectionKey,matchesPracticeQuestion} from '../learning.js';
+import {normalizeHistory,recordAnswer,questionKey,priorityCategory,buildPriorityIndex} from '../progress.js';
+const read=n=>JSON.parse(readFileSync(new URL(`../quiz-data/${n}.json`,import.meta.url)));
+const added=read('junior_english_vocabulary2'),prior=['junior_english','junior_expansion','junior_english_core','junior_english_extended','junior_english_application','junior_english_supplement'].flatMap(read).filter(q=>q.subject==='英語'),all=prior.concat(added);
+test('520 new headwords have unique stable IDs and do not replace existing learning history',()=>{
+ assert.equal(added.length,520);assert.ok(added.every(q=>q.field==='英単語'&&q.school_level==='中学'&&q.subject==='英語'&&['中1','中2','中3'].includes(q.grade)));
+ assert.equal(new Set(all.map(q=>q.id)).size,all.length);const words=all.filter(q=>q.english);assert.equal(new Set(words.map(q=>q.english.toLowerCase())).size,words.length);
+ assert.equal(all.filter(q=>q.field==='英単語').length,2159);assert.equal(all.length,2553);assert.equal(makeQuestionQueue(all,()=>.5).length,9576);
+});
+test('all 2217 generated questions have a unique correct option and respect display limits',()=>{
+ const qs=makeQuestionQueue(added,()=>.5);assert.equal(qs.length,2217);
+ for(const q of qs){assert.equal(q.choices.length,4,q.id);assert.equal(new Set(q.choices).size,4,q.id);assert.equal(q.choices[q.correct],q.answer);assert.ok(q.choices.every(s=>typeof s==='string'&&s.length&&[...s].length<=30),q.id);assert.ok([...q.prompt+q.task+q.choices.join('')].length<=200,q.id);}
+});
+test('each spelling step has equal-length options and exactly one possible next prefix',()=>{
+ for(const item of added){let prefix='';for(const q of makeSpellingQuestions(item,()=>.5)){
+  assert.equal(q.continuation,q.blankPosition>1);for(const s of q.choices){assert.equal(s.length,q.answer.length);assert.equal(item.english.slice(prefix.length).startsWith(s),s===q.answer,item.english+': '+s);}prefix+=q.answer;
+ }assert.equal(prefix,item.english);}
+});
+test('edited overlapping meanings do not appear as competing translations',()=>{
+ for(const [en,excluded] of [['draw','paint'],['hide','cover'],['nut','almond'],['mutton','lamb'],['certain','doubtless'],['true','real'],['false','fake'],['real','true'],['timer','stopwatch'],['jungle','rainforest'],['swamp','wetland']]){
+  const q=added.find(q=>q.english===en);if(q)assert.ok(!q.english_dummies.includes(excluded),en);
+ }
+});
+test('every new item is reachable in its grade and unit with both directions and spelling preserved',()=>{
+ const catalog=buildCatalog(all);
+ for(const item of added){const selected=selectQuestions(all,'中学',{id:`中学:英語:${item.grade.at(-1)}`,sections:[sectionKey(item)],practiceType:'all'},catalog);assert.ok(selected.some(q=>q.id===item.id));assert.ok(selected.every(q=>q.grade===item.grade&&sectionKey(q)===sectionKey(item)));}
+ for(const type of ['word_ja_en','word_en_ja','word_spelling'])assert.ok(makeQuestionQueue(added,()=>.5,q=>matchesPracticeQuestion(q,type)).length);
+});
+test('per-direction outcomes survive reload, preserve retries as one occurrence and affect reverse priority',()=>{
+ const item=added[0],q=makeEnglishQuestion(item,'to_english',()=>.5),reverse=makeEnglishQuestion(item,'to_japanese',()=>.5);let history=normalizeHistory(null);
+ history=recordAnswer(history,q,{correct:false,chosen:q.choices.find(s=>s!==q.answer),attempt:'one',time:1});history=recordAnswer(history,q,{correct:true,chosen:q.answer,wrongBefore:1,attempt:'one',time:2});history=normalizeHistory(JSON.parse(JSON.stringify(history)));
+ assert.equal(history.questions[questionKey(q)].answerCount,1);assert.equal(history.questions[questionKey(q)].first,0);assert.equal(priorityCategory(reverse,buildPriorityIndex(history)),2);
+});
