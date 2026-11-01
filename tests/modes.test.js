@@ -30,17 +30,16 @@ test('answer phase begins at the selected reading deadline, never before it',()=
   g.update(end-.001);assert.equal(g.phase,'read');g.update(end);assert.equal(g.phase,'answer');
  }
 });
-test('normal and hard rows each contain all colors, and taps answer by color rather than lane',()=>{
- for(const rhythm of ['normal','hard']){
+test('all difficulties keep every answer color in its original choice lane',()=>{
+ for(const rhythm of ['easy','normal','hard']){
   const g=create({rhythm,speed:'instant'});g.changePhase('read',0);g.changePhase('answer',0);
-  let moved=false;
   for(let i=0;i<3;i++){
    g.update(i?g.time:1.8);let note=g.notes.filter(n=>!n.done&&n.color===g.question.correct).sort((a,b)=>a.target-b.target)[0];
    const row=g.notes.filter(n=>n.rowId===note.rowId&&!n.done);assert.deepEqual(new Set(row.map(n=>n.color)),new Set([0,1,2,3]));
-   assert.equal(new Set(row.map(n=>n.lane)).size,4);moved ||= row.some(n=>n.lane!==n.color);
+   assert.equal(new Set(row.map(n=>n.lane)).size,4);assert.ok(row.every(n=>n.lane===n.color));
    g.tap(note.lane,note.target);
   }
-  assert.ok(moved);assert.equal(g.correctCount,1);assert.equal(g.quizResult.choice,g.question.correct);
+assert.equal(g.correctCount,1);assert.equal(g.quizResult.choice,g.question.correct);
  }
 });
 test('hard answer pattern uses musical half-beats and unequal gaps, easy and normal keep main beats',()=>{

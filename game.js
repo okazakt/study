@@ -420,12 +420,7 @@ export class Game {
       if (this.phase === 'intro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
       if (event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
       if (this.phase === 'answer') {
-        let colors=[0,1,2,3];
-        if(this.options.rhythm!=='easy'){
-          colors=shuffle(colors,this.random);
-          if(colors.every((color,lane)=>color===lane))colors.push(colors.shift());
-        }
-        colors.forEach((color,lane)=>this.notes.push({...event,rowId:event.id,lane,color,done:false}));
+        COLORS.forEach((_,color)=>this.notes.push({...event,rowId:event.id,lane:color,color,done:false}));
       } else this.notes.push({ ...event, color: null, done: false });
     }
     for (const note of this.notes) {

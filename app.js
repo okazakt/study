@@ -1,9 +1,9 @@
-import { MusicPlayer } from './music-player.js?v=0.42.3';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.3';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.3';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.3';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.3';
-const VERSION = '0.42.3';
+import { MusicPlayer } from './music-player.js?v=0.42.4';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.4';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.4';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.4';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.4';
+const VERSION = '0.42.4';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -722,9 +722,9 @@ function render() {
   $('play').dataset.phase = game.phase;
   $('play').dataset.continuation = game.reveal.continuation;
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア' : '白ノーツのタップエリア');
-  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' && game.options.rhythm==='easy' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
+  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
-  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? game.options.rhythm==='easy'?`4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。`:`色の位置が変わります。答えの色のレーンを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
+  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
@@ -792,7 +792,7 @@ function draw() {
   }
   ctx.fillStyle = '#a8f07d10'; ctx.fillRect(0, line - 13, width, 26);
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
-  for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'&&game.options.rhythm==='easy'?COLORS[lane].value:'#e5edf7',pressAmount(ghostPressTimes[lane],game.time));
+  for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'?COLORS[lane].value:'#e5edf7',pressAmount(ghostPressTimes[lane],game.time));
   for (const note of game.notes) {
     if (note.done) continue;
     const noteHeight = Math.min(20, Math.max(10, line * 0.22));
