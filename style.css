@@ -151,3 +151,9 @@ body.playing .focus-mode .field{background:none;border:0;min-height:104px;margin
 body.playing .focus-mode .lane-keys button{background:linear-gradient(color-mix(in srgb,var(--lane-color) 48%,#17263b),color-mix(in srgb,var(--lane-color) 25%,#17263b))}
 .focus-mode .lane-keys button:disabled{opacity:1;cursor:default}
 @media(prefers-reduced-motion:reduce){.focus-wait{transform:none;box-shadow:none}}
+
+/* Pulse only the question frame so the text remains steady while reading. */
+.focus-mode #question-panel{border-color:transparent}
+.focus-mode #question-slot{position:relative;z-index:3;border-radius:14px;pointer-events:none}
+.focus-mode #question-slot::after{content:"";position:absolute;inset:0;border:1px solid color-mix(in srgb,#a8f07d calc(var(--beat-pulse,0)*42%),#ffffff24);border-radius:inherit;pointer-events:none;transform:scale(calc(1 + var(--beat-pulse,0)*.012));transform-origin:center;box-shadow:0 0 calc(var(--beat-pulse,0)*12px) #a8f07d22}
+@media(prefers-reduced-motion:reduce){.focus-mode #question-slot::after{transform:none;box-shadow:none}}

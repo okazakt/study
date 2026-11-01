@@ -1,4 +1,4 @@
-import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.58.1';
+import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.58.2';
 
 // The chart's main beats are timing opportunities, without visible/moving notes.
 export function focusReveal(question,speed){
