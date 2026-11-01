@@ -2,6 +2,9 @@ export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
 export const SESSION = Object.freeze({durationSeconds:300,fadeSeconds:3,tapGoal:120,minWhiteInterval:.22});
+export const SPEEDS=Object.freeze({slow:'ゆっくり',normal:'普通',fast:'速い',instant:'即答級'});
+export const RHYTHMS=Object.freeze({easy:{label:'イージー',tapGoal:120},normal:{label:'ノーマル',tapGoal:180},hard:{label:'ハード',tapGoal:240}});
+export function normalizeGameplayOptions(value){return {speed:Object.hasOwn(SPEEDS,value?.speed)?value.speed:'slow',rhythm:Object.hasOwn(RHYTHMS,value?.rhythm)?value.rhythm:'easy'};}
 export function sessionPlan(playlistSeconds, limit=SESSION.durationSeconds) {
   const endTime=Math.min(playlistSeconds,limit);
   return {endTime,fadeStart:playlistSeconds>limit?Math.max(0,endTime-SESSION.fadeSeconds):endTime};
@@ -16,7 +19,7 @@ export function seededRandom(seed){return()=>((seed=(seed*1664525+1013904223)>>>
 export function perfectReference(game,onCorrect=()=>{}){
   for(let tick=0;tick<=game.endTime*60;tick++){
     const now=tick/60;game.update(now);
-    const note=game.notes.find(n=>!n.done && n.target<=now && Math.abs(n.target-now)<.08 && (n.color===null || n.lane===game.question.correct));
+    const note=game.notes.find(n=>!n.done && n.target<=now && Math.abs(n.target-now)<.08 && (n.color===null || n.color===game.question.correct));
     if(!note)continue;
     const q=game.question,index=game.questionIndex,before=game.correctCount;
     game.tap(note.lane,now);
@@ -230,7 +233,7 @@ export function answerProgress(count, required) {
   if (!Number.isFinite(required) || required <= 0 || !Number.isFinite(count)) return 0;
   return Math.max(0, Math.min(1, count / required));
 }
-export function revealPlan(question) {
+export function revealPlan(question,speed='slow') {
   const continuation = !!question.continuation;
   let cursor = 0.2;
   const segment = text => {
@@ -243,10 +246,26 @@ export function revealPlan(question) {
   const prompt = continuation ? { start: 0, end: 0 } : segment(question.prompt);
   const choices = question.choices.map(text => { cursor += RULES.choiceGapSeconds; return segment(text); });
   const liftStart = cursor + RULES.readHoldSeconds;
-  return { continuation, context, prompt, choices, revealEnd: cursor, liftStart, duration: liftStart + (continuation ? 0 : RULES.liftSeconds) };
+  const slowDuration=liftStart+(continuation?0:RULES.liftSeconds);
+  const base={continuation,context,prompt,choices,revealEnd:cursor,liftStart,duration:slowDuration,
+    charSeconds:RULES.charSeconds,fadeSeconds:RULES.fadeSeconds,liftSeconds:RULES.liftSeconds,instant:false};
+  if(speed==='slow'||!Object.hasOwn(SPEEDS,speed))return base;
+  const characters=Array.from((question.task||'')+question.prompt+question.choices.join('')).length;
+  const fastDuration=Math.max(continuation?0:.35,characters/12);
+  if(speed==='normal'){
+    const lift=continuation?0:.5,duration=(slowDuration+fastDuration)/2;
+    const factor=(duration-lift)/(slowDuration-(continuation?0:RULES.liftSeconds));
+    const scaled=segment=>({start:segment.start*factor,end:segment.end*factor});
+    return {...base,context:scaled(context),prompt:scaled(prompt),choices:choices.map(scaled),revealEnd:cursor*factor,
+      liftStart:duration-lift,duration,charSeconds:RULES.charSeconds*factor,fadeSeconds:RULES.fadeSeconds*factor,liftSeconds:.5};
+  }
+  const duration=speed==='fast'?fastDuration:Math.max(continuation?0:.35,characters/20),lift=continuation?0:.35;
+  return {...base,context:{start:0,end:0},prompt:{start:0,end:0},choices:choices.map(()=>({start:0,end:0})),
+    revealEnd:0,liftStart:duration-lift,duration,charSeconds:0,fadeSeconds:0,liftSeconds:.35,instant:true};
 }
 export class Game {
-  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null, questionEndTime = Infinity, tapGoal = null) {
+  constructor(questions, events, offsetSeconds = 0, random = Math.random, endTime = Infinity, acceptQuestion = () => true, pickUnit = null, questionEndTime = Infinity, tapGoal = null, options = {}) {
+    this.options=normalizeGameplayOptions(options);this.random=random;
     this.pickUnit = pickUnit;
     this.questions = pickUnit ? pickUnit() : makeQuestionQueue(questions, random, acceptQuestion);
     this.endTime = endTime; this.questionEndTime = questionEndTime;
@@ -254,7 +273,7 @@ export class Game {
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
       if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
-      return { target: event.time + offsetSeconds, id: i, lane: lanes.pop() };
+      return { target: event.time + offsetSeconds, id: i, lane: lanes.pop(), answerEligible:this.options.rhythm!=='hard'||[0,2].includes(i%4) };
     });
     if(this.tapGoal){
       const main=this.events,extra=[];
@@ -262,11 +281,11 @@ export class Game {
         const left=main[i],right=main[i+1],gap=right.target-left.target;
         if(gap<SESSION.minWhiteInterval*2 || gap>1.5)continue;
         const choices=[0,1,2,3].filter(lane=>lane!==left.lane && lane!==right.lane);
-        extra.push({target:(left.target+right.target)/2,id:`half:${left.id}`,lane:choices[Math.floor(random()*choices.length)],half:true});
+        extra.push({target:(left.target+right.target)/2,id:`half:${left.id}`,lane:choices[Math.floor(random()*choices.length)],half:true,answerEligible:this.options.rhythm==='hard'&&[0,1,3].includes(i%4)});
       }
       this.events=[...main,...extra].sort((a,b)=>a.target-b.target);
     }
-    this.reveal = revealPlan(this.questions[0]);
+    this.reveal = revealPlan(this.questions[0],this.options.speed);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
     this.rhythmScore = 0; this.rhythmBaseScore = 0; this.rhythmComboScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
@@ -342,13 +361,14 @@ export class Game {
   get totalScore() { return this.rhythmScore + this.quizScore; }
   get laneCount() { return RULES.lanes; }
   get question() { return this.questions[this.questionIndex % this.questions.length]; }
+  answerEvent(event){return this.options.rhythm==='hard'?!!event.answerEligible:!event.half;}
   earliestCompletion(now) {
     let time = now, cursor = 0;
-    const events=this.events.slice(this.cursor).filter(e=>!e.half);
+    const events=this.events.slice(this.cursor).filter(e=>this.answerEvent(e));
     for (let step = 0; step < this.questions.length; step++) {
       const q = this.questions[(this.questionIndex + step) % this.questions.length];
       if (step && !(q.continuation && q.sourceId === this.question.sourceId && q.mode === this.question.mode)) break;
-      const ready = time + revealPlan(q).duration + RULES.travelSeconds;
+      const ready = time + revealPlan(q,this.options.speed).duration + RULES.travelSeconds;
       const taps = Number.isInteger(q.tapsToAnswer) && q.tapsToAnswer > 0 ? q.tapsToAnswer : RULES.tapsToAnswer;
       while (cursor < events.length && events[cursor].target < ready) cursor++;
       const last = events[cursor + taps - 1];
@@ -370,7 +390,7 @@ export class Game {
     if (phase === 'read') {
       this.colorRowsUsed=0;this.stageWrongCount=0;
       if(!this.startedQuestions.has(this.questionIndex)){this.startedQuestions.add(this.questionIndex);this.colorCapacityStarted+=this.requiredTaps;}
-      this.refreshScore();this.reveal = revealPlan(this.question); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
+      this.refreshScore();this.reveal = revealPlan(this.question,this.options.speed); this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = ''; this.quizResult = null; }
     if (phase === 'rhythm') {
       this.quizResult = null; this.message = '';
       const targets = this.events.slice(this.cursor).filter(e => !e.half && e.target >= now + RULES.travelSeconds).slice(0, RULES.rhythmNotes);
@@ -391,7 +411,7 @@ export class Game {
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
       const event = this.events[this.cursor++];
       if (!['intro', 'answer', 'rhythm', 'outro'].includes(this.phase)) continue;
-      if(this.phase==='answer' && event.half)continue;
+      if(this.phase==='answer' && !this.answerEvent(event))continue;
       if(this.tapGoal && this.phase!=='answer'){
         if(!this.whiteTargets.has(event.id) || this.countedTaps+this.pendingWhites()>=this.tapGoal)continue;
       }else if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
@@ -400,7 +420,12 @@ export class Game {
       if (this.phase === 'intro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
       if (event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > this.endTime) continue;
       if (this.phase === 'answer') {
-        COLORS.forEach((_, color) => this.notes.push({ ...event, rowId: event.id, lane: color, color, done: false }));
+        let colors=[0,1,2,3];
+        if(this.options.rhythm!=='easy'){
+          colors=shuffle(colors,this.random);
+          if(colors.every((color,lane)=>color===lane))colors.push(colors.shift());
+        }
+        colors.forEach((color,lane)=>this.notes.push({...event,rowId:event.id,lane,color,done:false}));
       } else this.notes.push({ ...event, color: null, done: false });
     }
     for (const note of this.notes) {

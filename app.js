@@ -1,9 +1,9 @@
-import { MusicPlayer } from './music-player.js?v=0.41.2';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.41.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.41.2';
-import { Game, RULES, COLORS, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.41.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.41.2';
-const VERSION = '0.41.2';
+import { MusicPlayer } from './music-player.js?v=0.42.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.0';
+const VERSION = '0.42.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -13,6 +13,23 @@ try {
   const saved=localStorage.getItem('study-beat-music-selection-v2');
   selectedMusic=saved===null?localStorage.getItem('study-beat-fixed-music-v1'):JSON.parse(saved);
 } catch {}
+let gameplayOptions=normalizeGameplayOptions(null);
+try { gameplayOptions=normalizeGameplayOptions(JSON.parse(localStorage.getItem('study-beat-gameplay-v1')||'null')); } catch {}
+for(const [id,key,values] of [['question-speed','speed',SPEEDS],['rhythm-difficulty','rhythm',RHYTHMS]]){
+  for(const [value,entry] of Object.entries(values)){
+    const option=document.createElement('option');option.value=value;option.textContent=typeof entry==='string'?entry:entry.label;$(id).append(option);
+  }
+  $(id).value=gameplayOptions[key];$(id).addEventListener('change',()=>{
+    gameplayOptions[key]=$(id).value;
+    try { localStorage.setItem('study-beat-gameplay-v1',JSON.stringify(gameplayOptions));$('gameplay-storage-note').hidden=true; }catch{$('gameplay-storage-note').hidden=false;}
+    renderGameplayHelp();
+  });
+}
+function renderGameplayHelp(){
+  $('rhythm-description').textContent={easy:'今までと同じ。5分で120回を目標に、回答色のレーンは固定。',normal:'5分で180回を目標。列ごとに4色の位置が入れ替わります。',hard:'5分で240回を目標。4色の位置に加え、半拍を交えた変化のあるリズムになります。'}[gameplayOptions.rhythm];
+  $('speed-description').textContent={slow:'文字と選択肢が順番に、ゆっくり現れます。',normal:'アニメーションはそのまま、ゆっくりと速いの中間の時間で出題します。',fast:'全文を一度に表示。12文字あたり1秒、読む時間があります。',instant:'全文を一度に表示。20文字あたり1秒で回答へ進みます。'}[gameplayOptions.speed];
+}
+renderGameplayHelp();
 let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
@@ -439,7 +456,7 @@ async function start() {
   const seed=crypto.getRandomValues(new Uint32Array(1))[0],epoch=Date.now();
   const createGame=(getHistory,getResults)=>{
     const random=seededRandom(seed),picker=createAdaptivePicker(makeQuestionQueue(filtered,random,accept),getHistory,random,getResults);
-    return new Game(filtered,playlist.events,offsetMs/1000,random,session.endTime,accept,picker,session.fadeStart,SESSION.tapGoal);
+    return new Game(filtered,playlist.events,offsetMs/1000,random,session.endTime,accept,picker,session.fadeStart,RHYTHMS[gameplayOptions.rhythm].tapGoal,gameplayOptions);
   };
   let referenceHistory=structuredClone(learningHistory);const referenceResults=new Map();
   const reference=perfectReference(createGame(()=>referenceHistory,()=>referenceResults.values()),(q,index,time)=>{
@@ -634,13 +651,13 @@ function appendCharacters(element, text, start, segments = [{ text }], choice = 
     const group = document.createElement('span');
     if (segment.state) {
       group.className = `blank-${segment.state}`; group.dataset.blankIndex = segment.index;
-      characters.push({ choice, element: group, start: start + index * RULES.charSeconds });
+      characters.push({ choice, element: group, start: start + index * game.reveal.charSeconds });
     }
     element.append(group);
     for (const character of Array.from(segment.text)) {
       const span = document.createElement('span'); span.className = 'reveal-char';
       span.textContent = character; span.setAttribute('aria-hidden', 'true'); group.append(span);
-      characters.push({ choice, element: span, start: start + index++ * RULES.charSeconds });
+      characters.push({ choice, element: span, start: start + index++ * game.reveal.charSeconds });
     }
   }
 }
@@ -695,7 +712,7 @@ function positionQuestion(elapsed) {
   $('question-slot').style.height = `${panel.offsetHeight}px`;
   const stage = $('play-stage').getBoundingClientRect(), field = $('field').getBoundingClientRect();
   const lower = Math.max(0, field.bottom - stage.top - 72 - panel.offsetHeight);
-  const progress = Math.max(0, Math.min(1, (elapsed - game.reveal.liftStart) / RULES.liftSeconds));
+  const progress = Math.max(0, Math.min(1, (elapsed - game.reveal.liftStart) / game.reveal.liftSeconds));
   const ease = progress * progress * (3 - 2 * progress);
   const lift = reducedMotion.matches ? (progress === 1 ? 1 : 0) : ease;
   panel.style.transform = `translate3d(0,${game.phase === 'read' && !game.reveal.continuation ? lower * (1 - lift) : 0}px,0)`;
@@ -708,17 +725,17 @@ function render() {
   $('play').dataset.phase = game.phase;
   $('play').dataset.continuation = game.reveal.continuation;
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア' : '白ノーツのタップエリア');
-  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
+  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' && game.options.rhythm==='easy' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
-  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
+  document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? game.options.rhythm==='easy'?`4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。`:`色の位置が変わります。答えの色のレーンを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
-    const opacity = game.phase === 'read' && (!game.reveal.continuation || character.choice) ? Math.max(0, Math.min(1, (elapsed - character.start) / RULES.fadeSeconds)) : 1;
+    const opacity = game.phase === 'read' && !game.reveal.instant && (!game.reveal.continuation || character.choice) ? Math.max(0, Math.min(1, (elapsed - character.start) / game.reveal.fadeSeconds)) : 1;
     character.element.style.opacity = reducedMotion.matches ? Number(opacity > 0) : opacity;
   }
   choiceElements.forEach(({element, start}, i) => {
-    element.style.opacity = game.phase === 'read' ? Math.max(0, Math.min(1, (elapsed - start) / RULES.fadeSeconds)) : 1;
+    element.style.opacity = game.phase === 'read' && !game.reveal.instant ? Math.max(0, Math.min(1, (elapsed - start) / game.reveal.fadeSeconds)) : 1;
     element.classList.toggle('correct', game.phase === 'feedback' && i === q.correct);
     const progress = answerProgress(game.counts[i], game.requiredTaps);
     const strength = 0.08 + progress * 0.72;
@@ -778,7 +795,7 @@ function draw() {
   }
   ctx.fillStyle = '#a8f07d10'; ctx.fillRect(0, line - 13, width, 26);
   ctx.strokeStyle = '#b8ed96'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, line); ctx.lineTo(width, line); ctx.stroke();
-  for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'?COLORS[lane].value:'#e5edf7',pressAmount(ghostPressTimes[lane],game.time));
+  for(let lane=0;lane<game.laneCount;lane++)drawGhost(ctx,lane*laneWidth+8,line,laneWidth-16,Math.min(20,Math.max(10,line*.22)),game.phase==='answer'&&game.options.rhythm==='easy'?COLORS[lane].value:'#e5edf7',pressAmount(ghostPressTimes[lane],game.time));
   for (const note of game.notes) {
     if (note.done) continue;
     const noteHeight = Math.min(20, Math.max(10, line * 0.22));
@@ -821,7 +838,7 @@ function tap(lane) {
   if (game.correctCount > previousCount || game.wrongCount > previousWrong) {
     const result = sessionResults.get(occurrence) || {question:structuredClone(q), wrong:0, correct:false};
     const correct = game.correctCount > previousCount;
-    saveAnswer(q, correct, q.choices[lane], result.wrong);
+    saveAnswer(q, correct, q.choices[note.color], result.wrong);
     if (correct) result.correct = true; else result.wrong++;
     sessionResults.set(occurrence, result);
     if (correct) history.push({term:q.term, note:q.note, first, label:q.reviewLabel, answer:q.answer, wrong:result.wrong});
@@ -912,6 +929,7 @@ function finish(completed, reason=null) {
     title.textContent=song.title;credit.textContent=musicCredit(song);item.append(title,credit);$('result-music-list').append(item);
   }
   $('result-music').hidden=!seenMusic.size;
+  $('result-settings').textContent=`${SPEEDS[game.options.speed]} / ${RHYTHMS[game.options.rhythm].label}`;
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
   const score=game.scoreBreakdown;
