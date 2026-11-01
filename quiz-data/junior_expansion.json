@@ -5483,7 +5483,7 @@
     "content_batch": 2
   },
   {
-    "id": "jr_math_core_quadratic_formula",
+    "id": "jr_math_core_quadratic_formula_denominator",
     "school_level": "中学",
     "grade": "中3",
     "subject": "数学",
@@ -5491,15 +5491,15 @@
     "unit": "二次方程式",
     "kind": "choice",
     "task": "適切なものを選ぼう",
-    "prompt": "ax²＋bx＋c＝0 の解の公式は？（a≠0）",
-    "answer": "x＝(−b±√(b²−4ac))/(2a)",
+    "prompt": "ax²＋bx＋c＝0（a≠0）の解の公式で、分母に入る式は？",
+    "answer": "2a",
     "dummies": [
-      "x＝(b±√(b²−4ac))/(2a)",
-      "x＝(−b±√(b²＋4ac))/(2a)",
-      "x＝(−b±√(b²−4ac))/a"
+      "a",
+      "2b",
+      "−b"
     ],
-    "note": "分子の−b、根号内の−4ac、分母の2aに注意する。",
-    "learning_point": "quadratic_formula",
+    "note": "解の公式の分母は2a。公式を使う前にax²＋bx＋c＝0の形に整理し、係数を符号ごと確認する。",
+    "learning_point": "quadratic_formula_denominator",
     "content_batch": 2
   },
   {

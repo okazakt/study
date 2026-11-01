@@ -91,15 +91,9 @@ test('fraction distractors are not algebraically equivalent alternative answers'
   assert.equal(Math.abs(coefficient-(1/2+1/3))<1e-12,expression===item.answer,expression);
  }
 });
-test('the displayed quadratic formula solves different quadratic equations and distractors do not',()=>{
- const item=added.find(q=>q.id==='jr_math_core_quadratic_formula');
- for(const expression of [item.answer,...item.dummies]){
-  const m=/^x＝\((−?)b±√\(b²([−＋])4ac\)\)\/(\(2a\)|a)$/.exec(expression);assert.ok(m,expression);
-  for(const [a,b,c] of [[1,-5,6],[2,-7,3],[3,-10,3]]){
-   const radical=Math.sqrt(b*b+(m[2]==='−'?-1:1)*4*a*c),denominator=m[3]==='a'?a:2*a;
-   const roots=[-1,1].map(sign=>((m[1]?-b:b)+sign*radical)/denominator);
-   const valid=roots.every(x=>Math.abs(a*x*x+b*x+c)<1e-9);
-   assert.equal(valid,expression===item.answer,`${expression}: ${a},${b},${c}`);
-  }
- }
+test('the quadratic formula denominator is correct for different leading coefficients',()=>{
+ const item=added.find(q=>q.id==='jr_math_core_quadratic_formula_denominator');
+ const evaluate=(expression,a,b)=>({'2a':2*a,a,'2b':2*b,'−b':-b}[expression]);
+ for(const [a,b] of [[1,-5],[2,-7],[3,-10]])for(const expression of [item.answer,...item.dummies])
+  assert.equal(evaluate(expression,a,b)===2*a,expression===item.answer);
 });
