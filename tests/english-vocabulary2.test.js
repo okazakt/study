@@ -6,11 +6,11 @@ import {makeQuestionQueue,makeSpellingQuestions,makeEnglishQuestion} from '../ga
 import {buildCatalog,selectQuestions,sectionKey,matchesPracticeQuestion} from '../learning.js';
 import {normalizeHistory,recordAnswer,questionKey,priorityCategory,buildPriorityIndex} from '../progress.js';
 const read=n=>JSON.parse(readFileSync(new URL(`../quiz-data/${n}.json`,import.meta.url)));
-const added=read('junior_english_vocabulary2'),prior=['junior_english','junior_expansion','junior_english_core','junior_english_extended','junior_english_application','junior_english_supplement'].flatMap(read).filter(q=>q.subject==='英語'),all=prior.concat(added);
+const bank=read('junior_english_vocabulary2'),added=bank.filter(q=>q.content_batch==='english-vocabulary-2'),prior=['junior_english','junior_expansion','junior_english_core','junior_english_extended','junior_english_application','junior_english_supplement'].flatMap(read).filter(q=>q.subject==='英語'),all=prior.concat(bank);
 test('520 new headwords have unique stable IDs and do not replace existing learning history',()=>{
  assert.equal(added.length,520);assert.ok(added.every(q=>q.field==='英単語'&&q.school_level==='中学'&&q.subject==='英語'&&['中1','中2','中3'].includes(q.grade)));
  assert.equal(new Set(all.map(q=>q.id)).size,all.length);const words=all.filter(q=>q.english);assert.equal(new Set(words.map(q=>q.english.toLowerCase())).size,words.length);
- assert.equal(all.filter(q=>q.field==='英単語').length,2159);assert.equal(all.length,2553);assert.equal(makeQuestionQueue(all,()=>.5).length,9576);
+ assert.equal(all.filter(q=>q.field==='英単語').length,2255);assert.equal(all.length,2681);assert.equal(makeQuestionQueue(all,()=>.5).length,9952);
 });
 test('all 2217 generated questions have a unique correct option and respect display limits',()=>{
  const qs=makeQuestionQueue(added,()=>.5);assert.equal(qs.length,2217);

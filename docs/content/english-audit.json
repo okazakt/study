@@ -1,0 +1,941 @@
+{
+  "version": 1,
+  "release": "0.55.0",
+  "scope": "今回照合した基礎語候補・文法の補充観点・収録済み読解の表現対応。英語全範囲の照合済み一覧ではない。",
+  "curriculum_verified": false,
+  "textbook_verified": false,
+  "vocabulary_candidates": [
+    {
+      "english": "help",
+      "sourceId": "jr_en_audit_word_help"
+    },
+    {
+      "english": "nice",
+      "sourceId": "jr_en_audit_word_nice"
+    },
+    {
+      "english": "handsome",
+      "sourceId": "jr_en_audit_word_handsome"
+    },
+    {
+      "english": "start",
+      "sourceId": "jr_en_audit_word_start"
+    },
+    {
+      "english": "shut",
+      "sourceId": "jr_en_audit_word_shut"
+    },
+    {
+      "english": "rush",
+      "sourceId": "jr_en_audit_word_rush"
+    },
+    {
+      "english": "call",
+      "sourceId": "jr_en_audit_word_call"
+    },
+    {
+      "english": "love",
+      "sourceId": "jr_en_audit_word_love"
+    },
+    {
+      "english": "like",
+      "sourceId": "jr_en_audit_word_like"
+    },
+    {
+      "english": "hate",
+      "sourceId": "jr_en_audit_word_hate"
+    },
+    {
+      "english": "wish",
+      "sourceId": "jr_en_audit_word_wish"
+    },
+    {
+      "english": "mind",
+      "sourceId": "jr_en_audit_word_mind"
+    },
+    {
+      "english": "worry",
+      "sourceId": "jr_en_audit_word_worry"
+    },
+    {
+      "english": "care",
+      "sourceId": "jr_en_audit_word_care"
+    },
+    {
+      "english": "matter",
+      "sourceId": "jr_en_audit_word_matter"
+    },
+    {
+      "english": "marry",
+      "sourceId": "jr_en_audit_word_marry"
+    },
+    {
+      "english": "die",
+      "sourceId": "jr_en_audit_word_die"
+    },
+    {
+      "english": "kill",
+      "sourceId": "jr_en_audit_word_kill"
+    },
+    {
+      "english": "fight",
+      "sourceId": "jr_en_audit_word_fight"
+    },
+    {
+      "english": "beat",
+      "sourceId": "jr_en_audit_word_beat"
+    },
+    {
+      "english": "grow",
+      "sourceId": "jr_en_audit_word_grow"
+    },
+    {
+      "english": "become",
+      "sourceId": "jr_en_audit_word_become"
+    },
+    {
+      "english": "sound",
+      "sourceId": "jr_en_audit_word_sound"
+    },
+    {
+      "english": "blow",
+      "sourceId": "jr_en_audit_word_blow"
+    },
+    {
+      "english": "drive",
+      "sourceId": "jr_en_audit_word_drive"
+    },
+    {
+      "english": "lead",
+      "sourceId": "jr_en_audit_word_lead"
+    },
+    {
+      "english": "disagree",
+      "sourceId": "jr_en_audit_word_disagree"
+    },
+    {
+      "english": "let",
+      "sourceId": "jr_en_audit_word_let"
+    },
+    {
+      "english": "occur",
+      "sourceId": "jr_en_audit_word_occur"
+    },
+    {
+      "english": "fall",
+      "sourceId": "jr_en_audit_word_fall"
+    },
+    {
+      "english": "rise",
+      "sourceId": "jr_en_audit_word_rise"
+    },
+    {
+      "english": "raise",
+      "sourceId": "jr_en_audit_word_raise"
+    },
+    {
+      "english": "lay",
+      "sourceId": "jr_en_audit_word_lay"
+    },
+    {
+      "english": "set",
+      "sourceId": "jr_en_audit_word_set"
+    },
+    {
+      "english": "put",
+      "sourceId": "jr_en_audit_word_put"
+    },
+    {
+      "english": "fetch",
+      "sourceId": "jr_en_audit_word_fetch"
+    },
+    {
+      "english": "carry",
+      "sourceId": "jr_en_audit_word_carry"
+    },
+    {
+      "english": "show",
+      "sourceId": "jr_en_audit_word_show"
+    },
+    {
+      "english": "tell",
+      "sourceId": "jr_en_audit_word_tell"
+    },
+    {
+      "english": "offer",
+      "sourceId": "jr_en_audit_word_offer"
+    },
+    {
+      "english": "serve",
+      "sourceId": "jr_en_audit_word_serve"
+    },
+    {
+      "english": "order",
+      "sourceId": "jr_en_audit_word_order"
+    },
+    {
+      "english": "book",
+      "sourceId": "jr_en_audit_word_book"
+    },
+    {
+      "english": "save",
+      "sourceId": "jr_en_audit_word_save"
+    },
+    {
+      "english": "complete",
+      "sourceId": "jr_en_audit_word_complete"
+    },
+    {
+      "english": "attend",
+      "sourceId": "jr_en_audit_word_attend"
+    },
+    {
+      "english": "congratulate",
+      "sourceId": "jr_en_audit_word_congratulate"
+    },
+    {
+      "english": "celebrate",
+      "sourceId": "jr_en_audit_word_celebrate"
+    },
+    {
+      "english": "review",
+      "sourceId": "jr_en_audit_word_review"
+    },
+    {
+      "english": "suppose",
+      "sourceId": "jr_en_audit_word_suppose"
+    },
+    {
+      "english": "expect",
+      "sourceId": "jr_en_audit_word_expect"
+    },
+    {
+      "english": "accept",
+      "sourceId": "jr_en_audit_word_accept"
+    },
+    {
+      "english": "miss",
+      "sourceId": "jr_en_audit_word_miss"
+    },
+    {
+      "english": "hurt",
+      "sourceId": "jr_en_audit_word_hurt"
+    },
+    {
+      "english": "suffer",
+      "sourceId": "jr_en_audit_word_suffer"
+    },
+    {
+      "english": "heal",
+      "sourceId": "jr_en_audit_word_heal"
+    },
+    {
+      "english": "recover",
+      "sourceId": "jr_en_audit_word_recover"
+    },
+    {
+      "english": "breathe",
+      "sourceId": "jr_en_audit_word_breathe"
+    },
+    {
+      "english": "yawn",
+      "sourceId": "jr_en_audit_word_yawn"
+    },
+    {
+      "english": "yell",
+      "sourceId": "jr_en_audit_word_yell"
+    },
+    {
+      "english": "nod",
+      "sourceId": "jr_en_audit_word_nod"
+    },
+    {
+      "english": "bow",
+      "sourceId": "jr_en_audit_word_bow"
+    },
+    {
+      "english": "hug",
+      "sourceId": "jr_en_audit_word_hug"
+    },
+    {
+      "english": "kiss",
+      "sourceId": "jr_en_audit_word_kiss"
+    },
+    {
+      "english": "press",
+      "sourceId": "jr_en_audit_word_press"
+    },
+    {
+      "english": "click",
+      "sourceId": "jr_en_audit_word_click"
+    },
+    {
+      "english": "type",
+      "sourceId": "jr_en_audit_word_type"
+    },
+    {
+      "english": "print",
+      "sourceId": "jr_en_audit_word_print"
+    },
+    {
+      "english": "copy",
+      "sourceId": "jr_en_audit_word_copy"
+    },
+    {
+      "english": "paste",
+      "sourceId": "jr_en_audit_word_paste"
+    },
+    {
+      "english": "search",
+      "sourceId": "jr_en_audit_word_search"
+    },
+    {
+      "english": "browse",
+      "sourceId": "jr_en_audit_word_browse"
+    },
+    {
+      "english": "record",
+      "sourceId": "jr_en_audit_word_record"
+    },
+    {
+      "english": "film",
+      "sourceId": "jr_en_audit_word_film"
+    },
+    {
+      "english": "mend",
+      "sourceId": "jr_en_audit_word_mend"
+    },
+    {
+      "english": "damage",
+      "sourceId": "jr_en_audit_word_damage"
+    },
+    {
+      "english": "spoil",
+      "sourceId": "jr_en_audit_word_spoil"
+    },
+    {
+      "english": "defend",
+      "sourceId": "jr_en_audit_word_defend"
+    },
+    {
+      "english": "protect",
+      "sourceId": "jr_en_audit_word_protect"
+    },
+    {
+      "english": "advise",
+      "sourceId": "jr_en_audit_word_advise"
+    },
+    {
+      "english": "recommend",
+      "sourceId": "jr_en_audit_word_recommend"
+    },
+    {
+      "english": "share",
+      "sourceId": "jr_en_audit_word_share"
+    },
+    {
+      "english": "succeed",
+      "sourceId": "jr_en_audit_word_succeed"
+    },
+    {
+      "english": "own",
+      "sourceId": "jr_en_audit_word_own"
+    },
+    {
+      "english": "owe",
+      "sourceId": "jr_en_audit_word_owe"
+    },
+    {
+      "english": "earn",
+      "sourceId": "jr_en_audit_word_earn"
+    },
+    {
+      "english": "afford",
+      "sourceId": "jr_en_audit_word_afford"
+    },
+    {
+      "english": "meet",
+      "sourceId": "jr_en_audit_word_meet"
+    },
+    {
+      "english": "cheat",
+      "sourceId": "jr_en_audit_word_cheat"
+    },
+    {
+      "english": "steal",
+      "sourceId": "jr_en_audit_word_steal"
+    },
+    {
+      "english": "rob",
+      "sourceId": "jr_en_audit_word_rob"
+    },
+    {
+      "english": "fit",
+      "sourceId": "jr_en_audit_word_fit"
+    },
+    {
+      "english": "suit",
+      "sourceId": "jr_en_audit_word_suit"
+    },
+    {
+      "english": "select",
+      "sourceId": "jr_en_audit_word_select"
+    },
+    {
+      "english": "mark",
+      "sourceId": "jr_en_audit_word_mark"
+    },
+    {
+      "english": "subtract",
+      "sourceId": "jr_en_audit_word_subtract"
+    }
+  ],
+  "grammar_gaps": [
+    {
+      "point": "weather_it",
+      "unit": "天気と時刻",
+      "sourceId": "jr_en_app_grammar_weather_it"
+    },
+    {
+      "point": "time_it",
+      "unit": "天気と時刻",
+      "sourceId": "jr_en_app_grammar_time_it"
+    },
+    {
+      "point": "stative_know",
+      "unit": "現在形と進行形",
+      "sourceId": "jr_en_app_grammar_stative_know"
+    },
+    {
+      "point": "imperative_or",
+      "unit": "命令文",
+      "sourceId": "jr_en_app_grammar_imperative_or"
+    },
+    {
+      "point": "why_dont_we",
+      "unit": "提案と依頼",
+      "sourceId": "jr_en_app_grammar_why_dont_we"
+    },
+    {
+      "point": "shall_we",
+      "unit": "提案と依頼",
+      "sourceId": "jr_en_app_grammar_shall_we"
+    },
+    {
+      "point": "tag_be",
+      "unit": "付加疑問",
+      "sourceId": "jr_en_app_grammar_tag_be"
+    },
+    {
+      "point": "tag_general",
+      "unit": "付加疑問",
+      "sourceId": "jr_en_app_grammar_tag_general"
+    },
+    {
+      "point": "few_little_noun",
+      "unit": "数量",
+      "sourceId": "jr_en_app_grammar_few_little_noun"
+    },
+    {
+      "point": "a_few_positive",
+      "unit": "数量",
+      "sourceId": "jr_en_app_grammar_a_few_positive"
+    },
+    {
+      "point": "a_little_positive",
+      "unit": "数量",
+      "sourceId": "jr_en_app_grammar_a_little_positive"
+    },
+    {
+      "point": "another_singular",
+      "unit": "代名詞と限定",
+      "sourceId": "jr_en_app_grammar_another_singular"
+    },
+    {
+      "point": "one_replacement",
+      "unit": "代名詞と限定",
+      "sourceId": "jr_en_app_grammar_one_replacement"
+    },
+    {
+      "point": "hundred_number",
+      "unit": "数の表現",
+      "sourceId": "jr_en_app_grammar_hundred_number"
+    },
+    {
+      "point": "plural_possessive",
+      "unit": "所有の表現",
+      "sourceId": "jr_en_app_grammar_plural_possessive"
+    },
+    {
+      "point": "comparative_much",
+      "unit": "比較",
+      "sourceId": "jr_en_app_grammar_comparative_much"
+    },
+    {
+      "point": "superlative_in",
+      "unit": "比較",
+      "sourceId": "jr_en_app_grammar_superlative_in"
+    },
+    {
+      "point": "not_as_comparison",
+      "unit": "比較",
+      "sourceId": "jr_en_app_grammar_not_as_comparison"
+    },
+    {
+      "point": "will_negative",
+      "unit": "未来表現",
+      "sourceId": "jr_en_app_grammar_will_negative"
+    },
+    {
+      "point": "could_request",
+      "unit": "提案と依頼",
+      "sourceId": "jr_en_app_grammar_could_request"
+    },
+    {
+      "point": "should_negative_form",
+      "unit": "助動詞",
+      "sourceId": "jr_en_app_grammar_should_negative_form"
+    },
+    {
+      "point": "must_inference",
+      "unit": "助動詞",
+      "sourceId": "jr_en_app_grammar_must_inference"
+    },
+    {
+      "point": "infinitive_for_person",
+      "unit": "不定詞",
+      "sourceId": "jr_en_app_grammar_infinitive_for_person"
+    },
+    {
+      "point": "too_for_person",
+      "unit": "不定詞",
+      "sourceId": "jr_en_app_grammar_too_for_person"
+    },
+    {
+      "point": "so_degree_that",
+      "unit": "程度と結果",
+      "sourceId": "jr_en_app_grammar_so_degree_that"
+    },
+    {
+      "point": "make_person_verb",
+      "unit": "文型",
+      "sourceId": "jr_en_app_grammar_make_person_verb"
+    },
+    {
+      "point": "how_to_method",
+      "unit": "不定詞",
+      "sourceId": "jr_en_app_grammar_how_to_method"
+    },
+    {
+      "point": "relative_subject_keep",
+      "unit": "関係代名詞",
+      "sourceId": "jr_en_app_grammar_relative_subject_keep"
+    },
+    {
+      "point": "passive_by_pronoun",
+      "unit": "受け身",
+      "sourceId": "jr_en_app_grammar_passive_by_pronoun"
+    },
+    {
+      "point": "perfect_never",
+      "unit": "現在完了",
+      "sourceId": "jr_en_app_grammar_perfect_never"
+    },
+    {
+      "point": "past_finished_time",
+      "unit": "過去形と完了",
+      "sourceId": "jr_en_app_grammar_past_finished_time"
+    },
+    {
+      "point": "perfect_already",
+      "unit": "現在完了",
+      "sourceId": "jr_en_app_grammar_perfect_already"
+    }
+  ],
+  "reading_patterns": [
+    {
+      "sourceId": "jr_en_app_reading_pronoun_plural",
+      "unit": "指示語",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_notice_price",
+      "unit": "案内文",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_notice_time",
+      "unit": "案内文",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_response_permission",
+      "unit": "会話の応答",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_location",
+      "unit": "必要情報",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_sequence_first",
+      "unit": "時系列",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_frequency",
+      "unit": "必要情報",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_but_contrast",
+      "unit": "接続関係",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_comparison",
+      "unit": "比較の読み方",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_paraphrase",
+      "unit": "言い換え",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_unless_schedule",
+      "unit": "条件の読み方",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_before_deadline",
+      "unit": "案内文",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_not_both",
+      "unit": "否定の範囲",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_reason_result",
+      "unit": "理由と結果",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_example",
+      "unit": "主張と例",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_request_action",
+      "unit": "必要情報",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_inference_limit",
+      "unit": "推測の限界",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_relative_referent",
+      "unit": "修飾関係",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_contrast_preference",
+      "unit": "接続関係",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_purpose",
+      "unit": "目的の読み方",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_summary",
+      "unit": "要点",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_quantifier",
+      "unit": "条件と数量",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_this_referent",
+      "unit": "指示語",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_opinion_fact",
+      "unit": "事実と意見",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_notice_booking",
+      "unit": "案内文",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_notice_closed_exception",
+      "unit": "案内文",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_response_offer",
+      "unit": "会話の応答",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_transport_method",
+      "unit": "必要情報",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_used_to_change",
+      "unit": "時の読み分け",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_invitation_decline_reason",
+      "unit": "会話の応答",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_without_condition",
+      "unit": "条件の読み方",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_only_scope",
+      "unit": "限定の範囲",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_at_least_quantity",
+      "unit": "条件と数量",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_at_most_quantity",
+      "unit": "条件と数量",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_however_referent",
+      "unit": "要点と対比",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_claim_example_order",
+      "unit": "主張と例",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_not_yet_inference",
+      "unit": "推測の限界",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_reason_not_purpose",
+      "unit": "理由と目的",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_comparison_equal",
+      "unit": "比較の読み方",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_app_reading_pronoun_contrast",
+      "unit": "指示語",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_pronoun",
+      "unit": "指示語",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_after",
+      "unit": "時系列",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_because",
+      "unit": "理由と結果",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_if",
+      "unit": "条件の読み方",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_not_all",
+      "unit": "否定の範囲",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_however",
+      "unit": "接続関係",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_notice",
+      "unit": "案内文",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    },
+    {
+      "sourceId": "jr_en_core_reading_decline",
+      "unit": "会話の応答",
+      "patterns": [
+        "base",
+        "context-2"
+      ]
+    }
+  ]
+}

@@ -215,7 +215,20 @@
     ],
     "note": "頻度の副詞usuallyは基本的にbe動詞の後ろに置く。",
     "learning_point": "frequency_position",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「彼女はたいてい家にいる」She (？). に続く正しい語順は？",
+        "answer": "is usually at home",
+        "dummies": [
+          "usually home is at",
+          "is at usually home",
+          "home is usually at"
+        ],
+        "note": "頻度の副詞usuallyは基本的にbe動詞の後ろに置く。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_progressive_now",
@@ -235,7 +248,20 @@
     ],
     "note": "今行っている動作はbe動詞の現在形と動詞のing形で表す。",
     "learning_point": "progressive_now",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Look! Emi (？) now.「走っている」に入る語句は？",
+        "answer": "is running",
+        "dummies": [
+          "run",
+          "runs",
+          "was run"
+        ],
+        "note": "今行っている動作は現在形のbe動詞とing形で表す。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_ing_write",
@@ -1080,7 +1106,20 @@
     ],
     "note": "It isと形容詞とto不定詞で、動作について評価する。",
     "learning_point": "it_to",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「英語を学ぶことは楽しい」It is fun (？) English. に入る語句は？",
+        "answer": "to learn",
+        "dummies": [
+          "learn to",
+          "to learning",
+          "learns"
+        ],
+        "note": "It isと形容詞とto不定詞で、動作について述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_tell_to",
@@ -1133,7 +1172,20 @@
     ],
     "note": "現実と異なる願いをI wishと過去形で表す。be動詞はwereを使える。",
     "learning_point": "wish_were",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I wish I (？) rich. 現実とは違う願いに入る語は？",
+        "answer": "were",
+        "dummies": [
+          "am",
+          "will be",
+          "have been"
+        ],
+        "note": "I wishと過去形で現実とは異なる願いを述べる。be動詞はwereを使える。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_pronoun_plural",
@@ -1153,7 +1205,20 @@
     ],
     "note": "themは複数の名詞two catsを受ける。",
     "learning_point": "pronoun_plural",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Ken has three dogs. He walks them every day. themが指すのは？",
+        "answer": "3匹の犬",
+        "dummies": [
+          "ケン",
+          "毎日",
+          "散歩する道"
+        ],
+        "note": "複数の目的格themはthree dogsを受ける。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_notice_price",
@@ -1173,7 +1238,20 @@
     ],
     "note": "料金表のChildrenに対応する金額を読む。",
     "learning_point": "notice_price",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Ticket: Adults ¥800 / Children ¥300. 大人1人の料金は？",
+        "answer": "800円",
+        "dummies": [
+          "300円",
+          "1100円",
+          "500円"
+        ],
+        "note": "料金表のAdultsに対応する金額を確認する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_notice_time",
@@ -1193,7 +1271,20 @@
     ],
     "note": "閉館時刻と最終入場時刻を区別し、Last entryを見る。",
     "learning_point": "notice_time",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Open: 10:00–18:00. Last entry: 17:30. 最終入場は何時？",
+        "answer": "17時30分",
+        "dummies": [
+          "10時",
+          "18時",
+          "18時30分"
+        ],
+        "note": "Last entryが最終入場。閉館時刻と区別する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_response_permission",
@@ -1213,7 +1304,20 @@
     ],
     "note": "Sure. Go ahead. は相手の依頼を認める返答。",
     "learning_point": "response_permission",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Can I use this chair? — Of course. 相手は何を伝えた？",
+        "answer": "椅子を使ってよい",
+        "dummies": [
+          "椅子を使わないでほしい",
+          "椅子を持っていない",
+          "椅子の場所を知りたい"
+        ],
+        "note": "Of course. はこの場面で使用を認める返答。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_location",
@@ -1233,7 +1337,20 @@
     ],
     "note": "next to the bankで銀行の隣と述べ、駅の隣ではないと否定している。",
     "learning_point": "location",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The park is next to the school, not the bank. 公園の隣にあるのは？",
+        "answer": "学校",
+        "dummies": [
+          "銀行",
+          "駅",
+          "図書館"
+        ],
+        "note": "next to the schoolで学校の隣と示している。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_sequence_first",
@@ -1253,7 +1370,20 @@
     ],
     "note": "Firstが最初、Nextが次の手順を示す。",
     "learning_point": "sequence_first",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "First, open the box. Next, take out the book. 最初にすることは？",
+        "answer": "箱を開ける",
+        "dummies": [
+          "本を取り出す",
+          "本を読む",
+          "箱を閉める"
+        ],
+        "note": "Firstの後ろが最初の手順。Nextの後ろは次の手順。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_frequency",
@@ -1273,7 +1403,20 @@
     ],
     "note": "火曜日と金曜日の2日。曜日と日数を区別する。",
     "learning_point": "frequency",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I swim on Mondays, Wednesdays and Saturdays. 週に何日泳ぐ？",
+        "answer": "3日",
+        "dummies": [
+          "1日",
+          "2日",
+          "4日"
+        ],
+        "note": "挙げられた月・水・土の3日を数える。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_but_contrast",
@@ -1293,7 +1436,20 @@
     ],
     "note": "butはここで二人の好みを対比している。",
     "learning_point": "but_contrast",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I like tea, but my brother likes coffee. butが結ぶのは？",
+        "answer": "二人の好みの違い",
+        "dummies": [
+          "同じ飲み物を好む理由",
+          "飲む時間の順序",
+          "飲み物の値段"
+        ],
+        "note": "butで二人の好みを対比する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_comparison",
@@ -1313,7 +1469,20 @@
     ],
     "note": "KenがTomより高く、TomがJunより高いのでKenが最も高い。",
     "learning_point": "comparison",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Aya is younger than Emi. Emi is younger than Yui. 最も年上なのは？",
+        "answer": "Yui",
+        "dummies": [
+          "Aya",
+          "Emi",
+          "全員同じ"
+        ],
+        "note": "AyaはEmiより若く、EmiはYuiより若いのでYuiが最年長。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_paraphrase",
@@ -1333,7 +1502,20 @@
     ],
     "note": "It takesと時間とto不定詞で、その動作にかかる時間を表す。",
     "learning_point": "paraphrase",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "It takes us twenty minutes to walk to the park. 同じ内容は？",
+        "answer": "公園まで徒歩で20分かかる",
+        "dummies": [
+          "公園で20分歩く",
+          "公園まで20分走る",
+          "公園まで徒歩で20分未満"
+        ],
+        "note": "It takesと時間とto不定詞で所要時間を述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_unless_schedule",
@@ -1353,7 +1535,20 @@
     ],
     "note": "雨の条件が成立するときはifの文の後半のfourを使う。",
     "learning_point": "unless_schedule",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The tour starts at ten. If it snows, it starts at eleven. 雪の場合の開始時刻は？",
+        "answer": "11時",
+        "dummies": [
+          "10時",
+          "9時",
+          "決まっていない"
+        ],
+        "note": "雪という条件の文ではelevenを開始時刻として示す。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_before_deadline",
@@ -1373,7 +1568,20 @@
     ],
     "note": "byは期限を表す。「〜までずっと」のuntilとは区別する。",
     "learning_point": "before_deadline",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Please finish the report by Monday. 求められているのは？",
+        "answer": "月曜日までに報告書を仕上げる",
+        "dummies": [
+          "月曜日から作り始める",
+          "月曜日まで毎日仕上げる",
+          "月曜日に報告書を買う"
+        ],
+        "note": "by Mondayは月曜日を期限として示す。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_not_both",
@@ -1393,7 +1601,20 @@
     ],
     "note": "否定文のeither A or Bはどちらも〜ないという意味になる。",
     "learning_point": "not_both",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She doesn't like either soccer or baseball. 好みについて言えるのは？",
+        "answer": "サッカーも野球も好きではない",
+        "dummies": [
+          "サッカーだけ好きだ",
+          "野球だけ好きだ",
+          "両方好きだ"
+        ],
+        "note": "否定文のeither A or Bはどちらも〜ないと述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_reason_result",
@@ -1413,7 +1634,20 @@
     ],
     "note": "soの後ろが結果。会議自体の延期は述べていない。",
     "learning_point": "reason_result",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "It rained, so we stayed home. 雨が降った結果、何をした？",
+        "answer": "家にいた",
+        "dummies": [
+          "雨を降らせた",
+          "学校へ走った",
+          "旅行を始めた"
+        ],
+        "note": "soの後ろが結果。前の節はその理由。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_example",
@@ -1433,7 +1667,20 @@
     ],
     "note": "For exampleは一般的な内容に具体例を添える表現。",
     "learning_point": "example",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Some birds cannot fly. For example, penguins cannot. For exampleの役割は？",
+        "answer": "前の内容の具体例を示す",
+        "dummies": [
+          "前の内容を否定する",
+          "出来事の順序を逆にする",
+          "原因だけを示す"
+        ],
+        "note": "飛べない鳥の具体例としてペンギンを挙げている。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_request_action",
@@ -1453,7 +1700,20 @@
     ],
     "note": "Bringで必要な物、don't needで不要な物を区別する。",
     "learning_point": "request_action",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Bring water. You don't need lunch. 持ってくる必要があるのは？",
+        "answer": "水",
+        "dummies": [
+          "昼食だけ",
+          "水と昼食の両方",
+          "何も要らない"
+        ],
+        "note": "Bringで求める物と、don't needで不要な物を区別する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_inference_limit",
@@ -1473,7 +1733,20 @@
     ],
     "note": "経験は分かるが、現在地や時期や回数までは述べられていない。",
     "learning_point": "inference_limit",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Emi has visited France. この文だけで分かるのは？",
+        "answer": "フランスへ行った経験がある",
+        "dummies": [
+          "今フランスにいる",
+          "去年フランスへ行った",
+          "フランスに2回行った"
+        ],
+        "note": "経験以外の現在地・時期・回数は述べられていない。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_relative_referent",
@@ -1493,7 +1766,20 @@
     ],
     "note": "who以下がThe girlを修飾し、その女の子がEmiだと述べる。",
     "learning_point": "relative_referent",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The boy who is reading a book is Ken. ケンについて正しいのは？",
+        "answer": "本を読んでいる男の子",
+        "dummies": [
+          "本を書いた先生",
+          "話し手の弟だと分かる",
+          "本を売っている女の子"
+        ],
+        "note": "who以下がThe boyを修飾し、その人物がKenだと述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_contrast_preference",
@@ -1513,7 +1799,20 @@
     ],
     "note": "高価という面から、便利という長所に話を転じている。",
     "learning_point": "contrast_preference",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The hotel is small. However, the rooms are clean. Howeverの後で述べるのは？",
+        "answer": "規模とは対照的な長所",
+        "dummies": [
+          "小さい原因",
+          "部屋の汚さ",
+          "宿泊者の人数"
+        ],
+        "note": "小さいという面から、清潔という長所に話を転じる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_purpose",
@@ -1533,7 +1832,20 @@
     ],
     "note": "so that以下が、何のためにお金をためたかを示す。",
     "learning_point": "purpose",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She studied hard so that she could pass the exam. 勉強した目的は？",
+        "answer": "試験に合格するため",
+        "dummies": [
+          "試験を延期するため",
+          "先生になるため",
+          "試験を作るため"
+        ],
+        "note": "so that以下が動作の目的を示す。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_summary",
@@ -1553,7 +1865,20 @@
     ],
     "note": "新しい語を学ぶことと他者を理解することを読書の利点として述べている。",
     "learning_point": "summary",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Walking helps us stay healthy and enjoy nature. 主な内容は？",
+        "answer": "散歩がもたらす二つの利点",
+        "dummies": [
+          "散歩の歴史",
+          "道を作る手順",
+          "散歩が嫌いな理由"
+        ],
+        "note": "健康維持と自然を楽しむことを利点として述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_quantifier",
@@ -1573,7 +1898,20 @@
     ],
     "note": "Allが全員、Someが一部。全員に必要と述べられたのは昼食。",
     "learning_point": "quantifier",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "All players need shoes. Some need hats, too. 全員に必要なのは？",
+        "answer": "靴",
+        "dummies": [
+          "帽子だけ",
+          "靴と帽子の両方",
+          "何も要らない"
+        ],
+        "note": "Allの文で全員に必要と示されているのはshoes。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_this_referent",
@@ -1593,7 +1931,20 @@
     ],
     "note": "Thisは直前の文で述べた行為全体を受けている。",
     "learning_point": "this_referent",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Ken cleaned the room. This made his mother happy. Thisが指すのは？",
+        "answer": "ケンが部屋を掃除したこと",
+        "dummies": [
+          "母が喜んだこと",
+          "部屋が狭かったこと",
+          "ケンが母を待ったこと"
+        ],
+        "note": "Thisは直前に述べた行為全体を受けている。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_reading_opinion_fact",
@@ -1613,7 +1964,20 @@
     ],
     "note": "I thinkと評価を含む後半が話し手の意見。開館年とは区別する。",
     "learning_point": "opinion_fact",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The shop opened in 2000. I think its bread is delicious. 意見を表す部分は？",
+        "answer": "パンがおいしいと思う",
+        "dummies": [
+          "2000年に開店した",
+          "店である",
+          "パンを扱っている"
+        ],
+        "note": "I thinkと味の評価を含む部分が話し手の意見。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_article_sound",
@@ -3196,6 +3560,1062 @@
           "飼うという動作"
         ],
         "note": "oneはdogの繰り返しを避ける代名詞。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_weather_it",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "天気と時刻",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「今日は晴れている」(？) is sunny today. に入る語は？",
+    "answer": "It",
+    "dummies": [
+      "There",
+      "They",
+      "These"
+    ],
+    "note": "天気を述べるときは、特定の物を指さない主語itを使う。",
+    "learning_point": "weather_it",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「今日は寒い」(？) is cold today. に入る語は？",
+        "answer": "It",
+        "dummies": [
+          "There",
+          "They",
+          "These"
+        ],
+        "note": "天気や気温を述べる文の主語にはitを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_time_it",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "天気と時刻",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「今は3時です」(？) is three o'clock now. に入る語は？",
+    "answer": "It",
+    "dummies": [
+      "There",
+      "They",
+      "These"
+    ],
+    "note": "時刻を述べるときは主語itを使う。",
+    "learning_point": "time_it",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「今は正午です」(？) is noon now. に入る語は？",
+        "answer": "It",
+        "dummies": [
+          "There",
+          "They",
+          "These"
+        ],
+        "note": "時刻を述べる文の主語にはitを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_stative_know",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在形と進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I (？) the answer now.「答えを知っている」に入る形は？",
+    "answer": "know",
+    "dummies": [
+      "am knowing",
+      "knowing",
+      "knows"
+    ],
+    "note": "knowは知っている状態を表し、普通は進行形にしない。",
+    "learning_point": "stative_know",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She (？) his name.「名前を知っている」に入る形は？",
+        "answer": "knows",
+        "dummies": [
+          "is knowing",
+          "knowing",
+          "know"
+        ],
+        "note": "知っている状態は通常の現在形で表す。主語sheなのでknows。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_imperative_or",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "命令文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Hurry up, or you'll be late. の意味は？",
+    "answer": "急がないと遅れる",
+    "dummies": [
+      "急いだから遅れた",
+      "急げば早く着く",
+      "遅れたので急いだ"
+    ],
+    "note": "命令文の後ろのorは「さもないと」と結果をつなぐ。",
+    "learning_point": "imperative_or",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Be careful, or you'll fall. の意味は？",
+        "answer": "気をつけないと転ぶ",
+        "dummies": [
+          "気をつけたので転んだ",
+          "転べば気をつける",
+          "転んだので気をつけた"
+        ],
+        "note": "命令文とorで「〜しなさい、さもないと」と述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_why_dont_we",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "提案と依頼",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Why don't we take a walk? の意図は？",
+    "answer": "一緒に散歩しようと提案",
+    "dummies": [
+      "散歩した理由を尋ねる",
+      "散歩を禁止する",
+      "散歩を終えたと報告"
+    ],
+    "note": "Why don't weで一緒にすることを提案する。",
+    "learning_point": "why_dont_we",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Why don't we play tennis? の意図は？",
+        "answer": "一緒にテニスをしようと提案",
+        "dummies": [
+          "テニスをした理由を尋ねる",
+          "テニスを禁止する",
+          "試合の結果を報告"
+        ],
+        "note": "Why don't weは行動の提案を表せる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_shall_we",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "提案と依頼",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) we go now?「そろそろ行きましょうか」に入る語は？",
+    "answer": "Shall",
+    "dummies": [
+      "Are",
+      "Does",
+      "Has"
+    ],
+    "note": "Shall weと動詞の原形で、一緒にすることを提案できる。",
+    "learning_point": "shall_we",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) we start?「始めましょうか」に入る語は？",
+        "answer": "Shall",
+        "dummies": [
+          "Are",
+          "Does",
+          "Has"
+        ],
+        "note": "Shall weは一緒に行う動作を提案する形。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_tag_be",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "付加疑問",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She is your sister, (？)? に入る語句は？",
+    "answer": "isn't she",
+    "dummies": [
+      "doesn't she",
+      "isn't her",
+      "wasn't she"
+    ],
+    "note": "肯定のbe動詞の文に、否定形と主語の代名詞を添える。",
+    "learning_point": "tag_be",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "They are busy, (？)? に入る語句は？",
+        "answer": "aren't they",
+        "dummies": [
+          "don't they",
+          "isn't they",
+          "aren't them"
+        ],
+        "note": "肯定のareに対応する否定の付加疑問はaren't they。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_tag_general",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "付加疑問",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Ken plays tennis, (？)? に入る語句は？",
+    "answer": "doesn't he",
+    "dummies": [
+      "isn't he",
+      "don't he",
+      "doesn't him"
+    ],
+    "note": "一般動詞の現在形、三人称単数にはdoesn'tを使う。",
+    "learning_point": "tag_general",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "You like music, (？)? に入る語句は？",
+        "answer": "don't you",
+        "dummies": [
+          "aren't you",
+          "doesn't you",
+          "don't your"
+        ],
+        "note": "主語youの一般動詞の肯定文にはdon't youを添える。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_few_little_noun",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have (？) friends here.「友達がほとんどいない」に入る語は？",
+    "answer": "few",
+    "dummies": [
+      "little",
+      "much",
+      "a little"
+    ],
+    "note": "friendsは数えられる複数名詞なのでfew。",
+    "learning_point": "few_little_noun",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "There are (？) books here.「本がほとんどない」に入る語は？",
+        "answer": "few",
+        "dummies": [
+          "little",
+          "much",
+          "a little"
+        ],
+        "note": "数えられる複数のbooksにはfewを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_a_few_positive",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have a few friends here. の意味は？",
+    "answer": "ここに友達が何人かいる",
+    "dummies": [
+      "ここには友達が全くいない",
+      "ここには友達がほとんどいない",
+      "ここに友達が大勢いる"
+    ],
+    "note": "a fewは、少数だがあることを肯定的に述べる。",
+    "learning_point": "a_few_positive",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "There are a few books. の意味は？",
+        "answer": "本が何冊かある",
+        "dummies": [
+          "本が全くない",
+          "本がほとんどない",
+          "本が大量にある"
+        ],
+        "note": "a fewは少数が存在することを述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_a_little_positive",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "We have a little time. の意味は？",
+    "answer": "時間が少しある",
+    "dummies": [
+      "時間が全くない",
+      "時間がほとんどない",
+      "時間が大量にある"
+    ],
+    "note": "a littleは、数えない物の量が少しはあるという意味。",
+    "learning_point": "a_little_positive",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "There is a little milk. の意味は？",
+        "answer": "牛乳が少しある",
+        "dummies": [
+          "牛乳が全くない",
+          "牛乳がほとんどない",
+          "牛乳が大量にある"
+        ],
+        "note": "a littleは、少量だがあることを述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_another_singular",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "代名詞と限定",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「もう1冊の本」(？) book に入る語は？",
+    "answer": "another",
+    "dummies": [
+      "other",
+      "others",
+      "the others"
+    ],
+    "note": "anotherの後ろには単数名詞を置いて、もう一つを表す。",
+    "learning_point": "another_singular",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「もう1個のリンゴ」(？) apple に入る語は？",
+        "answer": "another",
+        "dummies": [
+          "other",
+          "others",
+          "the others"
+        ],
+        "note": "anotherと単数名詞で、もう一つを表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_one_replacement",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "代名詞と限定",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I lost my pen. I need a new (？). に入る語は？",
+    "answer": "one",
+    "dummies": [
+      "it",
+      "them",
+      "its"
+    ],
+    "note": "同種の別のペンを表すone。itは特定の同じ物を受ける。",
+    "learning_point": "one_replacement",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This bag is old. I want a new (？). に入る語は？",
+        "answer": "one",
+        "dummies": [
+          "it",
+          "them",
+          "its"
+        ],
+        "note": "同種の別のかばんを指すのでoneを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_hundred_number",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数の表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「300人の生徒」three (？) students に入る語は？",
+    "answer": "hundred",
+    "dummies": [
+      "hundreds",
+      "hundreds of",
+      "hundred of"
+    ],
+    "note": "具体的な数の後ろではhundredにsを付けない。",
+    "learning_point": "hundred_number",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「200冊の本」two (？) books に入る語は？",
+        "answer": "hundred",
+        "dummies": [
+          "hundreds",
+          "hundreds of",
+          "hundred of"
+        ],
+        "note": "具体的な数を前に置くときはhundredを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_plural_possessive",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "所有の表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「その生徒たちのかばん」the (？) bagsに入る形は？",
+    "answer": "students'",
+    "dummies": [
+      "student's",
+      "students",
+      "students's"
+    ],
+    "note": "sで終わる複数名詞の所有格には、末尾にアポストロフィだけを付ける。",
+    "learning_point": "plural_possessive",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「その先生たちの部屋」the (？) roomに入る形は？",
+        "answer": "teachers'",
+        "dummies": [
+          "teacher's",
+          "teachers",
+          "teachers's"
+        ],
+        "note": "複数形teachersの所有はteachers'とする。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_comparative_much",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「ずっと大きい」(？) bigger に入る語は？",
+    "answer": "much",
+    "dummies": [
+      "very",
+      "many",
+      "most"
+    ],
+    "note": "比較級を強めるときはmuchを使い、veryは使わない。",
+    "learning_point": "comparative_much",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「ずっと高い」(？) taller に入る語は？",
+        "answer": "much",
+        "dummies": [
+          "very",
+          "many",
+          "most"
+        ],
+        "note": "muchと比較級で「ずっと〜」と表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_superlative_in",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She is the tallest (？) her class. に入る語は？",
+    "answer": "in",
+    "dummies": [
+      "of",
+      "than",
+      "as"
+    ],
+    "note": "集団や範囲を表すher classの前ではinを使う。",
+    "learning_point": "superlative_in",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This is the oldest building (？) our town. に入る語は？",
+        "answer": "in",
+        "dummies": [
+          "of",
+          "than",
+          "as"
+        ],
+        "note": "場所や範囲を表すour townの前ではinを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_not_as_comparison",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Ken is not as tall as Tom. 同じ内容は？",
+    "answer": "ケンはトムより背が低い",
+    "dummies": [
+      "ケンはトムより背が高い",
+      "二人は同じ背の高さ",
+      "トムの背の高さは不明"
+    ],
+    "note": "not as tall asは、比較相手ほど背が高くないという意味。",
+    "learning_point": "not_as_comparison",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This bag is not as heavy as that one. 同じ内容は？",
+        "answer": "このかばんの方が軽い",
+        "dummies": [
+          "このかばんの方が重い",
+          "二つは同じ重さ",
+          "どちらが重いか不明"
+        ],
+        "note": "not as heavy asは、相手の物ほど重くないという意味。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_will_negative",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "未来表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "He will not come. のwill notを短縮すると？",
+    "answer": "won't",
+    "dummies": [
+      "willn't",
+      "wont'",
+      "wouldn't"
+    ],
+    "note": "will notの短縮形はwon't。",
+    "learning_point": "will_negative",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「明日は雨が降らない」It (？) rain tomorrow. に入る短縮形は？",
+        "answer": "won't",
+        "dummies": [
+          "willn't",
+          "wont'",
+          "wouldn't"
+        ],
+        "note": "未来の否定を表すwill notはwon'tと短縮する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_could_request",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "提案と依頼",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Could you help me? の主な意図は？",
+    "answer": "丁寧に助けを依頼する",
+    "dummies": [
+      "過去に助けたと報告する",
+      "助けを禁止する",
+      "自分の能力を述べる"
+    ],
+    "note": "Could youと動詞の原形で、丁寧な依頼を表す。",
+    "learning_point": "could_request",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Could you open the window? の主な意図は？",
+        "answer": "丁寧に窓開けを依頼する",
+        "dummies": [
+          "窓を開けたと報告する",
+          "窓開けを禁止する",
+          "自分の能力を述べる"
+        ],
+        "note": "Could youは相手に動作を丁寧に頼む形。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_should_negative_form",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「ここで走るべきではない」You (？) run here. に入る語句は？",
+    "answer": "should not",
+    "dummies": [
+      "shouldn't to",
+      "don't should",
+      "should not to"
+    ],
+    "note": "助動詞shouldの否定はshould not。その後ろは原形。",
+    "learning_point": "should_negative_form",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「そんなに食べるべきではない」You (？) eat so much. に入る語句は？",
+        "answer": "should not",
+        "dummies": [
+          "shouldn't to",
+          "don't should",
+          "should not to"
+        ],
+        "note": "should notと動詞の原形で助言の否定を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_must_inference",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "He must be tired.「きっと疲れている」のmustは？",
+    "answer": "確信の強い推量",
+    "dummies": [
+      "義務",
+      "許可",
+      "禁止"
+    ],
+    "note": "must beは、根拠に基づいて「〜に違いない」と推量できる。",
+    "learning_point": "must_inference",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She must be at home.「きっと家にいる」のmustは？",
+        "answer": "確信の強い推量",
+        "dummies": [
+          "義務",
+          "許可",
+          "禁止"
+        ],
+        "note": "このmustは、義務ではなく強い推量を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_infinitive_for_person",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "It is easy (？) me to read this. に入る語は？",
+    "answer": "for",
+    "dummies": [
+      "to",
+      "at",
+      "by"
+    ],
+    "note": "to不定詞の動作をする人をforと目的格で表す。",
+    "learning_point": "infinitive_for_person",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "It is important (？) us to learn it. に入る語は？",
+        "answer": "for",
+        "dummies": [
+          "to",
+          "at",
+          "by"
+        ],
+        "note": "for usで、その動作をする人を示す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_too_for_person",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This box is too heavy (？) me to carry. に入る語は？",
+    "answer": "for",
+    "dummies": [
+      "to",
+      "at",
+      "by"
+    ],
+    "note": "動作をする人はfor meで表し、その後ろにto carryを続ける。",
+    "learning_point": "too_for_person",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This book is too difficult (？) him to read. に入る語は？",
+        "answer": "for",
+        "dummies": [
+          "to",
+          "at",
+          "by"
+        ],
+        "note": "to readの動作をする人をfor himで表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_so_degree_that",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "程度と結果",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「とても疲れていたので眠った」I was (？) tired that I fell asleep. に入る語は？",
+    "answer": "so",
+    "dummies": [
+      "such",
+      "too",
+      "enough"
+    ],
+    "note": "soと形容詞とthat節で、程度とその結果を表す。",
+    "learning_point": "so_degree_that",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「とても寒かったので家にいた」It was (？) cold that we stayed home. に入る語は？",
+        "answer": "so",
+        "dummies": [
+          "such",
+          "too",
+          "enough"
+        ],
+        "note": "so cold thatで、とても寒かった結果を述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_make_person_verb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "The teacher made us (？) the room. に入る形は？",
+    "answer": "clean",
+    "dummies": [
+      "to clean",
+      "cleaned",
+      "cleans"
+    ],
+    "note": "makeと人と動詞の原形で「人に〜させる」。",
+    "learning_point": "make_person_verb",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The movie made me (？). に入る形は？",
+        "answer": "cry",
+        "dummies": [
+          "to cry",
+          "cried",
+          "cries"
+        ],
+        "note": "makeと人と動詞の原形で、動作をさせることを表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_how_to_method",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「この機械の使い方」(？) to use this machine に入る語は？",
+    "answer": "how",
+    "dummies": [
+      "when",
+      "where",
+      "which"
+    ],
+    "note": "howとto不定詞で「〜する方法」を表す。",
+    "learning_point": "how_to_method",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「そこへの行き方」(？) to get there に入る語は？",
+        "answer": "how",
+        "dummies": [
+          "when",
+          "where",
+          "which"
+        ],
+        "note": "how to get thereで「そこへの行き方」。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_relative_subject_keep",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "関係代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "The boy who lives here is Ken. この文のwhoは省略できる？",
+    "answer": "省略できない",
+    "dummies": [
+      "いつでも省略できる",
+      "文末へ移せば省略できる",
+      "isも消せば省略できる"
+    ],
+    "note": "whoは後ろの節の主語なので省略できない。",
+    "learning_point": "relative_subject_keep",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I know a girl who speaks French. この文のwhoは省略できる？",
+        "answer": "省略できない",
+        "dummies": [
+          "いつでも省略できる",
+          "文末へ移せば省略できる",
+          "speaksも消せば省略できる"
+        ],
+        "note": "主格の関係代名詞whoは、この形では省略できない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_passive_by_pronoun",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "受け身",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This book was written by (？).「彼によって」に入る語は？",
+    "answer": "him",
+    "dummies": [
+      "he",
+      "his",
+      "himself's"
+    ],
+    "note": "前置詞byの後ろでは人称代名詞の目的格himを使う。",
+    "learning_point": "passive_by_pronoun",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This cake was made by (？).「彼女によって」に入る語は？",
+        "answer": "her",
+        "dummies": [
+          "she",
+          "hers",
+          "herself's"
+        ],
+        "note": "前置詞byの後ろに置く人称代名詞は目的格her。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_perfect_never",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have (？) seen snow.「一度も見たことがない」に入る語は？",
+    "answer": "never",
+    "dummies": [
+      "ever",
+      "already",
+      "yet"
+    ],
+    "note": "経験の否定はhave neverと過去分詞で表せる。",
+    "learning_point": "perfect_never",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She has (？) visited Canada.「一度も訪れたことがない」に入る語は？",
+        "answer": "never",
+        "dummies": [
+          "ever",
+          "already",
+          "yet"
+        ],
+        "note": "has never visitedで、これまでに訪れた経験がないことを表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_past_finished_time",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "過去形と完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I (？) him yesterday. に入る語句は？",
+    "answer": "saw",
+    "dummies": [
+      "have seen",
+      "have saw",
+      "seen"
+    ],
+    "note": "yesterdayという過去の時点を明示するときは過去形を使う。",
+    "learning_point": "past_finished_time",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She (？) the letter last night. に入る語句は？",
+        "answer": "wrote",
+        "dummies": [
+          "has written",
+          "has wrote",
+          "written"
+        ],
+        "note": "last nightという過去の時点を明示するときは過去形を使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_perfect_already",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have already finished lunch. のalreadyは？",
+    "answer": "すでに",
+    "dummies": [
+      "まだ〜ない",
+      "これまでに一度でも",
+      "一度も〜ない"
+    ],
+    "note": "現在完了のalreadyは、すでに完了したことを表す。",
+    "learning_point": "perfect_already",
+    "content_batch": "english-application-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She has already left. のalreadyは？",
+        "answer": "すでに",
+        "dummies": [
+          "まだ〜ない",
+          "これまでに一度でも",
+          "一度も〜ない"
+        ],
+        "note": "alreadyは、すでにその動作が完了していることを示す。"
       }
     ]
   }

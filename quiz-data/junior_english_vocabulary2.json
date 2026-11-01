@@ -23591,5 +23591,3773 @@
     ],
     "note": "determination：決意。今回はこの意味で確認する。",
     "content_batch": "english-vocabulary-2"
+  },
+  {
+    "id": "jr_en_audit_word_help",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "help",
+    "japanese": "手助けする",
+    "english_dummies": [
+      "hurt",
+      "ignore",
+      "attack"
+    ],
+    "japanese_dummies": [
+      "痛める・傷つける",
+      "無視する",
+      "攻撃する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "help",
+        "dummies": [
+          "ehlp",
+          "hlep",
+          "hepl"
+        ]
+      }
+    ],
+    "note": "help：手助けする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_nice",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "性質の基本補充",
+    "english": "nice",
+    "japanese": "感じのよい",
+    "english_dummies": [
+      "ugly",
+      "dirty",
+      "noisy"
+    ],
+    "japanese_dummies": [
+      "醜い",
+      "汚れた",
+      "うるさい"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "nice",
+        "dummies": [
+          "ince",
+          "ncie",
+          "niec"
+        ]
+      }
+    ],
+    "note": "nice：感じのよい。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_handsome",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "性質の基本補充",
+    "english": "handsome",
+    "japanese": "顔立ちのよい",
+    "english_dummies": [
+      "ugly",
+      "plain",
+      "young"
+    ],
+    "japanese_dummies": [
+      "醜い",
+      "飾りのない",
+      "若い"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "han",
+        "dummies": [
+          "ahn",
+          "hna",
+          "hun"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "dso",
+        "dummies": [
+          "sdo",
+          "dos",
+          "dsa"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "me",
+        "dummies": [
+          "em",
+          "mi",
+          "ne"
+        ]
+      }
+    ],
+    "note": "handsome：顔立ちのよい。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_start",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "start",
+    "japanese": "始める",
+    "english_dummies": [
+      "finish",
+      "stop",
+      "repeat"
+    ],
+    "japanese_dummies": [
+      "終える",
+      "止まる",
+      "繰り返す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sta",
+        "dummies": [
+          "tsa",
+          "sat",
+          "stu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rt",
+        "dummies": [
+          "tr",
+          "lt",
+          "rd"
+        ]
+      }
+    ],
+    "note": "start：始める。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_shut",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "shut",
+    "japanese": "閉じる",
+    "english_dummies": [
+      "open",
+      "cover",
+      "hide"
+    ],
+    "japanese_dummies": [
+      "開ける",
+      "覆う",
+      "隠す"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "shut",
+        "dummies": [
+          "hsut",
+          "suht",
+          "shtu"
+        ]
+      }
+    ],
+    "note": "shut：閉じる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_rush",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "rush",
+    "japanese": "大急ぎで進む",
+    "english_dummies": [
+      "pause",
+      "relax",
+      "wander"
+    ],
+    "japanese_dummies": [
+      "一時止まる",
+      "くつろぐ",
+      "あてもなく歩く"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rush",
+        "dummies": [
+          "ursh",
+          "rsuh",
+          "ruhs"
+        ]
+      }
+    ],
+    "note": "rush：大急ぎで進む。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_call",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "call",
+    "japanese": "呼ぶ・電話する",
+    "english_dummies": [
+      "ask",
+      "tell",
+      "show"
+    ],
+    "japanese_dummies": [
+      "尋ねる",
+      "話して伝える",
+      "見せる"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "call",
+        "dummies": [
+          "acll",
+          "clal",
+          "carl"
+        ]
+      }
+    ],
+    "note": "call：呼ぶ・電話する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_love",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "love",
+    "japanese": "愛する",
+    "english_dummies": [
+      "hate",
+      "fear",
+      "respect"
+    ],
+    "japanese_dummies": [
+      "ひどく嫌う",
+      "恐れ",
+      "敬意"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "love",
+        "dummies": [
+          "olve",
+          "lvoe",
+          "loev"
+        ]
+      }
+    ],
+    "note": "love：愛する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_like",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "like",
+    "japanese": "好む",
+    "english_dummies": [
+      "hate",
+      "need",
+      "want"
+    ],
+    "japanese_dummies": [
+      "ひどく嫌う",
+      "必要とする",
+      "欲しい"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "like",
+        "dummies": [
+          "ilke",
+          "lkie",
+          "liek"
+        ]
+      }
+    ],
+    "note": "like：好む。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_hate",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "hate",
+    "japanese": "ひどく嫌う",
+    "english_dummies": [
+      "love",
+      "need",
+      "want"
+    ],
+    "japanese_dummies": [
+      "愛する",
+      "必要とする",
+      "欲しい"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hate",
+        "dummies": [
+          "ahte",
+          "htae",
+          "haet"
+        ]
+      }
+    ],
+    "note": "hate：ひどく嫌う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_wish",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "wish",
+    "japanese": "願う",
+    "english_dummies": [
+      "fear",
+      "remember",
+      "imagine"
+    ],
+    "japanese_dummies": [
+      "恐れ",
+      "思い出す",
+      "想像する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "wish",
+        "dummies": [
+          "iwsh",
+          "wsih",
+          "wihs"
+        ]
+      }
+    ],
+    "note": "wish：願う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_mind",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "mind",
+    "japanese": "気にする",
+    "english_dummies": [
+      "notice",
+      "forget",
+      "understand"
+    ],
+    "japanese_dummies": [
+      "気付く",
+      "忘れる",
+      "理解する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mind",
+        "dummies": [
+          "imnd",
+          "mnid",
+          "midn"
+        ]
+      }
+    ],
+    "note": "mind：気にする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_worry",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "worry",
+    "japanese": "心配する",
+    "english_dummies": [
+      "enjoy",
+      "relax",
+      "celebrate"
+    ],
+    "japanese_dummies": [
+      "楽しむ",
+      "くつろぐ",
+      "行事などを祝う"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "wor",
+        "dummies": [
+          "owr",
+          "wro",
+          "wol"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "worry：心配する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_care",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "気持ちの基本補充",
+    "english": "care",
+    "japanese": "気にかける",
+    "english_dummies": [
+      "ignore",
+      "forget",
+      "understand"
+    ],
+    "japanese_dummies": [
+      "無視する",
+      "忘れる",
+      "理解する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "care",
+        "dummies": [
+          "acre",
+          "crae",
+          "caer"
+        ]
+      }
+    ],
+    "note": "care：気にかける。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_matter",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "matter",
+    "japanese": "重要である",
+    "english_dummies": [
+      "happen",
+      "exist",
+      "change"
+    ],
+    "japanese_dummies": [
+      "起こる",
+      "存在する",
+      "つり銭"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mat",
+        "dummies": [
+          "amt",
+          "mta",
+          "mut"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ter",
+        "dummies": [
+          "etr",
+          "tre",
+          "tel"
+        ]
+      }
+    ],
+    "note": "matter：重要である。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_marry",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "marry",
+    "japanese": "結婚する",
+    "english_dummies": [
+      "meet",
+      "invite",
+      "visit"
+    ],
+    "japanese_dummies": [
+      "会う",
+      "招待する",
+      "訪問する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mar",
+        "dummies": [
+          "amr",
+          "mra",
+          "mal"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "marry：結婚する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_die",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "die",
+    "japanese": "死ぬ",
+    "english_dummies": [
+      "live",
+      "sleep",
+      "grow"
+    ],
+    "japanese_dummies": [
+      "住む",
+      "眠る",
+      "育つ・成長する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "die",
+        "dummies": [
+          "ide",
+          "dei",
+          "dee"
+        ]
+      }
+    ],
+    "note": "die：死ぬ。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_kill",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "kill",
+    "japanese": "殺す",
+    "english_dummies": [
+      "protect",
+      "heal",
+      "save"
+    ],
+    "japanese_dummies": [
+      "保護する",
+      "傷などを治す",
+      "救う"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "kill",
+        "dummies": [
+          "ikll",
+          "klil",
+          "kirl"
+        ]
+      }
+    ],
+    "note": "kill：殺す。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_fight",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "fight",
+    "japanese": "戦う",
+    "english_dummies": [
+      "agree",
+      "cooperate",
+      "celebrate"
+    ],
+    "japanese_dummies": [
+      "賛成する",
+      "協力する",
+      "行事などを祝う"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fig",
+        "dummies": [
+          "ifg",
+          "fgi",
+          "feg"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ht",
+        "dummies": [
+          "th",
+          "hd",
+          "ha"
+        ]
+      }
+    ],
+    "note": "fight：戦う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_beat",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "beat",
+    "japanese": "打ち負かす",
+    "english_dummies": [
+      "lose",
+      "join",
+      "cheer"
+    ],
+    "japanese_dummies": [
+      "負ける",
+      "参加する",
+      "声援を送る"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "beat",
+        "dummies": [
+          "ebat",
+          "baet",
+          "beta"
+        ]
+      }
+    ],
+    "note": "beat：打ち負かす。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_grow",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "grow",
+    "japanese": "育つ・成長する",
+    "english_dummies": [
+      "shrink",
+      "freeze",
+      "melt"
+    ],
+    "japanese_dummies": [
+      "縮む",
+      "凍る",
+      "溶ける"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "grow",
+        "dummies": [
+          "rgow",
+          "gorw",
+          "grwo"
+        ]
+      }
+    ],
+    "note": "grow：育つ・成長する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_become",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "become",
+    "japanese": "〜になる",
+    "english_dummies": [
+      "seem",
+      "remain",
+      "exist"
+    ],
+    "japanese_dummies": [
+      "〜のように思える",
+      "残る",
+      "存在する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bec",
+        "dummies": [
+          "ebc",
+          "bce",
+          "bic"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ome",
+        "dummies": [
+          "moe",
+          "oem",
+          "omi"
+        ]
+      }
+    ],
+    "note": "become：〜になる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_sound",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "感覚の動詞補充",
+    "english": "sound",
+    "japanese": "〜のように聞こえる",
+    "english_dummies": [
+      "look",
+      "smell",
+      "taste"
+    ],
+    "japanese_dummies": [
+      "〜のように見える",
+      "〜のようなにおいがする",
+      "〜のような味がする"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sou",
+        "dummies": [
+          "osu",
+          "suo",
+          "soa"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nd",
+        "dummies": [
+          "dn",
+          "nt",
+          "md"
+        ]
+      }
+    ],
+    "note": "sound：〜のように聞こえる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_blow",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "blow",
+    "japanese": "風が吹く",
+    "english_dummies": [
+      "freeze",
+      "melt",
+      "shine"
+    ],
+    "japanese_dummies": [
+      "凍る",
+      "溶ける",
+      "輝く"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "blow",
+        "dummies": [
+          "lbow",
+          "bolw",
+          "blwo"
+        ]
+      }
+    ],
+    "note": "blow：風が吹く。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_drive",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "移動と行動の補充",
+    "english": "drive",
+    "japanese": "自動車を運転する",
+    "english_dummies": [
+      "walk",
+      "fly",
+      "sail"
+    ],
+    "japanese_dummies": [
+      "歩く",
+      "飛ぶ",
+      "帆船で進む"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dri",
+        "dummies": [
+          "rdi",
+          "dir",
+          "dli"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ve",
+        "dummies": [
+          "ev",
+          "vi",
+          "be"
+        ]
+      }
+    ],
+    "note": "drive：自動車を運転する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_lead",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "移動と行動の補充",
+    "english": "lead",
+    "japanese": "先導する",
+    "english_dummies": [
+      "follow",
+      "obey",
+      "refuse"
+    ],
+    "japanese_dummies": [
+      "後について行く",
+      "従う",
+      "拒否する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lead",
+        "dummies": [
+          "elad",
+          "laed",
+          "leda"
+        ]
+      }
+    ],
+    "note": "lead：先導する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_disagree",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "disagree",
+    "japanese": "意見が合わない",
+    "english_dummies": [
+      "agree",
+      "obey",
+      "accept"
+    ],
+    "japanese_dummies": [
+      "賛成する",
+      "従う",
+      "受け入れる"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dis",
+        "dummies": [
+          "ids",
+          "dsi",
+          "des"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "agr",
+        "dummies": [
+          "gar",
+          "arg",
+          "agl"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ee",
+        "dummies": [
+          "ie",
+          "ea",
+          "ei"
+        ]
+      }
+    ],
+    "note": "disagree：意見が合わない。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_let",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "let",
+    "japanese": "〜させてやる・許す",
+    "english_dummies": [
+      "forbid",
+      "force",
+      "refuse"
+    ],
+    "japanese_dummies": [
+      "禁じる",
+      "強制する",
+      "拒否する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "let",
+        "dummies": [
+          "elt",
+          "lte",
+          "ret"
+        ]
+      }
+    ],
+    "note": "let：〜させてやる・許す。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_occur",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作と状態の補充",
+    "english": "occur",
+    "japanese": "起こる",
+    "english_dummies": [
+      "disappear",
+      "remain",
+      "exist"
+    ],
+    "japanese_dummies": [
+      "消える",
+      "残る",
+      "存在する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "occ",
+        "dummies": [
+          "coc",
+          "acc",
+          "okc"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ur",
+        "dummies": [
+          "ru",
+          "ul",
+          "ar"
+        ]
+      }
+    ],
+    "note": "occur：起こる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_fall",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "fall",
+    "japanese": "落ちる",
+    "english_dummies": [
+      "rise",
+      "float",
+      "climb"
+    ],
+    "japanese_dummies": [
+      "上昇する",
+      "浮かぶ",
+      "登る"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fall",
+        "dummies": [
+          "afll",
+          "flal",
+          "farl"
+        ]
+      }
+    ],
+    "note": "fall：落ちる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_rise",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "rise",
+    "japanese": "上昇する",
+    "english_dummies": [
+      "fall",
+      "sink",
+      "remain"
+    ],
+    "japanese_dummies": [
+      "落ちる",
+      "流し台",
+      "残る"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rise",
+        "dummies": [
+          "irse",
+          "rsie",
+          "ries"
+        ]
+      }
+    ],
+    "note": "rise：上昇する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_raise",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "raise",
+    "japanese": "持ち上げる",
+    "english_dummies": [
+      "lower",
+      "drop",
+      "push"
+    ],
+    "japanese_dummies": [
+      "下げる",
+      "落とす",
+      "押す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rai",
+        "dummies": [
+          "ari",
+          "ria",
+          "lai"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "se",
+        "dummies": [
+          "es",
+          "si",
+          "ce"
+        ]
+      }
+    ],
+    "note": "raise：持ち上げる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_lay",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "lay",
+    "japanese": "横たえる",
+    "english_dummies": [
+      "lift",
+      "hold",
+      "carry"
+    ],
+    "japanese_dummies": [
+      "持ち上げる",
+      "手に持つ",
+      "運ぶ"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lay",
+        "dummies": [
+          "aly",
+          "lya",
+          "ray"
+        ]
+      }
+    ],
+    "note": "lay：横たえる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_set",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "set",
+    "japanese": "設置する",
+    "english_dummies": [
+      "remove",
+      "open",
+      "close"
+    ],
+    "japanese_dummies": [
+      "取り除く",
+      "開ける",
+      "閉める"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "set",
+        "dummies": [
+          "est",
+          "ste",
+          "sit"
+        ]
+      }
+    ],
+    "note": "set：設置する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_put",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "動作の基本補充",
+    "english": "put",
+    "japanese": "置く",
+    "english_dummies": [
+      "carry",
+      "drop",
+      "throw"
+    ],
+    "japanese_dummies": [
+      "運ぶ",
+      "落とす",
+      "投げる"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "put",
+        "dummies": [
+          "upt",
+          "ptu",
+          "pat"
+        ]
+      }
+    ],
+    "note": "put：置く。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_fetch",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "移動と行動の補充",
+    "english": "fetch",
+    "japanese": "行って取ってくる",
+    "english_dummies": [
+      "send",
+      "leave",
+      "drop"
+    ],
+    "japanese_dummies": [
+      "送る",
+      "出発する",
+      "落とす"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fet",
+        "dummies": [
+          "eft",
+          "fte",
+          "fit"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ch",
+        "dummies": [
+          "hc",
+          "kh",
+          "ca"
+        ]
+      }
+    ],
+    "note": "fetch：行って取ってくる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_carry",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "移動と行動の補充",
+    "english": "carry",
+    "japanese": "運ぶ",
+    "english_dummies": [
+      "drop",
+      "throw",
+      "leave"
+    ],
+    "japanese_dummies": [
+      "落とす",
+      "投げる",
+      "出発する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "car",
+        "dummies": [
+          "acr",
+          "cra",
+          "cal"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ry",
+        "dummies": [
+          "yr",
+          "ly",
+          "ra"
+        ]
+      }
+    ],
+    "note": "carry：運ぶ。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_show",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "show",
+    "japanese": "見せる",
+    "english_dummies": [
+      "hide",
+      "find",
+      "watch"
+    ],
+    "japanese_dummies": [
+      "隠す",
+      "見つける",
+      "腕時計"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "show",
+        "dummies": [
+          "hsow",
+          "sohw",
+          "shwo"
+        ]
+      }
+    ],
+    "note": "show：見せる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_tell",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "tell",
+    "japanese": "話して伝える",
+    "english_dummies": [
+      "ask",
+      "hear",
+      "listen"
+    ],
+    "japanese_dummies": [
+      "尋ねる",
+      "聞こえる",
+      "耳を傾けて聴く"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "tell",
+        "dummies": [
+          "etll",
+          "tlel",
+          "terl"
+        ]
+      }
+    ],
+    "note": "tell：話して伝える。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_offer",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "offer",
+    "japanese": "申し出る",
+    "english_dummies": [
+      "refuse",
+      "demand",
+      "cancel"
+    ],
+    "japanese_dummies": [
+      "拒否する",
+      "強く要求する",
+      "取り消す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "off",
+        "dummies": [
+          "fof",
+          "aff",
+          "ovf"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "er",
+        "dummies": [
+          "re",
+          "el",
+          "ir"
+        ]
+      }
+    ],
+    "note": "offer：申し出る。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_serve",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "serve",
+    "japanese": "客に料理などを出す",
+    "english_dummies": [
+      "order",
+      "cook",
+      "wash"
+    ],
+    "japanese_dummies": [
+      "注文する",
+      "料理人",
+      "洗う"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ser",
+        "dummies": [
+          "esr",
+          "sre",
+          "sel"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ve",
+        "dummies": [
+          "ev",
+          "vi",
+          "be"
+        ]
+      }
+    ],
+    "note": "serve：客に料理などを出す。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_order",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "order",
+    "japanese": "注文する",
+    "english_dummies": [
+      "serve",
+      "cook",
+      "pay"
+    ],
+    "japanese_dummies": [
+      "客に料理などを出す",
+      "料理人",
+      "支払う"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ord",
+        "dummies": [
+          "rod",
+          "odr",
+          "old"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "er",
+        "dummies": [
+          "re",
+          "el",
+          "ir"
+        ]
+      }
+    ],
+    "note": "order：注文する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_book",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "book",
+    "japanese": "予約する",
+    "english_dummies": [
+      "cancel",
+      "visit",
+      "arrive"
+    ],
+    "japanese_dummies": [
+      "取り消す",
+      "訪問する",
+      "到着する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "book",
+        "dummies": [
+          "obok",
+          "boko",
+          "baok"
+        ]
+      }
+    ],
+    "note": "book：予約する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_save",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "save",
+    "japanese": "救う",
+    "english_dummies": [
+      "hurt",
+      "attack",
+      "kill"
+    ],
+    "japanese_dummies": [
+      "痛める・傷つける",
+      "攻撃する",
+      "殺す"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "save",
+        "dummies": [
+          "asve",
+          "svae",
+          "saev"
+        ]
+      }
+    ],
+    "note": "save：救う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_complete",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学びの動詞補充",
+    "english": "complete",
+    "japanese": "完成させる",
+    "english_dummies": [
+      "start",
+      "repeat",
+      "continue"
+    ],
+    "japanese_dummies": [
+      "始める",
+      "繰り返す",
+      "続ける"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "com",
+        "dummies": [
+          "ocm",
+          "cmo",
+          "cam"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ple",
+        "dummies": [
+          "lpe",
+          "pel",
+          "pre"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "te",
+        "dummies": [
+          "et",
+          "ti",
+          "de"
+        ]
+      }
+    ],
+    "note": "complete：完成させる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_attend",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学びの動詞補充",
+    "english": "attend",
+    "japanese": "会合などに出席する",
+    "english_dummies": [
+      "cancel",
+      "leave",
+      "refuse"
+    ],
+    "japanese_dummies": [
+      "取り消す",
+      "出発する",
+      "拒否する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "att",
+        "dummies": [
+          "tat",
+          "utt",
+          "adt"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "end",
+        "dummies": [
+          "ned",
+          "edn",
+          "ind"
+        ]
+      }
+    ],
+    "note": "attend：会合などに出席する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_congratulate",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "congratulate",
+    "japanese": "お祝いを述べる",
+    "english_dummies": [
+      "blame",
+      "warn",
+      "apologize"
+    ],
+    "japanese_dummies": [
+      "責める",
+      "警告する",
+      "謝罪する"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "con",
+        "dummies": [
+          "ocn",
+          "cno",
+          "can"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "gra",
+        "dummies": [
+          "rga",
+          "gar",
+          "gla"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tul",
+        "dummies": [
+          "utl",
+          "tlu",
+          "tur"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "ate",
+        "dummies": [
+          "tae",
+          "aet",
+          "ati"
+        ]
+      }
+    ],
+    "note": "congratulate：お祝いを述べる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_celebrate",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "celebrate",
+    "japanese": "行事などを祝う",
+    "english_dummies": [
+      "cancel",
+      "prepare",
+      "organize"
+    ],
+    "japanese_dummies": [
+      "取り消す",
+      "準備する",
+      "組織する"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cel",
+        "dummies": [
+          "ecl",
+          "cle",
+          "cer"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ebr",
+        "dummies": [
+          "ber",
+          "erb",
+          "ebl"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ate",
+        "dummies": [
+          "tae",
+          "aet",
+          "ati"
+        ]
+      }
+    ],
+    "note": "celebrate：行事などを祝う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_review",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学びの動詞補充",
+    "english": "review",
+    "japanese": "復習する",
+    "english_dummies": [
+      "predict",
+      "forget",
+      "translate"
+    ],
+    "japanese_dummies": [
+      "予測する",
+      "忘れる",
+      "翻訳する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rev",
+        "dummies": [
+          "erv",
+          "rve",
+          "lev"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "iew",
+        "dummies": [
+          "eiw",
+          "iwe",
+          "eew"
+        ]
+      }
+    ],
+    "note": "review：復習する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_suppose",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えの動詞補充",
+    "english": "suppose",
+    "japanese": "〜だと思う・仮定する",
+    "english_dummies": [
+      "deny",
+      "forget",
+      "remember"
+    ],
+    "japanese_dummies": [
+      "否定する",
+      "忘れる",
+      "思い出す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sup",
+        "dummies": [
+          "usp",
+          "spu",
+          "sap"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "pose",
+        "dummies": [
+          "opse",
+          "psoe",
+          "poes"
+        ]
+      }
+    ],
+    "note": "suppose：〜だと思う・仮定する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_expect",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えの動詞補充",
+    "english": "expect",
+    "japanese": "予期する",
+    "english_dummies": [
+      "doubt",
+      "forget",
+      "remember"
+    ],
+    "japanese_dummies": [
+      "疑う",
+      "忘れる",
+      "思い出す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "exp",
+        "dummies": [
+          "xep",
+          "epx",
+          "ixp"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ect",
+        "dummies": [
+          "cet",
+          "etc",
+          "ict"
+        ]
+      }
+    ],
+    "note": "expect：予期する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_accept",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "accept",
+    "japanese": "受け入れる",
+    "english_dummies": [
+      "refuse",
+      "ignore",
+      "cancel"
+    ],
+    "japanese_dummies": [
+      "拒否する",
+      "無視する",
+      "取り消す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "acc",
+        "dummies": [
+          "cac",
+          "ucc",
+          "akc"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ept",
+        "dummies": [
+          "pet",
+          "etp",
+          "ipt"
+        ]
+      }
+    ],
+    "note": "accept：受け入れる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_miss",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "miss",
+    "japanese": "乗り物などに乗り遅れる",
+    "english_dummies": [
+      "catch",
+      "ride",
+      "drive"
+    ],
+    "japanese_dummies": [
+      "受け止める",
+      "乗って移動する",
+      "自動車を運転する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "miss",
+        "dummies": [
+          "imss",
+          "msis",
+          "mess"
+        ]
+      }
+    ],
+    "note": "miss：乗り物などに乗り遅れる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_hurt",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "hurt",
+    "japanese": "痛める・傷つける",
+    "english_dummies": [
+      "heal",
+      "protect",
+      "help"
+    ],
+    "japanese_dummies": [
+      "傷などを治す",
+      "保護する",
+      "手助けする"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hurt",
+        "dummies": [
+          "uhrt",
+          "hrut",
+          "hutr"
+        ]
+      }
+    ],
+    "note": "hurt：痛める・傷つける。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_suffer",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "suffer",
+    "japanese": "苦しむ",
+    "english_dummies": [
+      "enjoy",
+      "relax",
+      "celebrate"
+    ],
+    "japanese_dummies": [
+      "楽しむ",
+      "くつろぐ",
+      "行事などを祝う"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "suf",
+        "dummies": [
+          "usf",
+          "sfu",
+          "saf"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "fer",
+        "dummies": [
+          "efr",
+          "fre",
+          "fel"
+        ]
+      }
+    ],
+    "note": "suffer：苦しむ。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_heal",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "heal",
+    "japanese": "傷などを治す",
+    "english_dummies": [
+      "hurt",
+      "protect",
+      "prevent"
+    ],
+    "japanese_dummies": [
+      "痛める・傷つける",
+      "保護する",
+      "防ぐ"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "heal",
+        "dummies": [
+          "ehal",
+          "hael",
+          "hela"
+        ]
+      }
+    ],
+    "note": "heal：傷などを治す。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_recover",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "recover",
+    "japanese": "病気などから回復する",
+    "english_dummies": [
+      "suffer",
+      "rest",
+      "sleep"
+    ],
+    "japanese_dummies": [
+      "苦しむ",
+      "休む",
+      "眠る"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rec",
+        "dummies": [
+          "erc",
+          "rce",
+          "lec"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "over",
+        "dummies": [
+          "voer",
+          "oevr",
+          "ovre"
+        ]
+      }
+    ],
+    "note": "recover：病気などから回復する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_breathe",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "breathe",
+    "japanese": "呼吸する",
+    "english_dummies": [
+      "swallow",
+      "cough",
+      "sneeze"
+    ],
+    "japanese_dummies": [
+      "飲み込む",
+      "せき",
+      "くしゃみをする"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bre",
+        "dummies": [
+          "rbe",
+          "ber",
+          "ble"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "athe",
+        "dummies": [
+          "tahe",
+          "ahte",
+          "ateh"
+        ]
+      }
+    ],
+    "note": "breathe：呼吸する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_yawn",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "yawn",
+    "japanese": "あくびをする",
+    "english_dummies": [
+      "cough",
+      "sneeze",
+      "whisper"
+    ],
+    "japanese_dummies": [
+      "せき",
+      "くしゃみをする",
+      "ささやく"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "yawn",
+        "dummies": [
+          "aywn",
+          "ywan",
+          "yanw"
+        ]
+      }
+    ],
+    "note": "yawn：あくびをする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_yell",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "yell",
+    "japanese": "大声で叫ぶ",
+    "english_dummies": [
+      "whisper",
+      "pronounce",
+      "apologize"
+    ],
+    "japanese_dummies": [
+      "ささやく",
+      "発音する",
+      "謝罪する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "yell",
+        "dummies": [
+          "eyll",
+          "ylel",
+          "yerl"
+        ]
+      }
+    ],
+    "note": "yell：大声で叫ぶ。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_nod",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "nod",
+    "japanese": "肯定などでうなずく",
+    "english_dummies": [
+      "wave",
+      "shake",
+      "point"
+    ],
+    "japanese_dummies": [
+      "波",
+      "振る",
+      "指さす"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "nod",
+        "dummies": [
+          "ond",
+          "ndo",
+          "nad"
+        ]
+      }
+    ],
+    "note": "nod：肯定などでうなずく。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_bow",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "bow",
+    "japanese": "礼としておじぎする",
+    "english_dummies": [
+      "wave",
+      "shake",
+      "point"
+    ],
+    "japanese_dummies": [
+      "波",
+      "振る",
+      "指さす"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bow",
+        "dummies": [
+          "obw",
+          "bwo",
+          "baw"
+        ]
+      }
+    ],
+    "note": "bow：礼としておじぎする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_hug",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "hug",
+    "japanese": "抱きしめる",
+    "english_dummies": [
+      "push",
+      "shake",
+      "kiss"
+    ],
+    "japanese_dummies": [
+      "押す",
+      "振る",
+      "キスする"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "hug",
+        "dummies": [
+          "uhg",
+          "hgu",
+          "hag"
+        ]
+      }
+    ],
+    "note": "hug：抱きしめる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_kiss",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "体と動作の補充",
+    "english": "kiss",
+    "japanese": "キスする",
+    "english_dummies": [
+      "hug",
+      "push",
+      "shake"
+    ],
+    "japanese_dummies": [
+      "抱きしめる",
+      "押す",
+      "振る"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "kiss",
+        "dummies": [
+          "ikss",
+          "ksis",
+          "kess"
+        ]
+      }
+    ],
+    "note": "kiss：キスする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_press",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "press",
+    "japanese": "押しつける",
+    "english_dummies": [
+      "pull",
+      "lift",
+      "turn"
+    ],
+    "japanese_dummies": [
+      "引く",
+      "持ち上げる",
+      "向きを変える"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pre",
+        "dummies": [
+          "rpe",
+          "per",
+          "ple"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ss",
+        "dummies": [
+          "cs",
+          "sa",
+          "se"
+        ]
+      }
+    ],
+    "note": "press：押しつける。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_click",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "click",
+    "japanese": "クリックする",
+    "english_dummies": [
+      "type",
+      "print",
+      "paste"
+    ],
+    "japanese_dummies": [
+      "キーボードで入力する",
+      "印刷する",
+      "貼り付ける（コンピューター操作）"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "cli",
+        "dummies": [
+          "lci",
+          "cil",
+          "cri"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ck",
+        "dummies": [
+          "kc",
+          "kk",
+          "ca"
+        ]
+      }
+    ],
+    "note": "click：クリックする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_type",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "type",
+    "japanese": "キーボードで入力する",
+    "english_dummies": [
+      "click",
+      "print",
+      "copy"
+    ],
+    "japanese_dummies": [
+      "クリックする",
+      "印刷する",
+      "複写する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "type",
+        "dummies": [
+          "ytpe",
+          "tpye",
+          "tyep"
+        ]
+      }
+    ],
+    "note": "type：キーボードで入力する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_print",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "print",
+    "japanese": "印刷する",
+    "english_dummies": [
+      "type",
+      "delete",
+      "upload"
+    ],
+    "japanese_dummies": [
+      "キーボードで入力する",
+      "削除する",
+      "アップロードする"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pri",
+        "dummies": [
+          "rpi",
+          "pir",
+          "pli"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nt",
+        "dummies": [
+          "tn",
+          "nd",
+          "mt"
+        ]
+      }
+    ],
+    "note": "print：印刷する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_copy",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "copy",
+    "japanese": "複写する",
+    "english_dummies": [
+      "delete",
+      "upload",
+      "paste"
+    ],
+    "japanese_dummies": [
+      "削除する",
+      "アップロードする",
+      "貼り付ける（コンピューター操作）"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "copy",
+        "dummies": [
+          "ocpy",
+          "cpoy",
+          "coyp"
+        ]
+      }
+    ],
+    "note": "copy：複写する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_paste",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "paste",
+    "japanese": "貼り付ける（コンピューター操作）",
+    "english_dummies": [
+      "copy",
+      "delete",
+      "type"
+    ],
+    "japanese_dummies": [
+      "複写する",
+      "削除する",
+      "キーボードで入力する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pas",
+        "dummies": [
+          "aps",
+          "psa",
+          "pus"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "te",
+        "dummies": [
+          "et",
+          "ti",
+          "de"
+        ]
+      }
+    ],
+    "note": "paste：貼り付ける（コンピューター操作）。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_search",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "search",
+    "japanese": "探す",
+    "english_dummies": [
+      "lose",
+      "hide",
+      "ignore"
+    ],
+    "japanese_dummies": [
+      "負ける",
+      "隠す",
+      "無視する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sea",
+        "dummies": [
+          "esa",
+          "sae",
+          "sia"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rch",
+        "dummies": [
+          "crh",
+          "rhc",
+          "lch"
+        ]
+      }
+    ],
+    "note": "search：探す。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_browse",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "browse",
+    "japanese": "ネット等をざっと見る",
+    "english_dummies": [
+      "download",
+      "upload",
+      "delete"
+    ],
+    "japanese_dummies": [
+      "ダウンロードする",
+      "アップロードする",
+      "削除する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "bro",
+        "dummies": [
+          "rbo",
+          "bor",
+          "blo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "wse",
+        "dummies": [
+          "swe",
+          "wes",
+          "wsi"
+        ]
+      }
+    ],
+    "note": "browse：ネット等をざっと見る。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_record",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "record",
+    "japanese": "記録する",
+    "english_dummies": [
+      "delete",
+      "predict",
+      "imagine"
+    ],
+    "japanese_dummies": [
+      "削除する",
+      "予測する",
+      "想像する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rec",
+        "dummies": [
+          "erc",
+          "rce",
+          "lec"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ord",
+        "dummies": [
+          "rod",
+          "odr",
+          "old"
+        ]
+      }
+    ],
+    "note": "record：記録する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_film",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "film",
+    "japanese": "動画を撮影する",
+    "english_dummies": [
+      "print",
+      "paint",
+      "draw"
+    ],
+    "japanese_dummies": [
+      "印刷する",
+      "絵の具やペンキで塗る",
+      "絵を描く"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "film",
+        "dummies": [
+          "iflm",
+          "flim",
+          "fiml"
+        ]
+      }
+    ],
+    "note": "film：動画を撮影する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_mend",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "mend",
+    "japanese": "衣類の破れなどを繕う",
+    "english_dummies": [
+      "tear",
+      "fold",
+      "wash"
+    ],
+    "japanese_dummies": [
+      "引き裂く",
+      "折りたたむ",
+      "洗う"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mend",
+        "dummies": [
+          "emnd",
+          "mned",
+          "medn"
+        ]
+      }
+    ],
+    "note": "mend：衣類の破れなどを繕う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_damage",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "damage",
+    "japanese": "損傷させる",
+    "english_dummies": [
+      "repair",
+      "protect",
+      "preserve"
+    ],
+    "japanese_dummies": [
+      "修理する",
+      "保護する",
+      "保存する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "dam",
+        "dummies": [
+          "adm",
+          "dma",
+          "dum"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "age",
+        "dummies": [
+          "gae",
+          "aeg",
+          "agi"
+        ]
+      }
+    ],
+    "note": "damage：損傷させる。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_spoil",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "spoil",
+    "japanese": "台無しにする",
+    "english_dummies": [
+      "improve",
+      "protect",
+      "organize"
+    ],
+    "japanese_dummies": [
+      "改善する",
+      "保護する",
+      "組織する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "spo",
+        "dummies": [
+          "pso",
+          "sop",
+          "spa"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "il",
+        "dummies": [
+          "li",
+          "ir",
+          "el"
+        ]
+      }
+    ],
+    "note": "spoil：台無しにする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_defend",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "defend",
+    "japanese": "攻撃から守る",
+    "english_dummies": [
+      "attack",
+      "escape",
+      "surrender"
+    ],
+    "japanese_dummies": [
+      "攻撃する",
+      "逃げる",
+      "降伏する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "def",
+        "dummies": [
+          "edf",
+          "dfe",
+          "dif"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "end",
+        "dummies": [
+          "ned",
+          "edn",
+          "ind"
+        ]
+      }
+    ],
+    "note": "defend：攻撃から守る。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_protect",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "protect",
+    "japanese": "保護する",
+    "english_dummies": [
+      "hurt",
+      "attack",
+      "destroy"
+    ],
+    "japanese_dummies": [
+      "痛める・傷つける",
+      "攻撃する",
+      "破壊する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pro",
+        "dummies": [
+          "rpo",
+          "por",
+          "plo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tect",
+        "dummies": [
+          "etct",
+          "tcet",
+          "tetc"
+        ]
+      }
+    ],
+    "note": "protect：保護する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_advise",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "advise",
+    "japanese": "助言する",
+    "english_dummies": [
+      "blame",
+      "thank",
+      "apologize"
+    ],
+    "japanese_dummies": [
+      "責める",
+      "感謝する",
+      "謝罪する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "adv",
+        "dummies": [
+          "dav",
+          "avd",
+          "udv"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ise",
+        "dummies": [
+          "sie",
+          "ies",
+          "ese"
+        ]
+      }
+    ],
+    "note": "advise：助言する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_recommend",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "伝える動作の基本補充",
+    "english": "recommend",
+    "japanese": "推薦する・勧める",
+    "english_dummies": [
+      "refuse",
+      "criticize",
+      "cancel"
+    ],
+    "japanese_dummies": [
+      "拒否する",
+      "批判する",
+      "取り消す"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rec",
+        "dummies": [
+          "erc",
+          "rce",
+          "lec"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "omm",
+        "dummies": [
+          "mom",
+          "amm",
+          "onm"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "end",
+        "dummies": [
+          "ned",
+          "edn",
+          "ind"
+        ]
+      }
+    ],
+    "note": "recommend：推薦する・勧める。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_share",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "share",
+    "japanese": "分かち合う",
+    "english_dummies": [
+      "hide",
+      "keep",
+      "steal"
+    ],
+    "japanese_dummies": [
+      "隠す",
+      "保管する",
+      "盗む"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sha",
+        "dummies": [
+          "hsa",
+          "sah",
+          "shu"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "le",
+          "ri"
+        ]
+      }
+    ],
+    "note": "share：分かち合う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_succeed",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学びの動詞補充",
+    "english": "succeed",
+    "japanese": "成功する",
+    "english_dummies": [
+      "fail",
+      "try",
+      "continue"
+    ],
+    "japanese_dummies": [
+      "失敗する",
+      "試す",
+      "続ける"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "suc",
+        "dummies": [
+          "usc",
+          "scu",
+          "sac"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ceed",
+        "dummies": [
+          "eced",
+          "cede",
+          "cied"
+        ]
+      }
+    ],
+    "note": "succeed：成功する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_own",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "own",
+    "japanese": "所有する",
+    "english_dummies": [
+      "borrow",
+      "lend",
+      "sell"
+    ],
+    "japanese_dummies": [
+      "借りる",
+      "貸す",
+      "売る"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "own",
+        "dummies": [
+          "won",
+          "onw",
+          "awn"
+        ]
+      }
+    ],
+    "note": "own：所有する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_owe",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "owe",
+    "japanese": "金などを借りている",
+    "english_dummies": [
+      "earn",
+      "lend",
+      "save"
+    ],
+    "japanese_dummies": [
+      "働いて稼ぐ",
+      "貸す",
+      "救う"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "owe",
+        "dummies": [
+          "woe",
+          "oew",
+          "owi"
+        ]
+      }
+    ],
+    "note": "owe：金などを借りている。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_earn",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "earn",
+    "japanese": "働いて稼ぐ",
+    "english_dummies": [
+      "spend",
+      "borrow",
+      "lend"
+    ],
+    "japanese_dummies": [
+      "費やす",
+      "借りる",
+      "貸す"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "earn",
+        "dummies": [
+          "aern",
+          "eran",
+          "eanr"
+        ]
+      }
+    ],
+    "note": "earn：働いて稼ぐ。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_afford",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "afford",
+    "japanese": "支払う余裕がある",
+    "english_dummies": [
+      "owe",
+      "borrow",
+      "lend"
+    ],
+    "japanese_dummies": [
+      "金などを借りている",
+      "借りる",
+      "貸す"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "aff",
+        "dummies": [
+          "faf",
+          "uff",
+          "avf"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ord",
+        "dummies": [
+          "rod",
+          "odr",
+          "old"
+        ]
+      }
+    ],
+    "note": "afford：支払う余裕がある。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_meet",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "移動と行動の補充",
+    "english": "meet",
+    "japanese": "会う",
+    "english_dummies": [
+      "leave",
+      "invite",
+      "call"
+    ],
+    "japanese_dummies": [
+      "出発する",
+      "招待する",
+      "呼ぶ・電話する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "meet",
+        "dummies": [
+          "emet",
+          "mete",
+          "miet"
+        ]
+      }
+    ],
+    "note": "meet：会う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_cheat",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "cheat",
+    "japanese": "不正をする",
+    "english_dummies": [
+      "obey",
+      "help",
+      "trust"
+    ],
+    "japanese_dummies": [
+      "従う",
+      "手助けする",
+      "信頼する"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "che",
+        "dummies": [
+          "hce",
+          "ceh",
+          "chi"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "at",
+        "dummies": [
+          "ta",
+          "ut",
+          "ad"
+        ]
+      }
+    ],
+    "note": "cheat：不正をする。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_steal",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "steal",
+    "japanese": "盗む",
+    "english_dummies": [
+      "borrow",
+      "lend",
+      "buy"
+    ],
+    "japanese_dummies": [
+      "借りる",
+      "貸す",
+      "買う"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "ste",
+        "dummies": [
+          "tse",
+          "set",
+          "sti"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "al",
+        "dummies": [
+          "la",
+          "ar",
+          "ul"
+        ]
+      }
+    ],
+    "note": "steal：盗む。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_rob",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "暮らしの動詞補充",
+    "english": "rob",
+    "japanese": "人・場所から金品を奪う",
+    "english_dummies": [
+      "borrow",
+      "lend",
+      "buy"
+    ],
+    "japanese_dummies": [
+      "借りる",
+      "貸す",
+      "買う"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rob",
+        "dummies": [
+          "orb",
+          "rbo",
+          "lob"
+        ]
+      }
+    ],
+    "note": "rob：人・場所から金品を奪う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_fit",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "性質の基本補充",
+    "english": "fit",
+    "japanese": "寸法が合う",
+    "english_dummies": [
+      "shrink",
+      "stretch",
+      "change"
+    ],
+    "japanese_dummies": [
+      "縮む",
+      "伸ばす",
+      "つり銭"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fit",
+        "dummies": [
+          "ift",
+          "fti",
+          "fet"
+        ]
+      }
+    ],
+    "note": "fit：寸法が合う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_suit",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "性質の基本補充",
+    "english": "suit",
+    "japanese": "人に似合う",
+    "english_dummies": [
+      "differ",
+      "change",
+      "compare"
+    ],
+    "japanese_dummies": [
+      "異なる",
+      "つり銭",
+      "比較する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "suit",
+        "dummies": [
+          "usit",
+          "siut",
+          "suti"
+        ]
+      }
+    ],
+    "note": "suit：人に似合う。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_select",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "考えの動詞補充",
+    "english": "select",
+    "japanese": "選ぶ",
+    "english_dummies": [
+      "reject",
+      "mix",
+      "collect"
+    ],
+    "japanese_dummies": [
+      "拒む",
+      "混ぜる",
+      "集める"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sel",
+        "dummies": [
+          "esl",
+          "sle",
+          "ser"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ect",
+        "dummies": [
+          "cet",
+          "etc",
+          "ict"
+        ]
+      }
+    ],
+    "note": "select：選ぶ。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_mark",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "操作と情報の補充",
+    "english": "mark",
+    "japanese": "印を付ける",
+    "english_dummies": [
+      "erase",
+      "copy",
+      "print"
+    ],
+    "japanese_dummies": [
+      "消す",
+      "複写する",
+      "印刷する"
+    ],
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mark",
+        "dummies": [
+          "amrk",
+          "mrak",
+          "makr"
+        ]
+      }
+    ],
+    "note": "mark：印を付ける。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
+  },
+  {
+    "id": "jr_en_audit_word_subtract",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "学びの動詞補充",
+    "english": "subtract",
+    "japanese": "引き算する",
+    "english_dummies": [
+      "add",
+      "multiply",
+      "divide"
+    ],
+    "japanese_dummies": [
+      "加える",
+      "掛ける",
+      "割る"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sub",
+        "dummies": [
+          "usb",
+          "sbu",
+          "sab"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tra",
+        "dummies": [
+          "rta",
+          "tar",
+          "tla"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ct",
+        "dummies": [
+          "tc",
+          "kt",
+          "cd"
+        ]
+      }
+    ],
+    "note": "subtract：引き算する。今回はこの意味で確認する。",
+    "content_batch": "english-foundations-audit-1"
   }
 ]

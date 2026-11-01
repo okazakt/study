@@ -24463,7 +24463,20 @@
     ],
     "note": "直前の単語だけで決めず、文脈と動作の主体を確認する。",
     "learning_point": "reading_pronoun",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Emi has a rabbit and a dog. The rabbit likes the garden. It plays there. のItは？",
+        "answer": "ウサギ",
+        "dummies": [
+          "犬",
+          "庭",
+          "エミ"
+        ],
+        "note": "直前の主語The rabbitをitで受けている。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_after",
@@ -24483,7 +24496,20 @@
     ],
     "note": "afterの後ろの出来事が先。文に書かれた順と起きた順を区別する。",
     "learning_point": "reading_after",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I washed my hands after I came home. 先にしたことは？",
+        "answer": "家に帰った",
+        "dummies": [
+          "手を洗った",
+          "同時にした",
+          "順序は分からない"
+        ],
+        "note": "afterの後ろに置かれた帰宅が先、その後に手を洗う。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_because",
@@ -24503,7 +24529,20 @@
     ],
     "note": "becauseの後ろは家にいた理由。原因・理由と、その結果を区別する。",
     "learning_point": "reading_because",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He left early because he was tired. becauseの後ろが示すのは？",
+        "answer": "早く帰った理由",
+        "dummies": [
+          "帰った目的",
+          "帰った結果",
+          "帰った時刻"
+        ],
+        "note": "becauseは理由を表す節を導く。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_if",
@@ -24523,7 +24562,20 @@
     ],
     "note": "雨が降る場合の行動だけを述べている。逆の場合の行動まで決め付けない。",
     "learning_point": "reading_if",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "If it snows, the game will stop. 雪が降らない場合について分かるのは？",
+        "answer": "この文だけでは中止か分からない",
+        "dummies": [
+          "必ず続行する",
+          "必ず中止する",
+          "開始時刻が分かる"
+        ],
+        "note": "ifの条件が成立しない場合の結論は、この文では示していない。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_not_all",
@@ -24543,7 +24595,20 @@
     ],
     "note": "not allは部分否定。全否定の意味にしない。",
     "learning_point": "reading_not_all",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Not all birds can fly. の意味は？",
+        "answer": "すべての鳥が飛べるとは限らない",
+        "dummies": [
+          "どの鳥も飛べない",
+          "どの鳥も飛べる",
+          "飛べる鳥はいない"
+        ],
+        "note": "not allは全否定ではなく、一部について成り立たないと述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_however",
@@ -24563,7 +24628,20 @@
     ],
     "note": "howeverは前の内容に対する対立や転換を示す。",
     "learning_point": "reading_however",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I wanted to buy it. However, I had no money. Howeverが示す関係は？",
+        "answer": "前の内容との対比",
+        "dummies": [
+          "前の内容の具体例",
+          "同じ内容の反復",
+          "原因だけの説明"
+        ],
+        "note": "買いたい気持ちに対し、お金がないという対照的な事情を述べる。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_notice",
@@ -24583,7 +24661,20 @@
     ],
     "note": "Closedは休業・閉館の表示。曜日など必要な情報を抜き出す。",
     "learning_point": "reading_notice",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Museum: Closed on Tuesdays. 博物館が休みなのは？",
+        "answer": "火曜日",
+        "dummies": [
+          "月曜日",
+          "水曜日",
+          "木曜日"
+        ],
+        "note": "Closed onの後ろに休館する曜日が示される。"
+      }
+    ]
   },
   {
     "id": "jr_en_core_reading_decline",
@@ -24603,6 +24694,19 @@
     ],
     "note": "No, thank you.は申し出を丁寧に断るときに使う。",
     "learning_point": "reading_decline",
-    "content_batch": "english-core-1"
+    "content_batch": "english-core-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Would you like some coffee? — No, thank you. 返答が表すのは？",
+        "answer": "申し出を丁寧に断る",
+        "dummies": [
+          "申し出を受ける",
+          "値段を尋ねる",
+          "場所を尋ねる"
+        ],
+        "note": "No, thank you. は相手の申し出を丁寧に断る返答。"
+      }
+    ]
   }
 ]
