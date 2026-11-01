@@ -10,7 +10,7 @@ const added=read('junior_expansion');
 const items=['junior_japanese','junior_english','junior_math','junior_science','junior_social'].flatMap(read).concat(added);
 const catalog=buildCatalog(items);
 test('expansion enables all fifteen middle-school courses without replacing existing identifiers',()=>{
- assert.equal(added.length,206);assert.equal(new Set(items.map(q=>q.id)).size,items.length);
+ assert.equal(added.length,296);assert.equal(new Set(items.map(q=>q.id)).size,items.length);
  assert.equal(new Set(items.filter(q=>q.english).map(q=>q.english)).size,items.filter(q=>q.english).length);
  assert.equal(new Set(items.filter(q=>q.kind==='idiom').map(q=>q.term)).size,items.filter(q=>q.kind==='idiom').length);
  assert.equal(new Set(items.filter(q=>q.character).map(q=>q.character)).size,items.filter(q=>q.character).length);
@@ -81,5 +81,25 @@ test('all expanded grade courses finish ideal five-minute play without interrupt
   const selected=selectQuestions(items,'中学',{id:c.id,sections:null},catalog);
   const result=simulateSession(selected,42);
   assert.equal(result.counted,120,c.id);assert.equal(result.taps,120,c.id);assert.equal(result.missed,0,c.id);assert.ok(result.answers>0,c.id);
+ }
+});
+test('fraction distractors are not algebraically equivalent alternative answers',()=>{
+ const item=added.find(q=>q.id==='jr_math_core_fraction_sum');
+ for(const expression of [item.answer,...item.dummies]){
+  const m=/^(\d*)x\/(\d+)＋(\d*)x\/(\d+)$/.exec(expression);assert.ok(m,expression);
+  const coefficient=Number(m[1]||1)/Number(m[2])+Number(m[3]||1)/Number(m[4]);
+  assert.equal(Math.abs(coefficient-(1/2+1/3))<1e-12,expression===item.answer,expression);
+ }
+});
+test('the displayed quadratic formula solves different quadratic equations and distractors do not',()=>{
+ const item=added.find(q=>q.id==='jr_math_core_quadratic_formula');
+ for(const expression of [item.answer,...item.dummies]){
+  const m=/^x＝\((−?)b±√\(b²([−＋])4ac\)\)\/(\(2a\)|a)$/.exec(expression);assert.ok(m,expression);
+  for(const [a,b,c] of [[1,-5,6],[2,-7,3],[3,-10,3]]){
+   const radical=Math.sqrt(b*b+(m[2]==='−'?-1:1)*4*a*c),denominator=m[3]==='a'?a:2*a;
+   const roots=[-1,1].map(sign=>((m[1]?-b:b)+sign*radical)/denominator);
+   const valid=roots.every(x=>Math.abs(a*x*x+b*x+c)<1e-9);
+   assert.equal(valid,expression===item.answer,`${expression}: ${a},${b},${c}`);
+  }
  }
 });

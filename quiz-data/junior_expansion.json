@@ -5021,5 +5021,1805 @@
       }
     ],
     "note": "in order to：〜するために。"
+  },
+  {
+    "id": "jr_math_core_power_sign",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "−3² と (−3)² の符号はそれぞれ？",
+    "answer": "負、正",
+    "dummies": [
+      "正、正",
+      "負、負",
+      "正、負"
+    ],
+    "note": "−3²は−(3×3)、(−3)²は(−3)×(−3)。かっこの有無を確認する。",
+    "learning_point": "power_sign",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_order_operations",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2＋3×4 を計算するとき、先に計算する部分は？",
+    "answer": "3×4",
+    "dummies": [
+      "2＋3",
+      "2×4",
+      "2＋4"
+    ],
+    "note": "乗除を加減より先に計算する。かっこがあればその中を先に計算する。",
+    "learning_point": "order_operations",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_fraction_sum",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "文字式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x/2＋x/3 を通分した式は？",
+    "answer": "3x/6＋2x/6",
+    "dummies": [
+      "x/6＋x/6",
+      "3x/6＋x/6",
+      "x/5＋x/5"
+    ],
+    "note": "共通の分母を6にし、分子にも同じ倍率を掛ける。",
+    "learning_point": "fraction_sum",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_clear_denominator",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "一次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x/2＋1＝x/3 の両辺に6を掛けた式は？",
+    "answer": "3x＋6＝2x",
+    "dummies": [
+      "3x＋1＝2x",
+      "6x＋6＝6x",
+      "3x＋6＝x"
+    ],
+    "note": "分母のない項にも6を掛ける。すべての項への掛け忘れに注意する。",
+    "learning_point": "clear_denominator",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_word_equation",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "一次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1個x円の品物を3個買い、100円の袋を付けた代金を表す式は？",
+    "answer": "3x＋100",
+    "dummies": [
+      "3(x＋100)",
+      "x＋300",
+      "100x＋3"
+    ],
+    "note": "品物の代金は3x円。袋の100円は1回分だけ加える。",
+    "learning_point": "word_equation",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_perpendicular_bisector",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "線分の垂直二等分線上の点から両端までの距離は？",
+    "answer": "等しい",
+    "dummies": [
+      "必ず一方が2倍",
+      "必ず一方が半分",
+      "点の位置によらず両方0"
+    ],
+    "note": "線分の垂直二等分線は、両端から等しい距離にある点の集まり。",
+    "learning_point": "perpendicular_bisector",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_sector_area",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "半径r、中心角a°の扇形の面積は？",
+    "answer": "πr²×a/360",
+    "dummies": [
+      "2πr×a/360",
+      "πr²×360/a",
+      "πr²×a/180"
+    ],
+    "note": "円全体の面積に、中心角が360°に占める割合を掛ける。",
+    "learning_point": "sector_area",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_prism_volume",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "空間図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "底面積S、高さhの柱体の体積は？",
+    "answer": "Sh",
+    "dummies": [
+      "Sh/3",
+      "S＋h",
+      "3Sh"
+    ],
+    "note": "柱体の体積は底面積×高さ。錐体の3分の1と混同しない。",
+    "learning_point": "prism_volume",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_median",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "データの活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "データを小さい順に並べ、個数が偶数のとき中央値は？",
+    "answer": "中央の2個の値の平均",
+    "dummies": [
+      "最大値と最小値の平均",
+      "最も多く現れる値",
+      "すべての値の合計"
+    ],
+    "note": "偶数個では中央に並ぶ2個の値を足して2で割る。",
+    "learning_point": "median",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_histogram",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "データの活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ヒストグラムの横軸が表すのは？",
+    "answer": "階級",
+    "dummies": [
+      "相対度数",
+      "累積度数",
+      "データの総数"
+    ],
+    "note": "横軸は値を区切った階級。階級の幅が等しい場合、柱の高さで度数などを表す。",
+    "learning_point": "histogram",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_isolate_variable",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "式の計算",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "S＝ah/2 をhについて解いた式は？（a≠0）",
+    "answer": "h＝2S/a",
+    "dummies": [
+      "h＝S/(2a)",
+      "h＝2a/S",
+      "h＝a/(2S)"
+    ],
+    "note": "両辺を2倍して2S＝ah、次に両辺をaで割る。",
+    "learning_point": "isolate_variable",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_elimination_scale",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "連立方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2x＋3y＝7 と x＋y＝3。第2式を2倍して第1式から引くと消えるのは？",
+    "answer": "x",
+    "dummies": [
+      "y",
+      "xとyの両方",
+      "どちらも消えない"
+    ],
+    "note": "第2式は2x＋2y＝6となり、引くとxの項が消える。",
+    "learning_point": "elimination_scale",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_graph_intersection",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2本の直線の交点の座標を求めるには？",
+    "answer": "2本の式を連立して解く",
+    "dummies": [
+      "傾きだけを足す",
+      "切片だけを掛ける",
+      "両式のxを0にする"
+    ],
+    "note": "交点は両方の式を同時に満たす。連立方程式の解が交点の座標になる。",
+    "learning_point": "graph_intersection",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_parallel_slope",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "異なる2直線 y＝ax＋b と y＝cx＋d が平行なときは？",
+    "answer": "a＝c",
+    "dummies": [
+      "b＝d",
+      "a＝d",
+      "b＝c"
+    ],
+    "note": "平行な直線は傾きが等しい。異なる直線なら切片は異なる。",
+    "learning_point": "parallel_slope",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_proof_correspondence",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "証明の進め方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "△ABC≡△DEF と書いたとき、辺ABに対応する辺は？",
+    "answer": "DE",
+    "dummies": [
+      "EF",
+      "DF",
+      "FE"
+    ],
+    "note": "合同の表記は対応する頂点の順に並べる。AとD、BとE、CとFが対応する。",
+    "learning_point": "proof_correspondence",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_rectangle_condition",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "平行四辺形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平行四辺形で、長方形と判断できる追加条件は？",
+    "answer": "1つの角が直角",
+    "dummies": [
+      "対角線が互いに二等分",
+      "向かい合う辺が等しい",
+      "向かい合う角が等しい"
+    ],
+    "note": "1角が直角なら4角とも直角になる。他の3条件は一般の平行四辺形にも成り立つ。",
+    "learning_point": "rectangle_condition",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_rhombus_condition",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "平行四辺形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平行四辺形で、ひし形と判断できる追加条件は？",
+    "answer": "隣り合う2辺が等しい",
+    "dummies": [
+      "向かい合う2辺が等しい",
+      "対角線が互いに二等分",
+      "向かい合う角が等しい"
+    ],
+    "note": "平行四辺形の対辺は等しいため、隣辺も等しければ4辺がすべて等しくなる。",
+    "learning_point": "rhombus_condition",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_count_order",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "確率",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2個の区別できるさいころの出方を数えるとき、(1,2)と(2,1)は？",
+    "answer": "別の場合として数える",
+    "dummies": [
+      "同じ場合として数える",
+      "どちらも数えない",
+      "片方を半分として数える"
+    ],
+    "note": "どちらのさいころの目かを区別する。樹形図や表で重複・数え落としを防ぐ。",
+    "learning_point": "count_order",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_quartile_range",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "箱ひげ図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "四分位範囲を求める式は？",
+    "answer": "第3四分位数−第1四分位数",
+    "dummies": [
+      "最大値−最小値",
+      "第3四分位数−中央値",
+      "中央値−第1四分位数"
+    ],
+    "note": "中央の約50％のデータの散らばりを表す。全体の範囲とは区別する。",
+    "learning_point": "quartile_range",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_complement",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "確率",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「少なくとも1回表」の確率を、余事象から求める式は？",
+    "answer": "1−一度も表が出ない確率",
+    "dummies": [
+      "1−全部表になる確率",
+      "全部表になる確率÷2",
+      "一度も表が出ない確率×2"
+    ],
+    "note": "「少なくとも1回」の反対は「1回もない」。全体の確率1から引く。",
+    "learning_point": "complement",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_difference_squares",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(a＋b)(a−b) を展開した式は？",
+    "answer": "a²−b²",
+    "dummies": [
+      "a²＋b²",
+      "a²−2ab＋b²",
+      "a²＋2ab＋b²"
+    ],
+    "note": "中央のabと−abが打ち消し合う。和と差の積の公式。",
+    "learning_point": "difference_squares",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_factor_sum_product",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x²＋5x＋6 を因数分解するとき探す2数は？",
+    "answer": "和が5、積が6の2数",
+    "dummies": [
+      "和が6、積が5の2数",
+      "差が5、和が6の2数",
+      "差が6、積が5の2数"
+    ],
+    "note": "(x＋a)(x＋b)＝x²＋(a＋b)x＋abを利用する。",
+    "learning_point": "factor_sum_product",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_simplify_root",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "√12 を簡単にするため、根号の中を分けた式は？",
+    "answer": "√(4×3)",
+    "dummies": [
+      "√(6＋6)",
+      "√(9＋3)",
+      "√(2＋10)"
+    ],
+    "note": "平方数の因数4を取り出すと2√3になる。和には根号を分配できない。",
+    "learning_point": "simplify_root",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_quadratic_formula",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "二次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ax²＋bx＋c＝0 の解の公式は？（a≠0）",
+    "answer": "x＝(−b±√(b²−4ac))/(2a)",
+    "dummies": [
+      "x＝(b±√(b²−4ac))/(2a)",
+      "x＝(−b±√(b²＋4ac))/(2a)",
+      "x＝(−b±√(b²−4ac))/a"
+    ],
+    "note": "分子の−b、根号内の−4ac、分母の2aに注意する。",
+    "learning_point": "quadratic_formula",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_complete_square",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "二次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x²＋6x＝2 の左辺を平方の形にするため、両辺に加える数は？",
+    "answer": "9",
+    "dummies": [
+      "3",
+      "6",
+      "36"
+    ],
+    "note": "xの係数6の半分を2乗する。x²＋6x＋9＝(x＋3)²。",
+    "learning_point": "complete_square",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_quadratic_change",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "二乗に比例する関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝ax²で、xがpからqへ増えるときの変化の割合は？（p≠q）",
+    "answer": "a(p＋q)",
+    "dummies": [
+      "a(q−p)",
+      "a(p²＋q²)",
+      "a/(p＋q)"
+    ],
+    "note": "a(q²−p²)/(q−p)を因数分解して約分する。一次関数と違い区間で変わる。",
+    "learning_point": "quadratic_change",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_similar_volume",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "相似",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "相似な立体の相似比が2：3のとき、体積比は？",
+    "answer": "8：27",
+    "dummies": [
+      "2：3",
+      "4：9",
+      "3：2"
+    ],
+    "note": "体積比は相似比の3乗。面積比の2乗と混同しない。",
+    "learning_point": "similar_volume",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_semicircle_angle",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "円",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "直径を見込む円周角は何度？",
+    "answer": "90°",
+    "dummies": [
+      "45°",
+      "180°",
+      "360°"
+    ],
+    "note": "直径に対応する中心角は180°なので、円周角はその半分。",
+    "learning_point": "semicircle_angle",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_hypotenuse",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "三平方の定理",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三平方の定理で、斜辺を見つける手掛かりは？",
+    "answer": "直角の向かい側の辺",
+    "dummies": [
+      "図で横向きの辺",
+      "図で縦向きの辺",
+      "直角に接する短い辺"
+    ],
+    "note": "斜辺は直角の向かい側にあり、直角三角形で最も長い辺。",
+    "learning_point": "hypotenuse",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_math_core_sample_estimate",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "標本調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "標本の割合から母集団の人数を推定する基本の式は？",
+    "answer": "母集団の人数×標本の割合",
+    "dummies": [
+      "母集団の人数÷標本の割合",
+      "標本の人数×母集団の人数",
+      "標本の割合÷母集団の人数"
+    ],
+    "note": "標本が母集団を適切に代表するという前提で、割合を全体へ当てはめる。",
+    "learning_point": "sample_estimate",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_microscope_start",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "観察器具",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "顕微鏡で観察を始めるとき、最初に使う倍率は？",
+    "answer": "低倍率",
+    "dummies": [
+      "最高倍率",
+      "対物レンズを外す",
+      "倍率は毎回無作為"
+    ],
+    "note": "低倍率は視野が広く、観察したいものを見つけやすい。",
+    "learning_point": "microscope_start",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_stomata",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "植物のつくり",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物の気孔から主に水蒸気が出る現象は？",
+    "answer": "蒸散",
+    "dummies": [
+      "光合成",
+      "呼吸による吸水",
+      "受粉"
+    ],
+    "note": "根から吸収された水の多くは、葉などの気孔から水蒸気として出る。",
+    "learning_point": "stomata",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_filtration",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ろ過で取り除けるものは？",
+    "answer": "液体に溶けていない固体",
+    "dummies": [
+      "水に溶けた食塩",
+      "水に溶けた砂糖",
+      "水溶液中のイオン"
+    ],
+    "note": "ろ紙を通らない固体を分ける。溶けた物質を取り除くには別の方法を使う。",
+    "learning_point": "filtration",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_distillation",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "混合物から液体を蒸留で分けるとき利用する性質の違いは？",
+    "answer": "沸点",
+    "dummies": [
+      "固体の色",
+      "磁石への付き方",
+      "粒の見た目の大きさ"
+    ],
+    "note": "沸点の違いを利用して気化させ、冷やして液体として集める。",
+    "learning_point": "distillation",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_co2_test",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "気体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "二酸化炭素を石灰水に通すと、最初にどうなる？",
+    "answer": "白くにごる",
+    "dummies": [
+      "青くなる",
+      "赤くなる",
+      "黒くなる"
+    ],
+    "note": "炭酸カルシウムの白い沈殿ができる。大量に通し続ける場合とは区別する。",
+    "learning_point": "co2_test",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_solubility",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "水溶液",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ある温度で水100gに溶ける物質の最大質量を表すのは？",
+    "answer": "溶解度",
+    "dummies": [
+      "密度",
+      "質量パーセント濃度",
+      "相対湿度"
+    ],
+    "note": "溶解度は温度や物質によって異なる。溶液全体100gを基準とする濃度とは違う。",
+    "learning_point": "solubility",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_lens",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "光",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズに光軸と平行に入った光は、レンズ通過後どこを通る？",
+    "answer": "反対側の焦点",
+    "dummies": [
+      "入射側の焦点",
+      "レンズの端",
+      "光軸上の任意の点"
+    ],
+    "note": "平行光は反対側の焦点へ集まる。作図に使う基本の光線。",
+    "learning_point": "lens",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_pressure",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ大きさの力で押すとき、接触面積を小さくすると圧力は？",
+    "answer": "大きくなる",
+    "dummies": [
+      "小さくなる",
+      "変わらない",
+      "必ず0になる"
+    ],
+    "note": "圧力＝面を垂直に押す力÷面積。面積が小さいほど圧力は大きい。",
+    "learning_point": "pressure",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_villus",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "消化と吸収",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "小腸の柔毛が多数あることの利点は？",
+    "answer": "吸収する表面積が大きくなる",
+    "dummies": [
+      "食物を歯のように砕ける",
+      "胃酸を大量に分泌できる",
+      "血液の流れを止められる"
+    ],
+    "note": "柔毛によって表面積が増え、消化された養分を効率よく吸収する。",
+    "learning_point": "villus",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_alveoli",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "呼吸",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "肺の肺胞で酸素が移動する向きは？",
+    "answer": "肺胞の空気から血液へ",
+    "dummies": [
+      "血液から肺胞の空気へ",
+      "気管から食道へ",
+      "肺胞から胸腔へ"
+    ],
+    "note": "酸素は肺胞から血液へ、二酸化炭素は主に逆向きに移動する。",
+    "learning_point": "alveoli",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_kidney",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "排出",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "血液中の不要な物質をこし分け、尿をつくる主な器官は？",
+    "answer": "腎臓",
+    "dummies": [
+      "肝臓",
+      "肺",
+      "小腸"
+    ],
+    "note": "腎臓で尿がつくられ、輸尿管を通ってぼうこうにたまる。",
+    "learning_point": "kidney",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_reflex",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "神経",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "熱い物に触れて思わず手を引く反射で、通常の意識的運動と異なるのは？",
+    "answer": "大脳の判断を待たずに反応する",
+    "dummies": [
+      "感覚器官を使わない",
+      "運動神経を使わない",
+      "刺激が神経を通らない"
+    ],
+    "note": "手を引く反射では、脊髄などを中枢として大脳の判断より先に筋肉へ指令が届く。",
+    "learning_point": "reflex",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_electrolysis_water",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水の電気分解で発生する水素と酸素の体積比は？",
+    "answer": "2：1",
+    "dummies": [
+      "1：2",
+      "1：1",
+      "2：3"
+    ],
+    "note": "同じ温度・圧力で水素は酸素の2倍。化学式の原子数と結び付ける。",
+    "learning_point": "electrolysis_water",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_combustion_copper",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "銅を十分に加熱して酸化銅にすると、銅だけのときより質量が増える理由は？",
+    "answer": "酸素と結び付くため",
+    "dummies": [
+      "銅原子が増えるため",
+      "熱が銅へ変わるため",
+      "空気がすべて液体になるため"
+    ],
+    "note": "加わった酸素の質量だけ増える。全体では質量保存の法則が成り立つ。",
+    "learning_point": "combustion_copper",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_series_current",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "抵抗を直列につないだ回路で、各抵抗を流れる電流は？",
+    "answer": "等しい",
+    "dummies": [
+      "電源に近いほど大きい",
+      "電源から遠いほど大きい",
+      "抵抗ごとに必ず2倍になる"
+    ],
+    "note": "直列回路では電流の通り道が一つなので、どの部分も同じ電流が流れる。",
+    "learning_point": "series_current",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_parallel_voltage",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "抵抗を並列につないだ回路で、各抵抗の両端の電圧は？",
+    "answer": "等しい",
+    "dummies": [
+      "枝分かれの数で必ず半分",
+      "抵抗が大きいほど高い",
+      "抵抗が小さいほど高い"
+    ],
+    "note": "並列につながれた部分の両端は共通なので、それぞれの電圧は等しい。",
+    "learning_point": "parallel_voltage",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_electric_power",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "電圧V、電流Iから電力Pを求める式は？",
+    "answer": "P＝VI",
+    "dummies": [
+      "P＝V/I",
+      "P＝I/V",
+      "P＝V＋I"
+    ],
+    "note": "電力は電圧×電流。電力量はさらに使用時間を掛ける。",
+    "learning_point": "electric_power",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_induction",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流と磁界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "コイルに電磁誘導による電流を発生させるには？",
+    "answer": "コイル内の磁界を変化させる",
+    "dummies": [
+      "磁石をコイル内で静止させ続ける",
+      "磁石を遠方で静止させる",
+      "コイルを磁界と無関係に加熱する"
+    ],
+    "note": "コイル内の磁界が変化すると誘導電流が流れる。変化の向きで電流の向きも変わる。",
+    "learning_point": "induction",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_cloud",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "上昇した空気に雲ができる主な過程は？",
+    "answer": "膨張して冷え、水蒸気が凝結する",
+    "dummies": [
+      "圧縮して温まり、水が蒸発する",
+      "窒素が液体になる",
+      "酸素が水に変わる"
+    ],
+    "note": "空気が上昇すると気圧が下がって膨張し、気温が露点以下になると水滴などができる。",
+    "learning_point": "cloud",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_isobars",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "天気図で等圧線の間隔が狭い所は、一般に風が？",
+    "answer": "強い",
+    "dummies": [
+      "弱い",
+      "必ず無風",
+      "必ず南風"
+    ],
+    "note": "気圧の差が大きいほど空気を動かす力が大きく、風が強くなりやすい。",
+    "learning_point": "isobars",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_action_reaction",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "力のつり合い",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "作用・反作用の2力と、つり合う2力の違いは？",
+    "answer": "作用・反作用は別々の物体に働く",
+    "dummies": [
+      "作用・反作用は同じ向きに働く",
+      "つり合う2力は別々の物体に働く",
+      "作用・反作用は大きさが異なる"
+    ],
+    "note": "作用・反作用は別々の物体に働く。つり合う2力は同じ物体に働く。",
+    "learning_point": "action_reaction",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_buoyancy",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "液体中の物体が受ける浮力の向きは？",
+    "answer": "鉛直上向き",
+    "dummies": [
+      "鉛直下向き",
+      "水平方向",
+      "物体の速さと同じ向き"
+    ],
+    "note": "液体の圧力は深い所ほど大きく、物体には上向きの合力が働く。",
+    "learning_point": "buoyancy",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_pulley",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "摩擦を無視し、動滑車を使って必要な力が半分になると、引く距離は？",
+    "answer": "2倍",
+    "dummies": [
+      "1/2倍",
+      "同じ",
+      "4倍"
+    ],
+    "note": "仕事の原理により、力を小さくした分だけ長い距離を引く必要がある。",
+    "learning_point": "pulley",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_science_core_annual_stars",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ時刻に見える星座が季節で変わる主な原因は？",
+    "answer": "地球の公転",
+    "dummies": [
+      "地球の自転",
+      "月の自転",
+      "太陽の自転"
+    ],
+    "note": "地球が太陽の周りを公転し、夜に宇宙のどの方向を見るかが変わる。",
+    "learning_point": "annual_stars",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_buddhism",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古代インドでシャカが開いた宗教は？",
+    "answer": "仏教",
+    "dummies": [
+      "キリスト教",
+      "イスラム教",
+      "儒教"
+    ],
+    "note": "仏教は古代インドに始まり、中国や朝鮮半島を経て日本へ伝わった。",
+    "learning_point": "buddhism",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_china_unification",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中国で秦の始皇帝が進めたことは？",
+    "answer": "文字・貨幣・度量衡の統一",
+    "dummies": [
+      "科挙の開始",
+      "朱子学の大成",
+      "勘合貿易の開始"
+    ],
+    "note": "秦は中国を統一し、制度の統一を進めた。科挙は後の隋から。",
+    "learning_point": "china_unification",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_asuka",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "聖徳太子の時代の十七条の憲法が主に示したものは？",
+    "answer": "役人の心構え",
+    "dummies": [
+      "国民の選挙権",
+      "武士の裁判基準",
+      "幕府の大名統制"
+    ],
+    "note": "役人に協調や天皇への服従などを求めた。近代の憲法とは性格が異なる。",
+    "learning_point": "asuka",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_taika",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大化の改新で目指した政治の方向は？",
+    "answer": "天皇中心の国家づくり",
+    "dummies": [
+      "将軍中心の幕府政治",
+      "大名の領地支配の強化",
+      "民選議会による政治"
+    ],
+    "note": "豪族中心の政治を改め、天皇を中心とする中央集権国家を目指した。",
+    "learning_point": "taika",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_kana_literature",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平安時代の国風文化で、文学の発達に関係した文字は？",
+    "answer": "仮名文字",
+    "dummies": [
+      "甲骨文字",
+      "くさび形文字",
+      "ハングル"
+    ],
+    "note": "日本語を書き表す仮名文字が発達し、物語や日記などが生まれた。",
+    "learning_point": "kana_literature",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_go_seibai",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "中世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鎌倉時代の御成敗式目が主に定めたものは？",
+    "answer": "武士の裁判の基準",
+    "dummies": [
+      "農民の年貢率の全国統一",
+      "大名の参勤交代",
+      "天皇の即位の手順"
+    ],
+    "note": "北条泰時が武士の慣習などに基づき、裁判の基準を定めた。",
+    "learning_point": "go_seibai",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_shoin",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "中世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "室町時代の東山文化で発達し、現在の和室につながる建築様式は？",
+    "answer": "書院造",
+    "dummies": [
+      "寝殿造",
+      "校倉造",
+      "バロック建築"
+    ],
+    "note": "床の間や違い棚などを備える書院造が、後の住宅建築に影響した。",
+    "learning_point": "shoin",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_rakuichi",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "織田信長の楽市・楽座のねらいは？",
+    "answer": "商工業や取引を活発にする",
+    "dummies": [
+      "座の特権を強める",
+      "すべての商人を農村へ戻す",
+      "米以外の取引を禁じる"
+    ],
+    "note": "市場の税や座の特権を廃止するなどして、商工業の発展を促した。",
+    "learning_point": "rakuichi",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_sakoku",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸幕府がポルトガル船の来航を禁止した後、出島で貿易を続けた国は？",
+    "answer": "オランダ",
+    "dummies": [
+      "ポルトガル",
+      "スペイン",
+      "フランス"
+    ],
+    "note": "出島には当初ポルトガル人がいたが、来航禁止後の1641年からオランダ商館が置かれた。時期を区別する。",
+    "learning_point": "sakoku",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_sankin_cost",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "参勤交代が大名の経済に与えた主な影響は？",
+    "answer": "往復や江戸滞在の費用が負担になる",
+    "dummies": [
+      "幕府がすべての費用を負担する",
+      "領地の年貢が免除される",
+      "全国の関所収入を独占できる"
+    ],
+    "note": "大名は行列や江戸屋敷の維持に多額の費用を要した。",
+    "learning_point": "sankin_cost",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_industrial_revolution",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "産業革命で生産の中心はどのように変わった？",
+    "answer": "機械を使う工場生産が広がる",
+    "dummies": [
+      "すべて農家の自給へ戻る",
+      "貨幣を使わない物々交換になる",
+      "手作業の家内工業だけになる"
+    ],
+    "note": "イギリスから始まり、蒸気機関などを利用する工業生産が発展した。",
+    "learning_point": "industrial_revolution",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_opium_war",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アヘン戦争後の南京条約で、清がイギリスへ割譲した地域は？",
+    "answer": "香港島",
+    "dummies": [
+      "台湾",
+      "朝鮮半島",
+      "遼東半島"
+    ],
+    "note": "1842年の南京条約で香港島の割譲などが定められた。",
+    "learning_point": "opium_war",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_opening_japan",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1854年の日米和親条約で開かれた港は？",
+    "answer": "下田・函館",
+    "dummies": [
+      "横浜・神戸",
+      "長崎・新潟",
+      "大阪・京都"
+    ],
+    "note": "下田と函館が開港された。1858年の日米修好通商条約と区別する。",
+    "learning_point": "opening_japan",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_unequal_treaty",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "幕末の不平等条約で、日本に認められていなかったものは？",
+    "answer": "関税自主権",
+    "dummies": [
+      "外国船の寄港",
+      "外国人との貿易",
+      "外交使節の派遣"
+    ],
+    "note": "領事裁判権を認めたことと、関税自主権がなかったことが条約改正の課題となった。",
+    "learning_point": "unequal_treaty",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_freedom_movement",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "自由民権運動で強く求められたものは？",
+    "answer": "国会の開設",
+    "dummies": [
+      "参勤交代の復活",
+      "藩の復活",
+      "鎖国の再開"
+    ],
+    "note": "国会開設や憲法制定など、国民が政治へ参加する権利を求めた。",
+    "learning_point": "freedom_movement",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_league_weakness",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国際連盟の限界として適切なのは？",
+    "answer": "アメリカが加盟しなかった",
+    "dummies": [
+      "日本が設立時から加盟できなかった",
+      "すべての国が常任理事国だった",
+      "第二次大戦後に初めて設立された"
+    ],
+    "note": "提唱国のアメリカは加盟せず、紛争への強制力にも限界があった。",
+    "learning_point": "league_weakness",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_great_depression",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1929年に始まる世界恐慌の発端となった国は？",
+    "answer": "アメリカ合衆国",
+    "dummies": [
+      "イギリス",
+      "ドイツ",
+      "日本"
+    ],
+    "note": "ニューヨークの株価暴落を発端に、世界へ不況が広がった。",
+    "learning_point": "great_depression",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_new_deal",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ニューディール政策で、公共事業の拡大が目指したことは？",
+    "answer": "雇用を増やし購買力を回復する",
+    "dummies": [
+      "失業者への支援をすべて廃止する",
+      "輸出入を完全に禁止する",
+      "政府支出をすべて0にする"
+    ],
+    "note": "ルーズベルト政権は政府の経済への関与を強め、恐慌からの回復を図った。",
+    "learning_point": "new_deal",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_cold_war",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "第二次世界大戦後の冷戦の中心となった対立は？",
+    "answer": "アメリカとソ連",
+    "dummies": [
+      "イギリスとフランス",
+      "日本とドイツ",
+      "中国とインド"
+    ],
+    "note": "米ソを中心とする陣営が、政治・経済体制などをめぐり対立した。",
+    "learning_point": "cold_war",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_social_core_san_francisco",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "サンフランシスコ平和条約の発効で、日本は？",
+    "answer": "独立を回復した",
+    "dummies": [
+      "国際連盟に加盟した",
+      "江戸幕府を廃止した",
+      "普通選挙法を制定した"
+    ],
+    "note": "条約は1951年に調印、1952年に発効した。国際連合への加盟は1956年。",
+    "learning_point": "san_francisco",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_article_vowel",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "冠詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She has (？) apple. に入る語は？",
+    "answer": "an",
+    "dummies": [
+      "a",
+      "many",
+      "these"
+    ],
+    "note": "appleは母音で始まる単数の数えられる名詞なのでanを使う。",
+    "learning_point": "article_vowel",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_uncountable",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "There is not (？) water. に入る語は？",
+    "answer": "much",
+    "dummies": [
+      "many",
+      "a few",
+      "these"
+    ],
+    "note": "waterは通常数えられない名詞。量をmuchで表し、manyは数えられる名詞に使う。",
+    "learning_point": "uncountable",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_preposition_day",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "前置詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I play tennis (？) Sunday. に入る語は？",
+    "answer": "on",
+    "dummies": [
+      "in",
+      "at",
+      "to"
+    ],
+    "note": "曜日や特定の日の前にはon。時刻にはat、月や年にはinを使う。",
+    "learning_point": "preposition_day",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_as_comparison",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This bag is as (？) as that one. に入る語は？",
+    "answer": "heavy",
+    "dummies": [
+      "heavier",
+      "heaviest",
+      "heavily"
+    ],
+    "note": "as＋形容詞・副詞の原級＋asで同程度を表す。",
+    "learning_point": "as_comparison",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_infinitive_purpose",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I went to the library to study. のto studyの役割は？",
+    "answer": "目的を表す",
+    "dummies": [
+      "主語を表す",
+      "過去の時刻を表す",
+      "比較の対象を表す"
+    ],
+    "note": "「勉強するために」で、図書館へ行った目的を表している。",
+    "learning_point": "infinitive_purpose",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_perfect_progressive",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "It has been (？) since this morning.「雨が降り続いている」に入る語は？",
+    "answer": "raining",
+    "dummies": [
+      "rain",
+      "rains",
+      "rained"
+    ],
+    "note": "have/has been＋動詞の-ing形で、過去から続く動作を表す。",
+    "learning_point": "perfect_progressive",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_make_object",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "The news made me (？).「うれしくさせた」に入る語は？",
+    "answer": "happy",
+    "dummies": [
+      "happily",
+      "happiness",
+      "be happy"
+    ],
+    "note": "make＋目的語＋形容詞で「〜を…の状態にする」。",
+    "learning_point": "make_object",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_english_core_indirect_when",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "間接疑問文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Do you know (？)?「彼女がいつ来るか」に入る語句は？",
+    "answer": "when she will come",
+    "dummies": [
+      "when will she come",
+      "when comes she",
+      "when does she will come"
+    ],
+    "note": "文全体が疑問文でも、埋め込まれた間接疑問文は主語＋動詞の語順。",
+    "learning_point": "indirect_when",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_adjectival_noun",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「静かだ」の品詞は？",
+    "answer": "形容動詞",
+    "dummies": [
+      "形容詞",
+      "副詞",
+      "連体詞"
+    ],
+    "note": "形容動詞は活用し、言い切りが「だ」。名詞を修飾すると「静かな」になる。",
+    "learning_point": "adjectival_noun",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_bunsetsu",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "文の区切り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "文節に区切るときの目安となる方法は？",
+    "answer": "不自然にならない所に「ね」を入れる",
+    "dummies": [
+      "漢字1字ごとに区切る",
+      "助詞だけを独立させる",
+      "句読点の所だけで区切る"
+    ],
+    "note": "文節は意味の通じる最小のまとまり。「ね・さ」などを補う方法が目安になる。",
+    "learning_point": "bunsetsu",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_ichidan",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「食べる」の活用の種類は？",
+    "answer": "下一段活用",
+    "dummies": [
+      "上一段活用",
+      "五段活用",
+      "サ行変格活用"
+    ],
+    "note": "食べ・食べ・食べる・食べる・食べれ・食べろ等と活用し、エ段を含む下一段活用。",
+    "learning_point": "ichidan",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_however",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "接続関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「しかし」がある部分を読むとき、まず確認するのは？",
+    "answer": "前後で何が対立しているか",
+    "dummies": [
+      "後ろが必ず文章全体の結論か",
+      "直前の語の読み方だけ",
+      "前の段落を無視できるか"
+    ],
+    "note": "逆接の前後を比べ、内容の対立を押さえる。後ろが常に筆者の主張とは限らない。",
+    "learning_point": "however",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_reason",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "理由と根拠",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "理由を問われたとき、選択肢で確認するのは？",
+    "answer": "問われた事柄の原因を説明するか",
+    "dummies": [
+      "同じ単語が最も多いか",
+      "本文より必ず長いか",
+      "筆者への賛成だけを述べるか"
+    ],
+    "note": "単語の一致だけで選ばず、問われた結果と理由の因果関係を確かめる。",
+    "learning_point": "reason",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_scope",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "選択肢の検討",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "本文は「一部の人」、選択肢は「すべての人」。注意するのは？",
+    "answer": "対象の範囲が広がっている",
+    "dummies": [
+      "時刻の順序が逆になっている",
+      "原因と結果が同じである",
+      "引用符の有無だけが違う"
+    ],
+    "note": "対象や条件が本文より広くなっていないかを点検する。",
+    "learning_point": "scope",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_imijishi",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古語「いみじ」の意味を読むときの注意点は？",
+    "answer": "よい意味にも悪い意味にも強い程度を表す",
+    "dummies": [
+      "必ず素晴らしいと訳す",
+      "必ず悲しいと訳す",
+      "現代語の意味と同じにする"
+    ],
+    "note": "いみじは程度が甚だしいことを表す。具体的な意味は文脈から判断する。",
+    "learning_point": "imijishi",
+    "content_batch": 2
+  },
+  {
+    "id": "jr_japanese_core_imada",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "再読文字",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "再読文字「未」を含む基本の訓読は？",
+    "answer": "いまだ〜ず",
+    "dummies": [
+      "まさに〜べし",
+      "すべからく〜べし",
+      "なんぞ〜や"
+    ],
+    "note": "未は「いまだ〜ず」で、まだ〜していないの意味。将や須と区別する。",
+    "learning_point": "imada",
+    "content_batch": 2
   }
 ]
