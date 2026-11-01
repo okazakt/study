@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.52.0';
-import { materializeMathItem } from './math-variants.js?v=0.52.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.53.0';
+import { materializeMathItem } from './math-variants.js?v=0.53.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -303,7 +303,7 @@ export class Game {
     this.quizCombo = 0; this.maxQuizCombo = 0; this.correctCount = 0; this.firstCount = 0;
     this.counts = [0, 0, 0, 0]; this.firstTry = true; this.message = '白いノーツが来たレーンを、音楽に合わせてタップ';
     this.judgments = { PERFECT: 0, GOOD: 0, MISS: 0 }; this.wrongCount = 0;
-    this.missedNotes=0;this.emptyMisses=0;this.whiteJudgments=0;this.colorJudgments=0;
+    this.extraColorJudgments=0;this.missedNotes=0;this.emptyMisses=0;this.whiteJudgments=0;this.colorJudgments=0;
     this.whiteComboBonus=0;this.colorComboBonus=0;this.answerComboBonus=0;
     this.whiteUnits=0;this.colorUnits=0;this.answerUnits=0;this.colorRowsUsed=0;this.stageWrongCount=0;
     this.colorEligibleJudgments=0;this.startedQuestions=new Set();this.colorCapacityStarted=0;this.scorePlan=null;
@@ -317,6 +317,8 @@ export class Game {
   }
   get successfulTaps() { return this.judgments.PERFECT+this.judgments.GOOD; }
   get countedTaps(){return this.successfulTaps+this.missedNotes;}
+  // Retry/late answer rows still receive judgments but do not replace white notes.
+  get quotaTaps(){return this.countedTaps-this.extraColorJudgments;}
   // The UI supplies an ideal-run reference; standalone callers keep legacy scoring.
   get scoreBreakdown(){
     if(!this.scorePlan)return null;
@@ -344,6 +346,7 @@ export class Game {
     else{
       this.colorJudgments++;
       if(this.colorRowsUsed<this.requiredTaps){this.colorUnits+=quality;this.colorEligibleJudgments++;}
+      else this.extraColorJudgments++;
       this.colorRowsUsed++;
     }
     this.refreshScore();
@@ -363,9 +366,9 @@ export class Game {
   }
   planWhites(now,end){
     this.whitePhaseEnd=end;
-    const remaining=Math.max(0,this.tapGoal-this.countedTaps-this.pendingWhites());
+    const remaining=Math.max(0,this.tapGoal-this.quotaTaps-this.pendingWhites());
     const desired=this.phase==='outro'?this.tapGoal:Math.round(this.tapGoal*Math.min(end,this.endTime)/this.endTime);
-    const needed=Math.min(remaining,Math.max(this.phase==='outro'?0:1,desired-this.countedTaps-this.pendingWhites()));
+    const needed=Math.min(remaining,Math.max(this.phase==='outro'?0:1,desired-this.quotaTaps-this.pendingWhites()));
     const slots=this.whiteSlots(now,end),main=slots.filter(e=>!e.half),pool=main.length>=needed?main:slots;
     const count=Math.min(needed,pool.length);
     this.whiteTargets=new Set(Array.from({length:count},(_,i)=>pool[Math.floor((i+1)*pool.length/count)-1].id));
@@ -395,7 +398,7 @@ export class Game {
     if (phase === 'read' && !this.question.continuation && Number.isFinite(this.endTime)){
       const completion=this.earliestCompletion(now),taps=this.unitTaps();
       if(completion+.25>Math.min(this.endTime,this.questionEndTime) || this.tapGoal &&
-        (this.countedTaps+taps>this.tapGoal || this.whiteSlots(completion).length<this.tapGoal-this.countedTaps-taps))phase='outro';
+        (this.quotaTaps+taps>this.tapGoal || this.whiteSlots(completion).length<this.tapGoal-this.quotaTaps-taps))phase='outro';
     }
     this.phase = phase; this.phaseStart = now;
     if (phase === 'outro') { this.quizResult = null; this.message = ''; this.counts = [0, 0, 0, 0]; }
@@ -412,7 +415,7 @@ export class Game {
     if(this.tapGoal && ['intro','rhythm','outro'].includes(phase)){
       const end=phase==='intro'?Math.min(RULES.introSeconds,this.endTime):phase==='outro'?this.endTime:Math.min(this.rhythmEnd,this.endTime);
       this.planWhites(now,end);
-      if(phase==='rhythm' && this.whiteSlots(end).length<this.tapGoal-this.countedTaps-this.pendingWhites()-this.whiteTargets.size){this.changePhase('outro',now);return;}
+      if(phase==='rhythm' && this.whiteSlots(end).length<this.tapGoal-this.quotaTaps-this.pendingWhites()-this.whiteTargets.size){this.changePhase('outro',now);return;}
     }
     if (phase === 'answer') this.message = `答えの色を${this.requiredTaps}回タップ`;
   }
@@ -425,7 +428,7 @@ export class Game {
       if (!['intro', 'answer', 'rhythm', 'outro'].includes(this.phase)) continue;
       if(this.phase==='answer' && !this.answerEvent(event))continue;
       if(this.tapGoal && this.phase!=='answer'){
-        if(!this.whiteTargets.has(event.id) || this.countedTaps+this.pendingWhites()>=this.tapGoal)continue;
+        if(!this.whiteTargets.has(event.id) || this.quotaTaps+this.pendingWhites()>=this.tapGoal)continue;
       }else if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
