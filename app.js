@@ -1,10 +1,10 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.44.1';
-import { MusicPlayer } from './music-player.js?v=0.44.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.44.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.44.1';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.44.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.44.1';
-const VERSION = '0.44.1';
+import { ScreenWakeLock } from './wake-lock.js?v=0.44.2';
+import { MusicPlayer } from './music-player.js?v=0.44.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.44.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.44.2';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.44.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.44.2';
+const VERSION = '0.44.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -109,11 +109,16 @@ function setMusicGain(value) {
 }
 function suspendMusicAudio() { musicContext?.suspend().catch(()=>{}); }
 // Short percussion with a clear attack, independent of the song clock.
-let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, speakerTapSoundEnabled = true, tapVolume = 55;
+let tapAudioProbe, tapAudio, tapNoise, tapAudioNeedsReset = false, tapSoundEnabled = true, speakerTapSoundEnabled = true, tapVolume = 60;
 try {
   speakerTapSoundEnabled = localStorage.getItem('study-beat-tap-sound') !== 'off';
-  const saved = localStorage.getItem('study-beat-tap-volume');
-  if (saved !== null && Number.isFinite(Number(saved))) tapVolume = Math.max(0, Math.min(100, Number(saved)));
+  const saved = localStorage.getItem('study-beat-tap-volume-v2');
+  const legacy = localStorage.getItem('study-beat-tap-volume');
+  if(saved!==null && Number.isFinite(Number(saved)))tapVolume=Math.max(0,Math.min(100,Number(saved)));
+  else if(legacy!==null && Number.isFinite(Number(legacy))){
+    tapVolume=Math.round(Math.max(0,Math.min(100,Number(legacy)))*.6);
+    localStorage.setItem('study-beat-tap-volume-v2',String(tapVolume));
+  }
 } catch {}
 tapSoundEnabled = timingSettings.activeOutput === 'bluetooth' ? false : speakerTapSoundEnabled;
 function syncSoundUi() {
@@ -149,7 +154,7 @@ for (const prefix of ['', 'help-']) {
       $(`${other}tap-volume`).value = tapVolume;
       $(`${other}tap-volume-value`).value = `${tapVolume}%`;
     }
-    try { localStorage.setItem('study-beat-tap-volume', String(tapVolume)); } catch {}
+    try { localStorage.setItem('study-beat-tap-volume-v2', String(tapVolume)); } catch {}
   });
   $(`${prefix}tap-preview`).addEventListener('click', () => playTapSound(true));
   $(`${prefix}tap-preview-miss`).addEventListener('click', () => playTapSound(true, 'MISS'));
@@ -190,8 +195,8 @@ function verifyTapAudioClock() {
 }
 function emitTapSound(judgment) {
   const t = tapAudio.currentTime, gain = tapAudio.createGain();
-  gain.gain.setValueAtTime(tapVolume / 100 * 4, t);
-  // Tenfold amplification, with soft peak limiting for the upper volume range.
+  gain.gain.setValueAtTime(tapVolume / 60 * 4, t);
+  // 60% matches the previous 100%; retain soft peak limiting.
   const limiter = tapAudio.createWaveShaper(), curve = new Float32Array(4097);
   for (let i = 0; i < curve.length; i++) {
     const x = i * 2 / (curve.length - 1) - 1, magnitude = Math.abs(x);
@@ -1038,7 +1043,7 @@ $('practice-back').addEventListener('click', () => show('result'));
 $('help').addEventListener('click', () => { if (screen === 'home') $('controls-help').showModal(); });
 $('close-help').addEventListener('click', () => $('controls-help').close());
 $('start').addEventListener('click', start); $('again').addEventListener('click', start);
-$('back').addEventListener('click', () => show('home'));
+for(const id of ['back','back-bottom'])$(id).addEventListener('click', () => show('home'));
 $('quit').addEventListener('click', () => finish(false));
 audio.addEventListener('ended', async () => {
   if (screen !== 'play' || busy || musicPlayer) return;
