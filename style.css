@@ -129,3 +129,7 @@ body.playing #play{padding-bottom:0}
 body.playing #play .lane-keys{flex-basis:calc(clamp(88px,13dvh,120px) + env(safe-area-inset-bottom,0px));gap:0}
 body.playing #play .lane-keys button{border-radius:9px 9px 0 0}
 @media(max-width:600px){body.playing #play .lane-keys{width:100vw;align-self:center}}
+
+/* Use the actual visible viewport on iOS/PWA instead of relying on dvh alone. */
+body.playing{height:var(--play-viewport-height,100dvh)}
+body.playing main{height:100%}
