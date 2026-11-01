@@ -123,3 +123,9 @@ html.play-locked{height:100%;overflow:hidden;overscroll-behavior:none}body.playi
 .mode-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.mode-buttons button{min-width:0;min-height:44px;padding:10px 4px;white-space:nowrap}#rhythm-difficulty{grid-template-columns:repeat(3,minmax(0,1fr))}.rhythm-picker h2{margin-bottom:14px}@media(max-width:400px){.mode-buttons{gap:5px}.mode-buttons button{font-size:13px;padding:9px 3px}}
 
 .result-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0}.result-settings>div{min-width:0;min-height:110px;padding:20px;background:var(--panel);border-radius:10px;color:var(--muted);font-size:12px}.result-settings strong{display:block;color:var(--accent);font-size:clamp(22px,4vw,28px);margin-top:8px}@media(max-width:400px){.result-settings>div{padding:15px 12px}}
+
+/* Keep the bottom inset inside the buttons, not in a dead strip below them. */
+body.playing #play{padding-bottom:0}
+body.playing #play .lane-keys{flex-basis:calc(clamp(88px,13dvh,120px) + env(safe-area-inset-bottom,0px));gap:0}
+body.playing #play .lane-keys button{border-radius:9px 9px 0 0}
+@media(max-width:600px){body.playing #play .lane-keys{width:100vw;align-self:center}}

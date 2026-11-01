@@ -1,11 +1,13 @@
-import { MusicPlayer } from './music-player.js?v=0.42.4';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.4';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.4';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.4';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.4';
-const VERSION = '0.42.4';
+import { ScreenWakeLock } from './wake-lock.js?v=0.43.0';
+import { MusicPlayer } from './music-player.js?v=0.43.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.43.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.43.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.43.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.43.0';
+const VERSION = '0.43.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
+const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let session, musicContext, musicGain, musicPlayer, musicEntries=[], tuningTracks=[], playedTracks=[];
 let selectedMusic=null;
@@ -257,7 +259,8 @@ document.addEventListener('touchend', () => {
 const show = next => {
   const previousScreen = screen;
   if (next !== 'result') { clearTimeout(resultTimer); resultTimer = undefined; $('result-details').classList.remove('revealed'); }
-  screen = next; document.body.classList.toggle('playing', next === 'play' || next === 'tuning');
+  screen = next;screenWakeLock.setEnabled(next==='play');
+  document.body.classList.toggle('playing', next === 'play' || next === 'tuning');
   document.documentElement.classList.toggle('play-locked', next === 'play' || next === 'tuning');
   for (const name of ['home', 'play', 'result', 'practice-review', 'tuning']) $(name).hidden = name !== next;
   if (next === 'result' && previousScreen === 'practice-review') $('result-details').hidden = false;
@@ -721,7 +724,7 @@ function render() {
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').dataset.phase = game.phase;
   $('play').dataset.continuation = game.reveal.continuation;
-  $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色の回答エリア' : '白ノーツのタップエリア');
+  $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色のノーツ表示' : '白ノーツの表示');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
@@ -842,12 +845,6 @@ function tap(lane) {
   }
   render(); draw();
 }
-$('play-stage').addEventListener('pointerdown', event => {
-  const bounds = canvas.getBoundingClientRect();
-  if (event.clientY < bounds.top || event.clientY > bounds.bottom) return;
-  event.preventDefault();
-  tap(Math.max(0, Math.min(game.laneCount - 1, Math.floor((event.clientX - bounds.left) / bounds.width * game.laneCount))));
-});
 document.querySelectorAll('[data-lane]').forEach(button => button.addEventListener('pointerdown', event => { event.preventDefault(); tap(Number(button.dataset.lane)); }));
 // Prevent selection handles, long-press callouts and drag gestures while playing.
 for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
@@ -1037,8 +1034,9 @@ audio.addEventListener('ended', async () => {
 audio.addEventListener('error', () => { if (screen === 'tuning') { pauseTuning(); tuningMessage='音楽を読み込めません。接続を確認してください。';renderTuning(); } if (screen === 'play') interruptPlay('音声を読み込めなかったため終了しました。ここまでの回答は記録済みです。'); });
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) { tapAudioNeedsReset = true; interruptPlay(); }
+  else if(screen==='play')screenWakeLock.acquire();
 });
-window.addEventListener('pagehide', () => { tapAudioNeedsReset = true; interruptPlay(); });
+window.addEventListener('pagehide', () => { screenWakeLock.setEnabled(false);tapAudioNeedsReset = true; interruptPlay(); });
 window.addEventListener('blur', () => { tapAudioNeedsReset = true; if (screen === 'play') interruptPlay(); });
 for (const type of ['pause','waiting']) audio.addEventListener(type, () => {
   if (screen === 'play' && !musicPlayer && !busy && !audio.ended) interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
