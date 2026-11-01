@@ -1,10 +1,10 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.43.2';
-import { MusicPlayer } from './music-player.js?v=0.43.2';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.43.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.43.2';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.43.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.43.2';
-const VERSION = '0.43.2';
+import { ScreenWakeLock } from './wake-lock.js?v=0.44.0';
+import { MusicPlayer } from './music-player.js?v=0.44.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.44.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.44.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.44.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.44.0';
+const VERSION = '0.44.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -256,6 +256,27 @@ function playTapSound(preview = false, judgment = 'GOOD') {
 document.addEventListener('touchend', () => {
   if (screen === 'play' || screen === 'tuning') prepareTapAudio()?.catch(() => {});
 }, { passive: true });
+let displayDiagnostics=null;
+try { displayDiagnostics=JSON.parse(localStorage.getItem('study-beat-display-diagnostics-v1')||'null'); } catch {}
+function capturePlayLayout(){
+  if(screen!=='play')return;
+  const rect=element=>{const r=element.getBoundingClientRect();return {top:r.top,bottom:r.bottom,height:r.height,left:r.left,right:r.right};};
+  const viewport=window.visualViewport,buttons=$('play').querySelector('.lane-keys'),main=document.querySelector('main');
+  const top=getComputedStyle(main).paddingTop,bottom=getComputedStyle(document.documentElement).getPropertyValue('--screen-safe-bottom').trim();
+  displayDiagnostics={version:VERSION,standalone:matchMedia('(display-mode: standalone)').matches||navigator.standalone===true,
+    innerHeight:innerHeight,innerWidth:innerWidth,screenHeight:window.screen.height,
+    visualViewport:viewport?{height:viewport.height,width:viewport.width,offsetTop:viewport.offsetTop,scale:viewport.scale}:null,
+    safeTop:top,safeBottom:bottom,body:rect(document.body),main:rect(main),buttons:rect(buttons),
+    pageBottomGap:(viewport?viewport.height+viewport.offsetTop:innerHeight)-buttons.getBoundingClientRect().bottom};
+  try { localStorage.setItem('study-beat-display-diagnostics-v1',JSON.stringify(displayDiagnostics)); } catch {}
+}
+function showDisplayDiagnostics(){
+  $('display-diagnostics').value=displayDiagnostics?JSON.stringify(displayDiagnostics,null,2):'プレイすると表示寸法を記録します。';
+}
+$('copy-display-diagnostics').addEventListener('click',async()=>{
+  try { await navigator.clipboard.writeText($('display-diagnostics').value);$('display-copy-status').textContent='コピーしました。'; }
+  catch { $('display-diagnostics').focus();$('display-diagnostics').select();$('display-copy-status').textContent='本文を選択しました。コピーしてください。'; }
+});
 const show = next => {
   const previousScreen = screen;
   if (next !== 'result') { clearTimeout(resultTimer); resultTimer = undefined; $('result-details').classList.remove('revealed'); }
@@ -265,6 +286,7 @@ const show = next => {
   for (const name of ['home', 'play', 'result', 'practice-review', 'tuning']) $(name).hidden = name !== next;
   if (next === 'result' && previousScreen === 'practice-review') $('result-details').hidden = false;
   window.scrollTo(0, 0);
+  if(next==='play')requestAnimationFrame(capturePlayLayout);
   if (next === 'home') { if (dataReady) renderLearning(); checkForUpdate(); }
 };
 function saveAnswer(q, correct, chosen, wrongBefore, kind = 'play') {
@@ -386,7 +408,7 @@ function renderLearning() {
 }
 $('all-sections').addEventListener('change', () => { selection().sections = $('all-sections').checked ? null : []; saveLearning(); renderLearning(); });
 document.querySelectorAll('[data-school]').forEach(button => button.addEventListener('click', () => setSchool(button.dataset.school)));
-$('open-learning-settings').addEventListener('click', () => $('learning-settings').showModal());
+$('open-learning-settings').addEventListener('click', () => {showDisplayDiagnostics();$('display-copy-status').textContent='';$('learning-settings').showModal();});
 $('close-learning-settings').addEventListener('click', () => $('learning-settings').close());
 function saveMusicSelection(){
   try { localStorage.setItem('study-beat-music-selection-v2',JSON.stringify(selectedMusic));$('music-storage-note').hidden=true; }
@@ -1041,7 +1063,7 @@ window.addEventListener('blur', () => { tapAudioNeedsReset = true; if (screen ==
 for (const type of ['pause','waiting']) audio.addEventListener(type, () => {
   if (screen === 'play' && !musicPlayer && !busy && !audio.ended) interruptPlay('音楽が中断されたためプレイを終了しました。ここまでの回答は記録済みです。');
 });
-window.addEventListener('resize', () => { if (screen === 'play') { render(); draw(); } else if (screen === 'tuning') renderTuning(); });
+window.addEventListener('resize', () => { if (screen === 'play') { render(); draw();requestAnimationFrame(capturePlayLayout); } else if (screen === 'tuning') renderTuning(); });
 let registration, updateAvailable = false;
 let updateCheck;
 async function checkForUpdate() {

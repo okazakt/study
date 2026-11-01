@@ -23,7 +23,7 @@
 
 ## バージョン表示
 
-トップ画面の冒頭右側に `v0.43.2` の形式でアプリのバージョンを常時表示する。PWAの接続・キャッシュ状態表示とは別にする。`package.json` の `version` を基準とし、公開更新の際に番号を上げてトップ画面とService Workerのキャッシュ名にも同じ値を反映する。
+トップ画面の冒頭右側に `v0.44.0` の形式でアプリのバージョンを常時表示する。PWAの接続・キャッシュ状態表示とは別にする。`package.json` の `version` を基準とし、公開更新の際に番号を上げてトップ画面とService Workerのキャッシュ名にも同じ値を反映する。
 
 ## 案内文
 
@@ -133,7 +133,7 @@ MP3の `audio.currentTime` を表示・判定・フェーズ進行の唯一の�
 
 依存パッケージなしのHTML/CSS/JavaScript ModulesとCanvas。Web App Manifest、192/512pxアイコン、Service Workerを持つ。
 
-初回のService Workerインストール時にアプリ・問題・楽曲インデックス・譜面をキャッシュし、音源は有効化後に別キャッシュへ保存する。音源の保存完了をOFFLINE READYとして表示し、その後にオフライン再起動・音声再生が可能。音声のRangeリクエストにもキャッシュから206応答する。初回オフラインやキャッシュ削除後は利用不可。ブラウザによるキャッシュ削除の可能性もある。更新時は `sw.js` のキャッシュバージョンを上げる（今回はv0.43.2）。更新用アセットはHTTPキャッシュを再検証し、旧版が混ざることを防ぐ。新しいService Workerに切り替わった際、ホームでは自動再読込し、プレイ中は中断せず更新案内を表示する。
+初回のService Workerインストール時にアプリ・問題・楽曲インデックス・譜面をキャッシュし、音源は有効化後に別キャッシュへ保存する。音源の保存完了をOFFLINE READYとして表示し、その後にオフライン再起動・音声再生が可能。音声のRangeリクエストにもキャッシュから206応答する。初回オフラインやキャッシュ削除後は利用不可。ブラウザによるキャッシュ削除の可能性もある。更新時は `sw.js` のキャッシュバージョンを上げる（今回はv0.44.0）。更新用アセットはHTTPキャッシュを再検証し、旧版が混ざることを防ぐ。新しいService Workerに切り替わった際、ホームでは自動再読込し、プレイ中は中断せず更新案内を表示する。
 
 ローカル起動はlocalhost、本番はHTTPSが必要。PWAインストール操作・対応状況はブラウザに依存する。
 
@@ -737,3 +737,15 @@ MP3の `audio.currentTime` を表示・判定・フェーズ進行の唯一の�
 - Screen Wake Lockとボタン外のタッチ無判定は維持する。添付の下部余白の原因は断定せず、iPhoneでの下部領域への描画の可否は未検証のままとする。
 
 - 検証：全168テスト成功。style.cssがv0.42.4と同一であることを差分確認。Chromiumの320px／390pxで従来の左右余白・6pxの隙間・9px角丸を確認し、Wake Lockの取得／解除とボタン外無判定・ボタン内PERFECT／空振りMISSが維持されることを確認。
+
+### iOS全画面設定と高さ制約の見直し（v0.44.0）
+
+- 別PWAが同端末で下部まで描画できる報告を踏まえ、OS全般の制約とせず本PWAの設定・CSSを再点検。viewport-fit=coverとmanifestのstandaloneは既存だが、Appleの全画面指定とステータスバー設定が未指定であること、body/mainの100dvh二重固定、#play外側の下部safe-area余白を確認した。これらは修正対象であり、実機症状の原因を断定したものではない。
+- mobile-web-app-capable=yes、apple-mobile-web-app-capable=yes、apple-mobile-web-app-status-bar-style=black-translucentを追加。Apple資料ではblack-translucentがステータスバー下も含む画面全体への描画を指定する。manifestのID・scope・start_urlは維持する。
+- body.playingはfixed/inset:0を使い明示的な100dvh高さを外す。mainもabsolute/inset:0とし100dvh高さを外す。表示可能な固定配置領域を直接満たし、前回のvisualViewport高さ設定は再導入しない。背景はhtmlにも指定する。
+- 上部safe-areaはmain内のpaddingで保護し、横向きは左右のsafe-areaも保護。下部safe-areaは#playのpaddingから4ボタンの高さへ移し、ページ内の下端までボタンを伸ばす。v0.42.4の横幅・6px間隔・9px角丸を維持し、全幅の角張った見た目には戻さない。チューニングは下部の従来の保護余白を維持する。
+- 資料：https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html 、https://webkit.org/blog/7929/designing-websites-for-iphone-x/ 。iPhone実機での解消は未確認。起動時設定も含むため公開更新後はPWAを閉じて再起動して確認する。
+
+- 設定に折りたたみの「画面表示の診断情報」を追加。プレイ開始時とリサイズ時に、アプリ版・standalone判定・innerHeight／visualViewport・safe-area・body／main／ボタンの矩形・ページ下端との差をブラウザ内へ保存し、確認／コピーできる。問題文や個人情報・回答履歴は含めず、外部送信しない。
+
+- 検証：全168テスト成功。Apple／WebKitの公式資料を確認。Chromiumで上47px／下34pxのsafe-areaをCSS変数で再現し、700／844／900px高と320px／390px幅でページ内下端までのボタン配置・従来の横幅／隙間／角丸を確認。ボタン外無判定、画面点灯要求／解除、診断値の保存／表示／コピーを確認。iOSネイティブ表示・実機での症状解消は未検証。
