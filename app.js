@@ -1,10 +1,10 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.47.0';
-import { MusicPlayer } from './music-player.js?v=0.47.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.47.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.47.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.47.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.47.0';
-const VERSION = '0.47.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.48.0';
+import { MusicPlayer } from './music-player.js?v=0.48.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.48.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.48.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.48.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.48.0';
+const VERSION = '0.48.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -448,8 +448,8 @@ function selectTrack(index, tuning=false) {
 }
 async function load() {
   try {
-    const [index, quiz, english, japanese, math, social, expansion] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json')]);
-    questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion];
+    const [index, quiz, english, japanese, math, social, expansion, englishCore] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json')]);
+    questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion, ...englishCore];
     const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     musicEntries=entries;
     playlist = makePlaylist(entries); tuningTracks=makePlaylist(entries,{trim:false}).tracks;

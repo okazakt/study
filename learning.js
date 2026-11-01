@@ -2,11 +2,11 @@ export const SCHOOLS = ['中学', '高校'];
 const subjects = { 中学: ['国語', '英語', '数学', '理科', '社会'], 高校: ['国語', '英語', '数学', '理科', '地歴・公民'] };
 export const sectionKey = item => JSON.stringify([item.field, item.unit]);
 export function choiceColumns(question) {
-  return question.mode !== 'kanji_component' && question.choices.some(text => Array.from(text).length > 12) ? 2 : 4;
+  return question.mode !== 'kanji_component' && question.choices.some(text => Array.from(text).length > 12 || /[A-Za-z]{8,}/.test(text)) ? 2 : 4;
 }
 export function practiceTypes(subject) {
   const options = subject === '国語' ? [['kanji_write','漢字書き'],['kanji_read','漢字読み'],['idiom','熟語'],['modern','現代文法'],['reading','読解のポイント'],['classical','古文'],['kanbun','漢文']]
-    : subject === '英語' ? [['word_ja_en','単語和英'],['word_en_ja','単語英和'],['word_spelling','単語綴り'],['phrase_ja_en','熟語和英'],['phrase_en_ja','熟語英和'],['grammar','英文法']] : [];
+    : subject === '英語' ? [['word_ja_en','単語和英'],['word_en_ja','単語英和'],['word_spelling','単語綴り'],['phrase_ja_en','熟語和英'],['phrase_en_ja','熟語英和'],['grammar','英文法'],['reading','読解のポイント']] : [];
   return [...options, ['all','全て']].map(([id,label]) => ({id,label}));
 }
 export function matchesPracticeItem(item, type = 'all') {
@@ -14,6 +14,7 @@ export function matchesPracticeItem(item, type = 'all') {
   if (item.subject === '国語') return ({kanji_write:item.kind === 'kanji',kanji_read:item.kind === 'kanji',idiom:item.kind === 'idiom',
     modern:item.field === '現代文文法',reading:item.field === '読解',classical:item.field === '古文文法',kanbun:item.field === '漢文文法'})[type] === true;
   if (item.subject === '英語' && type === 'grammar') return item.field === '英文法';
+  if (item.subject === '英語' && type === 'reading') return item.field === '英文読解';
   if (item.subject === '英語') return ['word_ja_en','word_en_ja','word_spelling'].includes(type) ? !!item.english && !item.phrase_blanks
     : ['phrase_ja_en','phrase_en_ja'].includes(type) && !!item.phrase_blanks;
   return false;

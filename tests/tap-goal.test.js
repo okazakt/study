@@ -68,7 +68,7 @@ test('missed notes count toward 120 while delayed answers may leave no adjustmen
 
 test('individual Japanese and English practice formats also reach the goal without retries',()=>{
  for(const [subject,file] of [['国語','japanese'],['英語','english']])for(const type of practiceTypes(subject))for(let seed=1;seed<=3;seed++){
-  const items=[...read('quiz-data/junior_'+file+'.json'),...read('quiz-data/junior_expansion.json').filter(q=>q.subject===subject)];
+  const items=[...read('quiz-data/junior_'+file+'.json'),...read('quiz-data/junior_expansion.json').filter(q=>q.subject===subject),...(subject==='英語'?read('quiz-data/junior_english_core.json'):[])];
   const result=simulateSession(items,seed,0,{acceptQuestion:q=>matchesPracticeQuestion(q,type.id)});
   assert.equal(result.taps,120,subject+':'+type.id+':'+seed);
  }

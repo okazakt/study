@@ -1,6 +1,6 @@
 # Study Beat
 
-中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の479素材（逆方向・段階回答を含め882問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.45.0の206素材に続き、v0.46.1までに90素材を追加しました。受験範囲の網羅・教科書対応は未完了です。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
+中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の1,100素材（逆方向・段階回答を含め3,052問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.48.0で英語を621素材追加し、英語は711素材・2,464問になりました。受験範囲の網羅・教科書対応は未完了です。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
 
 ```sh
 npm start
@@ -109,3 +109,7 @@ Python PlaywrightとWebKitブラウザが利用できる環境で `python3 scrip
 ### 数学の数値アレンジ
 
 v0.47.0から、分配法則・方程式の変形・通分・因数分解など11学習ポイントは、係数や数値を変えて出題します。実際の式と選択肢、解説は同じ値から生成し、直近と同じ組み合わせを避けます。誤答後の再挑戦・復習は元の値を維持し、数値が違っても回答履歴は同じポイントへ集計します。固定の公式・定義問題はそのままです。
+
+### 英語の拡充
+
+単語・熟語・英文法・短い読解ポイントを選べます。新しい共通データは `quiz-data/junior_english_core.json`。語彙には小学校の復習も含み、学年分類は暫定です。[英語の進捗と残作業](docs/content/english-progress.md)は `node scripts/english-progress.mjs` で再集計します。英語全体の網羅と教科書別対応は未完了です。

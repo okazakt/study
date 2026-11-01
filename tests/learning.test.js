@@ -40,7 +40,7 @@ function practiceQueue(id,type){
 }
 test('Japanese and English menus include every requested type with all as a distinct choice',()=>{
  assert.deepEqual(practiceTypes('国語').map(t=>t.label),['漢字書き','漢字読み','熟語','現代文法','読解のポイント','古文','漢文','全て']);
- assert.deepEqual(practiceTypes('英語').map(t=>t.label),['単語和英','単語英和','単語綴り','熟語和英','熟語英和','英文法','全て']);
+ assert.deepEqual(practiceTypes('英語').map(t=>t.label),['単語和英','単語英和','単語綴り','熟語和英','熟語英和','英文法','読解のポイント','全て']);
 });
 test('Japanese practice filters remove the other kanji direction and keep both grammar and idiom directions',()=>{
  const specs=[['kanji_write',29,['kanji_component']],['kanji_read',12,['kanji_reading']],['idiom',16,['japanese_term','japanese_definition']],

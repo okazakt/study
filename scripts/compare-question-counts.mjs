@@ -7,7 +7,7 @@ import {practiceTypes,matchesPracticeQuestion} from '../learning.js';
 const read=name=>{
  const base=JSON.parse(readFileSync(new URL('../quiz-data/junior_'+name+'.json',import.meta.url)));
  const subject=base[0].subject;
- return [...base,...JSON.parse(readFileSync(new URL('../quiz-data/junior_expansion.json',import.meta.url))).filter(q=>q.subject===subject)];
+ return [...base,...JSON.parse(readFileSync(new URL('../quiz-data/junior_expansion.json',import.meta.url))).filter(q=>q.subject===subject),...(subject==='英語'?JSON.parse(readFileSync(new URL('../quiz-data/junior_english_core.json',import.meta.url))):[])];
 };
 function summarize(items,acceptQuestion=()=>true){
  const results=Array.from({length:100},(_,i)=>simulateSession(items,i+1,0,{acceptQuestion}).answers);
