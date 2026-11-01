@@ -1,4 +1,4 @@
-import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.58.0';
+import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.58.1';
 
 // The chart's main beats are timing opportunities, without visible/moving notes.
 export function focusReveal(question,speed){
@@ -15,21 +15,22 @@ export function focusReveal(question,speed){
 export class FocusGame extends Game {
   constructor(questions,events,offset=0,random=Math.random,endTime=Infinity,accept=()=>true,picker=null,questionEndTime=endTime,_goal=null,options={}){
     super(questions,events,offset,random,endTime,accept,picker,questionEndTime,null,{...options,rhythm:'focus'});
-    this.focus=true;this.beats=this.events.filter(e=>e.target>=0&&e.target+RULES.goodWindow<=endTime).map(e=>({...e,done:false}));
+    this.focus=true;this.musicBeats=this.events.filter(e=>e.target>=0&&e.target+RULES.goodWindow<=endTime).map(e=>({...e,done:false}));
+    this.beats=this.musicBeats.filter(e=>e.focusEligible!==false);
     this.beatCursor=0;this.focusWhite=0;this.focusColor=0;this.focusAnswer=0;this.changePhase('read',0);
   }
   get requiredTaps(){return 1;}
   refreshScore(){} // Focus uses direct points, not the normal mode's 120-note normalization.
   get scoreBreakdown(){return {netWhite:this.focusWhite||0,netColor:this.focusColor||0,baseAnswer:this.focusAnswer||0,
     whiteBonus:this.whiteComboBonus,colorBonus:this.colorComboBonus,answerBonus:this.answerComboBonus};}
-  beatAfter(now,count=1){return this.beats.filter(b=>b.target>now+1e-8)[count-1]?.target??Infinity;}
+  beatAfter(now,count=1){return this.musicBeats.filter(b=>b.target>now+1e-8)[count-1]?.target??Infinity;}
   pulse(now){let distance=Infinity;for(const b of this.beats){if(b.target>now+.2)break;distance=Math.min(distance,Math.abs(now-b.target));}return Math.max(0,1-distance/.16);}
   earliestCompletion(now){
     let time=now;
     for(let step=0;step<this.questions.length;step++){
       const q=this.questions[(this.questionIndex+step)%this.questions.length];
       if(step&&!(q.continuation&&q.sourceId===this.question.sourceId&&q.mode===this.question.mode))break;
-      time=this.beatAfter(time+focusReveal(q,this.options.speed).duration);
+      time=this.beats.find(b=>b.target>time+focusReveal(q,this.options.speed).duration+1e-8)?.target??Infinity;
       time=this.beatAfter(time,2);
     }return time;
   }

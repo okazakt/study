@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.58.0';
-import { materializeMathItem } from './math-variants.js?v=0.58.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.58.1';
+import { materializeMathItem } from './math-variants.js?v=0.58.1';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -226,16 +226,28 @@ export function musicCredit(track) {
   return typeof track.creditText==='string'&&track.creditText.trim() ? track.creditText : `${track.title} / ${track.creator}`;
 }
 
+// Keep the score/judgment grid on source timestamps; only choose which beats are required.
+export function focusBeatDivisor(track,chart={}) {
+  const meter=Number(String(chart.timeSignature||'4/4').split('/')[0]);
+  const override=track.focusRhythm?.beatDivisor;
+  if([1,2,3,4].includes(override)&&meter%override===0)return override;
+  if(meter===3)return 3;
+  if(meter!==4)return 1;
+  const bpm=Number(track.baseBpm||chart.bpm)||120;
+  return bpm<=72?1:bpm<=144?2:4;
+}
+
 export function makePlaylist(entries,{trim=true}={}) {
   let duration = 0;
   const tracks = entries.map(({ id, track, chart }, occurrence) => {
-    const start = duration;
+    const start = duration, focusDivisor=focusBeatDivisor(track,chart);
     const bounds=trackPlaybackBounds(track,trim);
     duration += bounds.duration;
     return { id, ...track, start, durationSeconds:bounds.duration,mediaStart:bounds.start,mediaEnd:bounds.end,
       events: easyEvents(chart.events).map(event=>({...event,time:event.time+(track.timing.chartToAudioOffsetMs || 0)/1000}))
       .filter(event=>event.time>=bounds.start && event.time<bounds.end).map(event => ({
       ...event, time: start + event.time - bounds.start,
+      focusEligible:(event.beatInBar-1)%focusDivisor===0,
       bar: `${id}:${occurrence}:${event.bar}`
     })) };
   });
@@ -285,7 +297,7 @@ export class Game {
     let lanes = [];
     this.events = easyEvents(events).map((event, i) => {
       if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
-      return { target: event.time + offsetSeconds, id: i, lane: lanes.pop(), answerEligible:this.options.rhythm!=='hard'||[0,2].includes(i%4) };
+      return { target: event.time + offsetSeconds, id: i, lane: lanes.pop(), focusEligible:event.focusEligible!==false, answerEligible:this.options.rhythm!=='hard'||[0,2].includes(i%4) };
     });
     if(this.tapGoal){
       const main=this.events,extra=[];

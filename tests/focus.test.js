@@ -50,3 +50,26 @@ test('multiple explanation blanks retain the same source until the last blank is
 test('an early accepted answer still leaves two full subsequent beats for correct feedback',()=>{
  const g=make();g.update(0);g.tap(g.question.correct,.95);assert.equal(g.nextQuestionAt,2);g.update(1.5);assert.equal(g.phase,'feedback');g.update(2);assert.equal(g.questionIndex,1);
 });
+
+test('focus cadence respects tempo, triple meter and explicit compatible track settings',async()=>{
+ const {focusBeatDivisor}=await import('../game.js');
+ assert.equal(focusBeatDivisor({baseBpm:60}),1);assert.equal(focusBeatDivisor({baseBpm:120}),2);assert.equal(focusBeatDivisor({baseBpm:180}),4);
+ assert.equal(focusBeatDivisor({baseBpm:100},{timeSignature:'3/4'}),3);
+ assert.equal(focusBeatDivisor({baseBpm:180,focusRhythm:{beatDivisor:2}}),2);
+ assert.equal(focusBeatDivisor({focusRhythm:{beatDivisor:2}},{timeSignature:'3/4'}),3);
+});
+test('half cadence has no misses on omitted beats, pulses only assigned beats and keeps feedback two musical beats',()=>{
+ const sparse=events.map(e=>({...e,focusEligible:e.beatInBar%2===1}));
+ const g=new FocusGame([item],sparse,0,()=>.5,60,q=>q.mode==='to_japanese',null,60,null,{speed:'instant'});
+ g.update(0);assert.equal(g.beats.length,g.musicBeats.length/2);g.tap(-1,1);g.update(1.7);assert.equal(g.missedNotes,0);assert.equal(g.pulse(1.5),0);
+ g.tap(g.question.correct,2);assert.equal(g.nextQuestionAt,3);g.update(3);assert.equal(g.questionIndex,1);
+ g.update(4.2);assert.equal(g.missedNotes,2);
+});
+test('both registered songs use half cadence through the real playlist while ordinary beat timestamps remain intact',async()=>{
+ const {readFileSync}=await import('node:fs'),{makePlaylist}=await import('../game.js');const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
+ const catalog=read('music-data/index.json'),entries=Object.entries(catalog).map(([id,track])=>({id,track,chart:read('music-data/'+track.files.chart)}));
+ const list=makePlaylist(entries);for(const t of list.tracks){assert.equal(t.focusRhythm.beatDivisor,2);assert.ok(t.events.some(e=>!e.focusEligible));assert.ok(t.events.every(e=>e.focusEligible===(e.beatInBar%2===1)));}
+ const g=new FocusGame([item],list.events,-.101,()=>.5,list.duration,q=>q.mode==='to_japanese',null,list.duration,null,{speed:'instant'});
+ assert.ok(g.beats.length<g.musicBeats.length*.52);assert.ok(g.beats.length>g.musicBeats.length*.48);
+ assert.equal(g.beats[0].target,list.events.find(e=>e.focusEligible).time-.101);
+});
