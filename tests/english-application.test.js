@@ -8,12 +8,12 @@ import {normalizeHistory,recordAnswer,questionKey,buildPriorityIndex,priorityCat
 const read=n=>JSON.parse(readFileSync(new URL(`../quiz-data/${n}.json`,import.meta.url)));
 const items=read('junior_english_application'),prior=['junior_english','junior_expansion','junior_english_core','junior_english_extended'].flatMap(read).filter(q=>q.subject==='英語');
 const queue=makeQuestionQueue(items,()=>.5);
-test('application batch adds 36 grammar and 24 reading points without duplicating previous prompts',()=>{
- assert.equal(items.length,60);assert.equal(items.filter(q=>q.field==='英文法').length,36);assert.equal(items.filter(q=>q.field==='英文読解').length,24);
+test('application bank contains 68 grammar and 40 reading points without duplicating previous prompts',()=>{
+ assert.equal(items.length,108);assert.equal(items.filter(q=>q.field==='英文法').length,68);assert.equal(items.filter(q=>q.field==='英文読解').length,40);
  assert.equal(new Set([...prior,...items].map(q=>q.id)).size,prior.length+items.length);
  const prompts=new Set(prior.map(q=>q.prompt).filter(Boolean));
  for(const item of items){assert.ok(!prompts.has(item.prompt),item.id);assert.ok(item.note.length>10);assert.equal(item.kind,'choice');}
- assert.equal(queue.length,60);
+ assert.equal(queue.length,108);
  for(const q of queue){assert.equal(q.mode,'learning_point');assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);assert.equal(q.choices[q.correct],q.answer);assert.ok(q.choices.every(s=>[...s].length<=30),q.id);assert.ok([...q.prompt+q.task+q.choices.join('')].length<=200,q.id);}
 });
 test('new points filter by grade, unit and grammar or reading without cross-contamination',()=>{

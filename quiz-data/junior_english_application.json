@@ -17,7 +17,20 @@
     ],
     "note": "前の文で登場した猫を指すのでtheを使う。",
     "learning_point": "articles_repeat",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I found a key. (？) key was small. 同じ鍵を指す語は？",
+        "answer": "The",
+        "dummies": [
+          "A",
+          "An",
+          "Some"
+        ],
+        "note": "前の文で登場した鍵を指すのでtheを使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_uncountable",
@@ -37,7 +50,20 @@
     ],
     "note": "この文のwaterは物質としての水で、数えられない名詞として使う。",
     "learning_point": "uncountable",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「牛乳を少しください」Some (？), please. に入る語は？",
+        "answer": "milk",
+        "dummies": [
+          "milks",
+          "a milk",
+          "milkes"
+        ],
+        "note": "この文のmilkは物質としての牛乳で、数えられない名詞として使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_teeth",
@@ -57,7 +83,20 @@
     ],
     "note": "toothは不規則に変化し、複数形はteeth。",
     "learning_point": "teeth",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I brush my (？) every morning. に入る形は？",
+        "answer": "teeth",
+        "dummies": [
+          "tooths",
+          "toothes",
+          "teeths"
+        ],
+        "note": "複数の歯はteeth。toothにsを付ける形にはしない。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_possessive_before_noun",
@@ -77,7 +116,20 @@
     ],
     "note": "名詞bagの前で所有を表すのはher。hersは後ろに名詞を置かない。",
     "learning_point": "possessive_before_noun",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This is (？) notebook.「彼のノート」に入る語は？",
+        "answer": "his",
+        "dummies": [
+          "him",
+          "he",
+          "himself's"
+        ],
+        "note": "名詞notebookの前で「彼の」という所有を表すのはhis。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_third_person_ies",
@@ -97,7 +149,20 @@
     ],
     "note": "主語が三人称単数、現在の習慣なのでstudyをstudiesにする。",
     "learning_point": "third_person_ies",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Emi (？) a bag every day. に入る形は？",
+        "answer": "carries",
+        "dummies": [
+          "carry",
+          "carrys",
+          "carrying"
+        ],
+        "note": "carryは子音字とyで終わるので、三人称単数の現在形はcarries。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_third_person_has",
@@ -117,7 +182,20 @@
     ],
     "note": "三人称単数の現在形ではhaveがhasに変わる。",
     "learning_point": "third_person_has",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "My brother (？) a bicycle. に入る形は？",
+        "answer": "has",
+        "dummies": [
+          "have",
+          "having",
+          "haves"
+        ],
+        "note": "主語が三人称単数なのでhaveはhasに変わる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_frequency_position",
@@ -177,7 +255,20 @@
     ],
     "note": "writeは最後のeを取り、ingを付ける。",
     "learning_point": "ing_write",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "makeのing形は？",
+        "answer": "making",
+        "dummies": [
+          "makeing",
+          "makking",
+          "made"
+        ],
+        "note": "語尾のeを取り、ingを付ける。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_ing_run",
@@ -197,7 +288,20 @@
     ],
     "note": "runは最後のnを重ねてingを付ける。",
     "learning_point": "ing_run",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "swimのing形は？",
+        "answer": "swimming",
+        "dummies": [
+          "swiming",
+          "swammed",
+          "swaming"
+        ],
+        "note": "最後のmを重ねてingを付ける。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_how_often",
@@ -217,7 +321,20 @@
     ],
     "note": "回数を尋ねるときはhow many timesを使う。",
     "learning_point": "how_often",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「月に何回図書館に行きますか」(？) do you visit the library a month? に入る語句は？",
+        "answer": "How many times",
+        "dummies": [
+          "How long",
+          "How old",
+          "How much money"
+        ],
+        "note": "回数はhow many timesで尋ねる。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_in_month",
@@ -237,7 +354,20 @@
     ],
     "note": "月を表すJulyの前にはinを使う。",
     "learning_point": "in_month",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The festival is (？) August. に入る語は？",
+        "answer": "in",
+        "dummies": [
+          "on",
+          "at",
+          "to of"
+        ],
+        "note": "月を表すAugustの前にはinを使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_whose_answer",
@@ -257,7 +387,20 @@
     ],
     "note": "名詞を繰り返さず「私のもの」と答えるにはmineを使う。",
     "learning_point": "whose_answer",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Whose notebook is this? に「彼女のです」と答えると？",
+        "answer": "It's hers.",
+        "dummies": [
+          "It's she.",
+          "It's her.",
+          "She's hers."
+        ],
+        "note": "「彼女のもの」と名詞なしで述べるにはhersを使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_past_went",
@@ -277,7 +420,20 @@
     ],
     "note": "goの過去形はwent。goneは過去分詞。",
     "learning_point": "past_went",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "We (？) to Nara yesterday. に入る形は？",
+        "answer": "went",
+        "dummies": [
+          "goed",
+          "gone",
+          "going"
+        ],
+        "note": "過去の出来事なのでgoの過去形wentを使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_past_bought",
@@ -297,7 +453,20 @@
     ],
     "note": "buyは不規則に変化し、過去形はbought。",
     "learning_point": "past_bought",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She (？) this bag last week. に入る形は？",
+        "answer": "bought",
+        "dummies": [
+          "buyed",
+          "buying",
+          "buied"
+        ],
+        "note": "buyの過去形はbought。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_past_did_answer",
@@ -317,7 +486,20 @@
     ],
     "note": "didで始まる一般動詞の過去の疑問文にはdidを使って短く答える。",
     "learning_point": "past_did_answer",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Did Emi call you yesterday? にNoで答えると？",
+        "answer": "No, she didn't.",
+        "dummies": [
+          "No, she doesn't.",
+          "No, she wasn't.",
+          "No, she didn't called."
+        ],
+        "note": "一般動詞の過去の疑問文にはdidn'tを使って短く否定する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_when_progressive",
@@ -337,7 +519,20 @@
     ],
     "note": "過去のある時点で進行中の動作はwasまたはwereとing形。主語sheなのでwas。",
     "learning_point": "when_progressive",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "When I came home, he (？) TV.「見ていた」に入る語句は？",
+        "answer": "was watching",
+        "dummies": [
+          "is watch",
+          "were watching",
+          "was watched"
+        ],
+        "note": "過去のある時点で進行中の動作はwasとing形。主語heに対応する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_will_original",
@@ -357,7 +552,20 @@
     ],
     "note": "助動詞willの後ろのbe動詞も原形beにする。",
     "learning_point": "will_original",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She will (？) busy tomorrow. に入る語は？",
+        "answer": "be",
+        "dummies": [
+          "is",
+          "was",
+          "being"
+        ],
+        "note": "willの後ろのbe動詞は原形be。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_will_request",
@@ -377,7 +585,20 @@
     ],
     "note": "Will youと動詞の原形で、相手に動作を依頼できる。",
     "learning_point": "will_request",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Will you close the door? は相手に何を求めている？",
+        "answer": "ドアを閉めること",
+        "dummies": [
+          "ドアを開けること",
+          "ドアの色を答えること",
+          "ドアを買うこと"
+        ],
+        "note": "Will youと動詞の原形で、相手に動作を頼める。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_something_to",
@@ -397,7 +618,20 @@
     ],
     "note": "somethingを後ろから説明する不定詞to drinkを置く。",
     "learning_point": "something_to",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「何か食べるもの」something (？) に入る語句は？",
+        "answer": "to eat",
+        "dummies": [
+          "eat to",
+          "to eating",
+          "eats to"
+        ],
+        "note": "somethingをto不定詞で後ろから説明する。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_gerund_finish",
@@ -417,7 +651,20 @@
     ],
     "note": "finishの目的語に動作を置く場合、動名詞readingを使う。",
     "learning_point": "gerund_finish",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She finished (？) the letter. に入る形は？",
+        "answer": "writing",
+        "dummies": [
+          "write",
+          "to write",
+          "writes"
+        ],
+        "note": "finishの目的語に動作を置く場合、動名詞を使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_comparative_as",
@@ -437,7 +684,20 @@
     ],
     "note": "同程度の比較はasと原級とasで表す。",
     "learning_point": "comparative_as",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「エミはアヤと同じくらい高く跳ぶ」Emi jumps as high (？) Aya. に入る語は？",
+        "answer": "as",
+        "dummies": [
+          "than",
+          "to",
+          "of"
+        ],
+        "note": "同程度の比較はasと原級とas。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_comparative_than",
@@ -457,7 +717,20 @@
     ],
     "note": "比較級で比較する相手の前にthanを置く。",
     "learning_point": "comparative_than",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This tower is higher (？) that one. に入る語は？",
+        "answer": "than",
+        "dummies": [
+          "as",
+          "to",
+          "of"
+        ],
+        "note": "比較級で比較する相手の前にthanを置く。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_less",
@@ -477,7 +750,20 @@
     ],
     "note": "量が少ないという意味のlittleはless、leastと変化する。",
     "learning_point": "less",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「以前より少ない水」(？) water than before に入る語は？",
+        "answer": "less",
+        "dummies": [
+          "least",
+          "littlest",
+          "most little"
+        ],
+        "note": "量が少ないlittleの比較級はless。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_either_or",
@@ -497,7 +783,20 @@
     ],
     "note": "either A or Bで「AかBのどちらか」。",
     "learning_point": "either_or",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「月曜日か火曜日のどちらか」either Monday (？) Tuesdayに入る語は？",
+        "answer": "or",
+        "dummies": [
+          "nor",
+          "but",
+          "so"
+        ],
+        "note": "either A or Bで「AかBのどちらか」。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_give_order",
@@ -517,7 +816,20 @@
     ],
     "note": "giveと人と物の順に置く。物を先にするならa book to me。",
     "learning_point": "give_order",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「彼女は私たちに写真を見せた」She showed (？). に続く語順は？",
+        "answer": "us a picture",
+        "dummies": [
+          "a picture us",
+          "to us picture",
+          "us to a picture"
+        ],
+        "note": "showと人と物の順に置く。物を先にするならa picture to us。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_look_adjective",
@@ -537,7 +849,20 @@
     ],
     "note": "lookの後ろで主語の状態を表すのは形容詞sad。",
     "learning_point": "look_adjective",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He looks (？).「幸せそうだ」に入る形は？",
+        "answer": "happy",
+        "dummies": [
+          "happily",
+          "happiness",
+          "happierly"
+        ],
+        "note": "lookの後ろで主語の状態を表すので形容詞happy。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_there_past",
@@ -557,7 +882,20 @@
     ],
     "note": "過去で後ろの名詞が複数なのでwereを使う。",
     "learning_point": "there_past",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "There (？) two books on the desk yesterday. に入る語は？",
+        "answer": "were",
+        "dummies": [
+          "was",
+          "is",
+          "be"
+        ],
+        "note": "過去で、後ろの名詞が複数なのでwere。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_participle_eaten",
@@ -577,7 +915,20 @@
     ],
     "note": "eat、ate、eatenの順に原形・過去形・過去分詞が変化する。",
     "learning_point": "participle_eaten",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This cake has been (？). に入る形は？",
+        "answer": "eaten",
+        "dummies": [
+          "ate",
+          "eatting",
+          "eat"
+        ],
+        "note": "現在完了の受け身have beenの後ろには過去分詞eatenを使う。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_perfect_been",
@@ -597,7 +948,20 @@
     ],
     "note": "have been toと回数で「行ったことがある」という経験を表す。",
     "learning_point": "perfect_been",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He has been to Australia three times. が表すのは？",
+        "answer": "豪州へ3回行った経験",
+        "dummies": [
+          "今も豪州にいること",
+          "明日豪州へ行く予定",
+          "豪州に3年間住む習慣"
+        ],
+        "note": "have been toと回数で、行った経験を表す。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_perfect_continuous",
@@ -617,7 +981,20 @@
     ],
     "note": "継続中の動作はhave beenと動詞のing形で表す。",
     "learning_point": "perfect_continuous",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「2時間ずっと走っている」He has (？) running for two hours. に入る語は？",
+        "answer": "been",
+        "dummies": [
+          "be",
+          "being",
+          "was"
+        ],
+        "note": "継続中の動作はhas beenとing形で表す。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_passive_future",
@@ -637,7 +1014,20 @@
     ],
     "note": "未来の受け身はwill beと過去分詞。buildの過去分詞はbuilt。",
     "learning_point": "passive_future",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「明日開かれる」The meeting will (？) tomorrow. に入る語句は？",
+        "answer": "be held",
+        "dummies": [
+          "hold",
+          "be hold",
+          "held be"
+        ],
+        "note": "未来の受け身はwill beと過去分詞。holdの過去分詞はheld。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_passive_question",
@@ -657,7 +1047,20 @@
     ],
     "note": "受け身の疑問文はbe動詞を主語の前に出す。this roomは単数。",
     "learning_point": "passive_question",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) these rooms cleaned every day? に入る語は？",
+        "answer": "Are",
+        "dummies": [
+          "Do",
+          "Does",
+          "Have"
+        ],
+        "note": "受け身の疑問文はbe動詞を前に出す。複数なのでAre。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_it_to",
@@ -697,7 +1100,20 @@
     ],
     "note": "tellと人とto不定詞で「人に〜するよう言う」。",
     "learning_point": "tell_to",
-    "content_batch": "english-application-1"
+    "content_batch": "english-application-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「母は私に早寝するよう言った」My mother told me (？) early. に入る語句は？",
+        "answer": "to sleep",
+        "dummies": [
+          "sleep to",
+          "sleeping to",
+          "to slept"
+        ],
+        "note": "tellと人とto不定詞で「人に〜するよう言う」。"
+      }
+    ]
   },
   {
     "id": "jr_en_app_grammar_wish_were",
@@ -1198,5 +1614,1589 @@
     "note": "I thinkと評価を含む後半が話し手の意見。開館年とは区別する。",
     "learning_point": "opinion_fact",
     "content_batch": "english-application-1"
+  },
+  {
+    "id": "jr_en_app_grammar_article_sound",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "冠詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "He waited for (？) hour. に入る語は？",
+    "answer": "an",
+    "dummies": [
+      "a",
+      "two",
+      "many"
+    ],
+    "note": "hourはhを発音せず、母音の音で始まる単数名詞なのでan。",
+    "learning_point": "article_sound",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I saw (？) old man. に入る語は？",
+        "answer": "an",
+        "dummies": [
+          "a",
+          "two",
+          "many"
+        ],
+        "note": "oldは母音の音で始まるので、an old manとする。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_article_consonant_sound",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "冠詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She is (？) university student. に入る語は？",
+    "answer": "a",
+    "dummies": [
+      "an",
+      "two",
+      "many"
+    ],
+    "note": "universityの最初は「ユ」という子音の音なのでaを使う。",
+    "learning_point": "article_consonant_sound",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This is (？) useful tool. に入る語は？",
+        "answer": "a",
+        "dummies": [
+          "an",
+          "two",
+          "many"
+        ],
+        "note": "usefulの最初は「ユ」という子音の音なのでaを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_plural_feet",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "名詞の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "footの複数形は？",
+    "answer": "feet",
+    "dummies": [
+      "foots",
+      "footes",
+      "feets"
+    ],
+    "note": "footは不規則変化し、複数形はfeet。",
+    "learning_point": "plural_feet",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「私の両足」my (？) に入る形は？",
+        "answer": "feet",
+        "dummies": [
+          "foots",
+          "footes",
+          "feets"
+        ],
+        "note": "複数の足はfeet。単数形はfoot。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_plural_men",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "名詞の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "manの複数形は？",
+    "answer": "men",
+    "dummies": [
+      "mans",
+      "manes",
+      "mens"
+    ],
+    "note": "manは不規則変化し、複数形はmen。",
+    "learning_point": "plural_men",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Three (？) are waiting.「3人の男性」に入る形は？",
+        "answer": "men",
+        "dummies": [
+          "man",
+          "mans",
+          "mens"
+        ],
+        "note": "threeの後ろには複数形menを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_possessive_apostrophe",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "所有の表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「トムの本」(？) book に入る語は？",
+    "answer": "Tom's",
+    "dummies": [
+      "Tom",
+      "Toms'",
+      "Toms"
+    ],
+    "note": "人名にアポストロフィとsを付けて所有を表す。",
+    "learning_point": "possessive_apostrophe",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「エミのかばん」(？) bag に入る語は？",
+        "answer": "Emi's",
+        "dummies": [
+          "Emi",
+          "Emis'",
+          "Emis"
+        ],
+        "note": "人名にアポストロフィとsを付けて所有を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_reflexive_self",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I made this cake by (？).「一人で作った」に入る語は？",
+    "answer": "myself",
+    "dummies": [
+      "me",
+      "my",
+      "mine"
+    ],
+    "note": "by myselfで「自分一人で」。主語Iに対応する再帰代名詞を使う。",
+    "learning_point": "reflexive_self",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He did his homework by (？).「自分一人で」に入る語は？",
+        "answer": "himself",
+        "dummies": [
+          "him",
+          "his",
+          "he"
+        ],
+        "note": "by himselfで「彼一人で」。主語heに対応させる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_many_much",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "How (？) water do you need? に入る語は？",
+    "answer": "much",
+    "dummies": [
+      "many",
+      "few",
+      "several"
+    ],
+    "note": "waterは数えられない名詞なので、量をmuchで尋ねる。",
+    "learning_point": "many_much",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "How (？) milk is there? に入る語は？",
+        "answer": "much",
+        "dummies": [
+          "many",
+          "few",
+          "several"
+        ],
+        "note": "milkは数えられない名詞なので、量をmuchで尋ねる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_any_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I don't have (？) money.「お金が少しもない」に入る語は？",
+    "answer": "any",
+    "dummies": [
+      "many",
+      "every",
+      "each"
+    ],
+    "note": "否定文で「少しも〜ない」という数量を述べるときanyを使う。",
+    "learning_point": "any_negative",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "There isn't (？) milk.「牛乳が少しもない」に入る語は？",
+        "answer": "any",
+        "dummies": [
+          "many",
+          "every",
+          "each"
+        ],
+        "note": "否定文のanyは、少しもないことを表せる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_each_singular",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Each student (？) a notebook. に入る語は？",
+    "answer": "has",
+    "dummies": [
+      "have",
+      "having",
+      "were"
+    ],
+    "note": "eachと単数名詞を主語にすると、動詞も単数として扱う。",
+    "learning_point": "each_singular",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Each room (？) a window. に入る語は？",
+        "answer": "has",
+        "dummies": [
+          "have",
+          "having",
+          "were"
+        ],
+        "note": "each roomは単数扱いなのでhas。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_who_subject",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) lives in this house?「誰が住んでいる」に入る語は？",
+    "answer": "Who",
+    "dummies": [
+      "When",
+      "Where",
+      "Why"
+    ],
+    "note": "主語の人を尋ねるwhoを置く。この形ではdoを挟まない。",
+    "learning_point": "who_subject",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) teaches you English?「誰が教える」に入る語は？",
+        "answer": "Who",
+        "dummies": [
+          "When",
+          "Where",
+          "Why"
+        ],
+        "note": "主語が誰かを尋ねるとき、Whoと動詞の順にする。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_how_long_duration",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) is your summer vacation?「休暇の長さ」を尋ねる語句は？",
+    "answer": "How long",
+    "dummies": [
+      "How often",
+      "How many",
+      "How old"
+    ],
+    "note": "期間の長さはhow longで尋ねる。",
+    "learning_point": "how_long_duration",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) does it take to get there?「所要時間」を尋ねる語句は？",
+        "answer": "How long",
+        "dummies": [
+          "How often",
+          "How many",
+          "How old"
+        ],
+        "note": "どれくらいの時間がかかるかはhow longで尋ねる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_how_far_distance",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) is it from here to the station?「距離」を尋ねる語句は？",
+    "answer": "How far",
+    "dummies": [
+      "How often",
+      "How old",
+      "How many"
+    ],
+    "note": "場所と場所の距離をhow farで尋ねる。",
+    "learning_point": "how_far_distance",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) is it from your house to school?「距離」を尋ねる語句は？",
+        "answer": "How far",
+        "dummies": [
+          "How often",
+          "How old",
+          "How many"
+        ],
+        "note": "どれくらい離れているかはhow farで尋ねる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_es_watches",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "三単現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "My father (？) TV after dinner. に入る形は？",
+    "answer": "watches",
+    "dummies": [
+      "watch",
+      "watchs",
+      "watching"
+    ],
+    "note": "三人称単数の現在形で、watchにはesを付ける。",
+    "learning_point": "es_watches",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Ken (？) his hands before lunch. に入る形は？",
+        "answer": "washes",
+        "dummies": [
+          "wash",
+          "washs",
+          "washing"
+        ],
+        "note": "三人称単数の現在形で、washにはesを付ける。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_there_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "存在の表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「ここに猫はいない」There (？) a cat here. に入る語句は？",
+    "answer": "isn't",
+    "dummies": [
+      "don't",
+      "doesn't",
+      "aren't"
+    ],
+    "note": "There isの否定はThere isn't。a catは単数。",
+    "learning_point": "there_negative",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「机に本はない」There (？) a book on the desk. に入る語句は？",
+        "answer": "isn't",
+        "dummies": [
+          "don't",
+          "doesn't",
+          "aren't"
+        ],
+        "note": "単数名詞a bookに対応するThere isを否定する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_present_habit",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在形と進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She (？) to school every day. 習慣を表す形は？",
+    "answer": "walks",
+    "dummies": [
+      "is walk",
+      "walking",
+      "walk"
+    ],
+    "note": "毎日の習慣は現在形。主語がsheなのでwalks。",
+    "learning_point": "present_habit",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Ken usually (？) lunch at noon. 習慣を表す形は？",
+        "answer": "eats",
+        "dummies": [
+          "is eat",
+          "eating",
+          "eat"
+        ],
+        "note": "いつもの習慣は現在形。主語がKenなのでeats。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_adverb_after_verb",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "形容詞と副詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She speaks English (？).「上手に」に入る語は？",
+    "answer": "well",
+    "dummies": [
+      "good",
+      "goodness",
+      "betterest"
+    ],
+    "note": "動詞speaksを修飾するので副詞wellを使う。",
+    "learning_point": "adverb_after_verb",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He plays the piano (？).「上手に」に入る語は？",
+        "answer": "well",
+        "dummies": [
+          "good",
+          "goodness",
+          "betterest"
+        ],
+        "note": "動作の様子を表す副詞wellを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_how_about_ing",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "動名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "How about (？) tennis? に入る形は？",
+    "answer": "playing",
+    "dummies": [
+      "play",
+      "to play",
+      "played"
+    ],
+    "note": "前置詞aboutの後ろに動作を置くときはing形にする。",
+    "learning_point": "how_about_ing",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "How about (？) for a walk? に入る形は？",
+        "answer": "going",
+        "dummies": [
+          "go",
+          "to go",
+          "went"
+        ],
+        "note": "How aboutの後ろの動作は動名詞で表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_look_forward_ing",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "動名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I'm looking forward to (？) you. に入る形は？",
+    "answer": "seeing",
+    "dummies": [
+      "see",
+      "to see",
+      "saw"
+    ],
+    "note": "look forward toのtoは前置詞なので、後ろは動名詞。",
+    "learning_point": "look_forward_ing",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She's looking forward to (？) Kyoto. に入る形は？",
+        "answer": "visiting",
+        "dummies": [
+          "visit",
+          "to visit",
+          "visited"
+        ],
+        "note": "「楽しみにする」のlook forward toでは、後ろに動名詞を置く。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_want_person_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I want you (？) me.「手伝ってほしい」に入る語句は？",
+    "answer": "to help",
+    "dummies": [
+      "help to",
+      "helping to",
+      "to helped"
+    ],
+    "note": "wantと人とto不定詞で「人に〜してほしい」。",
+    "learning_point": "want_person_to",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "We want him (？) here.「来てほしい」に入る語句は？",
+        "answer": "to come",
+        "dummies": [
+          "come to",
+          "coming to",
+          "to came"
+        ],
+        "note": "wantと人とto不定詞の順にする。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_question_word_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「どちらを買うべきか」(？) to buy に入る語は？",
+    "answer": "which",
+    "dummies": [
+      "who",
+      "where",
+      "when"
+    ],
+    "note": "複数の物からどちらを選ぶかはwhich to buy。",
+    "learning_point": "question_word_to",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「どちらを選ぶべきか」(？) to choose に入る語は？",
+        "answer": "which",
+        "dummies": [
+          "who",
+          "where",
+          "when"
+        ],
+        "note": "選ぶ対象を疑問詞whichとto不定詞で表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_when_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「いつ出発すべきか」(？) to leave に入る語は？",
+    "answer": "when",
+    "dummies": [
+      "who",
+      "where",
+      "which"
+    ],
+    "note": "疑問詞whenとto不定詞で、行動すべき時を表す。",
+    "learning_point": "when_to",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「いつ始めるべきか」(？) to start に入る語は？",
+        "answer": "when",
+        "dummies": [
+          "who",
+          "where",
+          "which"
+        ],
+        "note": "when to startで「いつ始めるべきか」。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_if_future_present",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "If it (？) tomorrow, we'll stay home. に入る形は？",
+    "answer": "rains",
+    "dummies": [
+      "will rains",
+      "raining",
+      "rain"
+    ],
+    "note": "未来の条件でも、ifの条件節では現在形を使う。",
+    "learning_point": "if_future_present",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "If she (？) tomorrow, I'll tell her. に入る形は？",
+        "answer": "comes",
+        "dummies": [
+          "will comes",
+          "coming",
+          "come"
+        ],
+        "note": "未来の条件を表すif節の動詞は現在形。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_when_future_present",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I'll call you when I (？) home. に入る形は？",
+    "answer": "get",
+    "dummies": [
+      "will gets",
+      "getting",
+      "gotten"
+    ],
+    "note": "未来の時を表すwhen節では現在形を使う。",
+    "learning_point": "when_future_present",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "We'll start when he (？). に入る形は？",
+        "answer": "arrives",
+        "dummies": [
+          "will arrives",
+          "arriving",
+          "arrive"
+        ],
+        "note": "未来の時を表す節でも、主語に合わせた現在形を使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_although_not_but",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Although it was cold, (？). 文を正しく完成させると？",
+    "answer": "we went out",
+    "dummies": [
+      "but we went out",
+      "and but we went out",
+      "so but we went out"
+    ],
+    "note": "althoughで「〜だけれども」とつないだ文に、重ねてbutを置かない。",
+    "learning_point": "although_not_but",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Although she was tired, (？). 正しい続きは？",
+        "answer": "she kept walking",
+        "dummies": [
+          "but she kept walking",
+          "and but she kept walking",
+          "so but she kept walking"
+        ],
+        "note": "althoughで対比を表しているため、主節の前にbutを重ねない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_because_not_so",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Because I was tired, (？). 文を正しく完成させると？",
+    "answer": "I went to bed",
+    "dummies": [
+      "so I went to bed",
+      "and so I went to bed",
+      "but so I went to bed"
+    ],
+    "note": "becauseで理由をつないだ形では、主節の前にsoを重ねない。",
+    "learning_point": "because_not_so",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Because it rained, (？). 正しい続きは？",
+        "answer": "we stayed home",
+        "dummies": [
+          "so we stayed home",
+          "and so we stayed home",
+          "but so we stayed home"
+        ],
+        "note": "becauseとsoを重ねず、主語と動詞の続く主節にする。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_both_and",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「ケンもエミも」(？) Ken and Emi に入る語は？",
+    "answer": "Both",
+    "dummies": [
+      "Either",
+      "Neither",
+      "Every"
+    ],
+    "note": "both A and Bで「AもBも」。",
+    "learning_point": "both_and",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「紅茶もコーヒーも」(？) tea and coffee に入る語は？",
+        "answer": "Both",
+        "dummies": [
+          "Either",
+          "Neither",
+          "Every"
+        ],
+        "note": "bothとandの組み合わせで二つをともに述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_enough_position",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較と程度",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「十分に暖かい」を正しく表す語順は？",
+    "answer": "warm enough",
+    "dummies": [
+      "enough warm",
+      "warm enoughly",
+      "enoughly warm"
+    ],
+    "note": "形容詞を修飾するenoughは形容詞の後ろに置く。",
+    "learning_point": "enough_position",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「十分に大きい」を正しく表す語順は？",
+        "answer": "big enough",
+        "dummies": [
+          "enough big",
+          "big enoughly",
+          "enoughly big"
+        ],
+        "note": "enoughはbigの後ろで「十分に」を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_prefer_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「私は紅茶よりコーヒーを好む」I prefer coffee (？) tea. に入る語は？",
+    "answer": "to",
+    "dummies": [
+      "than",
+      "as",
+      "of"
+    ],
+    "note": "prefer A to Bで「BよりAを好む」。",
+    "learning_point": "prefer_to",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「私は野球よりサッカーを好む」I prefer soccer (？) baseball. に入る語は？",
+        "answer": "to",
+        "dummies": [
+          "than",
+          "as",
+          "of"
+        ],
+        "note": "preferで好みを比べる相手の前にはtoを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_participle_written",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "過去分詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "writeの過去分詞は？",
+    "answer": "written",
+    "dummies": [
+      "wrote",
+      "writing",
+      "writed"
+    ],
+    "note": "write、wrote、writtenと変化する。",
+    "learning_point": "participle_written",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This letter was (？) by Emi. に入る形は？",
+        "answer": "written",
+        "dummies": [
+          "wrote",
+          "writing",
+          "write"
+        ],
+        "note": "受け身はbe動詞と過去分詞。writeの過去分詞はwritten。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_participle_spoken",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "過去分詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "speakの過去分詞は？",
+    "answer": "spoken",
+    "dummies": [
+      "spoke",
+      "speaking",
+      "speaked"
+    ],
+    "note": "speak、spoke、spokenと変化する。",
+    "learning_point": "participle_spoken",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "English is (？) in many countries. に入る形は？",
+        "answer": "spoken",
+        "dummies": [
+          "spoke",
+          "speaking",
+          "speak"
+        ],
+        "note": "受け身はbe動詞と過去分詞。speakの過去分詞はspoken。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_perfect_how_long",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「どのくらい住んでいますか」How long (？) you lived here? に入る語は？",
+    "answer": "have",
+    "dummies": [
+      "do",
+      "did",
+      "are"
+    ],
+    "note": "過去から今までの継続を尋ねるので現在完了を使う。",
+    "learning_point": "perfect_how_long",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「どのくらい知っていますか」How long (？) you known her? に入る語は？",
+        "answer": "have",
+        "dummies": [
+          "do",
+          "did",
+          "are"
+        ],
+        "note": "継続を表す現在完了はhaveと過去分詞で作る。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_grammar_passive_modal",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "受け身",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This door must (？) closed. に入る語は？",
+    "answer": "be",
+    "dummies": [
+      "is",
+      "been",
+      "being"
+    ],
+    "note": "助動詞mustの後ろに受け身を続けるときはbeと過去分詞。",
+    "learning_point": "passive_modal",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This work can (？) finished today. に入る語は？",
+        "answer": "be",
+        "dummies": [
+          "is",
+          "been",
+          "being"
+        ],
+        "note": "助動詞canの直後は原形なので、受け身もbeと過去分詞にする。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_notice_booking",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "案内文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Tickets must be booked online. チケットの予約方法は？",
+    "answer": "オンラインで予約する",
+    "dummies": [
+      "入口でだけ予約する",
+      "電話でだけ予約する",
+      "予約はできない"
+    ],
+    "note": "onlineが予約方法を示す。",
+    "learning_point": "notice_booking",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Book your seat by phone. 席の予約方法は？",
+        "answer": "電話で予約する",
+        "dummies": [
+          "オンラインでだけ予約する",
+          "入口でだけ予約する",
+          "予約はできない"
+        ],
+        "note": "by phoneが電話でという方法を示す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_notice_closed_exception",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "案内文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Open every day except Tuesday. 休みはいつ？",
+    "answer": "火曜日",
+    "dummies": [
+      "月曜日",
+      "毎日",
+      "休みはない"
+    ],
+    "note": "exceptは除外を表し、火曜日は営業日に含まれない。",
+    "learning_point": "notice_closed_exception",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Open every day except Friday. 休みはいつ？",
+        "answer": "金曜日",
+        "dummies": [
+          "木曜日",
+          "毎日",
+          "休みはない"
+        ],
+        "note": "except Fridayで金曜日を除くと述べている。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_response_offer",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "会話の応答",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Would you like some juice? — Yes, please. 相手の申し出にどう答えた？",
+    "answer": "ジュースをもらうと答えた",
+    "dummies": [
+      "ジュースを断った",
+      "ジュースを売ると答えた",
+      "時刻を尋ねた"
+    ],
+    "note": "Yes, please. は申し出を受ける返答。",
+    "learning_point": "response_offer",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Would you like some cake? — No, thank you. 相手の申し出にどう答えた？",
+        "answer": "ケーキを丁寧に断った",
+        "dummies": [
+          "ケーキをもらうと答えた",
+          "ケーキを作ると答えた",
+          "値段を尋ねた"
+        ],
+        "note": "No, thank you. は申し出を丁寧に断る返答。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_transport_method",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "必要情報",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I walk to school, but my brother goes by bus. 兄弟の通学方法は？",
+    "answer": "バスで行く",
+    "dummies": [
+      "歩いて行く",
+      "自転車で行く",
+      "電車で行く"
+    ],
+    "note": "my brotherの後ろに続くby busを読む。",
+    "learning_point": "transport_method",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I take a bus, but my sister walks to school. 姉妹の通学方法は？",
+        "answer": "歩いて行く",
+        "dummies": [
+          "バスで行く",
+          "自転車で行く",
+          "電車で行く"
+        ],
+        "note": "my sisterを主語にしたwalksの内容を読む。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_used_to_change",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "時の読み分け",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I used to play tennis, but now I play soccer. 現在しているのは？",
+    "answer": "サッカー",
+    "dummies": [
+      "テニス",
+      "両方ともしていない",
+      "毎日水泳をしている"
+    ],
+    "note": "used toは過去の習慣。nowの後ろが現在。",
+    "learning_point": "used_to_change",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I used to live in Osaka, but now I live in Nara. 現在住んでいるのは？",
+        "answer": "奈良",
+        "dummies": [
+          "大阪",
+          "京都",
+          "文だけでは分からない"
+        ],
+        "note": "現在の場所はnowの後ろを確認する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_invitation_decline_reason",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "会話の応答",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Can you come on Sunday? — Sorry, I have to work. 来られない理由は？",
+    "answer": "仕事をしなければならない",
+    "dummies": [
+      "病気である",
+      "日曜日が分からない",
+      "予定が何もない"
+    ],
+    "note": "have to workが断る理由を表す。",
+    "learning_point": "invitation_decline_reason",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Can you come tonight? — Sorry, I have to study. 来られない理由は？",
+        "answer": "勉強をしなければならない",
+        "dummies": [
+          "仕事がある",
+          "場所が分からない",
+          "予定が何もない"
+        ],
+        "note": "have to studyが理由。誘いの時刻と区別する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_without_condition",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "条件の読み方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "You can't enter without a ticket. 入場に必要なのは？",
+    "answer": "チケット",
+    "dummies": [
+      "帽子",
+      "飲み物",
+      "何も必要ない"
+    ],
+    "note": "without a ticketはチケットなしでは、という意味。",
+    "learning_point": "without_condition",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "You can't join without permission. 参加に必要なのは？",
+        "answer": "許可",
+        "dummies": [
+          "飲み物",
+          "帽子",
+          "何も必要ない"
+        ],
+        "note": "without permissionは許可なしでは、という意味。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_only_scope",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "限定の範囲",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Only Ken helped Emi. 誰が手伝ったと述べている？",
+    "answer": "ケンだけ",
+    "dummies": [
+      "エミだけ",
+      "ケンとエミの両方",
+      "全員"
+    ],
+    "note": "OnlyがKenを限定している。",
+    "learning_point": "only_scope",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Only Emi knew the answer. 誰が答えを知っていた？",
+        "answer": "エミだけ",
+        "dummies": [
+          "ケンだけ",
+          "全員",
+          "誰も知らなかった"
+        ],
+        "note": "Only Emiでエミだけと範囲を限定する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_at_least_quantity",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "条件と数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Bring at least two pencils. 最低限必要な鉛筆の本数は？",
+    "answer": "2本",
+    "dummies": [
+      "1本",
+      "3本",
+      "本数の指定はない"
+    ],
+    "note": "at leastは少なくとも。2本以上必要。",
+    "learning_point": "at_least_quantity",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Bring at least three notebooks. 最低限必要なノートの冊数は？",
+        "answer": "3冊",
+        "dummies": [
+          "1冊",
+          "2冊",
+          "冊数の指定はない"
+        ],
+        "note": "at least threeは3冊以上必要ということ。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_at_most_quantity",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "条件と数量",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "You can borrow at most three books. 最大何冊借りられる？",
+    "answer": "3冊",
+    "dummies": [
+      "2冊",
+      "4冊",
+      "冊数に上限はない"
+    ],
+    "note": "at mostは多くとも。3冊が上限。",
+    "learning_point": "at_most_quantity",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Each person can take at most two tickets. 最大何枚受け取れる？",
+        "answer": "2枚",
+        "dummies": [
+          "1枚",
+          "3枚",
+          "枚数に上限はない"
+        ],
+        "note": "at most twoが上限2枚を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_however_referent",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "要点と対比",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Cars are convenient. However, they cause pollution. 筆者が後半で述べるのは？",
+    "answer": "車の問題点",
+    "dummies": [
+      "車の便利さの具体例",
+      "車の歴史",
+      "交通量の予測"
+    ],
+    "note": "Howeverで便利さから問題点へ話を転じている。",
+    "learning_point": "however_referent",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "The app is useful. However, it is difficult to use. 後半で述べるのは？",
+        "answer": "操作の難しさ",
+        "dummies": [
+          "便利さの具体例",
+          "開発した日時",
+          "利用者数の増加"
+        ],
+        "note": "Howeverの後ろで、便利さと対照的な使いにくさを述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_claim_example_order",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "主張と例",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Exercise is good for us. For example, walking keeps us healthy. 具体例はどれ？",
+    "answer": "歩くこと",
+    "dummies": [
+      "運動全般",
+      "健康という語の定義",
+      "運動の開始時刻"
+    ],
+    "note": "For exampleの後ろでwalkingを具体例として挙げる。",
+    "learning_point": "claim_example_order",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Many things can be recycled. For example, glass can be reused as material. 具体例はどれ？",
+        "answer": "ガラス",
+        "dummies": [
+          "すべての物",
+          "資源の値段",
+          "回収の日時"
+        ],
+        "note": "For exampleの後ろでglassを具体例として挙げる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_not_yet_inference",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "推測の限界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She hasn't finished her homework yet. 確実に言えるのは？",
+    "answer": "宿題はまだ終わっていない",
+    "dummies": [
+      "宿題を一度も始めていない",
+      "明日必ず終わる",
+      "宿題を忘れている"
+    ],
+    "note": "未完了は分かるが、着手や今後の予定は述べていない。",
+    "learning_point": "not_yet_inference",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He hasn't read this book yet. 確実に言えるのは？",
+        "answer": "この本をまだ読んでいない",
+        "dummies": [
+          "本を持っていない",
+          "本が嫌いである",
+          "明日必ず読む"
+        ],
+        "note": "まだ読んでいないことは分かるが、所有や好みや予定は不明。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_reason_not_purpose",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "理由と目的",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I took a taxi because I was late. タクシーを使った理由は？",
+    "answer": "遅れていたから",
+    "dummies": [
+      "運転手になるため",
+      "道を覚えるため",
+      "歩くのが好きだから"
+    ],
+    "note": "because以下の理由を読む。目的を勝手に補わない。",
+    "learning_point": "reason_not_purpose",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I wore a coat because it was cold. コートを着た理由は？",
+        "answer": "寒かったから",
+        "dummies": [
+          "コートを買うため",
+          "友達に会うため",
+          "暑かったから"
+        ],
+        "note": "because以下が理由。文にない目的を補わない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_comparison_equal",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "比較の読み方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Ken is as tall as Tom. Jun is shorter than Tom. 最も背が低いのは？",
+    "answer": "Jun",
+    "dummies": [
+      "Ken",
+      "Tom",
+      "全員同じ"
+    ],
+    "note": "KenとTomは同じ高さで、JunはTomより低い。",
+    "learning_point": "comparison_equal",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Aya is as old as Emi. Yui is younger than Emi. 最も年下なのは？",
+        "answer": "Yui",
+        "dummies": [
+          "Aya",
+          "Emi",
+          "全員同じ"
+        ],
+        "note": "AyaとEmiは同年齢で、YuiはEmiより若い。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_app_reading_pronoun_contrast",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文読解",
+    "unit": "指示語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I wanted a red bag, but Emi chose a blue one. oneが指す種類は？",
+    "answer": "かばん",
+    "dummies": [
+      "赤という色",
+      "エミ",
+      "選ぶという動作"
+    ],
+    "note": "oneは前のbagを受け、a blue bagという意味になる。",
+    "learning_point": "pronoun_contrast",
+    "content_batch": "english-application-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Ken has a big dog, and I have a small one. oneが指す種類は？",
+        "answer": "犬",
+        "dummies": [
+          "ケン",
+          "小さいという性質",
+          "飼うという動作"
+        ],
+        "note": "oneはdogの繰り返しを避ける代名詞。"
+      }
+    ]
   }
 ]

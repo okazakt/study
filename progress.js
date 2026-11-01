@@ -1,4 +1,5 @@
-import { materializeMathItem } from './math-variants.js?v=0.51.0';
+import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.52.0';
+import { materializeMathItem } from './math-variants.js?v=0.52.0';
 // Local learning history. Practice and music-play records stay distinct.
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
@@ -46,6 +47,7 @@ export function normalizeHistory(raw) {
     const lowerBound=Math.max(confirmedFloor,completed+attempts.filter(a=>!a.solved).length,attempts.length,row.recent.length);
     row.answerCount=Math.max(count(q.answerCount),lowerBound);
     row.answerCountEstimated=typeof q.answerCountEstimated==='boolean'?q.answerCountEstimated:!(!attempts.some(a=>a.uncertain) && attempts.filter(a=>a.solved).length===completed && attempts.reduce((n,a)=>n+a.wrongCount,0)===row.wrong+row.reviewWrong);
+    row.patternUsage=normalizePatternUsage(q.patternUsage);
     row.lastAt=Math.max(Number.isFinite(q.lastAt)?q.lastAt:0,...attempts.map(a=>a.time ?? 0));
     return [key,row];
   }));
@@ -68,6 +70,13 @@ export function recordAnswer(state, q, {correct, chosen, wrongBefore=0, kind='pl
   if(previous)recent[recent.length-1]=result;else recent.push(result);
   entry.answerCount=count(old.answerCount)+(previous?0:1);
   entry.recent=recent.slice(-3);
+  if(q.variant?.generator==='choice_text'){
+    const usage=normalizePatternUsage(old.patternUsage);
+    // Before presentation tracking existed, every occurrence used the base text.
+    if(!Object.keys(usage).length && count(old.answerCount))usage.base={count:count(old.answerCount),lastAt:old.lastAt || 0};
+    const pattern=q.variant.parameters.pattern,prior=usage[pattern] || {count:0,lastAt:0};
+    usage[pattern]={count:prior.count+(previous?0:1),lastAt:time};entry.patternUsage=usage;
+  }
   if(kind==='review') entry[correct?'reviewCorrect':'reviewWrong']++;
   else {entry[correct?'correct':'wrong']++;if(correct && result.correct)entry.first++;}
   const event={...meta,correct:!!correct,chosen,wrongBefore,kind,session,course,time,version,attempt:attemptId};
@@ -182,13 +191,18 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
     recentSources.push(unit[0].sourceId);if(recentSources.length>3)recentSources.shift();
     // Keep stable identities but shuffle the color positions on every appearance.
     return unit.map(q=>{
-      if(q.numeric_generator){
+      if(q.numeric_generator || q.presentations?.length){
         const key=questionKey(q),previous=lastVariants.get(key)||index.state.questions[key]?.variant?.signature;
-        q=materializeMathItem(q,random,previous);
+        if(q.numeric_generator)q=materializeMathItem(q,random,previous);
+        else {
+          const row=index.state.questions[key],usage=normalizePatternUsage(row?.patternUsage);
+          if(!Object.keys(usage).length && count(row?.answerCount))usage.base={count:row.answerCount,lastAt:row.lastAt || 0};
+          q=materializeChoiceItem(q,random,usage,previous);
+        }
         q={...q,term:q.prompt,reviewLabel:q.prompt};
         lastVariants.set(key,q.variant.signature);
       }
-      const choices=q.numeric_generator?[q.answer,...q.dummies]:[...q.choices];
+      const choices=(q.numeric_generator || q.presentations?.length)?[q.answer,...q.dummies]:[...q.choices];
       for(let i=choices.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[choices[i],choices[j]]=[choices[j],choices[i]];}
       return {...q,choices,correct:choices.indexOf(q.answer)};
     });

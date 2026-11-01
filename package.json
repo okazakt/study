@@ -1,11 +1,11 @@
 {
   "name": "study-beat",
-  "version": "0.51.0",
+  "version": "0.52.0",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 5173 --bind 0.0.0.0",
     "test": "node --test tests/*.test.js",
-    "test:content": "node --test tests/english-content.test.js tests/english-application.test.js tests/english-supplement.test.js tests/sw.test.js"
+    "test:content": "node --test tests/english-content.test.js tests/english-application.test.js tests/english-supplement.test.js tests/choice-variants.test.js tests/sw.test.js"
   }
 }
