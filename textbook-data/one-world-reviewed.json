@@ -3136,6 +3136,42 @@
       "reason": "equivalent_sense_reviewed",
       "publisherMeaningSha256": "6a7ffd13b8ffd8d65c191997b7341efd732b82ae6fd6288e12a39ea2378e9ac7",
       "materialSenseSha256": "dd6ae3d2c79a8ec4125e79b3ca376e3ccb6d7ccbd4addd4c7527991583e48e40"
+    },
+    {
+      "row": 1182,
+      "headword": "in the morning",
+      "sourceId": "jr_en_phrase2_in_the_morning",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "36cd4116039e02f5f3cc5e3c77ceb0112c79dee89e770970a81274a32a62cc19",
+      "materialSenseSha256": "d9bfad5e26c126cc056770cf9c0ae4803597b2f34eb959a7d198eede844b7324"
+    },
+    {
+      "row": 1711,
+      "headword": "over there",
+      "sourceId": "jr_en_phrase2_over_there",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "f4c2bc89c765158d4a20d4ee3bc0a6b09fd3d034ecb4b2943b707eb570292dbe",
+      "materialSenseSha256": "4b7ab02b30e92155fc3f4fedcbbcc4a9c06be1c256487796b1e7729f546409d5"
+    },
+    {
+      "row": 2155,
+      "headword": "sit down",
+      "sourceId": "jr_en_phrase2_sit_down",
+      "decision": "approved",
+      "reason": "equivalent_sense_reviewed",
+      "publisherMeaningSha256": "51c8fe810e4d603b6adee5dae8c4d2fccf1336f4a0512b24835b9702b65c427d",
+      "materialSenseSha256": "e0584530f046f03a00266ae5c916b72f3cee7f8d1638fbdababa74368078b108"
+    },
+    {
+      "row": 2541,
+      "headword": "try out",
+      "sourceId": "jr_en_phrase2_try_out",
+      "decision": "hold",
+      "reason": "sports_trial_not_general_trying",
+      "publisherMeaningSha256": "33bdac00b292906e27de8dd4d775d0093daa26001efb58758f7b1d508bce40b1",
+      "materialSenseSha256": "93e0f741a72db0de09f57c04c259412676a16447feeb744150250f2e0df6d671"
     }
   ]
 }

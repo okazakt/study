@@ -12,7 +12,7 @@ test('audited baseline vocabulary has 96 new stable headwords and spelling recon
  assert.equal(words.length,96);assert.equal(makeQuestionQueue(words,()=>.5).length,344);
  const lexical=all.filter(q=>q.english);assert.equal(new Set(lexical.map(q=>q.english.toLowerCase())).size,lexical.length);assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  for(const item of words){let prefix='';for(const q of makeSpellingQuestions(item,()=>.5)){for(const c of q.choices){assert.equal(c.length,q.answer.length);assert.equal(item.english.slice(prefix.length).startsWith(c),c===q.answer,item.english+':'+c);}prefix+=q.answer;}assert.equal(prefix,item.english);}
- assert.equal(all.filter(q=>q.field==='英単語').length,2382);assert.equal(all.length,2826);assert.equal(makeQuestionQueue(all,()=>.5).length,10493);
+ assert.equal(all.filter(q=>q.field==='英単語').length,2382);assert.equal(all.length,2910);assert.equal(makeQuestionQueue(all,()=>.5).length,10745);
 });
 test('32 gap points and all 48 reading points have distinct authored contexts with shared identities',()=>{
  assert.equal(grammar.length,32);const reading=all.filter(q=>q.field==='英文読解');assert.equal(reading.length,48);assert.ok(reading.every(q=>q.presentations.length===1));

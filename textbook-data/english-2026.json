@@ -56,9 +56,9 @@
   ],
   "reviewLedger": {
     "path": "textbook-data/one-world-reviewed.json",
-    "sha256": "0b89bffb458f23b3feb490dd7a0012060047b9756cde47067495a7c8b5d6a785",
-    "approved": 334,
-    "held": 14
+    "sha256": "dc536612cd9789402eaa5c18a7a06d899bb6cb9d0c68b7e78c39aee09bcd9627",
+    "approved": 337,
+    "held": 15
   },
   "books": [
     {
@@ -2139,6 +2139,17 @@
               }
             },
             {
+              "sourceId": "jr_en_phrase2_in_the_morning",
+              "page": 44,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1182,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "36cd4116039e02f5f3cc5e3c77ceb0112c79dee89e770970a81274a32a62cc19"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_internet",
               "page": 38,
               "evidence": {
@@ -2624,7 +2635,7 @@
             }
           ],
           "listedEntries": 101,
-          "unresolvedEntries": 34
+          "unresolvedEntries": 33
         },
         {
           "id": "ow1-activities-plus-1",
@@ -4797,6 +4808,17 @@
               }
             },
             {
+              "sourceId": "jr_en_phrase2_catch_a_cold",
+              "page": 113,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 399,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "7b8e512318d53ea510103a79065125f26ccc266f45ab9dd5bf945bb48d312e68"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_easy",
               "page": 112,
               "evidence": {
@@ -4897,7 +4919,7 @@
             }
           ],
           "listedEntries": 37,
-          "unresolvedEntries": 23
+          "unresolvedEntries": 22
         },
         {
           "id": "ow1-tips-for-reading-3",
@@ -5371,6 +5393,17 @@
               }
             },
             {
+              "sourceId": "jr_en_phrase2_over_there",
+              "page": 132,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1711,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "f4c2bc89c765158d4a20d4ee3bc0a6b09fd3d034ecb4b2943b707eb570292dbe"
+              }
+            },
+            {
               "sourceId": "jr_en_tb_word_production",
               "page": 135,
               "evidence": {
@@ -5526,7 +5559,7 @@
             }
           ],
           "listedEntries": 65,
-          "unresolvedEntries": 35
+          "unresolvedEntries": 34
         },
         {
           "id": "ow1-1c9cce4e",
@@ -5626,6 +5659,28 @@
               }
             },
             {
+              "sourceId": "jr_en_phrase2_go_home",
+              "page": 139,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 973,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "641d00dd47829f448036f8ac0a7c1092bdea5631c8539b13718225f43252e0da"
+              }
+            },
+            {
+              "sourceId": "jr_en_phrase2_have_a_headache",
+              "page": 139,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1058,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "b17f3616e99a325f198595f7d6231e308be9aabcae33db7fcbd94aec0b57bc27"
+              }
+            },
+            {
               "sourceId": "jr_en_v2_word_headache",
               "page": 139,
               "evidence": {
@@ -5671,7 +5726,7 @@
             }
           ],
           "listedEntries": 15,
-          "unresolvedEntries": 10
+          "unresolvedEntries": 8
         },
         {
           "id": "ow1-activities-plus-4",
@@ -5836,6 +5891,17 @@
               }
             },
             {
+              "sourceId": "jr_en_phrase2_sit_down",
+              "page": 144,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 2155,
+                "method": "reviewed_equivalent_sense",
+                "meaningSha256": "51c8fe810e4d603b6adee5dae8c4d2fccf1336f4a0512b24835b9702b65c427d"
+              }
+            },
+            {
               "sourceId": "jr_en_core_word_smile",
               "page": 146,
               "evidence": {
@@ -5870,7 +5936,7 @@
             }
           ],
           "listedEntries": 31,
-          "unresolvedEntries": 17
+          "unresolvedEntries": 16
         },
         {
           "id": "ow1-further-reading",
@@ -6880,6 +6946,17 @@
           "row": 27,
           "items": [
             {
+              "sourceId": "jr_en_phrase2_all_day",
+              "page": 40,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 83,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "90b5bb125eae6e8d3a0c6d68ccb41e01f6b8211851c296d31db9a44db9484cfa"
+              }
+            },
+            {
               "sourceId": "jr_en_ext_word_between",
               "page": 38,
               "evidence": {
@@ -7057,7 +7134,7 @@
             }
           ],
           "listedEntries": 47,
-          "unresolvedEntries": 31
+          "unresolvedEntries": 30
         },
         {
           "id": "ow2-activities-plus-2",
@@ -9961,6 +10038,17 @@
               }
             },
             {
+              "sourceId": "jr_en_phrase2_on_the_other_hand",
+              "page": 41,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 1675,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "e5568095423e9a3458a0e6bf44575eb11fd52290b309e7519127d45155fc0481"
+              }
+            },
+            {
               "sourceId": "jr_en_tb_word_piece",
               "page": 40,
               "evidence": {
@@ -10017,7 +10105,7 @@
             }
           ],
           "listedEntries": 55,
-          "unresolvedEntries": 42
+          "unresolvedEntries": 41
         },
         {
           "id": "ow3-activities-plus-2",
@@ -10459,6 +10547,17 @@
           "row": 46,
           "items": [
             {
+              "sourceId": "jr_en_phrase2_come_true",
+              "page": 70,
+              "evidence": {
+                "source": "ow.xlsx",
+                "sheet": "【R7】全単語・語句",
+                "row": 487,
+                "method": "exact_normalized_sense",
+                "meaningSha256": "354d2303091796b6d9f527b27d9b6e9a6a4a7b8eb39fc296b8b8c426db6dd08d"
+              }
+            },
+            {
               "sourceId": "jr_en_sup_word_german",
               "page": 71,
               "evidence": {
@@ -10526,7 +10625,7 @@
             }
           ],
           "listedEntries": 21,
-          "unresolvedEntries": 15
+          "unresolvedEntries": 14
         },
         {
           "id": "ow3-activities-plus-3",

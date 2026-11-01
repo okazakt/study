@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "batch": "english-phrases-2",
+  "scope": "既存熟語との差分から日常・頻出表現84素材を独自作問。和英・英和・重要語の選択。全必修表現や全教科書の網羅完了を意味しない。",
+  "curriculumComplete": false,
+  "candidates": [
+    {
+      "sourceId": "jr_en_phrase2_of_course",
+      "english": "of course",
+      "targetWord": "course",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_all_right",
+      "english": "all right",
+      "targetWord": "right",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_not_at_all",
+      "english": "not at all",
+      "targetWord": "all",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_you_are_welcome",
+      "english": "you are welcome",
+      "targetWord": "welcome",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_stand_up",
+      "english": "stand up",
+      "targetWord": "up",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_sit_down",
+      "english": "sit down",
+      "targetWord": "down",
+      "oneWorldRows": [
+        2155
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_come_from",
+      "english": "come from",
+      "targetWord": "from",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_go_home",
+      "english": "go home",
+      "targetWord": "home",
+      "oneWorldRows": [
+        973
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_absent_from",
+      "english": "be absent from",
+      "targetWord": "absent",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_ready_to",
+      "english": "be ready to",
+      "targetWord": "ready",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_busy_with",
+      "english": "be busy with",
+      "targetWord": "busy",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_kind_to",
+      "english": "be kind to",
+      "targetWord": "kind",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_after_school",
+      "english": "after school",
+      "targetWord": "after",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_before_long",
+      "english": "before long",
+      "targetWord": "before",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_day_after_day",
+      "english": "day after day",
+      "targetWord": "after",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_the_next_day",
+      "english": "the next day",
+      "targetWord": "next",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_all_day",
+      "english": "all day",
+      "targetWord": "all",
+      "oneWorldRows": [
+        83
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_all_the_time",
+      "english": "all the time",
+      "targetWord": "time",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_in_the_morning",
+      "english": "in the morning",
+      "targetWord": "morning",
+      "oneWorldRows": [
+        1182
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_at_night",
+      "english": "at night",
+      "targetWord": "night",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_by_bus",
+      "english": "by bus",
+      "targetWord": "bus",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_by_train",
+      "english": "by train",
+      "targetWord": "train",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_from_here",
+      "english": "from here",
+      "targetWord": "here",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_over_there",
+      "english": "over there",
+      "targetWord": "there",
+      "oneWorldRows": [
+        1711
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_a_cup_of",
+      "english": "a cup of",
+      "targetWord": "cup",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_a_glass_of",
+      "english": "a glass of",
+      "targetWord": "glass",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_a_kind_of",
+      "english": "a kind of",
+      "targetWord": "kind",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_one_of",
+      "english": "one of",
+      "targetWord": "one",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_worried_about",
+      "english": "be worried about",
+      "targetWord": "worried",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_excited_about",
+      "english": "be excited about",
+      "targetWord": "excited",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_surprised_at",
+      "english": "be surprised at",
+      "targetWord": "surprised",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_satisfied_with",
+      "english": "be satisfied with",
+      "targetWord": "satisfied",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_famous_for",
+      "english": "be famous for",
+      "targetWord": "for",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_popular_with",
+      "english": "be popular with",
+      "targetWord": "with",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_friendly_to",
+      "english": "be friendly to",
+      "targetWord": "friendly",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_similar_to",
+      "english": "be similar to",
+      "targetWord": "similar",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_poor_at",
+      "english": "be poor at",
+      "targetWord": "poor",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_fond_of",
+      "english": "be fond of",
+      "targetWord": "fond",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_sure_to",
+      "english": "be sure to",
+      "targetWord": "sure",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_be_happy_to",
+      "english": "be happy to",
+      "targetWord": "happy",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_say_hello_to",
+      "english": "say hello to",
+      "targetWord": "hello",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_say_goodbye_to",
+      "english": "say goodbye to",
+      "targetWord": "goodbye",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_say_thank_you_to",
+      "english": "say thank you to",
+      "targetWord": "thank",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_ask_a_question",
+      "english": "ask a question",
+      "targetWord": "question",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_do_homework",
+      "english": "do homework",
+      "targetWord": "homework",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_do_the_dishes",
+      "english": "do the dishes",
+      "targetWord": "dishes",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_make_the_bed",
+      "english": "make the bed",
+      "targetWord": "bed",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_set_the_table",
+      "english": "set the table",
+      "targetWord": "table",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_catch_a_cold",
+      "english": "catch a cold",
+      "targetWord": "cold",
+      "oneWorldRows": [
+        399
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_have_a_headache",
+      "english": "have a headache",
+      "targetWord": "headache",
+      "oneWorldRows": [
+        1058
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_have_a_fever",
+      "english": "have a fever",
+      "targetWord": "fever",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_get_well",
+      "english": "get well",
+      "targetWord": "well",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_get_together",
+      "english": "get together",
+      "targetWord": "together",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_hurry_up",
+      "english": "hurry up",
+      "targetWord": "up",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_slow_down",
+      "english": "slow down",
+      "targetWord": "down",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_come_true",
+      "english": "come true",
+      "targetWord": "true",
+      "oneWorldRows": [
+        487
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_give_back",
+      "english": "give back",
+      "targetWord": "back",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_give_away",
+      "english": "give away",
+      "targetWord": "away",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_put_off",
+      "english": "put off",
+      "targetWord": "off",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_put_out",
+      "english": "put out",
+      "targetWord": "out",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_help_with",
+      "english": "help with",
+      "targetWord": "with",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_learn_from",
+      "english": "learn from",
+      "targetWord": "from",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_work_for",
+      "english": "work for",
+      "targetWord": "for",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_care_about",
+      "english": "care about",
+      "targetWord": "about",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_look_out",
+      "english": "look out",
+      "targetWord": "out",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_watch_out",
+      "english": "watch out",
+      "targetWord": "out",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_try_on",
+      "english": "try on",
+      "targetWord": "on",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_try_out",
+      "english": "try out",
+      "targetWord": "out",
+      "oneWorldRows": [
+        2541
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_think_of",
+      "english": "think of",
+      "targetWord": "of",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_think_about",
+      "english": "think about",
+      "targetWord": "about",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_remind_of",
+      "english": "remind of",
+      "targetWord": "of",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_dream_of",
+      "english": "dream of",
+      "targetWord": "of",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_turn_into",
+      "english": "turn into",
+      "targetWord": "into",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_change_into",
+      "english": "change into",
+      "targetWord": "into",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_get_lost",
+      "english": "get lost",
+      "targetWord": "lost",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_fall_asleep",
+      "english": "fall asleep",
+      "targetWord": "asleep",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_on_the_other_hand",
+      "english": "on the other hand",
+      "targetWord": "other",
+      "oneWorldRows": [
+        1675
+      ]
+    },
+    {
+      "sourceId": "jr_en_phrase2_in_other_words",
+      "english": "in other words",
+      "targetWord": "words",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_first_of_all",
+      "english": "first of all",
+      "targetWord": "first",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_above_all",
+      "english": "above all",
+      "targetWord": "above",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_all_around",
+      "english": "all around",
+      "targetWord": "around",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_along_with",
+      "english": "along with",
+      "targetWord": "with",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_away_from",
+      "english": "away from",
+      "targetWord": "from",
+      "oneWorldRows": []
+    },
+    {
+      "sourceId": "jr_en_phrase2_up_to",
+      "english": "up to",
+      "targetWord": "to",
+      "oneWorldRows": []
+    }
+  ]
+}

@@ -32955,5 +32955,2777 @@
     ],
     "note": "supply：供給。この問題ではこの意味を確認する。",
     "content_batch": "english-textbook-basics-1"
+  },
+  {
+    "id": "jr_en_phrase2_of_course",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "会話の基本",
+    "english": "of course",
+    "japanese": "もちろん",
+    "english_dummies": [
+      "at first",
+      "at last",
+      "at least"
+    ],
+    "japanese_dummies": [
+      "初めは",
+      "ついに",
+      "少なくとも"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "course",
+        "dummies": [
+          "cause",
+          "coat",
+          "case"
+        ]
+      }
+    ],
+    "note": "of course：もちろん。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_all_right",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "会話の基本",
+    "english": "all right",
+    "japanese": "大丈夫な",
+    "english_dummies": [
+      "all alone",
+      "at work",
+      "in place"
+    ],
+    "japanese_dummies": [
+      "たった一人で",
+      "仕事中で",
+      "所定の位置に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "right",
+        "dummies": [
+          "left",
+          "wrong",
+          "round"
+        ]
+      }
+    ],
+    "note": "all right：大丈夫な。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_not_at_all",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "会話の基本",
+    "english": "not at all",
+    "japanese": "少しも〜ない",
+    "english_dummies": [
+      "not yet",
+      "at least",
+      "in time"
+    ],
+    "japanese_dummies": [
+      "まだ〜ない",
+      "少なくとも",
+      "間に合って"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "all",
+        "dummies": [
+          "both",
+          "each",
+          "every"
+        ]
+      }
+    ],
+    "note": "not at all：少しも〜ない。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_you_are_welcome",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "会話の基本",
+    "english": "you are welcome",
+    "japanese": "どういたしまして",
+    "english_dummies": [
+      "see you",
+      "excuse me",
+      "good morning"
+    ],
+    "japanese_dummies": [
+      "また会いましょう",
+      "すみません",
+      "おはよう"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "welcome",
+        "dummies": [
+          "weather",
+          "wonder",
+          "window"
+        ]
+      }
+    ],
+    "note": "You are welcome.：どういたしまして。お礼を言われたときの返事。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_stand_up",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の行動",
+    "english": "stand up",
+    "japanese": "立ち上がる",
+    "english_dummies": [
+      "sit down",
+      "come from",
+      "go home"
+    ],
+    "japanese_dummies": [
+      "座る",
+      "〜の出身である",
+      "家に帰る"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "up",
+        "dummies": [
+          "off",
+          "out",
+          "away"
+        ]
+      }
+    ],
+    "note": "stand up：立ち上がる。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_sit_down",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の行動",
+    "english": "sit down",
+    "japanese": "座る",
+    "english_dummies": [
+      "stand up",
+      "come from",
+      "go home"
+    ],
+    "japanese_dummies": [
+      "立ち上がる",
+      "〜の出身である",
+      "家に帰る"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "down",
+        "dummies": [
+          "over",
+          "back",
+          "away"
+        ]
+      }
+    ],
+    "note": "sit down：座る。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_come_from",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の行動",
+    "english": "come from",
+    "japanese": "〜の出身である",
+    "english_dummies": [
+      "stand up",
+      "sit down",
+      "go home"
+    ],
+    "japanese_dummies": [
+      "立ち上がる",
+      "座る",
+      "家に帰る"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "from",
+        "dummies": [
+          "for",
+          "into",
+          "along"
+        ]
+      }
+    ],
+    "note": "come from：〜の出身である。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_go_home",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の行動",
+    "english": "go home",
+    "japanese": "家に帰る",
+    "english_dummies": [
+      "stand up",
+      "sit down",
+      "come from"
+    ],
+    "japanese_dummies": [
+      "立ち上がる",
+      "座る",
+      "〜の出身である"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "home",
+        "dummies": [
+          "house",
+          "room",
+          "family"
+        ]
+      }
+    ],
+    "note": "go home：家に帰る。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_absent_from",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "学校生活",
+    "english": "be absent from",
+    "japanese": "〜を欠席している",
+    "english_dummies": [
+      "be ready to",
+      "be busy with",
+      "be kind to"
+    ],
+    "japanese_dummies": [
+      "〜する準備ができている",
+      "〜で忙しい",
+      "〜に親切である"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "absent",
+        "dummies": [
+          "present",
+          "ready",
+          "free"
+        ]
+      }
+    ],
+    "note": "be absent from：〜を欠席している。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_ready_to",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "学校生活",
+    "english": "be ready to",
+    "japanese": "〜する準備ができている",
+    "english_dummies": [
+      "be absent from",
+      "be busy with",
+      "be kind to"
+    ],
+    "japanese_dummies": [
+      "〜を欠席している",
+      "〜で忙しい",
+      "〜に親切である"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "ready",
+        "dummies": [
+          "late",
+          "absent",
+          "different"
+        ]
+      }
+    ],
+    "note": "be ready to：〜する準備ができている。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_busy_with",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "学校生活",
+    "english": "be busy with",
+    "japanese": "〜で忙しい",
+    "english_dummies": [
+      "be absent from",
+      "be ready to",
+      "be kind to"
+    ],
+    "japanese_dummies": [
+      "〜を欠席している",
+      "〜する準備ができている",
+      "〜に親切である"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "busy",
+        "dummies": [
+          "free",
+          "late",
+          "full"
+        ]
+      }
+    ],
+    "note": "be busy with：〜で忙しい。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_kind_to",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "学校生活",
+    "english": "be kind to",
+    "japanese": "〜に親切である",
+    "english_dummies": [
+      "be absent from",
+      "be ready to",
+      "be busy with"
+    ],
+    "japanese_dummies": [
+      "〜を欠席している",
+      "〜する準備ができている",
+      "〜で忙しい"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "kind",
+        "dummies": [
+          "angry",
+          "late",
+          "full"
+        ]
+      }
+    ],
+    "note": "be kind to：〜に親切である。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_after_school",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "時と順序",
+    "english": "after school",
+    "japanese": "放課後に",
+    "english_dummies": [
+      "before long",
+      "day after day",
+      "the next day"
+    ],
+    "japanese_dummies": [
+      "間もなく",
+      "来る日も来る日も",
+      "その翌日に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "after",
+        "dummies": [
+          "before",
+          "during",
+          "until"
+        ]
+      }
+    ],
+    "note": "after school：放課後に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_before_long",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "時と順序",
+    "english": "before long",
+    "japanese": "間もなく",
+    "english_dummies": [
+      "after school",
+      "day after day",
+      "the next day"
+    ],
+    "japanese_dummies": [
+      "放課後に",
+      "来る日も来る日も",
+      "その翌日に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "before",
+        "dummies": [
+          "behind",
+          "beside",
+          "between"
+        ]
+      }
+    ],
+    "note": "before long：間もなく。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_day_after_day",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "時と順序",
+    "english": "day after day",
+    "japanese": "来る日も来る日も",
+    "english_dummies": [
+      "after school",
+      "before long",
+      "the next day"
+    ],
+    "japanese_dummies": [
+      "放課後に",
+      "間もなく",
+      "その翌日に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "after",
+        "dummies": [
+          "before",
+          "under",
+          "beside"
+        ]
+      }
+    ],
+    "note": "day after day：来る日も来る日も。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_the_next_day",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "時と順序",
+    "english": "the next day",
+    "japanese": "その翌日に",
+    "english_dummies": [
+      "after school",
+      "before long",
+      "day after day"
+    ],
+    "japanese_dummies": [
+      "放課後に",
+      "間もなく",
+      "来る日も来る日も"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "next",
+        "dummies": [
+          "last",
+          "first",
+          "other"
+        ]
+      }
+    ],
+    "note": "the next day：その翌日に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_all_day",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "頻度と範囲",
+    "english": "all day",
+    "japanese": "一日中",
+    "english_dummies": [
+      "all the time",
+      "in the morning",
+      "at night"
+    ],
+    "japanese_dummies": [
+      "いつも",
+      "午前中に",
+      "夜に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "all",
+        "dummies": [
+          "each",
+          "every",
+          "both"
+        ]
+      }
+    ],
+    "note": "all day：一日中。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_all_the_time",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "頻度と範囲",
+    "english": "all the time",
+    "japanese": "いつも",
+    "english_dummies": [
+      "all day",
+      "in the morning",
+      "at night"
+    ],
+    "japanese_dummies": [
+      "一日中",
+      "午前中に",
+      "夜に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "time",
+        "dummies": [
+          "way",
+          "place",
+          "side"
+        ]
+      }
+    ],
+    "note": "all the time：いつも。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_in_the_morning",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "頻度と範囲",
+    "english": "in the morning",
+    "japanese": "午前中に",
+    "english_dummies": [
+      "all day",
+      "all the time",
+      "at night"
+    ],
+    "japanese_dummies": [
+      "一日中",
+      "いつも",
+      "夜に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "morning",
+        "dummies": [
+          "evening",
+          "future",
+          "past"
+        ]
+      }
+    ],
+    "note": "in the morning：午前中に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_at_night",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "頻度と範囲",
+    "english": "at night",
+    "japanese": "夜に",
+    "english_dummies": [
+      "all day",
+      "all the time",
+      "in the morning"
+    ],
+    "japanese_dummies": [
+      "一日中",
+      "いつも",
+      "午前中に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "night",
+        "dummies": [
+          "noon",
+          "first",
+          "last"
+        ]
+      }
+    ],
+    "note": "at night：夜に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_by_bus",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "移動と距離",
+    "english": "by bus",
+    "japanese": "バスで",
+    "english_dummies": [
+      "by train",
+      "from here",
+      "over there"
+    ],
+    "japanese_dummies": [
+      "電車で",
+      "ここから",
+      "向こうに"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "bus",
+        "dummies": [
+          "bike",
+          "train",
+          "plane"
+        ]
+      }
+    ],
+    "note": "by bus：バスで。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_by_train",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "移動と距離",
+    "english": "by train",
+    "japanese": "電車で",
+    "english_dummies": [
+      "by bus",
+      "from here",
+      "over there"
+    ],
+    "japanese_dummies": [
+      "バスで",
+      "ここから",
+      "向こうに"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "train",
+        "dummies": [
+          "bus",
+          "bike",
+          "plane"
+        ]
+      }
+    ],
+    "note": "by train：電車で。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_from_here",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "移動と距離",
+    "english": "from here",
+    "japanese": "ここから",
+    "english_dummies": [
+      "by bus",
+      "by train",
+      "over there"
+    ],
+    "japanese_dummies": [
+      "バスで",
+      "電車で",
+      "向こうに"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "here",
+        "dummies": [
+          "there",
+          "home",
+          "abroad"
+        ]
+      }
+    ],
+    "note": "from here：ここから。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_over_there",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "移動と距離",
+    "english": "over there",
+    "japanese": "向こうに",
+    "english_dummies": [
+      "by bus",
+      "by train",
+      "from here"
+    ],
+    "japanese_dummies": [
+      "バスで",
+      "電車で",
+      "ここから"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "there",
+        "dummies": [
+          "here",
+          "then",
+          "soon"
+        ]
+      }
+    ],
+    "note": "over there：向こうに。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_a_cup_of",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "数量の基本",
+    "english": "a cup of",
+    "japanese": "カップ1杯の〜",
+    "english_dummies": [
+      "a bottle of",
+      "a kind of",
+      "one of"
+    ],
+    "japanese_dummies": [
+      "瓶1本の〜",
+      "一種の〜",
+      "〜のうちの一つ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "cup",
+        "dummies": [
+          "pair",
+          "piece",
+          "kind"
+        ]
+      }
+    ],
+    "note": "a cup of：カップ1杯の〜。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_a_glass_of",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "数量の基本",
+    "english": "a glass of",
+    "japanese": "グラス1杯の〜",
+    "english_dummies": [
+      "a bottle of",
+      "a kind of",
+      "one of"
+    ],
+    "japanese_dummies": [
+      "瓶1本の〜",
+      "一種の〜",
+      "〜のうちの一つ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "glass",
+        "dummies": [
+          "group",
+          "pair",
+          "kind"
+        ]
+      }
+    ],
+    "note": "a glass of：グラス1杯の〜。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_a_kind_of",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "数量の基本",
+    "english": "a kind of",
+    "japanese": "一種の〜",
+    "english_dummies": [
+      "a cup of",
+      "a glass of",
+      "one of"
+    ],
+    "japanese_dummies": [
+      "カップ1杯の〜",
+      "グラス1杯の〜",
+      "〜のうちの一つ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "kind",
+        "dummies": [
+          "pair",
+          "cup",
+          "piece"
+        ]
+      }
+    ],
+    "note": "a kind of：一種の〜。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_one_of",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "数量の基本",
+    "english": "one of",
+    "japanese": "〜のうちの一つ",
+    "english_dummies": [
+      "a cup of",
+      "a glass of",
+      "a kind of"
+    ],
+    "japanese_dummies": [
+      "カップ1杯の〜",
+      "グラス1杯の〜",
+      "一種の〜"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "one",
+        "dummies": [
+          "every",
+          "each",
+          "all"
+        ]
+      }
+    ],
+    "note": "one of：〜のうちの一つ。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_worried_about",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "気持ちと関心",
+    "english": "be worried about",
+    "japanese": "〜を心配している",
+    "english_dummies": [
+      "be excited about",
+      "be surprised at",
+      "be satisfied with"
+    ],
+    "japanese_dummies": [
+      "〜にわくわくしている",
+      "〜に驚いている",
+      "〜に満足している"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "worried",
+        "dummies": [
+          "excited",
+          "glad",
+          "sure"
+        ]
+      }
+    ],
+    "note": "be worried about：〜を心配している。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_excited_about",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "気持ちと関心",
+    "english": "be excited about",
+    "japanese": "〜にわくわくしている",
+    "english_dummies": [
+      "be worried about",
+      "be surprised at",
+      "be satisfied with"
+    ],
+    "japanese_dummies": [
+      "〜を心配している",
+      "〜に驚いている",
+      "〜に満足している"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "excited",
+        "dummies": [
+          "worried",
+          "sad",
+          "sure"
+        ]
+      }
+    ],
+    "note": "be excited about：〜にわくわくしている。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_surprised_at",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "気持ちと関心",
+    "english": "be surprised at",
+    "japanese": "〜に驚いている",
+    "english_dummies": [
+      "be worried about",
+      "be excited about",
+      "be satisfied with"
+    ],
+    "japanese_dummies": [
+      "〜を心配している",
+      "〜にわくわくしている",
+      "〜に満足している"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "surprised",
+        "dummies": [
+          "used",
+          "good",
+          "late"
+        ]
+      }
+    ],
+    "note": "be surprised at：〜に驚いている。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_satisfied_with",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "気持ちと関心",
+    "english": "be satisfied with",
+    "japanese": "〜に満足している",
+    "english_dummies": [
+      "be worried about",
+      "be excited about",
+      "be surprised at"
+    ],
+    "japanese_dummies": [
+      "〜を心配している",
+      "〜にわくわくしている",
+      "〜に驚いている"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "satisfied",
+        "dummies": [
+          "angry",
+          "busy",
+          "familiar"
+        ]
+      }
+    ],
+    "note": "be satisfied with：〜に満足している。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_famous_for",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "人と関係",
+    "english": "be famous for",
+    "japanese": "〜で有名である",
+    "english_dummies": [
+      "be popular with",
+      "be friendly to",
+      "be similar to"
+    ],
+    "japanese_dummies": [
+      "〜に人気がある",
+      "〜に友好的である",
+      "〜に似ている"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "for",
+        "dummies": [
+          "from",
+          "to",
+          "at"
+        ]
+      }
+    ],
+    "note": "be famous for：〜で有名である。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_popular_with",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "人と関係",
+    "english": "be popular with",
+    "japanese": "〜に人気がある",
+    "english_dummies": [
+      "be famous for",
+      "be friendly to",
+      "be similar to"
+    ],
+    "japanese_dummies": [
+      "〜で有名である",
+      "〜に友好的である",
+      "〜に似ている"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "with",
+        "dummies": [
+          "into",
+          "from",
+          "under"
+        ]
+      }
+    ],
+    "note": "be popular with：〜に人気がある。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_friendly_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "人と関係",
+    "english": "be friendly to",
+    "japanese": "〜に友好的である",
+    "english_dummies": [
+      "be famous for",
+      "be popular with",
+      "be similar to"
+    ],
+    "japanese_dummies": [
+      "〜で有名である",
+      "〜に人気がある",
+      "〜に似ている"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "friendly",
+        "dummies": [
+          "absent",
+          "late",
+          "different"
+        ]
+      }
+    ],
+    "note": "be friendly to：〜に友好的である。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_similar_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "人と関係",
+    "english": "be similar to",
+    "japanese": "〜に似ている",
+    "english_dummies": [
+      "be famous for",
+      "be popular with",
+      "be friendly to"
+    ],
+    "japanese_dummies": [
+      "〜で有名である",
+      "〜に人気がある",
+      "〜に友好的である"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "similar",
+        "dummies": [
+          "different",
+          "absent",
+          "late"
+        ]
+      }
+    ],
+    "note": "be similar to：〜に似ている。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_poor_at",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "得意と希望",
+    "english": "be poor at",
+    "japanese": "〜が苦手である",
+    "english_dummies": [
+      "be fond of",
+      "be sure to",
+      "be happy to"
+    ],
+    "japanese_dummies": [
+      "〜が好きである",
+      "きっと〜する",
+      "喜んで〜する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "poor",
+        "dummies": [
+          "good",
+          "ready",
+          "late"
+        ]
+      }
+    ],
+    "note": "be poor at：〜が苦手である。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_fond_of",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "得意と希望",
+    "english": "be fond of",
+    "japanese": "〜が好きである",
+    "english_dummies": [
+      "be poor at",
+      "be sure to",
+      "be happy to"
+    ],
+    "japanese_dummies": [
+      "〜が苦手である",
+      "きっと〜する",
+      "喜んで〜する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "fond",
+        "dummies": [
+          "tired",
+          "afraid",
+          "full"
+        ]
+      }
+    ],
+    "note": "be fond of：〜が好きである。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_sure_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "得意と希望",
+    "english": "be sure to",
+    "japanese": "きっと〜する",
+    "english_dummies": [
+      "be poor at",
+      "be fond of",
+      "be happy to"
+    ],
+    "japanese_dummies": [
+      "〜が苦手である",
+      "〜が好きである",
+      "喜んで〜する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "sure",
+        "dummies": [
+          "able",
+          "ready",
+          "willing"
+        ]
+      }
+    ],
+    "note": "be sure to：きっと〜する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_be_happy_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "得意と希望",
+    "english": "be happy to",
+    "japanese": "喜んで〜する",
+    "english_dummies": [
+      "be poor at",
+      "be fond of",
+      "be sure to"
+    ],
+    "japanese_dummies": [
+      "〜が苦手である",
+      "〜が好きである",
+      "きっと〜する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "happy",
+        "dummies": [
+          "afraid",
+          "unable",
+          "unlikely"
+        ]
+      }
+    ],
+    "note": "be happy to：喜んで〜する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_say_hello_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "相手への働きかけ",
+    "english": "say hello to",
+    "japanese": "〜にあいさつする",
+    "english_dummies": [
+      "say goodbye to",
+      "say thank you to",
+      "ask a question"
+    ],
+    "japanese_dummies": [
+      "〜に別れを告げる",
+      "〜にお礼を言う",
+      "質問する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "hello",
+        "dummies": [
+          "goodbye",
+          "sorry",
+          "thanks"
+        ]
+      }
+    ],
+    "note": "say hello to：〜にあいさつする。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_say_goodbye_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "相手への働きかけ",
+    "english": "say goodbye to",
+    "japanese": "〜に別れを告げる",
+    "english_dummies": [
+      "say hello to",
+      "say thank you to",
+      "ask a question"
+    ],
+    "japanese_dummies": [
+      "〜にあいさつする",
+      "〜にお礼を言う",
+      "質問する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "goodbye",
+        "dummies": [
+          "hello",
+          "sorry",
+          "thanks"
+        ]
+      }
+    ],
+    "note": "say goodbye to：〜に別れを告げる。別れのあいさつをする表現。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_say_thank_you_to",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "相手への働きかけ",
+    "english": "say thank you to",
+    "japanese": "〜にお礼を言う",
+    "english_dummies": [
+      "say hello to",
+      "say goodbye to",
+      "ask a question"
+    ],
+    "japanese_dummies": [
+      "〜にあいさつする",
+      "〜に別れを告げる",
+      "質問する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "thank",
+        "dummies": [
+          "help",
+          "call",
+          "show"
+        ]
+      }
+    ],
+    "note": "say thank you to：〜にお礼を言う。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_ask_a_question",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "相手への働きかけ",
+    "english": "ask a question",
+    "japanese": "質問する",
+    "english_dummies": [
+      "say hello to",
+      "say goodbye to",
+      "say thank you to"
+    ],
+    "japanese_dummies": [
+      "〜にあいさつする",
+      "〜に別れを告げる",
+      "〜にお礼を言う"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "question",
+        "dummies": [
+          "promise",
+          "mistake",
+          "noise"
+        ]
+      }
+    ],
+    "note": "ask a question：質問する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_do_homework",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の動作",
+    "english": "do homework",
+    "japanese": "宿題をする",
+    "english_dummies": [
+      "do the dishes",
+      "make the bed",
+      "set the table"
+    ],
+    "japanese_dummies": [
+      "皿を洗う",
+      "ベッドを整える",
+      "食事の食器を並べる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "homework",
+        "dummies": [
+          "housework",
+          "shopping",
+          "business"
+        ]
+      }
+    ],
+    "note": "do homework：宿題をする。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_do_the_dishes",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の動作",
+    "english": "do the dishes",
+    "japanese": "皿を洗う",
+    "english_dummies": [
+      "do homework",
+      "make the bed",
+      "set the table"
+    ],
+    "japanese_dummies": [
+      "宿題をする",
+      "ベッドを整える",
+      "食事の食器を並べる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "dishes",
+        "dummies": [
+          "doors",
+          "beds",
+          "pictures"
+        ]
+      }
+    ],
+    "note": "do the dishes：皿を洗う。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_make_the_bed",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の動作",
+    "english": "make the bed",
+    "japanese": "ベッドを整える",
+    "english_dummies": [
+      "do homework",
+      "do the dishes",
+      "set the table"
+    ],
+    "japanese_dummies": [
+      "宿題をする",
+      "皿を洗う",
+      "食事の食器を並べる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "bed",
+        "dummies": [
+          "meal",
+          "noise",
+          "decision"
+        ]
+      }
+    ],
+    "note": "make the bed：ベッドを整える。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_set_the_table",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "日常の動作",
+    "english": "set the table",
+    "japanese": "食事の食器を並べる",
+    "english_dummies": [
+      "do homework",
+      "do the dishes",
+      "make the bed"
+    ],
+    "japanese_dummies": [
+      "宿題をする",
+      "皿を洗う",
+      "ベッドを整える"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "table",
+        "dummies": [
+          "clock",
+          "goal",
+          "record"
+        ]
+      }
+    ],
+    "note": "set the table：食事の食器を並べる。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_catch_a_cold",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "健康と生活",
+    "english": "catch a cold",
+    "japanese": "風邪をひく",
+    "english_dummies": [
+      "have a headache",
+      "have a fever",
+      "get well"
+    ],
+    "japanese_dummies": [
+      "頭痛がする",
+      "熱がある",
+      "病気から回復する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "cold",
+        "dummies": [
+          "break",
+          "seat",
+          "walk"
+        ]
+      }
+    ],
+    "note": "catch a cold：風邪をひく。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_have_a_headache",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "健康と生活",
+    "english": "have a headache",
+    "japanese": "頭痛がする",
+    "english_dummies": [
+      "catch a cold",
+      "have a fever",
+      "get well"
+    ],
+    "japanese_dummies": [
+      "風邪をひく",
+      "熱がある",
+      "病気から回復する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "headache",
+        "dummies": [
+          "stomachache",
+          "fever",
+          "cold"
+        ]
+      }
+    ],
+    "note": "have a headache：頭痛がする。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_have_a_fever",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "健康と生活",
+    "english": "have a fever",
+    "japanese": "熱がある",
+    "english_dummies": [
+      "catch a cold",
+      "have a headache",
+      "get well"
+    ],
+    "japanese_dummies": [
+      "風邪をひく",
+      "頭痛がする",
+      "病気から回復する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "fever",
+        "dummies": [
+          "headache",
+          "stomachache",
+          "cough"
+        ]
+      }
+    ],
+    "note": "have a fever：熱がある。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_get_well",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "健康と生活",
+    "english": "get well",
+    "japanese": "病気から回復する",
+    "english_dummies": [
+      "catch a cold",
+      "have a headache",
+      "have a fever"
+    ],
+    "japanese_dummies": [
+      "風邪をひく",
+      "頭痛がする",
+      "熱がある"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "well",
+        "dummies": [
+          "ill",
+          "angry",
+          "lost"
+        ]
+      }
+    ],
+    "note": "get well：病気から回復する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_get_together",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "行動の始まりと終わり",
+    "english": "get together",
+    "japanese": "集まる",
+    "english_dummies": [
+      "hurry up",
+      "slow down",
+      "come true"
+    ],
+    "japanese_dummies": [
+      "急ぐ",
+      "速度を落とす",
+      "実現する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "together",
+        "dummies": [
+          "apart",
+          "away",
+          "off"
+        ]
+      }
+    ],
+    "note": "get together：集まる。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_hurry_up",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "行動の始まりと終わり",
+    "english": "hurry up",
+    "japanese": "急ぐ",
+    "english_dummies": [
+      "get together",
+      "slow down",
+      "come true"
+    ],
+    "japanese_dummies": [
+      "集まる",
+      "速度を落とす",
+      "実現する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "up",
+        "dummies": [
+          "off",
+          "out",
+          "away"
+        ]
+      }
+    ],
+    "note": "hurry up：急ぐ。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_slow_down",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "行動の始まりと終わり",
+    "english": "slow down",
+    "japanese": "速度を落とす",
+    "english_dummies": [
+      "get together",
+      "hurry up",
+      "come true"
+    ],
+    "japanese_dummies": [
+      "集まる",
+      "急ぐ",
+      "実現する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "down",
+        "dummies": [
+          "up",
+          "over",
+          "back"
+        ]
+      }
+    ],
+    "note": "slow down：速度を落とす。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_come_true",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "行動の始まりと終わり",
+    "english": "come true",
+    "japanese": "実現する",
+    "english_dummies": [
+      "get together",
+      "hurry up",
+      "slow down"
+    ],
+    "japanese_dummies": [
+      "集まる",
+      "急ぐ",
+      "速度を落とす"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "true",
+        "dummies": [
+          "false",
+          "wrong",
+          "late"
+        ]
+      }
+    ],
+    "note": "come true：実現する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_give_back",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "受け渡しと用事",
+    "english": "give back",
+    "japanese": "返す",
+    "english_dummies": [
+      "give away",
+      "put off",
+      "put out"
+    ],
+    "japanese_dummies": [
+      "無料で譲る",
+      "延期する",
+      "火を消す"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "back",
+        "dummies": [
+          "up",
+          "away",
+          "in"
+        ]
+      }
+    ],
+    "note": "give back：返す。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_give_away",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "受け渡しと用事",
+    "english": "give away",
+    "japanese": "無料で譲る",
+    "english_dummies": [
+      "give back",
+      "put off",
+      "put out"
+    ],
+    "japanese_dummies": [
+      "返す",
+      "延期する",
+      "火を消す"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "away",
+        "dummies": [
+          "back",
+          "up",
+          "in"
+        ]
+      }
+    ],
+    "note": "give away：無料で譲る。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_put_off",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "受け渡しと用事",
+    "english": "put off",
+    "japanese": "延期する",
+    "english_dummies": [
+      "give back",
+      "give away",
+      "put out"
+    ],
+    "japanese_dummies": [
+      "返す",
+      "無料で譲る",
+      "火を消す"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "off",
+        "dummies": [
+          "on",
+          "away",
+          "out"
+        ]
+      }
+    ],
+    "note": "put off：延期する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_put_out",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "受け渡しと用事",
+    "english": "put out",
+    "japanese": "火を消す",
+    "english_dummies": [
+      "give back",
+      "give away",
+      "put off"
+    ],
+    "japanese_dummies": [
+      "返す",
+      "無料で譲る",
+      "延期する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "out",
+        "dummies": [
+          "on",
+          "off",
+          "away"
+        ]
+      }
+    ],
+    "note": "put out：火を消す。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_help_with",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "協力と世話",
+    "english": "help with",
+    "japanese": "〜を手伝う",
+    "english_dummies": [
+      "learn from",
+      "work for",
+      "care about"
+    ],
+    "japanese_dummies": [
+      "〜から学ぶ",
+      "〜のために働く",
+      "〜を大切に思う"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "with",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "help with：〜を手伝う。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_learn_from",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "協力と世話",
+    "english": "learn from",
+    "japanese": "〜から学ぶ",
+    "english_dummies": [
+      "help with",
+      "work for",
+      "care about"
+    ],
+    "japanese_dummies": [
+      "〜を手伝う",
+      "〜のために働く",
+      "〜を大切に思う"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "from",
+        "dummies": [
+          "against",
+          "into",
+          "over"
+        ]
+      }
+    ],
+    "note": "learn from：〜から学ぶ。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_work_for",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "協力と世話",
+    "english": "work for",
+    "japanese": "〜のために働く",
+    "english_dummies": [
+      "help with",
+      "learn from",
+      "care about"
+    ],
+    "japanese_dummies": [
+      "〜を手伝う",
+      "〜から学ぶ",
+      "〜を大切に思う"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "for",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "work for：〜のために働く。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_care_about",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "協力と世話",
+    "english": "care about",
+    "japanese": "〜を大切に思う",
+    "english_dummies": [
+      "help with",
+      "learn from",
+      "work for"
+    ],
+    "japanese_dummies": [
+      "〜を手伝う",
+      "〜から学ぶ",
+      "〜のために働く"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "about",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "care about：〜を大切に思う。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_look_out",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "注意と努力",
+    "english": "look out",
+    "japanese": "危ないと注意を促す",
+    "english_dummies": [
+      "look back",
+      "try on",
+      "try out"
+    ],
+    "japanese_dummies": [
+      "振り返る",
+      "試着する",
+      "試してみる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "out",
+        "dummies": [
+          "after",
+          "for",
+          "like"
+        ]
+      }
+    ],
+    "note": "look out：危ないと注意を促す。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_watch_out",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "注意と努力",
+    "english": "watch out",
+    "japanese": "気をつける",
+    "english_dummies": [
+      "look back",
+      "try on",
+      "try out"
+    ],
+    "japanese_dummies": [
+      "振り返る",
+      "試着する",
+      "試してみる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "out",
+        "dummies": [
+          "on",
+          "off",
+          "into"
+        ]
+      }
+    ],
+    "note": "watch out：気をつける。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_try_on",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "注意と努力",
+    "english": "try on",
+    "japanese": "試着する",
+    "english_dummies": [
+      "look out",
+      "watch out",
+      "try out"
+    ],
+    "japanese_dummies": [
+      "危ないと注意を促す",
+      "気をつける",
+      "試してみる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "on",
+        "dummies": [
+          "out",
+          "off",
+          "up"
+        ]
+      }
+    ],
+    "note": "try on：試着する。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_try_out",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "注意と努力",
+    "english": "try out",
+    "japanese": "試してみる",
+    "english_dummies": [
+      "look out",
+      "watch out",
+      "try on"
+    ],
+    "japanese_dummies": [
+      "危ないと注意を促す",
+      "気をつける",
+      "試着する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "out",
+        "dummies": [
+          "on",
+          "off",
+          "over"
+        ]
+      }
+    ],
+    "note": "try out：試してみる。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_think_of",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "記憶と考え",
+    "english": "think of",
+    "japanese": "〜を思いつく",
+    "english_dummies": [
+      "forget about",
+      "remind of",
+      "dream of"
+    ],
+    "japanese_dummies": [
+      "〜を忘れる",
+      "〜を思い出させる",
+      "〜を夢見る"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "of",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "think of：〜を思いつく。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_think_about",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "記憶と考え",
+    "english": "think about",
+    "japanese": "〜について考える",
+    "english_dummies": [
+      "forget about",
+      "remind of",
+      "dream of"
+    ],
+    "japanese_dummies": [
+      "〜を忘れる",
+      "〜を思い出させる",
+      "〜を夢見る"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "about",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "think about：〜について考える。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_remind_of",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "記憶と考え",
+    "english": "remind of",
+    "japanese": "〜を思い出させる",
+    "english_dummies": [
+      "think of",
+      "think about",
+      "dream of"
+    ],
+    "japanese_dummies": [
+      "〜を思いつく",
+      "〜について考える",
+      "〜を夢見る"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "of",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "remind A of B：AにBを思い出させる。remindの後には思い出す人を置く。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_dream_of",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "記憶と考え",
+    "english": "dream of",
+    "japanese": "〜を夢見る",
+    "english_dummies": [
+      "think of",
+      "think about",
+      "remind of"
+    ],
+    "japanese_dummies": [
+      "〜を思いつく",
+      "〜について考える",
+      "〜を思い出させる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "of",
+        "dummies": [
+          "against",
+          "under",
+          "without"
+        ]
+      }
+    ],
+    "note": "dream of：〜を夢見る。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_turn_into",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "状態の変化",
+    "english": "turn into",
+    "japanese": "〜に変わる",
+    "english_dummies": [
+      "break into",
+      "get lost",
+      "fall asleep"
+    ],
+    "japanese_dummies": [
+      "〜に侵入する",
+      "道に迷う",
+      "眠りに落ちる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "into",
+        "dummies": [
+          "against",
+          "without",
+          "beside"
+        ]
+      }
+    ],
+    "note": "turn into：〜に変わる。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_change_into",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "状態の変化",
+    "english": "change into",
+    "japanese": "〜に着替える",
+    "english_dummies": [
+      "break into",
+      "get lost",
+      "fall asleep"
+    ],
+    "japanese_dummies": [
+      "〜に侵入する",
+      "道に迷う",
+      "眠りに落ちる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "into",
+        "dummies": [
+          "against",
+          "without",
+          "beside"
+        ]
+      }
+    ],
+    "note": "change into：服に着替える。この問題では服装を変える意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_get_lost",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "状態の変化",
+    "english": "get lost",
+    "japanese": "道に迷う",
+    "english_dummies": [
+      "turn into",
+      "change into",
+      "fall asleep"
+    ],
+    "japanese_dummies": [
+      "〜に変わる",
+      "〜に着替える",
+      "眠りに落ちる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "lost",
+        "dummies": [
+          "ready",
+          "together",
+          "well"
+        ]
+      }
+    ],
+    "note": "get lost：道に迷う。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_fall_asleep",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "状態の変化",
+    "english": "fall asleep",
+    "japanese": "眠りに落ちる",
+    "english_dummies": [
+      "turn into",
+      "change into",
+      "get lost"
+    ],
+    "japanese_dummies": [
+      "〜に変わる",
+      "〜に着替える",
+      "道に迷う"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "asleep",
+        "dummies": [
+          "awake",
+          "alive",
+          "alone"
+        ]
+      }
+    ],
+    "note": "fall asleep：眠りに落ちる。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_on_the_other_hand",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "対比と追加",
+    "english": "on the other hand",
+    "japanese": "他方では",
+    "english_dummies": [
+      "in other words",
+      "first of all",
+      "above all"
+    ],
+    "japanese_dummies": [
+      "言い換えると",
+      "まず第一に",
+      "とりわけ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "other",
+        "dummies": [
+          "another",
+          "others",
+          "else"
+        ]
+      }
+    ],
+    "note": "on the other hand：他方では。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_in_other_words",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "対比と追加",
+    "english": "in other words",
+    "japanese": "言い換えると",
+    "english_dummies": [
+      "on the other hand",
+      "first of all",
+      "above all"
+    ],
+    "japanese_dummies": [
+      "他方では",
+      "まず第一に",
+      "とりわけ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 3,
+        "answer": "words",
+        "dummies": [
+          "hands",
+          "ways",
+          "times"
+        ]
+      }
+    ],
+    "note": "in other words：言い換えると。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_first_of_all",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "対比と追加",
+    "english": "first of all",
+    "japanese": "まず第一に",
+    "english_dummies": [
+      "on the other hand",
+      "in other words",
+      "above all"
+    ],
+    "japanese_dummies": [
+      "他方では",
+      "言い換えると",
+      "とりわけ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "first",
+        "dummies": [
+          "last",
+          "most",
+          "least"
+        ]
+      }
+    ],
+    "note": "first of all：まず第一に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_above_all",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "対比と追加",
+    "english": "above all",
+    "japanese": "とりわけ",
+    "english_dummies": [
+      "on the other hand",
+      "in other words",
+      "first of all"
+    ],
+    "japanese_dummies": [
+      "他方では",
+      "言い換えると",
+      "まず第一に"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "above",
+        "dummies": [
+          "below",
+          "under",
+          "behind"
+        ]
+      }
+    ],
+    "note": "above all：とりわけ。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_all_around",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "範囲と経路",
+    "english": "all around",
+    "japanese": "〜の至る所に",
+    "english_dummies": [
+      "along with",
+      "away from",
+      "up to"
+    ],
+    "japanese_dummies": [
+      "〜と一緒に",
+      "〜から離れて",
+      "最大〜まで"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "around",
+        "dummies": [
+          "behind",
+          "below",
+          "between"
+        ]
+      }
+    ],
+    "note": "all around：〜の至る所に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_along_with",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "範囲と経路",
+    "english": "along with",
+    "japanese": "〜と一緒に",
+    "english_dummies": [
+      "all around",
+      "away from",
+      "up to"
+    ],
+    "japanese_dummies": [
+      "〜の至る所に",
+      "〜から離れて",
+      "最大〜まで"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "with",
+        "dummies": [
+          "against",
+          "without",
+          "under"
+        ]
+      }
+    ],
+    "note": "along with：〜と一緒に。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_away_from",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "範囲と経路",
+    "english": "away from",
+    "japanese": "〜から離れて",
+    "english_dummies": [
+      "all around",
+      "along with",
+      "up to"
+    ],
+    "japanese_dummies": [
+      "〜の至る所に",
+      "〜と一緒に",
+      "最大〜まで"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "from",
+        "dummies": [
+          "into",
+          "onto",
+          "under"
+        ]
+      }
+    ],
+    "note": "away from：〜から離れて。この問題ではこの意味を確認する。",
+    "content_batch": "english-phrases-2"
+  },
+  {
+    "id": "jr_en_phrase2_up_to",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "範囲と経路",
+    "english": "up to",
+    "japanese": "最大〜まで",
+    "english_dummies": [
+      "all around",
+      "along with",
+      "away from"
+    ],
+    "japanese_dummies": [
+      "〜の至る所に",
+      "〜と一緒に",
+      "〜から離れて"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "to",
+        "dummies": [
+          "from",
+          "against",
+          "without"
+        ]
+      }
+    ],
+    "note": "up to：数の前では最大〜まで。この問題では上限を表す意味を確認する。",
+    "content_batch": "english-phrases-2"
   }
 ]

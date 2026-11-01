@@ -13,7 +13,7 @@ test('large English batch has stable unique identities and adds words phrases gr
  assert.equal(core.length,621);assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  assert.deepEqual(Object.fromEntries(['英単語','熟語','英文法','英文読解'].map(field=>[field,core.filter(q=>q.field===field).length])),{'英単語':505,'熟語':48,'英文法':60,'英文読解':8});
  const lexical=english.filter(q=>q.english);assert.equal(new Set(lexical.map(q=>q.english)).size,lexical.length);
- assert.equal(english.length,2826);assert.equal(makeQuestionQueue(english,()=>.5).length,10493);
+ assert.equal(english.length,2910);assert.equal(makeQuestionQueue(english,()=>.5).length,10745);
 });
 test('all generated English choices are distinct and fit the established content budget',()=>{
  assert.equal(choiceColumns({choices:['Thursday','Monday','Friday','Sunday']}),2);

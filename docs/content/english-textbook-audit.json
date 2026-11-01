@@ -53,12 +53,12 @@
   ],
   "oneWorld": {
     "totalEntries": 2778,
-    "exactSenseConfirmed": 724,
-    "reviewedSenseConfirmed": 334,
-    "reviewedHeld": 14,
-    "senseConfirmed": 1058,
-    "senseReview": 168,
-    "headwordUnmatched": 1552,
+    "exactSenseConfirmed": 730,
+    "reviewedSenseConfirmed": 337,
+    "reviewedHeld": 15,
+    "senseConfirmed": 1067,
+    "senseReview": 169,
+    "headwordUnmatched": 1542,
     "entries": [
       {
         "headword": "(I) got it.",
@@ -803,12 +803,12 @@
       {
         "headword": "all day",
         "row": 83,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_all_day",
+        "mappedLocations": 1
       },
       {
         "headword": "All Hallows’ Eve",
@@ -3963,12 +3963,12 @@
       {
         "headword": "catch a cold",
         "row": 399,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_catch_a_cold",
+        "mappedLocations": 1
       },
       {
         "headword": "Cathy King",
@@ -4843,12 +4843,12 @@
       {
         "headword": "come true",
         "row": 487,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_come_true",
+        "mappedLocations": 1
       },
       {
         "headword": "come(s)",
@@ -9703,12 +9703,12 @@
       {
         "headword": "go home",
         "row": 973,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_go_home",
+        "mappedLocations": 1
       },
       {
         "headword": "go into ～",
@@ -10553,12 +10553,12 @@
       {
         "headword": "have a headache",
         "row": 1058,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_have_a_headache",
+        "mappedLocations": 1
       },
       {
         "headword": "have an effect on ～",
@@ -11793,12 +11793,12 @@
       {
         "headword": "in the morning",
         "row": 1182,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_in_the_morning",
+        "mappedLocations": 1
       },
       {
         "headword": "in themselves",
@@ -16723,12 +16723,12 @@
       {
         "headword": "on the other hand",
         "row": 1675,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "exact_normalized_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_on_the_other_hand",
+        "mappedLocations": 1
       },
       {
         "headword": "on TV",
@@ -17083,12 +17083,12 @@
       {
         "headword": "over there",
         "row": 1711,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_over_there",
+        "mappedLocations": 1
       },
       {
         "headword": "overall(s)",
@@ -21523,12 +21523,12 @@
       {
         "headword": "sit down",
         "row": 2155,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_confirmed",
+        "matchMethod": "reviewed_equivalent_sense",
+        "reviewType": "matched",
         "lemmaSourceId": null,
-        "sourceId": null,
-        "mappedLocations": 0
+        "sourceId": "jr_en_phrase2_sit_down",
+        "mappedLocations": 1
       },
       {
         "headword": "site",
@@ -25383,11 +25383,11 @@
       {
         "headword": "try out",
         "row": 2541,
-        "status": "headword_unmatched",
-        "matchMethod": null,
-        "reviewType": "multiword_or_expression",
+        "status": "sense_review",
+        "matchMethod": "reviewed_hold",
+        "reviewType": "different_or_unconfirmed_sense",
         "lemmaSourceId": null,
-        "sourceId": null,
+        "sourceId": "jr_en_phrase2_try_out",
         "mappedLocations": 0
       },
       {

@@ -11,7 +11,7 @@ test('supplement adds 511 words and 58 phrases, preserving earlier identities an
  assert.equal(added.length,569);assert.equal(added.filter(q=>q.field==='英単語').length,511);assert.equal(added.filter(q=>q.field==='熟語').length,58);
  assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  const lexical=all.filter(q=>q.english);assert.equal(new Set(lexical.map(q=>q.english.toLowerCase())).size,lexical.length);
- assert.equal(all.length,2826);assert.equal(makeQuestionQueue(all,()=>.5).length,10493);
+ assert.equal(all.length,2910);assert.equal(makeQuestionQueue(all,()=>.5).length,10745);
 });
 test('all 2214 new questions have four distinct choices and fit the content budget',()=>{
  const qs=makeQuestionQueue(added,()=>.5);assert.equal(qs.length,2214);

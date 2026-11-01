@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.59.0';
-import { materializeMathItem } from './math-variants.js?v=0.59.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.60.0';
+import { materializeMathItem } from './math-variants.js?v=0.60.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -153,7 +153,7 @@ export function makePhraseQuestions(item, random = Math.random) {
       answer: blank.answer, choices, correct: choices.indexOf(blank.answer), segments,
       prompt: segments.map(s => s.text).join(''), context: item.japanese,
       task: `「${item.japanese}」を表す熟語を完成させよう`,
-      targetLabel: `強調された？に入る単語を回答（${i + 1} / ${blanks.length}）`,
+      targetLabel: `？に入る語を選ぼう${blanks.length>1?`（${i + 1} / ${blanks.length}）`:''}`,
       note: i + 1 === blanks.length ? item.note : '', reviewLabel: `${item.japanese} · 単語（${i + 1} / ${blanks.length}）` };
   });
 }
