@@ -1,9 +1,9 @@
-import { MusicPlayer } from './music-player.js?v=0.42.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.1';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.1';
-const VERSION = '0.42.1';
+import { MusicPlayer } from './music-player.js?v=0.42.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.2';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.2';
+const VERSION = '0.42.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -24,15 +24,9 @@ for(const [id,key,values] of [['question-speed','speed',SPEEDS],['rhythm-difficu
       gameplayOptions[key]=value;
       for(const sibling of $(id).querySelectorAll('button'))sibling.setAttribute('aria-pressed',String(sibling===button));
       try { localStorage.setItem('study-beat-gameplay-v1',JSON.stringify(gameplayOptions));$('gameplay-storage-note').hidden=true; }catch{$('gameplay-storage-note').hidden=false;}
-      renderGameplayHelp();
     });$(id).append(button);
   }
 }
-function renderGameplayHelp(){
-  $('rhythm-description').textContent={easy:'今までと同じ。5分で120回を目標に、回答色のレーンは固定。',normal:'5分で180回を目標。列ごとに4色の位置が入れ替わります。',hard:'5分で240回を目標。4色の位置に加え、半拍を交えた変化のあるリズムになります。'}[gameplayOptions.rhythm];
-  $('speed-description').textContent={slow:'文字と選択肢が順番に、ゆっくり現れます。',normal:'アニメーションはそのまま、ゆっくりと速いの中間の時間で出題します。',fast:'全文を一度に表示。12文字あたり1秒、読む時間があります。',instant:'全文を一度に表示。20文字あたり1秒で回答へ進みます。'}[gameplayOptions.speed];
-}
-renderGameplayHelp();
 let questionKey = '', hitEffects = [], ghostPressTimes = Array(4).fill(-Infinity), tuningPressTime = -Infinity;
 let learningHistory = normalizeHistory(null), sessionScope, sessionId = '', sessionResults = new Map(), levelPrevious = null;
 let personalBests = normalizeBests(null), resultTimer;
