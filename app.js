@@ -1,10 +1,10 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.44.0';
-import { MusicPlayer } from './music-player.js?v=0.44.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.44.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.44.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.44.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.44.0';
-const VERSION = '0.44.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.44.1';
+import { MusicPlayer } from './music-player.js?v=0.44.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.44.1';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.44.1';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.44.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.44.1';
+const VERSION = '0.44.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -262,11 +262,15 @@ function capturePlayLayout(){
   if(screen!=='play')return;
   const rect=element=>{const r=element.getBoundingClientRect();return {top:r.top,bottom:r.bottom,height:r.height,left:r.left,right:r.right};};
   const viewport=window.visualViewport,buttons=$('play').querySelector('.lane-keys'),main=document.querySelector('main');
+  const controls=[...buttons.querySelectorAll('button')].filter(button=>!button.hidden).map(button=>({lane:Number(button.dataset.lane),...rect(button)}));
+  const actualBottom=Math.min(...controls.map(button=>button.bottom));
   const top=getComputedStyle(main).paddingTop,bottom=getComputedStyle(document.documentElement).getPropertyValue('--screen-safe-bottom').trim();
   displayDiagnostics={version:VERSION,standalone:matchMedia('(display-mode: standalone)').matches||navigator.standalone===true,
     innerHeight:innerHeight,innerWidth:innerWidth,screenHeight:window.screen.height,
     visualViewport:viewport?{height:viewport.height,width:viewport.width,offsetTop:viewport.offsetTop,scale:viewport.scale}:null,
-    safeTop:top,safeBottom:bottom,body:rect(document.body),main:rect(main),buttons:rect(buttons),
+    safeTop:top,safeBottom:bottom,body:rect(document.body),main:rect(main),buttons:rect(buttons),controls,
+    unusedButtonArea:buttons.getBoundingClientRect().bottom-actualBottom,
+    actualButtonBottomGap:(viewport?viewport.height+viewport.offsetTop:innerHeight)-actualBottom,
     pageBottomGap:(viewport?viewport.height+viewport.offsetTop:innerHeight)-buttons.getBoundingClientRect().bottom};
   try { localStorage.setItem('study-beat-display-diagnostics-v1',JSON.stringify(displayDiagnostics)); } catch {}
 }
@@ -748,7 +752,6 @@ function render() {
   $('play').dataset.continuation = game.reveal.continuation;
   $('field').setAttribute('aria-label', game.phase === 'answer' ? '4色のノーツ表示' : '白ノーツの表示');
   document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.style.setProperty('--lane-color', game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
-  document.querySelector('.lane-keys').style.gridTemplateColumns = `repeat(${game.laneCount},1fr)`;
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? '白ノーツのレーンをタップ' : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
