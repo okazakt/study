@@ -44690,5 +44690,16 @@
       "path": "textbook-data/here-we-go-grammar-reviewed.json",
       "sha256": "e85d708be38b76c09eb8222406e82063f8acd8868efd909c4b3ff60b98ffabce"
     }
+  },
+  "blueSky": {
+    "scope": "公式単元一覧PDFの文法項目との対応のみ。語彙・読解・全用法は未対応。教科書ページは不明のためnullとする。",
+    "units": 24,
+    "playableUnits": 24,
+    "mappedMaterials": 125,
+    "mappings": 125,
+    "reviewLedger": {
+      "path": "textbook-data/blue-sky-grammar-reviewed.json",
+      "sha256": "d367f5e4d7e2ba4d9ffbf848be4e729737eec3a87293501d658e7f8a1b07edfc"
+    }
   }
 }

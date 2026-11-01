@@ -5608,5 +5608,269 @@
         "note": "現在形で義務を表すhave toは、主語が三人称単数ならhas toとなる。"
       }
     ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_past_progressive_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "過去進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) he sleeping at ten last night?",
+    "answer": "Was",
+    "dummies": [
+      "Were",
+      "Did",
+      "Does"
+    ],
+    "note": "過去進行形の疑問文はwas・wereを主語の前に置き、その後に動詞のing形を続ける。",
+    "learning_point": "past_progressive_question",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) they studying at eight last night?",
+        "answer": "Were",
+        "dummies": [
+          "Was",
+          "Did",
+          "Do"
+        ],
+        "note": "過去進行形の疑問文はwas・wereを主語の前に置き、その後に動詞のing形を続ける。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_past_be_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "be動詞の過去形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "He was not tired. のwas notを短縮すると？",
+    "answer": "wasn't",
+    "dummies": [
+      "weren't",
+      "isn't",
+      "didn't"
+    ],
+    "note": "be動詞の過去形の否定はwas not・were not。短縮形はwasn’t・weren’t。",
+    "learning_point": "past_be_negative",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "They were not busy. のwere notを短縮すると？",
+        "answer": "weren't",
+        "dummies": [
+          "wasn't",
+          "aren't",
+          "didn't"
+        ],
+        "note": "be動詞の過去形の否定はwas not・were not。短縮形はwasn’t・weren’t。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_superlative_most",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「3つの中で最も興味深い」(？) interesting of the three.",
+    "answer": "the most",
+    "dummies": [
+      "more",
+      "the more",
+      "as"
+    ],
+    "note": "長い形容詞の最上級は、ふつうthe most＋形容詞。比較級のmoreと区別する。",
+    "learning_point": "superlative_most",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「最も美しい花」(？) beautiful flower",
+        "answer": "the most",
+        "dummies": [
+          "more",
+          "the more",
+          "as"
+        ],
+        "note": "長い形容詞の最上級は、ふつうthe most＋形容詞。比較級のmoreと区別する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_when_past_clause",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞when",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「彼が電話したとき」I was reading (？) he called.",
+    "answer": "when",
+    "dummies": [
+      "before",
+      "after",
+      "because"
+    ],
+    "note": "when＋主語＋動詞で「〜するとき」。過去の出来事についても使える。",
+    "learning_point": "when_past_clause",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「母が帰ったとき」I was cooking (？) my mother came home.",
+        "answer": "when",
+        "dummies": [
+          "before",
+          "after",
+          "because"
+        ],
+        "note": "when＋主語＋動詞で「〜するとき」。過去の出来事についても使える。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_what_noun_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「何のスポーツが好き？」(？) sport do you like?",
+    "answer": "What",
+    "dummies": [
+      "Whose",
+      "Where",
+      "When"
+    ],
+    "note": "what＋名詞で、種類や内容をたずねる。What sport、What colorなどの形を使う。",
+    "learning_point": "what_noun_question",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「何色が好き？」(？) color do you like?",
+        "answer": "What",
+        "dummies": [
+          "Whose",
+          "Where",
+          "When"
+        ],
+        "note": "what＋名詞で、種類や内容をたずねる。What sport、What colorなどの形を使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_passive_negative",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "受け身",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "否定の受け身を完成。This room (？) cleaned every day.",
+    "answer": "is not",
+    "dummies": [
+      "not is",
+      "does not",
+      "do not"
+    ],
+    "note": "受け身の否定文はbe動詞の後にnotを置き、過去分詞を続ける。",
+    "learning_point": "passive_negative",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "否定の受け身を完成。These bikes (？) used now.",
+        "answer": "are not",
+        "dummies": [
+          "not are",
+          "does not",
+          "do not"
+        ],
+        "note": "受け身の否定文はbe動詞の後にnotを置き、過去分詞を続ける。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_what_time_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「何時に始まりますか」(？) does the club start?",
+    "answer": "What time",
+    "dummies": [
+      "How often",
+      "How many",
+      "How long"
+    ],
+    "note": "何時かをたずねるときはwhat time。回数・頻度・長さをたずねる表現と区別する。",
+    "learning_point": "what_time_question",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「何時に出ますか」(？) does the bus leave?",
+        "answer": "What time",
+        "dummies": [
+          "How often",
+          "How many",
+          "How long"
+        ],
+        "note": "何時かをたずねるときはwhat time。回数・頻度・長さをたずねる表現と区別する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_progressive_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "現在進行形の否定文。She (？) cooking now.",
+    "answer": "isn't",
+    "dummies": [
+      "does not",
+      "do not",
+      "was not"
+    ],
+    "note": "現在進行形の否定はam・is・areの後にnotを置く。doやdoesで否定しない。",
+    "learning_point": "progressive_negative",
+    "content_batch": "english-textbook-grammar-2",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "現在進行形の否定文。They (？) playing now.",
+        "answer": "aren't",
+        "dummies": [
+          "does not",
+          "do not",
+          "were not"
+        ],
+        "note": "現在進行形の否定はam・is・areの後にnotを置く。doやdoesで否定しない。"
+      }
+    ]
   }
 ]

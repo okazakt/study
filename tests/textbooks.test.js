@@ -11,13 +11,13 @@ const settings=()=>normalizeTextbookSettings({version:1,usageYear:2026,series:'o
 test('2026 metadata distinguishes usage year, 2025 edition and six series across 18 catalog volumes',()=>{
  assert.equal(data.usageYear,2026);assert.equal(data.editionYear,2025);assert.equal(data.books.length,18);assert.equal(availableTextbookSeries(data).length,6);
  for(const b of data.books){assert.equal(b.bookNumber.slice(-2),`${b.year+6}2`);assert.equal(b.usageYear,2026);assert.equal(b.editionYear,2025);}
- assert.deepEqual(availableTextbookSeries(data).filter(s=>s.available).map(s=>s.id),['one-world','here-we-go']);
+ assert.deepEqual(availableTextbookSeries(data).filter(s=>s.available).map(s=>s.id),['one-world','here-we-go','blue-sky']);
  for(const s of data.sources){assert.ok(/^https:\/\//.test(s.url));assert.ok(/^[a-f0-9]{64}$/.test(s.sha256));}
 });
 test('every selectable mapping resolves to reviewed lexical or grammar evidence without inventing pages',()=>{
  for(const b of data.books){const ids=new Set();let end=0;
   for(const u of b.units){assert.ok(!ids.has(u.id));ids.add(u.id);if(b.series==='one-world'){assert.ok(u.pageStart>end);end=u.pageEnd;}else{assert.equal(u.pageStart,null);assert.equal(u.pageEnd,null);}
-   for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');if(b.series==='one-world'){assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.ok(['exact_normalized_sense','reviewed_equivalent_sense'].includes(row.evidence.method));assert.equal(row.evidence.source,'ow.xlsx');}else{assert.equal(item.field,'英文法');assert.equal(row.page,null);assert.equal(row.evidence.method,'reviewed_grammar_topic');assert.equal(row.evidence.source,'hwg.xlsx');}assert.ok(row.evidence.row>=8);}
+   for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');if(b.series==='one-world'){assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.ok(['exact_normalized_sense','reviewed_equivalent_sense'].includes(row.evidence.method));assert.equal(row.evidence.source,'ow.xlsx');assert.ok(row.evidence.row>=8);}else{assert.equal(item.field,'英文法');assert.equal(row.page,null);assert.equal(row.evidence.method,'reviewed_grammar_topic');if(b.series==='here-we-go'){assert.equal(row.evidence.source,'hwg.xlsx');assert.ok(row.evidence.row>=8);}else{assert.equal(row.evidence.source,`blue-units${b.year}.pdf`);assert.ok([1,2].includes(row.evidence.pdfPage));assert.equal(row.evidence.section,u.label);}}}
   }
  }
  const ow=report.oneWorld;assert.equal(ow.totalEntries,2778);assert.equal(ow.senseConfirmed,1067);assert.equal(ow.exactSenseConfirmed,730);assert.equal(ow.reviewedSenseConfirmed,337);assert.equal(ow.reviewedHeld,15);assert.equal(ow.senseConfirmed+ow.senseReview+ow.headwordUnmatched,ow.totalEntries);
@@ -100,6 +100,35 @@ test('grammar review pins all 99 correspondence decisions to the same source and
 });
 test('twelve missing grammar points provide 24 authored contexts with shared histories and unique choices',()=>{
  const added=items.filter(q=>q.content_batch==='english-textbook-grammar-1');assert.equal(added.length,12);
+ for(const item of added){const variants=choicePresentations(item);assert.equal(variants.length,2);assert.notEqual(variants[0].prompt,variants[1].prompt);
+  for(const p of variants){assert.equal(new Set([p.answer,...p.dummies]).size,4);assert.ok([p.answer,...p.dummies].every(s=>[...s].length<=30));assert.ok([...p.prompt+item.task+p.answer+p.dummies.join('')].length<=200);}
+  assert.equal(questionKey(makeChoiceQuestion(item,()=>0)),questionKey(makeChoiceQuestion(item,()=>.99)));
+ }
+});
+
+test('BLUE SKY covers 24 grammar unit selectors with 125 stable points and no vocabulary or fabricated pages',()=>{
+ const s=normalizeTextbookSettings({version:1,usageYear:2026,series:'blue-sky',unitsByCourse:{}},data),books=textbookBooks(data,s,'中学:英語:exam');
+ assert.deepEqual(books.map(b=>b.units.length),[10,8,6]);assert.deepEqual(books.map(b=>b.units.reduce((n,u)=>n+u.items.length,0)),[47,49,29]);
+ const all=selectTextbookQuestions(items,data,s,{id:'中学:英語:exam'});assert.equal(all.length,125);assert.equal(new Set(all.map(q=>q.id)).size,125);assert.ok(all.every(q=>q.field==='英文法'&&q.textbook.page===null));
+ for(const type of ['word_en_ja','phrase_ja_en','reading'])assert.equal(selectTextbookQuestions(items,data,s,{id:'中学:英語:1',practiceType:type}).length,0);
+ s.unitsByCourse['中学:英語:1']=['blue1-unit-10'];const selected=selectTextbookQuestions(items,data,s,{id:'中学:英語:1',practiceType:'grammar'});assert.equal(selected.length,6);assert.ok(selected.every(q=>q.textbook.unitId==='blue1-unit-10'));
+ s.unitsByCourse['中学:英語:1']=[];assert.equal(selectTextbookQuestions(items,data,s,{id:'中学:英語:1'}).length,0);
+ assert.equal(report.blueSky.mappedMaterials,125);assert.equal(report.blueSky.playableUnits,24);
+ assert.ok(!all.some(q=>q.id==='jr_en_textbook_grammar_progressive_negative')); // The source does not explicitly assign this form to these units.
+});
+test('BLUE SKY evidence pins each source PDF and authored point without treating PDF pages as textbook pages',()=>{
+ const ledger=read('textbook-data/blue-sky-grammar-reviewed.json'),sha=s=>createHash('sha256').update(s).digest('hex');
+ const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
+ assert.equal(data.blueGrammarReviewLedger.sha256,sha(readFileSync(new URL('../textbook-data/blue-sky-grammar-reviewed.json',import.meta.url))));
+ for(const [name,hash] of Object.entries(ledger.sources))assert.equal(data.sources.find(s=>s.id===name).sha256,hash);
+ for(const u of ledger.units){const unit=data.books.find(b=>b.series==='blue-sky'&&b.year===u.year).units.find(v=>v.id===`blue${u.year}-unit-${u.unitNumber}`);assert.equal(unit.items.length,u.items.length);
+  for(const entry of u.items){assert.equal(entry.materialSha256,sha(JSON.stringify(stable(by.get(entry.sourceId)))));const row=unit.items.find(r=>r.sourceId===entry.sourceId);assert.equal(row.page,null);assert.equal(row.evidence.source,u.source);assert.equal(row.evidence.pdfPage,u.pdfPage);}
+ }
+ const reused=by.get('jr_english_core_give'),blue=selectTextbookQuestions(items,data,normalizeTextbookSettings({version:1,usageYear:2026,series:'blue-sky'},data),{id:'中学:英語:1'}).find(q=>q.id===reused.id);assert.equal(blue.grade,'中1');assert.notEqual(reused.grade,blue.grade);
+ const q=makeQuestionQueue([blue],()=>.5)[0],common=makeQuestionQueue([reused],()=>.5)[0];assert.equal(questionKey(q),questionKey(common));
+});
+test('eight grammar gap points have sixteen authored contexts, unique answers and shared directional history keys',()=>{
+ const added=items.filter(q=>q.content_batch==='english-textbook-grammar-2');assert.equal(added.length,8);
  for(const item of added){const variants=choicePresentations(item);assert.equal(variants.length,2);assert.notEqual(variants[0].prompt,variants[1].prompt);
   for(const p of variants){assert.equal(new Set([p.answer,...p.dummies]).size,4);assert.ok([p.answer,...p.dummies].every(s=>[...s].length<=30));assert.ok([...p.prompt+item.task+p.answer+p.dummies.join('')].length<=200);}
   assert.equal(questionKey(makeChoiceQuestion(item,()=>0)),questionKey(makeChoiceQuestion(item,()=>.99)));

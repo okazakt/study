@@ -1,0 +1,728 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-01",
+  "sources": {
+    "blue-units1.pdf": "36d856ccfc4e6ac6b585bc208dbdb60e1d7f99fea0a194a238bcb7255ef68523",
+    "blue-units2.pdf": "cf87621bdcbbfad82e3236115d098fe92d1aa4a3d68fce9c8a8891f2b40b5c9f",
+    "blue-units3.pdf": "7a4c253325b7a4540c704f4015085af2a3cfd9c01ef0f74f2f3c00a9e373f595"
+  },
+  "scope": "公式単元一覧の文法項目と独自問題の対応。PDFのページ番号は出典位置であり教科書ページではない。語彙・読解・本文や単元内の全用法の充足を意味しない。",
+  "units": [
+    {
+      "year": 1,
+      "unitNumber": 1,
+      "source": "blue-units1.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_be",
+          "materialSha256": "9f9d86d13b7504d697ae2fcb7b55d5ab31519a5b7d2d7f5f23a1749e961048f0"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_do_negative",
+          "materialSha256": "3080ef092ba491c3d41a925867a0f0e8acd8884b7077a8c980d998b5601ecee9"
+        },
+        {
+          "sourceId": "jr_english_core_can",
+          "materialSha256": "57d45c36b776753839b50b919e845b53446efc47121874023ae129f6512ae92c"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_can_negative",
+          "materialSha256": "80662d078ac58f31e7f2300ef0ac0af87b398062450240332985b2d79352e003"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 2,
+      "source": "blue-units1.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_be_short_answer",
+          "materialSha256": "199d65302a101b3ac75979c6225356d3f3ba9010f2c98114cbf0a3b3d18fcf54"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_can_question",
+          "materialSha256": "dd15fa12fb30737522009946d547df6ab8430f69b420b521f0f1b1881b2bd57d"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 3,
+      "source": "blue-units1.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_how_many",
+          "materialSha256": "94a11c60d8d88b90eb0247a205ea89e60085cdbbd43dd93311381f6c3c610ff6"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_plural_boxes",
+          "materialSha256": "1c3a1357e2658aa615f83a7679a48ac033a56e01d1d642f09b2db77595137d0f"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_plural_children",
+          "materialSha256": "0a2176567d74a7ebdb68d3d74e197d11d7f1a79fced7f8b390c5734fdcc66e19"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_what_do_object",
+          "materialSha256": "ef7f2d5b052179d9f30f2ef165759eb2059cd477f8179b02031107641b57ee46"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_what_noun_question",
+          "materialSha256": "42e5934aeb1bab9895bc1dd67bbdeca2a03b4333c54bbb11229f9847008bc2f2"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 4,
+      "source": "blue-units1.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_be_question",
+          "materialSha256": "9f9aede8a7e603c08e998d017221367dbf46e8604182fa5467679a4122f2cb94"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_be_negative",
+          "materialSha256": "cb92511a485d61a92379b8b21e227bda32d0b67e214690ca57958e7538323b78"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_who_is_person",
+          "materialSha256": "808dff51e0576a513ae4a7eb362ea6dfcb50214ada73d6eabaf0f457a3080755"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 5,
+      "source": "blue-units1.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_where",
+          "materialSha256": "f970eacd6a52716b18c523406b9379247d0a62963db74b7f55b7e2357c3bec06"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_when_event",
+          "materialSha256": "06b71d5beb19bb4c714dc69d94a1202a23e3b99e5516cb1dcfcdf5230f5d4fad"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_what_time_question",
+          "materialSha256": "46c1a7b01d8d11b3588c92ea78ec61a0894c82abe2b045f1e0d1c77bea826ae1"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 6,
+      "source": "blue-units1.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_third_person",
+          "materialSha256": "86ac81ea10cf5bd08a0f0c036a1f62664631b3490747f8cdd80264fd6fd00ef0"
+        },
+        {
+          "sourceId": "jr_english_core_does",
+          "materialSha256": "afd07de48bb046a3e09f6dc43a609c68cd674c1730b29487ea3cac47a23ac76a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_does_negative",
+          "materialSha256": "4527800fea83206dd21ddbe850c9b9c675853ed4513bfe4d82a0c3bb7e1b4676"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_third_person_ies",
+          "materialSha256": "68dc210ea5d415bbb812d5500a0ec9c33d40b7903ea6bc5caf7037b0f64ac7bf"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_third_person_has",
+          "materialSha256": "5eb71de9fcee82c1d8a7e07e33711ef493c2ec7c9bc4ffaf81d2d3ee96e02549"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_es_watches",
+          "materialSha256": "59f774410b9bb20451c788a30160994c5928a1829f2d4ae57c90bbee6a14100e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 7,
+      "source": "blue-units1.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_english_core_progressive",
+          "materialSha256": "eada6eb152bf1a141a176814f650eb7bfc7d9dfd7523d5e4ea83844e216d6991"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_progressive_now",
+          "materialSha256": "4611e80d7bae7023050ad322deba314ad4015b8bdeb2e5b739a2b302d32e7ab0"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_progressive_question",
+          "materialSha256": "53439aaadbe674f535ba518d1fe7ef804bb169a2ff57051dfa0b61379f73f8ae"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_look_adjective",
+          "materialSha256": "19b30c20779113e0e8eb5b49610aa440a9abf4f63cc33a44d7004e53acdbd72d"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_ing_write",
+          "materialSha256": "b570c6cd8396fefed1387f9faf89a7951236930733f438870fa9a074cdadb774"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_ing_run",
+          "materialSha256": "338a06e5714126bb90c9b237b7f4ae5596097c3e574cfde9e8b9e24dc7852be3"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 8,
+      "source": "blue-units1.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_en_textbook_grammar_like_gerund",
+          "materialSha256": "6e24e525e9e61b2f993dd0c437db98767dcfed5186365319aacb283c2e860ad5"
+        },
+        {
+          "sourceId": "jr_english_core_gerund",
+          "materialSha256": "551c81a784108770fb0b7fa259ca5f615523fff1514c9b06480d3b057527e576"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_noun_infinitive",
+          "materialSha256": "18bade935d8eead6cd89a7463278da79fd887860f52b1042c555822469d09661"
+        },
+        {
+          "sourceId": "jr_english_core_infinitive",
+          "materialSha256": "7bb26f634335b889bdb56229614731aa0f13889a5c5462ab1e81a9e7f06a9e5e"
+        },
+        {
+          "sourceId": "jr_en_curriculum_which_question",
+          "materialSha256": "090f769da25a40fc778d1bf3e3095aedd8c3cd8f7cbd2fc17da0126d61bdb460"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 9,
+      "source": "blue-units1.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_english_core_past",
+          "materialSha256": "4683f148e87607e16cac1543a9842b79f301728130969bfa5bdd22df16aa4366"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_past_went",
+          "materialSha256": "812fddea16d6c5ffce9c2ad43bf1aff42cc89503695b27c48f959cf902330121"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_past_bought",
+          "materialSha256": "b2871a721cd5879412adc20cbda2bd28cb6bf399a3bd56bc0d401986d908bc1f"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_past_question",
+          "materialSha256": "93557f678db28a387e9440b7cd17c7ce09e0e6292ceefd06733c3747da434fa8"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_was",
+          "materialSha256": "e4faf7127ab09f851b5f685387c076a4a6b5eb7da761afe39d926b9ae6f4bf5f"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_past_be_question",
+          "materialSha256": "da9e6a897335d1128af3a5d6d009efd8a52f4f89edc15b1686a94b30117228be"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_past_be_negative",
+          "materialSha256": "70690fadf32d139972b22abe67aa3228cb6fba813ac94f349e9150e408a5da27"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitNumber": 10,
+      "source": "blue-units1.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_past_progressive",
+          "materialSha256": "50773db0d632cdc97a72126fbfa35dfd59bd7c759d6dd32eefff9a3af883c1dc"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_when_progressive",
+          "materialSha256": "56a2661402d6728bbdb716381d665365524990d79945ad351f1b51d2cbfa594d"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_past_progressive_question",
+          "materialSha256": "b34c2c87fbef71a8c6cbd0256c3b45b3fd29add4ac8d5bc301be1b8ae63b2b2d"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_when_past_clause",
+          "materialSha256": "51a46e1c2f7468a899b4f30231b479233f63991292695130fdbb04994cdeda62"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_give_order",
+          "materialSha256": "10c497bcd708c06b43e7041eb3d9a2ce4fedb93adf1f2e0e85b1018c4d9e7308"
+        },
+        {
+          "sourceId": "jr_english_core_give",
+          "materialSha256": "c96d810663a6d8a2c0a545c2cb0975935524ec0e39cb198fbf25d3e51f8e1bfd"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 1,
+      "source": "blue-units2.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_will",
+          "materialSha256": "545ca30940bbf2cc80e8916e8e185b148ebccf06f4bb4579972b76c0bd2d059f"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_will_original",
+          "materialSha256": "97fa549d2fac187e2905b19c6a9c4ff12303dcb5c1764f00ed1eebf4cddf9a33"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_will_negative",
+          "materialSha256": "f4f7c09733eaa737a6bae25a7241c2bd621aca841b1dff11893e581bf660c6e4"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_going_to",
+          "materialSha256": "ea0c24e7ff109b0e21eb22274285f6308d8fc2a135fa95d79ff1f6144d185ba5"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_that_clause",
+          "materialSha256": "3d6408bd8e3316821f7fbf483d2aba6a44f96036eee571ad353a802ec2c416cb"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 2,
+      "source": "blue-units2.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_infinitive_purpose",
+          "materialSha256": "8c28b3266602af7e0b79db001e77d001c608fc4ec3d31d45beae9b190eb8a0c7"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_adjective_infinitive",
+          "materialSha256": "602a2553e2912bfbc064a96e16443f804681e2621e1863380427b043e6e19a6a"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_something_to",
+          "materialSha256": "e8d2c93abb521717b1ec4e5fdcfd3b60ccb3af4e6c5cc16b559f465eb22818c2"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_it_to",
+          "materialSha256": "adb80623796a22a3aa30ca46c250e1e59b029a4726634ab77d1e78cfd6dcabb1"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_infinitive_for_person",
+          "materialSha256": "4be35a35be9ae9b08ed14481389b533df065101addc960dc100255e806517d8d"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 3,
+      "source": "blue-units2.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_must_not",
+          "materialSha256": "472845744c87512c1ae2eed3af1c2bc7da1f4d64d5ab6a12439ef42a11b3e7be"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_must_affirmative",
+          "materialSha256": "5b1b36a99c50db2d53c02e1684c996b39d36c17fbac49396fba4da6636db066c"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_dont_have_to",
+          "materialSha256": "2f1ac1733ae5c60cd0415e204d0ac4c7a0ead6598a08050b063e6e8c85439542"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_have_to_present",
+          "materialSha256": "c6b2da5095393ca8c8ffb1a213fbb1d57f686a7f24048d24edd116d5660ebea2"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_should",
+          "materialSha256": "67a51e7dbc3429a1c8589350f5fea98ad60677f62942c03df83120e2cb091782"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_should_negative_form",
+          "materialSha256": "c9ea790434b2032ba6b009e408703a2179de76bac4bbcf45340a823f531de963"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 4,
+      "source": "blue-units2.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_there_is",
+          "materialSha256": "a49f19fa05f910d3744248ebc8458b7709f5d595e65c8e9f5dfcb97c3f1a647e"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_there_are",
+          "materialSha256": "ed6eae4db3ed6bd2ff9bd1f2ea22cd0478e114926c73ce06fe59a0cffd494ded"
+        },
+        {
+          "sourceId": "jr_english_core_question_infinitive",
+          "materialSha256": "fefe34bc2a6791bae2a95bc78eedf616a99cc39ac8e7b1eb987078a60cba2412"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_how_to_method",
+          "materialSha256": "00affca02c3bf1d853aa16fb8c0e1afe070e7e4e33885db7f06ccd4bba8a5457"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_question_word_to",
+          "materialSha256": "f5c92e1217744260765867200899dad99dbd7e35e15222c2f9c3e96b6fbf3701"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_when_to",
+          "materialSha256": "727393854ae5de33af296a0c068fb08860a614d40e35ddbe305d054e022856f3"
+        },
+        {
+          "sourceId": "jr_en_curriculum_svoo_how",
+          "materialSha256": "045616e76d9245ca10d6cff001db3c304f52112a0be6cef5eb9bae9a7800024e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 5,
+      "source": "blue-units2.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_if_condition",
+          "materialSha256": "3e6a041943692a961a68461861e26670f730790d6ac33c7302865023336aecc1"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_if_future_present",
+          "materialSha256": "682a704f28ed62e8f4bb1fe63ff6500b0f4843fcf9ff493b05fca90e7edc22b7"
+        },
+        {
+          "sourceId": "jr_english_core_because",
+          "materialSha256": "48c611c360a919a59b073c196e86d90e0c030eaae1287d14fa073fbe83ce71a9"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_because_not_so",
+          "materialSha256": "fbf6738ed2fbcd9e3f87d8caea46f2ad10a4281e2a4c61199653e10a7d484e55"
+        },
+        {
+          "sourceId": "jr_en_curriculum_be_adj_that",
+          "materialSha256": "34e6883ea3deddf355d9b58fea63fa18ec07fc51619e921852213d0adab218ee"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 6,
+      "source": "blue-units2.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_en_curriculum_svoc_noun",
+          "materialSha256": "8bd25ab74abebfaa25dd33ae802fc3ce54450234f0a71338b80188418bfcfeb2"
+        },
+        {
+          "sourceId": "jr_english_core_make_object",
+          "materialSha256": "07a7572f1dc3fa5e4e5d310fe52abbc8a708f28b97f3ef922d1da7350450f53f"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_want_person_to",
+          "materialSha256": "a3040619e25a0a1dc5dc7ec593b747cd19b83721219c5bee952248dbd5edb8b6"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_tell_to",
+          "materialSha256": "578754b3376e8c4928967a95ea06b5e7fe09e9770c85ec6294516af3570be97a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_ask_person_to",
+          "materialSha256": "ac6c74b9e788dad7aec59a1152f1729add626e631ebe48a0257cdf40a745ea07"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 7,
+      "source": "blue-units2.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_english_core_comparative",
+          "materialSha256": "98e43295264b8a9f0cbb0454f028fa1274133057d8e72b84a4f169eca33ca02a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_more_comparative",
+          "materialSha256": "0ffe2a7bc9f2862fe1e47cdb68d65ad33e8f5c35cefb5e12b97d633917eaa33a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_superlative",
+          "materialSha256": "bb0157050e21a2a10629a2f41a9cbec32c7161d084aa2883123df9fd34b73bf0"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_superlative_most",
+          "materialSha256": "0ae7e714f6b04788b5c5b1610ee66661bacf184de30f2939ba981b6fc032fdad"
+        },
+        {
+          "sourceId": "jr_english_core_as_comparison",
+          "materialSha256": "16983640c49206d433703b3020ed256834e7d3e60d82d4a261661a095daaff5b"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_comparative_as",
+          "materialSha256": "36b8ff3ea1be022457e20229d34b59c672eba628640d27b6a498db353de0fed5"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_comparative_than",
+          "materialSha256": "5e8b43c83d5267cb59d9612270594bdd655fd1043f616ab7a97b589767f5f488"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_superlative_in",
+          "materialSha256": "c9e49849ac61121bad7991b2602d2d23bfb01d8bbfb74c2befbb54262eecd84d"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitNumber": 8,
+      "source": "blue-units2.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_english_core_passive",
+          "materialSha256": "7f98db9b39f945ba11abdfddabe47b206135b0e4bd6a0cc664f860b16ed166a5"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_question",
+          "materialSha256": "7e43cb251c2280d83debaf475b6e3523a3bcfb048b56c5c5a8e5914f78083f7e"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_passive_past",
+          "materialSha256": "12f7313f1c6699153d29f59389a56299603b337bf87fc3fcdd471c49768d2cdf"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_passive_by",
+          "materialSha256": "706bc08c476d5bd48290678d51986c08437475ed7ef7dfb5df8e25e769634911"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_by_pronoun",
+          "materialSha256": "c9a465d619a5b3b43a7074de03d50882487f83c9c8dfee89da8b667664909add"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_modal",
+          "materialSha256": "17ad05213d872266653227d8009a866165b6a0a0ea4d1f3f4f6110f727e28985"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_future",
+          "materialSha256": "59868a5132e9f0d5e8a8ff9df10ef7f5fe1424392416962ed5ef0a11453dec83"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_passive_negative",
+          "materialSha256": "b57faec6d58e0ed7c249ba600cf21822027e52367c275f3237ff4c3c13cec5c2"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitNumber": 1,
+      "source": "blue-units3.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_perfect",
+          "materialSha256": "f44184c326898caa202c611a14d3cf641f100e2f08caa6b9e8c263f23d5c3c08"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_been",
+          "materialSha256": "58ee2e45dfa7698b787158ad909258da3b9fda28b8761f1c50c66df7000ebe25"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_perfect_ever",
+          "materialSha256": "361341e1868e82b36ef702954bae3feb85a1e200f5fdd4dc8a939e164a2d6c06"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_already",
+          "materialSha256": "cc2325adc9820d2d81116fac5306fde3a4cea69c45ccadf874f28cf33031d58b"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_perfect_yet",
+          "materialSha256": "0fbd0979448e0790788808a8f1904d4c602421668a86fffa6a68bdd2b56e0523"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_perfect_negative",
+          "materialSha256": "30b884f7263ee77062244d6180eb07924bdc20725a63f92b69d6fa9ec753ea92"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitNumber": 2,
+      "source": "blue-units3.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_since",
+          "materialSha256": "7cf14ae2d60e90774fe776cb0d2f4613aa466836370ed9b937bd783704a4bfdd"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_perfect_for",
+          "materialSha256": "be4e895ccf9118067a7117148c126a0f4202f8b86e9cd77e0f7e843dff22acb8"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_how_long",
+          "materialSha256": "dff4d9be74ac1f6bdf85c8687bc9803cbd9325ea3fccc3c1b25be672e4a09dd0"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_continuous",
+          "materialSha256": "f5bb4c5b9fe9c1980f4cb990a2343ee835462f273da8d59b053a813e37376f8c"
+        },
+        {
+          "sourceId": "jr_english_core_perfect_progressive",
+          "materialSha256": "52526bff709b6fe96ec63d59034192fb3023bef3c8c67e2a7a98a7406041455e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitNumber": 3,
+      "source": "blue-units3.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_en_curriculum_svoo_that",
+          "materialSha256": "f0b97388127c1f78378eaf9d2ee98d45fcd5765b2094d847b023e69a441211d0"
+        },
+        {
+          "sourceId": "jr_english_core_indirect",
+          "materialSha256": "eb583907cddff7a08c582298ec7bbaffbebcf8a8d9efc70bf665ff0338cde35a"
+        },
+        {
+          "sourceId": "jr_english_core_indirect_when",
+          "materialSha256": "fb2dee8a8edef0d170dd4c158ad5667d80cb7c06baf6b1157433df3224010d40"
+        },
+        {
+          "sourceId": "jr_en_curriculum_svoo_wh",
+          "materialSha256": "56aa19bb85a857329c735c17cb4814b0b9fee5fc24242c76c9b98c3e096cfc18"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitNumber": 4,
+      "source": "blue-units3.pdf",
+      "pdfPage": 1,
+      "items": [
+        {
+          "sourceId": "jr_english_core_participle",
+          "materialSha256": "83d5fb798ebcbe388505afbe85c079f14e1933ba2bbffceb74d1d547bc0989c4"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_past_participle_modifier",
+          "materialSha256": "1776a797a7cca9e7f2ab7ee79a430370dbfafc3f6fa9638d9b62eee1aa13cd72"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_relative_omit",
+          "materialSha256": "d5a83acc37bc5175e5a747b5552824bdae4f7fc5ed3fa92d7966582a8452cf0e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitNumber": 5,
+      "source": "blue-units3.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_english_core_relative_subject",
+          "materialSha256": "e24e3909c8150aba74704a1a0786c00e58dc094b4d636a99becf9e42dcf671cf"
+        },
+        {
+          "sourceId": "jr_en_curriculum_relative_which_subject",
+          "materialSha256": "fa9c9320d530ad4c95fa7ccfc6dfe1427cc5690ee8397575f3f449a097045834"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_relative_that_subject",
+          "materialSha256": "9eb25b792e6c983f3f5a56bbe52331191af82fd9c3236767e050619cb937f850"
+        },
+        {
+          "sourceId": "jr_english_core_relative_object",
+          "materialSha256": "3d82b8da83313dcf6b15c6559e2048c8f17815a8c0e718943da2dc69d55f1095"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_relative_subject_keep",
+          "materialSha256": "41bd6edf94dfe91a06a7dca6a7e257ec6391d5de5ebcf9927efc910f8440ca35"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitNumber": 6,
+      "source": "blue-units3.pdf",
+      "pdfPage": 2,
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_bare_infinitive",
+          "materialSha256": "4e866ffae6341912f0fd6746179b078bdfd6e19d694ba04675d600c1ad2778a4"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_make_person_verb",
+          "materialSha256": "be6d904ad8726cc21db89d55f17a77bb10c4645755e7ef84a1d4ea19418ad06c"
+        },
+        {
+          "sourceId": "jr_english_core_subjunctive",
+          "materialSha256": "8c419ef25b85db6b3c6592730006594bca032f5ce73e5251d91b01069e02ddea"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_wish_could",
+          "materialSha256": "8bb0582a20131a92d3d820c4489c25f4dcbd6aacd7320dcfffb3ee8487c89eb7"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_would_condition",
+          "materialSha256": "77b14ca66fb0110afb8d7a793b064ec1d18642f14c7948c05a05b37261238733"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_wish_were",
+          "materialSha256": "68c6ed956db18b6e8d82d5bc4352c7772027837ce59e9a6083344bf04fc7506b"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    }
+  ]
+}

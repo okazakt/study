@@ -82,6 +82,10 @@
     "path": "textbook-data/here-we-go-grammar-reviewed.json",
     "sha256": "e85d708be38b76c09eb8222406e82063f8acd8868efd909c4b3ff60b98ffabce"
   },
+  "blueGrammarReviewLedger": {
+    "path": "textbook-data/blue-sky-grammar-reviewed.json",
+    "sha256": "d367f5e4d7e2ba4d9ffbf848be4e729737eec3a87293501d658e7f8a1b07edfc"
+  },
   "books": [
     {
       "id": "new-horizon-1-2026",
@@ -13104,8 +13108,599 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "061-72",
-      "status": "curriculum_only",
-      "units": []
+      "status": "partial_grammar",
+      "units": [
+        {
+          "id": "blue1-unit-1",
+          "label": "Unit 1",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_be",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_do_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_can",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-2",
+          "label": "Unit 2",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_be_short_answer",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 2,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-3",
+          "label": "Unit 3",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_how_many",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_plural_boxes",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_plural_children",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_what_do_object",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_what_noun_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-4",
+          "label": "Unit 4",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_be_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_be_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_who_is_person",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-5",
+          "label": "Unit 5",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_where",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_when_event",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_what_time_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-6",
+          "label": "Unit 6",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_third_person",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_does",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_does_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_third_person_ies",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_third_person_has",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_es_watches",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 1,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-7",
+          "label": "Unit 7",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_progressive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_progressive_now",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_progressive_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_look_adjective",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_ing_write",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_ing_run",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-8",
+          "label": "Unit 8",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_textbook_grammar_like_gerund",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_gerund",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_noun_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_which_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-9",
+          "label": "Unit 9",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_past",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_went",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_bought",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_was",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_be_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_be_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 9",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 7,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue1-unit-10",
+          "label": "Unit 10",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units1.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_past_progressive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 10",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_when_progressive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 10",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_progressive_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 10",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_when_past_clause",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 10",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_give_order",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 10",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_give",
+              "page": null,
+              "evidence": {
+                "source": "blue-units1.pdf",
+                "pdfPage": 2,
+                "section": "Unit 10",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        }
+      ]
     },
     {
       "id": "blue-sky-2-2026",
@@ -13118,8 +13713,595 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "061-82",
-      "status": "curriculum_only",
-      "units": []
+      "status": "partial_grammar",
+      "units": [
+        {
+          "id": "blue2-unit-1",
+          "label": "Unit 1",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_will",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_will_original",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_will_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_going_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_that_clause",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-2",
+          "label": "Unit 2",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_infinitive_purpose",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_adjective_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_something_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_it_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_infinitive_for_person",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-3",
+          "label": "Unit 3",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_must_not",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_must_affirmative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_dont_have_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_have_to_present",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_should",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_should_negative_form",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-4",
+          "label": "Unit 4",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_there_is",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_there_are",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_question_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_how_to_method",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_question_word_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_when_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_how",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 7,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-5",
+          "label": "Unit 5",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_if_condition",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_if_future_present",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_because",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_because_not_so",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_be_adj_that",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 1,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-6",
+          "label": "Unit 6",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_curriculum_svoc_noun",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_make_object",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_want_person_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_tell_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_ask_person_to",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-7",
+          "label": "Unit 7",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_comparative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_more_comparative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_superlative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_superlative_most",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_as_comparison",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_comparative_as",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_comparative_than",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_superlative_in",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 7",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 8,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue2-unit-8",
+          "label": "Unit 8",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units2.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_passive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_question",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_passive_past",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_passive_by",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_by_pronoun",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_modal",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_future",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_passive_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units2.pdf",
+                "pdfPage": 2,
+                "section": "Unit 8",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 8,
+          "unresolvedEntries": 0
+        }
+      ]
     },
     {
       "id": "blue-sky-3-2026",
@@ -13132,8 +14314,371 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "061-92",
-      "status": "curriculum_only",
-      "units": []
+      "status": "partial_grammar",
+      "units": [
+        {
+          "id": "blue3-unit-1",
+          "label": "Unit 1",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units3.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_perfect",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_been",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_ever",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_already",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_yet",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_perfect_negative",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 1",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue3-unit-2",
+          "label": "Unit 2",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units3.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_since",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_for",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_how_long",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_continuous",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_perfect_progressive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 2",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue3-unit-3",
+          "label": "Unit 3",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units3.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_curriculum_svoo_that",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_indirect",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_indirect_when",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_wh",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 3",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue3-unit-4",
+          "label": "Unit 4",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units3.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_participle",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_participle_modifier",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_relative_omit",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 1,
+                "section": "Unit 4",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue3-unit-5",
+          "label": "Unit 5",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units3.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_relative_subject",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_relative_which_subject",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_relative_that_subject",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_relative_object",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_relative_subject_keep",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 5",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "blue3-unit-6",
+          "label": "Unit 6",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "blue-units3.pdf",
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_bare_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_make_person_verb",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_subjunctive",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_wish_could",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_would_condition",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_wish_were",
+              "page": null,
+              "evidence": {
+                "source": "blue-units3.pdf",
+                "pdfPage": 2,
+                "section": "Unit 6",
+                "method": "reviewed_grammar_topic"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        }
+      ]
     }
   ],
   "caveats": [

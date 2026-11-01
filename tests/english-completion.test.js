@@ -12,12 +12,12 @@ test('audited baseline vocabulary has 96 new stable headwords and spelling recon
  assert.equal(words.length,96);assert.equal(makeQuestionQueue(words,()=>.5).length,344);
  const lexical=all.filter(q=>q.english);assert.equal(new Set(lexical.map(q=>q.english.toLowerCase())).size,lexical.length);assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  for(const item of words){let prefix='';for(const q of makeSpellingQuestions(item,()=>.5)){for(const c of q.choices){assert.equal(c.length,q.answer.length);assert.equal(item.english.slice(prefix.length).startsWith(c),c===q.answer,item.english+':'+c);}prefix+=q.answer;}assert.equal(prefix,item.english);}
- assert.equal(all.filter(q=>q.field==='英単語').length,2382);assert.equal(all.length,2922);assert.equal(makeQuestionQueue(all,()=>.5).length,10757);
+ assert.equal(all.filter(q=>q.field==='英単語').length,2382);assert.equal(all.length,2930);assert.equal(makeQuestionQueue(all,()=>.5).length,10765);
 });
 test('32 gap points and all 48 reading points have distinct authored contexts with shared identities',()=>{
  assert.equal(grammar.length,32);const reading=all.filter(q=>q.field==='英文読解');assert.equal(reading.length,48);assert.ok(reading.every(q=>q.presentations.length===1));
  for(const item of [...grammar,...reading]){const patterns=choicePresentations(item);assert.equal(patterns.length,2);assert.notEqual(patterns[0].prompt,patterns[1].prompt);const a=makeChoiceQuestion(item,()=>0),b=makeChoiceQuestion(item,()=>.99);assert.equal(questionKey(a),questionKey(b));assert.notEqual(a.variant.signature,b.variant.signature);}
- const varied=all.filter(q=>q.presentations?.length);assert.equal(varied.length,178);assert.equal(varied.flatMap(choicePresentations).length,356);
+ const varied=all.filter(q=>q.presentations?.length);assert.equal(varied.length,186);assert.equal(varied.flatMap(choicePresentations).length,372);
 });
 test('every authored English presentation and all new vocabulary choices fit the content budget',()=>{
  for(const item of all.filter(q=>q.kind==='choice'))for(const p of choicePresentations(item)){assert.equal(new Set([p.answer,...p.dummies]).size,4,item.id);assert.ok([p.answer,...p.dummies].every(s=>s.length&&[...s].length<=30),item.id);assert.ok([...p.prompt+item.task+p.answer+p.dummies.join('')].length<=200,item.id);}

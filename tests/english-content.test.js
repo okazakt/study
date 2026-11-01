@@ -13,7 +13,7 @@ test('extended English vocabulary and phrases have stable distinct identities wi
  assert.equal(extended.length,645);assert.equal(extended.filter(q=>q.field==='英単語').length,581);assert.equal(extended.filter(q=>q.field==='熟語').length,64);
  assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  const words=english.filter(q=>q.english);assert.equal(new Set(words.map(q=>q.english.toLowerCase())).size,words.length);
- assert.equal(english.length,2922);assert.equal(makeQuestionQueue(english,()=>.5).length,10757);
+ assert.equal(english.length,2930);assert.equal(makeQuestionQueue(english,()=>.5).length,10765);
  assert.ok(extended.every(q=>q.school_level==='中学'&&q.subject==='英語'&&['中2','中3'].includes(q.grade)));
 });
 test('each new generated question has four unique choices and stays inside its display budget',()=>{
