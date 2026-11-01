@@ -1,6 +1,6 @@
 # Study Beat
 
-中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の1,100素材（逆方向・段階回答を含め3,052問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.48.0で英語を621素材追加し、英語は711素材・2,464問になりました。受験範囲の網羅・教科書対応は未完了です。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
+中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の1,745素材（逆方向・段階回答を含め5,625問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.49.0で英語を645素材追加し、英語は1,356素材・5,037問になりました。受験範囲の網羅・教科書対応は未完了です。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
 
 ```sh
 npm start
@@ -113,3 +113,5 @@ v0.47.0から、分配法則・方程式の変形・通分・因数分解など1
 ### 英語の拡充
 
 単語・熟語・英文法・短い読解ポイントを選べます。新しい共通データは `quiz-data/junior_english_core.json`。語彙には小学校の復習も含み、学年分類は暫定です。[英語の進捗と残作業](docs/content/english-progress.md)は `node scripts/english-progress.mjs` で再集計します。英語全体の網羅と教科書別対応は未完了です。
+
+コンテンツ追加時の単体確認は `npm run test:content` を使います。正答候補・綴り・表示量・分類・履歴等を確認し、5分プレイ全体の検証は進行処理を変更する場合に行います。`npm test` は全体進行を含む回帰テストとして別に保持しています。英語の追加データは `quiz-data/junior_english_extended.json` も読み込みます。
