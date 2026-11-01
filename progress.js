@@ -1,3 +1,4 @@
+import { materializeMathItem } from './math-variants.js?v=0.47.0';
 // Local learning history. Practice and music-play records stay distinct.
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
@@ -16,6 +17,7 @@ function eventAttempts(events) {
     row.correct &&= event.correct && !event.wrongBefore;
     row.solved=event.correct;row.wrongCount=Math.max(row.wrongCount+(event.correct?0:1),count(event.wrongBefore)+(event.correct?0:1));
     row.chosen=event.chosen ?? null;row.time=Number.isFinite(event.time)?event.time:null;
+    if(event.variant){row.variant=event.variant;row.presentation=event.presentation;}
     grouped.set(event.key,rows);identities.set(event.key,byId);
   }
   return grouped;
@@ -25,7 +27,8 @@ function recentResult(row, recovered=null){
   const correct=!!source.correct;
   const solved=typeof source.solved==='boolean'?source.solved:correct?true:null;
   const wrongCount=Math.max(count(source.wrongCount),correct?0:1);
-  return {attempt:source.attempt,correct,solved,wrongCount,chosen:source.chosen ?? null,time:Number.isFinite(source.time)?source.time:null,kind:['play','review'].includes(source.kind)?source.kind:null};
+  return {attempt:source.attempt,correct,solved,wrongCount,chosen:source.chosen ?? null,time:Number.isFinite(source.time)?source.time:null,kind:['play','review'].includes(source.kind)?source.kind:null,
+    ...(source.variant?{variant:source.variant,presentation:source.presentation}:{})};
 }
 export function normalizeHistory(raw) {
   if (raw?.version !== 1) return {version:1, questions:{}, events:[]};
@@ -52,12 +55,16 @@ export function recordAnswer(state, q, {correct, chosen, wrongBefore=0, kind='pl
   const key=questionKey(q);
   let old=state.questions[key] || {correct:0,wrong:0,first:0,reviewCorrect:0,reviewWrong:0,answerCount:0,answerCountEstimated:false,recent:[]};
   if(!Number.isSafeInteger(old.answerCount))old=normalizeHistory(state).questions[key];
-  const meta={key,sourceId:q.sourceId || q.id,mode:q.mode,blankIndex:q.blankIndex || 0,school:q.school_level,subject:q.subject,grade:q.grade,label:q.reviewLabel,answer:q.answer};
+  const snapshot=q.variant?{
+    variant:{...q.variant,parameters:{...q.variant.parameters}},
+    presentation:{prompt:q.prompt,choices:[...q.choices],note:q.note}
+  }:{};
+  const meta={key,sourceId:q.sourceId || q.id,mode:q.mode,blankIndex:q.blankIndex || 0,school:q.school_level,subject:q.subject,grade:q.grade,label:q.reviewLabel,answer:q.answer,...snapshot};
   const entry={...old,...meta,lastAt:time};
   const attemptId = attempt || `${session}:${kind}:${time}:${old.correct+old.wrong+old.reviewCorrect+old.reviewWrong}`;
   const previousRecent=old.recent?.length?old.recent:(eventAttempts(state.events).get(key) || []).slice(-3).map(r=>recentResult(r));
   const recent=previousRecent.map(r=>({...r})),previous=recent.at(-1)?.attempt===attemptId?recent.at(-1):null;
-  const result={attempt:attemptId,correct:(previous?.correct ?? true) && !!correct && !wrongBefore,solved:!!correct,wrongCount:Math.max(count(previous?.wrongCount)+(correct?0:1),wrongBefore+(correct?0:1)),chosen:chosen ?? null,time,kind};
+  const result={attempt:attemptId,correct:(previous?.correct ?? true) && !!correct && !wrongBefore,solved:!!correct,wrongCount:Math.max(count(previous?.wrongCount)+(correct?0:1),wrongBefore+(correct?0:1)),chosen:chosen ?? null,time,kind,...snapshot};
   if(previous)recent[recent.length-1]=result;else recent.push(result);
   entry.answerCount=count(old.answerCount)+(previous?0:1);
   entry.recent=recent.slice(-3);
@@ -133,7 +140,7 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
     if(q.continuation && previous && previous[0].sourceId===q.sourceId && previous[0].mode===q.mode)previous.push(q);
     else units.push([q]);
   }
-  const recentSources=[], seen=new Set();
+  const recentSources=[], seen=new Set(), lastVariants=new Map();
   return () => {
     if(!units.length)throw new Error('No question candidates');
     // Session filtering precedes the topic cooldown: a fresh reverse question
@@ -175,7 +182,13 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
     recentSources.push(unit[0].sourceId);if(recentSources.length>3)recentSources.shift();
     // Keep stable identities but shuffle the color positions on every appearance.
     return unit.map(q=>{
-      const choices=[...q.choices];
+      if(q.numeric_generator){
+        const key=questionKey(q),previous=lastVariants.get(key)||index.state.questions[key]?.variant?.signature;
+        q=materializeMathItem(q,random,previous);
+        q={...q,term:q.prompt,reviewLabel:q.prompt};
+        lastVariants.set(key,q.variant.signature);
+      }
+      const choices=q.numeric_generator?[q.answer,...q.dummies]:[...q.choices];
       for(let i=choices.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[choices[i],choices[j]]=[choices[j],choices[i]];}
       return {...q,choices,correct:choices.indexOf(q.answer)};
     });

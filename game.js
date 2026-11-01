@@ -1,3 +1,4 @@
+import { materializeMathItem } from './math-variants.js?v=0.47.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -102,6 +103,7 @@ export function makeQuestionQueue(items, random = Math.random, acceptQuestion = 
 }
 // A learning point has one direction; do not manufacture a reverse term quiz.
 export function makeChoiceQuestion(item, random = Math.random) {
+  item = materializeMathItem(item, random);
   const candidates = [...new Set(item.dummies)].filter(value => value !== item.answer);
   if (candidates.length !== 3) throw new Error(`${item.id}: expected three distinct distractors`);
   const choices = shuffle([item.answer, ...candidates], random);

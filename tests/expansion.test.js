@@ -44,7 +44,7 @@ test('every new answer is unique, short enough and every spelling reconstructs i
 test('procedure points are single-direction questions, including math, without answer-bearing context',()=>{
  const points=added.filter(i=>i.kind==='choice'),queue=makeQuestionQueue(points,()=>.5);
  assert.equal(queue.length,points.length);assert.ok(queue.every(q=>q.mode==='learning_point'&&q.context===''));
- for(const item of points){const q=makeChoiceQuestion(item,()=>.5);assert.equal(q.sourceId,item.id);assert.equal(q.reviewLabel,item.prompt);}
+ for(const item of points){const q=makeChoiceQuestion(item,()=>.5);assert.equal(q.sourceId,item.id);assert.equal(q.reviewLabel,q.prompt);}
  assert.ok(makeQuestionQueue(items.filter(i=>i.subject==='数学')).every(q=>q.mode!=='explanation_to_term'));
 });
 test('English grammar and Japanese reading filters do not leak into vocabulary or other practice',()=>{

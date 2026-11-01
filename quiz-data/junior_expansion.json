@@ -73,7 +73,8 @@
       "−3x−2"
     ],
     "note": "−3をxにも2にも掛ける。符号と掛け忘れに注意する。",
-    "learning_point": "distribute_negative"
+    "learning_point": "distribute_negative",
+    "numeric_generator": "distribute_negative"
   },
   {
     "id": "jr_math_core_like_terms",
@@ -130,7 +131,8 @@
       "x＝12"
     ],
     "note": "係数で両辺を割る。正の数を負の数で割ると負になる。",
-    "learning_point": "equation_divide"
+    "learning_point": "equation_divide",
+    "numeric_generator": "equation_divide"
   },
   {
     "id": "jr_math_core_proportion_constant",
@@ -244,7 +246,8 @@
       "5a"
     ],
     "note": "係数どうし、文字どうしを掛ける。a×aはa²。",
-    "learning_point": "monomial_product"
+    "learning_point": "monomial_product",
+    "numeric_generator": "monomial_product"
   },
   {
     "id": "jr_math_core_elimination",
@@ -282,7 +285,8 @@
       "3(2x＋1)＋y＝6"
     ],
     "note": "yの場所を、等しい式2x＋1で置き換える。",
-    "learning_point": "substitution"
+    "learning_point": "substitution",
+    "numeric_generator": "substitution"
   },
   {
     "id": "jr_math_core_slope",
@@ -415,7 +419,8 @@
       "6(x＋1)"
     ],
     "note": "両項に共通する3を外に出し、それぞれの項を3で割ってかっこ内へ置く。",
-    "learning_point": "common_factor"
+    "learning_point": "common_factor",
+    "numeric_generator": "factor_common"
   },
   {
     "id": "jr_math_core_sqrt_square",
@@ -5080,7 +5085,8 @@
     ],
     "note": "共通の分母を6にし、分子にも同じ倍率を掛ける。",
     "learning_point": "fraction_sum",
-    "content_batch": 2
+    "content_batch": 2,
+    "numeric_generator": "fraction_sum"
   },
   {
     "id": "jr_math_core_clear_denominator",
@@ -5100,7 +5106,8 @@
     ],
     "note": "分母のない項にも6を掛ける。すべての項への掛け忘れに注意する。",
     "learning_point": "clear_denominator",
-    "content_batch": 2
+    "content_batch": 2,
+    "numeric_generator": "clear_denominator"
   },
   {
     "id": "jr_math_core_word_equation",
@@ -5120,7 +5127,8 @@
     ],
     "note": "品物の代金は3x円。袋の100円は1回分だけ加える。",
     "learning_point": "word_equation",
-    "content_batch": 2
+    "content_batch": 2,
+    "numeric_generator": "word_equation"
   },
   {
     "id": "jr_math_core_perpendicular_bisector",
@@ -5460,7 +5468,8 @@
     ],
     "note": "(x＋a)(x＋b)＝x²＋(a＋b)x＋abを利用する。",
     "learning_point": "factor_sum_product",
-    "content_batch": 2
+    "content_batch": 2,
+    "numeric_generator": "factor_sum_product"
   },
   {
     "id": "jr_math_core_simplify_root",
@@ -5471,16 +5480,17 @@
     "unit": "平方根",
     "kind": "choice",
     "task": "適切なものを選ぼう",
-    "prompt": "√12 を簡単にするため、根号の中を分けた式は？",
-    "answer": "√(4×3)",
+    "prompt": "√12 の根号の外に平方数の因数を取り出した式は？",
+    "answer": "2√3",
     "dummies": [
-      "√(6＋6)",
-      "√(9＋3)",
-      "√(2＋10)"
+      "4√3",
+      "2√4",
+      "6√3"
     ],
-    "note": "平方数の因数4を取り出すと2√3になる。和には根号を分配できない。",
+    "note": "12＝4×3。√4＝2なので、2√3と表す。",
     "learning_point": "simplify_root",
-    "content_batch": 2
+    "content_batch": 2,
+    "numeric_generator": "simplify_root"
   },
   {
     "id": "jr_math_core_quadratic_formula_denominator",
@@ -5520,7 +5530,8 @@
     ],
     "note": "xの係数6の半分を2乗する。x²＋6x＋9＝(x＋3)²。",
     "learning_point": "complete_square",
-    "content_batch": 2
+    "content_batch": 2,
+    "numeric_generator": "complete_square"
   },
   {
     "id": "jr_math_core_quadratic_change",

@@ -1,10 +1,10 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.46.1';
-import { MusicPlayer } from './music-player.js?v=0.46.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.46.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.46.1';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.46.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.46.1';
-const VERSION = '0.46.1';
+import { ScreenWakeLock } from './wake-lock.js?v=0.47.0';
+import { MusicPlayer } from './music-player.js?v=0.47.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.47.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.47.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.47.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.47.0';
+const VERSION = '0.47.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -1022,7 +1022,7 @@ function renderPractice() {
       for (const answer of $('practice-choices').children) answer.disabled = true;
       button.classList.add('correct');
       const source = questions.find(item => item.id === q.sourceId);
-      const explanation = source?.note || q.note || '正しい語句を確認して、次の問題へ進もう。';
+      const explanation = (q.variant ? q.note : source?.note || q.note) || '正しい語句を確認して、次の問題へ進もう。';
       $('practice-explanation').textContent = `正解：${q.answer}。${explanation}`;
       if (q.segments) for (const span of $('practice-prompt').querySelectorAll('.blank-active')) { span.textContent = q.answer; span.className = 'blank-solved'; }
       renderKanji($('practice-kanji'), q, true);
