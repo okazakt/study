@@ -81,6 +81,7 @@ export function makeQuestionQueue(items, random = Math.random, acceptQuestion = 
   const ordered = [];
   for (let i = 0; i < Math.max(0, ...decks.map(deck => deck.length)); i++) for (const deck of decks) if (deck[i]) ordered.push(deck[i]);
   const groups = ordered.map(item => {
+    if (item.kind === 'choice') return [[makeChoiceQuestion(item, random)]];
     if (item.subject === '国語') {
       const questions = makeJapaneseQuestions(item, random);
       return shuffle(item.kind === 'grammar' ? [questions.slice(0, -1), questions.slice(-1)]
@@ -98,6 +99,14 @@ export function makeQuestionQueue(items, random = Math.random, acceptQuestion = 
     for (const group of groups) if (group[i]) queue.push(...group[i]);
   }
   return queue;
+}
+// A learning point has one direction; do not manufacture a reverse term quiz.
+export function makeChoiceQuestion(item, random = Math.random) {
+  const candidates = [...new Set(item.dummies)].filter(value => value !== item.answer);
+  if (candidates.length !== 3) throw new Error(`${item.id}: expected three distinct distractors`);
+  const choices = shuffle([item.answer, ...candidates], random);
+  return { ...item, id: `${item.id}:choice`, sourceId: item.id, mode: 'learning_point',
+    term: item.prompt, context: '', choices, correct: choices.indexOf(item.answer), reviewLabel: item.prompt };
 }
 export function makeJapaneseQuestions(item, random = Math.random) {
   const question = (mode, prompt, answer, dummies, task, extra = {}) => {

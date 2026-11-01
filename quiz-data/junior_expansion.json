@@ -1,0 +1,5025 @@
+[
+  {
+    "id": "jr_math_core_negative_sum",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "負の数どうしを足すとき、絶対値を足した結果に付ける符号は？",
+    "answer": "−",
+    "dummies": [
+      "＋",
+      "±",
+      "符号は付けない"
+    ],
+    "note": "負の数どうしの和は負。絶対値を足して負の符号を付ける。",
+    "learning_point": "negative_sum"
+  },
+  {
+    "id": "jr_math_core_subtract_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "a−(−b) と同じ式は？",
+    "answer": "a＋b",
+    "dummies": [
+      "a−b",
+      "−a＋b",
+      "−a−b"
+    ],
+    "note": "引く数の符号を変えて足す。負の数を引くと加法になる。",
+    "learning_point": "subtract_negative"
+  },
+  {
+    "id": "jr_math_core_negative_product",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "負の数を3個掛けた積の符号は？（0は含まない）",
+    "answer": "−",
+    "dummies": [
+      "＋",
+      "±",
+      "0"
+    ],
+    "note": "負の因数が奇数個なら積は負、偶数個なら正になる。",
+    "learning_point": "negative_product"
+  },
+  {
+    "id": "jr_math_core_distribute_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "文字式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "−3(x＋2) を展開した式は？",
+    "answer": "−3x−6",
+    "dummies": [
+      "−3x＋6",
+      "−3x＋2",
+      "−3x−2"
+    ],
+    "note": "−3をxにも2にも掛ける。符号と掛け忘れに注意する。",
+    "learning_point": "distribute_negative"
+  },
+  {
+    "id": "jr_math_core_like_terms",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "文字式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "3x＋2y＋5x を整理するとき、まとめられる項は？",
+    "answer": "3xと5x",
+    "dummies": [
+      "3xと2y",
+      "2yと5x",
+      "3項すべて"
+    ],
+    "note": "文字の部分が同じ項どうしをまとめる。xとyの項はまとめない。",
+    "learning_point": "like_terms"
+  },
+  {
+    "id": "jr_math_core_equation_balance",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "一次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "等式の両辺に同じ数を足したとき、等式はどうなる？",
+    "answer": "成り立ったまま",
+    "dummies": [
+      "両辺の差が加えた数になる",
+      "右辺の符号だけ逆になる",
+      "左辺の値だけ変わる"
+    ],
+    "note": "等式の両辺に同じ数を足しても等式は保たれる。",
+    "learning_point": "equation_balance"
+  },
+  {
+    "id": "jr_math_core_equation_divide",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "一次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "−2x＝6 の両辺を−2で割った式は？",
+    "answer": "x＝−3",
+    "dummies": [
+      "x＝3",
+      "x＝−12",
+      "x＝12"
+    ],
+    "note": "係数で両辺を割る。正の数を負の数で割ると負になる。",
+    "learning_point": "equation_divide"
+  },
+  {
+    "id": "jr_math_core_proportion_constant",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "比例と反比例",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "比例 y＝ax で、x≠0のとき比例定数aを求める式は？",
+    "answer": "y÷x",
+    "dummies": [
+      "x÷y",
+      "x＋y",
+      "xy"
+    ],
+    "note": "比例ではyとxの比y/xが一定で、その値が比例定数になる。",
+    "learning_point": "proportion_constant"
+  },
+  {
+    "id": "jr_math_core_inverse_constant",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "比例と反比例",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "反比例 y＝a/x で、比例定数aを求める式は？",
+    "answer": "xy",
+    "dummies": [
+      "y÷x",
+      "x÷y",
+      "x＋y"
+    ],
+    "note": "反比例ではxとyの積が一定になる。",
+    "learning_point": "inverse_constant"
+  },
+  {
+    "id": "jr_math_core_circle_area",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "半径rの円の面積を表す式は？",
+    "answer": "πr²",
+    "dummies": [
+      "2πr",
+      "πr",
+      "2πr²"
+    ],
+    "note": "面積はπ×半径×半径。2πrは円周の長さ。",
+    "learning_point": "circle_area"
+  },
+  {
+    "id": "jr_math_core_pyramid_volume",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "空間図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "底面積S、高さhの角錐の体積は？",
+    "answer": "Sh÷3",
+    "dummies": [
+      "Sh",
+      "Sh÷2",
+      "3Sh"
+    ],
+    "note": "錐体の体積は同じ底面積・高さの柱体の3分の1。",
+    "learning_point": "pyramid_volume"
+  },
+  {
+    "id": "jr_math_core_relative_frequency",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "データの活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "相対度数は、各階級の度数を何で割る？",
+    "answer": "度数の合計",
+    "dummies": [
+      "階級の幅",
+      "階級値",
+      "最大値"
+    ],
+    "note": "相対度数は全体に対する各階級の割合。",
+    "learning_point": "relative_frequency"
+  },
+  {
+    "id": "jr_math_core_monomial_product",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "式の計算",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2a×3a を計算した式は？",
+    "answer": "6a²",
+    "dummies": [
+      "6a",
+      "5a²",
+      "5a"
+    ],
+    "note": "係数どうし、文字どうしを掛ける。a×aはa²。",
+    "learning_point": "monomial_product"
+  },
+  {
+    "id": "jr_math_core_elimination",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "連立方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2x＋y＝5 と x−y＝1。両式を足すと消える文字は？",
+    "answer": "y",
+    "dummies": [
+      "x",
+      "xとyの両方",
+      "どちらも消えない"
+    ],
+    "note": "yの係数が＋1と−1なので、加えるとyの項が0になる。",
+    "learning_point": "elimination"
+  },
+  {
+    "id": "jr_math_core_substitution",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "連立方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝2x＋1 と 3x＋y＝6。yを代入した式は？",
+    "answer": "3x＋(2x＋1)＝6",
+    "dummies": [
+      "3x＋2x＝6",
+      "3x＋(2x−1)＝6",
+      "3(2x＋1)＋y＝6"
+    ],
+    "note": "yの場所を、等しい式2x＋1で置き換える。",
+    "learning_point": "substitution"
+  },
+  {
+    "id": "jr_math_core_slope",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "一次関数の変化の割合を求める式は？",
+    "answer": "yの増加量÷xの増加量",
+    "dummies": [
+      "xの増加量÷yの増加量",
+      "yの値÷xの値",
+      "yの増加量−xの増加量"
+    ],
+    "note": "一次関数では変化の割合は一定で、グラフの傾きにあたる。",
+    "learning_point": "slope"
+  },
+  {
+    "id": "jr_math_core_intercept",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝ax＋b のグラフで、bが示すのは？",
+    "answer": "y軸との交点のy座標",
+    "dummies": [
+      "x軸との交点のx座標",
+      "直線の傾き",
+      "xの増加量"
+    ],
+    "note": "x＝0を代入するとy＝b。bは切片。",
+    "learning_point": "intercept"
+  },
+  {
+    "id": "jr_math_core_proof_reason",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "証明の進め方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "証明で「仮定」として使うのは？",
+    "answer": "問題で与えられた条件",
+    "dummies": [
+      "最後に示したいこと",
+      "図で等しく見える部分",
+      "測って近かった長さ"
+    ],
+    "note": "仮定と結論を区別する。見た目や測定だけを証明の根拠にしない。",
+    "learning_point": "proof_reason"
+  },
+  {
+    "id": "jr_math_core_probability",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "確率",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "各場合が同様に確からしいとき、確率を求める式は？",
+    "answer": "条件を満たす場合の数÷全場合の数",
+    "dummies": [
+      "全場合の数÷条件を満たす場合の数",
+      "条件を満たす場合の数÷条件外の場合の数",
+      "条件外の場合の数÷全場合の数"
+    ],
+    "note": "確率は全体に対する条件を満たす場合の割合。同様に確からしいかを確認する。",
+    "learning_point": "probability"
+  },
+  {
+    "id": "jr_math_core_boxplot",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "箱ひげ図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "箱ひげ図の箱の長さが表すのは？",
+    "answer": "四分位範囲",
+    "dummies": [
+      "平均値",
+      "中央値",
+      "標本の大きさ"
+    ],
+    "note": "箱は第1四分位数から第3四分位数まで。箱の長さはその差。",
+    "learning_point": "boxplot"
+  },
+  {
+    "id": "jr_math_core_square_expansion",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(a＋b)² を展開した式は？",
+    "answer": "a²＋2ab＋b²",
+    "dummies": [
+      "a²＋b²",
+      "a²＋ab＋b²",
+      "a²−2ab＋b²"
+    ],
+    "note": "(a＋b)(a＋b)を展開すると中央のabが2個になる。",
+    "learning_point": "square_expansion"
+  },
+  {
+    "id": "jr_math_core_common_factor",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "3x＋6 を共通因数でくくった式は？",
+    "answer": "3(x＋2)",
+    "dummies": [
+      "3(x＋6)",
+      "3(x−2)",
+      "6(x＋1)"
+    ],
+    "note": "両項に共通する3を外に出し、それぞれの項を3で割ってかっこ内へ置く。",
+    "learning_point": "common_factor"
+  },
+  {
+    "id": "jr_math_core_sqrt_square",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "aが負の数のとき、√(a²) と等しいのは？",
+    "answer": "−a",
+    "dummies": [
+      "a",
+      "a²",
+      "−a²"
+    ],
+    "note": "平方根の記号√は0以上の値を表す。aが負なら−aが正になる。",
+    "learning_point": "sqrt_square"
+  },
+  {
+    "id": "jr_math_core_rationalization",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1/√3 の分母を整数にするため、分子と分母に掛ける数は？",
+    "answer": "√3",
+    "dummies": [
+      "3",
+      "√2",
+      "1/3"
+    ],
+    "note": "分母は√3×√3＝3になる。同じ0でない数を分子と分母に掛ける。",
+    "learning_point": "rationalization"
+  },
+  {
+    "id": "jr_math_core_zero_product",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "方程式",
+    "unit": "二次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(x−2)(x＋3)＝0 を解くとき使える性質は？",
+    "answer": "積が0なら少なくとも一方が0",
+    "dummies": [
+      "和が0なら両方が0",
+      "積が0なら両方が1",
+      "一方の因数を消してよい"
+    ],
+    "note": "AB＝0ならA＝0またはB＝0。両方の因数について解を調べる。",
+    "learning_point": "zero_product"
+  },
+  {
+    "id": "jr_math_core_quadratic_rate",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "関数",
+    "unit": "二乗に比例する関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝ax²で、xが2倍になるとyは何倍になる？（a≠0、x≠0）",
+    "answer": "4倍",
+    "dummies": [
+      "2倍",
+      "8倍",
+      "1/2倍"
+    ],
+    "note": "(2x)²＝4x²なのでyは4倍。xの倍率を2乗する。",
+    "learning_point": "quadratic_rate"
+  },
+  {
+    "id": "jr_math_core_area_ratio",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "相似",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "相似な図形の相似比が2：3のとき、面積比は？",
+    "answer": "4：9",
+    "dummies": [
+      "2：3",
+      "8：27",
+      "3：2"
+    ],
+    "note": "面積比は相似比の2乗。体積比なら3乗する。",
+    "learning_point": "area_ratio"
+  },
+  {
+    "id": "jr_math_core_inscribed_angle",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "円",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ弧に対する円周角と中心角。円周角は中心角の何倍？",
+    "answer": "1/2倍",
+    "dummies": [
+      "2倍",
+      "同じ",
+      "1/4倍"
+    ],
+    "note": "同じ弧に対する円周角は中心角の半分。",
+    "learning_point": "inscribed_angle"
+  },
+  {
+    "id": "jr_math_core_pythagoras",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "図形",
+    "unit": "三平方の定理",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "直角三角形の斜辺がc、他の辺がa、bのとき成り立つ式は？",
+    "answer": "a²＋b²＝c²",
+    "dummies": [
+      "a＋b＝c",
+      "a²−b²＝c²",
+      "a²＋c²＝b²"
+    ],
+    "note": "2乗の和の右辺に置くのは斜辺の2乗。直角をはさむ2辺を確認する。",
+    "learning_point": "pythagoras"
+  },
+  {
+    "id": "jr_math_core_sampling",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "数学",
+    "field": "データ",
+    "unit": "標本調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "母集団の傾向を推定するための標本の選び方は？",
+    "answer": "偏りが生じにくい無作為抽出",
+    "dummies": [
+      "答えやすい人だけ選ぶ",
+      "特定の意見の人だけ選ぶ",
+      "都合のよい結果だけ残す"
+    ],
+    "note": "標本は母集団を偏りなく反映するよう選ぶ。標本数だけでなく選び方も重要。",
+    "learning_point": "sampling"
+  },
+  {
+    "id": "jr_science_core_seed_plant",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "植物の分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "裸子植物では、胚珠はどうなっている？",
+    "answer": "子房に包まれず露出する",
+    "dummies": [
+      "子房の中にある",
+      "果実の中にある",
+      "胞子のうの中にある"
+    ],
+    "note": "被子植物の胚珠は子房内、裸子植物の胚珠は露出している。",
+    "learning_point": "seed_plant"
+  },
+  {
+    "id": "jr_science_core_vertebrate",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "動物の分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "セキツイ動物の分類で、背骨を持つのは？",
+    "answer": "魚類",
+    "dummies": [
+      "昆虫類",
+      "甲殻類",
+      "軟体動物"
+    ],
+    "note": "魚類・両生類・ハチュウ類・鳥類・ホニュウ類は背骨を持つ。",
+    "learning_point": "vertebrate"
+  },
+  {
+    "id": "jr_science_core_density",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "物質の性質",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "密度を求める式は？",
+    "answer": "質量÷体積",
+    "dummies": [
+      "体積÷質量",
+      "質量×体積",
+      "質量＋体積"
+    ],
+    "note": "密度は単位体積あたりの質量。単位もg/cm³などで確認する。",
+    "learning_point": "density"
+  },
+  {
+    "id": "jr_science_core_oxygen_test",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "気体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸素があるか確かめる操作は？",
+    "answer": "火のついた線香を入れる",
+    "dummies": [
+      "石灰水に通す",
+      "赤色リトマス紙を使う",
+      "塩化コバルト紙を使う"
+    ],
+    "note": "酸素にはものが燃えるのを助ける性質があり、線香が激しく燃える。",
+    "learning_point": "oxygen_test"
+  },
+  {
+    "id": "jr_science_core_recrystallization",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "水溶液",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "温度による溶解度の差を利用し、結晶を取り出す操作は？",
+    "answer": "再結晶",
+    "dummies": [
+      "ろ過",
+      "蒸留",
+      "中和"
+    ],
+    "note": "高温で多く溶ける物質を冷やすと、溶けきれない分が結晶になる。",
+    "learning_point": "recrystallization"
+  },
+  {
+    "id": "jr_science_core_state_mass",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "状態変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "物質が固体から液体になったとき、逃げたり加えたりしなければ質量は？",
+    "answer": "変わらない",
+    "dummies": [
+      "必ず増える",
+      "必ず減る",
+      "0になる"
+    ],
+    "note": "状態変化では粒子そのものの数は変わらず、質量は保存される。",
+    "learning_point": "state_mass"
+  },
+  {
+    "id": "jr_science_core_reflection",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "光",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "光の反射で、入射角と反射角を測る基準は？",
+    "answer": "面に垂直な線",
+    "dummies": [
+      "鏡の面",
+      "光源までの線",
+      "鏡の端を結ぶ線"
+    ],
+    "note": "入射角も反射角も法線との角で測り、両者は等しい。",
+    "learning_point": "reflection"
+  },
+  {
+    "id": "jr_science_core_pitch",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "音",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "音を高くするには、振動数をどうする？",
+    "answer": "多くする",
+    "dummies": [
+      "少なくする",
+      "振幅だけ大きくする",
+      "振幅だけ小さくする"
+    ],
+    "note": "音の高さは振動数、音の大きさは主に振幅に関係する。",
+    "learning_point": "pitch"
+  },
+  {
+    "id": "jr_science_core_spring",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "比例する範囲で、ばねに加える力を2倍にすると伸びは？",
+    "answer": "2倍",
+    "dummies": [
+      "1/2倍",
+      "4倍",
+      "変わらない"
+    ],
+    "note": "フックの法則では力と伸びが比例する。ばね全体の長さとの混同に注意。",
+    "learning_point": "spring"
+  },
+  {
+    "id": "jr_science_core_igneous",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "火山",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "マグマが地下深くでゆっくり冷えてできる岩石のつくりは？",
+    "answer": "等粒状組織",
+    "dummies": [
+      "斑状組織",
+      "層理",
+      "片理"
+    ],
+    "note": "深成岩は結晶が大きく成長し、等粒状組織をつくる。",
+    "learning_point": "igneous"
+  },
+  {
+    "id": "jr_science_core_seismic",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "地震",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地震計で先に到着するのは？",
+    "answer": "P波",
+    "dummies": [
+      "S波",
+      "津波",
+      "表面の隆起"
+    ],
+    "note": "P波はS波より速い。P波による初期微動の後、S波による主要動が来る。",
+    "learning_point": "seismic"
+  },
+  {
+    "id": "jr_science_core_fossil",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地層が堆積した時代を推定するのに使う化石は？",
+    "answer": "示準化石",
+    "dummies": [
+      "示相化石",
+      "生きた化石",
+      "化学化石"
+    ],
+    "note": "示準化石は生存期間が短く広く分布した生物の化石が適する。",
+    "learning_point": "fossil"
+  },
+  {
+    "id": "jr_science_core_plant_cell",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "細胞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物細胞にあり、動物細胞にはないつくりは？",
+    "answer": "細胞壁",
+    "dummies": [
+      "細胞膜",
+      "核",
+      "細胞質"
+    ],
+    "note": "細胞膜・核・細胞質は動植物に共通。細胞壁は植物細胞にある。",
+    "learning_point": "plant_cell"
+  },
+  {
+    "id": "jr_science_core_starch",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "消化と吸収",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "デンプンが消化され、最終的に吸収される形は？",
+    "answer": "ブドウ糖",
+    "dummies": [
+      "アミノ酸",
+      "脂肪酸",
+      "グリセリン"
+    ],
+    "note": "タンパク質はアミノ酸、脂肪は脂肪酸とモノグリセリドなどになる。",
+    "learning_point": "starch"
+  },
+  {
+    "id": "jr_science_core_pulmonary",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "生物",
+    "unit": "血液の循環",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "心臓から肺を通って心臓へ戻る循環は？",
+    "answer": "肺循環",
+    "dummies": [
+      "体循環",
+      "門脈循環",
+      "冠循環"
+    ],
+    "note": "肺循環は右心室→肺→左心房。肺で酸素を取り入れる。",
+    "learning_point": "pulmonary"
+  },
+  {
+    "id": "jr_science_core_mass_conservation",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気体が発生する反応の前後で質量を比較する適切な条件は？",
+    "answer": "気体が外へ逃げないようにする",
+    "dummies": [
+      "反応後だけふたを外す",
+      "発生した気体を捨てる",
+      "反応後に水を加える"
+    ],
+    "note": "気体も質量を持つ。出入りを防いで反応全体の質量を比較する。",
+    "learning_point": "mass_conservation"
+  },
+  {
+    "id": "jr_science_core_chemical_equation",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "化学反応式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "化学反応式を整えるとき、変えてよいものは？",
+    "answer": "化学式の前の係数",
+    "dummies": [
+      "元素記号",
+      "化学式内の小さい数字",
+      "原子の種類"
+    ],
+    "note": "反応の前後で各原子の数をそろえる。化学式そのものは変えない。",
+    "learning_point": "chemical_equation"
+  },
+  {
+    "id": "jr_science_core_reduction",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "酸化と還元",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸化銅から酸素が取り除かれて銅になる変化は？",
+    "answer": "還元",
+    "dummies": [
+      "酸化",
+      "中和",
+      "電離"
+    ],
+    "note": "酸化物から酸素が取り除かれる変化を還元という。",
+    "learning_point": "reduction"
+  },
+  {
+    "id": "jr_science_core_ammeter",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "回路のある部分を流れる電流を測る電流計のつなぎ方は？",
+    "answer": "その部分と直列",
+    "dummies": [
+      "その部分と並列",
+      "電源と逆向きに短絡",
+      "回路につながない"
+    ],
+    "note": "電流計は直列、電圧計は測りたい部分と並列につなぐ。",
+    "learning_point": "ammeter"
+  },
+  {
+    "id": "jr_science_core_ohm",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "抵抗R、電流Iのとき、電圧Vを求める式は？",
+    "answer": "V＝RI",
+    "dummies": [
+      "V＝R/I",
+      "V＝I/R",
+      "V＝R＋I"
+    ],
+    "note": "オームの法則はV＝RI。電圧V、電流A、抵抗Ωの単位も確認する。",
+    "learning_point": "ohm"
+  },
+  {
+    "id": "jr_science_core_electromagnet",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "電流と磁界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "コイルの巻数以外の条件を同じにして、電磁石の磁界を強くするには？",
+    "answer": "巻数を増やす",
+    "dummies": [
+      "巻数を減らす",
+      "巻き方の向きだけを逆にする",
+      "巻数を0にする"
+    ],
+    "note": "巻数や電流を増やす、鉄心を入れると磁界が強くなる。",
+    "learning_point": "electromagnet"
+  },
+  {
+    "id": "jr_science_core_humidity",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気温が一定のとき、空気中の水蒸気量が増えると湿度は？",
+    "answer": "高くなる",
+    "dummies": [
+      "低くなる",
+      "必ず0％になる",
+      "変わらない"
+    ],
+    "note": "湿度は水蒸気量をその気温の飽和水蒸気量で割った割合。",
+    "learning_point": "humidity"
+  },
+  {
+    "id": "jr_science_core_front",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "寒冷前線では、寒気は暖気に対してどう動く？",
+    "answer": "暖気の下にもぐり込む",
+    "dummies": [
+      "暖気の上に乗り上げる",
+      "暖気と混ざらず上空へ去る",
+      "暖気を地中へ押し込む"
+    ],
+    "note": "寒気が下にもぐり、暖気が急に押し上げられる。",
+    "learning_point": "front"
+  },
+  {
+    "id": "jr_science_core_winter_wind",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "日本の気象",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本付近の冬の季節風の代表的な向きは？",
+    "answer": "北西",
+    "dummies": [
+      "南東",
+      "北東",
+      "南西"
+    ],
+    "note": "大陸側から北西の季節風が吹く。日本海で水蒸気を補給し日本海側に雪を降らせる。",
+    "learning_point": "winter_wind"
+  },
+  {
+    "id": "jr_social_core_latitude",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "地球と地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "緯度0度の線は？",
+    "answer": "赤道",
+    "dummies": [
+      "本初子午線",
+      "北回帰線",
+      "日付変更線"
+    ],
+    "note": "緯度は赤道を基準に南北、経度は本初子午線を基準に東西を表す。",
+    "learning_point": "latitude"
+  },
+  {
+    "id": "jr_social_core_timezone",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "地球と地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "経度が15度違う地点の時差は、原則何時間？",
+    "answer": "1時間",
+    "dummies": [
+      "15時間",
+      "4時間",
+      "24時間"
+    ],
+    "note": "地球は24時間で360度回転するため、15度で1時間。実際の標準時は国等の定めによる。",
+    "learning_point": "timezone"
+  },
+  {
+    "id": "jr_social_core_tropical",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の気候",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "熱帯雨林気候の特徴は？",
+    "answer": "一年中高温で降水量が多い",
+    "dummies": [
+      "冬にだけ多雨で夏は乾燥",
+      "一年中低温で樹木が育たない",
+      "一年中降水量が少ない"
+    ],
+    "note": "熱帯雨林気候は年中高温多雨。サバナ気候は雨季と乾季がある。",
+    "learning_point": "tropical"
+  },
+  {
+    "id": "jr_social_core_mediterranean",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の気候",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地中海性気候で特に乾燥する季節は？",
+    "answer": "夏",
+    "dummies": [
+      "冬",
+      "春だけ",
+      "秋だけ"
+    ],
+    "note": "夏は乾燥し、冬に降水が多い。オリーブなどの栽培が見られる。",
+    "learning_point": "mediterranean"
+  },
+  {
+    "id": "jr_social_core_monsoon",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "季節によって風向きが変わる風を何という？",
+    "answer": "季節風",
+    "dummies": [
+      "偏西風",
+      "貿易風",
+      "海風"
+    ],
+    "note": "季節風はモンスーンとも呼ぶ。海風は日中の海陸の温まり方に関係する。",
+    "learning_point": "monsoon"
+  },
+  {
+    "id": "jr_social_core_eu",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "EUで加盟国間の経済的な結び付きを強める仕組みは？",
+    "answer": "域内の関税撤廃",
+    "dummies": [
+      "全加盟国の言語統一",
+      "加盟国すべての通貨統一",
+      "国境を越える貿易の禁止"
+    ],
+    "note": "EUは域内市場の統合を進める。すべての加盟国がユーロを使うわけではない。",
+    "learning_point": "eu"
+  },
+  {
+    "id": "jr_social_core_jomon",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "縄文時代の食料の獲得方法として中心だったのは？",
+    "answer": "狩り・採集・漁",
+    "dummies": [
+      "水田での稲作",
+      "二毛作による米と麦の栽培",
+      "農具や肥料を使う集約的農業"
+    ],
+    "note": "縄文時代には土器や定住集落が見られる。地域や時期による違いもある。",
+    "learning_point": "jomon"
+  },
+  {
+    "id": "jr_social_core_yayoi",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "弥生時代に広がった、食料生産の中心となる農耕は？",
+    "answer": "水田稲作",
+    "dummies": [
+      "綿花の栽培",
+      "茶の大規模栽培",
+      "サトウキビの栽培"
+    ],
+    "note": "水田稲作の広がりとともに、収穫物の蓄積や集落間の争いが見られるようになった。",
+    "learning_point": "yayoi"
+  },
+  {
+    "id": "jr_social_core_ritsuryo",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "奈良時代の班田収授法で、口分田を与える基準となったものは？",
+    "answer": "戸籍",
+    "dummies": [
+      "宗門改帳",
+      "検地帳",
+      "株仲間の名簿"
+    ],
+    "note": "戸籍をもとに口分田を支給した。租・庸・調などの負担があった。",
+    "learning_point": "ritsuryo"
+  },
+  {
+    "id": "jr_social_core_heian",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "古代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平安時代、藤原氏が天皇との婚姻関係を利用して行った政治は？",
+    "answer": "摂関政治",
+    "dummies": [
+      "院政",
+      "親政",
+      "執権政治"
+    ],
+    "note": "摂政・関白として政治を行う摂関政治。上皇による院政と区別する。",
+    "learning_point": "heian"
+  },
+  {
+    "id": "jr_social_core_map_scale",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "日本の地域構成",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "縮尺1：25000の地図で1cmは実際の何m？",
+    "answer": "250m",
+    "dummies": [
+      "25m",
+      "2500m",
+      "25000m"
+    ],
+    "note": "地図の1cmは実際の25000cm。100で割って250mに直す。",
+    "learning_point": "map_scale"
+  },
+  {
+    "id": "jr_social_core_industry",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "日本の産業",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鉄鋼業が臨海部に立地しやすい主な理由は？",
+    "answer": "大量の原料を船で運べるため",
+    "dummies": [
+      "製品を航空便で輸出するため",
+      "山林から木材を直接得るため",
+      "冷涼な高原の気温を使うため"
+    ],
+    "note": "鉄鋼業は大量の原料や製品を船で運ぶため、臨海部に大規模な製鉄所が見られる。",
+    "learning_point": "industry"
+  },
+  {
+    "id": "jr_social_core_chubu",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "日本の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中京工業地帯で特に盛んな工業は？",
+    "answer": "輸送用機械工業",
+    "dummies": [
+      "石油化学工業",
+      "食料品工業",
+      "繊維工業"
+    ],
+    "note": "愛知県などでは自動車を中心とする輸送用機械工業が盛ん。",
+    "learning_point": "chubu"
+  },
+  {
+    "id": "jr_social_core_population",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "人口と地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "出生数が死亡数を下回る人口の変化は？",
+    "answer": "自然減少",
+    "dummies": [
+      "社会減少",
+      "自然増加",
+      "社会増加"
+    ],
+    "note": "自然増減は出生・死亡、社会増減は転入・転出による変化。",
+    "learning_point": "population"
+  },
+  {
+    "id": "jr_social_core_hazard_map",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "防災",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ハザードマップで主に確認する情報は？",
+    "answer": "災害の想定区域と避難場所",
+    "dummies": [
+      "過去の被害額だけ",
+      "土地の境界と所有者",
+      "道路の渋滞予測"
+    ],
+    "note": "地域の災害リスクと避難先・経路を確認する。実際の避難情報も併せて利用する。",
+    "learning_point": "hazard_map"
+  },
+  {
+    "id": "jr_social_core_kamakura",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "中世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鎌倉幕府で、御家人が領地の保護を受ける代わりに果たす義務は？",
+    "answer": "奉公",
+    "dummies": [
+      "御恩",
+      "年貢の免除",
+      "朝廷への参内"
+    ],
+    "note": "領地の保護などが御恩、軍役などで幕府に仕えることが奉公。",
+    "learning_point": "kamakura"
+  },
+  {
+    "id": "jr_social_core_muromachi",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "中世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "室町幕府が明との貿易で正式な貿易船を区別するために使ったものは？",
+    "answer": "勘合",
+    "dummies": [
+      "朱印状",
+      "勘定帳",
+      "奉書"
+    ],
+    "note": "勘合貿易では勘合を使って倭寇と区別した。朱印船貿易とは時期が異なる。",
+    "learning_point": "muromachi"
+  },
+  {
+    "id": "jr_social_core_land_survey",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "豊臣秀吉の太閤検地で、土地の生産力を表した基準は？",
+    "answer": "石高",
+    "dummies": [
+      "貫高",
+      "人口密度",
+      "地租の税率"
+    ],
+    "note": "田畑の面積や収穫量を調べ、米の量を基準とする石高で示した。",
+    "learning_point": "land_survey"
+  },
+  {
+    "id": "jr_social_core_sankin",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近世",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "参勤交代で大名に義務付けられたことは？",
+    "answer": "領地と江戸に交代で住む",
+    "dummies": [
+      "領地を毎年交換する",
+      "全国の関所を撤廃する",
+      "朝廷に領地を返す"
+    ],
+    "note": "大名は江戸と領地を往復し、妻子は原則として江戸に住まわせた。",
+    "learning_point": "sankin"
+  },
+  {
+    "id": "jr_social_core_meiji",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "明治政府が藩を廃止して府県を置いた政策は？",
+    "answer": "廃藩置県",
+    "dummies": [
+      "版籍奉還",
+      "地租改正",
+      "廃刀令"
+    ],
+    "note": "版籍奉還の後、廃藩置県で中央政府から府知事・県令を派遣した。",
+    "learning_point": "meiji"
+  },
+  {
+    "id": "jr_social_core_land_tax",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地租改正で、地租の納め方はどのようになった？",
+    "answer": "土地所有者が金納",
+    "dummies": [
+      "耕作者が米だけで納入",
+      "商人が労役で納入",
+      "全住民が同額を納入"
+    ],
+    "note": "地価を基準に土地所有者が金納した。地租改正当初の税率は3％。",
+    "learning_point": "land_tax"
+  },
+  {
+    "id": "jr_social_core_ww1",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "第一次世界大戦後、国際協調のために設立された組織は？",
+    "answer": "国際連盟",
+    "dummies": [
+      "国際連合",
+      "EU",
+      "NATO"
+    ],
+    "note": "国際連盟は1920年に発足。国際連合は第二次世界大戦後に発足した。",
+    "learning_point": "ww1"
+  },
+  {
+    "id": "jr_social_core_suffrage",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1925年の普通選挙法で衆議院議員の選挙権を得たのは？",
+    "answer": "満25歳以上の男子",
+    "dummies": [
+      "満20歳以上の男女",
+      "満18歳以上の男女",
+      "納税額の多い男子だけ"
+    ],
+    "note": "納税額の制限はなくなったが、女性にはまだ選挙権が認められていなかった。",
+    "learning_point": "suffrage"
+  },
+  {
+    "id": "jr_social_core_postwar",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "歴史",
+    "unit": "近現代",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本国憲法が施行された年は？",
+    "answer": "1947年",
+    "dummies": [
+      "1945年",
+      "1946年",
+      "1952年"
+    ],
+    "note": "公布は1946年11月3日、施行は1947年5月3日。公布と施行を区別する。",
+    "learning_point": "postwar"
+  },
+  {
+    "id": "jr_social_core_social_rights",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "公民",
+    "unit": "人権",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "人間らしい生活を保障するための権利の分類は？",
+    "answer": "社会権",
+    "dummies": [
+      "自由権",
+      "参政権",
+      "請求権"
+    ],
+    "note": "生存権、教育を受ける権利、労働基本権などが社会権に位置付けられる。",
+    "learning_point": "social_rights"
+  },
+  {
+    "id": "jr_social_core_market",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "公民",
+    "unit": "経済",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "他の条件が同じとき、価格が上がると需要量は一般にどうなる？",
+    "answer": "減る",
+    "dummies": [
+      "増える",
+      "必ず0になる",
+      "必ず変わらない"
+    ],
+    "note": "需要曲線では一般に価格上昇で需要量が減る。需要そのものの変化とは区別する。",
+    "learning_point": "market"
+  },
+  {
+    "id": "jr_social_core_bank",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "公民",
+    "unit": "経済",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中央銀行として日本銀行が行う業務は？",
+    "answer": "銀行券の発行",
+    "dummies": [
+      "所得税の税率決定",
+      "予算の議決",
+      "裁判の判決"
+    ],
+    "note": "日本銀行は銀行券の発行、銀行の銀行、政府の銀行としての業務を担う。",
+    "learning_point": "bank"
+  },
+  {
+    "id": "jr_social_core_fiscal",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "公民",
+    "unit": "経済",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "政府が税収や支出を通じて行う経済活動は？",
+    "answer": "財政",
+    "dummies": [
+      "金融",
+      "為替",
+      "配当"
+    ],
+    "note": "財政は政府の収入・支出に関する活動。中央銀行の金融政策と区別する。",
+    "learning_point": "fiscal"
+  },
+  {
+    "id": "jr_social_core_un_security",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "公民",
+    "unit": "国際社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国際連合で国際平和と安全の維持に主な責任を持つ機関は？",
+    "answer": "安全保障理事会",
+    "dummies": [
+      "国際司法裁判所",
+      "事務局",
+      "経済社会理事会"
+    ],
+    "note": "安全保障理事会の常任理事国には拒否権がある。国際司法裁判所は国家間の紛争等を扱う。",
+    "learning_point": "un_security"
+  },
+  {
+    "id": "jr_social_core_sdgs",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "社会",
+    "field": "公民",
+    "unit": "国際社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "SDGsの目標達成年は？",
+    "answer": "2030年",
+    "dummies": [
+      "2020年",
+      "2040年",
+      "2050年"
+    ],
+    "note": "SDGsは2015年に採択された持続可能な開発目標。2030年を目標年とする。",
+    "learning_point": "sdgs"
+  },
+  {
+    "id": "jr_english_core_be",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "be動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I (？) a student. に入る語は？",
+    "answer": "am",
+    "dummies": [
+      "is",
+      "are",
+      "be"
+    ],
+    "note": "主語Iの現在形ではam。youはare、heやsheはis。",
+    "learning_point": "be"
+  },
+  {
+    "id": "jr_english_core_third_person",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "一般動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "He (？) tennis every Sunday. に入る語は？",
+    "answer": "plays",
+    "dummies": [
+      "play",
+      "playing",
+      "to play"
+    ],
+    "note": "現在の習慣で主語が三人称単数なので動詞に-sを付ける。",
+    "learning_point": "third_person"
+  },
+  {
+    "id": "jr_english_core_does",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "否定文と疑問文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Does she (？) English? に入る語は？",
+    "answer": "study",
+    "dummies": [
+      "studies",
+      "studying",
+      "studied"
+    ],
+    "note": "doesを使った疑問文では、その後の一般動詞は原形。",
+    "learning_point": "does"
+  },
+  {
+    "id": "jr_english_core_object",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Please help (？).「私を助けて」に入る語は？",
+    "answer": "me",
+    "dummies": [
+      "I",
+      "my",
+      "mine"
+    ],
+    "note": "動詞helpの目的語には目的格meを使う。",
+    "learning_point": "object"
+  },
+  {
+    "id": "jr_english_core_progressive",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "They are (？) lunch now. に入る語は？",
+    "answer": "eating",
+    "dummies": [
+      "eat",
+      "eats",
+      "ate"
+    ],
+    "note": "現在進行形はbe動詞＋動詞の-ing形。",
+    "learning_point": "progressive"
+  },
+  {
+    "id": "jr_english_core_past",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "過去形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I (？) to the park yesterday. に入る語は？",
+    "answer": "went",
+    "dummies": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "note": "goの過去形はwent。yesterdayは過去の出来事を表す手掛かり。",
+    "learning_point": "past"
+  },
+  {
+    "id": "jr_english_core_where",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) do you live?「どこに住んでいますか」に入る語は？",
+    "answer": "Where",
+    "dummies": [
+      "When",
+      "Who",
+      "Why"
+    ],
+    "note": "場所を尋ねる疑問詞はwhere。whenは時、whyは理由を尋ねる。",
+    "learning_point": "where"
+  },
+  {
+    "id": "jr_english_core_can",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She can (？) fast. に入る語は？",
+    "answer": "run",
+    "dummies": [
+      "runs",
+      "ran",
+      "running"
+    ],
+    "note": "助動詞canの後は動詞の原形。主語がsheでも-sを付けない。",
+    "learning_point": "can"
+  },
+  {
+    "id": "jr_english_core_will",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "未来表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I will (？) you tomorrow. に入る語は？",
+    "answer": "call",
+    "dummies": [
+      "called",
+      "calls",
+      "calling"
+    ],
+    "note": "willの後には動詞の原形を置く。",
+    "learning_point": "will"
+  },
+  {
+    "id": "jr_english_core_infinitive",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I want (？) a doctor. に入る語句は？",
+    "answer": "to be",
+    "dummies": [
+      "be",
+      "being",
+      "been"
+    ],
+    "note": "want to＋動詞の原形で「〜したい」。医師になることを希望している。",
+    "learning_point": "infinitive"
+  },
+  {
+    "id": "jr_english_core_gerund",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "動名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I enjoyed (？) with them. に入る語は？",
+    "answer": "talking",
+    "dummies": [
+      "talk",
+      "to talk",
+      "talked"
+    ],
+    "note": "enjoyの目的語には動名詞を使う。enjoy to doとはしない。",
+    "learning_point": "gerund"
+  },
+  {
+    "id": "jr_english_core_comparative",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This book is (？) than that one. に入る語は？",
+    "answer": "easier",
+    "dummies": [
+      "easy",
+      "easiest",
+      "easily"
+    ],
+    "note": "比較級＋than。easyの比較級はyをiに変えて-erを付ける。",
+    "learning_point": "comparative"
+  },
+  {
+    "id": "jr_english_core_because",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "接続詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I stayed home (？) it was raining.「雨だったので」に入る語は？",
+    "answer": "because",
+    "dummies": [
+      "if",
+      "although",
+      "until"
+    ],
+    "note": "becauseは理由を表す。althoughは「〜だけれども」。",
+    "learning_point": "because"
+  },
+  {
+    "id": "jr_english_core_must_not",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "You must not run here. の意味は？",
+    "answer": "ここで走ってはいけない",
+    "dummies": [
+      "ここで走る必要はない",
+      "ここで走らなければならない",
+      "ここで走れるだろう"
+    ],
+    "note": "must notは禁止。don't have toは「〜する必要はない」。",
+    "learning_point": "must_not"
+  },
+  {
+    "id": "jr_english_core_give",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She gave me a book. で、meが表すのは？",
+    "answer": "受け取る相手",
+    "dummies": [
+      "渡した物",
+      "動作をした人",
+      "渡した場所"
+    ],
+    "note": "give＋人＋物で「人に物を与える」。a bookが渡した物。",
+    "learning_point": "give"
+  },
+  {
+    "id": "jr_english_core_passive",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "受け身",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This room is (？) every day.「掃除される」に入る語は？",
+    "answer": "cleaned",
+    "dummies": [
+      "clean",
+      "cleans",
+      "cleaning"
+    ],
+    "note": "受け身はbe動詞＋過去分詞。cleanの過去分詞はcleaned。",
+    "learning_point": "passive"
+  },
+  {
+    "id": "jr_english_core_perfect",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have (？) this movie twice. に入る語は？",
+    "answer": "seen",
+    "dummies": [
+      "saw",
+      "see",
+      "seeing"
+    ],
+    "note": "現在完了はhave/has＋過去分詞。seeの過去分詞はseen。",
+    "learning_point": "perfect"
+  },
+  {
+    "id": "jr_english_core_since",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have lived here (？) 2020. に入る語は？",
+    "answer": "since",
+    "dummies": [
+      "for",
+      "during",
+      "by"
+    ],
+    "note": "sinceは開始時点、forは継続する期間を表す。",
+    "learning_point": "since"
+  },
+  {
+    "id": "jr_english_core_indirect",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "間接疑問文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I know (？).「彼がどこに住んでいるか」に入る語句は？",
+    "answer": "where he lives",
+    "dummies": [
+      "where does he live",
+      "where lives he",
+      "where do he lives"
+    ],
+    "note": "間接疑問文は疑問詞＋主語＋動詞の語順。疑問文の語順をそのまま入れない。",
+    "learning_point": "indirect"
+  },
+  {
+    "id": "jr_english_core_relative_subject",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "関係代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I have a friend (？) lives in Kyoto. に入る語は？",
+    "answer": "who",
+    "dummies": [
+      "which",
+      "whose",
+      "whom"
+    ],
+    "note": "人を先行詞とし、関係節内で主語になるwho。thatも使えるため誤答候補にしない。",
+    "learning_point": "relative_subject"
+  },
+  {
+    "id": "jr_english_core_relative_object",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "関係代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This is the book (？) I bought yesterday. に入る語は？",
+    "answer": "which",
+    "dummies": [
+      "who",
+      "whose",
+      "what"
+    ],
+    "note": "先行詞が物で目的語の働きなのでwhich。thatや省略も可能だが候補には入れない。",
+    "learning_point": "relative_object"
+  },
+  {
+    "id": "jr_english_core_participle",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "分詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "The girl (？) under the tree is my sister. に入る語は？",
+    "answer": "standing",
+    "dummies": [
+      "stands",
+      "stand",
+      "stood"
+    ],
+    "note": "名詞を後ろから説明する現在分詞。「木の下に立っている少女」というまとまり。",
+    "learning_point": "participle"
+  },
+  {
+    "id": "jr_english_core_subjunctive",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "仮定法",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "If I (？) you, I would ask her. に入る語は？",
+    "answer": "were",
+    "dummies": [
+      "am",
+      "are",
+      "be"
+    ],
+    "note": "現実と異なる仮定でIf I were youを使う。wereの代わりのwasを誤答にはしない。",
+    "learning_point": "subjunctive"
+  },
+  {
+    "id": "jr_english_core_question_infinitive",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「何をすればよいか」を表す語句は？",
+    "answer": "what to do",
+    "dummies": [
+      "what do to",
+      "to what do",
+      "do what to"
+    ],
+    "note": "疑問詞＋to＋動詞の原形で、何を・どのようにすべきか等を表せる。",
+    "learning_point": "question_infinitive"
+  },
+  {
+    "id": "jr_japanese_core_subject",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "文の成分",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「鳥が空を飛ぶ。」で、主語は？",
+    "answer": "鳥が",
+    "dummies": [
+      "空を",
+      "飛ぶ",
+      "鳥が空を"
+    ],
+    "note": "主語は「何が・誰が」にあたる文節。述語は「飛ぶ」。",
+    "learning_point": "subject"
+  },
+  {
+    "id": "jr_japanese_core_adjective",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「美しい」の品詞は？",
+    "answer": "形容詞",
+    "dummies": [
+      "形容動詞",
+      "副詞",
+      "名詞"
+    ],
+    "note": "形容詞は言い切りが「い」で終わり、活用する。",
+    "learning_point": "adjective"
+  },
+  {
+    "id": "jr_japanese_core_adverb",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「ゆっくり歩く」の「ゆっくり」が主に修飾するのは？",
+    "answer": "用言",
+    "dummies": [
+      "体言",
+      "助詞",
+      "接続詞"
+    ],
+    "note": "副詞は主に用言を修飾する。「ゆっくり」は「歩く」を修飾する。",
+    "learning_point": "adverb"
+  },
+  {
+    "id": "jr_japanese_core_reference_replace",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "指示語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "指示語の内容を確かめる方法として適切なのは？",
+    "answer": "候補を代入して文脈を確かめる",
+    "dummies": [
+      "直前の名詞だけで決める",
+      "最も長い語句を選ぶ",
+      "指示語をすべて削る"
+    ],
+    "note": "候補を置き換え、文意とつながりを確認する。直前の語句とは限らない。",
+    "learning_point": "reference_replace"
+  },
+  {
+    "id": "jr_japanese_core_example",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「例えば」で導かれる部分を読むとき確認するのは？",
+    "answer": "何を具体的に説明する例か",
+    "dummies": [
+      "必ず筆者の結論か",
+      "必ず反対意見か",
+      "必ず場面転換か"
+    ],
+    "note": "具体例と、それが支える説明や主張を結び付ける。",
+    "learning_point": "example"
+  },
+  {
+    "id": "jr_japanese_core_kana",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "歴史的仮名遣い",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "歴史的仮名遣い「けふ」を現代仮名遣いで書くと？",
+    "answer": "きょう",
+    "dummies": [
+      "けう",
+      "きゅう",
+      "けふ"
+    ],
+    "note": "歴史的仮名遣いには現代と読みの異なる表記がある。けふはきょう。",
+    "learning_point": "kana"
+  },
+  {
+    "id": "jr_japanese_core_ito",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古語「いと」の主な意味は？",
+    "answer": "とても",
+    "dummies": [
+      "少しも〜ない",
+      "まったく〜ない",
+      "どうして"
+    ],
+    "note": "「いと」は程度の大きさを表す。現代語の「糸」と区別する。",
+    "learning_point": "ito"
+  },
+  {
+    "id": "jr_japanese_core_kaeriten",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "漢文の返り点は何を示す？",
+    "answer": "読む順序",
+    "dummies": [
+      "漢字の音の高さ",
+      "文章の成立年",
+      "送り仮名の長さ"
+    ],
+    "note": "日本語の語順に合わせて読む順序を示す。レ点や一・二点などがある。",
+    "learning_point": "kaeriten"
+  },
+  {
+    "id": "jr_japanese_core_verb_form",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「読む」の未然形を含むものは？",
+    "answer": "読まない",
+    "dummies": [
+      "読みます",
+      "読むとき",
+      "読めば"
+    ],
+    "note": "「ない」に続く「読ま」が未然形。読むは五段活用。",
+    "learning_point": "verb_form"
+  },
+  {
+    "id": "jr_japanese_core_particle",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「本を読む」の「を」が示す関係は？",
+    "answer": "動作の対象",
+    "dummies": [
+      "動作の主体",
+      "動作の時刻",
+      "動作の理由"
+    ],
+    "note": "格助詞「を」はこの文で読む対象を示す。文脈によって通過点なども表す。",
+    "learning_point": "particle"
+  },
+  {
+    "id": "jr_japanese_core_respect",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "敬語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「先生が話す」を尊敬語を使って言い換えると？",
+    "answer": "先生がお話しになる",
+    "dummies": [
+      "先生がお話しする",
+      "先生が申し上げる",
+      "先生が申す"
+    ],
+    "note": "尊敬語は動作をする相手を高める。「申す・申し上げる」は謙譲語。",
+    "learning_point": "respect"
+  },
+  {
+    "id": "jr_japanese_core_contrast",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "対比を読み取るとき、まずそろえて確認するのは？",
+    "answer": "比較している観点",
+    "dummies": [
+      "二つの語の文字数",
+      "段落の行数",
+      "句読点の数"
+    ],
+    "note": "何について、どのような違いを比べているのかを整理する。",
+    "learning_point": "contrast"
+  },
+  {
+    "id": "jr_japanese_core_overstatement",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "選択肢の検討",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "本文が「場合がある」、選択肢が「必ず」。まず注意するのは？",
+    "answer": "断定の強さの違い",
+    "dummies": [
+      "文字の形の違い",
+      "主語の省略だけ",
+      "段落の長さだけ"
+    ],
+    "note": "可能性を述べる文を無条件の断定へ変えていないか確認する。",
+    "learning_point": "overstatement"
+  },
+  {
+    "id": "jr_japanese_core_okashi",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古文で「をかし」が表す意味として適切なのは？",
+    "answer": "趣がある",
+    "dummies": [
+      "恐ろしい",
+      "腹立たしい",
+      "忙しい"
+    ],
+    "note": "をかしは趣・面白さなどを表す。現代語の「おかしい」と同じとは限らない。",
+    "learning_point": "okashi"
+  },
+  {
+    "id": "jr_japanese_core_omitted_subject",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "主語の把握",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古文で主語が省略されているときの確認方法は？",
+    "answer": "前後の動作や敬語から判断する",
+    "dummies": [
+      "直前の人物で必ず決める",
+      "毎文同じ人物に決める",
+      "一番身分が低い人に決める"
+    ],
+    "note": "人物の行動や会話、敬語の向きなどを根拠に主語を補う。",
+    "learning_point": "omitted_subject"
+  },
+  {
+    "id": "jr_japanese_core_reten",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "返り点",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「AレB」は、どちらから読む？",
+    "answer": "BからA",
+    "dummies": [
+      "AからB",
+      "Aだけ",
+      "Bだけ"
+    ],
+    "note": "レ点はすぐ下の字を先に読んでから、上の字へ返ることを示す。",
+    "learning_point": "reten"
+  },
+  {
+    "id": "jr_japanese_core_passive_verb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助動詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「弟に日記を読まれた。」の「れ」が表す意味は？",
+    "answer": "受け身",
+    "dummies": [
+      "可能",
+      "尊敬",
+      "自発"
+    ],
+    "note": "弟から読むという動作を受けている。れる・られるは文脈で意味を判断する。",
+    "learning_point": "passive_verb"
+  },
+  {
+    "id": "jr_japanese_core_humble",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "敬語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "自分が先生の話を聞いたとき、謙譲語を使う表現は？",
+    "answer": "先生のお話を伺った",
+    "dummies": [
+      "先生のお話をお聞きになった",
+      "先生のお話を聞かれた",
+      "先生のお話をおっしゃった"
+    ],
+    "note": "「伺う」は聞く・訪ねるの謙譲語。自分の動作を低めて相手への敬意を示す。",
+    "learning_point": "humble"
+  },
+  {
+    "id": "jr_japanese_core_emotion",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "小説",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "登場人物の心情を判断する根拠として適切なのは？",
+    "answer": "言動や描写を文脈と結び付ける",
+    "dummies": [
+      "自分ならどう思うかだけ",
+      "人物名の印象だけ",
+      "結末の長さだけ"
+    ],
+    "note": "本文に描かれた行動・会話・情景などから、場面に即して判断する。",
+    "learning_point": "emotion"
+  },
+  {
+    "id": "jr_japanese_core_summary",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "要旨をまとめるとき優先するのは？",
+    "answer": "文章全体を通じた中心的内容",
+    "dummies": [
+      "最も長い具体例だけ",
+      "最初の一文だけ",
+      "自分の感想"
+    ],
+    "note": "中心的内容を押さえ、具体例や補足との役割を区別する。",
+    "learning_point": "summary"
+  },
+  {
+    "id": "jr_japanese_core_aware",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古文の「あはれなり」に近い意味は？",
+    "answer": "しみじみと心を動かされる",
+    "dummies": [
+      "いつもかわいそうである",
+      "必ず滑稽である",
+      "常に恐ろしい"
+    ],
+    "note": "あはれなりは文脈に応じた深い感動を表す。悲しみに限定しない。",
+    "learning_point": "aware"
+  },
+  {
+    "id": "jr_japanese_core_kakari",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "係り結び",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古文の基本的な係り結びで、「ぞ・なむ・や・か」に対応する結びは？",
+    "answer": "連体形",
+    "dummies": [
+      "終止形",
+      "已然形",
+      "命令形"
+    ],
+    "note": "ぞ・なむ・や・かは連体形、こそは已然形で結ぶのが基本。",
+    "learning_point": "kakari"
+  },
+  {
+    "id": "jr_japanese_core_saidoku",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "再読文字",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "再読文字の読み方は？",
+    "answer": "同じ字を二度読む",
+    "dummies": [
+      "すべて音読みする",
+      "字の順に一度ずつ読む",
+      "返り点を無視して読む"
+    ],
+    "note": "未・将などは、一度読んでから返ってもう一度読む再読文字として用いられる。",
+    "learning_point": "saidoku"
+  },
+  {
+    "id": "jr_japanese_core_negation",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "否定",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "漢文で「不」が表す基本的な意味は？",
+    "answer": "〜ない",
+    "dummies": [
+      "〜すべきだ",
+      "〜できる",
+      "〜してほしい"
+    ],
+    "note": "不は基本的な否定を表し、訓読では「〜ず」と読む。",
+    "learning_point": "negation"
+  },
+  {
+    "id": "jr_english_core_vocab_school",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "school",
+    "japanese": "学校",
+    "english_dummies": [
+      "hospital",
+      "station",
+      "library"
+    ],
+    "japanese_dummies": [
+      "病院",
+      "駅",
+      "図書館"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sch",
+        "dummies": [
+          "csh",
+          "shc",
+          "skh"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ool",
+        "dummies": [
+          "olo",
+          "oor",
+          "aol"
+        ]
+      }
+    ],
+    "note": "school：学校。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_family",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "family",
+    "japanese": "家族",
+    "english_dummies": [
+      "friend",
+      "teacher",
+      "student"
+    ],
+    "japanese_dummies": [
+      "友人",
+      "教師",
+      "生徒"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "fam",
+        "dummies": [
+          "afm",
+          "fma",
+          "fum"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ily",
+        "dummies": [
+          "liy",
+          "iyl",
+          "iry"
+        ]
+      }
+    ],
+    "note": "family：家族。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_morning",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "morning",
+    "japanese": "朝",
+    "english_dummies": [
+      "evening",
+      "night",
+      "noon"
+    ],
+    "japanese_dummies": [
+      "夕方",
+      "夜",
+      "正午"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "mor",
+        "dummies": [
+          "omr",
+          "mro",
+          "mol"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ning",
+        "dummies": [
+          "inng",
+          "nnig",
+          "nign"
+        ]
+      }
+    ],
+    "note": "morning：朝。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_library",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "library",
+    "japanese": "図書館",
+    "english_dummies": [
+      "museum",
+      "hospital",
+      "station"
+    ],
+    "japanese_dummies": [
+      "博物館",
+      "病院",
+      "駅"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "lib",
+        "dummies": [
+          "ilb",
+          "lbi",
+          "rib"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "rary",
+        "dummies": [
+          "arry",
+          "rray",
+          "rayr"
+        ]
+      }
+    ],
+    "note": "library：図書館。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_beautiful",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "beautiful",
+    "japanese": "美しい",
+    "english_dummies": [
+      "difficult",
+      "important",
+      "dangerous"
+    ],
+    "japanese_dummies": [
+      "難しい",
+      "重要な",
+      "危険な"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "beau",
+        "dummies": [
+          "ebau",
+          "baeu",
+          "beua"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "tiful",
+        "dummies": [
+          "itful",
+          "tfiul",
+          "tiufl"
+        ]
+      }
+    ],
+    "note": "beautiful：美しい。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_wednesday",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "Wednesday",
+    "japanese": "水曜日",
+    "english_dummies": [
+      "Thursday",
+      "Tuesday",
+      "Saturday"
+    ],
+    "japanese_dummies": [
+      "木曜日",
+      "火曜日",
+      "土曜日"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "Wed",
+        "dummies": [
+          "eWd",
+          "Wde",
+          "Wid"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "nes",
+        "dummies": [
+          "ens",
+          "nse",
+          "nis"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "day",
+        "dummies": [
+          "ady",
+          "dya",
+          "duy"
+        ]
+      }
+    ],
+    "note": "Wednesday：水曜日。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_journey",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "journey",
+    "japanese": "旅行",
+    "english_dummies": [
+      "traffic",
+      "passenger",
+      "ticket"
+    ],
+    "japanese_dummies": [
+      "交通",
+      "乗客",
+      "切符"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "jour",
+        "dummies": [
+          "ojur",
+          "juor",
+          "joru"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ney",
+        "dummies": [
+          "eny",
+          "nye",
+          "niy"
+        ]
+      }
+    ],
+    "note": "journey：旅行。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_pollution",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "pollution",
+    "japanese": "汚染",
+    "english_dummies": [
+      "climate",
+      "weather",
+      "temperature"
+    ],
+    "japanese_dummies": [
+      "気候",
+      "天気",
+      "気温"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pol",
+        "dummies": [
+          "opl",
+          "plo",
+          "por"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "lu",
+        "dummies": [
+          "ul",
+          "ru",
+          "la"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tion",
+        "dummies": [
+          "iton",
+          "toin",
+          "tino"
+        ]
+      }
+    ],
+    "note": "pollution：汚染。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_traditional",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "traditional",
+    "japanese": "伝統的な",
+    "english_dummies": [
+      "modern",
+      "local",
+      "personal"
+    ],
+    "japanese_dummies": [
+      "現代的な",
+      "地元の",
+      "個人の"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "tra",
+        "dummies": [
+          "rta",
+          "tar",
+          "tla"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "di",
+        "dummies": [
+          "id",
+          "de",
+          "ti"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tion",
+        "dummies": [
+          "iton",
+          "toin",
+          "tino"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "al",
+        "dummies": [
+          "la",
+          "ar",
+          "ul"
+        ]
+      }
+    ],
+    "note": "traditional：伝統的な。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_similar",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "similar",
+    "japanese": "似ている",
+    "english_dummies": [
+      "different",
+      "special",
+      "common"
+    ],
+    "japanese_dummies": [
+      "異なる",
+      "特別な",
+      "共通の"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "sim",
+        "dummies": [
+          "ism",
+          "smi",
+          "sem"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ilar",
+        "dummies": [
+          "liar",
+          "ialr",
+          "ilra"
+        ]
+      }
+    ],
+    "note": "similar：似ている。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_possible",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "possible",
+    "japanese": "可能な",
+    "english_dummies": [
+      "necessary",
+      "useful",
+      "famous"
+    ],
+    "japanese_dummies": [
+      "必要な",
+      "役に立つ",
+      "有名な"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pos",
+        "dummies": [
+          "ops",
+          "pso",
+          "pas"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "si",
+        "dummies": [
+          "is",
+          "se",
+          "ci"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ble",
+        "dummies": [
+          "lbe",
+          "bel",
+          "bre"
+        ]
+      }
+    ],
+    "note": "possible：可能な。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_promise",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "promise",
+    "japanese": "約束",
+    "english_dummies": [
+      "reason",
+      "opinion",
+      "example"
+    ],
+    "japanese_dummies": [
+      "理由",
+      "意見",
+      "例"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pro",
+        "dummies": [
+          "rpo",
+          "por",
+          "plo"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "mise",
+        "dummies": [
+          "imse",
+          "msie",
+          "mies"
+        ]
+      }
+    ],
+    "note": "promise：約束。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_society",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "society",
+    "japanese": "社会",
+    "english_dummies": [
+      "government",
+      "economy",
+      "industry"
+    ],
+    "japanese_dummies": [
+      "政府",
+      "経済",
+      "産業"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "so",
+        "dummies": [
+          "os",
+          "sa",
+          "co"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "cie",
+        "dummies": [
+          "ice",
+          "cei",
+          "cee"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ty",
+        "dummies": [
+          "yt",
+          "dy",
+          "ta"
+        ]
+      }
+    ],
+    "note": "society：社会。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_opinion",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "opinion",
+    "japanese": "意見",
+    "english_dummies": [
+      "fact",
+      "reason",
+      "example"
+    ],
+    "japanese_dummies": [
+      "事実",
+      "理由",
+      "例"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "o",
+        "dummies": [
+          "a",
+          "e",
+          "i"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "pin",
+        "dummies": [
+          "ipn",
+          "pni",
+          "pen"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "ion",
+        "dummies": [
+          "oin",
+          "ino",
+          "eon"
+        ]
+      }
+    ],
+    "note": "opinion：意見。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_international",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "international",
+    "japanese": "国際的な",
+    "english_dummies": [
+      "domestic",
+      "regional",
+      "national"
+    ],
+    "japanese_dummies": [
+      "国内の",
+      "地域の",
+      "全国的な"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "inter",
+        "dummies": [
+          "niter",
+          "itner",
+          "inetr"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "na",
+        "dummies": [
+          "an",
+          "nu",
+          "ma"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "tion",
+        "dummies": [
+          "iton",
+          "toin",
+          "tino"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "al",
+        "dummies": [
+          "la",
+          "ar",
+          "ul"
+        ]
+      }
+    ],
+    "note": "international：国際的な。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_volunteer",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "volunteer",
+    "japanese": "ボランティア",
+    "english_dummies": [
+      "audience",
+      "passenger",
+      "customer"
+    ],
+    "japanese_dummies": [
+      "聴衆",
+      "乗客",
+      "客"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "vol",
+        "dummies": [
+          "ovl",
+          "vlo",
+          "vor"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "un",
+        "dummies": [
+          "nu",
+          "an",
+          "um"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "teer",
+        "dummies": [
+          "eter",
+          "tere",
+          "teel"
+        ]
+      }
+    ],
+    "note": "volunteer：ボランティア。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_peace",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "peace",
+    "japanese": "平和",
+    "english_dummies": [
+      "war",
+      "conflict",
+      "disaster"
+    ],
+    "japanese_dummies": [
+      "戦争",
+      "対立",
+      "災害"
+    ],
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "pea",
+        "dummies": [
+          "epa",
+          "pae",
+          "pia"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ce",
+        "dummies": [
+          "ec",
+          "ci",
+          "ke"
+        ]
+      }
+    ],
+    "note": "peace：平和。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_english_core_vocab_responsibility",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "共通語彙",
+    "english": "responsibility",
+    "japanese": "責任",
+    "english_dummies": [
+      "freedom",
+      "ability",
+      "opportunity"
+    ],
+    "japanese_dummies": [
+      "自由",
+      "能力",
+      "機会"
+    ],
+    "spelling_template": "{{1}}{{2}}{{3}}{{4}}{{5}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "re",
+        "dummies": [
+          "er",
+          "le",
+          "ri"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "spon",
+        "dummies": [
+          "pson",
+          "sopn",
+          "spno"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "si",
+        "dummies": [
+          "is",
+          "se",
+          "ci"
+        ]
+      },
+      {
+        "index": 4,
+        "answer": "bil",
+        "dummies": [
+          "ibl",
+          "bli",
+          "bir"
+        ]
+      },
+      {
+        "index": 5,
+        "answer": "ity",
+        "dummies": [
+          "tiy",
+          "iyt",
+          "ety"
+        ]
+      }
+    ],
+    "note": "responsibility：責任。教科書によって扱う学年は異なる。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_河",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "河川",
+    "reading": "かせん",
+    "reading_dummies": [
+      "がせん",
+      "かぜん",
+      "こうせん"
+    ],
+    "sentence": "大きな河川が流れる。",
+    "character": "河",
+    "writing_hint": "大きな「かせん」。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "氵",
+        "dummies": [
+          "扌",
+          "忄",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "可",
+        "dummies": [
+          "何",
+          "司",
+          "同"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "河川（かせん）。河は左の「氵」と右の「可」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_休",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "休息",
+    "reading": "きゅうそく",
+    "reading_dummies": [
+      "きゅそく",
+      "きゅうぞく",
+      "きょうそく"
+    ],
+    "sentence": "木陰で休息を取る。",
+    "character": "休",
+    "writing_hint": "木陰で「きゅうそく」を取る。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "亻",
+        "dummies": [
+          "彳",
+          "扌",
+          "氵"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "木",
+        "dummies": [
+          "本",
+          "未",
+          "末"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "休息（きゅうそく）。休は左の「亻」と右の「木」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_材",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "材料",
+    "reading": "ざいりょう",
+    "reading_dummies": [
+      "さいりょう",
+      "ざいりょ",
+      "さいりょ"
+    ],
+    "sentence": "工作の材料を集める。",
+    "character": "材",
+    "writing_hint": "工作の「ざいりょう」。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "木",
+        "dummies": [
+          "禾",
+          "扌",
+          "氵"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "才",
+        "dummies": [
+          "寸",
+          "牙",
+          "手"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "材料（ざいりょう）。材は左の「木」と右の「才」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_校",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "校庭",
+    "reading": "こうてい",
+    "reading_dummies": [
+      "こうでい",
+      "きょうてい",
+      "こてい"
+    ],
+    "sentence": "校庭を走る。",
+    "character": "校",
+    "writing_hint": "「こうてい」を走る。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "木",
+        "dummies": [
+          "禾",
+          "扌",
+          "氵"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "交",
+        "dummies": [
+          "父",
+          "文",
+          "支"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "校庭（こうてい）。校は左の「木」と右の「交」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_技",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "技術",
+    "reading": "ぎじゅつ",
+    "reading_dummies": [
+      "きじゅつ",
+      "ぎしゅつ",
+      "きしゅつ"
+    ],
+    "sentence": "新しい技術を学ぶ。",
+    "character": "技",
+    "writing_hint": "新しい「ぎじゅつ」。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "扌",
+        "dummies": [
+          "木",
+          "忄",
+          "氵"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "支",
+        "dummies": [
+          "枝",
+          "友",
+          "攴"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "技術（ぎじゅつ）。技は左の「扌」と右の「支」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_計",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "計画",
+    "reading": "けいかく",
+    "reading_dummies": [
+      "けいがく",
+      "きょうかく",
+      "けかく"
+    ],
+    "sentence": "旅行の計画を立てる。",
+    "character": "計",
+    "writing_hint": "旅行の「けいかく」。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "言",
+        "dummies": [
+          "氵",
+          "口",
+          "糸"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "十",
+        "dummies": [
+          "千",
+          "干",
+          "土"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "計画（けいかく）。計は左の「言」と右の「十」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_快",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "快適",
+    "reading": "かいてき",
+    "reading_dummies": [
+      "がいてき",
+      "かいでき",
+      "けいてき"
+    ],
+    "sentence": "快適な部屋で過ごす。",
+    "character": "快",
+    "writing_hint": "「かいてき」な部屋。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "忄",
+        "dummies": [
+          "氵",
+          "扌",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "夬",
+        "dummies": [
+          "央",
+          "失",
+          "夫"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "快適（かいてき）。快は左の「忄」と右の「夬」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_協",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "協力",
+    "reading": "きょうりょく",
+    "reading_dummies": [
+      "きょりょく",
+      "きょうりょう",
+      "こうりょく"
+    ],
+    "sentence": "仲間と協力する。",
+    "character": "協",
+    "writing_hint": "仲間と「きょうりょく」する。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "十",
+        "dummies": [
+          "千",
+          "干",
+          "土"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "劦",
+        "dummies": [
+          "力",
+          "加",
+          "労"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "協力（きょうりょく）。協は左の「十」と右の「劦」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_情",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "情勢",
+    "reading": "じょうせい",
+    "reading_dummies": [
+      "しょうせい",
+      "じょうぜい",
+      "じょせい"
+    ],
+    "sentence": "世界の情勢を調べる。",
+    "character": "情",
+    "writing_hint": "世界の「じょうせい」。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "忄",
+        "dummies": [
+          "氵",
+          "扌",
+          "亻"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "青",
+        "dummies": [
+          "清",
+          "晴",
+          "争"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "情勢（じょうせい）。情は左の「忄」と右の「青」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_構",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "構成",
+    "reading": "こうせい",
+    "reading_dummies": [
+      "ごうせい",
+      "こうぜい",
+      "きょうせい"
+    ],
+    "sentence": "文章の構成を考える。",
+    "character": "構",
+    "writing_hint": "文章の「こうせい」。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "木",
+        "dummies": [
+          "禾",
+          "扌",
+          "氵"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "冓",
+        "dummies": [
+          "溝",
+          "黄",
+          "再"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "構成（こうせい）。構は左の「木」と右の「冓」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_証",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "証拠",
+    "reading": "しょうこ",
+    "reading_dummies": [
+      "じょうこ",
+      "しょうご",
+      "しょこ"
+    ],
+    "sentence": "証拠を示す。",
+    "character": "証",
+    "writing_hint": "「しょうこ」を示す。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "言",
+        "dummies": [
+          "口",
+          "糸",
+          "金"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "正",
+        "dummies": [
+          "止",
+          "政",
+          "生"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "証拠（しょうこ）。証は左の「言」と右の「正」で構成する。"
+  },
+  {
+    "id": "jr_japanese_core_kanji_裕",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "共通漢字",
+    "kind": "kanji",
+    "word": "裕福",
+    "reading": "ゆうふく",
+    "reading_dummies": [
+      "ゆふく",
+      "ゆうぶく",
+      "ようふく"
+    ],
+    "sentence": "裕福な家庭で育つ。",
+    "character": "裕",
+    "writing_hint": "「ゆうふく」な家庭。最初の漢字",
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "衤",
+        "dummies": [
+          "礻",
+          "扌",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "谷",
+        "dummies": [
+          "合",
+          "各",
+          "容"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          100
+        ]
+      }
+    ],
+    "note": "裕福（ゆうふく）。裕は左の「衤」と右の「谷」で構成する。"
+  },
+  {
+    "id": "jr_science_core_equilibrium",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "力のつり合い",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "物体に働く2力がつり合う条件は？",
+    "answer": "同一直線上で逆向き、同じ大きさ",
+    "dummies": [
+      "同じ向きで同じ大きさ",
+      "平行なら大きさは自由",
+      "逆向きなら作用線は自由"
+    ],
+    "note": "2力のつり合いには大きさ・向き・作用線の3条件が必要。",
+    "learning_point": "equilibrium"
+  },
+  {
+    "id": "jr_science_core_inertia",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "運動",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "物体に働く力がつり合っているとき、運動中の物体は？",
+    "answer": "等速直線運動を続ける",
+    "dummies": [
+      "次第に止まる",
+      "必ず加速する",
+      "必ず円運動する"
+    ],
+    "note": "慣性の法則。静止している物体は静止を続ける。",
+    "learning_point": "inertia"
+  },
+  {
+    "id": "jr_science_core_speed",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "運動",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "速さを求める式は？",
+    "answer": "移動距離÷かかった時間",
+    "dummies": [
+      "時間÷移動距離",
+      "距離×時間",
+      "距離＋時間"
+    ],
+    "note": "単位はm/sなど。距離と時間の単位をそろえて計算する。",
+    "learning_point": "speed"
+  },
+  {
+    "id": "jr_science_core_work",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "一定の力で、その向きに物体を動かしたときの仕事は？",
+    "answer": "力の大きさ×移動距離",
+    "dummies": [
+      "力の大きさ÷移動距離",
+      "力の大きさ×時間",
+      "質量÷時間"
+    ],
+    "note": "仕事の単位はJ。力の向きに動いた距離を使う。",
+    "learning_point": "work"
+  },
+  {
+    "id": "jr_science_core_power",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "仕事率を求める式は？",
+    "answer": "仕事÷かかった時間",
+    "dummies": [
+      "仕事×時間",
+      "時間÷仕事",
+      "力÷距離"
+    ],
+    "note": "仕事率は単位時間あたりの仕事で、単位はW。",
+    "learning_point": "power"
+  },
+  {
+    "id": "jr_science_core_potential",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ物体をより高い位置に上げると、重力による位置エネルギーは？",
+    "answer": "大きくなる",
+    "dummies": [
+      "小さくなる",
+      "必ず0になる",
+      "高さには関係しない"
+    ],
+    "note": "基準の高さが同じなら、質量と高さが大きいほど位置エネルギーも大きい。",
+    "learning_point": "potential"
+  },
+  {
+    "id": "jr_science_core_kinetic",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ質量の物体で、速さが大きくなると運動エネルギーは？",
+    "answer": "大きくなる",
+    "dummies": [
+      "小さくなる",
+      "変わらない",
+      "位置だけで決まる"
+    ],
+    "note": "運動エネルギーは質量と速さに関係する。速さが大きいほど大きい。",
+    "learning_point": "kinetic"
+  },
+  {
+    "id": "jr_science_core_energy_conservation",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "摩擦や空気抵抗を無視できる落下で、減った位置エネルギーは主に？",
+    "answer": "運動エネルギーに変わる",
+    "dummies": [
+      "質量に変わる",
+      "電気エネルギーに変わる",
+      "消えてなくなる"
+    ],
+    "note": "力学的エネルギーが保存され、位置エネルギーと運動エネルギーが移り変わる。",
+    "learning_point": "energy_conservation"
+  },
+  {
+    "id": "jr_science_core_cation",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "イオン",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "原子が電子を失うと、どちらになる？",
+    "answer": "陽イオン",
+    "dummies": [
+      "陰イオン",
+      "中性子",
+      "別の元素の原子"
+    ],
+    "note": "電子は負の電気を持つ。失うと全体として正の電気を帯びる。",
+    "learning_point": "cation"
+  },
+  {
+    "id": "jr_science_core_anion",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "イオン",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "原子が電子を受け取ると、どちらになる？",
+    "answer": "陰イオン",
+    "dummies": [
+      "陽イオン",
+      "陽子",
+      "別の元素の原子"
+    ],
+    "note": "電子を受け取ると負の電気を帯びる。原子核の陽子数は変わらない。",
+    "learning_point": "anion"
+  },
+  {
+    "id": "jr_science_core_acid",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "酸とアルカリ",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸性の水溶液に共通するイオンは？",
+    "answer": "水素イオン",
+    "dummies": [
+      "水酸化物イオン",
+      "ナトリウムイオン",
+      "塩化物イオン"
+    ],
+    "note": "酸性には水素イオン、アルカリ性には水酸化物イオンが関係する。",
+    "learning_point": "acid"
+  },
+  {
+    "id": "jr_science_core_neutralization",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "酸とアルカリ",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中和で水素イオンと水酸化物イオンが結び付いてできるものは？",
+    "answer": "水",
+    "dummies": [
+      "水素",
+      "酸素",
+      "塩素"
+    ],
+    "note": "H⁺とOH⁻が結び付いて水になる。酸とアルカリの種類によって塩もできる。",
+    "learning_point": "neutralization"
+  },
+  {
+    "id": "jr_science_core_battery",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "化学",
+    "unit": "電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "化学電池は主に何を電気エネルギーへ変換する？",
+    "answer": "化学エネルギー",
+    "dummies": [
+      "位置エネルギー",
+      "音エネルギー",
+      "核エネルギー"
+    ],
+    "note": "電極と電解質の化学変化を利用して電流を取り出す。",
+    "learning_point": "battery"
+  },
+  {
+    "id": "jr_science_core_daily_motion",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "星が一晩のうちに動いて見える主な原因は？",
+    "answer": "地球の自転",
+    "dummies": [
+      "地球の公転",
+      "月の公転",
+      "太陽の自転"
+    ],
+    "note": "地球の自転による見かけの動きが日周運動。季節による変化とは区別する。",
+    "learning_point": "daily_motion"
+  },
+  {
+    "id": "jr_science_core_season",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球の季節が変わる主な理由は？",
+    "answer": "地軸が傾いたまま公転するため",
+    "dummies": [
+      "太陽との距離だけが変わるため",
+      "地球の自転方向が変わるため",
+      "太陽の大きさが変わるため"
+    ],
+    "note": "地軸の傾きと公転によって太陽高度や昼の長さが変わる。",
+    "learning_point": "season"
+  },
+  {
+    "id": "jr_science_core_moon",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "月が満ち欠けして見える理由は？",
+    "answer": "太陽に照らされた面の見え方が変わる",
+    "dummies": [
+      "月自身の発光量が変わる",
+      "毎回地球の影に入る",
+      "月の形そのものが変わる"
+    ],
+    "note": "太陽・地球・月の位置関係で、照らされた半球の見える割合が変わる。",
+    "learning_point": "moon"
+  },
+  {
+    "id": "jr_science_core_eclipse",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "月食が起こるときの並びは？",
+    "answer": "太陽・地球・月",
+    "dummies": [
+      "太陽・月・地球",
+      "地球・太陽・月",
+      "月・太陽・地球"
+    ],
+    "note": "地球の影に月が入る。満月の頃に起こるが、軌道の傾きのため毎月ではない。",
+    "learning_point": "eclipse"
+  },
+  {
+    "id": "jr_science_core_venus",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金星が真夜中に見えない理由は？",
+    "answer": "地球より内側を公転するため",
+    "dummies": [
+      "地球より外側を公転するため",
+      "自転していないため",
+      "月と同じ周期で動くため"
+    ],
+    "note": "内惑星は見かけ上太陽から大きく離れず、明け方や夕方に見られる。",
+    "learning_point": "venus"
+  },
+  {
+    "id": "jr_science_core_renewable",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "環境",
+    "unit": "資源とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "再生可能エネルギーを利用する発電は？",
+    "answer": "地熱発電",
+    "dummies": [
+      "石炭火力発電",
+      "石油火力発電",
+      "天然ガス火力発電"
+    ],
+    "note": "地熱・太陽光・風力などは再生可能エネルギー。化石燃料は有限の資源。",
+    "learning_point": "renewable"
+  },
+  {
+    "id": "jr_science_core_recycle",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "理科",
+    "field": "環境",
+    "unit": "科学技術と生活",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "使用済みの物を原料として再利用するのは？",
+    "answer": "リサイクル",
+    "dummies": [
+      "リユース",
+      "リデュース",
+      "リフューズ"
+    ],
+    "note": "リユースは繰り返し使うこと、リデュースは廃棄物の発生を減らすこと。",
+    "learning_point": "recycle"
+  },
+  {
+    "id": "jr_social_core_asia_rice",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アジアの季節風の影響で高温多雨となる地域に広がる農業は？",
+    "answer": "稲作",
+    "dummies": [
+      "乾燥地の遊牧",
+      "オリーブ中心の農業",
+      "ツンドラのトナカイ遊牧"
+    ],
+    "note": "稲の生育には高温と豊富な水が適し、東・東南・南アジアに稲作地域が広がる。",
+    "learning_point": "asia_rice"
+  },
+  {
+    "id": "jr_social_core_africa_export",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "特定の農産物や鉱産資源の輸出に頼る経済は？",
+    "answer": "モノカルチャー経済",
+    "dummies": [
+      "計画経済",
+      "循環型経済",
+      "自給自足経済"
+    ],
+    "note": "国際価格の変動や天候の影響を受けやすく、産業の多角化が課題となる。",
+    "learning_point": "africa_export"
+  },
+  {
+    "id": "jr_social_core_america_farm",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アメリカ合衆国で、気候などに適した作物を地域ごとに育てることは？",
+    "answer": "適地適作",
+    "dummies": [
+      "焼畑農業",
+      "移動式牧畜",
+      "二期作"
+    ],
+    "note": "広い国土の自然条件を生かし、地域に適した農業を行う。",
+    "learning_point": "america_farm"
+  },
+  {
+    "id": "jr_social_core_brazil_forest",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アマゾン川流域の森林減少に関係する土地利用は？",
+    "answer": "農地や牧場の開発",
+    "dummies": [
+      "ツンドラの拡大",
+      "永久凍土の利用",
+      "地中海式農業"
+    ],
+    "note": "熱帯林の伐採と農牧地の開発が森林減少に関係する。",
+    "learning_point": "brazil_forest"
+  },
+  {
+    "id": "jr_social_core_australia",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "世界の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "オーストラリアで広く行われる、羊を飼育する農業は？",
+    "answer": "牧羊",
+    "dummies": [
+      "酪農",
+      "稲作",
+      "プランテーション農業"
+    ],
+    "note": "羊毛や食肉の生産が行われる。乳牛を飼う酪農と区別する。",
+    "learning_point": "australia"
+  },
+  {
+    "id": "jr_social_core_tohoku",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "日本の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東北地方の太平洋側に夏に吹き、冷害を起こすことがある風は？",
+    "answer": "やませ",
+    "dummies": [
+      "からっ風",
+      "フェーン",
+      "木枯らし"
+    ],
+    "note": "やませは冷たく湿った北東の風で、低温や日照不足をもたらすことがある。",
+    "learning_point": "tohoku"
+  },
+  {
+    "id": "jr_social_core_setouchi",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "日本の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "瀬戸内の降水量が比較的少ない理由に関係するのは？",
+    "answer": "山地が季節風の影響を弱める",
+    "dummies": [
+      "一年中赤道低圧帯に入る",
+      "太平洋の暖流が止まる",
+      "北海道より高緯度にある"
+    ],
+    "note": "中国山地と四国山地にはさまれ、季節風による雨や雪の影響が比較的小さい。",
+    "learning_point": "setouchi"
+  },
+  {
+    "id": "jr_social_core_hokkaido",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "社会",
+    "field": "地理",
+    "unit": "日本の諸地域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北海道の畑作で見られる、作物を一定の順序で変えて栽培する方法は？",
+    "answer": "輪作",
+    "dummies": [
+      "連作",
+      "二期作",
+      "促成栽培"
+    ],
+    "note": "同じ畑で異なる作物を順に栽培し、地力の低下や病害などを抑える。",
+    "learning_point": "hokkaido"
+  },
+  {
+    "id": "jr_japanese_core_idiom_一期一会",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "一期一会",
+    "definition": "一生に一度の出会いと思って大切にすること",
+    "term_dummies": [
+      "一朝一夕",
+      "一長一短",
+      "一喜一憂"
+    ],
+    "definition_dummies": [
+      "非常に短い期間",
+      "長所も短所もあること",
+      "変化に喜んだり心配したりすること"
+    ],
+    "note": "一期一会：一度きりの出会いと思って、その機会を大切にする。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_自画自賛",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "自画自賛",
+    "definition": "自分で自分を褒めること",
+    "term_dummies": [
+      "自業自得",
+      "試行錯誤",
+      "心機一転"
+    ],
+    "definition_dummies": [
+      "自分の行いの結果を自分が受けること",
+      "試みと失敗を重ねること",
+      "気持ちを新たに切り替えること"
+    ],
+    "note": "自画自賛：自分で自分を褒めること。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_心機一転",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "心機一転",
+    "definition": "気持ちを新たに切り替えること",
+    "term_dummies": [
+      "試行錯誤",
+      "自画自賛",
+      "一喜一憂"
+    ],
+    "definition_dummies": [
+      "試みと失敗を重ねること",
+      "自分で自分を褒めること",
+      "状況の変化に喜んだり心配したりすること"
+    ],
+    "note": "心機一転：気持ちを新たに切り替えること。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_一喜一憂",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "一喜一憂",
+    "definition": "状況の変化に喜んだり心配したりすること",
+    "term_dummies": [
+      "一長一短",
+      "一石二鳥",
+      "心機一転"
+    ],
+    "definition_dummies": [
+      "長所も短所もあること",
+      "一つの行動で二つの利益を得ること",
+      "気持ちを新たに切り替えること"
+    ],
+    "note": "一喜一憂：状況の変化に喜んだり心配したりすること。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_切磋琢磨",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "切磋琢磨",
+    "definition": "互いに励まし合い、学問や技術を磨くこと",
+    "term_dummies": [
+      "自画自賛",
+      "孤軍奮闘",
+      "優柔不断"
+    ],
+    "definition_dummies": [
+      "自分で自分を褒めること",
+      "助けを得ずに一人で努力すること",
+      "ためらってなかなか決められないこと"
+    ],
+    "note": "切磋琢磨：仲間と互いに励まし合い、向上を目指すこと。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_首尾一貫",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "首尾一貫",
+    "definition": "初めから終わりまで方針や態度が変わらないこと",
+    "term_dummies": [
+      "臨機応変",
+      "支離滅裂",
+      "一朝一夕"
+    ],
+    "definition_dummies": [
+      "状況に合わせて対応すること",
+      "話にまとまりがなく筋が通らないこと",
+      "非常に短い期間"
+    ],
+    "note": "首尾一貫：初めから終わりまで方針や態度が変わらないこと。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_優柔不断",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "優柔不断",
+    "definition": "決断をためらい、なかなか決められないこと",
+    "term_dummies": [
+      "即断即決",
+      "臨機応変",
+      "自業自得"
+    ],
+    "definition_dummies": [
+      "すぐに判断して決めること",
+      "状況に合わせて対応すること",
+      "自分の行いの結果を自分が受けること"
+    ],
+    "note": "優柔不断：決断をためらい、なかなか決められないこと。"
+  },
+  {
+    "id": "jr_japanese_core_idiom_一長一短",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "共通四字熟語",
+    "kind": "idiom",
+    "term": "一長一短",
+    "definition": "長所も短所もあること",
+    "term_dummies": [
+      "一石二鳥",
+      "一喜一憂",
+      "一朝一夕"
+    ],
+    "definition_dummies": [
+      "一つの行動で二つの利益を得ること",
+      "変化に喜んだり心配したりすること",
+      "非常に短い期間"
+    ],
+    "note": "一長一短：長所も短所もあること。"
+  },
+  {
+    "id": "jr_english_core_phrase_get_up",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "get up",
+    "japanese": "起床する",
+    "english_dummies": [
+      "go home",
+      "go out",
+      "come back"
+    ],
+    "japanese_dummies": [
+      "帰宅する",
+      "外出する",
+      "戻ってくる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "get",
+        "dummies": [
+          "make",
+          "put",
+          "look"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "up",
+        "dummies": [
+          "off",
+          "in",
+          "on"
+        ]
+      }
+    ],
+    "note": "get up：起床する。"
+  },
+  {
+    "id": "jr_english_core_phrase_go_to_bed",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "go to bed",
+    "japanese": "就寝する",
+    "english_dummies": [
+      "get up",
+      "go to school",
+      "come home"
+    ],
+    "japanese_dummies": [
+      "起床する",
+      "登校する",
+      "帰宅する"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "to",
+        "dummies": [
+          "at",
+          "on",
+          "for"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "bed",
+        "dummies": [
+          "desk",
+          "chair",
+          "door"
+        ]
+      }
+    ],
+    "note": "go to bed：就寝する。"
+  },
+  {
+    "id": "jr_english_core_phrase_listen_to",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "listen to",
+    "japanese": "〜を聴く",
+    "english_dummies": [
+      "look at",
+      "talk about",
+      "wait for"
+    ],
+    "japanese_dummies": [
+      "〜を見る",
+      "〜について話す",
+      "〜を待つ"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "to",
+        "dummies": [
+          "at",
+          "for",
+          "about"
+        ]
+      }
+    ],
+    "note": "listen to：〜を聴く。"
+  },
+  {
+    "id": "jr_english_core_phrase_wait_for",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "wait for",
+    "japanese": "〜を待つ",
+    "english_dummies": [
+      "look at",
+      "look after",
+      "listen to"
+    ],
+    "japanese_dummies": [
+      "〜を見る",
+      "〜の世話をする",
+      "〜を聴く"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "for",
+        "dummies": [
+          "at",
+          "to",
+          "after"
+        ]
+      }
+    ],
+    "note": "wait for：〜を待つ。"
+  },
+  {
+    "id": "jr_english_core_phrase_be_proud_of",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "be proud of",
+    "japanese": "〜を誇りに思う",
+    "english_dummies": [
+      "be afraid of",
+      "be interested in",
+      "be tired of"
+    ],
+    "japanese_dummies": [
+      "〜を恐れる",
+      "〜に興味がある",
+      "〜にうんざりしている"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "proud",
+        "dummies": [
+          "afraid",
+          "tired",
+          "full"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "of",
+        "dummies": [
+          "in",
+          "at",
+          "for"
+        ]
+      }
+    ],
+    "note": "be proud of：〜を誇りに思う。"
+  },
+  {
+    "id": "jr_english_core_phrase_be_different_from",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "be different from",
+    "japanese": "〜と異なる",
+    "english_dummies": [
+      "be similar to",
+      "be proud of",
+      "be afraid of"
+    ],
+    "japanese_dummies": [
+      "〜に似ている",
+      "〜を誇りに思う",
+      "〜を恐れる"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "different",
+        "dummies": [
+          "differently",
+          "difference",
+          "differ"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "from",
+        "dummies": [
+          "to",
+          "of",
+          "at"
+        ]
+      }
+    ],
+    "note": "be different from：〜と異なる。"
+  },
+  {
+    "id": "jr_english_core_phrase_because_of",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "because of",
+    "japanese": "〜が原因で",
+    "english_dummies": [
+      "in spite of",
+      "instead of",
+      "according to"
+    ],
+    "japanese_dummies": [
+      "〜にもかかわらず",
+      "〜の代わりに",
+      "〜によると"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 1,
+        "answer": "because",
+        "dummies": [
+          "instead",
+          "spite",
+          "according"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "of",
+        "dummies": [
+          "to",
+          "at",
+          "in"
+        ]
+      }
+    ],
+    "note": "because of：〜が原因で。"
+  },
+  {
+    "id": "jr_english_core_phrase_in_order_to",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "熟語",
+    "unit": "共通熟語",
+    "english": "in order to",
+    "japanese": "〜するために",
+    "english_dummies": [
+      "as soon as",
+      "as well as",
+      "as long as"
+    ],
+    "japanese_dummies": [
+      "〜するとすぐに",
+      "〜だけでなく",
+      "〜する限り"
+    ],
+    "phrase_blanks": [
+      {
+        "index": 2,
+        "answer": "order",
+        "dummies": [
+          "turn",
+          "case",
+          "fact"
+        ]
+      },
+      {
+        "index": 3,
+        "answer": "to",
+        "dummies": [
+          "for",
+          "of",
+          "at"
+        ]
+      }
+    ],
+    "note": "in order to：〜するために。"
+  }
+]

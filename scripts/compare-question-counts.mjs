@@ -4,7 +4,11 @@ import {makeQuestionQueue,revealPlan} from '../game.js';
 import {questionKey} from '../progress.js';
 import {simulateSession} from './simulate-session.mjs';
 import {practiceTypes,matchesPracticeQuestion} from '../learning.js';
-const read=name=>JSON.parse(readFileSync(new URL('../quiz-data/junior_'+name+'.json',import.meta.url)));
+const read=name=>{
+ const base=JSON.parse(readFileSync(new URL('../quiz-data/junior_'+name+'.json',import.meta.url)));
+ const subject=base[0].subject;
+ return [...base,...JSON.parse(readFileSync(new URL('../quiz-data/junior_expansion.json',import.meta.url))).filter(q=>q.subject===subject)];
+};
 function summarize(items,acceptQuestion=()=>true){
  const results=Array.from({length:100},(_,i)=>simulateSession(items,i+1,0,{acceptQuestion}).answers);
  return {average:Math.round(results.reduce((n,v)=>n+v,0)/results.length*10)/10,min:Math.min(...results),max:Math.max(...results)};

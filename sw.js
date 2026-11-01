@@ -1,10 +1,10 @@
-const VERSION = '0.44.3';
-const CACHE = 'study-beat-v0.44.3';
+const VERSION = '0.45.0';
+const CACHE = 'study-beat-v0.45.0';
 const MEDIA = 'study-beat-media-v1';
 const versioned = path => `${path}?v=${VERSION}`;
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
   ...['./style.css', './app.js', './game.js', './music-player.js', './wake-lock.js', './learning.js', './progress.js', './calibration.js', './quiz-data/junior_science.json', './quiz-data/junior_english.json', './quiz-data/junior_japanese.json', './quiz-data/junior_math.json', './quiz-data/junior_social.json', './music-data/index.json',
-    './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0002/the_mountain_rhythm_beat2.json'].map(versioned)];
+    './quiz-data/junior_expansion.json', './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0002/the_mountain_rhythm_beat2.json'].map(versioned)];
 const AUDIO = ['./music-data/0001/Fallin_For_You.mp3', './music-data/0002/the_mountain-american-western-country-496543.mp3'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE.map(url => new Request(url, { cache: 'reload' })))).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));

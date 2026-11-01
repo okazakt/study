@@ -40,7 +40,8 @@ const subjects=[['国語','japanese'],['英語','english'],['数学','math'],['�
 if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href)for(const retryEvery of [0,5]){
  const courses=[];const totals=[];
  for(const [subject,file] of subjects){
-  const results=Array.from({length:100},(_,i)=>simulateSession(read('quiz-data/junior_'+file+'.json'),i+1,retryEvery));totals.push(...results);
+  const items=[...read('quiz-data/junior_'+file+'.json'),...read('quiz-data/junior_expansion.json').filter(q=>q.subject===subject)];
+  const results=Array.from({length:100},(_,i)=>simulateSession(items,i+1,retryEvery));totals.push(...results);
   const avg=Object.fromEntries(Object.keys(results[0]).map(key=>[key,Math.round(results.reduce((n,r)=>n+r[key],0)/results.length*10)/10]));
   courses.push({subject,...avg,atGoal:results.filter(r=>r.counted===SESSION.tapGoal).length,minTaps:Math.min(...results.map(r=>r.taps)),maxTaps:Math.max(...results.map(r=>r.taps)),minObjects:Math.min(...results.map(r=>r.objects)),maxObjects:Math.max(...results.map(r=>r.objects))});
  }
