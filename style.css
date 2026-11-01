@@ -121,3 +121,5 @@ html.play-locked{height:100%;overflow:hidden;overscroll-behavior:none}body.playi
 .gameplay-option{margin-top:18px}.gameplay-option p,.rhythm-picker p{font-size:13px;color:var(--muted);line-height:1.7}.rhythm-picker{margin:24px 0}.rhythm-picker h2{font-size:18px;margin-top:0}
 
 .mode-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.mode-buttons button{min-width:0;min-height:44px;padding:10px 4px;white-space:nowrap}#rhythm-difficulty{grid-template-columns:repeat(3,minmax(0,1fr))}.rhythm-picker h2{margin-bottom:14px}@media(max-width:400px){.mode-buttons{gap:5px}.mode-buttons button{font-size:13px;padding:9px 3px}}
+
+.result-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0}.result-settings>div{min-width:0;min-height:110px;padding:20px;background:var(--panel);border-radius:10px;color:var(--muted);font-size:12px}.result-settings strong{display:block;color:var(--accent);font-size:clamp(22px,4vw,28px);margin-top:8px}@media(max-width:400px){.result-settings>div{padding:15px 12px}}

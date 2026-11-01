@@ -1,9 +1,9 @@
-import { MusicPlayer } from './music-player.js?v=0.42.2';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.2';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.2';
-const VERSION = '0.42.2';
+import { MusicPlayer } from './music-player.js?v=0.42.3';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.3';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.3';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.3';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.3';
+const VERSION = '0.42.3';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -926,7 +926,8 @@ function finish(completed, reason=null) {
     title.textContent=song.title;credit.textContent=musicCredit(song);item.append(title,credit);$('result-music-list').append(item);
   }
   $('result-music').hidden=!seenMusic.size;
-  $('result-settings').textContent=`${SPEEDS[game.options.speed]} / ${RHYTHMS[game.options.rhythm].label}`;
+  $('result-rhythm').textContent=RHYTHMS[game.options.rhythm].label;
+  $('result-speed').textContent=SPEEDS[game.options.speed];
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
   const score=game.scoreBreakdown;
