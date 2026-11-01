@@ -1,9 +1,9 @@
-import { MusicPlayer } from './music-player.js?v=0.42.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.0';
-const VERSION = '0.42.0';
+import { MusicPlayer } from './music-player.js?v=0.42.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.42.1';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.42.1';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.42.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey } from './learning.js?v=0.42.1';
+const VERSION = '0.42.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
@@ -17,13 +17,16 @@ let gameplayOptions=normalizeGameplayOptions(null);
 try { gameplayOptions=normalizeGameplayOptions(JSON.parse(localStorage.getItem('study-beat-gameplay-v1')||'null')); } catch {}
 for(const [id,key,values] of [['question-speed','speed',SPEEDS],['rhythm-difficulty','rhythm',RHYTHMS]]){
   for(const [value,entry] of Object.entries(values)){
-    const option=document.createElement('option');option.value=value;option.textContent=typeof entry==='string'?entry:entry.label;$(id).append(option);
+    const button=document.createElement('button');button.type='button';button.dataset.value=value;
+    button.textContent=typeof entry==='string'?entry:entry.label;
+    button.setAttribute('aria-pressed',String(gameplayOptions[key]===value));
+    button.addEventListener('click',()=>{
+      gameplayOptions[key]=value;
+      for(const sibling of $(id).querySelectorAll('button'))sibling.setAttribute('aria-pressed',String(sibling===button));
+      try { localStorage.setItem('study-beat-gameplay-v1',JSON.stringify(gameplayOptions));$('gameplay-storage-note').hidden=true; }catch{$('gameplay-storage-note').hidden=false;}
+      renderGameplayHelp();
+    });$(id).append(button);
   }
-  $(id).value=gameplayOptions[key];$(id).addEventListener('change',()=>{
-    gameplayOptions[key]=$(id).value;
-    try { localStorage.setItem('study-beat-gameplay-v1',JSON.stringify(gameplayOptions));$('gameplay-storage-note').hidden=true; }catch{$('gameplay-storage-note').hidden=false;}
-    renderGameplayHelp();
-  });
 }
 function renderGameplayHelp(){
   $('rhythm-description').textContent={easy:'今までと同じ。5分で120回を目標に、回答色のレーンは固定。',normal:'5分で180回を目標。列ごとに4色の位置が入れ替わります。',hard:'5分で240回を目標。4色の位置に加え、半拍を交えた変化のあるリズムになります。'}[gameplayOptions.rhythm];
