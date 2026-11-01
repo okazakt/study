@@ -10,7 +10,7 @@ const bank=read('junior_english_vocabulary2'),added=bank.filter(q=>q.content_bat
 test('520 new headwords have unique stable IDs and do not replace existing learning history',()=>{
  assert.equal(added.length,520);assert.ok(added.every(q=>q.field==='英単語'&&q.school_level==='中学'&&q.subject==='英語'&&['中1','中2','中3'].includes(q.grade)));
  assert.equal(new Set(all.map(q=>q.id)).size,all.length);const words=all.filter(q=>q.english);assert.equal(new Set(words.map(q=>q.english.toLowerCase())).size,words.length);
- assert.equal(all.filter(q=>q.field==='英単語').length,2382);assert.equal(all.length,2910);assert.equal(makeQuestionQueue(all,()=>.5).length,10745);
+ assert.equal(all.filter(q=>q.field==='英単語').length,2382);assert.equal(all.length,2922);assert.equal(makeQuestionQueue(all,()=>.5).length,10757);
 });
 test('all 2217 generated questions have a unique correct option and respect display limits',()=>{
  const qs=makeQuestionQueue(added,()=>.5);assert.equal(qs.length,2217);

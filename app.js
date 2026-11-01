@@ -1,12 +1,12 @@
-import {FocusGame} from './focus-game.js?v=0.60.0';
-import {TEXTBOOK_KEY,availableTextbookSeries,normalizeTextbookSettings,textbookBooks,textbookUnits,selectTextbookQuestions} from './textbooks.js?v=0.60.0';
-import { ScreenWakeLock } from './wake-lock.js?v=0.60.0';
-import { MusicPlayer } from './music-player.js?v=0.60.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.60.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.60.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.60.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.60.0';
-const VERSION = '0.60.0';
+import {FocusGame} from './focus-game.js?v=0.61.0';
+import {TEXTBOOK_KEY,availableTextbookSeries,normalizeTextbookSettings,textbookBooks,textbookUnits,selectTextbookQuestions} from './textbooks.js?v=0.61.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.61.0';
+import { MusicPlayer } from './music-player.js?v=0.61.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.61.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.61.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.61.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.61.0';
+const VERSION = '0.61.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -331,7 +331,7 @@ function renderTextbookSettings(){
  $('textbook-setting').replaceChildren(new Option('共通問題（教科書を指定しない）',''));
  const states={wordlist_only:'語彙一覧のみ確認・単元未対応',source_unavailable:'資料取得待ち',pending_source:'資料確認中',curriculum_only:'単元表のみ確認・語彙未対応'};
  for(const series of availableTextbookSeries(textbookData)){
-  const option=new Option(`${series.title}／${series.publisher}${series.available?'（一部語彙対応）':`（${states[series.status]||'確認中'}）`}`,series.id);option.disabled=!series.available;$('textbook-setting').append(option);
+  const option=new Option(`${series.title}／${series.publisher}${series.available?(series.status==='partial_grammar'?'（一部文法対応）':'（一部語彙対応）'):`（${states[series.status]||'確認中'}）`}`,series.id);option.disabled=!series.available;$('textbook-setting').append(option);
  }
  $('textbook-setting').value=textbookSettings.series;
 }
@@ -341,7 +341,7 @@ function renderTextbookUnits(course,entry){
  const units=textbookUnits(textbookData,textbookSettings,course.id),books=textbookBooks(textbookData,textbookSettings,course.id);
  $('textbook-title').textContent=`${books.map(b=>b.title).join('・')} · 2026年度使用`;
  $('textbook-summary').textContent=`${books[0]?.title.replace(/ [123]$/,'') || ''}の単元を選ぶ`;
- $('textbook-note').textContent='令和7年度版。初出ページと訳語を照合できた一部の単語・熟語を出題します。未対応語があります。文法・読解は共通問題で選べます。';
+ $('textbook-note').textContent=books[0]?.status==='partial_grammar'?'令和7年度版。公式単元表で確認した文法項目の練習問題です。本文・語彙・読解の対応ではありません。ページは未確認のため表示しません。':'令和7年度版。初出ページと訳語を照合できた一部の単語・熟語を出題します。未対応語があります。文法・読解は共通問題で選べます。';
  const generated=catalogQuestions.filter(q=>matchesPracticeQuestion(q,entry.practiceType||'all'));
  const available=units.filter(u=>u.items.some(row=>generated.some(q=>q.sourceId===row.sourceId)));
  const selected=textbookSettings.unitsByCourse[course.id];
@@ -352,7 +352,7 @@ function renderTextbookUnits(course,entry){
   const ids=new Set(unit.items.map(row=>row.sourceId)),qs=generated.filter(q=>ids.has(q.sourceId)),coverage=questionCoverage(qs,learningHistory);
   const label=document.createElement('label');label.className='section-option';const input=document.createElement('input');input.type='checkbox';input.dataset.textbookUnit=unit.id;input.disabled=!qs.length;input.checked=!!qs.length&&(!Array.isArray(selected)||selected.includes(unit.id));
   input.addEventListener('change',()=>{const chosen=new Set(Array.isArray(selected)?selected:available.map(u=>u.id));input.checked?chosen.add(unit.id):chosen.delete(unit.id);textbookSettings.unitsByCourse[course.id]=available.every(u=>chosen.has(u.id))?null:[...chosen];saveTextbooks();renderLearning();});
-  const text=document.createElement('span');text.textContent=`${course.year==='exam'?`${unit.year}年 `:''}${unit.label}（p.${unit.pageStart}–${unit.pageEnd}） · ${qs.length?`出題済み ${coverage.solved} / ${coverage.total}問`:'対応問題は準備中'}`;label.append(input,text);$('textbook-unit-list').append(label);
+  const text=document.createElement('span');text.textContent=`${course.year==='exam'?`${unit.year}年 `:''}${unit.label}${Number.isInteger(unit.pageStart)?`（p.${unit.pageStart}–${unit.pageEnd}）`:''} · ${qs.length?`出題済み ${coverage.solved} / ${coverage.total}問`:'対応問題は準備中'}`;label.append(input,text);$('textbook-unit-list').append(label);
  }
 }
 function saveLearning() {

@@ -19,6 +19,7 @@ def senses(s):
 by={en(q['english']):q for q in lexical}
 files={'nh.xlsx':'https://ten.tokyo-shoseki.co.jp/text/chu/eigo/download/documents/eigo_19goidata.xlsx','ow.xlsx':'https://www.kyoiku-shuppan.co.jp/textbook/chuu/eigo/files/r7_tangorengo-database_2603.xlsx','hwg.xlsx':'https://www.mitsumura-tosho.co.jp/download_file/view/9a89e7c9-55fb-42f6-9c98-e2c25522f08a/6046','mext.pdf':'https://www.mext.go.jp/content/20210531-mxt_kyoiku01-100002608_010.pdf','catalog.pdf':'https://www.mext.go.jp/content/20250415-mxt_kyokasyo02-000041714_2.pdf'}
 for g in [1,2,3]:files[f'ow-plan{g}.xlsx']=f'https://www.kyoiku-shuppan.co.jp/textbook/chuu/eigo/files/r7eigo{g}_nenkeihyouka_2503.xlsx'
+for g in [1,2,3]:files[f'blue-units{g}.pdf']=f'https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist0{g}.pdf'
 from datetime import date
 checked=date.today().isoformat()
 provenance=[dict(id=k,url=v,sha256=hashlib.sha256((source/k).read_bytes()).hexdigest(),retrieved=checked) for k,v in files.items()]
@@ -27,7 +28,7 @@ if previousPath.exists():
  previous=json.loads(previousPath.read_text());pinned={r['id']:r['sha256'] for r in previous['sources']}
  for row in provenance:
   if row['id'] in pinned and pinned[row['id']]!=row['sha256']:raise ValueError(f"Source changed: {row['id']}; review the edition, data revision and mapping before replacing its pinned checksum")
-series=[('new-horizon','NEW HORIZON','東京書籍','002','wordlist_only'),('sunshine','Sunshine','開隆堂','009','source_unavailable'),('new-crown','NEW CROWN','三省堂','015','pending_source'),('one-world','ONE WORLD','教育出版','017','partial_words'),('here-we-go','Here We Go!','光村図書','038','curriculum_only'),('blue-sky','BLUE SKY','啓林館','061','source_unavailable')]
+series=[('new-horizon','NEW HORIZON','東京書籍','002','wordlist_only'),('sunshine','Sunshine','開隆堂','009','source_unavailable'),('new-crown','NEW CROWN','三省堂','015','pending_source'),('one-world','ONE WORLD','教育出版','017','partial_words'),('here-we-go','Here We Go!','光村図書','038','partial_grammar'),('blue-sky','BLUE SKY','啓林館','061','curriculum_only')]
 books=[]
 for key,name,pub,code,status in series:
  for g in [1,2,3]:books.append(dict(id=f'{key}-{g}-2026',series=key,title=f'{name} {g}',publisher=pub,school='中学',subject='英語',year=g,usageYear=2026,editionYear=2025,bookNumber=f'{code}-{g+6}2',status=status,units=[]))
@@ -113,10 +114,37 @@ for sheet in openpyxl.load_workbook(source/'nh.xlsx',data_only=True).worksheets:
  for rowno,row in enumerate(sheet.values,1):
   if rowno<2 or not isinstance(row[1],str):continue
   w=row[1];item=by.get(en(w));nh.append(dict(headword=w,sheet=sheet.title,row=rowno,status='headword_match_only' if item else 'headword_unmatched',sourceId=item['id'] if item else None))
-manifest=dict(version=1,usageYear=2026,editionYear=2025,checkedAt=checked,catalogSource='catalog.pdf',sources=provenance,reviewLedger=reviewMeta,books=books,
- caveats=['出版社の監修・公認を意味しない。','対応は確認できた語義・初出ページに限定し、未対応語を含む。','教科書本文・訳文・問題・音声は転載せず、問題文と解説は独自素材を使う。','初出箇所の対応であり、その単元の全既習語・全出現語一覧ではない。'])
+# Grammar associations are explicitly reviewed, not inferred from keyword overlap.
+grammarPath=root/'textbook-data/here-we-go-grammar-reviewed.json'
+grammar=json.loads(grammarPath.read_text())
+assert grammar['version']==1 and grammar['source']=='hwg.xlsx'
+assert grammar['sourceSha256']==hashlib.sha256((source/'hwg.xlsx').read_bytes()).hexdigest(), 'Stale HWG source'
+allBy={q['id']:q for q in items};unitKeys=set();hwg=openpyxl.load_workbook(source/'hwg.xlsx',data_only=True)
+for reviewed in grammar['units']:
+ g=reviewed['year'];number=reviewed['unitNumber'];key=(g,number)
+ assert key not in unitKeys and g in (1,2,3) and number in range(1,9);unitKeys.add(key)
+ sheet=hwg[reviewed['sheet']]
+ assert sheet.sheet_state=='visible' and sheet.title==f'{g}年' and '令和7年度版' in ''.join(str(v or '') for v in next(sheet.values))
+ row=list(sheet.values)[reviewed['row']-1]
+ assert str(row[4]).splitlines()[0].strip()==f'Unit {number}', 'HWG unit moved'
+ assert reviewed['languageMaterialSha256']==hashlib.sha256(str(row[8]).encode()).hexdigest(), 'HWG grammar changed'
+ mapped=[];ids=set()
+ for decision in reviewed['items']:
+  item=allBy[decision['sourceId']]
+  assert item['subject']=='英語' and item['field']=='英文法'
+  assert item['id'] not in ids;ids.add(item['id'])
+  assert decision['materialSha256']==hashlib.sha256(json.dumps(item,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest(), f"Stale HWG material: {item['id']}"
+  mapped.append(dict(sourceId=item['id'],page=None,evidence=dict(source='hwg.xlsx',sheet=sheet.title,row=reviewed['row'],method='reviewed_grammar_topic',languageMaterialSha256=reviewed['languageMaterialSha256'])))
+ book=next(b for b in books if b['series']=='here-we-go' and b['year']==g)
+ book['units'].append(dict(id=f'hwg{g}-unit-{number}',label=f'Unit {number}',pageStart=None,pageEnd=None,source='hwg.xlsx',row=reviewed['row'],correspondenceType='grammar_topics',items=mapped,listedEntries=len(mapped),unresolvedEntries=0))
+assert unitKeys=={(g,n) for g in (1,2,3) for n in range(1,9)}, 'Incomplete HWG unit review'
+grammarMeta=dict(path=str(grammarPath.relative_to(root)),sha256=hashlib.sha256(grammarPath.read_bytes()).hexdigest())
+hwgBooks=[b for b in books if b['series']=='here-we-go']
+hwgReport=dict(scope='文法項目の単元対応のみ。語彙・読解・全用法の対応ではない。ページは未確認のため設定しない。',units=sum(len(b['units']) for b in hwgBooks),playableUnits=sum(bool(u['items']) for b in hwgBooks for u in b['units']),mappedMaterials=len({r['sourceId'] for b in hwgBooks for u in b['units'] for r in u['items']}),mappings=sum(len(u['items']) for b in hwgBooks for u in b['units']),reviewLedger=grammarMeta)
+manifest=dict(version=1,usageYear=2026,editionYear=2025,checkedAt=checked,catalogSource='catalog.pdf',sources=provenance,reviewLedger=reviewMeta,grammarReviewLedger=grammarMeta,books=books,
+ caveats=['出版社の監修・公認を意味しない。','語彙は確認できた語義・初出ページ、文法は確認できた単元項目に限定し、未対応内容を含む。','教科書本文・訳文・問題・音声は転載せず、問題文と解説は独自素材を使う。','初出箇所の対応であり、その単元の全既習語・全出現語一覧ではない。'])
 (root/'textbook-data/english-2026.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-report=dict(checkedAt=checked,scope='公開資料の掲載語／初出ページと既存素材の照合。未一致は未収録語確定ではなく、活用形・語義・固有名詞・表記等の要確認を含む。',sources=provenance,oneWorld=dict(totalEntries=len(wordreport),exactSenseConfirmed=sum(r['status']=='sense_confirmed' and r['matchMethod']=='exact_normalized_sense' for r in wordreport),reviewedSenseConfirmed=sum(r['matchMethod']=='reviewed_equivalent_sense' for r in wordreport),reviewedHeld=reviewMeta['held'],senseConfirmed=sum(r['status']=='sense_confirmed' for r in wordreport),senseReview=sum(r['status']=='sense_review' for r in wordreport),headwordUnmatched=sum(r['status']=='headword_unmatched' for r in wordreport),entries=wordreport),newHorizon=dict(totalEntries=len(nh),headwordMatched=sum(r['status']=='headword_match_only' for r in nh),entries=nh))
+report=dict(checkedAt=checked,scope='公開資料の掲載語／初出ページと既存素材の照合。未一致は未収録語確定ではなく、活用形・語義・固有名詞・表記等の要確認を含む。',sources=provenance,oneWorld=dict(totalEntries=len(wordreport),exactSenseConfirmed=sum(r['status']=='sense_confirmed' and r['matchMethod']=='exact_normalized_sense' for r in wordreport),reviewedSenseConfirmed=sum(r['matchMethod']=='reviewed_equivalent_sense' for r in wordreport),reviewedHeld=reviewMeta['held'],senseConfirmed=sum(r['status']=='sense_confirmed' for r in wordreport),senseReview=sum(r['status']=='sense_review' for r in wordreport),headwordUnmatched=sum(r['status']=='headword_unmatched' for r in wordreport),entries=wordreport),newHorizon=dict(totalEntries=len(nh),headwordMatched=sum(r['status']=='headword_match_only' for r in nh),entries=nh),hereWeGo=hwgReport)
 (root/'docs/content/english-textbook-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('OW', {k:v for k,v in report['oneWorld'].items() if k!='entries'})
 print('NH', {k:v for k,v in report['newHorizon'].items() if k!='entries'})

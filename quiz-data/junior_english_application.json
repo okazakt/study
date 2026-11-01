@@ -5212,5 +5212,401 @@
         "note": "ここでは、二重引用符で直接の発言を囲む。"
       }
     ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_can_negative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞can",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I (？) swim.「泳げない」に入る短縮形は？",
+    "answer": "can't",
+    "dummies": [
+      "can",
+      "cans",
+      "don't"
+    ],
+    "note": "canの否定はcannot、短縮形はcan’t。主語が変わってもcanにsは付けない。",
+    "learning_point": "can_negative",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She (？) drive.「運転できない」に入る短縮形は？",
+        "answer": "can't",
+        "dummies": [
+          "can",
+          "cans",
+          "doesn't"
+        ],
+        "note": "canの否定はcannot、短縮形はcan’t。主語が変わってもcanにsは付けない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_can_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞can",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Can you swim? にYesで答えると？",
+    "answer": "Yes, I can.",
+    "dummies": [
+      "Yes, I do.",
+      "Yes, I am.",
+      "Yes, I have."
+    ],
+    "note": "canでたずねられた能力の質問には、canまたはcannotを使って答える。",
+    "learning_point": "can_question",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Can Ken cook? にNoで答えると？",
+        "answer": "No, he can't.",
+        "dummies": [
+          "No, he doesn't.",
+          "No, he isn't.",
+          "No, he hasn't."
+        ],
+        "note": "canでたずねられた能力の質問には、canまたはcannotを使って答える。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_like_gerund",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "動名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I like (？) books. に入る形は？",
+    "answer": "reading",
+    "dummies": [
+      "reads",
+      "readed",
+      "to reading"
+    ],
+    "note": "likeの目的語には動詞のing形を使える。to＋原形も使えるため、それは誤答候補に含めない。",
+    "learning_point": "like_gerund",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She likes (？) here. に入る形は？",
+        "answer": "swimming",
+        "dummies": [
+          "swims",
+          "swam",
+          "to swimming"
+        ],
+        "note": "likeの目的語には動詞のing形を使える。to＋原形も使えるため、それは誤答候補に含めない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_what_do_object",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「何を食べますか」(？) do you eat for breakfast?",
+    "answer": "What",
+    "dummies": [
+      "Where",
+      "Who",
+      "When"
+    ],
+    "note": "食べるもの・勉強するものなど、動作の対象をたずねるときはwhatを使う。",
+    "learning_point": "what_do_object",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「何を勉強しますか」(？) do they study at school?",
+        "answer": "What",
+        "dummies": [
+          "Where",
+          "Who",
+          "When"
+        ],
+        "note": "食べるもの・勉強するものなど、動作の対象をたずねるときはwhatを使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_who_is_person",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "人物の名前をたずねる文。(？) is that boy?",
+    "answer": "Who",
+    "dummies": [
+      "Where",
+      "When",
+      "Why"
+    ],
+    "note": "whoは「誰」。人物が誰なのかをたずねるときに使う。",
+    "learning_point": "who_is_person",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "人物の名前をたずねる文。(？) is that woman?",
+        "answer": "Who",
+        "dummies": [
+          "Where",
+          "When",
+          "Why"
+        ],
+        "note": "whoは「誰」。人物が誰なのかをたずねるときに使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_when_event",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "開催日をたずねる文。(？) is the concert?",
+    "answer": "When",
+    "dummies": [
+      "Where",
+      "Who",
+      "Why"
+    ],
+    "note": "whenは「いつ」。場所をたずねるwhereとは区別する。",
+    "learning_point": "when_event",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "実施日をたずねる文。(？) is the school festival?",
+        "answer": "When",
+        "dummies": [
+          "Where",
+          "Who",
+          "Why"
+        ],
+        "note": "whenは「いつ」。場所をたずねるwhereとは区別する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_progressive_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在進行形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) they playing tennis now? に入る語は？",
+    "answer": "Are",
+    "dummies": [
+      "Is",
+      "Do",
+      "Does"
+    ],
+    "note": "現在進行形の疑問文はbe動詞を主語の前に置く。一般動詞のdoやdoesは使わない。",
+    "learning_point": "progressive_question",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) she cooking now? に入る語は？",
+        "answer": "Is",
+        "dummies": [
+          "Are",
+          "Do",
+          "Does"
+        ],
+        "note": "現在進行形の疑問文はbe動詞を主語の前に置く。一般動詞のdoやdoesは使わない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_past_be_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "be動詞の過去形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) Ken at home yesterday? に入る語は？",
+    "answer": "Was",
+    "dummies": [
+      "Were",
+      "Did",
+      "Does"
+    ],
+    "note": "be動詞の過去の疑問文はwas・wereを主語の前に置く。主語に合わせて選ぶ。",
+    "learning_point": "past_be_question",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) they busy yesterday? に入る語は？",
+        "answer": "Were",
+        "dummies": [
+          "Was",
+          "Did",
+          "Do"
+        ],
+        "note": "be動詞の過去の疑問文はwas・wereを主語の前に置く。主語に合わせて選ぶ。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_perfect_negative",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "現在完了の否定文。I (？) finished my homework yet.",
+    "answer": "haven't",
+    "dummies": [
+      "hasn't",
+      "hadn't",
+      "don't"
+    ],
+    "note": "現在完了の否定文はhave・has＋not＋過去分詞。主語によってhaveとhasを使い分ける。",
+    "learning_point": "perfect_negative",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "現在完了の否定文。She (？) seen this movie yet.",
+        "answer": "hasn't",
+        "dummies": [
+          "haven't",
+          "hadn't",
+          "doesn't"
+        ],
+        "note": "現在完了の否定文はhave・has＋not＋過去分詞。主語によってhaveとhasを使い分ける。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_relative_that_subject",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "関係代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I know a boy (？) can run fast. に入る関係代名詞は？",
+    "answer": "that",
+    "dummies": [
+      "where",
+      "when",
+      "what"
+    ],
+    "note": "主格の関係代名詞thatは、人や物を先行詞として後ろから説明するときに使える。",
+    "learning_point": "relative_that_subject",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This is a camera (？) takes clear pictures. に入る関係代名詞は？",
+        "answer": "that",
+        "dummies": [
+          "where",
+          "when",
+          "what"
+        ],
+        "note": "主格の関係代名詞thatは、人や物を先行詞として後ろから説明するときに使える。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_must_affirmative",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "義務を表す表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "You (？) stop at a red light.「止まらなければならない」",
+    "answer": "must",
+    "dummies": [
+      "may",
+      "can",
+      "would"
+    ],
+    "note": "must＋動詞の原形は強い義務や必要を表す。許可を表すmayと区別する。",
+    "learning_point": "must_affirmative",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "You (？) wear a helmet here.「着用しなければならない」",
+        "answer": "must",
+        "dummies": [
+          "may",
+          "can",
+          "would"
+        ],
+        "note": "must＋動詞の原形は強い義務や必要を表す。許可を表すmayと区別する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_have_to_present",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "義務を表す表現",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I (？) wear a uniform.「着なければならない」に入る語句は？",
+    "answer": "have to",
+    "dummies": [
+      "has to",
+      "having to",
+      "had"
+    ],
+    "note": "現在形で義務を表すhave toは、主語が三人称単数ならhas toとなる。",
+    "learning_point": "have_to_present",
+    "content_batch": "english-textbook-grammar-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She (？) leave now.「出発しなければならない」に入る語句は？",
+        "answer": "has to",
+        "dummies": [
+          "have to",
+          "having to",
+          "had"
+        ],
+        "note": "現在形で義務を表すhave toは、主語が三人称単数ならhas toとなる。"
+      }
+    ]
   }
 ]

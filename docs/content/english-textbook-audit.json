@@ -49,6 +49,24 @@
       "url": "https://www.kyoiku-shuppan.co.jp/textbook/chuu/eigo/files/r7eigo3_nenkeihyouka_2503.xlsx",
       "sha256": "3b0023dcdb2677a9db75d83aed39e3c5bee09ea62437bfd5eb0b9a4f501e25aa",
       "retrieved": "2026-11-01"
+    },
+    {
+      "id": "blue-units1.pdf",
+      "url": "https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist01.pdf",
+      "sha256": "36d856ccfc4e6ac6b585bc208dbdb60e1d7f99fea0a194a238bcb7255ef68523",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "blue-units2.pdf",
+      "url": "https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist02.pdf",
+      "sha256": "cf87621bdcbbfad82e3236115d098fe92d1aa4a3d68fce9c8a8891f2b40b5c9f",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "blue-units3.pdf",
+      "url": "https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist03.pdf",
+      "sha256": "7a4c253325b7a4540c704f4015085af2a3cfd9c01ef0f74f2f3c00a9e373f595",
+      "retrieved": "2026-11-01"
     }
   ],
   "oneWorld": {
@@ -44661,5 +44679,16 @@
         "sourceId": "jr_en_v2_word_youth"
       }
     ]
+  },
+  "hereWeGo": {
+    "scope": "文法項目の単元対応のみ。語彙・読解・全用法の対応ではない。ページは未確認のため設定しない。",
+    "units": 24,
+    "playableUnits": 23,
+    "mappedMaterials": 95,
+    "mappings": 99,
+    "reviewLedger": {
+      "path": "textbook-data/here-we-go-grammar-reviewed.json",
+      "sha256": "e85d708be38b76c09eb8222406e82063f8acd8868efd909c4b3ff60b98ffabce"
+    }
   }
 }

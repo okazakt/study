@@ -52,6 +52,24 @@
       "url": "https://www.kyoiku-shuppan.co.jp/textbook/chuu/eigo/files/r7eigo3_nenkeihyouka_2503.xlsx",
       "sha256": "3b0023dcdb2677a9db75d83aed39e3c5bee09ea62437bfd5eb0b9a4f501e25aa",
       "retrieved": "2026-11-01"
+    },
+    {
+      "id": "blue-units1.pdf",
+      "url": "https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist01.pdf",
+      "sha256": "36d856ccfc4e6ac6b585bc208dbdb60e1d7f99fea0a194a238bcb7255ef68523",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "blue-units2.pdf",
+      "url": "https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist02.pdf",
+      "sha256": "cf87621bdcbbfad82e3236115d098fe92d1aa4a3d68fce9c8a8891f2b40b5c9f",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "blue-units3.pdf",
+      "url": "https://www.shinko-keirin.co.jp/keirinkan/chu_r7/english/file/english_tangenlist03.pdf",
+      "sha256": "7a4c253325b7a4540c704f4015085af2a3cfd9c01ef0f74f2f3c00a9e373f595",
+      "retrieved": "2026-11-01"
     }
   ],
   "reviewLedger": {
@@ -59,6 +77,10 @@
     "sha256": "dc536612cd9789402eaa5c18a7a06d899bb6cb9d0c68b7e78c39aee09bcd9627",
     "approved": 337,
     "held": 15
+  },
+  "grammarReviewLedger": {
+    "path": "textbook-data/here-we-go-grammar-reviewed.json",
+    "sha256": "e85d708be38b76c09eb8222406e82063f8acd8868efd909c4b3ff60b98ffabce"
   },
   "books": [
     {
@@ -11637,8 +11659,465 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "038-72",
-      "status": "curriculum_only",
-      "units": []
+      "status": "partial_grammar",
+      "units": [
+        {
+          "id": "hwg1-unit-1",
+          "label": "Unit 1",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 17,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_be",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "d4d90694db69a70343f6cddf63850665f5f1b611f30d0c8020bc2dc901f2da63"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_do_negative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "d4d90694db69a70343f6cddf63850665f5f1b611f30d0c8020bc2dc901f2da63"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_can",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "d4d90694db69a70343f6cddf63850665f5f1b611f30d0c8020bc2dc901f2da63"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_negative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "d4d90694db69a70343f6cddf63850665f5f1b611f30d0c8020bc2dc901f2da63"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-2",
+          "label": "Unit 2",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 18,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_be_short_answer",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 18,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "420d71307fb09b598423ed9fd2bcdd7e166e9a7999e96d6ea1cacf2cea21e109"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_do_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 18,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "420d71307fb09b598423ed9fd2bcdd7e166e9a7999e96d6ea1cacf2cea21e109"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 18,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "420d71307fb09b598423ed9fd2bcdd7e166e9a7999e96d6ea1cacf2cea21e109"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-3",
+          "label": "Unit 3",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 21,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 21,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7b0889ba3d84be1611da07c079d00559305349577babc75d4031a0fa7a4a3ef2"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_like_gerund",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 21,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7b0889ba3d84be1611da07c079d00559305349577babc75d4031a0fa7a4a3ef2"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_what_do_object",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 21,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7b0889ba3d84be1611da07c079d00559305349577babc75d4031a0fa7a4a3ef2"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-4",
+          "label": "Unit 4",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 26,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_be_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c855c5b57f1ee6eacbfc6436b895382649f1751b73c328c33bc84b9c1cfb09ea"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_be_negative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c855c5b57f1ee6eacbfc6436b895382649f1751b73c328c33bc84b9c1cfb09ea"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_who_is_person",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c855c5b57f1ee6eacbfc6436b895382649f1751b73c328c33bc84b9c1cfb09ea"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-5",
+          "label": "Unit 5",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 29,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_where",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 29,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "fed7a9549e30b160ef2f9575194cf76ba2eb3d926654e577e096b4398861476d"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_when_event",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 29,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "fed7a9549e30b160ef2f9575194cf76ba2eb3d926654e577e096b4398861476d"
+              }
+            }
+          ],
+          "listedEntries": 2,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-6",
+          "label": "Unit 6",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 31,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_third_person",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 31,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b96c964baeaef89446de02e668b736f4c9d7343f48aa55ff5e3cbc29bcf4cfb2"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_does",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 31,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b96c964baeaef89446de02e668b736f4c9d7343f48aa55ff5e3cbc29bcf4cfb2"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_does_negative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 31,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b96c964baeaef89446de02e668b736f4c9d7343f48aa55ff5e3cbc29bcf4cfb2"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_third_person_ies",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 31,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b96c964baeaef89446de02e668b736f4c9d7343f48aa55ff5e3cbc29bcf4cfb2"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-7",
+          "label": "Unit 7",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 37,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_past",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_went",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_after_didnt",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_was",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_did_answer",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_be_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 37,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0caddd8401aa37e941c19ec62b308300fffec32fc72901d09cb0083b887dfd05"
+              }
+            }
+          ],
+          "listedEntries": 7,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg1-unit-8",
+          "label": "Unit 8",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 40,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_progressive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 40,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "cd9f236c69acf744287e013621ebe4ed6e22979760efa8f2e7b1c797dc471772"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_progressive_now",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 40,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "cd9f236c69acf744287e013621ebe4ed6e22979760efa8f2e7b1c797dc471772"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_progressive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 40,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "cd9f236c69acf744287e013621ebe4ed6e22979760efa8f2e7b1c797dc471772"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_progressive_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 40,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "cd9f236c69acf744287e013621ebe4ed6e22979760efa8f2e7b1c797dc471772"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_ing_write",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 40,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "cd9f236c69acf744287e013621ebe4ed6e22979760efa8f2e7b1c797dc471772"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_ing_run",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "1年",
+                "row": 40,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "cd9f236c69acf744287e013621ebe4ed6e22979760efa8f2e7b1c797dc471772"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        }
+      ]
     },
     {
       "id": "here-we-go-2-2026",
@@ -11651,8 +12130,509 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "038-82",
-      "status": "curriculum_only",
-      "units": []
+      "status": "partial_grammar",
+      "units": [
+        {
+          "id": "hwg2-unit-1",
+          "label": "Unit 1",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 8,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_past",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7a473aa3800cd45199312aa96607825792a05b481c450f57f9f89c9d55a4cbdc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_was",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7a473aa3800cd45199312aa96607825792a05b481c450f57f9f89c9d55a4cbdc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_look_adjective",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7a473aa3800cd45199312aa96607825792a05b481c450f57f9f89c9d55a4cbdc"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-2",
+          "label": "Unit 2",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 10,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_textbook_grammar_like_gerund",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1419af0f74c669e22699f97d09c3b7d4c1dc08abba5c199faf2dfff7d400a37f"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1419af0f74c669e22699f97d09c3b7d4c1dc08abba5c199faf2dfff7d400a37f"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_that_clause",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1419af0f74c669e22699f97d09c3b7d4c1dc08abba5c199faf2dfff7d400a37f"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-3",
+          "label": "Unit 3",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 13,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_going_to",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 13,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c34b712ed450a4a7b04527878df15ead98e7abbdd77752bd9eb42637d080b214"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_will",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 13,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c34b712ed450a4a7b04527878df15ead98e7abbdd77752bd9eb42637d080b214"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_will_original",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 13,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c34b712ed450a4a7b04527878df15ead98e7abbdd77752bd9eb42637d080b214"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_if_condition",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 13,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c34b712ed450a4a7b04527878df15ead98e7abbdd77752bd9eb42637d080b214"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_if_future_present",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 13,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c34b712ed450a4a7b04527878df15ead98e7abbdd77752bd9eb42637d080b214"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-4",
+          "label": "Unit 4",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 20,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_core_grammar_there_is",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b3a8f43496c545d14d4b62e5c384606f9b02135f6acae7acb9c5690c3265d4df"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_there_are",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b3a8f43496c545d14d4b62e5c384606f9b02135f6acae7acb9c5690c3265d4df"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_give_order",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b3a8f43496c545d14d4b62e5c384606f9b02135f6acae7acb9c5690c3265d4df"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_something_to",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b3a8f43496c545d14d4b62e5c384606f9b02135f6acae7acb9c5690c3265d4df"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_adjective_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b3a8f43496c545d14d4b62e5c384606f9b02135f6acae7acb9c5690c3265d4df"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-5",
+          "label": "Unit 5",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 22,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_must_not",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 22,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f54946bb89e58d65d2d7e7c694e2fb71e1417b0f7aad05908d442ed2a82560b5"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_must_affirmative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 22,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f54946bb89e58d65d2d7e7c694e2fb71e1417b0f7aad05908d442ed2a82560b5"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_dont_have_to",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 22,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f54946bb89e58d65d2d7e7c694e2fb71e1417b0f7aad05908d442ed2a82560b5"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_have_to_present",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 22,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f54946bb89e58d65d2d7e7c694e2fb71e1417b0f7aad05908d442ed2a82560b5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_it_to",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 22,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f54946bb89e58d65d2d7e7c694e2fb71e1417b0f7aad05908d442ed2a82560b5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_infinitive_for_person",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 22,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f54946bb89e58d65d2d7e7c694e2fb71e1417b0f7aad05908d442ed2a82560b5"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-6",
+          "label": "Unit 6",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 26,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_infinitive_purpose",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7bf4fc05e5d1a5a9a57c85e427596313498a013e5ff70d316d10a0522499d2b6"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_because",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7bf4fc05e5d1a5a9a57c85e427596313498a013e5ff70d316d10a0522499d2b6"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_because_not_so",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7bf4fc05e5d1a5a9a57c85e427596313498a013e5ff70d316d10a0522499d2b6"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_infinitive_emotion",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 26,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7bf4fc05e5d1a5a9a57c85e427596313498a013e5ff70d316d10a0522499d2b6"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-7",
+          "label": "Unit 7",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 33,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_comparative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "aabe9fa9e65679fe324d93cf8af105e0e14dd184979f00b0c5a8f3624f1f5a29"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_more_comparative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "aabe9fa9e65679fe324d93cf8af105e0e14dd184979f00b0c5a8f3624f1f5a29"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_superlative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "aabe9fa9e65679fe324d93cf8af105e0e14dd184979f00b0c5a8f3624f1f5a29"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_as_comparison",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "aabe9fa9e65679fe324d93cf8af105e0e14dd184979f00b0c5a8f3624f1f5a29"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_comparative_as",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "aabe9fa9e65679fe324d93cf8af105e0e14dd184979f00b0c5a8f3624f1f5a29"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_comparative_than",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "aabe9fa9e65679fe324d93cf8af105e0e14dd184979f00b0c5a8f3624f1f5a29"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg2-unit-8",
+          "label": "Unit 8",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 35,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_app_grammar_want_person_to",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 35,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "e9759f40f00034998f5b5d96e7d9b212946436de52500ecdfd72bc17bd29401d"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_make_object",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 35,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "e9759f40f00034998f5b5d96e7d9b212946436de52500ecdfd72bc17bd29401d"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_passive_past",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 35,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "e9759f40f00034998f5b5d96e7d9b212946436de52500ecdfd72bc17bd29401d"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_passive_by",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "2年",
+                "row": 35,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "e9759f40f00034998f5b5d96e7d9b212946436de52500ecdfd72bc17bd29401d"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        }
+      ]
     },
     {
       "id": "here-we-go-3-2026",
@@ -11665,8 +12645,453 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "038-92",
-      "status": "curriculum_only",
-      "units": []
+      "status": "partial_grammar",
+      "units": [
+        {
+          "id": "hwg3-unit-1",
+          "label": "Unit 1",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 8,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_passive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c7bec8ec23565e781df2fdd346347d09d7eceba732cc0c472a8903febc0072d8"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_question",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c7bec8ec23565e781df2fdd346347d09d7eceba732cc0c472a8903febc0072d8"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_participle_spoken",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c7bec8ec23565e781df2fdd346347d09d7eceba732cc0c472a8903febc0072d8"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_bare_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c7bec8ec23565e781df2fdd346347d09d7eceba732cc0c472a8903febc0072d8"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_that",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 8,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c7bec8ec23565e781df2fdd346347d09d7eceba732cc0c472a8903febc0072d8"
+              }
+            }
+          ],
+          "listedEntries": 5,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-2",
+          "label": "Unit 2",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 10,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_app_grammar_perfect_already",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0f6d812e0e1f94a83c8ce88448164079ad9fc70a1a86d696bd674648b41d927e"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_yet",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0f6d812e0e1f94a83c8ce88448164079ad9fc70a1a86d696bd674648b41d927e"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_ever",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0f6d812e0e1f94a83c8ce88448164079ad9fc70a1a86d696bd674648b41d927e"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_been",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0f6d812e0e1f94a83c8ce88448164079ad9fc70a1a86d696bd674648b41d927e"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_perfect",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0f6d812e0e1f94a83c8ce88448164079ad9fc70a1a86d696bd674648b41d927e"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_perfect_negative",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 10,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "0f6d812e0e1f94a83c8ce88448164079ad9fc70a1a86d696bd674648b41d927e"
+              }
+            }
+          ],
+          "listedEntries": 6,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-3",
+          "label": "Unit 3",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 12,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_en_app_grammar_perfect_how_long",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_since",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_for",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_continuous",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_perfect_progressive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_question_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_how_to_method",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_how",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 12,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2b85d23d1ff0b19d646407d7f34eec71138824e57b0be8b0c269d3d5f4eb85b7"
+              }
+            }
+          ],
+          "listedEntries": 8,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-4",
+          "label": "Unit 4",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 17,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_relative_subject",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "725534e7fbcaea2463479c5a397d968a525d2ece303e05746a92230e2896044c"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_relative_which_subject",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "725534e7fbcaea2463479c5a397d968a525d2ece303e05746a92230e2896044c"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_relative_that_subject",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 17,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "725534e7fbcaea2463479c5a397d968a525d2ece303e05746a92230e2896044c"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-5",
+          "label": "Unit 5",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 21,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_relative_object",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 21,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "54aa14738af693c13fe97c097f5965a40edf664254c244345cbd8457aa02f8cb"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_relative_omit",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 21,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "54aa14738af693c13fe97c097f5965a40edf664254c244345cbd8457aa02f8cb"
+              }
+            }
+          ],
+          "listedEntries": 2,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-6",
+          "label": "Unit 6",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 24,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_participle",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "9d12a5a65777746c37bf287a9b9aea9915094bf819da5a97cc8d1307eb5f3d4c"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_participle_modifier",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "9d12a5a65777746c37bf287a9b9aea9915094bf819da5a97cc8d1307eb5f3d4c"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_indirect_when",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "9d12a5a65777746c37bf287a9b9aea9915094bf819da5a97cc8d1307eb5f3d4c"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_indirect",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "9d12a5a65777746c37bf287a9b9aea9915094bf819da5a97cc8d1307eb5f3d4c"
+              }
+            }
+          ],
+          "listedEntries": 4,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-7",
+          "label": "Unit 7",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 29,
+          "correspondenceType": "grammar_topics",
+          "items": [
+            {
+              "sourceId": "jr_english_core_subjunctive",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 29,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f2135aecdca92aee5088f79b00b218d1b6db3972123d4cc5edfd3d93c3713590"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_wish_could",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 29,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f2135aecdca92aee5088f79b00b218d1b6db3972123d4cc5edfd3d93c3713590"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_would_condition",
+              "page": null,
+              "evidence": {
+                "source": "hwg.xlsx",
+                "sheet": "3年",
+                "row": 29,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f2135aecdca92aee5088f79b00b218d1b6db3972123d4cc5edfd3d93c3713590"
+              }
+            }
+          ],
+          "listedEntries": 3,
+          "unresolvedEntries": 0
+        },
+        {
+          "id": "hwg3-unit-8",
+          "label": "Unit 8",
+          "pageStart": null,
+          "pageEnd": null,
+          "source": "hwg.xlsx",
+          "row": 33,
+          "correspondenceType": "grammar_topics",
+          "items": [],
+          "listedEntries": 0,
+          "unresolvedEntries": 0
+        }
+      ]
     },
     {
       "id": "blue-sky-1-2026",
@@ -11679,7 +13104,7 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "061-72",
-      "status": "source_unavailable",
+      "status": "curriculum_only",
       "units": []
     },
     {
@@ -11693,7 +13118,7 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "061-82",
-      "status": "source_unavailable",
+      "status": "curriculum_only",
       "units": []
     },
     {
@@ -11707,13 +13132,13 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "061-92",
-      "status": "source_unavailable",
+      "status": "curriculum_only",
       "units": []
     }
   ],
   "caveats": [
     "出版社の監修・公認を意味しない。",
-    "対応は確認できた語義・初出ページに限定し、未対応語を含む。",
+    "語彙は確認できた語義・初出ページ、文法は確認できた単元項目に限定し、未対応内容を含む。",
     "教科書本文・訳文・問題・音声は転載せず、問題文と解説は独自素材を使う。",
     "初出箇所の対応であり、その単元の全既習語・全出現語一覧ではない。"
   ]
