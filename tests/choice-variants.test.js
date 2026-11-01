@@ -7,10 +7,10 @@ import {makeQuestionQueue,makeChoiceQuestion,seededRandom,Game} from '../game.js
 import {normalizeHistory,recordAnswer,questionKey,createAdaptivePicker,priorityCategory,buildPriorityIndex,questionCoverage} from '../progress.js';
 const items=JSON.parse(readFileSync(new URL('../quiz-data/junior_english_application.json',import.meta.url)));
 const varied=items.filter(q=>q.presentations?.length);
-test('140 application learning points have 280 authored contexts without doubling their question identities',()=>{
- assert.equal(items.length,140);assert.equal(varied.length,140);assert.equal(varied.flatMap(choicePresentations).length,280);
+test('158 application learning points have 316 authored contexts without doubling their question identities',()=>{
+ assert.equal(items.length,158);assert.equal(varied.length,158);assert.equal(varied.flatMap(choicePresentations).length,316);
  assert.equal(items.filter(q=>q.content_batch==='english-application-2').length,48);
- assert.equal(makeQuestionQueue(items,()=>.5).length,140);
+ assert.equal(makeQuestionQueue(items,()=>.5).length,158);
  const prompts=new Set();for(const item of varied)for(const p of choicePresentations(item)){
   assert.ok(!prompts.has(p.prompt),p.prompt);prompts.add(p.prompt);
   assert.equal(new Set([p.answer,...p.dummies]).size,4,item.id);

@@ -1,5 +1,5 @@
-import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.55.0';
-import { materializeMathItem } from './math-variants.js?v=0.55.0';
+import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.56.0';
+import { materializeMathItem } from './math-variants.js?v=0.56.0';
 // Local learning history. Practice and music-play records stay distinct.
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
@@ -61,7 +61,7 @@ export function recordAnswer(state, q, {correct, chosen, wrongBefore=0, kind='pl
     variant:{...q.variant,parameters:{...q.variant.parameters}},
     presentation:{prompt:q.prompt,choices:[...q.choices],note:q.note}
   }:{};
-  const meta={key,sourceId:q.sourceId || q.id,mode:q.mode,blankIndex:q.blankIndex || 0,school:q.school_level,subject:q.subject,grade:q.grade,label:q.reviewLabel,answer:q.answer,...snapshot};
+  const meta={key,sourceId:q.sourceId || q.id,mode:q.mode,blankIndex:q.blankIndex || 0,school:q.school_level,subject:q.subject,grade:q.grade,label:q.reviewLabel,answer:q.answer,...(q.textbook?{textbook:{...q.textbook}}:{}),...snapshot};
   const entry={...old,...meta,lastAt:time};
   const attemptId = attempt || `${session}:${kind}:${time}:${old.correct+old.wrong+old.reviewCorrect+old.reviewWrong}`;
   const previousRecent=old.recent?.length?old.recent:(eventAttempts(state.events).get(key) || []).slice(-3).map(r=>recentResult(r));

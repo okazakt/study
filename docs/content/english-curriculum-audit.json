@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-01",
+  "source": {
+    "url": "https://www.mext.go.jp/content/20210531-mxt_kyoiku01-100002608_010.pdf",
+    "sha256": "fb23621fea98460dfa280e364fb10851910cb9f7bcdf2f6e0ce7784f89cd3479",
+    "printedPages": [
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125
+    ]
+  },
+  "basis": "平成29年告示・中学校学習指導要領外国語編の目標・言語材料・活動を照合。項目をアプリの支援範囲に分解し、代表問ありと未実装を区別する。",
+  "completeCurriculum": false,
+  "criteria": [
+    {
+      "id": "sound-pronunciation",
+      "label": "標準的な発音",
+      "reference": "2(1)ア",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "英語音声の出題・聞き取り・発音評価は未実装。音楽やタップ音は英語音声の学習とは数えない。"
+    },
+    {
+      "id": "sound-linking",
+      "label": "語の連結による音の変化",
+      "reference": "2(1)ア",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "英語音声の出題・聞き取り・発音評価は未実装。音楽やタップ音は英語音声の学習とは数えない。"
+    },
+    {
+      "id": "sound-stress",
+      "label": "語・句・文の強勢",
+      "reference": "2(1)ア",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "英語音声の出題・聞き取り・発音評価は未実装。音楽やタップ音は英語音声の学習とは数えない。"
+    },
+    {
+      "id": "sound-intonation",
+      "label": "イントネーション",
+      "reference": "2(1)ア",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "英語音声の出題・聞き取り・発音評価は未実装。音楽やタップ音は英語音声の学習とは数えない。"
+    },
+    {
+      "id": "sound-phrasing",
+      "label": "文の区切り",
+      "reference": "2(1)ア",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "英語音声の出題・聞き取り・発音評価は未実装。音楽やタップ音は英語音声の学習とは数えない。"
+    },
+    {
+      "id": "primary-letters",
+      "label": "小学校既習の文字・大文字小文字・語の区切り",
+      "reference": "2(1) 小学校内容との接続",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_core_word_father"
+      ],
+      "remaining": "綴り選択は支援するが、アルファベット全般・書写・自由書きの技能を確認済みとはしない。"
+    },
+    {
+      "id": "primary-sentences",
+      "label": "小学校既習の基本文・主語と動詞の語順",
+      "reference": "2(1)エ 小学校内容との接続",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_be",
+        "jr_en_core_grammar_do_question",
+        "jr_en_core_grammar_lets"
+      ],
+      "remaining": "基本文と命令・疑問等に代表問あり。小学校の全学習活動を代替しない。"
+    },
+    {
+      "id": "symbols",
+      "label": "感嘆符・引用符等",
+      "reference": "2(1)イ",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_symbol_exclamation",
+        "jr_en_curriculum_symbol_quotation"
+      ],
+      "remaining": "代表問あり。運用技能の評価とは区別する。"
+    },
+    {
+      "id": "vocabulary",
+      "label": "小学校既習語と中学新出語",
+      "reference": "2(1)ウ(ア)",
+      "status": "partial",
+      "evidenceIds": [],
+      "remaining": "国の語数目安と単純な収録数を同一視しない。出版社語彙一覧の語義・活用形・固有名詞等を別に照合する。"
+    },
+    {
+      "id": "collocations",
+      "label": "頻用の連語",
+      "reference": "2(1)ウ(イ)",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_ext_phrase_take_part_in"
+      ],
+      "remaining": "代表例を収録。各社の連語・使われ方まで全件一致した状態ではない。"
+    },
+    {
+      "id": "idiomatic",
+      "label": "頻用の慣用表現",
+      "reference": "2(1)ウ(ウ)",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_ext_phrase_make_sure"
+      ],
+      "remaining": "代表例を収録。会話機能・定型表現の不足を照合する。"
+    },
+    {
+      "id": "compound",
+      "label": "重文・複文",
+      "reference": "2(1)エ 文ア",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_reading_but_contrast",
+        "jr_en_core_grammar_before_clause"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "question-modal",
+      "label": "助動詞で始まる疑問",
+      "reference": "2(1)エ 文イ",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_may_permission",
+        "jr_en_core_grammar_or_question"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "question-which-whose",
+      "label": "which・whoseの疑問",
+      "reference": "2(1)エ 文イ",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_which_question",
+        "jr_en_core_grammar_whose"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "exclamation",
+      "label": "基本的な感嘆文",
+      "reference": "2(1)エ 文ウ",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_exclamation_what",
+        "jr_en_core_grammar_exclamation_how"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svc-noun",
+      "label": "be以外の動詞と名詞の補語",
+      "reference": "2(1)エ 文構造a",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svc_noun"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svc-adjective",
+      "label": "be以外の動詞と形容詞の補語",
+      "reference": "2(1)エ 文構造a",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_look_adjective"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svo-gerund",
+      "label": "動名詞を目的語にする",
+      "reference": "2(1)エ 文構造b(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_gerund"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svo-infinitive",
+      "label": "to不定詞を目的語にする",
+      "reference": "2(1)エ 文構造b(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_infinitive"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svo-how",
+      "label": "疑問詞＋to不定詞を目的語にする",
+      "reference": "2(1)エ 文構造b(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svo_how_full"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svo-that",
+      "label": "that節を目的語にする",
+      "reference": "2(1)エ 文構造b(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_that_clause"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svo-wh",
+      "label": "疑問詞節を目的語にする",
+      "reference": "2(1)エ 文構造b(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_indirect"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoo-noun",
+      "label": "人と物を二つの目的語にする",
+      "reference": "2(1)エ 文構造c(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_give_order"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoo-pronoun",
+      "label": "直接目的語が代名詞",
+      "reference": "2(1)エ 文構造c(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svoo_pronoun"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoo-how",
+      "label": "人＋疑問詞to不定詞",
+      "reference": "2(1)エ 文構造c(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svoo_how"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoo-that",
+      "label": "人＋that節",
+      "reference": "2(1)エ 文構造c(c)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svoo_that"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoo-wh",
+      "label": "人＋疑問詞節",
+      "reference": "2(1)エ 文構造c(c)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svoo_wh"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoc-noun",
+      "label": "目的語を名詞で説明",
+      "reference": "2(1)エ 文構造d(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_svoc_noun"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoc-adjective",
+      "label": "目的語を形容詞で説明",
+      "reference": "2(1)エ 文構造d(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_make_object"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "svoc-bare",
+      "label": "目的語と原形不定詞",
+      "reference": "2(1)エ 文構造d(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_bare_infinitive",
+        "jr_en_app_grammar_make_person_verb"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "there",
+      "label": "There＋be",
+      "reference": "2(1)エ 文構造e(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_there_is",
+        "jr_en_core_grammar_there_are"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "it-infinitive",
+      "label": "It＋be＋形容詞＋for人＋to不定詞",
+      "reference": "2(1)エ 文構造e(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_infinitive_for_person"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "tell-want-to",
+      "label": "tell・want＋人＋to不定詞",
+      "reference": "2(1)エ 文構造e(c)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_tell_to",
+        "jr_en_app_grammar_want_person_to"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "adj-that",
+      "label": "主語＋be＋形容詞＋that節",
+      "reference": "2(1)エ 文構造e(d)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_be_adj_that"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "pronouns",
+      "label": "人称・指示・疑問・数量の代名詞",
+      "reference": "2(1)エ 文法a(a)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_possessive_pronoun",
+        "jr_en_core_grammar_demonstrative_plural",
+        "jr_en_app_grammar_one_replacement"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "relatives-subject",
+      "label": "主格のthat・which・who",
+      "reference": "2(1)エ 文法a(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_relative_which_subject",
+        "jr_en_app_grammar_relative_subject_keep",
+        "jr_english_core_relative_subject"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "relatives-object",
+      "label": "目的格のthat・whichと接触節",
+      "reference": "2(1)エ 文法a(b)",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_relative_object",
+        "jr_en_core_grammar_relative_omit"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "conjunctions",
+      "label": "接続詞",
+      "reference": "2(1)エ 文法b",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_that_clause",
+        "jr_en_app_grammar_if_future_present",
+        "jr_en_app_grammar_when_future_present"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "modals",
+      "label": "助動詞",
+      "reference": "2(1)エ 文法c",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_can",
+        "jr_english_core_must_not",
+        "jr_en_core_grammar_should",
+        "jr_en_app_grammar_could_request"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "prepositions",
+      "label": "前置詞",
+      "reference": "2(1)エ 文法d",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_at_clock",
+        "jr_en_app_grammar_in_month",
+        "jr_english_core_preposition_day"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "present-past",
+      "label": "現在・過去と疑問否定",
+      "reference": "2(1)エ 文法e",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_do_negative",
+        "jr_en_core_grammar_past_question",
+        "jr_en_app_grammar_past_went"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "progressive",
+      "label": "現在・過去の進行",
+      "reference": "2(1)エ 文法e",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_progressive_now",
+        "jr_en_core_grammar_past_progressive"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "perfect",
+      "label": "現在完了",
+      "reference": "2(1)エ 文法e",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_perfect_for",
+        "jr_en_app_grammar_perfect_never",
+        "jr_en_app_grammar_perfect_already"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "perfect-progressive",
+      "label": "現在完了進行",
+      "reference": "2(1)エ 文法e",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_perfect_continuous"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "future",
+      "label": "助動詞等の未来表現",
+      "reference": "2(1)エ 文法e",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_going_to",
+        "jr_en_app_grammar_will_negative"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "adjective-comparison",
+      "label": "形容詞の原級・比較級・最上級",
+      "reference": "2(1)エ 文法f",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_app_grammar_comparative_as",
+        "jr_en_core_grammar_more_comparative",
+        "jr_en_core_grammar_superlative"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "adverb-comparison",
+      "label": "副詞の比較と不規則変化",
+      "reference": "2(1)エ 文法f",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_comparative_adverb_er",
+        "jr_en_curriculum_comparative_adverb_more",
+        "jr_en_curriculum_comparative_adverb_well"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "infinitives",
+      "label": "名詞・形容詞・副詞としてのto不定詞",
+      "reference": "2(1)エ 文法g",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_noun_infinitive",
+        "jr_en_core_grammar_adjective_infinitive",
+        "jr_english_core_infinitive_purpose",
+        "jr_en_curriculum_infinitive_emotion"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "gerunds",
+      "label": "主語・目的語・前置詞後の動名詞",
+      "reference": "2(1)エ 文法h",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_gerund_subject",
+        "jr_english_core_gerund",
+        "jr_en_core_grammar_gerund_preposition"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "participles",
+      "label": "前置・後置で修飾する現在／過去分詞",
+      "reference": "2(1)エ 文法i",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_curriculum_participle_before",
+        "jr_en_core_grammar_past_participle_modifier",
+        "jr_english_core_participle"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "passive",
+      "label": "受け身",
+      "reference": "2(1)エ 文法j",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_en_core_grammar_passive_past",
+        "jr_en_app_grammar_passive_future"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "subjunctive",
+      "label": "基本的な仮定法",
+      "reference": "2(1)エ 文法k",
+      "status": "has_examples",
+      "evidenceIds": [
+        "jr_english_core_subjunctive",
+        "jr_en_core_grammar_wish_could",
+        "jr_en_app_grammar_wish_were"
+      ],
+      "remaining": "代表問との対応を確認。否定・疑問・用法・文脈の全バリエーションまで充足したという判定ではない。"
+    },
+    {
+      "id": "domain-listen",
+      "label": "聞くこと",
+      "reference": "1 領域別目標",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "英語音声を聞いて解く課題は未実装。"
+    },
+    {
+      "id": "domain-read",
+      "label": "読むこと",
+      "reference": "1 領域別目標",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_app_reading_notice_time",
+        "jr_en_app_reading_summary",
+        "jr_en_app_reading_only_scope"
+      ],
+      "remaining": "短文の必要情報・概要・要点の支援を収録。長文読解の総合評価ではない。"
+    },
+    {
+      "id": "domain-interact",
+      "label": "話すこと・やり取り",
+      "reference": "1 領域別目標",
+      "status": "not_implemented",
+      "evidenceIds": [
+        "jr_en_app_reading_response_offer"
+      ],
+      "remaining": "応答を選ぶ補助問題はあるが、音声で即興にやり取りする技能は評価していない。"
+    },
+    {
+      "id": "domain-present",
+      "label": "話すこと・発表",
+      "reference": "1 領域別目標",
+      "status": "not_implemented",
+      "evidenceIds": [],
+      "remaining": "口頭発表を生成・評価する課題は未実装。"
+    },
+    {
+      "id": "domain-write",
+      "label": "書くこと",
+      "reference": "1 領域別目標",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_curriculum_svoo_wh"
+      ],
+      "remaining": "語順・綴り選択は補助。自由にまとまりのある文章を書く技能は評価していない。"
+    },
+    {
+      "id": "information",
+      "label": "情報整理・根拠・考えの形成",
+      "reference": "2(2)",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_app_reading_inference_limit",
+        "jr_en_app_reading_opinion_fact"
+      ],
+      "remaining": "根拠や事実と意見を判別する短文課題で支援。自分の意見の生成は未実装。"
+    },
+    {
+      "id": "activities",
+      "label": "言語活動と場面・働き",
+      "reference": "2(3)",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_app_reading_invitation_decline_reason",
+        "jr_en_app_grammar_why_dont_we"
+      ],
+      "remaining": "依頼・断り・提案等の選択は支援。実際の発話・作文の活動を代替しない。"
+    },
+    {
+      "id": "culture",
+      "label": "文化的背景と相手への配慮",
+      "reference": "3 指導計画と内容の取扱い",
+      "status": "partial",
+      "evidenceIds": [
+        "jr_en_app_reading_response_permission"
+      ],
+      "remaining": "定型的な丁寧な応答は扱う。文化理解・他者理解全般の達成は保証しない。"
+    }
+  ]
+}

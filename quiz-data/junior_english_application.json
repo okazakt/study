@@ -4618,5 +4618,599 @@
         "note": "alreadyは、すでにその動作が完了していることを示す。"
       }
     ]
+  },
+  {
+    "id": "jr_en_curriculum_svc_noun",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She became (？).「彼女は医師になった」に入る語句は？",
+    "answer": "a doctor",
+    "dummies": [
+      "very quickly",
+      "to a doctor",
+      "be a doctor"
+    ],
+    "note": "becomeの後ろの名詞は、主語が何になったかを説明する。",
+    "learning_point": "svc_noun",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He became (？).「彼は教師になった」に入る語句は？",
+        "answer": "a teacher",
+        "dummies": [
+          "very quickly",
+          "to a teacher",
+          "be a teacher"
+        ],
+        "note": "becomeと名詞の補語で、何になったかを表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_svo_how_full",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I know (？) use this app.「使い方を知っている」に入る語句は？",
+    "answer": "how to",
+    "dummies": [
+      "how do",
+      "what do",
+      "how is"
+    ],
+    "note": "knowの目的語にhowとto不定詞を置き、方法を表す。",
+    "learning_point": "svo_how_full",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She knows (？) cook rice.「炊き方を知っている」に入る語句は？",
+        "answer": "how to",
+        "dummies": [
+          "how does",
+          "what does",
+          "how is"
+        ],
+        "note": "how to cookが方法を表し、knowsの目的語になる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_svoo_pronoun",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I'll tell him (？).「そのことを彼に伝える」に入る語は？",
+    "answer": "that",
+    "dummies": [
+      "he",
+      "his",
+      "him"
+    ],
+    "note": "tellの後ろに人、その人に伝える内容を表す代名詞の順に置く。",
+    "learning_point": "svoo_pronoun",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I'll give you (？).「あなたにいくらかあげる」に入る語は？",
+        "answer": "some",
+        "dummies": [
+          "your",
+          "yours",
+          "you"
+        ],
+        "note": "giveの後ろに人と物を表す代名詞を順に置ける。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_svoo_how",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She showed me (？) use the camera.「使い方を教えた」に入る語句は？",
+    "answer": "how to",
+    "dummies": [
+      "how do",
+      "how did",
+      "what do"
+    ],
+    "note": "showと人の後ろにhow toを置いて、教える方法の内容を表す。",
+    "learning_point": "svoo_how",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He taught us (？) make bread.「作り方を教えた」に入る語句は？",
+        "answer": "how to",
+        "dummies": [
+          "how do",
+          "how did",
+          "what do"
+        ],
+        "note": "teachと人とhow to不定詞で、作り方などを教える。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_svoo_that",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "He told me (？) he was busy.「忙しいと私に伝えた」に入る語は？",
+    "answer": "that",
+    "dummies": [
+      "what",
+      "where",
+      "who"
+    ],
+    "note": "tellと人の後ろにthat節を置き、伝える内容を表す。",
+    "learning_point": "svoo_that",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She told us (？) the shop was closed.「閉まっていたと伝えた」に入る語は？",
+        "answer": "that",
+        "dummies": [
+          "what",
+          "where",
+          "who"
+        ],
+        "note": "that節全体が、相手に伝えた内容を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_svoo_wh",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "間接疑問文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Tell me (？).「どこに住んでいるか教えて」に入る語順は？",
+    "answer": "where you live",
+    "dummies": [
+      "where do you live",
+      "where live you",
+      "where you does live"
+    ],
+    "note": "tellと人の後ろに置く疑問詞節も、主語と動詞の順にする。",
+    "learning_point": "svoo_wh",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She told me (？).「何が欲しいか伝えた」に入る語順は？",
+        "answer": "what she wanted",
+        "dummies": [
+          "what did she want",
+          "what wanted she",
+          "what she did wanted"
+        ],
+        "note": "相手と、疑問詞で始まる内容の節を順に置く。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_svoc_noun",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "We call him Ken. Kenが説明するのは？",
+    "answer": "himが指す人の呼び名",
+    "dummies": [
+      "話し手の名前",
+      "呼ぶ時刻",
+      "呼んだ回数"
+    ],
+    "note": "callと目的語と名詞で、目的語の人を何と呼ぶか述べる。",
+    "learning_point": "svoc_noun",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "They named the dog Max. Maxが説明するのは？",
+        "answer": "the dogの名前",
+        "dummies": [
+          "話し手の名前",
+          "犬の年齢",
+          "名付けた場所"
+        ],
+        "note": "namedの後ろの目的語と名詞で、犬に付けた名前を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_be_adj_that",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "文型",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I'm glad (？) you came.「来てくれてうれしい」に入る語は？",
+    "answer": "that",
+    "dummies": [
+      "what",
+      "where",
+      "who"
+    ],
+    "note": "感情を表す形容詞の後ろにthat節で内容を続けられる。",
+    "learning_point": "be_adj_that",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I'm sure (？) he is right.「正しいと確信している」に入る語は？",
+        "answer": "that",
+        "dummies": [
+          "what",
+          "where",
+          "who"
+        ],
+        "note": "sureの後ろにthat節を置き、確信する内容を述べる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_relative_which_subject",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "関係代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "The book (？) is on the desk is mine. に入る語は？",
+    "answer": "which",
+    "dummies": [
+      "who",
+      "what",
+      "whose"
+    ],
+    "note": "物を先行詞とし、節の主語になるwhich。thatも可能だが候補に含めない。",
+    "learning_point": "relative_which_subject",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "I saw a dog (？) had blue eyes. に入る語は？",
+        "answer": "which",
+        "dummies": [
+          "what",
+          "whose",
+          "where"
+        ],
+        "note": "動物を先行詞として、節の主語になるwhichを置ける。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_comparative_adverb_er",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Ken runs (？) than Tom.「より速く走る」に入る語は？",
+    "answer": "faster",
+    "dummies": [
+      "fastest",
+      "most fast",
+      "fastly"
+    ],
+    "note": "動詞runsを修飾する副詞fastも比較級fasterになる。",
+    "learning_point": "comparative_adverb_er",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She runs the (？) of the three.「最も速く走る」に入る語は？",
+        "answer": "fastest",
+        "dummies": [
+          "faster",
+          "more fast",
+          "fastly"
+        ],
+        "note": "副詞fastの最上級はfastest。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_comparative_adverb_more",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Please speak (？) slowly.「もっとゆっくり」に入る語は？",
+    "answer": "more",
+    "dummies": [
+      "most",
+      "many",
+      "muchly"
+    ],
+    "note": "slowlyの比較級はmore slowly。",
+    "learning_point": "comparative_adverb_more",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "She speaks the (？) slowly of the three.「最もゆっくり」に入る語は？",
+        "answer": "most",
+        "dummies": [
+          "more",
+          "many",
+          "muchly"
+        ],
+        "note": "slowlyの最上級はmost slowly。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_comparative_adverb_well",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "She sings (？) than I do.「より上手に」に入る語は？",
+    "answer": "better",
+    "dummies": [
+      "good",
+      "best",
+      "wellest"
+    ],
+    "note": "副詞wellの比較級はbetter。",
+    "learning_point": "comparative_adverb_well",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "He plays the best of all. このbestの原級は？",
+        "answer": "well",
+        "dummies": [
+          "goodly",
+          "better",
+          "most"
+        ],
+        "note": "playsを修飾する副詞wellがbetter、bestと変化する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_infinitive_emotion",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "I'm happy (？) see you. に入る語は？",
+    "answer": "to",
+    "dummies": [
+      "for",
+      "at",
+      "by"
+    ],
+    "note": "to see youが、うれしいという感情の原因を表す。",
+    "learning_point": "infinitive_emotion",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "We're excited (？) meet her. に入る語は？",
+        "answer": "to",
+        "dummies": [
+          "for",
+          "at",
+          "by"
+        ],
+        "note": "to meet herが、わくわくする感情の原因を表す。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_gerund_subject",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "動名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "(？) books is fun.「本を読むことは楽しい」に入る形は？",
+    "answer": "Reading",
+    "dummies": [
+      "Read",
+      "Reads",
+      "Readed"
+    ],
+    "note": "動名詞の句Reading booksを主語にできる。",
+    "learning_point": "gerund_subject",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "(？) English is important.「英語を学ぶことは大切」に入る形は？",
+        "answer": "Learning",
+        "dummies": [
+          "Learn",
+          "Learns",
+          "Learned"
+        ],
+        "note": "動名詞の句Learning Englishが主語として働く。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_participle_before",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "分詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「沸騰したお湯」(？) water に入る形は？",
+    "answer": "boiled",
+    "dummies": [
+      "boil",
+      "boils",
+      "to boil"
+    ],
+    "note": "過去分詞boiledを名詞の前に置き、沸かされたことを説明する。",
+    "learning_point": "participle_before",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「落ちていく葉」(？) leaves に入る形は？",
+        "answer": "falling",
+        "dummies": [
+          "fall",
+          "falls",
+          "to fall"
+        ],
+        "note": "現在分詞fallingを名詞の前に置き、落ちている様子を説明する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_which_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「どちらがあなたの本ですか」(？) is your book? に入る語は？",
+    "answer": "Which",
+    "dummies": [
+      "Whose",
+      "When",
+      "Why"
+    ],
+    "note": "複数の候補からどちらかを尋ねる疑問詞はwhich。",
+    "learning_point": "which_question",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「どの色が好きですか」(？) color do you like? に入る語は？",
+        "answer": "Which",
+        "dummies": [
+          "Whose",
+          "When",
+          "Why"
+        ],
+        "note": "候補の中からどれかを尋ねるときwhichと名詞を使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_symbol_exclamation",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "符号",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "強い驚きや感嘆を示す文末の符号は？",
+    "answer": "!",
+    "dummies": [
+      "?",
+      ",",
+      ":"
+    ],
+    "note": "感嘆符は、驚きや感情を強く表す文などに使う。",
+    "learning_point": "symbol_exclamation",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "What a beautiful view (？) 感嘆文の末尾に入る符号は？",
+        "answer": "!",
+        "dummies": [
+          "?",
+          ",",
+          ":"
+        ],
+        "note": "Whatで始まるこの感嘆文は、感嘆符で終える。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_curriculum_symbol_quotation",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "符号",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "人物が話した言葉を、そのまま示すときに囲む符号は？",
+    "answer": "引用符",
+    "dummies": [
+      "疑問符",
+      "感嘆符",
+      "コロン"
+    ],
+    "note": "直接の発言を文中に示すときは引用符で囲む。",
+    "learning_point": "symbol_quotation",
+    "content_batch": "english-curriculum-1",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "直接の発言を囲む英語の引用符の組み合わせは？",
+        "answer": "“ ”",
+        "dummies": [
+          "（ ）",
+          "[ ]",
+          "＜ ＞"
+        ],
+        "note": "ここでは、二重引用符で直接の発言を囲む。"
+      }
+    ]
   }
 ]

@@ -66,6 +66,7 @@ test('public version and versioned app references agree',()=>{
   for(const file of ['game.js','progress.js'])assert.ok(read(file).includes(`math-variants.js?v=${version}`));
   assert.ok(source.includes("'./math-variants.js'"));
   assert.ok(source.includes("'./choice-variants.js'"));
+  assert.ok(source.includes("'./textbooks.js'"));assert.ok(source.includes("'./textbook-data/english-2026.json'"));assert.ok(read('app.js').includes(`textbooks.js?v=${version}`));assert.ok(read('textbooks.js').includes(`learning.js?v=${version}`));
   for(const file of ['game.js','progress.js'])assert.ok(read(file).includes(`choice-variants.js?v=${version}`));
   assert.ok(source.includes(`study-beat-v${version}`));assert.equal(JSON.parse(read('version.json')).version,version);
 });

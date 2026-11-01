@@ -1,15 +1,18 @@
-import { ScreenWakeLock } from './wake-lock.js?v=0.55.0';
-import { MusicPlayer } from './music-player.js?v=0.55.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.55.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.55.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.55.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.55.0';
-const VERSION = '0.55.0';
+import {TEXTBOOK_KEY,availableTextbookSeries,normalizeTextbookSettings,textbookBooks,textbookUnits,selectTextbookQuestions} from './textbooks.js?v=0.56.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.56.0';
+import { MusicPlayer } from './music-player.js?v=0.56.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.56.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.56.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.56.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.56.0';
+const VERSION = '0.56.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
 let questions, playlist, track, trackIndex = 0, game, frame, busy = false, history = [], screen = 'home';
 let session, musicContext, musicGain, musicPlayer, musicEntries=[], tuningTracks=[], playedTracks=[];
+let textbookData, textbookSettings, savedTextbooks=null;
+try { savedTextbooks=JSON.parse(localStorage.getItem(TEXTBOOK_KEY)||'null'); }catch{}
 let selectedMusic=null;
 try {
   const saved=localStorage.getItem('study-beat-music-selection-v2');
@@ -318,7 +321,39 @@ function updateLearningLevel() {
 const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 async function json(path) { const r = await fetch(`${path}?v=${VERSION}`); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); }
 const selection = () => preferences?.profiles[preferences.school];
-const selectedQuestions = () => dataReady ? selectQuestions(questions, preferences.school, selection(), catalog) : [];
+const textbookActive = course => !!textbookSettings?.series && /^中学:英語:(1|2|3|exam)$/.test(course || '');
+const selectedQuestions = () => !dataReady ? [] : textbookActive(selection()?.id)
+  ? selectTextbookQuestions(questions,textbookData,textbookSettings,selection())
+  : selectQuestions(questions, preferences.school, selection(), catalog);
+function saveTextbooks(){try{localStorage.setItem(TEXTBOOK_KEY,JSON.stringify(textbookSettings));$('textbook-storage-note').hidden=true;}catch{$('textbook-storage-note').hidden=false;}}
+function renderTextbookSettings(){
+ $('textbook-setting').replaceChildren(new Option('共通問題（教科書を指定しない）',''));
+ const states={wordlist_only:'語彙一覧のみ確認・単元未対応',source_unavailable:'資料取得待ち',pending_source:'資料確認中',curriculum_only:'単元表のみ確認・語彙未対応'};
+ for(const series of availableTextbookSeries(textbookData)){
+  const option=new Option(`${series.title}／${series.publisher}${series.available?'（一部語彙対応）':`（${states[series.status]||'確認中'}）`}`,series.id);option.disabled=!series.available;$('textbook-setting').append(option);
+ }
+ $('textbook-setting').value=textbookSettings.series;
+}
+function renderTextbookUnits(course,entry){
+ const active=textbookActive(course?.id);$('textbook-picker').hidden=!active;
+ if(!active)return;
+ const units=textbookUnits(textbookData,textbookSettings,course.id),books=textbookBooks(textbookData,textbookSettings,course.id);
+ $('textbook-title').textContent=`${books.map(b=>b.title).join('・')} · 2026年度使用`;
+ $('textbook-summary').textContent=`${books[0]?.title.replace(/ [123]$/,'') || ''}の単元を選ぶ`;
+ $('textbook-note').textContent='令和7年度版。初出ページと訳語を照合できた一部の単語・熟語を出題します。未対応語があります。文法・読解は共通問題で選べます。';
+ const generated=catalogQuestions.filter(q=>matchesPracticeQuestion(q,entry.practiceType||'all'));
+ const available=units.filter(u=>u.items.some(row=>generated.some(q=>q.sourceId===row.sourceId)));
+ const selected=textbookSettings.unitsByCourse[course.id];
+ $('all-textbook-units').checked=selected===null || selected===undefined || available.length>0&&available.every(u=>selected.includes(u.id));
+ $('all-textbook-units').indeterminate=Array.isArray(selected)&&selected.length>0&&!$('all-textbook-units').checked;
+ $('textbook-unit-list').replaceChildren();
+ for(const unit of units){
+  const ids=new Set(unit.items.map(row=>row.sourceId)),qs=generated.filter(q=>ids.has(q.sourceId)),coverage=questionCoverage(qs,learningHistory);
+  const label=document.createElement('label');label.className='section-option';const input=document.createElement('input');input.type='checkbox';input.dataset.textbookUnit=unit.id;input.disabled=!qs.length;input.checked=!!qs.length&&(!Array.isArray(selected)||selected.includes(unit.id));
+  input.addEventListener('change',()=>{const chosen=new Set(Array.isArray(selected)?selected:available.map(u=>u.id));input.checked?chosen.add(unit.id):chosen.delete(unit.id);textbookSettings.unitsByCourse[course.id]=available.every(u=>chosen.has(u.id))?null:[...chosen];saveTextbooks();renderLearning();});
+  const text=document.createElement('span');text.textContent=`${course.year==='exam'?`${unit.year}年 `:''}${unit.label}（p.${unit.pageStart}–${unit.pageEnd}） · ${qs.length?`出題済み ${coverage.solved} / ${coverage.total}問`:'対応問題は準備中'}`;label.append(input,text);$('textbook-unit-list').append(label);
+ }
+}
 function saveLearning() {
   try { localStorage.setItem('study-beat-learning-v1', JSON.stringify(preferences)); }
   catch { $('learning-storage-note').hidden = false; }
@@ -357,7 +392,8 @@ function renderLearning() {
     const button = document.createElement('button'); button.type = 'button'; button.dataset.course = course.id;
     button.disabled = !course.count; button.setAttribute('aria-pressed', String(course.id === selection()?.id));
     const title = document.createElement('strong'); title.textContent = course.label;
-    const coverage = questionCoverage(catalogQuestions.filter(q=>course.ids.includes(q.sourceId)), learningHistory);
+    const courseIds=new Set(textbookActive(course.id)?selectTextbookQuestions(questions,textbookData,textbookSettings,{id:course.id,practiceType:'all'},{allUnits:true}).map(q=>q.id):course.ids);
+    const coverage = questionCoverage(catalogQuestions.filter(q=>courseIds.has(q.sourceId)), learningHistory);
     const detail = document.createElement('span'); detail.textContent = course.count ? `出題済み ${coverage.solved} / ${coverage.total}問` : '準備中';
     if (course.count && course.year === 'exam') detail.append(document.createElement('br'), `収録 ${course.grades.join('・')}`);
     button.append(title, detail);
@@ -372,7 +408,7 @@ function renderLearning() {
   const count = selectedQuestions().length;
   if (course) {
     $('selected-course-title').textContent = `${course.label}を出題`;
-    const practiceItems = questions.filter(item => course.ids.includes(item.id) && matchesPracticeItem(item,entry.practiceType || 'all'));
+    const practiceItems = textbookActive(course.id)?selectTextbookQuestions(questions,textbookData,textbookSettings,entry,{allUnits:true}):questions.filter(item => course.ids.includes(item.id) && matchesPracticeItem(item,entry.practiceType || 'all'));
     const fields = [...new Set(practiceItems.map(item => item.field))], grades = [...new Set(practiceItems.map(item => item.grade))];
     $('course-coverage').textContent = `現在の収録：${grades.join('・')}／${fields.join('・')} · ${practiceItems.length}項目${course.year === 'exam' ? '（未収録の学年・分野は含みません）' : ''}`;
     const options = practiceTypes(course.subject);
@@ -380,6 +416,7 @@ function renderLearning() {
     $('practice-list').replaceChildren();
     for (const option of options) {
       const button = document.createElement('button'); button.type = 'button'; button.dataset.practice = option.id; button.textContent = option.label;
+      button.disabled=textbookActive(course.id)&&!selectTextbookQuestions(questions,textbookData,textbookSettings,{...entry,practiceType:option.id},{allUnits:true}).length;
       button.setAttribute('aria-pressed', String(option.id === (entry.practiceType || 'all')));
       button.addEventListener('click', () => {
         if (entry.practiceType !== option.id) { entry.practiceType = option.id; entry.sections = null; saveLearning(); }
@@ -408,6 +445,8 @@ function renderLearning() {
       label.append(input, text); $('section-list').append(label);
     }
   }
+  $('section-picker').hidden=textbookActive(course?.id);
+  renderTextbookUnits(course,entry);
   const selectedIds = new Set(selectedQuestions().map(item=>item.id));
   const selectedCoverage = questionCoverage(catalogQuestions.filter(q=>selectedIds.has(q.sourceId) && matchesPracticeQuestion(q,selection()?.practiceType || 'all')),learningHistory);
   $('selection-status').textContent = course ? count ? `選択範囲：出題済み ${selectedCoverage.solved} / ${selectedCoverage.total}問` : '単元を1つ以上選んでください。'
@@ -419,6 +458,12 @@ $('all-sections').addEventListener('change', () => { selection().sections = $('a
 document.querySelectorAll('[data-school]').forEach(button => button.addEventListener('click', () => setSchool(button.dataset.school)));
 $('open-learning-settings').addEventListener('click', () => {showDisplayDiagnostics();$('display-copy-status').textContent='';$('learning-settings').showModal();});
 $('close-learning-settings').addEventListener('click', () => $('learning-settings').close());
+$('textbook-setting').addEventListener('change',()=>{
+ textbookSettings=normalizeTextbookSettings({version:1,usageYear:2026,series:$('textbook-setting').value,unitsByCourse:{}},textbookData);
+ if(textbookActive(selection()?.id)&&!selectTextbookQuestions(questions,textbookData,textbookSettings,selection(),{allUnits:true}).length)selection().practiceType='all';
+ saveTextbooks();saveLearning();renderLearning();
+});
+$('all-textbook-units').addEventListener('change',()=>{textbookSettings.unitsByCourse[selection().id]=$('all-textbook-units').checked?null:[];saveTextbooks();renderLearning();});
 function saveMusicSelection(){
   try { localStorage.setItem('study-beat-music-selection-v2',JSON.stringify(selectedMusic));$('music-storage-note').hidden=true; }
   catch { $('music-storage-note').hidden=false; }
@@ -448,7 +493,7 @@ function selectTrack(index, tuning=false) {
 }
 async function load() {
   try {
-    const [index, quiz, english, japanese, math, social, expansion, englishCore, englishExtended, englishApplication, englishSupplement, englishVocabulary2] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json'), json('./quiz-data/junior_english_extended.json'), json('./quiz-data/junior_english_application.json'), json('./quiz-data/junior_english_supplement.json'), json('./quiz-data/junior_english_vocabulary2.json')]);
+    const [index, quiz, english, japanese, math, social, expansion, englishCore, englishExtended, englishApplication, englishSupplement, englishVocabulary2, textbooks] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json'), json('./quiz-data/junior_english_extended.json'), json('./quiz-data/junior_english_application.json'), json('./quiz-data/junior_english_supplement.json'), json('./quiz-data/junior_english_vocabulary2.json'), json('./textbook-data/english-2026.json')]);
     questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion, ...englishCore, ...englishExtended, ...englishApplication, ...englishSupplement, ...englishVocabulary2];
     const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     musicEntries=entries;
@@ -466,6 +511,8 @@ async function load() {
     $('open-tuning').disabled = !outputConfirmed;
     catalogQuestions = makeQuestionQueue(questions, () => .5);
     catalog = buildCatalog(questions); preferences = normalizePreferences(savedLearning, catalog);
+    textbookData=textbooks;textbookSettings=normalizeTextbookSettings(savedTextbooks,textbookData);renderTextbookSettings();
+    if(textbookActive(selection()?.id)&&!selectTextbookQuestions(questions,textbookData,textbookSettings,selection(),{allUnits:true}).length)selection().practiceType='all';
     activeSubject = catalog.find(course => course.id === selection()?.id)?.subject || '';
     dataReady = true; document.querySelectorAll('[data-school]').forEach(button => { button.disabled = false; });
     renderLearning();
