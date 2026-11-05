@@ -5872,5 +5872,335 @@
         "note": "現在進行形の否定はam・is・areの後にnotを置く。doやdoesで否定しない。"
       }
     ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_some_affirmative",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "someとany",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「いくつかのリンゴ」I have (？) apples.",
+    "answer": "some",
+    "dummies": [
+      "a",
+      "an",
+      "much"
+    ],
+    "note": "someは肯定文で「いくつかの・いくらかの」を表せる。複数の数えられる名詞にも使う。",
+    "learning_point": "some_affirmative",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「何冊かの本」There are (？) books here.",
+        "answer": "some",
+        "dummies": [
+          "a",
+          "an",
+          "much"
+        ],
+        "note": "someは肯定文で「いくつかの・いくらかの」を表せる。複数の数えられる名詞にも使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_some_request",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "someとany",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「水を少しください」Can I have (？) water?",
+    "answer": "some",
+    "dummies": [
+      "a",
+      "an",
+      "few"
+    ],
+    "note": "依頼の疑問文ではsomeを使うことがある。waterやteaはここでは数えられない名詞。anyも使える文脈があるため誤答候補にはしない。",
+    "learning_point": "some_request",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「お茶を少しください」Can I have (？) tea?",
+        "answer": "some",
+        "dummies": [
+          "a",
+          "an",
+          "few"
+        ],
+        "note": "依頼の疑問文ではsomeを使うことがある。waterやteaはここでは数えられない名詞。anyも使える文脈があるため誤答候補にはしない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_why_reason_answer",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "疑問詞why",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Why were you late? の返答は？",
+    "answer": "Because I was ill.",
+    "dummies": [
+      "At eight.",
+      "At home.",
+      "With Ken."
+    ],
+    "note": "whyは理由をたずねる。becauseで始まる文で、その理由を答えられる。",
+    "learning_point": "why_reason_answer",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Why do you study math? の返答は？",
+        "answer": "Because I like it.",
+        "dummies": [
+          "Every day.",
+          "At school.",
+          "With my friend."
+        ],
+        "note": "whyは理由をたずねる。becauseで始まる文で、その理由を答えられる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_there_question",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "存在を表す文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「机に本はありますか」(？) there a book on the desk?",
+    "answer": "Is",
+    "dummies": [
+      "Are",
+      "Do",
+      "Does"
+    ],
+    "note": "there is・there areの疑問文ではbe動詞をthereの前に置く。後ろの名詞の数に合わせる。",
+    "learning_point": "there_question",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「猫はいますか」(？) there any cats here?",
+        "answer": "Are",
+        "dummies": [
+          "Is",
+          "Do",
+          "Does"
+        ],
+        "note": "there is・there areの疑問文ではbe動詞をthereの前に置く。後ろの名詞の数に合わせる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_how_many_there",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "存在を表す文",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「何人いますか」How many students (？) there?",
+    "answer": "are",
+    "dummies": [
+      "is",
+      "do",
+      "does"
+    ],
+    "note": "How many＋複数名詞＋are thereで、その場所にいくつあるか・何人いるかをたずねる。",
+    "learning_point": "how_many_there",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「何冊ありますか」How many books (？) there?",
+        "answer": "are",
+        "dummies": [
+          "is",
+          "do",
+          "does"
+        ],
+        "note": "How many＋複数名詞＋are thereで、その場所にいくつあるか・何人いるかをたずねる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_relative_that_object",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "関係代名詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "This is the book (？) I bought. に入る関係代名詞は？",
+    "answer": "that",
+    "dummies": [
+      "who",
+      "what",
+      "when"
+    ],
+    "note": "物を説明する目的格の関係代名詞にthatを使える。whichや省略も可能なので誤答候補にしない。",
+    "learning_point": "relative_that_object",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "This is the camera (？) I use. に入る関係代名詞は？",
+        "answer": "that",
+        "dummies": [
+          "who",
+          "what",
+          "where"
+        ],
+        "note": "物を説明する目的格の関係代名詞にthatを使える。whichや省略も可能なので誤答候補にしない。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_perfect_just",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「たった今着いた」I have (？) arrived.",
+    "answer": "just",
+    "dummies": [
+      "already",
+      "never",
+      "yet"
+    ],
+    "note": "現在完了のjustは「たった今・ちょうど」。alreadyの「すでに」と区別する。",
+    "learning_point": "perfect_just",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「たった今終えた」She has (？) finished.",
+        "answer": "just",
+        "dummies": [
+          "already",
+          "never",
+          "yet"
+        ],
+        "note": "現在完了のjustは「たった今・ちょうど」。alreadyの「すでに」と区別する。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_perfect_yet_question",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "現在完了",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "「もう終わりましたか」Have you finished (？)?",
+    "answer": "yet",
+    "dummies": [
+      "never",
+      "ever",
+      "just"
+    ],
+    "note": "完了したかをたずねる疑問文では、yetを文末に置いて「もう」と表せる。",
+    "learning_point": "perfect_yet_question",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "「もう食べましたか」Have you eaten lunch (？)?",
+        "answer": "yet",
+        "dummies": [
+          "never",
+          "ever",
+          "just"
+        ],
+        "note": "完了したかをたずねる疑問文では、yetを文末に置いて「もう」と表せる。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_can_permission",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "助動詞can",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Can I use your pen? は何を求める表現？",
+    "answer": "ペンを使う許可",
+    "dummies": [
+      "相手の能力の説明",
+      "過去の習慣の説明",
+      "翌日の予定の説明"
+    ],
+    "note": "Can I＋動詞の原形は、自分が何かをする許可を求める表現として使う。",
+    "learning_point": "can_permission",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "Can I open the window? は何を求める表現？",
+        "answer": "窓を開ける許可",
+        "dummies": [
+          "相手の能力の説明",
+          "過去の習慣の説明",
+          "翌日の予定の説明"
+        ],
+        "note": "Can I＋動詞の原形は、自分が何かをする許可を求める表現として使う。"
+      }
+    ]
+  },
+  {
+    "id": "jr_en_textbook_grammar_help_infinitive_forms",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英文法",
+    "unit": "原形不定詞",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "help me (？) my bag：使える形は？",
+    "answer": "carry / to carry",
+    "dummies": [
+      "carryingだけ",
+      "carriedだけ",
+      "carriesだけ"
+    ],
+    "note": "help＋人の後は原形とto＋原形の両方を使える。let・makeの後の原形不定詞と区別する。",
+    "learning_point": "help_infinitive_forms",
+    "content_batch": "english-textbook-grammar-3",
+    "presentations": [
+      {
+        "id": "context-2",
+        "prompt": "help us (？) the room：使える形は？",
+        "answer": "clean / to clean",
+        "dummies": [
+          "cleaningだけ",
+          "cleanedだけ",
+          "cleansだけ"
+        ],
+        "note": "help＋人の後は原形とto＋原形の両方を使える。let・makeの後の原形不定詞と区別する。"
+      }
+    ]
   }
 ]

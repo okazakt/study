@@ -28,7 +28,7 @@ if previousPath.exists():
  previous=json.loads(previousPath.read_text());pinned={r['id']:r['sha256'] for r in previous['sources']}
  for row in provenance:
   if row['id'] in pinned and pinned[row['id']]!=row['sha256']:raise ValueError(f"Source changed: {row['id']}; review the edition, data revision and mapping before replacing its pinned checksum")
-series=[('new-horizon','NEW HORIZON','東京書籍','002','wordlist_only'),('sunshine','Sunshine','開隆堂','009','source_unavailable'),('new-crown','NEW CROWN','三省堂','015','pending_source'),('one-world','ONE WORLD','教育出版','017','partial_words'),('here-we-go','Here We Go!','光村図書','038','partial_grammar'),('blue-sky','BLUE SKY','啓林館','061','partial_grammar')]
+series=[('new-horizon','NEW HORIZON','東京書籍','002','wordlist_only'),('sunshine','Sunshine','開隆堂','009','source_unavailable'),('new-crown','NEW CROWN','三省堂','015','pending_source'),('one-world','ONE WORLD','教育出版','017','partial_words_grammar'),('here-we-go','Here We Go!','光村図書','038','partial_grammar'),('blue-sky','BLUE SKY','啓林館','061','partial_grammar')]
 books=[]
 for key,name,pub,code,status in series:
  for g in [1,2,3]:books.append(dict(id=f'{key}-{g}-2026',series=key,title=f'{name} {g}',publisher=pub,school='中学',subject='英語',year=g,usageYear=2026,editionYear=2025,bookNumber=f'{code}-{g+6}2',status=status,units=[]))
@@ -167,10 +167,44 @@ assert blueKeys=={(g,n) for g,total in [(1,10),(2,8),(3,6)] for n in range(1,tot
 blueMeta=dict(path=str(bluePath.relative_to(root)),sha256=hashlib.sha256(bluePath.read_bytes()).hexdigest())
 blueBooks=[b for b in books if b['series']=='blue-sky']
 blueReport=dict(scope='公式単元一覧PDFの文法項目との対応のみ。語彙・読解・全用法は未対応。教科書ページは不明のためnullとする。',units=sum(len(b['units']) for b in blueBooks),playableUnits=sum(bool(u['items']) for b in blueBooks for u in b['units']),mappedMaterials=len({r['sourceId'] for b in blueBooks for u in b['units'] for r in u['items']}),mappings=sum(len(u['items']) for b in blueBooks for u in b['units']),reviewLedger=blueMeta)
-manifest=dict(version=1,usageYear=2026,editionYear=2025,checkedAt=checked,catalogSource='catalog.pdf',sources=provenance,reviewLedger=reviewMeta,grammarReviewLedger=grammarMeta,blueGrammarReviewLedger=blueMeta,books=books,
+# Extend the existing OW lexical units with independently reviewed grammar rows.
+owGrammarPath=root/'textbook-data/one-world-grammar-reviewed.json'
+owGrammar=json.loads(owGrammarPath.read_text());assert owGrammar['version']==1
+assert set(owGrammar['sources'])=={f'ow-plan{g}.xlsx' for g in (1,2,3)}
+owPlanning={};owGrammarKeys=set()
+for g in (1,2,3):
+ filename=f'ow-plan{g}.xlsx'
+ assert owGrammar['sources'][filename]==hashlib.sha256((source/filename).read_bytes()).hexdigest(), f'Stale OW plan: {filename}'
+ sheet=openpyxl.load_workbook(source/filename,data_only=True).worksheets[0]
+ assert sheet.sheet_state=='visible' and sheet.title==f'年計案{g}年'
+ owPlanning[g]=(sheet.title,list(sheet.values))
+for reviewed in owGrammar['units']:
+ g=reviewed['year'];id=reviewed['unitId'];key=(g,id);filename=reviewed['source']
+ assert key not in owGrammarKeys and filename==f'ow-plan{g}.xlsx';owGrammarKeys.add(key)
+ sheetName,rows=owPlanning[g];assert reviewed['sheet']==sheetName
+ row=rows[reviewed['row']-1]
+ assert 'Grammar' in str(row[6]) and 'Grammar' in str(row[8])
+ assert reviewed['languageMaterialSha256']==hashlib.sha256(str(row[8]).encode()).hexdigest(), 'OW grammar changed'
+ book=next(b for b in books if b['series']=='one-world' and b['year']==g)
+ unit=next(u for u in book['units'] if u['id']==id)
+ title=next(str(r[2]).splitlines()[0].strip() for r in reversed(rows[:reviewed['row']]) if r[2] is not None)
+ number=int(id.split('-')[-1]);assert re.match(rf'Lesson\s+{number}\b',title), 'OW lesson changed'
+ nums=re.findall(r'\d+',str(row[3]));assert nums and unit['pageStart']<=int(nums[0])<=int(nums[-1])<=unit['pageEnd']
+ ids={r['sourceId'] for r in unit['items']}
+ for decision in reviewed['items']:
+  item=allBy[decision['sourceId']]
+  assert item['subject']=='英語' and item['field']=='英文法' and item['id'] not in ids;ids.add(item['id'])
+  assert decision['materialSha256']==hashlib.sha256(json.dumps(item,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest(), f"Stale OW grammar material: {item['id']}"
+  unit['items'].append(dict(sourceId=item['id'],page=None,evidence=dict(source=filename,sheet=sheetName,row=reviewed['row'],method='reviewed_grammar_topic',languageMaterialSha256=reviewed['languageMaterialSha256'])))
+ unit['grammarMappedCount']=len(reviewed['items'])
+assert owGrammarKeys=={(g,f'ow{g}-lesson-{n}') for g,total in [(1,9),(2,9),(3,5)] for n in range(1,total+1)}, 'Incomplete OW grammar review'
+owGrammarMeta=dict(path=str(owGrammarPath.relative_to(root)),sha256=hashlib.sha256(owGrammarPath.read_bytes()).hexdigest())
+owGrammarRows=[r for b in books if b['series']=='one-world' for u in b['units'] for r in u['items'] if r['evidence']['method']=='reviewed_grammar_topic']
+owGrammarReport=dict(units=len(owGrammarKeys),mappedMaterials=len({r['sourceId'] for r in owGrammarRows}),mappings=len(owGrammarRows),reviewLedger=owGrammarMeta)
+manifest=dict(version=1,usageYear=2026,editionYear=2025,checkedAt=checked,catalogSource='catalog.pdf',sources=provenance,reviewLedger=reviewMeta,grammarReviewLedger=grammarMeta,blueGrammarReviewLedger=blueMeta,oneWorldGrammarReviewLedger=owGrammarMeta,books=books,
  caveats=['出版社の監修・公認を意味しない。','語彙は確認できた語義・初出ページ、文法は確認できた単元項目に限定し、未対応内容を含む。','教科書本文・訳文・問題・音声は転載せず、問題文と解説は独自素材を使う。','初出箇所の対応であり、その単元の全既習語・全出現語一覧ではない。'])
 (root/'textbook-data/english-2026.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-report=dict(checkedAt=checked,scope='公開資料の掲載語／初出ページと既存素材の照合。未一致は未収録語確定ではなく、活用形・語義・固有名詞・表記等の要確認を含む。',sources=provenance,oneWorld=dict(totalEntries=len(wordreport),exactSenseConfirmed=sum(r['status']=='sense_confirmed' and r['matchMethod']=='exact_normalized_sense' for r in wordreport),reviewedSenseConfirmed=sum(r['matchMethod']=='reviewed_equivalent_sense' for r in wordreport),reviewedHeld=reviewMeta['held'],senseConfirmed=sum(r['status']=='sense_confirmed' for r in wordreport),senseReview=sum(r['status']=='sense_review' for r in wordreport),headwordUnmatched=sum(r['status']=='headword_unmatched' for r in wordreport),entries=wordreport),newHorizon=dict(totalEntries=len(nh),headwordMatched=sum(r['status']=='headword_match_only' for r in nh),entries=nh),hereWeGo=hwgReport,blueSky=blueReport)
+report=dict(checkedAt=checked,scope='公開資料の掲載語／初出ページと既存素材の照合。未一致は未収録語確定ではなく、活用形・語義・固有名詞・表記等の要確認を含む。',sources=provenance,oneWorld=dict(totalEntries=len(wordreport),exactSenseConfirmed=sum(r['status']=='sense_confirmed' and r['matchMethod']=='exact_normalized_sense' for r in wordreport),reviewedSenseConfirmed=sum(r['matchMethod']=='reviewed_equivalent_sense' for r in wordreport),reviewedHeld=reviewMeta['held'],senseConfirmed=sum(r['status']=='sense_confirmed' for r in wordreport),senseReview=sum(r['status']=='sense_review' for r in wordreport),headwordUnmatched=sum(r['status']=='headword_unmatched' for r in wordreport),entries=wordreport,grammar=owGrammarReport),newHorizon=dict(totalEntries=len(nh),headwordMatched=sum(r['status']=='headword_match_only' for r in nh),entries=nh),hereWeGo=hwgReport,blueSky=blueReport)
 (root/'docs/content/english-textbook-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('OW', {k:v for k,v in report['oneWorld'].items() if k!='entries'})
 print('NH', {k:v for k,v in report['newHorizon'].items() if k!='entries'})

@@ -86,6 +86,10 @@
     "path": "textbook-data/blue-sky-grammar-reviewed.json",
     "sha256": "d367f5e4d7e2ba4d9ffbf848be4e729737eec3a87293501d658e7f8a1b07edfc"
   },
+  "oneWorldGrammarReviewLedger": {
+    "path": "textbook-data/one-world-grammar-reviewed.json",
+    "sha256": "49ba9abc50d22eb7212e199fc8cc7ab84910db58bcf83478fd4db1f755441267"
+  },
   "books": [
     {
       "id": "new-horizon-1-2026",
@@ -224,7 +228,7 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "017-72",
-      "status": "partial_words",
+      "status": "partial_words_grammar",
       "units": [
         {
           "id": "ow1-classroom-english",
@@ -1898,10 +1902,132 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "e09e606a3ea6e9d26833324119e7bd91eb7d839cdec5726162a6584ea500a92b"
               }
+            },
+            {
+              "sourceId": "jr_english_core_be",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_be_plural",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_be_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_be_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_be_short_answer",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_do_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_do_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_can",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_imperative_be",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_negative_command",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 20,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4"
+              }
             }
           ],
           "listedEntries": 116,
-          "unresolvedEntries": 66
+          "unresolvedEntries": 66,
+          "grammarMappedCount": 11
         },
         {
           "id": "ow1-lesson-2",
@@ -2658,10 +2784,99 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "6d44059a81ee233939b12fbaf46bd3164a7d50eda5131ddccbe01bacec4381c2"
               }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_plural_boxes",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_plural_children",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_object",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_possessive_pronoun",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_possessive_before_noun",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_how_many",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_what_do_object",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 25,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36"
+              }
             }
           ],
           "listedEntries": 101,
-          "unresolvedEntries": 33
+          "unresolvedEntries": 33,
+          "grammarMappedCount": 8
         },
         {
           "id": "ow1-activities-plus-1",
@@ -3165,10 +3380,110 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "655d11bd2af019c238f11727545fcd8409afcf0ace2cf5041d7f51ec5fc73ede"
               }
+            },
+            {
+              "sourceId": "jr_english_core_past",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_went",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_bought",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_after_didnt",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_was",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_be_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_be_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_past_did_answer",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 32,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661"
+              }
             }
           ],
           "listedEntries": 81,
-          "unresolvedEntries": 38
+          "unresolvedEntries": 38,
+          "grammarMappedCount": 9
         },
         {
           "id": "ow1-tips-for-writing-1",
@@ -3496,10 +3811,99 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "c27b50ee44e00df06e9b883c965fca9001a12d920af5ebfd7d054980ad79c326"
               }
+            },
+            {
+              "sourceId": "jr_english_core_third_person",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_does",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_does_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_third_person_ies",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_third_person_has",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_es_watches",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_any_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_some_affirmative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 38,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a"
+              }
             }
           ],
           "listedEntries": 48,
-          "unresolvedEntries": 20
+          "unresolvedEntries": 20,
+          "grammarMappedCount": 8
         },
         {
           "id": "ow1-project-1",
@@ -3783,10 +4187,77 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "f035c560d7054ef31a232f2b620680f6c6f3bf44e55c8ede0414e4864618b0a0"
               }
+            },
+            {
+              "sourceId": "jr_english_core_progressive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 48,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_progressive_now",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 48,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_progressive_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 48,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_progressive_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 48,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_ing_write",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 48,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_ing_run",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 48,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b"
+              }
             }
           ],
           "listedEntries": 57,
-          "unresolvedEntries": 36
+          "unresolvedEntries": 36,
+          "grammarMappedCount": 6
         },
         {
           "id": "ow1-tips-for-listening-1",
@@ -4158,10 +4629,66 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "e6c3b72bc157e05d391bd0c12c50a2eb7092973916539fe756e2a69e57da73b8"
               }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_why_reason_answer",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 54,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b732cecab920fadd9a23ccd3a5bfb4746772d646768dc1c93a863fe67502d030"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_object",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 54,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b732cecab920fadd9a23ccd3a5bfb4746772d646768dc1c93a863fe67502d030"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_which_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 54,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b732cecab920fadd9a23ccd3a5bfb4746772d646768dc1c93a863fe67502d030"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_whose",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 54,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b732cecab920fadd9a23ccd3a5bfb4746772d646768dc1c93a863fe67502d030"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_who_is_person",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 54,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b732cecab920fadd9a23ccd3a5bfb4746772d646768dc1c93a863fe67502d030"
+              }
             }
           ],
           "listedEntries": 70,
-          "unresolvedEntries": 38
+          "unresolvedEntries": 38,
+          "grammarMappedCount": 5
         },
         {
           "id": "ow1-tips-for-reading-1",
@@ -4732,10 +5259,66 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "157a6d2c80539c9d8998038bae7fcbb2c75021639454f42d75246317f2b7d8af"
               }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_should",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 64,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c04fe28e81027031813af02bc4dcb671ae0b79c7b9aa2c2c74ec027d488a0e17"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_should_negative_form",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 64,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c04fe28e81027031813af02bc4dcb671ae0b79c7b9aa2c2c74ec027d488a0e17"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_have_to_present",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 64,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c04fe28e81027031813af02bc4dcb671ae0b79c7b9aa2c2c74ec027d488a0e17"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_dont_have_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 64,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c04fe28e81027031813af02bc4dcb671ae0b79c7b9aa2c2c74ec027d488a0e17"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_can_permission",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 64,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "c04fe28e81027031813af02bc4dcb671ae0b79c7b9aa2c2c74ec027d488a0e17"
+              }
             }
           ],
           "listedEntries": 89,
-          "unresolvedEntries": 45
+          "unresolvedEntries": 45,
+          "grammarMappedCount": 5
         },
         {
           "id": "ow1-activities-plus-3",
@@ -5196,10 +5779,77 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "ff7283bfa3cf06c6c2b501ff5cfdb8d544420e84fe5788802e2b11abb41a0a78"
               }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_going_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 76,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_will",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 76,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_will_original",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 76,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_will_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 76,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_exclamation_what",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 76,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_exclamation_how",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 76,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc"
+              }
             }
           ],
           "listedEntries": 60,
-          "unresolvedEntries": 39
+          "unresolvedEntries": 39,
+          "grammarMappedCount": 6
         },
         {
           "id": "ow1-sing-along-2",
@@ -5582,10 +6232,77 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "fe053083dc87bba916ce8e12bc9512b2984f750d36e6576e4cea4a058075e818"
               }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_look_adjective",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_there_is",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_there_are",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_there_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_there_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_how_many_there",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan1.xlsx",
+                "sheet": "年計案1年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd"
+              }
             }
           ],
           "listedEntries": 65,
-          "unresolvedEntries": 34
+          "unresolvedEntries": 34,
+          "grammarMappedCount": 6
         },
         {
           "id": "ow1-1c9cce4e",
@@ -6242,7 +6959,7 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "017-82",
-      "status": "partial_words",
+      "status": "partial_words_grammar",
       "units": [
         {
           "id": "ow2-c8d48ca4",
@@ -6571,10 +7288,55 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "6d9dc8c956a9240cf41d993d292695a85800a8ee7c630c7e53205606563b9254"
               }
+            },
+            {
+              "sourceId": "jr_english_core_give",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1db2a9a0f43149a95847eae538b133ace861634cb7b8ae9f415bf7fe32301765"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_give_order",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1db2a9a0f43149a95847eae538b133ace861634cb7b8ae9f415bf7fe32301765"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_that_clause",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1db2a9a0f43149a95847eae538b133ace861634cb7b8ae9f415bf7fe32301765"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_be_adj_that",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1db2a9a0f43149a95847eae538b133ace861634cb7b8ae9f415bf7fe32301765"
+              }
             }
           ],
           "listedEntries": 55,
-          "unresolvedEntries": 36
+          "unresolvedEntries": 36,
+          "grammarMappedCount": 4
         },
         {
           "id": "ow2-activities-plus-1",
@@ -6947,10 +7709,99 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "9d231b1c5d2d1d2896314686f7e0254158d72991620e30b9c4556b2e7dcf5f62"
               }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_when_past_clause",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_if_condition",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_if_future_present",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_because",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_because_not_so",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_progressive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_when_progressive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_past_progressive_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c"
+              }
             }
           ],
           "listedEntries": 66,
-          "unresolvedEntries": 37
+          "unresolvedEntries": 37,
+          "grammarMappedCount": 8
         },
         {
           "id": "ow2-tips-for-listening-1",
@@ -7157,10 +8008,77 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "f6c37dfbd38502ad4acd44dffa2ef34cde05fe0d1645271113c0f790cfaa0881"
               }
+            },
+            {
+              "sourceId": "jr_english_core_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 30,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_noun_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 30,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_infinitive_purpose",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 30,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_gerund",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 30,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_gerund_finish",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 30,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_like_gerund",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 30,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0"
+              }
             }
           ],
           "listedEntries": 47,
-          "unresolvedEntries": 30
+          "unresolvedEntries": 30,
+          "grammarMappedCount": 6
         },
         {
           "id": "ow2-activities-plus-2",
@@ -7622,10 +8540,55 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "cac72da401139a1ff29118964513388f99e3aa97080ccd9291f95d68a085c1b8"
               }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_something_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7c411ca3b01e57b93d37f16a29e78b8929b3d5da214e7c49e38fb6f53fdf26fc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_adjective_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7c411ca3b01e57b93d37f16a29e78b8929b3d5da214e7c49e38fb6f53fdf26fc"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_gerund_subject",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7c411ca3b01e57b93d37f16a29e78b8929b3d5da214e7c49e38fb6f53fdf26fc"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_that",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "7c411ca3b01e57b93d37f16a29e78b8929b3d5da214e7c49e38fb6f53fdf26fc"
+              }
             }
           ],
           "listedEntries": 38,
-          "unresolvedEntries": 22
+          "unresolvedEntries": 22,
+          "grammarMappedCount": 4
         },
         {
           "id": "ow2-tips-for-speaking-2",
@@ -7832,10 +8795,88 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "41997a1d2a38dcca2246a27576aea49ee21ec751f77435a56f42d824b04d323c"
               }
+            },
+            {
+              "sourceId": "jr_english_core_question_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_how_to_method",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_question_word_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_when_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_it_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_infinitive_for_person",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_how",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 50,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5"
+              }
             }
           ],
           "listedEntries": 49,
-          "unresolvedEntries": 32
+          "unresolvedEntries": 32,
+          "grammarMappedCount": 7
         },
         {
           "id": "ow2-activities-plus-3",
@@ -7965,10 +9006,154 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "f91cd864f97b3df226fd59ae053f7737659c4ae5746d8b646a83b43d8d53a727"
               }
+            },
+            {
+              "sourceId": "jr_english_core_comparative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_more_comparative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_superlative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_superlative_most",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_as_comparison",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_comparative_as",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_comparative_than",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_superlative_in",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_irregular_better",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_not_as_comparison",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_comparative_adverb_er",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_comparative_adverb_more",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_comparative_adverb_well",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 60,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc"
+              }
             }
           ],
           "listedEntries": 50,
-          "unresolvedEntries": 42
+          "unresolvedEntries": 42,
+          "grammarMappedCount": 13
         },
         {
           "id": "ow2-a346ae84",
@@ -8286,10 +9471,88 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "74a22b2cc07fc015f280c4d2c7e8ad6b20d5ff05acd72b31147d5b6f15e18c78"
               }
+            },
+            {
+              "sourceId": "jr_english_core_passive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_passive_past",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_passive_by",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_by_pronoun",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_modal",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_passive_future",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 67,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865"
+              }
             }
           ],
           "listedEntries": 61,
-          "unresolvedEntries": 42
+          "unresolvedEntries": 42,
+          "grammarMappedCount": 7
         },
         {
           "id": "ow2-activities-plus-4",
@@ -8751,10 +10014,77 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "c1a81499eeed2a0fb07bd33c0ed2ccd522463d406cbca8ac1a9a8b0955f0ca92"
               }
+            },
+            {
+              "sourceId": "jr_english_core_indirect",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 79,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_indirect_when",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 79,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoo_wh",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 79,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_want_person_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 79,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_tell_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 79,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_ask_person_to",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 79,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3"
+              }
             }
           ],
           "listedEntries": 39,
-          "unresolvedEntries": 23
+          "unresolvedEntries": 23,
+          "grammarMappedCount": 6
         },
         {
           "id": "ow2-tips-for-reading-3",
@@ -8939,10 +10269,55 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "f08498cb459d25c4dcc28f7e0049b7454a6598d18e3e10d56baa70289292bc5a"
               }
+            },
+            {
+              "sourceId": "jr_english_core_make_object",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b10cd0770f8c08662b2ee2bb8ef2e9ccf2982ab944b43368732ff33933ae5695"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_svoc_noun",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b10cd0770f8c08662b2ee2bb8ef2e9ccf2982ab944b43368732ff33933ae5695"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_bare_infinitive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b10cd0770f8c08662b2ee2bb8ef2e9ccf2982ab944b43368732ff33933ae5695"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_help_infinitive_forms",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan2.xlsx",
+                "sheet": "年計案2年",
+                "row": 85,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "b10cd0770f8c08662b2ee2bb8ef2e9ccf2982ab944b43368732ff33933ae5695"
+              }
             }
           ],
           "listedEntries": 53,
-          "unresolvedEntries": 38
+          "unresolvedEntries": 38,
+          "grammarMappedCount": 4
         },
         {
           "id": "ow2-activities-plus-5",
@@ -9432,7 +10807,7 @@
       "usageYear": 2026,
       "editionYear": 2025,
       "bookNumber": "017-92",
-      "status": "partial_words",
+      "status": "partial_words_grammar",
       "units": [
         {
           "id": "ow3-c8d48ca4",
@@ -9673,10 +11048,99 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "32698d14612bfbbde71d757d903d0fc0e0681b1b0202a2ef5b25e577b37bab63"
               }
+            },
+            {
+              "sourceId": "jr_english_core_perfect",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_been",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_ever",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_already",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_yet",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_perfect_negative",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_perfect_just",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_perfect_yet_question",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 16,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa"
+              }
             }
           ],
           "listedEntries": 51,
-          "unresolvedEntries": 38
+          "unresolvedEntries": 38,
+          "grammarMappedCount": 8
         },
         {
           "id": "ow3-activities-plus-1",
@@ -9884,10 +11348,66 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "d8296fdd25b66e5324d7fbaa7ba750ef343d0ee23a173d006a0c7796738bc894"
               }
+            },
+            {
+              "sourceId": "jr_english_core_since",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1f6184ef80161262cf3c0940d6cac6a1fe9c8b99dfe06a7181cd3b69df86caac"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_perfect_for",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1f6184ef80161262cf3c0940d6cac6a1fe9c8b99dfe06a7181cd3b69df86caac"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_how_long",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1f6184ef80161262cf3c0940d6cac6a1fe9c8b99dfe06a7181cd3b69df86caac"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_perfect_continuous",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1f6184ef80161262cf3c0940d6cac6a1fe9c8b99dfe06a7181cd3b69df86caac"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_perfect_progressive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 24,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "1f6184ef80161262cf3c0940d6cac6a1fe9c8b99dfe06a7181cd3b69df86caac"
+              }
             }
           ],
           "listedEntries": 45,
-          "unresolvedEntries": 32
+          "unresolvedEntries": 32,
+          "grammarMappedCount": 5
         },
         {
           "id": "ow3-tips-for-listening-1",
@@ -10128,10 +11648,44 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "32778b29fea58065310a90200d4724635cfcb412a39c0e13877cd9f349b18b42"
               }
+            },
+            {
+              "sourceId": "jr_english_core_participle",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "df5dab6b8db0448fca11062489ba4c6e68c05ace06b279f768e121f660c82846"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_past_participle_modifier",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "df5dab6b8db0448fca11062489ba4c6e68c05ace06b279f768e121f660c82846"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_relative_omit",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 33,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "df5dab6b8db0448fca11062489ba4c6e68c05ace06b279f768e121f660c82846"
+              }
             }
           ],
           "listedEntries": 55,
-          "unresolvedEntries": 41
+          "unresolvedEntries": 41,
+          "grammarMappedCount": 3
         },
         {
           "id": "ow3-activities-plus-2",
@@ -10548,10 +12102,66 @@
                 "method": "exact_normalized_sense",
                 "meaningSha256": "693e132f27eb39e775935c3d48e7729d35f038dc01b353b7eae2912b29a23d2c"
               }
+            },
+            {
+              "sourceId": "jr_english_core_relative_subject",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "af1d1bb92a6f71ebbd7fd7915b73af0993b4eb1648c9ec89b1e2ab28fa79100d"
+              }
+            },
+            {
+              "sourceId": "jr_en_curriculum_relative_which_subject",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "af1d1bb92a6f71ebbd7fd7915b73af0993b4eb1648c9ec89b1e2ab28fa79100d"
+              }
+            },
+            {
+              "sourceId": "jr_english_core_relative_object",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "af1d1bb92a6f71ebbd7fd7915b73af0993b4eb1648c9ec89b1e2ab28fa79100d"
+              }
+            },
+            {
+              "sourceId": "jr_en_textbook_grammar_relative_that_object",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "af1d1bb92a6f71ebbd7fd7915b73af0993b4eb1648c9ec89b1e2ab28fa79100d"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_relative_subject_keep",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 43,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "af1d1bb92a6f71ebbd7fd7915b73af0993b4eb1648c9ec89b1e2ab28fa79100d"
+              }
             }
           ],
           "listedEntries": 46,
-          "unresolvedEntries": 30
+          "unresolvedEntries": 30,
+          "grammarMappedCount": 5
         },
         {
           "id": "ow3-tips-for-writing-1",
@@ -10648,10 +12258,55 @@
                 "method": "reviewed_equivalent_sense",
                 "meaningSha256": "cc0c0cf69f1bcf3f748086982eae14ab08b5f1aa8385e60d3abe5f61f89a095a"
               }
+            },
+            {
+              "sourceId": "jr_english_core_subjunctive",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 49,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "830993d73c9cca7546c16ff1dd79658e9c562bd89f8f065f5b39027d4b27b26f"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_wish_could",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 49,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "830993d73c9cca7546c16ff1dd79658e9c562bd89f8f065f5b39027d4b27b26f"
+              }
+            },
+            {
+              "sourceId": "jr_en_core_grammar_would_condition",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 49,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "830993d73c9cca7546c16ff1dd79658e9c562bd89f8f065f5b39027d4b27b26f"
+              }
+            },
+            {
+              "sourceId": "jr_en_app_grammar_wish_were",
+              "page": null,
+              "evidence": {
+                "source": "ow-plan3.xlsx",
+                "sheet": "年計案3年",
+                "row": 49,
+                "method": "reviewed_grammar_topic",
+                "languageMaterialSha256": "830993d73c9cca7546c16ff1dd79658e9c562bd89f8f065f5b39027d4b27b26f"
+              }
             }
           ],
           "listedEntries": 21,
-          "unresolvedEntries": 14
+          "unresolvedEntries": 14,
+          "grammarMappedCount": 4
         },
         {
           "id": "ow3-activities-plus-3",

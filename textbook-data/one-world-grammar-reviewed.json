@@ -1,0 +1,857 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-01",
+  "sources": {
+    "ow-plan1.xlsx": "e6cf9d83eaf1f173556dbea8b30cae0752e2c4a7f4745c4ae0d639f9ac9b57fb",
+    "ow-plan2.xlsx": "23e845772eba3c4c83e9faa828d2c403b26a44650dbdda1c8282c7988a899529",
+    "ow-plan3.xlsx": "3b0023dcdb2677a9db75d83aed39e3c5bee09ea62437bfd5eb0b9a4f501e25aa"
+  },
+  "scope": "公式年間指導計画の現行可視シートで文法項目を確認し、独自問題へ対応付ける。語彙の初出対応と分離し、語義・全用法・読解の網羅を意味しない。文法の個別ページは推測せずnullとする。",
+  "units": [
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-1",
+      "sheet": "年計案1年",
+      "row": 20,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "ae5ac38f4acaf526c5a3972f1cd51b0fac9766f461b45f9444515777465a36e4",
+      "items": [
+        {
+          "sourceId": "jr_english_core_be",
+          "materialSha256": "9f9d86d13b7504d697ae2fcb7b55d5ab31519a5b7d2d7f5f23a1749e961048f0"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_be_plural",
+          "materialSha256": "9d43f980c81d67568013e17ecd035b4988a27b2b0238c7aa2c8ad7c2cf4d0184"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_be_question",
+          "materialSha256": "9f9aede8a7e603c08e998d017221367dbf46e8604182fa5467679a4122f2cb94"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_be_negative",
+          "materialSha256": "cb92511a485d61a92379b8b21e227bda32d0b67e214690ca57958e7538323b78"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_be_short_answer",
+          "materialSha256": "199d65302a101b3ac75979c6225356d3f3ba9010f2c98114cbf0a3b3d18fcf54"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_do_negative",
+          "materialSha256": "3080ef092ba491c3d41a925867a0f0e8acd8884b7077a8c980d998b5601ecee9"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_do_question",
+          "materialSha256": "8070702ec2715c4b793beb6bb38793d8eb0fec622abb0ec3059216311e1a91c2"
+        },
+        {
+          "sourceId": "jr_english_core_can",
+          "materialSha256": "57d45c36b776753839b50b919e845b53446efc47121874023ae129f6512ae92c"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_can_negative",
+          "materialSha256": "80662d078ac58f31e7f2300ef0ac0af87b398062450240332985b2d79352e003"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_imperative_be",
+          "materialSha256": "b1b489bdf6f35404317a2381d6fa3176328c63edce3cdb2470b7a9db69ed6ef5"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_negative_command",
+          "materialSha256": "80ec6e74ca552fc973f4c3e3d65274fa13ab7550387f1cdc777bad659ba5b328"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-2",
+      "sheet": "年計案1年",
+      "row": 25,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "7f1212f042d6a581619ad9c3f40c0c9071d977f545ae285f8d2f1e60c9f03a36",
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_plural_boxes",
+          "materialSha256": "1c3a1357e2658aa615f83a7679a48ac033a56e01d1d642f09b2db77595137d0f"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_plural_children",
+          "materialSha256": "0a2176567d74a7ebdb68d3d74e197d11d7f1a79fced7f8b390c5734fdcc66e19"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_can_question",
+          "materialSha256": "dd15fa12fb30737522009946d547df6ab8430f69b420b521f0f1b1881b2bd57d"
+        },
+        {
+          "sourceId": "jr_english_core_object",
+          "materialSha256": "5946111c88b4aeee6ce999b6274a53dd296e9a5f981b7445a32e32fcf5ca6529"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_possessive_pronoun",
+          "materialSha256": "8f245083434fd64aefa48919546b80927b477b630f664bef2c077df92b83d6bb"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_possessive_before_noun",
+          "materialSha256": "9e33dc2166b43f79e1800109ba50c723606a5ced4dc36d3c95165961bf31ec19"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_how_many",
+          "materialSha256": "94a11c60d8d88b90eb0247a205ea89e60085cdbbd43dd93311381f6c3c610ff6"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_what_do_object",
+          "materialSha256": "ef7f2d5b052179d9f30f2ef165759eb2059cd477f8179b02031107641b57ee46"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-3",
+      "sheet": "年計案1年",
+      "row": 32,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "96efb87b7809e5859f134c280fae1119490d6217003540b620a5c6df4fd81661",
+      "items": [
+        {
+          "sourceId": "jr_english_core_past",
+          "materialSha256": "4683f148e87607e16cac1543a9842b79f301728130969bfa5bdd22df16aa4366"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_past_went",
+          "materialSha256": "812fddea16d6c5ffce9c2ad43bf1aff42cc89503695b27c48f959cf902330121"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_past_bought",
+          "materialSha256": "b2871a721cd5879412adc20cbda2bd28cb6bf399a3bd56bc0d401986d908bc1f"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_past_question",
+          "materialSha256": "93557f678db28a387e9440b7cd17c7ce09e0e6292ceefd06733c3747da434fa8"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_after_didnt",
+          "materialSha256": "45b9b96d8d971b23cf5d1e6e024da7ace72dd1577712893088dd956bd2cbbd4f"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_was",
+          "materialSha256": "e4faf7127ab09f851b5f685387c076a4a6b5eb7da761afe39d926b9ae6f4bf5f"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_past_be_question",
+          "materialSha256": "da9e6a897335d1128af3a5d6d009efd8a52f4f89edc15b1686a94b30117228be"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_past_be_negative",
+          "materialSha256": "70690fadf32d139972b22abe67aa3228cb6fba813ac94f349e9150e408a5da27"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_past_did_answer",
+          "materialSha256": "3ca6718380b98e92c31cc041c48702f82e7292a3119e73b690b35c45a8cc3af6"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-4",
+      "sheet": "年計案1年",
+      "row": 38,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "8dbf0eae45370f9b6609dbfa7862d3862d9f1de3893a8e479f37113d782a524a",
+      "items": [
+        {
+          "sourceId": "jr_english_core_third_person",
+          "materialSha256": "86ac81ea10cf5bd08a0f0c036a1f62664631b3490747f8cdd80264fd6fd00ef0"
+        },
+        {
+          "sourceId": "jr_english_core_does",
+          "materialSha256": "afd07de48bb046a3e09f6dc43a609c68cd674c1730b29487ea3cac47a23ac76a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_does_negative",
+          "materialSha256": "4527800fea83206dd21ddbe850c9b9c675853ed4513bfe4d82a0c3bb7e1b4676"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_third_person_ies",
+          "materialSha256": "68dc210ea5d415bbb812d5500a0ec9c33d40b7903ea6bc5caf7037b0f64ac7bf"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_third_person_has",
+          "materialSha256": "5eb71de9fcee82c1d8a7e07e33711ef493c2ec7c9bc4ffaf81d2d3ee96e02549"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_es_watches",
+          "materialSha256": "59f774410b9bb20451c788a30160994c5928a1829f2d4ae57c90bbee6a14100e"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_any_negative",
+          "materialSha256": "6b123254e50071be68d49b6ec4413312ed2562dc99cdc982975db361dc9b13c1"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_some_affirmative",
+          "materialSha256": "d9071b30415018dc20c03c2e681ae806d5a2f567e0939ea0d488b86e00f9ac62"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-5",
+      "sheet": "年計案1年",
+      "row": 48,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "91adcc06416a1336644539efa26c802dc2d2429d9136fe17a9f397197940f43b",
+      "items": [
+        {
+          "sourceId": "jr_english_core_progressive",
+          "materialSha256": "eada6eb152bf1a141a176814f650eb7bfc7d9dfd7523d5e4ea83844e216d6991"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_progressive_now",
+          "materialSha256": "4611e80d7bae7023050ad322deba314ad4015b8bdeb2e5b739a2b302d32e7ab0"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_progressive_question",
+          "materialSha256": "53439aaadbe674f535ba518d1fe7ef804bb169a2ff57051dfa0b61379f73f8ae"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_progressive_negative",
+          "materialSha256": "f831f0e661c14f4e6f1c13e412da1ee699cc0784272f6eab23fe91dd74406957"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_ing_write",
+          "materialSha256": "b570c6cd8396fefed1387f9faf89a7951236930733f438870fa9a074cdadb774"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_ing_run",
+          "materialSha256": "338a06e5714126bb90c9b237b7f4ae5596097c3e574cfde9e8b9e24dc7852be3"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-6",
+      "sheet": "年計案1年",
+      "row": 54,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "b732cecab920fadd9a23ccd3a5bfb4746772d646768dc1c93a863fe67502d030",
+      "items": [
+        {
+          "sourceId": "jr_en_textbook_grammar_why_reason_answer",
+          "materialSha256": "acb25e1fcad17fb0aa59a95e99a66a774a937e1628293a819ffdc832d7a410e9"
+        },
+        {
+          "sourceId": "jr_english_core_object",
+          "materialSha256": "5946111c88b4aeee6ce999b6274a53dd296e9a5f981b7445a32e32fcf5ca6529"
+        },
+        {
+          "sourceId": "jr_en_curriculum_which_question",
+          "materialSha256": "090f769da25a40fc778d1bf3e3095aedd8c3cd8f7cbd2fc17da0126d61bdb460"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_whose",
+          "materialSha256": "ab705d3f999ca63bbe98027f07ad91c8e803f3324d1f7631bd5f768e6e328462"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_who_is_person",
+          "materialSha256": "808dff51e0576a513ae4a7eb362ea6dfcb50214ada73d6eabaf0f457a3080755"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-7",
+      "sheet": "年計案1年",
+      "row": 64,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "c04fe28e81027031813af02bc4dcb671ae0b79c7b9aa2c2c74ec027d488a0e17",
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_should",
+          "materialSha256": "67a51e7dbc3429a1c8589350f5fea98ad60677f62942c03df83120e2cb091782"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_should_negative_form",
+          "materialSha256": "c9ea790434b2032ba6b009e408703a2179de76bac4bbcf45340a823f531de963"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_have_to_present",
+          "materialSha256": "c6b2da5095393ca8c8ffb1a213fbb1d57f686a7f24048d24edd116d5660ebea2"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_dont_have_to",
+          "materialSha256": "2f1ac1733ae5c60cd0415e204d0ac4c7a0ead6598a08050b063e6e8c85439542"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_can_permission",
+          "materialSha256": "4bf1ac623d4d791b0006f22ff21f241d39c51f0e57fbbc079980ff3e8393956a"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-8",
+      "sheet": "年計案1年",
+      "row": 76,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "43f6b633cefa0d023ee3155d83f3ee54d56f17bc3703b3f9eef3dbd784ab9cdc",
+      "items": [
+        {
+          "sourceId": "jr_en_core_grammar_going_to",
+          "materialSha256": "ea0c24e7ff109b0e21eb22274285f6308d8fc2a135fa95d79ff1f6144d185ba5"
+        },
+        {
+          "sourceId": "jr_english_core_will",
+          "materialSha256": "545ca30940bbf2cc80e8916e8e185b148ebccf06f4bb4579972b76c0bd2d059f"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_will_original",
+          "materialSha256": "97fa549d2fac187e2905b19c6a9c4ff12303dcb5c1764f00ed1eebf4cddf9a33"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_will_negative",
+          "materialSha256": "f4f7c09733eaa737a6bae25a7241c2bd621aca841b1dff11893e581bf660c6e4"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_exclamation_what",
+          "materialSha256": "6c9241b5f3a3a390502853d93af5d867a0338b1e04b56d682675e98028adb8b8"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_exclamation_how",
+          "materialSha256": "d21da49f8fe210e7704b2e771711c479c4bb5b8737ab92ea0b82d086b160bf22"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 1,
+      "unitId": "ow1-lesson-9",
+      "sheet": "年計案1年",
+      "row": 85,
+      "source": "ow-plan1.xlsx",
+      "languageMaterialSha256": "103f055ff9c9f6389f9189fa530f401c5d142df3755a01b1d65ee695d5e0f1bd",
+      "items": [
+        {
+          "sourceId": "jr_en_app_grammar_look_adjective",
+          "materialSha256": "19b30c20779113e0e8eb5b49610aa440a9abf4f63cc33a44d7004e53acdbd72d"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_there_is",
+          "materialSha256": "a49f19fa05f910d3744248ebc8458b7709f5d595e65c8e9f5dfcb97c3f1a647e"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_there_are",
+          "materialSha256": "ed6eae4db3ed6bd2ff9bd1f2ea22cd0478e114926c73ce06fe59a0cffd494ded"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_there_negative",
+          "materialSha256": "ef47e10c9d42f7233e139613b1cd420db932bdd7625a269680e209280ed6e2ad"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_there_question",
+          "materialSha256": "8a11f1a0bca1ab90e47d248253c4f4ac0a9399b5589f1808b3d38b0559336e20"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_how_many_there",
+          "materialSha256": "15bad2ec48b472cb5eeea3ffc11d3ed6b36fa62d56909bc6300d75f617c2504e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-1",
+      "sheet": "年計案2年",
+      "row": 16,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "1db2a9a0f43149a95847eae538b133ace861634cb7b8ae9f415bf7fe32301765",
+      "items": [
+        {
+          "sourceId": "jr_english_core_give",
+          "materialSha256": "c96d810663a6d8a2c0a545c2cb0975935524ec0e39cb198fbf25d3e51f8e1bfd"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_give_order",
+          "materialSha256": "10c497bcd708c06b43e7041eb3d9a2ce4fedb93adf1f2e0e85b1018c4d9e7308"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_that_clause",
+          "materialSha256": "3d6408bd8e3316821f7fbf483d2aba6a44f96036eee571ad353a802ec2c416cb"
+        },
+        {
+          "sourceId": "jr_en_curriculum_be_adj_that",
+          "materialSha256": "34e6883ea3deddf355d9b58fea63fa18ec07fc51619e921852213d0adab218ee"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-2",
+      "sheet": "年計案2年",
+      "row": 24,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "7063fdf6ad0fbf4751df1f538f7d7698c54fc28a39550c60af7b039f1bd4847c",
+      "items": [
+        {
+          "sourceId": "jr_en_textbook_grammar_when_past_clause",
+          "materialSha256": "51a46e1c2f7468a899b4f30231b479233f63991292695130fdbb04994cdeda62"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_if_condition",
+          "materialSha256": "3e6a041943692a961a68461861e26670f730790d6ac33c7302865023336aecc1"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_if_future_present",
+          "materialSha256": "682a704f28ed62e8f4bb1fe63ff6500b0f4843fcf9ff493b05fca90e7edc22b7"
+        },
+        {
+          "sourceId": "jr_english_core_because",
+          "materialSha256": "48c611c360a919a59b073c196e86d90e0c030eaae1287d14fa073fbe83ce71a9"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_because_not_so",
+          "materialSha256": "fbf6738ed2fbcd9e3f87d8caea46f2ad10a4281e2a4c61199653e10a7d484e55"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_past_progressive",
+          "materialSha256": "50773db0d632cdc97a72126fbfa35dfd59bd7c759d6dd32eefff9a3af883c1dc"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_when_progressive",
+          "materialSha256": "56a2661402d6728bbdb716381d665365524990d79945ad351f1b51d2cbfa594d"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_past_progressive_question",
+          "materialSha256": "b34c2c87fbef71a8c6cbd0256c3b45b3fd29add4ac8d5bc301be1b8ae63b2b2d"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-3",
+      "sheet": "年計案2年",
+      "row": 30,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "dded026ee65e6e748fd6a55b41a27f9e6c83db9d0861fa11af6b5b1a2b0bf1f0",
+      "items": [
+        {
+          "sourceId": "jr_english_core_infinitive",
+          "materialSha256": "7bb26f634335b889bdb56229614731aa0f13889a5c5462ab1e81a9e7f06a9e5e"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_noun_infinitive",
+          "materialSha256": "18bade935d8eead6cd89a7463278da79fd887860f52b1042c555822469d09661"
+        },
+        {
+          "sourceId": "jr_english_core_infinitive_purpose",
+          "materialSha256": "8c28b3266602af7e0b79db001e77d001c608fc4ec3d31d45beae9b190eb8a0c7"
+        },
+        {
+          "sourceId": "jr_english_core_gerund",
+          "materialSha256": "551c81a784108770fb0b7fa259ca5f615523fff1514c9b06480d3b057527e576"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_gerund_finish",
+          "materialSha256": "05c7c90b7c53280c31f1f8128d655eb1afed2e66a8a3e447f6566c59d93f8bc8"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_like_gerund",
+          "materialSha256": "6e24e525e9e61b2f993dd0c437db98767dcfed5186365319aacb283c2e860ad5"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-4",
+      "sheet": "年計案2年",
+      "row": 43,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "7c411ca3b01e57b93d37f16a29e78b8929b3d5da214e7c49e38fb6f53fdf26fc",
+      "items": [
+        {
+          "sourceId": "jr_en_app_grammar_something_to",
+          "materialSha256": "e8d2c93abb521717b1ec4e5fdcfd3b60ccb3af4e6c5cc16b559f465eb22818c2"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_adjective_infinitive",
+          "materialSha256": "602a2553e2912bfbc064a96e16443f804681e2621e1863380427b043e6e19a6a"
+        },
+        {
+          "sourceId": "jr_en_curriculum_gerund_subject",
+          "materialSha256": "1e1e31e9044e476b4b9b18fcd0caa21fd5511fe090a5aae9fb5176256debd57a"
+        },
+        {
+          "sourceId": "jr_en_curriculum_svoo_that",
+          "materialSha256": "f0b97388127c1f78378eaf9d2ee98d45fcd5765b2094d847b023e69a441211d0"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-5",
+      "sheet": "年計案2年",
+      "row": 50,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "6c93520dd4470435513b406996200526a34279c57a23161b08d7299cb1504ae5",
+      "items": [
+        {
+          "sourceId": "jr_english_core_question_infinitive",
+          "materialSha256": "fefe34bc2a6791bae2a95bc78eedf616a99cc39ac8e7b1eb987078a60cba2412"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_how_to_method",
+          "materialSha256": "00affca02c3bf1d853aa16fb8c0e1afe070e7e4e33885db7f06ccd4bba8a5457"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_question_word_to",
+          "materialSha256": "f5c92e1217744260765867200899dad99dbd7e35e15222c2f9c3e96b6fbf3701"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_when_to",
+          "materialSha256": "727393854ae5de33af296a0c068fb08860a614d40e35ddbe305d054e022856f3"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_it_to",
+          "materialSha256": "adb80623796a22a3aa30ca46c250e1e59b029a4726634ab77d1e78cfd6dcabb1"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_infinitive_for_person",
+          "materialSha256": "4be35a35be9ae9b08ed14481389b533df065101addc960dc100255e806517d8d"
+        },
+        {
+          "sourceId": "jr_en_curriculum_svoo_how",
+          "materialSha256": "045616e76d9245ca10d6cff001db3c304f52112a0be6cef5eb9bae9a7800024e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-6",
+      "sheet": "年計案2年",
+      "row": 60,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "324ffd3606c6ae1bcdd593b604bfc27bafe5df99c6cd46f01e728d6aa1c7d0cc",
+      "items": [
+        {
+          "sourceId": "jr_english_core_comparative",
+          "materialSha256": "98e43295264b8a9f0cbb0454f028fa1274133057d8e72b84a4f169eca33ca02a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_more_comparative",
+          "materialSha256": "0ffe2a7bc9f2862fe1e47cdb68d65ad33e8f5c35cefb5e12b97d633917eaa33a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_superlative",
+          "materialSha256": "bb0157050e21a2a10629a2f41a9cbec32c7161d084aa2883123df9fd34b73bf0"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_superlative_most",
+          "materialSha256": "0ae7e714f6b04788b5c5b1610ee66661bacf184de30f2939ba981b6fc032fdad"
+        },
+        {
+          "sourceId": "jr_english_core_as_comparison",
+          "materialSha256": "16983640c49206d433703b3020ed256834e7d3e60d82d4a261661a095daaff5b"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_comparative_as",
+          "materialSha256": "36b8ff3ea1be022457e20229d34b59c672eba628640d27b6a498db353de0fed5"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_comparative_than",
+          "materialSha256": "5e8b43c83d5267cb59d9612270594bdd655fd1043f616ab7a97b589767f5f488"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_superlative_in",
+          "materialSha256": "c9e49849ac61121bad7991b2602d2d23bfb01d8bbfb74c2befbb54262eecd84d"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_irregular_better",
+          "materialSha256": "40ba4f562c6f53c37875d15214b2de5bdd33ad9d9c124877085f27820c0b55cc"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_not_as_comparison",
+          "materialSha256": "edba17e8bd38424c6961db9e44e8b282b16fffe9d18f8fd529784f6727aca5cb"
+        },
+        {
+          "sourceId": "jr_en_curriculum_comparative_adverb_er",
+          "materialSha256": "909ed80924ac39f0fc47357194ec4083ea4ad9883f85325fea64a78bb9ce3de9"
+        },
+        {
+          "sourceId": "jr_en_curriculum_comparative_adverb_more",
+          "materialSha256": "f642d14b7b60b0c7dbd707550de3c047b196afea344413136f44199566ad1302"
+        },
+        {
+          "sourceId": "jr_en_curriculum_comparative_adverb_well",
+          "materialSha256": "1e97fae68fbe671066f09829c030b756ddb4522ff3a8c135d1f594f8f809ee22"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-7",
+      "sheet": "年計案2年",
+      "row": 67,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "2ca2ac434b1b8316779fff5edbcdbe6e4eec2fc17eb4c1285b42d5c642fbd865",
+      "items": [
+        {
+          "sourceId": "jr_english_core_passive",
+          "materialSha256": "7f98db9b39f945ba11abdfddabe47b206135b0e4bd6a0cc664f860b16ed166a5"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_question",
+          "materialSha256": "7e43cb251c2280d83debaf475b6e3523a3bcfb048b56c5c5a8e5914f78083f7e"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_passive_past",
+          "materialSha256": "12f7313f1c6699153d29f59389a56299603b337bf87fc3fcdd471c49768d2cdf"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_passive_by",
+          "materialSha256": "706bc08c476d5bd48290678d51986c08437475ed7ef7dfb5df8e25e769634911"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_by_pronoun",
+          "materialSha256": "c9a465d619a5b3b43a7074de03d50882487f83c9c8dfee89da8b667664909add"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_modal",
+          "materialSha256": "17ad05213d872266653227d8009a866165b6a0a0ea4d1f3f4f6110f727e28985"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_passive_future",
+          "materialSha256": "59868a5132e9f0d5e8a8ff9df10ef7f5fe1424392416962ed5ef0a11453dec83"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-8",
+      "sheet": "年計案2年",
+      "row": 79,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "f55f6106089d4a5d6a70c5a9f669a4a5f2545d38e2416b89e2142d9b5a791eb3",
+      "items": [
+        {
+          "sourceId": "jr_english_core_indirect",
+          "materialSha256": "eb583907cddff7a08c582298ec7bbaffbebcf8a8d9efc70bf665ff0338cde35a"
+        },
+        {
+          "sourceId": "jr_english_core_indirect_when",
+          "materialSha256": "fb2dee8a8edef0d170dd4c158ad5667d80cb7c06baf6b1157433df3224010d40"
+        },
+        {
+          "sourceId": "jr_en_curriculum_svoo_wh",
+          "materialSha256": "56aa19bb85a857329c735c17cb4814b0b9fee5fc24242c76c9b98c3e096cfc18"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_want_person_to",
+          "materialSha256": "a3040619e25a0a1dc5dc7ec593b747cd19b83721219c5bee952248dbd5edb8b6"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_tell_to",
+          "materialSha256": "578754b3376e8c4928967a95ea06b5e7fe09e9770c85ec6294516af3570be97a"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_ask_person_to",
+          "materialSha256": "ac6c74b9e788dad7aec59a1152f1729add626e631ebe48a0257cdf40a745ea07"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 2,
+      "unitId": "ow2-lesson-9",
+      "sheet": "年計案2年",
+      "row": 85,
+      "source": "ow-plan2.xlsx",
+      "languageMaterialSha256": "b10cd0770f8c08662b2ee2bb8ef2e9ccf2982ab944b43368732ff33933ae5695",
+      "items": [
+        {
+          "sourceId": "jr_english_core_make_object",
+          "materialSha256": "07a7572f1dc3fa5e4e5d310fe52abbc8a708f28b97f3ef922d1da7350450f53f"
+        },
+        {
+          "sourceId": "jr_en_curriculum_svoc_noun",
+          "materialSha256": "8bd25ab74abebfaa25dd33ae802fc3ce54450234f0a71338b80188418bfcfeb2"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_bare_infinitive",
+          "materialSha256": "4e866ffae6341912f0fd6746179b078bdfd6e19d694ba04675d600c1ad2778a4"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_help_infinitive_forms",
+          "materialSha256": "d6b0f17c5171a13ead790eb4bb4b5a8e6d174b462675b1607f829243ada4f439"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitId": "ow3-lesson-1",
+      "sheet": "年計案3年",
+      "row": 16,
+      "source": "ow-plan3.xlsx",
+      "languageMaterialSha256": "711204f30fc409f5cb84e20e45151a64d0c7608a672b953b25a521398752fbaa",
+      "items": [
+        {
+          "sourceId": "jr_english_core_perfect",
+          "materialSha256": "f44184c326898caa202c611a14d3cf641f100e2f08caa6b9e8c263f23d5c3c08"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_been",
+          "materialSha256": "58ee2e45dfa7698b787158ad909258da3b9fda28b8761f1c50c66df7000ebe25"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_perfect_ever",
+          "materialSha256": "361341e1868e82b36ef702954bae3feb85a1e200f5fdd4dc8a939e164a2d6c06"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_already",
+          "materialSha256": "cc2325adc9820d2d81116fac5306fde3a4cea69c45ccadf874f28cf33031d58b"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_perfect_yet",
+          "materialSha256": "0fbd0979448e0790788808a8f1904d4c602421668a86fffa6a68bdd2b56e0523"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_perfect_negative",
+          "materialSha256": "30b884f7263ee77062244d6180eb07924bdc20725a63f92b69d6fa9ec753ea92"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_perfect_just",
+          "materialSha256": "8018f75203cd3746b144e2b3d8297c77cbfd2fa05f3e50a98aaaa33ab8d2d415"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_perfect_yet_question",
+          "materialSha256": "64185358e84f0b4b12863ff79134d14abfe2823fd04ed2ce825a6d0306d5ddb5"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitId": "ow3-lesson-2",
+      "sheet": "年計案3年",
+      "row": 24,
+      "source": "ow-plan3.xlsx",
+      "languageMaterialSha256": "1f6184ef80161262cf3c0940d6cac6a1fe9c8b99dfe06a7181cd3b69df86caac",
+      "items": [
+        {
+          "sourceId": "jr_english_core_since",
+          "materialSha256": "7cf14ae2d60e90774fe776cb0d2f4613aa466836370ed9b937bd783704a4bfdd"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_perfect_for",
+          "materialSha256": "be4e895ccf9118067a7117148c126a0f4202f8b86e9cd77e0f7e843dff22acb8"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_how_long",
+          "materialSha256": "dff4d9be74ac1f6bdf85c8687bc9803cbd9325ea3fccc3c1b25be672e4a09dd0"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_perfect_continuous",
+          "materialSha256": "f5bb4c5b9fe9c1980f4cb990a2343ee835462f273da8d59b053a813e37376f8c"
+        },
+        {
+          "sourceId": "jr_english_core_perfect_progressive",
+          "materialSha256": "52526bff709b6fe96ec63d59034192fb3023bef3c8c67e2a7a98a7406041455e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitId": "ow3-lesson-3",
+      "sheet": "年計案3年",
+      "row": 33,
+      "source": "ow-plan3.xlsx",
+      "languageMaterialSha256": "df5dab6b8db0448fca11062489ba4c6e68c05ace06b279f768e121f660c82846",
+      "items": [
+        {
+          "sourceId": "jr_english_core_participle",
+          "materialSha256": "83d5fb798ebcbe388505afbe85c079f14e1933ba2bbffceb74d1d547bc0989c4"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_past_participle_modifier",
+          "materialSha256": "1776a797a7cca9e7f2ab7ee79a430370dbfafc3f6fa9638d9b62eee1aa13cd72"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_relative_omit",
+          "materialSha256": "d5a83acc37bc5175e5a747b5552824bdae4f7fc5ed3fa92d7966582a8452cf0e"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitId": "ow3-lesson-4",
+      "sheet": "年計案3年",
+      "row": 43,
+      "source": "ow-plan3.xlsx",
+      "languageMaterialSha256": "af1d1bb92a6f71ebbd7fd7915b73af0993b4eb1648c9ec89b1e2ab28fa79100d",
+      "items": [
+        {
+          "sourceId": "jr_english_core_relative_subject",
+          "materialSha256": "e24e3909c8150aba74704a1a0786c00e58dc094b4d636a99becf9e42dcf671cf"
+        },
+        {
+          "sourceId": "jr_en_curriculum_relative_which_subject",
+          "materialSha256": "fa9c9320d530ad4c95fa7ccfc6dfe1427cc5690ee8397575f3f449a097045834"
+        },
+        {
+          "sourceId": "jr_english_core_relative_object",
+          "materialSha256": "3d82b8da83313dcf6b15c6559e2048c8f17815a8c0e718943da2dc69d55f1095"
+        },
+        {
+          "sourceId": "jr_en_textbook_grammar_relative_that_object",
+          "materialSha256": "4e04b001d6e9a270c3404521b398528df3e86b749d61089732e5c4bd6a86585a"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_relative_subject_keep",
+          "materialSha256": "41bd6edf94dfe91a06a7dca6a7e257ec6391d5de5ebcf9927efc910f8440ca35"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    },
+    {
+      "year": 3,
+      "unitId": "ow3-lesson-5",
+      "sheet": "年計案3年",
+      "row": 49,
+      "source": "ow-plan3.xlsx",
+      "languageMaterialSha256": "830993d73c9cca7546c16ff1dd79658e9c562bd89f8f065f5b39027d4b27b26f",
+      "items": [
+        {
+          "sourceId": "jr_english_core_subjunctive",
+          "materialSha256": "8c419ef25b85db6b3c6592730006594bca032f5ce73e5251d91b01069e02ddea"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_wish_could",
+          "materialSha256": "8bb0582a20131a92d3d820c4489c25f4dcbd6aacd7320dcfffb3ee8487c89eb7"
+        },
+        {
+          "sourceId": "jr_en_core_grammar_would_condition",
+          "materialSha256": "77b14ca66fb0110afb8d7a793b064ec1d18642f14c7948c05a05b37261238733"
+        },
+        {
+          "sourceId": "jr_en_app_grammar_wish_were",
+          "materialSha256": "68c6ed956db18b6e8d82d5bc4352c7772027837ce59e9a6083344bf04fc7506b"
+        }
+      ],
+      "reason": "grammar_topic_equivalence_reviewed"
+    }
+  ]
+}

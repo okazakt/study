@@ -17,7 +17,7 @@ test('2026 metadata distinguishes usage year, 2025 edition and six series across
 test('every selectable mapping resolves to reviewed lexical or grammar evidence without inventing pages',()=>{
  for(const b of data.books){const ids=new Set();let end=0;
   for(const u of b.units){assert.ok(!ids.has(u.id));ids.add(u.id);if(b.series==='one-world'){assert.ok(u.pageStart>end);end=u.pageEnd;}else{assert.equal(u.pageStart,null);assert.equal(u.pageEnd,null);}
-   for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');if(b.series==='one-world'){assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.ok(['exact_normalized_sense','reviewed_equivalent_sense'].includes(row.evidence.method));assert.equal(row.evidence.source,'ow.xlsx');assert.ok(row.evidence.row>=8);}else{assert.equal(item.field,'英文法');assert.equal(row.page,null);assert.equal(row.evidence.method,'reviewed_grammar_topic');if(b.series==='here-we-go'){assert.equal(row.evidence.source,'hwg.xlsx');assert.ok(row.evidence.row>=8);}else{assert.equal(row.evidence.source,`blue-units${b.year}.pdf`);assert.ok([1,2].includes(row.evidence.pdfPage));assert.equal(row.evidence.section,u.label);}}}
+   for(const row of u.items){const item=by.get(row.sourceId);assert.equal(item.subject,'英語');if(row.evidence.method!=='reviewed_grammar_topic'){assert.equal(b.series,'one-world');assert.ok(item.english);assert.ok(row.page>=u.pageStart&&row.page<=u.pageEnd);assert.ok(['exact_normalized_sense','reviewed_equivalent_sense'].includes(row.evidence.method));assert.equal(row.evidence.source,'ow.xlsx');assert.ok(row.evidence.row>=8);}else{assert.equal(item.field,'英文法');assert.equal(row.page,null);assert.equal(row.evidence.method,'reviewed_grammar_topic');if(b.series==='one-world'){assert.equal(row.evidence.source,`ow-plan${b.year}.xlsx`);assert.ok(row.evidence.row>=8);}else if(b.series==='here-we-go'){assert.equal(row.evidence.source,'hwg.xlsx');assert.ok(row.evidence.row>=8);}else{assert.equal(row.evidence.source,`blue-units${b.year}.pdf`);assert.ok([1,2].includes(row.evidence.pdfPage));assert.equal(row.evidence.section,u.label);}}}
   }
  }
  const ow=report.oneWorld;assert.equal(ow.totalEntries,2778);assert.equal(ow.senseConfirmed,1067);assert.equal(ow.exactSenseConfirmed,730);assert.equal(ow.reviewedSenseConfirmed,337);assert.equal(ow.reviewedHeld,15);assert.equal(ow.senseConfirmed+ow.senseReview+ow.headwordUnmatched,ow.totalEntries);
@@ -133,4 +133,36 @@ test('eight grammar gap points have sixteen authored contexts, unique answers an
   for(const p of variants){assert.equal(new Set([p.answer,...p.dummies]).size,4);assert.ok([p.answer,...p.dummies].every(s=>[...s].length<=30));assert.ok([...p.prompt+item.task+p.answer+p.dummies.join('')].length<=200);}
   assert.equal(questionKey(makeChoiceQuestion(item,()=>0)),questionKey(makeChoiceQuestion(item,()=>.99)));
  }
+});
+
+test('ONE WORLD combines reviewed vocabulary and grammar while practice forms and unit selections stay precise',()=>{
+ const s=settings(),exam=selectTextbookQuestions(items,data,s,{id:'中学:英語:exam'}),grammar=exam.filter(q=>q.field==='英文法');
+ assert.equal(exam.length,1062);assert.equal(grammar.length,147);assert.equal(exam.filter(q=>q.english).length,915);assert.equal(new Set(exam.map(q=>q.id)).size,1062);
+ const books=textbookBooks(data,s,'中学:英語:exam');assert.equal(books.flatMap(b=>b.units).filter(u=>u.grammarMappedCount).length,23);assert.equal(report.oneWorld.grammar.mappings,148);
+ for(const q of selectTextbookQuestions(items,data,s,{id:'中学:英語:1',practiceType:'grammar'})){assert.equal(q.field,'英文法');assert.equal(q.textbook.page,null);}
+ s.unitsByCourse['中学:英語:1']=['ow1-lesson-1'];const one=selectTextbookQuestions(items,data,s,{id:'中学:英語:1',practiceType:'grammar'});assert.equal(one.length,11);assert.ok(one.every(q=>q.textbook.unitId==='ow1-lesson-1'));
+ assert.equal(selectTextbookQuestions(items,data,s,{id:'中学:英語:1',practiceType:'word_en_ja'}).length,48);assert.equal(selectTextbookQuestions(items,data,s,{id:'中学:英語:1',practiceType:'phrase_en_ja'}).length,2);
+ s.unitsByCourse['中学:英語:1']=[];assert.equal(selectTextbookQuestions(items,data,s,{id:'中学:英語:1'}).length,0);
+ s.unitsByCourse['中学:英語:3']=['ow3-lesson-6'];assert.equal(selectTextbookQuestions(items,data,s,{id:'中学:英語:3',practiceType:'grammar'}).length,0); // Source states only previously learned content.
+});
+test('ONE WORLD grammar reviews preserve lexical evidence and pin the source plan and material content',()=>{
+ const ledger=read('textbook-data/one-world-grammar-reviewed.json'),sha=s=>createHash('sha256').update(s).digest('hex');
+ const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
+ assert.equal(data.oneWorldGrammarReviewLedger.sha256,sha(readFileSync(new URL('../textbook-data/one-world-grammar-reviewed.json',import.meta.url))));
+ for(const [name,hash] of Object.entries(ledger.sources))assert.equal(data.sources.find(s=>s.id===name).sha256,hash);
+ for(const u of ledger.units){const unit=data.books.find(b=>b.series==='one-world'&&b.year===u.year).units.find(v=>v.id===u.unitId);assert.equal(unit.grammarMappedCount,u.items.length);
+  for(const entry of u.items){const row=unit.items.find(r=>r.sourceId===entry.sourceId);assert.equal(row.page,null);assert.equal(row.evidence.row,u.row);assert.equal(row.evidence.source,u.source);assert.equal(entry.materialSha256,sha(JSON.stringify(stable(by.get(entry.sourceId)))));assert.equal(row.evidence.languageMaterialSha256,u.languageMaterialSha256);}
+ }
+ const q=selectTextbookQuestions(items,data,settings(),{id:'中学:英語:2',practiceType:'grammar'}).find(q=>q.id==='jr_english_core_indirect');assert.equal(q.grade,'中2');assert.equal(by.get(q.id).grade,'中3');
+ assert.equal(questionKey(makeQuestionQueue([q],()=>.5)[0]),questionKey(makeQuestionQueue([by.get(q.id)],()=>.5)[0]));
+});
+test('ten grammar gaps have twenty contexts and avoid alternative correct forms in the wrong choices',()=>{
+ const added=items.filter(q=>q.content_batch==='english-textbook-grammar-3');assert.equal(added.length,10);
+ for(const item of added){const variants=choicePresentations(item);assert.equal(variants.length,2);assert.notEqual(variants[0].prompt,variants[1].prompt);
+  for(const p of variants){assert.equal(new Set([p.answer,...p.dummies]).size,4);assert.ok([p.answer,...p.dummies].every(s=>[...s].length<=30));assert.ok([...p.prompt+item.task+p.answer+p.dummies.join('')].length<=200);}
+  assert.equal(questionKey(makeChoiceQuestion(item,()=>0)),questionKey(makeChoiceQuestion(item,()=>.99)));
+ }
+ assert.ok(!added.find(q=>q.learning_point==='some_request').dummies.includes('any'));
+ assert.ok(!added.find(q=>q.learning_point==='relative_that_object').dummies.includes('which'));
+ const help=added.find(q=>q.learning_point==='help_infinitive_forms');assert.ok(help.answer.includes(' / '));assert.ok(help.presentations[0].answer.includes(' / '));
 });

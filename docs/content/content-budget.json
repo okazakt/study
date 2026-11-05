@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "baselineViewport": {
+    "width": 320,
+    "height": 844
+  },
+  "scope": "新規・変更コンテンツ用の編集予算。既存問題の実測最大値や、全端末に対する描画保証ではない。",
+  "fields": {
+    "task": 40,
+    "prompt": 60,
+    "choice": 30,
+    "targetLabel": 40,
+    "note": 120
+  },
+  "combinedTextLimit": 200,
+  "estimatedPanelHeightLimit": 330,
+  "panelTextWidthPx": 264,
+  "supportedProfiles": [
+    "text-four-choices",
+    "text-two-columns"
+  ],
+  "requiresLayoutReview": [
+    "new-image-or-diagram",
+    "new-table-or-math-layout",
+    "field-limit-exceeded",
+    "combined-limit-exceeded",
+    "estimated-height-exceeded"
+  ]
+}

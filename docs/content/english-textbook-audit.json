@@ -27858,7 +27858,16 @@
         "sourceId": null,
         "mappedLocations": 0
       }
-    ]
+    ],
+    "grammar": {
+      "units": 23,
+      "mappedMaterials": 147,
+      "mappings": 148,
+      "reviewLedger": {
+        "path": "textbook-data/one-world-grammar-reviewed.json",
+        "sha256": "49ba9abc50d22eb7212e199fc8cc7ab84910db58bcf83478fd4db1f755441267"
+      }
+    }
   },
   "newHorizon": {
     "totalEntries": 2402,

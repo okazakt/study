@@ -1,6 +1,6 @@
 # Study Beat
 
-中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の3,319素材（逆方向・段階回答を含め11,353問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.62.0で文法8ポイントとBLUE SKYの単元対応を追加し、英語は2,930素材・10,765問。186ポイントは各2つの例文パターンで履歴を共有する形になりました。受験範囲の網羅は未完了。2026年度使用のONE WORLDの語彙915素材とHere We Go!の文法95素材・23単元、BLUE SKYの文法125素材・24単元に部分対応します。全社の対応完了ではありません。[指導要領・教科書の照合結果](docs/content/english-verification.md)を公開しています。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
+中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の3,329素材（逆方向・段階回答を含め11,363問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.63.0で文法10ポイントを追加し、英語は2,940素材・10,775問。196ポイントは各2つの例文パターンで履歴を共有する形になりました。受験範囲の網羅は未完了。教科書別の振り分けを廃止し、共通の学年・分野・単元から選択します。既存履歴は保持。NEW HORIZONを内部照合の軸とし、[不足確認](docs/content/new-horizon-review.md)を管理します。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
 
 ```sh
 npm start
