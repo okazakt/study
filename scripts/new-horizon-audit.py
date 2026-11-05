@@ -25,5 +25,6 @@ for g in range(1,4):
  report['grammarSourceRows'].append({'grade':g,'sheet':s.title,'column':header,'rows':[r for r in range(5,s.max_row+1) if s.cell(r,header).value]})
 priority=['job','advice','good','great','danger','trouble','bake','beauty','favorite']
 report['priorityLexicalCandidates']=[w for w in priority if w not in known]
+report['mainReview']={'path':'new-horizon-main-review.json','scope':'本文Word Listの編集上の最終判断は全行精査台帳を参照。このファイルのstatusは綴り候補段階の状態。'}
 (root/'docs/content/new-horizon-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'sheets':[{k:v for k,v in s.items() if k!='rows'} for s in report['sheets']],'priority':report['priorityLexicalCandidates']},ensure_ascii=False))

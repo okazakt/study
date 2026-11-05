@@ -1,0 +1,21 @@
+{
+  "reviewedAt": "2026-11-05",
+  "source": {
+    "file": "nh.xlsx",
+    "url": "https://ten.tokyo-shoseki.co.jp/text/chu/eigo/download/documents/eigo_19goidata.xlsx",
+    "sha256": "0fec014ac0055ff65f2f2355492eb98e74446759bcb6a5119cbd6629d4fc4f0f"
+  },
+  "sheet": "本文Word List 単語一覧",
+  "excelRows": [
+    2,
+    1790
+  ],
+  "expectedRows": 1789,
+  "editorialScope": "見出し全行・既存教材の代表語義・42行の備考・原形と短縮形・追加方針。本文全用法の意味対応を証明するものではない。",
+  "reviewedInputs": {
+    "existing": "existing-entries.json",
+    "newLexical": "lexical-additions.tsv",
+    "forms": "forms-and-functions.tsv",
+    "additionalSenses": "sense-expansions.tsv"
+  }
+}

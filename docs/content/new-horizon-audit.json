@@ -17325,5 +17325,9 @@
     "bake",
     "beauty",
     "favorite"
-  ]
+  ],
+  "mainReview": {
+    "path": "new-horizon-main-review.json",
+    "scope": "本文Word Listの編集上の最終判断は全行精査台帳を参照。このファイルのstatusは綴り候補段階の状態。"
+  }
 }

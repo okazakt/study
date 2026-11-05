@@ -1,0 +1,170 @@
+# row<TAB>category<TAB>independent explanation<TAB>base headword or expansion (| separates alternatives)
+2	function	不定冠詞。可算名詞単数を初めて示すなど	a
+5	function	〜について・約	about
+24	name	アフガニスタン	Afghanistan
+26	name	アフリカ	Africa
+27	name	アフリカの・アフリカの人	African
+47	inflection	beの一人称単数現在	be
+48	abbreviation	午前	ante meridiem
+50	name	アメリカ。地域の指示範囲は文脈による	America
+51	name	アメリカの・アメリカ人	American
+54	function	母音の音で始まる語の前などに置く不定冠詞	an
+77	inflection	beの複数・二人称現在	be
+88	function	〜として・〜するとき・同じくらい（構文による）	as
+89	name	アジアの・アジアの人	Asian
+93	inflection	eatの過去	eat
+95	inflection	attractの過去・過去分詞。魅了された状態にも使う	attract
+103	name	アゼルバイジャン	Azerbaijan
+120	productive	名詞などに付けて〜に基づく・〜を拠点とする	base
+133	inflection	becomeの過去	become
+139	inflection	beの過去分詞	be
+141	inflection	beginの過去	begin
+150	degree	good・wellの最上級	good|well
+152	degree	good・wellの比較級	good|well
+157	alias	bicycleの口語表現。motorbikeを指す場合もある	bicycle
+172	inflection_sense_gap	生まれるという意味で使うbearの過去分詞。動物のクマとは別義	bear
+177	inflection	buyの過去・過去分詞	buy
+190	name	イギリスの・イギリス人の	British
+192	inflection	bringの過去・過去分詞	bring
+197	inflection	buildの過去・過去分詞	build
+206	function	〜によって・〜のそばに・〜までに	by
+211	inflection	comeの過去	come
+219	function	〜できる・〜してよい（助動詞）	can
+223	negative	canの否定形	can not
+240	inflection	catchの過去・過去分詞	catch
+264	inflection	childの複数	child
+265	calendar	こどもの日	Children's Day
+272	inflection	chooseの過去	choose
+273	inflection	chooseの過去分詞	choose
+274	calendar	クリスマス	Christmas
+275	calendar	クリスマス当日	Christmas Day
+342	function	canの過去形・丁寧な依頼・仮定上の可能性	could
+358	inflection	creepの過去・過去分詞	creep
+402	name	デンマーク	Denmark
+413	inflection	doの過去。疑問・否定の助動詞にもなる	do
+431	inflection	doの三人称単数現在。疑問・否定の助動詞にもなる	do
+434	calendar	ひな祭り	Dolls' Festival
+438	inflection	doの過去分詞	do
+446	inflection	drawの過去分詞	draw
+469	name	エジプトの・エジプト人	Egyptian
+483	alias	emailと同じ語の別表記	email
+553	inflection	fallの過去	fall
+554	inflection	feelの過去・過去分詞	feel
+590	function	〜のために・〜の間・〜にとって	for
+599	inflection	findの過去・過去分詞。創設するfoundと区別	find
+630	inflection	giveの過去	give
+654	inflection	getの過去・過去分詞（過去分詞gottenもある）	get
+678	inflection	haveの過去・過去分詞。完了の助動詞にもなる	have
+681	calendar	ハロウィーン	Halloween
+692	inflection	haveの三人称単数現在。完了の助動詞にもなる	have
+699	inflection	hearの過去・過去分詞	hear
+703	inflection	holdの過去・過去分詞	hold
+754	name	アイスランド	Iceland
+795	inflection	beの三人称単数現在	be
+817	name	ケニア	Kenya
+818	inflection	keepの過去・過去分詞	keep
+833	inflection	knowの過去分詞	know
+859	degree	littleの比較級。より少ない	little
+863	contraction	let usの勧誘の短縮形	let us
+882	ambiguous_form	lifeの複数またはliveの三人称単数現在。発音も異なる	life|live
+892	inflection	loseの過去・過去分詞	lose
+900	inflection	makeの過去・過去分詞	make
+921	inflection	meanの過去・過去分詞	mean
+933	inflection	meetの過去・過去分詞	meet
+955	degree	many・muchの比較級	many|much
+959	degree	many・muchの最上級	many|much
+967	abbreviation	男性の姓などに付ける敬称	Mister
+968	abbreviation	既婚女性の姓などに付ける敬称	Missus
+969	abbreviation	婚姻状態を限定しない女性の敬称	Ms.
+970	abbreviation	山の名の前のMountの略	Mount
+976	function	〜しなければならない・〜に違いない	must
+998	calendar	新年	New Year
+999	calendar	元日	New Year's Day
+1000	calendar	大みそか	New Year's Eve
+1001	name	ニュージーランド	New Zealand
+1017	function	文や語句の否定を表す	not
+1030	abbreviation	時刻の〜時。of the clockに由来	o'clock
+1033	function	〜の・〜のうちの	of
+1039	alias	よい・了解した。okayと同じ語	okay
+1066	inflection	payの過去・過去分詞	pay
+1086	abbreviation	体育	physical education
+1127	abbreviation	午後	post meridiem
+1195	inflection	runの過去	run
+1260	inflection	rideの過去	ride
+1264	ambiguous_form	riseの過去または花のバラ。語彙一覧だけでは意味を特定できない	rise|rose
+1271	productive	年代の複数形。1970sなら1970年代	decade+s
+1272	productive	人名などに付ける所有格。Riko'sならリコの	possessive 's
+1276	inflection	sayの過去・過去分詞	say
+1282	calendar	土曜日	Saturday
+1286	inflection	seeの過去。名詞ではのこぎり等の別語もある	see
+1305	inflection	seeの過去分詞	see
+1310	inflection	sendの過去・過去分詞	send
+1327	function	申し出・提案（Shall I / we）など	shall
+1342	function	〜すべきだ・〜のはずだ	should
+1355	name	シンガポール	Singapore
+1393	inflection	sellの過去・過去分詞	sell
+1408	name	南アフリカ	South Africa
+1420	inflection	spendの過去・過去分詞	spend
+1426	inflection	speakの過去	speak
+1442	calendar	七夕	Star Festival
+1453	inflection	standの過去・過去分詞	stand
+1472	calendar	日曜日	Sunday
+1505	inflection	teachの過去・過去分詞	teach
+1515	inflection	toothの複数	tooth
+1524	name	タイ	Thailand
+1525	function	比較の対象を示す〜より	than
+1528	function	定冠詞。話し手と聞き手が特定できるものなど	the
+1549	ambiguous_form	thinkの過去・過去分詞。または名詞の考え・思考	think|thought
+1565	inflection	tellの過去・過去分詞	tell
+1570	inflection	takeの過去	take
+1609	abbreviation	テレビ	television
+1617	name	英国。United Kingdomの略	United Kingdom
+1622	inflection	understandの過去・過去分詞	understand
+1627	name	アメリカ合衆国	United States
+1635	name_alias	United Statesの略	United States
+1667	inflection	beの一人称・三人称単数過去	be
+1687	function	うまく・健康で・会話のつなぎ。井戸とは別語義	well
+1690	inflection	goの過去	go
+1691	inflection	beの複数・二人称過去	be
+1698	function	〜する間・一方で	while
+1706	function	未来・意思・予測などを示す助動詞	will
+1716	function	〜と一緒に・〜を使って	with
+1718	inflection	wakeの過去	wake
+1721	inflection	winの過去・過去分詞	win
+1734	function	willの過去形・丁寧な表現・仮定上の結果など	would
+1740	inflection	writeの過去	write
+1756	contraction	are notの短縮	are not
+1757	contraction	can notの短縮	can not
+1758	contraction	could notの短縮	could not
+1759	contraction	did notの短縮	did not
+1760	contraction	does notの短縮	does not
+1761	contraction	do notの短縮	do not
+1762	contraction	has notの短縮	has not
+1763	contraction	have notの短縮	have not
+1764	contraction	here isの短縮。here hasの可能性は文脈次第	here is|here has
+1765	contraction	he isまたはhe hasの短縮	he is|he has
+1766	contraction	how isまたはhow hasの短縮	how is|how has
+1767	contraction	I wouldまたはI hadの短縮	I would|I had
+1768	contraction	I willの短縮	I will
+1769	contraction	I amの短縮	I am
+1770	contraction	is notの短縮	is not
+1771	contraction	it isまたはit hasの短縮	it is|it has
+1772	contraction	I haveの短縮	I have
+1773	contraction	must notの短縮	must not
+1774	contraction	she isまたはshe hasの短縮	she is|she has
+1775	contraction	that isまたはthat hasの短縮	that is|that has
+1776	contraction	there isまたはthere hasの短縮	there is|there has
+1777	contraction	they areの短縮	they are
+1778	contraction	was notの短縮	was not
+1779	contraction	we willの短縮	we will
+1780	contraction	we areの短縮	we are
+1781	contraction	were notの短縮	were not
+1782	contraction	we haveの短縮	we have
+1783	contraction	what isまたはwhat hasの短縮	what is|what has
+1784	contraction	when isまたはwhen hasの短縮	when is|when has
+1785	contraction	where isまたはwhere hasの短縮	where is|where has
+1786	contraction	who isまたはwho hasの短縮	who is|who has
+1787	contraction	will notの短縮	will not
+1788	contraction	you willの短縮	you will
+1789	contraction	you areの短縮	you are
+1790	contraction	you haveの短縮	you have
