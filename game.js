@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.63.0';
-import { materializeMathItem } from './math-variants.js?v=0.63.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.64.0';
+import { materializeMathItem } from './math-variants.js?v=0.64.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -166,7 +166,7 @@ export function makeEnglishQuestion(item, direction, random = Math.random) {
   if (candidates.length < 3) throw new Error(`${item.id}: insufficient translation choices`);
   const choices = shuffle([answer, ...shuffle(candidates, random).slice(0, 3)], random);
   return { ...item, id: `${item.id}:${direction}`, sourceId: item.id, mode: direction,
-    term: item.english, answer, prompt: toJapanese ? item.english : item.japanese,
+    term: item.english, answer, prompt: toJapanese ? (item.meaning_context ? `${item.english}\n${item.meaning_context}` : item.english) : item.japanese,
     task: toJapanese ? 'この英語の意味を選ぼう' : 'この意味にあてはまる英語を選ぼう', context: '',
     choices, correct: choices.indexOf(answer), reviewLabel: `${toJapanese ? item.english : item.japanese}` };
 }

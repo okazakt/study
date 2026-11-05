@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.63.0';
-import { ScreenWakeLock } from './wake-lock.js?v=0.63.0';
-import { MusicPlayer } from './music-player.js?v=0.63.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.63.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.63.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.63.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.63.0';
-const VERSION = '0.63.0';
+import {FocusGame} from './focus-game.js?v=0.64.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.64.0';
+import { MusicPlayer } from './music-player.js?v=0.64.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.64.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.64.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.64.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.64.0';
+const VERSION = '0.64.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -451,8 +451,8 @@ function selectTrack(index, tuning=false) {
 }
 async function load() {
   try {
-    const [index, quiz, english, japanese, math, social, expansion, englishCore, englishExtended, englishApplication, englishSupplement, englishVocabulary2] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json'), json('./quiz-data/junior_english_extended.json'), json('./quiz-data/junior_english_application.json'), json('./quiz-data/junior_english_supplement.json'), json('./quiz-data/junior_english_vocabulary2.json')]);
-    questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion, ...englishCore, ...englishExtended, ...englishApplication, ...englishSupplement, ...englishVocabulary2];
+    const [index, quiz, english, japanese, math, social, expansion, englishCore, englishExtended, englishApplication, englishSupplement, englishVocabulary2, englishNewHorizon] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json'), json('./quiz-data/junior_english_extended.json'), json('./quiz-data/junior_english_application.json'), json('./quiz-data/junior_english_supplement.json'), json('./quiz-data/junior_english_vocabulary2.json'), json('./quiz-data/junior_english_new_horizon.json')]);
+    questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion, ...englishCore, ...englishExtended, ...englishApplication, ...englishSupplement, ...englishVocabulary2, ...englishNewHorizon];
     const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     musicEntries=entries;
     playlist = makePlaylist(entries); tuningTracks=makePlaylist(entries,{trim:false}).tracks;
@@ -721,6 +721,7 @@ function renderQuestion() {
   if (key === questionKey) return;
   questionKey = key; $('question-panel').scrollTop = 0; characters = []; choiceElements = []; $('choices').replaceChildren();
   const q = game.question;
+  $('prompt').classList.toggle('has-meaning-context', !intro && !!q.meaning_context && q.mode === 'to_japanese');
   $('choices').classList.toggle('long-choices', !intro && choiceColumns(q) === 2);
   const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
   const prompt = intro ? (game.phase === 'outro' ? '最後までリズムをつなごう' : game.phase === 'rhythm' ? 'リズムにのって、次の問題へ' : 'まずはリズムにのろう') : segments ? segments.map(s => s.text).join('') : q.prompt;
@@ -1010,6 +1011,7 @@ function renderPractice() {
   $('practice-task').textContent = q?.task || '';
   $('practice-target').textContent = q?.targetLabel || '';
   $('practice-prompt').replaceChildren(); $('practice-choices').replaceChildren();
+  $('practice-prompt').classList.toggle('has-meaning-context', !!q?.meaning_context && q.mode === 'to_japanese');
   $('practice-feedback').textContent = q ? '' : '○ 復習完了！'; $('practice-explanation').textContent = '';
   $('practice-next').hidden = !q; $('practice-next').disabled = true;
   renderKanji($('practice-kanji'), q);

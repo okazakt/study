@@ -40,6 +40,7 @@ test('app installation activates without downloading audio, including when audio
   await w.run('message',{data:{type:'CACHE_MEDIA'}}); assert.ok(w.messages.includes('MEDIA_ERROR'));
   const {version} = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
   assert.ok(await (await w.caches.open(`study-beat-v${version}`)).match(`app.js?v=${version}`));
+  assert.ok(await (await w.caches.open(`study-beat-v${version}`)).match(`quiz-data/junior_english_new_horizon.json?v=${version}`));
 });
 test('navigation obtains network page without HTTP cache and falls back offline for query URLs', async () => {
   const w = worker(); await w.run('install');

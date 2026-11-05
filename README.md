@@ -1,6 +1,6 @@
 # Study Beat
 
-中高生向けの暗記学習 × 音楽ゲームのPWA試作。中学5教科・中1〜中3の3,329素材（逆方向・段階回答を含め11,363問）と「Fallin For You」「American Western Country」の2曲を収録しています。v0.63.0で文法10ポイントを追加し、英語は2,940素材・10,775問。196ポイントは各2つの例文パターンで履歴を共有する形になりました。受験範囲の網羅は未完了。教科書別の振り分けを廃止し、共通の学年・分野・単元から選択します。既存履歴は保持。NEW HORIZONを内部照合の軸とし、[不足確認](docs/content/new-horizon-review.md)を管理します。[収録一覧](docs/content/junior-inventory.md)と[拡充計画](docs/content/junior-plan.md)で進捗を管理します。
+中高生向けの暗記学習 × 音楽ゲームのPWA試作。v0.64.0は中学5教科4,150素材・14,398生成問題を収録。英語は3,761素材・13,810生成問題（単語2,993、熟語335、文法385、読解48）。NEW HORIZON公式「本文Word List」1,789行を対応母数とし、全行に代表語義・語形などを学ぶ独自素材を登録しました。同じ綴りの別義は別ID・別履歴とし、例文で意味を区別します。公開一覧への対応であり、教科書本文の全用法・全技能の網羅とは区別します。学年は共通分類の暫定配当です。教科書別選択は使わず、共通の学年・分野・単元から選びます。[対応状況](docs/content/new-horizon-review.md)・[収録一覧](docs/content/junior-inventory.md)・[拡充計画](docs/content/junior-plan.md)。楽曲は「Fallin For You」「American Western Country」の2曲です。
 
 ```sh
 npm start

@@ -160,3 +160,5 @@ body.playing .focus-mode .lane-keys button{background:linear-gradient(color-mix(
 
 /* Keep instructions compact without shrinking the question or answer text. */
 .focus-mode #instruction{margin-bottom:2px}
+
+#prompt.has-meaning-context,#practice-prompt.has-meaning-context{white-space:pre-line}
