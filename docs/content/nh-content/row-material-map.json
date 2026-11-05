@@ -6489,7 +6489,8 @@
       "row": 915,
       "headword": "may",
       "materialIds": [
-        "jr_en_nh_0915_sense1"
+        "jr_en_nh_0915_sense1",
+        "jr_en_nh_0915_extra1"
       ]
     },
     {
@@ -8901,7 +8902,8 @@
       "row": 1254,
       "headword": "right",
       "materialIds": [
-        "jr_en_nh_1254_sense1"
+        "jr_en_nh_1254_sense1",
+        "jr_en_nh_1254_extra1"
       ]
     },
     {
@@ -11980,6 +11982,7 @@
       "row": 1687,
       "headword": "well",
       "materialIds": [
+        "jr_en_nh_1687_extra1",
         "jr_en_nh_1687_form"
       ]
     },

@@ -164,6 +164,7 @@ exceptions={
  893:'number:個数|total:合計|remainder:残り'
 }
 for q in words:
+ if q['id'] in {'jr_en_nh_0915_extra1','jr_en_nh_1254_extra1','jr_en_nh_1687_extra1'}:q['content_batch']='english-new-horizon-senses-2'
  row=q['new_horizon_rows'][0]
  if q['id'].endswith('_primary') and row in exceptions:
   pool=pairs(exceptions[row]);q['english_dummies']=[e for e,j in pool];q['japanese_dummies']=[j for e,j in pool]

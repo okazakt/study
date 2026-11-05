@@ -32718,6 +32718,144 @@
     ]
   },
   {
+    "id": "jr_en_nh_0915_extra1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "文脈で区別する意味",
+    "content_batch": "english-new-horizon-senses-2",
+    "english": "may",
+    "japanese": "〜かもしれない",
+    "english_dummies": [
+      "must",
+      "can",
+      "should"
+    ],
+    "japanese_dummies": [
+      "義務がある",
+      "能力がある",
+      "〜すべきだ"
+    ],
+    "note": "may：〜かもしれない。この問題ではこの意味を確認する。",
+    "meaning_id": "jr_en_nh_0915_extra1",
+    "lexical_group": "jr_en_nh_0915_extra1",
+    "new_horizon_rows": [
+      915
+    ],
+    "meaning_context": "It may rain tomorrow.",
+    "spelling_template": "{{1}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "may",
+        "dummies": [
+          "maa",
+          "mae",
+          "mai"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jr_en_nh_1254_extra1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "文脈で区別する意味",
+    "content_batch": "english-new-horizon-senses-2",
+    "english": "right",
+    "japanese": "権利",
+    "english_dummies": [
+      "duty",
+      "law",
+      "rule"
+    ],
+    "japanese_dummies": [
+      "義務",
+      "法律",
+      "規則"
+    ],
+    "note": "right：権利。この問題ではこの意味を確認する。",
+    "meaning_id": "jr_en_nh_1254_extra1",
+    "lexical_group": "jr_en_nh_1254_extra1",
+    "new_horizon_rows": [
+      1254
+    ],
+    "meaning_context": "Children have a right to education.",
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "rig",
+        "dummies": [
+          "ria",
+          "rie",
+          "rii"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "ht",
+        "dummies": [
+          "ha",
+          "he",
+          "hi"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jr_en_nh_1687_extra1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "英語",
+    "field": "英単語",
+    "unit": "文脈で区別する意味",
+    "content_batch": "english-new-horizon-senses-2",
+    "english": "well",
+    "japanese": "ええと・さて",
+    "english_dummies": [
+      "ouch",
+      "thanks",
+      "hello"
+    ],
+    "japanese_dummies": [
+      "痛い",
+      "ありがとう",
+      "こんにちは"
+    ],
+    "note": "well：ええと・さて。この問題ではこの意味を確認する。",
+    "meaning_id": "jr_en_nh_1687_extra1",
+    "lexical_group": "jr_en_nh_1687_extra1",
+    "new_horizon_rows": [
+      1687
+    ],
+    "meaning_context": "Well, let me think.",
+    "spelling_template": "{{1}}{{2}}",
+    "spelling": [
+      {
+        "index": 1,
+        "answer": "wel",
+        "dummies": [
+          "wea",
+          "wee",
+          "wei"
+        ]
+      },
+      {
+        "index": 2,
+        "answer": "l",
+        "dummies": [
+          "a",
+          "e",
+          "i"
+        ]
+      }
+    ]
+  },
+  {
     "id": "jr_en_nh_0024_primary",
     "school_level": "中学",
     "grade": "中1",
