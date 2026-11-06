@@ -1,12 +1,14 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.64.2';
-import { materializeMathItem } from './math-variants.js?v=0.64.2';
+import { materializeChoiceItem } from './choice-variants.js?v=0.65.0';
+import { materializeMathItem } from './math-variants.js?v=0.65.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
 export const SESSION = Object.freeze({durationSeconds:300,fadeSeconds:3,tapGoal:120,minWhiteInterval:.22});
 export const SPEEDS=Object.freeze({slow:'ゆっくり',normal:'普通',fast:'速い',instant:'即答級'});
 export const RHYTHMS=Object.freeze({easy:{label:'イージー',tapGoal:120},normal:{label:'ノーマル',tapGoal:180},hard:{label:'ハード',tapGoal:240},focus:{label:'学習集中モード',tapGoal:null}});
-export function normalizeGameplayOptions(value){return {speed:Object.hasOwn(SPEEDS,value?.speed)?value.speed:'slow',rhythm:Object.hasOwn(RHYTHMS,value?.rhythm)?value.rhythm:'easy'};}
+export const DURATIONS=Object.freeze({five:'5分',endless:'エンドレス'});
+export const BALANCES=Object.freeze({normal:'ノーマル',unanswered:'未回答最優先',review:'誤回答復習最優先'});
+export function normalizeGameplayOptions(value){return {speed:Object.hasOwn(SPEEDS,value?.speed)?value.speed:'slow',rhythm:Object.hasOwn(RHYTHMS,value?.rhythm)?value.rhythm:'easy',duration:Object.hasOwn(DURATIONS,value?.duration)?value.duration:'five',balance:Object.hasOwn(BALANCES,value?.balance)?value.balance:'normal'};}
 export function sessionPlan(playlistSeconds, limit=SESSION.durationSeconds) {
   const endTime=Math.min(playlistSeconds,limit);
   return {endTime,fadeStart:playlistSeconds>limit?Math.max(0,endTime-SESSION.fadeSeconds):endTime};
@@ -222,6 +224,20 @@ export function sessionMusic(entries, selection='', random=Math.random, seconds=
   }
   return makePlaylist(chosen,options);
 }
+// Extend a live playlist on the same absolute timeline; song/file correction is applied only by makePlaylist.
+export function appendRandomTrack(playlist,entries,selection=null,random=Math.random,options={}){
+  const ids=normalizeMusicSelection(selection,entries.map(e=>e.id));
+  let pool=entries.filter(e=>!ids||ids.includes(e.id));
+  if(!pool.length)throw new Error('No music candidates');
+  if(pool.length>1)pool=pool.filter(e=>e.id!==playlist.tracks.at(-1)?.id);
+  const entry=pool[Math.floor(random()*pool.length)],addition=makePlaylist([entry],options),shift=playlist.duration;
+  const track=addition.tracks[0];
+  if(!(addition.duration>0))throw new Error('Invalid music duration');
+  track.start+=shift;track.events=track.events.map(e=>({...e,time:e.time+shift}));
+  track.playNumber=(playlist.tracks.at(-1)?.playNumber||playlist.tracks.length)+1;
+  playlist.tracks.push(track);playlist.events.push(...track.events);playlist.duration+=addition.duration;
+  return track;
+}
 export function musicCredit(track) {
   return typeof track.creditText==='string'&&track.creditText.trim() ? track.creditText : `${track.title} / ${track.creator}`;
 }
@@ -294,21 +310,8 @@ export class Game {
     this.questions = pickUnit ? pickUnit() : makeQuestionQueue(questions, random, acceptQuestion);
     this.endTime = endTime; this.questionEndTime = questionEndTime;
     this.tapGoal=Number.isInteger(tapGoal) && tapGoal>0 && Number.isFinite(endTime)?tapGoal:null;
-    let lanes = [];
-    this.events = easyEvents(events).map((event, i) => {
-      if (!lanes.length) lanes = shuffle([0, 1, 2, 3], random);
-      return { target: event.time + offsetSeconds, id: i, lane: lanes.pop(), focusEligible:event.focusEligible!==false, answerEligible:this.options.rhythm!=='hard'||[0,2].includes(i%4) };
-    });
-    if(this.tapGoal){
-      const main=this.events,extra=[];
-      for(let i=0;i<main.length-1;i++){
-        const left=main[i],right=main[i+1],gap=right.target-left.target;
-        if(gap<SESSION.minWhiteInterval*2 || gap>1.5)continue;
-        const choices=[0,1,2,3].filter(lane=>lane!==left.lane && lane!==right.lane);
-        extra.push({target:(left.target+right.target)/2,id:`half:${left.id}`,lane:choices[Math.floor(random()*choices.length)],half:true,answerEligible:this.options.rhythm==='hard'&&[0,1,3].includes(i%4)});
-      }
-      this.events=[...main,...extra].sort((a,b)=>a.target-b.target);
-    }
+    this.offsetSeconds=offsetSeconds;this.eventSerial=0;
+    this.events=this.prepareEvents(events);
     this.reveal = revealPlan(this.questions[0],this.options.speed);
     this.phase = 'intro'; this.phaseStart = 0; this.cursor = 0; this.notes = []; this.questionIndex = 0;
     this.rhythmScore = 0; this.rhythmBaseScore = 0; this.rhythmComboScore = 0; this.quizScore = 0; this.combo = 0; this.maxCombo = 0;
@@ -323,6 +326,26 @@ export class Game {
     this.lastJudgment = ''; this.judgmentTime = -10; this.time = 0;
     if(this.tapGoal)this.planWhites(0,Math.min(RULES.introSeconds,this.endTime));
   }
+  prepareEvents(events) {
+    let lanes = [];
+    const start=this.eventSerial;
+    const main = easyEvents(events).map((event, i) => {
+      if (!lanes.length) lanes = shuffle([0, 1, 2, 3], this.random);
+      return { target: event.time + this.offsetSeconds, id: start+i, whiteEligible:this.options.rhythm!=='easy'||(start+i)%2===0, lane: lanes.pop(), focusEligible:event.focusEligible!==false, answerEligible:this.options.rhythm!=='hard'||[0,2].includes(i%4) };
+    });
+    if(this.tapGoal || this.options.rhythm==='hard'){
+      const extra=[];
+      for(let i=0;i<main.length-1;i++){
+        const left=main[i],right=main[i+1],gap=right.target-left.target;
+        if(gap<SESSION.minWhiteInterval*2 || gap>1.5)continue;
+        const choices=[0,1,2,3].filter(lane=>lane!==left.lane && lane!==right.lane);
+        extra.push({target:(left.target+right.target)/2,id:`half:${left.id}`,lane:choices[Math.floor(this.random()*choices.length)],half:true,answerEligible:this.options.rhythm==='hard'&&[0,1,3].includes(i%4)});
+      }
+      this.eventSerial+=main.length;return [...main,...extra].sort((a,b)=>a.target-b.target);
+    }
+    this.eventSerial+=main.length;return main;
+  }
+  appendEvents(events) {const added=this.prepareEvents(events);this.events.push(...added);return added;}
   get requiredTaps() {
     const value = this.question.tapsToAnswer;
     return Number.isInteger(value) && value > 0 ? value : RULES.tapsToAnswer;
@@ -333,6 +356,12 @@ export class Game {
   get quotaTaps(){return this.countedTaps-this.extraColorJudgments;}
   // The UI supplies an ideal-run reference; standalone callers keep legacy scoring.
   get scoreBreakdown(){
+    if(this.options.duration==='endless'){
+      const netWhite=Math.round(this.whiteUnits*10),netColor=Math.round(this.colorUnits*2),baseAnswer=Math.round(this.answerUnits*50);
+      const whiteBonus=this.whiteComboBonus,colorBonus=this.colorComboBonus,answerBonus=this.answerComboBonus;
+      const rhythm=netWhite+netColor+whiteBonus+colorBonus;
+      return {netWhite,netColor,white:netWhite,color:netColor,baseAnswer,answer:baseAnswer+answerBonus,whiteBonus,colorBonus,answerBonus,penalty:0,rhythm,total:rhythm+baseAnswer+answerBonus};
+    }
     if(!this.scorePlan)return null;
     const whiteDen=Math.max(1,this.scorePlan.white,this.whiteJudgments);
     const colorDen=Math.max(1,this.scorePlan.color,this.colorCapacityStarted);
@@ -433,6 +462,7 @@ export class Game {
   }
   update(now) {
     this.time = now;
+    if(this.cursor>2048){this.events.splice(0,this.cursor);this.cursor=0;}
     if (this.phase === 'ended') return;
     if (this.phase === 'read' && now - this.phaseStart + 1e-9 >= this.reveal.duration) this.changePhase('answer', now);
     while (this.cursor < this.events.length && this.events[this.cursor].target <= now + RULES.travelSeconds) {
@@ -441,7 +471,8 @@ export class Game {
       if(this.phase==='answer' && !this.answerEvent(event))continue;
       if(this.tapGoal && this.phase!=='answer'){
         if(!this.whiteTargets.has(event.id) || this.quotaTaps+this.pendingWhites()>=this.tapGoal)continue;
-      }else if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
+      }else if (this.options.duration==='endless' && this.phase!=='answer' && event.whiteEligible===false) continue;
+      else if (this.phase === 'rhythm' && !this.rhythmTargets.has(event.id)) continue;
       if (event.target < this.phaseStart + RULES.travelSeconds) continue;
       // Do not launch a note that cannot be judged and displayed before the intro ends.
       if (this.phase === 'intro' && event.target + RULES.judgmentOffsetSeconds + RULES.goodWindow + RULES.judgmentSeconds > RULES.introSeconds) continue;
@@ -490,8 +521,8 @@ export class Game {
     const colored = this.phase === 'answer' && note.color !== null;
     const base = perfect ? (colored ? 2 : 10) : (colored ? 1 : 5);
     const bonus = colored ? 0 : this.combo;
-    if(!this.scorePlan){this.rhythmBaseScore += base; this.rhythmComboScore += bonus;this.rhythmScore += base + bonus;}
-    if(this.scorePlan){
+    if(!this.scorePlan && this.options.duration!=='endless'){this.rhythmBaseScore += base; this.rhythmComboScore += bonus;this.rhythmScore += base + bonus;}
+    if(this.scorePlan || this.options.duration==='endless'){
       if(note.color===null)this.whiteComboBonus+=this.combo;
       else if(this.colorRowsUsed<this.requiredTaps)this.colorComboBonus+=this.combo;
     }
@@ -506,7 +537,7 @@ export class Game {
           this.quizResult = { correct: true, time: now, choice: color };
           this.correctCount++;
           if (this.firstTry) { this.firstCount++; this.maxQuizCombo = Math.max(this.maxQuizCombo, ++this.quizCombo); }
-          if(this.scorePlan){
+          if(this.scorePlan || this.options.duration==='endless'&&!this.focus){
             this.answerUnits+=SCORE.answerRates[Math.min(this.stageWrongCount,3)];
             if(this.firstTry)this.answerComboBonus+=this.quizCombo*10;
             this.refreshScore();

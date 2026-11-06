@@ -1,4 +1,4 @@
-import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.64.2';
+import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.65.0';
 
 // The chart's main beats are timing opportunities, without visible/moving notes.
 export function focusReveal(question,speed){
@@ -19,12 +19,13 @@ export class FocusGame extends Game {
     this.beats=this.musicBeats.filter(e=>e.focusEligible!==false);
     this.beatCursor=0;this.focusWhite=0;this.focusColor=0;this.focusAnswer=0;this.changePhase('read',0);
   }
+  appendEvents(events){const added=super.appendEvents(events);const beats=added.filter(e=>!e.half&&e.target>=0).map(e=>({...e,done:false}));this.musicBeats.push(...beats);this.beats.push(...beats.filter(e=>e.focusEligible!==false));return added;}
   get requiredTaps(){return 1;}
   refreshScore(){} // Focus uses direct points, not the normal mode's 120-note normalization.
   get scoreBreakdown(){return {netWhite:this.focusWhite||0,netColor:this.focusColor||0,baseAnswer:this.focusAnswer||0,
     whiteBonus:this.whiteComboBonus,colorBonus:this.colorComboBonus,answerBonus:this.answerComboBonus};}
   beatAfter(now,count=1){return this.musicBeats.filter(b=>b.target>now+1e-8)[count-1]?.target??Infinity;}
-  pulse(now){let distance=Infinity;for(const b of this.beats){if(b.target>now+.2)break;distance=Math.min(distance,Math.abs(now-b.target));}return Math.max(0,1-distance/.16);}
+  pulse(now){let distance=Infinity;for(let i=Math.max(0,this.beatCursor-1);i<this.beats.length;i++){const b=this.beats[i];if(b.target>now+.2)break;distance=Math.min(distance,Math.abs(now-b.target));}return Math.max(0,1-distance/.16);}
   earliestCompletion(now){
     let time=now;
     for(let step=0;step<this.questions.length;step++){
@@ -44,22 +45,23 @@ export class FocusGame extends Game {
       this.reveal=focusReveal(this.question,this.options.speed);this.counts=[0,0,0,0];this.firstTry=true;this.stageWrongCount=0;this.colorRowsUsed=0;this.quizResult=null;this.message='';
       this.startedQuestions.add(this.questionIndex);
     }
-    if(phase==='answer')this.message='答えの色を1回タップ';
+    if(phase==='answer')this.message='拍に合わせて、答えの色を1回タップ';
     if(phase==='feedback')this.nextQuestionAt=this.beatAfter(Math.max(now,this.answerBeat??now),2);
-    if(phase==='outro'){this.quizResult=null;this.message='最後まで拍に合わせてタップ';}
+    if(phase==='outro'){this.quizResult=null;this.message='このまま曲の終わりまで待とう';}
   }
   update(now){
     this.time=now;if(this.phase==='ended')return;
-    while(this.beatCursor<this.beats.length&&this.beats[this.beatCursor].target+RULES.goodWindow+1e-9<now){
-      const b=this.beats[this.beatCursor++];if(!b.done){b.done=true;this.combo=0;this.missedNotes++;this.judge('MISS',now);}
-    }
+    // Thinking/reading never requires taps. Passed beats are not misses.
+    while(this.beatCursor<this.beats.length&&this.beats[this.beatCursor].target+RULES.goodWindow+1e-9<now)this.beats[this.beatCursor++].done=true;
+    if(this.beatCursor>2048){this.beats.splice(0,this.beatCursor);this.beatCursor=0;this.musicBeats=this.musicBeats.filter(b=>b.target>=now-2);}
     if(this.phase==='read'&&now-this.phaseStart+1e-9>=this.reveal.duration)this.changePhase('answer',now);
+    if(this.phase==='feedback'&&!Number.isFinite(this.nextQuestionAt))this.nextQuestionAt=this.beatAfter(Math.max(this.phaseStart,this.answerBeat??this.phaseStart),2);
     if(this.phase==='feedback'&&now+1e-9>=this.nextQuestionAt){this.questionIndex++;this.changePhase('read',now);if(this.reveal.duration===0&&this.phase==='read')this.changePhase('answer',now);}
   }
   tap(lane,now){
-    this.update(now);if(this.phase==='ended'||lane< -1||lane>3)return null;
+    this.update(now);if(this.phase==='ended'||lane<0||lane>3)return null;
     if(lane>=0&&this.phase!=='answer')return null;
-    const colored=lane>=0;
+    const colored=true;
     const beat=this.beats.slice(this.beatCursor).find(b=>!b.done&&Math.abs(timingError(b.target,now))<=RULES.goodWindow+1e-9);
     let label='MISS';
     if(beat){
@@ -72,6 +74,7 @@ export class FocusGame extends Game {
       }
     }else{this.combo=0;this.emptyMisses++;}
     this.judge(label,now);
+    if(!beat)return null; // Timing MISS is not an academic answer or a recorded mistake.
     const note={color:colored?lane:null,lane,target:beat?.target??now};
     if(colored){
       const oldScore=this.quizScore,wrong=this.stageWrongCount,oldCorrect=this.correctCount;

@@ -25,3 +25,10 @@ test('replay reuses decoded buffers and stops all previously scheduled music bef
 test('music download failure prevents scheduling an incomplete playlist',async()=>{
  const s=setup();await assert.rejects(s.player.prepare(s.playlist,async()=>({ok:false})),/download failed/);assert.equal(s.starts.length,0);assert.equal(s.player.running,false);
 });
+
+test('live append schedules the next song without restarting the clock and releases ended nodes',async()=>{
+ const s=setup();await s.player.prepare(s.playlist,s.fetchAudio);s.player.start({tracks:s.playlist.tracks.slice(0,1)},Infinity);
+ s.context.currentTime=80;const clock=s.player.time;s.player.append(s.playlist.tracks.slice(1,2));
+ assert.equal(s.player.time,clock);assert.equal(s.starts.length,2);assert.equal(s.starts[1][0],s.starts[0][0]+s.starts[0][2]);
+ const ended=s.player.sources[0];ended.source.onended();assert.equal(s.player.sources.length,1);s.player.stop();assert.equal(s.player.sources.length,0);
+});

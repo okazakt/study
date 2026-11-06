@@ -10,16 +10,17 @@ test('focus is a saved fourth option and no notes or white interludes are create
  g.tap(g.question.correct,1);assert.equal(g.correctCount,1);assert.equal(g.phase,'feedback');assert.equal(g.nextQuestionAt,2);
  g.update(1.5);assert.equal(g.phase,'feedback');g.update(2);assert.equal(g.phase,'answer');assert.equal(g.questionIndex,1);assert.equal(g.notes.length,0);
 });
-test('waiting and answer share each beat; duplicate and offbeat presses miss, wrong answers break both combos',()=>{
- const g=make();g.update(0);g.tap(-1,1);assert.equal(g.combo,1);assert.equal(g.lastJudgment,'PERFECT');
- g.tap(-1,1);assert.equal(g.lastJudgment,'MISS');assert.equal(g.combo,0);
- const wrong=(g.question.correct+1)%4;g.tap(wrong,1.5);assert.equal(g.wrongCount,1);assert.equal(g.combo,0);assert.equal(g.phase,'answer');
- g.tap(g.question.correct,1.76);assert.equal(g.correctCount,1);assert.equal(g.lastJudgment,'MISS');assert.equal(g.firstCount,0);assert.equal(g.quizScore,40);
+test('offbeat answers and removed waiting taps do not submit academic answers',()=>{
+ const g=make();g.update(0);assert.equal(g.tap(-1,1),null);assert.equal(g.combo,0);
+ const wrong=(g.question.correct+1)%4;g.tap(wrong,1.5);assert.equal(g.wrongCount,1);assert.equal(g.combo,0);
+ assert.equal(g.tap(g.question.correct,1.76),null);assert.equal(g.correctCount,0);assert.equal(g.lastJudgment,'MISS');assert.equal(g.wrongCount,1);assert.equal(g.phase,'answer');
+ g.tap(g.question.correct,2);assert.equal(g.correctCount,1);assert.equal(g.firstCount,0);assert.equal(g.quizScore,40);
 });
-test('skipped beats count once even while reading or giving feedback; good and great preserve combos',()=>{
- const g=make('slow');g.tap(-1,1.1);assert.equal(g.lastJudgment,'GOOD');assert.equal(g.combo,1);assert.equal(g.phase,'read');
- assert.equal(g.tap(0,1.2),null);g.update(2.2);assert.equal(g.missedNotes,2);assert.equal(g.combo,0);g.update(2.3);assert.equal(g.missedNotes,2);
- g.tap(-1,2.5);assert.equal(g.lastJudgment,'PERFECT');assert.equal(g.combo,1);
+test('reading, thinking and feedback never incur passive misses',()=>{
+ const g=make('slow');assert.equal(g.tap(0,1),null);g.update(2.2);assert.equal(g.missedNotes,0);assert.equal(g.judgments.MISS,0);
+ const instant=make();instant.update(0);instant.update(5);assert.equal(instant.missedNotes,0);
+ instant.tap(instant.question.correct,5.1);assert.equal(instant.lastJudgment,'GOOD');assert.equal(instant.combo,1);
+ instant.update(6);assert.equal(instant.missedNotes,0);assert.equal(instant.combo,1);
 });
 test('animated speeds preserve ordered character reveals and instant has no wait',()=>{
  const q=makeQuestionQueue([item],()=>.5)[0];const plans=['slow','normal','fast','instant'].map(s=>focusReveal(q,s));
@@ -35,7 +36,7 @@ test('five minute focus progression uses no notes, advances multiple blanks, and
  const longEvents=Array.from({length:600},(_,i)=>({time:i*.5+.5,bar:Math.floor(i/4),beatInBar:i%4+1,beatPosition:0}));
  const g=new FocusGame([item],longEvents,0,()=>.5,300,q=>q.mode==='to_japanese',null,297,null,{speed:'instant'});
  for(const e of g.beats){g.update(e.target);g.tap(g.phase==='answer'?g.question.correct:-1,e.target);assert.equal(g.notes.length,0);}
- assert.ok(g.correctCount>100);assert.equal(g.wrongCount,0);assert.ok(g.scoreBreakdown.netWhite>0);assert.equal(g.totalScore,g.rhythmScore+g.quizScore);
+ assert.ok(g.correctCount>100);assert.equal(g.wrongCount,0);assert.equal(g.scoreBreakdown.netWhite,0);assert.ok(g.scoreBreakdown.netColor>0);assert.equal(g.totalScore,g.rhythmScore+g.quizScore);
  const retry=make();retry.update(0);for(let i=0;i<3;i++)retry.tap((retry.question.correct+1)%4,1+i*.5);
  const colorBefore=retry.focusColor;retry.tap(retry.question.correct,2.5);assert.equal(retry.quizScore,0);assert.equal(retry.focusColor,colorBefore);
 });
@@ -63,7 +64,7 @@ test('half cadence has no misses on omitted beats, pulses only assigned beats an
  const g=new FocusGame([item],sparse,0,()=>.5,60,q=>q.mode==='to_japanese',null,60,null,{speed:'instant'});
  g.update(0);assert.equal(g.beats.length,g.musicBeats.length/2);g.tap(-1,1);g.update(1.7);assert.equal(g.missedNotes,0);assert.equal(g.pulse(1.5),0);
  g.tap(g.question.correct,2);assert.equal(g.nextQuestionAt,3);g.update(3);assert.equal(g.questionIndex,1);
- g.update(4.2);assert.equal(g.missedNotes,2);
+ g.update(4.2);assert.equal(g.missedNotes,0);
 });
 test('both registered songs use half cadence through the real playlist while ordinary beat timestamps remain intact',async()=>{
  const {readFileSync}=await import('node:fs'),{makePlaylist}=await import('../game.js');const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));

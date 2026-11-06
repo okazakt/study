@@ -15,7 +15,11 @@ export class MusicPlayer {
   }
   start(playlist,endTime){
     this.stop();this.stoppedTime=0;this.startedAt=this.context.currentTime+.05;
-    for(const track of playlist.tracks){
+    this.append(playlist.tracks,endTime);
+  }
+  append(tracks,endTime=Infinity){
+    if(this.startedAt===null)throw new Error('Music is not running');
+    for(const track of tracks){
       if(track.start>=endTime)break;
       const buffer=this.buffers.get(track.files.audio);
       if(!buffer)throw new Error('Music not prepared');
@@ -27,7 +31,9 @@ export class MusicPlayer {
       const gain=this.context.createGain();source.disconnect();source.connect(gain);gain.connect(this.output);
       gain.gain.setValueAtTime(0,when);gain.gain.linearRampToValueAtTime(1,when+.005);
       gain.gain.setValueAtTime(1,when+Math.max(.005,duration-.005));gain.gain.linearRampToValueAtTime(0,when+duration);
-      source.start(when,track.mediaStart,duration);this.sources.push({source,gain});
+      const entry={source,gain};this.sources.push(entry);
+      source.onended=()=>{source.disconnect();gain.disconnect();const i=this.sources.indexOf(entry);if(i>=0)this.sources.splice(i,1);};
+      source.start(when,track.mediaStart,duration);
     }
   }
   get running(){return this.startedAt!==null;}

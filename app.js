@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.64.2';
-import { ScreenWakeLock } from './wake-lock.js?v=0.64.2';
-import { MusicPlayer } from './music-player.js?v=0.64.2';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.64.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.64.2';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.64.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.64.2';
-const VERSION = '0.64.2';
+import {FocusGame} from './focus-game.js?v=0.65.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.65.0';
+import { MusicPlayer } from './music-player.js?v=0.65.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.65.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.65.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.65.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.65.0';
+const VERSION = '0.65.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -18,7 +18,7 @@ try {
 } catch {}
 let gameplayOptions=normalizeGameplayOptions(null);
 try { gameplayOptions=normalizeGameplayOptions(JSON.parse(localStorage.getItem('study-beat-gameplay-v1')||'null')); } catch {}
-for(const [id,key,values] of [['question-speed','speed',SPEEDS],['rhythm-difficulty','rhythm',RHYTHMS]]){
+for(const [id,key,values] of [['question-speed','speed',SPEEDS],['rhythm-difficulty','rhythm',RHYTHMS],['session-duration','duration',DURATIONS],['question-balance','balance',BALANCES]]){
   for(const [value,entry] of Object.entries(values)){
     const button=document.createElement('button');button.type='button';button.dataset.value=value;
     button.textContent=typeof entry==='string'?entry:entry.label;
@@ -442,12 +442,21 @@ $('music-list').addEventListener('change',event=>{
 });
 $('school-setting').addEventListener('change', () => setSchool($('school-setting').value));
 const musicIsPlaying=()=>screen==='play'&&musicPlayer ? musicPlayer.running && musicContext.state==='running' : !audio.paused;
+function recordPlayedTrack(song){if(!playedTracks.some(t=>t.id===song.id))playedTracks.push(song);}
+function extendEndless(now){
+  if(!session?.endless)return;
+  while(playlist.duration-now<120){
+    const song=appendRandomTrack(playlist,musicEntries,selectedMusic,Math.random,{trim:!!(window.AudioContext||window.webkitAudioContext)});
+    game.appendEvents(song.events);
+    if(musicPlayer?.running)musicPlayer.append([song]);
+  }
+}
 const playbackTime = () => screen==='play'&&musicPlayer ? musicPlayer.time : track.start + audio.currentTime-(track.mediaStart||0);
 function selectTrack(index, tuning=false) {
   trackIndex = index; track = (tuning ? tuningTracks : playlist.tracks)[index];
   audio.src = `./music-data/${track.files.audio}`;
   $('track-title').textContent = track.title;
-  $('track-credit').textContent = `${index + 1} / ${playlist.tracks.length} · ${track.creator}`;
+  $('track-credit').textContent = !tuning&&gameplayOptions.duration==='endless'?`${index+1}曲目 · ${track.creator}`:`${index + 1} / ${playlist.tracks.length} · ${track.creator}`;
 }
 async function load() {
   try {
@@ -486,14 +495,15 @@ async function start() {
   const practiceType = selection()?.practiceType || 'all';
   const accept = question => matchesPracticeQuestion(question,practiceType);
   history = []; sessionResults = new Map(); sessionId = crypto.randomUUID(); hitEffects = []; ghostPressTimes.fill(-Infinity);
-  session=sessionPlan(playlist.duration);setMusicGain(1);
+  session=gameplayOptions.duration==='endless'?{endTime:Infinity,fadeStart:Infinity,endless:true}:sessionPlan(playlist.duration);
+  playlist.tracks.forEach((t,i)=>t.playNumber=i+1);setMusicGain(1);
   const seed=crypto.getRandomValues(new Uint32Array(1))[0],epoch=Date.now();
   const createGame=(getHistory,getResults)=>{
-    const random=seededRandom(seed),picker=createAdaptivePicker(makeQuestionQueue(filtered,random,accept),getHistory,random,getResults);
+    const random=seededRandom(seed),picker=createAdaptivePicker(makeQuestionQueue(filtered,random,accept),getHistory,random,getResults,gameplayOptions.balance);
     return new (gameplayOptions.rhythm==='focus'?FocusGame:Game)(filtered,playlist.events,offsetMs/1000,random,session.endTime,accept,picker,session.fadeStart,RHYTHMS[gameplayOptions.rhythm].tapGoal,gameplayOptions);
   };
   let referenceHistory=structuredClone(learningHistory);const referenceResults=new Map();
-  const reference=gameplayOptions.rhythm==='focus'?null:perfectReference(createGame(()=>referenceHistory,()=>referenceResults.values()),(q,index,time)=>{
+  const reference=gameplayOptions.rhythm==='focus'||session.endless?null:perfectReference(createGame(()=>referenceHistory,()=>referenceResults.values()),(q,index,time)=>{
     referenceHistory=recordAnswer(referenceHistory,q,{correct:true,chosen:q.answer,time:epoch+time*1000,attempt:'reference:'+index});
     referenceResults.set(index,{question:q,correct:true,wrong:0});
   });
@@ -507,14 +517,15 @@ async function start() {
     await prepareMusicAudio();
     if(musicContext){
       musicPlayer ||= new MusicPlayer(musicContext,musicGain);
-      await musicPlayer.prepare(playlist);
+      const ids=normalizeMusicSelection(selectedMusic,musicEntries.map(e=>e.id));
+      await musicPlayer.prepare(session.endless?makePlaylist(musicEntries.filter(e=>!ids||ids.includes(e.id))):playlist);
       if(screen!=='play')return;
       if(document.hidden){interruptPlay();return;}
       musicPlayer.start(playlist,session.endTime);
     }else await audio.play();
     if (screen !== 'play') { musicPlayer?.stop();audio.pause(); return; }
     if (document.hidden) { interruptPlay(); return; }
-    playedTracks.push(track);prepareTapAudio()?.catch(() => {});verifyTapAudioClock();loop();
+    recordPlayedTrack(track);prepareTapAudio()?.catch(() => {});verifyTapAudioClock();loop();
   }
   catch { if (screen === 'play') { musicPlayer?.stop();audio.pause();suspendMusicAudio();show('home'); $('load-status').textContent = '音声を再生できませんでした。接続を確認して、もう一度開始してください。'; } }
   finally { busy = false; refreshStart(); }
@@ -756,16 +767,16 @@ function positionQuestion(elapsed) {
 }
 function render() {
   $('total-score').textContent = game.totalScore.toLocaleString();
-  $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${formatTime(session.endTime)}`;
+  $('time').textContent = `${formatTime(Math.max(0,Math.min(playbackTime(),session.endTime)))} / ${session.endless?'エンドレス':formatTime(session.endTime)}`;
   renderQuestion();
   const q = game.question, elapsed = game.time - game.phaseStart;
   $('play').classList.toggle('focus-mode',!!game.focus);
-  $('focus-wait').hidden=!game.focus;
-  if(game.focus)$('play').style.setProperty('--beat-pulse',reducedMotion.matches?0:game.pulse(game.time));
+  $('focus-note').hidden=!game.focus;
+  if(game.focus)$('play').style.setProperty('--beat-pulse',reducedMotion.matches||game.phase!=='answer'?0:game.pulse(game.time));
   $('play').dataset.phase = game.phase;
   $('play').dataset.continuation = game.reveal.continuation;
   $('field').setAttribute('aria-label', game.focus ? '回答結果とコンボ' : game.phase === 'answer' ? '4色のノーツ表示' : '白ノーツの表示');
-  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.disabled=!!game.focus&&game.phase!=='answer';button.setAttribute('aria-label',game.focus?`${COLORS[Number(button.dataset.lane)].name}の回答`:`左から${Number(button.dataset.lane)+1}番目のレーン`); button.style.setProperty('--lane-color', game.focus || game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
+  document.querySelectorAll('[data-lane]').forEach(button => { button.hidden = Number(button.dataset.lane) >= game.laneCount; button.disabled=!!game.focus&&game.phase!=='answer';button.setAttribute('aria-label',game.focus?`${COLORS[Number(button.dataset.lane)].name}の回答・拍に合わせてタップ`:`左から${Number(button.dataset.lane)+1}番目のレーン`); button.style.setProperty('--lane-color', game.focus || game.phase === 'answer' ? COLORS[Number(button.dataset.lane)].value : '#dce7f5'); });
   document.querySelector('.play-hint').textContent = game.phase === 'read' || game.phase === 'feedback' ? '' : game.phase === 'answer' ? `4色が横一列に到着。答えの色だけを${game.requiredTaps}回タップ。` : '半透明のノーツに重なったら、そのレーンをタップ。';
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? (game.focus?'拍に合わせてタップ':'白ノーツのレーンをタップ') : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
@@ -852,12 +863,14 @@ function draw() {
 function loop() {
   if (!game || screen !== 'play') return;
   const now=playbackTime();
+  extendEndless(now);
   if(musicPlayer){
     while(trackIndex+1<playlist.tracks.length && now>=playlist.tracks[trackIndex+1].start){
-      track=playlist.tracks[++trackIndex];playedTracks.push(track);
-      $('track-title').textContent=track.title;$('track-credit').textContent=`${trackIndex+1} / ${playlist.tracks.length} · ${track.creator}`;
+      track=playlist.tracks[++trackIndex];recordPlayedTrack(track);
+      $('track-title').textContent=track.title;$('track-credit').textContent=session.endless?`${track.playNumber}曲目 · ${track.creator}`:`${trackIndex+1} / ${playlist.tracks.length} · ${track.creator}`;
     }
   }
+  if(session.endless&&trackIndex>0){playlist.tracks.splice(0,trackIndex);trackIndex=0;playlist.events=playlist.events.filter(e=>e.time>=now-3);}
   game.update(Math.min(now,session.endTime));setMusicGain(sessionGain(now,session));render();draw();
   if(now>=session.endTime){finish(true);return;}
   if (musicIsPlaying()) frame = requestAnimationFrame(loop);
@@ -886,7 +899,6 @@ function tap(lane) {
   }
   render(); draw();
 }
-$('focus-wait').addEventListener('pointerdown',event=>{event.preventDefault();tap(-1);});
 document.querySelectorAll('[data-lane]').forEach(button => button.addEventListener('pointerdown', event => { event.preventDefault(); tap(Number(button.dataset.lane)); }));
 // Prevent selection handles, long-press callouts and drag gestures while playing.
 for (const type of ['selectstart', 'contextmenu', 'dragstart']) $('play').addEventListener(type, event => event.preventDefault());
@@ -913,7 +925,7 @@ document.addEventListener('keydown', event => {
   if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(event.code)) event.preventDefault();
   const lane = ['KeyD','KeyF','KeyG','KeyH'].indexOf(event.code);
   if (lane >= 0) { event.preventDefault(); tap(lane); }
-  if (event.code === 'Space') {event.preventDefault();if(game.focus)tap(-1);}
+  if (event.code === 'Space') {event.preventDefault();}
 });
 function interruptPlay(reason='画面の切替によりプレイを終了しました。ここまでの回答は記録済みです。') {
   if (screen === 'tuning') { pauseTuning(); return; }
@@ -935,9 +947,12 @@ function finish(completed, reason=null) {
   const awards = game.achievements(completed, !!unfinished);
   game.finish();
   clearTimeout(resultTimer); $('result-details').hidden = true; $('result-details').classList.remove('revealed');
-  const records = updateBests(personalBests, {totalScore:game.totalScore, rhythmCombo:game.maxCombo, quizCombo:game.maxQuizCombo});
-  personalBests = records.best;
-  try { const legacy=normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY)||'null'));localStorage.setItem(BEST_KEY,JSON.stringify({...personalBests,totalScore:legacy.totalScore}));localStorage.setItem(SCORE_BEST_KEY,String(personalBests.totalScore)); }
+  const isolated=session.endless||game.focus,profile=`study-beat-bests-${session.endless?'endless':'five'}-${game.focus?'focus-v2':game.options.rhythm}`;
+  let previousBest=personalBests;
+  if(isolated){try{previousBest=normalizeBests(JSON.parse(localStorage.getItem(profile)||'null'));}catch{previousBest=normalizeBests(null);}}
+  const records = updateBests(previousBest, {totalScore:game.totalScore, rhythmCombo:game.maxCombo, quizCombo:game.maxQuizCombo});
+  if(!isolated)personalBests = records.best;
+  try { if(isolated)localStorage.setItem(profile,JSON.stringify(records.best));else { const legacy=normalizeBests(JSON.parse(localStorage.getItem(BEST_KEY)||'null'));localStorage.setItem(BEST_KEY,JSON.stringify({...personalBests,totalScore:legacy.totalScore}));localStorage.setItem(SCORE_BEST_KEY,String(personalBests.totalScore)); }}
   catch { $('history-storage-note').hidden = false; }
   show('result');
   renderBest($('result-score-best'), 'totalScore', records);
@@ -967,6 +982,7 @@ function finish(completed, reason=null) {
   $('result-music').hidden=!seenMusic.size;
   $('result-rhythm').textContent=RHYTHMS[game.options.rhythm].label;
   $('result-speed').textContent=SPEEDS[game.options.speed];
+  $('result-duration').textContent=DURATIONS[game.options.duration];$('result-balance').textContent=BALANCES[game.options.balance];
   $('result-stats').replaceChildren();
   $('result-total-score').textContent = game.totalScore.toLocaleString();
   const score=game.scoreBreakdown;
@@ -981,10 +997,11 @@ function finish(completed, reason=null) {
     ['学習', [
       ['最大一発正解コンボ',game.maxQuizCombo,'quizCombo'],
       ['一発回答数',`${game.firstCount}回`],['誤答が発生した回答数',`${wrongAnswers}回`],
-      ['正答得点',score.baseAnswer.toLocaleString()],['正解コンボボーナス',score.answerBonus.toLocaleString()],['カラー得点',score.netColor.toLocaleString()],
+      ['正答得点',score.baseAnswer.toLocaleString()],['正解コンボボーナス',score.answerBonus.toLocaleString()],[game.focus?'回答タップ得点':'カラー得点',score.netColor.toLocaleString()],
       ['お手つき回数',`${game.wrongCount}回`]
     ]]
   ];
+  if(game.focus)columns[0][1]=columns[0][1].filter(([label])=>!['待機リズム得点','見逃しMISS'].includes(label));
   for (const [title, entries] of columns) {
     const column = document.createElement('section'), heading = document.createElement('h2');
     column.className = 'result-column'; column.setAttribute('aria-label', `${title}の成績`);
@@ -1060,6 +1077,7 @@ for(const id of ['back','back-bottom'])$(id).addEventListener('click', () => sho
 $('quit').addEventListener('click', () => finish(false));
 audio.addEventListener('ended', async () => {
   if (screen !== 'play' || busy || musicPlayer) return;
+  extendEndless(playbackTime());
   if (playbackTime()>=session.endTime || trackIndex + 1 >= playlist.tracks.length) { finish(true); return; }
   busy = true; cancelAnimationFrame(frame);
   selectTrack(trackIndex + 1);
@@ -1069,7 +1087,7 @@ audio.addEventListener('ended', async () => {
     prepareTapAudio()?.catch(() => {}); verifyTapAudioClock();
     if (screen !== 'play') { audio.pause(); return; }
     if (document.hidden) { interruptPlay(); return; }
-    playedTracks.push(track);game.update(playbackTime());render();draw();loop();
+    recordPlayedTrack(track);game.update(playbackTime());render();draw();loop();
   } catch {
     if (screen === 'play') interruptPlay('次の曲を再生できなかったため終了しました。ここまでの回答は記録済みです。');
   } finally { busy = false; }

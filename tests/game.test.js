@@ -417,7 +417,7 @@ test('all idioms ask whole words with the other words visible; take care of cove
       assert.equal(q.prompt,words.join(' '));assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);
       assert.equal(q.answer,item.english.split(' ')[q.blankIndex-1]);assert.equal(q.choices[q.correct],q.answer);
       assert.equal(q.segments.filter(s=>s.state==='active').length,1);assert.equal(revealPlan(q).continuation,false);
-      assert.ok(q.targetLabel.includes('単語'));assert.ok(!q.targetLabel.includes('文字'));
+      assert.ok(q.targetLabel.includes('語'));assert.ok(!q.targetLabel.includes('文字'));
     }
   }
   assert.equal(count,21);

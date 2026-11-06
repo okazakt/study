@@ -1,5 +1,5 @@
-import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.64.2';
-import { materializeMathItem } from './math-variants.js?v=0.64.2';
+import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.65.0';
+import { materializeMathItem } from './math-variants.js?v=0.65.0';
 // Local learning history. Practice and music-play records stay distinct.
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
@@ -142,7 +142,7 @@ const compareRank=(a,b)=>a[0]-b[0] || a[1]-b[1] || a[2]-b[2];
 function unitRank(unit,category,index){
   return unit.filter(q=>priorityCategory(q,index)===category).map(q=>selectionRank(q,index)).sort(compareRank)[0];
 }
-export function createAdaptivePicker(questions, getHistory, random=Math.random, getSessionResults=null) {
+export function createAdaptivePicker(questions, getHistory, random=Math.random, getSessionResults=null, balance='normal') {
   const units=[];
   for(const q of questions){
     const previous=units.at(-1);
@@ -154,7 +154,16 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
     if(!units.length)throw new Error('No question candidates');
     // Session filtering precedes the topic cooldown: a fresh reverse question
     // must win over repeating a different topic merely to preserve spacing.
+    const index=buildPriorityIndex(getHistory());
     let pool=units;
+    if(balance==='unanswered'){
+      const unseen=pool.filter(unit=>unit.some(q=>!answered(index.state.questions[questionKey(q)])));
+      if(unseen.length)pool=unseen;
+    }else if(balance==='review'){
+      const ownWrong=pool.filter(unit=>unit.some(q=>priorityCategory(q,index)===4));
+      const inverseWrong=pool.filter(unit=>unit.some(q=>priorityCategory(q,index)===2));
+      if(ownWrong.length)pool=ownWrong;else if(inverseWrong.length)pool=inverseWrong;
+    }
     if(getSessionResults){
       const directions=new Map();
       for(const {question:q,correct,wrong} of getSessionResults()){
@@ -163,7 +172,7 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
         status.correct ||= !!correct; status.wrong ||= wrong>0;
         directions.set(key,status);
       }
-      const fresh=units.filter(unit=>!unit.some(q=>{
+      const fresh=pool.filter(unit=>!unit.some(q=>{
         if(seen.has(questionKey(q)))return true;
         const reverse=inverseModes[q.mode] && directions.get(JSON.stringify([q.sourceId || q.id,inverseModes[q.mode]]));
         return reverse?.correct && !reverse.wrong;
@@ -177,7 +186,6 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
       if(!cooldown)break;
       cooldown--;
     }
-    const index=buildPriorityIndex(getHistory());
     const groups=Array.from({length:6},()=>[]);
     for(const unit of candidates)groups[Math.min(...unit.map(q=>priorityCategory(q,index)))-1].push(unit);
     const available=groups.map((group,i)=>group.length?PRIORITY_WEIGHTS[i]:0),total=available.reduce((a,b)=>a+b,0);

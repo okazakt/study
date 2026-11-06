@@ -8,8 +8,8 @@ const math=read('quiz-data/junior_math.json');
 const beats=Array.from({length:601},(_,i)=>({time:i*.5,type:'beat',bar:Math.floor(i/4),beatInBar:i%4+1}));
 function create(options={}){return new Game(math,beats,0,seededRandom(91),300,()=>true,null,297,RHYTHMS[options.rhythm||'easy'].tapGoal,options);}
 test('gameplay defaults preserve slow and easy and reject unknown saved values',()=>{
- assert.deepEqual(normalizeGameplayOptions(null),{speed:'slow',rhythm:'easy'});
- assert.deepEqual(normalizeGameplayOptions({speed:'invalid',rhythm:'hard'}),{speed:'slow',rhythm:'hard'});
+ assert.deepEqual(normalizeGameplayOptions(null),{speed:'slow',rhythm:'easy',duration:'five',balance:'normal'});
+ assert.deepEqual(normalizeGameplayOptions({speed:'invalid',rhythm:'hard'}),{speed:'slow',rhythm:'hard',duration:'five',balance:'normal'});
  assert.deepEqual(Object.values(RHYTHMS).map(r=>r.tapGoal),[120,180,240,null]);
 });
 test('approved reading speeds use total visible text, exact midpoint and an included lift',()=>{
