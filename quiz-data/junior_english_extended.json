@@ -2906,12 +2906,12 @@
     "english": "many",
     "japanese": "数が多くの",
     "english_dummies": [
-      "much",
+      "several",
       "few",
       "little"
     ],
     "japanese_dummies": [
-      "量が多くの",
+      "いくつかの",
       "数が少なくほとんどない",
       "量が少なくほとんどない"
     ],
@@ -2941,12 +2941,12 @@
     "english": "much",
     "japanese": "量が多くの",
     "english_dummies": [
-      "many",
+      "enough",
       "few",
       "little"
     ],
     "japanese_dummies": [
-      "数が多くの",
+      "十分な",
       "数が少なくほとんどない",
       "量が少なくほとんどない"
     ],
@@ -5731,12 +5731,12 @@
     "english": "city",
     "japanese": "都市",
     "english_dummies": [
-      "town",
+      "harbor",
       "village",
       "capital"
     ],
     "japanese_dummies": [
-      "町",
+      "港",
       "村",
       "首都"
     ],
@@ -5766,12 +5766,12 @@
     "english": "town",
     "japanese": "町",
     "english_dummies": [
-      "city",
+      "island",
       "village",
       "capital"
     ],
     "japanese_dummies": [
-      "都市",
+      "島",
       "村",
       "首都"
     ],
@@ -12458,12 +12458,12 @@
     "english": "voyage",
     "japanese": "船旅",
     "english_dummies": [
-      "tour",
+      "vessel",
       "flight",
       "excursion"
     ],
     "japanese_dummies": [
-      "見学旅行",
+      "大型船",
       "飛行機の便",
       "遠足"
     ],

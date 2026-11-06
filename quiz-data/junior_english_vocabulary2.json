@@ -77,12 +77,12 @@
     "english": "stop",
     "japanese": "止まる",
     "english_dummies": [
-      "end",
+      "turn",
       "continue",
       "wait"
     ],
     "japanese_dummies": [
-      "終わる",
+      "曲がる",
       "続ける",
       "待つ"
     ],
@@ -111,12 +111,12 @@
     "english": "end",
     "japanese": "終わる",
     "english_dummies": [
-      "stop",
+      "start",
       "continue",
       "wait"
     ],
     "japanese_dummies": [
-      "止まる",
+      "始まる",
       "続ける",
       "待つ"
     ],
@@ -14565,12 +14565,12 @@
     "english": "trip",
     "japanese": "旅行",
     "english_dummies": [
-      "journey",
+      "ticket",
       "destination",
       "route"
     ],
     "japanese_dummies": [
-      "長い旅",
+      "切符",
       "目的地",
       "道筋"
     ],
@@ -23834,12 +23834,12 @@
     "japanese": "呼ぶ・電話する",
     "english_dummies": [
       "ask",
-      "tell",
+      "meet",
       "show"
     ],
     "japanese_dummies": [
       "尋ねる",
-      "話して伝える",
+      "会う",
       "見せる"
     ],
     "spelling_template": "{{1}}",

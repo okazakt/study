@@ -13,3 +13,5 @@ v0.64.0から `quiz-data/junior_english_new_horizon.json` に独自の語彙・�
 `node scripts/check-content-budget.mjs --file quiz-data/junior_english_new_horizon.json --batch <追加バッチ>` で追加分だけを確認し、`node scripts/new-horizon-coverage.mjs`で出題先の欠落・重複ID・素材ハッシュを確認する。以後の通常追加で毎回テストスイートや5分シミュレーションを実施しない。
 
 歴史的な `new-horizon-main-review.json` と `nh-review/` はv0.63.0の精査時点の分類を保持する。追加済みの現況は最新の行別対応表と `new-horizon-coverage.json` を使う。原本の変更時はハッシュ・版・行の再照合が必要。
+
+`directional-choice-overrides.json`は方向別の選択肢修正。英和・和英の候補は独立しており、片方向だけを明示的に修正できる。生成時は候補群からの組立て後に適用し、再生成で指示書の修正が失われないようにする。

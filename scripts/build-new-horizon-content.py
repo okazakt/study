@@ -168,6 +168,13 @@ for q in words:
  row=q['new_horizon_rows'][0]
  if q['id'].endswith('_primary') and row in exceptions:
   pool=pairs(exceptions[row]);q['english_dummies']=[e for e,j in pool];q['japanese_dummies']=[j for e,j in pool]
+# Direction-specific editorial corrections survive regeneration; the two dummy arrays are independent.
+for id,fields in read(A/'directional-choice-overrides.json').items():
+ assert set(fields)<= {'english_dummies','japanese_dummies'},id
+ target=next(q for q in words if q['id']==id)
+ for field,values in fields.items():
+  assert len(values)==3 and len(set(values))==3,(id,field)
+  target[field]=values
 # An explicit mapping chooses the source-noted sense, not any same-spelling material.
 for row,r in rows.items():
  if r['decision'] in ['existing_basic_entry','existing_named_entry']:

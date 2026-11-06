@@ -1,0 +1,296 @@
+{
+  "checked": "2026-11-06",
+  "scope": "ユーザー指示書の10素材。city/townは英和側の候補も港/島へ対応。全語彙素材の語義検証済みという意味ではない。",
+  "changes": [
+    {
+      "id": "jr_en_nh_1351_sense1",
+      "file": "quiz-data/junior_english_new_horizon.json",
+      "english": "sign",
+      "japanese": "合図",
+      "before": {
+        "japanese_dummies": [
+          "模様",
+          "署名",
+          "質問"
+        ]
+      },
+      "after": {
+        "japanese_dummies": [
+          "模様",
+          "暗号",
+          "質問"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_v2_word_stop",
+      "file": "quiz-data/junior_english_vocabulary2.json",
+      "english": "stop",
+      "japanese": "止まる",
+      "before": {
+        "english_dummies": [
+          "end",
+          "continue",
+          "wait"
+        ],
+        "japanese_dummies": [
+          "終わる",
+          "続ける",
+          "待つ"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "turn",
+          "continue",
+          "wait"
+        ],
+        "japanese_dummies": [
+          "曲がる",
+          "続ける",
+          "待つ"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_v2_word_end",
+      "file": "quiz-data/junior_english_vocabulary2.json",
+      "english": "end",
+      "japanese": "終わる",
+      "before": {
+        "english_dummies": [
+          "stop",
+          "continue",
+          "wait"
+        ],
+        "japanese_dummies": [
+          "止まる",
+          "続ける",
+          "待つ"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "start",
+          "continue",
+          "wait"
+        ],
+        "japanese_dummies": [
+          "始まる",
+          "続ける",
+          "待つ"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_v2_word_trip",
+      "file": "quiz-data/junior_english_vocabulary2.json",
+      "english": "trip",
+      "japanese": "旅行",
+      "before": {
+        "english_dummies": [
+          "journey",
+          "destination",
+          "route"
+        ],
+        "japanese_dummies": [
+          "長い旅",
+          "目的地",
+          "道筋"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "ticket",
+          "destination",
+          "route"
+        ],
+        "japanese_dummies": [
+          "切符",
+          "目的地",
+          "道筋"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_audit_word_call",
+      "file": "quiz-data/junior_english_vocabulary2.json",
+      "english": "call",
+      "japanese": "呼ぶ・電話する",
+      "before": {
+        "english_dummies": [
+          "ask",
+          "tell",
+          "show"
+        ],
+        "japanese_dummies": [
+          "尋ねる",
+          "話して伝える",
+          "見せる"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "ask",
+          "meet",
+          "show"
+        ],
+        "japanese_dummies": [
+          "尋ねる",
+          "会う",
+          "見せる"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_ext_word_many",
+      "file": "quiz-data/junior_english_extended.json",
+      "english": "many",
+      "japanese": "数が多くの",
+      "before": {
+        "english_dummies": [
+          "much",
+          "few",
+          "little"
+        ],
+        "japanese_dummies": [
+          "量が多くの",
+          "数が少なくほとんどない",
+          "量が少なくほとんどない"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "several",
+          "few",
+          "little"
+        ],
+        "japanese_dummies": [
+          "いくつかの",
+          "数が少なくほとんどない",
+          "量が少なくほとんどない"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_ext_word_much",
+      "file": "quiz-data/junior_english_extended.json",
+      "english": "much",
+      "japanese": "量が多くの",
+      "before": {
+        "english_dummies": [
+          "many",
+          "few",
+          "little"
+        ],
+        "japanese_dummies": [
+          "数が多くの",
+          "数が少なくほとんどない",
+          "量が少なくほとんどない"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "enough",
+          "few",
+          "little"
+        ],
+        "japanese_dummies": [
+          "十分な",
+          "数が少なくほとんどない",
+          "量が少なくほとんどない"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_ext_word_city",
+      "file": "quiz-data/junior_english_extended.json",
+      "english": "city",
+      "japanese": "都市",
+      "before": {
+        "english_dummies": [
+          "town",
+          "village",
+          "capital"
+        ],
+        "japanese_dummies": [
+          "町",
+          "村",
+          "首都"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "harbor",
+          "village",
+          "capital"
+        ],
+        "japanese_dummies": [
+          "港",
+          "村",
+          "首都"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_ext_word_town",
+      "file": "quiz-data/junior_english_extended.json",
+      "english": "town",
+      "japanese": "町",
+      "before": {
+        "english_dummies": [
+          "city",
+          "village",
+          "capital"
+        ],
+        "japanese_dummies": [
+          "都市",
+          "村",
+          "首都"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "island",
+          "village",
+          "capital"
+        ],
+        "japanese_dummies": [
+          "島",
+          "村",
+          "首都"
+        ]
+      }
+    },
+    {
+      "id": "jr_en_ext_word_voyage",
+      "file": "quiz-data/junior_english_extended.json",
+      "english": "voyage",
+      "japanese": "船旅",
+      "before": {
+        "english_dummies": [
+          "tour",
+          "flight",
+          "excursion"
+        ],
+        "japanese_dummies": [
+          "見学旅行",
+          "飛行機の便",
+          "遠足"
+        ]
+      },
+      "after": {
+        "english_dummies": [
+          "vessel",
+          "flight",
+          "excursion"
+        ],
+        "japanese_dummies": [
+          "大型船",
+          "飛行機の便",
+          "遠足"
+        ]
+      }
+    }
+  ]
+}
