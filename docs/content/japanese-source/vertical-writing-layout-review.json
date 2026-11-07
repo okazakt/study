@@ -1,0 +1,2593 @@
+{
+  "date": "2026-11-07",
+  "profile": "tb-parts-v1",
+  "cases": 64,
+  "characters": [
+    "芋",
+    "雷",
+    "恋",
+    "箋",
+    "響",
+    "籠",
+    "煮",
+    "腎"
+  ],
+  "widths": [
+    320,
+    390
+  ],
+  "height": 844,
+  "modes": [
+    "normal",
+    "focus"
+  ],
+  "stages": [
+    1,
+    2
+  ],
+  "maxPanelHeight": 405,
+  "overflow": false,
+  "scope": "上下2部品、上高さ40/50%、各部品幅100%。既存の小型パズル。範囲内の追加は再表示確認不要。",
+  "results": [
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_828b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 400,
+          "scroll": 400,
+          "top": 180,
+          "bottom": 582.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_828b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 352,
+          "scroll": 352,
+          "top": 180,
+          "bottom": 534.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_828b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 400,
+          "scroll": 400,
+          "top": 180,
+          "bottom": 582.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_828b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 352,
+          "scroll": 352,
+          "top": 180,
+          "bottom": 534.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_97ff:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_97ff:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_97ff:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_97ff:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_716e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_716e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_716e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_716e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_96f7:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_96f7:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_96f7:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_96f7:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_604b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_604b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_604b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_604b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_814e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 405,
+          "scroll": 405,
+          "top": 180,
+          "bottom": 587.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_814e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_814e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 405,
+          "scroll": 405,
+          "top": 180,
+          "bottom": 587.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_814e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_7b8b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_7b8b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_7b8b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_7b8b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_7c60:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_7c60:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_7c60:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_7c60:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_828b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_828b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_828b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_828b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_97ff:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_97ff:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_97ff:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_97ff:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_716e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_716e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_716e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_716e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_96f7:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_96f7:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_96f7:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_96f7:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_604b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_604b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_604b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_604b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_814e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_814e:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_814e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_814e:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_7b8b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_7b8b:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_7b8b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_7b8b:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_7c60:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_7c60:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_7c60:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 355,
+          "scroll": 355,
+          "top": 180,
+          "bottom": 537.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_7c60:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 325,
+          "scroll": 325,
+          "top": 180,
+          "bottom": 507.078125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    }
+  ]
+}

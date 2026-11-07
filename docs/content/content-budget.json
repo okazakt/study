@@ -91,6 +91,37 @@
       },
       "reviewRecord": "japanese-source/writing-layout-review.json",
       "scope": "Existing glyph-based kanji puzzle only. Left/right with optional right-top/right-bottom; no arbitrary images or diagrams."
+    },
+    {
+      "id": "tb-parts-v1",
+      "subject": "国語",
+      "mode": "kanji_component",
+      "maxima": {
+        "task": 0,
+        "prompt": 34,
+        "choice": 1,
+        "targetLabel": 16,
+        "note": 16,
+        "combined": 61
+      },
+      "maxSentenceChars": 24,
+      "maxWordChars": 3,
+      "maxReadingChars": 6,
+      "maxReadingWordWidthPx": 250,
+      "parts": [
+        2
+      ],
+      "glyphRange": "BMP CJK and katakana; one glyph per choice",
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "reviewRecord": "japanese-source/vertical-writing-layout-review.json",
+      "scope": "Two BMP glyph parts stacked top/bottom, full width; same compact kanji puzzle renderer.",
+      "topHeights": [
+        40,
+        50
+      ]
     }
   ]
 }

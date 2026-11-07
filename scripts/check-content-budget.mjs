@@ -31,7 +31,13 @@ function reviewedKanjiDiagram(item,q,measured){
   const d=q.writingDisplay,word=q.writing_word??q.word;
   if(chars(d.sentence)>p.maxSentenceChars||chars(word)>p.maxWordChars||chars(d.reading)>p.maxReadingChars||(chars(d.reading)+2)*20+chars(word)*32+14>p.maxReadingWordWidthPx)return false;
   if(!q.choices.every(c=>/^[\u3400-\u9fff\u30a0-\u30ff]$/u.test(c)))return false;
-  const parts=q.diagram.parts,w=parts[0].box[2];if(!p.leftWidths.includes(w))return false;
+  const parts=q.diagram.parts;
+  if(p.id==='tb-parts-v1'){
+   const h=parts[0].box[3];if(!p.topHeights.includes(h)||parts.length!==2)return false;
+   const expected=[[0,0,100,h],[0,h,100,100-h]];
+   return parts.every((part,i)=>chars(part.answer)===1&&part.position===['上','下'][i]&&JSON.stringify(part.box)===JSON.stringify(expected[i]));
+  }
+  const w=parts[0].box[2];if(!p.leftWidths.includes(w))return false;
   const expected=parts.length===2?[[0,0,w,100],[w,0,100-w,100]]:[[0,0,w,100],[w,0,100-w,50],[w,50,100-w,50]];
   return parts.every((part,i)=>chars(part.answer)===1&&JSON.stringify(part.box)===JSON.stringify(expected[i]));
  });

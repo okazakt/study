@@ -62,8 +62,8 @@ glyph_options=json.loads((SOURCE/'writing-glyph-groups.json').read_text());group
 aliases=[set(s) for s in glyph_options['equivalentForms']]
 shape_revisions=json.loads((SOURCE/'writing-shape-revisions.json').read_text())
 writing_deferred=json.loads((SOURCE/'writing-deferred.json').read_text())
-def glyph_dummies(answer,character):
- pool=next((list(g) for g in groups if answer in g),list('目田白自未末本木由甲申寺吉古合谷各共兵具良艮鬼豆角舟石示辛章央失矢里重'))
+def glyph_dummies(answer,character,option_groups=None):
+ pool=next((list(g) for g in (groups if option_groups is None else option_groups) if answer in g),list('目田白自未末本木由甲申寺吉古合谷各共兵具良艮鬼豆角舟石示辛章央失矢里重'))
  result=[]
  for c in pool+list('目田白自未末本木由甲申寺吉古合谷各共兵具良艮鬼豆角舟石示辛章央失矢里重'):
   if c in {answer,character} or c in result or any(answer in pair and c in pair for pair in aliases+[set(s) for s in glyph_options.get('parentEquivalentForms',{}).get(character,[])]):continue
@@ -98,6 +98,20 @@ for name,n,r in writing_rows:
  item['writing_parts']=parts
  if c in shape_revisions:item['writing_revision']=shape_revisions[c]
  if c in writing_deferred:item.update(writing_parts=[],writing_status='pending-glyph-assets',writing_deferred_reason=writing_deferred[c]['reason'])
+# Up/down writing reuses the existing rectangular puzzle renderer.
+vertical_groups=json.loads((SOURCE/'vertical-glyph-groups.json').read_text())['groups']+groups
+vertical_rows=list(rows('vertical-writing.tsv'))
+for n,r in vertical_rows:
+ assert len(r)==7,(n,r)
+ c,word,reading,hint,top,bottom,_=r
+ assert c in kanji_by_char and not scope[c] and c not in hint,(n,c)
+ item=kanji_by_char[c]
+ assert not item['writing_parts'] and c not in writing_deferred,(n,c)
+ assert word.count(c)==1 and len(top)==len(bottom)==1 and max(ord(top),ord(bottom))<=0xffff,(n,c)
+ height=40 if top in '艹宀穴雨冖罒亠爫竹' else 50
+ item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch='japanese-vertical-writing-20261107',writing_profile='tb-parts-v1',writing_scope='secondary-1110',writing_parts=[
+  dict(position='上',answer=top,dummies=glyph_dummies(top,c,vertical_groups),box=[0,0,100,height]),
+  dict(position='下',answer=bottom,dummies=glyph_dummies(bottom,c,vertical_groups),box=[0,height,100,100-height])])
 (ROOT/'quiz-data/junior_japanese_extended.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')
-print('Writing targets compiled:',len(writing_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows),')')
+print('Writing targets compiled:',len(writing_rows)+len(vertical_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows)+len(vertical_rows),')')

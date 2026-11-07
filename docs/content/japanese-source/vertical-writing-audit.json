@@ -1,0 +1,28 @@
+{
+  "version": "0.70.0",
+  "newWritingCharacters": 153,
+  "newWritingStages": 306,
+  "secondaryWritingCovered": 774,
+  "target": 1110,
+  "remaining": 336,
+  "readingMaterialsUnchanged": 1094,
+  "elementaryArchiveUnchanged": true,
+  "decompositionReference": "CJKVI/CHISE IDS: factual structures cross-checked; Japanese forms preferred, no raw reference data bundled",
+  "readingReference": "JmdictFurigana 2.3.1+2026-10-25: all 153 word/reading pairs attested",
+  "budget": {
+    "materials": 153,
+    "presentations": 459,
+    "maxima": {
+      "task": 13,
+      "prompt": 31,
+      "choice": 6,
+      "targetLabel": 15,
+      "note": 16,
+      "combined": 52
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "displayReview": "vertical-writing-layout-review.json",
+  "checks": "Changed-data and representative new layout only; no full suite or five-minute simulation."
+}

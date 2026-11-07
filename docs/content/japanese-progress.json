@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "materials": 1554,
-  "generated": 3016,
+  "generated": 3322,
   "secondaryReading": {
     "covered": 1110,
     "target": 1110,
@@ -10,7 +10,7 @@
   },
   "writing": {
     "elementaryScope": "小学配当漢字は中学の完成対象外。小学の部向けに保管。",
-    "secondaryCovered": 621,
+    "secondaryCovered": 774,
     "secondaryTarget": 1110,
     "scope": "部品選択の素材数。実際の手書き・筆順の習熟とは区別する。"
   },
@@ -23,7 +23,7 @@
   "fields": {
     "漢字": {
       "materials": 1106,
-      "generated": 2361,
+      "generated": 2667,
       "units": [
         "漢字",
         "共通漢字",

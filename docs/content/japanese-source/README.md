@@ -56,3 +56,9 @@
 `secondary-writing-2.tsv` に252字を追加。中学書き621/1,110字、残り489字。日本の字形を優先し、精密な字形素材が必要な僅・敷は `writing-deferred.json` で書きのみ保留する。読みと履歴は削除しない。修正5字は `writing-shape-revisions.json` のrevisionを生成した書きID末尾へ付ける。復帰時にも旧構成の履歴を混同しないrevisionを設定する。
 
 小学の保管分は変更しない。新規分は `--batch japanese-secondary-writing-2-20261107` で簡易確認できる。既存の確認済み左右2/3部品構成内。辞書読みの記録は `secondary-writing-2-reading-review.json`、差分集計は `secondary-writing-2-audit.json`。同等字形は `writing-glyph-groups.json` の全体／字別の同等形から誤答候補を除外する。
+
+## 上下構成の漢字書き（v0.70.0）
+
+`vertical-writing.tsv` の153字は中学の既存読み素材へ書きのみ追加する。上下の2部品を順に回答。日本の字形はCJKVI/CHISEの構成情報と照合し、参考資料の原データは同梱しない。語と読み153組はJmdictFuriganaで確認（既存の出典・ライセンス表示を適用）。読みの内容とIDは変更しない。書きの語を変える場合も元の読みへ影響させない。
+
+専用の `vertical-glyph-groups.json` は既存の候補を変えず、新規の上下問題だけに使う。`vertical-writing-reading-review.json`・`vertical-writing-audit.json` に確認を記録。差分確認は `--batch japanese-vertical-writing-20261107`。`tb-parts-v1` は上40/50%、下残り、幅100%の2部品と既存の文字量条件に限定。範囲内は再表示確認不要。中学書き774/1,110字、残り336字。小学分は追加・変更しない。
