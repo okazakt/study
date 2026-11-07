@@ -606,8 +606,8 @@
   },
   {
     "id": "jr_jp3_011",
-    "school_level": "中学",
-    "grade": "中3",
+    "school_level": "小学",
+    "grade": "小6",
     "subject": "国語",
     "field": "漢字",
     "unit": "漢字",
@@ -655,7 +655,8 @@
         ]
       }
     ],
-    "writing_target_index": 0
+    "writing_target_index": 0,
+    "content_status": "reserved-for-elementary"
   },
   {
     "id": "jr_jp3_012",

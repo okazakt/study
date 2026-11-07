@@ -111,3 +111,9 @@
 作問元は `docs/content/japanese-source/writing-additions.tsv` と `writing-glyph-groups.json`。全ての部品を順に問い、完成字・解説を最後まで隠す。既存の読みの正答・候補・IDは維持する。新規の適用／ことわざ93素材も同じ生成スクリプトで再現できる。
 
 追加時は `--batch japanese-writing-20261107`（`writing_batch` も照合対象）や `--batch japanese-application-20261107` で差分だけの簡易確認を行う。確認済みの左右2部品／右上下3部品は、ボックス・文字量・横幅が一致する場合に図の画面確認を繰り返さない。
+
+## 中学漢字への限定（v0.68.0）
+
+中学の漢字は小学配当を除いた常用漢字1,110字を対象にする。既存235素材を `school_level: 小学` と正式配当の `grade: 小N` へ分類し、IDを維持して小学の部用に保管。現在の中学の学年・受験用・全てからは除外する。小学のUIはまだ作らない。小学漢字の新規追加も止める。
+
+`secondary-writing-additions.tsv` の300字の書きを既存の読みIDへ追加した。読みの内容・IDは維持し、中学の書きは371字。`python3 scripts/build-japanese-content.py` は小学の保管分も復元するが、今の追加先は中学用TSVに限る。差分確認は `--batch japanese-secondary-writing-20261107`。今回分は確認済みの左右構成内で、新たな画面確認は不要。

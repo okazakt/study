@@ -45,7 +45,10 @@ export function normalizePreferences(raw, catalog) {
     const entry = raw?.profiles?.[level];
     const course = catalog.find(course => course.id === entry?.id && course.school === level && course.count > 0);
     if (!course) return [level, null];
-    const sections = Array.isArray(entry.sections) ? [...new Set(entry.sections.filter(key => course.sections.some(section => section.key === key)))] : null;
+    const validSections = Array.isArray(entry.sections) ? [...new Set(entry.sections.filter(key => course.sections.some(section => section.key === key)))] : null;
+    // A removed elementary-only section must not leave the saved course unusable.
+    // Deliberately choosing no sections ([]) still means no selection.
+    const sections = Array.isArray(entry.sections) && entry.sections.length > 0 && !validSections.length ? null : validSections;
     const practiceType = practiceTypes(course.subject).some(option => option.id === entry.practiceType) ? entry.practiceType : 'all';
     return [level, { id: course.id, sections, practiceType }];
   }));

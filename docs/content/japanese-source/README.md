@@ -43,3 +43,10 @@
 - `writing-reading-review.json` は今回の例語の読み・別読をJMdict/JmdictFuriganaで照合した記録。読みを加工した `writing-additions.tsv` と追加した漢字素材（`junior_japanese_extended.json` の `kind: kanji` を含む）は、上記の著作権表示を保持してCC BY-SA 4.0で提供する。他の独自の文法・解説データ全体に同じライセンスを拡大しない。
 - `application-additions.tsv` は文法43・古文20・漢文10。`idiom-additions.tsv` のことわざ20件は両方向。意味が同じことわざは互いを誤答にせず、長い説明は表示確認後に短縮した。
 - 新規／変更分だけの簡易データ確認は [差分記録](writing-change-audit.json)。基礎テスト・全問表示・5分進行は実施しない。新しい部品構成・境界8例の32表示、正答表示4件と復習の途中／完成を確認。結果は [表示記録](writing-layout-review.json)、再利用条件は `content-budget.json` の構造プロファイルと長い熟語見出しの規則に保持する。
+
+## 中学に限定した第3段階（v0.68.0）
+
+- 小学漢字の追加を停止する。`elementary-grades.json` は文科省の音訓割り振り表から小学配当の学年を抽出した事実データ。既存235素材を小学へ分類して保管し、中学の出題・進捗には含めない。元のID・読み・書き・履歴は維持する。小学のUIはまだ作成しない。
+- `secondary-writing-additions.tsv` は小学配当を除いた1,110字から選んだ300字。全て既存の読みIDへ書きを追加する。`secondary-writing-reading-review.json` に語の読みと別読の照合を記録。新しい例語の読みも上記JMdict/JmdictFuriganaのクレジット・CC BY-SA 4.0で扱う。左右の字形構成は補助資料でも照合し、既存の `lr-parts-v1` 範囲内。新しい表示構成や文字量の超過はなく、基本テスト・画面の再確認・5分進行は行わない。
+- 今回の追加は `--batch japanese-secondary-writing-20261107` で差分だけチェックする。小学用の旧TSVは再生成で保管分を復元するために残し、行を増やさない。小学配当字を今回の中学TSVへ入れると生成時にエラーにする。
+- [今回の確認記録](secondary-writing-audit.json)・[現在の対象と残件](../japanese-progress.md)。

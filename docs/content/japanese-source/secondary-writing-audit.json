@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-07",
+  "newWritingCharacters": 300,
+  "newWritingStages": 600,
+  "readingIdsAndAnswersPreserved": true,
+  "officialSecondaryOnly": true,
+  "structuralReferenceRowsMatched": 300,
+  "elementaryReserved": 235,
+  "elementaryShownInJunior": 0,
+  "savedRetiredSectionFallsBackToAll": true,
+  "intentionallyEmptySectionPreserved": true,
+  "basicTestSuiteRun": false,
+  "browserReviewNeeded": false,
+  "reason": "All new displays fit the previously reviewed lr-parts-v1 envelope; no new visual arrangement.",
+  "elementaryLearningContentPreserved": true
+}

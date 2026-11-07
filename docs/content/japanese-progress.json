@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
-  "materials": 1789,
-  "generated": 2615,
+  "materials": 1554,
+  "generated": 2510,
   "secondaryReading": {
     "covered": 1110,
     "target": 1110,
@@ -9,21 +9,25 @@
     "scope": "字種ごとに最低一つの語の読み。全音訓・全語義の完了とはしない。"
   },
   "writing": {
-    "elementaryCovered": 235,
-    "elementaryTarget": 1026,
-    "secondaryCovered": 71,
+    "elementaryScope": "小学配当漢字は中学の完成対象外。小学の部向けに保管。",
+    "secondaryCovered": 371,
     "secondaryTarget": 1110,
     "scope": "部品選択の素材数。実際の手書き・筆順の習熟とは区別する。"
   },
+  "reservedForElementary": {
+    "materials": 235,
+    "writingCharacters": 235,
+    "displayed": false,
+    "historyPreserved": true
+  },
   "fields": {
     "漢字": {
-      "materials": 1341,
-      "generated": 1960,
+      "materials": 1106,
+      "generated": 1855,
       "units": [
         "漢字",
         "共通漢字",
-        "常用漢字の読み",
-        "小学校配当漢字の復習"
+        "常用漢字の読み"
       ]
     },
     "熟語・四字熟語": {

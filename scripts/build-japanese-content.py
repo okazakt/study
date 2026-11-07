@@ -69,20 +69,25 @@ def glyph_dummies(answer,character):
   if len(result)==3:return result
  raise ValueError('insufficient distinct glyphs for '+answer)
 writing_batch='japanese-writing-20261107'
-writing_rows=list(rows('writing-additions.tsv'))
-for n,r in writing_rows:
+elementary_grades=json.loads((SOURCE/'elementary-grades.json').read_text())
+writing_rows=[(name,n,r) for name in ['writing-additions.tsv','secondary-writing-additions.tsv'] for n,r in rows(name)]
+for name,n,r in writing_rows:
+ writing_batch='japanese-secondary-writing-20261107' if name=='secondary-writing-additions.tsv' else 'japanese-writing-20261107'
  assert len(r)==7,(n,r)
  c,word,reading,hint,left,right,reading_dummies=r
  assert c in scope and c not in old_kanji and c not in hint,(n,c)
+ if name=='secondary-writing-additions.tsv':assert not scope[c],f'{c}: elementary additions are disabled for this batch'
  assert word.count(c)==1 and len(left)==1 and 1<=len(right.split('/'))<=2,(n,c)
  if c in kanji_by_char:
   item=kanji_by_char[c]
  else:
   assert scope[c],f'{c}: shared secondary reading source needs explicit writing mapping'
-  item=dict(id=f'jr_jp_write_{ord(c):x}',school_level='中学',grade='中1',subject='国語',field='漢字',unit='小学校配当漢字の復習',kind='kanji',character=c,word=word,reading=reading,reading_dummies=reading_dummies.split(','),sentence=hint,note=f'{word}（{reading}）。',content_batch=writing_batch)
+  item=dict(id=f'jr_jp_write_{ord(c):x}',school_level='小学',grade='小'+str(elementary_grades[c]),subject='国語',field='漢字',unit='漢字',content_status='reserved-for-elementary',kind='kanji',character=c,word=word,reading=reading,reading_dummies=reading_dummies.split(','),sentence=hint,note=f'{word}（{reading}）。',content_batch=writing_batch)
   bank.append(item)
  item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch=writing_batch,writing_profile='lr-parts-v1',writing_scope='elementary-1026' if scope[c] else 'secondary-1110')
- width=40 if left in set('日言氵亻木忄阝扌糸禾土舟金貝月王') else 60
+ radicals='日言氵亻木忄阝扌糸禾土舟金貝月王'
+ if name=='secondary-writing-additions.tsv':radicals+='女冫彳山巾弓口子歹'
+ width=40 if left in set(radicals) else 60
  parts=[dict(position='左',answer=left,dummies=glyph_dummies(left,c),box=[0,0,width,100])]
  rights=right.split('/')
  for i,a in enumerate(rights):
@@ -91,4 +96,4 @@ for n,r in writing_rows:
  item['writing_parts']=parts
 (ROOT/'quiz-data/junior_japanese_extended.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')
-print('Writing targets added:',len(writing_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,r in writing_rows),')')
+print('Writing targets compiled:',len(writing_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows),')')
