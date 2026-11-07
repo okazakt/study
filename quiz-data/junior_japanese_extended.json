@@ -6234,6 +6234,1545 @@
     "task": "適切なものを選ぼう"
   },
   {
+    "id": "jr_jp_core_7672869b2d9b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「弟は／庭で／遊ぶ。」の主語は？",
+    "answer": "弟は",
+    "dummies": [
+      "庭で",
+      "遊ぶ",
+      "弟は庭で"
+    ],
+    "note": "「誰が遊ぶか」に答える文節が主語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_4268accbbde7",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「花は／とても／美しい。」の述語は？",
+    "answer": "美しい",
+    "dummies": [
+      "花は",
+      "とても",
+      "花はとても"
+    ],
+    "note": "主語「花は」について、どうだと述べる文節。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_16dad58fbc8a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「妹が／速く／走る。」で「速く」が修飾するのは？",
+    "answer": "走る",
+    "dummies": [
+      "妹が",
+      "文全体",
+      "主語だけ"
+    ],
+    "note": "走る動作の様子を詳しくしている。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a8fc3ee09000",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「兄と／姉が／来た。」の「兄と」と「姉が」の関係は？",
+    "answer": "並立",
+    "dummies": [
+      "主語と述語",
+      "接続",
+      "補助"
+    ],
+    "note": "同じ資格のものを並べる関係。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_8157c8befc15",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「読んで／いる。」の二文節の関係は？",
+    "answer": "補助",
+    "dummies": [
+      "並立",
+      "主語と述語",
+      "独立"
+    ],
+    "note": "「いる」が動作の継続を添える補助の関係。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_146eef92479a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「もし／雨なら、／休む。」の「もし」の呼応先は？",
+    "answer": "雨なら",
+    "dummies": [
+      "休む",
+      "雨だけ",
+      "文末の句点"
+    ],
+    "note": "仮定を表す語と呼応する副詞。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3cc927bc17d6",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「ゆっくり歩く」の「ゆっくり」の品詞は？",
+    "answer": "副詞",
+    "dummies": [
+      "連体詞",
+      "形容動詞",
+      "助動詞"
+    ],
+    "note": "活用せず、動作の様子を詳しくする自立語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ad792c0bdba1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「その箱」の「その」の品詞は？",
+    "answer": "連体詞",
+    "dummies": [
+      "代名詞",
+      "副詞",
+      "形容詞"
+    ],
+    "note": "活用せず、体言「箱」を修飾する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_9bae1ea0fd88",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「これを使う」の「これ」の品詞は？",
+    "answer": "名詞",
+    "dummies": [
+      "連体詞",
+      "副詞",
+      "接続詞"
+    ],
+    "note": "物を指す代名詞は名詞に含める。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c83448811b63",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「ああ、美しい」の「ああ」の品詞は？",
+    "answer": "感動詞",
+    "dummies": [
+      "副詞",
+      "接続詞",
+      "助詞"
+    ],
+    "note": "感動を表し、独立して使われる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_de719909b8b6",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「書こう」の「書こ」は何形？",
+    "answer": "未然形",
+    "dummies": [
+      "連用形",
+      "仮定形",
+      "命令形"
+    ],
+    "note": "意志の「う」に続く五段動詞の未然形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_10b2b92e4986",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「読めば」の「読め」は何形？",
+    "answer": "仮定形",
+    "dummies": [
+      "命令形",
+      "連体形",
+      "連用形"
+    ],
+    "note": "「ば」に続くので仮定形。命令形と形が同じ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_fbacd3abf22f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「早く起きろ。」の「起きろ」は何形？",
+    "answer": "命令形",
+    "dummies": [
+      "未然形",
+      "連用形",
+      "連体形"
+    ],
+    "note": "相手に動作を命じる、動詞の活用形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_55bae0631b61",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「見る」の活用の種類は？",
+    "answer": "上一段活用",
+    "dummies": [
+      "下一段活用",
+      "五段活用",
+      "カ行変格活用"
+    ],
+    "note": "「見ない・見ます」など、イ段の音を軸に活用する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0df5f771e1a5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「受ける」の活用の種類は？",
+    "answer": "下一段活用",
+    "dummies": [
+      "上一段活用",
+      "五段活用",
+      "サ行変格活用"
+    ],
+    "note": "「受けない・受けます」など、エ段の音を軸に活用する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d2a5c7f3ddbc",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「静かなら」の「静かなら」は何形？",
+    "answer": "仮定形",
+    "dummies": [
+      "未然形",
+      "連用形",
+      "連体形"
+    ],
+    "note": "形容動詞「静かだ」の仮定形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_5d677fe7aa5c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「美しかった」の「美しかっ」は何形？",
+    "answer": "連用形",
+    "dummies": [
+      "未然形",
+      "終止形",
+      "命令形"
+    ],
+    "note": "過去の助動詞「た」に続く形容詞の連用形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_192322d3f13c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「駅で待つ」の「で」が表すものは？",
+    "answer": "動作の場所",
+    "dummies": [
+      "動作の時刻",
+      "動作主",
+      "比較の基準"
+    ],
+    "note": "ここでは、待つという動作の場所を示す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7f42e84428f6",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「電車で行く」の「で」が表すものは？",
+    "answer": "手段",
+    "dummies": [
+      "目的地",
+      "動作主",
+      "原因"
+    ],
+    "note": "何を使って行くかを示す格助詞。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_448093a81e79",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「寒いので帰る」の「ので」が表す関係は？",
+    "answer": "原因・理由",
+    "dummies": [
+      "逆接",
+      "並立",
+      "選択"
+    ],
+    "note": "帰る理由として、寒いことを示す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e4115795af17",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「寒いのに出かける」の「のに」が表す関係は？",
+    "answer": "逆接",
+    "dummies": [
+      "順接",
+      "並立",
+      "目的"
+    ],
+    "note": "前の事柄から予想される結果と食い違う。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d39c4659cdb9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「鳥の鳴く声」の「の」と置き換えられるのは？",
+    "answer": "が",
+    "dummies": [
+      "を",
+      "へ",
+      "から"
+    ],
+    "note": "連体修飾の中で主語を表す「の」は「が」と換えられる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_acea6707fa41",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「水さえあればよい」の「さえ」の働きは？",
+    "answer": "最低限の条件を示す",
+    "dummies": [
+      "疑問を示す",
+      "引用を示す",
+      "動作主を示す"
+    ],
+    "note": "ほかの条件を問題にせず、最低限必要なものを示す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_df9890e144b8",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「雨が降るだろう」の「だろう」の意味は？",
+    "answer": "推量",
+    "dummies": [
+      "断定",
+      "受身",
+      "完了"
+    ],
+    "note": "確かではないことを、そうなるだろうと判断する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_01c28591d788",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「弟に窓を割られた」の「れ」の意味は？",
+    "answer": "受身",
+    "dummies": [
+      "尊敬",
+      "可能",
+      "自発"
+    ],
+    "note": "他者の動作を受けることを表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f30207952d50",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「先生が話される」の「れる」の意味は？",
+    "answer": "尊敬",
+    "dummies": [
+      "可能",
+      "使役",
+      "打消"
+    ],
+    "note": "動作をする先生を高めている。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_713605c6483b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「懐かしく思われる」の「れる」の意味は？",
+    "answer": "自発",
+    "dummies": [
+      "使役",
+      "断定",
+      "希望"
+    ],
+    "note": "気持ちが自然に起こることを表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0593d592f59f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「子に本を読ませる」の「せる」の意味は？",
+    "answer": "使役",
+    "dummies": [
+      "受身",
+      "尊敬",
+      "伝聞"
+    ],
+    "note": "他者に動作をさせることを表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_11aa89962678",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「雨が降りそうだ」の「そうだ」の意味は？",
+    "answer": "様態",
+    "dummies": [
+      "伝聞",
+      "断定",
+      "打消"
+    ],
+    "note": "見た様子などから、その兆しを述べる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_667a2e183dd0",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「予報では雨が降るそうだ」の「そうだ」の意味は？",
+    "answer": "伝聞",
+    "dummies": [
+      "様態",
+      "意志",
+      "命令"
+    ],
+    "note": "他から聞いた内容を伝える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0dfa8e05784d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "先生に「見てもらう」を言い換えると？",
+    "answer": "ご覧いただく",
+    "dummies": [
+      "拝見なさる",
+      "お目にかかる",
+      "申し上げる"
+    ],
+    "note": "先生が見るので尊敬の「ご覧」と、受け手側の「いただく」。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_261c529ce67b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "自分が先生の話を「聞く」の謙譲語は？",
+    "answer": "伺う",
+    "dummies": [
+      "お聞きになる",
+      "おっしゃる",
+      "いらっしゃる"
+    ],
+    "note": "自分の動作を低め、相手を立てる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b1687ad505e2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "先生に自分の名前を伝えるときは？",
+    "answer": "山田と申します",
+    "dummies": [
+      "山田とおっしゃいます",
+      "山田といらっしゃいます",
+      "山田とご覧になります"
+    ],
+    "note": "「言う」の謙譲語を用いる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e51d548ac0bb",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「お読みになられる」の問題点は？",
+    "answer": "尊敬表現を重ねている",
+    "dummies": [
+      "謙譲語を使っている",
+      "丁寧語がない",
+      "主語がない"
+    ],
+    "note": "通常は「お読みになる」で十分。二重敬語を避ける。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_cb266d718645",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「山道」の語の組み立ては？",
+    "answer": "上の字が下の字を修飾",
+    "dummies": [
+      "似た意味を重ねる",
+      "反対の意味を重ねる",
+      "下の字が上の字の目的語"
+    ],
+    "note": "どのような道かを「山」が説明する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f6cf7d4517ea",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「寒暖」の語の組み立ては？",
+    "answer": "反対の意味を重ねる",
+    "dummies": [
+      "似た意味を重ねる",
+      "上が下を修飾",
+      "下が上の目的語"
+    ],
+    "note": "寒いことと暖かいことを組み合わせる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a1d754d78f3f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「読書」の語の組み立ては？",
+    "answer": "下の字が上の字の目的語",
+    "dummies": [
+      "反対の意味を重ねる",
+      "上が下を修飾",
+      "主語と述語の関係"
+    ],
+    "note": "「書を読む」と、下から上に返して意味を取る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6b176244349a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「国立」の語の組み立ては？",
+    "answer": "上が主語、下が述語",
+    "dummies": [
+      "反対の意味を重ねる",
+      "下が上の目的語",
+      "似た意味を重ねる"
+    ],
+    "note": "国が設立するという関係。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e877a7918f91",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「きゃ」を数えるときの基本は？",
+    "answer": "一音節・一拍",
+    "dummies": [
+      "一音節・二拍",
+      "二音節・一拍",
+      "二音節・二拍"
+    ],
+    "note": "拗音は小さい「ゃ」などと合わせて一つの音節・拍を作る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0061bf713eca",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「きって」は何拍？",
+    "answer": "三拍",
+    "dummies": [
+      "二拍",
+      "四拍",
+      "一拍"
+    ],
+    "note": "「き・っ・て」と数え、促音も一拍を占める。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b78505f552eb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「しんぶん」は何拍？",
+    "answer": "四拍",
+    "dummies": [
+      "二拍",
+      "三拍",
+      "五拍"
+    ],
+    "note": "「し・ん・ぶ・ん」。撥音も一拍として数える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_85c1ec0b6a82",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "話し言葉と書き言葉",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「やっぱり」を改まった文章に直すと？",
+    "answer": "やはり",
+    "dummies": [
+      "たぶん",
+      "むしろ",
+      "まさか"
+    ],
+    "note": "同じ趣旨で、くだけた表現を書き言葉に整える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a8f940ddc23f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "話し言葉と書き言葉",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「すごくうれしい」を改まった文に直すと？",
+    "answer": "非常にうれしい",
+    "dummies": [
+      "あまりうれしくない",
+      "かえってうれしい",
+      "やがてうれしい"
+    ],
+    "note": "程度の強さを保ち、改まった副詞に言い換える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0668b0b46f91",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "歴史的仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "歴史的仮名遣い「かほ」の現代仮名遣いは？",
+    "answer": "かお",
+    "dummies": [
+      "かほ",
+      "かわ",
+      "かう"
+    ],
+    "note": "語中の「ほ」を「お」に直す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ee3bb5c35b85",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "歴史的仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "歴史的仮名遣い「こゑ」の現代仮名遣いは？",
+    "answer": "こえ",
+    "dummies": [
+      "こい",
+      "こを",
+      "こゆ"
+    ],
+    "note": "「ゑ」は現代仮名遣いで「え」。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_5a6221ee6717",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "歴史的仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "歴史的仮名遣い「をかし」の現代仮名遣いは？",
+    "answer": "おかし",
+    "dummies": [
+      "をかし",
+      "わかし",
+      "うかし"
+    ],
+    "note": "語頭の「を」を「お」に直す。意味の変化とは分ける。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_36d33bf514c5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "歴史的仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "歴史的仮名遣い「けふ」の現代仮名遣いは？",
+    "answer": "きょう",
+    "dummies": [
+      "けう",
+      "けほ",
+      "こう"
+    ],
+    "note": "「けふ」は現代仮名遣いで「きょう」。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_eb8d971de4d8",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古語「あした」が、夜に対する時間を指すときは？",
+    "answer": "朝",
+    "dummies": [
+      "翌日",
+      "夕方",
+      "正午"
+    ],
+    "note": "古語では「朝」の意味がある。文脈で判断する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_63a6ca391e7b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古語「つとめて」の基本的な意味は？",
+    "answer": "早朝",
+    "dummies": [
+      "熱心に",
+      "夕暮れ",
+      "翌々日"
+    ],
+    "note": "時刻を表す古語として押さえる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_53dd22975f0c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古語「いと」が程度を表すときの意味は？",
+    "answer": "とても",
+    "dummies": [
+      "少しだけ",
+      "決して",
+      "突然"
+    ],
+    "note": "現代語の「糸」と区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_31b52d484c0d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古語「なほ」が、状態の継続を表すときは？",
+    "answer": "やはり",
+    "dummies": [
+      "すぐに",
+      "わざと",
+      "決して"
+    ],
+    "note": "文脈によって「やはり」「そのまま」などの意味を取る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_8d80e2a5cbb4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古文の「行かず」で「ず」の意味は？",
+    "answer": "打消",
+    "dummies": [
+      "完了",
+      "推量",
+      "過去"
+    ],
+    "note": "動詞の未然形に付き、動作を否定する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_22fab5f93d58",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古文の「咲きけり」で「けり」が過去を表すときは？",
+    "answer": "咲いた",
+    "dummies": [
+      "咲かない",
+      "咲くだろう",
+      "咲かせる"
+    ],
+    "note": "「けり」には過去や詠嘆の意味がある。ここでは過去と指定。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a93ba223ceef",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「花こそ美しけれ」の「美しけれ」は何形？",
+    "answer": "已然形",
+    "dummies": [
+      "連体形",
+      "未然形",
+      "命令形"
+    ],
+    "note": "係助詞「こそ」の結びは已然形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0ece3cb843ba",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「人ぞ来る」のように「ぞ」があると結びは？",
+    "answer": "連体形",
+    "dummies": [
+      "已然形",
+      "未然形",
+      "命令形"
+    ],
+    "note": "「ぞ・なむ・や・か」は連体形で結ぶ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_53787fd84904",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読解",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古文で主語が省かれているとき、まず確かめるのは？",
+    "answer": "前後の動作主のつながり",
+    "dummies": [
+      "最も近い名詞だけ",
+      "全て筆者の動作とする",
+      "全て天皇の動作とする"
+    ],
+    "note": "会話・敬語・動作の流れから、誰の動作かを確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_645166ca856d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読解",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古文に会話文が出たとき、最初に整理するのは？",
+    "answer": "話し手と聞き手",
+    "dummies": [
+      "地の文の主語だけ",
+      "敬語の数だけ",
+      "直前の名詞だけ"
+    ],
+    "note": "誰が誰に話すかを押さえると、主語や敬語を判断しやすい。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_76e7b39f541a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読解",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "古文で同じ語に複数の意味があるときは？",
+    "answer": "前後の状況に合う意味を選ぶ",
+    "dummies": [
+      "現代語の意味だけで決める",
+      "前文と同じ意味に固定する",
+      "常に最初の辞書義にする"
+    ],
+    "note": "暗記した意味を、場面に合わせて使い分ける。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2e4f02e09288",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "和歌の五・七・五・七・七は何を数える？",
+    "answer": "音の拍数",
+    "dummies": [
+      "文字の画数",
+      "漢字の数",
+      "文の数"
+    ],
+    "note": "表記の字数ではなく、基本的に拍を数える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3f0d00fce72d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「古池や」の「や」が担う働きは？",
+    "answer": "切れを作り、感動を表す",
+    "dummies": [
+      "疑問だけを表す",
+      "並立だけを表す",
+      "主語を示す"
+    ],
+    "note": "この「や」は俳句の切れ字。係助詞の用法と混同しない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_1f039cafe3b2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "季語の季節を判断するときの基本は？",
+    "answer": "歳時記などの約束を確かめる",
+    "dummies": [
+      "現在の気温だけで決める",
+      "作者の居住地だけで決める",
+      "花は全て春とする"
+    ],
+    "note": "旧暦や伝統的な分類があり、現在の感覚だけで決めない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_23014e938dcd",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "枕詞の現代語訳で注意するのは？",
+    "answer": "直後の語との関係を確かめる",
+    "dummies": [
+      "全て人物名に訳す",
+      "全て打消に訳す",
+      "語順を必ず逆にする"
+    ],
+    "note": "枕詞には、決まった語を導く働きがある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e260949e484a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "訓点を除いた、漢字だけの漢文を何という？",
+    "answer": "白文",
+    "dummies": [
+      "書き下し文",
+      "口語訳",
+      "注釈文"
+    ],
+    "note": "返り点や送り仮名などが付いていない本文。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e33f7c266046",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "漢文の置き字「而」は通常どう扱う？",
+    "answer": "原則、直接は読まない",
+    "dummies": [
+      "必ず「しかも」と読む",
+      "必ず「これ」と読む",
+      "必ず二度読む"
+    ],
+    "note": "文中の関係を示すが、訓読では置き字とすることが多い。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_de1b7c12f33c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "漢文の送り仮名が主に示すものは？",
+    "answer": "活用語尾や助詞など",
+    "dummies": [
+      "漢字の画数",
+      "作者の名前",
+      "韻を踏む字だけ"
+    ],
+    "note": "日本語として読むときに必要な語尾などを補う。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_9a682d08f90c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "返り点は、何を示す記号？",
+    "answer": "読む順序",
+    "dummies": [
+      "声の高さ",
+      "漢字の成り立ち",
+      "読み終える速さ"
+    ],
+    "note": "漢文を日本語の語順で読むために用いる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ddaeaedb519a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "上の字にレ点がある二字の読む順序は？",
+    "answer": "下→上",
+    "dummies": [
+      "上→下",
+      "上だけ読む",
+      "下だけ読む"
+    ],
+    "note": "すぐ下の字を先に読み、レ点のある字へ返る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c5d4cd11cc76",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「A二 B C一」の読む順序は？",
+    "answer": "B→C→A",
+    "dummies": [
+      "A→B→C",
+      "C→B→A",
+      "B→A→C"
+    ],
+    "note": "一点の字を読んでから、二点の字へ返る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_63407555429a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「非学者」の「非」を返って読む基本形は？",
+    "answer": "学者に非ず",
+    "dummies": [
+      "学者を学ぶ",
+      "学者なるべし",
+      "学者をして学ばしむ"
+    ],
+    "note": "名詞を述語として否定する「〜に非ず」の形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_beddf9ac24c3",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「不必」を含む文の基本的な意味は？",
+    "answer": "必ずしも〜ない",
+    "dummies": [
+      "必ず〜ない",
+      "必ず〜せよ",
+      "まだ〜ない"
+    ],
+    "note": "部分否定。「必不」の全体否定と区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3ad1ca45bae7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "「未曾」の基本的な読みは？",
+    "answer": "いまだかつて〜ず",
+    "dummies": [
+      "すでに〜たり",
+      "まさに〜んとす",
+      "よろしく〜べし"
+    ],
+    "note": "「これまで一度も〜ない」という意味を表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c8bd27ae6fc9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "漢文の「安」を「いづくんぞ」と読むときの意味は？",
+    "answer": "どうして〜か",
+    "dummies": [
+      "安い",
+      "静かな家",
+      "すでに〜た"
+    ],
+    "note": "疑問・反語の表現で使われる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7e6a50582dc9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "漢文の「寧」を「むしろ」と読むときの働きは？",
+    "answer": "選択する気持ちを示す",
+    "dummies": [
+      "動作を否定する",
+      "動作をさせる",
+      "過去を思い出す"
+    ],
+    "note": "比べたうえで、どちらかを選ぼうとする。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ba97f6a399cf",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "再読文字「須」の基本的な訓読は？",
+    "answer": "すべからく〜べし",
+    "dummies": [
+      "いまだ〜ず",
+      "まさに〜んとす",
+      "よろしく〜べし"
+    ],
+    "note": "当然そうすべきだ、という意味。「宜」と区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_58daa539f726",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "再読文字「宜」の基本的な訓読は？",
+    "answer": "よろしく〜べし",
+    "dummies": [
+      "すべからく〜べし",
+      "いまだ〜ず",
+      "なんぞ〜んや"
+    ],
+    "note": "そうするのがよい、という意味を表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2166b91e9d0b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "漢文の反語で注意する意味の取り方は？",
+    "answer": "問いの形で逆の意を強調",
+    "dummies": [
+      "問いへの返答を必ず補う",
+      "全て命令に言い換える",
+      "必ず過去の出来事にする"
+    ],
+    "note": "肯定の問いは否定を、否定の問いは肯定を強める。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_351517e64c15",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "五言絶句は、基本的に何句から成る？",
+    "answer": "四句",
+    "dummies": [
+      "五句",
+      "八句",
+      "十句"
+    ],
+    "note": "一つの句が五字で、全体は四句。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_696a0b2b3f5a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "七言絶句の一句の字数は？",
+    "answer": "七字",
+    "dummies": [
+      "五字",
+      "四字",
+      "八字"
+    ],
+    "note": "一句七字の句が、四つある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_47913851f0ec",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "律詩の句数は、原則として？",
+    "answer": "八句",
+    "dummies": [
+      "四句",
+      "五句",
+      "七句"
+    ],
+    "note": "五言でも七言でも、律詩は基本的に八句。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_04b4573b3686",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "押韻を確かめるとき、主に比べるのは？",
+    "answer": "句末の漢字の中国語音",
+    "dummies": [
+      "訓読の句末の音",
+      "句頭の漢字の音",
+      "送り仮名の活用語尾"
+    ],
+    "note": "漢字を日本語で読んだ音だけでは判断しない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b90e8aa2bc8f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-language-practice-20261107",
+    "prompt": "対句の二句で、特に確かめる対応は？",
+    "answer": "同じ位置の語の意味や構造",
+    "dummies": [
+      "句末の韻だけ",
+      "全体の字数だけ",
+      "結びの返り点だけ"
+    ],
+    "note": "対応する位置に、関連・対照する語などを置く。",
+    "task": "適切なものを選ぼう"
+  },
+  {
     "id": "jr_jp_core_3e1e69f0893c",
     "school_level": "中学",
     "grade": "中1",

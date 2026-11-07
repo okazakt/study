@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.71.0';
-import { ScreenWakeLock } from './wake-lock.js?v=0.71.0';
-import { MusicPlayer } from './music-player.js?v=0.71.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.71.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.71.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.71.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.71.0';
-const VERSION = '0.71.0';
+import {FocusGame} from './focus-game.js?v=0.72.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.72.0';
+import { MusicPlayer } from './music-player.js?v=0.72.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.72.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.72.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.72.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.72.0';
+const VERSION = '0.72.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -841,7 +841,7 @@ function render() {
   positionQuestion(elapsed);
   $('field').classList.toggle('compact-feedback', $('field').clientHeight < 190);
   const rhythmStreak = $('rhythm-streak');
-  rhythmStreak.hidden = game.combo < 2;
+  rhythmStreak.hidden = game.focus || game.combo < 2;
   $('streak-count').textContent = game.combo;
   rhythmStreak.classList.toggle('milestone', game.combo > 0 && game.combo % 10 === 0);
   const rhythmPulse = reducedMotion.matches ? 0 : Math.max(0, 1 - (game.time - game.judgmentTime) / 0.35);
@@ -849,8 +849,8 @@ function render() {
   const quizStreak = $('quiz-streak');
   quizStreak.hidden = game.quizCombo < 2;
   $('quiz-streak-count').textContent = game.quizCombo;
-  $('streak-pair').hidden = game.combo < 2 && game.quizCombo < 2;
-  $('streak-pair').classList.toggle('paired', game.combo >= 2 && game.quizCombo >= 2);
+  $('streak-pair').hidden = (game.focus || game.combo < 2) && game.quizCombo < 2;
+  $('streak-pair').classList.toggle('paired', !game.focus && game.combo >= 2 && game.quizCombo >= 2);
   const quizPulse = reducedMotion.matches || !result ? 0 : Math.max(0, 1 - (game.time - result.time) / 0.6);
   quizStreak.style.setProperty('--pulse', quizPulse);
 }
@@ -970,7 +970,7 @@ function finish(completed, reason=null) {
   const awards = game.achievements(completed, !!unfinished);
   game.finish();
   clearTimeout(resultTimer); $('result-details').hidden = true; $('result-details').classList.remove('revealed');
-  const isolated=session.endless||game.focus,profile=`study-beat-bests-${session.endless?'endless':'five'}-${game.focus?'focus-v2':game.options.rhythm}`;
+  const isolated=session.endless||game.focus,profile=`study-beat-bests-${session.endless?'endless':'five'}-${game.focus?'focus-v3':game.options.rhythm}`;
   let previousBest=personalBests;
   if(isolated){try{previousBest=normalizeBests(JSON.parse(localStorage.getItem(profile)||'null'));}catch{previousBest=normalizeBests(null);}}
   const records = updateBests(previousBest, {totalScore:game.totalScore, rhythmCombo:game.maxCombo, quizCombo:game.maxQuizCombo});
@@ -1024,7 +1024,7 @@ function finish(completed, reason=null) {
       ['お手つき回数',`${game.wrongCount}回`]
     ]]
   ];
-  if(game.focus)columns[0][1]=columns[0][1].filter(([label])=>!['待機リズム得点','見逃しMISS'].includes(label));
+  if(game.focus)columns[0][1]=columns[0][1].filter(([label])=>!['最大リズムコンボ','コンボボーナス','待機リズム得点','見逃しMISS'].includes(label));
   for (const [title, entries] of columns) {
     const column = document.createElement('section'), heading = document.createElement('h2');
     column.className = 'result-column'; column.setAttribute('aria-label', `${title}の成績`);

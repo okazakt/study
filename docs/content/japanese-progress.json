@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
-  "materials": 1554,
-  "generated": 3490,
+  "materials": 1635,
+  "generated": 3571,
   "secondaryReading": {
     "covered": 1110,
     "target": 1110,
@@ -313,8 +313,8 @@
       ]
     },
     "現代文文法": {
-      "materials": 155,
-      "generated": 207,
+      "materials": 198,
+      "generated": 250,
       "units": [
         "現代文文法",
         "文の成分",
@@ -334,8 +334,8 @@
       ]
     },
     "古文文法": {
-      "materials": 89,
-      "generated": 108,
+      "materials": 108,
+      "generated": 127,
       "units": [
         "古文文法",
         "歴史的仮名遣い",
@@ -351,8 +351,8 @@
       ]
     },
     "漢文文法": {
-      "materials": 55,
-      "generated": 75,
+      "materials": 74,
+      "generated": 94,
       "units": [
         "漢文文法",
         "訓読",

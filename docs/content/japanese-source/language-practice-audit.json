@@ -1,0 +1,33 @@
+{
+  "version": "0.72.0",
+  "newMaterials": 81,
+  "fields": {
+    "現代文文法": 43,
+    "古文文法": 19,
+    "漢文文法": 19
+  },
+  "existingMaterialsUnchanged": 605,
+  "elementaryArchiveUnchanged": true,
+  "budget": {
+    "materials": 81,
+    "presentations": 81,
+    "maxima": {
+      "task": 9,
+      "prompt": 26,
+      "choice": 13,
+      "targetLabel": 0,
+      "note": 28,
+      "combined": 76
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "editorialReview": [
+    "既存と同一の来ないの読み問題は追加から除外",
+    "受身・尊敬・自発、様態・伝聞は文脈で正答を特定",
+    "反語は否定疑問が肯定を強める場合も含む",
+    "短い訓読・返り点は文字のみの模式例",
+    "中学の共通分類。再読文字等の補足事項を含み、全項目が必修という意味ではない"
+  ],
+  "checks": "Changed-data IDs, fields, four choices and text budget only; no content browser loop or five-minute simulation."
+}

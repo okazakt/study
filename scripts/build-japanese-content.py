@@ -19,12 +19,13 @@ for n,r in rows('grammar-additions.tsv'):
  # Retain useful context, but omit an answer literally printed in the theme.
  if answer in term:q['cloze_context']='';q['cloze_context_reason']='用語に穴の正答が記載されているため省略。'
  bank.append(q)
-for name in ['choice-additions.tsv','application-additions.tsv']:
+for name in ['choice-additions.tsv','application-additions.tsv','language-practice-additions.tsv']:
  for n,r in rows(name):
   assert len(r)==9,(name,n,r)
   grade,field,unit,prompt,answer,*rest=r;dummies=rest[:3];note=rest[3]
   q=base('choice',grade,field,unit,prompt);q.update(prompt=prompt,answer=answer,dummies=dummies,note=note,task='適切なものを選ぼう')
   if name=='application-additions.tsv':q['content_batch']='japanese-application-20261107'
+  if name=='language-practice-additions.tsv':q['content_batch']='japanese-language-practice-20261107'
   bank.append(q)
 idioms=[r for _,r in rows('idiom-additions.tsv')]
 # These related pairs are never offered against one another as interchangeable distractors.

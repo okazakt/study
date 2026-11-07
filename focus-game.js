@@ -1,4 +1,4 @@
-import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.71.0';
+import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.72.0';
 
 // The chart's main beats are timing opportunities, without visible/moving notes.
 export function focusReveal(question,speed){
@@ -23,7 +23,8 @@ export class FocusGame extends Game {
   get requiredTaps(){return 1;}
   refreshScore(){} // Focus uses direct points, not the normal mode's 120-note normalization.
   get scoreBreakdown(){return {netWhite:this.focusWhite||0,netColor:this.focusColor||0,baseAnswer:this.focusAnswer||0,
-    whiteBonus:this.whiteComboBonus,colorBonus:this.colorComboBonus,answerBonus:this.answerComboBonus};}
+    whiteBonus:0,colorBonus:0,answerBonus:this.answerComboBonus};}
+  achievements(completed,unfinished=false){return {...super.achievements(completed,unfinished),rhythm:false,double:false,allPerfect:false};}
   beatAfter(now,count=1){return this.musicBeats.filter(b=>b.target>now+1e-8)[count-1]?.target??Infinity;}
   pulse(now){let distance=Infinity;for(let i=Math.max(0,this.beatCursor-1);i<this.beats.length;i++){const b=this.beats[i];if(b.target>now+.2)break;distance=Math.min(distance,Math.abs(now-b.target));}return Math.max(0,1-distance/.16);}
   earliestCompletion(now){
@@ -67,11 +68,10 @@ export class FocusGame extends Game {
     let label;
     if(beat){
       beat.done=true;label=Math.abs(timingError(beat.target,now))<=RULES.perfectWindow+1e-9?'PERFECT':'GOOD';
-      this.maxCombo=Math.max(this.maxCombo,++this.combo);
       const points=label==='PERFECT'?10:5;
-      // Only the first color attempt at a stage earns rhythm points/bonus.
+      // Only the first color attempt earns timing points. Focus has no rhythm combo.
       if(!colored||this.stageWrongCount===0){
-        if(colored){this.focusColor+=points;this.colorComboBonus+=this.combo;}else{this.focusWhite+=points;this.whiteComboBonus+=this.combo;}
+        if(colored)this.focusColor+=points;else this.focusWhite+=points;
       }
     }
     this.judge(label,now);
@@ -83,7 +83,7 @@ export class FocusGame extends Game {
         this.focusAnswer+=base;this.answerComboBonus+=bonus;this.quizScore=oldScore+base+bonus;}
       if(this.phase==='answer')this.message='もう一度、答えの色を1回タップ';
     }
-    this.rhythmScore=this.focusWhite+this.focusColor+this.whiteComboBonus+this.colorComboBonus;
+    this.rhythmScore=this.focusWhite+this.focusColor;
     return note;
   }
 }

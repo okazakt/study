@@ -70,3 +70,11 @@
 書きは841/1,110字、残り269字は `japanese-progress.json` の `writing.secondaryMissing`。囲みや独体字を不正確な分割で埋めず、専用の表示・出題方法を整えてから追加する。作問時は日本の字形と、辞書の語・読みを照合する。原資料のIDS全体は同梱せず、採用した事実上の構成と独自文脈を保持する。従来の辞書データ出典・ライセンス表示を適用。
 
 `compound-writing-reading-review.json`・`compound-writing-audit.json` に照合を記録。新配置の確認は `compound-writing-layout-review.json`。差分確認は `--batch japanese-compound-writing-20261107`。確認済み配置・文字量の範囲内なら表示確認は繰り返さない。
+
+## 国語の適用問題81問（v0.72.0）
+
+`language-practice-additions.tsv` の現代文法43・古文19・漢文19は、既存のchoice形式で一方向に出題する独自の短い例題。既存素材・ID・小学保管分は変更しない。語句の定義をそのまま聞く形式だけでなく、用例の品詞・活用・文脈や、訓読・句法・漢詩の見方を確認する。
+
+反語は否定疑問から肯定を強める例も含むため「常に否定へ訳す」と教えない。現代の「れる」「そうだ」は意味が特定できる文脈を添える。長文読解や論述の代替とはしない。中学の共通分類で、漢文の再読文字等には補足・発展事項も含む。全項目が必修という表記はしない。
+
+差分は `--batch japanese-language-practice-20261107` で確認。既存の文字のみ構成の範囲内なので再表示確認は不要。[確認記録](language-practice-audit.json)。

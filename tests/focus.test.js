@@ -19,8 +19,8 @@ test('offbeat answers and removed waiting taps do not submit academic answers',(
 test('reading, thinking and feedback never incur passive misses',()=>{
  const g=make('slow');assert.equal(g.tap(0,1),null);g.update(2.2);assert.equal(g.missedNotes,0);assert.equal(g.judgments.MISS,0);
  const instant=make();instant.update(0);instant.update(5);assert.equal(instant.missedNotes,0);
- instant.tap(instant.question.correct,5.1);assert.equal(instant.lastJudgment,'GOOD');assert.equal(instant.combo,1);
- instant.update(6);assert.equal(instant.missedNotes,0);assert.equal(instant.combo,1);
+ instant.tap(instant.question.correct,5.1);assert.equal(instant.lastJudgment,'GOOD');assert.equal(instant.combo,0);
+ instant.update(6);assert.equal(instant.missedNotes,0);assert.equal(instant.combo,0);
 });
 test('animated speeds preserve ordered character reveals and instant has no wait',()=>{
  const q=makeQuestionQueue([item],()=>.5)[0];const plans=['slow','normal','fast','instant'].map(s=>focusReveal(q,s));
@@ -77,15 +77,30 @@ test('both registered songs use half cadence through the real playlist while ord
 
 test('offbeat focus taps preserve active combos, scores, judgments and answer state',()=>{
  const g=make();g.update(0);g.tap(g.question.correct,1);g.update(2);
- assert.equal(g.combo,1);assert.equal(g.quizCombo,1);
+ assert.equal(g.combo,0);assert.equal(g.quizCombo,1);
  const snapshot=()=>JSON.stringify({score:g.totalScore,combo:g.combo,quizCombo:g.quizCombo,maxCombo:g.maxCombo,judgments:g.judgments,empty:g.emptyMisses,last:g.lastJudgment,judgmentTime:g.judgmentTime,correct:g.correctCount,wrong:g.wrongCount,counts:g.counts,first:g.firstTry,quizResult:g.quizResult,message:g.message});
  const before=snapshot();
  assert.equal(g.tap(g.question.correct,2.26),null);assert.equal(snapshot(),before);
- g.tap(g.question.correct,2.5);assert.equal(g.correctCount,2);assert.equal(g.combo,2);
+ g.tap(g.question.correct,2.5);assert.equal(g.correctCount,2);assert.equal(g.combo,0);
 });
 test('a duplicate focus tap cannot register a second answer, judgment or point',()=>{
  const g=make();g.update(0);g.tap((g.question.correct+1)%4,1);
  const before=JSON.stringify({judgments:g.judgments,score:g.totalScore,wrong:g.wrongCount,empty:g.emptyMisses,time:g.judgmentTime});
  assert.equal(g.tap(g.question.correct,1),null);
  assert.equal(JSON.stringify({judgments:g.judgments,score:g.totalScore,wrong:g.wrongCount,empty:g.emptyMisses,time:g.judgmentTime}),before);
+});
+
+test('focus never counts or rewards rhythm combos but keeps correct-answer combos',()=>{
+ const g=make();g.update(0);
+ for(const t of [1,2,3]){g.update(t);g.tap(g.question.correct,t);}
+ assert.equal(g.combo,0);assert.equal(g.maxCombo,0);
+ assert.equal(g.whiteComboBonus,0);assert.equal(g.colorComboBonus,0);
+ assert.equal(g.scoreBreakdown.whiteBonus,0);assert.equal(g.scoreBreakdown.colorBonus,0);
+ assert.equal(g.quizCombo,3);assert.equal(g.maxQuizCombo,3);
+ assert.equal(g.rhythmScore,30);assert.equal(g.scoreBreakdown.answerBonus,60);
+ assert.equal(g.totalScore,240);
+ assert.deepEqual(g.achievements(true),{rhythm:false,quiz:true,double:false,allPerfect:false});
+ g.update(4);g.tap((g.question.correct+1)%4,4);
+ assert.equal(g.quizCombo,0);assert.equal(g.combo,0);assert.equal(g.maxCombo,0);
+ assert.equal(g.achievements(true).quiz,false);
 });
