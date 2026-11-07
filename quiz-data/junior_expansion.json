@@ -3402,7 +3402,7 @@
     ],
     "sentence": "大きな河川が流れる。",
     "character": "河",
-    "writing_hint": "大きな「かせん」。最初の漢字",
+    "writing_hint": "大きな「かせん」。",
     "writing_parts": [
       {
         "position": "左",
@@ -3435,7 +3435,8 @@
         ]
       }
     ],
-    "note": "河川（かせん）。河は左の「氵」と右の「可」で構成する。"
+    "note": "河川（かせん）。河は左の「氵」と右の「可」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_休",
@@ -3454,7 +3455,7 @@
     ],
     "sentence": "木陰で休息を取る。",
     "character": "休",
-    "writing_hint": "木陰で「きゅうそく」を取る。最初の漢字",
+    "writing_hint": "木陰で「きゅうそく」を取る。",
     "writing_parts": [
       {
         "position": "左",
@@ -3487,7 +3488,8 @@
         ]
       }
     ],
-    "note": "休息（きゅうそく）。休は左の「亻」と右の「木」で構成する。"
+    "note": "休息（きゅうそく）。休は左の「亻」と右の「木」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_材",
@@ -3506,7 +3508,7 @@
     ],
     "sentence": "工作の材料を集める。",
     "character": "材",
-    "writing_hint": "工作の「ざいりょう」。最初の漢字",
+    "writing_hint": "工作の「ざいりょう」。",
     "writing_parts": [
       {
         "position": "左",
@@ -3539,7 +3541,8 @@
         ]
       }
     ],
-    "note": "材料（ざいりょう）。材は左の「木」と右の「才」で構成する。"
+    "note": "材料（ざいりょう）。材は左の「木」と右の「才」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_校",
@@ -3558,7 +3561,7 @@
     ],
     "sentence": "校庭を走る。",
     "character": "校",
-    "writing_hint": "「こうてい」を走る。最初の漢字",
+    "writing_hint": "「こうてい」を走る。",
     "writing_parts": [
       {
         "position": "左",
@@ -3591,7 +3594,8 @@
         ]
       }
     ],
-    "note": "校庭（こうてい）。校は左の「木」と右の「交」で構成する。"
+    "note": "校庭（こうてい）。校は左の「木」と右の「交」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_技",
@@ -3610,7 +3614,7 @@
     ],
     "sentence": "新しい技術を学ぶ。",
     "character": "技",
-    "writing_hint": "新しい「ぎじゅつ」。最初の漢字",
+    "writing_hint": "新しい「ぎじゅつ」。",
     "writing_parts": [
       {
         "position": "左",
@@ -3643,7 +3647,8 @@
         ]
       }
     ],
-    "note": "技術（ぎじゅつ）。技は左の「扌」と右の「支」で構成する。"
+    "note": "技術（ぎじゅつ）。技は左の「扌」と右の「支」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_計",
@@ -3662,7 +3667,7 @@
     ],
     "sentence": "旅行の計画を立てる。",
     "character": "計",
-    "writing_hint": "旅行の「けいかく」。最初の漢字",
+    "writing_hint": "旅行の「けいかく」。",
     "writing_parts": [
       {
         "position": "左",
@@ -3695,7 +3700,8 @@
         ]
       }
     ],
-    "note": "計画（けいかく）。計は左の「言」と右の「十」で構成する。"
+    "note": "計画（けいかく）。計は左の「言」と右の「十」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_快",
@@ -3714,7 +3720,7 @@
     ],
     "sentence": "快適な部屋で過ごす。",
     "character": "快",
-    "writing_hint": "「かいてき」な部屋。最初の漢字",
+    "writing_hint": "「かいてき」な部屋。",
     "writing_parts": [
       {
         "position": "左",
@@ -3747,7 +3753,8 @@
         ]
       }
     ],
-    "note": "快適（かいてき）。快は左の「忄」と右の「夬」で構成する。"
+    "note": "快適（かいてき）。快は左の「忄」と右の「夬」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_協",
@@ -3766,7 +3773,7 @@
     ],
     "sentence": "仲間と協力する。",
     "character": "協",
-    "writing_hint": "仲間と「きょうりょく」する。最初の漢字",
+    "writing_hint": "仲間と「きょうりょく」する。",
     "writing_parts": [
       {
         "position": "左",
@@ -3799,7 +3806,8 @@
         ]
       }
     ],
-    "note": "協力（きょうりょく）。協は左の「十」と右の「劦」で構成する。"
+    "note": "協力（きょうりょく）。協は左の「十」と右の「劦」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_情",
@@ -3818,7 +3826,7 @@
     ],
     "sentence": "世界の情勢を調べる。",
     "character": "情",
-    "writing_hint": "世界の「じょうせい」。最初の漢字",
+    "writing_hint": "世界の「じょうせい」。",
     "writing_parts": [
       {
         "position": "左",
@@ -3851,7 +3859,8 @@
         ]
       }
     ],
-    "note": "情勢（じょうせい）。情は左の「忄」と右の「青」で構成する。"
+    "note": "情勢（じょうせい）。情は左の「忄」と右の「青」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_構",
@@ -3870,7 +3879,7 @@
     ],
     "sentence": "文章の構成を考える。",
     "character": "構",
-    "writing_hint": "文章の「こうせい」。最初の漢字",
+    "writing_hint": "文章の「こうせい」。",
     "writing_parts": [
       {
         "position": "左",
@@ -3903,7 +3912,8 @@
         ]
       }
     ],
-    "note": "構成（こうせい）。構は左の「木」と右の「冓」で構成する。"
+    "note": "構成（こうせい）。構は左の「木」と右の「冓」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_証",
@@ -3922,7 +3932,7 @@
     ],
     "sentence": "証拠を示す。",
     "character": "証",
-    "writing_hint": "「しょうこ」を示す。最初の漢字",
+    "writing_hint": "「しょうこ」を示す。",
     "writing_parts": [
       {
         "position": "左",
@@ -3955,7 +3965,8 @@
         ]
       }
     ],
-    "note": "証拠（しょうこ）。証は左の「言」と右の「正」で構成する。"
+    "note": "証拠（しょうこ）。証は左の「言」と右の「正」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_japanese_core_kanji_裕",
@@ -3974,7 +3985,7 @@
     ],
     "sentence": "裕福な家庭で育つ。",
     "character": "裕",
-    "writing_hint": "「ゆうふく」な家庭。最初の漢字",
+    "writing_hint": "「ゆうふく」な家庭。",
     "writing_parts": [
       {
         "position": "左",
@@ -4007,7 +4018,8 @@
         ]
       }
     ],
-    "note": "裕福（ゆうふく）。裕は左の「衤」と右の「谷」で構成する。"
+    "note": "裕福（ゆうふく）。裕は左の「衤」と右の「谷」で構成する。",
+    "writing_target_index": 0
   },
   {
     "id": "jr_science_core_equilibrium",

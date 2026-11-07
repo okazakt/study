@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.65.0';
-import { materializeMathItem } from './math-variants.js?v=0.65.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.65.1';
+import { materializeMathItem } from './math-variants.js?v=0.65.1';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -113,6 +113,15 @@ export function makeChoiceQuestion(item, random = Math.random) {
   return { ...item, id: `${item.id}:choice`, sourceId: item.id, mode: 'learning_point',
     term: item.prompt, context: '', choices, correct: choices.indexOf(item.answer), reviewLabel: item.prompt };
 }
+// Character position is explicit, so repeated characters can target exactly one occurrence.
+export function kanjiWritingDisplay(item){
+  const chars=Array.from(item.word),matches=chars.flatMap((c,i)=>c===item.character?[i]:[]);
+  const index=Number.isInteger(item.writing_target_index)?item.writing_target_index:matches.length===1?matches[0]:-1;
+  if(index<0||index>=chars.length||chars[index]!==item.character)throw new Error(`${item.id}: specify a valid writing_target_index`);
+  const sentence=(item.writing_hint||'').replace(/(?:最初の漢字|二つ目の漢字)$/u,'').trim();
+  const maskedWord=chars.map((c,i)=>i===index?'□':c).join('');
+  return {sentence,reading:item.reading,maskedWord,targetIndex:index};
+}
 export function makeJapaneseQuestions(item, random = Math.random) {
   const question = (mode, prompt, answer, dummies, task, extra = {}) => {
     const candidates = [...new Set(dummies)].filter(value => value !== answer);
@@ -121,14 +130,15 @@ export function makeJapaneseQuestions(item, random = Math.random) {
     return { ...item, id: `${item.id}:${mode}`, sourceId: item.id, mode, prompt, answer, choices,
       correct: choices.indexOf(answer), context: '', task, reviewLabel: prompt, ...extra };
   };
+  const writing=item.kind==='kanji'?kanjiWritingDisplay(item):null;
   if (item.kind === 'kanji') return [
     question('kanji_reading', `「${item.word}」\n${item.sentence}`, item.reading, item.reading_dummies, 'かぎ括弧の語の読みを選ぼう'),
-    ...item.writing_parts.map((part, position) => question('kanji_component', item.writing_hint, part.answer, part.dummies, '部品を順に選ぼう',
-      { id: `${item.id}:kanji_component:${position + 1}`, blankIndex: position + 1, blankPosition: position + 1,
+    ...item.writing_parts.map((part, position) => question('kanji_component', `${writing.sentence}\n「${writing.reading}」 ${writing.maskedWord}`, part.answer, part.dummies, '',
+      { writingDisplay:writing, id: `${item.id}:kanji_component:${position + 1}`, blankIndex: position + 1, blankPosition: position + 1,
         blankTotal: item.writing_parts.length, continuation: position > 0,
         diagram: { parts: item.writing_parts.map((part, index) => ({ ...part, state: index < position ? 'solved' : index === position ? 'active' : 'pending' })) },
-        targetLabel: `強調された？（${part.position}）の字形を選択（${position + 1} / ${item.writing_parts.length}）`,
-        reviewLabel: `${item.writing_hint} · ${part.position}の字形（${position + 1} / ${item.writing_parts.length}）`,
+        targetLabel: `${part.position}の部品を選ぼう（${position + 1} / ${item.writing_parts.length}）`,
+        reviewLabel: `「${writing.reading}」 ${writing.maskedWord} · ${part.position}の字形（${position + 1} / ${item.writing_parts.length}）`,
         note: position + 1 === item.writing_parts.length ? `完成：${item.character}。${item.note}` : '' }))
   ];
   if (item.kind === 'idiom') return [

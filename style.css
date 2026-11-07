@@ -165,3 +165,10 @@ body.playing .focus-mode .lane-keys button{background:linear-gradient(color-mix(
 .focus-note{flex:0 0 auto;margin:5px 0;color:var(--accent);font-size:12px;line-height:1.5;text-align:center}
 body.playing .focus-mode .lane-keys button{transform:scale(calc(1 + var(--beat-pulse,0)*.035));transform-origin:center bottom;box-shadow:0 0 calc(var(--beat-pulse,0)*16px) color-mix(in srgb,var(--lane-color) 50%,transparent)}
 @media(prefers-reduced-motion:reduce){body.playing .focus-mode .lane-keys button{transform:none}}
+
+#prompt.kanji-writing-prompt,#practice-prompt.kanji-writing-prompt{display:block;margin:6px 0 10px;line-height:1.35}
+.kanji-writing-sentence{display:block;font-size:16px;line-height:1.7;font-weight:500;color:#c2d2e7}
+.kanji-target-line{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:12px 0 10px;line-height:1.35;font-weight:750}
+.kanji-target-reading{font-size:20px;color:#eef2fa}.kanji-target-word{display:inline-flex;align-items:center;gap:3px;font-size:32px}
+.blank-kanji-target,.blank-kanji-complete{display:inline-flex;align-items:center;justify-content:center;width:35px;height:38px;flex-shrink:0;border:2px solid #a8f07d;border-radius:5px;background:#a8f07d12;box-shadow:0 0 10px #a8f07d18;line-height:1;color:transparent}
+.blank-kanji-complete{color:var(--accent);border-color:transparent;background:none;box-shadow:none}

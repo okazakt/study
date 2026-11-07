@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.65.0';
-import { ScreenWakeLock } from './wake-lock.js?v=0.65.0';
-import { MusicPlayer } from './music-player.js?v=0.65.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.65.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.65.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.65.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.65.0';
-const VERSION = '0.65.0';
+import {FocusGame} from './focus-game.js?v=0.65.1';
+import { ScreenWakeLock } from './wake-lock.js?v=0.65.1';
+import { MusicPlayer } from './music-player.js?v=0.65.1';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.65.1';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.65.1';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.65.1';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.65.1';
+const VERSION = '0.65.1';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -706,6 +706,26 @@ function appendCharacters(element, text, start, segments = [{ text }], choice = 
     }
   }
 }
+function renderWritingPrompt(element,q,start=0,animated=false,feedback=false){
+  const display=q.writingDisplay,complete=feedback&&q.blankPosition===q.blankTotal;
+  element.replaceChildren();element.classList.add('kanji-writing-prompt');
+  const fullWord=Array.from(display.maskedWord).map((c,i)=>i===display.targetIndex&&complete?q.character:c).join('');
+  element.setAttribute('aria-label',`${display.sentence} 「${display.reading}」 ${fullWord}`);
+  const put=(node,text,at,segments=[{text}])=>{
+    if(animated)appendCharacters(node,text,at,segments);
+    else for(const segment of segments){const span=document.createElement('span');span.textContent=segment.text;if(segment.state)span.className=`blank-${segment.state}`;node.append(span);}
+  };
+  const sentence=document.createElement('span');sentence.className='kanji-writing-sentence';element.append(sentence);
+  put(sentence,display.sentence,start);
+  const line=document.createElement('span');line.className='kanji-target-line';
+  const reading=document.createElement('span');reading.className='kanji-target-reading';
+  const word=document.createElement('span');word.className='kanji-target-word';line.append(reading,word);element.append(line);
+  const readingText=`「${display.reading}」`,charSeconds=animated?game.reveal.charSeconds:0;
+  const readingStart=start+(Array.from(display.sentence).length+1)*charSeconds;
+  put(reading,readingText,readingStart);
+  const segments=Array.from(fullWord).map((text,i)=>({text,...(i===display.targetIndex?{state:complete?'kanji-complete':'kanji-target'}:{})}));
+  put(word,fullWord,readingStart+(Array.from(readingText).length+1)*charSeconds,segments);
+}
 function renderKanji(puzzle, q, feedback = false) {
   const diagram = q?.diagram; puzzle.hidden = !diagram;
   const completed = !!diagram && feedback && q.blankPosition === q.blankTotal;
@@ -736,7 +756,9 @@ function renderQuestion() {
   $('choices').classList.toggle('long-choices', !intro && choiceColumns(q) === 2);
   const segments = q.segments?.map(segment => game.phase === 'feedback' && segment.state === 'active' ? { ...segment, text: q.answer, state: 'solved' } : segment);
   const prompt = intro ? (game.phase === 'outro' ? '最後までリズムをつなごう' : game.phase === 'rhythm' ? 'リズムにのって、次の問題へ' : 'まずはリズムにのろう') : segments ? segments.map(s => s.text).join('') : q.prompt;
-  appendCharacters($('prompt'), prompt, game.reveal.prompt.start, intro ? undefined : segments);
+  $('prompt').classList.toggle('kanji-writing-prompt',!intro&&!!q.writingDisplay);
+  if(!intro&&q.writingDisplay)renderWritingPrompt($('prompt'),q,game.reveal.prompt.start,true,game.phase==='feedback');
+  else {$('prompt').removeAttribute('aria-label');appendCharacters($('prompt'), prompt, game.reveal.prompt.start, intro ? undefined : segments);}
   $('question-task').textContent = intro || q.context ? '' : q.task;
   appendCharacters($('question-context'), intro || !q.context ? '' : q.task, game.reveal.context.start);
   $('blank-instruction').hidden = intro || !q.blankIndex;
@@ -1027,13 +1049,15 @@ function renderPractice() {
   $('practice-progress').textContent = q ? `${reviewIndex + 1} / ${reviewQuestions.length} · ${q.grade} ${q.subject}` : 'すべての問題を正解できました。';
   $('practice-task').textContent = q?.task || '';
   $('practice-target').textContent = q?.targetLabel || '';
-  $('practice-prompt').replaceChildren(); $('practice-choices').replaceChildren();
+  $('practice-prompt').replaceChildren(); $('practice-prompt').removeAttribute('aria-label'); $('practice-choices').replaceChildren();
+  $('practice-prompt').classList.toggle('kanji-writing-prompt',!!q?.writingDisplay);
   $('practice-prompt').classList.toggle('has-meaning-context', !!q?.meaning_context && q.mode === 'to_japanese');
   $('practice-feedback').textContent = q ? '' : '○ 復習完了！'; $('practice-explanation').textContent = '';
   $('practice-next').hidden = !q; $('practice-next').disabled = true;
   renderKanji($('practice-kanji'), q);
   if (!q) return;
-  for (const segment of q.segments || [{text:q.prompt}]) {
+  if(q.writingDisplay)renderWritingPrompt($('practice-prompt'),q);
+  else for (const segment of q.segments || [{text:q.prompt}]) {
     const span = document.createElement('span'); span.textContent = segment.text;
     if (segment.state) span.className = `blank-${segment.state}`;
     $('practice-prompt').append(span);
@@ -1055,6 +1079,7 @@ function renderPractice() {
       $('practice-explanation').textContent = `正解：${q.answer}。${explanation}`;
       if (q.segments) for (const span of $('practice-prompt').querySelectorAll('.blank-active')) { span.textContent = q.answer; span.className = 'blank-solved'; }
       renderKanji($('practice-kanji'), q, true);
+      if(q.writingDisplay)renderWritingPrompt($('practice-prompt'),q,0,false,true);
       $('practice-next').disabled = false;
     });
     $('practice-choices').append(button);
