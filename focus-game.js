@@ -1,4 +1,4 @@
-import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.65.1';
+import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.65.2';
 
 // The chart's main beats are timing opportunities, without visible/moving notes.
 export function focusReveal(question,speed){
@@ -63,7 +63,8 @@ export class FocusGame extends Game {
     if(lane>=0&&this.phase!=='answer')return null;
     const colored=true;
     const beat=this.beats.slice(this.beatCursor).find(b=>!b.done&&Math.abs(timingError(b.target,now))<=RULES.goodWindow+1e-9);
-    let label='MISS';
+    if(!beat)return null; // Offbeat and duplicate taps are ignored in focus mode.
+    let label;
     if(beat){
       beat.done=true;label=Math.abs(timingError(beat.target,now))<=RULES.perfectWindow+1e-9?'PERFECT':'GOOD';
       this.maxCombo=Math.max(this.maxCombo,++this.combo);
@@ -72,9 +73,8 @@ export class FocusGame extends Game {
       if(!colored||this.stageWrongCount===0){
         if(colored){this.focusColor+=points;this.colorComboBonus+=this.combo;}else{this.focusWhite+=points;this.whiteComboBonus+=this.combo;}
       }
-    }else{this.combo=0;this.emptyMisses++;}
+    }
     this.judge(label,now);
-    if(!beat)return null; // Timing MISS is not an academic answer or a recorded mistake.
     const note={color:colored?lane:null,lane,target:beat?.target??now};
     if(colored){
       const oldScore=this.quizScore,wrong=this.stageWrongCount,oldCorrect=this.correctCount;

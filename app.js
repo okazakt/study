@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.65.1';
-import { ScreenWakeLock } from './wake-lock.js?v=0.65.1';
-import { MusicPlayer } from './music-player.js?v=0.65.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.65.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.65.1';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.65.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.65.1';
-const VERSION = '0.65.1';
+import {FocusGame} from './focus-game.js?v=0.65.2';
+import { ScreenWakeLock } from './wake-lock.js?v=0.65.2';
+import { MusicPlayer } from './music-player.js?v=0.65.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.65.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.65.2';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.65.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.65.2';
+const VERSION = '0.65.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -906,6 +906,7 @@ function tap(lane) {
   const shouldSound = game.focus || ['intro', 'answer', 'rhythm', 'outro'].includes(game.phase);
   if(lane>=0)ghostPressTimes[lane] = game.time;
   const note = game.tap(lane, now);
+  if(game.focus&&!note)return; // No sound, judgment or answer for ignored focus taps.
   if (!game.focus && note && ['GOOD','PERFECT'].includes(game.lastJudgment)) {
     hitEffects.push({lane,judgment:game.lastJudgment,time:game.time});
     if(hitEffects.length>24)hitEffects.shift();

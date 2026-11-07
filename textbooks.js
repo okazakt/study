@@ -1,4 +1,4 @@
-import {matchesPracticeItem} from './learning.js?v=0.65.1';
+import {matchesPracticeItem} from './learning.js?v=0.65.2';
 export const TEXTBOOK_KEY='study-beat-textbooks-v1';
 export function availableTextbookSeries(data){
  return [...new Set((data?.books || []).map(b=>b.series))].map(id=>{

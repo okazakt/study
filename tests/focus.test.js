@@ -13,7 +13,7 @@ test('focus is a saved fourth option and no notes or white interludes are create
 test('offbeat answers and removed waiting taps do not submit academic answers',()=>{
  const g=make();g.update(0);assert.equal(g.tap(-1,1),null);assert.equal(g.combo,0);
  const wrong=(g.question.correct+1)%4;g.tap(wrong,1.5);assert.equal(g.wrongCount,1);assert.equal(g.combo,0);
- assert.equal(g.tap(g.question.correct,1.76),null);assert.equal(g.correctCount,0);assert.equal(g.lastJudgment,'MISS');assert.equal(g.wrongCount,1);assert.equal(g.phase,'answer');
+ assert.equal(g.tap(g.question.correct,1.76),null);assert.equal(g.correctCount,0);assert.equal(g.lastJudgment,'PERFECT');assert.equal(g.wrongCount,1);assert.equal(g.phase,'answer');
  g.tap(g.question.correct,2);assert.equal(g.correctCount,1);assert.equal(g.firstCount,0);assert.equal(g.quizScore,40);
 });
 test('reading, thinking and feedback never incur passive misses',()=>{
@@ -73,4 +73,19 @@ test('both registered songs use half cadence through the real playlist while ord
  const g=new FocusGame([item],list.events,-.101,()=>.5,list.duration,q=>q.mode==='to_japanese',null,list.duration,null,{speed:'instant'});
  assert.ok(g.beats.length<g.musicBeats.length*.52);assert.ok(g.beats.length>g.musicBeats.length*.48);
  assert.equal(g.beats[0].target,list.events.find(e=>e.focusEligible).time-.101);
+});
+
+test('offbeat focus taps preserve active combos, scores, judgments and answer state',()=>{
+ const g=make();g.update(0);g.tap(g.question.correct,1);g.update(2);
+ assert.equal(g.combo,1);assert.equal(g.quizCombo,1);
+ const snapshot=()=>JSON.stringify({score:g.totalScore,combo:g.combo,quizCombo:g.quizCombo,maxCombo:g.maxCombo,judgments:g.judgments,empty:g.emptyMisses,last:g.lastJudgment,judgmentTime:g.judgmentTime,correct:g.correctCount,wrong:g.wrongCount,counts:g.counts,first:g.firstTry,quizResult:g.quizResult,message:g.message});
+ const before=snapshot();
+ assert.equal(g.tap(g.question.correct,2.26),null);assert.equal(snapshot(),before);
+ g.tap(g.question.correct,2.5);assert.equal(g.correctCount,2);assert.equal(g.combo,2);
+});
+test('a duplicate focus tap cannot register a second answer, judgment or point',()=>{
+ const g=make();g.update(0);g.tap((g.question.correct+1)%4,1);
+ const before=JSON.stringify({judgments:g.judgments,score:g.totalScore,wrong:g.wrongCount,empty:g.emptyMisses,time:g.judgmentTime});
+ assert.equal(g.tap(g.question.correct,1),null);
+ assert.equal(JSON.stringify({judgments:g.judgments,score:g.totalScore,wrong:g.wrongCount,empty:g.emptyMisses,time:g.judgmentTime}),before);
 });
