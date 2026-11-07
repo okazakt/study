@@ -1,0 +1,24 @@
+{
+  "version": "0.69.0",
+  "newCharacters": 252,
+  "newWritingStages": 509,
+  "correctedCharacters": [
+    "喝",
+    "弥",
+    "拐",
+    "捗",
+    "欄"
+  ],
+  "deferredCharacters": [
+    "僅",
+    "敷"
+  ],
+  "netGeneratedIncrease": 506,
+  "secondaryWritingCovered": 621,
+  "target": 1110,
+  "remaining": 489,
+  "existingReadingMaterialsUnchanged": 1094,
+  "elementaryArchiveUnchanged": true,
+  "changedMaterials": 270,
+  "checks": "Changed-data schema, choices, content budget, reading preservation, Japanese component forms; no full suite, browser loop or five-minute simulation."
+}

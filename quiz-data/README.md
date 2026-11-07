@@ -117,3 +117,9 @@
 中学の漢字は小学配当を除いた常用漢字1,110字を対象にする。既存235素材を `school_level: 小学` と正式配当の `grade: 小N` へ分類し、IDを維持して小学の部用に保管。現在の中学の学年・受験用・全てからは除外する。小学のUIはまだ作らない。小学漢字の新規追加も止める。
 
 `secondary-writing-additions.tsv` の300字の書きを既存の読みIDへ追加した。読みの内容・IDは維持し、中学の書きは371字。`python3 scripts/build-japanese-content.py` は小学の保管分も復元するが、今の追加先は中学用TSVに限る。差分確認は `--batch japanese-secondary-writing-20261107`。今回分は確認済みの左右構成内で、新たな画面確認は不要。
+
+## 中学書き第4段階（v0.69.0）
+
+`secondary-writing-2.tsv` に252字を追加。中学書き621/1,110字、残り489字。日本の字形を優先し、精密な字形素材が必要な僅・敷は `writing-deferred.json` で書きのみ保留する。読みと履歴は削除しない。修正5字は `writing-shape-revisions.json` のrevisionを生成した書きID末尾へ付ける。復帰時にも旧構成の履歴を混同しないrevisionを設定する。
+
+小学の保管分は変更しない。新規分は `--batch japanese-secondary-writing-2-20261107` で簡易確認できる。既存の確認済み左右2/3部品構成内。辞書読みの記録は `secondary-writing-2-reading-review.json`、差分集計は `secondary-writing-2-audit.json`。同等字形は `writing-glyph-groups.json` の全体／字別の同等形から誤答候補を除外する。

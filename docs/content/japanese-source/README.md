@@ -50,3 +50,9 @@
 - `secondary-writing-additions.tsv` は小学配当を除いた1,110字から選んだ300字。全て既存の読みIDへ書きを追加する。`secondary-writing-reading-review.json` に語の読みと別読の照合を記録。新しい例語の読みも上記JMdict/JmdictFuriganaのクレジット・CC BY-SA 4.0で扱う。左右の字形構成は補助資料でも照合し、既存の `lr-parts-v1` 範囲内。新しい表示構成や文字量の超過はなく、基本テスト・画面の再確認・5分進行は行わない。
 - 今回の追加は `--batch japanese-secondary-writing-20261107` で差分だけチェックする。小学用の旧TSVは再生成で保管分を復元するために残し、行を増やさない。小学配当字を今回の中学TSVへ入れると生成時にエラーにする。
 - [今回の確認記録](secondary-writing-audit.json)・[現在の対象と残件](../japanese-progress.md)。
+
+## 中学書き第4段階（v0.69.0）
+
+`secondary-writing-2.tsv` に252字を追加。中学書き621/1,110字、残り489字。日本の字形を優先し、精密な字形素材が必要な僅・敷は `writing-deferred.json` で書きのみ保留する。読みと履歴は削除しない。修正5字は `writing-shape-revisions.json` のrevisionを生成した書きID末尾へ付ける。復帰時にも旧構成の履歴を混同しないrevisionを設定する。
+
+小学の保管分は変更しない。新規分は `--batch japanese-secondary-writing-2-20261107` で簡易確認できる。既存の確認済み左右2/3部品構成内。辞書読みの記録は `secondary-writing-2-reading-review.json`、差分集計は `secondary-writing-2-audit.json`。同等字形は `writing-glyph-groups.json` の全体／字別の同等形から誤答候補を除外する。

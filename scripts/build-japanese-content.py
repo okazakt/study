@@ -60,23 +60,25 @@ scope={q['character']:q['elementary'] for q in json.loads((SOURCE/'joyo-scope.js
 glyph_options=json.loads((SOURCE/'writing-glyph-groups.json').read_text());groups=glyph_options['groups']
 # Variant forms are not offered against one another as if they were wrong glyphs.
 aliases=[set(s) for s in glyph_options['equivalentForms']]
+shape_revisions=json.loads((SOURCE/'writing-shape-revisions.json').read_text())
+writing_deferred=json.loads((SOURCE/'writing-deferred.json').read_text())
 def glyph_dummies(answer,character):
  pool=next((list(g) for g in groups if answer in g),list('目田白自未末本木由甲申寺吉古合谷各共兵具良艮鬼豆角舟石示辛章央失矢里重'))
  result=[]
  for c in pool+list('目田白自未末本木由甲申寺吉古合谷各共兵具良艮鬼豆角舟石示辛章央失矢里重'):
-  if c in {answer,character} or c in result or any(answer in pair and c in pair for pair in aliases):continue
+  if c in {answer,character} or c in result or any(answer in pair and c in pair for pair in aliases+[set(s) for s in glyph_options.get('parentEquivalentForms',{}).get(character,[])]):continue
   result.append(c)
   if len(result)==3:return result
  raise ValueError('insufficient distinct glyphs for '+answer)
 writing_batch='japanese-writing-20261107'
 elementary_grades=json.loads((SOURCE/'elementary-grades.json').read_text())
-writing_rows=[(name,n,r) for name in ['writing-additions.tsv','secondary-writing-additions.tsv'] for n,r in rows(name)]
+writing_rows=[(name,n,r) for name in ['writing-additions.tsv','secondary-writing-additions.tsv','secondary-writing-2.tsv'] for n,r in rows(name)]
 for name,n,r in writing_rows:
- writing_batch='japanese-secondary-writing-20261107' if name=='secondary-writing-additions.tsv' else 'japanese-writing-20261107'
+ writing_batch={'writing-additions.tsv':'japanese-writing-20261107','secondary-writing-additions.tsv':'japanese-secondary-writing-20261107','secondary-writing-2.tsv':'japanese-secondary-writing-2-20261107'}[name]
  assert len(r)==7,(n,r)
  c,word,reading,hint,left,right,reading_dummies=r
  assert c in scope and c not in old_kanji and c not in hint,(n,c)
- if name=='secondary-writing-additions.tsv':assert not scope[c],f'{c}: elementary additions are disabled for this batch'
+ if name.startswith('secondary-writing'):assert not scope[c],f'{c}: elementary additions are disabled for this batch'
  assert word.count(c)==1 and len(left)==1 and 1<=len(right.split('/'))<=2,(n,c)
  if c in kanji_by_char:
   item=kanji_by_char[c]
@@ -86,7 +88,7 @@ for name,n,r in writing_rows:
   bank.append(item)
  item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch=writing_batch,writing_profile='lr-parts-v1',writing_scope='elementary-1026' if scope[c] else 'secondary-1110')
  radicals='日言氵亻木忄阝扌糸禾土舟金貝月王'
- if name=='secondary-writing-additions.tsv':radicals+='女冫彳山巾弓口子歹'
+ if name.startswith('secondary-writing'):radicals+='女冫彳山巾弓口子歹'
  width=40 if left in set(radicals) else 60
  parts=[dict(position='左',answer=left,dummies=glyph_dummies(left,c),box=[0,0,width,100])]
  rights=right.split('/')
@@ -94,6 +96,8 @@ for name,n,r in writing_rows:
   assert len(a)==1 and ord(a)<=0xffff,(n,a)
   parts.append(dict(position='右' if len(rights)==1 else '右上' if i==0 else '右下',answer=a,dummies=glyph_dummies(a,c),box=[width,0 if i==0 else 50,100-width,100 if len(rights)==1 else 50]))
  item['writing_parts']=parts
+ if c in shape_revisions:item['writing_revision']=shape_revisions[c]
+ if c in writing_deferred:item.update(writing_parts=[],writing_status='pending-glyph-assets',writing_deferred_reason=writing_deferred[c]['reason'])
 (ROOT/'quiz-data/junior_japanese_extended.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')
 print('Writing targets compiled:',len(writing_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows),')')
