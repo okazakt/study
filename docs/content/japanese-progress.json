@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
-  "materials": 1473,
-  "generated": 1713,
+  "materials": 1789,
+  "generated": 2615,
   "secondaryReading": {
     "covered": 1110,
     "target": 1110,
@@ -9,35 +9,37 @@
     "scope": "字種ごとに最低一つの語の読み。全音訓・全語義の完了とはしない。"
   },
   "writing": {
-    "elementaryCovered": 12,
+    "elementaryCovered": 235,
     "elementaryTarget": 1026,
-    "secondaryCovered": 12,
+    "secondaryCovered": 71,
     "secondaryTarget": 1110,
     "scope": "部品選択の素材数。実際の手書き・筆順の習熟とは区別する。"
   },
   "fields": {
     "漢字": {
-      "materials": 1118,
-      "generated": 1171,
+      "materials": 1341,
+      "generated": 1960,
       "units": [
         "漢字",
         "共通漢字",
-        "常用漢字の読み"
+        "常用漢字の読み",
+        "小学校配当漢字の復習"
       ]
     },
     "熟語・四字熟語": {
-      "materials": 96,
-      "generated": 192,
+      "materials": 116,
+      "generated": 232,
       "units": [
         "熟語・四字熟語",
         "共通四字熟語",
         "慣用句",
-        "四字熟語"
+        "四字熟語",
+        "ことわざ"
       ]
     },
     "現代文文法": {
-      "materials": 112,
-      "generated": 164,
+      "materials": 155,
+      "generated": 207,
       "units": [
         "現代文文法",
         "文の成分",
@@ -57,8 +59,8 @@
       ]
     },
     "古文文法": {
-      "materials": 69,
-      "generated": 88,
+      "materials": 89,
+      "generated": 108,
       "units": [
         "古文文法",
         "歴史的仮名遣い",
@@ -74,8 +76,8 @@
       ]
     },
     "漢文文法": {
-      "materials": 45,
-      "generated": 65,
+      "materials": 55,
+      "generated": 75,
       "units": [
         "漢文文法",
         "訓読",

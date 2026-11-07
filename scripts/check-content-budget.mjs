@@ -8,7 +8,7 @@ if(!args.includes('--file'))throw new Error('Usage: node scripts/check-content-b
 const bank=JSON.parse(readFileSync(value('--file'),'utf8'));
 if(!Array.isArray(bank))throw new Error('Question bank must be an array');
 const budget=JSON.parse(readFileSync(new URL('../docs/content/content-budget.json',import.meta.url)));
-const items=args.includes('--batch')?bank.filter(q=>q.content_batch===value('--batch')):bank;
+const items=args.includes('--batch')?bank.filter(q=>q.content_batch===value('--batch')||q.writing_batch===value('--batch')):bank;
 if(!items.length)throw new Error('No matching materials');
 const chars=s=>[...String(s||'')].length;
 // Conservative text-width estimate: Latin, spaces and Japanese have different widths.
@@ -22,6 +22,19 @@ function lines(text,capacity){
   while(size>capacity){count++;size-=capacity;}
   width+=size;
  }return text?count:0;
+}
+// A diagram exemption is structural and bounded, not a flag that skips review.
+function reviewedKanjiDiagram(item,q,measured){
+ if(item.image||item.figure||item.diagram||q.mode!=='kanji_component'||!q.writingDisplay||!q.diagram)return false;
+ return (budget.reviewedDiagramProfiles||[]).some(p=>{
+  if(item.subject!==p.subject||q.writing_profile!==p.id||!p.parts.includes(q.diagram.parts.length)||Object.entries(p.maxima).some(([k,max])=>measured[k]>max))return false;
+  const d=q.writingDisplay,word=q.writing_word??q.word;
+  if(chars(d.sentence)>p.maxSentenceChars||chars(word)>p.maxWordChars||chars(d.reading)>p.maxReadingChars||(chars(d.reading)+2)*20+chars(word)*32+14>p.maxReadingWordWidthPx)return false;
+  if(!q.choices.every(c=>/^[\u3400-\u9fff\u30a0-\u30ff]$/u.test(c)))return false;
+  const parts=q.diagram.parts,w=parts[0].box[2];if(!p.leftWidths.includes(w))return false;
+  const expected=parts.length===2?[[0,0,w,100],[w,0,100-w,100]]:[[0,0,w,100],[w,0,100-w,50],[w,50,100-w,50]];
+  return parts.every((part,i)=>chars(part.answer)===1&&JSON.stringify(part.box)===JSON.stringify(expected[i]));
+ });
 }
 const errors=[],reviewRequired=[],maxima={task:0,prompt:0,choice:0,targetLabel:0,note:0,combined:0};
 const ids=new Set(),bankIdCounts=new Map();for(const q of bank)bankIdCounts.set(q.id,(bankIdCounts.get(q.id)||0)+1);let presentations=0;
@@ -49,7 +62,9 @@ for(const item of items){
   const reviewed=!(q.diagram||item.image||item.figure||item.diagram)&&(budget.reviewedTextProfiles||[]).find(p=>p.subject===item.subject&&p.profiles.includes(profile)&&Object.entries(p.maxima).every(([key,max])=>measured[key]<=max));
   const heightLimit=reviewed?.estimatedPanelHeightLimit??budget.estimatedPanelHeightLimit;
   if(height>heightLimit)issues.push(`estimated-height:${Math.ceil(height)}>${heightLimit}`);
-  if(q.diagram||item.image||item.figure||item.diagram)issues.push('image-or-diagram-profile-review');
+  const titleRule=budget.longDefinitionHeading;
+  if(titleRule&&item.subject===titleRule.subject&&q.mode===titleRule.mode&&chars(q.prompt)>titleRule.titleCharsOver&&(chars(q.prompt)>titleRule.maxTitleChars||measured.choice>titleRule.maxChoiceChars))issues.push('long-definition-title-needs-layout-review');
+  if((q.diagram||item.image||item.figure||item.diagram)&&!reviewedKanjiDiagram(item,q,measured))issues.push('image-or-diagram-profile-review');
   if(issues.length)reviewRequired.push({sourceId:item.id,questionId:q.id,profile,issues});
  }
 }

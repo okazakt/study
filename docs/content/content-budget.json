@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "baselineViewport": {
     "width": 320,
     "height": 844
@@ -49,6 +49,48 @@
       },
       "verified": "2026-11-07: 7 boundary examples × 320/390 × normal/focus = 28 displays; panel/choice overflow absent; maximum actual panel height 416px.",
       "reviewRecord": "japanese-source/layout-review.json"
+    }
+  ],
+  "longDefinitionHeading": {
+    "subject": "国語",
+    "mode": "japanese_definition",
+    "titleCharsOver": 12,
+    "maxTitleChars": 14,
+    "maxChoiceChars": 19,
+    "reviewRecord": "japanese-source/writing-layout-review.json"
+  },
+  "reviewedDiagramProfiles": [
+    {
+      "id": "lr-parts-v1",
+      "subject": "国語",
+      "mode": "kanji_component",
+      "maxima": {
+        "task": 0,
+        "prompt": 34,
+        "choice": 1,
+        "targetLabel": 16,
+        "note": 16,
+        "combined": 61
+      },
+      "maxSentenceChars": 24,
+      "maxWordChars": 3,
+      "maxReadingChars": 6,
+      "maxReadingWordWidthPx": 250,
+      "leftWidths": [
+        40,
+        60
+      ],
+      "parts": [
+        2,
+        3
+      ],
+      "glyphRange": "BMP CJK and katakana; one glyph per choice",
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "reviewRecord": "japanese-source/writing-layout-review.json",
+      "scope": "Existing glyph-based kanji puzzle only. Left/right with optional right-top/right-bottom; no arbitrary images or diagrams."
     }
   ]
 }

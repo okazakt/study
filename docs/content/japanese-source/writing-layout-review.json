@@ -1,0 +1,2135 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "0.67.0",
+  "cases": [
+    {
+      "id": "jr_jp_write_8a69:kanji_component:1",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "漢字",
+      "unit": "小学校配当漢字の復習",
+      "kind": "kanji",
+      "character": "詩",
+      "word": "詩集",
+      "reading": "ししゅう",
+      "reading_dummies": [
+        "じしゅう",
+        "しじゅう",
+        "ししゆう"
+      ],
+      "sentence": "言葉の響きやリズムを生かした作品を集めた本。",
+      "note": "",
+      "content_batch": "japanese-writing-20261107",
+      "writing_word": "詩集",
+      "writing_reading": "ししゅう",
+      "writing_hint": "言葉の響きやリズムを生かした作品を集めた本。",
+      "writing_target_index": 0,
+      "writing_note": "詩集（ししゅう）。",
+      "writing_batch": "japanese-writing-20261107",
+      "writing_profile": "lr-parts-v1",
+      "writing_scope": "elementary-1026",
+      "writing_parts": [
+        {
+          "position": "左",
+          "answer": "言",
+          "dummies": [
+            "吾",
+            "吉",
+            "告"
+          ],
+          "box": [
+            0,
+            0,
+            40,
+            100
+          ]
+        },
+        {
+          "position": "右",
+          "answer": "寺",
+          "dummies": [
+            "吉",
+            "告",
+            "舌"
+          ],
+          "box": [
+            40,
+            0,
+            60,
+            100
+          ]
+        }
+      ],
+      "sourceId": "jr_jp_write_8a69",
+      "mode": "kanji_component",
+      "prompt": "言葉の響きやリズムを生かした作品を集めた本。\n「ししゅう」 □集",
+      "answer": "言",
+      "choices": [
+        "言",
+        "吉",
+        "吾",
+        "告"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "",
+      "reviewLabel": "「ししゅう」 □集 · 左の字形（1 / 2）",
+      "writingDisplay": {
+        "sentence": "言葉の響きやリズムを生かした作品を集めた本。",
+        "reading": "ししゅう",
+        "maskedWord": "□集",
+        "targetIndex": 0
+      },
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 2,
+      "continuation": false,
+      "diagram": {
+        "parts": [
+          {
+            "position": "左",
+            "answer": "言",
+            "dummies": [
+              "吾",
+              "吉",
+              "告"
+            ],
+            "box": [
+              0,
+              0,
+              40,
+              100
+            ],
+            "state": "active"
+          },
+          {
+            "position": "右",
+            "answer": "寺",
+            "dummies": [
+              "吉",
+              "告",
+              "舌"
+            ],
+            "box": [
+              40,
+              0,
+              60,
+              100
+            ],
+            "state": "pending"
+          }
+        ]
+      },
+      "targetLabel": "左の部品を選ぼう（1 / 2）"
+    },
+    {
+      "id": "jr_jp_write_80ba:kanji_component:2",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "漢字",
+      "unit": "小学校配当漢字の復習",
+      "kind": "kanji",
+      "character": "肺",
+      "word": "肺胞",
+      "reading": "はいほう",
+      "reading_dummies": [
+        "ばいほう",
+        "はいぼう",
+        "あいほう"
+      ],
+      "sentence": "呼吸する器官にある、小さな袋状の構造。",
+      "note": "完成：肺。肺胞（はいほう）。",
+      "content_batch": "japanese-writing-20261107",
+      "writing_word": "肺胞",
+      "writing_reading": "はいほう",
+      "writing_hint": "呼吸する器官にある、小さな袋状の構造。",
+      "writing_target_index": 0,
+      "writing_note": "肺胞（はいほう）。",
+      "writing_batch": "japanese-writing-20261107",
+      "writing_profile": "lr-parts-v1",
+      "writing_scope": "elementary-1026",
+      "writing_parts": [
+        {
+          "position": "左",
+          "answer": "月",
+          "dummies": [
+            "日",
+            "目",
+            "白"
+          ],
+          "box": [
+            0,
+            0,
+            40,
+            100
+          ]
+        },
+        {
+          "position": "右",
+          "answer": "巿",
+          "dummies": [
+            "市",
+            "巾",
+            "币"
+          ],
+          "box": [
+            40,
+            0,
+            60,
+            100
+          ]
+        }
+      ],
+      "sourceId": "jr_jp_write_80ba",
+      "mode": "kanji_component",
+      "prompt": "呼吸する器官にある、小さな袋状の構造。\n「はいほう」 □胞",
+      "answer": "巿",
+      "choices": [
+        "巿",
+        "巾",
+        "市",
+        "币"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "",
+      "reviewLabel": "「はいほう」 □胞 · 右の字形（2 / 2）",
+      "writingDisplay": {
+        "sentence": "呼吸する器官にある、小さな袋状の構造。",
+        "reading": "はいほう",
+        "maskedWord": "□胞",
+        "targetIndex": 0
+      },
+      "blankIndex": 2,
+      "blankPosition": 2,
+      "blankTotal": 2,
+      "continuation": true,
+      "diagram": {
+        "parts": [
+          {
+            "position": "左",
+            "answer": "月",
+            "dummies": [
+              "日",
+              "目",
+              "白"
+            ],
+            "box": [
+              0,
+              0,
+              40,
+              100
+            ],
+            "state": "solved"
+          },
+          {
+            "position": "右",
+            "answer": "巿",
+            "dummies": [
+              "市",
+              "巾",
+              "币"
+            ],
+            "box": [
+              40,
+              0,
+              60,
+              100
+            ],
+            "state": "active"
+          }
+        ]
+      },
+      "targetLabel": "右の部品を選ぼう（2 / 2）"
+    },
+    {
+      "id": "jr_jp_write_526f:kanji_component:1",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "漢字",
+      "unit": "小学校配当漢字の復習",
+      "kind": "kanji",
+      "character": "副",
+      "word": "副作用",
+      "reading": "ふくさよう",
+      "reading_dummies": [
+        "ぶくさよう",
+        "ふくざよう",
+        "あくさよう"
+      ],
+      "sentence": "主な働きに伴って生じる別の作用。",
+      "note": "",
+      "content_batch": "japanese-writing-20261107",
+      "writing_word": "副作用",
+      "writing_reading": "ふくさよう",
+      "writing_hint": "主な働きに伴って生じる別の作用。",
+      "writing_target_index": 0,
+      "writing_note": "副作用（ふくさよう）。",
+      "writing_batch": "japanese-writing-20261107",
+      "writing_profile": "lr-parts-v1",
+      "writing_scope": "elementary-1026",
+      "writing_parts": [
+        {
+          "position": "左",
+          "answer": "畐",
+          "dummies": [
+            "富",
+            "苗",
+            "田"
+          ],
+          "box": [
+            0,
+            0,
+            60,
+            100
+          ]
+        },
+        {
+          "position": "右",
+          "answer": "刂",
+          "dummies": [
+            "阝",
+            "卩",
+            "彳"
+          ],
+          "box": [
+            60,
+            0,
+            40,
+            100
+          ]
+        }
+      ],
+      "sourceId": "jr_jp_write_526f",
+      "mode": "kanji_component",
+      "prompt": "主な働きに伴って生じる別の作用。\n「ふくさよう」 □作用",
+      "answer": "畐",
+      "choices": [
+        "畐",
+        "苗",
+        "富",
+        "田"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "",
+      "reviewLabel": "「ふくさよう」 □作用 · 左の字形（1 / 2）",
+      "writingDisplay": {
+        "sentence": "主な働きに伴って生じる別の作用。",
+        "reading": "ふくさよう",
+        "maskedWord": "□作用",
+        "targetIndex": 0
+      },
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 2,
+      "continuation": false,
+      "diagram": {
+        "parts": [
+          {
+            "position": "左",
+            "answer": "畐",
+            "dummies": [
+              "富",
+              "苗",
+              "田"
+            ],
+            "box": [
+              0,
+              0,
+              60,
+              100
+            ],
+            "state": "active"
+          },
+          {
+            "position": "右",
+            "answer": "刂",
+            "dummies": [
+              "阝",
+              "卩",
+              "彳"
+            ],
+            "box": [
+              60,
+              0,
+              40,
+              100
+            ],
+            "state": "pending"
+          }
+        ]
+      },
+      "targetLabel": "左の部品を選ぼう（1 / 2）"
+    },
+    {
+      "id": "jr_jp_joyo_8b72:kanji_component:2",
+      "school_level": "中学",
+      "grade": "中2",
+      "subject": "国語",
+      "field": "漢字",
+      "unit": "常用漢字の読み",
+      "kind": "kanji",
+      "word": "謙譲",
+      "character": "譲",
+      "reading": "けんじょう",
+      "reading_dummies": [
+        "けんしょう",
+        "けんじよう",
+        "けんじょお"
+      ],
+      "sentence": "語句の読みを選ぼう。",
+      "writing_hint": "自分の主張を一部控え、相手に近づくこと。",
+      "writing_target_index": 0,
+      "writing_parts": [
+        {
+          "position": "左",
+          "answer": "言",
+          "dummies": [
+            "吾",
+            "吉",
+            "告"
+          ],
+          "box": [
+            0,
+            0,
+            40,
+            100
+          ]
+        },
+        {
+          "position": "右",
+          "answer": "㐮",
+          "dummies": [
+            "衣",
+            "衰",
+            "褱"
+          ],
+          "box": [
+            40,
+            0,
+            60,
+            100
+          ]
+        }
+      ],
+      "note": "完成：譲。譲歩（じょうほ）。",
+      "content_batch": "japanese-joyo-20261107",
+      "kanji_scope": "secondary-1110",
+      "reading_sources": [
+        "bunka-joyo",
+        "jmdict-furigana-20261025"
+      ],
+      "writing_word": "譲歩",
+      "writing_reading": "じょうほ",
+      "writing_note": "譲歩（じょうほ）。",
+      "writing_batch": "japanese-writing-20261107",
+      "writing_profile": "lr-parts-v1",
+      "writing_scope": "secondary-1110",
+      "sourceId": "jr_jp_joyo_8b72",
+      "mode": "kanji_component",
+      "prompt": "自分の主張を一部控え、相手に近づくこと。\n「じょうほ」 □歩",
+      "answer": "㐮",
+      "choices": [
+        "㐮",
+        "衰",
+        "衣",
+        "褱"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "",
+      "reviewLabel": "「じょうほ」 □歩 · 右の字形（2 / 2）",
+      "writingDisplay": {
+        "sentence": "自分の主張を一部控え、相手に近づくこと。",
+        "reading": "じょうほ",
+        "maskedWord": "□歩",
+        "targetIndex": 0
+      },
+      "blankIndex": 2,
+      "blankPosition": 2,
+      "blankTotal": 2,
+      "continuation": true,
+      "diagram": {
+        "parts": [
+          {
+            "position": "左",
+            "answer": "言",
+            "dummies": [
+              "吾",
+              "吉",
+              "告"
+            ],
+            "box": [
+              0,
+              0,
+              40,
+              100
+            ],
+            "state": "solved"
+          },
+          {
+            "position": "右",
+            "answer": "㐮",
+            "dummies": [
+              "衣",
+              "衰",
+              "褱"
+            ],
+            "box": [
+              40,
+              0,
+              60,
+              100
+            ],
+            "state": "active"
+          }
+        ]
+      },
+      "targetLabel": "右の部品を選ぼう（2 / 2）"
+    },
+    {
+      "id": "jr_jp_write_671f:kanji_component:1",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "漢字",
+      "unit": "小学校配当漢字の復習",
+      "kind": "kanji",
+      "character": "期",
+      "word": "期間",
+      "reading": "きかん",
+      "reading_dummies": [
+        "ぎかん",
+        "きがん",
+        "あかん"
+      ],
+      "sentence": "ある時点から別の時点までの長さ。",
+      "note": "",
+      "content_batch": "japanese-writing-20261107",
+      "writing_word": "期間",
+      "writing_reading": "きかん",
+      "writing_hint": "ある時点から別の時点までの長さ。",
+      "writing_target_index": 0,
+      "writing_note": "期間（きかん）。",
+      "writing_batch": "japanese-writing-20261107",
+      "writing_profile": "lr-parts-v1",
+      "writing_scope": "elementary-1026",
+      "writing_parts": [
+        {
+          "position": "左",
+          "answer": "其",
+          "dummies": [
+            "具",
+            "共",
+            "兵"
+          ],
+          "box": [
+            0,
+            0,
+            60,
+            100
+          ]
+        },
+        {
+          "position": "右",
+          "answer": "月",
+          "dummies": [
+            "日",
+            "目",
+            "白"
+          ],
+          "box": [
+            60,
+            0,
+            40,
+            100
+          ]
+        }
+      ],
+      "sourceId": "jr_jp_write_671f",
+      "mode": "kanji_component",
+      "prompt": "ある時点から別の時点までの長さ。\n「きかん」 □間",
+      "answer": "其",
+      "choices": [
+        "其",
+        "共",
+        "具",
+        "兵"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "",
+      "reviewLabel": "「きかん」 □間 · 左の字形（1 / 2）",
+      "writingDisplay": {
+        "sentence": "ある時点から別の時点までの長さ。",
+        "reading": "きかん",
+        "maskedWord": "□間",
+        "targetIndex": 0
+      },
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 2,
+      "continuation": false,
+      "diagram": {
+        "parts": [
+          {
+            "position": "左",
+            "answer": "其",
+            "dummies": [
+              "具",
+              "共",
+              "兵"
+            ],
+            "box": [
+              0,
+              0,
+              60,
+              100
+            ],
+            "state": "active"
+          },
+          {
+            "position": "右",
+            "answer": "月",
+            "dummies": [
+              "日",
+              "目",
+              "白"
+            ],
+            "box": [
+              60,
+              0,
+              40,
+              100
+            ],
+            "state": "pending"
+          }
+        ]
+      },
+      "targetLabel": "左の部品を選ぼう（1 / 2）"
+    },
+    {
+      "id": "jr_jp_joyo_63b2:kanji_component:1",
+      "school_level": "中学",
+      "grade": "中2",
+      "subject": "国語",
+      "field": "漢字",
+      "unit": "常用漢字の読み",
+      "kind": "kanji",
+      "word": "前掲",
+      "character": "掲",
+      "reading": "ぜんけい",
+      "reading_dummies": [
+        "ぜんけえ",
+        "あんけい",
+        "いんけい"
+      ],
+      "sentence": "語句の読みを選ぼう。",
+      "writing_hint": "多くの人へ伝えるため、文や絵を出して見せること。",
+      "writing_target_index": 0,
+      "writing_parts": [
+        {
+          "position": "左",
+          "answer": "扌",
+          "dummies": [
+            "氵",
+            "冫",
+            "忄"
+          ],
+          "box": [
+            0,
+            0,
+            40,
+            100
+          ]
+        },
+        {
+          "position": "右上",
+          "answer": "日",
+          "dummies": [
+            "目",
+            "月",
+            "白"
+          ],
+          "box": [
+            40,
+            0,
+            60,
+            50
+          ]
+        },
+        {
+          "position": "右下",
+          "answer": "匂",
+          "dummies": [
+            "匀",
+            "匆",
+            "句"
+          ],
+          "box": [
+            40,
+            50,
+            60,
+            50
+          ]
+        }
+      ],
+      "note": "",
+      "content_batch": "japanese-joyo-20261107",
+      "kanji_scope": "secondary-1110",
+      "reading_sources": [
+        "bunka-joyo",
+        "jmdict-furigana-20261025"
+      ],
+      "writing_word": "掲示",
+      "writing_reading": "けいじ",
+      "writing_note": "掲示（けいじ）。",
+      "writing_batch": "japanese-writing-20261107",
+      "writing_profile": "lr-parts-v1",
+      "writing_scope": "secondary-1110",
+      "sourceId": "jr_jp_joyo_63b2",
+      "mode": "kanji_component",
+      "prompt": "多くの人へ伝えるため、文や絵を出して見せること。\n「けいじ」 □示",
+      "answer": "扌",
+      "choices": [
+        "扌",
+        "冫",
+        "氵",
+        "忄"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "",
+      "reviewLabel": "「けいじ」 □示 · 左の字形（1 / 3）",
+      "writingDisplay": {
+        "sentence": "多くの人へ伝えるため、文や絵を出して見せること。",
+        "reading": "けいじ",
+        "maskedWord": "□示",
+        "targetIndex": 0
+      },
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 3,
+      "continuation": false,
+      "diagram": {
+        "parts": [
+          {
+            "position": "左",
+            "answer": "扌",
+            "dummies": [
+              "氵",
+              "冫",
+              "忄"
+            ],
+            "box": [
+              0,
+              0,
+              40,
+              100
+            ],
+            "state": "active"
+          },
+          {
+            "position": "右上",
+            "answer": "日",
+            "dummies": [
+              "目",
+              "月",
+              "白"
+            ],
+            "box": [
+              40,
+              0,
+              60,
+              50
+            ],
+            "state": "pending"
+          },
+          {
+            "position": "右下",
+            "answer": "匂",
+            "dummies": [
+              "匀",
+              "匆",
+              "句"
+            ],
+            "box": [
+              40,
+              50,
+              60,
+              50
+            ],
+            "state": "pending"
+          }
+        ]
+      },
+      "targetLabel": "左の部品を選ぼう（1 / 3）"
+    },
+    {
+      "id": "jr_jp_core_248033c0fd30:japanese_definition",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "熟語・四字熟語",
+      "unit": "ことわざ",
+      "kind": "idiom",
+      "content_batch": "japanese-application-20261107",
+      "term": "二兎を追う者は一兎をも得ず",
+      "definition": "二つ追い、どちらも得られないこと。",
+      "term_dummies": [
+        "備えあれば憂いなし",
+        "覆水盆に返らず",
+        "灯台下暗し"
+      ],
+      "definition_dummies": [
+        "準備すれば心配はいらないこと。",
+        "一度起きたことは元に戻せないこと。",
+        "身近なことは気付きにくいこと。"
+      ],
+      "note": "二つ追い、どちらも得られないこと。",
+      "sourceId": "jr_jp_core_248033c0fd30",
+      "mode": "japanese_definition",
+      "prompt": "二兎を追う者は一兎をも得ず",
+      "answer": "二つ追い、どちらも得られないこと。",
+      "choices": [
+        "二つ追い、どちらも得られないこと。",
+        "一度起きたことは元に戻せないこと。",
+        "準備すれば心配はいらないこと。",
+        "身近なことは気付きにくいこと。"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "この熟語の意味を選ぼう",
+      "reviewLabel": "二兎を追う者は一兎をも得ず"
+    },
+    {
+      "id": "jr_jp_core_8bdc1fffc54e:japanese_definition",
+      "school_level": "中学",
+      "grade": "中3",
+      "subject": "国語",
+      "field": "熟語・四字熟語",
+      "unit": "ことわざ",
+      "kind": "idiom",
+      "content_batch": "japanese-application-20261107",
+      "term": "過ぎたるは猶及ばざるがごとし",
+      "definition": "やり過ぎも不足もよくないこと。",
+      "term_dummies": [
+        "猿も木から落ちる",
+        "転ばぬ先の杖",
+        "覆水盆に返らず"
+      ],
+      "definition_dummies": [
+        "その道の名人でも失敗があること。",
+        "前もって失敗に備えること。",
+        "一度起きたことは元に戻せないこと。"
+      ],
+      "note": "やり過ぎも不足もよくないこと。",
+      "sourceId": "jr_jp_core_8bdc1fffc54e",
+      "mode": "japanese_definition",
+      "prompt": "過ぎたるは猶及ばざるがごとし",
+      "answer": "やり過ぎも不足もよくないこと。",
+      "choices": [
+        "やり過ぎも不足もよくないこと。",
+        "前もって失敗に備えること。",
+        "その道の名人でも失敗があること。",
+        "一度起きたことは元に戻せないこと。"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "この熟語の意味を選ぼう",
+      "reviewLabel": "過ぎたるは猶及ばざるがごとし"
+    }
+  ],
+  "measurements": [
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_write_8a69:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 405,
+          "scroll": 405,
+          "top": 180,
+          "bottom": 587.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_write_8a69:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_write_80ba:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 405,
+          "scroll": 405,
+          "top": 180,
+          "bottom": 587.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_write_80ba:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_write_526f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_write_526f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_8b72:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 405,
+          "scroll": 405,
+          "top": 180,
+          "bottom": 587.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_8b72:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_write_671f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_write_671f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_joyo_63b2:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 405,
+          "scroll": 405,
+          "top": 180,
+          "bottom": 587.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_joyo_63b2:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_248033c0fd30:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 406,
+          "scroll": 406,
+          "top": 180,
+          "bottom": 588.40625
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_248033c0fd30:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.40625
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_8bdc1fffc54e:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 406,
+          "scroll": 406,
+          "top": 180,
+          "bottom": 588.40625
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_8bdc1fffc54e:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 560.40625
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_write_8a69:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 387,
+          "scroll": 387,
+          "top": 180,
+          "bottom": 569.453125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_write_8a69:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_write_80ba:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_write_80ba:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_write_526f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_write_526f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_8b72:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_8b72:kanji_component:2",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_write_671f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 360,
+          "scroll": 360,
+          "top": 180,
+          "bottom": 542.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_write_671f:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 330,
+          "scroll": 330,
+          "top": 180,
+          "bottom": 512.265625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_joyo_63b2:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 387,
+          "scroll": 387,
+          "top": 180,
+          "bottom": 569.453125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_joyo_63b2:kanji_component:1",
+      "sizes": {
+        "panel": {
+          "height": 357,
+          "scroll": 357,
+          "top": 180,
+          "bottom": 539.453125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 77,
+            "sh": 77
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_248033c0fd30:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 306,
+          "scroll": 306,
+          "top": 180,
+          "bottom": 487.734375
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_248033c0fd30:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 296,
+          "scroll": 296,
+          "top": 180,
+          "bottom": 477.734375
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_8bdc1fffc54e:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 306,
+          "scroll": 306,
+          "top": 180,
+          "bottom": 487.734375
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_8bdc1fffc54e:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 296,
+          "scroll": 296,
+          "top": 180,
+          "bottom": 477.734375
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    }
+  ],
+  "additionalFeedbackDisplays": 4,
+  "practiceChecks": [
+    "writing-specific final note",
+    "no completed answer in intermediate note"
+  ],
+  "notes": "The two long proverb definitions initially overflowed. Definitions were shortened to at most 19 characters and the 32 boundary displays passed. No general height/character limit increase. Kanji diagram approval is limited to recorded left/right boxes and text widths. Glyph distractors were subsequently refined within the same one-BMP-glyph envelope; boxes, text dimensions and CSS were unchanged, so no repeated layout run was required."
+}

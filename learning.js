@@ -31,7 +31,9 @@ export function buildCatalog(items) {
     const matches = items.filter(item => item.school_level === school && item.subject === subject && (year === 'exam' || item.grade === grade));
     const sections = [...new Set(matches.map(sectionKey))].map(key => {
       const [field, unit] = JSON.parse(key);
-      return { key, label: field === unit ? field : `${field} / ${unit}`, count: matches.filter(item => sectionKey(item) === key).length };
+      // Keep the saved section key while allowing writing in the original reading bank.
+      const displayUnit = unit === '常用漢字の読み' ? '常用漢字' : unit;
+      return { key, label: field === displayUnit ? field : `${field} / ${displayUnit}`, count: matches.filter(item => sectionKey(item) === key).length };
     });
     return { id: `${school}:${subject}:${year}`, school, subject, year, label: year === 'exam' ? `${subject}・受験用` : `${year}年${subject}`,
       count: matches.length, grades: [...new Set(matches.map(item => item.grade))], sections, ids: matches.map(item => item.id) };

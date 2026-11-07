@@ -103,3 +103,11 @@
 - `junior_japanese_extended.json` は文法・古文・漢文・熟語・読解の289素材／442問。既存形式を利用し、編集TSVから `python3 scripts/build-japanese-content.py` で再生成できる。
 - [国語の範囲と残件](../docs/content/japanese-progress.md)・[出典／読みデータのライセンス](../docs/content/japanese-source/README.md)。書き・全音訓は未完。学年は暫定、教科書準拠ではない。
 - 新規差分の簡易チェックのみを行い、確認した国語テキスト構成は表示予算の条件付きプロファイルとして再利用する。基本テスト・全問表示・5分進行は毎回実施しない。
+
+## 漢字書きの拡充（v0.67.0）
+
+`writing_parts` のある字を282字追加し、漢字書きは306字（小学235・小学以外71）。新規223素材は `junior_japanese_extended.json`、既存の読みIDを強化した59素材は `junior_japanese_kanji.json` に保持する。`writing_word`／`writing_reading`／`writing_note` は任意で、書き専用の語・読み・最終解説。未指定なら読み側の値を使う。`writing_target_index` は書き用の語で計数する。
+
+作問元は `docs/content/japanese-source/writing-additions.tsv` と `writing-glyph-groups.json`。全ての部品を順に問い、完成字・解説を最後まで隠す。既存の読みの正答・候補・IDは維持する。新規の適用／ことわざ93素材も同じ生成スクリプトで再現できる。
+
+追加時は `--batch japanese-writing-20261107`（`writing_batch` も照合対象）や `--batch japanese-application-20261107` で差分だけの簡易確認を行う。確認済みの左右2部品／右上下3部品は、ボックス・文字量・横幅が一致する場合に図の画面確認を繰り返さない。

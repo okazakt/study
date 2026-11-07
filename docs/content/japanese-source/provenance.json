@@ -27,5 +27,11 @@
     "missing": [],
     "extra": []
   },
-  "officialSecondaryScope": 1110
+  "officialSecondaryScope": 1110,
+  "writingReference": {
+    "retrieved": "2026-11-07",
+    "url": "https://github.com/cjkvi/cjkvi-ids",
+    "sha256": "bfc70a8c09f9f5616ebf0543bd6681e67314e9f7ae2307e5ae8c6f15bdc5c6a6",
+    "usage": "Supplemental verification of independently authored visible components. Original IDS data/software not bundled; no IDS rendering code imported."
+  }
 }

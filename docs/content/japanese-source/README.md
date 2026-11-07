@@ -23,7 +23,7 @@
 - `grammar-additions.tsv`：用語・穴埋めの正答と、それぞれ独立した誤答候補。
 - `choice-additions.tsv`：一方向の適用・読解・古典知識。正解をテーマに印字しない。
 - `idiom-additions.tsv`：慣用句40・四字熟語40。類似しすぎる組合せは生成スクリプトの除外対で排除する。両方向の候補は同じ意味の対応を使う。
-- `kanji-readings.tsv`：今回追加の読み専用1,094素材。既存問題のIDは `kanji-reading-map.json` に登録し、重複追加しない。読み専用素材は `writing_parts: []` とし、漢字書きフィルタの対象にしない。
+- `kanji-readings.tsv`：第1段階の読み1,094素材（v0.67.0ではうち59素材に書きを追加）。既存問題のIDは `kanji-reading-map.json` に登録し、重複追加しない。読み専用素材は `writing_parts: []` とし、漢字書きフィルタの対象にしない。
 - `python3 scripts/build-japanese-content.py` でこの2つの問題JSONを再生成できる。
 - `node scripts/japanese-progress.mjs` で字種の欠落と国語の収録状況を集計する。全音訓・部品選択・手書き・長文記述は別の充足項目として管理する。
 
@@ -34,3 +34,12 @@
 `layout-review.json` に例と計測結果を保存し、`content-budget.json` の `japanese-core-text-20261107` に条件を登録。国語・文字のみ・各項目/合計が今回の最大値以内・推定390px以内の場合だけ、高さ330pxの再確認を不要にする。図・画像・新しい表・実装変更・この文字量範囲外は従来どおり確認対象。他教科の上限を一律に広げない。
 
 同じ語・同じ読みの素材を重複登録しない。別の公式例語を選べる字は別語にし、憬→既存の憧憬、挨・拶→挨拶、沙・汰→沙汰、瑠・璃→浄瑠璃は一つの問題で対応する。新規問題の `coverage_characters` と字種対応表で追跡し、字種数と素材数を区別する。
+
+## 漢字書きと適用の第2段階（v0.67.0）
+
+- `writing-additions.tsv` は282字。小学配当223字は新規素材、既存の小学以外59字は元の読みIDへ書きを追加する。独体字を無理に分解せず、左右の構成を確認できたものを採用した。例文に正答字を出さない。
+- `writing_word`／`writing_reading`／`writing_note` が、読み用の語・読み・解説と異なる場合を扱う。前からある読み問題の内容・IDは変更しない。
+- `writing-glyph-groups.json` は字形が似た候補と、互いを誤答にしない互換形を保持。全体の正答字を候補へ出さない。部品の位置と候補は独自編集し、字形構成の補助照合に [cjkvi-ids](https://github.com/cjkvi/cjkvi-ids) を参照。元のIDSデータ／描画コードはアプリへ同梱していない。現代日本の字体と異なる旧字体構成などは除外・修正した。
+- `writing-reading-review.json` は今回の例語の読み・別読をJMdict/JmdictFuriganaで照合した記録。読みを加工した `writing-additions.tsv` と追加した漢字素材（`junior_japanese_extended.json` の `kind: kanji` を含む）は、上記の著作権表示を保持してCC BY-SA 4.0で提供する。他の独自の文法・解説データ全体に同じライセンスを拡大しない。
+- `application-additions.tsv` は文法43・古文20・漢文10。`idiom-additions.tsv` のことわざ20件は両方向。意味が同じことわざは互いを誤答にせず、長い説明は表示確認後に短縮した。
+- 新規／変更分だけの簡易データ確認は [差分記録](writing-change-audit.json)。基礎テスト・全問表示・5分進行は実施しない。新しい部品構成・境界8例の32表示、正答表示4件と復習の途中／完成を確認。結果は [表示記録](writing-layout-review.json)、再利用条件は `content-budget.json` の構造プロファイルと長い熟語見出しの規則に保持する。

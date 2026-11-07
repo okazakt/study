@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-07",
+  "addedMaterials": 316,
+  "upgradedMaterials": 59,
+  "newWritingTargets": 282,
+  "writingParts": 566,
+  "preservedReadingFields": [
+    "id",
+    "word",
+    "reading",
+    "reading_dummies",
+    "note",
+    "sentence",
+    "coverage_characters"
+  ],
+  "removedIds": [],
+  "scope": "Changed materials only; schema/answer-leak and reading-preservation checks. No test suite or gameplay simulation."
+}
