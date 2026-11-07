@@ -39,9 +39,10 @@ print('Japanese core additions:',len(bank),'materials')
 
 kanji=[]
 for n,r in rows('kanji-readings.tsv'):
- assert len(r)==5,(n,r)
- c,word,reading,dummies,grade=r
+ assert len(r)==6,(n,r)
+ c,word,reading,dummies,grade,coverage=r
  item=dict(id=f'jr_jp_joyo_{ord(c):x}',school_level='中学',grade=grade,subject='国語',field='漢字',unit='常用漢字の読み',kind='kanji',word=word,character=c,reading=reading,reading_dummies=dummies.split(','),sentence='語句の読みを選ぼう。',writing_hint='',writing_target_index=word.index(c),writing_parts=[],note=f'{word}（{reading}）。',content_batch='japanese-joyo-20261107',kanji_scope='secondary-1110',reading_sources=['bunka-joyo','jmdict-furigana-20261025'])
+ if coverage.split(',')!=[c]:item['coverage_characters']=coverage.split(',')
  kanji.append(item)
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')
 print('Japanese kanji reading additions:',len(kanji),'materials')

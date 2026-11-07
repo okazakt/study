@@ -1,5 +1,77 @@
 [
   {
+    "character": "憧",
+    "sourceId": "jr_jp3_001",
+    "word": "憧憬",
+    "coverage": "existing"
+  },
+  {
+    "character": "慎",
+    "sourceId": "jr_jp3_002",
+    "word": "慎重",
+    "coverage": "existing"
+  },
+  {
+    "character": "慨",
+    "sourceId": "jr_jp3_003",
+    "word": "慨嘆",
+    "coverage": "existing"
+  },
+  {
+    "character": "漂",
+    "sourceId": "jr_jp3_004",
+    "word": "漂流",
+    "coverage": "existing"
+  },
+  {
+    "character": "滞",
+    "sourceId": "jr_jp3_005",
+    "word": "滞在",
+    "coverage": "existing"
+  },
+  {
+    "character": "抵",
+    "sourceId": "jr_jp3_006",
+    "word": "抵抗",
+    "coverage": "existing"
+  },
+  {
+    "character": "擁",
+    "sourceId": "jr_jp3_007",
+    "word": "擁護",
+    "coverage": "existing"
+  },
+  {
+    "character": "儀",
+    "sourceId": "jr_jp3_008",
+    "word": "儀式",
+    "coverage": "existing"
+  },
+  {
+    "character": "礎",
+    "sourceId": "jr_jp3_009",
+    "word": "基礎",
+    "coverage": "existing"
+  },
+  {
+    "character": "諭",
+    "sourceId": "jr_jp3_010",
+    "word": "諭す",
+    "coverage": "existing"
+  },
+  {
+    "character": "被",
+    "sourceId": "jr_jp3_012",
+    "word": "被る",
+    "coverage": "existing"
+  },
+  {
+    "character": "裕",
+    "sourceId": "jr_japanese_core_kanji_裕",
+    "word": "裕福",
+    "coverage": "existing"
+  },
+  {
     "character": "握",
     "sourceId": "jr_jp_joyo_63e1",
     "word": "掌握",
@@ -32,7 +104,7 @@
   {
     "character": "偉",
     "sourceId": "jr_jp_joyo_5049",
-    "word": "偉人",
+    "word": "偉い",
     "coverage": "new"
   },
   {
@@ -74,7 +146,7 @@
   {
     "character": "隠",
     "sourceId": "jr_jp_joyo_96a0",
-    "word": "隠居",
+    "word": "隠す",
     "coverage": "new"
   },
   {
@@ -122,13 +194,13 @@
   {
     "character": "汚",
     "sourceId": "jr_jp_joyo_6c5a",
-    "word": "汚名",
+    "word": "汚い",
     "coverage": "new"
   },
   {
     "character": "押",
     "sourceId": "jr_jp_joyo_62bc",
-    "word": "押印",
+    "word": "押す",
     "coverage": "new"
   },
   {
@@ -188,7 +260,7 @@
   {
     "character": "壊",
     "sourceId": "jr_jp_joyo_58ca",
-    "word": "壊滅",
+    "word": "壊す",
     "coverage": "new"
   },
   {
@@ -212,7 +284,7 @@
   {
     "character": "甘",
     "sourceId": "jr_jp_joyo_7518",
-    "word": "甘受",
+    "word": "甘い",
     "coverage": "new"
   },
   {
@@ -224,7 +296,7 @@
   {
     "character": "乾",
     "sourceId": "jr_jp_joyo_4e7e",
-    "word": "乾杯",
+    "word": "乾く",
     "coverage": "new"
   },
   {
@@ -242,7 +314,7 @@
   {
     "character": "監",
     "sourceId": "jr_jp_joyo_76e3",
-    "word": "監督",
+    "word": "監視",
     "coverage": "new"
   },
   {
@@ -272,7 +344,7 @@
   {
     "character": "祈",
     "sourceId": "jr_jp_joyo_7948",
-    "word": "祈念",
+    "word": "祈る",
     "coverage": "new"
   },
   {
@@ -294,12 +366,6 @@
     "coverage": "new"
   },
   {
-    "character": "儀",
-    "sourceId": "jr_jp3_008",
-    "word": "儀式",
-    "coverage": "existing"
-  },
-  {
     "character": "戯",
     "sourceId": "jr_jp_joyo_622f",
     "word": "児戯",
@@ -308,7 +374,7 @@
   {
     "character": "詰",
     "sourceId": "jr_jp_joyo_8a70",
-    "word": "詰問",
+    "word": "詰む",
     "coverage": "new"
   },
   {
@@ -326,7 +392,7 @@
   {
     "character": "及",
     "sourceId": "jr_jp_joyo_53ca",
-    "word": "及第",
+    "word": "及ぶ",
     "coverage": "new"
   },
   {
@@ -374,7 +440,7 @@
   {
     "character": "叫",
     "sourceId": "jr_jp_joyo_53eb",
-    "word": "叫喚",
+    "word": "叫ぶ",
     "coverage": "new"
   },
   {
@@ -410,13 +476,13 @@
   {
     "character": "驚",
     "sourceId": "jr_jp_joyo_9a5a",
-    "word": "驚嘆",
+    "word": "驚く",
     "coverage": "new"
   },
   {
     "character": "仰",
     "sourceId": "jr_jp_joyo_4ef0",
-    "word": "仰天",
+    "word": "仰ぐ",
     "coverage": "new"
   },
   {
@@ -434,7 +500,7 @@
   {
     "character": "掘",
     "sourceId": "jr_jp_joyo_6398",
-    "word": "採掘",
+    "word": "掘る",
     "coverage": "new"
   },
   {
@@ -452,7 +518,7 @@
   {
     "character": "傾",
     "sourceId": "jr_jp_joyo_50be",
-    "word": "傾倒",
+    "word": "傾く",
     "coverage": "new"
   },
   {
@@ -530,7 +596,7 @@
   {
     "character": "誇",
     "sourceId": "jr_jp_joyo_8a87",
-    "word": "誇大",
+    "word": "誇る",
     "coverage": "new"
   },
   {
@@ -542,7 +608,7 @@
   {
     "character": "互",
     "sourceId": "jr_jp_joyo_4e92",
-    "word": "互角",
+    "word": "互い",
     "coverage": "new"
   },
   {
@@ -572,7 +638,7 @@
   {
     "character": "荒",
     "sourceId": "jr_jp_joyo_8352",
-    "word": "荒天",
+    "word": "荒い",
     "coverage": "new"
   },
   {
@@ -614,7 +680,7 @@
   {
     "character": "彩",
     "sourceId": "jr_jp_joyo_5f69",
-    "word": "彩色",
+    "word": "彩る",
     "coverage": "new"
   },
   {
@@ -656,13 +722,13 @@
   {
     "character": "伺",
     "sourceId": "jr_jp_joyo_4f3a",
-    "word": "伺候",
+    "word": "伺う",
     "coverage": "new"
   },
   {
     "character": "刺",
     "sourceId": "jr_jp_joyo_523a",
-    "word": "刺激",
+    "word": "刺す",
     "coverage": "new"
   },
   {
@@ -686,7 +752,7 @@
   {
     "character": "執",
     "sourceId": "jr_jp_joyo_57f7",
-    "word": "執務",
+    "word": "執る",
     "coverage": "new"
   },
   {
@@ -704,7 +770,7 @@
   {
     "character": "煮",
     "sourceId": "jr_jp_joyo_716e",
-    "word": "煮沸",
+    "word": "煮る",
     "coverage": "new"
   },
   {
@@ -728,7 +794,7 @@
   {
     "character": "狩",
     "sourceId": "jr_jp_joyo_72e9",
-    "word": "狩猟",
+    "word": "狩り",
     "coverage": "new"
   },
   {
@@ -800,7 +866,7 @@
   {
     "character": "召",
     "sourceId": "jr_jp_joyo_53ec",
-    "word": "召喚",
+    "word": "召す",
     "coverage": "new"
   },
   {
@@ -866,7 +932,7 @@
   {
     "character": "侵",
     "sourceId": "jr_jp_joyo_4fb5",
-    "word": "侵入",
+    "word": "侵す",
     "coverage": "new"
   },
   {
@@ -878,20 +944,14 @@
   {
     "character": "浸",
     "sourceId": "jr_jp_joyo_6d78",
-    "word": "浸水",
+    "word": "浸す",
     "coverage": "new"
   },
   {
     "character": "寝",
     "sourceId": "jr_jp_joyo_5bdd",
-    "word": "寝具",
+    "word": "寝る",
     "coverage": "new"
-  },
-  {
-    "character": "慎",
-    "sourceId": "jr_jp3_002",
-    "word": "慎重",
-    "coverage": "existing"
   },
   {
     "character": "震",
@@ -926,7 +986,7 @@
   {
     "character": "吹",
     "sourceId": "jr_jp_joyo_5439",
-    "word": "吹奏",
+    "word": "吹く",
     "coverage": "new"
   },
   {
@@ -956,7 +1016,7 @@
   {
     "character": "占",
     "sourceId": "jr_jp_joyo_5360",
-    "word": "占拠",
+    "word": "占う",
     "coverage": "new"
   },
   {
@@ -1046,7 +1106,7 @@
   {
     "character": "脱",
     "sourceId": "jr_jp_joyo_8131",
-    "word": "脱衣",
+    "word": "脱ぐ",
     "coverage": "new"
   },
   {
@@ -1064,7 +1124,7 @@
   {
     "character": "嘆",
     "sourceId": "jr_jp_joyo_5606",
-    "word": "嘆息",
+    "word": "嘆く",
     "coverage": "new"
   },
   {
@@ -1094,7 +1154,7 @@
   {
     "character": "遅",
     "sourceId": "jr_jp_joyo_9045",
-    "word": "遅刻",
+    "word": "遅い",
     "coverage": "new"
   },
   {
@@ -1106,7 +1166,7 @@
   {
     "character": "跳",
     "sourceId": "jr_jp_joyo_8df3",
-    "word": "跳躍",
+    "word": "跳ぶ",
     "coverage": "new"
   },
   {
@@ -1124,7 +1184,7 @@
   {
     "character": "沈",
     "sourceId": "jr_jp_joyo_6c88",
-    "word": "沈滞",
+    "word": "沈む",
     "coverage": "new"
   },
   {
@@ -1132,12 +1192,6 @@
     "sourceId": "jr_jp_joyo_73cd",
     "word": "珍妙",
     "coverage": "new"
-  },
-  {
-    "character": "抵",
-    "sourceId": "jr_jp3_006",
-    "word": "抵抗",
-    "coverage": "existing"
   },
   {
     "character": "堤",
@@ -1160,7 +1214,7 @@
   {
     "character": "添",
     "sourceId": "jr_jp_joyo_6dfb",
-    "word": "添付",
+    "word": "添う",
     "coverage": "new"
   },
   {
@@ -1172,7 +1226,7 @@
   {
     "character": "吐",
     "sourceId": "jr_jp_joyo_5410",
-    "word": "吐血",
+    "word": "吐く",
     "coverage": "new"
   },
   {
@@ -1184,19 +1238,19 @@
   {
     "character": "渡",
     "sourceId": "jr_jp_joyo_6e21",
-    "word": "渡河",
+    "word": "渡す",
     "coverage": "new"
   },
   {
     "character": "奴",
     "sourceId": "jr_jp_joyo_5974",
-    "word": "奴隷",
+    "word": "守銭奴",
     "coverage": "new"
   },
   {
     "character": "怒",
     "sourceId": "jr_jp_joyo_6012",
-    "word": "怒号",
+    "word": "怒る",
     "coverage": "new"
   },
   {
@@ -1208,13 +1262,13 @@
   {
     "character": "逃",
     "sourceId": "jr_jp_joyo_9003",
-    "word": "逃亡",
+    "word": "逃す",
     "coverage": "new"
   },
   {
     "character": "倒",
     "sourceId": "jr_jp_joyo_5012",
-    "word": "倒産",
+    "word": "倒す",
     "coverage": "new"
   },
   {
@@ -1256,7 +1310,7 @@
   {
     "character": "踏",
     "sourceId": "jr_jp_joyo_8e0f",
-    "word": "踏破",
+    "word": "踏む",
     "coverage": "new"
   },
   {
@@ -1280,7 +1334,7 @@
   {
     "character": "突",
     "sourceId": "jr_jp_joyo_7a81",
-    "word": "突然",
+    "word": "突く",
     "coverage": "new"
   },
   {
@@ -1292,7 +1346,7 @@
   {
     "character": "曇",
     "sourceId": "jr_jp_joyo_66c7",
-    "word": "曇天",
+    "word": "曇る",
     "coverage": "new"
   },
   {
@@ -1304,13 +1358,13 @@
   {
     "character": "悩",
     "sourceId": "jr_jp_joyo_60a9",
-    "word": "悩殺",
+    "word": "悩む",
     "coverage": "new"
   },
   {
     "character": "濃",
     "sourceId": "jr_jp_joyo_6fc3",
-    "word": "濃厚",
+    "word": "濃い",
     "coverage": "new"
   },
   {
@@ -1346,7 +1400,7 @@
   {
     "character": "薄",
     "sourceId": "jr_jp_joyo_8584",
-    "word": "薄情",
+    "word": "薄い",
     "coverage": "new"
   },
   {
@@ -1364,7 +1418,7 @@
   {
     "character": "抜",
     "sourceId": "jr_jp_joyo_629c",
-    "word": "抜群",
+    "word": "抜く",
     "coverage": "new"
   },
   {
@@ -1422,12 +1476,6 @@
     "coverage": "new"
   },
   {
-    "character": "被",
-    "sourceId": "jr_jp3_012",
-    "word": "被る",
-    "coverage": "existing"
-  },
-  {
     "character": "避",
     "sourceId": "jr_jp_joyo_907f",
     "word": "逃避",
@@ -1454,7 +1502,7 @@
   {
     "character": "描",
     "sourceId": "jr_jp_joyo_63cf",
-    "word": "描写",
+    "word": "描く",
     "coverage": "new"
   },
   {
@@ -1472,31 +1520,31 @@
   {
     "character": "怖",
     "sourceId": "jr_jp_joyo_6016",
-    "word": "恐怖",
+    "word": "怖い",
     "coverage": "new"
   },
   {
     "character": "浮",
     "sourceId": "jr_jp_joyo_6d6e",
-    "word": "浮力",
+    "word": "浮く",
     "coverage": "new"
   },
   {
     "character": "普",
     "sourceId": "jr_jp_joyo_666e",
-    "word": "普請",
+    "word": "普通",
     "coverage": "new"
   },
   {
     "character": "腐",
     "sourceId": "jr_jp_joyo_8150",
-    "word": "腐心",
+    "word": "腐る",
     "coverage": "new"
   },
   {
     "character": "敷",
     "sourceId": "jr_jp_joyo_6577",
-    "word": "敷設",
+    "word": "敷く",
     "coverage": "new"
   },
   {
@@ -1526,13 +1574,13 @@
   {
     "character": "払",
     "sourceId": "jr_jp_joyo_6255",
-    "word": "払暁",
+    "word": "払う",
     "coverage": "new"
   },
   {
     "character": "噴",
     "sourceId": "jr_jp_joyo_5674",
-    "word": "噴出",
+    "word": "噴く",
     "coverage": "new"
   },
   {
@@ -1550,7 +1598,7 @@
   {
     "character": "捕",
     "sourceId": "jr_jp_joyo_6355",
-    "word": "捕獲",
+    "word": "捕る",
     "coverage": "new"
   },
   {
@@ -1598,13 +1646,13 @@
   {
     "character": "冒",
     "sourceId": "jr_jp_joyo_5192",
-    "word": "冒険",
+    "word": "冒す",
     "coverage": "new"
   },
   {
     "character": "傍",
     "sourceId": "jr_jp_joyo_508d",
-    "word": "傍線",
+    "word": "傍ら",
     "coverage": "new"
   },
   {
@@ -1700,7 +1748,7 @@
   {
     "character": "躍",
     "sourceId": "jr_jp_joyo_8e8d",
-    "word": "躍動",
+    "word": "躍る",
     "coverage": "new"
   },
   {
@@ -1724,7 +1772,7 @@
   {
     "character": "溶",
     "sourceId": "jr_jp_joyo_6eb6",
-    "word": "溶液",
+    "word": "溶く",
     "coverage": "new"
   },
   {
@@ -1766,7 +1814,7 @@
   {
     "character": "絡",
     "sourceId": "jr_jp_joyo_7d61",
-    "word": "脈絡",
+    "word": "絡む",
     "coverage": "new"
   },
   {
@@ -1868,7 +1916,7 @@
   {
     "character": "惑",
     "sourceId": "jr_jp_joyo_60d1",
-    "word": "惑星",
+    "word": "惑う",
     "coverage": "new"
   },
   {
@@ -1880,13 +1928,13 @@
   {
     "character": "哀",
     "sourceId": "jr_jp_joyo_54c0",
-    "word": "哀愁",
+    "word": "哀れ",
     "coverage": "new"
   },
   {
     "character": "慰",
     "sourceId": "jr_jp_joyo_6170",
-    "word": "慰労",
+    "word": "慰む",
     "coverage": "new"
   },
   {
@@ -1928,7 +1976,7 @@
   {
     "character": "殴",
     "sourceId": "jr_jp_joyo_6bb4",
-    "word": "殴打",
+    "word": "殴る",
     "coverage": "new"
   },
   {
@@ -1998,12 +2046,6 @@
     "coverage": "new"
   },
   {
-    "character": "慨",
-    "sourceId": "jr_jp3_003",
-    "word": "慨嘆",
-    "coverage": "existing"
-  },
-  {
     "character": "該",
     "sourceId": "jr_jp_joyo_8a72",
     "word": "当該",
@@ -2042,7 +2084,7 @@
   {
     "character": "掛",
     "sourceId": "jr_jp_joyo_639b",
-    "word": "掛ける",
+    "word": "掛かる",
     "coverage": "new"
   },
   {
@@ -2096,7 +2138,7 @@
   {
     "character": "緩",
     "sourceId": "jr_jp_joyo_7de9",
-    "word": "緩和",
+    "word": "緩い",
     "coverage": "new"
   },
   {
@@ -2108,7 +2150,7 @@
   {
     "character": "忌",
     "sourceId": "jr_jp_joyo_5fcc",
-    "word": "忌中",
+    "word": "忌む",
     "coverage": "new"
   },
   {
@@ -2120,7 +2162,7 @@
   {
     "character": "既",
     "sourceId": "jr_jp_joyo_65e2",
-    "word": "既婚",
+    "word": "既に",
     "coverage": "new"
   },
   {
@@ -2144,7 +2186,7 @@
   {
     "character": "欺",
     "sourceId": "jr_jp_joyo_6b3a",
-    "word": "詐欺",
+    "word": "欺く",
     "coverage": "new"
   },
   {
@@ -2192,13 +2234,13 @@
   {
     "character": "脅",
     "sourceId": "jr_jp_joyo_8105",
-    "word": "脅威",
+    "word": "脅す",
     "coverage": "new"
   },
   {
     "character": "凝",
     "sourceId": "jr_jp_joyo_51dd",
-    "word": "凝固",
+    "word": "凝る",
     "coverage": "new"
   },
   {
@@ -2240,7 +2282,7 @@
   {
     "character": "契",
     "sourceId": "jr_jp_joyo_5951",
-    "word": "契機",
+    "word": "契る",
     "coverage": "new"
   },
   {
@@ -2390,7 +2432,7 @@
   {
     "character": "絞",
     "sourceId": "jr_jp_joyo_7d5e",
-    "word": "絞殺",
+    "word": "絞る",
     "coverage": "new"
   },
   {
@@ -2420,7 +2462,7 @@
   {
     "character": "恨",
     "sourceId": "jr_jp_joyo_6068",
-    "word": "悔恨",
+    "word": "恨む",
     "coverage": "new"
   },
   {
@@ -2456,7 +2498,7 @@
   {
     "character": "削",
     "sourceId": "jr_jp_joyo_524a",
-    "word": "削減",
+    "word": "削る",
     "coverage": "new"
   },
   {
@@ -2474,7 +2516,7 @@
   {
     "character": "撮",
     "sourceId": "jr_jp_joyo_64ae",
-    "word": "撮影",
+    "word": "撮る",
     "coverage": "new"
   },
   {
@@ -2504,7 +2546,7 @@
   {
     "character": "諮",
     "sourceId": "jr_jp_joyo_8aee",
-    "word": "諮問",
+    "word": "諮る",
     "coverage": "new"
   },
   {
@@ -2612,7 +2654,7 @@
   {
     "character": "焦",
     "sourceId": "jr_jp_joyo_7126",
-    "word": "焦土",
+    "word": "焦る",
     "coverage": "new"
   },
   {
@@ -2672,7 +2714,7 @@
   {
     "character": "辛",
     "sourceId": "jr_jp_joyo_8f9b",
-    "word": "辛苦",
+    "word": "辛い",
     "coverage": "new"
   },
   {
@@ -2684,7 +2726,7 @@
   {
     "character": "炊",
     "sourceId": "jr_jp_joyo_708a",
-    "word": "炊事",
+    "word": "炊く",
     "coverage": "new"
   },
   {
@@ -2798,7 +2840,7 @@
   {
     "character": "阻",
     "sourceId": "jr_jp_joyo_963b",
-    "word": "阻害",
+    "word": "阻む",
     "coverage": "new"
   },
   {
@@ -2810,14 +2852,8 @@
   {
     "character": "粗",
     "sourceId": "jr_jp_joyo_7c97",
-    "word": "粗密",
+    "word": "粗い",
     "coverage": "new"
-  },
-  {
-    "character": "礎",
-    "sourceId": "jr_jp3_009",
-    "word": "基礎",
-    "coverage": "existing"
   },
   {
     "character": "双",
@@ -2846,7 +2882,7 @@
   {
     "character": "遭",
     "sourceId": "jr_jp_joyo_906d",
-    "word": "遭遇",
+    "word": "遭う",
     "coverage": "new"
   },
   {
@@ -2858,7 +2894,7 @@
   {
     "character": "促",
     "sourceId": "jr_jp_joyo_4fc3",
-    "word": "促成",
+    "word": "促す",
     "coverage": "new"
   },
   {
@@ -2870,7 +2906,7 @@
   {
     "character": "怠",
     "sourceId": "jr_jp_joyo_6020",
-    "word": "怠惰",
+    "word": "怠る",
     "coverage": "new"
   },
   {
@@ -2890,12 +2926,6 @@
     "sourceId": "jr_jp_joyo_902e",
     "word": "逮夜",
     "coverage": "new"
-  },
-  {
-    "character": "滞",
-    "sourceId": "jr_jp3_005",
-    "word": "滞在",
-    "coverage": "existing"
   },
   {
     "character": "滝",
@@ -2990,7 +3020,7 @@
   {
     "character": "彫",
     "sourceId": "jr_jp_joyo_5f6b",
-    "word": "彫刻",
+    "word": "彫る",
     "coverage": "new"
   },
   {
@@ -3056,7 +3086,7 @@
   {
     "character": "塗",
     "sourceId": "jr_jp_joyo_5857",
-    "word": "塗布",
+    "word": "塗る",
     "coverage": "new"
   },
   {
@@ -3104,7 +3134,7 @@
   {
     "character": "粘",
     "sourceId": "jr_jp_joyo_7c98",
-    "word": "粘土",
+    "word": "粘る",
     "coverage": "new"
   },
   {
@@ -3116,7 +3146,7 @@
   {
     "character": "排",
     "sourceId": "jr_jp_joyo_6392",
-    "word": "排斥",
+    "word": "排気",
     "coverage": "new"
   },
   {
@@ -3146,7 +3176,7 @@
   {
     "character": "伴",
     "sourceId": "jr_jp_joyo_4f34",
-    "word": "伴奏",
+    "word": "伴う",
     "coverage": "new"
   },
   {
@@ -3192,12 +3222,6 @@
     "coverage": "new"
   },
   {
-    "character": "漂",
-    "sourceId": "jr_jp3_004",
-    "word": "漂流",
-    "coverage": "existing"
-  },
-  {
     "character": "苗",
     "sourceId": "jr_jp_joyo_82d7",
     "word": "苗",
@@ -3206,7 +3230,7 @@
   {
     "character": "赴",
     "sourceId": "jr_jp_joyo_8d74",
-    "word": "赴任",
+    "word": "赴く",
     "coverage": "new"
   },
   {
@@ -3224,13 +3248,13 @@
   {
     "character": "伏",
     "sourceId": "jr_jp_joyo_4f0f",
-    "word": "伏線",
+    "word": "伏す",
     "coverage": "new"
   },
   {
     "character": "覆",
     "sourceId": "jr_jp_joyo_8986",
-    "word": "覆面",
+    "word": "覆う",
     "coverage": "new"
   },
   {
@@ -3254,7 +3278,7 @@
   {
     "character": "募",
     "sourceId": "jr_jp_joyo_52df",
-    "word": "募金",
+    "word": "募る",
     "coverage": "new"
   },
   {
@@ -3284,7 +3308,7 @@
   {
     "character": "奉",
     "sourceId": "jr_jp_joyo_5949",
-    "word": "奉仕",
+    "word": "奉る",
     "coverage": "new"
   },
   {
@@ -3296,13 +3320,13 @@
   {
     "character": "倣",
     "sourceId": "jr_jp_joyo_5023",
-    "word": "模倣",
+    "word": "倣う",
     "coverage": "new"
   },
   {
     "character": "崩",
     "sourceId": "jr_jp_joyo_5d29",
-    "word": "崩壊",
+    "word": "崩す",
     "coverage": "new"
   },
   {
@@ -3314,7 +3338,7 @@
   {
     "character": "縫",
     "sourceId": "jr_jp_joyo_7e2b",
-    "word": "縫合",
+    "word": "縫う",
     "coverage": "new"
   },
   {
@@ -3368,7 +3392,7 @@
   {
     "character": "翻",
     "sourceId": "jr_jp_joyo_7ffb",
-    "word": "翻刻",
+    "word": "翻す",
     "coverage": "new"
   },
   {
@@ -3428,7 +3452,7 @@
   {
     "character": "憂",
     "sourceId": "jr_jp_joyo_6182",
-    "word": "憂愁",
+    "word": "憂い",
     "coverage": "new"
   },
   {
@@ -3442,12 +3466,6 @@
     "sourceId": "jr_jp_joyo_63fa",
     "word": "動揺",
     "coverage": "new"
-  },
-  {
-    "character": "擁",
-    "sourceId": "jr_jp3_007",
-    "word": "擁護",
-    "coverage": "existing"
   },
   {
     "character": "抑",
@@ -3512,7 +3530,7 @@
   {
     "character": "励",
     "sourceId": "jr_jp_joyo_52b1",
-    "word": "励行",
+    "word": "励む",
     "coverage": "new"
   },
   {
@@ -3572,7 +3590,7 @@
   {
     "character": "漏",
     "sourceId": "jr_jp_joyo_6f0f",
-    "word": "漏電",
+    "word": "漏る",
     "coverage": "new"
   },
   {
@@ -3686,7 +3704,7 @@
   {
     "character": "稼",
     "sourceId": "jr_jp_joyo_7a3c",
-    "word": "稼働",
+    "word": "稼ぐ",
     "coverage": "new"
   },
   {
@@ -3758,7 +3776,7 @@
   {
     "character": "渇",
     "sourceId": "jr_jp_joyo_6e07",
-    "word": "渇望",
+    "word": "渇く",
     "coverage": "new"
   },
   {
@@ -3794,7 +3812,7 @@
   {
     "character": "患",
     "sourceId": "jr_jp_joyo_60a3",
-    "word": "患者",
+    "word": "患う",
     "coverage": "new"
   },
   {
@@ -3854,7 +3872,7 @@
   {
     "character": "飢",
     "sourceId": "jr_jp_joyo_98e2",
-    "word": "飢餓",
+    "word": "飢える",
     "coverage": "new"
   },
   {
@@ -3890,7 +3908,7 @@
   {
     "character": "拒",
     "sourceId": "jr_jp_joyo_62d2",
-    "word": "拒否",
+    "word": "拒む",
     "coverage": "new"
   },
   {
@@ -3902,7 +3920,7 @@
   {
     "character": "挟",
     "sourceId": "jr_jp_joyo_631f",
-    "word": "挟撃",
+    "word": "挟む",
     "coverage": "new"
   },
   {
@@ -3938,7 +3956,7 @@
   {
     "character": "謹",
     "sourceId": "jr_jp_joyo_8b39",
-    "word": "謹呈",
+    "word": "謹む",
     "coverage": "new"
   },
   {
@@ -3968,7 +3986,7 @@
   {
     "character": "薫",
     "sourceId": "jr_jp_joyo_85ab",
-    "word": "薫陶",
+    "word": "薫る",
     "coverage": "new"
   },
   {
@@ -4004,7 +4022,7 @@
   {
     "character": "嫌",
     "sourceId": "jr_jp_joyo_5acc",
-    "word": "嫌悪",
+    "word": "嫌う",
     "coverage": "new"
   },
   {
@@ -4082,7 +4100,7 @@
   {
     "character": "貢",
     "sourceId": "jr_jp_joyo_8ca2",
-    "word": "貢献",
+    "word": "貢ぐ",
     "coverage": "new"
   },
   {
@@ -4136,7 +4154,7 @@
   {
     "character": "唆",
     "sourceId": "jr_jp_joyo_5506",
-    "word": "教唆",
+    "word": "唆す",
     "coverage": "new"
   },
   {
@@ -4148,7 +4166,7 @@
   {
     "character": "砕",
     "sourceId": "jr_jp_joyo_7815",
-    "word": "砕氷",
+    "word": "砕く",
     "coverage": "new"
   },
   {
@@ -4226,7 +4244,7 @@
   {
     "character": "遮",
     "sourceId": "jr_jp_joyo_906e",
-    "word": "遮断",
+    "word": "遮る",
     "coverage": "new"
   },
   {
@@ -4496,7 +4514,7 @@
   {
     "character": "醸",
     "sourceId": "jr_jp_joyo_91b8",
-    "word": "醸成",
+    "word": "醸す",
     "coverage": "new"
   },
   {
@@ -4682,7 +4700,7 @@
   {
     "character": "疎",
     "sourceId": "jr_jp_joyo_758e",
-    "word": "疎外",
+    "word": "疎い",
     "coverage": "new"
   },
   {
@@ -4706,13 +4724,13 @@
   {
     "character": "捜",
     "sourceId": "jr_jp_joyo_635c",
-    "word": "捜査",
+    "word": "捜す",
     "coverage": "new"
   },
   {
     "character": "挿",
     "sourceId": "jr_jp_joyo_633f",
-    "word": "挿入",
+    "word": "挿す",
     "coverage": "new"
   },
   {
@@ -4826,13 +4844,13 @@
   {
     "character": "弔",
     "sourceId": "jr_jp_joyo_5f14",
-    "word": "弔問",
+    "word": "弔う",
     "coverage": "new"
   },
   {
     "character": "挑",
     "sourceId": "jr_jp_joyo_6311",
-    "word": "挑戦",
+    "word": "挑む",
     "coverage": "new"
   },
   {
@@ -4844,7 +4862,7 @@
   {
     "character": "釣",
     "sourceId": "jr_jp_joyo_91e3",
-    "word": "釣果",
+    "word": "釣る",
     "coverage": "new"
   },
   {
@@ -4874,7 +4892,7 @@
   {
     "character": "漬",
     "sourceId": "jr_jp_joyo_6f2c",
-    "word": "漬ける",
+    "word": "漬かる",
     "coverage": "new"
   },
   {
@@ -5006,7 +5024,7 @@
   {
     "character": "凸",
     "sourceId": "jr_jp_joyo_51f8",
-    "word": "凹凸",
+    "word": "凸レンズ",
     "coverage": "new"
   },
   {
@@ -5036,7 +5054,7 @@
   {
     "character": "忍",
     "sourceId": "jr_jp_joyo_5fcd",
-    "word": "忍者",
+    "word": "忍ぶ",
     "coverage": "new"
   },
   {
@@ -5060,13 +5078,13 @@
   {
     "character": "廃",
     "sourceId": "jr_jp_joyo_5ec3",
-    "word": "廃止",
+    "word": "廃る",
     "coverage": "new"
   },
   {
     "character": "培",
     "sourceId": "jr_jp_joyo_57f9",
-    "word": "培養",
+    "word": "培う",
     "coverage": "new"
   },
   {
@@ -5120,7 +5138,7 @@
   {
     "character": "煩",
     "sourceId": "jr_jp_joyo_7169",
-    "word": "煩悩",
+    "word": "煩う",
     "coverage": "new"
   },
   {
@@ -5198,13 +5216,13 @@
   {
     "character": "侮",
     "sourceId": "jr_jp_joyo_4fae",
-    "word": "侮辱",
+    "word": "侮る",
     "coverage": "new"
   },
   {
     "character": "沸",
     "sourceId": "jr_jp_joyo_6cb8",
-    "word": "煮沸",
+    "word": "沸く",
     "coverage": "new"
   },
   {
@@ -5216,7 +5234,7 @@
   {
     "character": "憤",
     "sourceId": "jr_jp_joyo_61a4",
-    "word": "憤慨",
+    "word": "憤る",
     "coverage": "new"
   },
   {
@@ -5252,7 +5270,7 @@
   {
     "character": "偏",
     "sourceId": "jr_jp_joyo_504f",
-    "word": "偏向",
+    "word": "偏る",
     "coverage": "new"
   },
   {
@@ -5330,7 +5348,7 @@
   {
     "character": "摩",
     "sourceId": "jr_jp_joyo_6469",
-    "word": "摩擦",
+    "word": "摩天楼",
     "coverage": "new"
   },
   {
@@ -5388,12 +5406,6 @@
     "coverage": "new"
   },
   {
-    "character": "諭",
-    "sourceId": "jr_jp3_010",
-    "word": "諭す",
-    "coverage": "existing"
-  },
-  {
     "character": "癒",
     "sourceId": "jr_jp_joyo_7652",
     "word": "平癒",
@@ -5416,12 +5428,6 @@
     "sourceId": "jr_jp_joyo_7336",
     "word": "猶予",
     "coverage": "new"
-  },
-  {
-    "character": "裕",
-    "sourceId": "jr_japanese_core_kanji_裕",
-    "word": "裕福",
-    "coverage": "existing"
   },
   {
     "character": "融",
@@ -5462,7 +5468,7 @@
   {
     "character": "履",
     "sourceId": "jr_jp_joyo_5c65",
-    "word": "履歴",
+    "word": "履く",
     "coverage": "new"
   },
   {
@@ -5492,7 +5498,7 @@
   {
     "character": "涼",
     "sourceId": "jr_jp_joyo_6dbc",
-    "word": "涼味",
+    "word": "涼む",
     "coverage": "new"
   },
   {
@@ -5528,7 +5534,7 @@
   {
     "character": "戻",
     "sourceId": "jr_jp_joyo_623b",
-    "word": "戻入",
+    "word": "戻す",
     "coverage": "new"
   },
   {
@@ -5547,12 +5553,6 @@
     "character": "枠",
     "sourceId": "jr_jp_joyo_67a0",
     "word": "枠",
-    "coverage": "new"
-  },
-  {
-    "character": "挨",
-    "sourceId": "jr_jp_joyo_6328",
-    "word": "挨拶",
     "coverage": "new"
   },
   {
@@ -5678,7 +5678,7 @@
   {
     "character": "潰",
     "sourceId": "jr_jp_joyo_6f70",
-    "word": "潰瘍",
+    "word": "潰す",
     "coverage": "new"
   },
   {
@@ -5780,7 +5780,7 @@
   {
     "character": "嗅",
     "sourceId": "jr_jp_joyo_55c5",
-    "word": "嗅覚",
+    "word": "嗅ぐ",
     "coverage": "new"
   },
   {
@@ -5823,12 +5823,6 @@
     "character": "詣",
     "sourceId": "jr_jp_joyo_8a63",
     "word": "参詣",
-    "coverage": "new"
-  },
-  {
-    "character": "憬",
-    "sourceId": "jr_jp_joyo_61ac",
-    "word": "憧憬",
     "coverage": "new"
   },
   {
@@ -5934,12 +5928,6 @@
     "coverage": "new"
   },
   {
-    "character": "沙",
-    "sourceId": "jr_jp_joyo_6c99",
-    "word": "沙汰",
-    "coverage": "new"
-  },
-  {
     "character": "挫",
     "sourceId": "jr_jp_joyo_632b",
     "word": "挫折",
@@ -5954,7 +5942,7 @@
   {
     "character": "塞",
     "sourceId": "jr_jp_joyo_585e",
-    "word": "要塞",
+    "word": "塞ぐ",
     "coverage": "new"
   },
   {
@@ -5978,7 +5966,7 @@
   {
     "character": "斬",
     "sourceId": "jr_jp_joyo_65ac",
-    "word": "斬新",
+    "word": "斬る",
     "coverage": "new"
   },
   {
@@ -6020,7 +6008,7 @@
   {
     "character": "呪",
     "sourceId": "jr_jp_joyo_546a",
-    "word": "呪文",
+    "word": "呪う",
     "coverage": "new"
   },
   {
@@ -6040,12 +6028,6 @@
     "sourceId": "jr_jp_joyo_8e74",
     "word": "一蹴",
     "coverage": "new"
-  },
-  {
-    "character": "憧",
-    "sourceId": "jr_jp3_001",
-    "word": "憧憬",
-    "coverage": "existing"
   },
   {
     "character": "拭",
@@ -6110,13 +6092,13 @@
   {
     "character": "煎",
     "sourceId": "jr_jp_joyo_714e",
-    "word": "煎茶",
+    "word": "煎る",
     "coverage": "new"
   },
   {
     "character": "羨",
     "sourceId": "jr_jp_joyo_7fa8",
-    "word": "羨望",
+    "word": "羨む",
     "coverage": "new"
   },
   {
@@ -6146,13 +6128,13 @@
   {
     "character": "狙",
     "sourceId": "jr_jp_joyo_72d9",
-    "word": "狙撃",
+    "word": "狙う",
     "coverage": "new"
   },
   {
     "character": "遡",
     "sourceId": "jr_jp_joyo_9061",
-    "word": "遡上",
+    "word": "遡る",
     "coverage": "new"
   },
   {
@@ -6248,13 +6230,13 @@
   {
     "character": "貼",
     "sourceId": "jr_jp_joyo_8cbc",
-    "word": "貼付",
+    "word": "貼る",
     "coverage": "new"
   },
   {
     "character": "嘲",
     "sourceId": "jr_jp_joyo_5632",
-    "word": "嘲笑",
+    "word": "嘲る",
     "coverage": "new"
   },
   {
@@ -6302,7 +6284,7 @@
   {
     "character": "妬",
     "sourceId": "jr_jp_joyo_59ac",
-    "word": "嫉妬",
+    "word": "妬む",
     "coverage": "new"
   },
   {
@@ -6332,7 +6314,7 @@
   {
     "character": "貪",
     "sourceId": "jr_jp_joyo_8caa",
-    "word": "貪欲",
+    "word": "貪る",
     "coverage": "new"
   },
   {
@@ -6344,7 +6326,7 @@
   {
     "character": "那",
     "sourceId": "jr_jp_joyo_90a3",
-    "word": "刹那",
+    "word": "旦那",
     "coverage": "new"
   },
   {
@@ -6380,13 +6362,13 @@
   {
     "character": "罵",
     "sourceId": "jr_jp_joyo_7f75",
-    "word": "罵倒",
+    "word": "罵る",
     "coverage": "new"
   },
   {
     "character": "剝",
     "sourceId": "jr_jp_joyo_525d",
-    "word": "剝奪",
+    "word": "剝ぐ",
     "coverage": "new"
   },
   {
@@ -6458,7 +6440,7 @@
   {
     "character": "蔑",
     "sourceId": "jr_jp_joyo_8511",
-    "word": "軽蔑",
+    "word": "蔑む",
     "coverage": "new"
   },
   {
@@ -6554,7 +6536,7 @@
   {
     "character": "湧",
     "sourceId": "jr_jp_joyo_6e67",
-    "word": "湧出",
+    "word": "湧く",
     "coverage": "new"
   },
   {
@@ -6591,12 +6573,6 @@
     "character": "藍",
     "sourceId": "jr_jp_joyo_85cd",
     "word": "出藍",
-    "coverage": "new"
-  },
-  {
-    "character": "璃",
-    "sourceId": "jr_jp_joyo_7483",
-    "word": "浄瑠璃",
     "coverage": "new"
   },
   {
@@ -6638,7 +6614,7 @@
   {
     "character": "弄",
     "sourceId": "jr_jp_joyo_5f04",
-    "word": "愚弄",
+    "word": "弄ぶ",
     "coverage": "new"
   },
   {
@@ -6658,5 +6634,29 @@
     "sourceId": "jr_jp_joyo_8107",
     "word": "両脇",
     "coverage": "new"
+  },
+  {
+    "character": "憬",
+    "sourceId": "jr_jp3_001",
+    "word": "憧憬",
+    "coverage": "shared-word"
+  },
+  {
+    "character": "挨",
+    "sourceId": "jr_jp_joyo_62f6",
+    "word": "挨拶",
+    "coverage": "shared-word"
+  },
+  {
+    "character": "沙",
+    "sourceId": "jr_jp_joyo_6c70",
+    "word": "沙汰",
+    "coverage": "shared-word"
+  },
+  {
+    "character": "璃",
+    "sourceId": "jr_jp_joyo_7460",
+    "word": "浄瑠璃",
+    "coverage": "shared-word"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
-  "materials": 1477,
-  "generated": 1717,
+  "materials": 1473,
+  "generated": 1713,
   "secondaryReading": {
     "covered": 1110,
     "target": 1110,
@@ -17,8 +17,8 @@
   },
   "fields": {
     "漢字": {
-      "materials": 1122,
-      "generated": 1175,
+      "materials": 1118,
+      "generated": 1171,
       "units": [
         "漢字",
         "共通漢字",
