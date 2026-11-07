@@ -1,0 +1,6662 @@
+[
+  {
+    "character": "握",
+    "sourceId": "jr_jp_joyo_63e1",
+    "word": "掌握",
+    "coverage": "new"
+  },
+  {
+    "character": "扱",
+    "sourceId": "jr_jp_joyo_6271",
+    "word": "扱う",
+    "coverage": "new"
+  },
+  {
+    "character": "依",
+    "sourceId": "jr_jp_joyo_4f9d",
+    "word": "依拠",
+    "coverage": "new"
+  },
+  {
+    "character": "威",
+    "sourceId": "jr_jp_joyo_5a01",
+    "word": "威力",
+    "coverage": "new"
+  },
+  {
+    "character": "為",
+    "sourceId": "jr_jp_joyo_70ba",
+    "word": "作為",
+    "coverage": "new"
+  },
+  {
+    "character": "偉",
+    "sourceId": "jr_jp_joyo_5049",
+    "word": "偉人",
+    "coverage": "new"
+  },
+  {
+    "character": "違",
+    "sourceId": "jr_jp_joyo_9055",
+    "word": "相違",
+    "coverage": "new"
+  },
+  {
+    "character": "維",
+    "sourceId": "jr_jp_joyo_7dad",
+    "word": "維持",
+    "coverage": "new"
+  },
+  {
+    "character": "緯",
+    "sourceId": "jr_jp_joyo_7def",
+    "word": "北緯",
+    "coverage": "new"
+  },
+  {
+    "character": "壱",
+    "sourceId": "jr_jp_joyo_58f1",
+    "word": "壱万円",
+    "coverage": "new"
+  },
+  {
+    "character": "芋",
+    "sourceId": "jr_jp_joyo_828b",
+    "word": "芋",
+    "coverage": "new"
+  },
+  {
+    "character": "陰",
+    "sourceId": "jr_jp_joyo_9670",
+    "word": "陰",
+    "coverage": "new"
+  },
+  {
+    "character": "隠",
+    "sourceId": "jr_jp_joyo_96a0",
+    "word": "隠居",
+    "coverage": "new"
+  },
+  {
+    "character": "影",
+    "sourceId": "jr_jp_joyo_5f71",
+    "word": "影",
+    "coverage": "new"
+  },
+  {
+    "character": "鋭",
+    "sourceId": "jr_jp_joyo_92ed",
+    "word": "精鋭",
+    "coverage": "new"
+  },
+  {
+    "character": "越",
+    "sourceId": "jr_jp_joyo_8d8a",
+    "word": "優越",
+    "coverage": "new"
+  },
+  {
+    "character": "援",
+    "sourceId": "jr_jp_joyo_63f4",
+    "word": "声援",
+    "coverage": "new"
+  },
+  {
+    "character": "煙",
+    "sourceId": "jr_jp_joyo_7159",
+    "word": "煙",
+    "coverage": "new"
+  },
+  {
+    "character": "鉛",
+    "sourceId": "jr_jp_joyo_925b",
+    "word": "鉛",
+    "coverage": "new"
+  },
+  {
+    "character": "縁",
+    "sourceId": "jr_jp_joyo_7e01",
+    "word": "縁",
+    "coverage": "new"
+  },
+  {
+    "character": "汚",
+    "sourceId": "jr_jp_joyo_6c5a",
+    "word": "汚名",
+    "coverage": "new"
+  },
+  {
+    "character": "押",
+    "sourceId": "jr_jp_joyo_62bc",
+    "word": "押印",
+    "coverage": "new"
+  },
+  {
+    "character": "奥",
+    "sourceId": "jr_jp_joyo_5965",
+    "word": "奥",
+    "coverage": "new"
+  },
+  {
+    "character": "憶",
+    "sourceId": "jr_jp_joyo_61b6",
+    "word": "記憶",
+    "coverage": "new"
+  },
+  {
+    "character": "菓",
+    "sourceId": "jr_jp_joyo_83d3",
+    "word": "茶菓",
+    "coverage": "new"
+  },
+  {
+    "character": "暇",
+    "sourceId": "jr_jp_joyo_6687",
+    "word": "暇",
+    "coverage": "new"
+  },
+  {
+    "character": "箇",
+    "sourceId": "jr_jp_joyo_7b87",
+    "word": "箇所",
+    "coverage": "new"
+  },
+  {
+    "character": "雅",
+    "sourceId": "jr_jp_joyo_96c5",
+    "word": "優雅",
+    "coverage": "new"
+  },
+  {
+    "character": "介",
+    "sourceId": "jr_jp_joyo_4ecb",
+    "word": "介入",
+    "coverage": "new"
+  },
+  {
+    "character": "戒",
+    "sourceId": "jr_jp_joyo_6212",
+    "word": "戒律",
+    "coverage": "new"
+  },
+  {
+    "character": "皆",
+    "sourceId": "jr_jp_joyo_7686",
+    "word": "皆",
+    "coverage": "new"
+  },
+  {
+    "character": "壊",
+    "sourceId": "jr_jp_joyo_58ca",
+    "word": "壊滅",
+    "coverage": "new"
+  },
+  {
+    "character": "較",
+    "sourceId": "jr_jp_joyo_8f03",
+    "word": "比較",
+    "coverage": "new"
+  },
+  {
+    "character": "獲",
+    "sourceId": "jr_jp_joyo_7372",
+    "word": "捕獲",
+    "coverage": "new"
+  },
+  {
+    "character": "刈",
+    "sourceId": "jr_jp_joyo_5208",
+    "word": "刈る",
+    "coverage": "new"
+  },
+  {
+    "character": "甘",
+    "sourceId": "jr_jp_joyo_7518",
+    "word": "甘受",
+    "coverage": "new"
+  },
+  {
+    "character": "汗",
+    "sourceId": "jr_jp_joyo_6c57",
+    "word": "汗",
+    "coverage": "new"
+  },
+  {
+    "character": "乾",
+    "sourceId": "jr_jp_joyo_4e7e",
+    "word": "乾杯",
+    "coverage": "new"
+  },
+  {
+    "character": "勧",
+    "sourceId": "jr_jp_joyo_52e7",
+    "word": "勧告",
+    "coverage": "new"
+  },
+  {
+    "character": "歓",
+    "sourceId": "jr_jp_joyo_6b53",
+    "word": "交歓",
+    "coverage": "new"
+  },
+  {
+    "character": "監",
+    "sourceId": "jr_jp_joyo_76e3",
+    "word": "監督",
+    "coverage": "new"
+  },
+  {
+    "character": "環",
+    "sourceId": "jr_jp_joyo_74b0",
+    "word": "循環",
+    "coverage": "new"
+  },
+  {
+    "character": "鑑",
+    "sourceId": "jr_jp_joyo_9451",
+    "word": "年鑑",
+    "coverage": "new"
+  },
+  {
+    "character": "含",
+    "sourceId": "jr_jp_joyo_542b",
+    "word": "包含",
+    "coverage": "new"
+  },
+  {
+    "character": "奇",
+    "sourceId": "jr_jp_joyo_5947",
+    "word": "奇数",
+    "coverage": "new"
+  },
+  {
+    "character": "祈",
+    "sourceId": "jr_jp_joyo_7948",
+    "word": "祈念",
+    "coverage": "new"
+  },
+  {
+    "character": "鬼",
+    "sourceId": "jr_jp_joyo_9b3c",
+    "word": "鬼",
+    "coverage": "new"
+  },
+  {
+    "character": "幾",
+    "sourceId": "jr_jp_joyo_5e7e",
+    "word": "幾つ",
+    "coverage": "new"
+  },
+  {
+    "character": "輝",
+    "sourceId": "jr_jp_joyo_8f1d",
+    "word": "光輝",
+    "coverage": "new"
+  },
+  {
+    "character": "儀",
+    "sourceId": "jr_jp3_008",
+    "word": "儀式",
+    "coverage": "existing"
+  },
+  {
+    "character": "戯",
+    "sourceId": "jr_jp_joyo_622f",
+    "word": "児戯",
+    "coverage": "new"
+  },
+  {
+    "character": "詰",
+    "sourceId": "jr_jp_joyo_8a70",
+    "word": "詰問",
+    "coverage": "new"
+  },
+  {
+    "character": "却",
+    "sourceId": "jr_jp_joyo_5374",
+    "word": "売却",
+    "coverage": "new"
+  },
+  {
+    "character": "脚",
+    "sourceId": "jr_jp_joyo_811a",
+    "word": "脚",
+    "coverage": "new"
+  },
+  {
+    "character": "及",
+    "sourceId": "jr_jp_joyo_53ca",
+    "word": "及第",
+    "coverage": "new"
+  },
+  {
+    "character": "丘",
+    "sourceId": "jr_jp_joyo_4e18",
+    "word": "丘",
+    "coverage": "new"
+  },
+  {
+    "character": "朽",
+    "sourceId": "jr_jp_joyo_673d",
+    "word": "不朽",
+    "coverage": "new"
+  },
+  {
+    "character": "巨",
+    "sourceId": "jr_jp_joyo_5de8",
+    "word": "巨万",
+    "coverage": "new"
+  },
+  {
+    "character": "拠",
+    "sourceId": "jr_jp_joyo_62e0",
+    "word": "占拠",
+    "coverage": "new"
+  },
+  {
+    "character": "距",
+    "sourceId": "jr_jp_joyo_8ddd",
+    "word": "距離",
+    "coverage": "new"
+  },
+  {
+    "character": "御",
+    "sourceId": "jr_jp_joyo_5fa1",
+    "word": "制御",
+    "coverage": "new"
+  },
+  {
+    "character": "凶",
+    "sourceId": "jr_jp_joyo_51f6",
+    "word": "凶作",
+    "coverage": "new"
+  },
+  {
+    "character": "叫",
+    "sourceId": "jr_jp_joyo_53eb",
+    "word": "叫喚",
+    "coverage": "new"
+  },
+  {
+    "character": "狂",
+    "sourceId": "jr_jp_joyo_72c2",
+    "word": "熱狂",
+    "coverage": "new"
+  },
+  {
+    "character": "況",
+    "sourceId": "jr_jp_joyo_6cc1",
+    "word": "実況",
+    "coverage": "new"
+  },
+  {
+    "character": "狭",
+    "sourceId": "jr_jp_joyo_72ed",
+    "word": "偏狭",
+    "coverage": "new"
+  },
+  {
+    "character": "恐",
+    "sourceId": "jr_jp_joyo_6050",
+    "word": "恐怖",
+    "coverage": "new"
+  },
+  {
+    "character": "響",
+    "sourceId": "jr_jp_joyo_97ff",
+    "word": "影響",
+    "coverage": "new"
+  },
+  {
+    "character": "驚",
+    "sourceId": "jr_jp_joyo_9a5a",
+    "word": "驚嘆",
+    "coverage": "new"
+  },
+  {
+    "character": "仰",
+    "sourceId": "jr_jp_joyo_4ef0",
+    "word": "仰天",
+    "coverage": "new"
+  },
+  {
+    "character": "駆",
+    "sourceId": "jr_jp_joyo_99c6",
+    "word": "先駆",
+    "coverage": "new"
+  },
+  {
+    "character": "屈",
+    "sourceId": "jr_jp_joyo_5c48",
+    "word": "不屈",
+    "coverage": "new"
+  },
+  {
+    "character": "掘",
+    "sourceId": "jr_jp_joyo_6398",
+    "word": "採掘",
+    "coverage": "new"
+  },
+  {
+    "character": "繰",
+    "sourceId": "jr_jp_joyo_7e70",
+    "word": "繰る",
+    "coverage": "new"
+  },
+  {
+    "character": "恵",
+    "sourceId": "jr_jp_joyo_6075",
+    "word": "恩恵",
+    "coverage": "new"
+  },
+  {
+    "character": "傾",
+    "sourceId": "jr_jp_joyo_50be",
+    "word": "傾倒",
+    "coverage": "new"
+  },
+  {
+    "character": "継",
+    "sourceId": "jr_jp_joyo_7d99",
+    "word": "中継",
+    "coverage": "new"
+  },
+  {
+    "character": "迎",
+    "sourceId": "jr_jp_joyo_8fce",
+    "word": "歓迎",
+    "coverage": "new"
+  },
+  {
+    "character": "撃",
+    "sourceId": "jr_jp_joyo_6483",
+    "word": "打撃",
+    "coverage": "new"
+  },
+  {
+    "character": "肩",
+    "sourceId": "jr_jp_joyo_80a9",
+    "word": "肩",
+    "coverage": "new"
+  },
+  {
+    "character": "兼",
+    "sourceId": "jr_jp_joyo_517c",
+    "word": "兼任",
+    "coverage": "new"
+  },
+  {
+    "character": "剣",
+    "sourceId": "jr_jp_joyo_5263",
+    "word": "剣",
+    "coverage": "new"
+  },
+  {
+    "character": "軒",
+    "sourceId": "jr_jp_joyo_8ed2",
+    "word": "軒",
+    "coverage": "new"
+  },
+  {
+    "character": "圏",
+    "sourceId": "jr_jp_joyo_570f",
+    "word": "圏内",
+    "coverage": "new"
+  },
+  {
+    "character": "堅",
+    "sourceId": "jr_jp_joyo_5805",
+    "word": "中堅",
+    "coverage": "new"
+  },
+  {
+    "character": "遣",
+    "sourceId": "jr_jp_joyo_9063",
+    "word": "分遣",
+    "coverage": "new"
+  },
+  {
+    "character": "玄",
+    "sourceId": "jr_jp_joyo_7384",
+    "word": "幽玄",
+    "coverage": "new"
+  },
+  {
+    "character": "枯",
+    "sourceId": "jr_jp_joyo_67af",
+    "word": "枯死",
+    "coverage": "new"
+  },
+  {
+    "character": "誇",
+    "sourceId": "jr_jp_joyo_8a87",
+    "word": "誇大",
+    "coverage": "new"
+  },
+  {
+    "character": "鼓",
+    "sourceId": "jr_jp_joyo_9f13",
+    "word": "鼓",
+    "coverage": "new"
+  },
+  {
+    "character": "互",
+    "sourceId": "jr_jp_joyo_4e92",
+    "word": "互角",
+    "coverage": "new"
+  },
+  {
+    "character": "抗",
+    "sourceId": "jr_jp_joyo_6297",
+    "word": "対抗",
+    "coverage": "new"
+  },
+  {
+    "character": "攻",
+    "sourceId": "jr_jp_joyo_653b",
+    "word": "専攻",
+    "coverage": "new"
+  },
+  {
+    "character": "更",
+    "sourceId": "jr_jp_joyo_66f4",
+    "word": "今更",
+    "coverage": "new"
+  },
+  {
+    "character": "恒",
+    "sourceId": "jr_jp_joyo_6052",
+    "word": "恒久",
+    "coverage": "new"
+  },
+  {
+    "character": "荒",
+    "sourceId": "jr_jp_joyo_8352",
+    "word": "荒天",
+    "coverage": "new"
+  },
+  {
+    "character": "項",
+    "sourceId": "jr_jp_joyo_9805",
+    "word": "事項",
+    "coverage": "new"
+  },
+  {
+    "character": "稿",
+    "sourceId": "jr_jp_joyo_7a3f",
+    "word": "原稿",
+    "coverage": "new"
+  },
+  {
+    "character": "豪",
+    "sourceId": "jr_jp_joyo_8c6a",
+    "word": "文豪",
+    "coverage": "new"
+  },
+  {
+    "character": "込",
+    "sourceId": "jr_jp_joyo_8fbc",
+    "word": "込む",
+    "coverage": "new"
+  },
+  {
+    "character": "婚",
+    "sourceId": "jr_jp_joyo_5a5a",
+    "word": "婚約",
+    "coverage": "new"
+  },
+  {
+    "character": "鎖",
+    "sourceId": "jr_jp_joyo_9396",
+    "word": "鎖",
+    "coverage": "new"
+  },
+  {
+    "character": "彩",
+    "sourceId": "jr_jp_joyo_5f69",
+    "word": "彩色",
+    "coverage": "new"
+  },
+  {
+    "character": "歳",
+    "sourceId": "jr_jp_joyo_6b73",
+    "word": "歳暮",
+    "coverage": "new"
+  },
+  {
+    "character": "載",
+    "sourceId": "jr_jp_joyo_8f09",
+    "word": "掲載",
+    "coverage": "new"
+  },
+  {
+    "character": "剤",
+    "sourceId": "jr_jp_joyo_5264",
+    "word": "錠剤",
+    "coverage": "new"
+  },
+  {
+    "character": "咲",
+    "sourceId": "jr_jp_joyo_54b2",
+    "word": "咲く",
+    "coverage": "new"
+  },
+  {
+    "character": "惨",
+    "sourceId": "jr_jp_joyo_60e8",
+    "word": "悲惨",
+    "coverage": "new"
+  },
+  {
+    "character": "旨",
+    "sourceId": "jr_jp_joyo_65e8",
+    "word": "旨",
+    "coverage": "new"
+  },
+  {
+    "character": "伺",
+    "sourceId": "jr_jp_joyo_4f3a",
+    "word": "伺候",
+    "coverage": "new"
+  },
+  {
+    "character": "刺",
+    "sourceId": "jr_jp_joyo_523a",
+    "word": "刺激",
+    "coverage": "new"
+  },
+  {
+    "character": "脂",
+    "sourceId": "jr_jp_joyo_8102",
+    "word": "脂",
+    "coverage": "new"
+  },
+  {
+    "character": "紫",
+    "sourceId": "jr_jp_joyo_7d2b",
+    "word": "紫",
+    "coverage": "new"
+  },
+  {
+    "character": "雌",
+    "sourceId": "jr_jp_joyo_96cc",
+    "word": "雌",
+    "coverage": "new"
+  },
+  {
+    "character": "執",
+    "sourceId": "jr_jp_joyo_57f7",
+    "word": "執務",
+    "coverage": "new"
+  },
+  {
+    "character": "芝",
+    "sourceId": "jr_jp_joyo_829d",
+    "word": "芝",
+    "coverage": "new"
+  },
+  {
+    "character": "斜",
+    "sourceId": "jr_jp_joyo_659c",
+    "word": "傾斜",
+    "coverage": "new"
+  },
+  {
+    "character": "煮",
+    "sourceId": "jr_jp_joyo_716e",
+    "word": "煮沸",
+    "coverage": "new"
+  },
+  {
+    "character": "釈",
+    "sourceId": "jr_jp_joyo_91c8",
+    "word": "解釈",
+    "coverage": "new"
+  },
+  {
+    "character": "寂",
+    "sourceId": "jr_jp_joyo_5bc2",
+    "word": "寂",
+    "coverage": "new"
+  },
+  {
+    "character": "朱",
+    "sourceId": "jr_jp_joyo_6731",
+    "word": "朱筆",
+    "coverage": "new"
+  },
+  {
+    "character": "狩",
+    "sourceId": "jr_jp_joyo_72e9",
+    "word": "狩猟",
+    "coverage": "new"
+  },
+  {
+    "character": "趣",
+    "sourceId": "jr_jp_joyo_8da3",
+    "word": "趣",
+    "coverage": "new"
+  },
+  {
+    "character": "需",
+    "sourceId": "jr_jp_joyo_9700",
+    "word": "需給",
+    "coverage": "new"
+  },
+  {
+    "character": "舟",
+    "sourceId": "jr_jp_joyo_821f",
+    "word": "舟",
+    "coverage": "new"
+  },
+  {
+    "character": "秀",
+    "sourceId": "jr_jp_joyo_79c0",
+    "word": "優秀",
+    "coverage": "new"
+  },
+  {
+    "character": "襲",
+    "sourceId": "jr_jp_joyo_8972",
+    "word": "世襲",
+    "coverage": "new"
+  },
+  {
+    "character": "柔",
+    "sourceId": "jr_jp_joyo_67d4",
+    "word": "懐柔",
+    "coverage": "new"
+  },
+  {
+    "character": "獣",
+    "sourceId": "jr_jp_joyo_7363",
+    "word": "獣",
+    "coverage": "new"
+  },
+  {
+    "character": "瞬",
+    "sourceId": "jr_jp_joyo_77ac",
+    "word": "一瞬",
+    "coverage": "new"
+  },
+  {
+    "character": "旬",
+    "sourceId": "jr_jp_joyo_65ec",
+    "word": "旬",
+    "coverage": "new"
+  },
+  {
+    "character": "巡",
+    "sourceId": "jr_jp_joyo_5de1",
+    "word": "一巡",
+    "coverage": "new"
+  },
+  {
+    "character": "盾",
+    "sourceId": "jr_jp_joyo_76fe",
+    "word": "盾",
+    "coverage": "new"
+  },
+  {
+    "character": "召",
+    "sourceId": "jr_jp_joyo_53ec",
+    "word": "召喚",
+    "coverage": "new"
+  },
+  {
+    "character": "床",
+    "sourceId": "jr_jp_joyo_5e8a",
+    "word": "床",
+    "coverage": "new"
+  },
+  {
+    "character": "沼",
+    "sourceId": "jr_jp_joyo_6cbc",
+    "word": "沼",
+    "coverage": "new"
+  },
+  {
+    "character": "称",
+    "sourceId": "jr_jp_joyo_79f0",
+    "word": "名称",
+    "coverage": "new"
+  },
+  {
+    "character": "紹",
+    "sourceId": "jr_jp_joyo_7d39",
+    "word": "紹介",
+    "coverage": "new"
+  },
+  {
+    "character": "詳",
+    "sourceId": "jr_jp_joyo_8a73",
+    "word": "未詳",
+    "coverage": "new"
+  },
+  {
+    "character": "丈",
+    "sourceId": "jr_jp_joyo_4e08",
+    "word": "丈",
+    "coverage": "new"
+  },
+  {
+    "character": "畳",
+    "sourceId": "jr_jp_joyo_7573",
+    "word": "畳",
+    "coverage": "new"
+  },
+  {
+    "character": "殖",
+    "sourceId": "jr_jp_joyo_6b96",
+    "word": "利殖",
+    "coverage": "new"
+  },
+  {
+    "character": "飾",
+    "sourceId": "jr_jp_joyo_98fe",
+    "word": "修飾",
+    "coverage": "new"
+  },
+  {
+    "character": "触",
+    "sourceId": "jr_jp_joyo_89e6",
+    "word": "接触",
+    "coverage": "new"
+  },
+  {
+    "character": "侵",
+    "sourceId": "jr_jp_joyo_4fb5",
+    "word": "侵入",
+    "coverage": "new"
+  },
+  {
+    "character": "振",
+    "sourceId": "jr_jp_joyo_632f",
+    "word": "不振",
+    "coverage": "new"
+  },
+  {
+    "character": "浸",
+    "sourceId": "jr_jp_joyo_6d78",
+    "word": "浸水",
+    "coverage": "new"
+  },
+  {
+    "character": "寝",
+    "sourceId": "jr_jp_joyo_5bdd",
+    "word": "寝具",
+    "coverage": "new"
+  },
+  {
+    "character": "慎",
+    "sourceId": "jr_jp3_002",
+    "word": "慎重",
+    "coverage": "existing"
+  },
+  {
+    "character": "震",
+    "sourceId": "jr_jp_joyo_9707",
+    "word": "地震",
+    "coverage": "new"
+  },
+  {
+    "character": "薪",
+    "sourceId": "jr_jp_joyo_85aa",
+    "word": "薪",
+    "coverage": "new"
+  },
+  {
+    "character": "尽",
+    "sourceId": "jr_jp_joyo_5c3d",
+    "word": "尽力",
+    "coverage": "new"
+  },
+  {
+    "character": "陣",
+    "sourceId": "jr_jp_joyo_9663",
+    "word": "円陣",
+    "coverage": "new"
+  },
+  {
+    "character": "尋",
+    "sourceId": "jr_jp_joyo_5c0b",
+    "word": "千尋",
+    "coverage": "new"
+  },
+  {
+    "character": "吹",
+    "sourceId": "jr_jp_joyo_5439",
+    "word": "吹奏",
+    "coverage": "new"
+  },
+  {
+    "character": "是",
+    "sourceId": "jr_jp_joyo_662f",
+    "word": "国是",
+    "coverage": "new"
+  },
+  {
+    "character": "姓",
+    "sourceId": "jr_jp_joyo_59d3",
+    "word": "同姓",
+    "coverage": "new"
+  },
+  {
+    "character": "征",
+    "sourceId": "jr_jp_joyo_5f81",
+    "word": "出征",
+    "coverage": "new"
+  },
+  {
+    "character": "跡",
+    "sourceId": "jr_jp_joyo_8de1",
+    "word": "跡",
+    "coverage": "new"
+  },
+  {
+    "character": "占",
+    "sourceId": "jr_jp_joyo_5360",
+    "word": "占拠",
+    "coverage": "new"
+  },
+  {
+    "character": "扇",
+    "sourceId": "jr_jp_joyo_6247",
+    "word": "扇",
+    "coverage": "new"
+  },
+  {
+    "character": "鮮",
+    "sourceId": "jr_jp_joyo_9bae",
+    "word": "新鮮",
+    "coverage": "new"
+  },
+  {
+    "character": "訴",
+    "sourceId": "jr_jp_joyo_8a34",
+    "word": "告訴",
+    "coverage": "new"
+  },
+  {
+    "character": "僧",
+    "sourceId": "jr_jp_joyo_50e7",
+    "word": "僧院",
+    "coverage": "new"
+  },
+  {
+    "character": "燥",
+    "sourceId": "jr_jp_joyo_71e5",
+    "word": "乾燥",
+    "coverage": "new"
+  },
+  {
+    "character": "騒",
+    "sourceId": "jr_jp_joyo_9a12",
+    "word": "物騒",
+    "coverage": "new"
+  },
+  {
+    "character": "贈",
+    "sourceId": "jr_jp_joyo_8d08",
+    "word": "寄贈",
+    "coverage": "new"
+  },
+  {
+    "character": "即",
+    "sourceId": "jr_jp_joyo_5373",
+    "word": "即席",
+    "coverage": "new"
+  },
+  {
+    "character": "俗",
+    "sourceId": "jr_jp_joyo_4fd7",
+    "word": "俗事",
+    "coverage": "new"
+  },
+  {
+    "character": "耐",
+    "sourceId": "jr_jp_joyo_8010",
+    "word": "忍耐",
+    "coverage": "new"
+  },
+  {
+    "character": "替",
+    "sourceId": "jr_jp_joyo_66ff",
+    "word": "代替",
+    "coverage": "new"
+  },
+  {
+    "character": "沢",
+    "sourceId": "jr_jp_joyo_6ca2",
+    "word": "沢",
+    "coverage": "new"
+  },
+  {
+    "character": "拓",
+    "sourceId": "jr_jp_joyo_62d3",
+    "word": "拓本",
+    "coverage": "new"
+  },
+  {
+    "character": "濁",
+    "sourceId": "jr_jp_joyo_6fc1",
+    "word": "清濁",
+    "coverage": "new"
+  },
+  {
+    "character": "脱",
+    "sourceId": "jr_jp_joyo_8131",
+    "word": "脱衣",
+    "coverage": "new"
+  },
+  {
+    "character": "丹",
+    "sourceId": "jr_jp_joyo_4e39",
+    "word": "丹念",
+    "coverage": "new"
+  },
+  {
+    "character": "淡",
+    "sourceId": "jr_jp_joyo_6de1",
+    "word": "冷淡",
+    "coverage": "new"
+  },
+  {
+    "character": "嘆",
+    "sourceId": "jr_jp_joyo_5606",
+    "word": "嘆息",
+    "coverage": "new"
+  },
+  {
+    "character": "端",
+    "sourceId": "jr_jp_joyo_7aef",
+    "word": "端",
+    "coverage": "new"
+  },
+  {
+    "character": "弾",
+    "sourceId": "jr_jp_joyo_5f3e",
+    "word": "弾",
+    "coverage": "new"
+  },
+  {
+    "character": "恥",
+    "sourceId": "jr_jp_joyo_6065",
+    "word": "恥",
+    "coverage": "new"
+  },
+  {
+    "character": "致",
+    "sourceId": "jr_jp_joyo_81f4",
+    "word": "合致",
+    "coverage": "new"
+  },
+  {
+    "character": "遅",
+    "sourceId": "jr_jp_joyo_9045",
+    "word": "遅刻",
+    "coverage": "new"
+  },
+  {
+    "character": "蓄",
+    "sourceId": "jr_jp_joyo_84c4",
+    "word": "蓄積",
+    "coverage": "new"
+  },
+  {
+    "character": "跳",
+    "sourceId": "jr_jp_joyo_8df3",
+    "word": "跳躍",
+    "coverage": "new"
+  },
+  {
+    "character": "徴",
+    "sourceId": "jr_jp_joyo_5fb4",
+    "word": "徴収",
+    "coverage": "new"
+  },
+  {
+    "character": "澄",
+    "sourceId": "jr_jp_joyo_6f84",
+    "word": "清澄",
+    "coverage": "new"
+  },
+  {
+    "character": "沈",
+    "sourceId": "jr_jp_joyo_6c88",
+    "word": "沈滞",
+    "coverage": "new"
+  },
+  {
+    "character": "珍",
+    "sourceId": "jr_jp_joyo_73cd",
+    "word": "珍妙",
+    "coverage": "new"
+  },
+  {
+    "character": "抵",
+    "sourceId": "jr_jp3_006",
+    "word": "抵抗",
+    "coverage": "existing"
+  },
+  {
+    "character": "堤",
+    "sourceId": "jr_jp_joyo_5824",
+    "word": "堤",
+    "coverage": "new"
+  },
+  {
+    "character": "摘",
+    "sourceId": "jr_jp_joyo_6458",
+    "word": "指摘",
+    "coverage": "new"
+  },
+  {
+    "character": "滴",
+    "sourceId": "jr_jp_joyo_6ef4",
+    "word": "滴",
+    "coverage": "new"
+  },
+  {
+    "character": "添",
+    "sourceId": "jr_jp_joyo_6dfb",
+    "word": "添付",
+    "coverage": "new"
+  },
+  {
+    "character": "殿",
+    "sourceId": "jr_jp_joyo_6bbf",
+    "word": "宮殿",
+    "coverage": "new"
+  },
+  {
+    "character": "吐",
+    "sourceId": "jr_jp_joyo_5410",
+    "word": "吐血",
+    "coverage": "new"
+  },
+  {
+    "character": "途",
+    "sourceId": "jr_jp_joyo_9014",
+    "word": "前途",
+    "coverage": "new"
+  },
+  {
+    "character": "渡",
+    "sourceId": "jr_jp_joyo_6e21",
+    "word": "渡河",
+    "coverage": "new"
+  },
+  {
+    "character": "奴",
+    "sourceId": "jr_jp_joyo_5974",
+    "word": "奴隷",
+    "coverage": "new"
+  },
+  {
+    "character": "怒",
+    "sourceId": "jr_jp_joyo_6012",
+    "word": "怒号",
+    "coverage": "new"
+  },
+  {
+    "character": "到",
+    "sourceId": "jr_jp_joyo_5230",
+    "word": "到底",
+    "coverage": "new"
+  },
+  {
+    "character": "逃",
+    "sourceId": "jr_jp_joyo_9003",
+    "word": "逃亡",
+    "coverage": "new"
+  },
+  {
+    "character": "倒",
+    "sourceId": "jr_jp_joyo_5012",
+    "word": "倒産",
+    "coverage": "new"
+  },
+  {
+    "character": "唐",
+    "sourceId": "jr_jp_joyo_5510",
+    "word": "唐本",
+    "coverage": "new"
+  },
+  {
+    "character": "桃",
+    "sourceId": "jr_jp_joyo_6843",
+    "word": "桃",
+    "coverage": "new"
+  },
+  {
+    "character": "透",
+    "sourceId": "jr_jp_joyo_900f",
+    "word": "浸透",
+    "coverage": "new"
+  },
+  {
+    "character": "盗",
+    "sourceId": "jr_jp_joyo_76d7",
+    "word": "強盗",
+    "coverage": "new"
+  },
+  {
+    "character": "塔",
+    "sourceId": "jr_jp_joyo_5854",
+    "word": "石塔",
+    "coverage": "new"
+  },
+  {
+    "character": "稲",
+    "sourceId": "jr_jp_joyo_7a32",
+    "word": "稲",
+    "coverage": "new"
+  },
+  {
+    "character": "踏",
+    "sourceId": "jr_jp_joyo_8e0f",
+    "word": "踏破",
+    "coverage": "new"
+  },
+  {
+    "character": "闘",
+    "sourceId": "jr_jp_joyo_95d8",
+    "word": "戦闘",
+    "coverage": "new"
+  },
+  {
+    "character": "胴",
+    "sourceId": "jr_jp_joyo_80f4",
+    "word": "胴体",
+    "coverage": "new"
+  },
+  {
+    "character": "峠",
+    "sourceId": "jr_jp_joyo_5ce0",
+    "word": "峠",
+    "coverage": "new"
+  },
+  {
+    "character": "突",
+    "sourceId": "jr_jp_joyo_7a81",
+    "word": "突然",
+    "coverage": "new"
+  },
+  {
+    "character": "鈍",
+    "sourceId": "jr_jp_joyo_920d",
+    "word": "愚鈍",
+    "coverage": "new"
+  },
+  {
+    "character": "曇",
+    "sourceId": "jr_jp_joyo_66c7",
+    "word": "曇天",
+    "coverage": "new"
+  },
+  {
+    "character": "弐",
+    "sourceId": "jr_jp_joyo_5f10",
+    "word": "弐万円",
+    "coverage": "new"
+  },
+  {
+    "character": "悩",
+    "sourceId": "jr_jp_joyo_60a9",
+    "word": "悩殺",
+    "coverage": "new"
+  },
+  {
+    "character": "濃",
+    "sourceId": "jr_jp_joyo_6fc3",
+    "word": "濃厚",
+    "coverage": "new"
+  },
+  {
+    "character": "杯",
+    "sourceId": "jr_jp_joyo_676f",
+    "word": "杯",
+    "coverage": "new"
+  },
+  {
+    "character": "輩",
+    "sourceId": "jr_jp_joyo_8f29",
+    "word": "同輩",
+    "coverage": "new"
+  },
+  {
+    "character": "拍",
+    "sourceId": "jr_jp_joyo_62cd",
+    "word": "拍子",
+    "coverage": "new"
+  },
+  {
+    "character": "泊",
+    "sourceId": "jr_jp_joyo_6cca",
+    "word": "停泊",
+    "coverage": "new"
+  },
+  {
+    "character": "迫",
+    "sourceId": "jr_jp_joyo_8feb",
+    "word": "脅迫",
+    "coverage": "new"
+  },
+  {
+    "character": "薄",
+    "sourceId": "jr_jp_joyo_8584",
+    "word": "薄情",
+    "coverage": "new"
+  },
+  {
+    "character": "爆",
+    "sourceId": "jr_jp_joyo_7206",
+    "word": "原爆",
+    "coverage": "new"
+  },
+  {
+    "character": "髪",
+    "sourceId": "jr_jp_joyo_9aea",
+    "word": "髪",
+    "coverage": "new"
+  },
+  {
+    "character": "抜",
+    "sourceId": "jr_jp_joyo_629c",
+    "word": "抜群",
+    "coverage": "new"
+  },
+  {
+    "character": "罰",
+    "sourceId": "jr_jp_joyo_7f70",
+    "word": "処罰",
+    "coverage": "new"
+  },
+  {
+    "character": "般",
+    "sourceId": "jr_jp_joyo_822c",
+    "word": "諸般",
+    "coverage": "new"
+  },
+  {
+    "character": "販",
+    "sourceId": "jr_jp_joyo_8ca9",
+    "word": "市販",
+    "coverage": "new"
+  },
+  {
+    "character": "搬",
+    "sourceId": "jr_jp_joyo_642c",
+    "word": "搬入",
+    "coverage": "new"
+  },
+  {
+    "character": "範",
+    "sourceId": "jr_jp_joyo_7bc4",
+    "word": "師範",
+    "coverage": "new"
+  },
+  {
+    "character": "繁",
+    "sourceId": "jr_jp_joyo_7e41",
+    "word": "繁栄",
+    "coverage": "new"
+  },
+  {
+    "character": "盤",
+    "sourceId": "jr_jp_joyo_76e4",
+    "word": "円盤",
+    "coverage": "new"
+  },
+  {
+    "character": "彼",
+    "sourceId": "jr_jp_joyo_5f7c",
+    "word": "彼",
+    "coverage": "new"
+  },
+  {
+    "character": "疲",
+    "sourceId": "jr_jp_joyo_75b2",
+    "word": "疲労",
+    "coverage": "new"
+  },
+  {
+    "character": "被",
+    "sourceId": "jr_jp3_012",
+    "word": "被る",
+    "coverage": "existing"
+  },
+  {
+    "character": "避",
+    "sourceId": "jr_jp_joyo_907f",
+    "word": "逃避",
+    "coverage": "new"
+  },
+  {
+    "character": "尾",
+    "sourceId": "jr_jp_joyo_5c3e",
+    "word": "尾",
+    "coverage": "new"
+  },
+  {
+    "character": "微",
+    "sourceId": "jr_jp_joyo_5fae",
+    "word": "微笑",
+    "coverage": "new"
+  },
+  {
+    "character": "匹",
+    "sourceId": "jr_jp_joyo_5339",
+    "word": "数匹",
+    "coverage": "new"
+  },
+  {
+    "character": "描",
+    "sourceId": "jr_jp_joyo_63cf",
+    "word": "描写",
+    "coverage": "new"
+  },
+  {
+    "character": "浜",
+    "sourceId": "jr_jp_joyo_6d5c",
+    "word": "浜",
+    "coverage": "new"
+  },
+  {
+    "character": "敏",
+    "sourceId": "jr_jp_joyo_654f",
+    "word": "敏速",
+    "coverage": "new"
+  },
+  {
+    "character": "怖",
+    "sourceId": "jr_jp_joyo_6016",
+    "word": "恐怖",
+    "coverage": "new"
+  },
+  {
+    "character": "浮",
+    "sourceId": "jr_jp_joyo_6d6e",
+    "word": "浮力",
+    "coverage": "new"
+  },
+  {
+    "character": "普",
+    "sourceId": "jr_jp_joyo_666e",
+    "word": "普請",
+    "coverage": "new"
+  },
+  {
+    "character": "腐",
+    "sourceId": "jr_jp_joyo_8150",
+    "word": "腐心",
+    "coverage": "new"
+  },
+  {
+    "character": "敷",
+    "sourceId": "jr_jp_joyo_6577",
+    "word": "敷設",
+    "coverage": "new"
+  },
+  {
+    "character": "膚",
+    "sourceId": "jr_jp_joyo_819a",
+    "word": "皮膚",
+    "coverage": "new"
+  },
+  {
+    "character": "賦",
+    "sourceId": "jr_jp_joyo_8ce6",
+    "word": "賦役",
+    "coverage": "new"
+  },
+  {
+    "character": "舞",
+    "sourceId": "jr_jp_joyo_821e",
+    "word": "舞",
+    "coverage": "new"
+  },
+  {
+    "character": "幅",
+    "sourceId": "jr_jp_joyo_5e45",
+    "word": "幅",
+    "coverage": "new"
+  },
+  {
+    "character": "払",
+    "sourceId": "jr_jp_joyo_6255",
+    "word": "払暁",
+    "coverage": "new"
+  },
+  {
+    "character": "噴",
+    "sourceId": "jr_jp_joyo_5674",
+    "word": "噴出",
+    "coverage": "new"
+  },
+  {
+    "character": "柄",
+    "sourceId": "jr_jp_joyo_67c4",
+    "word": "柄",
+    "coverage": "new"
+  },
+  {
+    "character": "壁",
+    "sourceId": "jr_jp_joyo_58c1",
+    "word": "壁",
+    "coverage": "new"
+  },
+  {
+    "character": "捕",
+    "sourceId": "jr_jp_joyo_6355",
+    "word": "捕獲",
+    "coverage": "new"
+  },
+  {
+    "character": "舗",
+    "sourceId": "jr_jp_joyo_8217",
+    "word": "舗装",
+    "coverage": "new"
+  },
+  {
+    "character": "抱",
+    "sourceId": "jr_jp_joyo_62b1",
+    "word": "介抱",
+    "coverage": "new"
+  },
+  {
+    "character": "峰",
+    "sourceId": "jr_jp_joyo_5cf0",
+    "word": "峰",
+    "coverage": "new"
+  },
+  {
+    "character": "砲",
+    "sourceId": "jr_jp_joyo_7832",
+    "word": "大砲",
+    "coverage": "new"
+  },
+  {
+    "character": "忙",
+    "sourceId": "jr_jp_joyo_5fd9",
+    "word": "多忙",
+    "coverage": "new"
+  },
+  {
+    "character": "坊",
+    "sourceId": "jr_jp_joyo_574a",
+    "word": "坊主",
+    "coverage": "new"
+  },
+  {
+    "character": "肪",
+    "sourceId": "jr_jp_joyo_80aa",
+    "word": "脂肪",
+    "coverage": "new"
+  },
+  {
+    "character": "冒",
+    "sourceId": "jr_jp_joyo_5192",
+    "word": "冒険",
+    "coverage": "new"
+  },
+  {
+    "character": "傍",
+    "sourceId": "jr_jp_joyo_508d",
+    "word": "傍線",
+    "coverage": "new"
+  },
+  {
+    "character": "帽",
+    "sourceId": "jr_jp_joyo_5e3d",
+    "word": "帽子",
+    "coverage": "new"
+  },
+  {
+    "character": "凡",
+    "sourceId": "jr_jp_joyo_51e1",
+    "word": "凡人",
+    "coverage": "new"
+  },
+  {
+    "character": "盆",
+    "sourceId": "jr_jp_joyo_76c6",
+    "word": "旧盆",
+    "coverage": "new"
+  },
+  {
+    "character": "慢",
+    "sourceId": "jr_jp_joyo_6162",
+    "word": "怠慢",
+    "coverage": "new"
+  },
+  {
+    "character": "漫",
+    "sourceId": "jr_jp_joyo_6f2b",
+    "word": "散漫",
+    "coverage": "new"
+  },
+  {
+    "character": "妙",
+    "sourceId": "jr_jp_joyo_5999",
+    "word": "奇妙",
+    "coverage": "new"
+  },
+  {
+    "character": "眠",
+    "sourceId": "jr_jp_joyo_7720",
+    "word": "不眠",
+    "coverage": "new"
+  },
+  {
+    "character": "矛",
+    "sourceId": "jr_jp_joyo_77db",
+    "word": "矛",
+    "coverage": "new"
+  },
+  {
+    "character": "霧",
+    "sourceId": "jr_jp_joyo_9727",
+    "word": "霧",
+    "coverage": "new"
+  },
+  {
+    "character": "娘",
+    "sourceId": "jr_jp_joyo_5a18",
+    "word": "娘",
+    "coverage": "new"
+  },
+  {
+    "character": "茂",
+    "sourceId": "jr_jp_joyo_8302",
+    "word": "繁茂",
+    "coverage": "new"
+  },
+  {
+    "character": "猛",
+    "sourceId": "jr_jp_joyo_731b",
+    "word": "勇猛",
+    "coverage": "new"
+  },
+  {
+    "character": "網",
+    "sourceId": "jr_jp_joyo_7db2",
+    "word": "網",
+    "coverage": "new"
+  },
+  {
+    "character": "黙",
+    "sourceId": "jr_jp_joyo_9ed9",
+    "word": "暗黙",
+    "coverage": "new"
+  },
+  {
+    "character": "紋",
+    "sourceId": "jr_jp_joyo_7d0b",
+    "word": "指紋",
+    "coverage": "new"
+  },
+  {
+    "character": "躍",
+    "sourceId": "jr_jp_joyo_8e8d",
+    "word": "躍動",
+    "coverage": "new"
+  },
+  {
+    "character": "雄",
+    "sourceId": "jr_jp_joyo_96c4",
+    "word": "雄",
+    "coverage": "new"
+  },
+  {
+    "character": "与",
+    "sourceId": "jr_jp_joyo_4e0e",
+    "word": "与党",
+    "coverage": "new"
+  },
+  {
+    "character": "誉",
+    "sourceId": "jr_jp_joyo_8a89",
+    "word": "名誉",
+    "coverage": "new"
+  },
+  {
+    "character": "溶",
+    "sourceId": "jr_jp_joyo_6eb6",
+    "word": "溶液",
+    "coverage": "new"
+  },
+  {
+    "character": "腰",
+    "sourceId": "jr_jp_joyo_8170",
+    "word": "腰",
+    "coverage": "new"
+  },
+  {
+    "character": "踊",
+    "sourceId": "jr_jp_joyo_8e0a",
+    "word": "舞踊",
+    "coverage": "new"
+  },
+  {
+    "character": "謡",
+    "sourceId": "jr_jp_joyo_8b21",
+    "word": "謡",
+    "coverage": "new"
+  },
+  {
+    "character": "翼",
+    "sourceId": "jr_jp_joyo_7ffc",
+    "word": "翼",
+    "coverage": "new"
+  },
+  {
+    "character": "雷",
+    "sourceId": "jr_jp_joyo_96f7",
+    "word": "雷",
+    "coverage": "new"
+  },
+  {
+    "character": "頼",
+    "sourceId": "jr_jp_joyo_983c",
+    "word": "依頼",
+    "coverage": "new"
+  },
+  {
+    "character": "絡",
+    "sourceId": "jr_jp_joyo_7d61",
+    "word": "脈絡",
+    "coverage": "new"
+  },
+  {
+    "character": "欄",
+    "sourceId": "jr_jp_joyo_6b04",
+    "word": "欄外",
+    "coverage": "new"
+  },
+  {
+    "character": "離",
+    "sourceId": "jr_jp_joyo_96e2",
+    "word": "分離",
+    "coverage": "new"
+  },
+  {
+    "character": "粒",
+    "sourceId": "jr_jp_joyo_7c92",
+    "word": "粒",
+    "coverage": "new"
+  },
+  {
+    "character": "慮",
+    "sourceId": "jr_jp_joyo_616e",
+    "word": "無慮",
+    "coverage": "new"
+  },
+  {
+    "character": "療",
+    "sourceId": "jr_jp_joyo_7642",
+    "word": "医療",
+    "coverage": "new"
+  },
+  {
+    "character": "隣",
+    "sourceId": "jr_jp_joyo_96a3",
+    "word": "隣",
+    "coverage": "new"
+  },
+  {
+    "character": "涙",
+    "sourceId": "jr_jp_joyo_6d99",
+    "word": "涙",
+    "coverage": "new"
+  },
+  {
+    "character": "隷",
+    "sourceId": "jr_jp_joyo_96b7",
+    "word": "奴隷",
+    "coverage": "new"
+  },
+  {
+    "character": "齢",
+    "sourceId": "jr_jp_joyo_9f62",
+    "word": "妙齢",
+    "coverage": "new"
+  },
+  {
+    "character": "麗",
+    "sourceId": "jr_jp_joyo_9e97",
+    "word": "端麗",
+    "coverage": "new"
+  },
+  {
+    "character": "暦",
+    "sourceId": "jr_jp_joyo_66a6",
+    "word": "暦",
+    "coverage": "new"
+  },
+  {
+    "character": "劣",
+    "sourceId": "jr_jp_joyo_52a3",
+    "word": "優劣",
+    "coverage": "new"
+  },
+  {
+    "character": "烈",
+    "sourceId": "jr_jp_joyo_70c8",
+    "word": "壮烈",
+    "coverage": "new"
+  },
+  {
+    "character": "恋",
+    "sourceId": "jr_jp_joyo_604b",
+    "word": "恋",
+    "coverage": "new"
+  },
+  {
+    "character": "露",
+    "sourceId": "jr_jp_joyo_9732",
+    "word": "露",
+    "coverage": "new"
+  },
+  {
+    "character": "郎",
+    "sourceId": "jr_jp_joyo_90ce",
+    "word": "新郎",
+    "coverage": "new"
+  },
+  {
+    "character": "惑",
+    "sourceId": "jr_jp_joyo_60d1",
+    "word": "惑星",
+    "coverage": "new"
+  },
+  {
+    "character": "腕",
+    "sourceId": "jr_jp_joyo_8155",
+    "word": "腕",
+    "coverage": "new"
+  },
+  {
+    "character": "哀",
+    "sourceId": "jr_jp_joyo_54c0",
+    "word": "哀愁",
+    "coverage": "new"
+  },
+  {
+    "character": "慰",
+    "sourceId": "jr_jp_joyo_6170",
+    "word": "慰労",
+    "coverage": "new"
+  },
+  {
+    "character": "詠",
+    "sourceId": "jr_jp_joyo_8a60",
+    "word": "朗詠",
+    "coverage": "new"
+  },
+  {
+    "character": "悦",
+    "sourceId": "jr_jp_joyo_60a6",
+    "word": "喜悦",
+    "coverage": "new"
+  },
+  {
+    "character": "閲",
+    "sourceId": "jr_jp_joyo_95b2",
+    "word": "校閲",
+    "coverage": "new"
+  },
+  {
+    "character": "炎",
+    "sourceId": "jr_jp_joyo_708e",
+    "word": "炎",
+    "coverage": "new"
+  },
+  {
+    "character": "宴",
+    "sourceId": "jr_jp_joyo_5bb4",
+    "word": "宴会",
+    "coverage": "new"
+  },
+  {
+    "character": "欧",
+    "sourceId": "jr_jp_joyo_6b27",
+    "word": "欧文",
+    "coverage": "new"
+  },
+  {
+    "character": "殴",
+    "sourceId": "jr_jp_joyo_6bb4",
+    "word": "殴打",
+    "coverage": "new"
+  },
+  {
+    "character": "乙",
+    "sourceId": "jr_jp_joyo_4e59",
+    "word": "乙種",
+    "coverage": "new"
+  },
+  {
+    "character": "卸",
+    "sourceId": "jr_jp_joyo_5378",
+    "word": "卸",
+    "coverage": "new"
+  },
+  {
+    "character": "穏",
+    "sourceId": "jr_jp_joyo_7a4f",
+    "word": "平穏",
+    "coverage": "new"
+  },
+  {
+    "character": "佳",
+    "sourceId": "jr_jp_joyo_4f73",
+    "word": "佳人",
+    "coverage": "new"
+  },
+  {
+    "character": "架",
+    "sourceId": "jr_jp_joyo_67b6",
+    "word": "書架",
+    "coverage": "new"
+  },
+  {
+    "character": "華",
+    "sourceId": "jr_jp_joyo_83ef",
+    "word": "繁華",
+    "coverage": "new"
+  },
+  {
+    "character": "嫁",
+    "sourceId": "jr_jp_joyo_5ac1",
+    "word": "嫁",
+    "coverage": "new"
+  },
+  {
+    "character": "餓",
+    "sourceId": "jr_jp_joyo_9913",
+    "word": "飢餓",
+    "coverage": "new"
+  },
+  {
+    "character": "怪",
+    "sourceId": "jr_jp_joyo_602a",
+    "word": "奇怪",
+    "coverage": "new"
+  },
+  {
+    "character": "悔",
+    "sourceId": "jr_jp_joyo_6094",
+    "word": "後悔",
+    "coverage": "new"
+  },
+  {
+    "character": "塊",
+    "sourceId": "jr_jp_joyo_584a",
+    "word": "塊",
+    "coverage": "new"
+  },
+  {
+    "character": "慨",
+    "sourceId": "jr_jp3_003",
+    "word": "慨嘆",
+    "coverage": "existing"
+  },
+  {
+    "character": "該",
+    "sourceId": "jr_jp_joyo_8a72",
+    "word": "当該",
+    "coverage": "new"
+  },
+  {
+    "character": "概",
+    "sourceId": "jr_jp_joyo_6982",
+    "word": "大概",
+    "coverage": "new"
+  },
+  {
+    "character": "郭",
+    "sourceId": "jr_jp_joyo_90ed",
+    "word": "城郭",
+    "coverage": "new"
+  },
+  {
+    "character": "隔",
+    "sourceId": "jr_jp_joyo_9694",
+    "word": "間隔",
+    "coverage": "new"
+  },
+  {
+    "character": "穫",
+    "sourceId": "jr_jp_joyo_7a6b",
+    "word": "収穫",
+    "coverage": "new"
+  },
+  {
+    "character": "岳",
+    "sourceId": "jr_jp_joyo_5cb3",
+    "word": "山岳",
+    "coverage": "new"
+  },
+  {
+    "character": "掛",
+    "sourceId": "jr_jp_joyo_639b",
+    "word": "掛ける",
+    "coverage": "new"
+  },
+  {
+    "character": "滑",
+    "sourceId": "jr_jp_joyo_6ed1",
+    "word": "円滑",
+    "coverage": "new"
+  },
+  {
+    "character": "肝",
+    "sourceId": "jr_jp_joyo_809d",
+    "word": "肝",
+    "coverage": "new"
+  },
+  {
+    "character": "冠",
+    "sourceId": "jr_jp_joyo_51a0",
+    "word": "冠",
+    "coverage": "new"
+  },
+  {
+    "character": "勘",
+    "sourceId": "jr_jp_joyo_52d8",
+    "word": "勘弁",
+    "coverage": "new"
+  },
+  {
+    "character": "貫",
+    "sourceId": "jr_jp_joyo_8cab",
+    "word": "縦貫",
+    "coverage": "new"
+  },
+  {
+    "character": "喚",
+    "sourceId": "jr_jp_joyo_559a",
+    "word": "叫喚",
+    "coverage": "new"
+  },
+  {
+    "character": "換",
+    "sourceId": "jr_jp_joyo_63db",
+    "word": "交換",
+    "coverage": "new"
+  },
+  {
+    "character": "敢",
+    "sourceId": "jr_jp_joyo_6562",
+    "word": "勇敢",
+    "coverage": "new"
+  },
+  {
+    "character": "緩",
+    "sourceId": "jr_jp_joyo_7de9",
+    "word": "緩和",
+    "coverage": "new"
+  },
+  {
+    "character": "企",
+    "sourceId": "jr_jp_joyo_4f01",
+    "word": "企図",
+    "coverage": "new"
+  },
+  {
+    "character": "忌",
+    "sourceId": "jr_jp_joyo_5fcc",
+    "word": "忌中",
+    "coverage": "new"
+  },
+  {
+    "character": "軌",
+    "sourceId": "jr_jp_joyo_8ecc",
+    "word": "常軌",
+    "coverage": "new"
+  },
+  {
+    "character": "既",
+    "sourceId": "jr_jp_joyo_65e2",
+    "word": "既婚",
+    "coverage": "new"
+  },
+  {
+    "character": "棋",
+    "sourceId": "jr_jp_joyo_68cb",
+    "word": "棋士",
+    "coverage": "new"
+  },
+  {
+    "character": "棄",
+    "sourceId": "jr_jp_joyo_68c4",
+    "word": "放棄",
+    "coverage": "new"
+  },
+  {
+    "character": "騎",
+    "sourceId": "jr_jp_joyo_9a0e",
+    "word": "騎士",
+    "coverage": "new"
+  },
+  {
+    "character": "欺",
+    "sourceId": "jr_jp_joyo_6b3a",
+    "word": "詐欺",
+    "coverage": "new"
+  },
+  {
+    "character": "犠",
+    "sourceId": "jr_jp_joyo_72a0",
+    "word": "犠打",
+    "coverage": "new"
+  },
+  {
+    "character": "菊",
+    "sourceId": "jr_jp_joyo_83ca",
+    "word": "菊",
+    "coverage": "new"
+  },
+  {
+    "character": "吉",
+    "sourceId": "jr_jp_joyo_5409",
+    "word": "不吉",
+    "coverage": "new"
+  },
+  {
+    "character": "喫",
+    "sourceId": "jr_jp_joyo_55ab",
+    "word": "喫煙",
+    "coverage": "new"
+  },
+  {
+    "character": "虐",
+    "sourceId": "jr_jp_joyo_8650",
+    "word": "残虐",
+    "coverage": "new"
+  },
+  {
+    "character": "虚",
+    "sourceId": "jr_jp_joyo_865a",
+    "word": "空虚",
+    "coverage": "new"
+  },
+  {
+    "character": "峡",
+    "sourceId": "jr_jp_joyo_5ce1",
+    "word": "地峡",
+    "coverage": "new"
+  },
+  {
+    "character": "脅",
+    "sourceId": "jr_jp_joyo_8105",
+    "word": "脅威",
+    "coverage": "new"
+  },
+  {
+    "character": "凝",
+    "sourceId": "jr_jp_joyo_51dd",
+    "word": "凝固",
+    "coverage": "new"
+  },
+  {
+    "character": "斤",
+    "sourceId": "jr_jp_joyo_65a4",
+    "word": "斤量",
+    "coverage": "new"
+  },
+  {
+    "character": "緊",
+    "sourceId": "jr_jp_joyo_7dca",
+    "word": "緊密",
+    "coverage": "new"
+  },
+  {
+    "character": "愚",
+    "sourceId": "jr_jp_joyo_611a",
+    "word": "愚問",
+    "coverage": "new"
+  },
+  {
+    "character": "偶",
+    "sourceId": "jr_jp_joyo_5076",
+    "word": "偶数",
+    "coverage": "new"
+  },
+  {
+    "character": "遇",
+    "sourceId": "jr_jp_joyo_9047",
+    "word": "境遇",
+    "coverage": "new"
+  },
+  {
+    "character": "刑",
+    "sourceId": "jr_jp_joyo_5211",
+    "word": "処刑",
+    "coverage": "new"
+  },
+  {
+    "character": "契",
+    "sourceId": "jr_jp_joyo_5951",
+    "word": "契機",
+    "coverage": "new"
+  },
+  {
+    "character": "啓",
+    "sourceId": "jr_jp_joyo_5553",
+    "word": "啓発",
+    "coverage": "new"
+  },
+  {
+    "character": "掲",
+    "sourceId": "jr_jp_joyo_63b2",
+    "word": "前掲",
+    "coverage": "new"
+  },
+  {
+    "character": "携",
+    "sourceId": "jr_jp_joyo_643a",
+    "word": "必携",
+    "coverage": "new"
+  },
+  {
+    "character": "憩",
+    "sourceId": "jr_jp_joyo_61a9",
+    "word": "休憩",
+    "coverage": "new"
+  },
+  {
+    "character": "鶏",
+    "sourceId": "jr_jp_joyo_9d8f",
+    "word": "鶏",
+    "coverage": "new"
+  },
+  {
+    "character": "鯨",
+    "sourceId": "jr_jp_joyo_9be8",
+    "word": "鯨",
+    "coverage": "new"
+  },
+  {
+    "character": "倹",
+    "sourceId": "jr_jp_joyo_5039",
+    "word": "倹約",
+    "coverage": "new"
+  },
+  {
+    "character": "賢",
+    "sourceId": "jr_jp_joyo_8ce2",
+    "word": "先賢",
+    "coverage": "new"
+  },
+  {
+    "character": "幻",
+    "sourceId": "jr_jp_joyo_5e7b",
+    "word": "幻",
+    "coverage": "new"
+  },
+  {
+    "character": "孤",
+    "sourceId": "jr_jp_joyo_5b64",
+    "word": "孤児",
+    "coverage": "new"
+  },
+  {
+    "character": "弧",
+    "sourceId": "jr_jp_joyo_5f27",
+    "word": "円弧",
+    "coverage": "new"
+  },
+  {
+    "character": "雇",
+    "sourceId": "jr_jp_joyo_96c7",
+    "word": "解雇",
+    "coverage": "new"
+  },
+  {
+    "character": "顧",
+    "sourceId": "jr_jp_joyo_9867",
+    "word": "回顧",
+    "coverage": "new"
+  },
+  {
+    "character": "娯",
+    "sourceId": "jr_jp_joyo_5a2f",
+    "word": "娯楽",
+    "coverage": "new"
+  },
+  {
+    "character": "悟",
+    "sourceId": "jr_jp_joyo_609f",
+    "word": "悔悟",
+    "coverage": "new"
+  },
+  {
+    "character": "孔",
+    "sourceId": "jr_jp_joyo_5b54",
+    "word": "気孔",
+    "coverage": "new"
+  },
+  {
+    "character": "巧",
+    "sourceId": "jr_jp_joyo_5de7",
+    "word": "巧妙",
+    "coverage": "new"
+  },
+  {
+    "character": "甲",
+    "sourceId": "jr_jp_joyo_7532",
+    "word": "甲乙",
+    "coverage": "new"
+  },
+  {
+    "character": "坑",
+    "sourceId": "jr_jp_joyo_5751",
+    "word": "坑道",
+    "coverage": "new"
+  },
+  {
+    "character": "拘",
+    "sourceId": "jr_jp_joyo_62d8",
+    "word": "拘束",
+    "coverage": "new"
+  },
+  {
+    "character": "郊",
+    "sourceId": "jr_jp_joyo_90ca",
+    "word": "近郊",
+    "coverage": "new"
+  },
+  {
+    "character": "控",
+    "sourceId": "jr_jp_joyo_63a7",
+    "word": "控訴",
+    "coverage": "new"
+  },
+  {
+    "character": "慌",
+    "sourceId": "jr_jp_joyo_614c",
+    "word": "恐慌",
+    "coverage": "new"
+  },
+  {
+    "character": "硬",
+    "sourceId": "jr_jp_joyo_786c",
+    "word": "生硬",
+    "coverage": "new"
+  },
+  {
+    "character": "絞",
+    "sourceId": "jr_jp_joyo_7d5e",
+    "word": "絞殺",
+    "coverage": "new"
+  },
+  {
+    "character": "綱",
+    "sourceId": "jr_jp_joyo_7db1",
+    "word": "綱",
+    "coverage": "new"
+  },
+  {
+    "character": "酵",
+    "sourceId": "jr_jp_joyo_9175",
+    "word": "酵母",
+    "coverage": "new"
+  },
+  {
+    "character": "克",
+    "sourceId": "jr_jp_joyo_514b",
+    "word": "克明",
+    "coverage": "new"
+  },
+  {
+    "character": "獄",
+    "sourceId": "jr_jp_joyo_7344",
+    "word": "地獄",
+    "coverage": "new"
+  },
+  {
+    "character": "恨",
+    "sourceId": "jr_jp_joyo_6068",
+    "word": "悔恨",
+    "coverage": "new"
+  },
+  {
+    "character": "紺",
+    "sourceId": "jr_jp_joyo_7d3a",
+    "word": "濃紺",
+    "coverage": "new"
+  },
+  {
+    "character": "魂",
+    "sourceId": "jr_jp_joyo_9b42",
+    "word": "魂",
+    "coverage": "new"
+  },
+  {
+    "character": "墾",
+    "sourceId": "jr_jp_joyo_58be",
+    "word": "開墾",
+    "coverage": "new"
+  },
+  {
+    "character": "債",
+    "sourceId": "jr_jp_joyo_50b5",
+    "word": "債務",
+    "coverage": "new"
+  },
+  {
+    "character": "催",
+    "sourceId": "jr_jp_joyo_50ac",
+    "word": "主催",
+    "coverage": "new"
+  },
+  {
+    "character": "削",
+    "sourceId": "jr_jp_joyo_524a",
+    "word": "削減",
+    "coverage": "new"
+  },
+  {
+    "character": "搾",
+    "sourceId": "jr_jp_joyo_643e",
+    "word": "圧搾",
+    "coverage": "new"
+  },
+  {
+    "character": "錯",
+    "sourceId": "jr_jp_joyo_932f",
+    "word": "交錯",
+    "coverage": "new"
+  },
+  {
+    "character": "撮",
+    "sourceId": "jr_jp_joyo_64ae",
+    "word": "撮影",
+    "coverage": "new"
+  },
+  {
+    "character": "擦",
+    "sourceId": "jr_jp_joyo_64e6",
+    "word": "摩擦",
+    "coverage": "new"
+  },
+  {
+    "character": "暫",
+    "sourceId": "jr_jp_joyo_66ab",
+    "word": "暫定",
+    "coverage": "new"
+  },
+  {
+    "character": "祉",
+    "sourceId": "jr_jp_joyo_7949",
+    "word": "福祉",
+    "coverage": "new"
+  },
+  {
+    "character": "施",
+    "sourceId": "jr_jp_joyo_65bd",
+    "word": "実施",
+    "coverage": "new"
+  },
+  {
+    "character": "諮",
+    "sourceId": "jr_jp_joyo_8aee",
+    "word": "諮問",
+    "coverage": "new"
+  },
+  {
+    "character": "侍",
+    "sourceId": "jr_jp_joyo_4f8d",
+    "word": "侍",
+    "coverage": "new"
+  },
+  {
+    "character": "慈",
+    "sourceId": "jr_jp_joyo_6148",
+    "word": "慈善",
+    "coverage": "new"
+  },
+  {
+    "character": "軸",
+    "sourceId": "jr_jp_joyo_8ef8",
+    "word": "軸",
+    "coverage": "new"
+  },
+  {
+    "character": "疾",
+    "sourceId": "jr_jp_joyo_75be",
+    "word": "悪疾",
+    "coverage": "new"
+  },
+  {
+    "character": "湿",
+    "sourceId": "jr_jp_joyo_6e7f",
+    "word": "多湿",
+    "coverage": "new"
+  },
+  {
+    "character": "赦",
+    "sourceId": "jr_jp_joyo_8d66",
+    "word": "大赦",
+    "coverage": "new"
+  },
+  {
+    "character": "邪",
+    "sourceId": "jr_jp_joyo_90aa",
+    "word": "正邪",
+    "coverage": "new"
+  },
+  {
+    "character": "殊",
+    "sourceId": "jr_jp_joyo_6b8a",
+    "word": "殊に",
+    "coverage": "new"
+  },
+  {
+    "character": "寿",
+    "sourceId": "jr_jp_joyo_5bff",
+    "word": "寿",
+    "coverage": "new"
+  },
+  {
+    "character": "潤",
+    "sourceId": "jr_jp_joyo_6f64",
+    "word": "湿潤",
+    "coverage": "new"
+  },
+  {
+    "character": "遵",
+    "sourceId": "jr_jp_joyo_9075",
+    "word": "遵守",
+    "coverage": "new"
+  },
+  {
+    "character": "如",
+    "sourceId": "jr_jp_joyo_5982",
+    "word": "如実",
+    "coverage": "new"
+  },
+  {
+    "character": "徐",
+    "sourceId": "jr_jp_joyo_5f90",
+    "word": "徐行",
+    "coverage": "new"
+  },
+  {
+    "character": "匠",
+    "sourceId": "jr_jp_joyo_5320",
+    "word": "巨匠",
+    "coverage": "new"
+  },
+  {
+    "character": "昇",
+    "sourceId": "jr_jp_joyo_6607",
+    "word": "上昇",
+    "coverage": "new"
+  },
+  {
+    "character": "掌",
+    "sourceId": "jr_jp_joyo_638c",
+    "word": "掌中",
+    "coverage": "new"
+  },
+  {
+    "character": "晶",
+    "sourceId": "jr_jp_joyo_6676",
+    "word": "水晶",
+    "coverage": "new"
+  },
+  {
+    "character": "焦",
+    "sourceId": "jr_jp_joyo_7126",
+    "word": "焦土",
+    "coverage": "new"
+  },
+  {
+    "character": "衝",
+    "sourceId": "jr_jp_joyo_885d",
+    "word": "折衝",
+    "coverage": "new"
+  },
+  {
+    "character": "鐘",
+    "sourceId": "jr_jp_joyo_9418",
+    "word": "鐘",
+    "coverage": "new"
+  },
+  {
+    "character": "冗",
+    "sourceId": "jr_jp_joyo_5197",
+    "word": "冗談",
+    "coverage": "new"
+  },
+  {
+    "character": "嬢",
+    "sourceId": "jr_jp_joyo_5b22",
+    "word": "令嬢",
+    "coverage": "new"
+  },
+  {
+    "character": "錠",
+    "sourceId": "jr_jp_joyo_9320",
+    "word": "手錠",
+    "coverage": "new"
+  },
+  {
+    "character": "譲",
+    "sourceId": "jr_jp_joyo_8b72",
+    "word": "謙譲",
+    "coverage": "new"
+  },
+  {
+    "character": "嘱",
+    "sourceId": "jr_jp_joyo_5631",
+    "word": "嘱託",
+    "coverage": "new"
+  },
+  {
+    "character": "辱",
+    "sourceId": "jr_jp_joyo_8fb1",
+    "word": "屈辱",
+    "coverage": "new"
+  },
+  {
+    "character": "伸",
+    "sourceId": "jr_jp_joyo_4f38",
+    "word": "伸縮",
+    "coverage": "new"
+  },
+  {
+    "character": "辛",
+    "sourceId": "jr_jp_joyo_8f9b",
+    "word": "辛苦",
+    "coverage": "new"
+  },
+  {
+    "character": "審",
+    "sourceId": "jr_jp_joyo_5be9",
+    "word": "不審",
+    "coverage": "new"
+  },
+  {
+    "character": "炊",
+    "sourceId": "jr_jp_joyo_708a",
+    "word": "炊事",
+    "coverage": "new"
+  },
+  {
+    "character": "粋",
+    "sourceId": "jr_jp_joyo_7c8b",
+    "word": "粋",
+    "coverage": "new"
+  },
+  {
+    "character": "衰",
+    "sourceId": "jr_jp_joyo_8870",
+    "word": "盛衰",
+    "coverage": "new"
+  },
+  {
+    "character": "酔",
+    "sourceId": "jr_jp_joyo_9154",
+    "word": "心酔",
+    "coverage": "new"
+  },
+  {
+    "character": "遂",
+    "sourceId": "jr_jp_joyo_9042",
+    "word": "完遂",
+    "coverage": "new"
+  },
+  {
+    "character": "穂",
+    "sourceId": "jr_jp_joyo_7a42",
+    "word": "穂",
+    "coverage": "new"
+  },
+  {
+    "character": "随",
+    "sourceId": "jr_jp_joyo_968f",
+    "word": "追随",
+    "coverage": "new"
+  },
+  {
+    "character": "髄",
+    "sourceId": "jr_jp_joyo_9ac4",
+    "word": "真髄",
+    "coverage": "new"
+  },
+  {
+    "character": "瀬",
+    "sourceId": "jr_jp_joyo_702c",
+    "word": "瀬",
+    "coverage": "new"
+  },
+  {
+    "character": "牲",
+    "sourceId": "jr_jp_joyo_7272",
+    "word": "犠牲",
+    "coverage": "new"
+  },
+  {
+    "character": "婿",
+    "sourceId": "jr_jp_joyo_5a7f",
+    "word": "婿",
+    "coverage": "new"
+  },
+  {
+    "character": "請",
+    "sourceId": "jr_jp_joyo_8acb",
+    "word": "普請",
+    "coverage": "new"
+  },
+  {
+    "character": "斥",
+    "sourceId": "jr_jp_joyo_65a5",
+    "word": "排斥",
+    "coverage": "new"
+  },
+  {
+    "character": "隻",
+    "sourceId": "jr_jp_joyo_96bb",
+    "word": "数隻",
+    "coverage": "new"
+  },
+  {
+    "character": "惜",
+    "sourceId": "jr_jp_joyo_60dc",
+    "word": "惜敗",
+    "coverage": "new"
+  },
+  {
+    "character": "籍",
+    "sourceId": "jr_jp_joyo_7c4d",
+    "word": "戸籍",
+    "coverage": "new"
+  },
+  {
+    "character": "摂",
+    "sourceId": "jr_jp_joyo_6442",
+    "word": "摂取",
+    "coverage": "new"
+  },
+  {
+    "character": "潜",
+    "sourceId": "jr_jp_joyo_6f5c",
+    "word": "沈潜",
+    "coverage": "new"
+  },
+  {
+    "character": "繕",
+    "sourceId": "jr_jp_joyo_7e55",
+    "word": "修繕",
+    "coverage": "new"
+  },
+  {
+    "character": "阻",
+    "sourceId": "jr_jp_joyo_963b",
+    "word": "阻害",
+    "coverage": "new"
+  },
+  {
+    "character": "措",
+    "sourceId": "jr_jp_joyo_63aa",
+    "word": "挙措",
+    "coverage": "new"
+  },
+  {
+    "character": "粗",
+    "sourceId": "jr_jp_joyo_7c97",
+    "word": "粗密",
+    "coverage": "new"
+  },
+  {
+    "character": "礎",
+    "sourceId": "jr_jp3_009",
+    "word": "基礎",
+    "coverage": "existing"
+  },
+  {
+    "character": "双",
+    "sourceId": "jr_jp_joyo_53cc",
+    "word": "双子",
+    "coverage": "new"
+  },
+  {
+    "character": "桑",
+    "sourceId": "jr_jp_joyo_6851",
+    "word": "桑",
+    "coverage": "new"
+  },
+  {
+    "character": "掃",
+    "sourceId": "jr_jp_joyo_6383",
+    "word": "一掃",
+    "coverage": "new"
+  },
+  {
+    "character": "葬",
+    "sourceId": "jr_jp_joyo_846c",
+    "word": "会葬",
+    "coverage": "new"
+  },
+  {
+    "character": "遭",
+    "sourceId": "jr_jp_joyo_906d",
+    "word": "遭遇",
+    "coverage": "new"
+  },
+  {
+    "character": "憎",
+    "sourceId": "jr_jp_joyo_618e",
+    "word": "愛憎",
+    "coverage": "new"
+  },
+  {
+    "character": "促",
+    "sourceId": "jr_jp_joyo_4fc3",
+    "word": "促成",
+    "coverage": "new"
+  },
+  {
+    "character": "賊",
+    "sourceId": "jr_jp_joyo_8cca",
+    "word": "盗賊",
+    "coverage": "new"
+  },
+  {
+    "character": "怠",
+    "sourceId": "jr_jp_joyo_6020",
+    "word": "怠惰",
+    "coverage": "new"
+  },
+  {
+    "character": "胎",
+    "sourceId": "jr_jp_joyo_80ce",
+    "word": "受胎",
+    "coverage": "new"
+  },
+  {
+    "character": "袋",
+    "sourceId": "jr_jp_joyo_888b",
+    "word": "袋",
+    "coverage": "new"
+  },
+  {
+    "character": "逮",
+    "sourceId": "jr_jp_joyo_902e",
+    "word": "逮夜",
+    "coverage": "new"
+  },
+  {
+    "character": "滞",
+    "sourceId": "jr_jp3_005",
+    "word": "滞在",
+    "coverage": "existing"
+  },
+  {
+    "character": "滝",
+    "sourceId": "jr_jp_joyo_6edd",
+    "word": "滝",
+    "coverage": "new"
+  },
+  {
+    "character": "択",
+    "sourceId": "jr_jp_joyo_629e",
+    "word": "採択",
+    "coverage": "new"
+  },
+  {
+    "character": "卓",
+    "sourceId": "jr_jp_joyo_5353",
+    "word": "卓越",
+    "coverage": "new"
+  },
+  {
+    "character": "託",
+    "sourceId": "jr_jp_joyo_8a17",
+    "word": "委託",
+    "coverage": "new"
+  },
+  {
+    "character": "諾",
+    "sourceId": "jr_jp_joyo_8afe",
+    "word": "快諾",
+    "coverage": "new"
+  },
+  {
+    "character": "奪",
+    "sourceId": "jr_jp_joyo_596a",
+    "word": "争奪",
+    "coverage": "new"
+  },
+  {
+    "character": "胆",
+    "sourceId": "jr_jp_joyo_80c6",
+    "word": "大胆",
+    "coverage": "new"
+  },
+  {
+    "character": "鍛",
+    "sourceId": "jr_jp_joyo_935b",
+    "word": "鍛錬",
+    "coverage": "new"
+  },
+  {
+    "character": "壇",
+    "sourceId": "jr_jp_joyo_58c7",
+    "word": "壇上",
+    "coverage": "new"
+  },
+  {
+    "character": "稚",
+    "sourceId": "jr_jp_joyo_7a1a",
+    "word": "幼稚",
+    "coverage": "new"
+  },
+  {
+    "character": "畜",
+    "sourceId": "jr_jp_joyo_755c",
+    "word": "家畜",
+    "coverage": "new"
+  },
+  {
+    "character": "窒",
+    "sourceId": "jr_jp_joyo_7a92",
+    "word": "窒息",
+    "coverage": "new"
+  },
+  {
+    "character": "抽",
+    "sourceId": "jr_jp_joyo_62bd",
+    "word": "抽出",
+    "coverage": "new"
+  },
+  {
+    "character": "鋳",
+    "sourceId": "jr_jp_joyo_92f3",
+    "word": "改鋳",
+    "coverage": "new"
+  },
+  {
+    "character": "駐",
+    "sourceId": "jr_jp_joyo_99d0",
+    "word": "進駐",
+    "coverage": "new"
+  },
+  {
+    "character": "彫",
+    "sourceId": "jr_jp_joyo_5f6b",
+    "word": "彫刻",
+    "coverage": "new"
+  },
+  {
+    "character": "超",
+    "sourceId": "jr_jp_joyo_8d85",
+    "word": "入超",
+    "coverage": "new"
+  },
+  {
+    "character": "聴",
+    "sourceId": "jr_jp_joyo_8074",
+    "word": "傍聴",
+    "coverage": "new"
+  },
+  {
+    "character": "陳",
+    "sourceId": "jr_jp_joyo_9673",
+    "word": "開陳",
+    "coverage": "new"
+  },
+  {
+    "character": "鎮",
+    "sourceId": "jr_jp_joyo_93ae",
+    "word": "重鎮",
+    "coverage": "new"
+  },
+  {
+    "character": "墜",
+    "sourceId": "jr_jp_joyo_589c",
+    "word": "墜死",
+    "coverage": "new"
+  },
+  {
+    "character": "帝",
+    "sourceId": "jr_jp_joyo_5e1d",
+    "word": "帝国",
+    "coverage": "new"
+  },
+  {
+    "character": "訂",
+    "sourceId": "jr_jp_joyo_8a02",
+    "word": "改訂",
+    "coverage": "new"
+  },
+  {
+    "character": "締",
+    "sourceId": "jr_jp_joyo_7de0",
+    "word": "締結",
+    "coverage": "new"
+  },
+  {
+    "character": "哲",
+    "sourceId": "jr_jp_joyo_54f2",
+    "word": "先哲",
+    "coverage": "new"
+  },
+  {
+    "character": "斗",
+    "sourceId": "jr_jp_joyo_6597",
+    "word": "斗酒",
+    "coverage": "new"
+  },
+  {
+    "character": "塗",
+    "sourceId": "jr_jp_joyo_5857",
+    "word": "塗布",
+    "coverage": "new"
+  },
+  {
+    "character": "凍",
+    "sourceId": "jr_jp_joyo_51cd",
+    "word": "冷凍",
+    "coverage": "new"
+  },
+  {
+    "character": "陶",
+    "sourceId": "jr_jp_joyo_9676",
+    "word": "薫陶",
+    "coverage": "new"
+  },
+  {
+    "character": "痘",
+    "sourceId": "jr_jp_joyo_75d8",
+    "word": "水痘",
+    "coverage": "new"
+  },
+  {
+    "character": "匿",
+    "sourceId": "jr_jp_joyo_533f",
+    "word": "匿名",
+    "coverage": "new"
+  },
+  {
+    "character": "篤",
+    "sourceId": "jr_jp_joyo_7be4",
+    "word": "危篤",
+    "coverage": "new"
+  },
+  {
+    "character": "豚",
+    "sourceId": "jr_jp_joyo_8c5a",
+    "word": "豚",
+    "coverage": "new"
+  },
+  {
+    "character": "尿",
+    "sourceId": "jr_jp_joyo_5c3f",
+    "word": "尿意",
+    "coverage": "new"
+  },
+  {
+    "character": "粘",
+    "sourceId": "jr_jp_joyo_7c98",
+    "word": "粘土",
+    "coverage": "new"
+  },
+  {
+    "character": "婆",
+    "sourceId": "jr_jp_joyo_5a46",
+    "word": "老婆",
+    "coverage": "new"
+  },
+  {
+    "character": "排",
+    "sourceId": "jr_jp_joyo_6392",
+    "word": "排斥",
+    "coverage": "new"
+  },
+  {
+    "character": "陪",
+    "sourceId": "jr_jp_joyo_966a",
+    "word": "陪審",
+    "coverage": "new"
+  },
+  {
+    "character": "縛",
+    "sourceId": "jr_jp_joyo_7e1b",
+    "word": "捕縛",
+    "coverage": "new"
+  },
+  {
+    "character": "伐",
+    "sourceId": "jr_jp_joyo_4f10",
+    "word": "征伐",
+    "coverage": "new"
+  },
+  {
+    "character": "帆",
+    "sourceId": "jr_jp_joyo_5e06",
+    "word": "帆",
+    "coverage": "new"
+  },
+  {
+    "character": "伴",
+    "sourceId": "jr_jp_joyo_4f34",
+    "word": "伴奏",
+    "coverage": "new"
+  },
+  {
+    "character": "畔",
+    "sourceId": "jr_jp_joyo_7554",
+    "word": "湖畔",
+    "coverage": "new"
+  },
+  {
+    "character": "藩",
+    "sourceId": "jr_jp_joyo_85e9",
+    "word": "廃藩",
+    "coverage": "new"
+  },
+  {
+    "character": "蛮",
+    "sourceId": "jr_jp_joyo_86ee",
+    "word": "蛮人",
+    "coverage": "new"
+  },
+  {
+    "character": "卑",
+    "sourceId": "jr_jp_joyo_5351",
+    "word": "卑下",
+    "coverage": "new"
+  },
+  {
+    "character": "碑",
+    "sourceId": "jr_jp_joyo_7891",
+    "word": "石碑",
+    "coverage": "new"
+  },
+  {
+    "character": "泌",
+    "sourceId": "jr_jp_joyo_6ccc",
+    "word": "泌尿器",
+    "coverage": "new"
+  },
+  {
+    "character": "姫",
+    "sourceId": "jr_jp_joyo_59eb",
+    "word": "姫",
+    "coverage": "new"
+  },
+  {
+    "character": "漂",
+    "sourceId": "jr_jp3_004",
+    "word": "漂流",
+    "coverage": "existing"
+  },
+  {
+    "character": "苗",
+    "sourceId": "jr_jp_joyo_82d7",
+    "word": "苗",
+    "coverage": "new"
+  },
+  {
+    "character": "赴",
+    "sourceId": "jr_jp_joyo_8d74",
+    "word": "赴任",
+    "coverage": "new"
+  },
+  {
+    "character": "符",
+    "sourceId": "jr_jp_joyo_7b26",
+    "word": "符号",
+    "coverage": "new"
+  },
+  {
+    "character": "封",
+    "sourceId": "jr_jp_joyo_5c01",
+    "word": "封書",
+    "coverage": "new"
+  },
+  {
+    "character": "伏",
+    "sourceId": "jr_jp_joyo_4f0f",
+    "word": "伏線",
+    "coverage": "new"
+  },
+  {
+    "character": "覆",
+    "sourceId": "jr_jp_joyo_8986",
+    "word": "覆面",
+    "coverage": "new"
+  },
+  {
+    "character": "紛",
+    "sourceId": "jr_jp_joyo_7d1b",
+    "word": "内紛",
+    "coverage": "new"
+  },
+  {
+    "character": "墳",
+    "sourceId": "jr_jp_joyo_58b3",
+    "word": "古墳",
+    "coverage": "new"
+  },
+  {
+    "character": "癖",
+    "sourceId": "jr_jp_joyo_7656",
+    "word": "癖",
+    "coverage": "new"
+  },
+  {
+    "character": "募",
+    "sourceId": "jr_jp_joyo_52df",
+    "word": "募金",
+    "coverage": "new"
+  },
+  {
+    "character": "慕",
+    "sourceId": "jr_jp_joyo_6155",
+    "word": "思慕",
+    "coverage": "new"
+  },
+  {
+    "character": "簿",
+    "sourceId": "jr_jp_joyo_7c3f",
+    "word": "名簿",
+    "coverage": "new"
+  },
+  {
+    "character": "芳",
+    "sourceId": "jr_jp_joyo_82b3",
+    "word": "芳志",
+    "coverage": "new"
+  },
+  {
+    "character": "邦",
+    "sourceId": "jr_jp_joyo_90a6",
+    "word": "邦楽",
+    "coverage": "new"
+  },
+  {
+    "character": "奉",
+    "sourceId": "jr_jp_joyo_5949",
+    "word": "奉仕",
+    "coverage": "new"
+  },
+  {
+    "character": "胞",
+    "sourceId": "jr_jp_joyo_80de",
+    "word": "同胞",
+    "coverage": "new"
+  },
+  {
+    "character": "倣",
+    "sourceId": "jr_jp_joyo_5023",
+    "word": "模倣",
+    "coverage": "new"
+  },
+  {
+    "character": "崩",
+    "sourceId": "jr_jp_joyo_5d29",
+    "word": "崩壊",
+    "coverage": "new"
+  },
+  {
+    "character": "飽",
+    "sourceId": "jr_jp_joyo_98fd",
+    "word": "飽和",
+    "coverage": "new"
+  },
+  {
+    "character": "縫",
+    "sourceId": "jr_jp_joyo_7e2b",
+    "word": "縫合",
+    "coverage": "new"
+  },
+  {
+    "character": "乏",
+    "sourceId": "jr_jp_joyo_4e4f",
+    "word": "欠乏",
+    "coverage": "new"
+  },
+  {
+    "character": "妨",
+    "sourceId": "jr_jp_joyo_59a8",
+    "word": "妨害",
+    "coverage": "new"
+  },
+  {
+    "character": "房",
+    "sourceId": "jr_jp_joyo_623f",
+    "word": "房",
+    "coverage": "new"
+  },
+  {
+    "character": "某",
+    "sourceId": "jr_jp_joyo_67d0",
+    "word": "某国",
+    "coverage": "new"
+  },
+  {
+    "character": "膨",
+    "sourceId": "jr_jp_joyo_81a8",
+    "word": "膨大",
+    "coverage": "new"
+  },
+  {
+    "character": "謀",
+    "sourceId": "jr_jp_joyo_8b00",
+    "word": "無謀",
+    "coverage": "new"
+  },
+  {
+    "character": "墨",
+    "sourceId": "jr_jp_joyo_58a8",
+    "word": "墨",
+    "coverage": "new"
+  },
+  {
+    "character": "没",
+    "sourceId": "jr_jp_joyo_6ca1",
+    "word": "出没",
+    "coverage": "new"
+  },
+  {
+    "character": "翻",
+    "sourceId": "jr_jp_joyo_7ffb",
+    "word": "翻刻",
+    "coverage": "new"
+  },
+  {
+    "character": "魔",
+    "sourceId": "jr_jp_joyo_9b54",
+    "word": "悪魔",
+    "coverage": "new"
+  },
+  {
+    "character": "埋",
+    "sourceId": "jr_jp_joyo_57cb",
+    "word": "埋没",
+    "coverage": "new"
+  },
+  {
+    "character": "膜",
+    "sourceId": "jr_jp_joyo_819c",
+    "word": "粘膜",
+    "coverage": "new"
+  },
+  {
+    "character": "又",
+    "sourceId": "jr_jp_joyo_53c8",
+    "word": "又",
+    "coverage": "new"
+  },
+  {
+    "character": "魅",
+    "sourceId": "jr_jp_joyo_9b45",
+    "word": "魅力",
+    "coverage": "new"
+  },
+  {
+    "character": "滅",
+    "sourceId": "jr_jp_joyo_6ec5",
+    "word": "消滅",
+    "coverage": "new"
+  },
+  {
+    "character": "免",
+    "sourceId": "jr_jp_joyo_514d",
+    "word": "免許",
+    "coverage": "new"
+  },
+  {
+    "character": "幽",
+    "sourceId": "jr_jp_joyo_5e7d",
+    "word": "幽境",
+    "coverage": "new"
+  },
+  {
+    "character": "誘",
+    "sourceId": "jr_jp_joyo_8a98",
+    "word": "勧誘",
+    "coverage": "new"
+  },
+  {
+    "character": "憂",
+    "sourceId": "jr_jp_joyo_6182",
+    "word": "憂愁",
+    "coverage": "new"
+  },
+  {
+    "character": "揚",
+    "sourceId": "jr_jp_joyo_63da",
+    "word": "抑揚",
+    "coverage": "new"
+  },
+  {
+    "character": "揺",
+    "sourceId": "jr_jp_joyo_63fa",
+    "word": "動揺",
+    "coverage": "new"
+  },
+  {
+    "character": "擁",
+    "sourceId": "jr_jp3_007",
+    "word": "擁護",
+    "coverage": "existing"
+  },
+  {
+    "character": "抑",
+    "sourceId": "jr_jp_joyo_6291",
+    "word": "抑制",
+    "coverage": "new"
+  },
+  {
+    "character": "裸",
+    "sourceId": "jr_jp_joyo_88f8",
+    "word": "裸",
+    "coverage": "new"
+  },
+  {
+    "character": "濫",
+    "sourceId": "jr_jp_joyo_6feb",
+    "word": "濫伐",
+    "coverage": "new"
+  },
+  {
+    "character": "吏",
+    "sourceId": "jr_jp_joyo_540f",
+    "word": "吏員",
+    "coverage": "new"
+  },
+  {
+    "character": "隆",
+    "sourceId": "jr_jp_joyo_9686",
+    "word": "興隆",
+    "coverage": "new"
+  },
+  {
+    "character": "了",
+    "sourceId": "jr_jp_joyo_4e86",
+    "word": "了解",
+    "coverage": "new"
+  },
+  {
+    "character": "猟",
+    "sourceId": "jr_jp_joyo_731f",
+    "word": "渉猟",
+    "coverage": "new"
+  },
+  {
+    "character": "陵",
+    "sourceId": "jr_jp_joyo_9675",
+    "word": "陵",
+    "coverage": "new"
+  },
+  {
+    "character": "糧",
+    "sourceId": "jr_jp_joyo_7ce7",
+    "word": "糧",
+    "coverage": "new"
+  },
+  {
+    "character": "厘",
+    "sourceId": "jr_jp_joyo_5398",
+    "word": "一分一厘",
+    "coverage": "new"
+  },
+  {
+    "character": "励",
+    "sourceId": "jr_jp_joyo_52b1",
+    "word": "励行",
+    "coverage": "new"
+  },
+  {
+    "character": "零",
+    "sourceId": "jr_jp_joyo_96f6",
+    "word": "零下",
+    "coverage": "new"
+  },
+  {
+    "character": "霊",
+    "sourceId": "jr_jp_joyo_970a",
+    "word": "霊",
+    "coverage": "new"
+  },
+  {
+    "character": "裂",
+    "sourceId": "jr_jp_joyo_88c2",
+    "word": "分裂",
+    "coverage": "new"
+  },
+  {
+    "character": "廉",
+    "sourceId": "jr_jp_joyo_5ec9",
+    "word": "廉価",
+    "coverage": "new"
+  },
+  {
+    "character": "錬",
+    "sourceId": "jr_jp_joyo_932c",
+    "word": "精錬",
+    "coverage": "new"
+  },
+  {
+    "character": "炉",
+    "sourceId": "jr_jp_joyo_7089",
+    "word": "暖炉",
+    "coverage": "new"
+  },
+  {
+    "character": "浪",
+    "sourceId": "jr_jp_joyo_6d6a",
+    "word": "放浪",
+    "coverage": "new"
+  },
+  {
+    "character": "廊",
+    "sourceId": "jr_jp_joyo_5eca",
+    "word": "回廊",
+    "coverage": "new"
+  },
+  {
+    "character": "楼",
+    "sourceId": "jr_jp_joyo_697c",
+    "word": "望楼",
+    "coverage": "new"
+  },
+  {
+    "character": "漏",
+    "sourceId": "jr_jp_joyo_6f0f",
+    "word": "漏電",
+    "coverage": "new"
+  },
+  {
+    "character": "湾",
+    "sourceId": "jr_jp_joyo_6e7e",
+    "word": "港湾",
+    "coverage": "new"
+  },
+  {
+    "character": "亜",
+    "sourceId": "jr_jp_joyo_4e9c",
+    "word": "亜流",
+    "coverage": "new"
+  },
+  {
+    "character": "尉",
+    "sourceId": "jr_jp_joyo_5c09",
+    "word": "一尉",
+    "coverage": "new"
+  },
+  {
+    "character": "逸",
+    "sourceId": "jr_jp_joyo_9038",
+    "word": "逸話",
+    "coverage": "new"
+  },
+  {
+    "character": "姻",
+    "sourceId": "jr_jp_joyo_59fb",
+    "word": "姻族",
+    "coverage": "new"
+  },
+  {
+    "character": "韻",
+    "sourceId": "jr_jp_joyo_97fb",
+    "word": "音韻",
+    "coverage": "new"
+  },
+  {
+    "character": "畝",
+    "sourceId": "jr_jp_joyo_755d",
+    "word": "畝",
+    "coverage": "new"
+  },
+  {
+    "character": "浦",
+    "sourceId": "jr_jp_joyo_6d66",
+    "word": "浦",
+    "coverage": "new"
+  },
+  {
+    "character": "疫",
+    "sourceId": "jr_jp_joyo_75ab",
+    "word": "悪疫",
+    "coverage": "new"
+  },
+  {
+    "character": "謁",
+    "sourceId": "jr_jp_joyo_8b01",
+    "word": "拝謁",
+    "coverage": "new"
+  },
+  {
+    "character": "猿",
+    "sourceId": "jr_jp_joyo_733f",
+    "word": "猿",
+    "coverage": "new"
+  },
+  {
+    "character": "凹",
+    "sourceId": "jr_jp_joyo_51f9",
+    "word": "凹凸",
+    "coverage": "new"
+  },
+  {
+    "character": "翁",
+    "sourceId": "jr_jp_joyo_7fc1",
+    "word": "老翁",
+    "coverage": "new"
+  },
+  {
+    "character": "虞",
+    "sourceId": "jr_jp_joyo_865e",
+    "word": "虞",
+    "coverage": "new"
+  },
+  {
+    "character": "渦",
+    "sourceId": "jr_jp_joyo_6e26",
+    "word": "渦",
+    "coverage": "new"
+  },
+  {
+    "character": "禍",
+    "sourceId": "jr_jp_joyo_798d",
+    "word": "災禍",
+    "coverage": "new"
+  },
+  {
+    "character": "靴",
+    "sourceId": "jr_jp_joyo_9774",
+    "word": "靴",
+    "coverage": "new"
+  },
+  {
+    "character": "寡",
+    "sourceId": "jr_jp_joyo_5be1",
+    "word": "多寡",
+    "coverage": "new"
+  },
+  {
+    "character": "稼",
+    "sourceId": "jr_jp_joyo_7a3c",
+    "word": "稼働",
+    "coverage": "new"
+  },
+  {
+    "character": "蚊",
+    "sourceId": "jr_jp_joyo_868a",
+    "word": "蚊",
+    "coverage": "new"
+  },
+  {
+    "character": "拐",
+    "sourceId": "jr_jp_joyo_62d0",
+    "word": "拐帯",
+    "coverage": "new"
+  },
+  {
+    "character": "懐",
+    "sourceId": "jr_jp_joyo_61d0",
+    "word": "懐",
+    "coverage": "new"
+  },
+  {
+    "character": "劾",
+    "sourceId": "jr_jp_joyo_52be",
+    "word": "弾劾",
+    "coverage": "new"
+  },
+  {
+    "character": "涯",
+    "sourceId": "jr_jp_joyo_6daf",
+    "word": "生涯",
+    "coverage": "new"
+  },
+  {
+    "character": "垣",
+    "sourceId": "jr_jp_joyo_57a3",
+    "word": "垣",
+    "coverage": "new"
+  },
+  {
+    "character": "核",
+    "sourceId": "jr_jp_joyo_6838",
+    "word": "核心",
+    "coverage": "new"
+  },
+  {
+    "character": "殻",
+    "sourceId": "jr_jp_joyo_6bbb",
+    "word": "殻",
+    "coverage": "new"
+  },
+  {
+    "character": "嚇",
+    "sourceId": "jr_jp_joyo_5687",
+    "word": "威嚇",
+    "coverage": "new"
+  },
+  {
+    "character": "括",
+    "sourceId": "jr_jp_joyo_62ec",
+    "word": "一括",
+    "coverage": "new"
+  },
+  {
+    "character": "喝",
+    "sourceId": "jr_jp_joyo_559d",
+    "word": "一喝",
+    "coverage": "new"
+  },
+  {
+    "character": "渇",
+    "sourceId": "jr_jp_joyo_6e07",
+    "word": "渇望",
+    "coverage": "new"
+  },
+  {
+    "character": "褐",
+    "sourceId": "jr_jp_joyo_8910",
+    "word": "褐色",
+    "coverage": "new"
+  },
+  {
+    "character": "轄",
+    "sourceId": "jr_jp_joyo_8f44",
+    "word": "所轄",
+    "coverage": "new"
+  },
+  {
+    "character": "且",
+    "sourceId": "jr_jp_joyo_4e14",
+    "word": "且つ",
+    "coverage": "new"
+  },
+  {
+    "character": "缶",
+    "sourceId": "jr_jp_joyo_7f36",
+    "word": "缶",
+    "coverage": "new"
+  },
+  {
+    "character": "陥",
+    "sourceId": "jr_jp_joyo_9665",
+    "word": "欠陥",
+    "coverage": "new"
+  },
+  {
+    "character": "患",
+    "sourceId": "jr_jp_joyo_60a3",
+    "word": "患者",
+    "coverage": "new"
+  },
+  {
+    "character": "堪",
+    "sourceId": "jr_jp_joyo_582a",
+    "word": "堪忍",
+    "coverage": "new"
+  },
+  {
+    "character": "棺",
+    "sourceId": "jr_jp_joyo_68fa",
+    "word": "出棺",
+    "coverage": "new"
+  },
+  {
+    "character": "款",
+    "sourceId": "jr_jp_joyo_6b3e",
+    "word": "借款",
+    "coverage": "new"
+  },
+  {
+    "character": "閑",
+    "sourceId": "jr_jp_joyo_9591",
+    "word": "繁閑",
+    "coverage": "new"
+  },
+  {
+    "character": "寛",
+    "sourceId": "jr_jp_joyo_5bdb",
+    "word": "寛厳",
+    "coverage": "new"
+  },
+  {
+    "character": "憾",
+    "sourceId": "jr_jp_joyo_61be",
+    "word": "遺憾",
+    "coverage": "new"
+  },
+  {
+    "character": "還",
+    "sourceId": "jr_jp_joyo_9084",
+    "word": "生還",
+    "coverage": "new"
+  },
+  {
+    "character": "艦",
+    "sourceId": "jr_jp_joyo_8266",
+    "word": "艦船",
+    "coverage": "new"
+  },
+  {
+    "character": "頑",
+    "sourceId": "jr_jp_joyo_9811",
+    "word": "頑健",
+    "coverage": "new"
+  },
+  {
+    "character": "飢",
+    "sourceId": "jr_jp_joyo_98e2",
+    "word": "飢餓",
+    "coverage": "new"
+  },
+  {
+    "character": "宜",
+    "sourceId": "jr_jp_joyo_5b9c",
+    "word": "便宜",
+    "coverage": "new"
+  },
+  {
+    "character": "偽",
+    "sourceId": "jr_jp_joyo_507d",
+    "word": "偽",
+    "coverage": "new"
+  },
+  {
+    "character": "擬",
+    "sourceId": "jr_jp_joyo_64ec",
+    "word": "擬音",
+    "coverage": "new"
+  },
+  {
+    "character": "糾",
+    "sourceId": "jr_jp_joyo_7cfe",
+    "word": "糾弾",
+    "coverage": "new"
+  },
+  {
+    "character": "窮",
+    "sourceId": "jr_jp_joyo_7aae",
+    "word": "困窮",
+    "coverage": "new"
+  },
+  {
+    "character": "拒",
+    "sourceId": "jr_jp_joyo_62d2",
+    "word": "拒否",
+    "coverage": "new"
+  },
+  {
+    "character": "享",
+    "sourceId": "jr_jp_joyo_4eab",
+    "word": "享受",
+    "coverage": "new"
+  },
+  {
+    "character": "挟",
+    "sourceId": "jr_jp_joyo_631f",
+    "word": "挟撃",
+    "coverage": "new"
+  },
+  {
+    "character": "恭",
+    "sourceId": "jr_jp_joyo_606d",
+    "word": "恭賀",
+    "coverage": "new"
+  },
+  {
+    "character": "矯",
+    "sourceId": "jr_jp_joyo_77ef",
+    "word": "奇矯",
+    "coverage": "new"
+  },
+  {
+    "character": "暁",
+    "sourceId": "jr_jp_joyo_6681",
+    "word": "暁",
+    "coverage": "new"
+  },
+  {
+    "character": "菌",
+    "sourceId": "jr_jp_joyo_83cc",
+    "word": "殺菌",
+    "coverage": "new"
+  },
+  {
+    "character": "琴",
+    "sourceId": "jr_jp_joyo_7434",
+    "word": "琴",
+    "coverage": "new"
+  },
+  {
+    "character": "謹",
+    "sourceId": "jr_jp_joyo_8b39",
+    "word": "謹呈",
+    "coverage": "new"
+  },
+  {
+    "character": "襟",
+    "sourceId": "jr_jp_joyo_895f",
+    "word": "襟",
+    "coverage": "new"
+  },
+  {
+    "character": "吟",
+    "sourceId": "jr_jp_joyo_541f",
+    "word": "吟味",
+    "coverage": "new"
+  },
+  {
+    "character": "隅",
+    "sourceId": "jr_jp_joyo_9685",
+    "word": "隅",
+    "coverage": "new"
+  },
+  {
+    "character": "勲",
+    "sourceId": "jr_jp_joyo_52f2",
+    "word": "勲功",
+    "coverage": "new"
+  },
+  {
+    "character": "薫",
+    "sourceId": "jr_jp_joyo_85ab",
+    "word": "薫陶",
+    "coverage": "new"
+  },
+  {
+    "character": "茎",
+    "sourceId": "jr_jp_joyo_830e",
+    "word": "茎",
+    "coverage": "new"
+  },
+  {
+    "character": "渓",
+    "sourceId": "jr_jp_joyo_6e13",
+    "word": "渓流",
+    "coverage": "new"
+  },
+  {
+    "character": "蛍",
+    "sourceId": "jr_jp_joyo_86cd",
+    "word": "蛍",
+    "coverage": "new"
+  },
+  {
+    "character": "慶",
+    "sourceId": "jr_jp_joyo_6176",
+    "word": "慶弔",
+    "coverage": "new"
+  },
+  {
+    "character": "傑",
+    "sourceId": "jr_jp_joyo_5091",
+    "word": "傑物",
+    "coverage": "new"
+  },
+  {
+    "character": "嫌",
+    "sourceId": "jr_jp_joyo_5acc",
+    "word": "嫌悪",
+    "coverage": "new"
+  },
+  {
+    "character": "献",
+    "sourceId": "jr_jp_joyo_732e",
+    "word": "一献",
+    "coverage": "new"
+  },
+  {
+    "character": "謙",
+    "sourceId": "jr_jp_joyo_8b19",
+    "word": "謙虚",
+    "coverage": "new"
+  },
+  {
+    "character": "繭",
+    "sourceId": "jr_jp_joyo_7e6d",
+    "word": "繭",
+    "coverage": "new"
+  },
+  {
+    "character": "顕",
+    "sourceId": "jr_jp_joyo_9855",
+    "word": "顕彰",
+    "coverage": "new"
+  },
+  {
+    "character": "懸",
+    "sourceId": "jr_jp_joyo_61f8",
+    "word": "懸命",
+    "coverage": "new"
+  },
+  {
+    "character": "弦",
+    "sourceId": "jr_jp_joyo_5f26",
+    "word": "弦",
+    "coverage": "new"
+  },
+  {
+    "character": "呉",
+    "sourceId": "jr_jp_joyo_5449",
+    "word": "呉服",
+    "coverage": "new"
+  },
+  {
+    "character": "碁",
+    "sourceId": "jr_jp_joyo_7881",
+    "word": "囲碁",
+    "coverage": "new"
+  },
+  {
+    "character": "江",
+    "sourceId": "jr_jp_joyo_6c5f",
+    "word": "江湖",
+    "coverage": "new"
+  },
+  {
+    "character": "肯",
+    "sourceId": "jr_jp_joyo_80af",
+    "word": "肯定",
+    "coverage": "new"
+  },
+  {
+    "character": "侯",
+    "sourceId": "jr_jp_joyo_4faf",
+    "word": "王侯",
+    "coverage": "new"
+  },
+  {
+    "character": "洪",
+    "sourceId": "jr_jp_joyo_6d2a",
+    "word": "洪水",
+    "coverage": "new"
+  },
+  {
+    "character": "貢",
+    "sourceId": "jr_jp_joyo_8ca2",
+    "word": "貢献",
+    "coverage": "new"
+  },
+  {
+    "character": "溝",
+    "sourceId": "jr_jp_joyo_6e9d",
+    "word": "溝",
+    "coverage": "new"
+  },
+  {
+    "character": "衡",
+    "sourceId": "jr_jp_joyo_8861",
+    "word": "均衡",
+    "coverage": "new"
+  },
+  {
+    "character": "購",
+    "sourceId": "jr_jp_joyo_8cfc",
+    "word": "購入",
+    "coverage": "new"
+  },
+  {
+    "character": "拷",
+    "sourceId": "jr_jp_joyo_62f7",
+    "word": "拷問",
+    "coverage": "new"
+  },
+  {
+    "character": "剛",
+    "sourceId": "jr_jp_joyo_525b",
+    "word": "剛健",
+    "coverage": "new"
+  },
+  {
+    "character": "酷",
+    "sourceId": "jr_jp_joyo_9177",
+    "word": "冷酷",
+    "coverage": "new"
+  },
+  {
+    "character": "昆",
+    "sourceId": "jr_jp_joyo_6606",
+    "word": "昆布",
+    "coverage": "new"
+  },
+  {
+    "character": "懇",
+    "sourceId": "jr_jp_joyo_61c7",
+    "word": "懇切",
+    "coverage": "new"
+  },
+  {
+    "character": "唆",
+    "sourceId": "jr_jp_joyo_5506",
+    "word": "教唆",
+    "coverage": "new"
+  },
+  {
+    "character": "詐",
+    "sourceId": "jr_jp_joyo_8a50",
+    "word": "詐取",
+    "coverage": "new"
+  },
+  {
+    "character": "砕",
+    "sourceId": "jr_jp_joyo_7815",
+    "word": "砕氷",
+    "coverage": "new"
+  },
+  {
+    "character": "宰",
+    "sourceId": "jr_jp_joyo_5bb0",
+    "word": "主宰",
+    "coverage": "new"
+  },
+  {
+    "character": "栽",
+    "sourceId": "jr_jp_joyo_683d",
+    "word": "栽培",
+    "coverage": "new"
+  },
+  {
+    "character": "斎",
+    "sourceId": "jr_jp_joyo_658e",
+    "word": "斎場",
+    "coverage": "new"
+  },
+  {
+    "character": "索",
+    "sourceId": "jr_jp_joyo_7d22",
+    "word": "思索",
+    "coverage": "new"
+  },
+  {
+    "character": "酢",
+    "sourceId": "jr_jp_joyo_9162",
+    "word": "酢",
+    "coverage": "new"
+  },
+  {
+    "character": "桟",
+    "sourceId": "jr_jp_joyo_685f",
+    "word": "桟",
+    "coverage": "new"
+  },
+  {
+    "character": "傘",
+    "sourceId": "jr_jp_joyo_5098",
+    "word": "傘",
+    "coverage": "new"
+  },
+  {
+    "character": "肢",
+    "sourceId": "jr_jp_joyo_80a2",
+    "word": "下肢",
+    "coverage": "new"
+  },
+  {
+    "character": "嗣",
+    "sourceId": "jr_jp_joyo_55e3",
+    "word": "嗣子",
+    "coverage": "new"
+  },
+  {
+    "character": "賜",
+    "sourceId": "jr_jp_joyo_8cdc",
+    "word": "下賜",
+    "coverage": "new"
+  },
+  {
+    "character": "璽",
+    "sourceId": "jr_jp_joyo_74bd",
+    "word": "国璽",
+    "coverage": "new"
+  },
+  {
+    "character": "漆",
+    "sourceId": "jr_jp_joyo_6f06",
+    "word": "漆",
+    "coverage": "new"
+  },
+  {
+    "character": "遮",
+    "sourceId": "jr_jp_joyo_906e",
+    "word": "遮断",
+    "coverage": "new"
+  },
+  {
+    "character": "蛇",
+    "sourceId": "jr_jp_joyo_86c7",
+    "word": "蛇",
+    "coverage": "new"
+  },
+  {
+    "character": "酌",
+    "sourceId": "jr_jp_joyo_914c",
+    "word": "晩酌",
+    "coverage": "new"
+  },
+  {
+    "character": "爵",
+    "sourceId": "jr_jp_joyo_7235",
+    "word": "爵位",
+    "coverage": "new"
+  },
+  {
+    "character": "珠",
+    "sourceId": "jr_jp_joyo_73e0",
+    "word": "珠玉",
+    "coverage": "new"
+  },
+  {
+    "character": "儒",
+    "sourceId": "jr_jp_joyo_5112",
+    "word": "儒学",
+    "coverage": "new"
+  },
+  {
+    "character": "囚",
+    "sourceId": "jr_jp_joyo_56da",
+    "word": "囚人",
+    "coverage": "new"
+  },
+  {
+    "character": "臭",
+    "sourceId": "jr_jp_joyo_81ed",
+    "word": "俗臭",
+    "coverage": "new"
+  },
+  {
+    "character": "愁",
+    "sourceId": "jr_jp_joyo_6101",
+    "word": "哀愁",
+    "coverage": "new"
+  },
+  {
+    "character": "酬",
+    "sourceId": "jr_jp_joyo_916c",
+    "word": "報酬",
+    "coverage": "new"
+  },
+  {
+    "character": "醜",
+    "sourceId": "jr_jp_joyo_919c",
+    "word": "美醜",
+    "coverage": "new"
+  },
+  {
+    "character": "汁",
+    "sourceId": "jr_jp_joyo_6c41",
+    "word": "汁",
+    "coverage": "new"
+  },
+  {
+    "character": "充",
+    "sourceId": "jr_jp_joyo_5145",
+    "word": "充実",
+    "coverage": "new"
+  },
+  {
+    "character": "渋",
+    "sourceId": "jr_jp_joyo_6e0b",
+    "word": "渋",
+    "coverage": "new"
+  },
+  {
+    "character": "銃",
+    "sourceId": "jr_jp_joyo_9283",
+    "word": "小銃",
+    "coverage": "new"
+  },
+  {
+    "character": "叔",
+    "sourceId": "jr_jp_joyo_53d4",
+    "word": "伯叔",
+    "coverage": "new"
+  },
+  {
+    "character": "淑",
+    "sourceId": "jr_jp_joyo_6dd1",
+    "word": "淑女",
+    "coverage": "new"
+  },
+  {
+    "character": "粛",
+    "sourceId": "jr_jp_joyo_7c9b",
+    "word": "粛清",
+    "coverage": "new"
+  },
+  {
+    "character": "塾",
+    "sourceId": "jr_jp_joyo_587e",
+    "word": "塾",
+    "coverage": "new"
+  },
+  {
+    "character": "俊",
+    "sourceId": "jr_jp_joyo_4fca",
+    "word": "俊才",
+    "coverage": "new"
+  },
+  {
+    "character": "准",
+    "sourceId": "jr_jp_joyo_51c6",
+    "word": "准将",
+    "coverage": "new"
+  },
+  {
+    "character": "殉",
+    "sourceId": "jr_jp_joyo_6b89",
+    "word": "殉死",
+    "coverage": "new"
+  },
+  {
+    "character": "循",
+    "sourceId": "jr_jp_joyo_5faa",
+    "word": "因循",
+    "coverage": "new"
+  },
+  {
+    "character": "庶",
+    "sourceId": "jr_jp_joyo_5eb6",
+    "word": "庶務",
+    "coverage": "new"
+  },
+  {
+    "character": "緒",
+    "sourceId": "jr_jp_joyo_7dd2",
+    "word": "緒",
+    "coverage": "new"
+  },
+  {
+    "character": "叙",
+    "sourceId": "jr_jp_joyo_53d9",
+    "word": "叙勲",
+    "coverage": "new"
+  },
+  {
+    "character": "升",
+    "sourceId": "jr_jp_joyo_5347",
+    "word": "升",
+    "coverage": "new"
+  },
+  {
+    "character": "抄",
+    "sourceId": "jr_jp_joyo_6284",
+    "word": "抄本",
+    "coverage": "new"
+  },
+  {
+    "character": "肖",
+    "sourceId": "jr_jp_joyo_8096",
+    "word": "不肖",
+    "coverage": "new"
+  },
+  {
+    "character": "尚",
+    "sourceId": "jr_jp_joyo_5c1a",
+    "word": "尚早",
+    "coverage": "new"
+  },
+  {
+    "character": "宵",
+    "sourceId": "jr_jp_joyo_5bb5",
+    "word": "宵",
+    "coverage": "new"
+  },
+  {
+    "character": "症",
+    "sourceId": "jr_jp_joyo_75c7",
+    "word": "炎症",
+    "coverage": "new"
+  },
+  {
+    "character": "祥",
+    "sourceId": "jr_jp_joyo_7965",
+    "word": "吉祥",
+    "coverage": "new"
+  },
+  {
+    "character": "渉",
+    "sourceId": "jr_jp_joyo_6e09",
+    "word": "交渉",
+    "coverage": "new"
+  },
+  {
+    "character": "訟",
+    "sourceId": "jr_jp_joyo_8a1f",
+    "word": "訴訟",
+    "coverage": "new"
+  },
+  {
+    "character": "硝",
+    "sourceId": "jr_jp_joyo_785d",
+    "word": "硝石",
+    "coverage": "new"
+  },
+  {
+    "character": "粧",
+    "sourceId": "jr_jp_joyo_7ca7",
+    "word": "化粧",
+    "coverage": "new"
+  },
+  {
+    "character": "詔",
+    "sourceId": "jr_jp_joyo_8a54",
+    "word": "詔",
+    "coverage": "new"
+  },
+  {
+    "character": "奨",
+    "sourceId": "jr_jp_joyo_5968",
+    "word": "奨励",
+    "coverage": "new"
+  },
+  {
+    "character": "彰",
+    "sourceId": "jr_jp_joyo_5f70",
+    "word": "表彰",
+    "coverage": "new"
+  },
+  {
+    "character": "償",
+    "sourceId": "jr_jp_joyo_511f",
+    "word": "代償",
+    "coverage": "new"
+  },
+  {
+    "character": "礁",
+    "sourceId": "jr_jp_joyo_7901",
+    "word": "岩礁",
+    "coverage": "new"
+  },
+  {
+    "character": "浄",
+    "sourceId": "jr_jp_joyo_6d44",
+    "word": "不浄",
+    "coverage": "new"
+  },
+  {
+    "character": "剰",
+    "sourceId": "jr_jp_joyo_5270",
+    "word": "余剰",
+    "coverage": "new"
+  },
+  {
+    "character": "壌",
+    "sourceId": "jr_jp_joyo_58cc",
+    "word": "土壌",
+    "coverage": "new"
+  },
+  {
+    "character": "醸",
+    "sourceId": "jr_jp_joyo_91b8",
+    "word": "醸成",
+    "coverage": "new"
+  },
+  {
+    "character": "津",
+    "sourceId": "jr_jp_joyo_6d25",
+    "word": "津波",
+    "coverage": "new"
+  },
+  {
+    "character": "唇",
+    "sourceId": "jr_jp_joyo_5507",
+    "word": "唇",
+    "coverage": "new"
+  },
+  {
+    "character": "娠",
+    "sourceId": "jr_jp_joyo_5a20",
+    "word": "妊娠",
+    "coverage": "new"
+  },
+  {
+    "character": "紳",
+    "sourceId": "jr_jp_joyo_7d33",
+    "word": "紳士",
+    "coverage": "new"
+  },
+  {
+    "character": "診",
+    "sourceId": "jr_jp_joyo_8a3a",
+    "word": "往診",
+    "coverage": "new"
+  },
+  {
+    "character": "刃",
+    "sourceId": "jr_jp_joyo_5203",
+    "word": "刃",
+    "coverage": "new"
+  },
+  {
+    "character": "迅",
+    "sourceId": "jr_jp_joyo_8fc5",
+    "word": "迅速",
+    "coverage": "new"
+  },
+  {
+    "character": "甚",
+    "sourceId": "jr_jp_joyo_751a",
+    "word": "幸甚",
+    "coverage": "new"
+  },
+  {
+    "character": "帥",
+    "sourceId": "jr_jp_joyo_5e25",
+    "word": "元帥",
+    "coverage": "new"
+  },
+  {
+    "character": "睡",
+    "sourceId": "jr_jp_joyo_7761",
+    "word": "午睡",
+    "coverage": "new"
+  },
+  {
+    "character": "枢",
+    "sourceId": "jr_jp_joyo_67a2",
+    "word": "中枢",
+    "coverage": "new"
+  },
+  {
+    "character": "崇",
+    "sourceId": "jr_jp_joyo_5d07",
+    "word": "崇拝",
+    "coverage": "new"
+  },
+  {
+    "character": "据",
+    "sourceId": "jr_jp_joyo_636e",
+    "word": "据える",
+    "coverage": "new"
+  },
+  {
+    "character": "杉",
+    "sourceId": "jr_jp_joyo_6749",
+    "word": "杉",
+    "coverage": "new"
+  },
+  {
+    "character": "斉",
+    "sourceId": "jr_jp_joyo_6589",
+    "word": "一斉",
+    "coverage": "new"
+  },
+  {
+    "character": "逝",
+    "sourceId": "jr_jp_joyo_901d",
+    "word": "急逝",
+    "coverage": "new"
+  },
+  {
+    "character": "誓",
+    "sourceId": "jr_jp_joyo_8a93",
+    "word": "宣誓",
+    "coverage": "new"
+  },
+  {
+    "character": "析",
+    "sourceId": "jr_jp_joyo_6790",
+    "word": "分析",
+    "coverage": "new"
+  },
+  {
+    "character": "拙",
+    "sourceId": "jr_jp_joyo_62d9",
+    "word": "巧拙",
+    "coverage": "new"
+  },
+  {
+    "character": "窃",
+    "sourceId": "jr_jp_joyo_7a83",
+    "word": "窃盗",
+    "coverage": "new"
+  },
+  {
+    "character": "仙",
+    "sourceId": "jr_jp_joyo_4ed9",
+    "word": "仙人",
+    "coverage": "new"
+  },
+  {
+    "character": "栓",
+    "sourceId": "jr_jp_joyo_6813",
+    "word": "栓",
+    "coverage": "new"
+  },
+  {
+    "character": "旋",
+    "sourceId": "jr_jp_joyo_65cb",
+    "word": "周旋",
+    "coverage": "new"
+  },
+  {
+    "character": "践",
+    "sourceId": "jr_jp_joyo_8df5",
+    "word": "実践",
+    "coverage": "new"
+  },
+  {
+    "character": "遷",
+    "sourceId": "jr_jp_joyo_9077",
+    "word": "変遷",
+    "coverage": "new"
+  },
+  {
+    "character": "薦",
+    "sourceId": "jr_jp_joyo_85a6",
+    "word": "推薦",
+    "coverage": "new"
+  },
+  {
+    "character": "繊",
+    "sourceId": "jr_jp_joyo_7e4a",
+    "word": "化繊",
+    "coverage": "new"
+  },
+  {
+    "character": "禅",
+    "sourceId": "jr_jp_joyo_7985",
+    "word": "座禅",
+    "coverage": "new"
+  },
+  {
+    "character": "漸",
+    "sourceId": "jr_jp_joyo_6f38",
+    "word": "東漸",
+    "coverage": "new"
+  },
+  {
+    "character": "租",
+    "sourceId": "jr_jp_joyo_79df",
+    "word": "租税",
+    "coverage": "new"
+  },
+  {
+    "character": "疎",
+    "sourceId": "jr_jp_joyo_758e",
+    "word": "疎外",
+    "coverage": "new"
+  },
+  {
+    "character": "塑",
+    "sourceId": "jr_jp_joyo_5851",
+    "word": "塑像",
+    "coverage": "new"
+  },
+  {
+    "character": "壮",
+    "sourceId": "jr_jp_joyo_58ee",
+    "word": "壮健",
+    "coverage": "new"
+  },
+  {
+    "character": "荘",
+    "sourceId": "jr_jp_joyo_8358",
+    "word": "別荘",
+    "coverage": "new"
+  },
+  {
+    "character": "捜",
+    "sourceId": "jr_jp_joyo_635c",
+    "word": "捜査",
+    "coverage": "new"
+  },
+  {
+    "character": "挿",
+    "sourceId": "jr_jp_joyo_633f",
+    "word": "挿入",
+    "coverage": "new"
+  },
+  {
+    "character": "曹",
+    "sourceId": "jr_jp_joyo_66f9",
+    "word": "法曹",
+    "coverage": "new"
+  },
+  {
+    "character": "喪",
+    "sourceId": "jr_jp_joyo_55aa",
+    "word": "喪",
+    "coverage": "new"
+  },
+  {
+    "character": "槽",
+    "sourceId": "jr_jp_joyo_69fd",
+    "word": "水槽",
+    "coverage": "new"
+  },
+  {
+    "character": "霜",
+    "sourceId": "jr_jp_joyo_971c",
+    "word": "霜",
+    "coverage": "new"
+  },
+  {
+    "character": "藻",
+    "sourceId": "jr_jp_joyo_85fb",
+    "word": "藻",
+    "coverage": "new"
+  },
+  {
+    "character": "妥",
+    "sourceId": "jr_jp_joyo_59a5",
+    "word": "妥協",
+    "coverage": "new"
+  },
+  {
+    "character": "堕",
+    "sourceId": "jr_jp_joyo_5815",
+    "word": "堕落",
+    "coverage": "new"
+  },
+  {
+    "character": "惰",
+    "sourceId": "jr_jp_joyo_60f0",
+    "word": "怠惰",
+    "coverage": "new"
+  },
+  {
+    "character": "駄",
+    "sourceId": "jr_jp_joyo_99c4",
+    "word": "無駄",
+    "coverage": "new"
+  },
+  {
+    "character": "泰",
+    "sourceId": "jr_jp_joyo_6cf0",
+    "word": "安泰",
+    "coverage": "new"
+  },
+  {
+    "character": "濯",
+    "sourceId": "jr_jp_joyo_6fef",
+    "word": "洗濯",
+    "coverage": "new"
+  },
+  {
+    "character": "但",
+    "sourceId": "jr_jp_joyo_4f46",
+    "word": "但し",
+    "coverage": "new"
+  },
+  {
+    "character": "棚",
+    "sourceId": "jr_jp_joyo_68da",
+    "word": "棚",
+    "coverage": "new"
+  },
+  {
+    "character": "痴",
+    "sourceId": "jr_jp_joyo_75f4",
+    "word": "愚痴",
+    "coverage": "new"
+  },
+  {
+    "character": "逐",
+    "sourceId": "jr_jp_joyo_9010",
+    "word": "逐一",
+    "coverage": "new"
+  },
+  {
+    "character": "秩",
+    "sourceId": "jr_jp_joyo_79e9",
+    "word": "秩序",
+    "coverage": "new"
+  },
+  {
+    "character": "嫡",
+    "sourceId": "jr_jp_joyo_5ae1",
+    "word": "嫡子",
+    "coverage": "new"
+  },
+  {
+    "character": "衷",
+    "sourceId": "jr_jp_joyo_8877",
+    "word": "折衷",
+    "coverage": "new"
+  },
+  {
+    "character": "弔",
+    "sourceId": "jr_jp_joyo_5f14",
+    "word": "弔問",
+    "coverage": "new"
+  },
+  {
+    "character": "挑",
+    "sourceId": "jr_jp_joyo_6311",
+    "word": "挑戦",
+    "coverage": "new"
+  },
+  {
+    "character": "眺",
+    "sourceId": "jr_jp_joyo_773a",
+    "word": "眺望",
+    "coverage": "new"
+  },
+  {
+    "character": "釣",
+    "sourceId": "jr_jp_joyo_91e3",
+    "word": "釣果",
+    "coverage": "new"
+  },
+  {
+    "character": "懲",
+    "sourceId": "jr_jp_joyo_61f2",
+    "word": "懲役",
+    "coverage": "new"
+  },
+  {
+    "character": "勅",
+    "sourceId": "jr_jp_joyo_52c5",
+    "word": "勅使",
+    "coverage": "new"
+  },
+  {
+    "character": "朕",
+    "sourceId": "jr_jp_joyo_6715",
+    "word": "朕",
+    "coverage": "new"
+  },
+  {
+    "character": "塚",
+    "sourceId": "jr_jp_joyo_585a",
+    "word": "塚",
+    "coverage": "new"
+  },
+  {
+    "character": "漬",
+    "sourceId": "jr_jp_joyo_6f2c",
+    "word": "漬ける",
+    "coverage": "new"
+  },
+  {
+    "character": "坪",
+    "sourceId": "jr_jp_joyo_576a",
+    "word": "坪数",
+    "coverage": "new"
+  },
+  {
+    "character": "呈",
+    "sourceId": "jr_jp_joyo_5448",
+    "word": "呈上",
+    "coverage": "new"
+  },
+  {
+    "character": "廷",
+    "sourceId": "jr_jp_joyo_5ef7",
+    "word": "出廷",
+    "coverage": "new"
+  },
+  {
+    "character": "邸",
+    "sourceId": "jr_jp_joyo_90b8",
+    "word": "私邸",
+    "coverage": "new"
+  },
+  {
+    "character": "亭",
+    "sourceId": "jr_jp_joyo_4ead",
+    "word": "亭主",
+    "coverage": "new"
+  },
+  {
+    "character": "貞",
+    "sourceId": "jr_jp_joyo_8c9e",
+    "word": "貞操",
+    "coverage": "new"
+  },
+  {
+    "character": "逓",
+    "sourceId": "jr_jp_joyo_9013",
+    "word": "逓信",
+    "coverage": "new"
+  },
+  {
+    "character": "偵",
+    "sourceId": "jr_jp_joyo_5075",
+    "word": "偵察",
+    "coverage": "new"
+  },
+  {
+    "character": "艇",
+    "sourceId": "jr_jp_joyo_8247",
+    "word": "競艇",
+    "coverage": "new"
+  },
+  {
+    "character": "泥",
+    "sourceId": "jr_jp_joyo_6ce5",
+    "word": "泥",
+    "coverage": "new"
+  },
+  {
+    "character": "迭",
+    "sourceId": "jr_jp_joyo_8fed",
+    "word": "更迭",
+    "coverage": "new"
+  },
+  {
+    "character": "徹",
+    "sourceId": "jr_jp_joyo_5fb9",
+    "word": "徹夜",
+    "coverage": "new"
+  },
+  {
+    "character": "撤",
+    "sourceId": "jr_jp_joyo_64a4",
+    "word": "撤去",
+    "coverage": "new"
+  },
+  {
+    "character": "悼",
+    "sourceId": "jr_jp_joyo_60bc",
+    "word": "哀悼",
+    "coverage": "new"
+  },
+  {
+    "character": "搭",
+    "sourceId": "jr_jp_joyo_642d",
+    "word": "搭乗",
+    "coverage": "new"
+  },
+  {
+    "character": "棟",
+    "sourceId": "jr_jp_joyo_68df",
+    "word": "棟",
+    "coverage": "new"
+  },
+  {
+    "character": "筒",
+    "sourceId": "jr_jp_joyo_7b52",
+    "word": "筒",
+    "coverage": "new"
+  },
+  {
+    "character": "謄",
+    "sourceId": "jr_jp_joyo_8b04",
+    "word": "謄写",
+    "coverage": "new"
+  },
+  {
+    "character": "騰",
+    "sourceId": "jr_jp_joyo_9a30",
+    "word": "暴騰",
+    "coverage": "new"
+  },
+  {
+    "character": "洞",
+    "sourceId": "jr_jp_joyo_6d1e",
+    "word": "洞察",
+    "coverage": "new"
+  },
+  {
+    "character": "督",
+    "sourceId": "jr_jp_joyo_7763",
+    "word": "監督",
+    "coverage": "new"
+  },
+  {
+    "character": "凸",
+    "sourceId": "jr_jp_joyo_51f8",
+    "word": "凹凸",
+    "coverage": "new"
+  },
+  {
+    "character": "屯",
+    "sourceId": "jr_jp_joyo_5c6f",
+    "word": "駐屯",
+    "coverage": "new"
+  },
+  {
+    "character": "軟",
+    "sourceId": "jr_jp_joyo_8edf",
+    "word": "硬軟",
+    "coverage": "new"
+  },
+  {
+    "character": "尼",
+    "sourceId": "jr_jp_joyo_5c3c",
+    "word": "尼",
+    "coverage": "new"
+  },
+  {
+    "character": "妊",
+    "sourceId": "jr_jp_joyo_598a",
+    "word": "不妊",
+    "coverage": "new"
+  },
+  {
+    "character": "忍",
+    "sourceId": "jr_jp_joyo_5fcd",
+    "word": "忍者",
+    "coverage": "new"
+  },
+  {
+    "character": "寧",
+    "sourceId": "jr_jp_joyo_5be7",
+    "word": "丁寧",
+    "coverage": "new"
+  },
+  {
+    "character": "把",
+    "sourceId": "jr_jp_joyo_628a",
+    "word": "把持",
+    "coverage": "new"
+  },
+  {
+    "character": "覇",
+    "sourceId": "jr_jp_joyo_8987",
+    "word": "制覇",
+    "coverage": "new"
+  },
+  {
+    "character": "廃",
+    "sourceId": "jr_jp_joyo_5ec3",
+    "word": "廃止",
+    "coverage": "new"
+  },
+  {
+    "character": "培",
+    "sourceId": "jr_jp_joyo_57f9",
+    "word": "培養",
+    "coverage": "new"
+  },
+  {
+    "character": "媒",
+    "sourceId": "jr_jp_joyo_5a92",
+    "word": "媒介",
+    "coverage": "new"
+  },
+  {
+    "character": "賠",
+    "sourceId": "jr_jp_joyo_8ce0",
+    "word": "賠償",
+    "coverage": "new"
+  },
+  {
+    "character": "伯",
+    "sourceId": "jr_jp_joyo_4f2f",
+    "word": "伯仲",
+    "coverage": "new"
+  },
+  {
+    "character": "舶",
+    "sourceId": "jr_jp_joyo_8236",
+    "word": "舶来",
+    "coverage": "new"
+  },
+  {
+    "character": "漠",
+    "sourceId": "jr_jp_joyo_6f20",
+    "word": "広漠",
+    "coverage": "new"
+  },
+  {
+    "character": "肌",
+    "sourceId": "jr_jp_joyo_808c",
+    "word": "肌",
+    "coverage": "new"
+  },
+  {
+    "character": "鉢",
+    "sourceId": "jr_jp_joyo_9262",
+    "word": "鉢",
+    "coverage": "new"
+  },
+  {
+    "character": "閥",
+    "sourceId": "jr_jp_joyo_95a5",
+    "word": "派閥",
+    "coverage": "new"
+  },
+  {
+    "character": "煩",
+    "sourceId": "jr_jp_joyo_7169",
+    "word": "煩悩",
+    "coverage": "new"
+  },
+  {
+    "character": "頒",
+    "sourceId": "jr_jp_joyo_9812",
+    "word": "頒価",
+    "coverage": "new"
+  },
+  {
+    "character": "妃",
+    "sourceId": "jr_jp_joyo_5983",
+    "word": "王妃",
+    "coverage": "new"
+  },
+  {
+    "character": "披",
+    "sourceId": "jr_jp_joyo_62ab",
+    "word": "披見",
+    "coverage": "new"
+  },
+  {
+    "character": "扉",
+    "sourceId": "jr_jp_joyo_6249",
+    "word": "扉",
+    "coverage": "new"
+  },
+  {
+    "character": "罷",
+    "sourceId": "jr_jp_joyo_7f77",
+    "word": "罷免",
+    "coverage": "new"
+  },
+  {
+    "character": "猫",
+    "sourceId": "jr_jp_joyo_732b",
+    "word": "猫",
+    "coverage": "new"
+  },
+  {
+    "character": "賓",
+    "sourceId": "jr_jp_joyo_8cd3",
+    "word": "主賓",
+    "coverage": "new"
+  },
+  {
+    "character": "頻",
+    "sourceId": "jr_jp_joyo_983b",
+    "word": "頻度",
+    "coverage": "new"
+  },
+  {
+    "character": "瓶",
+    "sourceId": "jr_jp_joyo_74f6",
+    "word": "瓶",
+    "coverage": "new"
+  },
+  {
+    "character": "扶",
+    "sourceId": "jr_jp_joyo_6276",
+    "word": "扶助",
+    "coverage": "new"
+  },
+  {
+    "character": "附",
+    "sourceId": "jr_jp_joyo_9644",
+    "word": "寄附",
+    "coverage": "new"
+  },
+  {
+    "character": "譜",
+    "sourceId": "jr_jp_joyo_8b5c",
+    "word": "楽譜",
+    "coverage": "new"
+  },
+  {
+    "character": "侮",
+    "sourceId": "jr_jp_joyo_4fae",
+    "word": "侮辱",
+    "coverage": "new"
+  },
+  {
+    "character": "沸",
+    "sourceId": "jr_jp_joyo_6cb8",
+    "word": "煮沸",
+    "coverage": "new"
+  },
+  {
+    "character": "雰",
+    "sourceId": "jr_jp_joyo_96f0",
+    "word": "雰囲気",
+    "coverage": "new"
+  },
+  {
+    "character": "憤",
+    "sourceId": "jr_jp_joyo_61a4",
+    "word": "憤慨",
+    "coverage": "new"
+  },
+  {
+    "character": "丙",
+    "sourceId": "jr_jp_joyo_4e19",
+    "word": "丙種",
+    "coverage": "new"
+  },
+  {
+    "character": "併",
+    "sourceId": "jr_jp_joyo_4f75",
+    "word": "併合",
+    "coverage": "new"
+  },
+  {
+    "character": "塀",
+    "sourceId": "jr_jp_joyo_5840",
+    "word": "塀",
+    "coverage": "new"
+  },
+  {
+    "character": "幣",
+    "sourceId": "jr_jp_joyo_5e63",
+    "word": "紙幣",
+    "coverage": "new"
+  },
+  {
+    "character": "弊",
+    "sourceId": "jr_jp_joyo_5f0a",
+    "word": "弊害",
+    "coverage": "new"
+  },
+  {
+    "character": "偏",
+    "sourceId": "jr_jp_joyo_504f",
+    "word": "偏向",
+    "coverage": "new"
+  },
+  {
+    "character": "遍",
+    "sourceId": "jr_jp_joyo_904d",
+    "word": "普遍",
+    "coverage": "new"
+  },
+  {
+    "character": "泡",
+    "sourceId": "jr_jp_joyo_6ce1",
+    "word": "泡",
+    "coverage": "new"
+  },
+  {
+    "character": "俸",
+    "sourceId": "jr_jp_joyo_4ff8",
+    "word": "俸給",
+    "coverage": "new"
+  },
+  {
+    "character": "褒",
+    "sourceId": "jr_jp_joyo_8912",
+    "word": "褒章",
+    "coverage": "new"
+  },
+  {
+    "character": "剖",
+    "sourceId": "jr_jp_joyo_5256",
+    "word": "解剖",
+    "coverage": "new"
+  },
+  {
+    "character": "紡",
+    "sourceId": "jr_jp_joyo_7d21",
+    "word": "混紡",
+    "coverage": "new"
+  },
+  {
+    "character": "朴",
+    "sourceId": "jr_jp_joyo_6734",
+    "word": "純朴",
+    "coverage": "new"
+  },
+  {
+    "character": "僕",
+    "sourceId": "jr_jp_joyo_50d5",
+    "word": "僕",
+    "coverage": "new"
+  },
+  {
+    "character": "撲",
+    "sourceId": "jr_jp_joyo_64b2",
+    "word": "打撲",
+    "coverage": "new"
+  },
+  {
+    "character": "堀",
+    "sourceId": "jr_jp_joyo_5800",
+    "word": "堀",
+    "coverage": "new"
+  },
+  {
+    "character": "奔",
+    "sourceId": "jr_jp_joyo_5954",
+    "word": "奔放",
+    "coverage": "new"
+  },
+  {
+    "character": "麻",
+    "sourceId": "jr_jp_joyo_9ebb",
+    "word": "麻",
+    "coverage": "new"
+  },
+  {
+    "character": "摩",
+    "sourceId": "jr_jp_joyo_6469",
+    "word": "摩擦",
+    "coverage": "new"
+  },
+  {
+    "character": "磨",
+    "sourceId": "jr_jp_joyo_78e8",
+    "word": "研磨",
+    "coverage": "new"
+  },
+  {
+    "character": "抹",
+    "sourceId": "jr_jp_joyo_62b9",
+    "word": "一抹",
+    "coverage": "new"
+  },
+  {
+    "character": "岬",
+    "sourceId": "jr_jp_joyo_5cac",
+    "word": "岬",
+    "coverage": "new"
+  },
+  {
+    "character": "銘",
+    "sourceId": "jr_jp_joyo_9298",
+    "word": "碑銘",
+    "coverage": "new"
+  },
+  {
+    "character": "妄",
+    "sourceId": "jr_jp_joyo_5984",
+    "word": "妄信",
+    "coverage": "new"
+  },
+  {
+    "character": "盲",
+    "sourceId": "jr_jp_joyo_76f2",
+    "word": "文盲",
+    "coverage": "new"
+  },
+  {
+    "character": "耗",
+    "sourceId": "jr_jp_joyo_8017",
+    "word": "消耗",
+    "coverage": "new"
+  },
+  {
+    "character": "厄",
+    "sourceId": "jr_jp_joyo_5384",
+    "word": "厄",
+    "coverage": "new"
+  },
+  {
+    "character": "愉",
+    "sourceId": "jr_jp_joyo_6109",
+    "word": "愉快",
+    "coverage": "new"
+  },
+  {
+    "character": "諭",
+    "sourceId": "jr_jp3_010",
+    "word": "諭す",
+    "coverage": "existing"
+  },
+  {
+    "character": "癒",
+    "sourceId": "jr_jp_joyo_7652",
+    "word": "平癒",
+    "coverage": "new"
+  },
+  {
+    "character": "唯",
+    "sourceId": "jr_jp_joyo_552f",
+    "word": "唯一",
+    "coverage": "new"
+  },
+  {
+    "character": "悠",
+    "sourceId": "jr_jp_joyo_60a0",
+    "word": "悠々",
+    "coverage": "new"
+  },
+  {
+    "character": "猶",
+    "sourceId": "jr_jp_joyo_7336",
+    "word": "猶予",
+    "coverage": "new"
+  },
+  {
+    "character": "裕",
+    "sourceId": "jr_japanese_core_kanji_裕",
+    "word": "裕福",
+    "coverage": "existing"
+  },
+  {
+    "character": "融",
+    "sourceId": "jr_jp_joyo_878d",
+    "word": "融和",
+    "coverage": "new"
+  },
+  {
+    "character": "庸",
+    "sourceId": "jr_jp_joyo_5eb8",
+    "word": "中庸",
+    "coverage": "new"
+  },
+  {
+    "character": "窯",
+    "sourceId": "jr_jp_joyo_7aaf",
+    "word": "窯",
+    "coverage": "new"
+  },
+  {
+    "character": "羅",
+    "sourceId": "jr_jp_joyo_7f85",
+    "word": "網羅",
+    "coverage": "new"
+  },
+  {
+    "character": "酪",
+    "sourceId": "jr_jp_joyo_916a",
+    "word": "酪農",
+    "coverage": "new"
+  },
+  {
+    "character": "痢",
+    "sourceId": "jr_jp_joyo_75e2",
+    "word": "下痢",
+    "coverage": "new"
+  },
+  {
+    "character": "履",
+    "sourceId": "jr_jp_joyo_5c65",
+    "word": "履歴",
+    "coverage": "new"
+  },
+  {
+    "character": "柳",
+    "sourceId": "jr_jp_joyo_67f3",
+    "word": "柳",
+    "coverage": "new"
+  },
+  {
+    "character": "竜",
+    "sourceId": "jr_jp_joyo_7adc",
+    "word": "竜",
+    "coverage": "new"
+  },
+  {
+    "character": "硫",
+    "sourceId": "jr_jp_joyo_786b",
+    "word": "硫安",
+    "coverage": "new"
+  },
+  {
+    "character": "虜",
+    "sourceId": "jr_jp_joyo_865c",
+    "word": "捕虜",
+    "coverage": "new"
+  },
+  {
+    "character": "涼",
+    "sourceId": "jr_jp_joyo_6dbc",
+    "word": "涼味",
+    "coverage": "new"
+  },
+  {
+    "character": "僚",
+    "sourceId": "jr_jp_joyo_50da",
+    "word": "僚友",
+    "coverage": "new"
+  },
+  {
+    "character": "寮",
+    "sourceId": "jr_jp_joyo_5bee",
+    "word": "寮母",
+    "coverage": "new"
+  },
+  {
+    "character": "倫",
+    "sourceId": "jr_jp_joyo_502b",
+    "word": "人倫",
+    "coverage": "new"
+  },
+  {
+    "character": "累",
+    "sourceId": "jr_jp_joyo_7d2f",
+    "word": "係累",
+    "coverage": "new"
+  },
+  {
+    "character": "塁",
+    "sourceId": "jr_jp_joyo_5841",
+    "word": "土塁",
+    "coverage": "new"
+  },
+  {
+    "character": "戻",
+    "sourceId": "jr_jp_joyo_623b",
+    "word": "戻入",
+    "coverage": "new"
+  },
+  {
+    "character": "鈴",
+    "sourceId": "jr_jp_joyo_9234",
+    "word": "鈴",
+    "coverage": "new"
+  },
+  {
+    "character": "賄",
+    "sourceId": "jr_jp_joyo_8cc4",
+    "word": "収賄",
+    "coverage": "new"
+  },
+  {
+    "character": "枠",
+    "sourceId": "jr_jp_joyo_67a0",
+    "word": "枠",
+    "coverage": "new"
+  },
+  {
+    "character": "挨",
+    "sourceId": "jr_jp_joyo_6328",
+    "word": "挨拶",
+    "coverage": "new"
+  },
+  {
+    "character": "曖",
+    "sourceId": "jr_jp_joyo_66d6",
+    "word": "曖昧",
+    "coverage": "new"
+  },
+  {
+    "character": "宛",
+    "sourceId": "jr_jp_joyo_5b9b",
+    "word": "宛てる",
+    "coverage": "new"
+  },
+  {
+    "character": "嵐",
+    "sourceId": "jr_jp_joyo_5d50",
+    "word": "嵐",
+    "coverage": "new"
+  },
+  {
+    "character": "畏",
+    "sourceId": "jr_jp_joyo_754f",
+    "word": "畏怖",
+    "coverage": "new"
+  },
+  {
+    "character": "萎",
+    "sourceId": "jr_jp_joyo_840e",
+    "word": "萎縮",
+    "coverage": "new"
+  },
+  {
+    "character": "椅",
+    "sourceId": "jr_jp_joyo_6905",
+    "word": "椅子",
+    "coverage": "new"
+  },
+  {
+    "character": "彙",
+    "sourceId": "jr_jp_joyo_5f59",
+    "word": "語彙",
+    "coverage": "new"
+  },
+  {
+    "character": "咽",
+    "sourceId": "jr_jp_joyo_54bd",
+    "word": "咽喉",
+    "coverage": "new"
+  },
+  {
+    "character": "淫",
+    "sourceId": "jr_jp_joyo_6deb",
+    "word": "淫乱",
+    "coverage": "new"
+  },
+  {
+    "character": "唄",
+    "sourceId": "jr_jp_joyo_5504",
+    "word": "小唄",
+    "coverage": "new"
+  },
+  {
+    "character": "鬱",
+    "sourceId": "jr_jp_joyo_9b31",
+    "word": "憂鬱",
+    "coverage": "new"
+  },
+  {
+    "character": "怨",
+    "sourceId": "jr_jp_joyo_6028",
+    "word": "怨念",
+    "coverage": "new"
+  },
+  {
+    "character": "艶",
+    "sourceId": "jr_jp_joyo_8276",
+    "word": "艶",
+    "coverage": "new"
+  },
+  {
+    "character": "旺",
+    "sourceId": "jr_jp_joyo_65fa",
+    "word": "旺盛",
+    "coverage": "new"
+  },
+  {
+    "character": "臆",
+    "sourceId": "jr_jp_joyo_81c6",
+    "word": "臆測",
+    "coverage": "new"
+  },
+  {
+    "character": "俺",
+    "sourceId": "jr_jp_joyo_4ffa",
+    "word": "俺",
+    "coverage": "new"
+  },
+  {
+    "character": "苛",
+    "sourceId": "jr_jp_joyo_82db",
+    "word": "苛烈",
+    "coverage": "new"
+  },
+  {
+    "character": "牙",
+    "sourceId": "jr_jp_joyo_7259",
+    "word": "牙",
+    "coverage": "new"
+  },
+  {
+    "character": "瓦",
+    "sourceId": "jr_jp_joyo_74e6",
+    "word": "瓦",
+    "coverage": "new"
+  },
+  {
+    "character": "楷",
+    "sourceId": "jr_jp_joyo_6977",
+    "word": "楷書",
+    "coverage": "new"
+  },
+  {
+    "character": "潰",
+    "sourceId": "jr_jp_joyo_6f70",
+    "word": "潰瘍",
+    "coverage": "new"
+  },
+  {
+    "character": "諧",
+    "sourceId": "jr_jp_joyo_8ae7",
+    "word": "俳諧",
+    "coverage": "new"
+  },
+  {
+    "character": "崖",
+    "sourceId": "jr_jp_joyo_5d16",
+    "word": "崖下",
+    "coverage": "new"
+  },
+  {
+    "character": "蓋",
+    "sourceId": "jr_jp_joyo_84cb",
+    "word": "蓋",
+    "coverage": "new"
+  },
+  {
+    "character": "骸",
+    "sourceId": "jr_jp_joyo_9ab8",
+    "word": "死骸",
+    "coverage": "new"
+  },
+  {
+    "character": "柿",
+    "sourceId": "jr_jp_joyo_67ff",
+    "word": "柿",
+    "coverage": "new"
+  },
+  {
+    "character": "顎",
+    "sourceId": "jr_jp_joyo_984e",
+    "word": "顎",
+    "coverage": "new"
+  },
+  {
+    "character": "葛",
+    "sourceId": "jr_jp_joyo_845b",
+    "word": "葛",
+    "coverage": "new"
+  },
+  {
+    "character": "釜",
+    "sourceId": "jr_jp_joyo_91dc",
+    "word": "釜",
+    "coverage": "new"
+  },
+  {
+    "character": "鎌",
+    "sourceId": "jr_jp_joyo_938c",
+    "word": "鎌",
+    "coverage": "new"
+  },
+  {
+    "character": "韓",
+    "sourceId": "jr_jp_joyo_97d3",
+    "word": "韓国",
+    "coverage": "new"
+  },
+  {
+    "character": "玩",
+    "sourceId": "jr_jp_joyo_73a9",
+    "word": "愛玩",
+    "coverage": "new"
+  },
+  {
+    "character": "伎",
+    "sourceId": "jr_jp_joyo_4f0e",
+    "word": "歌舞伎",
+    "coverage": "new"
+  },
+  {
+    "character": "亀",
+    "sourceId": "jr_jp_joyo_4e80",
+    "word": "亀",
+    "coverage": "new"
+  },
+  {
+    "character": "毀",
+    "sourceId": "jr_jp_joyo_6bc0",
+    "word": "毀損",
+    "coverage": "new"
+  },
+  {
+    "character": "畿",
+    "sourceId": "jr_jp_joyo_757f",
+    "word": "畿内",
+    "coverage": "new"
+  },
+  {
+    "character": "臼",
+    "sourceId": "jr_jp_joyo_81fc",
+    "word": "石臼",
+    "coverage": "new"
+  },
+  {
+    "character": "嗅",
+    "sourceId": "jr_jp_joyo_55c5",
+    "word": "嗅覚",
+    "coverage": "new"
+  },
+  {
+    "character": "巾",
+    "sourceId": "jr_jp_joyo_5dfe",
+    "word": "雑巾",
+    "coverage": "new"
+  },
+  {
+    "character": "僅",
+    "sourceId": "jr_jp_joyo_50c5",
+    "word": "僅差",
+    "coverage": "new"
+  },
+  {
+    "character": "錦",
+    "sourceId": "jr_jp_joyo_9326",
+    "word": "錦秋",
+    "coverage": "new"
+  },
+  {
+    "character": "惧",
+    "sourceId": "jr_jp_joyo_60e7",
+    "word": "危惧",
+    "coverage": "new"
+  },
+  {
+    "character": "串",
+    "sourceId": "jr_jp_joyo_4e32",
+    "word": "串刺し",
+    "coverage": "new"
+  },
+  {
+    "character": "窟",
+    "sourceId": "jr_jp_joyo_7a9f",
+    "word": "巣窟",
+    "coverage": "new"
+  },
+  {
+    "character": "詣",
+    "sourceId": "jr_jp_joyo_8a63",
+    "word": "参詣",
+    "coverage": "new"
+  },
+  {
+    "character": "憬",
+    "sourceId": "jr_jp_joyo_61ac",
+    "word": "憧憬",
+    "coverage": "new"
+  },
+  {
+    "character": "稽",
+    "sourceId": "jr_jp_joyo_7a3d",
+    "word": "滑稽",
+    "coverage": "new"
+  },
+  {
+    "character": "隙",
+    "sourceId": "jr_jp_joyo_9699",
+    "word": "間隙",
+    "coverage": "new"
+  },
+  {
+    "character": "桁",
+    "sourceId": "jr_jp_joyo_6841",
+    "word": "桁違い",
+    "coverage": "new"
+  },
+  {
+    "character": "拳",
+    "sourceId": "jr_jp_joyo_62f3",
+    "word": "拳法",
+    "coverage": "new"
+  },
+  {
+    "character": "鍵",
+    "sourceId": "jr_jp_joyo_9375",
+    "word": "鍵",
+    "coverage": "new"
+  },
+  {
+    "character": "舷",
+    "sourceId": "jr_jp_joyo_8237",
+    "word": "右舷",
+    "coverage": "new"
+  },
+  {
+    "character": "股",
+    "sourceId": "jr_jp_joyo_80a1",
+    "word": "内股",
+    "coverage": "new"
+  },
+  {
+    "character": "虎",
+    "sourceId": "jr_jp_joyo_864e",
+    "word": "虎",
+    "coverage": "new"
+  },
+  {
+    "character": "錮",
+    "sourceId": "jr_jp_joyo_932e",
+    "word": "禁錮",
+    "coverage": "new"
+  },
+  {
+    "character": "勾",
+    "sourceId": "jr_jp_joyo_52fe",
+    "word": "勾留",
+    "coverage": "new"
+  },
+  {
+    "character": "梗",
+    "sourceId": "jr_jp_joyo_6897",
+    "word": "脳梗塞",
+    "coverage": "new"
+  },
+  {
+    "character": "喉",
+    "sourceId": "jr_jp_joyo_5589",
+    "word": "喉",
+    "coverage": "new"
+  },
+  {
+    "character": "乞",
+    "sourceId": "jr_jp_joyo_4e5e",
+    "word": "乞う",
+    "coverage": "new"
+  },
+  {
+    "character": "傲",
+    "sourceId": "jr_jp_joyo_50b2",
+    "word": "傲慢",
+    "coverage": "new"
+  },
+  {
+    "character": "駒",
+    "sourceId": "jr_jp_joyo_99d2",
+    "word": "持ち駒",
+    "coverage": "new"
+  },
+  {
+    "character": "頃",
+    "sourceId": "jr_jp_joyo_9803",
+    "word": "頃",
+    "coverage": "new"
+  },
+  {
+    "character": "痕",
+    "sourceId": "jr_jp_joyo_75d5",
+    "word": "痕",
+    "coverage": "new"
+  },
+  {
+    "character": "沙",
+    "sourceId": "jr_jp_joyo_6c99",
+    "word": "沙汰",
+    "coverage": "new"
+  },
+  {
+    "character": "挫",
+    "sourceId": "jr_jp_joyo_632b",
+    "word": "挫折",
+    "coverage": "new"
+  },
+  {
+    "character": "采",
+    "sourceId": "jr_jp_joyo_91c7",
+    "word": "喝采",
+    "coverage": "new"
+  },
+  {
+    "character": "塞",
+    "sourceId": "jr_jp_joyo_585e",
+    "word": "要塞",
+    "coverage": "new"
+  },
+  {
+    "character": "柵",
+    "sourceId": "jr_jp_joyo_67f5",
+    "word": "鉄柵",
+    "coverage": "new"
+  },
+  {
+    "character": "刹",
+    "sourceId": "jr_jp_joyo_5239",
+    "word": "刹那",
+    "coverage": "new"
+  },
+  {
+    "character": "拶",
+    "sourceId": "jr_jp_joyo_62f6",
+    "word": "挨拶",
+    "coverage": "new"
+  },
+  {
+    "character": "斬",
+    "sourceId": "jr_jp_joyo_65ac",
+    "word": "斬新",
+    "coverage": "new"
+  },
+  {
+    "character": "恣",
+    "sourceId": "jr_jp_joyo_6063",
+    "word": "恣意的",
+    "coverage": "new"
+  },
+  {
+    "character": "摯",
+    "sourceId": "jr_jp_joyo_646f",
+    "word": "真摯",
+    "coverage": "new"
+  },
+  {
+    "character": "餌",
+    "sourceId": "jr_jp_joyo_990c",
+    "word": "餌",
+    "coverage": "new"
+  },
+  {
+    "character": "𠮟",
+    "sourceId": "jr_jp_joyo_20b9f",
+    "word": "𠮟る",
+    "coverage": "new"
+  },
+  {
+    "character": "嫉",
+    "sourceId": "jr_jp_joyo_5ac9",
+    "word": "嫉妬",
+    "coverage": "new"
+  },
+  {
+    "character": "腫",
+    "sourceId": "jr_jp_joyo_816b",
+    "word": "腫瘍",
+    "coverage": "new"
+  },
+  {
+    "character": "呪",
+    "sourceId": "jr_jp_joyo_546a",
+    "word": "呪文",
+    "coverage": "new"
+  },
+  {
+    "character": "袖",
+    "sourceId": "jr_jp_joyo_8896",
+    "word": "袖",
+    "coverage": "new"
+  },
+  {
+    "character": "羞",
+    "sourceId": "jr_jp_joyo_7f9e",
+    "word": "羞恥心",
+    "coverage": "new"
+  },
+  {
+    "character": "蹴",
+    "sourceId": "jr_jp_joyo_8e74",
+    "word": "一蹴",
+    "coverage": "new"
+  },
+  {
+    "character": "憧",
+    "sourceId": "jr_jp3_001",
+    "word": "憧憬",
+    "coverage": "existing"
+  },
+  {
+    "character": "拭",
+    "sourceId": "jr_jp_joyo_62ed",
+    "word": "払拭",
+    "coverage": "new"
+  },
+  {
+    "character": "尻",
+    "sourceId": "jr_jp_joyo_5c3b",
+    "word": "尻",
+    "coverage": "new"
+  },
+  {
+    "character": "芯",
+    "sourceId": "jr_jp_joyo_82af",
+    "word": "芯",
+    "coverage": "new"
+  },
+  {
+    "character": "腎",
+    "sourceId": "jr_jp_joyo_814e",
+    "word": "肝腎",
+    "coverage": "new"
+  },
+  {
+    "character": "須",
+    "sourceId": "jr_jp_joyo_9808",
+    "word": "必須",
+    "coverage": "new"
+  },
+  {
+    "character": "裾",
+    "sourceId": "jr_jp_joyo_88fe",
+    "word": "裾",
+    "coverage": "new"
+  },
+  {
+    "character": "凄",
+    "sourceId": "jr_jp_joyo_51c4",
+    "word": "凄惨",
+    "coverage": "new"
+  },
+  {
+    "character": "醒",
+    "sourceId": "jr_jp_joyo_9192",
+    "word": "覚醒",
+    "coverage": "new"
+  },
+  {
+    "character": "脊",
+    "sourceId": "jr_jp_joyo_810a",
+    "word": "脊柱",
+    "coverage": "new"
+  },
+  {
+    "character": "戚",
+    "sourceId": "jr_jp_joyo_621a",
+    "word": "親戚",
+    "coverage": "new"
+  },
+  {
+    "character": "煎",
+    "sourceId": "jr_jp_joyo_714e",
+    "word": "煎茶",
+    "coverage": "new"
+  },
+  {
+    "character": "羨",
+    "sourceId": "jr_jp_joyo_7fa8",
+    "word": "羨望",
+    "coverage": "new"
+  },
+  {
+    "character": "腺",
+    "sourceId": "jr_jp_joyo_817a",
+    "word": "涙腺",
+    "coverage": "new"
+  },
+  {
+    "character": "詮",
+    "sourceId": "jr_jp_joyo_8a6e",
+    "word": "所詮",
+    "coverage": "new"
+  },
+  {
+    "character": "箋",
+    "sourceId": "jr_jp_joyo_7b8b",
+    "word": "便箋",
+    "coverage": "new"
+  },
+  {
+    "character": "膳",
+    "sourceId": "jr_jp_joyo_81b3",
+    "word": "膳",
+    "coverage": "new"
+  },
+  {
+    "character": "狙",
+    "sourceId": "jr_jp_joyo_72d9",
+    "word": "狙撃",
+    "coverage": "new"
+  },
+  {
+    "character": "遡",
+    "sourceId": "jr_jp_joyo_9061",
+    "word": "遡上",
+    "coverage": "new"
+  },
+  {
+    "character": "曽",
+    "sourceId": "jr_jp_joyo_66fd",
+    "word": "曽孫",
+    "coverage": "new"
+  },
+  {
+    "character": "爽",
+    "sourceId": "jr_jp_joyo_723d",
+    "word": "爽快",
+    "coverage": "new"
+  },
+  {
+    "character": "痩",
+    "sourceId": "jr_jp_joyo_75e9",
+    "word": "痩身",
+    "coverage": "new"
+  },
+  {
+    "character": "踪",
+    "sourceId": "jr_jp_joyo_8e2a",
+    "word": "失踪",
+    "coverage": "new"
+  },
+  {
+    "character": "捉",
+    "sourceId": "jr_jp_joyo_6349",
+    "word": "捕捉",
+    "coverage": "new"
+  },
+  {
+    "character": "遜",
+    "sourceId": "jr_jp_joyo_905c",
+    "word": "不遜",
+    "coverage": "new"
+  },
+  {
+    "character": "汰",
+    "sourceId": "jr_jp_joyo_6c70",
+    "word": "沙汰",
+    "coverage": "new"
+  },
+  {
+    "character": "唾",
+    "sourceId": "jr_jp_joyo_553e",
+    "word": "唾",
+    "coverage": "new"
+  },
+  {
+    "character": "堆",
+    "sourceId": "jr_jp_joyo_5806",
+    "word": "堆積",
+    "coverage": "new"
+  },
+  {
+    "character": "戴",
+    "sourceId": "jr_jp_joyo_6234",
+    "word": "戴冠",
+    "coverage": "new"
+  },
+  {
+    "character": "誰",
+    "sourceId": "jr_jp_joyo_8ab0",
+    "word": "誰",
+    "coverage": "new"
+  },
+  {
+    "character": "旦",
+    "sourceId": "jr_jp_joyo_65e6",
+    "word": "一旦",
+    "coverage": "new"
+  },
+  {
+    "character": "綻",
+    "sourceId": "jr_jp_joyo_7dbb",
+    "word": "破綻",
+    "coverage": "new"
+  },
+  {
+    "character": "緻",
+    "sourceId": "jr_jp_joyo_7dfb",
+    "word": "精緻",
+    "coverage": "new"
+  },
+  {
+    "character": "酎",
+    "sourceId": "jr_jp_joyo_914e",
+    "word": "焼酎",
+    "coverage": "new"
+  },
+  {
+    "character": "貼",
+    "sourceId": "jr_jp_joyo_8cbc",
+    "word": "貼付",
+    "coverage": "new"
+  },
+  {
+    "character": "嘲",
+    "sourceId": "jr_jp_joyo_5632",
+    "word": "嘲笑",
+    "coverage": "new"
+  },
+  {
+    "character": "捗",
+    "sourceId": "jr_jp_joyo_6357",
+    "word": "進捗",
+    "coverage": "new"
+  },
+  {
+    "character": "椎",
+    "sourceId": "jr_jp_joyo_690e",
+    "word": "脊椎",
+    "coverage": "new"
+  },
+  {
+    "character": "爪",
+    "sourceId": "jr_jp_joyo_722a",
+    "word": "爪",
+    "coverage": "new"
+  },
+  {
+    "character": "鶴",
+    "sourceId": "jr_jp_joyo_9db4",
+    "word": "鶴",
+    "coverage": "new"
+  },
+  {
+    "character": "諦",
+    "sourceId": "jr_jp_joyo_8ae6",
+    "word": "諦念",
+    "coverage": "new"
+  },
+  {
+    "character": "溺",
+    "sourceId": "jr_jp_joyo_6eba",
+    "word": "溺愛",
+    "coverage": "new"
+  },
+  {
+    "character": "塡",
+    "sourceId": "jr_jp_joyo_5861",
+    "word": "装塡",
+    "coverage": "new"
+  },
+  {
+    "character": "妬",
+    "sourceId": "jr_jp_joyo_59ac",
+    "word": "嫉妬",
+    "coverage": "new"
+  },
+  {
+    "character": "賭",
+    "sourceId": "jr_jp_joyo_8ced",
+    "word": "賭博",
+    "coverage": "new"
+  },
+  {
+    "character": "藤",
+    "sourceId": "jr_jp_joyo_85e4",
+    "word": "藤",
+    "coverage": "new"
+  },
+  {
+    "character": "瞳",
+    "sourceId": "jr_jp_joyo_77b3",
+    "word": "瞳",
+    "coverage": "new"
+  },
+  {
+    "character": "頓",
+    "sourceId": "jr_jp_joyo_9813",
+    "word": "整頓",
+    "coverage": "new"
+  },
+  {
+    "character": "貪",
+    "sourceId": "jr_jp_joyo_8caa",
+    "word": "貪欲",
+    "coverage": "new"
+  },
+  {
+    "character": "丼",
+    "sourceId": "jr_jp_joyo_4e3c",
+    "word": "丼",
+    "coverage": "new"
+  },
+  {
+    "character": "那",
+    "sourceId": "jr_jp_joyo_90a3",
+    "word": "刹那",
+    "coverage": "new"
+  },
+  {
+    "character": "謎",
+    "sourceId": "jr_jp_joyo_8b0e",
+    "word": "謎",
+    "coverage": "new"
+  },
+  {
+    "character": "鍋",
+    "sourceId": "jr_jp_joyo_934b",
+    "word": "鍋",
+    "coverage": "new"
+  },
+  {
+    "character": "匂",
+    "sourceId": "jr_jp_joyo_5302",
+    "word": "匂う",
+    "coverage": "new"
+  },
+  {
+    "character": "虹",
+    "sourceId": "jr_jp_joyo_8679",
+    "word": "虹",
+    "coverage": "new"
+  },
+  {
+    "character": "捻",
+    "sourceId": "jr_jp_joyo_637b",
+    "word": "捻出",
+    "coverage": "new"
+  },
+  {
+    "character": "罵",
+    "sourceId": "jr_jp_joyo_7f75",
+    "word": "罵倒",
+    "coverage": "new"
+  },
+  {
+    "character": "剝",
+    "sourceId": "jr_jp_joyo_525d",
+    "word": "剝奪",
+    "coverage": "new"
+  },
+  {
+    "character": "箸",
+    "sourceId": "jr_jp_joyo_7bb8",
+    "word": "箸",
+    "coverage": "new"
+  },
+  {
+    "character": "氾",
+    "sourceId": "jr_jp_joyo_6c3e",
+    "word": "氾濫",
+    "coverage": "new"
+  },
+  {
+    "character": "汎",
+    "sourceId": "jr_jp_joyo_6c4e",
+    "word": "汎用",
+    "coverage": "new"
+  },
+  {
+    "character": "斑",
+    "sourceId": "jr_jp_joyo_6591",
+    "word": "斑点",
+    "coverage": "new"
+  },
+  {
+    "character": "眉",
+    "sourceId": "jr_jp_joyo_7709",
+    "word": "焦眉",
+    "coverage": "new"
+  },
+  {
+    "character": "膝",
+    "sourceId": "jr_jp_joyo_819d",
+    "word": "膝",
+    "coverage": "new"
+  },
+  {
+    "character": "肘",
+    "sourceId": "jr_jp_joyo_8098",
+    "word": "肘",
+    "coverage": "new"
+  },
+  {
+    "character": "訃",
+    "sourceId": "jr_jp_joyo_8a03",
+    "word": "訃報",
+    "coverage": "new"
+  },
+  {
+    "character": "蔽",
+    "sourceId": "jr_jp_joyo_853d",
+    "word": "隠蔽",
+    "coverage": "new"
+  },
+  {
+    "character": "餅",
+    "sourceId": "jr_jp_joyo_9905",
+    "word": "尻餅",
+    "coverage": "new"
+  },
+  {
+    "character": "璧",
+    "sourceId": "jr_jp_joyo_74a7",
+    "word": "双璧",
+    "coverage": "new"
+  },
+  {
+    "character": "蔑",
+    "sourceId": "jr_jp_joyo_8511",
+    "word": "軽蔑",
+    "coverage": "new"
+  },
+  {
+    "character": "哺",
+    "sourceId": "jr_jp_joyo_54fa",
+    "word": "哺乳類",
+    "coverage": "new"
+  },
+  {
+    "character": "蜂",
+    "sourceId": "jr_jp_joyo_8702",
+    "word": "蜂起",
+    "coverage": "new"
+  },
+  {
+    "character": "貌",
+    "sourceId": "jr_jp_joyo_8c8c",
+    "word": "変貌",
+    "coverage": "new"
+  },
+  {
+    "character": "頰",
+    "sourceId": "jr_jp_joyo_9830",
+    "word": "頰",
+    "coverage": "new"
+  },
+  {
+    "character": "睦",
+    "sourceId": "jr_jp_joyo_7766",
+    "word": "和睦",
+    "coverage": "new"
+  },
+  {
+    "character": "勃",
+    "sourceId": "jr_jp_joyo_52c3",
+    "word": "勃発",
+    "coverage": "new"
+  },
+  {
+    "character": "昧",
+    "sourceId": "jr_jp_joyo_6627",
+    "word": "三昧",
+    "coverage": "new"
+  },
+  {
+    "character": "枕",
+    "sourceId": "jr_jp_joyo_6795",
+    "word": "枕",
+    "coverage": "new"
+  },
+  {
+    "character": "蜜",
+    "sourceId": "jr_jp_joyo_871c",
+    "word": "蜜",
+    "coverage": "new"
+  },
+  {
+    "character": "冥",
+    "sourceId": "jr_jp_joyo_51a5",
+    "word": "冥利",
+    "coverage": "new"
+  },
+  {
+    "character": "麺",
+    "sourceId": "jr_jp_joyo_9eba",
+    "word": "麺類",
+    "coverage": "new"
+  },
+  {
+    "character": "冶",
+    "sourceId": "jr_jp_joyo_51b6",
+    "word": "冶金",
+    "coverage": "new"
+  },
+  {
+    "character": "弥",
+    "sourceId": "jr_jp_joyo_5f25",
+    "word": "弥生",
+    "coverage": "new"
+  },
+  {
+    "character": "闇",
+    "sourceId": "jr_jp_joyo_95c7",
+    "word": "暗闇",
+    "coverage": "new"
+  },
+  {
+    "character": "喩",
+    "sourceId": "jr_jp_joyo_55a9",
+    "word": "比喩",
+    "coverage": "new"
+  },
+  {
+    "character": "湧",
+    "sourceId": "jr_jp_joyo_6e67",
+    "word": "湧出",
+    "coverage": "new"
+  },
+  {
+    "character": "妖",
+    "sourceId": "jr_jp_joyo_5996",
+    "word": "妖怪",
+    "coverage": "new"
+  },
+  {
+    "character": "瘍",
+    "sourceId": "jr_jp_joyo_760d",
+    "word": "潰瘍",
+    "coverage": "new"
+  },
+  {
+    "character": "沃",
+    "sourceId": "jr_jp_joyo_6c83",
+    "word": "肥沃",
+    "coverage": "new"
+  },
+  {
+    "character": "拉",
+    "sourceId": "jr_jp_joyo_62c9",
+    "word": "拉致",
+    "coverage": "new"
+  },
+  {
+    "character": "辣",
+    "sourceId": "jr_jp_joyo_8fa3",
+    "word": "辛辣",
+    "coverage": "new"
+  },
+  {
+    "character": "藍",
+    "sourceId": "jr_jp_joyo_85cd",
+    "word": "出藍",
+    "coverage": "new"
+  },
+  {
+    "character": "璃",
+    "sourceId": "jr_jp_joyo_7483",
+    "word": "浄瑠璃",
+    "coverage": "new"
+  },
+  {
+    "character": "慄",
+    "sourceId": "jr_jp_joyo_6144",
+    "word": "慄然",
+    "coverage": "new"
+  },
+  {
+    "character": "侶",
+    "sourceId": "jr_jp_joyo_4fb6",
+    "word": "伴侶",
+    "coverage": "new"
+  },
+  {
+    "character": "瞭",
+    "sourceId": "jr_jp_joyo_77ad",
+    "word": "明瞭",
+    "coverage": "new"
+  },
+  {
+    "character": "瑠",
+    "sourceId": "jr_jp_joyo_7460",
+    "word": "浄瑠璃",
+    "coverage": "new"
+  },
+  {
+    "character": "呂",
+    "sourceId": "jr_jp_joyo_5442",
+    "word": "風呂",
+    "coverage": "new"
+  },
+  {
+    "character": "賂",
+    "sourceId": "jr_jp_joyo_8cc2",
+    "word": "賄賂",
+    "coverage": "new"
+  },
+  {
+    "character": "弄",
+    "sourceId": "jr_jp_joyo_5f04",
+    "word": "愚弄",
+    "coverage": "new"
+  },
+  {
+    "character": "籠",
+    "sourceId": "jr_jp_joyo_7c60",
+    "word": "籠",
+    "coverage": "new"
+  },
+  {
+    "character": "麓",
+    "sourceId": "jr_jp_joyo_9e93",
+    "word": "麓",
+    "coverage": "new"
+  },
+  {
+    "character": "脇",
+    "sourceId": "jr_jp_joyo_8107",
+    "word": "両脇",
+    "coverage": "new"
+  }
+]

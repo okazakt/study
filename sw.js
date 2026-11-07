@@ -1,9 +1,9 @@
-const VERSION = '0.65.2';
-const CACHE = 'study-beat-v0.65.2';
+const VERSION = '0.66.0';
+const CACHE = 'study-beat-v0.66.0';
 const MEDIA = 'study-beat-media-v1';
 const versioned = path => `${path}?v=${VERSION}`;
-const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
-  ...['./focus-game.js', './style.css', './app.js', './game.js', './music-player.js', './wake-lock.js', './learning.js', './progress.js', './calibration.js', './quiz-data/junior_science.json', './quiz-data/junior_english.json', './quiz-data/junior_japanese.json', './quiz-data/junior_math.json', './quiz-data/junior_social.json', './music-data/index.json',
+const CORE = ['./', './index.html', './manifest.webmanifest', './data-credits.html', './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
+  ...['./focus-game.js', './style.css', './app.js', './game.js', './music-player.js', './wake-lock.js', './learning.js', './progress.js', './calibration.js', './quiz-data/junior_science.json', './quiz-data/junior_english.json', './quiz-data/junior_japanese.json', './quiz-data/junior_japanese_kanji.json', './quiz-data/junior_japanese_extended.json', './quiz-data/junior_math.json', './quiz-data/junior_social.json', './music-data/index.json',
     './math-variants.js', './choice-variants.js', './quiz-data/junior_expansion.json', './quiz-data/junior_english_core.json', './quiz-data/junior_english_extended.json', './quiz-data/junior_english_application.json', './quiz-data/junior_english_supplement.json', './quiz-data/junior_english_vocabulary2.json', './quiz-data/junior_english_new_horizon.json', './music-data/0001/Fallin_For_You_rhythm_beat2.json', './music-data/0002/the_mountain_rhythm_beat2.json'].map(versioned)];
 const AUDIO = ['./music-data/0001/Fallin_For_You.mp3', './music-data/0002/the_mountain-american-western-country-496543.mp3'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE.map(url => new Request(url, { cache: 'reload' })))).then(() => self.skipWaiting())));

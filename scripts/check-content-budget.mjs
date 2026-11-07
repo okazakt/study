@@ -44,7 +44,11 @@ for(const item of items){
   const rowHeights=[];
   for(let i=0;i<4;i+=columns)rowHeights.push(Math.max(columns===4?64:54,...q.choices.slice(i,i+columns).map(s=>lines(s,choiceCapacity)*23.2+16)));
   const height=24+14+15+lines(q.task,budget.panelTextWidthPx/18)*29.7+17+lines(q.prompt,budget.panelTextWidthPx/22)*36.3+26+rowHeights.reduce((a,b)=>a+b,0)+(rowHeights.length-1)*5+(q.blankIndex?lines(q.targetLabel,budget.panelTextWidthPx/13)*21.5+14:0);
-  if(height>budget.estimatedPanelHeightLimit)issues.push(`estimated-height:${Math.ceil(height)}>${budget.estimatedPanelHeightLimit}`);
+  // Reuse a measured text-only envelope; never waive limits for diagrams/images.
+  const measured={...Object.fromEntries(Object.entries(fields).map(([name,text])=>[name,chars(text)])),task:chars(q.task),choice:Math.max(...q.choices.map(chars)),combined};
+  const reviewed=!(q.diagram||item.image||item.figure||item.diagram)&&(budget.reviewedTextProfiles||[]).find(p=>p.subject===item.subject&&p.profiles.includes(profile)&&Object.entries(p.maxima).every(([key,max])=>measured[key]<=max));
+  const heightLimit=reviewed?.estimatedPanelHeightLimit??budget.estimatedPanelHeightLimit;
+  if(height>heightLimit)issues.push(`estimated-height:${Math.ceil(height)}>${heightLimit}`);
   if(q.diagram||item.image||item.figure||item.diagram)issues.push('image-or-diagram-profile-review');
   if(issues.length)reviewRequired.push({sourceId:item.id,questionId:q.id,profile,issues});
  }

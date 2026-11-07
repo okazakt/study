@@ -1,0 +1,1410 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "0.66.0",
+  "cases": [
+    {
+      "id": "jr_jp_core_614e764f0f83:japanese_definition",
+      "school_level": "中学",
+      "grade": "中3",
+      "subject": "国語",
+      "field": "熟語・四字熟語",
+      "unit": "四字熟語",
+      "kind": "idiom",
+      "content_batch": "japanese-core-20261107",
+      "term": "百発百中",
+      "definition": "狙いが全て当たること。",
+      "term_dummies": [
+        "我田引水",
+        "画竜点睛",
+        "喜怒哀楽"
+      ],
+      "definition_dummies": [
+        "自分に都合がよいように物事を取り計らうこと。",
+        "最後の大切な仕上げを加え、全体を完成させること。",
+        "喜び・怒り・悲しみ・楽しみという感情。"
+      ],
+      "note": "百発百中：狙いが全て当たること。",
+      "sourceId": "jr_jp_core_614e764f0f83",
+      "mode": "japanese_definition",
+      "prompt": "百発百中",
+      "answer": "狙いが全て当たること。",
+      "choices": [
+        "狙いが全て当たること。",
+        "最後の大切な仕上げを加え、全体を完成させること。",
+        "自分に都合がよいように物事を取り計らうこと。",
+        "喜び・怒り・悲しみ・楽しみという感情。"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "この熟語の意味を選ぼう",
+      "reviewLabel": "百発百中"
+    },
+    {
+      "id": "jr_jp_core_d597035303c4:blank:1",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "現代文文法",
+      "unit": "表現技法",
+      "kind": "grammar",
+      "content_batch": "japanese-core-20261107",
+      "term": "擬人法",
+      "term_dummies": [
+        "直喩",
+        "隠喩",
+        "倒置法"
+      ],
+      "explanation_template": "「風がささやく」のように、人でないものを{{1}}表す表現。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "人にたとえて",
+          "dummies": [
+            "数字に直して",
+            "否定して",
+            "順番を逆にして"
+          ]
+        }
+      ],
+      "note": "人の動作や感情を、自然や物に当てはめる。",
+      "cloze_context": "擬人法",
+      "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。",
+      "sourceId": "jr_jp_core_d597035303c4",
+      "mode": "term_to_explanation",
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 1,
+      "continuation": false,
+      "answer": "人にたとえて",
+      "choices": [
+        "人にたとえて",
+        "否定して",
+        "数字に直して",
+        "順番を逆にして"
+      ],
+      "correct": 0,
+      "segments": [
+        {
+          "text": "「風がささやく」のように、人でないものを"
+        },
+        {
+          "text": "？",
+          "state": "active",
+          "index": 1
+        },
+        {
+          "text": "表す表現。"
+        }
+      ],
+      "prompt": "「風がささやく」のように、人でないものを？表す表現。",
+      "context": "擬人法",
+      "task": "「擬人法」の説明を完成させよう",
+      "targetLabel": "強調された？に入る語句を回答（1 / 1）",
+      "reviewLabel": "擬人法 · ？（1 / 1）"
+    },
+    {
+      "id": "jr_jp_core_37a1241d6465:choice",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "現代文文法",
+      "unit": "語彙と語種",
+      "kind": "choice",
+      "content_batch": "japanese-core-20261107",
+      "prompt": "語の辞書的な意味と文脈上の意味について適切なのは？",
+      "answer": "文脈で使われる意味を確かめる",
+      "dummies": [
+        "辞書の最初の意味だけ使う",
+        "常に反対の意味で読む",
+        "文字数だけで決める"
+      ],
+      "note": "多義語などは、前後の文とのつながりから適切な意味を選ぶ。",
+      "task": "適切なものを選ぼう",
+      "sourceId": "jr_jp_core_37a1241d6465",
+      "mode": "learning_point",
+      "term": "語の辞書的な意味と文脈上の意味について適切なのは？",
+      "context": "",
+      "choices": [
+        "文脈で使われる意味を確かめる",
+        "文字数だけで決める",
+        "辞書の最初の意味だけ使う",
+        "常に反対の意味で読む"
+      ],
+      "correct": 0,
+      "reviewLabel": "語の辞書的な意味と文脈上の意味について適切なのは？"
+    },
+    {
+      "id": "jr_jp_core_ce8cdcd6749a:choice",
+      "school_level": "中学",
+      "grade": "中1",
+      "subject": "国語",
+      "field": "現代文文法",
+      "unit": "表現と敬語",
+      "kind": "choice",
+      "content_batch": "japanese-core-20261107",
+      "prompt": "「ご協力ください」のように依頼するとき、大切なのは？",
+      "answer": "相手や場に合う表現を選ぶ",
+      "dummies": [
+        "敬語を多く重ねる",
+        "相手を必ず命令形で呼ぶ",
+        "全ての名詞に御を付ける"
+      ],
+      "note": "敬語の形だけでなく、相手との関係や場面に配慮する。",
+      "task": "適切なものを選ぼう",
+      "sourceId": "jr_jp_core_ce8cdcd6749a",
+      "mode": "learning_point",
+      "term": "「ご協力ください」のように依頼するとき、大切なのは？",
+      "context": "",
+      "choices": [
+        "相手や場に合う表現を選ぶ",
+        "全ての名詞に御を付ける",
+        "敬語を多く重ねる",
+        "相手を必ず命令形で呼ぶ"
+      ],
+      "correct": 0,
+      "reviewLabel": "「ご協力ください」のように依頼するとき、大切なのは？"
+    },
+    {
+      "id": "jr_jp_core_b97564f7e3c0:japanese_definition",
+      "school_level": "中学",
+      "grade": "中3",
+      "subject": "国語",
+      "field": "熟語・四字熟語",
+      "unit": "四字熟語",
+      "kind": "idiom",
+      "content_batch": "japanese-core-20261107",
+      "term": "一石二鳥",
+      "definition": "一つの行動で二つの利益を得ること。",
+      "term_dummies": [
+        "大器晩成",
+        "右往左往",
+        "百戦錬磨"
+      ],
+      "definition_dummies": [
+        "大人物になる人は、完成までに長い時間がかかるということ。",
+        "混乱して、あちらこちらへ動き回ること。",
+        "多くの実戦や経験を重ね、十分に鍛えられていること。"
+      ],
+      "note": "一石二鳥：一つの行動で二つの利益を得ること。",
+      "sourceId": "jr_jp_core_b97564f7e3c0",
+      "mode": "japanese_definition",
+      "prompt": "一石二鳥",
+      "answer": "一つの行動で二つの利益を得ること。",
+      "choices": [
+        "一つの行動で二つの利益を得ること。",
+        "混乱して、あちらこちらへ動き回ること。",
+        "大人物になる人は、完成までに長い時間がかかるということ。",
+        "多くの実戦や経験を重ね、十分に鍛えられていること。"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "この熟語の意味を選ぼう",
+      "reviewLabel": "一石二鳥"
+    },
+    {
+      "id": "jr_jp_core_83869024c608:japanese_definition",
+      "school_level": "中学",
+      "grade": "中3",
+      "subject": "国語",
+      "field": "熟語・四字熟語",
+      "unit": "四字熟語",
+      "kind": "idiom",
+      "content_batch": "japanese-core-20261107",
+      "term": "馬耳東風",
+      "definition": "人の意見を聞き流し、気に留めないこと。",
+      "term_dummies": [
+        "画竜点睛",
+        "起承転結",
+        "大器晩成"
+      ],
+      "definition_dummies": [
+        "最後の大切な仕上げを加え、全体を完成させること。",
+        "物事や文章を、起こし・受け・変化・結びで構成すること。",
+        "大人物になる人は、完成までに長い時間がかかるということ。"
+      ],
+      "note": "馬耳東風：人の意見を聞き流し、気に留めないこと。",
+      "sourceId": "jr_jp_core_83869024c608",
+      "mode": "japanese_definition",
+      "prompt": "馬耳東風",
+      "answer": "人の意見を聞き流し、気に留めないこと。",
+      "choices": [
+        "人の意見を聞き流し、気に留めないこと。",
+        "物事や文章を、起こし・受け・変化・結びで構成すること。",
+        "最後の大切な仕上げを加え、全体を完成させること。",
+        "大人物になる人は、完成までに長い時間がかかるということ。"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "この熟語の意味を選ぼう",
+      "reviewLabel": "馬耳東風"
+    },
+    {
+      "id": "jr_jp_core_e48f144e3a36",
+      "school_level": "中学",
+      "grade": "中2",
+      "subject": "国語",
+      "field": "古文文法",
+      "unit": "古典の文法",
+      "kind": "grammar",
+      "content_batch": "japanese-core-20261107",
+      "term": "詠嘆の「けり」",
+      "term_dummies": [
+        "打消の「ず」",
+        "過去の「き」",
+        "完了の「ぬ」"
+      ],
+      "explanation_template": "和歌の文末などで「けり」が、新しく気づいたことへの{{1}}を表す場合がある。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "感動",
+          "dummies": [
+            "命令",
+            "禁止",
+            "打消"
+          ]
+        }
+      ],
+      "note": "「けり」には過去と詠嘆の用法がある。常に詠嘆とは限らない。",
+      "cloze_context": "詠嘆の「けり」",
+      "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。",
+      "sourceId": "jr_jp_core_e48f144e3a36",
+      "mode": "explanation_to_term",
+      "answer": "詠嘆の「けり」",
+      "prompt": "和歌の文末などで「けり」が、新しく気づいたことへの感動を表す場合がある。",
+      "choices": [
+        "詠嘆の「けり」",
+        "過去の「き」",
+        "打消の「ず」",
+        "完了の「ぬ」"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "次の説明にあてはまる用語を選ぼう",
+      "reviewLabel": "詠嘆の「けり」"
+    }
+  ],
+  "measurements": [
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_614e764f0f83:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 416,
+          "scroll": 416,
+          "top": 180,
+          "bottom": 598.484375
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_614e764f0f83:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 388,
+          "scroll": 388,
+          "top": 180,
+          "bottom": 570.484375
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_d597035303c4:blank:1",
+      "sizes": {
+        "panel": {
+          "height": 406,
+          "scroll": 406,
+          "top": 180,
+          "bottom": 587.828125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_d597035303c4:blank:1",
+      "sizes": {
+        "panel": {
+          "height": 378,
+          "scroll": 378,
+          "top": 180,
+          "bottom": 559.828125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_37a1241d6465:choice",
+      "sizes": {
+        "panel": {
+          "height": 396,
+          "scroll": 396,
+          "top": 180,
+          "bottom": 578.328125
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_37a1241d6465:choice",
+      "sizes": {
+        "panel": {
+          "height": 368,
+          "scroll": 368,
+          "top": 180,
+          "bottom": 550.328125
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_ce8cdcd6749a:choice",
+      "sizes": {
+        "panel": {
+          "height": 373,
+          "scroll": 373,
+          "top": 180,
+          "bottom": 555.328125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_ce8cdcd6749a:choice",
+      "sizes": {
+        "panel": {
+          "height": 345,
+          "scroll": 345,
+          "top": 180,
+          "bottom": 527.328125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_b97564f7e3c0:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 393,
+          "scroll": 393,
+          "top": 180,
+          "bottom": 575.296875
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_b97564f7e3c0:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 365,
+          "scroll": 365,
+          "top": 180,
+          "bottom": 547.296875
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_83869024c608:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 416,
+          "scroll": 416,
+          "top": 180,
+          "bottom": 598.484375
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_83869024c608:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 388,
+          "scroll": 388,
+          "top": 180,
+          "bottom": 570.484375
+        },
+        "choices": [
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 127,
+            "sw": 127,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": false,
+      "id": "jr_jp_core_e48f144e3a36",
+      "sizes": {
+        "panel": {
+          "height": 416,
+          "scroll": 416,
+          "top": 180,
+          "bottom": 598.125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "focus": true,
+      "id": "jr_jp_core_e48f144e3a36",
+      "sizes": {
+        "panel": {
+          "height": 388,
+          "scroll": 388,
+          "top": 180,
+          "bottom": 570.125
+        },
+        "choices": [
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 60,
+            "sw": 60,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_614e764f0f83:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 352,
+          "scroll": 352,
+          "top": 180,
+          "bottom": 534.109375
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_614e764f0f83:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 342,
+          "scroll": 342,
+          "top": 180,
+          "bottom": 524.109375
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_d597035303c4:blank:1",
+      "sizes": {
+        "panel": {
+          "height": 299,
+          "scroll": 299,
+          "top": 180,
+          "bottom": 480.65625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_d597035303c4:blank:1",
+      "sizes": {
+        "panel": {
+          "height": 289,
+          "scroll": 289,
+          "top": 180,
+          "bottom": 470.65625
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_37a1241d6465:choice",
+      "sizes": {
+        "panel": {
+          "height": 342,
+          "scroll": 342,
+          "top": 180,
+          "bottom": 524.03125
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_37a1241d6465:choice",
+      "sizes": {
+        "panel": {
+          "height": 332,
+          "scroll": 332,
+          "top": 180,
+          "bottom": 514.03125
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_ce8cdcd6749a:choice",
+      "sizes": {
+        "panel": {
+          "height": 296,
+          "scroll": 296,
+          "top": 180,
+          "bottom": 477.84375
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_ce8cdcd6749a:choice",
+      "sizes": {
+        "panel": {
+          "height": 286,
+          "scroll": 286,
+          "top": 180,
+          "bottom": 467.84375
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 86,
+            "sh": 86
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_b97564f7e3c0:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 375,
+          "scroll": 375,
+          "top": 180,
+          "bottom": 557.296875
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_b97564f7e3c0:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 365,
+          "scroll": 365,
+          "top": 180,
+          "bottom": 547.296875
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_83869024c608:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 375,
+          "scroll": 375,
+          "top": 180,
+          "bottom": 557.296875
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_83869024c608:japanese_definition",
+      "sizes": {
+        "panel": {
+          "height": 365,
+          "scroll": 365,
+          "top": 180,
+          "bottom": 547.296875
+        },
+        "choices": [
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 86,
+            "sh": 86
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          },
+          {
+            "w": 162,
+            "sw": 162,
+            "h": 109,
+            "sh": 109
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": false,
+      "id": "jr_jp_core_e48f144e3a36",
+      "sizes": {
+        "panel": {
+          "height": 309,
+          "scroll": 309,
+          "top": 180,
+          "bottom": 490.953125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "focus": true,
+      "id": "jr_jp_core_e48f144e3a36",
+      "sizes": {
+        "panel": {
+          "height": 299,
+          "scroll": 299,
+          "top": 180,
+          "bottom": 480.953125
+        },
+        "choices": [
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          },
+          {
+            "w": 77,
+            "sw": 77,
+            "h": 62,
+            "sh": 62
+          }
+        ],
+        "overflow": false
+      }
+    }
+  ],
+  "scope": "Only height-estimate exceptions of this addition. Text-only; no new layout or font changes. Limits remain conditional on the recorded field/combined envelope."
+}

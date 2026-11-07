@@ -1,0 +1,6689 @@
+[
+  {
+    "id": "jr_jp_core_7eb792e9d664",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "文節",
+    "term_dummies": [
+      "単語",
+      "文",
+      "段落"
+    ],
+    "explanation_template": "文を不自然にならない程度に、できるだけ{{1}}区切った単位。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "短く",
+        "dummies": [
+          "長く",
+          "均等に",
+          "五音ずつに"
+        ]
+      }
+    ],
+    "note": "文節は「ネ」などを入れて確かめる。単語とは区別する。",
+    "cloze_context": "文節",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_92c090491d6d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "単語",
+    "term_dummies": [
+      "文節",
+      "文",
+      "段落"
+    ],
+    "explanation_template": "言葉を、それ以上分けると意味や働きが失われる{{1}}の単位に分けたもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "最小",
+        "dummies": [
+          "最大",
+          "五音",
+          "段落"
+        ]
+      }
+    ],
+    "note": "「私は」は「私」「は」の二単語で一文節。",
+    "cloze_context": "単語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_76bd6f015d49",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "主語",
+    "term_dummies": [
+      "述語",
+      "修飾語",
+      "接続語"
+    ],
+    "explanation_template": "文の中で「{{1}}」に当たる文節。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "何が・誰が",
+        "dummies": [
+          "どうする",
+          "どんな",
+          "しかし"
+        ]
+      }
+    ],
+    "note": "主語と述語の対応を確かめる。",
+    "cloze_context": "主語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_da42cbe7cde5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "述語",
+    "term_dummies": [
+      "主語",
+      "修飾語",
+      "独立語"
+    ],
+    "explanation_template": "文の中で「どうする・どんなだ・{{1}}」に当たる文節。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "何だ",
+        "dummies": [
+          "誰が",
+          "どんな",
+          "しかし"
+        ]
+      }
+    ],
+    "note": "述語は主語について説明する。",
+    "cloze_context": "述語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_a5e11a376c3d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "連体修飾語",
+    "term_dummies": [
+      "連用修飾語",
+      "接続語",
+      "独立語"
+    ],
+    "explanation_template": "「赤い花」の「赤い」のように、{{1}}を詳しく説明する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "体言",
+        "dummies": [
+          "用言",
+          "接続語",
+          "助詞"
+        ]
+      }
+    ],
+    "note": "体言は主に名詞。何を修飾しているかを確認する。",
+    "cloze_context": "連体修飾語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_f41c19bcf38e",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "連用修飾語",
+    "term_dummies": [
+      "連体修飾語",
+      "主語",
+      "独立語"
+    ],
+    "explanation_template": "「速く走る」の「速く」のように、主に{{1}}を詳しく説明する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "用言",
+        "dummies": [
+          "体言",
+          "接続語",
+          "助詞"
+        ]
+      }
+    ],
+    "note": "用言は動詞・形容詞・形容動詞。",
+    "cloze_context": "連用修飾語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_ed4ca3cfe82f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "並立の関係",
+    "term_dummies": [
+      "主述の関係",
+      "修飾の関係",
+      "補助の関係"
+    ],
+    "explanation_template": "「父と母」のように、二つ以上の文節が{{1}}の立場で並ぶ関係。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "対等",
+        "dummies": [
+          "主語と述語",
+          "修飾と被修飾",
+          "原因と結果"
+        ]
+      }
+    ],
+    "note": "「父と」「母が」のように助詞が付いていても、意味の上で対等に並ぶ場合がある。",
+    "cloze_context": "並立の関係",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_1de80644823f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "補助の関係",
+    "term_dummies": [
+      "並立の関係",
+      "主述の関係",
+      "修飾の関係"
+    ],
+    "explanation_template": "「読んでいる」の「いる」のように、前の文節に{{1}}を添える関係。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "補助的な意味",
+        "dummies": [
+          "対等な主題",
+          "反対の主張",
+          "新しい主語"
+        ]
+      }
+    ],
+    "note": "「読んで」と「いる」は文節を分け、後ろが意味を補う。",
+    "cloze_context": "補助の関係",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_95d209b5a649",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "自立語",
+    "term_dummies": [
+      "付属語",
+      "助詞",
+      "助動詞"
+    ],
+    "explanation_template": "それだけで{{1}}を作ることができる単語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "文節",
+        "dummies": [
+          "必ず一文",
+          "必ず段落",
+          "文章全体"
+        ]
+      }
+    ],
+    "note": "名詞や動詞などは自立語。活用の有無とは別の分類。",
+    "cloze_context": "自立語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_8422ac7dcfd2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "付属語",
+    "term_dummies": [
+      "自立語",
+      "体言",
+      "用言"
+    ],
+    "explanation_template": "それだけでは文節を作れず、{{1}}に付く単語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自立語",
+        "dummies": [
+          "句読点だけ",
+          "段落だけ",
+          "見出しだけ"
+        ]
+      }
+    ],
+    "note": "助詞と助動詞が付属語に当たる。",
+    "cloze_context": "付属語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_f715ee84a094",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "体言",
+    "term_dummies": [
+      "用言",
+      "付属語",
+      "接続語"
+    ],
+    "explanation_template": "自立語で活用がなく、文の{{1}}になることができる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "主語",
+        "dummies": [
+          "助詞",
+          "活用語尾",
+          "接続助詞"
+        ]
+      }
+    ],
+    "note": "体言は名詞。代名詞や数詞も名詞に含める。",
+    "cloze_context": "体言",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_925cc266ef98",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "用言",
+    "term_dummies": [
+      "体言",
+      "付属語",
+      "連体詞"
+    ],
+    "explanation_template": "自立語のうち活用があり、それだけで{{1}}になることができる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "述語",
+        "dummies": [
+          "助詞",
+          "接続助詞",
+          "活用語尾"
+        ]
+      }
+    ],
+    "note": "動詞・形容詞・形容動詞をまとめて用言という。",
+    "cloze_context": "用言",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_9d706fcac34d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "動詞",
+    "term_dummies": [
+      "形容詞",
+      "形容動詞",
+      "名詞"
+    ],
+    "explanation_template": "動作や存在を表し、言い切りの形が{{1}}の音で終わる用言。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ウ段",
+        "dummies": [
+          "ア段",
+          "イ段",
+          "エ段"
+        ]
+      }
+    ],
+    "note": "「走る」「ある」など。品詞は意味だけでなく形も確かめる。",
+    "cloze_context": "動詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_9324493771b4",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "形容詞",
+    "term_dummies": [
+      "形容動詞",
+      "動詞",
+      "連体詞"
+    ],
+    "explanation_template": "性質や状態を表し、言い切りの形が{{1}}で終わる用言。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "い",
+        "dummies": [
+          "だ",
+          "う",
+          "な"
+        ]
+      }
+    ],
+    "note": "「美しい」など。「きれいだ」は形容動詞。",
+    "cloze_context": "形容詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_0ecac0ca5bb4",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "形容動詞",
+    "term_dummies": [
+      "形容詞",
+      "動詞",
+      "副詞"
+    ],
+    "explanation_template": "性質や状態を表し、言い切りの形が主に{{1}}で終わる用言。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "だ",
+        "dummies": [
+          "い",
+          "う",
+          "を"
+        ]
+      }
+    ],
+    "note": "「静かだ」「きれいだ」など。「静かな」のように活用する。",
+    "cloze_context": "形容動詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_b1904df6a47f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "副詞",
+    "term_dummies": [
+      "連体詞",
+      "接続詞",
+      "感動詞"
+    ],
+    "explanation_template": "活用せず、主に{{1}}を修飾する自立語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "用言",
+        "dummies": [
+          "体言だけ",
+          "助詞だけ",
+          "句読点だけ"
+        ]
+      }
+    ],
+    "note": "「ゆっくり」「とても」など。「とても」は形容詞などを修飾する。",
+    "cloze_context": "副詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_54255907f610",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "接続詞",
+    "term_dummies": [
+      "副詞",
+      "連体詞",
+      "感動詞"
+    ],
+    "explanation_template": "前後の文や語句をつなぎ、その{{1}}を示す自立語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "関係",
+        "dummies": [
+          "活用",
+          "主語だけ",
+          "文字数"
+        ]
+      }
+    ],
+    "note": "「しかし」「だから」「または」など。",
+    "cloze_context": "接続詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_50e5e9a74045",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "感動詞",
+    "term_dummies": [
+      "接続詞",
+      "副詞",
+      "連体詞"
+    ],
+    "explanation_template": "感動・呼びかけ・{{1}}などを表す、活用しない自立語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "応答",
+        "dummies": [
+          "動作の時制",
+          "主述の対応",
+          "名詞の性質"
+        ]
+      }
+    ],
+    "note": "「ああ」「おい」「はい」など。独立語になる。",
+    "cloze_context": "感動詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_4c0e2fc086cc",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "未然形",
+    "term_dummies": [
+      "連用形",
+      "連体形",
+      "命令形"
+    ],
+    "explanation_template": "「書かない」の「書か」のように、打消の{{1}}などに続く活用形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ない",
+        "dummies": [
+          "ます",
+          "とき",
+          "ば"
+        ]
+      }
+    ],
+    "note": "五段動詞では「う」に続く未然形がオ段になる場合もある。",
+    "cloze_context": "未然形",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_a6c4afd746e8",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "連用形",
+    "term_dummies": [
+      "未然形",
+      "連体形",
+      "仮定形"
+    ],
+    "explanation_template": "「書きます」の「書き」のように、{{1}}などに続く活用形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ます",
+        "dummies": [
+          "ない",
+          "とき",
+          "ば"
+        ]
+      }
+    ],
+    "note": "「書いた」の「書い」も音便を起こした連用形。",
+    "cloze_context": "連用形",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_6b9d42856636",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "終止形",
+    "term_dummies": [
+      "未然形",
+      "連用形",
+      "仮定形"
+    ],
+    "explanation_template": "「鳥が鳴く。」の「鳴く」のように、文を{{1}}ときの活用形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "言い切る",
+        "dummies": [
+          "名詞に続ける",
+          "ばに続ける",
+          "命令する"
+        ]
+      }
+    ],
+    "note": "終止形と連体形が同じ形の語も、働きで区別する。",
+    "cloze_context": "終止形",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_022afeb61c8b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "連体形",
+    "term_dummies": [
+      "連用形",
+      "未然形",
+      "命令形"
+    ],
+    "explanation_template": "「読む本」の「読む」のように、{{1}}に続く活用形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "体言",
+        "dummies": [
+          "ます",
+          "ない",
+          "ば"
+        ]
+      }
+    ],
+    "note": "名詞を修飾する形。「静かな部屋」の「静かな」も連体形。",
+    "cloze_context": "連体形",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_747fba773e16",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "仮定形",
+    "term_dummies": [
+      "未然形",
+      "連用形",
+      "命令形"
+    ],
+    "explanation_template": "「読めば」の「読め」のように、接続助詞{{1}}に続く活用形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ば",
+        "dummies": [
+          "と",
+          "て",
+          "が"
+        ]
+      }
+    ],
+    "note": "同じ「読め」でも「読め。」は命令形。後続する言葉を見る。",
+    "cloze_context": "仮定形",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_3c6e56d20ad5",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "命令形",
+    "term_dummies": [
+      "終止形",
+      "連体形",
+      "未然形"
+    ],
+    "explanation_template": "「早く読め。」の「読め」のように、{{1}}を表して言い切る活用形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "命令",
+        "dummies": [
+          "打消",
+          "過去",
+          "仮定"
+        ]
+      }
+    ],
+    "note": "「読めば」の「読め」は仮定形。形だけで判断しない。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答が記載されているため省略。"
+  },
+  {
+    "id": "jr_jp_core_dce64c5a2a94",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "五段活用",
+    "term_dummies": [
+      "上一段活用",
+      "下一段活用",
+      "カ行変格活用"
+    ],
+    "explanation_template": "活用語尾が、ア・イ・ウ・エ・{{1}}の五つの段に変化する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "オ",
+        "dummies": [
+          "カ",
+          "サ",
+          "ン"
+        ]
+      }
+    ],
+    "note": "「書く」は書か・書き・書く・書け・書こ、と変化する。",
+    "cloze_context": "五段活用",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_01d7ebafe1a3",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "上一段活用",
+    "term_dummies": [
+      "下一段活用",
+      "五段活用",
+      "サ行変格活用"
+    ],
+    "explanation_template": "「起きる」のように、活用語尾が主に{{1}}段で変化する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "イ",
+        "dummies": [
+          "エ",
+          "ア",
+          "オ"
+        ]
+      }
+    ],
+    "note": "起きない・起きますのように、打消と丁寧の形でも確認する。",
+    "cloze_context": "上一段活用",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_eebdbc700287",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "下一段活用",
+    "term_dummies": [
+      "上一段活用",
+      "五段活用",
+      "カ行変格活用"
+    ],
+    "explanation_template": "「受ける」のように、活用語尾が主に{{1}}段で変化する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "エ",
+        "dummies": [
+          "イ",
+          "ア",
+          "オ"
+        ]
+      }
+    ],
+    "note": "受けない・受けます。「切る」と「着る」は活用が異なる。",
+    "cloze_context": "下一段活用",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_d787c29cd956",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "カ行変格活用",
+    "term_dummies": [
+      "サ行変格活用",
+      "五段活用",
+      "上一段活用"
+    ],
+    "explanation_template": "動詞{{1}}だけが行う、不規則な活用。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "来る",
+        "dummies": [
+          "する",
+          "見る",
+          "書く"
+        ]
+      }
+    ],
+    "note": "こ・き・くる・くる・くれ・こい、と活用する。",
+    "cloze_context": "カ行変格活用",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_46d231c63076",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "サ行変格活用",
+    "term_dummies": [
+      "カ行変格活用",
+      "下一段活用",
+      "五段活用"
+    ],
+    "explanation_template": "「する」や「勉強する」のような{{1}}を含む動詞の不規則な活用。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "する",
+        "dummies": [
+          "来る",
+          "見る",
+          "受ける"
+        ]
+      }
+    ],
+    "note": "し・し・する・する・すれ・しろ（せよ）などと活用する。",
+    "cloze_context": "サ行変格活用",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_e615dbdc8cd0",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "イ音便",
+    "term_dummies": [
+      "促音便",
+      "撥音便",
+      "ウ音便"
+    ],
+    "explanation_template": "「書く」が「書いた」となるとき、連用形の音が{{1}}に変化する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "い",
+        "dummies": [
+          "っ",
+          "ん",
+          "う"
+        ]
+      }
+    ],
+    "note": "連用形「書き」の「き」が「い」に変化したもの。",
+    "cloze_context": "イ音便",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_99c562cf378c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "促音便",
+    "term_dummies": [
+      "イ音便",
+      "撥音便",
+      "ウ音便"
+    ],
+    "explanation_template": "「買う」が「買った」となるとき、連用形の音が{{1}}に変化する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "っ",
+        "dummies": [
+          "い",
+          "ん",
+          "う"
+        ]
+      }
+    ],
+    "note": "小さい「っ」になる音便。買い→買っ。",
+    "cloze_context": "促音便",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_da9bfc05a7c3",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "撥音便",
+    "term_dummies": [
+      "促音便",
+      "イ音便",
+      "ウ音便"
+    ],
+    "explanation_template": "「読む」が「読んだ」となるとき、連用形の音が{{1}}に変化する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ん",
+        "dummies": [
+          "っ",
+          "い",
+          "う"
+        ]
+      }
+    ],
+    "note": "「ん」になる音便。読み→読ん。",
+    "cloze_context": "撥音便",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_04a0b9153789",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "格助詞",
+    "term_dummies": [
+      "接続助詞",
+      "終助詞",
+      "副助詞"
+    ],
+    "explanation_template": "「本を読む」の「を」のように、体言に付いて他の語との{{1}}を示す助詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "関係",
+        "dummies": [
+          "活用",
+          "丁寧さだけ",
+          "詠嘆だけ"
+        ]
+      }
+    ],
+    "note": "「が・の・を・に・へ・と・より・から・で」など。",
+    "cloze_context": "格助詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_cd4aeaed794f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "接続助詞",
+    "term_dummies": [
+      "格助詞",
+      "終助詞",
+      "副助詞"
+    ],
+    "explanation_template": "「雨が降るので休む」の「ので」のように、前後を{{1}}助詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "つなぐ",
+        "dummies": [
+          "言い切る",
+          "数える",
+          "命令する"
+        ]
+      }
+    ],
+    "note": "理由・条件・逆接などの関係を示す。",
+    "cloze_context": "接続助詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_231f3f30f8c9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "終助詞",
+    "term_dummies": [
+      "格助詞",
+      "接続助詞",
+      "副助詞"
+    ],
+    "explanation_template": "「行こうよ」の「よ」のように、主に{{1}}に付いて気持ちなどを添える助詞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "文末",
+        "dummies": [
+          "名詞の直前",
+          "語幹の内部",
+          "活用語尾の前"
+        ]
+      }
+    ],
+    "note": "「ね」「よ」「か」など。文中での働きで分類する。",
+    "cloze_context": "終助詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_065c602e75bb",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "受身",
+    "term_dummies": [
+      "使役",
+      "可能",
+      "自発"
+    ],
+    "explanation_template": "「弟に本を読まれた」のように、他から動作を{{1}}ことを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "受ける",
+        "dummies": [
+          "行わせる",
+          "行える",
+          "自然に行う"
+        ]
+      }
+    ],
+    "note": "「れる・られる」は受身以外の意味もあるため、文脈で判断する。",
+    "cloze_context": "受身",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_764bd9148557",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "使役",
+    "term_dummies": [
+      "受身",
+      "可能",
+      "自発"
+    ],
+    "explanation_template": "「妹に本を読ませる」のように、他に動作を{{1}}ことを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "行わせる",
+        "dummies": [
+          "受ける",
+          "行える",
+          "自然に行う"
+        ]
+      }
+    ],
+    "note": "助動詞「せる・させる」が使われる。",
+    "cloze_context": "使役",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_e1a56b21caaa",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "可能",
+    "term_dummies": [
+      "受身",
+      "使役",
+      "自発"
+    ],
+    "explanation_template": "「一人で起きられる」のように、その動作を{{1}}ことを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "行える",
+        "dummies": [
+          "受ける",
+          "行わせる",
+          "思わず行う"
+        ]
+      }
+    ],
+    "note": "「られる」の可能と尊敬・受身・自発を区別する。",
+    "cloze_context": "可能",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_e492c4cac4af",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "自発",
+    "term_dummies": [
+      "受身",
+      "使役",
+      "可能"
+    ],
+    "explanation_template": "「故郷が思い出される」のように、動作や心の動きが{{1}}起こることを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自然に",
+        "dummies": [
+          "他人の命令で",
+          "意図して必ず",
+          "条件付きでだけ"
+        ]
+      }
+    ],
+    "note": "「れる・られる」の意味は、主語や動作を手掛かりに判断する。",
+    "cloze_context": "自発",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_e682e145280c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "二重敬語",
+    "term_dummies": [
+      "尊敬語",
+      "謙譲語",
+      "丁寧語"
+    ],
+    "explanation_template": "「おっしゃられる」のように、同じ種類の敬語を{{1}}用いた表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "重ねて",
+        "dummies": [
+          "省いて",
+          "逆に",
+          "一度だけ"
+        ]
+      }
+    ],
+    "note": "一般には「おっしゃる」で十分。「お伺いする」など定着した形もある。",
+    "cloze_context": "二重敬語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_5bd4610389f5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "直喩",
+    "term_dummies": [
+      "隠喩",
+      "擬人法",
+      "倒置法"
+    ],
+    "explanation_template": "「雪のような肌」のように、「ようだ」などを{{1}}たとえる表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "使って",
+        "dummies": [
+          "使わずに",
+          "逆に並べて",
+          "繰り返して"
+        ]
+      }
+    ],
+    "note": "たとえるものと、たとえられるものの共通点を捉える。",
+    "cloze_context": "直喩",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_396d1c29ff13",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "隠喩",
+    "term_dummies": [
+      "直喩",
+      "擬人法",
+      "反復法"
+    ],
+    "explanation_template": "「彼はチームの太陽だ」のように、「ようだ」などを{{1}}たとえる表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "使わずに",
+        "dummies": [
+          "使って",
+          "必ず繰り返して",
+          "最後に置いて"
+        ]
+      }
+    ],
+    "note": "暗喩ともいう。文脈から共通する性質を捉える。",
+    "cloze_context": "隠喩",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_d597035303c4",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "擬人法",
+    "term_dummies": [
+      "直喩",
+      "隠喩",
+      "倒置法"
+    ],
+    "explanation_template": "「風がささやく」のように、人でないものを{{1}}表す表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "人にたとえて",
+        "dummies": [
+          "数字に直して",
+          "否定して",
+          "順番を逆にして"
+        ]
+      }
+    ],
+    "note": "人の動作や感情を、自然や物に当てはめる。",
+    "cloze_context": "擬人法",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_2af7950f964f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "倒置法",
+    "term_dummies": [
+      "体言止め",
+      "反復法",
+      "擬人法"
+    ],
+    "explanation_template": "「美しいな、この花は」のように、普通の{{1}}を入れ替える表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "語順",
+        "dummies": [
+          "音数",
+          "文字の字体",
+          "段落数"
+        ]
+      }
+    ],
+    "note": "語順を変えて、強調や余韻を生む。",
+    "cloze_context": "倒置法",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_d51739f34a29",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "体言止め",
+    "term_dummies": [
+      "倒置法",
+      "反復法",
+      "直喩"
+    ],
+    "explanation_template": "「見渡す限りの青い海。」のように、文末を{{1}}で止める表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "名詞",
+        "dummies": [
+          "動詞",
+          "接続詞",
+          "感動詞"
+        ]
+      }
+    ],
+    "note": "余韻や強調などの効果を、具体的な文で確かめる。",
+    "cloze_context": "体言止め",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_fab1b100d430",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "反復法",
+    "term_dummies": [
+      "倒置法",
+      "体言止め",
+      "擬人法"
+    ],
+    "explanation_template": "同じ言葉や似た表現を{{1}}用いて、印象やリズムを強める表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "繰り返し",
+        "dummies": [
+          "省略して",
+          "逆順にして",
+          "数字だけにして"
+        ]
+      }
+    ],
+    "note": "反復の効果は、繰り返される言葉と文脈に即して読む。",
+    "cloze_context": "反復法",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_6e59aab9cca6",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "歴史的仮名遣い",
+    "term_dummies": [
+      "現代仮名遣い",
+      "送り仮名",
+      "ローマ字"
+    ],
+    "explanation_template": "古文に見られる「けふ」「いふ」などの、{{1}}の仮名の使い方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "昔",
+        "dummies": [
+          "現代だけ",
+          "外国語だけ",
+          "数字だけ"
+        ]
+      }
+    ],
+    "note": "発音に直すと「けふ」は「きょう」、「いふ」は「いう」。",
+    "cloze_context": "歴史的仮名遣い",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_4a1991d55d42",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "ハ行転呼",
+    "term_dummies": [
+      "係り結び",
+      "音便",
+      "句切れ"
+    ],
+    "explanation_template": "語中・語尾のハ行の音が、主に{{1}}の音へ変わった現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ワ行",
+        "dummies": [
+          "カ行",
+          "サ行",
+          "マ行"
+        ]
+      }
+    ],
+    "note": "「かは」は「かわ」、「いふ」は「いう」と読む。全てのハ行が変わるわけではない。",
+    "cloze_context": "ハ行転呼",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_a3aabc1f1ab8",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "古語の意味",
+    "term_dummies": [
+      "漢字の画数",
+      "送り仮名",
+      "現代語の綴り"
+    ],
+    "explanation_template": "同じ形でも、古語と現代語では{{1}}が異なることがある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "意味",
+        "dummies": [
+          "文字数だけ",
+          "濁点の数だけ",
+          "段落の位置だけ"
+        ]
+      }
+    ],
+    "note": "「おどろく」は古文で「目を覚ます」「気づく」などを表す。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答が記載されているため省略。"
+  },
+  {
+    "id": "jr_jp_core_f4179e17fea3",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "係助詞「こそ」",
+    "term_dummies": [
+      "係助詞「ぞ」",
+      "係助詞「なむ」",
+      "係助詞「や」"
+    ],
+    "explanation_template": "古文で、この係助詞を受ける文末は、基本的に{{1}}になる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "已然形",
+        "dummies": [
+          "連体形",
+          "未然形",
+          "命令形"
+        ]
+      }
+    ],
+    "note": "「ぞ・なむ・や・か」の結びは連体形。「こそ」は已然形。",
+    "cloze_context": "係助詞「こそ」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_21633fa55bd0",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "推量の助動詞「む」",
+    "term_dummies": [
+      "過去の助動詞「き」",
+      "完了の助動詞「ぬ」",
+      "打消の助動詞「ず」"
+    ],
+    "explanation_template": "古文で「む」は、主に推量や{{1}}などを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "意志",
+        "dummies": [
+          "打消",
+          "過去の実体験",
+          "断定だけ"
+        ]
+      }
+    ],
+    "note": "推量・意志など、主語や文脈から意味を判断する。",
+    "cloze_context": "推量の助動詞「む」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_e48f144e3a36",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "詠嘆の「けり」",
+    "term_dummies": [
+      "打消の「ず」",
+      "過去の「き」",
+      "完了の「ぬ」"
+    ],
+    "explanation_template": "和歌の文末などで「けり」が、新しく気づいたことへの{{1}}を表す場合がある。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "感動",
+        "dummies": [
+          "命令",
+          "禁止",
+          "打消"
+        ]
+      }
+    ],
+    "note": "「けり」には過去と詠嘆の用法がある。常に詠嘆とは限らない。",
+    "cloze_context": "詠嘆の「けり」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_5aad353b5e4d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "打消の「ぬ」",
+    "term_dummies": [
+      "完了の「ぬ」",
+      "過去の「き」",
+      "詠嘆の「けり」"
+    ],
+    "explanation_template": "「知らぬ」の「ぬ」は、打消の助動詞「ず」の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "連体形",
+        "dummies": [
+          "終止形",
+          "命令形",
+          "未然形"
+        ]
+      }
+    ],
+    "note": "「ぬ」は接続で区別する。「知ら」は未然形なので打消。",
+    "cloze_context": "打消の「ぬ」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_ee1e00a96c51",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "完了の「ぬ」",
+    "term_dummies": [
+      "打消の「ぬ」",
+      "推量の「む」",
+      "断定の「なり」"
+    ],
+    "explanation_template": "「咲きぬ」の「ぬ」は、動詞の{{1}}に接続して完了を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "連用形",
+        "dummies": [
+          "未然形",
+          "連体形",
+          "已然形"
+        ]
+      }
+    ],
+    "note": "「咲き」は連用形。打消の「ぬ」と接続を比べる。",
+    "cloze_context": "完了の「ぬ」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_b69a92690cd6",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "枕詞",
+    "term_dummies": [
+      "掛詞",
+      "序詞",
+      "縁語"
+    ],
+    "explanation_template": "特定の語を導くため、慣用的にその前に置く主に{{1}}の言葉。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "五音",
+        "dummies": [
+          "三音",
+          "七音",
+          "十音"
+        ]
+      }
+    ],
+    "note": "「ちはやぶる」が「神」を導くなど、結び付きが決まっている。",
+    "cloze_context": "枕詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_1cebec42aa2f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "掛詞",
+    "term_dummies": [
+      "枕詞",
+      "序詞",
+      "縁語"
+    ],
+    "explanation_template": "一つの言葉に、同じ音の{{1}}の意味を重ねる技法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "二つ",
+        "dummies": [
+          "一つだけ",
+          "反対の音だけ",
+          "五つ以上だけ"
+        ]
+      }
+    ],
+    "note": "例えば「松」と「待つ」。一つの音を両方の意味で読む。",
+    "cloze_context": "掛詞",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_bc95afabf38d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "縁語",
+    "term_dummies": [
+      "枕詞",
+      "掛詞",
+      "体言止め"
+    ],
+    "explanation_template": "一首の中に、意味の上で{{1}}のある言葉を取り合わせる技法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "関係",
+        "dummies": [
+          "反対の音だけ",
+          "同じ字数だけ",
+          "同じ濁点だけ"
+        ]
+      }
+    ],
+    "note": "「海・波・舟」のように、ある事柄を中心に関連する語が集まる。",
+    "cloze_context": "縁語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_6f7339ed76b3",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "切れ字",
+    "term_dummies": [
+      "季語",
+      "枕詞",
+      "掛詞"
+    ],
+    "explanation_template": "俳句で「や・かな・けり」などを用い、{{1}}や詠嘆を表す言葉。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "切れ目",
+        "dummies": [
+          "作者名",
+          "地名だけ",
+          "音数の合計"
+        ]
+      }
+    ],
+    "note": "切れ字と季語は別の働き。切れ字がない俳句もある。",
+    "cloze_context": "切れ字",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_2ccb9fc8a5d2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "季語",
+    "term_dummies": [
+      "切れ字",
+      "枕詞",
+      "掛詞"
+    ],
+    "explanation_template": "俳句などで、特定の{{1}}を感じさせる言葉。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "季節",
+        "dummies": [
+          "作者",
+          "読者",
+          "文字の字体"
+        ]
+      }
+    ],
+    "note": "「桜」は春、「雪」は冬など。句全体の情景に結び付けて読む。",
+    "cloze_context": "季語",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_fe122ed58cbd",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "訓読",
+    "term_dummies": [
+      "音読",
+      "翻訳だけ",
+      "返り点"
+    ],
+    "explanation_template": "漢文を、日本語の{{1}}に従って読むこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "語順",
+        "dummies": [
+          "字音の順だけ",
+          "画数の順",
+          "五十音順"
+        ]
+      }
+    ],
+    "note": "返り点や送り仮名などを手掛かりに、日本語として読む。",
+    "cloze_context": "訓読",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_f6f8f6225c1f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "返り点",
+    "term_dummies": [
+      "送り仮名",
+      "句読点",
+      "振り仮名"
+    ],
+    "explanation_template": "漢文を日本語で読むため、読む{{1}}を示す記号。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "順序",
+        "dummies": [
+          "発音だけ",
+          "意味だけ",
+          "文字の画数"
+        ]
+      }
+    ],
+    "note": "レ点、一二点などがある。送り仮名とは役割が異なる。",
+    "cloze_context": "返り点",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_c6743a4c6e7b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "送り仮名",
+    "term_dummies": [
+      "返り点",
+      "句点",
+      "読点"
+    ],
+    "explanation_template": "漢文の訓読で、活用語尾や助詞・助動詞などを{{1}}で補うもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "片仮名",
+        "dummies": [
+          "数字",
+          "ローマ字",
+          "返り点だけ"
+        ]
+      }
+    ],
+    "note": "送り仮名を手掛かりに、日本語の文として読む。",
+    "cloze_context": "送り仮名",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_88d79d47bc6c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "書き下し文",
+    "term_dummies": [
+      "白文",
+      "訓点文",
+      "漢詩"
+    ],
+    "explanation_template": "漢文を訓読の語順に並べ替え、助詞などを補って{{1}}で書いた文。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "日本語",
+        "dummies": [
+          "中国語の原順",
+          "数字だけ",
+          "片仮名だけ"
+        ]
+      }
+    ],
+    "note": "返り点は残さず、原文で仮名で読む助字などを適切に書き換える。",
+    "cloze_context": "書き下し文",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_405a9a5d9cc1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "白文",
+    "term_dummies": [
+      "書き下し文",
+      "訓点文",
+      "口語訳"
+    ],
+    "explanation_template": "返り点や送り仮名などの{{1}}が付いていない漢文。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "訓点",
+        "dummies": [
+          "漢字",
+          "意味",
+          "主語"
+        ]
+      }
+    ],
+    "note": "白文は漢字の原文。訓点が付いたものは訓点文。",
+    "cloze_context": "白文",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_800b334ff77c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "禁止",
+    "term_dummies": [
+      "否定",
+      "疑問",
+      "使役"
+    ],
+    "explanation_template": "漢文の「勿」「莫」などで、「{{1}}」という意味を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "〜するな",
+        "dummies": [
+          "〜しない",
+          "〜できる",
+          "〜させる"
+        ]
+      }
+    ],
+    "note": "禁止は動作を止める表現。単なる否定と区別する。",
+    "cloze_context": "禁止",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_51771fed7983",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "疑問",
+    "term_dummies": [
+      "反語",
+      "使役",
+      "比較"
+    ],
+    "explanation_template": "答えを求め、「{{1}}」などと問いかける表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "どうして〜か",
+        "dummies": [
+          "どうして〜かいやない",
+          "〜させる",
+          "〜のようだ"
+        ]
+      }
+    ],
+    "note": "疑問と反語は文脈や結論を見て区別する。",
+    "cloze_context": "疑問",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_a092ec2d4895",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "比較",
+    "term_dummies": [
+      "使役",
+      "否定",
+      "禁止"
+    ],
+    "explanation_template": "「A不如B」は、「AはBに{{1}}」と比べる表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "及ばない",
+        "dummies": [
+          "勝っている",
+          "似ている",
+          "従わせる"
+        ]
+      }
+    ],
+    "note": "「如かず」は及ばない、劣るの意味。",
+    "cloze_context": "比較",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_6180a3573c38",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "再読文字「将」",
+    "term_dummies": [
+      "再読文字「未」",
+      "否定の「不」",
+      "禁止の「勿」"
+    ],
+    "explanation_template": "「まさに〜{{1}}とす」と読み、今にもそうなろうとする意味を表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ん",
+        "dummies": [
+          "ず",
+          "べから",
+          "ざる"
+        ]
+      }
+    ],
+    "note": "「将」は最初に副詞として読み、後で助動詞としてもう一度読む。",
+    "cloze_context": "再読文字「将」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_741a3111b09b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "再読文字「当」",
+    "term_dummies": [
+      "再読文字「未」",
+      "再読文字「将」",
+      "否定の「不」"
+    ],
+    "explanation_template": "「まさに〜{{1}}し」と読み、当然・義務などを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "べ",
+        "dummies": [
+          "ず",
+          "んと",
+          "ざる"
+        ]
+      }
+    ],
+    "note": "「当」は文脈により当然・推量などの意味になる。",
+    "cloze_context": "再読文字「当」",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_7bbf6f7dcffd",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "絶句",
+    "term_dummies": [
+      "律詩",
+      "和歌",
+      "俳句"
+    ],
+    "explanation_template": "近体詩のうち、{{1}}から成る漢詩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "四句",
+        "dummies": [
+          "八句",
+          "五句",
+          "七句"
+        ]
+      }
+    ],
+    "note": "一句が五字なら五言絶句、七字なら七言絶句。",
+    "cloze_context": "絶句",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_a30578fb45f6",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "律詩",
+    "term_dummies": [
+      "絶句",
+      "和歌",
+      "俳句"
+    ],
+    "explanation_template": "近体詩のうち、{{1}}から成る漢詩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "八句",
+        "dummies": [
+          "四句",
+          "五句",
+          "七句"
+        ]
+      }
+    ],
+    "note": "一句が五字なら五言律詩、七字なら七言律詩。",
+    "cloze_context": "律詩",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_e7ed085fe6cc",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "押韻",
+    "term_dummies": [
+      "対句",
+      "倒置",
+      "体言止め"
+    ],
+    "explanation_template": "主に句末に、{{1}}の似た漢字を置く技法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "響き",
+        "dummies": [
+          "意味だけ",
+          "画数だけ",
+          "部首だけ"
+        ]
+      }
+    ],
+    "note": "絶句では主に第二句・第四句の末尾などで韻を踏む。",
+    "cloze_context": "押韻",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_30800ec6b97a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "grammar",
+    "content_batch": "japanese-core-20261107",
+    "term": "対句",
+    "term_dummies": [
+      "押韻",
+      "反復",
+      "比喩"
+    ],
+    "explanation_template": "語の対応や文の構造を{{1}}た二つの句による表現。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "そろえ",
+        "dummies": [
+          "必ず逆にし",
+          "必ず同音にし",
+          "全て省略し"
+        ]
+      }
+    ],
+    "note": "意味や品詞などの対応を一組ずつ捉える。",
+    "cloze_context": "対句",
+    "cloze_context_reason": "説明対象を特定するための用語。穴の正答そのものは含めない。"
+  },
+  {
+    "id": "jr_jp_core_28b68804262d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「私は学校へ行く。」の文節の区切りは？",
+    "answer": "私は／学校へ／行く",
+    "dummies": [
+      "私／は学校／へ行く",
+      "私は学校／へ／行く",
+      "私／は／学校へ行く"
+    ],
+    "note": "助詞は前の自立語に付く。「ネ」を入れて確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_957ef2ce5b66",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「花が美しい。」の述語は？",
+    "answer": "美しい",
+    "dummies": [
+      "花が",
+      "花",
+      "が"
+    ],
+    "note": "「花がどうだ」に答える「美しい」が述語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_753ca1a6460a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「青い空が広がる。」で「青い」が修飾するのは？",
+    "answer": "空が",
+    "dummies": [
+      "広がる",
+      "青い",
+      "文全体"
+    ],
+    "note": "どの空かを説明している。修飾語と被修飾語を結ぶ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_4b22d28da459",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「雨だ。しかし、出発する。」の「しかし」の働きは？",
+    "answer": "接続語",
+    "dummies": [
+      "主語",
+      "修飾語",
+      "述語"
+    ],
+    "note": "前後の内容を逆接の関係でつなぐ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_824f31fdf957",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の単位と文の成分",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「はい、分かりました。」の「はい」の文の成分は？",
+    "answer": "独立語",
+    "dummies": [
+      "主語",
+      "修飾語",
+      "述語"
+    ],
+    "note": "返事を表し、他の文節から独立している。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_eb22cdf7cde9",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「この本」の「この」の品詞は？",
+    "answer": "連体詞",
+    "dummies": [
+      "副詞",
+      "形容詞",
+      "代名詞"
+    ],
+    "note": "「この」は活用せず、名詞を修飾する。「これ」は代名詞。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_407db03bcd21",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「大きな木」の「大きな」の品詞は？",
+    "answer": "連体詞",
+    "dummies": [
+      "形容動詞",
+      "形容詞",
+      "副詞"
+    ],
+    "note": "「大きだ」とは活用しない。「大きい」は形容詞。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b87e626db74f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「とても明るい」の「とても」の品詞は？",
+    "answer": "副詞",
+    "dummies": [
+      "連体詞",
+      "名詞",
+      "接続詞"
+    ],
+    "note": "用言「明るい」の程度を詳しくしている。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6dff38ca06ba",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「彼が来た。」の「彼」の品詞は？",
+    "answer": "名詞",
+    "dummies": [
+      "連体詞",
+      "副詞",
+      "助詞"
+    ],
+    "note": "「彼」は代名詞で、名詞の一種。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2ba508759f04",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「静かに歩く」の「静かに」の品詞は？",
+    "answer": "形容動詞",
+    "dummies": [
+      "副詞",
+      "連体詞",
+      "形容詞"
+    ],
+    "note": "「静かだ」の連用形。修飾する働きだけで副詞と決めない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e6c0961e1b89",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「花が咲く」の「が」の品詞は？",
+    "answer": "助詞",
+    "dummies": [
+      "助動詞",
+      "名詞",
+      "接続詞"
+    ],
+    "note": "「が」は活用しない付属語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b818c613a38a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "品詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「読みます」の「ます」の品詞は？",
+    "answer": "助動詞",
+    "dummies": [
+      "助詞",
+      "動詞",
+      "接続詞"
+    ],
+    "note": "「ます」は丁寧の意味を添え、活用する付属語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b2984ceb1916",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「切る」を打消の形にしたものは？",
+    "answer": "切らない",
+    "dummies": [
+      "切りない",
+      "切ない",
+      "切らぬない"
+    ],
+    "note": "「切る」は五段活用。「着る」は上一段活用で「着ない」。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_734b7fd610d1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「着る」を打消の形にしたものは？",
+    "answer": "着ない",
+    "dummies": [
+      "着らない",
+      "着りない",
+      "着れないだけ"
+    ],
+    "note": "衣服を着る「着る」は上一段活用。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_10eb528f9b7b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「走れば」の「走れ」の活用形は？",
+    "answer": "仮定形",
+    "dummies": [
+      "命令形",
+      "連用形",
+      "未然形"
+    ],
+    "note": "後ろの「ば」が手掛かり。「走れ。」なら命令形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f99217367cb9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「静かな部屋」の「静かな」の活用形は？",
+    "answer": "連体形",
+    "dummies": [
+      "終止形",
+      "連用形",
+      "仮定形"
+    ],
+    "note": "名詞「部屋」に続いている。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_321aaa63dd16",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「美しくなる」の「美しく」の活用形は？",
+    "answer": "連用形",
+    "dummies": [
+      "連体形",
+      "終止形",
+      "仮定形"
+    ],
+    "note": "用言「なる」に続く形容詞の連用形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f3dee1c20ac5",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「来ない」の「来」の読みは？",
+    "answer": "こ",
+    "dummies": [
+      "き",
+      "く",
+      "け"
+    ],
+    "note": "「来る」の未然形は「こ」。「来ます」は「き」。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b505017ed0a7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「泳いだ」に見られる音便は？",
+    "answer": "イ音便",
+    "dummies": [
+      "促音便",
+      "撥音便",
+      "ウ音便"
+    ],
+    "note": "連用形「泳ぎ」の「ぎ」が「い」になる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_1432c16e7d5d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「遊んだ」に見られる音便は？",
+    "answer": "撥音便",
+    "dummies": [
+      "促音便",
+      "イ音便",
+      "ウ音便"
+    ],
+    "note": "連用形「遊び」の「び」が「ん」になる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_1381dc997520",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「明日は晴れるだろう。」の「だろう」が表す意味は？",
+    "answer": "推量",
+    "dummies": [
+      "打消",
+      "使役",
+      "過去"
+    ],
+    "note": "まだ確定していないことを推し量っている。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d3d28182f2ac",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「先生が来られた。」の「られ」が表す意味は？",
+    "answer": "尊敬",
+    "dummies": [
+      "可能",
+      "使役",
+      "打消"
+    ],
+    "note": "この文は先生の動作を高める。「られる」は文脈で意味を分ける。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a984f9c793c2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「今日は行かない。」の「ない」は？",
+    "answer": "打消の助動詞",
+    "dummies": [
+      "形容詞",
+      "終助詞",
+      "接続詞"
+    ],
+    "note": "動詞「行く」の未然形に付き、打消を表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6b9e74a3cb4a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「机の上に本がない。」の「ない」は？",
+    "answer": "形容詞",
+    "dummies": [
+      "打消の助動詞",
+      "副詞",
+      "終助詞"
+    ],
+    "note": "存在しないという状態を表す。「行かない」の「ない」と区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_da1df1755ddc",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「雨が降った。」の「た」の意味は？",
+    "answer": "過去",
+    "dummies": [
+      "使役",
+      "可能",
+      "打消"
+    ],
+    "note": "以前に起きた出来事を述べる。「た」は完了なども表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_5b06d26f41b2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「行きたい。」の「たい」の意味は？",
+    "answer": "希望",
+    "dummies": [
+      "伝聞",
+      "断定",
+      "受身"
+    ],
+    "note": "話し手の希望を表す助動詞。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b8ab2004c668",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「雨が降るそうだ。」の「そうだ」の意味は？",
+    "answer": "伝聞",
+    "dummies": [
+      "様態",
+      "使役",
+      "打消"
+    ],
+    "note": "「降りそうだ」は様態。「降るそうだ」は聞いた情報を伝える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7006fd636079",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「雨が降りそうだ。」の「そうだ」の意味は？",
+    "answer": "様態",
+    "dummies": [
+      "伝聞",
+      "過去",
+      "使役"
+    ],
+    "note": "目の前の様子などから判断した状態を表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_79bd4b9ba2e0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "先生が食べることを尊敬語で言うと？",
+    "answer": "召し上がる",
+    "dummies": [
+      "いただく",
+      "申す",
+      "拝見する"
+    ],
+    "note": "「いただく」は自分側の動作に使う謙譲語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_777022974e3e",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "自分が先生に話すときの謙譲語は？",
+    "answer": "申し上げる",
+    "dummies": [
+      "おっしゃる",
+      "ご覧になる",
+      "いらっしゃる"
+    ],
+    "note": "「おっしゃる」は相手の動作を高める尊敬語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2c8a11c5dfd9",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "自分が先生の作品を見るときの謙譲語は？",
+    "answer": "拝見する",
+    "dummies": [
+      "ご覧になる",
+      "お見えになる",
+      "いらっしゃる"
+    ],
+    "note": "自分の動作をへりくだって、作品の持ち主などに敬意を表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_df3b89401f55",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「おっしゃられた」を一般に適切な敬語に直すと？",
+    "answer": "おっしゃった",
+    "dummies": [
+      "申された",
+      "言わさせた",
+      "申し上げられた"
+    ],
+    "note": "「おっしゃる」だけで尊敬の意味があり、重ねる必要がない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_44e5968ee7a5",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「やま」のような、日本固有の言葉は？",
+    "answer": "和語",
+    "dummies": [
+      "漢語",
+      "外来語",
+      "混種語"
+    ],
+    "note": "「山岳」は漢語。「やま」は和語。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_55c37326d519",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「図書館」のような、漢字の音読みを基にする言葉は？",
+    "answer": "漢語",
+    "dummies": [
+      "和語",
+      "外来語",
+      "混種語"
+    ],
+    "note": "漢語かどうかは、漢字で書くかだけでは決められない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a4682b3f3a06",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「テーブル」のように外国語を取り入れた言葉は？",
+    "answer": "外来語",
+    "dummies": [
+      "和語",
+      "漢語",
+      "擬態語"
+    ],
+    "note": "漢語は通常、外来語とは別に分類する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_4ef63cd68d67",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「重箱」の「じゅうばこ」の読み方の組合せは？",
+    "answer": "音読み＋訓読み",
+    "dummies": [
+      "訓読み＋音読み",
+      "音読み＋音読み",
+      "訓読み＋訓読み"
+    ],
+    "note": "重箱読み。「湯桶（ゆとう）」は訓読み＋音読み。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_5ab510fa8b00",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「湯桶」の「ゆとう」の読み方の組合せは？",
+    "answer": "訓読み＋音読み",
+    "dummies": [
+      "音読み＋訓読み",
+      "音読み＋音読み",
+      "訓読み＋訓読み"
+    ],
+    "note": "湯桶読み。「重箱（じゅうばこ）」と順序を比べる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_621ccbe6a6ef",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「頭を使う」の「頭」がこの文で表すものは？",
+    "answer": "思考する力",
+    "dummies": [
+      "頭の毛髪",
+      "体の最上部だけ",
+      "先頭の位置"
+    ],
+    "note": "同じ語でも文脈によって意味が変わる多義語の例。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7fde55e27f13",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「機械のせいさく」の「せいさく」を漢字で書くと？",
+    "answer": "製作",
+    "dummies": [
+      "制作",
+      "政策",
+      "施策"
+    ],
+    "note": "一般に機械や道具は製作、美術・文芸作品は制作を使う。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_dc9d244f1329",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「対象・対照・対称」の使い分けで適切なのは？",
+    "answer": "二つの資料を対照する",
+    "dummies": [
+      "二つの資料を対称する",
+      "図形の対象の軸",
+      "調査の対照者"
+    ],
+    "note": "対照は比べ合わせること。対称は図形などのつり合った対応、対象は目当て。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0d48ed34a5f5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「こゑ」を現代仮名遣いにすると？",
+    "answer": "こえ",
+    "dummies": [
+      "こい",
+      "こゐ",
+      "こよ"
+    ],
+    "note": "「ゑ」は「え」、「ゐ」は「い」と読む。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_af2349259182",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「てふてふ」を現代仮名遣いにすると？",
+    "answer": "ちょうちょう",
+    "dummies": [
+      "てうてう",
+      "ちゅうちゅう",
+      "とうとう"
+    ],
+    "note": "「てふ」は「ちょう」となる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6815b15c3209",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「思ひ」を現代仮名遣いにすると？",
+    "answer": "思い",
+    "dummies": [
+      "思ひい",
+      "思う",
+      "思え"
+    ],
+    "note": "語中・語尾のハ行の変化に注意する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c44fe1a83ea1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「ゐる」を現代仮名遣いにすると？",
+    "answer": "いる",
+    "dummies": [
+      "うる",
+      "える",
+      "おる"
+    ],
+    "note": "「ゐ」は「い」、「ゑ」は「え」と読む。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0290f49bc980",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の言葉と仮名遣い",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「あはれ」を現代仮名遣いにすると？",
+    "answer": "あわれ",
+    "dummies": [
+      "ああれ",
+      "あはれい",
+      "あおれ"
+    ],
+    "note": "語中の「は」が「わ」になる例。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_93e586dc50d8",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「つとめて」の意味として適切なのは？",
+    "answer": "早朝",
+    "dummies": [
+      "夕方",
+      "努力して",
+      "夜中"
+    ],
+    "note": "古語は現代語と同じ形でも意味が異なる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f03655584f1f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「あした」が表すことがあるのは？",
+    "answer": "朝",
+    "dummies": [
+      "未来だけ",
+      "昨日だけ",
+      "夕方"
+    ],
+    "note": "古語では「朝」の意味がある。文脈で判断する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f3a57bd476d2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「ありがたし」の基本的な意味は？",
+    "answer": "めったにない",
+    "dummies": [
+      "感謝したいだけ",
+      "当然である",
+      "簡単である"
+    ],
+    "note": "「有ることが難い」から、珍しい・めったにない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_db7b7d54ec2d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「うつくし」が幼い子に使われた場合の意味は？",
+    "answer": "かわいらしい",
+    "dummies": [
+      "壮大だ",
+      "恐ろしい",
+      "騒がしい"
+    ],
+    "note": "小さくかわいいものをいとしく思う意味がある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f6da222b74e5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「おどろく」が睡眠中の人に使われた場合の意味は？",
+    "answer": "目を覚ます",
+    "dummies": [
+      "大声を上げるだけ",
+      "眠り続ける",
+      "怒り出す"
+    ],
+    "note": "「はっと気づく」「目を覚ます」など。現代語の驚きだけに限らない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_20421de58864",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「あやし」が身分に関して使われた場合の意味は？",
+    "answer": "身分が低い",
+    "dummies": [
+      "背が高い",
+      "名高い",
+      "勇ましい"
+    ],
+    "note": "「不思議だ」のほか「身分が低い・粗末だ」などの意味がある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_144800194635",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「やがて」が「やがて帰りぬ」に使われた場合の意味は？",
+    "answer": "そのまま",
+    "dummies": [
+      "いつか必ず",
+      "たぶん後で",
+      "何年も後に"
+    ],
+    "note": "古語の「やがて」は、そのまま・すぐに、などを表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3b59e2d3d3d1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「あさまし」が思いがけない事件に使われた場合の意味は？",
+    "answer": "驚きあきれるほどだ",
+    "dummies": [
+      "朝らしい",
+      "勇ましい",
+      "ほほえましいだけ"
+    ],
+    "note": "程度の甚だしさに驚く意味。現代語の卑しいという意味だけに限らない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_43f1fb731d9a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「なほ」の基本的な意味の一つは？",
+    "answer": "やはり",
+    "dummies": [
+      "決してない",
+      "少しだけ",
+      "なぜ"
+    ],
+    "note": "やはり・そのまま・さらに、など。前後の文脈から選ぶ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6a85dfc7d0c3",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「つれづれなり」の意味として適切なのは？",
+    "answer": "することがなく退屈だ",
+    "dummies": [
+      "忙しく動き回る",
+      "道に迷っている",
+      "物が壊れている"
+    ],
+    "note": "物寂しい・手持ち無沙汰だ、などを表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_dc4357c0fe24",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「ゆかし」が未知の物事に使われた場合の意味は？",
+    "answer": "見たい・知りたい",
+    "dummies": [
+      "懐かしいだけ",
+      "憎らしい",
+      "危ない"
+    ],
+    "note": "対象に心が引かれ、見聞きしたいと思う気持ち。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_899a7fb4ce26",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「をかしげなる子」の「をかしげなり」に近いのは？",
+    "answer": "かわいらしい",
+    "dummies": [
+      "不気味だ",
+      "不正である",
+      "騒々しい"
+    ],
+    "note": "古語の「をかしげなり」は、かわいらしい・趣があるなどの意味。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a6c38e8dbd78",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「いみじう悲し」の「いみじう」に近い意味は？",
+    "answer": "たいそう",
+    "dummies": [
+      "少しだけ",
+      "決してない",
+      "突然にだけ"
+    ],
+    "note": "「いみじ」は程度が甚だしいこと。文脈によって良悪が変わる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_681fa0895c5a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「かなし」が子を思う場面で表す意味は？",
+    "answer": "いとしい",
+    "dummies": [
+      "情けない",
+      "腹立たしい",
+      "恥ずかしい"
+    ],
+    "note": "古語では、いとしい・かわいいの意味がある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_1795f34b3e63",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古語「さぶらふ」が「人にさぶらふ」で表す意味は？",
+    "answer": "お仕えする",
+    "dummies": [
+      "争いを挑む",
+      "立ち去る",
+      "忘れる"
+    ],
+    "note": "目上の人のおそばに控え、お仕えする意味。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_25eaa9c8ed95",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「人ぞ来る。」の結びの活用形は？",
+    "answer": "連体形",
+    "dummies": [
+      "終止形",
+      "未然形",
+      "命令形"
+    ],
+    "note": "「ぞ」の係り結びで連体形。「来」は「くる」と読む。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_5c5a8fd0d39a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「花こそ咲け。」の結びの活用形は？",
+    "answer": "已然形",
+    "dummies": [
+      "命令形",
+      "未然形",
+      "連体形"
+    ],
+    "note": "「こそ」の係り結び。「咲け」は命令ではない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b38b75494343",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「春来なば」の「ば」が表す条件は？",
+    "answer": "仮定条件",
+    "dummies": [
+      "確定条件",
+      "逆接の確定",
+      "並列"
+    ],
+    "note": "未然形「な」に接続する「ば」は仮定条件。春が来たならば。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_aef60a848a7b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「春来れば」の「ば」が表す条件は？",
+    "answer": "確定条件",
+    "dummies": [
+      "仮定条件",
+      "疑問",
+      "禁止"
+    ],
+    "note": "已然形「来れ」に接続する「ば」は確定条件。ここでは春が来ると。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3a9819cd83ab",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「知らぬ人」の「ぬ」の意味は？",
+    "answer": "打消",
+    "dummies": [
+      "完了",
+      "詠嘆",
+      "推量"
+    ],
+    "note": "「知ら」は未然形。「ぬ」は打消「ず」の連体形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d3b95f7daa83",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の文法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「花咲きぬ」の「ぬ」の意味は？",
+    "answer": "完了",
+    "dummies": [
+      "打消",
+      "尊敬",
+      "意志"
+    ],
+    "note": "連用形「咲き」に接続して、咲いた・咲いてしまった、と表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ecc5f2d3b856",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読解",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古文の動作主を判断するときの基本は？",
+    "answer": "前後の人物と敬語を確かめる",
+    "dummies": [
+      "直前の名詞だけで決める",
+      "常に作者と決める",
+      "常に読み手と決める"
+    ],
+    "note": "主語の省略が多いため、動作のつながりと敬語の向きを確認する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6a3689f216f9",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "短歌の基本的な音数は？",
+    "answer": "五・七・五・七・七",
+    "dummies": [
+      "五・七・五",
+      "七・七・五・七・七",
+      "五・五・七・七・七"
+    ],
+    "note": "五句三十一音が基本。字余り・字足らずもある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a5c6038cece6",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "俳句の基本的な音数は？",
+    "answer": "五・七・五",
+    "dummies": [
+      "五・七・五・七・七",
+      "七・五・七",
+      "五・五・七"
+    ],
+    "note": "三句十七音が基本。文字数ではなく音を数える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2b23991f16dc",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「きょう」の音数は？",
+    "answer": "二音",
+    "dummies": [
+      "一音",
+      "三音",
+      "四音"
+    ],
+    "note": "「きょ」で一音、「う」で一音。拗音の小文字は前の音と合わせる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3065250ae54c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "和歌の句切れを判断する手掛かりは？",
+    "answer": "意味や文法上の切れ目",
+    "dummies": [
+      "必ず五音の終わり",
+      "必ず二句目の終わり",
+      "漢字がある場所"
+    ],
+    "note": "音数の区切りと、意味・文法のまとまりを区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c142908002e2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "和歌・俳句と古典",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「ちはやぶる神」の「ちはやぶる」の技法は？",
+    "answer": "枕詞",
+    "dummies": [
+      "掛詞",
+      "倒置法",
+      "体言止め"
+    ],
+    "note": "「神」を導く決まった五音の言葉。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0def1b9dd8fa",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "返り点「A二 Bレ C D一」の読む順序は？",
+    "answer": "C→B→D→A",
+    "dummies": [
+      "A→B→C→D",
+      "D→C→B→A",
+      "B→C→A→D"
+    ],
+    "note": "Bのレ点でCからBへ返り、Dの一点からAの二点へ返る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_da9284372b07",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "返り点「A二 B C一」の読む順序は？",
+    "answer": "B→C→A",
+    "dummies": [
+      "A→B→C",
+      "C→A→B",
+      "C→B→A"
+    ],
+    "note": "途中の無点の字Bも先に読み、一点Cから二点Aへ返る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ba4a189f5dca",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "返り点「A Bレ C」の読む順序は？",
+    "answer": "A→C→B",
+    "dummies": [
+      "A→B→C",
+      "C→B→A",
+      "B→A→C"
+    ],
+    "note": "無点のAを先に読み、Bのレ点に従いCからBへ返る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_47788a8e3646",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「不知」の基本的な書き下しは？",
+    "answer": "知らず",
+    "dummies": [
+      "知るなし",
+      "知るべし",
+      "知らしむ"
+    ],
+    "note": "「不」は動詞の後に返って「ず」と読む。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_17be376ab6fd",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "書き下し文で、返り点はどうする？",
+    "answer": "書かない",
+    "dummies": [
+      "元の位置に全て残す",
+      "句点に置き換える",
+      "振り仮名に直す"
+    ],
+    "note": "読む順序を日本語の語順へ反映させるため、返り点そのものは残さない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_965063938be7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "漢文の「既」の基本的な訓読は？",
+    "answer": "すでに",
+    "dummies": [
+      "いまだ",
+      "まさに",
+      "なんぞ"
+    ],
+    "note": "「既」は、すでに、という意味。再読文字「未」と区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e8837a1e6336",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「不可」を「〜すべからず」と読む禁止の意味は？",
+    "answer": "〜してはいけない",
+    "dummies": [
+      "まだ〜していない",
+      "今から〜する",
+      "必ず〜する"
+    ],
+    "note": "禁止や不可能を表す。ここでは「〜すべからず」と読む禁止の形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7b1a019a68a1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "漢文で「何ぞ〜や」が反語を表す場合の結論は？",
+    "answer": "〜ではない",
+    "dummies": [
+      "〜である",
+      "答えが不明だ",
+      "必ず命令だ"
+    ],
+    "note": "反語は問いかけの形で、強い否定などを表す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_af2608e19f57",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "漢文の「以A為B」の基本的な意味は？",
+    "answer": "AをBとする",
+    "dummies": [
+      "BをAより大きくする",
+      "AとBを否定する",
+      "AからBを借りる"
+    ],
+    "note": "「AをもってBとなす」と訓読する基本の形。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ccb79053e523",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "漢文の「学而時習之」の「而」の働きは？",
+    "answer": "前後の内容をつなぐ",
+    "dummies": [
+      "過去を表す",
+      "主語だけを表す",
+      "必ず反語にする"
+    ],
+    "note": "「而」は接続の働き。順接・逆接などは文脈で判断する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3530c03f0add",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢文の句法",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「知らずや」が反語で用いられたときの意味は？",
+    "answer": "知っているではないか",
+    "dummies": [
+      "全く知らない",
+      "知らなくてよい",
+      "知ることを禁じる"
+    ],
+    "note": "否定の疑問形による反語は、肯定を強める。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d42c22943772",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "五言絶句は、基本的に何字で成る？",
+    "answer": "二十字",
+    "dummies": [
+      "二十八字",
+      "四十字",
+      "五十六字"
+    ],
+    "note": "五字の句が四つ。句読点は字数に含めない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2a1f2997148b",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "七言絶句は、基本的に何字で成る？",
+    "answer": "二十八字",
+    "dummies": [
+      "二十字",
+      "四十字",
+      "五十六字"
+    ],
+    "note": "七字の句が四つ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d1a1b1dc77f0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "五言律詩は、基本的に何字で成る？",
+    "answer": "四十字",
+    "dummies": [
+      "二十字",
+      "二十八字",
+      "五十六字"
+    ],
+    "note": "五字の句が八つ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0414cc800363",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "漢詩の起承転結の「転」の役割は？",
+    "answer": "視点や場面を変える",
+    "dummies": [
+      "作者名を示すだけ",
+      "冒頭を繰り返すだけ",
+      "字数を数える"
+    ],
+    "note": "絶句では第三句が転に当たるのが基本。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3611ec788aeb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『論語』が主に伝えるのは？",
+    "answer": "孔子と弟子たちの言行",
+    "dummies": [
+      "紫式部の日記",
+      "松尾芭蕉の紀行",
+      "清少納言の随筆"
+    ],
+    "note": "仁や学問などに関する教えを、やり取りの形などで伝える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_a8ad1135dcf3",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "本文の「だから」の後を読むとき、まず捉える関係は？",
+    "answer": "原因と結果",
+    "dummies": [
+      "対比だけ",
+      "例示だけ",
+      "時間の逆行"
+    ],
+    "note": "前の内容を理由として、後に結果や結論が来る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c422cc57ae34",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「例えば」の後の内容は、通常どんな働きをする？",
+    "answer": "抽象的な説明を具体化する",
+    "dummies": [
+      "必ず主張を否定する",
+      "必ず結論を変える",
+      "必ず時間を戻す"
+    ],
+    "note": "具体例を通して、前後の一般的な説明を確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_410b6b004bed",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "二つの出来事に相関があるとき、適切な注意は？",
+    "answer": "原因と結果とは限らない",
+    "dummies": [
+      "必ず一方が原因だ",
+      "両方とも誤りだ",
+      "比較はできない"
+    ],
+    "note": "同時に変化しても、他の要因が関係する場合がある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_1fd315a97337",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「事実」と「意見」を分ける基準として適切なのは？",
+    "answer": "確かめられる内容か判断か",
+    "dummies": [
+      "文が長いか短いか",
+      "漢字が多いか少ないか",
+      "主語があるかないか"
+    ],
+    "note": "事実は確認できる内容、意見は考えや判断。事実の真偽確認も必要。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d0ad2458fc95",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "引用の際に必要なことは？",
+    "answer": "引用部分と出典を明確にする",
+    "dummies": [
+      "語句を自由に入れ替える",
+      "作者名を省く",
+      "自分の文章と混ぜる"
+    ],
+    "note": "引用する範囲を明確にし、自分の説明と区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c10f538a9271",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "資料の信頼性を確かめるときに見るものは？",
+    "answer": "発信元・根拠・公表時期",
+    "dummies": [
+      "文字の大きさだけ",
+      "共有された回数だけ",
+      "配色だけ"
+    ],
+    "note": "複数の資料を比べ、根拠となる調査方法なども確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_92ea1571b02a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "段落の要点をまとめるとき優先するのは？",
+    "answer": "中心となる内容",
+    "dummies": [
+      "全ての具体例",
+      "難しい語の数",
+      "段落の最初の一字"
+    ],
+    "note": "例や言い換えと、中心の説明を区別する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d56d292f9ad1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "筆者の主張を選ぶとき確認するのは？",
+    "answer": "本文全体の論理と結論",
+    "dummies": [
+      "自分が賛成できるかだけ",
+      "一つの例だけ",
+      "一番長い選択肢"
+    ],
+    "note": "自分の意見を混ぜず、本文が述べる主張を捉える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_42ddd57f5579",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "本文にない因果関係を加えた選択肢は？",
+    "answer": "根拠のない推測を含む",
+    "dummies": [
+      "必ず詳しくて正しい",
+      "必ず要旨である",
+      "本文の引用そのもの"
+    ],
+    "note": "正しい事実を含んでいても、本文とのつながりを確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_59baad0f3c53",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "選択肢の「全て・必ず」を確認する理由は？",
+    "answer": "本文より範囲を広げやすい",
+    "dummies": [
+      "必ず正解の語だから",
+      "必ず誤答の語だから",
+      "意味がない語だから"
+    ],
+    "note": "強い表現だけで機械的に落とさず、本文の範囲と一致するかを見る。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6e60311381b2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "人物の心情を読むとき、根拠となるのは？",
+    "answer": "言動・描写・前後の出来事",
+    "dummies": [
+      "自分ならどう感じるかだけ",
+      "作者の年齢だけ",
+      "題名の長さだけ"
+    ],
+    "note": "本文の具体的な表現から気持ちの変化を捉える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ae67816dd453",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "情景描写を読むとき、注意することは？",
+    "answer": "人物の心情との関わり",
+    "dummies": [
+      "全て天気予報と扱う",
+      "全て作者の経歴と扱う",
+      "必ず比喩と決める"
+    ],
+    "note": "情景が気持ちを映す場合がある。文脈の根拠が必要。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_01bec02df9fb",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "語り手と作者について、適切な理解は？",
+    "answer": "同一人物とは限らない",
+    "dummies": [
+      "常に同一人物である",
+      "語り手は必ず主人公だ",
+      "作者は作中人物に限る"
+    ],
+    "note": "作品の「私」と実際の作者を安易に同一視しない。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_9b0a6f4de395",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "人物の変化を説明するとき、そろえて示すのは？",
+    "answer": "変化の前後ときっかけ",
+    "dummies": [
+      "結末だけ",
+      "冒頭だけ",
+      "地名の一覧"
+    ],
+    "note": "何がきっかけで、どのように変わったかを本文に即して述べる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_48fd5a6da1fd",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く・話す・聞く",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "意見を伝える文章で、主張を支えるのは？",
+    "answer": "根拠や具体例",
+    "dummies": [
+      "難しい言葉の数",
+      "同じ主張の反復だけ",
+      "文字の装飾"
+    ],
+    "note": "主張と根拠が結び付くかを確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_859e791e8a5c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く・話す・聞く",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "反対意見を取り上げるときの基本は？",
+    "answer": "相手の理由を正確に捉える",
+    "dummies": [
+      "相手の主張を誇張する",
+      "理由を省いて否定する",
+      "人格を評価する"
+    ],
+    "note": "反論は主張や根拠に対して行う。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_f91809fc54ba",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く・話す・聞く",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "話し合いで論点がずれたときに有効なのは？",
+    "answer": "目的と争点を確かめる",
+    "dummies": [
+      "声を大きくする",
+      "例を無制限に増やす",
+      "発言者を替えるだけ"
+    ],
+    "note": "何を決める話し合いか、どこで意見が分かれたかを確認する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_802291053ea4",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く・話す・聞く",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "推敲で、まず確かめる文章全体の点は？",
+    "answer": "目的と構成の対応",
+    "dummies": [
+      "漢字の画数だけ",
+      "一文目の長さだけ",
+      "見た目の色だけ"
+    ],
+    "note": "目的・読み手・構成・根拠を点検し、語句や表記も整える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_37a1241d6465",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "語の辞書的な意味と文脈上の意味について適切なのは？",
+    "answer": "文脈で使われる意味を確かめる",
+    "dummies": [
+      "辞書の最初の意味だけ使う",
+      "常に反対の意味で読む",
+      "文字数だけで決める"
+    ],
+    "note": "多義語などは、前後の文とのつながりから適切な意味を選ぶ。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6caa88b76df0",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「増加」の対義語は？",
+    "answer": "減少",
+    "dummies": [
+      "上昇",
+      "増大",
+      "拡大"
+    ],
+    "note": "増えることに対して、減ること。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_2d7d78cc1336",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「慎重」に近い意味の語は？",
+    "answer": "用心深い",
+    "dummies": [
+      "軽率な",
+      "性急な",
+      "無造作な"
+    ],
+    "note": "「慎重」はよく注意して、軽々しく行わない様子。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d9b397eb04d4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「固い決意」を表す「いし」の漢字は？",
+    "answer": "意志",
+    "dummies": [
+      "医師",
+      "遺志",
+      "意思疎通"
+    ],
+    "note": "「意志」は何かをしようとする心。「遺志」は亡くなった人の志。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_365bf4ae9fdc",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「雨」と「飴」を発音で区別する手掛かりの一つは？",
+    "answer": "アクセント",
+    "dummies": [
+      "文字の画数",
+      "語の長さだけ",
+      "声の大きさだけ"
+    ],
+    "note": "日本語のアクセントは音の高低。地域による違いもある。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_c035bcc44619",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "聞き手に要点を伝える話し方として適切なのは？",
+    "answer": "間や強弱を工夫する",
+    "dummies": [
+      "常に同じ速さで話す",
+      "全て同じ強さで叫ぶ",
+      "区切りをなくす"
+    ],
+    "note": "速さ・間・声の強弱などを、内容や聞き手に合わせて調整する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b978b5692dcf",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "話し言葉と書き言葉",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "話し言葉で補えるが、書き言葉では言葉にする必要があるのは？",
+    "answer": "身振りや表情の情報",
+    "dummies": [
+      "文字の画数",
+      "段落の文字数",
+      "用紙の厚さ"
+    ],
+    "note": "書き言葉では、読み手がその場の様子を共有していないことを考える。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_6fe5542c2d6b",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "話し言葉と書き言葉",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "書き言葉の文を整えるときに確かめるのは？",
+    "answer": "主語と述語の対応",
+    "dummies": [
+      "文を長くすることだけ",
+      "漢字を増やすことだけ",
+      "話し声の高さだけ"
+    ],
+    "note": "書いた後に読み返し、係り受けや文末の対応も点検する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ce8cdcd6749a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「ご協力ください」のように依頼するとき、大切なのは？",
+    "answer": "相手や場に合う表現を選ぶ",
+    "dummies": [
+      "敬語を多く重ねる",
+      "相手を必ず命令形で呼ぶ",
+      "全ての名詞に御を付ける"
+    ],
+    "note": "敬語の形だけでなく、相手との関係や場面に配慮する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7c3b6fdad86d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『竹取物語』の中心人物は？",
+    "answer": "かぐや姫",
+    "dummies": [
+      "光源氏",
+      "一寸法師",
+      "浦島太郎"
+    ],
+    "note": "竹から見つかった姫を中心とする物語。成立は平安時代前期とされる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_df7f16971594",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『枕草子』の作者は？",
+    "answer": "清少納言",
+    "dummies": [
+      "紫式部",
+      "兼好法師",
+      "松尾芭蕉"
+    ],
+    "note": "平安時代の随筆。「春はあけぼの」の章段などが知られる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_8a86b4e3eba4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『源氏物語』の作者は？",
+    "answer": "紫式部",
+    "dummies": [
+      "清少納言",
+      "紀貫之",
+      "小野小町"
+    ],
+    "note": "平安時代の物語。光源氏らの人生を描く。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ee642220a5d9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『徒然草』の作者は？",
+    "answer": "兼好法師",
+    "dummies": [
+      "鴨長明",
+      "清少納言",
+      "松尾芭蕉"
+    ],
+    "note": "鎌倉時代末期の随筆として知られる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0c7f5c710173",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『方丈記』の作者は？",
+    "answer": "鴨長明",
+    "dummies": [
+      "兼好法師",
+      "紀貫之",
+      "紫式部"
+    ],
+    "note": "鎌倉時代の随筆。災害や無常観などを記す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_bae82550fa48",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『おくのほそ道』の作者は？",
+    "answer": "松尾芭蕉",
+    "dummies": [
+      "与謝蕪村",
+      "小林一茶",
+      "正岡子規"
+    ],
+    "note": "江戸時代の俳諧紀行文。旅の文章に発句を織り交ぜる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_230fffe4a35b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『平家物語』の冒頭で示される考え方は？",
+    "answer": "諸行無常",
+    "dummies": [
+      "絶対不変",
+      "自由平等",
+      "富国強兵"
+    ],
+    "note": "全ては移り変わるという考え。平家の盛衰とも結び付く。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_b4cd46bca3e4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『万葉集』について適切なのは？",
+    "answer": "奈良時代までの歌を集めた歌集",
+    "dummies": [
+      "江戸時代だけの俳句集",
+      "室町時代だけの漢詩集",
+      "近代だけの小説集"
+    ],
+    "note": "幅広い身分の人々の歌を収める。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_1a653dc744b1",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "『古今和歌集』について適切なのは？",
+    "answer": "最初の勅撰和歌集",
+    "dummies": [
+      "最初の俳諧紀行",
+      "最初の漢文日記",
+      "最初の軍記物語"
+    ],
+    "note": "天皇の命令で編まれた和歌集。平安時代に成立。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_dc5f1bda350a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "能や狂言について適切なのは？",
+    "answer": "古くから伝わる演劇",
+    "dummies": [
+      "漢詩だけの朗読",
+      "近代だけの小説",
+      "短歌の音数の名称"
+    ],
+    "note": "能は歌や舞を伴い、狂言は日常の人間のおかしさなどを描く。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_e6db6e985986",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "古典を現代語訳で読むときに有効なのは？",
+    "answer": "原文の表現とも比べる",
+    "dummies": [
+      "原文を一切見ない",
+      "訳にない語を足して断定する",
+      "現代の意味だけに当てはめる"
+    ],
+    "note": "原文のリズムや言葉の響きも味わい、時代の違いを踏まえる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_0dae13602bd3",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "故事成語を理解する手掛かりは？",
+    "answer": "由来となる昔の出来事",
+    "dummies": [
+      "漢字の画数だけ",
+      "作者の身長",
+      "語の字数だけ"
+    ],
+    "note": "「矛盾」「蛇足」などは、由来と現在の意味を結び付ける。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_d63926e73581",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "故事成語「矛盾」が表すのは？",
+    "answer": "つじつまが合わないこと",
+    "dummies": [
+      "最後まで協力すること",
+      "考えを深めること",
+      "努力が報われること"
+    ],
+    "note": "どんな盾も突く矛と、どんな矛も防ぐ盾の話に由来する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_19b1b1ff4c6b",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "故事成語「蛇足」が表すのは？",
+    "answer": "余計なものを付け加えること",
+    "dummies": [
+      "不足を補うこと",
+      "素早く判断すること",
+      "苦労して成功すること"
+    ],
+    "note": "蛇の絵に足を描き足した話に由来する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_7be735053bf5",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "故事成語「五十歩百歩」が表すのは？",
+    "answer": "少し違っても本質は同じこと",
+    "dummies": [
+      "努力の差が大きいこと",
+      "常に半分が正しいこと",
+      "先に出発すれば勝つこと"
+    ],
+    "note": "戦いから逃げた歩数の差を笑う話に由来する。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_088789f7641d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "本を探すとき、目次は何を確かめるのに役立つ？",
+    "answer": "内容の構成と掲載箇所",
+    "dummies": [
+      "本文の全ての読み",
+      "著者の考えの全て",
+      "語句の全ての意味"
+    ],
+    "note": "目次・索引・見出しなどを使い、必要な情報を探す。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_aa5e019ff4b5",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "索引を使う目的として適切なのは？",
+    "answer": "語句が載る箇所を探す",
+    "dummies": [
+      "章の順番を全て変更する",
+      "著者を評価するだけ",
+      "文章の誤字を直す"
+    ],
+    "note": "索引は語句と該当ページなどを対応させたもの。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_5a59cb757800",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "複数の本を比べて読むときに有効なのは？",
+    "answer": "共通点と相違点を整理する",
+    "dummies": [
+      "同じ結論と決めつける",
+      "一冊の情報だけ残す",
+      "長い方を常に正しいとする"
+    ],
+    "note": "同じ題材でも、立場や目的により説明や評価が変わる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_ef54de1b0fae",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "要約と引用の違いとして適切なのは？",
+    "answer": "要約は要点をまとめ直す",
+    "dummies": [
+      "要約は必ず原文のまま写す",
+      "引用は出典を示さない",
+      "引用は自由に改変する"
+    ],
+    "note": "要約は自分の言葉で要点をまとめる。引用では原文と出典を明確にする。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_70a7e6e86a29",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "一つの例から全体の性質を決めるときの注意は？",
+    "answer": "例が全体を代表するか確かめる",
+    "dummies": [
+      "一例あれば必ず十分",
+      "例は多いほど必ず真実",
+      "例の新しさだけで決める"
+    ],
+    "note": "偏った例だけで一般化すると、根拠が不十分になる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_02a74128ead2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-core-20261107",
+    "prompt": "「結論」と「根拠」の関係を点検するとき見るのは？",
+    "answer": "根拠が結論を支えているか",
+    "dummies": [
+      "文字数が同じか",
+      "同じ接続詞があるか",
+      "必ず反対の内容か"
+    ],
+    "note": "根拠が正しくても、そこから結論が導けるかは別に確かめる。",
+    "task": "適切なものを選ぼう"
+  },
+  {
+    "id": "jr_jp_core_3e1e69f0893c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "頭が下がる",
+    "definition": "感心して、敬意を抱くこと。",
+    "term_dummies": [
+      "顔が広い",
+      "鼻にかける",
+      "肩を並べる"
+    ],
+    "definition_dummies": [
+      "知り合いが多く、付き合いの範囲が広いこと。",
+      "優れている点を得意げに言い立てること。",
+      "実力や地位などが対等になること。"
+    ],
+    "note": "頭が下がる：感心して、敬意を抱くこと。"
+  },
+  {
+    "id": "jr_jp_core_ae36bf740ab2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "頭が上がらない",
+    "definition": "負い目などがあり、対等に振る舞えないこと。",
+    "term_dummies": [
+      "顔を立てる",
+      "耳が痛い",
+      "胸をなで下ろす"
+    ],
+    "definition_dummies": [
+      "相手の名誉や立場が保たれるようにすること。",
+      "弱点を指摘され、聞くのがつらく感じること。",
+      "心配事がなくなり、ほっとすること。"
+    ],
+    "note": "頭が上がらない：負い目などがあり、対等に振る舞えないこと。"
+  },
+  {
+    "id": "jr_jp_core_f26fe8cca181",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "頭をひねる",
+    "definition": "答えや方法をあれこれ考えること。",
+    "term_dummies": [
+      "顔から火が出る",
+      "耳を傾ける",
+      "胸に刻む"
+    ],
+    "definition_dummies": [
+      "非常に恥ずかしく感じること。",
+      "注意して熱心に聞くこと。",
+      "大切なことを忘れないよう深く心に留めること。"
+    ],
+    "note": "頭をひねる：答えや方法をあれこれ考えること。"
+  },
+  {
+    "id": "jr_jp_core_061a7ca4243a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "頭を冷やす",
+    "definition": "興奮を静め、落ち着いて考えること。",
+    "term_dummies": [
+      "目がない",
+      "口が軽い",
+      "腹を割る"
+    ],
+    "definition_dummies": [
+      "ある物が非常に好きで、夢中になること。",
+      "秘密などをすぐ人に話してしまうこと。",
+      "本心を隠さず打ち明けること。"
+    ],
+    "note": "頭を冷やす：興奮を静め、落ち着いて考えること。"
+  },
+  {
+    "id": "jr_jp_core_ec17c29de6f1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "顔が広い",
+    "definition": "知り合いが多く、付き合いの範囲が広いこと。",
+    "term_dummies": [
+      "目を丸くする",
+      "口が堅い",
+      "腹を立てる"
+    ],
+    "definition_dummies": [
+      "驚いて目を大きく開くこと。",
+      "秘密をむやみに他人に話さないこと。",
+      "怒ること。"
+    ],
+    "note": "顔が広い：知り合いが多く、付き合いの範囲が広いこと。"
+  },
+  {
+    "id": "jr_jp_core_c28596c88c31",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "顔を立てる",
+    "definition": "相手の名誉や立場が保たれるようにすること。",
+    "term_dummies": [
+      "目を光らせる",
+      "舌を巻く",
+      "手を焼く"
+    ],
+    "definition_dummies": [
+      "不正や異変がないか厳しく見張ること。",
+      "非常に優れたものに驚き、感心すること。",
+      "扱いに困り、持て余すこと。"
+    ],
+    "note": "顔を立てる：相手の名誉や立場が保たれるようにすること。"
+  },
+  {
+    "id": "jr_jp_core_30683924b465",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "顔から火が出る",
+    "definition": "非常に恥ずかしく感じること。",
+    "term_dummies": [
+      "鼻が高い",
+      "歯が立たない",
+      "手をこまねく"
+    ],
+    "definition_dummies": [
+      "自慢に思い、誇らしく感じること。",
+      "相手や課題が強大で、対処できないこと。",
+      "何も対策をせず、見ていること。"
+    ],
+    "note": "顔から火が出る：非常に恥ずかしく感じること。"
+  },
+  {
+    "id": "jr_jp_core_5bd09d601418",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "目がない",
+    "definition": "ある物が非常に好きで、夢中になること。",
+    "term_dummies": [
+      "鼻にかける",
+      "肩を落とす",
+      "手に汗を握る"
+    ],
+    "definition_dummies": [
+      "優れている点を得意げに言い立てること。",
+      "落胆して元気をなくすこと。",
+      "成り行きが心配で、緊張すること。"
+    ],
+    "note": "目がない：ある物が非常に好きで、夢中になること。"
+  },
+  {
+    "id": "jr_jp_core_526b94146b82",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "目を丸くする",
+    "definition": "驚いて目を大きく開くこと。",
+    "term_dummies": [
+      "耳が痛い",
+      "肩を並べる",
+      "足が出る"
+    ],
+    "definition_dummies": [
+      "弱点を指摘され、聞くのがつらく感じること。",
+      "実力や地位などが対等になること。",
+      "費用が予算を超えること。"
+    ],
+    "note": "目を丸くする：驚いて目を大きく開くこと。"
+  },
+  {
+    "id": "jr_jp_core_02c07b7361ae",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "目を光らせる",
+    "definition": "不正や異変がないか厳しく見張ること。",
+    "term_dummies": [
+      "耳を傾ける",
+      "胸をなで下ろす",
+      "足を洗う"
+    ],
+    "definition_dummies": [
+      "注意して熱心に聞くこと。",
+      "心配事がなくなり、ほっとすること。",
+      "よくない仕事や行いをやめること。"
+    ],
+    "note": "目を光らせる：不正や異変がないか厳しく見張ること。"
+  },
+  {
+    "id": "jr_jp_core_e1ec7d8ac5d1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "鼻が高い",
+    "definition": "自慢に思い、誇らしく感じること。",
+    "term_dummies": [
+      "口が軽い",
+      "胸に刻む",
+      "足を運ぶ"
+    ],
+    "definition_dummies": [
+      "秘密などをすぐ人に話してしまうこと。",
+      "大切なことを忘れないよう深く心に留めること。",
+      "ある場所へわざわざ出向くこと。"
+    ],
+    "note": "鼻が高い：自慢に思い、誇らしく感じること。"
+  },
+  {
+    "id": "jr_jp_core_2dd56fda58d2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "鼻にかける",
+    "definition": "優れている点を得意げに言い立てること。",
+    "term_dummies": [
+      "口が堅い",
+      "腹を割る",
+      "水に流す"
+    ],
+    "definition_dummies": [
+      "秘密をむやみに他人に話さないこと。",
+      "本心を隠さず打ち明けること。",
+      "過去の対立などをなかったことにして許すこと。"
+    ],
+    "note": "鼻にかける：優れている点を得意げに言い立てること。"
+  },
+  {
+    "id": "jr_jp_core_79b8a45533ad",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "耳が痛い",
+    "definition": "弱点を指摘され、聞くのがつらく感じること。",
+    "term_dummies": [
+      "舌を巻く",
+      "腹を立てる",
+      "油を売る"
+    ],
+    "definition_dummies": [
+      "非常に優れたものに驚き、感心すること。",
+      "怒ること。",
+      "仕事の途中などで、無駄話をして時間を過ごすこと。"
+    ],
+    "note": "耳が痛い：弱点を指摘され、聞くのがつらく感じること。"
+  },
+  {
+    "id": "jr_jp_core_c3d2ae5ade47",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "耳を傾ける",
+    "definition": "注意して熱心に聞くこと。",
+    "term_dummies": [
+      "歯が立たない",
+      "手を焼く",
+      "道草を食う"
+    ],
+    "definition_dummies": [
+      "相手や課題が強大で、対処できないこと。",
+      "扱いに困り、持て余すこと。",
+      "目的地へ行く途中で、別のことをして時間を使うこと。"
+    ],
+    "note": "耳を傾ける：注意して熱心に聞くこと。"
+  },
+  {
+    "id": "jr_jp_core_9331f4358837",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "口が軽い",
+    "definition": "秘密などをすぐ人に話してしまうこと。",
+    "term_dummies": [
+      "肩を落とす",
+      "手をこまねく",
+      "骨が折れる"
+    ],
+    "definition_dummies": [
+      "落胆して元気をなくすこと。",
+      "何も対策をせず、見ていること。",
+      "苦労や努力が多く必要であること。"
+    ],
+    "note": "口が軽い：秘密などをすぐ人に話してしまうこと。"
+  },
+  {
+    "id": "jr_jp_core_1da2c943d13c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "口が堅い",
+    "definition": "秘密をむやみに他人に話さないこと。",
+    "term_dummies": [
+      "肩を並べる",
+      "手に汗を握る",
+      "気が置けない"
+    ],
+    "definition_dummies": [
+      "実力や地位などが対等になること。",
+      "成り行きが心配で、緊張すること。",
+      "遠慮や気遣いをせず、親しく付き合えること。"
+    ],
+    "note": "口が堅い：秘密をむやみに他人に話さないこと。"
+  },
+  {
+    "id": "jr_jp_core_0b1f62089f4b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "舌を巻く",
+    "definition": "非常に優れたものに驚き、感心すること。",
+    "term_dummies": [
+      "胸をなで下ろす",
+      "足が出る",
+      "役不足"
+    ],
+    "definition_dummies": [
+      "心配事がなくなり、ほっとすること。",
+      "費用が予算を超えること。",
+      "本人の力量に比べて、役目が軽すぎること。"
+    ],
+    "note": "舌を巻く：非常に優れたものに驚き、感心すること。"
+  },
+  {
+    "id": "jr_jp_core_2d5673af268b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "歯が立たない",
+    "definition": "相手や課題が強大で、対処できないこと。",
+    "term_dummies": [
+      "胸に刻む",
+      "足を洗う",
+      "的を射る"
+    ],
+    "definition_dummies": [
+      "大切なことを忘れないよう深く心に留めること。",
+      "よくない仕事や行いをやめること。",
+      "物事の要点を正確に捉えること。"
+    ],
+    "note": "歯が立たない：相手や課題が強大で、対処できないこと。"
+  },
+  {
+    "id": "jr_jp_core_7012889862f9",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "肩を落とす",
+    "definition": "落胆して元気をなくすこと。",
+    "term_dummies": [
+      "腹を割る",
+      "足を運ぶ",
+      "二の足を踏む"
+    ],
+    "definition_dummies": [
+      "本心を隠さず打ち明けること。",
+      "ある場所へわざわざ出向くこと。",
+      "思い切れず、行動をためらうこと。"
+    ],
+    "note": "肩を落とす：落胆して元気をなくすこと。"
+  },
+  {
+    "id": "jr_jp_core_379db7207cfb",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "肩を並べる",
+    "definition": "実力や地位などが対等になること。",
+    "term_dummies": [
+      "腹を立てる",
+      "水に流す",
+      "火に油を注ぐ"
+    ],
+    "definition_dummies": [
+      "怒ること。",
+      "過去の対立などをなかったことにして許すこと。",
+      "勢いや怒りなどを、さらに激しくすること。"
+    ],
+    "note": "肩を並べる：実力や地位などが対等になること。"
+  },
+  {
+    "id": "jr_jp_core_241e554eaba4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "胸をなで下ろす",
+    "definition": "心配事がなくなり、ほっとすること。",
+    "term_dummies": [
+      "手を焼く",
+      "油を売る",
+      "棚に上げる"
+    ],
+    "definition_dummies": [
+      "扱いに困り、持て余すこと。",
+      "仕事の途中などで、無駄話をして時間を過ごすこと。",
+      "自分に不都合なことを取り上げずにおくこと。"
+    ],
+    "note": "胸をなで下ろす：心配事がなくなり、ほっとすること。"
+  },
+  {
+    "id": "jr_jp_core_5b691daa2afc",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "胸に刻む",
+    "definition": "大切なことを忘れないよう深く心に留めること。",
+    "term_dummies": [
+      "手をこまねく",
+      "道草を食う",
+      "頭が下がる"
+    ],
+    "definition_dummies": [
+      "何も対策をせず、見ていること。",
+      "目的地へ行く途中で、別のことをして時間を使うこと。",
+      "感心して、敬意を抱くこと。"
+    ],
+    "note": "胸に刻む：大切なことを忘れないよう深く心に留めること。"
+  },
+  {
+    "id": "jr_jp_core_f9c375f47d0f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "腹を割る",
+    "definition": "本心を隠さず打ち明けること。",
+    "term_dummies": [
+      "手に汗を握る",
+      "骨が折れる",
+      "頭が上がらない"
+    ],
+    "definition_dummies": [
+      "成り行きが心配で、緊張すること。",
+      "苦労や努力が多く必要であること。",
+      "負い目などがあり、対等に振る舞えないこと。"
+    ],
+    "note": "腹を割る：本心を隠さず打ち明けること。"
+  },
+  {
+    "id": "jr_jp_core_e66f3e25da41",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "腹を立てる",
+    "definition": "怒ること。",
+    "term_dummies": [
+      "足が出る",
+      "気が置けない",
+      "頭をひねる"
+    ],
+    "definition_dummies": [
+      "費用が予算を超えること。",
+      "遠慮や気遣いをせず、親しく付き合えること。",
+      "答えや方法をあれこれ考えること。"
+    ],
+    "note": "腹を立てる：怒ること。"
+  },
+  {
+    "id": "jr_jp_core_0d8522729c01",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "手を焼く",
+    "definition": "扱いに困り、持て余すこと。",
+    "term_dummies": [
+      "足を洗う",
+      "役不足",
+      "頭を冷やす"
+    ],
+    "definition_dummies": [
+      "よくない仕事や行いをやめること。",
+      "本人の力量に比べて、役目が軽すぎること。",
+      "興奮を静め、落ち着いて考えること。"
+    ],
+    "note": "手を焼く：扱いに困り、持て余すこと。"
+  },
+  {
+    "id": "jr_jp_core_4590c8c51e5b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "手をこまねく",
+    "definition": "何も対策をせず、見ていること。",
+    "term_dummies": [
+      "足を運ぶ",
+      "的を射る",
+      "顔が広い"
+    ],
+    "definition_dummies": [
+      "ある場所へわざわざ出向くこと。",
+      "物事の要点を正確に捉えること。",
+      "知り合いが多く、付き合いの範囲が広いこと。"
+    ],
+    "note": "手をこまねく：何も対策をせず、見ていること。"
+  },
+  {
+    "id": "jr_jp_core_a208c3657dd5",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "手に汗を握る",
+    "definition": "成り行きが心配で、緊張すること。",
+    "term_dummies": [
+      "水に流す",
+      "二の足を踏む",
+      "顔を立てる"
+    ],
+    "definition_dummies": [
+      "過去の対立などをなかったことにして許すこと。",
+      "思い切れず、行動をためらうこと。",
+      "相手の名誉や立場が保たれるようにすること。"
+    ],
+    "note": "手に汗を握る：成り行きが心配で、緊張すること。"
+  },
+  {
+    "id": "jr_jp_core_2b460cee26de",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "足が出る",
+    "definition": "費用が予算を超えること。",
+    "term_dummies": [
+      "油を売る",
+      "火に油を注ぐ",
+      "顔から火が出る"
+    ],
+    "definition_dummies": [
+      "仕事の途中などで、無駄話をして時間を過ごすこと。",
+      "勢いや怒りなどを、さらに激しくすること。",
+      "非常に恥ずかしく感じること。"
+    ],
+    "note": "足が出る：費用が予算を超えること。"
+  },
+  {
+    "id": "jr_jp_core_59ceba2b847e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "足を洗う",
+    "definition": "よくない仕事や行いをやめること。",
+    "term_dummies": [
+      "道草を食う",
+      "棚に上げる",
+      "目がない"
+    ],
+    "definition_dummies": [
+      "目的地へ行く途中で、別のことをして時間を使うこと。",
+      "自分に不都合なことを取り上げずにおくこと。",
+      "ある物が非常に好きで、夢中になること。"
+    ],
+    "note": "足を洗う：よくない仕事や行いをやめること。"
+  },
+  {
+    "id": "jr_jp_core_37ec0a29c17a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "足を運ぶ",
+    "definition": "ある場所へわざわざ出向くこと。",
+    "term_dummies": [
+      "骨が折れる",
+      "頭が下がる",
+      "目を丸くする"
+    ],
+    "definition_dummies": [
+      "苦労や努力が多く必要であること。",
+      "感心して、敬意を抱くこと。",
+      "驚いて目を大きく開くこと。"
+    ],
+    "note": "足を運ぶ：ある場所へわざわざ出向くこと。"
+  },
+  {
+    "id": "jr_jp_core_95c6ff74d148",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "水に流す",
+    "definition": "過去の対立などをなかったことにして許すこと。",
+    "term_dummies": [
+      "気が置けない",
+      "頭が上がらない",
+      "目を光らせる"
+    ],
+    "definition_dummies": [
+      "遠慮や気遣いをせず、親しく付き合えること。",
+      "負い目などがあり、対等に振る舞えないこと。",
+      "不正や異変がないか厳しく見張ること。"
+    ],
+    "note": "水に流す：過去の対立などをなかったことにして許すこと。"
+  },
+  {
+    "id": "jr_jp_core_fb6d8ce9a50d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "油を売る",
+    "definition": "仕事の途中などで、無駄話をして時間を過ごすこと。",
+    "term_dummies": [
+      "役不足",
+      "頭をひねる",
+      "鼻が高い"
+    ],
+    "definition_dummies": [
+      "本人の力量に比べて、役目が軽すぎること。",
+      "答えや方法をあれこれ考えること。",
+      "自慢に思い、誇らしく感じること。"
+    ],
+    "note": "油を売る：仕事の途中などで、無駄話をして時間を過ごすこと。"
+  },
+  {
+    "id": "jr_jp_core_1a1afc180f01",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "道草を食う",
+    "definition": "目的地へ行く途中で、別のことをして時間を使うこと。",
+    "term_dummies": [
+      "的を射る",
+      "頭を冷やす",
+      "鼻にかける"
+    ],
+    "definition_dummies": [
+      "物事の要点を正確に捉えること。",
+      "興奮を静め、落ち着いて考えること。",
+      "優れている点を得意げに言い立てること。"
+    ],
+    "note": "道草を食う：目的地へ行く途中で、別のことをして時間を使うこと。"
+  },
+  {
+    "id": "jr_jp_core_b8b950f20dbf",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "骨が折れる",
+    "definition": "苦労や努力が多く必要であること。",
+    "term_dummies": [
+      "二の足を踏む",
+      "顔が広い",
+      "耳が痛い"
+    ],
+    "definition_dummies": [
+      "思い切れず、行動をためらうこと。",
+      "知り合いが多く、付き合いの範囲が広いこと。",
+      "弱点を指摘され、聞くのがつらく感じること。"
+    ],
+    "note": "骨が折れる：苦労や努力が多く必要であること。"
+  },
+  {
+    "id": "jr_jp_core_903beabc2032",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "気が置けない",
+    "definition": "遠慮や気遣いをせず、親しく付き合えること。",
+    "term_dummies": [
+      "火に油を注ぐ",
+      "顔を立てる",
+      "耳を傾ける"
+    ],
+    "definition_dummies": [
+      "勢いや怒りなどを、さらに激しくすること。",
+      "相手の名誉や立場が保たれるようにすること。",
+      "注意して熱心に聞くこと。"
+    ],
+    "note": "気が置けない：遠慮や気遣いをせず、親しく付き合えること。"
+  },
+  {
+    "id": "jr_jp_core_e2c904f940e5",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "役不足",
+    "definition": "本人の力量に比べて、役目が軽すぎること。",
+    "term_dummies": [
+      "棚に上げる",
+      "顔から火が出る",
+      "口が軽い"
+    ],
+    "definition_dummies": [
+      "自分に不都合なことを取り上げずにおくこと。",
+      "非常に恥ずかしく感じること。",
+      "秘密などをすぐ人に話してしまうこと。"
+    ],
+    "note": "役不足：本人の力量に比べて、役目が軽すぎること。"
+  },
+  {
+    "id": "jr_jp_core_8f60e56e109b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "的を射る",
+    "definition": "物事の要点を正確に捉えること。",
+    "term_dummies": [
+      "頭が下がる",
+      "目がない",
+      "口が堅い"
+    ],
+    "definition_dummies": [
+      "感心して、敬意を抱くこと。",
+      "ある物が非常に好きで、夢中になること。",
+      "秘密をむやみに他人に話さないこと。"
+    ],
+    "note": "的を射る：物事の要点を正確に捉えること。"
+  },
+  {
+    "id": "jr_jp_core_b6698e2ff35a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "二の足を踏む",
+    "definition": "思い切れず、行動をためらうこと。",
+    "term_dummies": [
+      "頭が上がらない",
+      "目を丸くする",
+      "舌を巻く"
+    ],
+    "definition_dummies": [
+      "負い目などがあり、対等に振る舞えないこと。",
+      "驚いて目を大きく開くこと。",
+      "非常に優れたものに驚き、感心すること。"
+    ],
+    "note": "二の足を踏む：思い切れず、行動をためらうこと。"
+  },
+  {
+    "id": "jr_jp_core_f68cc9e310b8",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "火に油を注ぐ",
+    "definition": "勢いや怒りなどを、さらに激しくすること。",
+    "term_dummies": [
+      "頭をひねる",
+      "目を光らせる",
+      "歯が立たない"
+    ],
+    "definition_dummies": [
+      "答えや方法をあれこれ考えること。",
+      "不正や異変がないか厳しく見張ること。",
+      "相手や課題が強大で、対処できないこと。"
+    ],
+    "note": "火に油を注ぐ：勢いや怒りなどを、さらに激しくすること。"
+  },
+  {
+    "id": "jr_jp_core_dec54fc7a081",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "慣用句",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "棚に上げる",
+    "definition": "自分に不都合なことを取り上げずにおくこと。",
+    "term_dummies": [
+      "頭を冷やす",
+      "鼻が高い",
+      "肩を落とす"
+    ],
+    "definition_dummies": [
+      "興奮を静め、落ち着いて考えること。",
+      "自慢に思い、誇らしく感じること。",
+      "落胆して元気をなくすこと。"
+    ],
+    "note": "棚に上げる：自分に不都合なことを取り上げずにおくこと。"
+  },
+  {
+    "id": "jr_jp_core_cbe0f2ab8796",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "因果応報",
+    "definition": "行いの善悪に応じた結果が返ってくること。",
+    "term_dummies": [
+      "以心伝心",
+      "大同小異",
+      "意気消沈"
+    ],
+    "definition_dummies": [
+      "言葉にしなくても互いの気持ちが通じ合うこと。",
+      "細かい違いはあるが、大部分は同じであること。",
+      "元気をなくして、すっかりしょげること。"
+    ],
+    "note": "因果応報：行いの善悪に応じた結果が返ってくること。"
+  },
+  {
+    "id": "jr_jp_core_145ce002a072",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "自業自得",
+    "definition": "自分の行いの報いを自分が受けること。",
+    "term_dummies": [
+      "一心不乱",
+      "公明正大",
+      "疑心暗鬼"
+    ],
+    "definition_dummies": [
+      "一つのことに心を集中し、他に気を取られないこと。",
+      "隠し事や私心がなく、公平で正しいこと。",
+      "疑う心があるため、何でも恐ろしく感じられること。"
+    ],
+    "note": "自業自得：自分の行いの報いを自分が受けること。"
+  },
+  {
+    "id": "jr_jp_core_62d72ae7d29f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "起承転結",
+    "definition": "物事や文章を、起こし・受け・変化・結びで構成すること。",
+    "term_dummies": [
+      "一石二鳥",
+      "正々堂々",
+      "五里霧中"
+    ],
+    "definition_dummies": [
+      "一つの行動で二つの利益を得ること。",
+      "正しいやり方で、態度を隠さず立派に行う様子。",
+      "事情や手掛かりが分からず、方針が立たないこと。"
+    ],
+    "note": "起承転結：物事や文章を、起こし・受け・変化・結びで構成すること。"
+  },
+  {
+    "id": "jr_jp_core_07fab4a03efc",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "喜怒哀楽",
+    "definition": "喜び・怒り・悲しみ・楽しみという感情。",
+    "term_dummies": [
+      "一朝一夕",
+      "弱肉強食",
+      "晴耕雨読"
+    ],
+    "definition_dummies": [
+      "一朝や一晩ほどの、ごく短い期間。",
+      "強いものが弱いものを犠牲にして栄えること。",
+      "晴れた日は畑を耕し、雨の日は読書するような静かな暮らし。"
+    ],
+    "note": "喜怒哀楽：喜び・怒り・悲しみ・楽しみという感情。"
+  },
+  {
+    "id": "jr_jp_core_78ca81872a46",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "以心伝心",
+    "definition": "言葉にしなくても互いの気持ちが通じ合うこと。",
+    "term_dummies": [
+      "十人十色",
+      "適材適所",
+      "無我夢中"
+    ],
+    "definition_dummies": [
+      "人によって考えや好みがそれぞれ違うこと。",
+      "能力や性質に合った役目や場所に人を配置すること。",
+      "あることに心を奪われ、我を忘れて熱中すること。"
+    ],
+    "note": "以心伝心：言葉にしなくても互いの気持ちが通じ合うこと。"
+  },
+  {
+    "id": "jr_jp_core_19305b88be4e",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "一心不乱",
+    "definition": "一つのことに心を集中し、他に気を取られないこと。",
+    "term_dummies": [
+      "十中八九",
+      "付和雷同",
+      "百発百中"
+    ],
+    "definition_dummies": [
+      "ほとんど確実であること。",
+      "自分の考えを持たず、むやみに他人の意見に従うこと。",
+      "狙いが全て当たること。"
+    ],
+    "note": "一心不乱：一つのことに心を集中し、他に気を取られないこと。"
+  },
+  {
+    "id": "jr_jp_core_b97564f7e3c0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "一石二鳥",
+    "definition": "一つの行動で二つの利益を得ること。",
+    "term_dummies": [
+      "大器晩成",
+      "右往左往",
+      "百戦錬磨"
+    ],
+    "definition_dummies": [
+      "大人物になる人は、完成までに長い時間がかかるということ。",
+      "混乱して、あちらこちらへ動き回ること。",
+      "多くの実戦や経験を重ね、十分に鍛えられていること。"
+    ],
+    "note": "一石二鳥：一つの行動で二つの利益を得ること。"
+  },
+  {
+    "id": "jr_jp_core_97549964741c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "一朝一夕",
+    "definition": "一朝や一晩ほどの、ごく短い期間。",
+    "term_dummies": [
+      "大同小異",
+      "意気投合",
+      "日進月歩"
+    ],
+    "definition_dummies": [
+      "細かい違いはあるが、大部分は同じであること。",
+      "互いの気持ちや考えがよく合うこと。",
+      "日に月に、絶えず進歩すること。"
+    ],
+    "note": "一朝一夕：一朝や一晩ほどの、ごく短い期間。"
+  },
+  {
+    "id": "jr_jp_core_07749f44517a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "十人十色",
+    "definition": "人によって考えや好みがそれぞれ違うこと。",
+    "term_dummies": [
+      "公明正大",
+      "意気消沈",
+      "臥薪嘗胆"
+    ],
+    "definition_dummies": [
+      "隠し事や私心がなく、公平で正しいこと。",
+      "元気をなくして、すっかりしょげること。",
+      "目的を果たすため、苦労やつらさに耐えること。"
+    ],
+    "note": "十人十色：人によって考えや好みがそれぞれ違うこと。"
+  },
+  {
+    "id": "jr_jp_core_c42e5aeb9b2b",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "十中八九",
+    "definition": "ほとんど確実であること。",
+    "term_dummies": [
+      "正々堂々",
+      "疑心暗鬼",
+      "我田引水"
+    ],
+    "definition_dummies": [
+      "正しいやり方で、態度を隠さず立派に行う様子。",
+      "疑う心があるため、何でも恐ろしく感じられること。",
+      "自分に都合がよいように物事を取り計らうこと。"
+    ],
+    "note": "十中八九：ほとんど確実であること。"
+  },
+  {
+    "id": "jr_jp_core_e99267353ac9",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "大器晩成",
+    "definition": "大人物になる人は、完成までに長い時間がかかるということ。",
+    "term_dummies": [
+      "弱肉強食",
+      "五里霧中",
+      "針小棒大"
+    ],
+    "definition_dummies": [
+      "強いものが弱いものを犠牲にして栄えること。",
+      "事情や手掛かりが分からず、方針が立たないこと。",
+      "小さなことを、大げさに言うこと。"
+    ],
+    "note": "大器晩成：大人物になる人は、完成までに長い時間がかかるということ。"
+  },
+  {
+    "id": "jr_jp_core_421d5e25d195",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "大同小異",
+    "definition": "細かい違いはあるが、大部分は同じであること。",
+    "term_dummies": [
+      "適材適所",
+      "晴耕雨読",
+      "単刀直入"
+    ],
+    "definition_dummies": [
+      "能力や性質に合った役目や場所に人を配置すること。",
+      "晴れた日は畑を耕し、雨の日は読書するような静かな暮らし。",
+      "前置きをせず、すぐに要点に入ること。"
+    ],
+    "note": "大同小異：細かい違いはあるが、大部分は同じであること。"
+  },
+  {
+    "id": "jr_jp_core_d8bbbaff9e15",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "公明正大",
+    "definition": "隠し事や私心がなく、公平で正しいこと。",
+    "term_dummies": [
+      "付和雷同",
+      "無我夢中",
+      "馬耳東風"
+    ],
+    "definition_dummies": [
+      "自分の考えを持たず、むやみに他人の意見に従うこと。",
+      "あることに心を奪われ、我を忘れて熱中すること。",
+      "人の意見を聞き流し、気に留めないこと。"
+    ],
+    "note": "公明正大：隠し事や私心がなく、公平で正しいこと。"
+  },
+  {
+    "id": "jr_jp_core_fc60e0e9d1dd",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "正々堂々",
+    "definition": "正しいやり方で、態度を隠さず立派に行う様子。",
+    "term_dummies": [
+      "右往左往",
+      "百発百中",
+      "朝令暮改"
+    ],
+    "definition_dummies": [
+      "混乱して、あちらこちらへ動き回ること。",
+      "狙いが全て当たること。",
+      "命令や方針がすぐに変わり、定まらないこと。"
+    ],
+    "note": "正々堂々：正しいやり方で、態度を隠さず立派に行う様子。"
+  },
+  {
+    "id": "jr_jp_core_f0e24018d4b1",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "弱肉強食",
+    "definition": "強いものが弱いものを犠牲にして栄えること。",
+    "term_dummies": [
+      "意気投合",
+      "百戦錬磨",
+      "本末転倒"
+    ],
+    "definition_dummies": [
+      "互いの気持ちや考えがよく合うこと。",
+      "多くの実戦や経験を重ね、十分に鍛えられていること。",
+      "大切なことと、ささいなことを取り違えること。"
+    ],
+    "note": "弱肉強食：強いものが弱いものを犠牲にして栄えること。"
+  },
+  {
+    "id": "jr_jp_core_7bd2a29fe042",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "適材適所",
+    "definition": "能力や性質に合った役目や場所に人を配置すること。",
+    "term_dummies": [
+      "意気消沈",
+      "日進月歩",
+      "危機一髪"
+    ],
+    "definition_dummies": [
+      "元気をなくして、すっかりしょげること。",
+      "日に月に、絶えず進歩すること。",
+      "わずかな違いで重大な危険に陥りそうなこと。"
+    ],
+    "note": "適材適所：能力や性質に合った役目や場所に人を配置すること。"
+  },
+  {
+    "id": "jr_jp_core_8c4340a11c52",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "付和雷同",
+    "definition": "自分の考えを持たず、むやみに他人の意見に従うこと。",
+    "term_dummies": [
+      "疑心暗鬼",
+      "臥薪嘗胆",
+      "画竜点睛"
+    ],
+    "definition_dummies": [
+      "疑う心があるため、何でも恐ろしく感じられること。",
+      "目的を果たすため、苦労やつらさに耐えること。",
+      "最後の大切な仕上げを加え、全体を完成させること。"
+    ],
+    "note": "付和雷同：自分の考えを持たず、むやみに他人の意見に従うこと。"
+  },
+  {
+    "id": "jr_jp_core_a08ee35764a7",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "右往左往",
+    "definition": "混乱して、あちらこちらへ動き回ること。",
+    "term_dummies": [
+      "我田引水",
+      "羊頭狗肉",
+      "意気投合"
+    ],
+    "definition_dummies": [
+      "自分に都合がよいように物事を取り計らうこと。",
+      "見せかけは立派だが、実際の内容が伴わないこと。",
+      "互いの気持ちや考えがよく合うこと。"
+    ],
+    "note": "右往左往：混乱して、あちらこちらへ動き回ること。"
+  },
+  {
+    "id": "jr_jp_core_6ef98f4fc208",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "意気投合",
+    "definition": "互いの気持ちや考えがよく合うこと。",
+    "term_dummies": [
+      "晴耕雨読",
+      "針小棒大",
+      "支離滅裂"
+    ],
+    "definition_dummies": [
+      "晴れた日は畑を耕し、雨の日は読書するような静かな暮らし。",
+      "小さなことを、大げさに言うこと。",
+      "話や考えがばらばらで、筋道が通っていないこと。"
+    ],
+    "note": "意気投合：互いの気持ちや考えがよく合うこと。"
+  },
+  {
+    "id": "jr_jp_core_89eb16b8142f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "意気消沈",
+    "definition": "元気をなくして、すっかりしょげること。",
+    "term_dummies": [
+      "無我夢中",
+      "単刀直入",
+      "前代未聞"
+    ],
+    "definition_dummies": [
+      "あることに心を奪われ、我を忘れて熱中すること。",
+      "前置きをせず、すぐに要点に入ること。",
+      "これまで一度も聞いたことがない、珍しいこと。"
+    ],
+    "note": "意気消沈：元気をなくして、すっかりしょげること。"
+  },
+  {
+    "id": "jr_jp_core_004307da79e1",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "疑心暗鬼",
+    "definition": "疑う心があるため、何でも恐ろしく感じられること。",
+    "term_dummies": [
+      "百発百中",
+      "馬耳東風",
+      "言語道断"
+    ],
+    "definition_dummies": [
+      "狙いが全て当たること。",
+      "人の意見を聞き流し、気に留めないこと。",
+      "言葉で言い表せないほど、ひどいこと。"
+    ],
+    "note": "疑心暗鬼：疑う心があるため、何でも恐ろしく感じられること。"
+  },
+  {
+    "id": "jr_jp_core_907588176368",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "五里霧中",
+    "definition": "事情や手掛かりが分からず、方針が立たないこと。",
+    "term_dummies": [
+      "百戦錬磨",
+      "朝令暮改",
+      "因果応報"
+    ],
+    "definition_dummies": [
+      "多くの実戦や経験を重ね、十分に鍛えられていること。",
+      "命令や方針がすぐに変わり、定まらないこと。",
+      "行いの善悪に応じた結果が返ってくること。"
+    ],
+    "note": "五里霧中：事情や手掛かりが分からず、方針が立たないこと。"
+  },
+  {
+    "id": "jr_jp_core_e3ef56ecd86d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "晴耕雨読",
+    "definition": "晴れた日は畑を耕し、雨の日は読書するような静かな暮らし。",
+    "term_dummies": [
+      "日進月歩",
+      "本末転倒",
+      "自業自得"
+    ],
+    "definition_dummies": [
+      "日に月に、絶えず進歩すること。",
+      "大切なことと、ささいなことを取り違えること。",
+      "自分の行いの報いを自分が受けること。"
+    ],
+    "note": "晴耕雨読：晴れた日は畑を耕し、雨の日は読書するような静かな暮らし。"
+  },
+  {
+    "id": "jr_jp_core_8d0ca05832f2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "無我夢中",
+    "definition": "あることに心を奪われ、我を忘れて熱中すること。",
+    "term_dummies": [
+      "臥薪嘗胆",
+      "危機一髪",
+      "起承転結"
+    ],
+    "definition_dummies": [
+      "目的を果たすため、苦労やつらさに耐えること。",
+      "わずかな違いで重大な危険に陥りそうなこと。",
+      "物事や文章を、起こし・受け・変化・結びで構成すること。"
+    ],
+    "note": "無我夢中：あることに心を奪われ、我を忘れて熱中すること。"
+  },
+  {
+    "id": "jr_jp_core_614e764f0f83",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "百発百中",
+    "definition": "狙いが全て当たること。",
+    "term_dummies": [
+      "我田引水",
+      "画竜点睛",
+      "喜怒哀楽"
+    ],
+    "definition_dummies": [
+      "自分に都合がよいように物事を取り計らうこと。",
+      "最後の大切な仕上げを加え、全体を完成させること。",
+      "喜び・怒り・悲しみ・楽しみという感情。"
+    ],
+    "note": "百発百中：狙いが全て当たること。"
+  },
+  {
+    "id": "jr_jp_core_bd56f8d46e2a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "百戦錬磨",
+    "definition": "多くの実戦や経験を重ね、十分に鍛えられていること。",
+    "term_dummies": [
+      "針小棒大",
+      "羊頭狗肉",
+      "以心伝心"
+    ],
+    "definition_dummies": [
+      "小さなことを、大げさに言うこと。",
+      "見せかけは立派だが、実際の内容が伴わないこと。",
+      "言葉にしなくても互いの気持ちが通じ合うこと。"
+    ],
+    "note": "百戦錬磨：多くの実戦や経験を重ね、十分に鍛えられていること。"
+  },
+  {
+    "id": "jr_jp_core_cf956c618f8e",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "日進月歩",
+    "definition": "日に月に、絶えず進歩すること。",
+    "term_dummies": [
+      "単刀直入",
+      "支離滅裂",
+      "一心不乱"
+    ],
+    "definition_dummies": [
+      "前置きをせず、すぐに要点に入ること。",
+      "話や考えがばらばらで、筋道が通っていないこと。",
+      "一つのことに心を集中し、他に気を取られないこと。"
+    ],
+    "note": "日進月歩：日に月に、絶えず進歩すること。"
+  },
+  {
+    "id": "jr_jp_core_f3bbb3ef273f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "臥薪嘗胆",
+    "definition": "目的を果たすため、苦労やつらさに耐えること。",
+    "term_dummies": [
+      "馬耳東風",
+      "前代未聞",
+      "一石二鳥"
+    ],
+    "definition_dummies": [
+      "人の意見を聞き流し、気に留めないこと。",
+      "これまで一度も聞いたことがない、珍しいこと。",
+      "一つの行動で二つの利益を得ること。"
+    ],
+    "note": "臥薪嘗胆：目的を果たすため、苦労やつらさに耐えること。"
+  },
+  {
+    "id": "jr_jp_core_e65c4cc2864a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "我田引水",
+    "definition": "自分に都合がよいように物事を取り計らうこと。",
+    "term_dummies": [
+      "朝令暮改",
+      "言語道断",
+      "一朝一夕"
+    ],
+    "definition_dummies": [
+      "命令や方針がすぐに変わり、定まらないこと。",
+      "言葉で言い表せないほど、ひどいこと。",
+      "一朝や一晩ほどの、ごく短い期間。"
+    ],
+    "note": "我田引水：自分に都合がよいように物事を取り計らうこと。"
+  },
+  {
+    "id": "jr_jp_core_a1e33b4bd577",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "針小棒大",
+    "definition": "小さなことを、大げさに言うこと。",
+    "term_dummies": [
+      "本末転倒",
+      "因果応報",
+      "十人十色"
+    ],
+    "definition_dummies": [
+      "大切なことと、ささいなことを取り違えること。",
+      "行いの善悪に応じた結果が返ってくること。",
+      "人によって考えや好みがそれぞれ違うこと。"
+    ],
+    "note": "針小棒大：小さなことを、大げさに言うこと。"
+  },
+  {
+    "id": "jr_jp_core_6a7e8d4de72d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "単刀直入",
+    "definition": "前置きをせず、すぐに要点に入ること。",
+    "term_dummies": [
+      "危機一髪",
+      "自業自得",
+      "十中八九"
+    ],
+    "definition_dummies": [
+      "わずかな違いで重大な危険に陥りそうなこと。",
+      "自分の行いの報いを自分が受けること。",
+      "ほとんど確実であること。"
+    ],
+    "note": "単刀直入：前置きをせず、すぐに要点に入ること。"
+  },
+  {
+    "id": "jr_jp_core_83869024c608",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "馬耳東風",
+    "definition": "人の意見を聞き流し、気に留めないこと。",
+    "term_dummies": [
+      "画竜点睛",
+      "起承転結",
+      "大器晩成"
+    ],
+    "definition_dummies": [
+      "最後の大切な仕上げを加え、全体を完成させること。",
+      "物事や文章を、起こし・受け・変化・結びで構成すること。",
+      "大人物になる人は、完成までに長い時間がかかるということ。"
+    ],
+    "note": "馬耳東風：人の意見を聞き流し、気に留めないこと。"
+  },
+  {
+    "id": "jr_jp_core_c3657c34c67d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "朝令暮改",
+    "definition": "命令や方針がすぐに変わり、定まらないこと。",
+    "term_dummies": [
+      "羊頭狗肉",
+      "喜怒哀楽",
+      "大同小異"
+    ],
+    "definition_dummies": [
+      "見せかけは立派だが、実際の内容が伴わないこと。",
+      "喜び・怒り・悲しみ・楽しみという感情。",
+      "細かい違いはあるが、大部分は同じであること。"
+    ],
+    "note": "朝令暮改：命令や方針がすぐに変わり、定まらないこと。"
+  },
+  {
+    "id": "jr_jp_core_c666867e6368",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "本末転倒",
+    "definition": "大切なことと、ささいなことを取り違えること。",
+    "term_dummies": [
+      "支離滅裂",
+      "以心伝心",
+      "公明正大"
+    ],
+    "definition_dummies": [
+      "話や考えがばらばらで、筋道が通っていないこと。",
+      "言葉にしなくても互いの気持ちが通じ合うこと。",
+      "隠し事や私心がなく、公平で正しいこと。"
+    ],
+    "note": "本末転倒：大切なことと、ささいなことを取り違えること。"
+  },
+  {
+    "id": "jr_jp_core_92a9c8df2844",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "危機一髪",
+    "definition": "わずかな違いで重大な危険に陥りそうなこと。",
+    "term_dummies": [
+      "前代未聞",
+      "一心不乱",
+      "正々堂々"
+    ],
+    "definition_dummies": [
+      "これまで一度も聞いたことがない、珍しいこと。",
+      "一つのことに心を集中し、他に気を取られないこと。",
+      "正しいやり方で、態度を隠さず立派に行う様子。"
+    ],
+    "note": "危機一髪：わずかな違いで重大な危険に陥りそうなこと。"
+  },
+  {
+    "id": "jr_jp_core_324705cccdeb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "画竜点睛",
+    "definition": "最後の大切な仕上げを加え、全体を完成させること。",
+    "term_dummies": [
+      "言語道断",
+      "一石二鳥",
+      "弱肉強食"
+    ],
+    "definition_dummies": [
+      "言葉で言い表せないほど、ひどいこと。",
+      "一つの行動で二つの利益を得ること。",
+      "強いものが弱いものを犠牲にして栄えること。"
+    ],
+    "note": "画竜点睛：最後の大切な仕上げを加え、全体を完成させること。"
+  },
+  {
+    "id": "jr_jp_core_29fc9ecf130f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "羊頭狗肉",
+    "definition": "見せかけは立派だが、実際の内容が伴わないこと。",
+    "term_dummies": [
+      "因果応報",
+      "一朝一夕",
+      "適材適所"
+    ],
+    "definition_dummies": [
+      "行いの善悪に応じた結果が返ってくること。",
+      "一朝や一晩ほどの、ごく短い期間。",
+      "能力や性質に合った役目や場所に人を配置すること。"
+    ],
+    "note": "羊頭狗肉：見せかけは立派だが、実際の内容が伴わないこと。"
+  },
+  {
+    "id": "jr_jp_core_ba0582c9d0d7",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "支離滅裂",
+    "definition": "話や考えがばらばらで、筋道が通っていないこと。",
+    "term_dummies": [
+      "自業自得",
+      "十人十色",
+      "付和雷同"
+    ],
+    "definition_dummies": [
+      "自分の行いの報いを自分が受けること。",
+      "人によって考えや好みがそれぞれ違うこと。",
+      "自分の考えを持たず、むやみに他人の意見に従うこと。"
+    ],
+    "note": "支離滅裂：話や考えがばらばらで、筋道が通っていないこと。"
+  },
+  {
+    "id": "jr_jp_core_efb093af87cd",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "前代未聞",
+    "definition": "これまで一度も聞いたことがない、珍しいこと。",
+    "term_dummies": [
+      "起承転結",
+      "十中八九",
+      "右往左往"
+    ],
+    "definition_dummies": [
+      "物事や文章を、起こし・受け・変化・結びで構成すること。",
+      "ほとんど確実であること。",
+      "混乱して、あちらこちらへ動き回ること。"
+    ],
+    "note": "前代未聞：これまで一度も聞いたことがない、珍しいこと。"
+  },
+  {
+    "id": "jr_jp_core_ddf553ac6159",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "四字熟語",
+    "kind": "idiom",
+    "content_batch": "japanese-core-20261107",
+    "term": "言語道断",
+    "definition": "言葉で言い表せないほど、ひどいこと。",
+    "term_dummies": [
+      "喜怒哀楽",
+      "大器晩成",
+      "意気投合"
+    ],
+    "definition_dummies": [
+      "喜び・怒り・悲しみ・楽しみという感情。",
+      "大人物になる人は、完成までに長い時間がかかるということ。",
+      "互いの気持ちや考えがよく合うこと。"
+    ],
+    "note": "言語道断：言葉で言い表せないほど、ひどいこと。"
+  }
+]

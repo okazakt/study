@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.65.2';
-import { ScreenWakeLock } from './wake-lock.js?v=0.65.2';
-import { MusicPlayer } from './music-player.js?v=0.65.2';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.65.2';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.65.2';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.65.2';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.65.2';
-const VERSION = '0.65.2';
+import {FocusGame} from './focus-game.js?v=0.66.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.66.0';
+import { MusicPlayer } from './music-player.js?v=0.66.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.66.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.66.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.66.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.66.0';
+const VERSION = '0.66.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -460,8 +460,8 @@ function selectTrack(index, tuning=false) {
 }
 async function load() {
   try {
-    const [index, quiz, english, japanese, math, social, expansion, englishCore, englishExtended, englishApplication, englishSupplement, englishVocabulary2, englishNewHorizon] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json'), json('./quiz-data/junior_english_extended.json'), json('./quiz-data/junior_english_application.json'), json('./quiz-data/junior_english_supplement.json'), json('./quiz-data/junior_english_vocabulary2.json'), json('./quiz-data/junior_english_new_horizon.json')]);
-    questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion, ...englishCore, ...englishExtended, ...englishApplication, ...englishSupplement, ...englishVocabulary2, ...englishNewHorizon];
+    const [index, quiz, english, japanese, math, social, expansion, englishCore, englishExtended, englishApplication, englishSupplement, englishVocabulary2, englishNewHorizon, japaneseKanji, japaneseExtended] = await Promise.all([json('./music-data/index.json'), json('./quiz-data/junior_science.json'), json('./quiz-data/junior_english.json'), json('./quiz-data/junior_japanese.json'), json('./quiz-data/junior_math.json'), json('./quiz-data/junior_social.json'), json('./quiz-data/junior_expansion.json'), json('./quiz-data/junior_english_core.json'), json('./quiz-data/junior_english_extended.json'), json('./quiz-data/junior_english_application.json'), json('./quiz-data/junior_english_supplement.json'), json('./quiz-data/junior_english_vocabulary2.json'), json('./quiz-data/junior_english_new_horizon.json'), json('./quiz-data/junior_japanese_kanji.json'), json('./quiz-data/junior_japanese_extended.json')]);
+    questions = [...quiz, ...english, ...japanese, ...math, ...social, ...expansion, ...englishCore, ...englishExtended, ...englishApplication, ...englishSupplement, ...englishVocabulary2, ...englishNewHorizon, ...japaneseKanji, ...japaneseExtended];
     const entries = await Promise.all(Object.keys(index).map(async id => ({ id, track: index[id], chart: await json(`./music-data/${index[id].files.chart}`) })));
     musicEntries=entries;
     playlist = makePlaylist(entries); tuningTracks=makePlaylist(entries,{trim:false}).tracks;

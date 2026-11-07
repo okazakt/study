@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "baselineViewport": {
     "width": 320,
     "height": 844
@@ -25,5 +25,30 @@
     "field-limit-exceeded",
     "combined-limit-exceeded",
     "estimated-height-exceeded"
+  ],
+  "reviewedTextProfiles": [
+    {
+      "id": "japanese-core-text-20261107",
+      "subject": "国語",
+      "profiles": [
+        "text-four-choices",
+        "text-two-columns"
+      ],
+      "maxima": {
+        "task": 21,
+        "prompt": 36,
+        "choice": 28,
+        "targetLabel": 21,
+        "note": 39,
+        "combined": 113
+      },
+      "estimatedPanelHeightLimit": 390,
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "verified": "2026-11-07: 7 boundary examples × 320/390 × normal/focus = 28 displays; panel/choice overflow absent; maximum actual panel height 416px.",
+      "reviewRecord": "japanese-source/layout-review.json"
+    }
   ]
 }

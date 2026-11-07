@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.65.2';
-import { materializeMathItem } from './math-variants.js?v=0.65.2';
+import { materializeChoiceItem } from './choice-variants.js?v=0.66.0';
+import { materializeMathItem } from './math-variants.js?v=0.66.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -130,10 +130,10 @@ export function makeJapaneseQuestions(item, random = Math.random) {
     return { ...item, id: `${item.id}:${mode}`, sourceId: item.id, mode, prompt, answer, choices,
       correct: choices.indexOf(answer), context: '', task, reviewLabel: prompt, ...extra };
   };
-  const writing=item.kind==='kanji'?kanjiWritingDisplay(item):null;
+  const writing=item.kind==='kanji'&&item.writing_parts?.length?kanjiWritingDisplay(item):null;
   if (item.kind === 'kanji') return [
     question('kanji_reading', `「${item.word}」\n${item.sentence}`, item.reading, item.reading_dummies, 'かぎ括弧の語の読みを選ぼう'),
-    ...item.writing_parts.map((part, position) => question('kanji_component', `${writing.sentence}\n「${writing.reading}」 ${writing.maskedWord}`, part.answer, part.dummies, '',
+    ...(item.writing_parts||[]).map((part, position) => question('kanji_component', `${writing.sentence}\n「${writing.reading}」 ${writing.maskedWord}`, part.answer, part.dummies, '',
       { writingDisplay:writing, id: `${item.id}:kanji_component:${position + 1}`, blankIndex: position + 1, blankPosition: position + 1,
         blankTotal: item.writing_parts.length, continuation: position > 0,
         diagram: { parts: item.writing_parts.map((part, index) => ({ ...part, state: index < position ? 'solved' : index === position ? 'active' : 'pending' })) },
