@@ -129,3 +129,11 @@
 `vertical-writing.tsv` の153字は中学の既存読み素材へ書きのみ追加する。上下の2部品を順に回答。日本の字形はCJKVI/CHISEの構成情報と照合し、参考資料の原データは同梱しない。語と読み153組はJmdictFuriganaで確認（既存の出典・ライセンス表示を適用）。読みの内容とIDは変更しない。書きの語を変える場合も元の読みへ影響させない。
 
 専用の `vertical-glyph-groups.json` は既存の候補を変えず、新規の上下問題だけに使う。`vertical-writing-reading-review.json`・`vertical-writing-audit.json` に確認を記録。差分確認は `--batch japanese-vertical-writing-20261107`。`tb-parts-v1` は上40/50%、下残り、幅100%の2部品と既存の文字量条件に限定。範囲内は再表示確認不要。中学書き774/1,110字、残り336字。小学分は追加・変更しない。
+
+## 複合構成の漢字書き（v0.71.0）
+
+`compound-writing.tsv` の67字を既存の中学読みIDへ追加。2〜4部品を順に全て問う。上下3段・左右3列・片側分割の6配置は `compound-writing-layouts.json` の固定位置を使用する。選択肢は専用 `compound-glyph-groups.json` と既存グループから選び、古い素材の候補を変更しない。小学分は変更しない。
+
+書きは841/1,110字、残り269字は `japanese-progress.json` の `writing.secondaryMissing`。囲みや独体字を不正確な分割で埋めず、専用の表示・出題方法を整えてから追加する。作問時は日本の字形と、辞書の語・読みを照合する。原資料のIDS全体は同梱せず、採用した事実上の構成と独自文脈を保持する。従来の辞書データ出典・ライセンス表示を適用。
+
+`compound-writing-reading-review.json`・`compound-writing-audit.json` に照合を記録。新配置の確認は `compound-writing-layout-review.json`。差分確認は `--batch japanese-compound-writing-20261107`。確認済み配置・文字量の範囲内なら表示確認は繰り返さない。

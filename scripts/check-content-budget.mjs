@@ -32,6 +32,9 @@ function reviewedKanjiDiagram(item,q,measured){
   if(chars(d.sentence)>p.maxSentenceChars||chars(word)>p.maxWordChars||chars(d.reading)>p.maxReadingChars||(chars(d.reading)+2)*20+chars(word)*32+14>p.maxReadingWordWidthPx)return false;
   if(!q.choices.every(c=>/^[\u3400-\u9fff\u30a0-\u30ff]$/u.test(c)))return false;
   const parts=q.diagram.parts;
+  if(p.id==='compound-parts-v1'){
+   return p.layouts.some(layout=>parts.length===layout.boxes.length&&parts.every((part,i)=>chars(part.answer)===1&&part.position===layout.positions[i]&&JSON.stringify(part.box)===JSON.stringify(layout.boxes[i])));
+  }
   if(p.id==='tb-parts-v1'){
    const h=parts[0].box[3];if(!p.topHeights.includes(h)||parts.length!==2)return false;
    const expected=[[0,0,100,h],[0,h,100,100-h]];

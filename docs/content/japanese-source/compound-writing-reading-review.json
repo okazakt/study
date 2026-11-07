@@ -1,0 +1,562 @@
+[
+  {
+    "character": "恐",
+    "word": "恐怖",
+    "reading": "きょうふ",
+    "attestedReadings": [
+      "きょうふ",
+      "くふ"
+    ]
+  },
+  {
+    "character": "堅",
+    "word": "中堅",
+    "reading": "ちゅうけん",
+    "attestedReadings": [
+      "ちゅうけん"
+    ]
+  },
+  {
+    "character": "互",
+    "word": "互い",
+    "reading": "たがい",
+    "attestedReadings": [
+      "たがい"
+    ]
+  },
+  {
+    "character": "畳",
+    "word": "畳",
+    "reading": "たたみ",
+    "attestedReadings": [
+      "じょう",
+      "たたみ",
+      "たとう"
+    ]
+  },
+  {
+    "character": "替",
+    "word": "代替",
+    "reading": "だいたい",
+    "attestedReadings": [
+      "だいがえ",
+      "だいたい"
+    ]
+  },
+  {
+    "character": "緊",
+    "word": "緊密",
+    "reading": "きんみつ",
+    "attestedReadings": [
+      "きんみつ"
+    ]
+  },
+  {
+    "character": "賢",
+    "word": "先賢",
+    "reading": "せんけん",
+    "attestedReadings": [
+      "せんけん"
+    ]
+  },
+  {
+    "character": "墾",
+    "word": "開墾",
+    "reading": "かいこん",
+    "attestedReadings": [
+      "かいこん"
+    ]
+  },
+  {
+    "character": "慈",
+    "word": "慈善",
+    "reading": "じぜん",
+    "attestedReadings": [
+      "じぜん"
+    ]
+  },
+  {
+    "character": "辛",
+    "word": "辛い",
+    "reading": "からい",
+    "attestedReadings": [
+      "からい",
+      "ずらい",
+      "つらい",
+      "づらい",
+      "ツラい"
+    ]
+  },
+  {
+    "character": "籍",
+    "word": "戸籍",
+    "reading": "こせき",
+    "attestedReadings": [
+      "こせき"
+    ]
+  },
+  {
+    "character": "奪",
+    "word": "争奪",
+    "reading": "そうだつ",
+    "attestedReadings": [
+      "そうだつ"
+    ]
+  },
+  {
+    "character": "墜",
+    "word": "墜死",
+    "reading": "ついし",
+    "attestedReadings": [
+      "ついし"
+    ]
+  },
+  {
+    "character": "慕",
+    "word": "思慕",
+    "reading": "しぼ",
+    "attestedReadings": [
+      "しぼ"
+    ]
+  },
+  {
+    "character": "恭",
+    "word": "恭賀",
+    "reading": "きょうが",
+    "attestedReadings": [
+      "きょうが"
+    ]
+  },
+  {
+    "character": "琴",
+    "word": "琴",
+    "reading": "こと",
+    "attestedReadings": [
+      "きん",
+      "こと"
+    ]
+  },
+  {
+    "character": "茎",
+    "word": "茎",
+    "reading": "くき",
+    "attestedReadings": [
+      "くき",
+      "なかご"
+    ]
+  },
+  {
+    "character": "懸",
+    "word": "懸命",
+    "reading": "けんめい",
+    "attestedReadings": [
+      "けんめい"
+    ]
+  },
+  {
+    "character": "懇",
+    "word": "懇切",
+    "reading": "こんせつ",
+    "attestedReadings": [
+      "こんせつ"
+    ]
+  },
+  {
+    "character": "璽",
+    "word": "国璽",
+    "reading": "こくじ",
+    "attestedReadings": [
+      "こくじ"
+    ]
+  },
+  {
+    "character": "充",
+    "word": "充実",
+    "reading": "じゅうじつ",
+    "attestedReadings": [
+      "じゅうじつ"
+    ]
+  },
+  {
+    "character": "薦",
+    "word": "推薦",
+    "reading": "すいせん",
+    "attestedReadings": [
+      "すいせん"
+    ]
+  },
+  {
+    "character": "奔",
+    "word": "奔放",
+    "reading": "ほんぽう",
+    "attestedReadings": [
+      "ほんぽう"
+    ]
+  },
+  {
+    "character": "蓋",
+    "word": "蓋",
+    "reading": "ふた",
+    "attestedReadings": [
+      "ふた"
+    ]
+  },
+  {
+    "character": "藍",
+    "word": "出藍",
+    "reading": "しゅつらん",
+    "attestedReadings": [
+      "しゅつらん"
+    ]
+  },
+  {
+    "character": "宴",
+    "word": "宴会",
+    "reading": "えんかい",
+    "attestedReadings": [
+      "えんかい"
+    ]
+  },
+  {
+    "character": "冠",
+    "word": "冠",
+    "reading": "かんむり",
+    "attestedReadings": [
+      "かうぶり",
+      "かがふり",
+      "かぶり",
+      "かむり",
+      "かん",
+      "かんぶり",
+      "かんむり",
+      "こうぶり"
+    ]
+  },
+  {
+    "character": "寛",
+    "word": "寛厳",
+    "reading": "かんげん",
+    "attestedReadings": [
+      "かんげん"
+    ]
+  },
+  {
+    "character": "冥",
+    "word": "冥利",
+    "reading": "みょうり",
+    "attestedReadings": [
+      "みょうり"
+    ]
+  },
+  {
+    "character": "稽",
+    "word": "滑稽",
+    "reading": "こっけい",
+    "attestedReadings": [
+      "こっけい"
+    ]
+  },
+  {
+    "character": "渇",
+    "word": "渇く",
+    "reading": "かわく",
+    "attestedReadings": [
+      "かわく"
+    ]
+  },
+  {
+    "character": "渓",
+    "word": "渓流",
+    "reading": "けいりゅう",
+    "attestedReadings": [
+      "けいりゅう"
+    ]
+  },
+  {
+    "character": "侯",
+    "word": "王侯",
+    "reading": "おうこう",
+    "attestedReadings": [
+      "おうこう"
+    ]
+  },
+  {
+    "character": "惰",
+    "word": "怠惰",
+    "reading": "たいだ",
+    "attestedReadings": [
+      "たいだ"
+    ]
+  },
+  {
+    "character": "鶏",
+    "word": "鶏",
+    "reading": "にわとり",
+    "attestedReadings": [
+      "かけ",
+      "くたかけ",
+      "とり",
+      "にわとり"
+    ]
+  },
+  {
+    "character": "隷",
+    "word": "奴隷",
+    "reading": "どれい",
+    "attestedReadings": [
+      "どれい"
+    ]
+  },
+  {
+    "character": "款",
+    "word": "借款",
+    "reading": "しゃっかん",
+    "attestedReadings": [
+      "しゃっかん"
+    ]
+  },
+  {
+    "character": "啓",
+    "word": "啓発",
+    "reading": "けいはつ",
+    "attestedReadings": [
+      "けいはつ"
+    ]
+  },
+  {
+    "character": "憩",
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "attestedReadings": [
+      "きゅうけい"
+    ]
+  },
+  {
+    "character": "黙",
+    "word": "暗黙",
+    "reading": "あんもく",
+    "attestedReadings": [
+      "あんもく"
+    ]
+  },
+  {
+    "character": "獄",
+    "word": "地獄",
+    "reading": "じごく",
+    "attestedReadings": [
+      "じごく"
+    ]
+  },
+  {
+    "character": "衝",
+    "word": "折衝",
+    "reading": "せっしょう",
+    "attestedReadings": [
+      "せっしょう"
+    ]
+  },
+  {
+    "character": "徹",
+    "word": "徹夜",
+    "reading": "てつや",
+    "attestedReadings": [
+      "てつや"
+    ]
+  },
+  {
+    "character": "撤",
+    "word": "撤去",
+    "reading": "てっきょ",
+    "attestedReadings": [
+      "てっきょ"
+    ]
+  },
+  {
+    "character": "斑",
+    "word": "斑点",
+    "reading": "はんてん",
+    "attestedReadings": [
+      "はんてん"
+    ]
+  },
+  {
+    "character": "徴",
+    "word": "徴収",
+    "reading": "ちょうしゅう",
+    "attestedReadings": [
+      "ちょうしゅう"
+    ]
+  },
+  {
+    "character": "壱",
+    "word": "壱",
+    "reading": "いち",
+    "attestedReadings": [
+      "いち"
+    ]
+  },
+  {
+    "character": "葬",
+    "word": "会葬",
+    "reading": "かいそう",
+    "attestedReadings": [
+      "かいそう"
+    ]
+  },
+  {
+    "character": "享",
+    "word": "享受",
+    "reading": "きょうじゅ",
+    "attestedReadings": [
+      "きょうじゅ"
+    ]
+  },
+  {
+    "character": "彙",
+    "word": "語彙",
+    "reading": "ごい",
+    "attestedReadings": [
+      "ごい"
+    ]
+  },
+  {
+    "character": "葛",
+    "word": "葛",
+    "reading": "くず",
+    "attestedReadings": [
+      "かずら",
+      "くず",
+      "つづら"
+    ]
+  },
+  {
+    "character": "索",
+    "word": "思索",
+    "reading": "しさく",
+    "attestedReadings": [
+      "しさく"
+    ]
+  },
+  {
+    "character": "稲",
+    "word": "稲",
+    "reading": "いね",
+    "attestedReadings": [
+      "いね"
+    ]
+  },
+  {
+    "character": "聴",
+    "word": "傍聴",
+    "reading": "ぼうちょう",
+    "attestedReadings": [
+      "ぼうちょう"
+    ]
+  },
+  {
+    "character": "摂",
+    "word": "摂取",
+    "reading": "せっしゅ",
+    "attestedReadings": [
+      "せっしゅ"
+    ]
+  },
+  {
+    "character": "渋",
+    "word": "渋",
+    "reading": "しぶ",
+    "attestedReadings": [
+      "しぶ"
+    ]
+  },
+  {
+    "character": "罰",
+    "word": "処罰",
+    "reading": "しょばつ",
+    "attestedReadings": [
+      "しょばつ"
+    ]
+  },
+  {
+    "character": "撃",
+    "word": "打撃",
+    "reading": "だげき",
+    "attestedReadings": [
+      "だげき"
+    ]
+  },
+  {
+    "character": "憂",
+    "word": "憂い",
+    "reading": "うれい",
+    "attestedReadings": [
+      "うい",
+      "うれい"
+    ]
+  },
+  {
+    "character": "覇",
+    "word": "制覇",
+    "reading": "せいは",
+    "attestedReadings": [
+      "せいは"
+    ]
+  },
+  {
+    "character": "丙",
+    "word": "丙種",
+    "reading": "へいしゅ",
+    "attestedReadings": [
+      "へいしゅ"
+    ]
+  },
+  {
+    "character": "乏",
+    "word": "欠乏",
+    "reading": "けつぼう",
+    "attestedReadings": [
+      "けつぼう"
+    ]
+  },
+  {
+    "character": "了",
+    "word": "了解",
+    "reading": "りょうかい",
+    "attestedReadings": [
+      "りょうかい"
+    ]
+  },
+  {
+    "character": "升",
+    "word": "升",
+    "reading": "しょう",
+    "attestedReadings": [
+      "しょう",
+      "ます"
+    ]
+  },
+  {
+    "character": "毀",
+    "word": "毀損",
+    "reading": "きそん",
+    "attestedReadings": [
+      "きそん"
+    ]
+  },
+  {
+    "character": "介",
+    "word": "介入",
+    "reading": "かいにゅう",
+    "attestedReadings": [
+      "かいにゅう"
+    ]
+  },
+  {
+    "character": "呂",
+    "word": "風呂",
+    "reading": "ふろ",
+    "attestedReadings": [
+      "ふろ"
+    ]
+  }
+]

@@ -122,6 +122,205 @@
         40,
         50
       ]
+    },
+    {
+      "id": "compound-parts-v1",
+      "subject": "国語",
+      "mode": "kanji_component",
+      "maxima": {
+        "task": 0,
+        "prompt": 34,
+        "choice": 1,
+        "targetLabel": 17,
+        "note": 16,
+        "combined": 61
+      },
+      "maxSentenceChars": 24,
+      "maxWordChars": 3,
+      "maxReadingChars": 6,
+      "maxReadingWordWidthPx": 250,
+      "parts": [
+        3,
+        4
+      ],
+      "glyphRange": "BMP CJK and katakana; one glyph per choice",
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "reviewRecord": "japanese-source/compound-writing-layout-review.json",
+      "scope": "Only the six exact rectangular arrangements stored in layouts; no enclosures, images, arbitrary offsets or whole characters.",
+      "layouts": [
+        {
+          "positions": [
+            "上",
+            "中央",
+            "下"
+          ],
+          "boxes": [
+            [
+              0,
+              0,
+              100,
+              30
+            ],
+            [
+              0,
+              30,
+              100,
+              35
+            ],
+            [
+              0,
+              65,
+              100,
+              35
+            ]
+          ]
+        },
+        {
+          "positions": [
+            "左",
+            "中央",
+            "右"
+          ],
+          "boxes": [
+            [
+              0,
+              0,
+              30,
+              100
+            ],
+            [
+              30,
+              0,
+              40,
+              100
+            ],
+            [
+              70,
+              0,
+              30,
+              100
+            ]
+          ]
+        },
+        {
+          "positions": [
+            "左上",
+            "左下",
+            "右"
+          ],
+          "boxes": [
+            [
+              0,
+              0,
+              60,
+              50
+            ],
+            [
+              0,
+              50,
+              60,
+              50
+            ],
+            [
+              60,
+              0,
+              40,
+              100
+            ]
+          ]
+        },
+        {
+          "positions": [
+            "左上",
+            "右上",
+            "下"
+          ],
+          "boxes": [
+            [
+              0,
+              0,
+              50,
+              50
+            ],
+            [
+              50,
+              0,
+              50,
+              50
+            ],
+            [
+              0,
+              50,
+              100,
+              50
+            ]
+          ]
+        },
+        {
+          "positions": [
+            "上",
+            "左下",
+            "右下"
+          ],
+          "boxes": [
+            [
+              0,
+              0,
+              100,
+              40
+            ],
+            [
+              0,
+              40,
+              50,
+              60
+            ],
+            [
+              50,
+              40,
+              50,
+              60
+            ]
+          ]
+        },
+        {
+          "positions": [
+            "左",
+            "右上",
+            "右中央",
+            "右下"
+          ],
+          "boxes": [
+            [
+              0,
+              0,
+              40,
+              100
+            ],
+            [
+              40,
+              0,
+              60,
+              30
+            ],
+            [
+              40,
+              30,
+              60,
+              35
+            ],
+            [
+              40,
+              65,
+              60,
+              35
+            ]
+          ]
+        }
+      ]
     }
   ]
 }

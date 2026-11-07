@@ -112,6 +112,29 @@ for n,r in vertical_rows:
  item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch='japanese-vertical-writing-20261107',writing_profile='tb-parts-v1',writing_scope='secondary-1110',writing_parts=[
   dict(position='上',answer=top,dummies=glyph_dummies(top,c,vertical_groups),box=[0,0,100,height]),
   dict(position='下',answer=bottom,dummies=glyph_dummies(bottom,c,vertical_groups),box=[0,height,100,100-height])])
+# Additional bounded arrangements; all glyph answers remain in the existing IDs.
+compound_layouts=json.loads((SOURCE/'compound-writing-layouts.json').read_text())
+compound_groups=json.loads((SOURCE/'compound-glyph-groups.json').read_text())['groups']+vertical_groups
+compound_rows=list(rows('compound-writing.tsv'))
+for n,r in compound_rows:
+ assert len(r)==6,(n,r)
+ c,word,reading,hint,layout,answers=r;answers=answers.split('/')
+ assert c in kanji_by_char and not scope[c] and c not in hint,(n,c)
+ item=kanji_by_char[c]
+ assert not item['writing_parts'] and c not in writing_deferred,(n,c)
+ assert word.count(c)==1 and all(len(a)==1 and (0x3400<=ord(a)<=0x9fff or 0x30a0<=ord(a)<=0x30ff) for a in answers),(n,c)
+ profile='compound-parts-v1'
+ if layout=='tb':
+  assert len(answers)==2
+  h=40 if answers[0] in '艹宀穴雨冖罒亠爫竹' else 50
+  positions=['上','下'];boxes=[[0,0,100,h],[0,h,100,100-h]];profile='tb-parts-v1'
+ elif layout=='lr-right-split':
+  assert len(answers)==3
+  positions=['左','右上','右下'];boxes=[[0,0,40,100],[40,0,60,50],[40,50,60,50]];profile='lr-parts-v1'
+ else:
+  positions=compound_layouts[layout]['positions'];boxes=compound_layouts[layout]['boxes']
+ assert len(answers)==len(boxes)==len(positions)
+ item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch='japanese-compound-writing-20261107',writing_profile=profile,writing_scope='secondary-1110',writing_parts=[dict(position=pos,answer=a,dummies=glyph_dummies(a,c,compound_groups),box=box) for pos,a,box in zip(positions,answers,boxes)])
 (ROOT/'quiz-data/junior_japanese_extended.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')
-print('Writing targets compiled:',len(writing_rows)+len(vertical_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows)+len(vertical_rows),')')
+print('Writing targets compiled:',len(writing_rows)+len(vertical_rows)+len(compound_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows)+len(vertical_rows)+len(compound_rows),')')

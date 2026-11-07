@@ -490,16 +490,68 @@
       "あちまんえん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "金額などに用いる、一の大字。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "士",
+        "dummies": [
+          "壮",
+          "状",
+          "土"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "冖",
+        "dummies": [
+          "亠",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "匕",
+        "dummies": [
+          "七",
+          "十",
+          "丁"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "壱万円（いちまんえん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "壱",
+    "writing_reading": "いち",
+    "writing_note": "壱（いち）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_828b",
@@ -1540,16 +1592,68 @@
       "かいにゅお"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "他の者の間に入り、関わること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "人",
+        "dummies": [
+          "入",
+          "八",
+          "大"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "左下",
+        "answer": "丿",
+        "dummies": [
+          "丨",
+          "一",
+          "丶"
+        ],
+        "box": [
+          0,
+          40,
+          50,
+          60
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "丨",
+        "dummies": [
+          "丿",
+          "一",
+          "丶"
+        ],
+        "box": [
+          50,
+          40,
+          50,
+          60
+        ]
+      }
+    ],
     "note": "介入（かいにゅう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "介入",
+    "writing_reading": "かいにゅう",
+    "writing_note": "介入（かいにゅう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6212",
@@ -3390,16 +3494,53 @@
       "きょうぶ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "怖いと感じ、身がすくむ気持ち。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "巩",
+        "dummies": [
+          "筑",
+          "凡",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "心",
+        "dummies": [
+          "㣺",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "恐怖（きょうふ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "恐怖",
+    "writing_reading": "きょうふ",
+    "writing_note": "恐怖（きょうふ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_97ff",
@@ -3985,16 +4126,53 @@
       "あげき"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "物に強く当たること。また、その衝突。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "軗",
+        "dummies": [
+          "車",
+          "殳",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "手",
+        "dummies": [
+          "毛",
+          "牛",
+          "午"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "打撃（だげき）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "打撃",
+    "writing_reading": "だげき",
+    "writing_note": "打撃（だげき）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_80a9",
@@ -4227,16 +4405,53 @@
       "ちゅおけん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "集団の中心となって働く人や層。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "臤",
+        "dummies": [
+          "臣",
+          "賢",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "土",
+        "dummies": [
+          "壮",
+          "状",
+          "士"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "中堅（ちゅうけん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "中堅",
+    "writing_reading": "ちゅうけん",
+    "writing_note": "中堅（ちゅうけん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9063",
@@ -4543,16 +4758,53 @@
       "たがえ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "一方と他方の、両方。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "一",
+        "dummies": [
+          "丨",
+          "丿",
+          "丶"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "彑",
+        "dummies": [
+          "爫",
+          "彐",
+          "爿"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "互い（たがい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "互い",
+    "writing_reading": "たがい",
+    "writing_note": "互い（たがい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6297",
@@ -7201,16 +7453,53 @@
       "あたみ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "床に敷く、い草などで作る建具。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "田",
+        "dummies": [
+          "毌",
+          "母",
+          "由"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "冝",
+        "dummies": [
+          "宜",
+          "且",
+          "旦"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "畳（たたみ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "畳",
+    "writing_reading": "たたみ",
+    "writing_note": "畳（たたみ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6b96",
@@ -8605,16 +8894,53 @@
       "だえたい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "他のものに代わって、役割を果たすこと。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "㚘",
+        "dummies": [
+          "夫",
+          "夭",
+          "央"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "日",
+        "dummies": [
+          "昗",
+          "六",
+          "交"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "代替（だいたい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "代替",
+    "writing_reading": "だいたい",
+    "writing_note": "代替（だいたい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6ca2",
@@ -9395,16 +9721,68 @@
       "ちょうじゅう"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "税金などを、取り立てること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "彳",
+        "dummies": [
+          "亻",
+          "氵",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          30,
+          100
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "㞷",
+        "dummies": [
+          "山",
+          "王",
+          "生"
+        ],
+        "box": [
+          30,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "攵",
+        "dummies": [
+          "女",
+          "又",
+          "夂"
+        ],
+        "box": [
+          70,
+          0,
+          30,
+          100
+        ]
+      }
+    ],
     "note": "徴収（ちょうしゅう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "徴収",
+    "writing_reading": "ちょうしゅう",
+    "writing_note": "徴収（ちょうしゅう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6f84",
@@ -10603,16 +10981,68 @@
       "うね"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "米を実らせる、イネ科の作物。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "禾",
+        "dummies": [
+          "木",
+          "米",
+          "未"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "爫",
+        "dummies": [
+          "彐",
+          "彑",
+          "爿"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "旧",
+        "dummies": [
+          "旦",
+          "且",
+          "目"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ],
     "note": "稲（いね）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "稲",
+    "writing_reading": "いね",
+    "writing_note": "稲（いね）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "lr-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_8e0f",
@@ -11607,16 +12037,68 @@
       "しょはつ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "規則違反などに対し、制裁を加えること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "罒",
+        "dummies": [
+          "艹",
+          "竹",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "左下",
+        "answer": "言",
+        "dummies": [
+          "吾",
+          "吉",
+          "告"
+        ],
+        "box": [
+          0,
+          40,
+          50,
+          60
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "刂",
+        "dummies": [
+          "阝",
+          "卩",
+          "彳"
+        ],
+        "box": [
+          50,
+          40,
+          50,
+          60
+        ]
+      }
+    ],
     "note": "処罰（しょばつ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "処罰",
+    "writing_reading": "しょばつ",
+    "writing_note": "処罰（しょばつ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_822c",
@@ -14514,16 +14996,68 @@
       "えんもく"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "言葉にせず、互いに了解していること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "里",
+        "dummies": [
+          "黒",
+          "墨",
+          "重"
+        ],
+        "box": [
+          0,
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "犬",
+        "dummies": [
+          "尤",
+          "尢",
+          "戊"
+        ],
+        "box": [
+          50,
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "灬",
+        "dummies": [
+          "㣺",
+          "心",
+          "小"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "暗黙（あんもく）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "暗黙",
+    "writing_reading": "あんもく",
+    "writing_note": "暗黙（あんもく）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_7d0b",
@@ -15584,16 +16118,68 @@
       "あれい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "自由を奪われ、人に支配される立場の者。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "士",
+        "dummies": [
+          "壮",
+          "状",
+          "土"
+        ],
+        "box": [
+          0,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "左下",
+        "answer": "示",
+        "dummies": [
+          "宗",
+          "崇",
+          "奈"
+        ],
+        "box": [
+          0,
+          50,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "隶",
+        "dummies": [
+          "永",
+          "水",
+          "求"
+        ],
+        "box": [
+          60,
+          0,
+          40,
+          100
+        ]
+      }
+    ],
     "note": "奴隷（どれい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "奴隷",
+    "writing_reading": "どれい",
+    "writing_note": "奴隷（どれい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9f62",
@@ -16467,16 +17053,53 @@
       "あんかい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "人が集まり、飲食して楽しむ会。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "宀",
+        "dummies": [
+          "艹",
+          "竹",
+          "罒"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "妟",
+        "dummies": [
+          "妥",
+          "妄",
+          "委"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "宴会（えんかい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "宴会",
+    "writing_reading": "えんかい",
+    "writing_note": "宴会（えんかい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6b27",
@@ -17777,16 +18400,53 @@
       "いんむり"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "頭に着ける、地位などを表すかぶり物。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "冖",
+        "dummies": [
+          "亠",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "㝴",
+        "dummies": [
+          "元",
+          "完",
+          "目"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "冠（かんむり）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "冠",
+    "writing_reading": "かんむり",
+    "writing_note": "冠（かんむり）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_52d8",
@@ -19143,16 +19803,53 @@
       "あんみつ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "関係が強く、すき間がない様子。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "臤",
+        "dummies": [
+          "臣",
+          "堅",
+          "賢"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "糸",
+        "dummies": [
+          "兹",
+          "玄",
+          "幺"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "緊密（きんみつ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "緊密",
+    "writing_reading": "きんみつ",
+    "writing_note": "緊密（きんみつ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_611a",
@@ -19422,16 +20119,68 @@
       "けえはつ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "知識を与え、人の理解を開くこと。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "戸",
+        "dummies": [
+          "尸",
+          "广",
+          "厂"
+        ],
+        "box": [
+          0,
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "攵",
+        "dummies": [
+          "女",
+          "又",
+          "夂"
+        ],
+        "box": [
+          50,
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "口",
+        "dummies": [
+          "日",
+          "目",
+          "囗"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "啓発（けいはつ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "啓発",
+    "writing_reading": "けいはつ",
+    "writing_note": "啓発（けいはつ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_63b2",
@@ -19595,16 +20344,68 @@
       "きゅおけい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "仕事などを中断し、しばらく休むこと。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "舌",
+        "dummies": [
+          "寺",
+          "吉",
+          "告"
+        ],
+        "box": [
+          0,
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "自",
+        "dummies": [
+          "耳",
+          "目",
+          "月"
+        ],
+        "box": [
+          50,
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "心",
+        "dummies": [
+          "㣺",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "休憩（きゅうけい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "休憩",
+    "writing_reading": "きゅうけい",
+    "writing_note": "休憩（きゅうけい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9d8f",
@@ -19623,16 +20424,68 @@
       "いわとり"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "卵や肉を得るためにも飼う鳥。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "爫",
+        "dummies": [
+          "彐",
+          "彑",
+          "爿"
+        ],
+        "box": [
+          0,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "左下",
+        "answer": "夫",
+        "dummies": [
+          "㚘",
+          "夭",
+          "央"
+        ],
+        "box": [
+          0,
+          50,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "鳥",
+        "dummies": [
+          "馬",
+          "魚",
+          "象"
+        ],
+        "box": [
+          60,
+          0,
+          40,
+          100
+        ]
+      }
+    ],
     "note": "鶏（にわとり）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "鶏",
+    "writing_reading": "にわとり",
+    "writing_note": "鶏（にわとり）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9be8",
@@ -19781,16 +20634,53 @@
       "いんけん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "昔の、知恵に優れた立派な人。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "臤",
+        "dummies": [
+          "臣",
+          "堅",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "貝",
+        "dummies": [
+          "莧",
+          "草",
+          "見"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "先賢（せんけん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "先賢",
+    "writing_reading": "せんけん",
+    "writing_note": "先賢（せんけん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_5e7b",
@@ -20998,16 +21888,68 @@
       "あごく"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "死後に苦しむとされる場所。また、ひどい苦境。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "犭",
+        "dummies": [
+          "扌",
+          "彳",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          30,
+          100
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "言",
+        "dummies": [
+          "吾",
+          "吉",
+          "告"
+        ],
+        "box": [
+          30,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "犬",
+        "dummies": [
+          "尤",
+          "尢",
+          "戊"
+        ],
+        "box": [
+          70,
+          0,
+          30,
+          100
+        ]
+      }
+    ],
     "note": "地獄（じごく）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "地獄",
+    "writing_reading": "じごく",
+    "writing_note": "地獄（じごく）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6068",
@@ -21221,16 +22163,53 @@
       "かえこん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "原野などを耕し、田畑にすること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "貇",
+        "dummies": [
+          "艮",
+          "豸",
+          "狠"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "土",
+        "dummies": [
+          "壮",
+          "状",
+          "士"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "開墾（かいこん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "開墾",
+    "writing_reading": "かいこん",
+    "writing_note": "開墾（かいこん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_50b5",
@@ -22029,16 +23008,53 @@
       "いぜん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "困っている人を、思いやり助けること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "兹",
+        "dummies": [
+          "玄",
+          "幺",
+          "糸"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "心",
+        "dummies": [
+          "㣺",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "慈善（じぜん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "慈善",
+    "writing_reading": "じぜん",
+    "writing_note": "慈善（じぜん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_8ef8",
@@ -22912,16 +23928,68 @@
       "せっじょう"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "相手と交渉し、話をまとめようとすること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "彳",
+        "dummies": [
+          "亻",
+          "氵",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          30,
+          100
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "重",
+        "dummies": [
+          "黒",
+          "墨",
+          "里"
+        ],
+        "box": [
+          30,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "亍",
+        "dummies": [
+          "于",
+          "干",
+          "丁"
+        ],
+        "box": [
+          70,
+          0,
+          30,
+          100
+        ]
+      }
+    ],
     "note": "折衝（せっしょう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "折衝",
+    "writing_reading": "せっしょう",
+    "writing_note": "折衝（せっしょう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9418",
@@ -23460,16 +24528,53 @@
       "あらい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "舌が刺激されるような味がする。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "立",
+        "dummies": [
+          "咅",
+          "音",
+          "章"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "十",
+        "dummies": [
+          "丁",
+          "于",
+          "下"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "辛い（からい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "辛い",
+    "writing_reading": "からい",
+    "writing_note": "辛い（からい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_5be9",
@@ -24417,16 +25522,53 @@
       "こせぎ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "家族関係などを公に登録した帳簿。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "竹",
+        "dummies": [
+          "艹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "耤",
+        "dummies": [
+          "昔",
+          "耕",
+          "目"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "戸籍（こせき）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "戸籍",
+    "writing_reading": "こせき",
+    "writing_note": "戸籍（こせき）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6442",
@@ -24445,16 +25587,83 @@
       "せっじゅ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "栄養などを、体の中に取り入れること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "扌",
+        "dummies": [
+          "氵",
+          "冫",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "耳",
+        "dummies": [
+          "目",
+          "自",
+          "月"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          30
+        ]
+      },
+      {
+        "position": "右中央",
+        "answer": "丷",
+        "dummies": [
+          "八",
+          "儿",
+          "入"
+        ],
+        "box": [
+          40,
+          30,
+          60,
+          35
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "八",
+        "dummies": [
+          "丷",
+          "儿",
+          "入"
+        ],
+        "box": [
+          40,
+          65,
+          60,
+          35
+        ]
+      }
+    ],
     "note": "摂取（せっしゅ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "摂取",
+    "writing_reading": "せっしゅ",
+    "writing_note": "摂取（せっしゅ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6f5c",
@@ -24993,16 +26202,68 @@
       "かえそう"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "故人を送る式に、参列すること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "艹",
+        "dummies": [
+          "竹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "死",
+        "dummies": [
+          "歹",
+          "夕",
+          "免"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "廾",
+        "dummies": [
+          "卉",
+          "升",
+          "井"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "会葬（かいそう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "会葬",
+    "writing_reading": "かいそう",
+    "writing_note": "会葬（かいそう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_906d",
@@ -25718,16 +26979,53 @@
       "そおだつ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "互いに、力ずくで取り合うこと。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "奞",
+        "dummies": [
+          "大",
+          "雁",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "寸",
+        "dummies": [
+          "才",
+          "于",
+          "干"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "争奪（そうだつ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "争奪",
+    "writing_reading": "そうだつ",
+    "writing_note": "争奪（そうだつ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_80c6",
@@ -26424,16 +27722,83 @@
       "ぼうちよう"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "会議などを、見聞きすること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "耳",
+        "dummies": [
+          "目",
+          "自",
+          "月"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "十",
+        "dummies": [
+          "丁",
+          "于",
+          "下"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          30
+        ]
+      },
+      {
+        "position": "右中央",
+        "answer": "罒",
+        "dummies": [
+          "艹",
+          "竹",
+          "宀"
+        ],
+        "box": [
+          40,
+          30,
+          60,
+          35
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "心",
+        "dummies": [
+          "㣺",
+          "小",
+          "灬"
+        ],
+        "box": [
+          40,
+          65,
+          60,
+          35
+        ]
+      }
+    ],
     "note": "傍聴（ぼうちょう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "傍聴",
+    "writing_reading": "ぼうちょう",
+    "writing_note": "傍聴（ぼうちょう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9673",
@@ -26582,16 +27947,53 @@
       "あいし"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "高い所から落ちて、命を失うこと。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "隊",
+        "dummies": [
+          "遂",
+          "豕",
+          "逐"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "土",
+        "dummies": [
+          "壮",
+          "状",
+          "士"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "墜死（ついし）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "墜死",
+    "writing_reading": "ついし",
+    "writing_note": "墜死（ついし）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_5e1d",
@@ -28799,16 +30201,53 @@
       "あぼ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "恋しく思い、心が引かれること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "莫",
+        "dummies": [
+          "暮",
+          "幕",
+          "墓"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "㣺",
+        "dummies": [
+          "心",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "思慕（しぼ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "思慕",
+    "writing_reading": "しぼ",
+    "writing_note": "思慕（しぼ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_7c3f",
@@ -29338,16 +30777,53 @@
       "けつぼお"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "必要なものが、不足していること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "丿",
+        "dummies": [
+          "丨",
+          "一",
+          "丶"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "之",
+        "dummies": [
+          "芝",
+          "乞",
+          "目"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "欠乏（けつぼう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "欠乏",
+    "writing_reading": "けつぼう",
+    "writing_note": "欠乏（けつぼう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_59a8",
@@ -30249,16 +31725,53 @@
       "あれい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "心配や、悲しみ。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "㥑",
+        "dummies": [
+          "夏",
+          "愛",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "夂",
+        "dummies": [
+          "女",
+          "又",
+          "攵"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "憂い（うれい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "憂い",
+    "writing_reading": "うれい",
+    "writing_note": "憂い（うれい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_63da",
@@ -30673,16 +32186,53 @@
       "りょおかい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "内容を理解し、承知すること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "乛",
+        "dummies": [
+          "乙",
+          "亅",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "亅",
+        "dummies": [
+          "乛",
+          "乙",
+          "目"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "了解（りょうかい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "了解",
+    "writing_reading": "りょうかい",
+    "writing_note": "了解（りょうかい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_731f",
@@ -33214,16 +34764,68 @@
       "いわく"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "喉などの水分が足りず、乾く。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "氵",
+        "dummies": [
+          "冫",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "日",
+        "dummies": [
+          "昗",
+          "六",
+          "交"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "匂",
+        "dummies": [
+          "匀",
+          "匆",
+          "句"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ],
     "note": "渇く（かわく）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "渇く",
+    "writing_reading": "かわく",
+    "writing_note": "渇く（かわく）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "lr-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_8910",
@@ -33666,16 +35268,68 @@
       "しゃつかん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "国や政府などが、外国から借りる資金。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "士",
+        "dummies": [
+          "壮",
+          "状",
+          "土"
+        ],
+        "box": [
+          0,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "左下",
+        "answer": "示",
+        "dummies": [
+          "宗",
+          "崇",
+          "奈"
+        ],
+        "box": [
+          0,
+          50,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "欠",
+        "dummies": [
+          "歹",
+          "夕",
+          "夂"
+        ],
+        "box": [
+          60,
+          0,
+          40,
+          100
+        ]
+      }
+    ],
     "note": "借款（しゃっかん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "借款",
+    "writing_reading": "しゃっかん",
+    "writing_note": "借款（しゃっかん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9591",
@@ -33722,16 +35376,53 @@
       "いんげん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "おおらかにすることと、厳しくすること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "宀",
+        "dummies": [
+          "艹",
+          "竹",
+          "罒"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "莧",
+        "dummies": [
+          "草",
+          "見",
+          "貝"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "寛厳（かんげん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "寛厳",
+    "writing_reading": "かんげん",
+    "writing_note": "寛厳（かんげん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_61be",
@@ -34428,16 +36119,68 @@
       "きょうしゅ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "与えられたものを、受け入れて味わうこと。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "亠",
+        "dummies": [
+          "冖",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "口",
+        "dummies": [
+          "日",
+          "目",
+          "囗"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "子",
+        "dummies": [
+          "矛",
+          "予",
+          "了"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "享受（きょうじゅ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "享受",
+    "writing_reading": "きょうじゅ",
+    "writing_note": "享受（きょうじゅ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_631f",
@@ -34521,16 +36264,53 @@
       "きょうか"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "年の初めなどを、うやうやしく祝うこと。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "共",
+        "dummies": [
+          "異",
+          "具",
+          "典"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "㣺",
+        "dummies": [
+          "心",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "恭賀（きょうが）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "恭賀",
+    "writing_reading": "きょうが",
+    "writing_note": "恭賀（きょうが）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_77ef",
@@ -34744,16 +36524,53 @@
       "あと"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "弦をはじいて音を出す、伝統的な楽器。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "玨",
+        "dummies": [
+          "班",
+          "林",
+          "比"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "今",
+        "dummies": [
+          "令",
+          "会",
+          "合"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "琴（こと）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "琴",
+    "writing_reading": "こと",
+    "writing_note": "琴（こと）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_8b39",
@@ -35088,16 +36905,53 @@
       "いき"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "植物の葉や花を支え、水などを運ぶ部分。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "艹",
+        "dummies": [
+          "竹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "圣",
+        "dummies": [
+          "支",
+          "圭",
+          "至"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "茎（くき）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "茎",
+    "writing_reading": "くき",
+    "writing_note": "茎（くき）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6e13",
@@ -35116,16 +36970,68 @@
       "けえりゅう"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "山あいを流れる川。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "氵",
+        "dummies": [
+          "冫",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "爫",
+        "dummies": [
+          "彐",
+          "彑",
+          "爿"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "夫",
+        "dummies": [
+          "㚘",
+          "夭",
+          "央"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ],
     "note": "渓流（けいりゅう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "渓流",
+    "writing_reading": "けいりゅう",
+    "writing_note": "渓流（けいりゅう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "lr-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_86cd",
@@ -35553,16 +37459,53 @@
       "いんめい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "力の限り、物事に取り組む様子。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "縣",
+        "dummies": [
+          "県",
+          "系",
+          "糸"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "心",
+        "dummies": [
+          "㣺",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "懸命（けんめい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "懸命",
+    "writing_reading": "けんめい",
+    "writing_note": "懸命（けんめい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_5f26",
@@ -35869,16 +37812,68 @@
       "あうこう"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "君主や、高い位にある人。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "亻",
+        "dummies": [
+          "彳",
+          "氵",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "ユ",
+        "dummies": [
+          "コ",
+          "エ",
+          "ヒ"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "矢",
+        "dummies": [
+          "失",
+          "朱",
+          "未"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ],
     "note": "王侯（おうこう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "王侯",
+    "writing_reading": "おうこう",
+    "writing_note": "王侯（おうこう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "lr-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6d2a",
@@ -36445,16 +38440,53 @@
       "こんせっ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "親切で、行き届いている様子。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "貇",
+        "dummies": [
+          "艮",
+          "豸",
+          "狠"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "心",
+        "dummies": [
+          "㣺",
+          "小",
+          "灬"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "懇切（こんせつ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "懇切",
+    "writing_reading": "こんせつ",
+    "writing_note": "懇切（こんせつ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_5506",
@@ -36789,16 +38821,68 @@
       "あさく"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "筋道を立て、深く考えること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "十",
+        "dummies": [
+          "丁",
+          "于",
+          "下"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "冖",
+        "dummies": [
+          "亠",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "糸",
+        "dummies": [
+          "兹",
+          "玄",
+          "幺"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "思索（しさく）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "思索",
+    "writing_reading": "しさく",
+    "writing_note": "思索（しさく）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9162",
@@ -37133,16 +39217,53 @@
       "あくじ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "国を代表する、公的な印章。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "爾",
+        "dummies": [
+          "雨",
+          "而",
+          "兩"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "玉",
+        "dummies": [
+          "主",
+          "王",
+          "圭"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "国璽（こくじ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "国璽",
+    "writing_reading": "こくじ",
+    "writing_note": "国璽（こくじ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6f06",
@@ -37895,16 +40016,53 @@
       "じゅうしつ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "中身が豊かで、満ち足りていること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "亠",
+        "dummies": [
+          "冖",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "允",
+        "dummies": [
+          "兄",
+          "克",
+          "目"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "充実（じゅうじつ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "充実",
+    "writing_reading": "じゅうじつ",
+    "writing_note": "充実（じゅうじつ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6e0b",
@@ -37923,16 +40081,83 @@
       "あぶ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "強い苦みと、口が引き締まる感じのある味。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "氵",
+        "dummies": [
+          "冫",
+          "忄",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "止",
+        "dummies": [
+          "此",
+          "北",
+          "比"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          30
+        ]
+      },
+      {
+        "position": "右中央",
+        "answer": "丷",
+        "dummies": [
+          "八",
+          "儿",
+          "入"
+        ],
+        "box": [
+          40,
+          30,
+          60,
+          35
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "八",
+        "dummies": [
+          "丷",
+          "儿",
+          "入"
+        ],
+        "box": [
+          40,
+          65,
+          60,
+          35
+        ]
+      }
+    ],
     "note": "渋（しぶ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "渋",
+    "writing_reading": "しぶ",
+    "writing_note": "渋（しぶ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9283",
@@ -38657,16 +40882,53 @@
       "しょお"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "容量を表す単位で、約一・八リットル。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "丿",
+        "dummies": [
+          "丨",
+          "一",
+          "丶"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "廾",
+        "dummies": [
+          "卉",
+          "井",
+          "目"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "升（しょう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "升",
+    "writing_reading": "しょう",
+    "writing_note": "升（しょう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6284",
@@ -41101,16 +43363,53 @@
       "すえせん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "適している人や物として、人に勧めること。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "艹",
+        "dummies": [
+          "竹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "廌",
+        "dummies": [
+          "鹿",
+          "庶",
+          "目"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "推薦（すいせん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "推薦",
+    "writing_reading": "すいせん",
+    "writing_note": "推薦（すいせん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_7e4a",
@@ -42064,16 +44363,68 @@
       "たえだ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "なまけて、すべきことをしない様子。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "忄",
+        "dummies": [
+          "氵",
+          "冫",
+          "扌"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "左",
+        "dummies": [
+          "右",
+          "在",
+          "有"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "月",
+        "dummies": [
+          "耳",
+          "目",
+          "自"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ],
     "note": "怠惰（たいだ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "怠惰",
+    "writing_reading": "たいだ",
+    "writing_note": "怠惰（たいだ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "lr-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_99c4",
@@ -43687,16 +46038,68 @@
       "あつや"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "夜通し眠らずに、起きていること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "彳",
+        "dummies": [
+          "亻",
+          "氵",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          30,
+          100
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "育",
+        "dummies": [
+          "肖",
+          "青",
+          "月"
+        ],
+        "box": [
+          30,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "攵",
+        "dummies": [
+          "女",
+          "又",
+          "夂"
+        ],
+        "box": [
+          70,
+          0,
+          30,
+          100
+        ]
+      }
+    ],
     "note": "徹夜（てつや）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "徹夜",
+    "writing_reading": "てつや",
+    "writing_note": "徹夜（てつや）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_64a4",
@@ -43715,16 +46118,68 @@
       "てっぎょ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "置いてあるものを、取り除くこと。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "扌",
+        "dummies": [
+          "氵",
+          "冫",
+          "忄"
+        ],
+        "box": [
+          0,
+          0,
+          30,
+          100
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "育",
+        "dummies": [
+          "肖",
+          "青",
+          "月"
+        ],
+        "box": [
+          30,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "攵",
+        "dummies": [
+          "女",
+          "又",
+          "夂"
+        ],
+        "box": [
+          70,
+          0,
+          30,
+          100
+        ]
+      }
+    ],
     "note": "撤去（てっきょ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "撤去",
+    "writing_reading": "てっきょ",
+    "writing_note": "撤去（てっきょ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_60bc",
@@ -44635,16 +47090,53 @@
       "せえは"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "競技などで、他を抑えて頂点に立つこと。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "覀",
+        "dummies": [
+          "酉",
+          "面",
+          "目"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "䩗",
+        "dummies": [
+          "革",
+          "鞄",
+          "鞍"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "制覇（せいは）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "制覇",
+    "writing_reading": "せいは",
+    "writing_note": "制覇（せいは）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_5ec3",
@@ -46270,16 +48762,53 @@
       "へいしゆ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "甲・乙に続く、第三の分類。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "一",
+        "dummies": [
+          "丨",
+          "丿",
+          "丶"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "内",
+        "dummies": [
+          "肉",
+          "冊",
+          "目"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "丙種（へいしゅ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "丙種",
+    "writing_reading": "へいしゅ",
+    "writing_note": "丙種（へいしゅ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_4f75",
@@ -47199,16 +49728,53 @@
       "ほんぽお"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "常識や規則に縛られず、自由な様子。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "大",
+        "dummies": [
+          "奞",
+          "奪",
+          "雁"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          50
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "卉",
+        "dummies": [
+          "廾",
+          "升",
+          "井"
+        ],
+        "box": [
+          0,
+          50,
+          100,
+          50
+        ]
+      }
+    ],
     "note": "奔放（ほんぽう）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "奔放",
+    "writing_reading": "ほんぽう",
+    "writing_note": "奔放（ほんぽう）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9ebb",
@@ -49476,16 +52042,68 @@
       "あい"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "ある範囲で使われる、単語の集まり。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "彑",
+        "dummies": [
+          "爫",
+          "彐",
+          "爿"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "冖",
+        "dummies": [
+          "亠",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "果",
+        "dummies": [
+          "束",
+          "東",
+          "栗"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "語彙（ごい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "語彙",
+    "writing_reading": "ごい",
+    "writing_note": "語彙（ごい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_54bd",
@@ -50433,16 +53051,53 @@
       "あた"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "容器の口を、閉じるためのもの。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "艹",
+        "dummies": [
+          "竹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "盍",
+        "dummies": [
+          "益",
+          "盆",
+          "皿"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "蓋（ふた）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "蓋",
+    "writing_reading": "ふた",
+    "writing_note": "蓋（ふた）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9ab8",
@@ -50656,16 +53311,68 @@
       "うず"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "根からでんぷんを取る、つる性の植物。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "艹",
+        "dummies": [
+          "竹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "日",
+        "dummies": [
+          "昗",
+          "六",
+          "交"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "匂",
+        "dummies": [
+          "匀",
+          "匆",
+          "句"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "葛（くず）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "葛",
+    "writing_reading": "くず",
+    "writing_note": "葛（くず）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_91dc",
@@ -50963,16 +53670,68 @@
       "いそん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "物を壊すことや、名誉を傷付けること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左上",
+        "answer": "臼",
+        "dummies": [
+          "白",
+          "凹",
+          "由"
+        ],
+        "box": [
+          0,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "左下",
+        "answer": "土",
+        "dummies": [
+          "壮",
+          "状",
+          "士"
+        ],
+        "box": [
+          0,
+          50,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "殳",
+        "dummies": [
+          "軗",
+          "車",
+          "撃"
+        ],
+        "box": [
+          60,
+          0,
+          40,
+          100
+        ]
+      }
+    ],
     "note": "毀損（きそん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "毀損",
+    "writing_reading": "きそん",
+    "writing_note": "毀損（きそん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_757f",
@@ -51464,16 +54223,68 @@
       "こっけえ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "おかしく、笑いを誘う様子。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "禾",
+        "dummies": [
+          "木",
+          "米",
+          "未"
+        ],
+        "box": [
+          0,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右上",
+        "answer": "尤",
+        "dummies": [
+          "犬",
+          "尢",
+          "戊"
+        ],
+        "box": [
+          40,
+          0,
+          60,
+          50
+        ]
+      },
+      {
+        "position": "右下",
+        "answer": "旨",
+        "dummies": [
+          "皆",
+          "昆",
+          "昔"
+        ],
+        "box": [
+          40,
+          50,
+          60,
+          50
+        ]
+      }
+    ],
     "note": "滑稽（こっけい）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "滑稽",
+    "writing_reading": "こっけい",
+    "writing_note": "滑稽（こっけい）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "lr-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9699",
@@ -56658,16 +59469,68 @@
       "あんてん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "色の違う部分が、点々とあること。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "左",
+        "answer": "王",
+        "dummies": [
+          "㞷",
+          "山",
+          "生"
+        ],
+        "box": [
+          0,
+          0,
+          30,
+          100
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "文",
+        "dummies": [
+          "殳",
+          "支",
+          "攵"
+        ],
+        "box": [
+          30,
+          0,
+          40,
+          100
+        ]
+      },
+      {
+        "position": "右",
+        "answer": "王",
+        "dummies": [
+          "㞷",
+          "山",
+          "生"
+        ],
+        "box": [
+          70,
+          0,
+          30,
+          100
+        ]
+      }
+    ],
     "note": "斑点（はんてん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "斑点",
+    "writing_reading": "はんてん",
+    "writing_note": "斑点（はんてん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_7709",
@@ -57717,16 +60580,53 @@
       "あょうり"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "思いがけない幸せや、ありがたい恩恵。",
     "writing_target_index": 0,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "冖",
+        "dummies": [
+          "亠",
+          "宀",
+          "冂"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "昗",
+        "dummies": [
+          "日",
+          "六",
+          "交"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "冥利（みょうり）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "冥利",
+    "writing_reading": "みょうり",
+    "writing_note": "冥利（みょうり）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_9eba",
@@ -58350,16 +61250,53 @@
       "しゅっらん"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "弟子が師匠よりも、優れることのたとえ。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "艹",
+        "dummies": [
+          "竹",
+          "罒",
+          "宀"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          40
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "監",
+        "dummies": [
+          "覧",
+          "堅",
+          "臣"
+        ],
+        "box": [
+          0,
+          40,
+          100,
+          60
+        ]
+      }
+    ],
     "note": "出藍（しゅつらん）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "出藍",
+    "writing_reading": "しゅつらん",
+    "writing_note": "出藍（しゅつらん）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "tb-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_6144",
@@ -58642,16 +61579,68 @@
       "いろ"
     ],
     "sentence": "語句の読みを選ぼう。",
-    "writing_hint": "",
+    "writing_hint": "湯に入って、体を温めたり洗ったりする所。",
     "writing_target_index": 1,
-    "writing_parts": [],
+    "writing_parts": [
+      {
+        "position": "上",
+        "answer": "口",
+        "dummies": [
+          "日",
+          "目",
+          "囗"
+        ],
+        "box": [
+          0,
+          0,
+          100,
+          30
+        ]
+      },
+      {
+        "position": "中央",
+        "answer": "丿",
+        "dummies": [
+          "丨",
+          "一",
+          "丶"
+        ],
+        "box": [
+          0,
+          30,
+          100,
+          35
+        ]
+      },
+      {
+        "position": "下",
+        "answer": "口",
+        "dummies": [
+          "日",
+          "目",
+          "囗"
+        ],
+        "box": [
+          0,
+          65,
+          100,
+          35
+        ]
+      }
+    ],
     "note": "風呂（ふろ）。",
     "content_batch": "japanese-joyo-20261107",
     "kanji_scope": "secondary-1110",
     "reading_sources": [
       "bunka-joyo",
       "jmdict-furigana-20261025"
-    ]
+    ],
+    "writing_word": "風呂",
+    "writing_reading": "ふろ",
+    "writing_note": "風呂（ふろ）。",
+    "writing_batch": "japanese-compound-writing-20261107",
+    "writing_profile": "compound-parts-v1",
+    "writing_scope": "secondary-1110"
   },
   {
     "id": "jr_jp_joyo_8cc2",

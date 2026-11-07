@@ -1,0 +1,432 @@
+{
+  "version": "0.71.0",
+  "newWritingCharacters": 67,
+  "newWritingStages": 168,
+  "secondaryCovered": 841,
+  "target": 1110,
+  "remaining": 269,
+  "readingMaterialsUnchanged": 1094,
+  "elementaryArchiveUnchanged": true,
+  "budget": {
+    "materials": 67,
+    "presentations": 235,
+    "maxima": {
+      "task": 13,
+      "prompt": 31,
+      "choice": 6,
+      "targetLabel": 17,
+      "note": 16,
+      "combined": 53
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "reference": "CJKVI/CHISE IDS factual component structures, Japanese variants; JmdictFurigana word/readings. Reference raw IDS data not bundled.",
+  "structureReview": [
+    {
+      "character": "恐",
+      "parts": "巩/心",
+      "structure": "⿱巩心",
+      "referenceMatched": true
+    },
+    {
+      "character": "堅",
+      "parts": "臤/土",
+      "structure": "⿱臤土",
+      "referenceMatched": true
+    },
+    {
+      "character": "互",
+      "parts": "一/彑",
+      "structure": "⿱一彑",
+      "referenceMatched": true
+    },
+    {
+      "character": "畳",
+      "parts": "田/冝",
+      "structure": "⿱田冝",
+      "referenceMatched": true
+    },
+    {
+      "character": "替",
+      "parts": "㚘/日",
+      "structure": "⿱㚘日",
+      "referenceMatched": true
+    },
+    {
+      "character": "緊",
+      "parts": "臤/糸",
+      "structure": "⿱臤糸",
+      "referenceMatched": true
+    },
+    {
+      "character": "賢",
+      "parts": "臤/貝",
+      "structure": "⿱臤貝",
+      "referenceMatched": true
+    },
+    {
+      "character": "墾",
+      "parts": "貇/土",
+      "structure": "⿱貇土",
+      "referenceMatched": true
+    },
+    {
+      "character": "慈",
+      "parts": "兹/心",
+      "structure": "⿱兹心",
+      "referenceMatched": true
+    },
+    {
+      "character": "辛",
+      "parts": "立/十",
+      "structure": "⿱立十",
+      "referenceMatched": true
+    },
+    {
+      "character": "籍",
+      "parts": "竹/耤",
+      "structure": "⿱竹耤",
+      "referenceMatched": true
+    },
+    {
+      "character": "奪",
+      "parts": "奞/寸",
+      "structure": "⿱奞寸",
+      "referenceMatched": true
+    },
+    {
+      "character": "墜",
+      "parts": "隊/土",
+      "structure": "⿱隊土",
+      "referenceMatched": true
+    },
+    {
+      "character": "慕",
+      "parts": "莫/㣺",
+      "structure": "⿱莫㣺",
+      "referenceMatched": true
+    },
+    {
+      "character": "恭",
+      "parts": "共/㣺",
+      "structure": "⿱共㣺",
+      "referenceMatched": true
+    },
+    {
+      "character": "琴",
+      "parts": "玨/今",
+      "structure": "⿱玨今",
+      "referenceMatched": true
+    },
+    {
+      "character": "茎",
+      "parts": "艹/圣",
+      "structure": "⿱艹圣",
+      "referenceMatched": true
+    },
+    {
+      "character": "懸",
+      "parts": "縣/心",
+      "structure": "⿱縣心",
+      "referenceMatched": true
+    },
+    {
+      "character": "懇",
+      "parts": "貇/心",
+      "structure": "⿱貇心",
+      "referenceMatched": true
+    },
+    {
+      "character": "璽",
+      "parts": "爾/玉",
+      "structure": "⿱爾玉",
+      "referenceMatched": true
+    },
+    {
+      "character": "充",
+      "parts": "亠/允",
+      "structure": "⿱亠允",
+      "referenceMatched": true
+    },
+    {
+      "character": "薦",
+      "parts": "艹/廌",
+      "structure": "⿱艹廌",
+      "referenceMatched": true
+    },
+    {
+      "character": "奔",
+      "parts": "大/卉",
+      "structure": "⿱大卉",
+      "referenceMatched": true
+    },
+    {
+      "character": "蓋",
+      "parts": "艹/盍",
+      "structure": "⿱艹盍",
+      "referenceMatched": true
+    },
+    {
+      "character": "藍",
+      "parts": "艹/監",
+      "structure": "⿱艹監",
+      "referenceMatched": true
+    },
+    {
+      "character": "宴",
+      "parts": "宀/妟",
+      "structure": "⿱宀妟",
+      "referenceMatched": true
+    },
+    {
+      "character": "冠",
+      "parts": "冖/㝴",
+      "structure": "⿱冖㝴",
+      "referenceMatched": true
+    },
+    {
+      "character": "寛",
+      "parts": "宀/莧",
+      "structure": "⿱宀莧",
+      "referenceMatched": true
+    },
+    {
+      "character": "冥",
+      "parts": "冖/昗",
+      "structure": "⿱冖昗",
+      "referenceMatched": true
+    },
+    {
+      "character": "稽",
+      "parts": "禾/尤/旨",
+      "structure": "⿰禾⿱尤旨",
+      "referenceMatched": true
+    },
+    {
+      "character": "渇",
+      "parts": "氵/日/匂",
+      "structure": "⿰氵⿱日匂",
+      "referenceMatched": true
+    },
+    {
+      "character": "渓",
+      "parts": "氵/爫/夫",
+      "structure": "⿰氵⿱爫夫",
+      "referenceMatched": true
+    },
+    {
+      "character": "侯",
+      "parts": "亻/ユ/矢",
+      "structure": "⿰亻⿱ユ矢",
+      "referenceMatched": true
+    },
+    {
+      "character": "惰",
+      "parts": "忄/左/月",
+      "structure": "⿰忄⿱左月",
+      "referenceMatched": true
+    },
+    {
+      "character": "鶏",
+      "parts": "爫/夫/鳥",
+      "structure": "⿰⿱爫夫鳥",
+      "referenceMatched": true
+    },
+    {
+      "character": "隷",
+      "parts": "士/示/隶",
+      "structure": "⿰⿱士示隶",
+      "referenceMatched": true
+    },
+    {
+      "character": "款",
+      "parts": "士/示/欠",
+      "structure": "⿰⿱士示欠",
+      "referenceMatched": true
+    },
+    {
+      "character": "啓",
+      "parts": "戸/攵/口",
+      "structure": "⿱⿰戸攵口",
+      "referenceMatched": true
+    },
+    {
+      "character": "憩",
+      "parts": "舌/自/心",
+      "structure": "⿱⿰舌自心",
+      "referenceMatched": true
+    },
+    {
+      "character": "黙",
+      "parts": "里/犬/灬",
+      "structure": "⿱⿰里犬灬",
+      "referenceMatched": true
+    },
+    {
+      "character": "獄",
+      "parts": "犭/言/犬",
+      "structure": "⿲犭言犬",
+      "referenceMatched": true
+    },
+    {
+      "character": "衝",
+      "parts": "彳/重/亍",
+      "structure": "⿲彳重亍",
+      "referenceMatched": true
+    },
+    {
+      "character": "徹",
+      "parts": "彳/育/攵",
+      "structure": "⿲彳育攵",
+      "referenceMatched": true
+    },
+    {
+      "character": "撤",
+      "parts": "扌/育/攵",
+      "structure": "⿲扌育攵",
+      "referenceMatched": true
+    },
+    {
+      "character": "斑",
+      "parts": "王/文/王",
+      "structure": "⿲王文王",
+      "referenceMatched": true
+    },
+    {
+      "character": "徴",
+      "parts": "彳/㞷/攵",
+      "structure": "⿲彳㞷攵",
+      "referenceMatched": true
+    },
+    {
+      "character": "壱",
+      "parts": "士/冖/匕",
+      "structure": "⿳士冖匕",
+      "referenceMatched": true
+    },
+    {
+      "character": "葬",
+      "parts": "艹/死/廾",
+      "structure": "⿳艹死廾",
+      "referenceMatched": true
+    },
+    {
+      "character": "享",
+      "parts": "亠/口/子",
+      "structure": "⿳亠口子",
+      "referenceMatched": true
+    },
+    {
+      "character": "彙",
+      "parts": "彑/冖/果",
+      "structure": "⿳彑冖果",
+      "referenceMatched": true
+    },
+    {
+      "character": "葛",
+      "parts": "艹/日/匂",
+      "structure": "⿳艹日匂",
+      "referenceMatched": true
+    },
+    {
+      "character": "索",
+      "parts": "十/冖/糸",
+      "structure": "⿳十冖糸",
+      "referenceMatched": true
+    },
+    {
+      "character": "稲",
+      "parts": "禾/爫/旧",
+      "structure": "⿰禾⿱爫旧",
+      "referenceMatched": true
+    },
+    {
+      "character": "聴",
+      "parts": "耳/十/罒/心",
+      "structure": "⿰耳⿳十罒心",
+      "referenceMatched": true
+    },
+    {
+      "character": "摂",
+      "parts": "扌/耳/丷/八",
+      "structure": "⿰扌⿳耳丷八",
+      "referenceMatched": true
+    },
+    {
+      "character": "渋",
+      "parts": "氵/止/丷/八",
+      "structure": "⿰氵⿳止丷八",
+      "referenceMatched": true
+    },
+    {
+      "character": "罰",
+      "parts": "罒/言/刂",
+      "structure": "⿱罒⿰言刂",
+      "referenceMatched": true
+    },
+    {
+      "character": "撃",
+      "parts": "軗/手",
+      "structure": "⿱軗手",
+      "referenceMatched": true
+    },
+    {
+      "character": "憂",
+      "parts": "㥑/夂",
+      "structure": "⿱㥑夂",
+      "referenceMatched": true
+    },
+    {
+      "character": "覇",
+      "parts": "覀/䩗",
+      "structure": "⿱覀䩗",
+      "referenceMatched": true
+    },
+    {
+      "character": "丙",
+      "parts": "一/内",
+      "structure": "⿱一内",
+      "referenceMatched": true
+    },
+    {
+      "character": "乏",
+      "parts": "丿/之",
+      "structure": "⿱丿之",
+      "referenceMatched": true
+    },
+    {
+      "character": "了",
+      "parts": "乛/亅",
+      "structure": "⿱乛亅",
+      "referenceMatched": true
+    },
+    {
+      "character": "升",
+      "parts": "丿/廾",
+      "structure": "⿱丿廾",
+      "referenceMatched": true
+    },
+    {
+      "character": "毀",
+      "parts": "臼/土/殳",
+      "structure": "⿰⿱臼土殳",
+      "referenceMatched": true
+    },
+    {
+      "character": "介",
+      "parts": "人/丿/丨",
+      "structure": "⿱人⿰丿丨",
+      "referenceMatched": true
+    },
+    {
+      "character": "呂",
+      "parts": "口/丿/口",
+      "structure": "⿳口丿口",
+      "referenceMatched": true
+    }
+  ],
+  "checks": "Only changed-data checks and representative new arrangements; no full suite, full-bank browser loop or five-minute simulation.",
+  "displayReview": "compound-writing-layout-review.json",
+  "remainingList": "../japanese-progress.json:writing.secondaryMissing"
+}
