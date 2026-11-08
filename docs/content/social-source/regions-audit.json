@@ -1,0 +1,53 @@
+{
+  "version": "0.80.0",
+  "date": "2026-11-08",
+  "batch": "social-regions-20261108",
+  "newMaterials": 240,
+  "newGeneratedQuestions": 400,
+  "pairedTermMaterials": 160,
+  "choiceMaterials": 80,
+  "newByField": {
+    "地理": 104,
+    "歴史": 84,
+    "公民": 52
+  },
+  "previousSocialMaterials": 290,
+  "previousSocialGeneratedQuestions": 492,
+  "totalMaterials": 530,
+  "totalGeneratedQuestions": 892,
+  "fields": {
+    "地理": {
+      "materials": 200,
+      "generated": 324
+    },
+    "歴史": {
+      "materials": 186,
+      "generated": 314
+    },
+    "公民": {
+      "materials": 144,
+      "generated": 254
+    }
+  },
+  "previousSocialContentsUnchanged": true,
+  "previousIdsPreserved": true,
+  "otherSubjectContentsUnchanged": true,
+  "budget": {
+    "materials": 240,
+    "presentations": 400,
+    "maxima": {
+      "task": 21,
+      "prompt": 31,
+      "choice": 15,
+      "targetLabel": 21,
+      "note": 22,
+      "combined": 85
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "checks": "Changed JSON/IDs/required fields/four choices/literal and numeral theme hints/grade exceptions/existing-content preservation only. Within prior reviewed social text bounds; no browser, test suite, five-minute simulation or playback.",
+  "editorialReview": "Same-region and same-era candidates; individual term distractors where useful. Context distinguishes agriculture classification axes and red Kanto loam from black soil. Country clues in treaty names replaced by institutional content. Asuka and Tempyo culture items placed in grade 1. Dates, cause/effect and constitutional institutional roles reviewed. Fukuoka is explicitly located on Hakata Bay, and northern Kyushu is distinguished from Kitakyushu City.",
+  "completion": "In progress. Broad official content blocks remain a roadmap, not a coverage percentage."
+}

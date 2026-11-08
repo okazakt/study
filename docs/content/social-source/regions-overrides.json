@@ -1,0 +1,30 @@
+{
+  "飛鳥文化": {
+    "grade": "中1",
+    "unit": "古代の文化",
+    "official_blocks": [
+      "hist-B1"
+    ]
+  },
+  "天平文化": {
+    "grade": "中1",
+    "unit": "古代の文化",
+    "official_blocks": [
+      "hist-B1"
+    ]
+  },
+  "五街道": {
+    "cloze_context": "",
+    "cloze_context_reason": "用語名の「五」が穴の数値を直接示すため省略。江戸を起点とする主要街道という文脈は残す。"
+  },
+  "三審制": {
+    "cloze_context": "",
+    "cloze_context_reason": "用語名の「三」が穴の数値を直接示すため省略。日本の裁判という前提は残す。"
+  },
+  "国民審査": {
+    "unit": "裁判と司法",
+    "official_blocks": [
+      "civics-C2"
+    ]
+  }
+}
