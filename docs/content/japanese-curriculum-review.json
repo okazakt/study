@@ -1,0 +1,585 @@
+{
+  "version": "0.76.0",
+  "date": "2026-11-08",
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 国語編",
+    "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_002.pdf",
+    "retrieved": "2026-11-08",
+    "sha256": "d56fb8ec65d401abc7bd8b2cfeae445f8b67be0851cd6173045bf0c4f18ec576",
+    "locator": "付録3 印刷頁158〜163（各学年の内容）および本文の対応解説"
+  },
+  "scope": "学習指導要領の大項目を、ゲームで扱う基本観点へ整理して照合。観点数は文科省の公式項目数ではない。問題IDは知識・判断ポイントの出題先を示し、実技能の達成、全語彙・全音訓・全入試問題の網羅を示さない。",
+  "topicCount": 37,
+  "inGameKnowledgeTopics": 36,
+  "deferredPrerequisiteTopics": 1,
+  "classicalBoundary": "文語・訓読・古典の種類と背景が中学の基本。再読文字の詳細や一部の古典文法は補足であり、各名称が指導要領に指定された必修語句という意味ではない。",
+  "rows": [
+    {
+      "topic": "sound",
+      "label": "音声・拍・音の仕組み",
+      "officialReferences": [
+        "中1 知(1)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_fb564877054f",
+        "jr_jp_core_e6a4a44fad6f",
+        "jr_jp_core_5f5e3b594a9e",
+        "jr_jp_core_421c46de7d93"
+      ],
+      "practiceOutsideGame": "音を出して聞き分ける練習"
+    },
+    {
+      "topic": "kanji",
+      "label": "漢字の読み・書き選択",
+      "officialReferences": [
+        "中1 知(1)イ",
+        "中2 知(1)ウ",
+        "中3 知(1)ア"
+      ],
+      "status": "target-characters-complete-additional-readings-open",
+      "materialIds": [
+        "jr_jp_joyo_63e1"
+      ],
+      "practiceOutsideGame": "実際の手書き、全音訓・語義の補強"
+    },
+    {
+      "topic": "vocabulary",
+      "label": "辞書的意味・文脈上の意味・多義語",
+      "officialReferences": [
+        "中1 知(1)ウ",
+        "中2 知(1)エ",
+        "中3 知(1)イ"
+      ],
+      "status": "knowledge-point-present-lexicon-open",
+      "materialIds": [
+        "jr_jp_core_23d987715088",
+        "jr_jp_core_0a6a14589d7a"
+      ],
+      "practiceOutsideGame": "多様な文脈での語彙使用"
+    },
+    {
+      "topic": "wordformation",
+      "label": "語種・語構成・語彙の広がり",
+      "officialReferences": [
+        "中1 知(1)ウ・エ",
+        "中2 知(1)エ",
+        "中3 知(1)イ"
+      ],
+      "status": "knowledge-point-present-lexicon-open",
+      "materialIds": [
+        "jr_jp_core_2a200f756d35",
+        "jr_jp_core_7609eafd9447",
+        "jr_jp_core_851692704a6d"
+      ],
+      "practiceOutsideGame": "語彙・用例の継続拡充"
+    },
+    {
+      "topic": "syntax",
+      "label": "品詞・文の成分・指示と接続",
+      "officialReferences": [
+        "中1 知(1)エ",
+        "中2 知(1)オ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_7eb792e9d664",
+        "jr_jp_core_95d209b5a649",
+        "jr_jp_core_8422ac7dcfd2",
+        "jr_jp_core_54255907f610",
+        "jr_jp3_026"
+      ],
+      "practiceOutsideGame": "実際の文章での適用"
+    },
+    {
+      "topic": "inflection",
+      "label": "単語の活用",
+      "officialReferences": [
+        "中2 知(1)オ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_dce64c5a2a94",
+        "jr_jp_core_4c0e2fc086cc",
+        "jr_jp_core_2f3a9e828c95",
+        "jr_jp_core_a17856241b4c"
+      ],
+      "practiceOutsideGame": "用例の継続補強"
+    },
+    {
+      "topic": "particles",
+      "label": "助詞・助動詞・補助の働き",
+      "officialReferences": [
+        "中2 知(1)オ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_04a0b9153789",
+        "jr_jp_core_065c602e75bb",
+        "jr_jp_core_ebea0673d1ca",
+        "jr_jp_core_3267d0f45995",
+        "jr_jp_core_cc80d652be64",
+        "jr_jp_core_34968d5abb87"
+      ],
+      "practiceOutsideGame": "文脈による判別の練習"
+    },
+    {
+      "topic": "respect",
+      "label": "敬語・場面に合う言葉遣い",
+      "officialReferences": [
+        "中2 知(1)カ",
+        "中3 知(1)エ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_04e0aea4ef46",
+        "jr_jp_core_6334a8da327e"
+      ],
+      "practiceOutsideGame": "実際の対話での言葉遣い"
+    },
+    {
+      "topic": "rhetoric",
+      "label": "比喩・反復・倒置・体言止め",
+      "officialReferences": [
+        "中1 知(1)オ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_5bd4610389f5",
+        "jr_jp_core_396d1c29ff13",
+        "jr_jp_core_2af7950f964f",
+        "jr_jp_core_59411946553d",
+        "jr_jp_core_d4ba138f71a2"
+      ],
+      "practiceOutsideGame": "作品の効果の読み取りと表現"
+    },
+    {
+      "topic": "language-functions",
+      "label": "言葉の働き・媒体",
+      "officialReferences": [
+        "中2 知(1)ア・イ",
+        "中3 知(1)ウ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_53c37a6efcb9",
+        "jr_jp_core_84940ec2daa1"
+      ],
+      "practiceOutsideGame": "相手や媒体に応じた実際の表現"
+    },
+    {
+      "topic": "dialect",
+      "label": "共通語と方言",
+      "officialReferences": [
+        "中1 知(3)ウ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_2c0141d17b8c",
+        "jr_jp_core_89524e2614eb",
+        "jr_jp_core_392778108394"
+      ],
+      "practiceOutsideGame": "実際の地域の言葉への接触"
+    },
+    {
+      "topic": "language-change",
+      "label": "時代・世代による言葉の変化",
+      "officialReferences": [
+        "中3 知(3)ウ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_c14da832a7a2",
+        "jr_jp_core_78cbdf94afb2",
+        "jr_jp_core_317c729b196d"
+      ],
+      "practiceOutsideGame": "時代別の用例に触れる練習"
+    },
+    {
+      "topic": "shosha",
+      "label": "楷書・行書・仮名との調和・文字文化",
+      "officialReferences": [
+        "中1 知(3)エ",
+        "中2 知(3)ウ",
+        "中3 知(3)エ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_8ec31b2ea1a3",
+        "jr_jp_core_003d570cbde0",
+        "jr_jp_core_33560082d727",
+        "jr_jp_core_7772c4d0d906",
+        "jr_jp_core_997b3026b161"
+      ],
+      "practiceOutsideGame": "硬筆・毛筆による書写そのもの"
+    },
+    {
+      "topic": "relations",
+      "label": "原因と結果・意見と根拠",
+      "officialReferences": [
+        "中1 知(2)ア",
+        "中2 知(2)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_89ae20d2fcc1"
+      ],
+      "practiceOutsideGame": "実際の文章の関係を整理する練習"
+    },
+    {
+      "topic": "abstraction",
+      "label": "具体と抽象",
+      "officialReferences": [
+        "中2 知(2)ア",
+        "中3 知(2)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_439a14f01c54",
+        "jr_jp_core_6a90984929bc",
+        "jr_jp_core_784b5e827ec4"
+      ],
+      "practiceOutsideGame": "長い説明の抽象化・具体化"
+    },
+    {
+      "topic": "organize",
+      "label": "比較・分類・関係図による整理",
+      "officialReferences": [
+        "中1 知(2)イ",
+        "中2 知(2)イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_ec2c65700d00",
+        "jr_jp_core_ae3186fca033",
+        "jr_jp_core_9f63ad3c86d4",
+        "jr_jp_core_02de1a1238e1"
+      ],
+      "practiceOutsideGame": "実際の図表を読み書きする活動"
+    },
+    {
+      "topic": "quotation",
+      "label": "引用と出典",
+      "officialReferences": [
+        "中1 知(2)イ",
+        "中3 B(1)ウ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_02b30fad4dd9",
+        "jr_jp_core_d409bdbf3f65",
+        "jr_jp_core_8599c30d3989",
+        "jr_jp_core_3161dbbb5de5"
+      ],
+      "practiceOutsideGame": "実際の資料を引用した文章作成"
+    },
+    {
+      "topic": "credibility",
+      "label": "情報の信頼性",
+      "officialReferences": [
+        "中3 知(2)イ",
+        "中3 B(1)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_ae8237e008a5",
+        "jr_jp_core_71f9fd92745c",
+        "jr_jp_core_50b5ae8f6c81"
+      ],
+      "practiceOutsideGame": "実資料の比較・検証"
+    },
+    {
+      "topic": "speaking-topic",
+      "label": "話題・材料の選択",
+      "officialReferences": [
+        "各学年 A(1)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_a6028228f822",
+        "jr_jp_core_8c13311095b6"
+      ],
+      "practiceOutsideGame": "実際の調査と話題選び"
+    },
+    {
+      "topic": "speaking-structure",
+      "label": "発表の構成・表現・反応への対応",
+      "officialReferences": [
+        "各学年 A(1)イ・ウ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_47da22aadbdf",
+        "jr_jp_core_c40e493fee2d",
+        "jr_jp_core_4f9695fa92ce"
+      ],
+      "practiceOutsideGame": "資料を用いた発表と相手の反応への対応"
+    },
+    {
+      "topic": "listening",
+      "label": "要点の聴取・質問・比較・評価",
+      "officialReferences": [
+        "各学年 A(1)エ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_2de461dade1b",
+        "jr_jp_core_6adc512a18ac",
+        "jr_jp_core_4b26294bae07"
+      ],
+      "practiceOutsideGame": "音声を聞き取り記録する練習"
+    },
+    {
+      "topic": "discussion",
+      "label": "話し合い・合意形成",
+      "officialReferences": [
+        "各学年 A(1)オ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_12806b77b718",
+        "jr_jp_core_77cf3f8ea609",
+        "jr_jp_core_aa831152c75d",
+        "jr_jp_core_de5d3b0bba9c"
+      ],
+      "practiceOutsideGame": "他者との討論・司会進行"
+    },
+    {
+      "topic": "writing-plan",
+      "label": "作文の題材・段落・構成",
+      "officialReferences": [
+        "各学年 B(1)ア・イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_83ab0a5d7d18",
+        "jr_jp_core_7548e926394d"
+      ],
+      "practiceOutsideGame": "材料の収集と文章の構想"
+    },
+    {
+      "topic": "writing-expression",
+      "label": "根拠・例・描写・批評",
+      "officialReferences": [
+        "各学年 B(1)ウ",
+        "中3 B(2)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_7c3432933f09",
+        "jr_jp_core_6c1d25bdddd8"
+      ],
+      "practiceOutsideGame": "文章や批評を実際に書く練習"
+    },
+    {
+      "topic": "revision",
+      "label": "推敲・助言の活用",
+      "officialReferences": [
+        "各学年 B(1)エ・オ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_2c69ab241888",
+        "jr_jp_core_8fc71d01edab",
+        "jr_jp_core_20e549dadb45"
+      ],
+      "practiceOutsideGame": "自他の文章を読み直して改善する活動"
+    },
+    {
+      "topic": "practical-writing",
+      "label": "案内・メール・情報の編集",
+      "officialReferences": [
+        "中1・中2 B(2)イ",
+        "中3 B(2)イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_35b90cc0389a",
+        "jr_jp_core_71db23743cc6",
+        "jr_jp_core_c0ea9e95d99d"
+      ],
+      "practiceOutsideGame": "実際の相手や媒体に向けた文章作成"
+    },
+    {
+      "topic": "expository-reading",
+      "label": "説明文の構造・主張・要旨",
+      "officialReferences": [
+        "中1 C(1)ア・ウ",
+        "中2 C(1)ア・イ",
+        "中3 C(1)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_66316b596628",
+        "jr_jp_core_347fcc82e984",
+        "jr_jp_core_84f78f4bd7ae",
+        "jr_jp_core_7e116ba7e0bb"
+      ],
+      "practiceOutsideGame": "長文の読解と要約"
+    },
+    {
+      "topic": "literary-reading",
+      "label": "人物・場面・描写・物語の展開",
+      "officialReferences": [
+        "中1 C(1)イ・ウ",
+        "中2 C(1)ア・イ",
+        "中3 C(1)ア"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_b010a6ab5216",
+        "jr_jp_core_b37823daf36d",
+        "jr_jp_core_b9eff0b8c0a2",
+        "jr_jp_core_2a23d96c8725"
+      ],
+      "practiceOutsideGame": "作品全体を読む活動"
+    },
+    {
+      "topic": "critical-reading",
+      "label": "文章の比較・批判・評価・意見",
+      "officialReferences": [
+        "中1 C(1)エ・オ",
+        "中2 C(1)エ・オ",
+        "中3 C(1)イ・ウ・エ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_a5f5115155bd",
+        "jr_jp_core_1e8800f439ce",
+        "jr_jp_core_d4a74da83e60"
+      ],
+      "practiceOutsideGame": "文章の比較読解と自分の意見の形成"
+    },
+    {
+      "topic": "multiple-sources",
+      "label": "複数資料・図表・実用文",
+      "officialReferences": [
+        "中2 C(1)イ・ウ",
+        "中3 C(2)ア・ウ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_fe07d69e9627",
+        "jr_jp_core_794e3a00935b",
+        "jr_jp_core_0c3c32506d4f"
+      ],
+      "practiceOutsideGame": "実際の図表・長い実用文の読解"
+    },
+    {
+      "topic": "reading-life",
+      "label": "読書・資料探索・生活への活用",
+      "officialReferences": [
+        "中1・中3 知(3)オ",
+        "中2 知(3)エ",
+        "各学年 C"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_dd2c548155b8",
+        "jr_jp_core_99c3bde312a0",
+        "jr_jp_core_2ac39c88a2ce"
+      ],
+      "practiceOutsideGame": "多様な作品や資料を読む活動"
+    },
+    {
+      "topic": "classical-form",
+      "label": "文語のきまり・仮名遣い・古語・音読",
+      "officialReferences": [
+        "中1 知(3)ア",
+        "中2 知(3)ア・イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_0289c9514a8c",
+        "jr_jp_core_3283db96a645",
+        "jr_jp_core_527857cd9695",
+        "jr_jp_core_71663f637fae",
+        "jr_jp_core_816a30b57214",
+        "jr_jp_core_abbf17eb5e48"
+      ],
+      "practiceOutsideGame": "古文の音読・朗読と追加古語の用例"
+    },
+    {
+      "topic": "classical-culture",
+      "label": "古典の種類・歴史背景・引用",
+      "officialReferences": [
+        "中1 知(3)イ",
+        "中2 知(3)イ",
+        "中3 知(3)ア・イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_68d366c6ba75",
+        "jr_jp_core_ec53a578f4d9",
+        "jr_jp_core_7e5e51138545",
+        "jr_jp_core_75765547fd2e"
+      ],
+      "practiceOutsideGame": "原文や現代語訳を読んで考える活動"
+    },
+    {
+      "topic": "kanbun-reading",
+      "label": "漢文の訓読・指示語・語順",
+      "officialReferences": [
+        "中1 知(3)ア",
+        "中2 知(3)ア・イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_ff918049ff55",
+        "jr_jp_core_8ef708ce2fb1",
+        "jr_jp_core_0790e525169a",
+        "jr_jp_core_54b14fe61b0e"
+      ],
+      "practiceOutsideGame": "漢文を実際に音読する活動"
+    },
+    {
+      "topic": "kanbun-culture",
+      "label": "漢詩のリズム・故事の活用",
+      "officialReferences": [
+        "中1 知(3)ア・イ",
+        "中3 知(3)ア・イ"
+      ],
+      "status": "knowledge-point-present",
+      "materialIds": [
+        "jr_jp_core_b72f94f13505",
+        "jr_jp_core_ecbd6d45a037"
+      ],
+      "practiceOutsideGame": "漢詩の音読と作品の背景の理解"
+    },
+    {
+      "topic": "idioms",
+      "label": "慣用句・四字熟語・故事成語",
+      "officialReferences": [
+        "中3 知(1)イ"
+      ],
+      "status": "knowledge-point-present-lexicon-open",
+      "materialIds": [
+        "jr_jp_core_c21752394f83",
+        "jr_jp_core_d2aa310bf66d",
+        "jr_jp_core_374cd23c23c4",
+        "jr_jp_core_78be62ccb0d0",
+        "jr_jp_core_1f88f5c796b0",
+        "jr_jp_core_105907ab4c38",
+        "jr_jp_core_51691e222c8a",
+        "jr_jp_core_a8618318a1cf",
+        "jr_jp_core_fb2c47266d75",
+        "jr_jp_core_bad44a8a7444",
+        "jr_jp_core_af6618857c8e",
+        "jr_jp_core_de26bb8617cb"
+      ],
+      "practiceOutsideGame": "固定の公式語彙一覧はなく、用例を継続補強"
+    },
+    {
+      "topic": "elementary-writing",
+      "label": "小学配当漢字を文中で書く前提技能",
+      "officialReferences": [
+        "中1 知(1)イ",
+        "中2 知(1)ウ",
+        "中3 知(1)ア"
+      ],
+      "status": "deferred-to-elementary",
+      "materialIds": [],
+      "practiceOutsideGame": "ユーザー指定により小学の部で別対応"
+    }
+  ]
+}

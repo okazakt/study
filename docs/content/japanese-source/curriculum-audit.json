@@ -1,0 +1,41 @@
+{
+  "version": "0.76.0",
+  "newMaterials": 114,
+  "newGeneratedQuestions": 126,
+  "fields": {
+    "現代文文法": 32,
+    "読解": 54,
+    "古文文法": 10,
+    "漢文文法": 6,
+    "熟語・四字熟語": 12
+  },
+  "previousMaterialContentsUnchanged": true,
+  "kanjiMaterialsUnchanged": true,
+  "elementaryArchiveUnchanged": true,
+  "curriculumSource": {
+    "title": "中学校学習指導要領（平成29年告示）解説 国語編",
+    "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_002.pdf",
+    "retrieved": "2026-11-08",
+    "sha256": "d56fb8ec65d401abc7bd8b2cfeae445f8b67be0851cd6173045bf0c4f18ec576",
+    "locator": "付録3 印刷頁158〜163（各学年の内容）および本文の対応解説"
+  },
+  "mappedEditorialCheckpoints": 37,
+  "inGameKnowledgeCheckpoints": 36,
+  "elementaryPrerequisiteDeferred": 1,
+  "budget": {
+    "materials": 114,
+    "presentations": 126,
+    "maxima": {
+      "task": 16,
+      "prompt": 24,
+      "choice": 23,
+      "targetLabel": 0,
+      "note": 34,
+      "combined": 101
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "review": "New examples and contextual uniqueness manually reviewed. Mapping identifies source material IDs for broad official topics, not all vocabulary/example completeness or skill attainment.",
+  "checks": "Changed-data ID/required fields/four choices/content budget and mapping-ID existence only; no test suite, browser loop or five-minute simulation."
+}

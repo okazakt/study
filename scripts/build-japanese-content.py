@@ -41,6 +41,20 @@ for i,(grade,unit,term,definition) in enumerate(idioms):
  if unit=='ことわざ':q.update(content_batch='japanese-application-20261107',note=definition)
  bank.append(q)
 
+# Curriculum gap-filling keeps prior items and distractor pools unchanged.
+for n,r in rows('curriculum-practice-additions.tsv'):
+ assert len(r)==10,(n,r)
+ topic,grade,field,unit,prompt,answer,a,b,c,note=r
+ q=base('choice',grade,field,unit,prompt)
+ q.update(prompt=prompt,answer=answer,dummies=[a,b,c],note=note,task='適切なものを選ぼう',curriculum_topics=[topic],content_batch='japanese-curriculum-20261108')
+ bank.append(q)
+new_idioms=[r for _,r in rows('curriculum-idioms.tsv')]
+for i,(grade,term,definition,note) in enumerate(new_idioms):
+ others=[new_idioms[(i+k)%len(new_idioms)] for k in [3,5,7]]
+ q=base('idiom',grade,'熟語・四字熟語','故事成語',term)
+ q.update(term=term,definition=definition,term_dummies=[r[1] for r in others],definition_dummies=[r[2] for r in others],note=note,curriculum_topics=['idioms'],content_batch='japanese-curriculum-20261108')
+ bank.append(q)
+
 print('Japanese core additions:',len(bank),'materials')
 
 kanji=[]

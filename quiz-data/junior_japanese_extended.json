@@ -10073,6 +10073,2562 @@
     "note": "やり過ぎも不足もよくないこと。"
   },
   {
+    "id": "jr_jp_core_fb564877054f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "日本語の五つの母音は？",
+    "answer": "ア・イ・ウ・エ・オ",
+    "dummies": [
+      "カ・キ・ク・ケ・コ",
+      "サ・シ・ス・セ・ソ",
+      "ア・カ・サ・タ・ナ"
+    ],
+    "note": "母音は、息の通り道を大きく妨げずに出す音。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "sound"
+    ]
+  },
+  {
+    "id": "jr_jp_core_e6a4a44fad6f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "子音の違いを生む要素の一つは？",
+    "answer": "息を妨げる位置や方法",
+    "dummies": [
+      "仮名の画数だけ",
+      "漢字の音読みだけ",
+      "声の大きさだけ"
+    ],
+    "note": "唇や舌などの位置と、息の出し方に注目する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "sound"
+    ]
+  },
+  {
+    "id": "jr_jp_core_5f5e3b594a9e",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「おばさん」と「おばあさん」の違いは？",
+    "answer": "長音の有無",
+    "dummies": [
+      "アクセントだけ",
+      "促音の有無",
+      "撥音の有無"
+    ],
+    "note": "長音は一拍分の長さを持ち、意味の区別にも関わる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "sound"
+    ]
+  },
+  {
+    "id": "jr_jp_core_421c46de7d93",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "音声と表記",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「きょう」を拍で区切ると？",
+    "answer": "きょ・う",
+    "dummies": [
+      "き・ょ・う",
+      "きょう全体で一拍",
+      "き・ょう"
+    ],
+    "note": "拗音の「きょ」と、長音を作る「う」で二拍。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "sound"
+    ]
+  },
+  {
+    "id": "jr_jp_core_23d987715088",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「足が速い」と「仕事が早い」の使い分けは？",
+    "answer": "速度と時刻・時期を区別",
+    "dummies": [
+      "どちらも時刻だけを表す",
+      "どちらも速さだけを表す",
+      "字数の多い方を使う"
+    ],
+    "note": "「速い」は速度、「早い」は時刻・時期などを表す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "jr_jp_core_0a6a14589d7a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "多義語「立つ」の意味を決める手掛かりは？",
+    "answer": "一緒に使う語と状況",
+    "dummies": [
+      "漢字の画数",
+      "辞書の最後の意味だけ",
+      "読みの長さだけ"
+    ],
+    "note": "「席を立つ」「予定が立つ」など、結び付く語で意味が変わる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2a200f756d35",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「手紙」の「かみ」が「がみ」になる現象は？",
+    "answer": "連濁",
+    "dummies": [
+      "長音化",
+      "促音便",
+      "撥音便"
+    ],
+    "note": "二つ以上の語が結び付くとき、後の語頭が濁音になることがある。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "wordformation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7609eafd9447",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「不可能」の「不」の働きは？",
+    "answer": "否定の意味を添える",
+    "dummies": [
+      "時刻を示す",
+      "動作の主を示す",
+      "疑問を表す"
+    ],
+    "note": "接頭語として、後ろの語に否定の意味を添える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "wordformation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_851692704a6d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "語彙と語種",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「楽しさ」の「さ」の働きは？",
+    "answer": "性質を名詞として表す",
+    "dummies": [
+      "動作を命令する",
+      "過去を表す",
+      "主語を示す"
+    ],
+    "note": "接尾語「さ」で、程度や性質を名詞として表す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "wordformation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2f3a9e828c95",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "五段か一段か迷った動詞を調べる基本は？",
+    "answer": "「ない」を付けた形を見る",
+    "dummies": [
+      "字数だけで決める",
+      "漢字の部首で決める",
+      "文末の句点で決める"
+    ],
+    "note": "「書かない」はア段、「見ない」はイ段。「来る・する」は別扱い。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "inflection"
+    ]
+  },
+  {
+    "id": "jr_jp_core_a17856241b4c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "活用",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「走る」が五段活用だと分かる形は？",
+    "answer": "走らない",
+    "dummies": [
+      "走りたい",
+      "走るとき",
+      "走れば"
+    ],
+    "note": "「ない」の前がア段の「ら」。語尾が「る」でも一段とは限らない。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "inflection"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ebea0673d1ca",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「庭に花がない」の「ない」の品詞は？",
+    "answer": "形容詞",
+    "dummies": [
+      "助動詞",
+      "助詞",
+      "連体詞"
+    ],
+    "note": "存在しないことを表す自立語。「咲かない」の打消の助動詞と区別。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "particles"
+    ]
+  },
+  {
+    "id": "jr_jp_core_3267d0f45995",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「本を読まない」の「ない」の品詞は？",
+    "answer": "助動詞",
+    "dummies": [
+      "形容詞",
+      "助詞",
+      "副詞"
+    ],
+    "note": "動詞の未然形に付く、打消の付属語。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "particles"
+    ]
+  },
+  {
+    "id": "jr_jp_core_cc80d652be64",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「走っている」の「いる」の働きは？",
+    "answer": "動作の継続を添える",
+    "dummies": [
+      "動作を打ち消す",
+      "話題を接続する",
+      "体言を指示する"
+    ],
+    "note": "補助動詞として、前の動詞の意味を補う。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "particles"
+    ]
+  },
+  {
+    "id": "jr_jp_core_34968d5abb87",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "助詞・助動詞",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「子供らしい笑顔」の「らしい」が表すのは？",
+    "answer": "子供としての典型的な性質",
+    "dummies": [
+      "子供だという推定だけ",
+      "子供だったという過去",
+      "子供でないという打消"
+    ],
+    "note": "そのものらしさを表す接尾語。推定の助動詞と区別する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "particles"
+    ]
+  },
+  {
+    "id": "jr_jp_core_04e0aea4ef46",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "外部の人に、自分の父の発言を伝えるなら？",
+    "answer": "父が申しておりました",
+    "dummies": [
+      "父がおっしゃいました",
+      "父がご覧になりました",
+      "父がお目にかかりました"
+    ],
+    "note": "身内の動作を、外部の相手に対して高めない。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "respect"
+    ]
+  },
+  {
+    "id": "jr_jp_core_6334a8da327e",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現と敬語",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "依頼を断る前に添える表現として適切なのは？",
+    "answer": "申し訳ありませんが",
+    "dummies": [
+      "当然のことですが",
+      "言うまでもなく",
+      "絶対にそうですが"
+    ],
+    "note": "相手への配慮を示してから、事情を簡潔に伝える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "respect"
+    ]
+  },
+  {
+    "id": "jr_jp_core_59411946553d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「真っ白な雪。静かな朝。」のような文末の技法は？",
+    "answer": "体言止め",
+    "dummies": [
+      "倒置法",
+      "直喩",
+      "擬人法"
+    ],
+    "note": "名詞で言い切り、印象や余韻を生む。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "jr_jp_core_d4ba138f71a2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "表現技法",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「走れ、走れ」と同じ言葉を繰り返す技法は？",
+    "answer": "反復法",
+    "dummies": [
+      "倒置法",
+      "隠喩",
+      "体言止め"
+    ],
+    "note": "同じ語句を重ねて、強調やリズムを生む。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "jr_jp_core_53c37a6efcb9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の働き",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "掲示「廊下は歩こう」の主な働きは？",
+    "answer": "行動を促す",
+    "dummies": [
+      "過去を記録する",
+      "語の意味を定義する",
+      "物語の場面を描く"
+    ],
+    "note": "言葉には、相手の行動に働きかける役割もある。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "language-functions"
+    ]
+  },
+  {
+    "id": "jr_jp_core_84940ec2daa1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の働き",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "同じ依頼でも言い方を変える理由は？",
+    "answer": "相手や場面に合う効果を選ぶ",
+    "dummies": [
+      "長いほど必ず丁寧だから",
+      "漢字が多いほど通じるから",
+      "命令形だけが正確だから"
+    ],
+    "note": "何を伝えるかに加え、相手への働きかけも考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "language-functions"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2c0141d17b8c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "共通語と方言",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "異なる地域の人に広く伝えるときの基本は？",
+    "answer": "共通語を使い必要なら補足",
+    "dummies": [
+      "自分の方言だけに限定",
+      "方言は全て誤りとする",
+      "発音だけを大声にする"
+    ],
+    "note": "共通語は地域を越えた意思疎通に役立つ。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "dialect"
+    ]
+  },
+  {
+    "id": "jr_jp_core_89524e2614eb",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "共通語と方言",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "地域の方言が果たす役割の一つは？",
+    "answer": "地域の文化や親しさを伝える",
+    "dummies": [
+      "必ず敬語をなくす",
+      "全国で同じ発音にする",
+      "書き言葉を禁止する"
+    ],
+    "note": "方言には地域の生活や文化が反映される。優劣で捉えない。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "dialect"
+    ]
+  },
+  {
+    "id": "jr_jp_core_392778108394",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "共通語と方言",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "方言の意味が分からないときの対応は？",
+    "answer": "使った場面も含めて尋ねる",
+    "dummies": [
+      "誤用だと即断する",
+      "共通語と反対の意味にする",
+      "使う人の年齢だけで決める"
+    ],
+    "note": "地域によって語の意味や使い方が異なる場合がある。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "dialect"
+    ]
+  },
+  {
+    "id": "jr_jp_core_c14da832a7a2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の変化",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古語と同形の現代語を読むときの注意は？",
+    "answer": "昔と今の意味を区別する",
+    "dummies": [
+      "常に現代語の意味で読む",
+      "古語は全て反対の意味",
+      "漢字なら意味は変わらない"
+    ],
+    "note": "時間の経過で意味や用法が変化することがある。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "language-change"
+    ]
+  },
+  {
+    "id": "jr_jp_core_78cbdf94afb2",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の変化",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "世代で意味の捉え方が違う語を使うときは？",
+    "answer": "相手の理解を確かめて補足",
+    "dummies": [
+      "自分の用法だけを押し通す",
+      "若い世代の用法だけ正しい",
+      "古い用法は必ず誤り"
+    ],
+    "note": "相手や場面を考え、行き違いが起きないようにする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "language-change"
+    ]
+  },
+  {
+    "id": "jr_jp_core_317c729b196d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "言葉の変化",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "新しい言葉の意味を確かめる資料としては？",
+    "answer": "用例と発行年の分かる辞書",
+    "dummies": [
+      "最初に見た投稿だけ",
+      "同じ音の語だけ",
+      "表記の画数だけ"
+    ],
+    "note": "言葉の変化は、時期や実際の用例を踏まえて捉える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "language-change"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8ec31b2ea1a3",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "書写の基礎",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "楷書で読みやすく書くとき、整えるものは？",
+    "answer": "字形・大きさ・配列",
+    "dummies": [
+      "画数を全て減らすこと",
+      "全字を同じ幅にすること",
+      "行ごとに筆順を変えること"
+    ],
+    "note": "文字一つの形だけでなく、文章全体の配置も見る。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "shosha"
+    ]
+  },
+  {
+    "id": "jr_jp_core_003d570cbde0",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "書写の基礎",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "行書で生じる変化として適切なのは？",
+    "answer": "点画の連続や省略",
+    "dummies": [
+      "必ず全画をつなぐ",
+      "全字をひらがなにする",
+      "漢字の意味を変える"
+    ],
+    "note": "行書では点画の形や筆順が変わる場合もある。実書は別に練習する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "shosha"
+    ]
+  },
+  {
+    "id": "jr_jp_core_33560082d727",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "書写の基礎",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "行書に仮名を交えて書くときに見るのは？",
+    "answer": "大きさや字間の調和",
+    "dummies": [
+      "仮名を全て漢字より大きく",
+      "漢字だけを離して書く",
+      "仮名を全て省く"
+    ],
+    "note": "漢字と仮名を組み合わせた文章として、読みやすさを整える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "shosha"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7772c4d0d906",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "書写の基礎",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "楷書か行書かを選ぶときの基準は？",
+    "answer": "目的と読み手に合うか",
+    "dummies": [
+      "必ず速い方だけを選ぶ",
+      "難しい漢字だけ行書にする",
+      "字数が奇数なら楷書にする"
+    ],
+    "note": "読みやすさ・速さ・必要な場面を考えて使い分ける。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "shosha"
+    ]
+  },
+  {
+    "id": "jr_jp_core_997b3026b161",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "書写の基礎",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "案内の文字を効果的に書くときの基本は？",
+    "answer": "用途に合う配置と読みやすさ",
+    "dummies": [
+      "全て最小の字で詰める",
+      "飾りだけを増やす",
+      "重要度に関係なく同じ配置"
+    ],
+    "note": "文字文化の多様さに触れ、目的に応じた表現を選ぶ。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "shosha"
+    ]
+  },
+  {
+    "id": "jr_jp_core_89ae20d2fcc1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「雨で試合が中止」の関係は？",
+    "answer": "原因と結果",
+    "dummies": [
+      "具体と抽象",
+      "対比だけ",
+      "言い換えだけ"
+    ],
+    "note": "何が原因で、何が起きたかを分けて捉える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "relations"
+    ]
+  },
+  {
+    "id": "jr_jp_core_439a14f01c54",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「犬・猫・馬」を抽象化した語として適切なのは？",
+    "answer": "動物",
+    "dummies": [
+      "犬の散歩",
+      "猫の毛色",
+      "馬の足跡"
+    ],
+    "note": "個別のものを、共通する性質でまとめる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "abstraction"
+    ]
+  },
+  {
+    "id": "jr_jp_core_6a90984929bc",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「交通機関」の具体例は？",
+    "answer": "電車",
+    "dummies": [
+      "移動",
+      "便利さ",
+      "社会"
+    ],
+    "note": "大きなまとまりを、個別の例で示す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "abstraction"
+    ]
+  },
+  {
+    "id": "jr_jp_core_784b5e827ec4",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報と論理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "抽象的な主張と具体例の関係を調べるには？",
+    "answer": "例が何の性質を示すか見る",
+    "dummies": [
+      "例の長さだけ比べる",
+      "抽象語を全て削る",
+      "例を必ず結論とみなす"
+    ],
+    "note": "具体例のどの点が、主張を支えているかを確かめる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "abstraction"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ec2c65700d00",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "共通点と相違点を整理するのに向くのは？",
+    "answer": "項目をそろえた比較表",
+    "dummies": [
+      "時刻だけの年表",
+      "無関係な語の一覧",
+      "結論だけの見出し"
+    ],
+    "note": "同じ観点で並べると、比較しやすい。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "organize"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ae3186fca033",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "分類の上下関係を示すのに向くのは？",
+    "answer": "樹形図",
+    "dummies": [
+      "時系列の年表",
+      "円グラフだけ",
+      "引用の一覧だけ"
+    ],
+    "note": "大きな分類から小さな分類へ、枝分かれで表す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "organize"
+    ]
+  },
+  {
+    "id": "jr_jp_core_9f63ad3c86d4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "手順の分岐や順序を表すのに向くのは？",
+    "answer": "流れ図",
+    "dummies": [
+      "人物の身分表",
+      "五十音順の索引",
+      "作品の目次だけ"
+    ],
+    "note": "条件による分岐と、進む順序を整理する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "organize"
+    ]
+  },
+  {
+    "id": "jr_jp_core_02de1a1238e1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "関係図の矢印に説明を添える理由は？",
+    "answer": "関係の種類を明確にする",
+    "dummies": [
+      "全て因果関係にする",
+      "図を複雑にするため",
+      "語句の意味をなくすため"
+    ],
+    "note": "原因・順序・所属など、どんな関係か分かるようにする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "organize"
+    ]
+  },
+  {
+    "id": "jr_jp_core_02b30fad4dd9",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "引用と出典",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "引用部分と自分の説明は、どう示す？",
+    "answer": "かぎ括弧などで区別する",
+    "dummies": [
+      "つなげて区別しない",
+      "引用元を自分の意見にする",
+      "引用は全て要約に変える"
+    ],
+    "note": "誰の言葉かが読み手に分かる形にする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "quotation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_d409bdbf3f65",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "引用と出典",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "原文を省略して引用するときの基本は？",
+    "answer": "省略を示し趣旨を変えない",
+    "dummies": [
+      "都合の悪い部分だけ隠す",
+      "言い換えても引用符を付ける",
+      "結論だけ反対に直す"
+    ],
+    "note": "引用では原文の意味を正確に保つ。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "quotation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8599c30d3989",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "引用と出典",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "出典を示す情報として必要なのは？",
+    "answer": "著者・資料名・掲載箇所など",
+    "dummies": [
+      "自分の感想だけ",
+      "引用した回数だけ",
+      "文章の文字色だけ"
+    ],
+    "note": "資料の種類に応じ、読者が元の資料を確認できる情報を示す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "quotation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ae8237e008a5",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の信頼性",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "複数のサイトが同じ話を載せていたら？",
+    "answer": "元の情報が同じかも確かめる",
+    "dummies": [
+      "数が多ければ必ず正しい",
+      "最も短い説明だけ信じる",
+      "同じ語なら別の根拠と数える"
+    ],
+    "note": "転載が増えても、独立した根拠が増えたとは限らない。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "credibility"
+    ]
+  },
+  {
+    "id": "jr_jp_core_71f9fd92745c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の信頼性",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古い統計を使うとき、まず確かめるのは？",
+    "answer": "調査時期と現在との違い",
+    "dummies": [
+      "表の色だけ",
+      "数字の桁数だけ",
+      "発表順だけ"
+    ],
+    "note": "対象や条件が変わっていないかも確認する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "credibility"
+    ]
+  },
+  {
+    "id": "jr_jp_core_50b5ae8f6c81",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "情報の信頼性",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "意見を支える資料を選ぶ基本は？",
+    "answer": "調査対象や方法も確かめる",
+    "dummies": [
+      "都合のよい結論だけ集める",
+      "反対の資料を全て除く",
+      "作者の有名さだけで決める"
+    ],
+    "note": "目的・対象・方法が主張に適しているかを見る。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "credibility"
+    ]
+  },
+  {
+    "id": "jr_jp_core_a6028228f822",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "紹介する話題を決めるとき、まず考えるのは？",
+    "answer": "目的と聞き手の関心",
+    "dummies": [
+      "自分の知識量だけ",
+      "話の長さだけ",
+      "難しい言葉の数"
+    ],
+    "note": "何のために、誰に話すかを明確にする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "speaking-topic"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8c13311095b6",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "提案の材料を集めるときに必要なのは？",
+    "answer": "異なる立場の考えも想定",
+    "dummies": [
+      "賛成の資料だけ残す",
+      "反対意見を読まずに除く",
+      "結論に合う数値だけ作る"
+    ],
+    "note": "聞き手の疑問や、別の立場からの意見にも備える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "speaking-topic"
+    ]
+  },
+  {
+    "id": "jr_jp_core_47da22aadbdf",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "報告の中心を伝わりやすくするには？",
+    "answer": "要点と補足を分ける",
+    "dummies": [
+      "細部を全て同じ重さで話す",
+      "結論を毎回変える",
+      "根拠を全部省く"
+    ],
+    "note": "中心となる内容と、それを支える情報を区別する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "speaking-structure"
+    ]
+  },
+  {
+    "id": "jr_jp_core_c40e493fee2d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "発表で資料を見せるときの基本は？",
+    "answer": "話のどの部分を示すか明確に",
+    "dummies": [
+      "資料を無言で見せ続ける",
+      "本文と無関係な図を足す",
+      "字をできる限り詰める"
+    ],
+    "note": "説明と資料を対応させ、聞き手が追えるようにする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "speaking-structure"
+    ]
+  },
+  {
+    "id": "jr_jp_core_4f9695fa92ce",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "聞き手が理解に迷っていると気付いたら？",
+    "answer": "言い換えや例を補う",
+    "dummies": [
+      "同じ文を速く繰り返す",
+      "さらに専門語を増やす",
+      "質問を受け付けない"
+    ],
+    "note": "反応を踏まえ、内容や説明の仕方を調整する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "speaking-structure"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2de461dade1b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "話を聞きながら取るメモで優先するのは？",
+    "answer": "要点と必要な根拠",
+    "dummies": [
+      "全ての助詞の書き取り",
+      "話し手の服の色だけ",
+      "自分の感想だけ"
+    ],
+    "note": "目的に応じて取捨選択し、関係が分かるように記録する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "listening"
+    ]
+  },
+  {
+    "id": "jr_jp_core_6adc512a18ac",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "聞いた意見への質問として有効なのは？",
+    "answer": "根拠や条件を具体的に尋ねる",
+    "dummies": [
+      "相手の人格を責める",
+      "話と無関係な感想だけ言う",
+      "結論を聞かずに否定する"
+    ],
+    "note": "理解できない点を明らかにし、内容を深める。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "listening"
+    ]
+  },
+  {
+    "id": "jr_jp_core_4b26294bae07",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "聞き取った内容を評価するとき見るのは？",
+    "answer": "根拠と結論のつながり",
+    "dummies": [
+      "声の大きさだけ",
+      "敬語の数だけ",
+      "話し手との親しさだけ"
+    ],
+    "note": "表現の印象と、内容の妥当性を分けて考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "listening"
+    ]
+  },
+  {
+    "id": "jr_jp_core_12806b77b718",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話し合いの進め方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "議論で論点を確かめるための発言は？",
+    "answer": "今決めることを確認しよう",
+    "dummies": [
+      "先に全員同じ結論にしよう",
+      "理由は後で考えよう",
+      "反対意見は聞かないでおこう"
+    ],
+    "note": "何について話し合うかを共有する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "discussion"
+    ]
+  },
+  {
+    "id": "jr_jp_core_77cf3f8ea609",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話し合いの進め方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "反対意見を受けたとき、まず行うのは？",
+    "answer": "理由を確かめ共通点も探す",
+    "dummies": [
+      "結論だけ変えずに繰り返す",
+      "発言した人を否定する",
+      "すぐに話題を変える"
+    ],
+    "note": "相手の考えを尊重し、違いを明らかにする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "discussion"
+    ]
+  },
+  {
+    "id": "jr_jp_core_aa831152c75d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話し合いの進め方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "合意形成を進める方法として適切なのは？",
+    "answer": "共通の条件を基に案を調整",
+    "dummies": [
+      "少数意見を記録せず消す",
+      "声の大きさだけで決める",
+      "理由を聞かず多数決だけ行う"
+    ],
+    "note": "共通点と相違点を整理し、納得できる解決を探る。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "discussion"
+    ]
+  },
+  {
+    "id": "jr_jp_core_de5d3b0bba9c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話し合いの進め方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "司会が発言の偏りに気付いたときは？",
+    "answer": "未発言の人にも意見を求める",
+    "dummies": [
+      "同じ人だけに話させる",
+      "最初の案で打ち切る",
+      "時間を延ばすだけにする"
+    ],
+    "note": "参加者の考えを生かすよう、進行を工夫する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "discussion"
+    ]
+  },
+  {
+    "id": "jr_jp_core_83ab0a5d7d18",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "説明文を書く前に整理するのは？",
+    "answer": "目的・読み手・伝える中心",
+    "dummies": [
+      "題名の文字数だけ",
+      "使う漢字の画数だけ",
+      "段落数だけを先に固定"
+    ],
+    "note": "材料を集める前から、何を誰に伝えるかを考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "writing-plan"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7548e926394d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "段落の順序を決めるときに見るのは？",
+    "answer": "段落ごとの役割とつながり",
+    "dummies": [
+      "各段落の字数だけ",
+      "漢字の多さだけ",
+      "書いた順番だけ"
+    ],
+    "note": "主張・理由・例などの役割に応じて並べる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "writing-plan"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7c3432933f09",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "意見文で具体例を加える主な目的は？",
+    "answer": "主張の根拠を分かりやすく",
+    "dummies": [
+      "字数を増やすためだけ",
+      "結論を隠すため",
+      "主語を省くためだけ"
+    ],
+    "note": "例が主張のどの点を支えるかを明確にする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "writing-expression"
+    ]
+  },
+  {
+    "id": "jr_jp_core_6c1d25bdddd8",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "批評を書くときに必要なのは？",
+    "answer": "観点と根拠を示して評価",
+    "dummies": [
+      "好悪だけを断言する",
+      "対象の説明を一切省く",
+      "反対の評価を必ず消す"
+    ],
+    "note": "何をどの観点で評価するかを、根拠とともに示す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "writing-expression"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2c69ab241888",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "推敲で「私の夢は、医師になります」を直すなら？",
+    "answer": "私の夢は、医師になることです",
+    "dummies": [
+      "私の夢は、医師になるでした",
+      "私の夢は、医師になりました",
+      "私の夢は、医師になれます"
+    ],
+    "note": "「夢は」と「ことです」が対応するように整える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "revision"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8fc71d01edab",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "友達の助言を受けて文章を直すときは？",
+    "answer": "目的に合う改善か検討する",
+    "dummies": [
+      "全て無条件で採用する",
+      "全て断る",
+      "長くなる助言だけ採用する"
+    ],
+    "note": "根拠を確かめ、よさや改善点を自分でも判断する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "revision"
+    ]
+  },
+  {
+    "id": "jr_jp_core_20e549dadb45",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書くポイント",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "文章全体を見直すときの最終的な基準は？",
+    "answer": "目的と読み手に合うか",
+    "dummies": [
+      "難しい語の数が多いか",
+      "文を全て長くしたか",
+      "接続語を全て削ったか"
+    ],
+    "note": "部分の表現と全体の構成が、伝えたいことに合うか確認する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "revision"
+    ]
+  },
+  {
+    "id": "jr_jp_core_35b90cc0389a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "実用文の読み書き",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "行事の案内で、まず明確にする情報は？",
+    "answer": "日時・場所・対象・用件",
+    "dummies": [
+      "書き手の感想だけ",
+      "過去の実績だけ",
+      "挨拶の言葉だけ"
+    ],
+    "note": "読み手が参加の判断や行動をできる情報をそろえる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "practical-writing"
+    ]
+  },
+  {
+    "id": "jr_jp_core_71db23743cc6",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "実用文の読み書き",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "先生へ相談のメールを書く基本は？",
+    "answer": "用件と必要な事情を簡潔に",
+    "dummies": [
+      "件名を空欄にして長文だけ",
+      "相手の名を省き用件も省く",
+      "感情だけを繰り返す"
+    ],
+    "note": "相手や媒体に合わせ、件名・宛名・用件などを整える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "practical-writing"
+    ]
+  },
+  {
+    "id": "jr_jp_core_c0ea9e95d99d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "実用文の読み書き",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "複数資料からパンフレットを作るときは？",
+    "answer": "目的に合う情報を選び編集",
+    "dummies": [
+      "見つけた情報を全て転載",
+      "出典を全て省く",
+      "資料の順に貼るだけ"
+    ],
+    "note": "情報の信頼性・分量・配置と、権利にも配慮する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "practical-writing"
+    ]
+  },
+  {
+    "id": "jr_jp_core_66316b596628",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "例示が長い段落を要約するときの基本は？",
+    "answer": "例が示す中心を言い換える",
+    "dummies": [
+      "例だけを全て残す",
+      "最初の数字だけ残す",
+      "最後の一文を必ず写す"
+    ],
+    "note": "具体例と、それが支える説明を区別する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "expository-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_347fcc82e984",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「確かにA。しかしB。」で中心になりやすいのは？",
+    "answer": "対立を踏まえて述べるB",
+    "dummies": [
+      "最初のAだけ",
+      "接続語の意味だけ",
+      "AとBは必ず同じ内容"
+    ],
+    "note": "筆者が何を認め、どこを主張するかを前後から確認する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "expository-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_84f78f4bd7ae",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "段落冒頭の「この問題」が指す範囲は？",
+    "answer": "前後の内容に戻って確かめる",
+    "dummies": [
+      "直前の名詞だけで決める",
+      "段落全体を必ず除外する",
+      "最初の一文字だけを見る"
+    ],
+    "note": "指示語は語だけでなく、文や段落の内容を受けることもある。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "expository-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7e116ba7e0bb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明文の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "反例が出てきたとき、確認するのは？",
+    "answer": "主張をどこまで修正するか",
+    "dummies": [
+      "反例を必ず無視する",
+      "元の主張を全て正しいとする",
+      "例が短ければ除外する"
+    ],
+    "note": "主張の条件や、当てはまる範囲を検討する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "expository-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b010a6ab5216",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "人物が黙った場面で心情を読むときは？",
+    "answer": "前後の言動や状況と結ぶ",
+    "dummies": [
+      "沈黙は必ず怒りとする",
+      "自分の経験だけ当てはめる",
+      "心情は絶対に読めないとする"
+    ],
+    "note": "一つの動作だけで心情を固定しない。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "literary-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b37823daf36d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "過去の場面が挿入されたときに見るのは？",
+    "answer": "現在の出来事との関係",
+    "dummies": [
+      "過去の部分を全て省く",
+      "登場人物の数だけ",
+      "現在と無関係と決める"
+    ],
+    "note": "回想が、人物の言動や心情の理解にどう関わるかを考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "literary-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b9eff0b8c0a2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "人物の言葉と行動が食い違うときは？",
+    "answer": "食い違いを手掛かりに読む",
+    "dummies": [
+      "言葉だけを必ず採用する",
+      "行動だけを必ず無視する",
+      "誤植だと即断する"
+    ],
+    "note": "状況や人物関係を踏まえ、言葉の裏の心情も検討する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "literary-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2a23d96c8725",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "小説の結末の効果を考えるときは？",
+    "answer": "それ以前の展開と結ぶ",
+    "dummies": [
+      "最後の一文だけで決める",
+      "作者の経歴だけで決める",
+      "結末を全て教訓とする"
+    ],
+    "note": "結末によって人物や出来事の印象がどう変わるかを見る。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "literary-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_a5f5115155bd",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文章の比較と評価",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "二つの文章を比較する前にそろえるのは？",
+    "answer": "題材や評価する観点",
+    "dummies": [
+      "文章の長さだけ",
+      "同じ結論という前提",
+      "作者の年齢だけ"
+    ],
+    "note": "構成・根拠・表現など、比較する軸を明確にする。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "critical-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_1e8800f439ce",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文章の比較と評価",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "批判的に読むとは、主にどんな読み方？",
+    "answer": "根拠や前提を確かめて読む",
+    "dummies": [
+      "欠点だけを探す",
+      "筆者を必ず否定する",
+      "内容を一切信用しない"
+    ],
+    "note": "受け入れる点も疑う点も、根拠を踏まえて検討する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "critical-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_d4a74da83e60",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文章の比較と評価",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "読後に自分の意見をまとめる基本は？",
+    "answer": "本文と自分の経験を区別して結ぶ",
+    "dummies": [
+      "筆者の考えを自分の発見とする",
+      "感想だけで本文を置き換える",
+      "本文と逆のことだけ言う"
+    ],
+    "note": "本文に基づく理解と、それを受けた自分の考えを分ける。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "critical-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_fe07d69e9627",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "複数資料の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "文章と表の数値が合わないとき、まず見るのは？",
+    "answer": "対象・時期・単位の違い",
+    "dummies": [
+      "文章だけを必ず優先",
+      "表だけを必ず優先",
+      "多い数値だけを採用"
+    ],
+    "note": "条件をそろえてから、説明と数値の関係を捉える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "multiple-sources"
+    ]
+  },
+  {
+    "id": "jr_jp_core_794e3a00935b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "複数資料の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "割合だけが増えた資料を読むときの注意は？",
+    "answer": "全体の人数も確かめる",
+    "dummies": [
+      "人数も必ず増えたとする",
+      "割合と人数は常に同じとする",
+      "割合は根拠に使えないとする"
+    ],
+    "note": "分母が変われば、割合と実数の動きは一致しない場合がある。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "multiple-sources"
+    ]
+  },
+  {
+    "id": "jr_jp_core_0c3c32506d4f",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "実用文の読み書き",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "規則や申込案内を読むときに優先するのは？",
+    "answer": "条件・例外・期限",
+    "dummies": [
+      "印象に残った語だけ",
+      "書き出しの挨拶だけ",
+      "自分に都合のよい条項だけ"
+    ],
+    "note": "実際の行動に必要な条件を、関連する箇所と合わせて読む。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "multiple-sources"
+    ]
+  },
+  {
+    "id": "jr_jp_core_dd2c548155b8",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "調べたい事柄の本を選ぶときの基本は？",
+    "answer": "目的に合う内容か確かめる",
+    "dummies": [
+      "厚い本だけ選ぶ",
+      "題名の長さだけで選ぶ",
+      "発行年を見ずに決める"
+    ],
+    "note": "目次や索引、紹介文などを利用する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "reading-life"
+    ]
+  },
+  {
+    "id": "jr_jp_core_99c3bde312a0",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "異なる立場の本を読む意義は？",
+    "answer": "考えを広げ、見直せる",
+    "dummies": [
+      "全て同じ結論にできる",
+      "一冊の内容を覚えずに済む",
+      "出典を示さず使える"
+    ],
+    "note": "自分と異なる見方に触れ、比較しながら考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "reading-life"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2ac39c88a2ce",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "読書と情報整理",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "読書を自分の生き方に結び付けるときは？",
+    "answer": "登場人物の選択を自分でも考える",
+    "dummies": [
+      "全ての行動をそのまままねる",
+      "作者の意見を無条件に採用する",
+      "異なる時代の作品は除く"
+    ],
+    "note": "作品や他者の考えを、自分の経験や課題と照らして読む。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "reading-life"
+    ]
+  },
+  {
+    "id": "jr_jp_core_0289c9514a8c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古文を音読するときに確かめるものは？",
+    "answer": "仮名遣い・区切り・リズム",
+    "dummies": [
+      "字数を全て同じにすること",
+      "助詞を全て省くこと",
+      "漢字だけ読むこと"
+    ],
+    "note": "文語のきまりや意味のまとまりを手掛かりにする。実際の音読も必要。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-form"
+    ]
+  },
+  {
+    "id": "jr_jp_core_3283db96a645",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「いづれ」を現代仮名遣いに直すと？",
+    "answer": "いずれ",
+    "dummies": [
+      "いづれ",
+      "いじれ",
+      "いすれ"
+    ],
+    "note": "歴史的仮名遣いの「づ」を、ここでは「ず」に直す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-form"
+    ]
+  },
+  {
+    "id": "jr_jp_core_527857cd9695",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古語「おとなし」が人柄を褒める場面の意味は？",
+    "answer": "大人びている",
+    "dummies": [
+      "物音がしない",
+      "返事がない",
+      "人がいない"
+    ],
+    "note": "現代語の「おとなしい」だけで意味を決めない。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-form"
+    ]
+  },
+  {
+    "id": "jr_jp_core_71663f637fae",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古語「めでたし」が美しさへの感嘆を表すときは？",
+    "answer": "すばらしい",
+    "dummies": [
+      "祝いの日だけを指す",
+      "不運だ",
+      "恐ろしい"
+    ],
+    "note": "価値を高く評価し、称賛する気持ちを表す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-form"
+    ]
+  },
+  {
+    "id": "jr_jp_core_816a30b57214",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古語の意味",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古語「やうやう」が変化の進行を表すときは？",
+    "answer": "しだいに",
+    "dummies": [
+      "突然に",
+      "決して",
+      "再び"
+    ],
+    "note": "ゆっくり変わっていく様子。文脈に合わせて訳す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-form"
+    ]
+  },
+  {
+    "id": "jr_jp_core_abbf17eb5e48",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古文で敬語が使われた人物を考えるには？",
+    "answer": "動作主と敬意の向きを見る",
+    "dummies": [
+      "敬語の直前の名詞だけ見る",
+      "全て作者への敬意とする",
+      "全て読者への敬意とする"
+    ],
+    "note": "誰の動作を、誰に対して高めたり低めたりしているか確認する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-form"
+    ]
+  },
+  {
+    "id": "jr_jp_core_68d366c6ba75",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古典の暮らしが現代と違うと感じたら？",
+    "answer": "当時の習慣を調べて読む",
+    "dummies": [
+      "現代と同じと決めつける",
+      "全て作り話だとする",
+      "違う部分を省略する"
+    ],
+    "note": "現代語訳や語注も手掛かりに、時代の背景を押さえる。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-culture"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ec53a578f4d9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "随筆と物語を読むときに踏まえるのは？",
+    "answer": "作品の種類による特徴",
+    "dummies": [
+      "全て歴史の記録とする",
+      "全て作者の実体験とする",
+      "語り手を全て作者とする"
+    ],
+    "note": "内容だけでなく、どんな種類の作品かを考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-culture"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7e5e51138545",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "昔と今のものの見方を比べる基本は？",
+    "answer": "共通点と相違点を根拠から見る",
+    "dummies": [
+      "昔の価値観を全て否定する",
+      "現代と必ず同じとする",
+      "作者の身分だけで決める"
+    ],
+    "note": "時代背景と本文の表現を踏まえ、今との関係を考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-culture"
+    ]
+  },
+  {
+    "id": "jr_jp_core_75765547fd2e",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "古典の一節を文章に生かすときの基本は？",
+    "answer": "意味と出典を確かめて用いる",
+    "dummies": [
+      "響きがよければ意味は無視",
+      "誰の言葉か必ず隠す",
+      "現代語訳を原文として示す"
+    ],
+    "note": "文脈に合う引用かを考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "classical-culture"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ff918049ff55",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "書き下し文で、仮名で表す主な字は？",
+    "answer": "助詞や助動詞の働きの字など",
+    "dummies": [
+      "主語を示す名詞全て",
+      "中国の地名全て",
+      "動作を表す漢字全て"
+    ],
+    "note": "「不」を返って読む「ず」など、働きに応じて仮名で表す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "kanbun-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8ef708ce2fb1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "書き下し文と現代語訳の違いは？",
+    "answer": "語順を整えることと意味を訳すこと",
+    "dummies": [
+      "どちらも原文の漢字を並べるだけ",
+      "書き下しは作者の感想",
+      "現代語訳は必ず原文より短い"
+    ],
+    "note": "書き下しは訓読の形。現代語訳は意味を現代の言葉で表す。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "kanbun-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_0790e525169a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "「学びて時に之を習ふ」の「之」が指すのは？",
+    "answer": "学んだ内容",
+    "dummies": [
+      "学ぶ時刻",
+      "話している場所",
+      "学ぶ道具だけ"
+    ],
+    "note": "直前だけでなく、文全体の意味から指示内容を捉える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "kanbun-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_54b14fe61b0e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "訓読の基本",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "再読文字の二度目の読みで注意するのは？",
+    "answer": "後の語句との関係",
+    "dummies": [
+      "必ず同じ音で読む",
+      "全て省略する",
+      "必ず最初の字へ戻る"
+    ],
+    "note": "一度目の読みと二度目の読みの働きを、句の構造から捉える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "kanbun-reading"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b72f94f13505",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "漢詩の基本",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "漢詩を訓読して音読するときの基本は？",
+    "answer": "意味のまとまりとリズムを確かめる",
+    "dummies": [
+      "返り点を無視して読む",
+      "一句を必ず一息で読む",
+      "全て現代語訳で読む"
+    ],
+    "note": "訓読のきまりと作品の特徴を踏まえる。実際の音読も必要。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "kanbun-culture"
+    ]
+  },
+  {
+    "id": "jr_jp_core_ecbd6d45a037",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢文文法",
+    "unit": "古典の背景",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "故事成語を現在の出来事に使うときの基本は？",
+    "answer": "由来と今の意味を確かめる",
+    "dummies": [
+      "文字どおりの動作だけに使う",
+      "中国の出来事にしか使わない",
+      "元の話と反対の意味にする"
+    ],
+    "note": "古典に由来する言葉が、現代でもどう使われるか考える。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "kanbun-culture"
+    ]
+  },
+  {
+    "id": "jr_jp_core_3161dbbb5de5",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "引用と出典",
+    "kind": "choice",
+    "content_batch": "japanese-curriculum-20261108",
+    "prompt": "出典を示せば、他人の文章を自由に転載できる？",
+    "answer": "引用の目的や分量にも条件がある",
+    "dummies": [
+      "出典さえあれば全文を自由に使える",
+      "括弧があれば必ず適法な引用",
+      "引用では原文の改変が必要"
+    ],
+    "note": "公表された著作物を、公正な慣行や正当な範囲などの条件に従い引用する。",
+    "task": "適切なものを選ぼう",
+    "curriculum_topics": [
+      "quotation"
+    ]
+  },
+  {
+    "id": "jr_jp_core_c21752394f83",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "杞憂",
+    "definition": "起こりそうにないことを、むやみに心配すること。",
+    "term_dummies": [
+      "四面楚歌",
+      "守株",
+      "登竜門"
+    ],
+    "definition_dummies": [
+      "周囲が敵ばかりで、助けがなく孤立すること。",
+      "古い習慣にとらわれ、変化に対応できないこと。",
+      "成功につながる、大切な関門。"
+    ],
+    "note": "天が崩れるなどと心配した人の故事に由来する。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_d2aa310bf66d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "漁夫の利",
+    "definition": "争う者のほかにいる者が、利益を得ること。",
+    "term_dummies": [
+      "呉越同舟",
+      "他山の石",
+      "完璧"
+    ],
+    "definition_dummies": [
+      "仲の悪い者どうしが、同じ立場にいること。",
+      "他人の言動を、自分を磨く材料にすること。",
+      "欠点や不足がなく、完全であること。"
+    ],
+    "note": "当事者どうしの争いを、第三者が利用するたとえ。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_374cd23c23c4",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "背水の陣",
+    "definition": "退路を断ち、決死の覚悟で物事に臨むこと。",
+    "term_dummies": [
+      "守株",
+      "登竜門",
+      "虎の威を借る狐"
+    ],
+    "definition_dummies": [
+      "古い習慣にとらわれ、変化に対応できないこと。",
+      "成功につながる、大切な関門。",
+      "力のある者の権威を利用して、威張ること。"
+    ],
+    "note": "追い込まれた状況で、力を尽くすたとえ。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_78be62ccb0d0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "四面楚歌",
+    "definition": "周囲が敵ばかりで、助けがなく孤立すること。",
+    "term_dummies": [
+      "他山の石",
+      "完璧",
+      "助長"
+    ],
+    "definition_dummies": [
+      "他人の言動を、自分を磨く材料にすること。",
+      "欠点や不足がなく、完全であること。",
+      "ある傾向を、さらに強めること。"
+    ],
+    "note": "自分の味方がいない状況をいう。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_1f88f5c796b0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "呉越同舟",
+    "definition": "仲の悪い者どうしが、同じ立場にいること。",
+    "term_dummies": [
+      "登竜門",
+      "虎の威を借る狐",
+      "蛍雪の功"
+    ],
+    "definition_dummies": [
+      "成功につながる、大切な関門。",
+      "力のある者の権威を利用して、威張ること。",
+      "苦労を重ねて、学問を成し遂げた成果。"
+    ],
+    "note": "利害の一致などから、力を合わせる場合にも使う。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_105907ab4c38",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "守株",
+    "definition": "古い習慣にとらわれ、変化に対応できないこと。",
+    "term_dummies": [
+      "完璧",
+      "助長",
+      "杞憂"
+    ],
+    "definition_dummies": [
+      "欠点や不足がなく、完全であること。",
+      "ある傾向を、さらに強めること。",
+      "起こりそうにないことを、むやみに心配すること。"
+    ],
+    "note": "偶然の幸運を待ち続けた農夫の故事に由来する。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_51691e222c8a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "他山の石",
+    "definition": "他人の言動を、自分を磨く材料にすること。",
+    "term_dummies": [
+      "虎の威を借る狐",
+      "蛍雪の功",
+      "漁夫の利"
+    ],
+    "definition_dummies": [
+      "力のある者の権威を利用して、威張ること。",
+      "苦労を重ねて、学問を成し遂げた成果。",
+      "争う者のほかにいる者が、利益を得ること。"
+    ],
+    "note": "他人の誤りなども、自分の改善に役立てる。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_a8618318a1cf",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "登竜門",
+    "definition": "成功につながる、大切な関門。",
+    "term_dummies": [
+      "助長",
+      "杞憂",
+      "背水の陣"
+    ],
+    "definition_dummies": [
+      "ある傾向を、さらに強めること。",
+      "起こりそうにないことを、むやみに心配すること。",
+      "退路を断ち、決死の覚悟で物事に臨むこと。"
+    ],
+    "note": "そこを通ることが、立身出世のきっかけになる。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_fb2c47266d75",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "完璧",
+    "definition": "欠点や不足がなく、完全であること。",
+    "term_dummies": [
+      "蛍雪の功",
+      "漁夫の利",
+      "四面楚歌"
+    ],
+    "definition_dummies": [
+      "苦労を重ねて、学問を成し遂げた成果。",
+      "争う者のほかにいる者が、利益を得ること。",
+      "周囲が敵ばかりで、助けがなく孤立すること。"
+    ],
+    "note": "大切な玉を、無傷で持ち帰った故事に由来する。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_bad44a8a7444",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "虎の威を借る狐",
+    "definition": "力のある者の権威を利用して、威張ること。",
+    "term_dummies": [
+      "杞憂",
+      "背水の陣",
+      "呉越同舟"
+    ],
+    "definition_dummies": [
+      "起こりそうにないことを、むやみに心配すること。",
+      "退路を断ち、決死の覚悟で物事に臨むこと。",
+      "仲の悪い者どうしが、同じ立場にいること。"
+    ],
+    "note": "自分自身の実力で強いわけではない。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_af6618857c8e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "助長",
+    "definition": "ある傾向を、さらに強めること。",
+    "term_dummies": [
+      "漁夫の利",
+      "四面楚歌",
+      "守株"
+    ],
+    "definition_dummies": [
+      "争う者のほかにいる者が、利益を得ること。",
+      "周囲が敵ばかりで、助けがなく孤立すること。",
+      "古い習慣にとらわれ、変化に対応できないこと。"
+    ],
+    "note": "よくない傾向を強める場面で使うことが多い。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
+    "id": "jr_jp_core_de26bb8617cb",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "熟語・四字熟語",
+    "unit": "故事成語",
+    "kind": "idiom",
+    "content_batch": "japanese-curriculum-20261108",
+    "term": "蛍雪の功",
+    "definition": "苦労を重ねて、学問を成し遂げた成果。",
+    "term_dummies": [
+      "背水の陣",
+      "呉越同舟",
+      "他山の石"
+    ],
+    "definition_dummies": [
+      "退路を断ち、決死の覚悟で物事に臨むこと。",
+      "仲の悪い者どうしが、同じ立場にいること。",
+      "他人の言動を、自分を磨く材料にすること。"
+    ],
+    "note": "乏しい明かりの下で勉学に励んだ故事に由来する。",
+    "curriculum_topics": [
+      "idioms"
+    ]
+  },
+  {
     "id": "jr_jp_write_660e",
     "school_level": "小学",
     "grade": "小2",
