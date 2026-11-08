@@ -11,7 +11,7 @@ export function practiceTypes(subject) {
 }
 export function matchesPracticeItem(item, type = 'all') {
   if (type === 'all') return true;
-  if (item.subject === '国語') return ({kanji_write:item.kind === 'kanji' && item.writing_parts?.length > 0,kanji_read:item.kind === 'kanji',idiom:item.kind === 'idiom',
+  if (item.subject === '国語') return ({kanji_write:item.kind === 'kanji' && (item.writing_parts?.length > 0 || item.writing_format === 'whole'),kanji_read:item.kind === 'kanji',idiom:item.kind === 'idiom',
     modern:item.field === '現代文文法',reading:item.field === '読解',classical:item.field === '古文文法',kanbun:item.field === '漢文文法'})[type] === true;
   if (item.subject === '英語' && type === 'grammar') return item.field === '英文法';
   if (item.subject === '英語' && type === 'reading') return item.field === '英文読解';

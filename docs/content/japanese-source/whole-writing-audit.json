@@ -1,0 +1,53 @@
+{
+  "version": "0.73.0",
+  "date": "2026-11-08",
+  "newWritingCharacters": 50,
+  "generatedIncrease": 50,
+  "secondaryCovered": 891,
+  "target": 1110,
+  "remaining": 219,
+  "readingMaterialsUnchanged": 1094,
+  "elementaryArchiveUnchanged": true,
+  "distractorPool": {
+    "stored": 4,
+    "b": 2,
+    "c": 1,
+    "d": 1,
+    "sampled": 3,
+    "presentedIncludingAnswer": 4
+  },
+  "budget": {
+    "materials": 50,
+    "presentations": 100,
+    "maxima": {
+      "task": 13,
+      "prompt": 31,
+      "choice": 5,
+      "targetLabel": 10,
+      "note": 15,
+      "combined": 49
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "layout": {
+    "representativeDisplays": 32,
+    "widths": [
+      320,
+      390
+    ],
+    "modes": [
+      "normal",
+      "focus"
+    ],
+    "states": [
+      "answer",
+      "feedback"
+    ],
+    "maxPanelHeight": 347,
+    "overflow": false
+  },
+  "checks": "Only changed data, random three-of-four pool selection and short four-lane integration plus representative new feature UI; no full suite or five-minute simulation.",
+  "editorialReview": "Words/readings and unique contextual answer manually reviewed. Equivalent accepted spellings excluded. Source contexts and unmasked word characters do not contain any of the four distractors. Some distractors (e.g. 寅/碗) are familiar non-Joyo characters; they are not counted as middle-school answer targets.",
+  "reviewFlow": "Verified four choices, wrong stays, correct fills 圏外 and uses writing explanation."
+}

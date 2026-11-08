@@ -50,6 +50,12 @@ const ids=new Set(),bankIdCounts=new Map();for(const q of bank)bankIdCounts.set(
 for(const item of items){
  for(const name of ['id','school_level','grade','subject','field','unit'])if(typeof item[name]!=='string'||!item[name].trim())errors.push({id:item.id,reason:`missing-${name}`});
  if(!item.id||ids.has(item.id)||bankIdCounts.get(item.id)>1)errors.push({id:item.id,reason:'missing-or-duplicate-id'});ids.add(item.id);
+ if(item.writing_format==='whole'){
+  const pool=item.writing_dummies,groups=item.writing_distractor_groups,all=groups?['b','c','d'].flatMap(k=>groups[k]||[]):[];
+  if(!Array.isArray(pool)||pool.length!==4||new Set(pool).size!==4||pool.includes(item.character)||JSON.stringify(['b','c','d'].map(k=>groups?.[k]?.length))!=='[2,1,1]'||JSON.stringify([...all].sort())!==JSON.stringify([...pool].sort()))errors.push({id:item.id,reason:'whole-writing-requires-b2-c1-d1'});
+  const visible=(item.writing_hint||'')+(item.writing_word||item.word).replace(item.character,'');
+  if([item.character,...(pool||[])].some(c=>visible.includes(c)))errors.push({id:item.id,reason:'whole-writing-answer-or-distractor-leaked'});
+ }
  let qs;
  try{qs=item.kind==='choice'?choicePresentations(item).map((_,i,ps)=>makeChoiceQuestion(item,()=>(i+.5)/ps.length)):makeQuestionQueue([item],()=>.5);}
  catch(e){errors.push({id:item.id,reason:e.message});continue;}
@@ -71,6 +77,10 @@ for(const item of items){
   const reviewed=!(q.diagram||item.image||item.figure||item.diagram)&&(budget.reviewedTextProfiles||[]).find(p=>p.subject===item.subject&&p.profiles.includes(profile)&&Object.entries(p.maxima).every(([key,max])=>measured[key]<=max));
   const heightLimit=reviewed?.estimatedPanelHeightLimit??budget.estimatedPanelHeightLimit;
   if(height>heightLimit)issues.push(`estimated-height:${Math.ceil(height)}>${heightLimit}`);
+  if(item.writing_format==='whole'&&q.mode==='kanji_component'){
+   const d=q.writingDisplay,w=item.writing_word??item.word;
+   if(!d||chars(d.sentence)>24||chars(w)>3||chars(d.reading)>6||(chars(d.reading)+2)*20+chars(w)*32+14>250||!q.choices.every(c=>/^[\u3400-\u9fff]$/u.test(c)))issues.push('whole-writing-layout-review');
+  }
   const titleRule=budget.longDefinitionHeading;
   if(titleRule&&item.subject===titleRule.subject&&q.mode===titleRule.mode&&chars(q.prompt)>titleRule.titleCharsOver&&(chars(q.prompt)>titleRule.maxTitleChars||measured.choice>titleRule.maxChoiceChars))issues.push('long-definition-title-needs-layout-review');
   if((q.diagram||item.image||item.figure||item.diagram)&&!reviewedKanjiDiagram(item,q,measured))issues.push('image-or-diagram-profile-review');

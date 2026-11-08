@@ -136,6 +136,22 @@ for n,r in compound_rows:
   positions=compound_layouts[layout]['positions'];boxes=compound_layouts[layout]['boxes']
  assert len(answers)==len(boxes)==len(positions)
  item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch='japanese-compound-writing-20261107',writing_profile=profile,writing_scope='secondary-1110',writing_parts=[dict(position=pos,answer=a,dummies=glyph_dummies(a,c,compound_groups),box=box) for pos,a,box in zip(positions,answers,boxes)])
+# Whole-character selection for shapes that should not be split into rectangles.
+whole_rows=json.loads((SOURCE/'whole-writing-additions.json').read_text())
+for r in whole_rows:
+ c=r['character'];word=r['word'];reading=r['reading'];hint=r['context'];options=r['distractors']
+ assert c in kanji_by_char and not scope[c],c
+ item=kanji_by_char[c];assert not item['writing_parts'],c
+ assert word.count(c)==1 and len(options)==4,c
+ assert len(hint)<=24 and len(word)<=3 and len(reading)<=6 and (len(reading)+2)*20+len(word)*32+14<=250,(c,'whole-writing display budget')
+ values=[x['value'] for x in options]
+ assert len(set(values+[c]))==5 and all(len(x)==1 for x in values),c
+ roles={role:[x['value'] for x in options if x['role']==role] for role in ['b','c','d']}
+ assert list(map(len,roles.values()))==[2,1,1],c
+ visible=hint+word.replace(c,'')
+ assert not any(x in visible for x in values+[c]),(c,'answer/distractor leaked in prompt')
+ item.update(writing_format='whole',writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_dummies=values,writing_distractor_groups=roles,writing_batch='japanese-whole-writing-20261108',writing_scope='secondary-1110')
+ item.pop('writing_status',None);item.pop('writing_deferred_reason',None);item.pop('writing_profile',None)
 (ROOT/'quiz-data/junior_japanese_extended.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')
-print('Writing targets compiled:',len(writing_rows)+len(vertical_rows)+len(compound_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows)+len(vertical_rows)+len(compound_rows),')')
+print('Writing targets compiled:',len(writing_rows)+len(vertical_rows)+len(compound_rows)+len(whole_rows),'(existing character IDs upgraded:',sum(r[0] in kanji_by_char for _,_,r in writing_rows)+len(vertical_rows)+len(compound_rows),')')

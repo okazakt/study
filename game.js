@@ -1,5 +1,5 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.72.0';
-import { materializeMathItem } from './math-variants.js?v=0.72.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.73.0';
+import { materializeMathItem } from './math-variants.js?v=0.73.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -130,16 +130,17 @@ export function makeJapaneseQuestions(item, random = Math.random) {
     return { ...item, id: `${item.id}:${mode}`, sourceId: item.id, mode, prompt, answer, choices,
       correct: choices.indexOf(answer), context: '', task, reviewLabel: prompt, ...extra };
   };
-  const writing=item.kind==='kanji'&&item.writing_parts?.length?kanjiWritingDisplay(item):null;
+  const writing=item.kind==='kanji'&&(item.writing_parts?.length||item.writing_format==='whole')?kanjiWritingDisplay(item):null;
   if (item.kind === 'kanji') return [
     question('kanji_reading', `「${item.word}」\n${item.sentence}`, item.reading, item.reading_dummies, 'かぎ括弧の語の読みを選ぼう'),
-    ...(item.writing_parts||[]).map((part, position) => question('kanji_component', `${writing.sentence}\n「${writing.reading}」 ${writing.maskedWord}`, part.answer, part.dummies, '',
+    ...(item.writing_format==='whole' ? [question('kanji_component', `${writing.sentence}\n「${writing.reading}」 ${writing.maskedWord}`, item.character, item.writing_dummies, '',
+      {writingDisplay:writing,id:`${item.id}:kanji_whole`,blankIndex:1,blankPosition:1,blankTotal:1,continuation:false,targetLabel:'□に入る漢字を選ぼう',reviewLabel:`「${writing.reading}」 ${writing.maskedWord}`,note:`完成：${item.character}。${item.writing_note??item.note}`})] : (item.writing_parts||[]).map((part, position) => question('kanji_component', `${writing.sentence}\n「${writing.reading}」 ${writing.maskedWord}`, part.answer, part.dummies, '',
       { writingDisplay:writing, id: `${item.id}:kanji_component:${position + 1}${item.writing_revision?`:${item.writing_revision}`:''}`, blankIndex: position + 1, blankPosition: position + 1,
         blankTotal: item.writing_parts.length, continuation: position > 0,
         diagram: { parts: item.writing_parts.map((part, index) => ({ ...part, state: index < position ? 'solved' : index === position ? 'active' : 'pending' })) },
         targetLabel: `${part.position}の部品を選ぼう（${position + 1} / ${item.writing_parts.length}）`,
         reviewLabel: `「${writing.reading}」 ${writing.maskedWord} · ${part.position}の字形（${position + 1} / ${item.writing_parts.length}）`,
-        note: position + 1 === item.writing_parts.length ? `完成：${item.character}。${item.writing_note??item.note}` : '' }))
+        note: position + 1 === item.writing_parts.length ? `完成：${item.character}。${item.writing_note??item.note}` : '' })))
   ];
   if (item.kind === 'idiom') return [
     question('japanese_definition', item.term, item.definition, item.definition_dummies, 'この熟語の意味を選ぼう'),

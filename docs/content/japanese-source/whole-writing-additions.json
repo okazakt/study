@@ -1,0 +1,1402 @@
+[
+  {
+    "character": "圏",
+    "word": "圏外",
+    "reading": "けんがい",
+    "context": "山中で、携帯電話が通じなくなった。",
+    "distractors": [
+      {
+        "value": "巻",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "園",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "県",
+        "role": "c",
+        "reason": "音読みが同じケン"
+      },
+      {
+        "value": "懸",
+        "role": "d",
+        "reason": "県に近い部分を含む"
+      }
+    ]
+  },
+  {
+    "character": "闇",
+    "word": "暗闇",
+    "reading": "くらやみ",
+    "context": "明かりが消え、辺りが真っ黒になった。",
+    "distractors": [
+      {
+        "value": "閣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "閑",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "夜",
+        "role": "c",
+        "reason": "暗さや夜間を連想する"
+      },
+      {
+        "value": "液",
+        "role": "d",
+        "reason": "夜を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "疲",
+    "word": "疲労",
+    "reading": "ひろう",
+    "context": "長時間の作業で、体の力が落ちた。",
+    "distractors": [
+      {
+        "value": "疫",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "痕",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "披",
+        "role": "c",
+        "reason": "披露も同じ読みのひろう"
+      },
+      {
+        "value": "被",
+        "role": "d",
+        "reason": "披と皮の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "屈",
+    "word": "不屈",
+    "reading": "ふくつ",
+    "context": "困難にも負けず、立ち向かう精神。",
+    "distractors": [
+      {
+        "value": "届",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "窟",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "曲",
+        "role": "c",
+        "reason": "屈することと曲げることの意味が近い"
+      },
+      {
+        "value": "典",
+        "role": "d",
+        "reason": "曲と中央の字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "匠",
+    "word": "巨匠",
+    "reading": "きょしょう",
+    "context": "その分野で、特に優れた芸術家。",
+    "distractors": [
+      {
+        "value": "匹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "区",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "職",
+        "role": "c",
+        "reason": "職人を連想する"
+      },
+      {
+        "value": "織",
+        "role": "d",
+        "reason": "職と戠の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "旬",
+    "word": "旬",
+    "reading": "しゅん",
+    "context": "たけのこが、最もおいしく採れるころ。",
+    "distractors": [
+      {
+        "value": "句",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "匂",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "期",
+        "role": "c",
+        "reason": "一定の時期という意味で近い"
+      },
+      {
+        "value": "棋",
+        "role": "d",
+        "reason": "期と其の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "違",
+    "word": "間違い",
+    "reading": "まちがい",
+    "context": "計算が合わず、誤りを見つけた。",
+    "distractors": [
+      {
+        "value": "遺",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "遣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "異",
+        "role": "c",
+        "reason": "違うと異なるの意味が近い"
+      },
+      {
+        "value": "翼",
+        "role": "d",
+        "reason": "異を下部に含む"
+      }
+    ]
+  },
+  {
+    "character": "僅",
+    "word": "僅差",
+    "reading": "きんさ",
+    "context": "決勝は、ごくわずかな点の開きで決まった。",
+    "distractors": [
+      {
+        "value": "勤",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "謹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "近",
+        "role": "c",
+        "reason": "音読みが同じキン"
+      },
+      {
+        "value": "斤",
+        "role": "d",
+        "reason": "近の内部と同じ形"
+      }
+    ]
+  },
+  {
+    "character": "敷",
+    "word": "敷地",
+    "reading": "しきち",
+    "context": "建物を建てるための、ひとまとまりの土地。",
+    "distractors": [
+      {
+        "value": "敵",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "散",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "布",
+        "role": "c",
+        "reason": "敷くことと布を広げることを連想する"
+      },
+      {
+        "value": "怖",
+        "role": "d",
+        "reason": "布を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "床",
+    "word": "床面",
+    "reading": "ゆかめん",
+    "context": "部屋で、足が直接触れる平らな部分。",
+    "distractors": [
+      {
+        "value": "麻",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "庶",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "寝",
+        "role": "c",
+        "reason": "床に就いて寝ることを連想する"
+      },
+      {
+        "value": "侵",
+        "role": "d",
+        "reason": "寝と右側の構成が似る"
+      }
+    ]
+  },
+  {
+    "character": "扉",
+    "word": "扉",
+    "reading": "とびら",
+    "context": "開け閉めして、出入り口をふさぐ建具。",
+    "distractors": [
+      {
+        "value": "扇",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "雇",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "門",
+        "role": "c",
+        "reason": "出入り口という意味で近い"
+      },
+      {
+        "value": "問",
+        "role": "d",
+        "reason": "門を外側に含む"
+      }
+    ]
+  },
+  {
+    "character": "肩",
+    "word": "肩",
+    "reading": "かた",
+    "context": "首の左右にある、体の部分。",
+    "distractors": [
+      {
+        "value": "房",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "扇",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "腕",
+        "role": "c",
+        "reason": "体の近い部分で混同しやすい"
+      },
+      {
+        "value": "碗",
+        "role": "d",
+        "reason": "腕と宛の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "尾",
+    "word": "尾行",
+    "reading": "びこう",
+    "context": "相手に気付かれず、後を追うこと。",
+    "distractors": [
+      {
+        "value": "尼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "尻",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "末",
+        "role": "c",
+        "reason": "終わりや後ろという意味で近い"
+      },
+      {
+        "value": "未",
+        "role": "d",
+        "reason": "末と横線の位置が違う"
+      }
+    ]
+  },
+  {
+    "character": "虎",
+    "word": "虎",
+    "reading": "とら",
+    "context": "しま模様があり、ネコ科に属する猛獣。",
+    "distractors": [
+      {
+        "value": "虜",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "虚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "寅",
+        "role": "c",
+        "reason": "十二支では虎に当たる"
+      },
+      {
+        "value": "演",
+        "role": "d",
+        "reason": "寅を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "虜",
+    "word": "捕虜",
+    "reading": "ほりょ",
+    "context": "戦いで、相手側に捕らえられた人。",
+    "distractors": [
+      {
+        "value": "慮",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "膚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "囚",
+        "role": "c",
+        "reason": "捕らわれた人という意味で近い"
+      },
+      {
+        "value": "因",
+        "role": "d",
+        "reason": "囚と外枠と中の形が似る"
+      }
+    ]
+  },
+  {
+    "character": "慮",
+    "word": "配慮",
+    "reading": "はいりょ",
+    "context": "事情を思い巡らせ、気を配ること。",
+    "distractors": [
+      {
+        "value": "虜",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "膚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "考",
+        "role": "c",
+        "reason": "考えるという意味で近い"
+      },
+      {
+        "value": "老",
+        "role": "d",
+        "reason": "考と上部の字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "膚",
+    "word": "皮膚",
+    "reading": "ひふ",
+    "context": "体の表面を覆う組織。",
+    "distractors": [
+      {
+        "value": "慮",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "虜",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "肌",
+        "role": "c",
+        "reason": "体の表面という意味が近い"
+      },
+      {
+        "value": "机",
+        "role": "d",
+        "reason": "肌と几の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "魔",
+    "word": "魔法",
+    "reading": "まほう",
+    "context": "不思議な力で、普通はできないことを行う術。",
+    "distractors": [
+      {
+        "value": "摩",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "磨",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "悪",
+        "role": "c",
+        "reason": "害やよこしまなものを連想する"
+      },
+      {
+        "value": "亜",
+        "role": "d",
+        "reason": "悪と上部の字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "磨",
+    "word": "磨く",
+    "reading": "みがく",
+    "context": "こすって、表面をなめらかにする。",
+    "distractors": [
+      {
+        "value": "摩",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "麻",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "研",
+        "role": "c",
+        "reason": "研ぐことと意味が近い"
+      },
+      {
+        "value": "形",
+        "role": "d",
+        "reason": "研と开の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "摩",
+    "word": "摩耗",
+    "reading": "まもう",
+    "context": "こすれ合って、すり減ること。",
+    "distractors": [
+      {
+        "value": "磨",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "魔",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "擦",
+        "role": "c",
+        "reason": "こするという意味が近い"
+      },
+      {
+        "value": "察",
+        "role": "d",
+        "reason": "擦の内部と同じ字形"
+      }
+    ]
+  },
+  {
+    "character": "麻",
+    "word": "麻",
+    "reading": "あさ",
+    "context": "茎から繊維を取り、糸などに使う植物。",
+    "distractors": [
+      {
+        "value": "磨",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "摩",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "布",
+        "role": "c",
+        "reason": "繊維から作るものを連想する"
+      },
+      {
+        "value": "怖",
+        "role": "d",
+        "reason": "布を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "避",
+    "word": "避難",
+    "reading": "ひなん",
+    "context": "危険な場所から、安全な所へ移ること。",
+    "distractors": [
+      {
+        "value": "遅",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "壁",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "逃",
+        "role": "c",
+        "reason": "逃げて危険を避ける意味で近い"
+      },
+      {
+        "value": "桃",
+        "role": "d",
+        "reason": "逃と兆の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "遅",
+    "word": "遅刻",
+    "reading": "ちこく",
+    "context": "決められた時刻に、間に合わないこと。",
+    "distractors": [
+      {
+        "value": "違",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "達",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "晩",
+        "role": "c",
+        "reason": "遅い時刻という意味で近い"
+      },
+      {
+        "value": "挽",
+        "role": "d",
+        "reason": "晩と免の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "迫",
+    "word": "脅迫",
+    "reading": "きょうはく",
+    "context": "恐れさせ、相手に従わせようとすること。",
+    "distractors": [
+      {
+        "value": "泊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "伯",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "詰",
+        "role": "c",
+        "reason": "詰め寄ることと意味が近い"
+      },
+      {
+        "value": "結",
+        "role": "d",
+        "reason": "詰と吉の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "逃",
+    "word": "逃走",
+    "reading": "とうそう",
+    "context": "追われる場所などから、走って去ること。",
+    "distractors": [
+      {
+        "value": "挑",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "桃",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "避",
+        "role": "c",
+        "reason": "危険から離れる意味で近い"
+      },
+      {
+        "value": "癖",
+        "role": "d",
+        "reason": "避と辟の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "透",
+    "word": "浸透",
+    "reading": "しんとう",
+    "context": "液体や考えが、内部へ広がること。",
+    "distractors": [
+      {
+        "value": "誘",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "秀",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "通",
+        "role": "c",
+        "reason": "中を通り抜ける意味を連想する"
+      },
+      {
+        "value": "痛",
+        "role": "d",
+        "reason": "通と甬の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "遇",
+    "word": "待遇",
+    "reading": "たいぐう",
+    "context": "人に対する、扱い方や条件。",
+    "distractors": [
+      {
+        "value": "隅",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "偶",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "遭",
+        "role": "c",
+        "reason": "出会うという意味で近い"
+      },
+      {
+        "value": "槽",
+        "role": "d",
+        "reason": "遭と曹の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "遭",
+    "word": "遭難",
+    "reading": "そうなん",
+    "context": "山や海で、命に関わる危険に出会うこと。",
+    "distractors": [
+      {
+        "value": "槽",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "曹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "遇",
+        "role": "c",
+        "reason": "出会うという意味で近い"
+      },
+      {
+        "value": "偶",
+        "role": "d",
+        "reason": "遇と禺の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "還",
+    "word": "生還",
+    "reading": "せいかん",
+    "context": "危険を脱し、生きて帰ること。",
+    "distractors": [
+      {
+        "value": "環",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "懐",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "戻",
+        "role": "c",
+        "reason": "もとの場所へ帰る意味で近い"
+      },
+      {
+        "value": "涙",
+        "role": "d",
+        "reason": "戻と戸と大の構成が共通"
+      }
+    ]
+  },
+  {
+    "character": "巡",
+    "word": "巡回",
+    "reading": "じゅんかい",
+    "context": "順に回って、様子を見て歩くこと。",
+    "distractors": [
+      {
+        "value": "州",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "洲",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "周",
+        "role": "c",
+        "reason": "回ることと周囲の意味が近い"
+      },
+      {
+        "value": "調",
+        "role": "d",
+        "reason": "周を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "遵",
+    "word": "遵法",
+    "reading": "じゅんぽう",
+    "context": "法に従い、決まりを破らないこと。",
+    "distractors": [
+      {
+        "value": "尊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "樽",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "守",
+        "role": "c",
+        "reason": "規則に従う意味が近い"
+      },
+      {
+        "value": "狩",
+        "role": "d",
+        "reason": "守を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "逸",
+    "word": "逸走",
+    "reading": "いっそう",
+    "context": "本来の場所や道から、それて走り去ること。",
+    "distractors": [
+      {
+        "value": "免",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "勉",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "逃",
+        "role": "c",
+        "reason": "逃げて走り去る意味が近い"
+      },
+      {
+        "value": "桃",
+        "role": "d",
+        "reason": "逃と兆の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "遮",
+    "word": "遮光",
+    "reading": "しゃこう",
+    "context": "光が入り込まないようにすること。",
+    "distractors": [
+      {
+        "value": "庶",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "遷",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "隠",
+        "role": "c",
+        "reason": "見えなくするという意味を連想する"
+      },
+      {
+        "value": "穏",
+        "role": "d",
+        "reason": "隠と右側の構成が似る"
+      }
+    ]
+  },
+  {
+    "character": "闘",
+    "word": "戦闘",
+    "reading": "せんとう",
+    "context": "相手と武力などで、激しく戦うこと。",
+    "distractors": [
+      {
+        "value": "開",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "閥",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "争",
+        "role": "c",
+        "reason": "争うという意味が近い"
+      },
+      {
+        "value": "浄",
+        "role": "d",
+        "reason": "争を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "閲",
+    "word": "校閲",
+    "reading": "こうえつ",
+    "context": "原稿の内容や表記を調べ、誤りを正すこと。",
+    "distractors": [
+      {
+        "value": "閣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "閥",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "検",
+        "role": "c",
+        "reason": "調べ確かめる意味が近い"
+      },
+      {
+        "value": "険",
+        "role": "d",
+        "reason": "検と右側の構成が共通"
+      }
+    ]
+  },
+  {
+    "character": "閑",
+    "word": "閑静",
+    "reading": "かんせい",
+    "context": "落ち着いていて、騒がしくないこと。",
+    "distractors": [
+      {
+        "value": "関",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "閉",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "休",
+        "role": "c",
+        "reason": "静かに休む様子を連想する"
+      },
+      {
+        "value": "体",
+        "role": "d",
+        "reason": "休と木と本の違いだけ"
+      }
+    ]
+  },
+  {
+    "character": "閥",
+    "word": "財閥",
+    "reading": "ざいばつ",
+    "context": "一族などを中心に、企業を支配する集団。",
+    "distractors": [
+      {
+        "value": "閣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "闘",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "派",
+        "role": "c",
+        "reason": "まとまった集団という意味が近い"
+      },
+      {
+        "value": "脈",
+        "role": "d",
+        "reason": "派と右側の構成が似る"
+      }
+    ]
+  },
+  {
+    "character": "廉",
+    "word": "廉価",
+    "reading": "れんか",
+    "context": "値段が低く、買いやすいこと。",
+    "distractors": [
+      {
+        "value": "兼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "鎌",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "安",
+        "role": "c",
+        "reason": "値段が安いという意味が近い"
+      },
+      {
+        "value": "案",
+        "role": "d",
+        "reason": "安を上部に含む"
+      }
+    ]
+  },
+  {
+    "character": "廊",
+    "word": "回廊",
+    "reading": "かいろう",
+    "context": "建物などを囲み、歩いて回れる通り道。",
+    "distractors": [
+      {
+        "value": "郎",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "郊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "路",
+        "role": "c",
+        "reason": "人が通る道という意味が近い"
+      },
+      {
+        "value": "露",
+        "role": "d",
+        "reason": "路を下部に含む"
+      }
+    ]
+  },
+  {
+    "character": "庶",
+    "word": "庶務",
+    "reading": "しょむ",
+    "context": "組織内の、さまざまな事務を扱う仕事。",
+    "distractors": [
+      {
+        "value": "席",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "度",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "雑",
+        "role": "c",
+        "reason": "雑務という語と意味が近い"
+      },
+      {
+        "value": "難",
+        "role": "d",
+        "reason": "雑と隹を含む構成が似る"
+      }
+    ]
+  },
+  {
+    "character": "廃",
+    "word": "廃棄",
+    "reading": "はいき",
+    "context": "不要なものを使わず、処分すること。",
+    "distractors": [
+      {
+        "value": "発",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "庶",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "捨",
+        "role": "c",
+        "reason": "捨てるという意味が近い"
+      },
+      {
+        "value": "舎",
+        "role": "d",
+        "reason": "舎を内部に含む"
+      }
+    ]
+  },
+  {
+    "character": "癖",
+    "word": "癖",
+    "reading": "くせ",
+    "context": "爪をかむなど、つい繰り返してしまうこと。",
+    "distractors": [
+      {
+        "value": "壁",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "避",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "習",
+        "role": "c",
+        "reason": "習慣という意味で近い"
+      },
+      {
+        "value": "翌",
+        "role": "d",
+        "reason": "習と羽の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "療",
+    "word": "療養",
+    "reading": "りょうよう",
+    "context": "病気の回復のため、休みながら手当てする。",
+    "distractors": [
+      {
+        "value": "寮",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "僚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "治",
+        "role": "c",
+        "reason": "治すという意味が近い"
+      },
+      {
+        "value": "始",
+        "role": "d",
+        "reason": "治と台の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "疾",
+    "word": "疾走",
+    "reading": "しっそう",
+    "context": "勢いよく、走り抜けること。",
+    "distractors": [
+      {
+        "value": "痴",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "病",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "速",
+        "role": "c",
+        "reason": "速いという意味が近い"
+      },
+      {
+        "value": "束",
+        "role": "d",
+        "reason": "速の内部と同じ字形"
+      }
+    ]
+  },
+  {
+    "character": "疫",
+    "word": "防疫",
+    "reading": "ぼうえき",
+    "context": "感染症が広がるのを、防ぐこと。",
+    "distractors": [
+      {
+        "value": "役",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "没",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "病",
+        "role": "c",
+        "reason": "病気という意味で近い"
+      },
+      {
+        "value": "柄",
+        "role": "d",
+        "reason": "病と丙の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "痘",
+    "word": "水痘",
+    "reading": "すいとう",
+    "context": "熱や皮膚の水ぶくれなどが出る感染症。",
+    "distractors": [
+      {
+        "value": "短",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "豆",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "病",
+        "role": "c",
+        "reason": "感染する病気を連想する"
+      },
+      {
+        "value": "柄",
+        "role": "d",
+        "reason": "病と丙の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "痢",
+    "word": "下痢",
+    "reading": "げり",
+    "context": "便の水分が多く、排出の回数が増える症状。",
+    "distractors": [
+      {
+        "value": "利",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "梨",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "腹",
+        "role": "c",
+        "reason": "腹の不調を連想する"
+      },
+      {
+        "value": "複",
+        "role": "d",
+        "reason": "腹と复の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "痴",
+    "word": "痴情",
+    "reading": "ちじょう",
+    "context": "恋愛におぼれ、分別を失った心情。",
+    "distractors": [
+      {
+        "value": "知",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "疾",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "愚",
+        "role": "c",
+        "reason": "愚かという意味で近い"
+      },
+      {
+        "value": "遇",
+        "role": "d",
+        "reason": "愚と禺の部分が共通"
+      }
+    ]
+  },
+  {
+    "character": "痕",
+    "word": "痕跡",
+    "reading": "こんせき",
+    "context": "過去にあったことを示す、残されたしるし。",
+    "distractors": [
+      {
+        "value": "恨",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "根",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "傷",
+        "role": "c",
+        "reason": "けがという意味で近い"
+      },
+      {
+        "value": "腸",
+        "role": "d",
+        "reason": "傷と腸の右側の形が似る"
+      }
+    ]
+  },
+  {
+    "character": "瘍",
+    "word": "潰瘍",
+    "reading": "かいよう",
+    "context": "皮膚や粘膜が、深くえぐれる症状。",
+    "distractors": [
+      {
+        "value": "揚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "湯",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "傷",
+        "role": "c",
+        "reason": "組織が傷付くという意味が近い"
+      },
+      {
+        "value": "腸",
+        "role": "d",
+        "reason": "傷と腸の右側の形が似る"
+      }
+    ]
+  }
+]
