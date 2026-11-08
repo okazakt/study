@@ -13201,6 +13201,3391 @@
     ]
   },
   {
+    "id": "jr_jp_read_2b6dcf675ff0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "硫黄",
+    "character": "硫",
+    "reading": "いおう",
+    "reading_dummies": [
+      "りゅうおう",
+      "ゆおう",
+      "りゅうこう"
+    ],
+    "sentence": "火山の近くで見られる物質。",
+    "writing_parts": [],
+    "note": "硫黄（いおう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ef3a103127b1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "息吹",
+    "character": "吹",
+    "reading": "いぶき",
+    "reading_dummies": [
+      "そくふき",
+      "いきぶえ",
+      "いふき"
+    ],
+    "sentence": "春の訪れを感じさせる。",
+    "writing_parts": [],
+    "note": "息吹（いぶき）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_46a892655ac1",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "浮気",
+    "character": "浮",
+    "reading": "うわき",
+    "reading_dummies": [
+      "ふき",
+      "うきけ",
+      "うわけ"
+    ],
+    "sentence": "一つのことに集中しない。",
+    "writing_parts": [],
+    "note": "浮気（うわき）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d316778c2f3b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "浮つく",
+    "character": "浮",
+    "reading": "うわつく",
+    "reading_dummies": [
+      "うきつく",
+      "ふつく",
+      "うわづく"
+    ],
+    "sentence": "心が落ち着かない。",
+    "writing_parts": [],
+    "note": "浮つく（うわつく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_945853730c5c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "叔父",
+    "character": "叔",
+    "reading": "おじ",
+    "reading_dummies": [
+      "おい",
+      "おば",
+      "めい"
+    ],
+    "sentence": "父や母の弟に当たる人。",
+    "writing_parts": [],
+    "note": "叔父（おじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_eef6ca829487",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "伯父",
+    "character": "伯",
+    "reading": "おじ",
+    "reading_dummies": [
+      "おい",
+      "おば",
+      "めい"
+    ],
+    "sentence": "父や母の兄に当たる人。",
+    "writing_parts": [],
+    "note": "伯父（おじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_f10439186ed8",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "乙女",
+    "character": "乙",
+    "reading": "おとめ",
+    "reading_dummies": [
+      "おつめ",
+      "おとじょ",
+      "いつめ"
+    ],
+    "sentence": "若い女性を指す語。",
+    "writing_parts": [],
+    "note": "乙女（おとめ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_49862758fe2d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "叔母",
+    "character": "叔",
+    "reading": "おば",
+    "reading_dummies": [
+      "おじ",
+      "おい",
+      "めい"
+    ],
+    "sentence": "父や母の妹に当たる人。",
+    "writing_parts": [],
+    "note": "叔母（おば）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_fe34fbc38e1b",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "伯母",
+    "character": "伯",
+    "reading": "おば",
+    "reading_dummies": [
+      "おじ",
+      "おい",
+      "めい"
+    ],
+    "sentence": "父や母の姉に当たる人。",
+    "writing_parts": [],
+    "note": "伯母（おば）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_52ef3021a054",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "お巡りさん",
+    "character": "巡",
+    "reading": "おまわりさん",
+    "reading_dummies": [
+      "おめぐりさん",
+      "おじゅんりさん",
+      "おかえりさん"
+    ],
+    "sentence": "街の安全を守る警察官。",
+    "writing_parts": [],
+    "note": "お巡りさん（おまわりさん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_13649315628f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "鍛冶",
+    "character": "鍛",
+    "reading": "かじ",
+    "reading_dummies": [
+      "たんじ",
+      "かち",
+      "かぢ"
+    ],
+    "sentence": "金属を熱して打ち、道具を作る。",
+    "writing_parts": [],
+    "note": "鍛冶（かじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_72d1d858a7f7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "風邪",
+    "character": "邪",
+    "reading": "かぜ",
+    "reading_dummies": [
+      "ふうしゃ",
+      "かせ",
+      "ふうが"
+    ],
+    "sentence": "熱やせきなどの症状が出た。",
+    "writing_parts": [],
+    "note": "風邪（かぜ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_fa5f2d22626c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "固唾",
+    "character": "唾",
+    "reading": "かたず",
+    "reading_dummies": [
+      "こだ",
+      "かたづ",
+      "こず"
+    ],
+    "sentence": "結果を待ちながら飲み込む。",
+    "writing_parts": [],
+    "note": "固唾（かたず）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_38e300ed65e7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "蚊帳",
+    "character": "蚊",
+    "reading": "かや",
+    "reading_dummies": [
+      "かちょ",
+      "かじょう",
+      "ぶんちょ"
+    ],
+    "sentence": "虫を防ぐため寝床を覆う。",
+    "writing_parts": [],
+    "note": "蚊帳（かや）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_242efe464cc5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "為替",
+    "character": "為",
+    "reading": "かわせ",
+    "reading_dummies": [
+      "ためがえ",
+      "いかえ",
+      "かわせい"
+    ],
+    "sentence": "外国のお金との交換にも関わる。",
+    "writing_parts": [],
+    "note": "為替（かわせ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_60fe2d789e5e",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "玄人",
+    "character": "玄",
+    "reading": "くろうと",
+    "reading_dummies": [
+      "げんじん",
+      "くろびと",
+      "くろうど"
+    ],
+    "sentence": "その道の専門家。",
+    "writing_parts": [],
+    "note": "玄人（くろうと）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_29492ed34960",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "早乙女",
+    "character": "乙",
+    "reading": "さおとめ",
+    "reading_dummies": [
+      "はやおとめ",
+      "さつおとめ",
+      "そうおとめ"
+    ],
+    "sentence": "田植えをする若い女性。",
+    "writing_parts": [],
+    "note": "早乙女（さおとめ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_5545050ba7e8",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "早苗",
+    "character": "苗",
+    "reading": "さなえ",
+    "reading_dummies": [
+      "はやなえ",
+      "そうなえ",
+      "さねえ"
+    ],
+    "sentence": "田に植える若い稲。",
+    "writing_parts": [],
+    "note": "早苗（さなえ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_e3159ba3b256",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "尻尾",
+    "character": "尻",
+    "reading": "しっぽ",
+    "reading_dummies": [
+      "しりび",
+      "じりお",
+      "しつお"
+    ],
+    "sentence": "犬が左右に振っている。",
+    "writing_parts": [],
+    "note": "尻尾（しっぽ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_b44a0b658824",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "老舗",
+    "character": "舗",
+    "reading": "しにせ",
+    "reading_dummies": [
+      "おいみせ",
+      "しねせ",
+      "しにさ"
+    ],
+    "sentence": "代々続く歴史のある店。",
+    "writing_parts": [],
+    "note": "老舗（しにせ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_7807c02d75ba",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "芝生",
+    "character": "芝",
+    "reading": "しばふ",
+    "reading_dummies": [
+      "しばせい",
+      "しぼう",
+      "しばう"
+    ],
+    "sentence": "公園に一面広がっている。",
+    "writing_parts": [],
+    "note": "芝生（しばふ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d35d98f2347c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "数珠",
+    "character": "珠",
+    "reading": "じゅず",
+    "reading_dummies": [
+      "すうじゅ",
+      "じゅす",
+      "じゅうず"
+    ],
+    "sentence": "祈るときに手に持つ仏具。",
+    "writing_parts": [],
+    "note": "数珠（じゅず）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_e79d518dd78d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "白髪",
+    "character": "髪",
+    "reading": "しらが",
+    "reading_dummies": [
+      "しらげ",
+      "はくほつ",
+      "しろげ"
+    ],
+    "sentence": "年を重ねて髪が白くなった。",
+    "writing_parts": [],
+    "note": "白髪（しらが）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_189268421240",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "数奇屋",
+    "character": "奇",
+    "reading": "すきや",
+    "reading_dummies": [
+      "すうきや",
+      "かずきや",
+      "すきおく"
+    ],
+    "sentence": "茶の湯のための建物。",
+    "writing_parts": [],
+    "note": "数奇屋（すきや）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_0020e198c2f4",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "相撲",
+    "character": "撲",
+    "reading": "すもう",
+    "reading_dummies": [
+      "そうもう",
+      "すも",
+      "すぼう"
+    ],
+    "sentence": "土俵の上で取り組む競技。",
+    "writing_parts": [],
+    "note": "相撲（すもう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_bec58e675523",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "草履",
+    "character": "履",
+    "reading": "ぞうり",
+    "reading_dummies": [
+      "そうり",
+      "ぞうくつ",
+      "くさばき"
+    ],
+    "sentence": "足に履く和装の履物。",
+    "writing_parts": [],
+    "note": "草履（ぞうり）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_0e4825dfe93f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "足袋",
+    "character": "袋",
+    "reading": "たび",
+    "reading_dummies": [
+      "あしぶくろ",
+      "そくたい",
+      "たふく"
+    ],
+    "sentence": "和装のときに足に着ける。",
+    "writing_parts": [],
+    "note": "足袋（たび）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_cfe975e60400",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "稚児",
+    "character": "稚",
+    "reading": "ちご",
+    "reading_dummies": [
+      "ちじ",
+      "わかご",
+      "ちこ"
+    ],
+    "sentence": "祭りの行列に加わる幼い子。",
+    "writing_parts": [],
+    "note": "稚児（ちご）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_db86ed37ffc0",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "凸凹",
+    "character": "凸",
+    "reading": "でこぼこ",
+    "reading_dummies": [
+      "とつぼう",
+      "でごぼこ",
+      "でこぽこ"
+    ],
+    "sentence": "道の表面が平らでない。",
+    "writing_parts": [],
+    "note": "凸凹（でこぼこ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_622ad5a57be0",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "雪崩",
+    "character": "崩",
+    "reading": "なだれ",
+    "reading_dummies": [
+      "ゆきくずれ",
+      "なだら",
+      "なだる"
+    ],
+    "sentence": "山の斜面から雪が崩れ落ちる。",
+    "writing_parts": [],
+    "note": "雪崩（なだれ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_0713029cbad3",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "二十歳",
+    "character": "歳",
+    "reading": "はたち",
+    "reading_dummies": [
+      "はたじ",
+      "にじゅうせい",
+      "にとさい"
+    ],
+    "sentence": "成人年齢とは区別した年齢表現。",
+    "writing_parts": [],
+    "note": "二十歳（はたち）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6d23c4661936",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "吹雪",
+    "character": "吹",
+    "reading": "ふぶき",
+    "reading_dummies": [
+      "ふうせつ",
+      "ふきゆき",
+      "ふぶけ"
+    ],
+    "sentence": "強い風とともに雪が降る。",
+    "writing_parts": [],
+    "note": "吹雪（ふぶき）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_104aab54e671",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "猛者",
+    "character": "猛",
+    "reading": "もさ",
+    "reading_dummies": [
+      "もうしゃ",
+      "たけもの",
+      "もしゃ"
+    ],
+    "sentence": "勇気や力のある人。",
+    "writing_parts": [],
+    "note": "猛者（もさ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_170eeda3b56b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "桟敷",
+    "character": "桟",
+    "reading": "さじき",
+    "reading_dummies": [
+      "せんしき",
+      "さじぎ",
+      "さんしょ"
+    ],
+    "sentence": "芝居や祭りなどの見物席。",
+    "writing_parts": [],
+    "note": "桟敷（さじき）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_84604a5b59ec",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "熟字訓・特殊な読み",
+    "kind": "kanji",
+    "word": "投網",
+    "character": "網",
+    "reading": "とあみ",
+    "reading_dummies": [
+      "とうもう",
+      "なげもう",
+      "とあめ"
+    ],
+    "sentence": "広げて投げ、魚を捕る網。",
+    "writing_parts": [],
+    "note": "投網（とあみ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "bunka-joyo-appendix",
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6fa8a807679e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "催す",
+    "character": "催",
+    "reading": "もよおす",
+    "reading_dummies": [
+      "もようす",
+      "さいす",
+      "もよす"
+    ],
+    "sentence": "会場で音楽会を開く。",
+    "writing_parts": [],
+    "note": "催す（もよおす）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_87e0efaae5b9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "乏しい",
+    "character": "乏",
+    "reading": "とぼしい",
+    "reading_dummies": [
+      "とばしい",
+      "まずしい",
+      "ぼうしい"
+    ],
+    "sentence": "資源が十分でない。",
+    "writing_parts": [],
+    "note": "乏しい（とぼしい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_3c052275be60",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "憩う",
+    "character": "憩",
+    "reading": "いこう",
+    "reading_dummies": [
+      "けいう",
+      "いこお",
+      "こいう"
+    ],
+    "sentence": "木陰で心身を休める。",
+    "writing_parts": [],
+    "note": "憩う（いこう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ed5b13b0e05b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "愁える",
+    "character": "愁",
+    "reading": "うれえる",
+    "reading_dummies": [
+      "うらえる",
+      "しゅえる",
+      "かなえる"
+    ],
+    "sentence": "秋の寂しさに心を沈ませる。",
+    "writing_parts": [],
+    "note": "愁える（うれえる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6bd37923bae2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "憂える",
+    "character": "憂",
+    "reading": "うれえる",
+    "reading_dummies": [
+      "ゆうえる",
+      "うらえる",
+      "うえる"
+    ],
+    "sentence": "将来を心配する。",
+    "writing_parts": [],
+    "note": "憂える（うれえる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_fba0496d3300",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "懐かしい",
+    "character": "懐",
+    "reading": "なつかしい",
+    "reading_dummies": [
+      "なづかしい",
+      "ふところかしい",
+      "なつがしい"
+    ],
+    "sentence": "故郷を思い出して心が温まる。",
+    "writing_parts": [],
+    "note": "懐かしい（なつかしい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_7e0efa46ce0f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "慕う",
+    "character": "慕",
+    "reading": "したう",
+    "reading_dummies": [
+      "ぼう",
+      "うやう",
+      "しどう"
+    ],
+    "sentence": "離れた恩師を思い続ける。",
+    "writing_parts": [],
+    "note": "慕う（したう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_0bbdfeb9ed6a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "疎む",
+    "character": "疎",
+    "reading": "うとむ",
+    "reading_dummies": [
+      "そむ",
+      "うとおむ",
+      "うつむ"
+    ],
+    "sentence": "親しみを持たず遠ざける。",
+    "writing_parts": [],
+    "note": "疎む（うとむ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_1a08ec48dd9b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "携える",
+    "character": "携",
+    "reading": "たずさえる",
+    "reading_dummies": [
+      "たづさえる",
+      "けいえる",
+      "たずわえる"
+    ],
+    "sentence": "必要な道具を持って行く。",
+    "writing_parts": [],
+    "note": "携える（たずさえる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d5494a79a4ac",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "携わる",
+    "character": "携",
+    "reading": "たずさわる",
+    "reading_dummies": [
+      "たづさわる",
+      "たずわる",
+      "けいわる"
+    ],
+    "sentence": "地域の活動に関わる。",
+    "writing_parts": [],
+    "note": "携わる（たずさわる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_fa80d46851de",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "怠ける",
+    "character": "怠",
+    "reading": "なまける",
+    "reading_dummies": [
+      "おこたける",
+      "たいける",
+      "なまげる"
+    ],
+    "sentence": "すべき仕事をせずに過ごす。",
+    "writing_parts": [],
+    "note": "怠ける（なまける）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_4213b8803dec",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "潜る",
+    "character": "潜",
+    "reading": "もぐる",
+    "reading_dummies": [
+      "せんる",
+      "もぐれる",
+      "しずる"
+    ],
+    "sentence": "水中に体を沈める。",
+    "writing_parts": [],
+    "note": "潜る（もぐる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_c34c8e6e8015",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "潜む",
+    "character": "潜",
+    "reading": "ひそむ",
+    "reading_dummies": [
+      "ひぞむ",
+      "せんむ",
+      "もぐむ"
+    ],
+    "sentence": "物陰に身を隠す。",
+    "writing_parts": [],
+    "note": "潜む（ひそむ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_e7c551416c69",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "潤う",
+    "character": "潤",
+    "reading": "うるおう",
+    "reading_dummies": [
+      "うろう",
+      "じゅんう",
+      "うるもう"
+    ],
+    "sentence": "雨で乾いた土地が湿る。",
+    "writing_parts": [],
+    "note": "潤う（うるおう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_4c55d3f6213e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "潤す",
+    "character": "潤",
+    "reading": "うるおす",
+    "reading_dummies": [
+      "うろす",
+      "うるもうす",
+      "じゅんす"
+    ],
+    "sentence": "水を飲んで喉を湿らせる。",
+    "writing_parts": [],
+    "note": "潤す（うるおす）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_df153b2b5996",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "緩む",
+    "character": "緩",
+    "reading": "ゆるむ",
+    "reading_dummies": [
+      "かんむ",
+      "たるむ",
+      "ゆろむ"
+    ],
+    "sentence": "結び目の締まりが弱くなる。",
+    "writing_parts": [],
+    "note": "緩む（ゆるむ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_997ea7705701",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "辱める",
+    "character": "辱",
+    "reading": "はずかしめる",
+    "reading_dummies": [
+      "はづかしめる",
+      "じょくめる",
+      "はずかめる"
+    ],
+    "sentence": "人の名誉を傷付ける。",
+    "writing_parts": [],
+    "note": "辱める（はずかしめる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_8d42abf0d11a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "賜る",
+    "character": "賜",
+    "reading": "たまわる",
+    "reading_dummies": [
+      "たまる",
+      "しる",
+      "たもうる"
+    ],
+    "sentence": "目上の人から品物を頂く。",
+    "writing_parts": [],
+    "note": "賜る（たまわる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_7d63b5811f5b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "貫く",
+    "character": "貫",
+    "reading": "つらぬく",
+    "reading_dummies": [
+      "かんく",
+      "つらく",
+      "つらねく"
+    ],
+    "sentence": "初めに決めた方針を通す。",
+    "writing_parts": [],
+    "note": "貫く（つらぬく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_b197bacd30f2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "託す",
+    "character": "託",
+    "reading": "たくす",
+    "reading_dummies": [
+      "たぐす",
+      "とくす",
+      "たきす"
+    ],
+    "sentence": "大切な荷物を人に任せる。",
+    "writing_parts": [],
+    "note": "託す（たくす）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_abbdf2de925f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "侍る",
+    "character": "侍",
+    "reading": "はべる",
+    "reading_dummies": [
+      "さむらる",
+      "じる",
+      "はめる"
+    ],
+    "sentence": "身分の高い人のそばに仕える。",
+    "writing_parts": [],
+    "note": "侍る（はべる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_95a1d9bf0e90",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "尽くす",
+    "character": "尽",
+    "reading": "つくす",
+    "reading_dummies": [
+      "じんくす",
+      "つぐす",
+      "つきす"
+    ],
+    "sentence": "持てる力を全て出す。",
+    "writing_parts": [],
+    "note": "尽くす（つくす）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_cce47feaa4f9",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "尽きる",
+    "character": "尽",
+    "reading": "つきる",
+    "reading_dummies": [
+      "つくきる",
+      "じんきる",
+      "つぎる"
+    ],
+    "sentence": "用意した食料がなくなる。",
+    "writing_parts": [],
+    "note": "尽きる（つきる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2674dc8429f9",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "鋭い",
+    "character": "鋭",
+    "reading": "するどい",
+    "reading_dummies": [
+      "するい",
+      "するごい",
+      "えいい"
+    ],
+    "sentence": "先が細くとがっている。",
+    "writing_parts": [],
+    "note": "鋭い（するどい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_842345c29b9d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "鈍い",
+    "character": "鈍",
+    "reading": "にぶい",
+    "reading_dummies": [
+      "どんい",
+      "にぼい",
+      "ぬぶい"
+    ],
+    "sentence": "刃物の切れ味が悪い。",
+    "writing_parts": [],
+    "note": "鈍い（にぶい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_a016d9e099b7",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "惨め",
+    "character": "惨",
+    "reading": "みじめ",
+    "reading_dummies": [
+      "さんめ",
+      "みしめ",
+      "むざめ"
+    ],
+    "sentence": "ひどく哀れな様子。",
+    "writing_parts": [],
+    "note": "惨め（みじめ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_10f2eb6d08f8",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "嘆かわしい",
+    "character": "嘆",
+    "reading": "なげかわしい",
+    "reading_dummies": [
+      "たんかわしい",
+      "なげがわしい",
+      "なげわしい"
+    ],
+    "sentence": "情けなく残念に思う。",
+    "writing_parts": [],
+    "note": "嘆かわしい（なげかわしい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_cee411647d75",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "煩わしい",
+    "character": "煩",
+    "reading": "わずらわしい",
+    "reading_dummies": [
+      "わづらわしい",
+      "わずわしい",
+      "はんわしい"
+    ],
+    "sentence": "面倒で心を悩ませる。",
+    "writing_parts": [],
+    "note": "煩わしい（わずらわしい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ce2861a93041",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "紛らわしい",
+    "character": "紛",
+    "reading": "まぎらわしい",
+    "reading_dummies": [
+      "まぎわしい",
+      "ふんらわしい",
+      "まぎらしい"
+    ],
+    "sentence": "似ていて見分けにくい。",
+    "writing_parts": [],
+    "note": "紛らわしい（まぎらわしい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_4fccf1a256a7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "紛れる",
+    "character": "紛",
+    "reading": "まぎれる",
+    "reading_dummies": [
+      "ふんれる",
+      "まじれる",
+      "まぎられる"
+    ],
+    "sentence": "人混みに入り見えなくなる。",
+    "writing_parts": [],
+    "note": "紛れる（まぎれる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_822a882e2a76",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "褒める",
+    "character": "褒",
+    "reading": "ほめる",
+    "reading_dummies": [
+      "ほうめる",
+      "ほめいる",
+      "ほむめる"
+    ],
+    "sentence": "優れた行いを認めてたたえる。",
+    "writing_parts": [],
+    "note": "褒める（ほめる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_be2a14fa9830",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "償う",
+    "character": "償",
+    "reading": "つぐなう",
+    "reading_dummies": [
+      "しょうう",
+      "つぐらう",
+      "つぐう"
+    ],
+    "sentence": "損失に見合うものを差し出す。",
+    "writing_parts": [],
+    "note": "償う（つぐなう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_8346834b3fa2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "繕う",
+    "character": "繕",
+    "reading": "つくろう",
+    "reading_dummies": [
+      "ぜんう",
+      "つぐろう",
+      "つくるう"
+    ],
+    "sentence": "破れた服を直す。",
+    "writing_parts": [],
+    "note": "繕う（つくろう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_104bbd5f9cc4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "偽る",
+    "character": "偽",
+    "reading": "いつわる",
+    "reading_dummies": [
+      "いつばる",
+      "ぎる",
+      "いつる"
+    ],
+    "sentence": "事実と違うことを言う。",
+    "writing_parts": [],
+    "note": "偽る（いつわる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6fc91225d573",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "偽り",
+    "character": "偽",
+    "reading": "いつわり",
+    "reading_dummies": [
+      "いつばり",
+      "ぎり",
+      "いつり"
+    ],
+    "sentence": "本当ではないこと。",
+    "writing_parts": [],
+    "note": "偽り（いつわり）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_a341d60718e6",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "顧みる",
+    "character": "顧",
+    "reading": "かえりみる",
+    "reading_dummies": [
+      "こみる",
+      "かえみる",
+      "かいりみる"
+    ],
+    "sentence": "過去の出来事を振り返る。",
+    "writing_parts": [],
+    "note": "顧みる（かえりみる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2ef510f2ce1a",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "戒める",
+    "character": "戒",
+    "reading": "いましめる",
+    "reading_dummies": [
+      "かいめる",
+      "いまめる",
+      "いめしめる"
+    ],
+    "sentence": "同じ過ちをしないよう注意する。",
+    "writing_parts": [],
+    "note": "戒める（いましめる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_e39b077f27a5",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "慎む",
+    "character": "慎",
+    "reading": "つつしむ",
+    "reading_dummies": [
+      "しんむ",
+      "つづしむ",
+      "つつむ"
+    ],
+    "sentence": "軽はずみな行動を控える。",
+    "writing_parts": [],
+    "note": "慎む（つつしむ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_e8fa6d126704",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "赴任",
+    "character": "赴",
+    "reading": "ふにん",
+    "reading_dummies": [
+      "とにん",
+      "ふじん",
+      "ふうにん"
+    ],
+    "sentence": "新しい勤務先へ向かう。",
+    "writing_parts": [],
+    "note": "赴任（ふにん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6cb7d111856e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "抑える",
+    "character": "抑",
+    "reading": "おさえる",
+    "reading_dummies": [
+      "よくえる",
+      "おそえる",
+      "おさいる"
+    ],
+    "sentence": "強い感情を落ち着かせる。",
+    "writing_parts": [],
+    "note": "抑える（おさえる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_dc4299a0519e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "妨げる",
+    "character": "妨",
+    "reading": "さまたげる",
+    "reading_dummies": [
+      "ぼうげる",
+      "さまだける",
+      "さまげる"
+    ],
+    "sentence": "人の仕事の邪魔をする。",
+    "writing_parts": [],
+    "note": "妨げる（さまたげる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_daee24e2c7a7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "遂げる",
+    "character": "遂",
+    "reading": "とげる",
+    "reading_dummies": [
+      "すいげる",
+      "とける",
+      "ついげる"
+    ],
+    "sentence": "目的を果たす。",
+    "writing_parts": [],
+    "note": "遂げる（とげる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_cd8911a0f51b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "陥る",
+    "character": "陥",
+    "reading": "おちいる",
+    "reading_dummies": [
+      "おといる",
+      "かんる",
+      "おちるる"
+    ],
+    "sentence": "困難な状態になる。",
+    "writing_parts": [],
+    "note": "陥る（おちいる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_67692608f0c1",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "陥れる",
+    "character": "陥",
+    "reading": "おとしいれる",
+    "reading_dummies": [
+      "おちいれる",
+      "かんれる",
+      "おとしれる"
+    ],
+    "sentence": "人を不利な立場に追い込む。",
+    "writing_parts": [],
+    "note": "陥れる（おとしいれる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_33403b3f6c2d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "免れる",
+    "character": "免",
+    "reading": "まぬかれる",
+    "reading_dummies": [
+      "めんれる",
+      "まねかれる",
+      "まぬかる"
+    ],
+    "sentence": "危険な状態から逃れる。",
+    "writing_parts": [],
+    "note": "免れる（まぬかれる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2e12dcf5e4d3",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "被害",
+    "character": "被",
+    "reading": "ひがい",
+    "reading_dummies": [
+      "ひかい",
+      "こうがい",
+      "かがい"
+    ],
+    "sentence": "災害などで損失を受けること。",
+    "writing_parts": [],
+    "note": "被害（ひがい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_98d13957fdcd",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "被る",
+    "character": "被",
+    "reading": "かぶる",
+    "reading_dummies": [
+      "ひる",
+      "かばる",
+      "かぶせる"
+    ],
+    "sentence": "帽子を頭に載せる。",
+    "writing_parts": [],
+    "note": "被る（かぶる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_b6eaf36cc583",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "施す",
+    "character": "施",
+    "reading": "ほどこす",
+    "reading_dummies": [
+      "しす",
+      "ほどす",
+      "ほどごす"
+    ],
+    "sentence": "困っている人に援助を与える。",
+    "writing_parts": [],
+    "note": "施す（ほどこす）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_0d088ade46fb",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "励ます",
+    "character": "励",
+    "reading": "はげます",
+    "reading_dummies": [
+      "れいます",
+      "はけます",
+      "はぐます"
+    ],
+    "sentence": "元気が出るよう声をかける。",
+    "writing_parts": [],
+    "note": "励ます（はげます）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_447e8fd3e78e",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "悟る",
+    "character": "悟",
+    "reading": "さとる",
+    "reading_dummies": [
+      "ごる",
+      "さどる",
+      "さとおる"
+    ],
+    "sentence": "物事の本当の意味に気付く。",
+    "writing_parts": [],
+    "note": "悟る（さとる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_c958233eec39",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "諦める",
+    "character": "諦",
+    "reading": "あきらめる",
+    "reading_dummies": [
+      "ていめる",
+      "あきめる",
+      "あきられる"
+    ],
+    "sentence": "続けていたことを断念する。",
+    "writing_parts": [],
+    "note": "諦める（あきらめる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_930c7865d33d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "貪欲",
+    "character": "貪",
+    "reading": "どんよく",
+    "reading_dummies": [
+      "ひんよく",
+      "たんほく",
+      "とんほく"
+    ],
+    "sentence": "飽くことなく欲しがる様子。",
+    "writing_parts": [],
+    "note": "貪欲（どんよく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_f3772f31b776",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "拭う",
+    "character": "拭",
+    "reading": "ぬぐう",
+    "reading_dummies": [
+      "しょくう",
+      "ぬこう",
+      "ぬぐおう"
+    ],
+    "sentence": "布で涙や汚れを取る。",
+    "writing_parts": [],
+    "note": "拭う（ぬぐう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_1c8c90ea671b",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "拭く",
+    "character": "拭",
+    "reading": "ふく",
+    "reading_dummies": [
+      "しょく",
+      "ぬく",
+      "ふぐ"
+    ],
+    "sentence": "布で机の汚れを取る。",
+    "writing_parts": [],
+    "note": "拭く（ふく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_8d232eacd6b6",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "剝がす",
+    "character": "剝",
+    "reading": "はがす",
+    "reading_dummies": [
+      "はかす",
+      "ほくがす",
+      "むがす"
+    ],
+    "sentence": "貼った紙を取り除く。",
+    "writing_parts": [],
+    "note": "剝がす（はがす）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_4744c1f9a163",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "剝げる",
+    "character": "剝",
+    "reading": "はげる",
+    "reading_dummies": [
+      "はける",
+      "ほくげる",
+      "むげる"
+    ],
+    "sentence": "表面の塗装が取れる。",
+    "writing_parts": [],
+    "note": "剝げる（はげる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6cc156033012",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "隔てる",
+    "character": "隔",
+    "reading": "へだてる",
+    "reading_dummies": [
+      "かくてる",
+      "へたてる",
+      "へだる"
+    ],
+    "sentence": "境界を設けて二つを分ける。",
+    "writing_parts": [],
+    "note": "隔てる（へだてる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d4fed7a0b12d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "隔たる",
+    "character": "隔",
+    "reading": "へだたる",
+    "reading_dummies": [
+      "かくたる",
+      "へたたる",
+      "へだる"
+    ],
+    "sentence": "二つの場所が遠く離れている。",
+    "writing_parts": [],
+    "note": "隔たる（へだたる）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_17285203d2d4",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "侮辱",
+    "character": "侮",
+    "reading": "ぶじょく",
+    "reading_dummies": [
+      "ぶしょく",
+      "ぼじょく",
+      "ぶちょく"
+    ],
+    "sentence": "相手を軽んじて傷付けること。",
+    "writing_parts": [],
+    "note": "侮辱（ぶじょく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_f1284b151966",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "催促",
+    "character": "催",
+    "reading": "さいそく",
+    "reading_dummies": [
+      "さいぞく",
+      "さいしょく",
+      "さいそ"
+    ],
+    "sentence": "早く行うよう相手に求めること。",
+    "writing_parts": [],
+    "note": "催促（さいそく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_4d25b84b83f9",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "漸次",
+    "character": "漸",
+    "reading": "ぜんじ",
+    "reading_dummies": [
+      "ざんじ",
+      "ぜんし",
+      "せんじ"
+    ],
+    "sentence": "少しずつ変わっていく様子。",
+    "writing_parts": [],
+    "note": "漸次（ぜんじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_a6dabac4abc9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "暫時",
+    "character": "暫",
+    "reading": "ざんじ",
+    "reading_dummies": [
+      "ぜんじ",
+      "ざんし",
+      "さんじ"
+    ],
+    "sentence": "しばらくの時間。",
+    "writing_parts": [],
+    "note": "暫時（ざんじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ff3dc45415f4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "施策",
+    "character": "施",
+    "reading": "しさく",
+    "reading_dummies": [
+      "せさく",
+      "ししゃく",
+      "しさつ"
+    ],
+    "sentence": "目的を果たすための方策。",
+    "writing_parts": [],
+    "note": "施策（しさく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_518934f00683",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "施行",
+    "character": "施",
+    "reading": "しこう",
+    "reading_dummies": [
+      "しごう",
+      "せいこう",
+      "しぎょ"
+    ],
+    "sentence": "法律の効力を発生させる。",
+    "writing_parts": [],
+    "note": "施行（しこう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_4d1f5c364705",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "献立",
+    "character": "献",
+    "reading": "こんだて",
+    "reading_dummies": [
+      "けんりつ",
+      "こんたて",
+      "こんだち"
+    ],
+    "sentence": "食事の料理の組み合わせ。",
+    "writing_parts": [],
+    "note": "献立（こんだて）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_af7cd53b1316",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "頑固",
+    "character": "頑",
+    "reading": "がんこ",
+    "reading_dummies": [
+      "がんご",
+      "かんこ",
+      "げんこ"
+    ],
+    "sentence": "簡単には考えを変えない様子。",
+    "writing_parts": [],
+    "note": "頑固（がんこ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_18fa08de31d2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "頑丈",
+    "character": "頑",
+    "reading": "がんじょう",
+    "reading_dummies": [
+      "がんちょう",
+      "げんじょう",
+      "かんじょう"
+    ],
+    "sentence": "丈夫で壊れにくい様子。",
+    "writing_parts": [],
+    "note": "頑丈（がんじょう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_26d46b8d2d6f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "逸脱",
+    "character": "逸",
+    "reading": "いつだつ",
+    "reading_dummies": [
+      "いだつ",
+      "いつたつ",
+      "いちだつ"
+    ],
+    "sentence": "決められた範囲から外れること。",
+    "writing_parts": [],
+    "note": "逸脱（いつだつ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_f027df5d5d4c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "遵法",
+    "character": "遵",
+    "reading": "じゅんぽう",
+    "reading_dummies": [
+      "そんぽう",
+      "じゅんぼう",
+      "じゅんほ"
+    ],
+    "sentence": "法律を守ること。",
+    "writing_parts": [],
+    "note": "遵法（じゅんぽう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_21cd0709d037",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "恣意",
+    "character": "恣",
+    "reading": "しい",
+    "reading_dummies": [
+      "じい",
+      "しえ",
+      "しいい"
+    ],
+    "sentence": "その場の気ままな思い付き。",
+    "writing_parts": [],
+    "note": "恣意（しい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2ce1d321425d",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "河畔",
+    "character": "畔",
+    "reading": "かはん",
+    "reading_dummies": [
+      "かばん",
+      "かわはん",
+      "かほう"
+    ],
+    "sentence": "川のほとり。",
+    "writing_parts": [],
+    "note": "河畔（かはん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_7cc523bbbfd2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "矛盾",
+    "character": "矛",
+    "reading": "むじゅん",
+    "reading_dummies": [
+      "ほこだて",
+      "むしゅん",
+      "ぼうじゅん"
+    ],
+    "sentence": "二つの事柄の筋道が合わないこと。",
+    "writing_parts": [],
+    "note": "矛盾（むじゅん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ba9feca1942f",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "会釈",
+    "character": "釈",
+    "reading": "えしゃく",
+    "reading_dummies": [
+      "かいしゃく",
+      "えしょく",
+      "えさく"
+    ],
+    "sentence": "軽く頭を下げて挨拶すること。",
+    "writing_parts": [],
+    "note": "会釈（えしゃく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_1417b443052b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "懇意",
+    "character": "懇",
+    "reading": "こんい",
+    "reading_dummies": [
+      "けんい",
+      "こんぎ",
+      "ごんい"
+    ],
+    "sentence": "親しく付き合っていること。",
+    "writing_parts": [],
+    "note": "懇意（こんい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d93bd02b278c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "露呈",
+    "character": "露",
+    "reading": "ろてい",
+    "reading_dummies": [
+      "ろうてい",
+      "ろせい",
+      "ろてつ"
+    ],
+    "sentence": "隠れていた事実が表に出ること。",
+    "writing_parts": [],
+    "note": "露呈（ろてい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_0ebcc5b80e1c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "披露",
+    "character": "披",
+    "reading": "ひろう",
+    "reading_dummies": [
+      "ひろ",
+      "はろう",
+      "ひょうろう"
+    ],
+    "sentence": "人々に広く知らせること。",
+    "writing_parts": [],
+    "note": "披露（ひろう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_62e7d7b38ac6",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "柔和",
+    "character": "柔",
+    "reading": "にゅうわ",
+    "reading_dummies": [
+      "じゅうわ",
+      "にゅわ",
+      "にょうわ"
+    ],
+    "sentence": "穏やかで優しい様子。",
+    "writing_parts": [],
+    "note": "柔和（にゅうわ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d5460ffeb4e9",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "和尚",
+    "character": "尚",
+    "reading": "おしょう",
+    "reading_dummies": [
+      "わしょう",
+      "おじょう",
+      "かじょう"
+    ],
+    "sentence": "寺の僧を敬って呼ぶ語。",
+    "writing_parts": [],
+    "note": "和尚（おしょう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_7db2010d7a9c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "発端",
+    "character": "端",
+    "reading": "ほったん",
+    "reading_dummies": [
+      "はったん",
+      "ほつたん",
+      "ほった"
+    ],
+    "sentence": "物事の起こり。",
+    "writing_parts": [],
+    "note": "発端（ほったん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_503b6b3d561c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "端緒",
+    "character": "端",
+    "reading": "たんしょ",
+    "reading_dummies": [
+      "だんしょ",
+      "たんそう",
+      "たんじょ"
+    ],
+    "sentence": "物事の始まりや手掛かり。",
+    "writing_parts": [],
+    "note": "端緒（たんしょ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_1062c692c3fc",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "琴線",
+    "character": "琴",
+    "reading": "きんせん",
+    "reading_dummies": [
+      "ことせん",
+      "こんせん",
+      "ぎんせん"
+    ],
+    "sentence": "感動する心の奥の働きに例える。",
+    "writing_parts": [],
+    "note": "琴線（きんせん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_60529115df9d",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "凡例",
+    "character": "凡",
+    "reading": "はんれい",
+    "reading_dummies": [
+      "ぼんれい",
+      "ほんれい",
+      "はんらい"
+    ],
+    "sentence": "本や辞書などの使い方の説明。",
+    "writing_parts": [],
+    "note": "凡例（はんれい）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_f10762f36e60",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "適宜",
+    "character": "宜",
+    "reading": "てきぎ",
+    "reading_dummies": [
+      "てきべん",
+      "てきご",
+      "てきき"
+    ],
+    "sentence": "状況に合わせて適切に行う様子。",
+    "writing_parts": [],
+    "note": "適宜（てきぎ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_44a8e7e37c5f",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "示唆",
+    "character": "唆",
+    "reading": "しさ",
+    "reading_dummies": [
+      "ししゅん",
+      "じさ",
+      "ししゃ"
+    ],
+    "sentence": "それとなく知らせること。",
+    "writing_parts": [],
+    "note": "示唆（しさ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2c51fb3532e2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "踏襲",
+    "character": "踏",
+    "reading": "とうしゅう",
+    "reading_dummies": [
+      "ふしゅう",
+      "とうじゅう",
+      "としゅう"
+    ],
+    "sentence": "以前のやり方を受け継ぐこと。",
+    "writing_parts": [],
+    "note": "踏襲（とうしゅう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ca6049a99e7a",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "貼付",
+    "character": "貼",
+    "reading": "ちょうふ",
+    "reading_dummies": [
+      "はりふ",
+      "せんふ",
+      "ちょうぷ"
+    ],
+    "sentence": "紙やシールを貼り付けること。",
+    "writing_parts": [],
+    "note": "貼付（ちょうふ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2c17e73827f0",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "添付",
+    "character": "添",
+    "reading": "てんぷ",
+    "reading_dummies": [
+      "てんふ",
+      "そえふ",
+      "ていぷ"
+    ],
+    "sentence": "書類などに付け添えること。",
+    "writing_parts": [],
+    "note": "添付（てんぷ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d77307a74dcf",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "逝去",
+    "character": "逝",
+    "reading": "せいきょ",
+    "reading_dummies": [
+      "せつきょ",
+      "いきょ",
+      "せいこ"
+    ],
+    "sentence": "人が亡くなることを敬って言う語。",
+    "writing_parts": [],
+    "note": "逝去（せいきょ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_bbead2be7e72",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "冥福",
+    "character": "冥",
+    "reading": "めいふく",
+    "reading_dummies": [
+      "みんふく",
+      "めいぶく",
+      "めんふく"
+    ],
+    "sentence": "亡くなった人の幸福。",
+    "writing_parts": [],
+    "note": "冥福（めいふく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d2fbc8539d05",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "慶事",
+    "character": "慶",
+    "reading": "けいじ",
+    "reading_dummies": [
+      "きょうじ",
+      "けいし",
+      "けんじ"
+    ],
+    "sentence": "結婚や出産など喜ばしい出来事。",
+    "writing_parts": [],
+    "note": "慶事（けいじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6ac8978effb8",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "弔事",
+    "character": "弔",
+    "reading": "ちょうじ",
+    "reading_dummies": [
+      "ていじ",
+      "ちょうし",
+      "とじ"
+    ],
+    "sentence": "葬儀などの不幸に関わる出来事。",
+    "writing_parts": [],
+    "note": "弔事（ちょうじ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_594249dca6d2",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "克服",
+    "character": "克",
+    "reading": "こくふく",
+    "reading_dummies": [
+      "かつふく",
+      "こくぶく",
+      "こふく"
+    ],
+    "sentence": "困難や弱点に打ち勝つこと。",
+    "writing_parts": [],
+    "note": "克服（こくふく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_15143509ce2c",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "枯渇",
+    "character": "枯",
+    "reading": "こかつ",
+    "reading_dummies": [
+      "こけつ",
+      "こかち",
+      "こがつ"
+    ],
+    "sentence": "水や資源などが尽きること。",
+    "writing_parts": [],
+    "note": "枯渇（こかつ）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_6044c9e6855d",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "把握",
+    "character": "把",
+    "reading": "はあく",
+    "reading_dummies": [
+      "ばあく",
+      "はくあく",
+      "はおく"
+    ],
+    "sentence": "物事をしっかり理解すること。",
+    "writing_parts": [],
+    "note": "把握（はあく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_2a6f4d8dc7f7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "享楽",
+    "character": "享",
+    "reading": "きょうらく",
+    "reading_dummies": [
+      "こうらく",
+      "きょうがく",
+      "けいらく"
+    ],
+    "sentence": "楽しみにふけること。",
+    "writing_parts": [],
+    "note": "享楽（きょうらく）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_d3d681434e7c",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "妥当",
+    "character": "妥",
+    "reading": "だとう",
+    "reading_dummies": [
+      "たとう",
+      "だどう",
+      "だとうう"
+    ],
+    "sentence": "無理がなく適切であること。",
+    "writing_parts": [],
+    "note": "妥当（だとう）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_515faa4c3953",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "傍観",
+    "character": "傍",
+    "reading": "ぼうかん",
+    "reading_dummies": [
+      "ほうかん",
+      "ぼうがん",
+      "ぼかん"
+    ],
+    "sentence": "手を出さず、そばで見ていること。",
+    "writing_parts": [],
+    "note": "傍観（ぼうかん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_fbd0e71db761",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "傍若無人",
+    "character": "傍",
+    "reading": "ぼうじゃくぶじん",
+    "reading_dummies": [
+      "ぼうじゃくむじん",
+      "ほうじゃくぶじん",
+      "ぼうしゃくぶじん"
+    ],
+    "sentence": "他人を気にせず勝手に振る舞うこと。",
+    "writing_parts": [],
+    "note": "傍若無人（ぼうじゃくぶじん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
+    "id": "jr_jp_read_ff71a52be83b",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "漢字",
+    "unit": "音訓の使い分け",
+    "kind": "kanji",
+    "word": "悪循環",
+    "character": "循",
+    "reading": "あくじゅんかん",
+    "reading_dummies": [
+      "あくしゅんかん",
+      "あくじゅうかん",
+      "あくじゅんがん"
+    ],
+    "sentence": "悪い結果が次の悪い結果を生むこと。",
+    "writing_parts": [],
+    "note": "悪循環（あくじゅんかん）。",
+    "content_batch": "japanese-reading-supplement-20261108",
+    "kanji_scope": "secondary-1110",
+    "reading_sources": [
+      "jmdict-furigana-20261025"
+    ]
+  },
+  {
     "id": "jr_jp_write_660e",
     "school_level": "小学",
     "grade": "小2",

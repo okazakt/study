@@ -1,6 +1,7 @@
 import json,hashlib,collections
 from pathlib import Path
 root=Path(__file__).resolve().parent.parent
+version=json.loads((root/'package.json').read_text())['version']
 items=[q for name in ['junior_japanese','junior_expansion','junior_japanese_kanji','junior_japanese_extended'] for q in json.load(open(root/f'quiz-data/{name}.json')) if q.get('subject')=='国語' and q['school_level']=='中学']
 # Each row below corresponds to a leaf in 第2・2内容. 書写 parents are replaced by their inner items.
 raw='''
@@ -132,13 +133,13 @@ for l in activities.strip().splitlines():
  g,code,label,refs=l.split('|');g=int(g);key=f'g{g}-{code}';evidence=resolve(refs,g)+[q['id'] for q in items if key in q.get('official_items',[]) and q['grade']==f'中{g}']
  acts.append({'key':key,'grade':f'中{g}','section':code,'activityExample':label,'supportingMaterialIds':list(dict.fromkeys(evidence)),'status':'knowledge-support-only','actualActivity':'実際に話す・聞く・書く・読む言語活動はゲーム外で行う'})
 assert len(rows)==81 and len(acts)==23
-report={'version':'0.77.0','date':'2026-11-08','source':json.load(open(root/'docs/content/japanese-curriculum-review.json'))['source'],'countingRule':'第2・各学年2内容の知識及び技能とA/B/C(1)をイロハ細目で数える。書写は親項目を内側の細目に置き換えるため81行。A/B/C(2)の言語活動例23行は別記。公式が完了率用に定義した項目数ではない。目標・授業時数など指導計画は出題項目数へ算入しない。','gradeRule':'同じ学年のコースに出る素材のみを対応IDとして掲載する。知識ポイントの出題先を示し、実技能の履修・習熟の代替ではない。','rows':rows,'activityExamples':acts,'summary':{'instructionLeaves':len(rows),'knowledgeSupported':sum(bool(x['materialIds']) for x in rows),'knowledgeGaps':[x['key'] for x in rows if not x['materialIds']],'activityExamples':len(acts)}}
+report={'version':version,'date':'2026-11-08','source':json.load(open(root/'docs/content/japanese-curriculum-review.json'))['source'],'countingRule':'第2・各学年2内容の知識及び技能とA/B/C(1)をイロハ細目で数える。書写は親項目を内側の細目に置き換えるため81行。A/B/C(2)の言語活動例23行は別記。公式が完了率用に定義した項目数ではない。目標・授業時数など指導計画は出題項目数へ算入しない。','gradeRule':'同じ学年のコースに出る素材のみを対応IDとして掲載する。知識ポイントの出題先を示し、実技能の履修・習熟の代替ではない。','rows':rows,'activityExamples':acts,'summary':{'instructionLeaves':len(rows),'knowledgeSupported':sum(bool(x['materialIds']) for x in rows),'knowledgeGaps':[x['key'] for x in rows if not x['materialIds']],'activityExamples':len(acts)}}
 (root/'docs/content/japanese-official-items.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 for r in rows:
  if not r['materialIds']:print('GAP',r['key'],r['requirement'])
 print(report['summary'])
 
-lines=['# 中学国語：学年別の公式項目との対応', '', '更新：2026-11-08 / v0.77.0', '', '文部科学省『中学校学習指導要領解説 国語編』付録3、印刷頁158〜163を参照。項目名は要約で、全文転載ではない。', '', report['countingRule'], '', report['gradeRule'], '', '**81項目すべてに同学年の知識・判断問題を対応付けた。各項目の全要素・用例や実技を網羅したという完了判定ではない。** 小学漢字の実書はユーザー指定により保留。中学漢字の学年配当は暫定分類で、文科省による字別固定配当ではない。', '', '今回26素材を追加。既存IDと回答履歴、選択肢は変更していない。残作業は重要な追加音訓・熟字訓の選定と、曖昧な設問・別解の最終確認。', '', '[公式資料]('+report['source']['url']+') / [機械用の素材ID一覧](japanese-official-items.json)', '', '| 学年 | 項目 | 内容の要約 | 同学年の対応素材数 | 別途練習・留意事項 |', '| --- | --- | --- | ---: | --- |']
+lines=['# 中学国語：学年別の公式項目との対応', '', '更新：2026-11-08 / v'+version, '', '文部科学省『中学校学習指導要領解説 国語編』付録3、印刷頁158〜163を参照。項目名は要約で、全文転載ではない。', '', report['countingRule'], '', report['gradeRule'], '', '**81項目すべてに同学年の知識・判断問題を対応付けた。各項目の全要素・用例や実技を網羅したという完了判定ではない。** 小学漢字の実書はユーザー指定により保留。中学漢字の学年配当は暫定分類で、文科省による字別固定配当ではない。', '', 'v0.77.0で学年別の不足へ26素材を追加。v0.78.0で追加音訓・付表語の補強と内容確認を実施し、[基礎版整備を一区切り](japanese-completion.md)とした。既存のIDと回答履歴、選択肢は維持。', '', '[公式資料]('+report['source']['url']+') / [機械用の素材ID一覧](japanese-official-items.json)', '', '| 学年 | 項目 | 内容の要約 | 同学年の対応素材数 | 別途練習・留意事項 |', '| --- | --- | --- | ---: | --- |']
 for r in rows:lines.append('| '+ ' | '.join([r['grade'],r['section'],r['requirement'],str(len(r['materialIds'])),r['actualActivity']])+' |')
 lines+=['', '## 言語活動例（実技の完了数にはしない）', '', '以下23例はポイントを覚える支援と実際の活動を区別する。関連素材の存在はその活動をゲーム内で実施できるという意味ではない。', '', '| 学年 | 項目 | 活動例の要約 | 関連素材数 |', '| --- | --- | --- | ---: |']
 for r in acts:lines.append('| '+' | '.join([r['grade'],r['section'],r['activityExample'],str(len(r['supportingMaterialIds']))])+' |')

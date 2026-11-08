@@ -1,0 +1,1033 @@
+{
+  "date": "2026-11-08",
+  "batch": "japanese-reading-supplement-20261108",
+  "materials": 134,
+  "dictionary": {
+    "version": "2.3.1+2026-10-25",
+    "sha256": "57c2afa7d153d42df97811d4a44865d10fb9104f6a7bacbbe32a0bf0c38e5abc"
+  },
+  "officialAppendix": {
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf",
+    "sha256": "d9f28aeb4ce8250dbde07de20ac66cca71805ba09d94e4942c752dffa84d8d42",
+    "pages": "162–163"
+  },
+  "policy": "正答と全既知異読を誤答候補から除外。読み問題のみ追加し書き選択は増やさない。小学配当字だけの語は今回は追加しない。字別学年は既存の暫定共通分類を引き継ぐ。",
+  "rows": [
+    {
+      "word": "硫黄",
+      "reading": "いおう",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "息吹",
+      "reading": "いぶき",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "浮気",
+      "reading": "うわき",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "浮つく",
+      "reading": "うわつく",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "叔父",
+      "reading": "おじ",
+      "knownAlternativeReadings": [
+        "しゅくふ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "伯父",
+      "reading": "おじ",
+      "knownAlternativeReadings": [
+        "はくふ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "乙女",
+      "reading": "おとめ",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "叔母",
+      "reading": "おば",
+      "knownAlternativeReadings": [
+        "しゅくぼ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "伯母",
+      "reading": "おば",
+      "knownAlternativeReadings": [
+        "はくぼ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "お巡りさん",
+      "reading": "おまわりさん",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "鍛冶",
+      "reading": "かじ",
+      "knownAlternativeReadings": [
+        "たんや"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "風邪",
+      "reading": "かぜ",
+      "knownAlternativeReadings": [
+        "ふうじゃ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "固唾",
+      "reading": "かたず",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "蚊帳",
+      "reading": "かや",
+      "knownAlternativeReadings": [
+        "かちょう",
+        "ぶんちょう"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "為替",
+      "reading": "かわせ",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "玄人",
+      "reading": "くろうと",
+      "knownAlternativeReadings": [
+        "くろと"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "早乙女",
+      "reading": "さおとめ",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "早苗",
+      "reading": "さなえ",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "尻尾",
+      "reading": "しっぽ",
+      "knownAlternativeReadings": [
+        "しりお"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "老舗",
+      "reading": "しにせ",
+      "knownAlternativeReadings": [
+        "ろうほ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "芝生",
+      "reading": "しばふ",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "数珠",
+      "reading": "じゅず",
+      "knownAlternativeReadings": [
+        "ずず"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "白髪",
+      "reading": "しらが",
+      "knownAlternativeReadings": [
+        "しらかみ",
+        "しろかみ",
+        "はくはつ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "数奇屋",
+      "reading": "すきや",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "相撲",
+      "reading": "すもう",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "草履",
+      "reading": "ぞうり",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "足袋",
+      "reading": "たび",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "稚児",
+      "reading": "ちご",
+      "knownAlternativeReadings": [
+        "やや"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "凸凹",
+      "reading": "でこぼこ",
+      "knownAlternativeReadings": [
+        "とつおう"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "雪崩",
+      "reading": "なだれ",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "二十歳",
+      "reading": "はたち",
+      "knownAlternativeReadings": [
+        "にじっさい",
+        "にじゅっさい"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "吹雪",
+      "reading": "ふぶき",
+      "knownAlternativeReadings": [],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "猛者",
+      "reading": "もさ",
+      "knownAlternativeReadings": [
+        "モサ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "桟敷",
+      "reading": "さじき",
+      "knownAlternativeReadings": [
+        "さんじき"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": false
+    },
+    {
+      "word": "投網",
+      "reading": "とあみ",
+      "knownAlternativeReadings": [
+        "なげあみ"
+      ],
+      "basis": "bunka-joyo-appendix",
+      "dictionaryConfirmed": false
+    },
+    {
+      "word": "催す",
+      "reading": "もよおす",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "乏しい",
+      "reading": "とぼしい",
+      "knownAlternativeReadings": [
+        "ともしい"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "憩う",
+      "reading": "いこう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "愁える",
+      "reading": "うれえる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "憂える",
+      "reading": "うれえる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "懐かしい",
+      "reading": "なつかしい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "慕う",
+      "reading": "したう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "疎む",
+      "reading": "うとむ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "携える",
+      "reading": "たずさえる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "携わる",
+      "reading": "たずさわる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "怠ける",
+      "reading": "なまける",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "潜る",
+      "reading": "もぐる",
+      "knownAlternativeReadings": [
+        "くぐる",
+        "むぐる"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "潜む",
+      "reading": "ひそむ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "潤う",
+      "reading": "うるおう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "潤す",
+      "reading": "うるおす",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "緩む",
+      "reading": "ゆるむ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "辱める",
+      "reading": "はずかしめる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "賜る",
+      "reading": "たまわる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "貫く",
+      "reading": "つらぬく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "託す",
+      "reading": "たくす",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "侍る",
+      "reading": "はべる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "尽くす",
+      "reading": "つくす",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "尽きる",
+      "reading": "つきる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "鋭い",
+      "reading": "するどい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "鈍い",
+      "reading": "にぶい",
+      "knownAlternativeReadings": [
+        "おそい",
+        "おそーい",
+        "おっそい",
+        "おっそーい",
+        "のろい"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "惨め",
+      "reading": "みじめ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "嘆かわしい",
+      "reading": "なげかわしい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "煩わしい",
+      "reading": "わずらわしい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "紛らわしい",
+      "reading": "まぎらわしい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "紛れる",
+      "reading": "まぎれる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "褒める",
+      "reading": "ほめる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "償う",
+      "reading": "つぐなう",
+      "knownAlternativeReadings": [
+        "つぐのう"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "繕う",
+      "reading": "つくろう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "偽る",
+      "reading": "いつわる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "偽り",
+      "reading": "いつわり",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "顧みる",
+      "reading": "かえりみる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "戒める",
+      "reading": "いましめる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "慎む",
+      "reading": "つつしむ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "赴任",
+      "reading": "ふにん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "抑える",
+      "reading": "おさえる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "妨げる",
+      "reading": "さまたげる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "遂げる",
+      "reading": "とげる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "陥る",
+      "reading": "おちいる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "陥れる",
+      "reading": "おとしいれる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "免れる",
+      "reading": "まぬかれる",
+      "knownAlternativeReadings": [
+        "まぬがれる"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "被害",
+      "reading": "ひがい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "被る",
+      "reading": "かぶる",
+      "knownAlternativeReadings": [
+        "かむる",
+        "こうむる"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "施す",
+      "reading": "ほどこす",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "励ます",
+      "reading": "はげます",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "悟る",
+      "reading": "さとる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "諦める",
+      "reading": "あきらめる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "貪欲",
+      "reading": "どんよく",
+      "knownAlternativeReadings": [
+        "たんよく",
+        "とんよく"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "拭う",
+      "reading": "ぬぐう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "拭く",
+      "reading": "ふく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "剝がす",
+      "reading": "はがす",
+      "knownAlternativeReadings": [
+        "へがす"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "剝げる",
+      "reading": "はげる",
+      "knownAlternativeReadings": [
+        "へげる"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "隔てる",
+      "reading": "へだてる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "隔たる",
+      "reading": "へだたる",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "侮辱",
+      "reading": "ぶじょく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "催促",
+      "reading": "さいそく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "漸次",
+      "reading": "ぜんじ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "暫時",
+      "reading": "ざんじ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "施策",
+      "reading": "しさく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "施行",
+      "reading": "しこう",
+      "knownAlternativeReadings": [
+        "しぎょう",
+        "せぎょう",
+        "せこう"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "献立",
+      "reading": "こんだて",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "頑固",
+      "reading": "がんこ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "頑丈",
+      "reading": "がんじょう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "逸脱",
+      "reading": "いつだつ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "遵法",
+      "reading": "じゅんぽう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "恣意",
+      "reading": "しい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "河畔",
+      "reading": "かはん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "矛盾",
+      "reading": "むじゅん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "会釈",
+      "reading": "えしゃく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "懇意",
+      "reading": "こんい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "露呈",
+      "reading": "ろてい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "披露",
+      "reading": "ひろう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "柔和",
+      "reading": "にゅうわ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "和尚",
+      "reading": "おしょう",
+      "knownAlternativeReadings": [
+        "かしょう",
+        "わじょう"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "発端",
+      "reading": "ほったん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "端緒",
+      "reading": "たんしょ",
+      "knownAlternativeReadings": [
+        "たんちょ"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "琴線",
+      "reading": "きんせん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "凡例",
+      "reading": "はんれい",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "適宜",
+      "reading": "てきぎ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "示唆",
+      "reading": "しさ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "踏襲",
+      "reading": "とうしゅう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "貼付",
+      "reading": "ちょうふ",
+      "knownAlternativeReadings": [
+        "てんぷ"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "添付",
+      "reading": "てんぷ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "逝去",
+      "reading": "せいきょ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "冥福",
+      "reading": "めいふく",
+      "knownAlternativeReadings": [
+        "みょうふく"
+      ],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "慶事",
+      "reading": "けいじ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "弔事",
+      "reading": "ちょうじ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "克服",
+      "reading": "こくふく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "枯渇",
+      "reading": "こかつ",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "把握",
+      "reading": "はあく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "享楽",
+      "reading": "きょうらく",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "妥当",
+      "reading": "だとう",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "傍観",
+      "reading": "ぼうかん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "傍若無人",
+      "reading": "ぼうじゃくぶじん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    },
+    {
+      "word": "悪循環",
+      "reading": "あくじゅんかん",
+      "knownAlternativeReadings": [],
+      "basis": "jmdict-furigana-20261025",
+      "dictionaryConfirmed": true
+    }
+  ]
+}

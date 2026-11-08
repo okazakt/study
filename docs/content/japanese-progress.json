@@ -1,7 +1,7 @@
 {
   "date": "2026-11-08",
-  "materials": 1779,
-  "generated": 3992,
+  "materials": 1913,
+  "generated": 4126,
   "secondaryReading": {
     "covered": 1110,
     "target": 1110,
@@ -23,12 +23,14 @@
   },
   "fields": {
     "漢字": {
-      "materials": 1110,
-      "generated": 3104,
+      "materials": 1244,
+      "generated": 3238,
       "units": [
         "漢字",
         "共通漢字",
-        "常用漢字の読み"
+        "常用漢字の読み",
+        "熟字訓・特殊な読み",
+        "音訓の使い分け"
       ]
     },
     "熟語・四字熟語": {

@@ -1,0 +1,819 @@
+{
+  "date": "2026-11-08",
+  "scope": "常用漢字表付表の表記単位で確認。中学対象字種を含むものを今回の対象とし、小学配当字だけの語は追加しない。付表の項目数とは表記の数え方が異なる。",
+  "transcribedSpellings": 123,
+  "secondarySpellings": 36,
+  "missing": [],
+  "rows": [
+    {
+      "word": "明日",
+      "reading": "あす",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "小豆",
+      "reading": "あずき",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "海女",
+      "reading": "あま",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "海士",
+      "reading": "あま",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "硫黄",
+      "reading": "いおう",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_2b6dcf675ff0"
+      ]
+    },
+    {
+      "word": "意気地",
+      "reading": "いくじ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "田舎",
+      "reading": "いなか",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "息吹",
+      "reading": "いぶき",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_ef3a103127b1"
+      ]
+    },
+    {
+      "word": "海原",
+      "reading": "うなばら",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "乳母",
+      "reading": "うば",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "浮気",
+      "reading": "うわき",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_46a892655ac1"
+      ]
+    },
+    {
+      "word": "浮つく",
+      "reading": "うわつく",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_d316778c2f3b"
+      ]
+    },
+    {
+      "word": "笑顔",
+      "reading": "えがお",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "叔父",
+      "reading": "おじ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_945853730c5c"
+      ]
+    },
+    {
+      "word": "伯父",
+      "reading": "おじ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_eef6ca829487"
+      ]
+    },
+    {
+      "word": "大人",
+      "reading": "おとな",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "乙女",
+      "reading": "おとめ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_f10439186ed8"
+      ]
+    },
+    {
+      "word": "叔母",
+      "reading": "おば",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_49862758fe2d"
+      ]
+    },
+    {
+      "word": "伯母",
+      "reading": "おば",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_fe34fbc38e1b"
+      ]
+    },
+    {
+      "word": "お巡りさん",
+      "reading": "おまわりさん",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_52ef3021a054"
+      ]
+    },
+    {
+      "word": "お神酒",
+      "reading": "おみき",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "母屋",
+      "reading": "おもや",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "母家",
+      "reading": "おもや",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "母さん",
+      "reading": "かあさん",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "神楽",
+      "reading": "かぐら",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "河岸",
+      "reading": "かし",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "鍛冶",
+      "reading": "かじ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_13649315628f"
+      ]
+    },
+    {
+      "word": "風邪",
+      "reading": "かぜ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_72d1d858a7f7"
+      ]
+    },
+    {
+      "word": "固唾",
+      "reading": "かたず",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_fa5f2d22626c"
+      ]
+    },
+    {
+      "word": "仮名",
+      "reading": "かな",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "蚊帳",
+      "reading": "かや",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_38e300ed65e7"
+      ]
+    },
+    {
+      "word": "為替",
+      "reading": "かわせ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_242efe464cc5"
+      ]
+    },
+    {
+      "word": "河原",
+      "reading": "かわら",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "川原",
+      "reading": "かわら",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "今日",
+      "reading": "きょう",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "果物",
+      "reading": "くだもの",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "玄人",
+      "reading": "くろうと",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_60fe2d789e5e"
+      ]
+    },
+    {
+      "word": "今朝",
+      "reading": "けさ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "景色",
+      "reading": "けしき",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "心地",
+      "reading": "ここち",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "居士",
+      "reading": "こじ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "今年",
+      "reading": "ことし",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "早乙女",
+      "reading": "さおとめ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_29492ed34960"
+      ]
+    },
+    {
+      "word": "雑魚",
+      "reading": "ざこ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "桟敷",
+      "reading": "さじき",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_170eeda3b56b"
+      ]
+    },
+    {
+      "word": "差し支える",
+      "reading": "さしつかえる",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "五月",
+      "reading": "さつき",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "早苗",
+      "reading": "さなえ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_5545050ba7e8"
+      ]
+    },
+    {
+      "word": "五月雨",
+      "reading": "さみだれ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "時雨",
+      "reading": "しぐれ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "尻尾",
+      "reading": "しっぽ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_e3159ba3b256"
+      ]
+    },
+    {
+      "word": "竹刀",
+      "reading": "しない",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "老舗",
+      "reading": "しにせ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_b44a0b658824"
+      ]
+    },
+    {
+      "word": "芝生",
+      "reading": "しばふ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_7807c02d75ba"
+      ]
+    },
+    {
+      "word": "清水",
+      "reading": "しみず",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "三味線",
+      "reading": "しゃみせん",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "砂利",
+      "reading": "じゃり",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "数珠",
+      "reading": "じゅず",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_d35d98f2347c"
+      ]
+    },
+    {
+      "word": "上手",
+      "reading": "じょうず",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "白髪",
+      "reading": "しらが",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_e79d518dd78d"
+      ]
+    },
+    {
+      "word": "素人",
+      "reading": "しろうと",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "師走",
+      "reading": "しわす",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "数寄屋",
+      "reading": "すきや",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "数奇屋",
+      "reading": "すきや",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_189268421240"
+      ]
+    },
+    {
+      "word": "相撲",
+      "reading": "すもう",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_0020e198c2f4"
+      ]
+    },
+    {
+      "word": "草履",
+      "reading": "ぞうり",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_bec58e675523"
+      ]
+    },
+    {
+      "word": "山車",
+      "reading": "だし",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "太刀",
+      "reading": "たち",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "立ち退く",
+      "reading": "たちのく",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "七夕",
+      "reading": "たなばた",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "足袋",
+      "reading": "たび",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_0e4825dfe93f"
+      ]
+    },
+    {
+      "word": "稚児",
+      "reading": "ちご",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_cfe975e60400"
+      ]
+    },
+    {
+      "word": "一日",
+      "reading": "ついたち",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "築山",
+      "reading": "つきやま",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "梅雨",
+      "reading": "つゆ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "凸凹",
+      "reading": "でこぼこ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_db86ed37ffc0"
+      ]
+    },
+    {
+      "word": "手伝う",
+      "reading": "てつだう",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "伝馬船",
+      "reading": "てんません",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "投網",
+      "reading": "とあみ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_84604a5b59ec"
+      ]
+    },
+    {
+      "word": "父さん",
+      "reading": "とうさん",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "十重二十重",
+      "reading": "とえはたえ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "読経",
+      "reading": "どきょう",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "時計",
+      "reading": "とけい",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "友達",
+      "reading": "ともだち",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "仲人",
+      "reading": "なこうど",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "名残",
+      "reading": "なごり",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "雪崩",
+      "reading": "なだれ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_622ad5a57be0"
+      ]
+    },
+    {
+      "word": "兄さん",
+      "reading": "にいさん",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "姉さん",
+      "reading": "ねえさん",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "野良",
+      "reading": "のら",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "祝詞",
+      "reading": "のりと",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "博士",
+      "reading": "はかせ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "二十",
+      "reading": "はたち",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "二十歳",
+      "reading": "はたち",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_0713029cbad3"
+      ]
+    },
+    {
+      "word": "二十日",
+      "reading": "はつか",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "波止場",
+      "reading": "はとば",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "一人",
+      "reading": "ひとり",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "日和",
+      "reading": "ひより",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "二人",
+      "reading": "ふたり",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "二日",
+      "reading": "ふつか",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "吹雪",
+      "reading": "ふぶき",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_6d23c4661936"
+      ]
+    },
+    {
+      "word": "下手",
+      "reading": "へた",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "部屋",
+      "reading": "へや",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "迷子",
+      "reading": "まいご",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "真面目",
+      "reading": "まじめ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "真っ赤",
+      "reading": "まっか",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "真っ青",
+      "reading": "まっさお",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "土産",
+      "reading": "みやげ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "息子",
+      "reading": "むすこ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "眼鏡",
+      "reading": "めがね",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "猛者",
+      "reading": "もさ",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_read_104aab54e671"
+      ]
+    },
+    {
+      "word": "紅葉",
+      "reading": "もみじ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "木綿",
+      "reading": "もめん",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "最寄り",
+      "reading": "もより",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "八百長",
+      "reading": "やおちょう",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "八百屋",
+      "reading": "やおや",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "大和",
+      "reading": "やまと",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "弥生",
+      "reading": "やよい",
+      "status": "covered",
+      "sourceIds": [
+        "jr_jp_joyo_5f25"
+      ]
+    },
+    {
+      "word": "浴衣",
+      "reading": "ゆかた",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "行方",
+      "reading": "ゆくえ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "寄席",
+      "reading": "よせ",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    },
+    {
+      "word": "若人",
+      "reading": "わこうど",
+      "status": "elementary-only-deferred",
+      "sourceIds": []
+    }
+  ]
+}

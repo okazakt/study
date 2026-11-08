@@ -62,6 +62,22 @@ for n,r in rows('official-gap-additions.tsv'):
  q.update(prompt=prompt,answer=answer,dummies=[a,b,c],note=note,task='適切なものを選ぼう',official_items=refs.split(';'),content_batch='japanese-official-gaps-20261108')
  bank.append(q)
 
+# Supplementary readings reuse kanji_reading; the original per-character sources stay intact.
+reading_sources=[q for name in ['junior_japanese','junior_expansion','junior_japanese_kanji'] for q in json.loads((ROOT/f'quiz-data/{name}.json').read_text()) if q.get('subject')=='国語' and q.get('kind')=='kanji' and q['school_level']=='中学']
+reading_grade={q['character']:q['grade'] for q in reading_sources}
+secondary_chars={q['character'] for q in json.loads((SOURCE/'joyo-scope.json').read_text()) if not q['elementary']}
+existing_readings={(q['word'],q['reading']) for q in reading_sources if q.get('reading_enabled') is not False}
+reading_review={(q['word'],q['reading']):q for q in json.loads((SOURCE/'reading-supplement-review.json').read_text())['rows']}
+for n,r in rows('reading-supplement.tsv'):
+ assert len(r)==5,(n,r)
+ category,word,reading,dummies,sentence=r
+ known=reading_review[word,reading]['knownAlternativeReadings']
+ assert len(set([reading]+dummies.split(',')))==4 and not (set(known)&set(dummies.split(','))),(n,word,'duplicate or alternative correct reading')
+ assert category in ['a','b'] and (word,reading) not in existing_readings,(n,word,reading)
+ character=next(c for c in word if c in secondary_chars)
+ item=dict(id='jr_jp_read_'+hashlib.sha256((word+'|'+reading).encode()).hexdigest()[:12],school_level='中学',grade=reading_grade[character],subject='国語',field='漢字',unit='熟字訓・特殊な読み' if category=='a' else '音訓の使い分け',kind='kanji',word=word,character=character,reading=reading,reading_dummies=dummies.split(','),sentence=sentence,writing_parts=[],note=f'{word}（{reading}）。',content_batch='japanese-reading-supplement-20261108',kanji_scope='secondary-1110',reading_sources=['bunka-joyo-appendix','jmdict-furigana-20261025'] if category=='a' else ['jmdict-furigana-20261025'])
+ bank.append(item);existing_readings.add((word,reading))
+
 print('Japanese core additions:',len(bank),'materials')
 
 kanji=[]

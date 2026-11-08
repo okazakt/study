@@ -187,3 +187,13 @@ b2/c1/d1の保存4候補から3つ選ぶ4択を維持。例文・読み・熟語
 ## 学年別の公式細目との照合（v0.77.0）
 
 同学年のコースに出る素材を対応付け、不足を26素材／26問補強。81細目と23活動例は編集上の数え方で、実技能や全用例の完了率ではない。[対応表](../docs/content/japanese-official-items.md)。作問元は `official-gap-additions.tsv`、再生成は `scripts/japanese-official-review.py`。既存IDは維持。小学漢字の実書は保留し、中学字種の読み・書き選択と分ける。
+
+## 追加音訓・付表語と基礎版整備（v0.78.0）
+
+`reading-supplement.tsv` から読み専用134素材／134問（音訓99・付表35）を追加。既存の問題内容・書き選択・小学保管分は変更しない。新規IDは語・読みに対する安定ハッシュ、学年は既存の同字の暫定共通分類を引き継ぐ。漢字読みのみで選択可能、漢字書きからは除外。
+
+`joyo-appendix-readings.json` は[文化庁の常用漢字表](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf)付表（印刷頁162〜163）の表記単位の転記。`appendix-coverage-review.json` に中学字種を含む36組の出題先を記録。小学配当字だけの87表記は今回は追加しない。表記単位の数で、公式の項目数とは区別する。
+
+`reading-supplement-review.json` に同版JmdictFuriganaとの読み・異読照合を保持。桟敷（さじき）・投網（とあみ）は辞書ファイルで該当表記の読みを確認できないため、公式付表を正答の根拠とする。既知の異読をダミーから除外。加工した読みデータは、従来と同じEDRDG/JMdict/JmdictFuriganaの著作権表示を保持し、CC BY-SA 4.0で提供する。
+
+読みの拡充と内容確認を終え、中学国語の暗記・判断ポイントの基礎版整備を一区切りとする。全音訓・全語彙・全受験問題や実技能の網羅保証ではない。[現在地と確認範囲](../docs/content/japanese-progress.md)。差分は `reading-supplement-audit.json` を参照。

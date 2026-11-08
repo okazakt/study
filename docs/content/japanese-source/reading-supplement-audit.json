@@ -1,0 +1,39 @@
+{
+  "version": "0.78.0",
+  "date": "2026-11-08",
+  "addedMaterials": 134,
+  "addedGeneratedQuestions": 134,
+  "specialReadings": 35,
+  "additionalOnKunReadings": 99,
+  "previousMaterialContentsUnchanged": true,
+  "elementaryArchiveUnchanged": true,
+  "writingCharactersUnchanged": 1110,
+  "duplicateWordReadingPairs": 0,
+  "budget": {
+    "materials": 134,
+    "presentations": 134,
+    "maxima": {
+      "task": 13,
+      "prompt": 24,
+      "choice": 8,
+      "targetLabel": 0,
+      "note": 15,
+      "combined": 69
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "officialAppendixCoverage": {
+    "countingUnit": "中学字種を含む語の表記・読みの組",
+    "covered": 36,
+    "missing": 0
+  },
+  "contentReview": {
+    "newReadings": "134語の正答を辞書または公式付表と照合。既知の別読を全てダミーから除外。被るの異義は帽子／損害の文脈で区別。",
+    "priorIdioms": "128素材の語義と語句候補を確認。既存の近義語を同時に出さない除外を保持。",
+    "priorClassicalAndKanbun": "201素材の古語の文脈、訓読、句法、漢詩、既存の補足問題の扱いを確認。",
+    "priorWholeWriting": "269字の語句・読み・例文・候補を確認。表記指定と文脈を併用し、旧修正記録を維持。",
+    "boundary": "知識ポイントの基礎版整備として区切る。全音訓・全語彙・全入試問題や、実際の手書き・作文・読書等の習熟保証ではない。"
+  },
+  "checks": "Changed JSON/IDs/required fields/four choices/alternative readings/text budget and existing-content preservation only. No full app tests, browser loops or five-minute simulation."
+}

@@ -1,5 +1,5 @@
-const VERSION = '0.77.0';
-const CACHE = 'study-beat-v0.77.0';
+const VERSION = '0.78.0';
+const CACHE = 'study-beat-v0.78.0';
 const MEDIA = 'study-beat-media-v1';
 const versioned = path => `${path}?v=${VERSION}`;
 const CORE = ['./', './index.html', './manifest.webmanifest', './data-credits.html', './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
