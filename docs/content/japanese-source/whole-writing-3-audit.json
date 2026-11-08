@@ -1,0 +1,51 @@
+{
+  "version": "0.75.0",
+  "date": "2026-11-08",
+  "newWritingCharacters": 119,
+  "newMaterials": 4,
+  "generatedIncrease": 119,
+  "secondaryWritingCovered": 1110,
+  "target": 1110,
+  "remaining": 0,
+  "previousReadingMaterialsUnchanged": 1094,
+  "previousWritingTargetsUnchanged": 991,
+  "elementaryArchiveUnchanged": true,
+  "sharedWritingOnlyCharacters": [
+    "挨",
+    "憬",
+    "沙",
+    "璃"
+  ],
+  "sharedReadingIdsPreserved": true,
+  "budget": {
+    "materials": 119,
+    "presentations": 234,
+    "maxima": {
+      "task": 13,
+      "prompt": 32,
+      "choice": 7,
+      "targetLabel": 10,
+      "note": 16,
+      "combined": 58
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "distractorPool": {
+    "stored": 4,
+    "b": 2,
+    "c": 1,
+    "d": 1,
+    "sampled": 3,
+    "presentedIncludingAnswer": 4
+  },
+  "editorialReview": [
+    "送り仮名、熟語の見えている部分と例文へ正答・候補の漢字を出さない。",
+    "憬の憧・沙の汰・璃の瑠など、見えている字を候補にしない。",
+    "旧字体・異体字・別表記として正答になるものを誤答にしない。",
+    "語と読み、文脈による正答と候補の方向は作問時に確認。常用外の字を一部ダミーに含むが、中学の正答字種へは数えない。",
+    "医療語で癒と通用し得る愈を、癒のダミーには使わない。"
+  ],
+  "checks": "Changed-data IDs, four-choice pools and text budget; focused shared-source/reading filter/reverse priority check only. Existing whole-character UI reused; no browser loop, full test suite or five-minute simulation.",
+  "scope": "All secondary-1110 characters now have at least one reading target and a writing selection target. Not a claim of all readings/meanings or actual handwriting/stroke order mastery, nor completion of all Japanese fields."
+}

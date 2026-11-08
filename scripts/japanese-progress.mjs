@@ -6,7 +6,7 @@ const names=['junior_japanese','junior_expansion','junior_japanese_kanji','junio
 const stored=names.flatMap(n=>read('quiz-data/'+n+'.json')).filter(q=>q.subject==='国語');
 const items=stored.filter(q=>q.school_level==='中学'),reserved=stored.filter(q=>q.school_level==='小学');
 const scope=read('docs/content/japanese-source/joyo-scope.json'),target=new Set(scope.filter(c=>!c.elementary).map(c=>c.character)),elementary=new Set(scope.filter(c=>c.elementary).map(c=>c.character));
-const kanji=items.filter(q=>q.kind==='kanji'),readings=new Set(kanji.map(q=>q.character)),writing=new Set(kanji.filter(q=>q.writing_parts?.length||q.writing_format==='whole').map(q=>q.character));
+const kanji=items.filter(q=>q.kind==='kanji'),readings=new Set(kanji.filter(q=>q.reading_enabled!==false).map(q=>q.character)),writing=new Set(kanji.filter(q=>q.writing_parts?.length||q.writing_format==='whole').map(q=>q.character));
 const mapping=read('docs/content/japanese-source/kanji-reading-map.json'),byId=new Map(kanji.map(q=>[q.id,q]));
 for(const m of mapping){const q=byId.get(m.sourceId);if(!q||!q.word.includes(m.character))throw Error('invalid reading map '+m.character);readings.add(m.character);}
 const missing=[...target].filter(c=>!readings.has(c));

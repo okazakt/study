@@ -10,14 +10,14 @@ test('whole writing retains b/b/c/d pool but selects only three distinct distrac
   assert.equal(item.writing_dummies.length,4);assert.deepEqual(Object.values(item.writing_distractor_groups).map(a=>a.length),[2,1,1]);
   const omitted=new Set();
   for(let seed=1;seed<=64;seed++){
-   const q=makeJapaneseQuestions(item,seededRandom(seed))[1];
+   const q=makeJapaneseQuestions(item,seededRandom(seed)).find(q=>q.mode==='kanji_component');
    assert.equal(q.choices.length,4);assert.equal(new Set(q.choices).size,4);assert.equal(q.choices[q.correct],item.character);
    const missing=item.writing_dummies.filter(x=>!q.choices.includes(x));assert.equal(missing.length,1);omitted.add(missing[0]);
    assert(q.choices.filter(x=>x!==item.character).every(x=>item.writing_dummies.includes(x)));
    assert.equal(q.id,`${item.id}:kanji_whole`);assert.equal(q.mode,'kanji_component');assert.equal(q.blankTotal,1);assert.equal(q.diagram,undefined);
    assert.equal(q.writingDisplay.maskedWord.includes(item.character),false);assert(matchesPracticeQuestion(q,'kanji_write'));
   }
-  assert.equal(omitted.size,4);assert(matchesPracticeItem(item,'kanji_write'));assert(matchesPracticeItem(item,'kanji_read'));
+  assert.equal(omitted.size,4);assert(matchesPracticeItem(item,'kanji_write'));assert.equal(matchesPracticeItem(item,'kanji_read'),item.reading_enabled!==false);
  }
 });
 test('whole writing uses four color lanes in normal and focus; wrong answer stays until correct',()=>{

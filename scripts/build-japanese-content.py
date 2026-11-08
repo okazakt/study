@@ -138,9 +138,16 @@ for n,r in compound_rows:
  item.update(writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_batch='japanese-compound-writing-20261107',writing_profile=profile,writing_scope='secondary-1110',writing_parts=[dict(position=pos,answer=a,dummies=glyph_dummies(a,c,compound_groups),box=box) for pos,a,box in zip(positions,answers,boxes)])
 # Whole-character selection for shapes that should not be split into rectangles.
 whole_rows=json.loads((SOURCE/'whole-writing-additions.json').read_text())
+reading_mapping={x['character']:x for x in json.loads((SOURCE/'kanji-reading-map.json').read_text())}
+reading_by_id={x['id']:x for x in list(kanji_by_char.values())+list(old_kanji.values())}
 for r in whole_rows:
  c=r['character'];word=r['word'];reading=r['reading'];hint=r['context'];options=r['distractors']
- assert c in kanji_by_char and not scope[c],c
+ assert c in scope and not scope[c],c
+ if c not in kanji_by_char:
+  mapping=reading_mapping[c];original=reading_by_id[mapping['sourceId']]
+  assert mapping['coverage']=='shared-word' and c in original['word'],c
+  item=dict(id=f'jr_jp_write_{ord(c):x}',school_level='中学',grade=original['grade'],subject='国語',field='漢字',unit=original['unit'],kind='kanji',character=c,word=word,reading=reading,reading_dummies=[],reading_enabled=False,reading_source_id=original['id'],sentence=hint,writing_parts=[],note=f'{word}（{reading}）。',content_batch=r['content_batch'],kanji_scope='secondary-1110')
+  kanji.append(item);kanji_by_char[c]=item
  item=kanji_by_char[c];assert not item['writing_parts'],c
  assert word.count(c)==1 and len(options)==4,c
  assert len(hint)<=24 and len(word)<=3 and len(reading)<=6 and (len(reading)+2)*20+len(word)*32+14<=250,(c,'whole-writing display budget')
