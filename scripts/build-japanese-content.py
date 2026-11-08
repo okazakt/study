@@ -150,7 +150,7 @@ for r in whole_rows:
  assert list(map(len,roles.values()))==[2,1,1],c
  visible=hint+word.replace(c,'')
  assert not any(x in visible for x in values+[c]),(c,'answer/distractor leaked in prompt')
- item.update(writing_format='whole',writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_dummies=values,writing_distractor_groups=roles,writing_batch='japanese-whole-writing-20261108',writing_scope='secondary-1110')
+ item.update(writing_format='whole',writing_word=word,writing_reading=reading,writing_hint=hint,writing_target_index=word.index(c),writing_note=f'{word}（{reading}）。',writing_dummies=values,writing_distractor_groups=roles,writing_batch=r.get('content_batch','japanese-whole-writing-20261108'),writing_scope='secondary-1110')
  item.pop('writing_status',None);item.pop('writing_deferred_reason',None);item.pop('writing_profile',None)
 (ROOT/'quiz-data/junior_japanese_extended.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'quiz-data/junior_japanese_kanji.json').write_text(json.dumps(kanji,ensure_ascii=False,indent=2)+'\n')

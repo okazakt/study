@@ -1,0 +1,41 @@
+{
+  "version": "0.74.0",
+  "date": "2026-11-08",
+  "newWritingCharacters": 100,
+  "generatedIncrease": 100,
+  "secondaryCovered": 991,
+  "target": 1110,
+  "remaining": 119,
+  "readingMaterialsUnchanged": 1094,
+  "previousWritingMaterialsUnchanged": true,
+  "elementaryArchiveUnchanged": true,
+  "distractorPool": {
+    "stored": 4,
+    "b": 2,
+    "c": 1,
+    "d": 1,
+    "sampled": 3,
+    "presentedIncludingAnswer": 4
+  },
+  "budget": {
+    "materials": 100,
+    "presentations": 200,
+    "maxima": {
+      "task": 13,
+      "prompt": 33,
+      "choice": 6,
+      "targetLabel": 10,
+      "note": 16,
+      "combined": 53
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "editorialReview": [
+    "語・読みと文脈による正答を作問時に確認。別表記として正解になる候補を除外。",
+    "超越のように見えている字が候補になる語は、越境など書き用の語へ変更。",
+    "舟と船を同じ問題の正誤として扱わず、舟のcは同音シュウの周にする。",
+    "部品問題と前回の完成字50字は変更しない。"
+  ],
+  "checks": "Changed-data IDs, required fields, b2/c1/d1 and four-choice candidates, prompt leakage, text/width budget. Existing template and bounds reused; no browser, test suite or five-minute simulation."
+}

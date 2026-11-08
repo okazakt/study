@@ -1398,5 +1398,2905 @@
         "reason": "傷と腸の右側の形が似る"
       }
     ]
+  },
+  {
+    "character": "亜",
+    "word": "亜流",
+    "reading": "ありゅう",
+    "context": "独創せず、先人のやり方をまねるもの。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "悪",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "唖",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "次",
+        "role": "c",
+        "reason": "次ぐ立場という意味"
+      },
+      {
+        "value": "姿",
+        "role": "d",
+        "reason": "「次」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "哀",
+    "word": "哀愁",
+    "reading": "あいしゅう",
+    "context": "ものがなしく、寂しい気持ち。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "衰",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "衷",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "悲",
+        "role": "c",
+        "reason": "悲しさという意味"
+      },
+      {
+        "value": "非",
+        "role": "d",
+        "reason": "「悲」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "威",
+    "word": "威嚇",
+    "reading": "いかく",
+    "context": "力を示し、相手をおじけづかせること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "戚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "成",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "怖",
+        "role": "c",
+        "reason": "怖がらせる意味"
+      },
+      {
+        "value": "布",
+        "role": "d",
+        "reason": "「怖」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "為",
+    "word": "行為",
+    "reading": "こうい",
+    "context": "ある目的や考えによってすること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "偽",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "溈",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "成",
+        "role": "c",
+        "reason": "なすという訓と意味"
+      },
+      {
+        "value": "城",
+        "role": "d",
+        "reason": "「成」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "畏",
+    "word": "畏怖",
+    "reading": "いふ",
+    "context": "大きな力などを、おそれ敬うこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "異",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "猥",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "恐",
+        "role": "c",
+        "reason": "おそれるという意味"
+      },
+      {
+        "value": "築",
+        "role": "d",
+        "reason": "「恐」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "尉",
+    "word": "大尉",
+    "reading": "たいい",
+    "context": "軍隊で、将校に与えられる階級の一つ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "慰",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "蔚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "位",
+        "role": "c",
+        "reason": "階級や地位を表す意味"
+      },
+      {
+        "value": "泣",
+        "role": "d",
+        "reason": "「位」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "隠",
+    "word": "隠密",
+    "reading": "おんみつ",
+    "context": "他人に知られないようにすること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "穏",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "隙",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "潜",
+        "role": "c",
+        "reason": "身をひそめる意味"
+      },
+      {
+        "value": "替",
+        "role": "d",
+        "reason": "「潜」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "越",
+    "word": "越境",
+    "reading": "えっきょう",
+    "context": "国などの境界を、こえて別の側へ行くこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "起",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "趣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "超",
+        "role": "c",
+        "reason": "こえるという意味"
+      },
+      {
+        "value": "招",
+        "role": "d",
+        "reason": "「超」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "縁",
+    "word": "縁故",
+    "reading": "えんこ",
+    "context": "血筋や知人を通じた、人とのつながり。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "緑",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "録",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "関",
+        "role": "c",
+        "reason": "関わりやつながりの意味"
+      },
+      {
+        "value": "閣",
+        "role": "d",
+        "reason": "「関」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "凹",
+    "word": "凹面",
+    "reading": "おうめん",
+    "context": "内側へ、くぼんだ面。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "凸",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "回",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "穴",
+        "role": "c",
+        "reason": "くぼみや穴の意味"
+      },
+      {
+        "value": "空",
+        "role": "d",
+        "reason": "「穴」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "奥",
+    "word": "奥底",
+    "reading": "おくそこ",
+    "context": "物事の、入り口から遠い所。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "澳",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "懊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "深",
+        "role": "c",
+        "reason": "深い所という意味"
+      },
+      {
+        "value": "探",
+        "role": "d",
+        "reason": "「深」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "乙",
+    "word": "乙種",
+    "reading": "おつしゅ",
+    "context": "甲に続く、第二の分類。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "己",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "已",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "次",
+        "role": "c",
+        "reason": "次の順位という意味"
+      },
+      {
+        "value": "姿",
+        "role": "d",
+        "reason": "「次」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "卸",
+    "word": "卸す",
+    "reading": "おろす",
+    "context": "商品を、まとめて小規模な店などへ渡す。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "御",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "卯",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "売",
+        "role": "c",
+        "reason": "商品を売る意味"
+      },
+      {
+        "value": "読",
+        "role": "d",
+        "reason": "「売」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "穏",
+    "word": "平穏",
+    "reading": "へいおん",
+    "context": "変わったことがなく、落ち着いた様子。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "隠",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "稲",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "静",
+        "role": "c",
+        "reason": "静かで落ち着く意味"
+      },
+      {
+        "value": "清",
+        "role": "d",
+        "reason": "「静」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "華",
+    "word": "中華",
+    "reading": "ちゅうか",
+    "context": "中国風の料理などを表す語。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "葉",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "革",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "花",
+        "role": "c",
+        "reason": "音読みカと華やかさの意味"
+      },
+      {
+        "value": "化",
+        "role": "d",
+        "reason": "「花」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "寡",
+    "word": "寡黙",
+    "reading": "かもく",
+    "context": "口数が乏しく、あまり話さないこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "寛",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "賓",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "少",
+        "role": "c",
+        "reason": "少ないという意味"
+      },
+      {
+        "value": "沙",
+        "role": "d",
+        "reason": "「少」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "牙",
+    "word": "牙",
+    "reading": "きば",
+    "context": "動物の口にある、とがった丈夫なもの。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "芽",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "邪",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "歯",
+        "role": "c",
+        "reason": "口の中の歯という意味"
+      },
+      {
+        "value": "齢",
+        "role": "d",
+        "reason": "「歯」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "瓦",
+    "word": "瓦",
+    "reading": "かわら",
+    "context": "建物の上に並べ、水漏れなどを防ぐ焼き物。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "互",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "亙",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "屋",
+        "role": "c",
+        "reason": "屋根に用いる意味"
+      },
+      {
+        "value": "握",
+        "role": "d",
+        "reason": "「屋」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "戒",
+    "word": "戒心",
+    "reading": "かいしん",
+    "context": "失敗などをしないよう、気を引き締める。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "戎",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "戊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "律",
+        "role": "c",
+        "reason": "自分を律するという意味"
+      },
+      {
+        "value": "津",
+        "role": "d",
+        "reason": "「律」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "壊",
+    "word": "壊滅",
+    "reading": "かいめつ",
+    "context": "全体が大きく損なわれ、成り立たなくなる。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "懐",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "環",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "破",
+        "role": "c",
+        "reason": "こわれるという意味"
+      },
+      {
+        "value": "波",
+        "role": "d",
+        "reason": "「破」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "懐",
+    "word": "懐中",
+    "reading": "かいちゅう",
+    "context": "着物の、えりもとにある内側の部分。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "壊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "環",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "胸",
+        "role": "c",
+        "reason": "胸の辺りという意味"
+      },
+      {
+        "value": "脳",
+        "role": "d",
+        "reason": "「胸」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "釜",
+    "word": "釜飯",
+    "reading": "かまめし",
+    "context": "一人分の器で、具と米を炊いた料理。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "金",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "父",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "鍋",
+        "role": "c",
+        "reason": "米などを炊く器という意味"
+      },
+      {
+        "value": "渦",
+        "role": "d",
+        "reason": "「鍋」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "甘",
+    "word": "甘味",
+    "reading": "かんみ",
+    "context": "糖分などに感じる、まろやかな味。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "廿",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "世",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "砂",
+        "role": "c",
+        "reason": "甘い砂糖を連想する"
+      },
+      {
+        "value": "沙",
+        "role": "d",
+        "reason": "「砂」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "缶",
+    "word": "空き缶",
+    "reading": "あきかん",
+    "context": "中身を使い切った、金属製の容器。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "岳",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "函",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "瓶",
+        "role": "c",
+        "reason": "容器という意味"
+      },
+      {
+        "value": "餅",
+        "role": "d",
+        "reason": "「瓶」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "陥",
+    "word": "欠陥",
+    "reading": "けっかん",
+    "context": "必要な点が欠け、不完全な所があること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "陳",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "陣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "落",
+        "role": "c",
+        "reason": "落ち込むという意味"
+      },
+      {
+        "value": "絡",
+        "role": "d",
+        "reason": "「落」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "乾",
+    "word": "乾燥",
+    "reading": "かんそう",
+    "context": "水分がなくなり、かわくこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "幹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "韓",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "干",
+        "role": "c",
+        "reason": "水気をなくす意味と音読みカン"
+      },
+      {
+        "value": "汗",
+        "role": "d",
+        "reason": "「干」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "敢",
+    "word": "敢行",
+    "reading": "かんこう",
+    "context": "困難を承知で、思い切って実行すること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "厳",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "取",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "勇",
+        "role": "c",
+        "reason": "勇気を出すという意味"
+      },
+      {
+        "value": "湧",
+        "role": "d",
+        "reason": "「勇」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "勧",
+    "word": "勧告",
+    "reading": "かんこく",
+    "context": "よいと思うことを、するようにすすめる。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "歓",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "観",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "薦",
+        "role": "c",
+        "reason": "すすめるという意味"
+      },
+      {
+        "value": "鹿",
+        "role": "d",
+        "reason": "「薦」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "歓",
+    "word": "歓声",
+    "reading": "かんせい",
+    "context": "うれしさのあまり、思わず出す大きな声。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "観",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "勧",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "喜",
+        "role": "c",
+        "reason": "喜ぶという意味"
+      },
+      {
+        "value": "嬉",
+        "role": "d",
+        "reason": "「喜」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "監",
+    "word": "監督",
+    "reading": "かんとく",
+    "context": "指示を出し、全体を取り仕切ること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "覧",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "艦",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "視",
+        "role": "c",
+        "reason": "見張り確かめる意味"
+      },
+      {
+        "value": "規",
+        "role": "d",
+        "reason": "「視」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "韓",
+    "word": "日韓",
+    "reading": "にっかん",
+    "context": "日本と、ソウルを首都とする国の組合せ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "幹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "朝",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "漢",
+        "role": "c",
+        "reason": "音読みカンと東アジアの国を連想する"
+      },
+      {
+        "value": "嘆",
+        "role": "d",
+        "reason": "「漢」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "既",
+    "word": "既存",
+    "reading": "きそん",
+    "context": "前から、すでにあること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "即",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "概",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "済",
+        "role": "c",
+        "reason": "すでに済んでいるという意味"
+      },
+      {
+        "value": "斉",
+        "role": "d",
+        "reason": "「済」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "鬼",
+    "word": "鬼気",
+    "reading": "きき",
+    "context": "不気味で、恐ろしい感じ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "塊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "魂",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "霊",
+        "role": "c",
+        "reason": "幽霊や恐ろしい存在の意味"
+      },
+      {
+        "value": "零",
+        "role": "d",
+        "reason": "「霊」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "亀",
+    "word": "亀裂",
+    "reading": "きれつ",
+    "context": "物に入った、ひび割れ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "電",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "竜",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "甲",
+        "role": "c",
+        "reason": "甲羅のある動物を連想する"
+      },
+      {
+        "value": "申",
+        "role": "d",
+        "reason": "「甲」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "幾",
+    "word": "幾何",
+    "reading": "きか",
+    "context": "図形の性質や位置関係などを研究する分野。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "機",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "畿",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "数",
+        "role": "c",
+        "reason": "数量を問う幾つという意味"
+      },
+      {
+        "value": "散",
+        "role": "d",
+        "reason": "「数」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "棄",
+    "word": "放棄",
+    "reading": "ほうき",
+    "context": "権利などを、自ら手放すこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "葉",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "桑",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "捨",
+        "role": "c",
+        "reason": "すてるという意味"
+      },
+      {
+        "value": "舎",
+        "role": "d",
+        "reason": "「捨」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "畿",
+    "word": "畿内",
+    "reading": "きない",
+    "context": "昔の都の周辺にある、五つの国の地域。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "幾",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "機",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "近",
+        "role": "c",
+        "reason": "都に近い地域という意味"
+      },
+      {
+        "value": "斤",
+        "role": "d",
+        "reason": "「近」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "虐",
+    "word": "虐待",
+    "reading": "ぎゃくたい",
+    "context": "相手をひどく苦しめ、むごく扱うこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "虚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "虎",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "暴",
+        "role": "c",
+        "reason": "乱暴でむごいという意味"
+      },
+      {
+        "value": "曝",
+        "role": "d",
+        "reason": "「暴」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "及",
+    "word": "及第",
+    "reading": "きゅうだい",
+    "context": "試験で、合格とされること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "乃",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "久",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "達",
+        "role": "c",
+        "reason": "必要な基準に達するという意味"
+      },
+      {
+        "value": "違",
+        "role": "d",
+        "reason": "「達」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "丘",
+    "word": "丘陵",
+    "reading": "きゅうりょう",
+    "context": "小高い土地が、なだらかに連なる地形。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "岳",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "兵",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "山",
+        "role": "c",
+        "reason": "高くなった地形という意味"
+      },
+      {
+        "value": "仙",
+        "role": "d",
+        "reason": "「山」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "巨",
+    "word": "巨額",
+    "reading": "きょがく",
+    "context": "金額が、きわめて多いこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "臣",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "匠",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "大",
+        "role": "c",
+        "reason": "大きいという意味"
+      },
+      {
+        "value": "太",
+        "role": "d",
+        "reason": "「大」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "虚",
+    "word": "虚無",
+    "reading": "きょむ",
+    "context": "何もなく、むなしいこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "虎",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "虜",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "空",
+        "role": "c",
+        "reason": "からであるという意味"
+      },
+      {
+        "value": "控",
+        "role": "d",
+        "reason": "「空」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "距",
+    "word": "距離",
+    "reading": "きょり",
+    "context": "二つの地点を隔てる、長さ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "拒",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "巨",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "間",
+        "role": "c",
+        "reason": "間隔という意味"
+      },
+      {
+        "value": "問",
+        "role": "d",
+        "reason": "「間」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "凶",
+    "word": "凶作",
+    "reading": "きょうさく",
+    "context": "農作物が、例年よりひどく実らないこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "区",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "凹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "悪",
+        "role": "c",
+        "reason": "よくないという意味"
+      },
+      {
+        "value": "亜",
+        "role": "d",
+        "reason": "「悪」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "巾",
+    "word": "雑巾",
+    "reading": "ぞうきん",
+    "context": "汚れを拭き取るために使うもの。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "市",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "吊",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "布",
+        "role": "c",
+        "reason": "布製品という意味"
+      },
+      {
+        "value": "怖",
+        "role": "d",
+        "reason": "「布」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "斤",
+    "word": "斤量",
+    "reading": "きんりょう",
+    "context": "はかって表す、物の質量。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "斥",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "丘",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "重",
+        "role": "c",
+        "reason": "重さの単位という意味"
+      },
+      {
+        "value": "種",
+        "role": "d",
+        "reason": "「重」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "謹",
+    "word": "謹賀",
+    "reading": "きんが",
+    "context": "つつしんで、お祝いを述べること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "勤",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "僅",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "慎",
+        "role": "c",
+        "reason": "つつしむという意味"
+      },
+      {
+        "value": "鎮",
+        "role": "d",
+        "reason": "「慎」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "串",
+    "word": "串刺し",
+    "reading": "くしざし",
+    "context": "細長い棒などで、食べ物を貫くこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "患",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "申",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "焼",
+        "role": "c",
+        "reason": "焼き串などの調理を連想する"
+      },
+      {
+        "value": "暁",
+        "role": "d",
+        "reason": "「焼」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "薫",
+    "word": "薫風",
+    "reading": "くんぷう",
+    "context": "若葉のかおりを運ぶ、初夏の風。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "勲",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "黒",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "香",
+        "role": "c",
+        "reason": "よい香りという意味"
+      },
+      {
+        "value": "季",
+        "role": "d",
+        "reason": "「香」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "契",
+    "word": "契機",
+    "reading": "けいき",
+    "context": "物事が変わったり進んだりする、きっかけ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "喫",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "潔",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "約",
+        "role": "c",
+        "reason": "契りや約束という意味"
+      },
+      {
+        "value": "釣",
+        "role": "d",
+        "reason": "「約」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "恵",
+    "word": "恵む",
+    "reading": "めぐむ",
+    "context": "困っている人に、物や金を与える。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "穂",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "患",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "恩",
+        "role": "c",
+        "reason": "恩を与える意味"
+      },
+      {
+        "value": "因",
+        "role": "d",
+        "reason": "「恩」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "蛍",
+    "word": "蛍",
+    "reading": "ほたる",
+    "context": "夜、腹の辺りから光を出す小さな生き物。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "営",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "覚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "虫",
+        "role": "c",
+        "reason": "昆虫という意味"
+      },
+      {
+        "value": "独",
+        "role": "d",
+        "reason": "「虫」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "継",
+    "word": "継承",
+    "reading": "けいしょう",
+    "context": "前の人の地位や仕事を、受けつぐこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "断",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "続",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "接",
+        "role": "c",
+        "reason": "つなぐという意味"
+      },
+      {
+        "value": "妾",
+        "role": "d",
+        "reason": "「接」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "慶",
+    "word": "慶事",
+    "reading": "けいじ",
+    "context": "結婚などの、おめでたい出来事。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "鹿",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "麓",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "賀",
+        "role": "c",
+        "reason": "祝うという意味"
+      },
+      {
+        "value": "架",
+        "role": "d",
+        "reason": "「賀」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "迎",
+    "word": "迎合",
+    "reading": "げいごう",
+    "context": "自分の考えを曲げてまで、相手に合わせる。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "仰",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "抑",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "招",
+        "role": "c",
+        "reason": "迎えることと招くことの意味"
+      },
+      {
+        "value": "昭",
+        "role": "d",
+        "reason": "「招」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "隙",
+    "word": "空隙",
+    "reading": "くうげき",
+    "context": "物と物が接せず、わずかにあいている所。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "際",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "隠",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "間",
+        "role": "c",
+        "reason": "すきまという意味"
+      },
+      {
+        "value": "問",
+        "role": "d",
+        "reason": "「間」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "兼",
+    "word": "兼任",
+    "reading": "けんにん",
+    "context": "二つ以上の役目を、同時に引き受けること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "謙",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "嫌",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "併",
+        "role": "c",
+        "reason": "あわせるという意味"
+      },
+      {
+        "value": "餅",
+        "role": "d",
+        "reason": "「併」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "遣",
+    "word": "遣唐使",
+    "reading": "けんとうし",
+    "context": "日本から昔の中国へ送った、公的な使節。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "遺",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "追",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "派",
+        "role": "c",
+        "reason": "人を送り出す意味"
+      },
+      {
+        "value": "脈",
+        "role": "d",
+        "reason": "「派」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "繭",
+    "word": "繭",
+    "reading": "まゆ",
+    "context": "蚕などが身を包むために作る、糸の殻。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "菌",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "蔑",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "絹",
+        "role": "c",
+        "reason": "繭から得る繊維を連想する"
+      },
+      {
+        "value": "捐",
+        "role": "d",
+        "reason": "「絹」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "幻",
+    "word": "幻影",
+    "reading": "げんえい",
+    "context": "実際にはないのに、あるように見える姿。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "幼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "幺",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "想",
+        "role": "c",
+        "reason": "心に思い描く意味"
+      },
+      {
+        "value": "相",
+        "role": "d",
+        "reason": "「想」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "雇",
+    "word": "雇用",
+    "reading": "こよう",
+    "context": "報酬を払う約束で、人を働かせること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "扇",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "肩",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "採",
+        "role": "c",
+        "reason": "人を採用する意味"
+      },
+      {
+        "value": "彩",
+        "role": "d",
+        "reason": "「採」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "呉",
+    "word": "呉音",
+    "reading": "ごおん",
+    "context": "古く日本へ伝わった、漢字の音読みの系統。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "誤",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "娯",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "五",
+        "role": "c",
+        "reason": "音読みゴ"
+      },
+      {
+        "value": "互",
+        "role": "d",
+        "reason": "「五」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "勾",
+    "word": "勾配",
+    "reading": "こうばい",
+    "context": "斜面などの、傾きの度合い。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "句",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "匂",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "拘",
+        "role": "c",
+        "reason": "音読みコウ"
+      },
+      {
+        "value": "狗",
+        "role": "d",
+        "reason": "「拘」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "甲",
+    "word": "甲乙",
+    "reading": "こうおつ",
+    "context": "優劣を比較する、順位の上と下の分類。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "申",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "由",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "一",
+        "role": "c",
+        "reason": "第一という意味"
+      },
+      {
+        "value": "二",
+        "role": "d",
+        "reason": "「一」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "更",
+    "word": "更新",
+    "reading": "こうしん",
+    "context": "古いものを、新しいものに置き換えること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "便",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "吏",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "改",
+        "role": "c",
+        "reason": "あらためるという意味"
+      },
+      {
+        "value": "政",
+        "role": "d",
+        "reason": "「改」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "衡",
+    "word": "均衡",
+    "reading": "きんこう",
+    "context": "偏らず、釣り合いが取れていること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "衝",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "街",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "量",
+        "role": "c",
+        "reason": "重さなどをはかる意味"
+      },
+      {
+        "value": "糧",
+        "role": "d",
+        "reason": "「量」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "乞",
+    "word": "乞う",
+    "reading": "こう",
+    "context": "相手に、何かを強く求める。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "吃",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "迄",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "願",
+        "role": "c",
+        "reason": "こう、願うという意味"
+      },
+      {
+        "value": "頑",
+        "role": "d",
+        "reason": "「願」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "豪",
+    "word": "豪雨",
+    "reading": "ごうう",
+    "context": "非常に激しく、たくさん降る雨。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "毫",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "高",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "強",
+        "role": "c",
+        "reason": "強く激しいという意味"
+      },
+      {
+        "value": "張",
+        "role": "d",
+        "reason": "「強」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "込",
+    "word": "振込",
+    "reading": "ふりこみ",
+    "context": "口座から、別の口座へお金を送ること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "入",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "辺",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "詰",
+        "role": "c",
+        "reason": "中へ入れる意味"
+      },
+      {
+        "value": "結",
+        "role": "d",
+        "reason": "「詰」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "鎖",
+    "word": "封鎖",
+    "reading": "ふうさ",
+    "context": "出入りや通行ができないようにすること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "銷",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "消",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "連",
+        "role": "c",
+        "reason": "くさりのようなつながりの意味"
+      },
+      {
+        "value": "運",
+        "role": "d",
+        "reason": "「連」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "栽",
+    "word": "栽培",
+    "reading": "さいばい",
+    "context": "草木に水や肥料を与え、育てること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "裁",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "載",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "植",
+        "role": "c",
+        "reason": "植えるという意味"
+      },
+      {
+        "value": "殖",
+        "role": "d",
+        "reason": "「植」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "斎",
+    "word": "斎場",
+    "reading": "さいじょう",
+    "context": "葬儀などの儀式を行う場所。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "斉",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "済",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "祭",
+        "role": "c",
+        "reason": "祭祀に関係する意味"
+      },
+      {
+        "value": "察",
+        "role": "d",
+        "reason": "「祭」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "塞",
+    "word": "塞ぐ",
+    "reading": "ふさぐ",
+    "context": "通れないように、あいている所をふさぐ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "寒",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "賽",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "閉",
+        "role": "c",
+        "reason": "閉じるという意味"
+      },
+      {
+        "value": "閑",
+        "role": "d",
+        "reason": "「閉」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "歳",
+    "word": "歳月",
+    "reading": "さいげつ",
+    "context": "長い時の流れ。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "戚",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "威",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "年",
+        "role": "c",
+        "reason": "年月という意味"
+      },
+      {
+        "value": "牛",
+        "role": "d",
+        "reason": "「年」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "載",
+    "word": "掲載",
+    "reading": "けいさい",
+    "context": "新聞などに、文章や写真をのせること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "裁",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "栽",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "記",
+        "role": "c",
+        "reason": "記録するという意味"
+      },
+      {
+        "value": "紀",
+        "role": "d",
+        "reason": "「記」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "拶",
+    "word": "挨拶",
+    "reading": "あいさつ",
+    "context": "人に会ったときなどに交わす言葉や動作。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "桟",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "拙",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "礼",
+        "role": "c",
+        "reason": "礼をする意味"
+      },
+      {
+        "value": "札",
+        "role": "d",
+        "reason": "「礼」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "傘",
+    "word": "傘",
+    "reading": "かさ",
+    "context": "降ってくる水滴を防ぐ、差して使う道具。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "卒",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "率",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "雨",
+        "role": "c",
+        "reason": "雨を防ぐ道具という意味"
+      },
+      {
+        "value": "両",
+        "role": "d",
+        "reason": "「雨」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "嗣",
+    "word": "嗣子",
+    "reading": "しし",
+    "context": "家や身分などを受けつぐ子。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "飼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "詞",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "継",
+        "role": "c",
+        "reason": "あとをつぐという意味"
+      },
+      {
+        "value": "断",
+        "role": "d",
+        "reason": "「継」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "爵",
+    "word": "授爵",
+    "reading": "じゅしゃく",
+    "context": "功績などにより、貴族の称号を授けること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "嚼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "爝",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "位",
+        "role": "c",
+        "reason": "身分や階級という意味"
+      },
+      {
+        "value": "泣",
+        "role": "d",
+        "reason": "「位」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "朱",
+    "word": "朱色",
+    "reading": "しゅいろ",
+    "context": "黄色みを帯びた、鮮やかなあかい色。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "未",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "末",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "赤",
+        "role": "c",
+        "reason": "赤色という意味"
+      },
+      {
+        "value": "赦",
+        "role": "d",
+        "reason": "「赤」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "趣",
+    "word": "趣向",
+    "reading": "しゅこう",
+    "context": "工夫を凝らし、面白みを持たせたやり方。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "取",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "起",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "味",
+        "role": "c",
+        "reason": "おもむきや味わいという意味"
+      },
+      {
+        "value": "妹",
+        "role": "d",
+        "reason": "「味」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "寿",
+    "word": "長寿",
+    "reading": "ちょうじゅ",
+    "context": "長く生きること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "涛",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "祷",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "賀",
+        "role": "c",
+        "reason": "祝い事という意味"
+      },
+      {
+        "value": "架",
+        "role": "d",
+        "reason": "「賀」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "囚",
+    "word": "囚人",
+    "reading": "しゅうじん",
+    "context": "罪により、刑務所などへ入れられた人。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "因",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "困",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "捕",
+        "role": "c",
+        "reason": "捕らえられるという意味"
+      },
+      {
+        "value": "補",
+        "role": "d",
+        "reason": "「捕」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "舟",
+    "word": "舟運",
+    "reading": "しゅううん",
+    "context": "川や運河を使って、物資を運ぶこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "丹",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "凡",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "周",
+        "role": "c",
+        "reason": "音読みシュウ"
+      },
+      {
+        "value": "調",
+        "role": "d",
+        "reason": "「周」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "羞",
+    "word": "羞恥",
+    "reading": "しゅうち",
+    "context": "自分の言動などを、恥ずかしく思うこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "差",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "着",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "辱",
+        "role": "c",
+        "reason": "恥を受ける意味"
+      },
+      {
+        "value": "唇",
+        "role": "d",
+        "reason": "「辱」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "蹴",
+    "word": "一蹴",
+    "reading": "いっしゅう",
+    "context": "問題にせず、きっぱり退けること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "就",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "跳",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "踊",
+        "role": "c",
+        "reason": "足の動作を連想する"
+      },
+      {
+        "value": "湧",
+        "role": "d",
+        "reason": "「踊」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "獣",
+    "word": "野獣",
+    "reading": "やじゅう",
+    "context": "山野で、自然のままに暮らす動物。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "猟",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "献",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "犬",
+        "role": "c",
+        "reason": "動物という意味"
+      },
+      {
+        "value": "太",
+        "role": "d",
+        "reason": "「犬」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "盾",
+    "word": "矛盾",
+    "reading": "むじゅん",
+    "context": "二つの事柄が、つじつまの合わないこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "循",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "眉",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "防",
+        "role": "c",
+        "reason": "防ぐ道具という意味"
+      },
+      {
+        "value": "妨",
+        "role": "d",
+        "reason": "「防」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "肖",
+    "word": "肖像",
+    "reading": "しょうぞう",
+    "context": "ある人の姿を、絵などに表したもの。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "宵",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "消",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "似",
+        "role": "c",
+        "reason": "似せるという意味"
+      },
+      {
+        "value": "以",
+        "role": "d",
+        "reason": "「似」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "尚",
+    "word": "尚早",
+    "reading": "しょうそう",
+    "context": "実行などをするには、まだ早すぎること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "常",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "高",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "尊",
+        "role": "c",
+        "reason": "たっとぶという訓と意味"
+      },
+      {
+        "value": "樽",
+        "role": "d",
+        "reason": "「尊」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "症",
+    "word": "炎症",
+    "reading": "えんしょう",
+    "context": "体の一部が赤く腫れ、熱や痛みが出ること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "病",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "痘",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "状",
+        "role": "c",
+        "reason": "体の状態という意味"
+      },
+      {
+        "value": "壮",
+        "role": "d",
+        "reason": "「状」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "掌",
+    "word": "掌中",
+    "reading": "しょうちゅう",
+    "context": "てのひらの中。また、思いどおりになる範囲。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "常",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "賞",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "手",
+        "role": "c",
+        "reason": "てのひらという意味"
+      },
+      {
+        "value": "毛",
+        "role": "d",
+        "reason": "「手」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "丈",
+    "word": "身丈",
+    "reading": "みたけ",
+    "context": "着物などの、上下の寸法。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "大",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "犬",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "長",
+        "role": "c",
+        "reason": "長さという意味"
+      },
+      {
+        "value": "張",
+        "role": "d",
+        "reason": "「長」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "飾",
+    "word": "装飾",
+    "reading": "そうしょく",
+    "context": "見栄えをよくするために、物を付けること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "飲",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "飼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "美",
+        "role": "c",
+        "reason": "美しくする意味"
+      },
+      {
+        "value": "羨",
+        "role": "d",
+        "reason": "「美」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "尻",
+    "word": "尻尾",
+    "reading": "しっぽ",
+    "context": "動物の体の末端にある、細い部分。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "尼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "局",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "後",
+        "role": "c",
+        "reason": "後ろという意味"
+      },
+      {
+        "value": "復",
+        "role": "d",
+        "reason": "「後」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "侵",
+    "word": "侵害",
+    "reading": "しんがい",
+    "context": "他人の権利などを、損なうこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "浸",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "寝",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "入",
+        "role": "c",
+        "reason": "入り込むという意味"
+      },
+      {
+        "value": "込",
+        "role": "d",
+        "reason": "「入」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "浸",
+    "word": "浸水",
+    "reading": "しんすい",
+    "context": "建物などの内部に、液体が入り込むこと。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "侵",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "寝",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "潤",
+        "role": "c",
+        "reason": "ぬれるという意味"
+      },
+      {
+        "value": "閏",
+        "role": "d",
+        "reason": "「潤」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "寝",
+    "word": "寝室",
+    "reading": "しんしつ",
+    "context": "横になって休むために使う、部屋。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "侵",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "浸",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "眠",
+        "role": "c",
+        "reason": "ねるという意味"
+      },
+      {
+        "value": "眼",
+        "role": "d",
+        "reason": "「眠」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "刃",
+    "word": "刃物",
+    "reading": "はもの",
+    "context": "刈ったり刻んだりする、とがった部分の道具。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "刀",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "力",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "切",
+        "role": "c",
+        "reason": "切る道具という意味"
+      },
+      {
+        "value": "初",
+        "role": "d",
+        "reason": "「切」と字形が似る"
+      }
+    ]
+  },
+  {
+    "character": "尽",
+    "word": "尽力",
+    "reading": "じんりょく",
+    "context": "持っている力を、出しきること。",
+    "content_batch": "japanese-whole-writing-2-20261108",
+    "distractors": [
+      {
+        "value": "尺",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "昼",
+        "role": "b",
+        "reason": "正解と字形が似る"
+      },
+      {
+        "value": "全",
+        "role": "c",
+        "reason": "すべてという意味"
+      },
+      {
+        "value": "金",
+        "role": "d",
+        "reason": "「全」と字形が似る"
+      }
+    ]
   }
 ]
