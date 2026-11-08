@@ -61,3 +61,5 @@
 - 指導要領上の小学配当漢字の書き・活用は、中学での前提事項。ユーザー指定に従い、この中学コンテンツへ小学漢字を追加しない。
 
 [問題IDを含む機械用対応表](japanese-curriculum-review.json)・[国語の進捗](japanese-progress.md)。
+
+追記（v0.77.0）：この37観点は概観用。[学年別の公式細目と同学年素材の対応](japanese-official-items.md)を追加した。

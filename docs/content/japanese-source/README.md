@@ -116,3 +116,7 @@ b2/c1/d1の保存4候補から3つ選ぶ4択を維持。例文・読み・熟語
 差分は `--batch japanese-curriculum-20261108` でデータ確認。既存表示予算内なので、ブラウザ・全体テスト・5分進行検証は繰り返さない。語彙・音訓・全用例の完成とは区別する。
 
 [基本観点の対応表](../japanese-curriculum-review.md)・[素材ID付き記録](../japanese-curriculum-review.json)・[今回のデータ確認](curriculum-audit.json)。
+
+## 学年別の公式細目との照合（v0.77.0）
+
+同学年のコースに出る素材を対応付け、不足を26素材／26問補強。81細目と23活動例は編集上の数え方で、実技能や全用例の完了率ではない。[対応表](../japanese-official-items.md)。作問元は `official-gap-additions.tsv`、再生成は `scripts/japanese-official-review.py`。既存IDは維持。小学漢字の実書は保留し、中学字種の読み・書き選択と分ける。

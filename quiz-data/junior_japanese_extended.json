@@ -12629,6 +12629,578 @@
     ]
   },
   {
+    "id": "jr_jp_core_920d32e81737",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の種類",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "『竹取物語』のような作り話を中心とする古典は？",
+    "answer": "物語",
+    "dummies": [
+      "日記",
+      "随筆",
+      "紀行"
+    ],
+    "note": "物語は人物や出来事を組み立てて語る作品。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-K3-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b16b04d677a6",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の種類",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "旅先の見聞や感想をつづる古典の種類は？",
+    "answer": "紀行",
+    "dummies": [
+      "説話",
+      "和歌",
+      "軍記物語"
+    ],
+    "note": "紀行は旅の行程や体験、感想などを記す。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-K3-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_5caec383cbad",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "話し言葉と書き言葉",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "書面で「あれをそこへ」と伝える際の改善は？",
+    "answer": "物と場所を具体的に書く",
+    "dummies": [
+      "声を大きくする",
+      "身振りを添える",
+      "相手の視線を追う"
+    ],
+    "note": "書面では身振りやその場の状況に頼りにくい。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-K1-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_0f89e7fdfb06",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "話し言葉と書き言葉",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "話し言葉で、相手の理解に合わせてできるのは？",
+    "answer": "反応を見て言い換える",
+    "dummies": [
+      "必ず漢字に直す",
+      "段落番号を書き足す",
+      "注釈欄を印刷する"
+    ],
+    "note": "話し言葉は相手の反応をその場で確かめやすい。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-K1-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b54728992126",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "敬語",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "先生の行動を高める言い方は？",
+    "answer": "先生がご覧になる",
+    "dummies": [
+      "先生が拝見する",
+      "先生が申し上げる",
+      "先生が伺う"
+    ],
+    "note": "尊敬語は相手側の動作などを高めて表す。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-K1-f"
+    ]
+  },
+  {
+    "id": "jr_jp_core_7f79e593f965",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "敬語",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "自分が先生に本を借りるときの言い方は？",
+    "answer": "本をお借りします",
+    "dummies": [
+      "本をお貸しします",
+      "本をお借りになります",
+      "本をお貸しになります"
+    ],
+    "note": "自分側の動作をへりくだり、相手への敬意を表す。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-K1-f"
+    ]
+  },
+  {
+    "id": "jr_jp_core_f0a27f739709",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "校則の改定案を話す前に集めたい意見は？",
+    "answer": "立場の異なる人の賛否",
+    "dummies": [
+      "同じ意見の友人の賛成だけ",
+      "自分の予想と合う感想だけ",
+      "結論を知らない人の人数だけ"
+    ],
+    "note": "異なる立場を想定し、根拠や懸念も検討する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g3-A1-a"
+    ]
+  },
+  {
+    "id": "jr_jp_core_28c4399f528b",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "説明中、聞き手が首をかしげたら？",
+    "answer": "難しい語を具体例で補う",
+    "dummies": [
+      "同じ速さで先へ進む",
+      "要点を取り消す",
+      "根拠を全て省く"
+    ],
+    "note": "聞き手の反応から、補足の必要性を判断する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-A1-c"
+    ]
+  },
+  {
+    "id": "jr_jp_core_6fc158b07cbd",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "二人の意見を聞き、自分の考えをまとめるには？",
+    "answer": "共通点と相違点を整理する",
+    "dummies": [
+      "長く話した方を選ぶ",
+      "先に聞いた意見を消す",
+      "声の高さで判断する"
+    ],
+    "note": "記録を基に比べ、自分の考えとの関係を考える。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-A1-d"
+    ]
+  },
+  {
+    "id": "jr_jp_core_61bcf8e14947",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "話し合いで、関連する発言をつなぐ言い方は？",
+    "answer": "今の案に、先ほどの案を加えると",
+    "dummies": [
+      "別の話を始めます",
+      "先ほどの意見は聞いていません",
+      "関係なく私の話をします"
+    ],
+    "note": "話題や展開を捉え、発言同士の関係を示す。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-A1-e"
+    ]
+  },
+  {
+    "id": "jr_jp_core_e736314293c4",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "意見文で理由を述べる段落の役割は？",
+    "answer": "主張を支える根拠を示す",
+    "dummies": [
+      "主張と無関係な話を足す",
+      "結論を全て取り消す",
+      "出典だけを並べる"
+    ],
+    "note": "段落の役割を考え、中心を明確に構成する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-B1-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_0822ac028a58",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "「主張の根拠が不明」と助言されたら？",
+    "answer": "主張を支える事実を補う",
+    "dummies": [
+      "文字の大きさだけ変える",
+      "結論を何度も繰り返す",
+      "理由を全て削る"
+    ],
+    "note": "どの根拠がどの主張を支えるか明確にする。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-B1-e"
+    ]
+  },
+  {
+    "id": "jr_jp_core_3f2bb02bbdbe",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "「静かだ。静かだ」と反復する効果は？",
+    "answer": "静けさを印象付ける",
+    "dummies": [
+      "時間の逆転を示す",
+      "相反する意見を示す",
+      "事実の出典を示す"
+    ],
+    "note": "同じ表現の繰り返しが何を強調するか考える。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-C1-d"
+    ]
+  },
+  {
+    "id": "jr_jp_core_4d829f64c7d5",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明的文章",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "筆者の提案に自分の意見を書くときは？",
+    "answer": "提案を踏まえ理由を示す",
+    "dummies": [
+      "本文と無関係な好みだけ書く",
+      "題名だけを写す",
+      "賛否だけを繰り返す"
+    ],
+    "note": "本文の理解を基に、自分の考えを確かにする。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-C1-e"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b680ec03ffd7",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "提案を筋道立てて話すために整えるのは？",
+    "answer": "提案と根拠のつながり",
+    "dummies": [
+      "挨拶の長さだけ",
+      "資料の色数だけ",
+      "話す人の順番だけ"
+    ],
+    "note": "主張と根拠の関係が伝わる構成にする。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-A1-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b39f0f69850a",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "自分と異なる提案を聞いて考えを深めるには？",
+    "answer": "根拠を自分の考えと比べる",
+    "dummies": [
+      "違う結論なら聞くのをやめる",
+      "発言者の人気だけ比べる",
+      "初めの考えを必ず守る"
+    ],
+    "note": "論理の展開に注意し、自分の考えと比較する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-A1-d"
+    ]
+  },
+  {
+    "id": "jr_jp_core_51b59ba0ac93",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "地域の課題を多角的に調べる方法は？",
+    "answer": "資料調査と聞き取りを組み合わす",
+    "dummies": [
+      "一人の感想だけ集める",
+      "結論に合う資料だけ残す",
+      "出典不明の数字だけ集める"
+    ],
+    "note": "複数の方法で材料を集め、情報を整理する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-B1-a"
+    ]
+  },
+  {
+    "id": "jr_jp_core_9a3663fc9911",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "文学的文章",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "人物の行動を理解するため確かめる設定は？",
+    "answer": "時代や境遇、人物関係",
+    "dummies": [
+      "本の値段と判型だけ",
+      "作者名の文字数だけ",
+      "章番号の偶数奇数だけ"
+    ],
+    "note": "人物が置かれた状況と行動の関係を捉える。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-C1-a"
+    ]
+  },
+  {
+    "id": "jr_jp_core_2286667b42ac",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "説明的文章",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "二つの意見文の説得力を比較するには？",
+    "answer": "同じ観点で根拠を比べる",
+    "dummies": [
+      "字数の多い方を選ぶ",
+      "先に読んだ方を選ぶ",
+      "題名の好みだけで決める"
+    ],
+    "note": "根拠の適切さなど、観点をそろえて評価する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-C1-d"
+    ]
+  },
+  {
+    "id": "jr_jp_core_64a6a3c722d4",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "古文文法",
+    "unit": "古典の読み方",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "古文の朗読で間の取り方を決めるには？",
+    "answer": "意味の切れ目や場面を捉える",
+    "dummies": [
+      "仮名五文字ごとに止める",
+      "句読点を全て無視する",
+      "漢字の前で必ず止める"
+    ],
+    "note": "内容や作品の特徴を生かして朗読する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-K3-a"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8b5f11bd3ab1",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "話す・聞く・話し合い",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "「この案には二つの根拠がある」と聞いたら？",
+    "answer": "続く根拠と主張の関係を追う",
+    "dummies": [
+      "結論が変わると決め付ける",
+      "根拠を聞く必要はないと考える",
+      "二人の意見だと決め付ける"
+    ],
+    "note": "展開を予測しながら聞き、内容や表現を評価する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g3-A1-d"
+    ]
+  },
+  {
+    "id": "jr_jp_core_1f53a72e2650",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "異なる立場の読者に提案する文章で必要なのは？",
+    "answer": "予想される懸念にも根拠を示す",
+    "dummies": [
+      "賛成する人だけに通じる略語",
+      "反対意見への人格批判",
+      "結論を隠したまま終える構成"
+    ],
+    "note": "読み手を想定し、文章の形態や構成を工夫する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g3-B1-b"
+    ]
+  },
+  {
+    "id": "jr_jp_core_cede72a80bed",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "「根拠から結論が飛躍する」と助言されたら？",
+    "answer": "結論に至る論理を確かめる",
+    "dummies": [
+      "同じ結論を太字にする",
+      "根拠の出典だけ隠す",
+      "段落の数だけ増やす"
+    ],
+    "note": "推論の飛躍や、根拠の不足を見直す。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g3-B1-e"
+    ]
+  },
+  {
+    "id": "jr_jp_core_b069cc055c61",
+    "school_level": "中学",
+    "grade": "中3",
+    "subject": "国語",
+    "field": "現代文文法",
+    "unit": "文章の種類",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "自分の見聞や感想を自由な筆致で記す文章は？",
+    "answer": "随筆",
+    "dummies": [
+      "報道記事",
+      "取扱説明書",
+      "議事録"
+    ],
+    "note": "随筆は見聞や感想などを自由な形でつづる。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g3-K1-c"
+    ]
+  },
+  {
+    "id": "jr_jp_core_8f4c67f0b8f2",
+    "school_level": "中学",
+    "grade": "中1",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "体験を随筆に書くとき大切なのは？",
+    "answer": "印象的な出来事と自分の思い",
+    "dummies": [
+      "全員の意見を同数ずつ並べる",
+      "操作手順だけを正確に並べる",
+      "会議の発言を全て記録する"
+    ],
+    "note": "自分らしい感じ方が伝わる題材や描写を選ぶ。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g1-B2-c"
+    ]
+  },
+  {
+    "id": "jr_jp_core_6ca4fe00532c",
+    "school_level": "中学",
+    "grade": "中2",
+    "subject": "国語",
+    "field": "読解",
+    "unit": "書く",
+    "kind": "choice",
+    "content_batch": "japanese-official-gaps-20261108",
+    "prompt": "物語を創作するときに整える組み合わせは？",
+    "answer": "人物の設定と出来事の展開",
+    "dummies": [
+      "参考文献の発行順だけ",
+      "説明書の注意番号だけ",
+      "新聞の発行部数だけ"
+    ],
+    "note": "人物や設定と展開がかみ合うように工夫する。",
+    "task": "適切なものを選ぼう",
+    "official_items": [
+      "g2-B2-c"
+    ]
+  },
+  {
     "id": "jr_jp_write_660e",
     "school_level": "小学",
     "grade": "小2",

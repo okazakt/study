@@ -55,6 +55,13 @@ for i,(grade,term,definition,note) in enumerate(new_idioms):
  q.update(term=term,definition=definition,term_dummies=[r[1] for r in others],definition_dummies=[r[2] for r in others],note=note,curriculum_topics=['idioms'],content_batch='japanese-curriculum-20261108')
  bank.append(q)
 
+for n,r in rows('official-gap-additions.tsv'):
+ assert len(r)==10,(n,r)
+ refs,grade,field,unit,prompt,answer,a,b,c,note=r
+ q=base('choice',grade,field,unit,prompt)
+ q.update(prompt=prompt,answer=answer,dummies=[a,b,c],note=note,task='適切なものを選ぼう',official_items=refs.split(';'),content_batch='japanese-official-gaps-20261108')
+ bank.append(q)
+
 print('Japanese core additions:',len(bank),'materials')
 
 kanji=[]
