@@ -1,0 +1,51 @@
+{
+  "version": "0.79.0",
+  "date": "2026-11-08",
+  "batch": "social-foundation-20261108",
+  "newMaterials": 220,
+  "newGeneratedQuestions": 408,
+  "pairedTermMaterials": 188,
+  "choiceMaterials": 32,
+  "previousMaterials": 70,
+  "previousGeneratedQuestions": 84,
+  "totalMaterials": 290,
+  "totalGeneratedQuestions": 492,
+  "fields": {
+    "地理": {
+      "materials": 96,
+      "generated": 156
+    },
+    "歴史": {
+      "materials": 102,
+      "generated": 166
+    },
+    "公民": {
+      "materials": 92,
+      "generated": 170
+    }
+  },
+  "originalSocialContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "originalHistoryIdsPreserved": true,
+  "budget": {
+    "materials": 220,
+    "presentations": 408,
+    "maxima": {
+      "task": 24,
+      "prompt": 31,
+      "choice": 16,
+      "targetLabel": 21,
+      "note": 26,
+      "combined": 87
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "reviewedBoundaryExamples": 6,
+  "reviewedBoundaryDisplays": 24,
+  "layoutReview": "layout-review.json",
+  "officialBlocks": 22,
+  "completion": "In progress; representative knowledge points, not full curriculum coverage.",
+  "checks": "Changed JSON/IDs/required fields/choices/literal theme hints/text budget; only six boundary layouts in Chromium; no full app tests, exhaustive browser loop or five-minute simulation.",
+  "editorialReview": "Same-field term pools and separately authored blank distractors. Context/grammar/factual dates reviewed. North/south latitude prompts retain enough context; treaty definitions shortened with dates and detail in notes; topical economic distractors used rather than unrelated geography options."
+}

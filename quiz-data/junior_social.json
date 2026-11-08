@@ -412,5 +412,7133 @@
     "note": "教育の義務は、保護する子に普通教育を受けさせる義務。子ども自身に課された義務と混同しない。",
     "cloze_context": "国民の三大義務",
     "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
+  },
+  {
+    "id": "jr_social_863882a9554d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球と地図",
+    "term": "赤道",
+    "term_dummies": [
+      "本初子午線",
+      "北緯",
+      "南緯"
+    ],
+    "explanation_template": "緯度{{1}}度の基準となる線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "0",
+        "dummies": [
+          "30",
+          "90",
+          "180"
+        ]
+      }
+    ],
+    "note": "北緯と南緯を分ける。",
+    "cloze_context": "赤道",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d12fae7fc0d2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球と地図",
+    "term": "本初子午線",
+    "term_dummies": [
+      "赤道",
+      "北緯",
+      "南緯"
+    ],
+    "explanation_template": "経度{{1}}度の基準となる線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "0",
+        "dummies": [
+          "90",
+          "180",
+          "360"
+        ]
+      }
+    ],
+    "note": "イギリスの旧グリニッジ天文台を通る。",
+    "cloze_context": "本初子午線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_483cf57a2c5d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球と地図",
+    "term": "北緯",
+    "term_dummies": [
+      "赤道",
+      "本初子午線",
+      "南緯"
+    ],
+    "explanation_template": "赤道より北側の{{1}}〜90度の緯度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "0度",
+        "dummies": [
+          "30度",
+          "60度",
+          "180度"
+        ]
+      }
+    ],
+    "note": "北極点は北緯90度。",
+    "cloze_context": "北緯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ee03921aba65",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球と地図",
+    "term": "南緯",
+    "term_dummies": [
+      "赤道",
+      "本初子午線",
+      "北緯"
+    ],
+    "explanation_template": "赤道より南側の{{1}}〜90度の緯度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "0度",
+        "dummies": [
+          "30度",
+          "60度",
+          "180度"
+        ]
+      }
+    ],
+    "note": "南極点は南緯90度。",
+    "cloze_context": "南緯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b7a441376dae",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地図の読み方",
+    "term": "縮尺",
+    "term_dummies": [
+      "等高線",
+      "メルカトル図法",
+      "正距方位図法"
+    ],
+    "explanation_template": "地図上の長さが実際の{{1}}かを示す比率。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "何分の一",
+        "dummies": [
+          "何倍",
+          "何度",
+          "何年"
+        ]
+      }
+    ],
+    "note": "距離の単位をそろえて計算する。",
+    "cloze_context": "縮尺",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_81279fd367f2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地図の読み方",
+    "term": "等高線",
+    "term_dummies": [
+      "縮尺",
+      "メルカトル図法",
+      "正距方位図法"
+    ],
+    "explanation_template": "地図で{{1}}の等しい地点を結んだ線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "標高",
+        "dummies": [
+          "人口",
+          "気温",
+          "降水量"
+        ]
+      }
+    ],
+    "note": "間隔が狭いほど斜面が急。",
+    "cloze_context": "等高線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2f2159add4e9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地図の読み方",
+    "term": "メルカトル図法",
+    "term_dummies": [
+      "縮尺",
+      "等高線",
+      "正距方位図法"
+    ],
+    "explanation_template": "経線と緯線が{{1}}に交わる円筒図法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "直角",
+        "dummies": [
+          "平行",
+          "鋭角",
+          "曲線状"
+        ]
+      }
+    ],
+    "note": "角度は正しいが、高緯度ほど面積が拡大する。",
+    "cloze_context": "メルカトル図法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_45055c344511",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地図の読み方",
+    "term": "正距方位図法",
+    "term_dummies": [
+      "縮尺",
+      "等高線",
+      "メルカトル図法"
+    ],
+    "explanation_template": "図の{{1}}からの距離と方位が正しい図法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中心",
+        "dummies": [
+          "北端",
+          "赤道上の全地点",
+          "全ての地点"
+        ]
+      }
+    ],
+    "note": "中心以外の地点間では距離や方位が正しいとは限らない。",
+    "cloze_context": "正距方位図法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_9340ca4efb0a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "熱帯",
+    "term_dummies": [
+      "乾燥帯",
+      "温帯",
+      "冷帯"
+    ],
+    "explanation_template": "年間を通して気温が{{1}}気候帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "高い",
+        "dummies": [
+          "氷点下の",
+          "急低下する",
+          "ほぼ零度の"
+        ]
+      }
+    ],
+    "note": "赤道付近に広がる。",
+    "cloze_context": "熱帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_062ee16349ce",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "乾燥帯",
+    "term_dummies": [
+      "熱帯",
+      "温帯",
+      "冷帯"
+    ],
+    "explanation_template": "降水が{{1}}、樹木が育ちにくい気候帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "少なく",
+        "dummies": [
+          "多く",
+          "毎日あり",
+          "一年中雪で"
+        ]
+      }
+    ],
+    "note": "砂漠や草原が広がる。",
+    "cloze_context": "乾燥帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_34daed1c2777",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "温帯",
+    "term_dummies": [
+      "熱帯",
+      "乾燥帯",
+      "冷帯"
+    ],
+    "explanation_template": "最寒月の平均気温が約{{1}}未満の気候帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "−3℃以上18℃",
+        "dummies": [
+          "18℃以上30℃",
+          "−20℃以上−3℃",
+          "30℃以上40℃"
+        ]
+      }
+    ],
+    "note": "学校地理で用いる区分。比較的温暖で季節変化がある。",
+    "cloze_context": "温帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2cada942b464",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "冷帯",
+    "term_dummies": [
+      "熱帯",
+      "乾燥帯",
+      "温帯"
+    ],
+    "explanation_template": "北半球の高緯度に広がり、冬の寒さが{{1}}気候帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "厳しい",
+        "dummies": [
+          "ない",
+          "一年中弱い",
+          "常に夏より弱い"
+        ]
+      }
+    ],
+    "note": "亜寒帯とも呼び、針葉樹林が広がる。",
+    "cloze_context": "冷帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ba36fd8c0485",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の自然と生活",
+    "term": "ツンドラ",
+    "term_dummies": [
+      "タイガ",
+      "オアシス",
+      "サバナ"
+    ],
+    "explanation_template": "{{1}}帯の一部で、夏にコケ類などが育つ地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "寒",
+        "dummies": [
+          "熱",
+          "温",
+          "乾燥"
+        ]
+      }
+    ],
+    "note": "樹木が育ちにくく、永久凍土が見られる。",
+    "cloze_context": "ツンドラ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6f5b54a2326f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の自然と生活",
+    "term": "タイガ",
+    "term_dummies": [
+      "ツンドラ",
+      "オアシス",
+      "サバナ"
+    ],
+    "explanation_template": "冷帯に広がる広大な{{1}}林。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "針葉樹",
+        "dummies": [
+          "熱帯雨",
+          "照葉樹",
+          "マングローブ"
+        ]
+      }
+    ],
+    "note": "シベリアやカナダなどに見られる。",
+    "cloze_context": "タイガ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2faa88b763c0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の自然と生活",
+    "term": "オアシス",
+    "term_dummies": [
+      "ツンドラ",
+      "タイガ",
+      "サバナ"
+    ],
+    "explanation_template": "乾燥地域で{{1}}を得られる場所。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "水",
+        "dummies": [
+          "石炭だけ",
+          "氷河だけ",
+          "海流"
+        ]
+      }
+    ],
+    "note": "地下水などを利用して生活や農業が営まれる。",
+    "cloze_context": "オアシス",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6a4baabee44a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の自然と生活",
+    "term": "サバナ",
+    "term_dummies": [
+      "ツンドラ",
+      "タイガ",
+      "オアシス"
+    ],
+    "explanation_template": "熱帯のうち{{1}}と乾季がある地域の草原。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "雨季",
+        "dummies": [
+          "冬季",
+          "梅雨だけ",
+          "極夜"
+        ]
+      }
+    ],
+    "note": "雨季と乾季に対応した生活が見られる。",
+    "cloze_context": "サバナ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_12a3653f552f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "term": "季節風",
+    "term_dummies": [
+      "稲作",
+      "人口密度",
+      "工業化"
+    ],
+    "explanation_template": "季節によって{{1}}が変わる風。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "風向",
+        "dummies": [
+          "経度",
+          "自転方向",
+          "地軸の傾き"
+        ]
+      }
+    ],
+    "note": "モンスーンとも呼び、アジアの降水に影響する。",
+    "cloze_context": "季節風",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1ddb289b06bc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "term": "稲作",
+    "term_dummies": [
+      "季節風",
+      "人口密度",
+      "工業化"
+    ],
+    "explanation_template": "多くの地域で水田を利用する{{1}}の栽培。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "米",
+        "dummies": [
+          "小麦",
+          "綿花",
+          "コーヒー"
+        ]
+      }
+    ],
+    "note": "温暖で水を得やすいアジアの地域で盛ん。",
+    "cloze_context": "稲作",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d929fb59761e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "term": "人口密度",
+    "term_dummies": [
+      "季節風",
+      "稲作",
+      "工業化"
+    ],
+    "explanation_template": "単位{{1}}当たりの人口。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "面積",
+        "dummies": [
+          "時間",
+          "世帯",
+          "年齢"
+        ]
+      }
+    ],
+    "note": "総人口を面積で割る。",
+    "cloze_context": "人口密度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_be4cc06e8d51",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "term": "工業化",
+    "term_dummies": [
+      "季節風",
+      "稲作",
+      "人口密度"
+    ],
+    "explanation_template": "経済の中で{{1}}の比重が高まる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "工業",
+        "dummies": [
+          "農業だけ",
+          "林業だけ",
+          "漁業だけ"
+        ]
+      }
+    ],
+    "note": "都市への人口移動や環境問題とも関わる。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d383ec2fc722",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "term": "ヨーロッパ連合",
+    "term_dummies": [
+      "ユーロ",
+      "国際分業",
+      "再生可能エネルギー"
+    ],
+    "explanation_template": "加盟国間で経済などの{{1}}を進める組織。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "統合",
+        "dummies": [
+          "鎖国",
+          "植民地化",
+          "軍事併合"
+        ]
+      }
+    ],
+    "note": "EU。加盟国全てが共通通貨を使うわけではない。",
+    "cloze_context": "ヨーロッパ連合",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ba204d15e016",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "term": "ユーロ",
+    "term_dummies": [
+      "ヨーロッパ連合",
+      "国際分業",
+      "再生可能エネルギー"
+    ],
+    "explanation_template": "EUの一部加盟国などで使う共通{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "通貨",
+        "dummies": [
+          "言語",
+          "宗教",
+          "暦"
+        ]
+      }
+    ],
+    "note": "EU加盟とユーロ導入は同じではない。",
+    "cloze_context": "ユーロ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2642137761a6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "term": "国際分業",
+    "term_dummies": [
+      "ヨーロッパ連合",
+      "ユーロ",
+      "再生可能エネルギー"
+    ],
+    "explanation_template": "国境を越えて生産の{{1}}を分担すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "工程など",
+        "dummies": [
+          "人口だけ",
+          "季節だけ",
+          "緯度だけ"
+        ]
+      }
+    ],
+    "note": "複数国で部品や製品を分けて生産する例がある。",
+    "cloze_context": "国際分業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_36599e81d1d5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "term": "再生可能エネルギー",
+    "term_dummies": [
+      "ヨーロッパ連合",
+      "ユーロ",
+      "国際分業"
+    ],
+    "explanation_template": "自然の働きで{{1}}資源によるエネルギー。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "繰り返し得られる",
+        "dummies": [
+          "一度で失われる",
+          "使うほど枯渇する",
+          "化石化した"
+        ]
+      }
+    ],
+    "note": "石油・石炭などの化石燃料と区別する。",
+    "cloze_context": "再生可能エネルギー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1da1c68b584a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "プランテーション",
+    "term_dummies": [
+      "モノカルチャー経済",
+      "フェアトレード",
+      "砂漠化"
+    ],
+    "explanation_template": "輸出向け作物を栽培する{{1}}農園。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大規模な",
+        "dummies": [
+          "自給用だけの",
+          "移動式の",
+          "家庭内の"
+        ]
+      }
+    ],
+    "note": "植民地時代に広がったものも多い。",
+    "cloze_context": "プランテーション",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b653144e5225",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "モノカルチャー経済",
+    "term_dummies": [
+      "プランテーション",
+      "フェアトレード",
+      "砂漠化"
+    ],
+    "explanation_template": "少数の一次産品の{{1}}に依存する経済。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "輸出",
+        "dummies": [
+          "輸入",
+          "消費税",
+          "国債"
+        ]
+      }
+    ],
+    "note": "国際価格の変動に影響されやすい。",
+    "cloze_context": "モノカルチャー経済",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_45241b6c3a87",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "フェアトレード",
+    "term_dummies": [
+      "プランテーション",
+      "モノカルチャー経済",
+      "砂漠化"
+    ],
+    "explanation_template": "適正な価格で取引し、{{1}}の生活を支える仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生産者",
+        "dummies": [
+          "植民地支配者",
+          "投機家だけ",
+          "密輸業者"
+        ]
+      }
+    ],
+    "note": "公正な貿易とも呼ぶ。",
+    "cloze_context": "フェアトレード",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_aab365f80662",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "砂漠化",
+    "term_dummies": [
+      "プランテーション",
+      "モノカルチャー経済",
+      "フェアトレード"
+    ],
+    "explanation_template": "乾燥地域などで土地が{{1}}する現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "劣化",
+        "dummies": [
+          "必ず森林化",
+          "海洋化",
+          "氷河化"
+        ]
+      }
+    ],
+    "note": "干ばつや過放牧など、自然・人為の両要因がある。",
+    "cloze_context": "砂漠化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_3ff9d09a83ee",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "プレーリー",
+    "term_dummies": [
+      "適地適作",
+      "穀物メジャー",
+      "アグリビジネス"
+    ],
+    "explanation_template": "北アメリカ中央部に広がる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "草原",
+        "dummies": [
+          "熱帯雨林",
+          "砂漠海岸",
+          "火山島"
+        ]
+      }
+    ],
+    "note": "小麦などの大規模な農業が行われる。",
+    "cloze_context": "プレーリー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a24d79fad276",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "適地適作",
+    "term_dummies": [
+      "プレーリー",
+      "穀物メジャー",
+      "アグリビジネス"
+    ],
+    "explanation_template": "自然条件などに{{1}}作物を栽培すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "適した",
+        "dummies": [
+          "必ず反する",
+          "左右されない",
+          "無関係な"
+        ]
+      }
+    ],
+    "note": "気候・土壌だけでなく市場なども関わる。",
+    "cloze_context": "適地適作",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_994058cae28c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "穀物メジャー",
+    "term_dummies": [
+      "プレーリー",
+      "適地適作",
+      "アグリビジネス"
+    ],
+    "explanation_template": "穀物の流通や貿易を担う{{1}}企業。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "巨大な",
+        "dummies": [
+          "家内制の",
+          "公営だけの",
+          "地域内だけの"
+        ]
+      }
+    ],
+    "note": "世界の穀物取引に大きな影響をもつ。",
+    "cloze_context": "穀物メジャー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_210898198bfa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "アグリビジネス",
+    "term_dummies": [
+      "プレーリー",
+      "適地適作",
+      "穀物メジャー"
+    ],
+    "explanation_template": "農業と関連する生産・加工・流通などの{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "産業",
+        "dummies": [
+          "身分制度",
+          "通貨",
+          "地形"
+        ]
+      }
+    ],
+    "note": "農業の企業化や大規模化とも関わる。",
+    "cloze_context": "アグリビジネス",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e9d061ee9198",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ・オセアニア州",
+    "term": "パンパ",
+    "term_dummies": [
+      "セルバ",
+      "焼畑農業",
+      "多文化社会"
+    ],
+    "explanation_template": "アルゼンチンなどに広がる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "草原",
+        "dummies": [
+          "砂漠",
+          "氷床",
+          "針葉樹林"
+        ]
+      }
+    ],
+    "note": "小麦栽培や牧畜が盛ん。",
+    "cloze_context": "パンパ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_3be7a8162e89",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ・オセアニア州",
+    "term": "セルバ",
+    "term_dummies": [
+      "パンパ",
+      "焼畑農業",
+      "多文化社会"
+    ],
+    "explanation_template": "アマゾン川流域に広がる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱帯雨林",
+        "dummies": [
+          "針葉樹林",
+          "氷床",
+          "砂漠"
+        ]
+      }
+    ],
+    "note": "開発と森林保全の両立が課題。",
+    "cloze_context": "セルバ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2af09182e4fd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ・オセアニア州",
+    "term": "焼畑農業",
+    "term_dummies": [
+      "パンパ",
+      "セルバ",
+      "多文化社会"
+    ],
+    "explanation_template": "草木を焼き、その{{1}}を利用して栽培する農業。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "灰",
+        "dummies": [
+          "潮流",
+          "氷",
+          "金属"
+        ]
+      }
+    ],
+    "note": "休耕による地力回復を伴う伝統的な形もある。",
+    "cloze_context": "焼畑農業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d91b22b88bf9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ・オセアニア州",
+    "term": "多文化社会",
+    "term_dummies": [
+      "パンパ",
+      "セルバ",
+      "焼畑農業"
+    ],
+    "explanation_template": "異なる文化的背景をもつ人々が{{1}}社会。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "共に暮らす",
+        "dummies": [
+          "全て離れて暮らす",
+          "他文化を禁じる",
+          "一言語だけにする"
+        ]
+      }
+    ],
+    "note": "オーストラリアなどで移民と共生が課題となる。",
+    "cloze_context": "多文化社会",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_766b5b61f7e2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地形",
+    "term": "リアス海岸",
+    "term_dummies": [
+      "扇状地",
+      "三角州",
+      "カルデラ"
+    ],
+    "explanation_template": "山地の谷が沈水し、入り組んだ{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "海岸",
+        "dummies": [
+          "火口",
+          "砂丘",
+          "扇状地"
+        ]
+      }
+    ],
+    "note": "三陸海岸などに見られる。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7f39775f78c2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地形",
+    "term": "扇状地",
+    "term_dummies": [
+      "リアス海岸",
+      "三角州",
+      "カルデラ"
+    ],
+    "explanation_template": "川が山地から平地に出る所にできる{{1}}形の地形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "扇",
+        "dummies": [
+          "帯",
+          "環",
+          "三日月"
+        ]
+      }
+    ],
+    "note": "砂やれきがたまり、水はけがよいことが多い。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d9cdaca30b63",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地形",
+    "term": "三角州",
+    "term_dummies": [
+      "リアス海岸",
+      "扇状地",
+      "カルデラ"
+    ],
+    "explanation_template": "川の{{1}}付近に土砂が堆積してできる地形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "河口",
+        "dummies": [
+          "源流",
+          "滝",
+          "分水界"
+        ]
+      }
+    ],
+    "note": "低く平らで、水田などに利用される。",
+    "cloze_context": "三角州",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2e122b64a757",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地形",
+    "term": "カルデラ",
+    "term_dummies": [
+      "リアス海岸",
+      "扇状地",
+      "三角州"
+    ],
+    "explanation_template": "火山活動でできる大きなくぼみ状の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地形",
+        "dummies": [
+          "海流",
+          "季節風",
+          "地図記号"
+        ]
+      }
+    ],
+    "note": "阿蘇などに見られる。",
+    "cloze_context": "カルデラ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4842078651c4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の気候",
+    "term": "太平洋側の気候",
+    "term_dummies": [
+      "日本海側の気候",
+      "瀬戸内の気候",
+      "内陸の気候"
+    ],
+    "explanation_template": "季節風などの影響で{{1}}に雨が多い傾向の気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "夏",
+        "dummies": [
+          "冬だけ",
+          "秋だけ",
+          "一年中雪の季節"
+        ]
+      }
+    ],
+    "note": "冬は晴れる日が多い地域が多い。",
+    "cloze_context": "太平洋側の気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_52c54d564e66",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の気候",
+    "term": "日本海側の気候",
+    "term_dummies": [
+      "太平洋側の気候",
+      "瀬戸内の気候",
+      "内陸の気候"
+    ],
+    "explanation_template": "冬の季節風で{{1}}が多くなる気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "雪や雨",
+        "dummies": [
+          "砂嵐",
+          "日照だけ",
+          "干ばつ"
+        ]
+      }
+    ],
+    "note": "日本海からの水蒸気と山地が降雪に関わる。",
+    "cloze_context": "日本海側の気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2b9ac2af88bb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の気候",
+    "term": "瀬戸内の気候",
+    "term_dummies": [
+      "太平洋側の気候",
+      "日本海側の気候",
+      "内陸の気候"
+    ],
+    "explanation_template": "周囲の山地の影響で年間の降水量が比較的{{1}}気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "少ない",
+        "dummies": [
+          "多い",
+          "常に同じ",
+          "雪だけの"
+        ]
+      }
+    ],
+    "note": "水不足に備え、ため池などを利用してきた。",
+    "cloze_context": "瀬戸内の気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_833e7d772e2f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の気候",
+    "term": "内陸の気候",
+    "term_dummies": [
+      "太平洋側の気候",
+      "日本海側の気候",
+      "瀬戸内の気候"
+    ],
+    "explanation_template": "海の影響が小さく、気温の年較差が{{1}}傾向の気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大きい",
+        "dummies": [
+          "ない",
+          "常に零度の",
+          "小さいだけの"
+        ]
+      }
+    ],
+    "note": "中央高地などに見られる。",
+    "cloze_context": "内陸の気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e5dfff55e1e0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の農業",
+    "term": "促成栽培",
+    "term_dummies": [
+      "抑制栽培",
+      "近郊農業",
+      "施設園芸"
+    ],
+    "explanation_template": "温暖な気候などで出荷時期を{{1}}栽培。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "早める",
+        "dummies": [
+          "遅らせる",
+          "なくす",
+          "固定するだけの"
+        ]
+      }
+    ],
+    "note": "高知や宮崎の野菜栽培などが代表例。",
+    "cloze_context": "促成栽培",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_efc239870f3d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の農業",
+    "term": "抑制栽培",
+    "term_dummies": [
+      "促成栽培",
+      "近郊農業",
+      "施設園芸"
+    ],
+    "explanation_template": "冷涼な気候などで出荷時期を{{1}}栽培。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "遅らせる",
+        "dummies": [
+          "早める",
+          "なくす",
+          "固定するだけの"
+        ]
+      }
+    ],
+    "note": "長野などで夏の高原野菜を出荷する例がある。",
+    "cloze_context": "抑制栽培",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f53fa1200b65",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の農業",
+    "term": "近郊農業",
+    "term_dummies": [
+      "促成栽培",
+      "抑制栽培",
+      "施設園芸"
+    ],
+    "explanation_template": "大都市の{{1}}で野菜などを生産する農業。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "周辺",
+        "dummies": [
+          "遠い砂漠",
+          "外洋",
+          "寒帯だけ"
+        ]
+      }
+    ],
+    "note": "消費地までの距離の近さを生かす。",
+    "cloze_context": "近郊農業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_254acd27a961",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の農業",
+    "term": "施設園芸",
+    "term_dummies": [
+      "促成栽培",
+      "抑制栽培",
+      "近郊農業"
+    ],
+    "explanation_template": "温室などの{{1}}を使う野菜や花の栽培。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "施設",
+        "dummies": [
+          "漁船",
+          "坑道",
+          "油田"
+        ]
+      }
+    ],
+    "note": "促成・抑制栽培に利用されることもある。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f714c3537021",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の工業",
+    "term": "京浜工業地帯",
+    "term_dummies": [
+      "中京工業地帯",
+      "阪神工業地帯",
+      "瀬戸内工業地域"
+    ],
+    "explanation_template": "{{1}}や川崎、横浜を中心とする工業地帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "東京",
+        "dummies": [
+          "大阪",
+          "名古屋",
+          "広島"
+        ]
+      }
+    ],
+    "note": "印刷・情報関連など、多様な産業が集まる。",
+    "cloze_context": "京浜工業地帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_35641ffe533d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の工業",
+    "term": "中京工業地帯",
+    "term_dummies": [
+      "京浜工業地帯",
+      "阪神工業地帯",
+      "瀬戸内工業地域"
+    ],
+    "explanation_template": "愛知県などで{{1}}工業が盛んな工業地帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自動車",
+        "dummies": [
+          "造船だけの",
+          "製紙だけの",
+          "石炭採掘"
+        ]
+      }
+    ],
+    "note": "輸送用機械などの生産が盛ん。",
+    "cloze_context": "中京工業地帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c4be6af62b50",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の工業",
+    "term": "阪神工業地帯",
+    "term_dummies": [
+      "京浜工業地帯",
+      "中京工業地帯",
+      "瀬戸内工業地域"
+    ],
+    "explanation_template": "{{1}}や神戸などを中心とする工業地帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大阪",
+        "dummies": [
+          "東京",
+          "札幌",
+          "福岡"
+        ]
+      }
+    ],
+    "note": "機械・化学・金属などの工業が発達。",
+    "cloze_context": "阪神工業地帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a1105bfb8f8d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の工業",
+    "term": "瀬戸内工業地域",
+    "term_dummies": [
+      "京浜工業地帯",
+      "中京工業地帯",
+      "阪神工業地帯"
+    ],
+    "explanation_template": "海上交通を生かし、{{1}}に工場が立地する地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "臨海部",
+        "dummies": [
+          "山頂だけ",
+          "高原だけ",
+          "砂漠内"
+        ]
+      }
+    ],
+    "note": "石油化学・鉄鋼・造船などが発達。",
+    "cloze_context": "瀬戸内工業地域",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_bc74f1c392b4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域",
+    "term": "過疎",
+    "term_dummies": [
+      "過密",
+      "少子高齢化",
+      "人口ピラミッド"
+    ],
+    "explanation_template": "人口減少などで地域の{{1}}が難しくなる状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生活機能の維持",
+        "dummies": [
+          "緯度の維持",
+          "海流の観測",
+          "国境の変更"
+        ]
+      }
+    ],
+    "note": "交通・医療などの維持が課題になる。",
+    "cloze_context": "過疎",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_bcaf38257f1a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域",
+    "term": "過密",
+    "term_dummies": [
+      "過疎",
+      "少子高齢化",
+      "人口ピラミッド"
+    ],
+    "explanation_template": "人口や機能が集中し、{{1}}などが起こる状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "住宅不足",
+        "dummies": [
+          "必ず農地増加",
+          "必ず人口減少",
+          "必ず冷涼化"
+        ]
+      }
+    ],
+    "note": "交通混雑や住環境の悪化などが課題。",
+    "cloze_context": "過密",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_da497c762088",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域",
+    "term": "少子高齢化",
+    "term_dummies": [
+      "過疎",
+      "過密",
+      "人口ピラミッド"
+    ],
+    "explanation_template": "子どもの割合が減り、{{1}}の割合が高まる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "高齢者",
+        "dummies": [
+          "乳児",
+          "小学生",
+          "中学生"
+        ]
+      }
+    ],
+    "note": "医療・介護や社会保障の支え方に関わる。",
+    "cloze_context": "少子高齢化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_cdd93db76de0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域",
+    "term": "人口ピラミッド",
+    "term_dummies": [
+      "過疎",
+      "過密",
+      "少子高齢化"
+    ],
+    "explanation_template": "{{1}}・男女別の人口構成を示すグラフ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "年齢",
+        "dummies": [
+          "職業だけ",
+          "都道府県だけ",
+          "所得だけ"
+        ]
+      }
+    ],
+    "note": "底の幅などから人口構成の特徴を捉える。",
+    "cloze_context": "人口ピラミッド",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1362a57918c6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災",
+    "term": "ハザードマップ",
+    "term_dummies": [
+      "津波",
+      "高潮",
+      "液状化"
+    ],
+    "explanation_template": "災害の予測範囲や{{1}}などを示す地図。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "避難場所",
+        "dummies": [
+          "株価",
+          "為替相場",
+          "輸入関税"
+        ]
+      }
+    ],
+    "note": "災害の種類や作成年も確かめる。",
+    "cloze_context": "ハザードマップ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_0e4eda2333db",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災",
+    "term": "津波",
+    "term_dummies": [
+      "ハザードマップ",
+      "高潮",
+      "液状化"
+    ],
+    "explanation_template": "海底の地震などで生じる、波長の{{1}}波。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "長い",
+        "dummies": [
+          "極めて短い",
+          "常に一定で短い",
+          "風だけで決まる"
+        ]
+      }
+    ],
+    "note": "沿岸で高くなり、河川を遡ることもある。",
+    "cloze_context": "津波",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e9526c5989fb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災",
+    "term": "高潮",
+    "term_dummies": [
+      "ハザードマップ",
+      "津波",
+      "液状化"
+    ],
+    "explanation_template": "台風などの気圧低下や風で{{1}}が上がる現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "海面",
+        "dummies": [
+          "地盤だけ",
+          "山の標高",
+          "地下水温だけ"
+        ]
+      }
+    ],
+    "note": "津波とは発生の仕組みが違う。",
+    "cloze_context": "高潮",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_18f5feaa42ac",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災",
+    "term": "液状化",
+    "term_dummies": [
+      "ハザードマップ",
+      "津波",
+      "高潮"
+    ],
+    "explanation_template": "地震で水を多く含む砂地盤が{{1}}状態になる現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "液体のような",
+        "dummies": [
+          "岩石のように固い",
+          "永久凍土の",
+          "必ず乾燥した"
+        ]
+      }
+    ],
+    "note": "建物の沈下などが生じることがある。",
+    "cloze_context": "液状化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_563e2a596a3f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "世界の古代文明",
+    "term": "メソポタミア文明",
+    "term_dummies": [
+      "エジプト文明",
+      "インダス文明",
+      "中国文明"
+    ],
+    "explanation_template": "チグリス川・{{1}}川流域で発達した文明。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ユーフラテス",
+        "dummies": [
+          "ナイル",
+          "インダス",
+          "黄"
+        ]
+      }
+    ],
+    "note": "くさび形文字などが使われた。",
+    "cloze_context": "メソポタミア文明",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_84b00f4a38c3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "世界の古代文明",
+    "term": "エジプト文明",
+    "term_dummies": [
+      "メソポタミア文明",
+      "インダス文明",
+      "中国文明"
+    ],
+    "explanation_template": "{{1}}川流域で発達し、象形文字を使った文明。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ナイル",
+        "dummies": [
+          "インダス",
+          "黄",
+          "ユーフラテス"
+        ]
+      }
+    ],
+    "note": "ピラミッドなどが築かれた。",
+    "cloze_context": "エジプト文明",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_39dc1da52bda",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "世界の古代文明",
+    "term": "インダス文明",
+    "term_dummies": [
+      "メソポタミア文明",
+      "エジプト文明",
+      "中国文明"
+    ],
+    "explanation_template": "モヘンジョダロなどの{{1}}遺跡を残した文明。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "都市",
+        "dummies": [
+          "教会",
+          "工場",
+          "城下町"
+        ]
+      }
+    ],
+    "note": "インダス川流域などで発達した。",
+    "cloze_context": "インダス文明",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1cb466ef54da",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "世界の古代文明",
+    "term": "中国文明",
+    "term_dummies": [
+      "メソポタミア文明",
+      "エジプト文明",
+      "インダス文明"
+    ],
+    "explanation_template": "黄河流域などで発達し、{{1}}文字を残した文明。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "甲骨",
+        "dummies": [
+          "くさび形",
+          "アルファベット",
+          "ハングル"
+        ]
+      }
+    ],
+    "note": "長江流域にも古い文明があった。",
+    "cloze_context": "中国文明",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d3dda77c038f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "日本列島のあけぼの",
+    "term": "旧石器時代",
+    "term_dummies": [
+      "縄文時代",
+      "弥生時代",
+      "古墳時代"
+    ],
+    "explanation_template": "主に{{1}}石器を使い、狩りや採集をした時代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "打製",
+        "dummies": [
+          "磨製だけの",
+          "金属製だけの",
+          "蒸気式"
+        ]
+      }
+    ],
+    "note": "日本列島にはナウマンゾウなどがいた。",
+    "cloze_context": "旧石器時代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2aa73d15d716",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "日本列島のあけぼの",
+    "term": "縄文時代",
+    "term_dummies": [
+      "旧石器時代",
+      "弥生時代",
+      "古墳時代"
+    ],
+    "explanation_template": "縄文土器を使い、{{1}}などで食料を得た時代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "狩り・採集・漁",
+        "dummies": [
+          "機械工業",
+          "大型汽船",
+          "化学肥料だけ"
+        ]
+      }
+    ],
+    "note": "植物の栽培の跡なども見つかっている。",
+    "cloze_context": "縄文時代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_80c570412ba6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "日本列島のあけぼの",
+    "term": "弥生時代",
+    "term_dummies": [
+      "旧石器時代",
+      "縄文時代",
+      "古墳時代"
+    ],
+    "explanation_template": "水田での{{1}}が広まった時代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "稲作",
+        "dummies": [
+          "コーヒー栽培",
+          "綿工業",
+          "牧羊だけ"
+        ]
+      }
+    ],
+    "note": "青銅器や鉄器も広まった。",
+    "cloze_context": "弥生時代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_579d9d4dcc31",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "日本列島のあけぼの",
+    "term": "古墳時代",
+    "term_dummies": [
+      "旧石器時代",
+      "縄文時代",
+      "弥生時代"
+    ],
+    "explanation_template": "有力者の墓である{{1}}が各地に造られた時代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "古墳",
+        "dummies": [
+          "教会",
+          "城下町",
+          "官営工場"
+        ]
+      }
+    ],
+    "note": "前方後円墳などが築かれた。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_0b12f1d9272f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "飛鳥・奈良時代",
+    "term": "大化の改新",
+    "term_dummies": [
+      "大宝律令",
+      "班田収授法",
+      "墾田永年私財法"
+    ],
+    "explanation_template": "645年の政変に始まる、{{1}}中心の国づくりの改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "天皇",
+        "dummies": [
+          "将軍",
+          "大名",
+          "町人"
+        ]
+      }
+    ],
+    "note": "中大兄皇子や中臣鎌足らが中心となった。",
+    "cloze_context": "大化の改新",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6091a94ff38f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "飛鳥・奈良時代",
+    "term": "大宝律令",
+    "term_dummies": [
+      "大化の改新",
+      "班田収授法",
+      "墾田永年私財法"
+    ],
+    "explanation_template": "701年に定められた、{{1}}に基づく法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "律令制度",
+        "dummies": [
+          "幕藩体制",
+          "議院内閣制",
+          "荘園制だけ"
+        ]
+      }
+    ],
+    "note": "中央と地方の政治組織などを整えた。",
+    "cloze_context": "大宝律令",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_30e2c4202bee",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "飛鳥・奈良時代",
+    "term": "班田収授法",
+    "term_dummies": [
+      "大化の改新",
+      "大宝律令",
+      "墾田永年私財法"
+    ],
+    "explanation_template": "戸籍に基づき、一定条件の人々に{{1}}を与える制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "口分田",
+        "dummies": [
+          "株式",
+          "知行地だけ",
+          "俸禄だけ"
+        ]
+      }
+    ],
+    "note": "死後には返す仕組みだった。",
+    "cloze_context": "班田収授法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_578da2dba52d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "飛鳥・奈良時代",
+    "term": "墾田永年私財法",
+    "term_dummies": [
+      "大化の改新",
+      "大宝律令",
+      "班田収授法"
+    ],
+    "explanation_template": "743年、新しく開墾した土地の{{1}}を認めた法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "永久私有",
+        "dummies": [
+          "即時返還",
+          "全面公有",
+          "耕作禁止"
+        ]
+      }
+    ],
+    "note": "寺院や貴族などの荘園の拡大につながった。",
+    "cloze_context": "墾田永年私財法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_da0c7d4b44ca",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "平安時代",
+    "term": "摂関政治",
+    "term_dummies": [
+      "院政",
+      "遣唐使",
+      "国風文化"
+    ],
+    "explanation_template": "藤原氏などが摂政・関白として行った{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "政治",
+        "dummies": [
+          "海外貿易だけ",
+          "鉱山経営だけ",
+          "地方裁判だけ"
+        ]
+      }
+    ],
+    "note": "天皇家との婚姻関係を背景に力を強めた。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5b2bdfa6b588",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "平安時代",
+    "term": "院政",
+    "term_dummies": [
+      "摂関政治",
+      "遣唐使",
+      "国風文化"
+    ],
+    "explanation_template": "退位した{{1}}が行った政治。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "上皇",
+        "dummies": [
+          "将軍",
+          "大名",
+          "征夷大将軍"
+        ]
+      }
+    ],
+    "note": "白河上皇の時代から本格化した。",
+    "cloze_context": "院政",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4277d6e907d2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "平安時代",
+    "term": "遣唐使",
+    "term_dummies": [
+      "摂関政治",
+      "院政",
+      "国風文化"
+    ],
+    "explanation_template": "日本が{{1}}に送った使節。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "唐",
+        "dummies": [
+          "明",
+          "清",
+          "元"
+        ]
+      }
+    ],
+    "note": "中国の制度や文化を学んだ。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_97f2738b3f68",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "平安時代",
+    "term": "国風文化",
+    "term_dummies": [
+      "摂関政治",
+      "院政",
+      "遣唐使"
+    ],
+    "explanation_template": "平安期に{{1}}を用いる文学などが発達した文化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "かな文字",
+        "dummies": [
+          "甲骨文字",
+          "くさび形文字",
+          "アルファベット"
+        ]
+      }
+    ],
+    "note": "かな文字や和歌・物語文学などが発達した。",
+    "cloze_context": "国風文化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a1d825799d6d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "鎌倉時代",
+    "term": "御恩",
+    "term_dummies": [
+      "奉公",
+      "守護",
+      "地頭"
+    ],
+    "explanation_template": "将軍が御家人の{{1}}を保障・給与することなど。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "所領",
+        "dummies": [
+          "選挙権",
+          "株式",
+          "営業独占権"
+        ]
+      }
+    ],
+    "note": "奉公と結び付いた主従関係をつくる。",
+    "cloze_context": "御恩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e0208424fbb5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "鎌倉時代",
+    "term": "奉公",
+    "term_dummies": [
+      "御恩",
+      "守護",
+      "地頭"
+    ],
+    "explanation_template": "御家人が将軍のために{{1}}などを果たすこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "軍役",
+        "dummies": [
+          "納税だけ",
+          "投票だけ",
+          "貿易だけ"
+        ]
+      }
+    ],
+    "note": "御恩への見返りとして行われた。",
+    "cloze_context": "奉公",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a31cfd12c40b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "鎌倉時代",
+    "term": "守護",
+    "term_dummies": [
+      "御恩",
+      "奉公",
+      "地頭"
+    ],
+    "explanation_template": "鎌倉幕府が国ごとに置いた、{{1}}などを担う役職。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "軍事・警察",
+        "dummies": [
+          "戸籍作成だけ",
+          "貨幣鋳造だけ",
+          "外交交渉だけ"
+        ]
+      }
+    ],
+    "note": "室町時代には守護大名へ成長する者もいた。",
+    "cloze_context": "守護",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4bb35ff8010f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "鎌倉時代",
+    "term": "地頭",
+    "term_dummies": [
+      "御恩",
+      "奉公",
+      "守護"
+    ],
+    "explanation_template": "荘園や公領で{{1}}の徴収などを担った役職。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "年貢",
+        "dummies": [
+          "関税だけ",
+          "消費税",
+          "法人税"
+        ]
+      }
+    ],
+    "note": "鎌倉幕府によって置かれた。",
+    "cloze_context": "地頭",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_45571ebcfec9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "室町時代",
+    "term": "勘合貿易",
+    "term_dummies": [
+      "倭寇",
+      "惣",
+      "土一揆"
+    ],
+    "explanation_template": "合い札を用いた日本と{{1}}の正式な貿易。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "明",
+        "dummies": [
+          "唐",
+          "清",
+          "イギリス"
+        ]
+      }
+    ],
+    "note": "倭寇と正式な船を区別するため勘合を使った。",
+    "cloze_context": "勘合貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f70e77cb5077",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "室町時代",
+    "term": "倭寇",
+    "term_dummies": [
+      "勘合貿易",
+      "惣",
+      "土一揆"
+    ],
+    "explanation_template": "東アジアの沿岸で{{1}}などを行った集団。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "海賊行為",
+        "dummies": [
+          "参勤交代",
+          "殖産興業",
+          "議会運営"
+        ]
+      }
+    ],
+    "note": "日本人だけで構成されていたわけではない。",
+    "cloze_context": "倭寇",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b519c9176a48",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "室町時代",
+    "term": "惣",
+    "term_dummies": [
+      "勘合貿易",
+      "倭寇",
+      "土一揆"
+    ],
+    "explanation_template": "中世に村人が作った{{1}}的な村の組織。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自治",
+        "dummies": [
+          "植民地",
+          "中央集権だけの",
+          "国際連盟"
+        ]
+      }
+    ],
+    "note": "寄合で村の決まりなどを決めた。",
+    "cloze_context": "惣",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_28dbfa54d27a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "室町時代",
+    "term": "土一揆",
+    "term_dummies": [
+      "勘合貿易",
+      "倭寇",
+      "惣"
+    ],
+    "explanation_template": "主に農民らが{{1}}などを求めて起こした一揆。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "借金の帳消し",
+        "dummies": [
+          "議院内閣制",
+          "徴兵制",
+          "身分制の強化"
+        ]
+      }
+    ],
+    "note": "徳政令を求める動きが見られた。",
+    "cloze_context": "土一揆",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_fb151723e2c9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "全国統一",
+    "term": "楽市・楽座",
+    "term_dummies": [
+      "太閤検地",
+      "刀狩",
+      "兵農分離"
+    ],
+    "explanation_template": "市場の税や{{1}}の特権などを廃した政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "座",
+        "dummies": [
+          "藩",
+          "国会",
+          "財閥"
+        ]
+      }
+    ],
+    "note": "商工業の発展を促した。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5869f56b60e6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "全国統一",
+    "term": "太閤検地",
+    "term_dummies": [
+      "楽市・楽座",
+      "刀狩",
+      "兵農分離"
+    ],
+    "explanation_template": "秀吉が全国で田畑を調べ、収穫高を{{1}}で表した政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "石高",
+        "dummies": [
+          "株価",
+          "円相場",
+          "関税率"
+        ]
+      }
+    ],
+    "note": "耕作者や土地の支配関係を把握した。",
+    "cloze_context": "太閤検地",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_00f7402939fc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "全国統一",
+    "term": "刀狩",
+    "term_dummies": [
+      "楽市・楽座",
+      "太閤検地",
+      "兵農分離"
+    ],
+    "explanation_template": "秀吉が農民から{{1}}を取り上げた政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "武器",
+        "dummies": [
+          "農地全て",
+          "種もみ全て",
+          "農具全て"
+        ]
+      }
+    ],
+    "note": "兵農分離の進行と関わる。",
+    "cloze_context": "刀狩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b336a004bedb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "全国統一",
+    "term": "兵農分離",
+    "term_dummies": [
+      "楽市・楽座",
+      "太閤検地",
+      "刀狩"
+    ],
+    "explanation_template": "武士と{{1}}の身分や居住を分ける動き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "農民",
+        "dummies": [
+          "僧侶だけ",
+          "公家だけ",
+          "商人だけ"
+        ]
+      }
+    ],
+    "note": "検地や刀狩などと結び付いて進んだ。",
+    "cloze_context": "兵農分離",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_31cda006a195",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸幕府と外交",
+    "term": "参勤交代",
+    "term_dummies": [
+      "武家諸法度",
+      "朱印船貿易",
+      "鎖国"
+    ],
+    "explanation_template": "大名が領地と{{1}}を原則交互に往復する制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "江戸",
+        "dummies": [
+          "京都",
+          "大坂",
+          "長崎"
+        ]
+      }
+    ],
+    "note": "大名の妻子を江戸に住まわせた。",
+    "cloze_context": "参勤交代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b28e56679c45",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸幕府と外交",
+    "term": "武家諸法度",
+    "term_dummies": [
+      "参勤交代",
+      "朱印船貿易",
+      "鎖国"
+    ],
+    "explanation_template": "幕府が{{1}}を統制するために定めた法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大名",
+        "dummies": [
+          "農民だけ",
+          "町人だけ",
+          "外国商人"
+        ]
+      }
+    ],
+    "note": "城の修築や婚姻などにも規制を設けた。",
+    "cloze_context": "武家諸法度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7b14daf4772f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸幕府と外交",
+    "term": "朱印船貿易",
+    "term_dummies": [
+      "参勤交代",
+      "武家諸法度",
+      "鎖国"
+    ],
+    "explanation_template": "幕府などの{{1}}を持つ船による貿易。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "許可証",
+        "dummies": [
+          "株券",
+          "国債",
+          "旅券だけ"
+        ]
+      }
+    ],
+    "note": "東南アジアに日本町が作られた。",
+    "cloze_context": "朱印船貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4d15372dd330",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸幕府と外交",
+    "term": "鎖国",
+    "term_dummies": [
+      "参勤交代",
+      "武家諸法度",
+      "朱印船貿易"
+    ],
+    "explanation_template": "江戸幕府が海外渡航や{{1}}を厳しく統制した体制。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "貿易",
+        "dummies": [
+          "参勤交代だけ",
+          "農業だけ",
+          "国内流通全て"
+        ]
+      }
+    ],
+    "note": "長崎などを通じた対外関係は続いた。",
+    "cloze_context": "鎖国",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_74dded37e82f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸時代の政治改革",
+    "term": "享保の改革",
+    "term_dummies": [
+      "寛政の改革",
+      "天保の改革",
+      "田沼の政治"
+    ],
+    "explanation_template": "徳川{{1}}が行った幕政改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "吉宗",
+        "dummies": [
+          "綱吉",
+          "家斉",
+          "慶喜"
+        ]
+      }
+    ],
+    "note": "上げ米の制や目安箱などが知られる。",
+    "cloze_context": "享保の改革",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c5392b40d856",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸時代の政治改革",
+    "term": "寛政の改革",
+    "term_dummies": [
+      "享保の改革",
+      "天保の改革",
+      "田沼の政治"
+    ],
+    "explanation_template": "松平{{1}}が主導した幕政改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "定信",
+        "dummies": [
+          "慶永",
+          "容保",
+          "広忠"
+        ]
+      }
+    ],
+    "note": "倹約や朱子学の奨励などを進めた。",
+    "cloze_context": "寛政の改革",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_304052902946",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸時代の政治改革",
+    "term": "天保の改革",
+    "term_dummies": [
+      "享保の改革",
+      "寛政の改革",
+      "田沼の政治"
+    ],
+    "explanation_template": "水野{{1}}が主導した幕政改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "忠邦",
+        "dummies": [
+          "忠勝",
+          "信元",
+          "勝成"
+        ]
+      }
+    ],
+    "note": "株仲間の解散などを進めた。",
+    "cloze_context": "天保の改革",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_21939851ab3c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "江戸時代の政治改革",
+    "term": "田沼の政治",
+    "term_dummies": [
+      "享保の改革",
+      "寛政の改革",
+      "天保の改革"
+    ],
+    "explanation_template": "田沼{{1}}が商業を重視して進めた政治。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "意次",
+        "dummies": [
+          "意知",
+          "定信",
+          "忠邦"
+        ]
+      }
+    ],
+    "note": "株仲間を認めるなど、財政収入の増加を図った。",
+    "cloze_context": "田沼の政治",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_511f6c0581f5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の革命",
+    "term": "権利章典",
+    "term_dummies": [
+      "独立宣言",
+      "人権宣言",
+      "産業革命"
+    ],
+    "explanation_template": "1689年、国王の権限を制限し{{1}}の権利を確認した文書。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "議会",
+        "dummies": [
+          "幕府",
+          "教皇",
+          "軍部"
+        ]
+      }
+    ],
+    "note": "イギリスの名誉革命後に出された。",
+    "cloze_context": "権利章典",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_927e9decd525",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の革命",
+    "term": "独立宣言",
+    "term_dummies": [
+      "権利章典",
+      "人権宣言",
+      "産業革命"
+    ],
+    "explanation_template": "1776年、{{1}}がイギリスからの独立を表明した文書。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アメリカ",
+        "dummies": [
+          "フランス",
+          "ドイツ",
+          "イタリア"
+        ]
+      }
+    ],
+    "note": "自由や平等などの理念を示した。",
+    "cloze_context": "独立宣言",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6db6760b374a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の革命",
+    "term": "人権宣言",
+    "term_dummies": [
+      "権利章典",
+      "独立宣言",
+      "産業革命"
+    ],
+    "explanation_template": "1789年、{{1}}革命の中で自由・平等を掲げた宣言。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "フランス",
+        "dummies": [
+          "アメリカ",
+          "ロシア",
+          "中国"
+        ]
+      }
+    ],
+    "note": "国民主権などの理念も示した。",
+    "cloze_context": "人権宣言",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8f6b6d9f831e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の革命",
+    "term": "産業革命",
+    "term_dummies": [
+      "権利章典",
+      "独立宣言",
+      "人権宣言"
+    ],
+    "explanation_template": "機械化により{{1}}が大きく変化した動き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生産と社会",
+        "dummies": [
+          "地球の公転",
+          "緯度の区分",
+          "季節の順序"
+        ]
+      }
+    ],
+    "note": "18世紀後半のイギリスから始まった。",
+    "cloze_context": "産業革命",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_304670a0748e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治維新",
+    "term": "版籍奉還",
+    "term_dummies": [
+      "廃藩置県",
+      "地租改正",
+      "徴兵令"
+    ],
+    "explanation_template": "1869年、藩主が土地と{{1}}を朝廷に返したこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "人民",
+        "dummies": [
+          "株券",
+          "軍艦全て",
+          "外国領土"
+        ]
+      }
+    ],
+    "note": "旧藩主は知藩事に任命された。",
+    "cloze_context": "版籍奉還",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5ee1fc59561b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治維新",
+    "term": "廃藩置県",
+    "term_dummies": [
+      "版籍奉還",
+      "地租改正",
+      "徴兵令"
+    ],
+    "explanation_template": "1871年、藩を廃し{{1}}を置いた改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "府県",
+        "dummies": [
+          "荘園",
+          "幕府",
+          "守護"
+        ]
+      }
+    ],
+    "note": "中央政府が地方を直接支配する体制を整えた。",
+    "cloze_context": "廃藩置県",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d6b589f8026a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治維新",
+    "term": "地租改正",
+    "term_dummies": [
+      "版籍奉還",
+      "廃藩置県",
+      "徴兵令"
+    ],
+    "explanation_template": "土地所有者に、地価を基準に{{1}}で税を納めさせた改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "現金",
+        "dummies": [
+          "米だけ",
+          "労役だけ",
+          "布だけ"
+        ]
+      }
+    ],
+    "note": "当初の税率は地価の3％。",
+    "cloze_context": "地租改正",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_73dfbeaa135b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治維新",
+    "term": "徴兵令",
+    "term_dummies": [
+      "版籍奉還",
+      "廃藩置県",
+      "地租改正"
+    ],
+    "explanation_template": "1873年、原則として満20歳の{{1}}に兵役を課した法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "男子",
+        "dummies": [
+          "女子",
+          "男女全員",
+          "大名だけ"
+        ]
+      }
+    ],
+    "note": "近代的な軍隊の整備を進めた。",
+    "cloze_context": "徴兵令",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_281ab504758f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "立憲国家の成立",
+    "term": "大日本帝国憲法",
+    "term_dummies": [
+      "帝国議会",
+      "自由民権運動",
+      "条約改正"
+    ],
+    "explanation_template": "1889年に発布された、{{1}}を主権者とする憲法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "天皇",
+        "dummies": [
+          "国民",
+          "内閣",
+          "帝国議会"
+        ]
+      }
+    ],
+    "note": "権利は法律の範囲内で認められた。",
+    "cloze_context": "大日本帝国憲法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_797d5c3c0b22",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "立憲国家の成立",
+    "term": "帝国議会",
+    "term_dummies": [
+      "大日本帝国憲法",
+      "自由民権運動",
+      "条約改正"
+    ],
+    "explanation_template": "{{1}}院と衆議院で構成された明治期からの議会。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "貴族",
+        "dummies": [
+          "参議",
+          "枢密",
+          "元老"
+        ]
+      }
+    ],
+    "note": "最初の議会は1890年に開かれた。",
+    "cloze_context": "帝国議会",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f6a311da6896",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "立憲国家の成立",
+    "term": "自由民権運動",
+    "term_dummies": [
+      "大日本帝国憲法",
+      "帝国議会",
+      "条約改正"
+    ],
+    "explanation_template": "国会開設や{{1}}制定などを求めた運動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "憲法",
+        "dummies": [
+          "鎖国令",
+          "武家諸法度",
+          "班田収授法"
+        ]
+      }
+    ],
+    "note": "板垣退助らが中心となった。",
+    "cloze_context": "自由民権運動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_9da855a7364a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "立憲国家の成立",
+    "term": "条約改正",
+    "term_dummies": [
+      "大日本帝国憲法",
+      "帝国議会",
+      "自由民権運動"
+    ],
+    "explanation_template": "不平等条約の領事裁判権や{{1}}の制約を改めること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "関税自主権",
+        "dummies": [
+          "選挙権",
+          "三権分立",
+          "生存権"
+        ]
+      }
+    ],
+    "note": "領事裁判権の撤廃と関税自主権の回復を区別する。",
+    "cloze_context": "条約改正",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2e8189ca96fd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争",
+    "term": "日清戦争",
+    "term_dummies": [
+      "日露戦争",
+      "第一次世界大戦",
+      "第二次世界大戦"
+    ],
+    "explanation_template": "1894年、朝鮮を巡り日本と{{1}}が戦った戦争。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "清",
+        "dummies": [
+          "ロシア",
+          "アメリカ",
+          "イギリス"
+        ]
+      }
+    ],
+    "note": "下関条約が結ばれた。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_701bd5936d79",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争",
+    "term": "日露戦争",
+    "term_dummies": [
+      "日清戦争",
+      "第一次世界大戦",
+      "第二次世界大戦"
+    ],
+    "explanation_template": "1904年、日本と{{1}}の間で始まった戦争。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ロシア",
+        "dummies": [
+          "清",
+          "ドイツ",
+          "イタリア"
+        ]
+      }
+    ],
+    "note": "ポーツマス条約が結ばれた。",
+    "cloze_context": "日露戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_899306a1857b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争",
+    "term": "第一次世界大戦",
+    "term_dummies": [
+      "日清戦争",
+      "日露戦争",
+      "第二次世界大戦"
+    ],
+    "explanation_template": "1914年に始まり、{{1}}条約などで講和した大戦。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ベルサイユ",
+        "dummies": [
+          "下関",
+          "ポーツマス",
+          "日米修好通商"
+        ]
+      }
+    ],
+    "note": "ヨーロッパを主な戦場とした。",
+    "cloze_context": "第一次世界大戦",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_234cf0f1bebf",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争",
+    "term": "第二次世界大戦",
+    "term_dummies": [
+      "日清戦争",
+      "日露戦争",
+      "第一次世界大戦"
+    ],
+    "explanation_template": "1939年、ドイツの{{1}}侵攻から始まった大戦。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ポーランド",
+        "dummies": [
+          "アメリカ",
+          "ブラジル",
+          "インド"
+        ]
+      }
+    ],
+    "note": "日本は1945年にポツダム宣言を受諾した。",
+    "cloze_context": "第二次世界大戦",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_35b306d7644a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "世界恐慌と戦争への道",
+    "term": "国際連盟",
+    "term_dummies": [
+      "世界恐慌",
+      "満州事変",
+      "国家総動員法"
+    ],
+    "explanation_template": "1920年に発足した、{{1}}のための国際組織。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国際平和",
+        "dummies": [
+          "植民地分割",
+          "関税統一",
+          "通貨統一"
+        ]
+      }
+    ],
+    "note": "アメリカは提唱したが加盟しなかった。",
+    "cloze_context": "国際連盟",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_aba80d1fb43e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "世界恐慌と戦争への道",
+    "term": "世界恐慌",
+    "term_dummies": [
+      "国際連盟",
+      "満州事変",
+      "国家総動員法"
+    ],
+    "explanation_template": "1929年、{{1}}の株価暴落を契機に広がった経済危機。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ニューヨーク",
+        "dummies": [
+          "ロンドン",
+          "パリ",
+          "東京"
+        ]
+      }
+    ],
+    "note": "各国の不況や失業が深刻化した。",
+    "cloze_context": "世界恐慌",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_97346caf0c91",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "世界恐慌と戦争への道",
+    "term": "満州事変",
+    "term_dummies": [
+      "国際連盟",
+      "世界恐慌",
+      "国家総動員法"
+    ],
+    "explanation_template": "1931年、{{1}}軍の行動を契機に始まった軍事行動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "日本",
+        "dummies": [
+          "ドイツ",
+          "イタリア",
+          "アメリカ"
+        ]
+      }
+    ],
+    "note": "柳条湖事件をきっかけに戦闘が拡大した。",
+    "cloze_context": "満州事変",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8f3c2a3aa146",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "世界恐慌と戦争への道",
+    "term": "国家総動員法",
+    "term_dummies": [
+      "国際連盟",
+      "世界恐慌",
+      "満州事変"
+    ],
+    "explanation_template": "1938年、戦争のため人や{{1}}を統制する権限を政府に与えた法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "物資",
+        "dummies": [
+          "緯度",
+          "時差",
+          "降水量"
+        ]
+      }
+    ],
+    "note": "戦時の国民生活や経済への統制が強まった。",
+    "cloze_context": "国家総動員法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8a5dce570767",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後改革",
+    "term": "GHQ",
+    "term_dummies": [
+      "農地改革",
+      "財閥解体",
+      "教育基本法"
+    ],
+    "explanation_template": "日本占領下で改革を指示した{{1}}軍総司令部。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "連合国",
+        "dummies": [
+          "同盟国",
+          "幕府",
+          "国際連盟"
+        ]
+      }
+    ],
+    "note": "民主化・非軍事化などを進めた。",
+    "cloze_context": "GHQ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_04e2c187a5a9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後改革",
+    "term": "農地改革",
+    "term_dummies": [
+      "GHQ",
+      "財閥解体",
+      "教育基本法"
+    ],
+    "explanation_template": "地主の農地を買い上げ、{{1}}に売り渡した戦後改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "小作人",
+        "dummies": [
+          "大名",
+          "貴族",
+          "外国軍"
+        ]
+      }
+    ],
+    "note": "自作農を増やすことにつながった。",
+    "cloze_context": "農地改革",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4c79f23f656b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後改革",
+    "term": "財閥解体",
+    "term_dummies": [
+      "GHQ",
+      "農地改革",
+      "教育基本法"
+    ],
+    "explanation_template": "経済の集中を弱めるため、{{1}}の支配を解く改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "財閥",
+        "dummies": [
+          "農村全体",
+          "地方自治体",
+          "労働組合"
+        ]
+      }
+    ],
+    "note": "占領下で進められた経済の民主化政策。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b2cee6a69279",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後改革",
+    "term": "教育基本法",
+    "term_dummies": [
+      "GHQ",
+      "農地改革",
+      "財閥解体"
+    ],
+    "explanation_template": "1947年、教育の{{1}}などを定めた法律。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "基本理念",
+        "dummies": [
+          "授業料だけ",
+          "校舎の高さだけ",
+          "部活動の種類だけ"
+        ]
+      }
+    ],
+    "note": "現在の法律は2006年に改正されたもの。",
+    "cloze_context": "教育基本法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_05c6a813554a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の外交",
+    "term": "サンフランシスコ平和条約",
+    "term_dummies": [
+      "日米安全保障条約",
+      "日ソ共同宣言",
+      "日中共同声明"
+    ],
+    "explanation_template": "1951年調印の{{1}}条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "講和",
+        "dummies": [
+          "同盟",
+          "通商",
+          "関税"
+        ]
+      }
+    ],
+    "note": "1952年の発効で日本は独立を回復した。",
+    "cloze_context": "サンフランシスコ平和条約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_72d47d420ede",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の外交",
+    "term": "日米安全保障条約",
+    "term_dummies": [
+      "サンフランシスコ平和条約",
+      "日ソ共同宣言",
+      "日中共同声明"
+    ],
+    "explanation_template": "米軍{{1}}を認めた条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "駐留",
+        "dummies": [
+          "領事裁判権",
+          "植民地支配",
+          "関税自主権"
+        ]
+      }
+    ],
+    "note": "1951年に最初の条約、1960年に新条約。",
+    "cloze_context": "日米安全保障条約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f87af2f03e57",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の外交",
+    "term": "日ソ共同宣言",
+    "term_dummies": [
+      "サンフランシスコ平和条約",
+      "日米安全保障条約",
+      "日中共同声明"
+    ],
+    "explanation_template": "1956年の対ソ{{1}}回復宣言。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国交",
+        "dummies": [
+          "植民地関係",
+          "幕藩体制",
+          "領事裁判権"
+        ]
+      }
+    ],
+    "note": "同年、日本の国際連合加盟が実現した。",
+    "cloze_context": "日ソ共同宣言",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_986528092257",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の外交",
+    "term": "日中共同声明",
+    "term_dummies": [
+      "サンフランシスコ平和条約",
+      "日米安全保障条約",
+      "日ソ共同宣言"
+    ],
+    "explanation_template": "1972年の対中{{1}}正常化声明。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国交",
+        "dummies": [
+          "植民地支配",
+          "領事裁判権",
+          "関税自主権"
+        ]
+      }
+    ],
+    "note": "中国（中華人民共和国）との国交正常化。",
+    "cloze_context": "日中共同声明",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_9c3ac1583e16",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会の特色",
+    "term": "情報化",
+    "term_dummies": [
+      "グローバル化",
+      "少子化",
+      "高齢化"
+    ],
+    "explanation_template": "情報の活用が社会で{{1}}なる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "重要に",
+        "dummies": [
+          "無関係に",
+          "常に不要に",
+          "必ず有害に"
+        ]
+      }
+    ],
+    "note": "利便性とともに個人情報の保護などが課題。",
+    "cloze_context": "情報化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7b0c40951b59",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会の特色",
+    "term": "グローバル化",
+    "term_dummies": [
+      "情報化",
+      "少子化",
+      "高齢化"
+    ],
+    "explanation_template": "人・物・資金・情報の動きが{{1}}を越えて広がる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国境",
+        "dummies": [
+          "年齢だけ",
+          "世帯だけ",
+          "市内だけ"
+        ]
+      }
+    ],
+    "note": "遠い地域の出来事も互いに影響する。",
+    "cloze_context": "グローバル化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e0bfc5253a84",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会の特色",
+    "term": "少子化",
+    "term_dummies": [
+      "情報化",
+      "グローバル化",
+      "高齢化"
+    ],
+    "explanation_template": "出生数の減少などで子どもの割合が{{1}}変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "低下する",
+        "dummies": [
+          "高まる",
+          "必ず倍になる",
+          "必ず一定になる"
+        ]
+      }
+    ],
+    "note": "子育て環境や働き方など多くの条件が関わる。",
+    "cloze_context": "少子化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c264c87a4fb4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会の特色",
+    "term": "高齢化",
+    "term_dummies": [
+      "情報化",
+      "グローバル化",
+      "少子化"
+    ],
+    "explanation_template": "人口に占める{{1}}の割合が高まる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "高齢者",
+        "dummies": [
+          "乳児",
+          "小学生",
+          "中学生"
+        ]
+      }
+    ],
+    "note": "高齢者の人数だけでなく割合に注目する。",
+    "cloze_context": "高齢化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_274baf701a57",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "対立と合意",
+    "term": "対立",
+    "term_dummies": [
+      "合意",
+      "効率",
+      "公正"
+    ],
+    "explanation_template": "意見や利害が{{1}}、争いが生じること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一致せず",
+        "dummies": [
+          "全て一致して",
+          "全て消えて",
+          "必ず解決して"
+        ]
+      }
+    ],
+    "note": "話し合う論点や背景を整理する。",
+    "cloze_context": "対立",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5c034f61d4af",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "対立と合意",
+    "term": "合意",
+    "term_dummies": [
+      "対立",
+      "効率",
+      "公正"
+    ],
+    "explanation_template": "話し合いなどで、互いに{{1}}すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "納得",
+        "dummies": [
+          "無視",
+          "強制だけ",
+          "排除"
+        ]
+      }
+    ],
+    "note": "少数意見も踏まえ、理由を示して調整する。",
+    "cloze_context": "合意",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_128b0256727b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "対立と合意",
+    "term": "効率",
+    "term_dummies": [
+      "対立",
+      "合意",
+      "公正"
+    ],
+    "explanation_template": "費用などに対し、得られる{{1}}を考える見方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "効果",
+        "dummies": [
+          "身分",
+          "出身地",
+          "年齢だけ"
+        ]
+      }
+    ],
+    "note": "資源を無駄なく活用できるか考える。",
+    "cloze_context": "効率",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f1786e99d172",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "対立と合意",
+    "term": "公正",
+    "term_dummies": [
+      "対立",
+      "合意",
+      "効率"
+    ],
+    "explanation_template": "手続きや負担・利益の分け方が{{1}}かを考える見方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "公平",
+        "dummies": [
+          "最速",
+          "最安だけ",
+          "最多だけ"
+        ]
+      }
+    ],
+    "note": "同じ扱いだけでなく、条件の違いも考える。",
+    "cloze_context": "公正",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ffe8d108c96e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "人権の種類",
+    "term": "自由権",
+    "term_dummies": [
+      "平等権",
+      "請求権",
+      "参政権"
+    ],
+    "explanation_template": "国家などから不当に{{1}}されず自由に生きる権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "干渉",
+        "dummies": [
+          "保護だけ",
+          "給付だけ",
+          "支援だけ"
+        ]
+      }
+    ],
+    "note": "精神・身体・経済活動の自由など。",
+    "cloze_context": "自由権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ee6bdc075f6c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "人権の種類",
+    "term": "平等権",
+    "term_dummies": [
+      "自由権",
+      "請求権",
+      "参政権"
+    ],
+    "explanation_template": "人種や性別などによる不合理な{{1}}を受けない権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "差別",
+        "dummies": [
+          "教育",
+          "医療",
+          "選挙"
+        ]
+      }
+    ],
+    "note": "合理的な区別まで全て禁止するわけではない。",
+    "cloze_context": "平等権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_cf12c0ef8f38",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "人権の種類",
+    "term": "請求権",
+    "term_dummies": [
+      "自由権",
+      "平等権",
+      "参政権"
+    ],
+    "explanation_template": "権利の侵害を救済するため{{1}}に求める権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国家",
+        "dummies": [
+          "私企業だけ",
+          "家族だけ",
+          "外国政府だけ"
+        ]
+      }
+    ],
+    "note": "裁判を受ける権利や国家賠償請求権など。",
+    "cloze_context": "請求権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d96b98a8b702",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "人権の種類",
+    "term": "参政権",
+    "term_dummies": [
+      "自由権",
+      "平等権",
+      "請求権"
+    ],
+    "explanation_template": "国民が政治に{{1}}するための権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "参加",
+        "dummies": [
+          "服従だけ",
+          "無関係になる",
+          "干渉されないだけ"
+        ]
+      }
+    ],
+    "note": "選挙権や公務員になる権利など。",
+    "cloze_context": "参政権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a4f58cf26e8b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "新しい人権",
+    "term": "環境権",
+    "term_dummies": [
+      "知る権利",
+      "プライバシーの権利",
+      "自己決定権"
+    ],
+    "explanation_template": "良好な{{1}}の中で生活する権利という考え方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "環境",
+        "dummies": [
+          "独占市場",
+          "身分制度",
+          "検閲"
+        ]
+      }
+    ],
+    "note": "新しい人権として主張されてきた。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_760966a76a92",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "新しい人権",
+    "term": "知る権利",
+    "term_dummies": [
+      "環境権",
+      "プライバシーの権利",
+      "自己決定権"
+    ],
+    "explanation_template": "国民が政治などの{{1}}を得る権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "情報",
+        "dummies": [
+          "役職全て",
+          "税収全て",
+          "土地全て"
+        ]
+      }
+    ],
+    "note": "表現の自由や情報公開と関わる。",
+    "cloze_context": "知る権利",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_952dda8902e8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "新しい人権",
+    "term": "プライバシーの権利",
+    "term_dummies": [
+      "環境権",
+      "知る権利",
+      "自己決定権"
+    ],
+    "explanation_template": "私生活や個人情報をみだりに{{1}}されない権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "公開",
+        "dummies": [
+          "保護",
+          "管理",
+          "相談"
+        ]
+      }
+    ],
+    "note": "個人情報の扱いを考える際に重要。",
+    "cloze_context": "プライバシーの権利",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_870a736cadad",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "新しい人権",
+    "term": "自己決定権",
+    "term_dummies": [
+      "環境権",
+      "知る権利",
+      "プライバシーの権利"
+    ],
+    "explanation_template": "自分の生き方などを{{1}}で決める権利という考え方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自分",
+        "dummies": [
+          "行政だけ",
+          "企業だけ",
+          "多数決だけ"
+        ]
+      }
+    ],
+    "note": "他者の権利や法との関係も考える。",
+    "cloze_context": "自己決定権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6f9ea2104ec4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙の原則",
+    "term": "普通選挙",
+    "term_dummies": [
+      "平等選挙",
+      "直接選挙",
+      "秘密選挙"
+    ],
+    "explanation_template": "財産や{{1}}額などによる制限を設けない選挙。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "納税",
+        "dummies": [
+          "開票",
+          "議席",
+          "候補者の年齢だけ"
+        ]
+      }
+    ],
+    "note": "年齢や国籍などの条件はある。",
+    "cloze_context": "普通選挙",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_3f00ef8d02b8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙の原則",
+    "term": "平等選挙",
+    "term_dummies": [
+      "普通選挙",
+      "直接選挙",
+      "秘密選挙"
+    ],
+    "explanation_template": "一人一票を原則とし、票の{{1}}も平等にする選挙。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "価値",
+        "dummies": [
+          "色",
+          "保管期間だけ",
+          "用紙の枚数だけ"
+        ]
+      }
+    ],
+    "note": "一票の格差が問題になる。",
+    "cloze_context": "平等選挙",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ee4c3a2f4d99",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙の原則",
+    "term": "直接選挙",
+    "term_dummies": [
+      "普通選挙",
+      "平等選挙",
+      "秘密選挙"
+    ],
+    "explanation_template": "有権者が代表者を{{1}}選ぶ選挙。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "直接",
+        "dummies": [
+          "世襲で",
+          "抽選だけで",
+          "くじの当選者だけで"
+        ]
+      }
+    ],
+    "note": "間に選挙人などを置く間接選挙と区別する。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ca5f489d6260",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙の原則",
+    "term": "秘密選挙",
+    "term_dummies": [
+      "普通選挙",
+      "平等選挙",
+      "直接選挙"
+    ],
+    "explanation_template": "誰に投票したかを{{1}}仕組みの選挙。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "秘密にする",
+        "dummies": [
+          "必ず公表する",
+          "職場に報告する",
+          "家族に申告する"
+        ]
+      }
+    ],
+    "note": "自由な投票を保障するために重要。",
+    "cloze_context": "秘密選挙",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_26ad1de419b2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙制度と世論",
+    "term": "小選挙区制",
+    "term_dummies": [
+      "比例代表制",
+      "世論",
+      "政党"
+    ],
+    "explanation_template": "一つの選挙区から{{1}}人を選ぶ制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1",
+        "dummies": [
+          "2",
+          "3",
+          "5"
+        ]
+      }
+    ],
+    "note": "大政党に有利になりやすいなどの特徴がある。",
+    "cloze_context": "小選挙区制",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_3712c37018cb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙制度と世論",
+    "term": "比例代表制",
+    "term_dummies": [
+      "小選挙区制",
+      "世論",
+      "政党"
+    ],
+    "explanation_template": "政党などの得票に応じて{{1}}を配分する制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "議席",
+        "dummies": [
+          "税収",
+          "行政区画",
+          "裁判権"
+        ]
+      }
+    ],
+    "note": "少数意見を反映しやすいなどの特徴がある。",
+    "cloze_context": "比例代表制",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6f0c257b2402",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙制度と世論",
+    "term": "世論",
+    "term_dummies": [
+      "小選挙区制",
+      "比例代表制",
+      "政党"
+    ],
+    "explanation_template": "公共の問題について多くの人々がもつ{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "意見",
+        "dummies": [
+          "身分",
+          "国籍",
+          "役職"
+        ]
+      }
+    ],
+    "note": "報道やインターネットなども形成に関わる。",
+    "cloze_context": "世論",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_17b92f3af442",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙制度と世論",
+    "term": "政党",
+    "term_dummies": [
+      "小選挙区制",
+      "比例代表制",
+      "世論"
+    ],
+    "explanation_template": "政治上の主張や政策を共有し、{{1}}を目指す団体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "政治の実現",
+        "dummies": [
+          "営利だけ",
+          "裁判だけ",
+          "宗教儀式だけ"
+        ]
+      }
+    ],
+    "note": "政策を示し、選挙などを通して活動する。",
+    "cloze_context": "政党",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8a3942cf1cb5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治機関の相互関係",
+    "term": "国政調査権",
+    "term_dummies": [
+      "弾劾裁判",
+      "衆議院の解散",
+      "内閣不信任決議"
+    ],
+    "explanation_template": "国会が政治全般について{{1}}する権限。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "調査",
+        "dummies": [
+          "判決",
+          "行政執行",
+          "法律の公布だけ"
+        ]
+      }
+    ],
+    "note": "証人の出頭などを求めることができる。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_058dc77c74f9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治機関の相互関係",
+    "term": "弾劾裁判",
+    "term_dummies": [
+      "国政調査権",
+      "衆議院の解散",
+      "内閣不信任決議"
+    ],
+    "explanation_template": "国会が設ける裁判所で{{1}}の罷免を審理する裁判。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "裁判官",
+        "dummies": [
+          "天皇",
+          "有権者",
+          "地方住民全員"
+        ]
+      }
+    ],
+    "note": "通常の刑事裁判とは異なる。",
+    "cloze_context": "弾劾裁判",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5f30005bb230",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治機関の相互関係",
+    "term": "衆議院の解散",
+    "term_dummies": [
+      "国政調査権",
+      "弾劾裁判",
+      "内閣不信任決議"
+    ],
+    "explanation_template": "衆議院議員全員の{{1}}が任期途中で終わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地位",
+        "dummies": [
+          "国籍",
+          "参政権",
+          "基本的人権"
+        ]
+      }
+    ],
+    "note": "解散後には総選挙が行われる。",
+    "cloze_context": "衆議院の解散",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5e3ad03b0076",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治機関の相互関係",
+    "term": "内閣不信任決議",
+    "term_dummies": [
+      "国政調査権",
+      "弾劾裁判",
+      "衆議院の解散"
+    ],
+    "explanation_template": "衆議院が内閣を{{1}}と表明する決議。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "信任しない",
+        "dummies": [
+          "組織する",
+          "裁判する",
+          "任命する"
+        ]
+      }
+    ],
+    "note": "可決後、内閣は総辞職か衆議院解散を選ぶ。",
+    "cloze_context": "内閣不信任決議",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4f5c57aa0b93",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治と財政",
+    "term": "住民投票",
+    "term_dummies": [
+      "地方交付税交付金",
+      "地方税",
+      "国庫支出金"
+    ],
+    "explanation_template": "地域の重要事項について住民の{{1}}を直接問う投票。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "意思",
+        "dummies": [
+          "身長",
+          "預金額",
+          "職歴"
+        ]
+      }
+    ],
+    "note": "法的な効力は根拠法令などによって異なる。",
+    "cloze_context": "住民投票",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_49be361765ca",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治と財政",
+    "term": "地方交付税交付金",
+    "term_dummies": [
+      "住民投票",
+      "地方税",
+      "国庫支出金"
+    ],
+    "explanation_template": "自治体間の{{1}}格差などを調整するため国が配る財源。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "財政力",
+        "dummies": [
+          "経度",
+          "標高",
+          "緯度"
+        ]
+      }
+    ],
+    "note": "原則として使い道を指定しない。",
+    "cloze_context": "地方交付税交付金",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_955c28ff1c30",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治と財政",
+    "term": "地方税",
+    "term_dummies": [
+      "住民投票",
+      "地方交付税交付金",
+      "国庫支出金"
+    ],
+    "explanation_template": "地方公共団体が課して徴収する{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "税",
+        "dummies": [
+          "国債",
+          "寄付金だけ",
+          "罰金だけ"
+        ]
+      }
+    ],
+    "note": "住民税や固定資産税などがある。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_cda2dea0a3ae",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治と財政",
+    "term": "国庫支出金",
+    "term_dummies": [
+      "住民投票",
+      "地方交付税交付金",
+      "地方税"
+    ],
+    "explanation_template": "国が使い道を{{1}}して自治体へ支出する資金。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "指定",
+        "dummies": [
+          "一切指定せず",
+          "抽選で全て決定",
+          "全て禁止"
+        ]
+      }
+    ],
+    "note": "地方交付税交付金との違いを整理する。",
+    "cloze_context": "国庫支出金",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_fb90d0faae84",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場経済",
+    "term": "需要",
+    "term_dummies": [
+      "供給",
+      "市場価格",
+      "独占"
+    ],
+    "explanation_template": "財やサービスを{{1}}とすること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "買おう",
+        "dummies": [
+          "売ろう",
+          "生産だけしよう",
+          "無償で廃棄しよう"
+        ]
+      }
+    ],
+    "note": "一般に価格が下がると需要量は増える傾向がある。",
+    "cloze_context": "需要",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_568a2952e7eb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場経済",
+    "term": "供給",
+    "term_dummies": [
+      "需要",
+      "市場価格",
+      "独占"
+    ],
+    "explanation_template": "財やサービスを{{1}}とすること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "売ろう",
+        "dummies": [
+          "買おう",
+          "輸入だけしよう",
+          "無償で廃棄しよう"
+        ]
+      }
+    ],
+    "note": "一般に価格が上がると供給量は増える傾向がある。",
+    "cloze_context": "供給",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_10a251cb560e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場経済",
+    "term": "市場価格",
+    "term_dummies": [
+      "需要",
+      "供給",
+      "独占"
+    ],
+    "explanation_template": "買おうとする量と{{1}}量の関係で決まる価格。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "売ろうとする",
+        "dummies": [
+          "課税する",
+          "貯蓄する",
+          "借り入れる"
+        ]
+      }
+    ],
+    "note": "ほかの条件を一定として関係を考える。",
+    "cloze_context": "市場価格",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a8965c260250",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場経済",
+    "term": "独占",
+    "term_dummies": [
+      "需要",
+      "供給",
+      "市場価格"
+    ],
+    "explanation_template": "一社がある商品の{{1}}をほぼ支配する状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "供給",
+        "dummies": [
+          "需要だけ",
+          "税率",
+          "予算"
+        ]
+      }
+    ],
+    "note": "公正な競争が妨げられることがある。",
+    "cloze_context": "独占",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_95410093acd0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業",
+    "term": "株式会社",
+    "term_dummies": [
+      "株式",
+      "配当",
+      "有限責任"
+    ],
+    "explanation_template": "株式を発行して{{1}}を集める会社。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "資金",
+        "dummies": [
+          "税金",
+          "寄付金のみ",
+          "国の予算"
+        ]
+      }
+    ],
+    "note": "出資と経営が分かれることがある。",
+    "cloze_context": "株式会社",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6a0f28e15ee8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業",
+    "term": "株式",
+    "term_dummies": [
+      "株式会社",
+      "配当",
+      "有限責任"
+    ],
+    "explanation_template": "会社への{{1}}を表すもので、株主の地位を示す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "出資",
+        "dummies": [
+          "納税",
+          "寄付だけ",
+          "無償労働"
+        ]
+      }
+    ],
+    "note": "株主には会社の所有者としての権利がある。",
+    "cloze_context": "株式",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_254a488c7459",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業",
+    "term": "配当",
+    "term_dummies": [
+      "株式会社",
+      "株式",
+      "有限責任"
+    ],
+    "explanation_template": "会社が利益の一部を{{1}}へ分配すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "株主",
+        "dummies": [
+          "従業員だけ",
+          "銀行だけ",
+          "取引先だけ"
+        ]
+      }
+    ],
+    "note": "必ず支払われるとは限らない。",
+    "cloze_context": "配当",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1a965e3de3b4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業",
+    "term": "有限責任",
+    "term_dummies": [
+      "株式会社",
+      "株式",
+      "配当"
+    ],
+    "explanation_template": "出資者の責任が原則{{1}}までに限られること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "出資額",
+        "dummies": [
+          "全財産",
+          "将来の収入全て",
+          "家族の財産"
+        ]
+      }
+    ],
+    "note": "株主の責任について用いられる。",
+    "cloze_context": "有限責任",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ea23f314fc16",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費と契約",
+    "term": "契約",
+    "term_dummies": [
+      "消費者主権",
+      "クーリング・オフ",
+      "製造物責任法"
+    ],
+    "explanation_template": "当事者の{{1}}によって成立する法的な約束。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "合意",
+        "dummies": [
+          "一方の通知だけ",
+          "商品の到着だけ",
+          "代金の入金だけ"
+        ]
+      }
+    ],
+    "note": "売買契約は原則として口頭でも成立する。",
+    "cloze_context": "契約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4de0013e47a0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費と契約",
+    "term": "消費者主権",
+    "term_dummies": [
+      "契約",
+      "クーリング・オフ",
+      "製造物責任法"
+    ],
+    "explanation_template": "消費者の選択が{{1}}のあり方に影響するという考え方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生産",
+        "dummies": [
+          "課税",
+          "予算審議",
+          "金融政策のみ"
+        ]
+      }
+    ],
+    "note": "企業の情報提供や消費者の適切な判断が重要。",
+    "cloze_context": "消費者主権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4d3a012df108",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費と契約",
+    "term": "クーリング・オフ",
+    "term_dummies": [
+      "契約",
+      "消費者主権",
+      "製造物責任法"
+    ],
+    "explanation_template": "一定の取引で、期間内に契約を{{1}}解除できる制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "無条件で",
+        "dummies": [
+          "事業者の同意でのみ",
+          "必ず有料で",
+          "裁判でだけ"
+        ]
+      }
+    ],
+    "note": "全ての買い物に適用されるわけではない。",
+    "cloze_context": "クーリング・オフ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7747846f9e6c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費と契約",
+    "term": "製造物責任法",
+    "term_dummies": [
+      "契約",
+      "消費者主権",
+      "クーリング・オフ"
+    ],
+    "explanation_template": "製品の{{1}}による被害に製造業者等が責任を負う法律。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "欠陥",
+        "dummies": [
+          "値下げ",
+          "広告数",
+          "売れ行き"
+        ]
+      }
+    ],
+    "note": "PL法。過失の有無とは別に責任が問題になる。",
+    "cloze_context": "製造物責任法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d678e28ae313",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働",
+    "term": "労働組合",
+    "term_dummies": [
+      "団結権",
+      "団体交渉権",
+      "団体行動権"
+    ],
+    "explanation_template": "労働者が労働条件の{{1}}などのために組織する団体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "改善",
+        "dummies": [
+          "悪化だけ",
+          "廃止だけ",
+          "非公開化だけ"
+        ]
+      }
+    ],
+    "note": "労働基本権を背景に活動する。",
+    "cloze_context": "労働組合",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d0e08911ccf3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働",
+    "term": "団結権",
+    "term_dummies": [
+      "労働組合",
+      "団体交渉権",
+      "団体行動権"
+    ],
+    "explanation_template": "労働者が{{1}}などを作る権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "労働組合",
+        "dummies": [
+          "使用者団体",
+          "政党",
+          "株式会社"
+        ]
+      }
+    ],
+    "note": "労働三権の一つ。",
+    "cloze_context": "団結権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_53cc77c88d1b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働",
+    "term": "団体交渉権",
+    "term_dummies": [
+      "労働組合",
+      "団結権",
+      "団体行動権"
+    ],
+    "explanation_template": "労働者が使用者と{{1}}で交渉する権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "集団",
+        "dummies": [
+          "個人だけ",
+          "株主だけ",
+          "消費者だけ"
+        ]
+      }
+    ],
+    "note": "労働条件などについて交渉する。",
+    "cloze_context": "団体交渉権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ad267225e773",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働",
+    "term": "団体行動権",
+    "term_dummies": [
+      "労働組合",
+      "団結権",
+      "団体交渉権"
+    ],
+    "explanation_template": "労働者が要求実現のため{{1}}などを行う権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ストライキ",
+        "dummies": [
+          "株式の発行",
+          "価格の統制",
+          "為替の固定"
+        ]
+      }
+    ],
+    "note": "労働争議などに関わる権利。",
+    "cloze_context": "団体行動権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d8545ed7bcf9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融",
+    "term": "日本銀行",
+    "term_dummies": [
+      "金融政策",
+      "インフレーション",
+      "デフレーション"
+    ],
+    "explanation_template": "日本の{{1}}銀行で、銀行券を発行する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中央",
+        "dummies": [
+          "商業",
+          "地方",
+          "信用"
+        ]
+      }
+    ],
+    "note": "政府の銀行・銀行の銀行とも呼ばれる。",
+    "cloze_context": "日本銀行",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_823dfcd13c65",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融",
+    "term": "金融政策",
+    "term_dummies": [
+      "日本銀行",
+      "インフレーション",
+      "デフレーション"
+    ],
+    "explanation_template": "中央銀行が金利などを通じて{{1}}の量や流れを調節する政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "通貨",
+        "dummies": [
+          "税収",
+          "政府支出",
+          "社会保険料"
+        ]
+      }
+    ],
+    "note": "物価の安定などを目指す。",
+    "cloze_context": "金融政策",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5cc55b9da1bd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融",
+    "term": "インフレーション",
+    "term_dummies": [
+      "日本銀行",
+      "金融政策",
+      "デフレーション"
+    ],
+    "explanation_template": "物価全体が継続的に{{1}}する現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "上昇",
+        "dummies": [
+          "下落",
+          "零になる",
+          "変化しない"
+        ]
+      }
+    ],
+    "note": "個別商品の一時的な値上がりとは区別する。",
+    "cloze_context": "インフレーション",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c7986c85c618",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融",
+    "term": "デフレーション",
+    "term_dummies": [
+      "日本銀行",
+      "金融政策",
+      "インフレーション"
+    ],
+    "explanation_template": "物価全体が継続的に{{1}}する現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "下落",
+        "dummies": [
+          "上昇",
+          "倍増",
+          "変化しない"
+        ]
+      }
+    ],
+    "note": "景気や雇用にも影響する。",
+    "cloze_context": "デフレーション",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5d93cec26936",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政と税",
+    "term": "累進課税",
+    "term_dummies": [
+      "直接税",
+      "間接税",
+      "国債"
+    ],
+    "explanation_template": "所得などが多いほど{{1}}が高くなる仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "税率",
+        "dummies": [
+          "消費量",
+          "物価",
+          "国債発行額"
+        ]
+      }
+    ],
+    "note": "所得税などに用いられる。",
+    "cloze_context": "累進課税",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f28c51301e9a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政と税",
+    "term": "直接税",
+    "term_dummies": [
+      "累進課税",
+      "間接税",
+      "国債"
+    ],
+    "explanation_template": "税を負担する人と{{1}}人が同じ税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "納める",
+        "dummies": [
+          "税率を決める",
+          "税法を作る",
+          "予算を議決する"
+        ]
+      }
+    ],
+    "note": "所得税や法人税など。",
+    "cloze_context": "直接税",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2e654e0295d3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政と税",
+    "term": "間接税",
+    "term_dummies": [
+      "累進課税",
+      "直接税",
+      "国債"
+    ],
+    "explanation_template": "税を負担する人と{{1}}人が異なる税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "納める",
+        "dummies": [
+          "税率を決める",
+          "税法を作る",
+          "予算を議決する"
+        ]
+      }
+    ],
+    "note": "消費税など。価格を通じて負担が移る。",
+    "cloze_context": "間接税",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6047d5923083",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政と税",
+    "term": "国債",
+    "term_dummies": [
+      "累進課税",
+      "直接税",
+      "間接税"
+    ],
+    "explanation_template": "国が{{1}}のため発行する債券。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "資金調達",
+        "dummies": [
+          "紙幣発行",
+          "株主への配当",
+          "輸入関税の免除"
+        ]
+      }
+    ],
+    "note": "将来の償還や利払いが必要。",
+    "cloze_context": "国債",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4a530ede4f8b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障",
+    "term": "社会保険",
+    "term_dummies": [
+      "公的扶助",
+      "社会福祉",
+      "公衆衛生"
+    ],
+    "explanation_template": "保険料などを財源とし、病気や老後などに{{1}}する制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "給付",
+        "dummies": [
+          "課税だけ",
+          "刑罰だけ",
+          "選挙"
+        ]
+      }
+    ],
+    "note": "医療保険や年金保険など。",
+    "cloze_context": "社会保険",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_aa737d500571",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障",
+    "term": "公的扶助",
+    "term_dummies": [
+      "社会保険",
+      "社会福祉",
+      "公衆衛生"
+    ],
+    "explanation_template": "生活に困る人に、税を財源として最低限度の生活を{{1}}制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "保障する",
+        "dummies": [
+          "禁止する",
+          "全て自費にする",
+          "貸付だけにする"
+        ]
+      }
+    ],
+    "note": "生活保護制度など。",
+    "cloze_context": "公的扶助",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7576f570f0c2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障",
+    "term": "社会福祉",
+    "term_dummies": [
+      "社会保険",
+      "公的扶助",
+      "公衆衛生"
+    ],
+    "explanation_template": "障害者や高齢者、子どもなどの生活を{{1}}施策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "支援する",
+        "dummies": [
+          "一律禁止する",
+          "常に課税するだけの",
+          "必ず隔離する"
+        ]
+      }
+    ],
+    "note": "自立や社会参加の支援などを行う。",
+    "cloze_context": "社会福祉",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6f57dd707a94",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障",
+    "term": "公衆衛生",
+    "term_dummies": [
+      "社会保険",
+      "公的扶助",
+      "社会福祉"
+    ],
+    "explanation_template": "感染症予防など、社会全体の{{1}}を守る活動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "健康",
+        "dummies": [
+          "所得だけ",
+          "雇用だけ",
+          "資産だけ"
+        ]
+      }
+    ],
+    "note": "予防接種や生活環境の整備など。",
+    "cloze_context": "公衆衛生",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_025f9edb7737",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会",
+    "term": "国際連合",
+    "term_dummies": [
+      "安全保障理事会",
+      "国際司法裁判所",
+      "持続可能な開発目標"
+    ],
+    "explanation_template": "1945年に設立された、{{1}}などを目的とする国際組織。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "平和の維持",
+        "dummies": [
+          "植民地の拡大",
+          "鎖国の強制",
+          "単一通貨だけ"
+        ]
+      }
+    ],
+    "note": "国際連盟との設立時期・仕組みの違いを押さえる。",
+    "cloze_context": "国際連合",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ad8e6a20ab15",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会",
+    "term": "安全保障理事会",
+    "term_dummies": [
+      "国際連合",
+      "国際司法裁判所",
+      "持続可能な開発目標"
+    ],
+    "explanation_template": "国際連合で、国際の{{1}}と安全に主な責任をもつ機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "平和",
+        "dummies": [
+          "金融",
+          "文化財だけ",
+          "貿易量だけ"
+        ]
+      }
+    ],
+    "note": "常任理事国には拒否権がある。",
+    "cloze_context": "安全保障理事会",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a89dc71f5223",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会",
+    "term": "国際司法裁判所",
+    "term_dummies": [
+      "国際連合",
+      "安全保障理事会",
+      "持続可能な開発目標"
+    ],
+    "explanation_template": "国家間の{{1}}などを国際法に基づいて扱う裁判所。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "紛争",
+        "dummies": [
+          "国内の全犯罪",
+          "個人の全借金",
+          "国内の全労働争議"
+        ]
+      }
+    ],
+    "note": "国際連合の主要機関の一つ。",
+    "cloze_context": "国際司法裁判所",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_0d74e6b3aa23",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会",
+    "term": "持続可能な開発目標",
+    "term_dummies": [
+      "国際連合",
+      "安全保障理事会",
+      "国際司法裁判所"
+    ],
+    "explanation_template": "2030年までの達成を目指す、{{1}}個の国際目標。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "17",
+        "dummies": [
+          "8",
+          "15",
+          "20"
+        ]
+      }
+    ],
+    "note": "SDGs。2015年に国連で採択された。",
+    "cloze_context": "持続可能な開発目標",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e72bb7da3bfc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "北海道地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北海道の畑作で輪作を行う主な目的は？",
+    "answer": "地力の低下や病害を抑える",
+    "dummies": [
+      "同じ作物だけを毎年作る",
+      "降水量を直接増やす",
+      "耕地を必ず狭くする"
+    ],
+    "note": "作物を替えて栽培することの効果を考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_fb44547b0198",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "東北地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東北の太平洋側で夏の低温をもたらす風は？",
+    "answer": "やませ",
+    "dummies": [
+      "季節風の全て",
+      "フェーン",
+      "貿易風"
+    ],
+    "note": "冷たく湿った風で、冷害につながることがある。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_79381e1f141c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "関東地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東京への機能集中による課題として適切なのは？",
+    "answer": "災害時に影響が広域へ及ぶ",
+    "dummies": [
+      "全国の人口が同じになる",
+      "通勤が全て不要になる",
+      "農地が必ず増える"
+    ],
+    "note": "中枢機能の集中と防災の関係を考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_177b3dda8b75",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "中部地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中部で中央高地と東海の産業を比べる際の着眼点は？",
+    "answer": "標高や気候、交通の違い",
+    "dummies": [
+      "同じ地方なら全て同じ産業",
+      "県名の文字数",
+      "海への距離は常に無関係"
+    ],
+    "note": "同じ地方の中にも地域差がある。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_575424a6ebe8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "近畿地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "京都や奈良の歴史的景観を守る取組の目的は？",
+    "answer": "文化の継承と生活・観光の両立",
+    "dummies": [
+      "全ての建物を高層化する",
+      "古い建物を全てなくす",
+      "住民の生活を全て禁止する"
+    ],
+    "note": "保存と活用、住民生活の関係を考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_b94911d58d39",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "中国・四国地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "瀬戸内の臨海部で工業が発達した条件は？",
+    "answer": "海上輸送に便利である",
+    "dummies": [
+      "全国で最も積雪が多い",
+      "冬の低温だけに適する",
+      "港を全く必要としない"
+    ],
+    "note": "原料や製品の大量輸送などを考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_b24e8113519d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "九州地方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "南九州で温暖な気候を生かす農業の例は？",
+    "answer": "野菜の促成栽培",
+    "dummies": [
+      "寒さを生かす抑制栽培だけ",
+      "稲作を全て行わない農業",
+      "乾季だけを使う焼畑"
+    ],
+    "note": "気候と出荷時期の関係を考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_10169a636580",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の昔と今の土地利用を比較する資料は？",
+    "answer": "年代の違う地形図や航空写真",
+    "dummies": [
+      "同じ日の天気図だけ",
+      "他国の株価だけ",
+      "同じ年の人口総数だけ"
+    ],
+    "note": "同じ範囲で変化を読み取る。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_2eaacc1c08d2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "聞き取り調査の結果をまとめる際に必要なのは？",
+    "answer": "時期や対象者、質問内容の確認",
+    "dummies": [
+      "一人の話を全員の意見とする",
+      "都合の悪い回答を全て除く",
+      "誰の話か確認しない"
+    ],
+    "note": "資料の条件や偏りを確かめる。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1a4aac674874",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域の在り方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "新しい交通計画のよさを検討する視点は？",
+    "answer": "利用者と費用、環境への影響",
+    "dummies": [
+      "利用者数だけで全て決める",
+      "最も高い計画を必ず選ぶ",
+      "住民の意見を聞かない"
+    ],
+    "note": "複数の立場や条件を比べて判断する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a57e900765cf",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域の在り方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の課題への提案を改善するには？",
+    "answer": "資料と住民の意見を照合する",
+    "dummies": [
+      "最初の案を必ず変えない",
+      "他地域の例を条件なしに移す",
+      "原因を確かめず結論を決める"
+    ],
+    "note": "地域の条件を踏まえて提案する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_29a248e47312",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "オセアニア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "オーストラリアの輸出品として代表的なのは？",
+    "answer": "鉄鉱石や石炭",
+    "dummies": [
+      "天然ゴムやパーム油",
+      "コーヒーやカカオ",
+      "原油だけ"
+    ],
+    "note": "地下資源や農牧産物の輸出が重要。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_0ea84f74ea9b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "オセアニア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "オーストラリアの移民政策の変化として適切なのは？",
+    "answer": "白豪主義から多文化主義へ",
+    "dummies": [
+      "多文化主義から鎖国へ",
+      "白豪主義から一民族の強制へ",
+      "移民の受入れから全員の追放へ"
+    ],
+    "note": "移民の背景と文化の多様性を考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5660b74085e3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の生活と宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "イスラム教徒の生活を考える際に適切なのは？",
+    "answer": "礼拝や食の習慣との関係を見る",
+    "dummies": [
+      "信徒は全て同じ国籍とする",
+      "気候だけで信仰を決める",
+      "地域や個人による違いを無視する"
+    ],
+    "note": "宗教と生活の関係を理解し、多様性も踏まえる。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_668a87e1c519",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の生活と宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "宗教と生活を学ぶには？",
+    "answer": "自然・社会の条件も併せて見る",
+    "dummies": [
+      "国と宗教は必ず一対一である",
+      "信仰は国境を越えないとする",
+      "習慣は気温だけで説明できる"
+    ],
+    "note": "国や地域の中にも多様な信仰がある。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_625eb09b59d9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史を学ぶ方法",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "身近な地域の歴史を調べる最初の手順は？",
+    "answer": "疑問を立て、資料を探す",
+    "dummies": [
+      "結論を決めて資料を選別する",
+      "伝承を全て事実と断定する",
+      "年代の確認をしない"
+    ],
+    "note": "地域の遺跡や博物館なども手掛かりになる。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5bf58101fb18",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史を学ぶ方法",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1600年は何世紀？",
+    "answer": "16世紀",
+    "dummies": [
+      "15世紀",
+      "17世紀",
+      "18世紀"
+    ],
+    "note": "1〜100年が1世紀。1601年から17世紀。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e1935e3b51c6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史を学ぶ方法",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "過去の出来事を資料から考える基本は？",
+    "answer": "作成者・時期・目的を確かめる",
+    "dummies": [
+      "古い資料は全て正しいとする",
+      "一つの資料だけで断定する",
+      "後世の物語を全て同時代記録とする"
+    ],
+    "note": "資料同士を比べ、立場や目的の違いも考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5c4715e28a8d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "キリスト教の成立と特に関わる人物は？",
+    "answer": "イエス",
+    "dummies": [
+      "ムハンマド",
+      "釈迦",
+      "孔子"
+    ],
+    "note": "宗教の成立した地域や背景も併せて押さえる。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_060df8cb1e88",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "イスラム教を開いた人物は？",
+    "answer": "ムハンマド",
+    "dummies": [
+      "イエス",
+      "釈迦",
+      "孔子"
+    ],
+    "note": "7世紀のアラビア半島で成立した。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_efbb1ca66e52",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会の文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "伝統文化の継承を考えるときの視点は？",
+    "answer": "変化や交流も踏まえ価値を考える",
+    "dummies": [
+      "昔の形が全く変わらないとする",
+      "外国文化との関わりを全て否定する",
+      "新しい生活と必ず対立するとする"
+    ],
+    "note": "文化は継承されると同時に変化もする。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c4ad48b74e50",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "よりよい社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "将来世代も踏まえて資源利用を考える視点は？",
+    "answer": "現在と将来の利益や負担を比べる",
+    "dummies": [
+      "現在の利益だけで判断する",
+      "環境への影響を必ず無視する",
+      "資源は全て無限と仮定する"
+    ],
+    "note": "持続可能性と世代間の公正を考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_d22618eb1b50",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "よりよい社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の公共施設を残す案の検討で必要なのは？",
+    "answer": "利用状況・費用・必要性を比べる",
+    "dummies": [
+      "利用者数だけで必ず廃止する",
+      "費用の情報を全て伏せる",
+      "少数の利用者を議論から外す"
+    ],
+    "note": "効率と公正など複数の視点から判断する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_738ef9a726c6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "よりよい社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "社会問題の解決案をまとめる際の基本は？",
+    "answer": "根拠と異なる立場への影響を示す",
+    "dummies": [
+      "反対意見を全て書かない",
+      "原因より先に結論を固定する",
+      "自分の利益だけを根拠にする"
+    ],
+    "note": "資料を基に、多面的・多角的に考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_be2f9877866b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の地域構成",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の最南端の島として位置付けられるのは？",
+    "answer": "沖ノ鳥島",
+    "dummies": [
+      "南鳥島",
+      "与那国島",
+      "択捉島"
+    ],
+    "note": "方位と島の位置を整理する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_6fed45e56057",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の地域構成",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の最東端の島は？",
+    "answer": "南鳥島",
+    "dummies": [
+      "沖ノ鳥島",
+      "与那国島",
+      "択捉島"
+    ],
+    "note": "南鳥島は太平洋上に位置する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_60eac42c1431",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会の仕組み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国家の三つの要素に含まれないものは？",
+    "answer": "共通通貨",
+    "dummies": [
+      "領域",
+      "国民",
+      "主権"
+    ],
+    "note": "国境を越えた協力と国家の主権を区別する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_78fa5314793f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会の仕組み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "条約など、国家間の関係を規律する法は？",
+    "answer": "国際法",
+    "dummies": [
+      "民法",
+      "刑法",
+      "労働基準法"
+    ],
+    "note": "国際慣習法なども含まれる。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_14e1424d2625",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会の仕組み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国際的な課題に取り組む民間組織を一般に何という？",
+    "answer": "NGO",
+    "dummies": [
+      "国連総会",
+      "内閣",
+      "安全保障理事会"
+    ],
+    "note": "非政府組織。国の機関とは区別する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_58bea1527321",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙と議会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国会で法律案の採決をする際の基本は？",
+    "answer": "十分な討論の後、多数決で決める",
+    "dummies": [
+      "少数意見を最初から聞かない",
+      "全て内閣だけが決める",
+      "国会議員以外だけが投票する"
+    ],
+    "note": "少数意見の尊重と多数決の両方が重要。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_8dc42243be34",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政と社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "不況時に公共投資を増やす政策の狙いは？",
+    "answer": "需要や雇用を支える",
+    "dummies": [
+      "物価を必ず二倍にする",
+      "税収を必ず減らさず増やす",
+      "失業を必ずなくす"
+    ],
+    "note": "政策の効果や財政負担を併せて考える。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_765dd1ca5e1e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "情報の読み方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "世論調査の数値を比べるときに確かめるのは？",
+    "answer": "対象者・時期・質問の仕方",
+    "dummies": [
+      "数字の大きさだけ",
+      "グラフの色だけ",
+      "調査会社の名前の長さ"
+    ],
+    "note": "母集団や調査方法の違いに注意する。",
+    "content_batch": "social-foundation-20261108",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-08"
   }
 ]

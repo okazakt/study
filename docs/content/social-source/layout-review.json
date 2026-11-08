@@ -1,0 +1,3069 @@
+{
+  "date": "2026-11-08",
+  "browser": "Chromium",
+  "method": "Real app HTML/CSS, six generated boundary questions in fully revealed answer state; checks choice visibility and text overflow, records scroll heights separately. No playback or exhaustive question loop.",
+  "cases": [
+    {
+      "id": "jr_social_35b306d7644a:blank:1",
+      "subject": "社会",
+      "school_level": "中学",
+      "grade": "中3",
+      "field": "歴史",
+      "unit": "世界恐慌と戦争への道",
+      "term": "国際連盟",
+      "term_dummies": [
+        "世界恐慌",
+        "満州事変",
+        "国家総動員法"
+      ],
+      "explanation_template": "1920年に発足した、{{1}}のための国際組織。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "国際平和",
+          "dummies": [
+            "植民地分割",
+            "関税統一",
+            "通貨統一"
+          ]
+        }
+      ],
+      "note": "アメリカは提唱したが加盟しなかった。",
+      "cloze_context": "国際連盟",
+      "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+      "content_batch": "social-foundation-20261108",
+      "official_blocks": [
+        "hist-C1"
+      ],
+      "sourceId": "jr_social_35b306d7644a",
+      "mode": "term_to_explanation",
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 1,
+      "continuation": false,
+      "answer": "国際平和",
+      "choices": [
+        "国際平和",
+        "関税統一",
+        "植民地分割",
+        "通貨統一"
+      ],
+      "correct": 0,
+      "segments": [
+        {
+          "text": "1920年に発足した、"
+        },
+        {
+          "text": "？",
+          "state": "active",
+          "index": 1
+        },
+        {
+          "text": "のための国際組織。"
+        }
+      ],
+      "prompt": "1920年に発足した、？のための国際組織。",
+      "context": "国際連盟",
+      "task": "「国際連盟」の説明を完成させよう",
+      "targetLabel": "強調された？に入る語句を回答（1 / 1）",
+      "reviewLabel": "国際連盟 · ？（1 / 1）"
+    },
+    {
+      "id": "jr_social_05c6a813554a:blank:1",
+      "subject": "社会",
+      "school_level": "中学",
+      "grade": "中3",
+      "field": "歴史",
+      "unit": "戦後の外交",
+      "term": "サンフランシスコ平和条約",
+      "term_dummies": [
+        "日米安全保障条約",
+        "日ソ共同宣言",
+        "日中共同声明"
+      ],
+      "explanation_template": "1951年調印の{{1}}条約。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "講和",
+          "dummies": [
+            "同盟",
+            "通商",
+            "関税"
+          ]
+        }
+      ],
+      "note": "1952年の発効で日本は独立を回復した。",
+      "cloze_context": "サンフランシスコ平和条約",
+      "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+      "content_batch": "social-foundation-20261108",
+      "official_blocks": [
+        "hist-C2"
+      ],
+      "sourceId": "jr_social_05c6a813554a",
+      "mode": "term_to_explanation",
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 1,
+      "continuation": false,
+      "answer": "講和",
+      "choices": [
+        "講和",
+        "通商",
+        "同盟",
+        "関税"
+      ],
+      "correct": 0,
+      "segments": [
+        {
+          "text": "1951年調印の"
+        },
+        {
+          "text": "？",
+          "state": "active",
+          "index": 1
+        },
+        {
+          "text": "条約。"
+        }
+      ],
+      "prompt": "1951年調印の？条約。",
+      "context": "サンフランシスコ平和条約",
+      "task": "「サンフランシスコ平和条約」の説明を完成させよう",
+      "targetLabel": "強調された？に入る語句を回答（1 / 1）",
+      "reviewLabel": "サンフランシスコ平和条約 · ？（1 / 1）"
+    },
+    {
+      "id": "jr_social_986528092257:blank:1",
+      "subject": "社会",
+      "school_level": "中学",
+      "grade": "中3",
+      "field": "歴史",
+      "unit": "戦後の外交",
+      "term": "日中共同声明",
+      "term_dummies": [
+        "サンフランシスコ平和条約",
+        "日米安全保障条約",
+        "日ソ共同宣言"
+      ],
+      "explanation_template": "1972年の対中{{1}}正常化声明。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "国交",
+          "dummies": [
+            "植民地支配",
+            "領事裁判権",
+            "関税自主権"
+          ]
+        }
+      ],
+      "note": "中国（中華人民共和国）との国交正常化。",
+      "cloze_context": "日中共同声明",
+      "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+      "content_batch": "social-foundation-20261108",
+      "official_blocks": [
+        "hist-C2"
+      ],
+      "sourceId": "jr_social_986528092257",
+      "mode": "term_to_explanation",
+      "blankIndex": 1,
+      "blankPosition": 1,
+      "blankTotal": 1,
+      "continuation": false,
+      "answer": "国交",
+      "choices": [
+        "国交",
+        "領事裁判権",
+        "植民地支配",
+        "関税自主権"
+      ],
+      "correct": 0,
+      "segments": [
+        {
+          "text": "1972年の対中"
+        },
+        {
+          "text": "？",
+          "state": "active",
+          "index": 1
+        },
+        {
+          "text": "正常化声明。"
+        }
+      ],
+      "prompt": "1972年の対中？正常化声明。",
+      "context": "日中共同声明",
+      "task": "「日中共同声明」の説明を完成させよう",
+      "targetLabel": "強調された？に入る語句を回答（1 / 1）",
+      "reviewLabel": "日中共同声明 · ？（1 / 1）"
+    },
+    {
+      "id": "jr_social_72d47d420ede",
+      "subject": "社会",
+      "school_level": "中学",
+      "grade": "中3",
+      "field": "歴史",
+      "unit": "戦後の外交",
+      "term": "日米安全保障条約",
+      "term_dummies": [
+        "サンフランシスコ平和条約",
+        "日ソ共同宣言",
+        "日中共同声明"
+      ],
+      "explanation_template": "米軍{{1}}を認めた条約。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "駐留",
+          "dummies": [
+            "領事裁判権",
+            "植民地支配",
+            "関税自主権"
+          ]
+        }
+      ],
+      "note": "1951年に最初の条約、1960年に新条約。",
+      "cloze_context": "日米安全保障条約",
+      "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+      "content_batch": "social-foundation-20261108",
+      "official_blocks": [
+        "hist-C2"
+      ],
+      "sourceId": "jr_social_72d47d420ede",
+      "mode": "explanation_to_term",
+      "answer": "日米安全保障条約",
+      "prompt": "米軍駐留を認めた条約。",
+      "choices": [
+        "日米安全保障条約",
+        "日ソ共同宣言",
+        "サンフランシスコ平和条約",
+        "日中共同声明"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "次の説明にあてはまる用語を選ぼう",
+      "reviewLabel": "日米安全保障条約"
+    },
+    {
+      "id": "jr_social_05c6a813554a",
+      "subject": "社会",
+      "school_level": "中学",
+      "grade": "中3",
+      "field": "歴史",
+      "unit": "戦後の外交",
+      "term": "サンフランシスコ平和条約",
+      "term_dummies": [
+        "日米安全保障条約",
+        "日ソ共同宣言",
+        "日中共同声明"
+      ],
+      "explanation_template": "1951年調印の{{1}}条約。",
+      "blanks": [
+        {
+          "index": 1,
+          "answer": "講和",
+          "dummies": [
+            "同盟",
+            "通商",
+            "関税"
+          ]
+        }
+      ],
+      "note": "1952年の発効で日本は独立を回復した。",
+      "cloze_context": "サンフランシスコ平和条約",
+      "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+      "content_batch": "social-foundation-20261108",
+      "official_blocks": [
+        "hist-C2"
+      ],
+      "sourceId": "jr_social_05c6a813554a",
+      "mode": "explanation_to_term",
+      "answer": "サンフランシスコ平和条約",
+      "prompt": "1951年調印の講和条約。",
+      "choices": [
+        "サンフランシスコ平和条約",
+        "日ソ共同宣言",
+        "日米安全保障条約",
+        "日中共同声明"
+      ],
+      "correct": 0,
+      "context": "",
+      "task": "次の説明にあてはまる用語を選ぼう",
+      "reviewLabel": "サンフランシスコ平和条約"
+    },
+    {
+      "id": "jr_social_case_668a87e1c519:choice",
+      "subject": "社会",
+      "school_level": "中学",
+      "grade": "中1",
+      "field": "地理",
+      "unit": "世界の生活と宗教",
+      "kind": "choice",
+      "task": "適切なものを選ぼう",
+      "prompt": "宗教と生活を学ぶには？",
+      "answer": "自然・社会の条件も併せて見る",
+      "dummies": [
+        "国と宗教は必ず一対一である",
+        "信仰は国境を越えないとする",
+        "習慣は気温だけで説明できる"
+      ],
+      "note": "国や地域の中にも多様な信仰がある。",
+      "content_batch": "social-foundation-20261108",
+      "official_blocks": [
+        "geo-B1"
+      ],
+      "sourceId": "jr_social_case_668a87e1c519",
+      "mode": "learning_point",
+      "term": "宗教と生活を学ぶには？",
+      "context": "",
+      "choices": [
+        "自然・社会の条件も併せて見る",
+        "習慣は気温だけで説明できる",
+        "国と宗教は必ず一対一である",
+        "信仰は国境を越えないとする"
+      ],
+      "correct": 0,
+      "reviewLabel": "宗教と生活を学ぶには？"
+    }
+  ],
+  "results": [
+    {
+      "width": 320,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_35b306d7644a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 557.34375,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 330.34375
+      },
+      "scrollHeight": 328,
+      "clientHeight": 328,
+      "field": {
+        "top": 565,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 129.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 35,
+            "right": 84.75,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_05c6a813554a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 520.671875,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 293.671875
+      },
+      "scrollHeight": 292,
+      "clientHeight": 292,
+      "field": {
+        "top": 529,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 165.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 43.859375,
+            "right": 75.875,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 110.609375,
+            "right": 142.625,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 177.359375,
+            "right": 209.375,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 244.109375,
+            "right": 276.125,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_986528092257:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 557.34375,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 330.34375
+      },
+      "scrollHeight": 328,
+      "clientHeight": 328,
+      "field": {
+        "top": 565,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 129.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 492.5625,
+            "bottom": 515.75,
+            "left": 43.859375,
+            "right": 75.875,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 471.96875,
+            "bottom": 536.34375,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 480.96875,
+            "bottom": 527.34375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_72d47d420ede",
+      "panel": {
+        "top": 227,
+        "bottom": 541.421875,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 314.421875
+      },
+      "scrollHeight": 312,
+      "clientHeight": 312,
+      "field": {
+        "top": 549,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 145.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 430.265625,
+            "bottom": 499.828125,
+            "left": 35,
+            "right": 84.75,
+            "width": 49.75,
+            "height": 69.5625
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 441.859375,
+            "bottom": 488.234375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 418.671875,
+            "bottom": 511.421875,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 92.75
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 441.859375,
+            "bottom": 488.234375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_05c6a813554a",
+      "panel": {
+        "top": 227,
+        "bottom": 541.421875,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 314.421875
+      },
+      "scrollHeight": 312,
+      "clientHeight": 312,
+      "field": {
+        "top": 549,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 145.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 418.671875,
+            "bottom": 511.421875,
+            "left": 35,
+            "right": 84.75,
+            "width": 49.75,
+            "height": 92.75
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 441.859375,
+            "bottom": 488.234375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 430.265625,
+            "bottom": 499.828125,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 69.5625
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 409.671875,
+            "bottom": 520.421875,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 441.859375,
+            "bottom": 488.234375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_case_668a87e1c519:choice",
+      "panel": {
+        "top": 227,
+        "bottom": 534.734375,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 307.734375
+      },
+      "scrollHeight": 306,
+      "clientHeight": 306,
+      "field": {
+        "top": 543,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 151.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 444.359375,
+            "left": 29,
+            "right": 157.5,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 388.984375,
+            "bottom": 435.359375,
+            "left": 35,
+            "right": 151.5,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 444.359375,
+            "left": 162.5,
+            "right": 291,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 388.984375,
+            "bottom": 435.359375,
+            "left": 168.5,
+            "right": 285,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        },
+        {
+          "box": {
+            "top": 449.359375,
+            "bottom": 513.734375,
+            "left": 29,
+            "right": 157.5,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 458.359375,
+            "bottom": 504.734375,
+            "left": 35,
+            "right": 151.5,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        },
+        {
+          "box": {
+            "top": 449.359375,
+            "bottom": 513.734375,
+            "left": 162.5,
+            "right": 291,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 458.359375,
+            "bottom": 504.734375,
+            "left": 168.5,
+            "right": 285,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_35b306d7644a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 538,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 311
+      },
+      "scrollHeight": 318,
+      "clientHeight": 309,
+      "field": {
+        "top": 538,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 110.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 35,
+            "right": 84.75,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_05c6a813554a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 510.671875,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 283.671875
+      },
+      "scrollHeight": 282,
+      "clientHeight": 282,
+      "field": {
+        "top": 511,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 137.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 43.859375,
+            "right": 75.875,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 110.609375,
+            "right": 142.625,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 177.359375,
+            "right": 209.375,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 244.109375,
+            "right": 276.125,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_986528092257:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 538,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 311
+      },
+      "scrollHeight": 318,
+      "clientHeight": 309,
+      "field": {
+        "top": 538,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 110.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 482.5625,
+            "bottom": 505.75,
+            "left": 43.859375,
+            "right": 75.875,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 461.96875,
+            "bottom": 526.34375,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 64.375
+          },
+          "text": {
+            "top": 470.96875,
+            "bottom": 517.34375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_72d47d420ede",
+      "panel": {
+        "top": 227,
+        "bottom": 531.421875,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 304.421875
+      },
+      "scrollHeight": 302,
+      "clientHeight": 302,
+      "field": {
+        "top": 531,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 117.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 420.265625,
+            "bottom": 489.828125,
+            "left": 35,
+            "right": 84.75,
+            "width": 49.75,
+            "height": 69.5625
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 431.859375,
+            "bottom": 478.234375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 408.671875,
+            "bottom": 501.421875,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 92.75
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 431.859375,
+            "bottom": 478.234375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_05c6a813554a",
+      "panel": {
+        "top": 227,
+        "bottom": 531.421875,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 304.421875
+      },
+      "scrollHeight": 302,
+      "clientHeight": 302,
+      "field": {
+        "top": 531,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 117.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 29,
+            "right": 90.75,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 408.671875,
+            "bottom": 501.421875,
+            "left": 35,
+            "right": 84.75,
+            "width": 49.75,
+            "height": 92.75
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 95.75,
+            "right": 157.5,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 431.859375,
+            "bottom": 478.234375,
+            "left": 101.75,
+            "right": 151.5,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 162.5,
+            "right": 224.25,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 420.265625,
+            "bottom": 489.828125,
+            "left": 168.5,
+            "right": 218.25,
+            "width": 49.75,
+            "height": 69.5625
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "box": {
+            "top": 399.671875,
+            "bottom": 510.421875,
+            "left": 229.25,
+            "right": 291,
+            "width": 61.75,
+            "height": 110.75
+          },
+          "text": {
+            "top": 431.859375,
+            "bottom": 478.234375,
+            "left": 235.25,
+            "right": 285,
+            "width": 49.75,
+            "height": 46.375
+          },
+          "scrollWidth": 60,
+          "clientWidth": 60
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_case_668a87e1c519:choice",
+      "panel": {
+        "top": 227,
+        "bottom": 524.734375,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 297.734375
+      },
+      "scrollHeight": 296,
+      "clientHeight": 296,
+      "field": {
+        "top": 525,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 123.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 434.359375,
+            "left": 29,
+            "right": 157.5,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 378.984375,
+            "bottom": 425.359375,
+            "left": 35,
+            "right": 151.5,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 434.359375,
+            "left": 162.5,
+            "right": 291,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 378.984375,
+            "bottom": 425.359375,
+            "left": 168.5,
+            "right": 285,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        },
+        {
+          "box": {
+            "top": 439.359375,
+            "bottom": 503.734375,
+            "left": 29,
+            "right": 157.5,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 448.359375,
+            "bottom": 494.734375,
+            "left": 35,
+            "right": 151.5,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        },
+        {
+          "box": {
+            "top": 439.359375,
+            "bottom": 503.734375,
+            "left": 162.5,
+            "right": 291,
+            "width": 128.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 448.359375,
+            "bottom": 494.734375,
+            "left": 168.5,
+            "right": 285,
+            "width": 116.5,
+            "height": 46.375
+          },
+          "scrollWidth": 127,
+          "clientWidth": 127
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 304,
+        "width": 288,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_35b306d7644a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 527.65625,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 300.65625
+      },
+      "scrollHeight": 299,
+      "clientHeight": 299,
+      "field": {
+        "top": 536,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 158.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 442.28125,
+            "bottom": 506.65625,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 462.875,
+            "bottom": 486.0625,
+            "left": 36.609375,
+            "right": 100.625,
+            "width": 64.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 442.28125,
+            "bottom": 506.65625,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 462.875,
+            "bottom": 486.0625,
+            "left": 120.859375,
+            "right": 184.875,
+            "width": 64.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 442.28125,
+            "bottom": 506.65625,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 451.28125,
+            "bottom": 497.65625,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 442.28125,
+            "bottom": 506.65625,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 462.875,
+            "bottom": 486.0625,
+            "left": 289.359375,
+            "right": 353.375,
+            "width": 64.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_05c6a813554a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 520.671875,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 293.671875
+      },
+      "scrollHeight": 292,
+      "clientHeight": 292,
+      "field": {
+        "top": 529,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 165.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 52.609375,
+            "right": 84.625,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 136.859375,
+            "right": 168.875,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 221.109375,
+            "right": 253.125,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 435.671875,
+            "bottom": 499.671875,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 456.078125,
+            "bottom": 479.265625,
+            "left": 305.359375,
+            "right": 337.375,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_986528092257:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 491.359375,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 264.359375
+      },
+      "scrollHeight": 262,
+      "clientHeight": 262,
+      "field": {
+        "top": 499,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 195.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 405.984375,
+            "bottom": 470.359375,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 426.578125,
+            "bottom": 449.765625,
+            "left": 52.609375,
+            "right": 84.625,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 405.984375,
+            "bottom": 470.359375,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 414.984375,
+            "bottom": 461.359375,
+            "left": 119.25,
+            "right": 186.5,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 405.984375,
+            "bottom": 470.359375,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 414.984375,
+            "bottom": 461.359375,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 405.984375,
+            "bottom": 470.359375,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 414.984375,
+            "bottom": 461.359375,
+            "left": 287.75,
+            "right": 355,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_72d47d420ede",
+      "panel": {
+        "top": 227,
+        "bottom": 488.546875,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 261.546875
+      },
+      "scrollHeight": 260,
+      "clientHeight": 260,
+      "field": {
+        "top": 497,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 197.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 400.578125,
+            "bottom": 446.953125,
+            "left": 35,
+            "right": 102.25,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 400.578125,
+            "bottom": 446.953125,
+            "left": 119.25,
+            "right": 186.5,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 388.984375,
+            "bottom": 458.546875,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 69.5625
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 400.578125,
+            "bottom": 446.953125,
+            "left": 287.75,
+            "right": 355,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_05c6a813554a",
+      "panel": {
+        "top": 227,
+        "bottom": 488.546875,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 261.546875
+      },
+      "scrollHeight": 260,
+      "clientHeight": 260,
+      "field": {
+        "top": 497,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 197.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 388.984375,
+            "bottom": 458.546875,
+            "left": 35,
+            "right": 102.25,
+            "width": 67.25,
+            "height": 69.5625
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 400.578125,
+            "bottom": 446.953125,
+            "left": 119.25,
+            "right": 186.5,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 400.578125,
+            "bottom": 446.953125,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 467.546875,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 400.578125,
+            "bottom": 446.953125,
+            "left": 287.75,
+            "right": 355,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": false,
+      "id": "jr_social_case_668a87e1c519:choice",
+      "panel": {
+        "top": 227,
+        "bottom": 534.734375,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 307.734375
+      },
+      "scrollHeight": 306,
+      "clientHeight": 306,
+      "field": {
+        "top": 543,
+        "bottom": 694.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 151.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 444.359375,
+            "left": 29,
+            "right": 192.5,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 388.984375,
+            "bottom": 435.359375,
+            "left": 35,
+            "right": 186.5,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        },
+        {
+          "box": {
+            "top": 379.984375,
+            "bottom": 444.359375,
+            "left": 197.5,
+            "right": 361,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 388.984375,
+            "bottom": 435.359375,
+            "left": 203.5,
+            "right": 355,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        },
+        {
+          "box": {
+            "top": 449.359375,
+            "bottom": 513.734375,
+            "left": 29,
+            "right": 192.5,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 458.359375,
+            "bottom": 504.734375,
+            "left": 35,
+            "right": 186.5,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        },
+        {
+          "box": {
+            "top": 449.359375,
+            "bottom": 513.734375,
+            "left": 197.5,
+            "right": 361,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 458.359375,
+            "bottom": 504.734375,
+            "left": 203.5,
+            "right": 355,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_35b306d7644a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 517.65625,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 290.65625
+      },
+      "scrollHeight": 289,
+      "clientHeight": 289,
+      "field": {
+        "top": 518,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 130.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 432.28125,
+            "bottom": 496.65625,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 452.875,
+            "bottom": 476.0625,
+            "left": 36.609375,
+            "right": 100.625,
+            "width": 64.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 432.28125,
+            "bottom": 496.65625,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 452.875,
+            "bottom": 476.0625,
+            "left": 120.859375,
+            "right": 184.875,
+            "width": 64.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 432.28125,
+            "bottom": 496.65625,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 441.28125,
+            "bottom": 487.65625,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 432.28125,
+            "bottom": 496.65625,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 452.875,
+            "bottom": 476.0625,
+            "left": 289.359375,
+            "right": 353.375,
+            "width": 64.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_05c6a813554a:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 510.671875,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 283.671875
+      },
+      "scrollHeight": 282,
+      "clientHeight": 282,
+      "field": {
+        "top": 511,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 137.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 52.609375,
+            "right": 84.625,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 136.859375,
+            "right": 168.875,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 221.109375,
+            "right": 253.125,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 425.671875,
+            "bottom": 489.671875,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 64
+          },
+          "text": {
+            "top": 446.078125,
+            "bottom": 469.265625,
+            "left": 305.359375,
+            "right": 337.375,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_986528092257:blank:1",
+      "panel": {
+        "top": 227,
+        "bottom": 481.359375,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 254.359375
+      },
+      "scrollHeight": 252,
+      "clientHeight": 252,
+      "field": {
+        "top": 481,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 167.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 395.984375,
+            "bottom": 460.359375,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 416.578125,
+            "bottom": 439.765625,
+            "left": 52.609375,
+            "right": 84.625,
+            "width": 32.015625,
+            "height": 23.1875
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 395.984375,
+            "bottom": 460.359375,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 404.984375,
+            "bottom": 451.359375,
+            "left": 119.25,
+            "right": 186.5,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 395.984375,
+            "bottom": 460.359375,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 404.984375,
+            "bottom": 451.359375,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 395.984375,
+            "bottom": 460.359375,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 64.375
+          },
+          "text": {
+            "top": 404.984375,
+            "bottom": 451.359375,
+            "left": 287.75,
+            "right": 355,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_72d47d420ede",
+      "panel": {
+        "top": 227,
+        "bottom": 478.546875,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 251.546875
+      },
+      "scrollHeight": 250,
+      "clientHeight": 250,
+      "field": {
+        "top": 479,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 169.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 390.578125,
+            "bottom": 436.953125,
+            "left": 35,
+            "right": 102.25,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 390.578125,
+            "bottom": 436.953125,
+            "left": 119.25,
+            "right": 186.5,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 378.984375,
+            "bottom": 448.546875,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 69.5625
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 390.578125,
+            "bottom": 436.953125,
+            "left": 287.75,
+            "right": 355,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_05c6a813554a",
+      "panel": {
+        "top": 227,
+        "bottom": 478.546875,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 251.546875
+      },
+      "scrollHeight": 250,
+      "clientHeight": 250,
+      "field": {
+        "top": 479,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 169.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 29,
+            "right": 108.25,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 378.984375,
+            "bottom": 448.546875,
+            "left": 35,
+            "right": 102.25,
+            "width": 67.25,
+            "height": 69.5625
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 113.25,
+            "right": 192.5,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 390.578125,
+            "bottom": 436.953125,
+            "left": 119.25,
+            "right": 186.5,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 197.5,
+            "right": 276.75,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 390.578125,
+            "bottom": 436.953125,
+            "left": 203.5,
+            "right": 270.75,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 457.546875,
+            "left": 281.75,
+            "right": 361,
+            "width": 79.25,
+            "height": 87.5625
+          },
+          "text": {
+            "top": 390.578125,
+            "bottom": 436.953125,
+            "left": 287.75,
+            "right": 355,
+            "width": 67.25,
+            "height": 46.375
+          },
+          "scrollWidth": 77,
+          "clientWidth": 77
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "focus": true,
+      "id": "jr_social_case_668a87e1c519:choice",
+      "panel": {
+        "top": 227,
+        "bottom": 524.734375,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 297.734375
+      },
+      "scrollHeight": 296,
+      "clientHeight": 296,
+      "field": {
+        "top": 525,
+        "bottom": 648.28125,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 123.28125
+      },
+      "choices": [
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 434.359375,
+            "left": 29,
+            "right": 192.5,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 378.984375,
+            "bottom": 425.359375,
+            "left": 35,
+            "right": 186.5,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        },
+        {
+          "box": {
+            "top": 369.984375,
+            "bottom": 434.359375,
+            "left": 197.5,
+            "right": 361,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 378.984375,
+            "bottom": 425.359375,
+            "left": 203.5,
+            "right": 355,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        },
+        {
+          "box": {
+            "top": 439.359375,
+            "bottom": 503.734375,
+            "left": 29,
+            "right": 192.5,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 448.359375,
+            "bottom": 494.734375,
+            "left": 35,
+            "right": 186.5,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        },
+        {
+          "box": {
+            "top": 439.359375,
+            "bottom": 503.734375,
+            "left": 197.5,
+            "right": 361,
+            "width": 163.5,
+            "height": 64.375
+          },
+          "text": {
+            "top": 448.359375,
+            "bottom": 494.734375,
+            "left": 203.5,
+            "right": 355,
+            "width": 151.5,
+            "height": 46.375
+          },
+          "scrollWidth": 162,
+          "clientWidth": 162
+        }
+      ],
+      "buttons": {
+        "top": 700.28125,
+        "bottom": 844,
+        "left": 16,
+        "right": 374,
+        "width": 358,
+        "height": 143.71875
+      }
+    }
+  ],
+  "maxActualPanelHeight": 330.34375
+}

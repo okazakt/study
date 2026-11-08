@@ -49,6 +49,29 @@
       },
       "verified": "2026-11-07: 7 boundary examples × 320/390 × normal/focus = 28 displays; panel/choice overflow absent; maximum actual panel height 416px.",
       "reviewRecord": "japanese-source/layout-review.json"
+    },
+    {
+      "id": "social-foundation-text-20261108",
+      "subject": "社会",
+      "profiles": [
+        "text-four-choices",
+        "text-two-columns"
+      ],
+      "maxima": {
+        "task": 24,
+        "prompt": 31,
+        "choice": 16,
+        "targetLabel": 21,
+        "note": 26,
+        "combined": 87
+      },
+      "estimatedPanelHeightLimit": 390,
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "verified": "2026-11-08: 6 boundary examples × 320/390 × normal/focus = 24 fully revealed displays with real HTML/CSS in Chromium. Choice text fits in reviewed cases; maximum actual panel height 331px. Not a guarantee for every device or every text combination.",
+      "reviewRecord": "social-source/layout-review.json"
     }
   ],
   "longDefinitionHeading": {

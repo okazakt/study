@@ -1,0 +1,528 @@
+{
+  "version": "0.79.0",
+  "date": "2026-11-08",
+  "materials": 290,
+  "generated": 492,
+  "scope": "公式の内容のまとまりを参照した編集用の進捗。ブロックの素材数や問題の存在は網羅率・習熟率を表さない。",
+  "fields": {
+    "地理": {
+      "materials": 96,
+      "generated": 156,
+      "units": [
+        "地球と地図",
+        "地図の読み方",
+        "世界の気候",
+        "世界の自然と生活",
+        "アジア州",
+        "ヨーロッパ州",
+        "アフリカ州",
+        "北アメリカ州",
+        "南アメリカ・オセアニア州",
+        "日本の地形",
+        "日本の気候",
+        "日本の農業",
+        "日本の工業",
+        "人口と地域",
+        "防災",
+        "北海道地方",
+        "東北地方",
+        "関東地方",
+        "中部地方",
+        "近畿地方",
+        "中国・四国地方",
+        "九州地方",
+        "地域調査",
+        "地域の在り方",
+        "オセアニア州",
+        "世界の生活と宗教",
+        "日本の地域構成",
+        "世界の諸地域",
+        "日本の産業",
+        "日本の諸地域"
+      ]
+    },
+    "歴史": {
+      "materials": 102,
+      "generated": 166,
+      "units": [
+        "世界の古代文明",
+        "日本列島のあけぼの",
+        "飛鳥・奈良時代",
+        "平安時代",
+        "鎌倉時代",
+        "室町時代",
+        "全国統一",
+        "江戸幕府と外交",
+        "江戸時代の政治改革",
+        "欧米の革命",
+        "明治維新",
+        "立憲国家の成立",
+        "近代の戦争",
+        "世界恐慌と戦争への道",
+        "戦後改革",
+        "戦後の外交",
+        "歴史を学ぶ方法",
+        "古代の宗教",
+        "古代",
+        "中世",
+        "近世",
+        "近代",
+        "近現代"
+      ]
+    },
+    "公民": {
+      "materials": 92,
+      "generated": 170,
+      "units": [
+        "日本国憲法",
+        "国の政治",
+        "地方自治",
+        "人権と義務",
+        "現代社会の特色",
+        "対立と合意",
+        "人権の種類",
+        "新しい人権",
+        "選挙の原則",
+        "選挙制度と世論",
+        "政治機関の相互関係",
+        "地方自治と財政",
+        "市場経済",
+        "企業",
+        "消費と契約",
+        "労働",
+        "金融",
+        "財政と税",
+        "社会保障",
+        "国際社会",
+        "現代社会の文化",
+        "よりよい社会",
+        "国際社会の仕組み",
+        "選挙と議会",
+        "財政と社会保障",
+        "情報の読み方",
+        "人権",
+        "経済"
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "geo-A1",
+      "field": "地理",
+      "officialLabel": "世界と日本の地域構成",
+      "remaining": "大陸・海洋、主な国の位置、日本の領域・時差・領土",
+      "sourceIds": [
+        "jr_social_863882a9554d",
+        "jr_social_d12fae7fc0d2",
+        "jr_social_483cf57a2c5d",
+        "jr_social_ee03921aba65",
+        "jr_social_case_be2f9877866b",
+        "jr_social_case_6fed45e56057"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "geo-B1",
+      "field": "地理",
+      "officialLabel": "世界各地の人々の生活と環境",
+      "remaining": "気候・植生、衣食住、宗教と生活、環境との関わり",
+      "sourceIds": [
+        "jr_social_9340ca4efb0a",
+        "jr_social_062ee16349ce",
+        "jr_social_34daed1c2777",
+        "jr_social_2cada942b464",
+        "jr_social_ba36fd8c0485",
+        "jr_social_6f5b54a2326f",
+        "jr_social_2faa88b763c0",
+        "jr_social_6a4baabee44a",
+        "jr_social_case_5660b74085e3",
+        "jr_social_case_668a87e1c519"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "geo-B2",
+      "field": "地理",
+      "officialLabel": "世界の諸地域",
+      "remaining": "6州ごとの自然・人口・産業・貿易・課題の個別事例",
+      "sourceIds": [
+        "jr_social_12a3653f552f",
+        "jr_social_1ddb289b06bc",
+        "jr_social_d929fb59761e",
+        "jr_social_be4cc06e8d51",
+        "jr_social_d383ec2fc722",
+        "jr_social_ba204d15e016",
+        "jr_social_2642137761a6",
+        "jr_social_36599e81d1d5",
+        "jr_social_1da1c68b584a",
+        "jr_social_b653144e5225",
+        "jr_social_45241b6c3a87",
+        "jr_social_aab365f80662",
+        "jr_social_3ff9d09a83ee",
+        "jr_social_a24d79fad276",
+        "jr_social_994058cae28c",
+        "jr_social_210898198bfa",
+        "jr_social_e9d061ee9198",
+        "jr_social_3be7a8162e89",
+        "jr_social_2af09182e4fd",
+        "jr_social_d91b22b88bf9",
+        "jr_social_case_29a248e47312",
+        "jr_social_case_0ea84f74ea9b"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "geo-C1",
+      "field": "地理",
+      "officialLabel": "地域調査の手法",
+      "remaining": "縮尺や方位、地図記号、複数の資料・聞き取りの整理",
+      "sourceIds": [
+        "jr_social_b7a441376dae",
+        "jr_social_81279fd367f2",
+        "jr_social_2f2159add4e9",
+        "jr_social_45055c344511",
+        "jr_social_case_10169a636580",
+        "jr_social_case_2eaacc1c08d2"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "geo-C2",
+      "field": "地理",
+      "officialLabel": "日本の地域的特色と地域区分",
+      "remaining": "資源・エネルギー、貿易・交通、産業・人口・防災の関係",
+      "sourceIds": [
+        "jr_social_766b5b61f7e2",
+        "jr_social_7f39775f78c2",
+        "jr_social_d9cdaca30b63",
+        "jr_social_2e122b64a757",
+        "jr_social_4842078651c4",
+        "jr_social_52c54d564e66",
+        "jr_social_2b9ac2af88bb",
+        "jr_social_833e7d772e2f",
+        "jr_social_e5dfff55e1e0",
+        "jr_social_efc239870f3d",
+        "jr_social_f53fa1200b65",
+        "jr_social_254acd27a961",
+        "jr_social_f714c3537021",
+        "jr_social_35641ffe533d",
+        "jr_social_c4be6af62b50",
+        "jr_social_a1105bfb8f8d",
+        "jr_social_bc74f1c392b4",
+        "jr_social_bcaf38257f1a",
+        "jr_social_da497c762088",
+        "jr_social_cdd93db76de0",
+        "jr_social_1362a57918c6",
+        "jr_social_0e4eda2333db",
+        "jr_social_e9526c5989fb",
+        "jr_social_18f5feaa42ac"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "geo-C3",
+      "field": "地理",
+      "officialLabel": "日本の諸地域",
+      "remaining": "7地方の地形・気候・産業・都市・課題を重点別に補強",
+      "sourceIds": [
+        "jr_social_case_e72bb7da3bfc",
+        "jr_social_case_fb44547b0198",
+        "jr_social_case_79381e1f141c",
+        "jr_social_case_177b3dda8b75",
+        "jr_social_case_575424a6ebe8",
+        "jr_social_case_b94911d58d39",
+        "jr_social_case_b24e8113519d"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "geo-C4",
+      "field": "地理",
+      "officialLabel": "地域の在り方",
+      "remaining": "実際の地域条件を踏まえた比較・提案の短い具体例",
+      "sourceIds": [
+        "jr_social_case_1a4aac674874",
+        "jr_social_case_a57e900765cf"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-A1",
+      "field": "歴史",
+      "officialLabel": "私たちと歴史",
+      "remaining": "地域の文化財や人物を手掛かりとする探究の具体例",
+      "sourceIds": [
+        "jr_social_case_625eb09b59d9"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-A2",
+      "field": "歴史",
+      "officialLabel": "歴史の特徴と表し方",
+      "remaining": "年代・時代区分・前後関係・資料の立場を読む適用例",
+      "sourceIds": [
+        "jr_social_case_5bf58101fb18",
+        "jr_social_case_e1935e3b51c6"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-B1",
+      "field": "歴史",
+      "officialLabel": "古代までの日本",
+      "remaining": "古代国家・外交・人物・宗教・文化と、変化の因果",
+      "sourceIds": [
+        "jr_social_563e2a596a3f",
+        "jr_social_84b00f4a38c3",
+        "jr_social_39dc1da52bda",
+        "jr_social_1cb466ef54da",
+        "jr_social_d3dda77c038f",
+        "jr_social_2aa73d15d716",
+        "jr_social_80c570412ba6",
+        "jr_social_579d9d4dcc31",
+        "jr_social_0b12f1d9272f",
+        "jr_social_6091a94ff38f",
+        "jr_social_30e2c4202bee",
+        "jr_social_578da2dba52d",
+        "jr_social_da0c7d4b44ca",
+        "jr_social_5b2bdfa6b588",
+        "jr_social_4277d6e907d2",
+        "jr_social_97f2738b3f68",
+        "jr_social_case_5c4715e28a8d",
+        "jr_social_case_060df8cb1e88"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-B2",
+      "field": "歴史",
+      "officialLabel": "中世の日本",
+      "remaining": "元寇、鎌倉仏教、南北朝・戦国、文化や民衆の成長",
+      "sourceIds": [
+        "jr_social_a1d825799d6d",
+        "jr_social_e0208424fbb5",
+        "jr_social_a31cfd12c40b",
+        "jr_social_4bb35ff8010f",
+        "jr_social_45571ebcfec9",
+        "jr_social_f70e77cb5077",
+        "jr_social_b519c9176a48",
+        "jr_social_28dbfa54d27a"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-B3",
+      "field": "歴史",
+      "officialLabel": "近世の日本",
+      "remaining": "身分・年貢・交通・産業、幕政改革の比較、近世文化",
+      "sourceIds": [
+        "jr_social_fb151723e2c9",
+        "jr_social_5869f56b60e6",
+        "jr_social_00f7402939fc",
+        "jr_social_b336a004bedb",
+        "jr_social_31cda006a195",
+        "jr_social_b28e56679c45",
+        "jr_social_7b14daf4772f",
+        "jr_social_4d15372dd330",
+        "jr_social_74dded37e82f",
+        "jr_social_c5392b40d856",
+        "jr_social_304052902946",
+        "jr_social_21939851ab3c"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-C1",
+      "field": "歴史",
+      "officialLabel": "近代の日本と世界",
+      "remaining": "開国・立憲化、帝国主義、産業・社会運動、戦争と生活",
+      "sourceIds": [
+        "jr_social_511f6c0581f5",
+        "jr_social_927e9decd525",
+        "jr_social_6db6760b374a",
+        "jr_social_8f6b6d9f831e",
+        "jr_social_304670a0748e",
+        "jr_social_5ee1fc59561b",
+        "jr_social_d6b589f8026a",
+        "jr_social_73dfbeaa135b",
+        "jr_social_281ab504758f",
+        "jr_social_797d5c3c0b22",
+        "jr_social_f6a311da6896",
+        "jr_social_9da855a7364a",
+        "jr_social_2e8189ca96fd",
+        "jr_social_701bd5936d79",
+        "jr_social_899306a1857b",
+        "jr_social_234cf0f1bebf",
+        "jr_social_35b306d7644a",
+        "jr_social_aba80d1fb43e",
+        "jr_social_97346caf0c91",
+        "jr_social_8f3c2a3aa146"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "hist-C2",
+      "field": "歴史",
+      "officialLabel": "現代の日本と世界",
+      "remaining": "冷戦、戦後政治・経済成長、国際復帰と現代の課題",
+      "sourceIds": [
+        "jr_social_8a5dce570767",
+        "jr_social_04e2c187a5a9",
+        "jr_social_4c79f23f656b",
+        "jr_social_b2cee6a69279",
+        "jr_social_05c6a813554a",
+        "jr_social_72d47d420ede",
+        "jr_social_f87af2f03e57",
+        "jr_social_986528092257"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-A1",
+      "field": "公民",
+      "officialLabel": "私たちが生きる現代社会と文化の特色",
+      "remaining": "文化の多様性、家族・地域の変化と具体的な課題",
+      "sourceIds": [
+        "jr_social_9c3ac1583e16",
+        "jr_social_7b0c40951b59",
+        "jr_social_e0bfc5253a84",
+        "jr_social_c264c87a4fb4",
+        "jr_social_case_efbb1ca66e52"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-A2",
+      "field": "公民",
+      "officialLabel": "現代社会を捉える枠組み",
+      "remaining": "効率・公正、契約・分業、対立と合意の具体的判断",
+      "sourceIds": [
+        "jr_social_274baf701a57",
+        "jr_social_5c034f61d4af",
+        "jr_social_128b0256727b",
+        "jr_social_f1786e99d172",
+        "jr_social_case_765dd1ca5e1e"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-B1",
+      "field": "公民",
+      "officialLabel": "市場の働きと経済",
+      "remaining": "市場・企業・消費者・労働の比較、独占禁止法と競争",
+      "sourceIds": [
+        "jr_social_fb90d0faae84",
+        "jr_social_568a2952e7eb",
+        "jr_social_10a251cb560e",
+        "jr_social_a8965c260250",
+        "jr_social_95410093acd0",
+        "jr_social_6a0f28e15ee8",
+        "jr_social_254a488c7459",
+        "jr_social_1a965e3de3b4",
+        "jr_social_ea23f314fc16",
+        "jr_social_4de0013e47a0",
+        "jr_social_4d3a012df108",
+        "jr_social_7747846f9e6c",
+        "jr_social_d678e28ae313",
+        "jr_social_d0e08911ccf3",
+        "jr_social_53cc77c88d1b",
+        "jr_social_ad267225e773"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-B2",
+      "field": "公民",
+      "officialLabel": "国民の生活と政府の役割",
+      "remaining": "金融・財政、景気、社会保障の具体例と政策の違い",
+      "sourceIds": [
+        "jr_social_d8545ed7bcf9",
+        "jr_social_823dfcd13c65",
+        "jr_social_5cc55b9da1bd",
+        "jr_social_c7986c85c618",
+        "jr_social_5d93cec26936",
+        "jr_social_f28c51301e9a",
+        "jr_social_2e654e0295d3",
+        "jr_social_6047d5923083",
+        "jr_social_4a530ede4f8b",
+        "jr_social_aa737d500571",
+        "jr_social_7576f570f0c2",
+        "jr_social_6f57dd707a94",
+        "jr_social_case_8dc42243be34"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-C1",
+      "field": "公民",
+      "officialLabel": "人間の尊重と日本国憲法の基本的原則",
+      "remaining": "個別の権利・法の支配・公共の福祉と、事例の判断",
+      "sourceIds": [
+        "jr_social_ffe8d108c96e",
+        "jr_social_ee6bdc075f6c",
+        "jr_social_cf12c0ef8f38",
+        "jr_social_d96b98a8b702",
+        "jr_social_a4f58cf26e8b",
+        "jr_social_760966a76a92",
+        "jr_social_952dda8902e8",
+        "jr_social_870a736cadad"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-C2",
+      "field": "公民",
+      "officialLabel": "民主政治と政治参加",
+      "remaining": "国会・内閣・司法の詳細、選挙・地方自治・住民参加",
+      "sourceIds": [
+        "jr_social_6f9ea2104ec4",
+        "jr_social_3f00ef8d02b8",
+        "jr_social_ee4c3a2f4d99",
+        "jr_social_ca5f489d6260",
+        "jr_social_26ad1de419b2",
+        "jr_social_3712c37018cb",
+        "jr_social_6f0c257b2402",
+        "jr_social_17b92f3af442",
+        "jr_social_8a3942cf1cb5",
+        "jr_social_058dc77c74f9",
+        "jr_social_5f30005bb230",
+        "jr_social_5e3ad03b0076",
+        "jr_social_4f5c57aa0b93",
+        "jr_social_49be361765ca",
+        "jr_social_955c28ff1c30",
+        "jr_social_cda2dea0a3ae",
+        "jr_social_case_58bea1527321"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-D1",
+      "field": "公民",
+      "officialLabel": "世界平和と人類の福祉の増大",
+      "remaining": "国際法・主権・領土、平和・国際協力・国際経済",
+      "sourceIds": [
+        "jr_social_025f9edb7737",
+        "jr_social_ad8e6a20ab15",
+        "jr_social_a89dc71f5223",
+        "jr_social_0d74e6b3aa23",
+        "jr_social_case_60eac42c1431",
+        "jr_social_case_78fa5314793f",
+        "jr_social_case_14e1424d2625"
+      ],
+      "status": "補強中"
+    },
+    {
+      "id": "civics-D2",
+      "field": "公民",
+      "officialLabel": "よりよい社会を目指して",
+      "remaining": "環境・貧困・人口・エネルギーなどの条件を比べる提案",
+      "sourceIds": [
+        "jr_social_case_c4ad48b74e50",
+        "jr_social_case_d22618eb1b50",
+        "jr_social_case_738ef9a726c6"
+      ],
+      "status": "補強中"
+    }
+  ]
+}
