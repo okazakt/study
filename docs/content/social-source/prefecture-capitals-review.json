@@ -1,0 +1,341 @@
+{
+  "date": "2026-11-08",
+  "reference": "https://www.gsi.go.jp/common/000218164.pdf",
+  "referencePage": "PDF第2ページの都道府県庁所在都市図。市町村数・面積順位は使用しない。",
+  "prefectures": 47,
+  "newQuestions": 44,
+  "reusedCitySources": 3,
+  "tokyoReference": "https://www.seisakukikaku.metro.tokyo.lg.jp/about/syozaichi",
+  "note": "所在地に関する既存の3都市素材を再利用し、新しい重複素材を作らない。全都道府県が両方向の同一形式で出題されるという意味ではない。",
+  "rows": [
+    {
+      "prefecture": "北海道",
+      "seat": "札幌市",
+      "sourceId": "jr_social_6db3611932fe",
+      "reused": true,
+      "note": ""
+    },
+    {
+      "prefecture": "青森県",
+      "seat": "青森市",
+      "sourceId": "jr_social_case_c2c2f4d3c0ee",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "岩手県",
+      "seat": "盛岡市",
+      "sourceId": "jr_social_case_36ed561c754d",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "宮城県",
+      "seat": "仙台市",
+      "sourceId": "jr_social_5f41b3801062",
+      "reused": true,
+      "note": ""
+    },
+    {
+      "prefecture": "秋田県",
+      "seat": "秋田市",
+      "sourceId": "jr_social_case_94f317ae0cdd",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "山形県",
+      "seat": "山形市",
+      "sourceId": "jr_social_case_25d4f457dd9d",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "福島県",
+      "seat": "福島市",
+      "sourceId": "jr_social_case_3316b0c1bd41",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "茨城県",
+      "seat": "水戸市",
+      "sourceId": "jr_social_case_5af508310ad2",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "栃木県",
+      "seat": "宇都宮市",
+      "sourceId": "jr_social_case_0daa5f2d8506",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "群馬県",
+      "seat": "前橋市",
+      "sourceId": "jr_social_case_f078d2a81328",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "埼玉県",
+      "seat": "さいたま市",
+      "sourceId": "jr_social_case_2d872adc1b53",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "千葉県",
+      "seat": "千葉市",
+      "sourceId": "jr_social_case_c10405d3c9fa",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "東京都",
+      "seat": "新宿区",
+      "sourceId": "jr_social_case_bb9ec31b05a6",
+      "reused": false,
+      "note": "都庁の所在区を問う。地図の「東京」と区別。"
+    },
+    {
+      "prefecture": "神奈川県",
+      "seat": "横浜市",
+      "sourceId": "jr_social_case_4f0d225607ee",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "新潟県",
+      "seat": "新潟市",
+      "sourceId": "jr_social_case_5ce9e8324c36",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "富山県",
+      "seat": "富山市",
+      "sourceId": "jr_social_case_26b78a81ca03",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "石川県",
+      "seat": "金沢市",
+      "sourceId": "jr_social_case_918997113448",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "福井県",
+      "seat": "福井市",
+      "sourceId": "jr_social_case_8efdbd98e83f",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "山梨県",
+      "seat": "甲府市",
+      "sourceId": "jr_social_case_331538a7f8c5",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "長野県",
+      "seat": "長野市",
+      "sourceId": "jr_social_case_a5bb374957e3",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "岐阜県",
+      "seat": "岐阜市",
+      "sourceId": "jr_social_case_d24ce0778009",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "静岡県",
+      "seat": "静岡市",
+      "sourceId": "jr_social_case_fd5cf4b9963f",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "愛知県",
+      "seat": "名古屋市",
+      "sourceId": "jr_social_case_e1a084176ee3",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "三重県",
+      "seat": "津市",
+      "sourceId": "jr_social_case_280fac4a54c1",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "滋賀県",
+      "seat": "大津市",
+      "sourceId": "jr_social_case_dea15a5c8c1b",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "京都府",
+      "seat": "京都市",
+      "sourceId": "jr_social_case_5f9799406071",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "大阪府",
+      "seat": "大阪市",
+      "sourceId": "jr_social_case_5f96a19c957f",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "兵庫県",
+      "seat": "神戸市",
+      "sourceId": "jr_social_case_89e69c292ce4",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "奈良県",
+      "seat": "奈良市",
+      "sourceId": "jr_social_case_b0ae6e2f75f1",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "和歌山県",
+      "seat": "和歌山市",
+      "sourceId": "jr_social_case_6991fd629319",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "鳥取県",
+      "seat": "鳥取市",
+      "sourceId": "jr_social_case_2a301a62d66b",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "島根県",
+      "seat": "松江市",
+      "sourceId": "jr_social_case_382e815b5695",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "岡山県",
+      "seat": "岡山市",
+      "sourceId": "jr_social_case_810adc295d10",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "広島県",
+      "seat": "広島市",
+      "sourceId": "jr_social_case_89fe07b70292",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "山口県",
+      "seat": "山口市",
+      "sourceId": "jr_social_case_301d4ffeb230",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "徳島県",
+      "seat": "徳島市",
+      "sourceId": "jr_social_case_b96922e26546",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "香川県",
+      "seat": "高松市",
+      "sourceId": "jr_social_case_d33550f3b3b0",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "愛媛県",
+      "seat": "松山市",
+      "sourceId": "jr_social_case_4f0f6169bd4e",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "高知県",
+      "seat": "高知市",
+      "sourceId": "jr_social_case_992d09962a4e",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "福岡県",
+      "seat": "福岡市",
+      "sourceId": "jr_social_db4fe2f0a953",
+      "reused": true,
+      "note": ""
+    },
+    {
+      "prefecture": "佐賀県",
+      "seat": "佐賀市",
+      "sourceId": "jr_social_case_d81b04587c49",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "長崎県",
+      "seat": "長崎市",
+      "sourceId": "jr_social_case_b1eb445f2437",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "熊本県",
+      "seat": "熊本市",
+      "sourceId": "jr_social_case_5a94abaf8ee5",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "大分県",
+      "seat": "大分市",
+      "sourceId": "jr_social_case_4ac2f66fa2ed",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "宮崎県",
+      "seat": "宮崎市",
+      "sourceId": "jr_social_case_effcad04c098",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "鹿児島県",
+      "seat": "鹿児島市",
+      "sourceId": "jr_social_case_0f816d7dc437",
+      "reused": false,
+      "note": ""
+    },
+    {
+      "prefecture": "沖縄県",
+      "seat": "那覇市",
+      "sourceId": "jr_social_case_e5b77ce3c16b",
+      "reused": false,
+      "note": ""
+    }
+  ]
+}

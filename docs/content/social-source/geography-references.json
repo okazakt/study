@@ -1,0 +1,59 @@
+{
+  "checked": "2026-11-08",
+  "scope": "事実と学習範囲の確認に使用。各設問・候補・補足は独自作問。図版や資料本文の複製ではない。",
+  "sources": [
+    {
+      "title": "文科省・中学校学習指導要領解説 社会編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_003.pdf",
+      "sha256": "891755a617df844e4a4b4c748f81aa4de675bbe0a5cec48fc0de0ec1acb4a2d5",
+      "usage": "付録3の地理的分野の内容と取扱い。都道府県庁所在地名を含む。"
+    },
+    {
+      "title": "国土地理院・都道府県と都道府県庁所在地",
+      "url": "https://www.gsi.go.jp/common/000218164.pdf",
+      "sha256": "13241bd88e41d2a6f98e271272af5f090b25e1a994c0a1f29123d0f3de4dcaa1",
+      "usage": "PDF第2ページの県名・所在都市名。後続ページの古い面積・市町村数ランキングは使用しない。"
+    },
+    {
+      "title": "NICT・標準時のQ&A",
+      "url": "https://jjy.nict.go.jp/QandA/FAQ/other_qa.html",
+      "sha256": "de0471424ab84d735a242fe48bbe4f0057c6d6f421033463d8c470a0bd8e9948",
+      "usage": "UTCから9時間進めること、東経135度との関係。"
+    },
+    {
+      "title": "海上保安庁・領海等に関する用語",
+      "url": "https://www1.kaiho.mlit.go.jp/ryokai/yougo.html",
+      "sha256": "2cf590d9d9a2328bcd556149ca41b79c27591a94eb03d731b889d04a27b982d5",
+      "usage": "一般的な領海・EEZの範囲、沿岸国の権利の違い。"
+    },
+    {
+      "title": "東京都・都庁所在地について",
+      "url": "https://www.seisakukikaku.metro.tokyo.lg.jp/about/syozaichi",
+      "verification": "公式検索抜粋で所在地の条例・新宿区西新宿を確認。通常ページ取得は403。",
+      "usage": "地図上の東京という表記と都庁の所在区の区別。"
+    },
+    {
+      "title": "東京都財務局・都庁舎の案内",
+      "url": "https://www.yokoso.metro.tokyo.lg.jp/?stop_mobi=yes",
+      "verification": "公式検索抜粋で東京都新宿区西新宿2-8-1を確認。直接取得HTMLは案内画面のみ。",
+      "usage": "所在地の補助確認。"
+    },
+    {
+      "title": "外務省・日本の領土Q&A",
+      "url": "https://www.mofa.go.jp/mofaj/territory/page1w_000013.html",
+      "verification": "公式検索抜粋と内閣官房の公式検索抜粋を照合。通常ページ取得は403。",
+      "usage": "北方四島・竹島・尖閣諸島に関する日本政府の立場。設問にも主体を明記。"
+    },
+    {
+      "title": "内閣官房・国際社会の法と秩序を尊重する日本の対応",
+      "url": "https://www.cas.go.jp/jp/ryodo/taiou/index.html",
+      "verification": "公式検索抜粋を確認。直接取得は404。",
+      "usage": "政府の立場について外務省と同趣旨であることを確認。"
+    },
+    {
+      "title": "国土地理院・地図記号一覧",
+      "url": "https://www.gsi.go.jp/kohokocho/map-sign-tizukigou-2022-itiran.html",
+      "usage": "小・中学校の「文」、寺院の記号等。郵便は郵便記号「〒」として問う。図版は同梱しない。"
+    }
+  ]
+}

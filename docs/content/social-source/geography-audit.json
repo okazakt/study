@@ -1,0 +1,54 @@
+{
+  "version": "0.81.0",
+  "date": "2026-11-08",
+  "batch": "social-geography-20261108",
+  "newMaterials": 224,
+  "newGeneratedQuestions": 292,
+  "pairedTermMaterials": 68,
+  "choiceMaterials": 156,
+  "countryLocationQuestions": 24,
+  "newCapitalQuestions": 44,
+  "reusedCapitalCitySources": 3,
+  "capitalReferenceEntries": 47,
+  "previousSocialMaterials": 530,
+  "previousSocialGeneratedQuestions": 892,
+  "totalMaterials": 754,
+  "totalGeneratedQuestions": 1184,
+  "fields": {
+    "地理": {
+      "materials": 424,
+      "generated": 616
+    },
+    "歴史": {
+      "materials": 186,
+      "generated": 314
+    },
+    "公民": {
+      "materials": 144,
+      "generated": 254
+    }
+  },
+  "previousSocialContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "budget": {
+    "materials": 224,
+    "presentations": 292,
+    "maxima": {
+      "task": 21,
+      "prompt": 26,
+      "choice": 16,
+      "targetLabel": 21,
+      "note": 22,
+      "combined": 80
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "references": "geography-references.json",
+  "capitalMapping": "prefecture-capitals-review.json",
+  "editorialReview": "Coordinates/date arithmetic, distinct maritime rights, rainfall and climate clues, source-sensitive territorial attribution, country locations and Tokyo seat wording reviewed. Explicit north-up premise for map directions; postal mark distinguished from a complete map symbol. No latest statistical rankings added.",
+  "checks": "Changed JSON/IDs/required fields/four choices/literal theme hints/reference-ID existence/existing-content preservation only. Within reviewed social text envelope; no browser, test suite, playback or five-minute simulation.",
+  "completion": "Social content remains in progress; history, civics and final official-subitem review follow."
+}

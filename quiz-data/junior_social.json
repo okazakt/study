@@ -14820,5 +14820,5949 @@
       "civics-D2"
     ],
     "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a83cc2b3a73c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域構成",
+    "term": "ユーラシア大陸",
+    "term_dummies": [
+      "アフリカ大陸",
+      "北アメリカ大陸",
+      "南アメリカ大陸"
+    ],
+    "explanation_template": "アジアと{{1}}からなる、最も大きい大陸。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ヨーロッパ",
+        "dummies": [
+          "アフリカ",
+          "オセアニア",
+          "南アメリカ"
+        ]
+      }
+    ],
+    "note": "六大陸の位置と広がりを押さえる。",
+    "cloze_context": "ユーラシア大陸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_52e1471865f7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域構成",
+    "term": "アフリカ大陸",
+    "term_dummies": [
+      "ユーラシア大陸",
+      "北アメリカ大陸",
+      "南アメリカ大陸"
+    ],
+    "explanation_template": "地中海の{{1}}側にあり、赤道が通る大陸。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "南",
+        "dummies": [
+          "北",
+          "東",
+          "西"
+        ]
+      }
+    ],
+    "note": "砂漠だけでなく多様な自然環境がある。",
+    "cloze_context": "アフリカ大陸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6e48fd32f0a1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域構成",
+    "term": "北アメリカ大陸",
+    "term_dummies": [
+      "ユーラシア大陸",
+      "アフリカ大陸",
+      "南アメリカ大陸"
+    ],
+    "explanation_template": "カナダや{{1}}などがある大陸。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アメリカ合衆国",
+        "dummies": [
+          "ブラジル",
+          "アルゼンチン",
+          "オーストラリア"
+        ]
+      }
+    ],
+    "note": "中央アメリカも含む地域の広がりを確認。",
+    "cloze_context": "北アメリカ大陸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_29dbf5eae66e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域構成",
+    "term": "南アメリカ大陸",
+    "term_dummies": [
+      "ユーラシア大陸",
+      "アフリカ大陸",
+      "北アメリカ大陸"
+    ],
+    "explanation_template": "ブラジルや{{1}}などがある大陸。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アルゼンチン",
+        "dummies": [
+          "カナダ",
+          "アメリカ合衆国",
+          "メキシコ"
+        ]
+      }
+    ],
+    "note": "アンデス山脈やアマゾン川がある。",
+    "cloze_context": "南アメリカ大陸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_439ecb1b03a6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "大陸と海洋",
+    "term": "オーストラリア大陸",
+    "term_dummies": [
+      "南極大陸",
+      "アフリカ大陸",
+      "南アメリカ大陸"
+    ],
+    "explanation_template": "六大陸の中で面積が最も{{1}}大陸。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "小さい",
+        "dummies": [
+          "大きい",
+          "北にある",
+          "南極に近い"
+        ]
+      }
+    ],
+    "note": "国と大陸の範囲を区別する。",
+    "cloze_context": "オーストラリア大陸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5c95e3e04c3a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "大陸と海洋",
+    "term": "南極大陸",
+    "term_dummies": [
+      "オーストラリア大陸",
+      "アフリカ大陸",
+      "北アメリカ大陸"
+    ],
+    "explanation_template": "南極点を含み、広く{{1}}に覆われる大陸。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "氷",
+        "dummies": [
+          "砂漠の砂だけ",
+          "熱帯雨林",
+          "サバナ"
+        ]
+      }
+    ],
+    "note": "南極条約の下で科学調査などが行われる。",
+    "cloze_context": "南極大陸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_02e5a45fa01e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "大陸と海洋",
+    "term": "太平洋",
+    "term_dummies": [
+      "大西洋",
+      "インド洋",
+      "北極海"
+    ],
+    "explanation_template": "三大洋の中で面積が最も{{1}}海洋。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大きい",
+        "dummies": [
+          "小さい",
+          "浅い",
+          "塩分が高い"
+        ]
+      }
+    ],
+    "note": "アジアと南北アメリカなどの間に広がる。",
+    "cloze_context": "太平洋",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_015d085bda84",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "大陸と海洋",
+    "term": "大西洋",
+    "term_dummies": [
+      "太平洋",
+      "インド洋",
+      "北極海"
+    ],
+    "explanation_template": "南北アメリカと、ヨーロッパ・{{1}}などの間の海洋。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アフリカ",
+        "dummies": [
+          "オーストラリア",
+          "日本",
+          "フィリピン"
+        ]
+      }
+    ],
+    "note": "大陸との位置関係を押さえる。",
+    "cloze_context": "大西洋",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_11ebae8043a3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と日付",
+    "term": "インド洋",
+    "term_dummies": [
+      "太平洋",
+      "大西洋",
+      "北極海"
+    ],
+    "explanation_template": "アフリカ、アジア、{{1}}などに囲まれる海洋。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "オーストラリア",
+        "dummies": [
+          "北アメリカ",
+          "南アメリカ",
+          "ヨーロッパ"
+        ]
+      }
+    ],
+    "note": "三大洋の一つ。",
+    "cloze_context": "インド洋",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_adc0ed7be7ab",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と日付",
+    "term": "緯度",
+    "term_dummies": [
+      "経度",
+      "標高",
+      "縮尺"
+    ],
+    "explanation_template": "赤道を基準に、南北の位置を{{1}}で表すもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "角度",
+        "dummies": [
+          "距離だけ",
+          "時刻",
+          "面積"
+        ]
+      }
+    ],
+    "note": "北緯・南緯はそれぞれ90度まで。",
+    "cloze_context": "緯度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2b07a9717039",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と日付",
+    "term": "経度",
+    "term_dummies": [
+      "緯度",
+      "標高",
+      "縮尺"
+    ],
+    "explanation_template": "本初子午線を基準に、{{1}}の位置を角度で表すもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "東西",
+        "dummies": [
+          "南北",
+          "上下",
+          "水深"
+        ]
+      }
+    ],
+    "note": "東経・西経はそれぞれ180度まで。",
+    "cloze_context": "経度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_0d2ea9566064",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と日付",
+    "term": "日付変更線",
+    "term_dummies": [
+      "赤道",
+      "本初子午線",
+      "北回帰線"
+    ],
+    "explanation_template": "主に経度{{1}}度付近を通る、日付を調整する線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "180",
+        "dummies": [
+          "0",
+          "90",
+          "135"
+        ]
+      }
+    ],
+    "note": "国や島を避けて曲がる部分もある。",
+    "cloze_context": "日付変更線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_13889371dcd2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "term": "領土",
+    "term_dummies": [
+      "領海",
+      "領空",
+      "排他的経済水域"
+    ],
+    "explanation_template": "国家の主権が及ぶ{{1}}部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "陸地",
+        "dummies": [
+          "全ての公海",
+          "他国の領海",
+          "宇宙全体"
+        ]
+      }
+    ],
+    "note": "領海・領空と併せて領域を考える。",
+    "cloze_context": "領土",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f4972cea1432",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "term": "領海",
+    "term_dummies": [
+      "領土",
+      "領空",
+      "排他的経済水域"
+    ],
+    "explanation_template": "沿岸国の主権が及ぶ、基線から原則{{1}}海里までの海域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "12",
+        "dummies": [
+          "24",
+          "100",
+          "200"
+        ]
+      }
+    ],
+    "note": "外国船にも無害通航権がある。",
+    "cloze_context": "領海",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_68467ccd9176",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "term": "領空",
+    "term_dummies": [
+      "領土",
+      "領海",
+      "排他的経済水域"
+    ],
+    "explanation_template": "国家の領土と{{1}}の上空。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "領海",
+        "dummies": [
+          "公海全体",
+          "EEZ全体",
+          "他国の海域"
+        ]
+      }
+    ],
+    "note": "EEZの上空全てが領空になるわけではない。",
+    "cloze_context": "領空",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7d630f841ffa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "term": "排他的経済水域",
+    "term_dummies": [
+      "領土",
+      "領海",
+      "領空"
+    ],
+    "explanation_template": "基線から原則{{1}}海里以内で資源の権利等をもつ海域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "200",
+        "dummies": [
+          "12",
+          "24",
+          "100"
+        ]
+      }
+    ],
+    "note": "EEZ。領海は除く。領土と同じ扱いではない。",
+    "cloze_context": "排他的経済水域",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ac3460b24861",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "標準時と地球の表現",
+    "term": "日本標準時",
+    "term_dummies": [
+      "協定世界時",
+      "グリニッジ標準時",
+      "国際原子時"
+    ],
+    "explanation_template": "協定世界時より{{1}}時間進んだ日本の標準時。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "9",
+        "dummies": [
+          "6",
+          "12",
+          "15"
+        ]
+      }
+    ],
+    "note": "JST。東経135度に対応する。",
+    "cloze_context": "日本標準時",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_a5d908ec87b8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "標準時と地球の表現",
+    "term": "標準時子午線",
+    "term_dummies": [
+      "本初子午線",
+      "日付変更線",
+      "赤道"
+    ],
+    "explanation_template": "日本では東経{{1}}度を用いる、標準時の基準線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "135",
+        "dummies": [
+          "0",
+          "90",
+          "180"
+        ]
+      }
+    ],
+    "note": "兵庫県明石市などを通る。",
+    "cloze_context": "標準時子午線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_9798aec81b82",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "標準時と地球の表現",
+    "term": "地球儀",
+    "term_dummies": [
+      "平面地図",
+      "地形図",
+      "主題図"
+    ],
+    "explanation_template": "地球の{{1}}を球面に縮めた模型。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "表面",
+        "dummies": [
+          "内部だけ",
+          "地軸だけ",
+          "宇宙全体"
+        ]
+      }
+    ],
+    "note": "大陸の形や位置関係を確かめる。",
+    "cloze_context": "地球儀",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d7c3cf8bf414",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "標準時と地球の表現",
+    "term": "正積図法",
+    "term_dummies": [
+      "正角図法",
+      "正距方位図法",
+      "心射図法"
+    ],
+    "explanation_template": "各地域の{{1}}の比が正しく表れる図法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "面積",
+        "dummies": [
+          "距離",
+          "方位",
+          "角度"
+        ]
+      }
+    ],
+    "note": "全ての性質を同時に正しくは表せない。",
+    "cloze_context": "正積図法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4c22f6973e7a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "寒帯",
+    "term_dummies": [
+      "熱帯",
+      "温帯",
+      "冷帯"
+    ],
+    "explanation_template": "最暖月の平均気温が{{1}}℃未満の気候帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "10",
+        "dummies": [
+          "0",
+          "18",
+          "22"
+        ]
+      }
+    ],
+    "note": "ツンドラ気候と氷雪気候に分かれる。",
+    "cloze_context": "寒帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1a75e76891c8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "氷雪気候",
+    "term_dummies": [
+      "ツンドラ気候",
+      "熱帯雨林気候",
+      "地中海性気候"
+    ],
+    "explanation_template": "最暖月も平均気温が{{1}}℃未満の気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "0",
+        "dummies": [
+          "10",
+          "18",
+          "22"
+        ]
+      }
+    ],
+    "note": "南極大陸の大部分などに見られる。",
+    "cloze_context": "氷雪気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_91e2470ab396",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "ツンドラ気候",
+    "term_dummies": [
+      "氷雪気候",
+      "サバナ気候",
+      "西岸海洋性気候"
+    ],
+    "explanation_template": "最暖月の平均気温が0℃以上{{1}}℃未満の気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "10",
+        "dummies": [
+          "18",
+          "22",
+          "30"
+        ]
+      }
+    ],
+    "note": "短い夏にコケ類などが育つ。",
+    "cloze_context": "ツンドラ気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8ba79837b25c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の気候",
+    "term": "熱帯雨林気候",
+    "term_dummies": [
+      "サバナ気候",
+      "砂漠気候",
+      "西岸海洋性気候"
+    ],
+    "explanation_template": "一年を通して{{1}}が多い熱帯の気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "降水",
+        "dummies": [
+          "積雪",
+          "永久凍土",
+          "寒冷な日"
+        ]
+      }
+    ],
+    "note": "季節による雨量の差が小さい地域もある。",
+    "cloze_context": "熱帯雨林気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b5b49d0fb78d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "植生と高山の環境",
+    "term": "永久凍土",
+    "term_dummies": [
+      "氷河",
+      "積雪",
+      "流氷"
+    ],
+    "explanation_template": "定義では連続{{1}}年以上凍結している地盤。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "1",
+          "3",
+          "10"
+        ]
+      }
+    ],
+    "note": "融解が地盤や生活に影響する。",
+    "cloze_context": "永久凍土",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4049a328529a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "植生と高山の環境",
+    "term": "熱帯雨林",
+    "term_dummies": [
+      "タイガ",
+      "ステップ",
+      "ツンドラ"
+    ],
+    "explanation_template": "高温多雨の地域に密生する、主に{{1}}樹の森林。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "常緑",
+        "dummies": [
+          "落葉広葉",
+          "落葉針葉",
+          "枯れた"
+        ]
+      }
+    ],
+    "note": "多様な生物が生息する。",
+    "cloze_context": "熱帯雨林",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d726f4407b01",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "植生と高山の環境",
+    "term": "ステップ",
+    "term_dummies": [
+      "熱帯雨林",
+      "タイガ",
+      "ツンドラ"
+    ],
+    "explanation_template": "乾燥帯で、砂漠より{{1}}が多い地域の草原。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "降水",
+        "dummies": [
+          "積雪だけ",
+          "海水",
+          "永久凍土"
+        ]
+      }
+    ],
+    "note": "遊牧や小麦栽培などが見られる。",
+    "cloze_context": "ステップ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e8ecda0de30c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "植生と高山の環境",
+    "term": "高山気候",
+    "term_dummies": [
+      "地中海性気候",
+      "サバナ気候",
+      "西岸海洋性気候"
+    ],
+    "explanation_template": "標高が高くなるほど{{1}}が下がる山地の気候。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "気温",
+        "dummies": [
+          "緯度",
+          "経度",
+          "海水面"
+        ]
+      }
+    ],
+    "note": "同じ緯度でも平地と気候が異なる。",
+    "cloze_context": "高山気候",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_0047e6ef2dd6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "サヘル",
+    "term_dummies": [
+      "ギニア湾沿岸",
+      "喜望峰周辺",
+      "大地溝帯"
+    ],
+    "explanation_template": "サハラ砂漠の{{1}}縁に広がる半乾燥地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "南",
+        "dummies": [
+          "北",
+          "東",
+          "西"
+        ]
+      }
+    ],
+    "note": "干ばつや過放牧などによる土地の劣化が課題。",
+    "cloze_context": "サヘル",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_4ca0341a9fb9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "サハラ砂漠",
+    "term_dummies": [
+      "ナミブ砂漠",
+      "カラハリ砂漠",
+      "アタカマ砂漠"
+    ],
+    "explanation_template": "アフリカ大陸の{{1}}部に広がる大きな砂漠。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "北",
+        "dummies": [
+          "南",
+          "東端",
+          "西端だけ"
+        ]
+      }
+    ],
+    "note": "オアシスなどを利用する暮らしもある。",
+    "cloze_context": "サハラ砂漠",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_5d69dd9250e4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "カカオ",
+    "term_dummies": [
+      "コーヒー",
+      "綿花",
+      "天然ゴム"
+    ],
+    "explanation_template": "チョコレートの主原料となる{{1}}作物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱帯の",
+        "dummies": [
+          "寒帯の",
+          "高山だけの",
+          "乾燥地だけの"
+        ]
+      }
+    ],
+    "note": "ギニア湾沿岸などで栽培される。",
+    "cloze_context": "カカオ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f930e1f620ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "term": "レアメタル",
+    "term_dummies": [
+      "鉄鉱石",
+      "石炭",
+      "原油"
+    ],
+    "explanation_template": "産出量などに制約がある{{1}}金属。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "希少",
+        "dummies": [
+          "全て鉄だけの",
+          "常に無限の",
+          "全て液体の"
+        ]
+      }
+    ],
+    "note": "電子機器や電池などにも使われる。",
+    "cloze_context": "レアメタル",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_00eb6a753f7a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "サンベルト",
+    "term_dummies": [
+      "五大湖沿岸",
+      "北極圏",
+      "アマゾン川流域"
+    ],
+    "explanation_template": "米国の北緯{{1}}度以南などの、産業が発展した地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "37",
+        "dummies": [
+          "0",
+          "60",
+          "80"
+        ]
+      }
+    ],
+    "note": "先端技術産業などが発達した。",
+    "cloze_context": "サンベルト",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_725b2924131d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "シリコンバレー",
+    "term_dummies": [
+      "ボストン周辺",
+      "五大湖沿岸",
+      "メキシコ湾岸"
+    ],
+    "explanation_template": "米国の{{1}}州にある先端技術企業の集積地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "カリフォルニア",
+        "dummies": [
+          "フロリダ",
+          "ニューヨーク",
+          "アラスカ"
+        ]
+      }
+    ],
+    "note": "大学・研究機関や人材との関係が重要。",
+    "cloze_context": "シリコンバレー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b5c2b83e655e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "五大湖",
+    "term_dummies": [
+      "カスピ海周辺",
+      "バルト海沿岸",
+      "地中海沿岸"
+    ],
+    "explanation_template": "米国と{{1}}の国境付近にある湖群。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "カナダ",
+        "dummies": [
+          "メキシコ",
+          "ブラジル",
+          "キューバ"
+        ]
+      }
+    ],
+    "note": "水運や工業の発達と関わる。",
+    "cloze_context": "五大湖",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7ee5a9c2ad20",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "term": "メガロポリス",
+    "term_dummies": [
+      "サンベルト",
+      "プレーリー",
+      "シリコンバレー"
+    ],
+    "explanation_template": "米国の北東部などで、大都市圏が{{1}}した地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "連続",
+        "dummies": [
+          "消滅",
+          "凍結",
+          "孤立だけ"
+        ]
+      }
+    ],
+    "note": "都市の連なりと交通を捉える。",
+    "cloze_context": "メガロポリス",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c179b386955e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "term": "コーヒー",
+    "term_dummies": [
+      "カカオ",
+      "綿花",
+      "天然ゴム"
+    ],
+    "explanation_template": "豆を飲料に利用し、ブラジルなどで栽培する{{1}}作物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "商品",
+        "dummies": [
+          "自給用だけの",
+          "寒帯だけの",
+          "海洋の"
+        ]
+      }
+    ],
+    "note": "海外市場の需要や価格とも関わる。",
+    "cloze_context": "コーヒー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e1c6fb2b10c0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "term": "バイオエタノール",
+    "term_dummies": [
+      "ガソリン",
+      "石炭",
+      "天然ガス"
+    ],
+    "explanation_template": "さとうきびなどの{{1}}を原料に作る燃料。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生物資源",
+        "dummies": [
+          "原油だけ",
+          "石炭だけ",
+          "鉄鉱石"
+        ]
+      }
+    ],
+    "note": "食料生産や土地利用との関係も考える。",
+    "cloze_context": "バイオエタノール",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_e079f37d0807",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "term": "アマゾン川",
+    "term_dummies": [
+      "パラナ川",
+      "オリノコ川",
+      "ミシシッピ川"
+    ],
+    "explanation_template": "流域に広い{{1}}が発達する南米の大河。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱帯雨林",
+        "dummies": [
+          "針葉樹林",
+          "氷床",
+          "砂漠"
+        ]
+      }
+    ],
+    "note": "大西洋へ注ぐ。",
+    "cloze_context": "アマゾン川",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2ccd7a40550b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "term": "ブラジリア",
+    "term_dummies": [
+      "リオデジャネイロ",
+      "サンパウロ",
+      "サルバドル"
+    ],
+    "explanation_template": "ブラジルの{{1}}に建設された首都。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "内陸部",
+        "dummies": [
+          "海岸部だけ",
+          "国境線上",
+          "島の上"
+        ]
+      }
+    ],
+    "note": "内陸の開発を進めるねらいがあった。",
+    "cloze_context": "ブラジリア",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8d69c109a565",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の貿易",
+    "term": "輸入",
+    "term_dummies": [
+      "輸出",
+      "国内取引",
+      "再輸出"
+    ],
+    "explanation_template": "外国から財やサービスを{{1}}こと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "買い入れる",
+        "dummies": [
+          "売り渡す",
+          "全て贈る",
+          "全て没収する"
+        ]
+      }
+    ],
+    "note": "輸出と方向を区別する。",
+    "cloze_context": "輸入",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_67d1290fd607",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の貿易",
+    "term": "輸出",
+    "term_dummies": [
+      "輸入",
+      "国内取引",
+      "再輸入"
+    ],
+    "explanation_template": "外国へ財やサービスを{{1}}こと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "売り渡す",
+        "dummies": [
+          "買い入れる",
+          "全て没収する",
+          "備蓄だけする"
+        ]
+      }
+    ],
+    "note": "輸入と方向を区別する。",
+    "cloze_context": "輸出",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_73c698f95312",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の貿易",
+    "term": "関税",
+    "term_dummies": [
+      "消費税",
+      "所得税",
+      "固定資産税"
+    ],
+    "explanation_template": "輸入品などに課す{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "税",
+        "dummies": [
+          "配当",
+          "年金",
+          "給料"
+        ]
+      }
+    ],
+    "note": "貿易の条件と国内産業に影響する。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_d0d914ba97ff",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の貿易",
+    "term": "貿易収支",
+    "term_dummies": [
+      "財政収支",
+      "家計収支",
+      "サービス収支"
+    ],
+    "explanation_template": "財の輸出額から{{1}}額を差し引いたもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "輸入",
+        "dummies": [
+          "預金",
+          "歳出",
+          "賃金"
+        ]
+      }
+    ],
+    "note": "黒字と赤字は差の正負で捉える。",
+    "cloze_context": "貿易収支",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ce6714a17ec3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "資源と産業のつながり",
+    "term": "食料自給率",
+    "term_dummies": [
+      "エネルギー自給率",
+      "失業率",
+      "都市人口率"
+    ],
+    "explanation_template": "国内に供給する食料を{{1}}でまかなう割合。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国内生産",
+        "dummies": [
+          "輸入だけ",
+          "輸出だけ",
+          "備蓄だけ"
+        ]
+      }
+    ],
+    "note": "カロリー・生産額など、算出基準も確認。",
+    "cloze_context": "食料自給率",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_fed5cfe746d6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "資源と産業のつながり",
+    "term": "エネルギー自給率",
+    "term_dummies": [
+      "食料自給率",
+      "失業率",
+      "都市人口率"
+    ],
+    "explanation_template": "一次エネルギー供給に占める{{1}}生産の割合。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国内",
+        "dummies": [
+          "国外だけ",
+          "輸出向けだけ",
+          "備蓄だけ"
+        ]
+      }
+    ],
+    "note": "輸入依存と安定供給の問題を考える。",
+    "cloze_context": "エネルギー自給率",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_bc905c4ef6e2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "資源と産業のつながり",
+    "term": "加工貿易",
+    "term_dummies": [
+      "中継貿易",
+      "国内取引",
+      "自給自足"
+    ],
+    "explanation_template": "原料などを{{1}}し、加工品を輸出する貿易。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "輸入",
+        "dummies": [
+          "輸出だけ",
+          "廃棄",
+          "寄付"
+        ]
+      }
+    ],
+    "note": "原料の輸入と製品の輸出を結び付ける。",
+    "cloze_context": "加工貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_7ba5997f0727",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "資源と産業のつながり",
+    "term": "産業の空洞化",
+    "term_dummies": [
+      "工業化",
+      "都市化",
+      "国際分業"
+    ],
+    "explanation_template": "海外移転などで{{1}}の生産機能が弱まる現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国内",
+        "dummies": [
+          "海外全体",
+          "世界全体",
+          "両国全て"
+        ]
+      }
+    ],
+    "note": "雇用や地域経済にも影響する。",
+    "cloze_context": "産業の空洞化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ef3aa67f3e2c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "工業と産業構造",
+    "term": "第三次産業",
+    "term_dummies": [
+      "第一次産業",
+      "第二次産業",
+      "製造業"
+    ],
+    "explanation_template": "商業・金融・運輸などの{{1}}を担う産業の区分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "サービス",
+        "dummies": [
+          "原料採掘",
+          "農産物生産",
+          "製品製造だけ"
+        ]
+      }
+    ],
+    "note": "産業別の人口や生産額を見る。",
+    "cloze_context": "第三次産業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6ad15869deb3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "工業と産業構造",
+    "term": "地場産業",
+    "term_dummies": [
+      "先端技術産業",
+      "重化学工業",
+      "素材型工業"
+    ],
+    "explanation_template": "地域の資源や伝統的{{1}}を生かす、中小企業中心の産業。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "技術",
+        "dummies": [
+          "関税だけ",
+          "国境だけ",
+          "為替だけ"
+        ]
+      }
+    ],
+    "note": "地域に根差した生産と暮らしを考える。",
+    "cloze_context": "地場産業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_8bbb9e943ed2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "工業と産業構造",
+    "term": "臨海部",
+    "term_dummies": [
+      "内陸部",
+      "山間部",
+      "高原"
+    ],
+    "explanation_template": "{{1}}に面した土地。港や工業用地などが集まる。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "海",
+        "dummies": [
+          "山頂だけ",
+          "高原だけ",
+          "川の上流だけ"
+        ]
+      }
+    ],
+    "note": "輸入原料や製品の海上輸送に便利。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_b76bf88b34d6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "工業と産業構造",
+    "term": "内陸型工業",
+    "term_dummies": [
+      "臨海型工業",
+      "資源立地型工業",
+      "原料産地型工業"
+    ],
+    "explanation_template": "電子機器などが高速道路や{{1}}付近に立地する型。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "空港",
+        "dummies": [
+          "漁港",
+          "干潟",
+          "火口"
+        ]
+      }
+    ],
+    "note": "製品の付加価値や輸送手段に注目する。",
+    "cloze_context": "内陸型工業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_84ac49d6ec6f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と産業",
+    "term": "太平洋ベルト",
+    "term_dummies": [
+      "サンベルト",
+      "北日本の山地",
+      "日本海の沖合"
+    ],
+    "explanation_template": "関東南部から{{1}}北部にかけて連なる工業地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "九州",
+        "dummies": [
+          "北海道",
+          "東北",
+          "沖縄"
+        ]
+      }
+    ],
+    "note": "臨海部の工業地域を中心につながる。",
+    "cloze_context": "太平洋ベルト",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_ad11cfb6d3db",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と産業",
+    "term": "コンテナ",
+    "term_dummies": [
+      "タンカー",
+      "パイプライン",
+      "バルク船"
+    ],
+    "explanation_template": "貨物を詰め、船・鉄道などで共用できる{{1}}箱。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "規格化した",
+        "dummies": [
+          "必ず木製の",
+          "使い捨てだけの",
+          "冷蔵だけの"
+        ]
+      }
+    ],
+    "note": "積み替えや大量輸送を効率化する。",
+    "cloze_context": "コンテナ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_cbcc853922b2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と産業",
+    "term": "ハブ空港",
+    "term_dummies": [
+      "地方空港",
+      "離島空港",
+      "軍用飛行場"
+    ],
+    "explanation_template": "多数の路線を結び、{{1}}の拠点となる空港。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "乗り継ぎ",
+        "dummies": [
+          "貨物保管だけ",
+          "離着陸訓練だけ",
+          "農薬散布だけ"
+        ]
+      }
+    ],
+    "note": "国内外の交通網を結ぶ。",
+    "cloze_context": "ハブ空港",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_9db501197470",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と産業",
+    "term": "高速道路",
+    "term_dummies": [
+      "一般道路",
+      "鉄道",
+      "航路"
+    ],
+    "explanation_template": "自動車専用で、一般の{{1}}は通行できない道路。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "歩行者",
+        "dummies": [
+          "乗用車",
+          "バス",
+          "トラック"
+        ]
+      }
+    ],
+    "note": "物流や産業立地、生活圏に関わる。",
+    "cloze_context": "高速道路",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2d61602009b8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図と防災",
+    "term": "地形図",
+    "term_dummies": [
+      "人口分布図",
+      "気候分布図",
+      "土地条件図"
+    ],
+    "explanation_template": "標高や土地利用、建物などを{{1}}的に示す地図。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "総合",
+        "dummies": [
+          "気温だけの単一",
+          "人口だけの単一",
+          "降水だけの単一"
+        ]
+      }
+    ],
+    "note": "等高線や地図記号を読む。",
+    "cloze_context": "地形図",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_96fd3d91c86b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図と防災",
+    "term": "主題図",
+    "term_dummies": [
+      "地形図",
+      "一般図",
+      "地球儀"
+    ],
+    "explanation_template": "人口や気候など、特定の{{1}}を中心に示す地図。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "テーマ",
+        "dummies": [
+          "縮尺だけ",
+          "方位だけ",
+          "国名だけ"
+        ]
+      }
+    ],
+    "note": "目的に応じて資料を選ぶ。",
+    "cloze_context": "主題図",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c5062282ee55",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図と防災",
+    "term": "防災",
+    "term_dummies": [
+      "復旧",
+      "復興",
+      "救急医療"
+    ],
+    "explanation_template": "災害が起こる前に{{1}}を防ぐため備える取組。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "被害",
+        "dummies": [
+          "備蓄",
+          "避難訓練",
+          "情報共有"
+        ]
+      }
+    ],
+    "note": "施設の整備と日頃の備えを組み合わせる。",
+    "cloze_context": "防災",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_07541c093a20",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図と防災",
+    "term": "減災",
+    "term_dummies": [
+      "復旧",
+      "復興",
+      "危険の放置"
+    ],
+    "explanation_template": "災害時の被害をできるだけ{{1}}する考え方。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "小さく",
+        "dummies": [
+          "大きく",
+          "固定",
+          "隠蔽"
+        ]
+      }
+    ],
+    "note": "被害を完全に零にできない場合も備える。",
+    "cloze_context": "減災",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_2f7ef4bcc4e2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "term": "ドーナツ化現象",
+    "term_dummies": [
+      "都心回帰",
+      "コンパクトシティ",
+      "バリアフリー"
+    ],
+    "explanation_template": "大都市の中心部で人口が減り、{{1}}で増える現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "郊外",
+        "dummies": [
+          "都心だけ",
+          "海外だけ",
+          "山頂だけ"
+        ]
+      }
+    ],
+    "note": "住宅の立地や通勤の広がりに注目する。",
+    "cloze_context": "ドーナツ化現象",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_1fdc96c54c9c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "term": "都心回帰",
+    "term_dummies": [
+      "ドーナツ化現象",
+      "コンパクトシティ",
+      "バリアフリー"
+    ],
+    "explanation_template": "大都市の中心部へ{{1}}人口が戻る動き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "居住",
+        "dummies": [
+          "観光だけの",
+          "出張だけの",
+          "通過だけの"
+        ]
+      }
+    ],
+    "note": "再開発や住宅供給などと関わる。",
+    "cloze_context": "都心回帰",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_6ae75c8ed292",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "term": "コンパクトシティ",
+    "term_dummies": [
+      "ドーナツ化現象",
+      "都心回帰",
+      "バリアフリー"
+    ],
+    "explanation_template": "居住や都市機能を集め、公共{{1}}などで結ぶ都市構想。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "交通",
+        "dummies": [
+          "採掘",
+          "徴税",
+          "裁判"
+        ]
+      }
+    ],
+    "note": "人口減少下で生活機能の維持を考える。",
+    "cloze_context": "コンパクトシティ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_00e39e29082b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "term": "バリアフリー",
+    "term_dummies": [
+      "ドーナツ化現象",
+      "都心回帰",
+      "コンパクトシティ"
+    ],
+    "explanation_template": "高齢者や障害者などの生活を妨げる{{1}}を取り除くこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "障壁",
+        "dummies": [
+          "権利",
+          "情報全て",
+          "公共交通"
+        ]
+      }
+    ],
+    "note": "段差の解消などが代表例。",
+    "cloze_context": "バリアフリー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_861c51457f3e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候・宗教と暮らし",
+    "term": "ヒンドゥー教",
+    "term_dummies": [
+      "イスラム教",
+      "キリスト教",
+      "仏教"
+    ],
+    "explanation_template": "インドで広まり、{{1}}を神聖視する宗教。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "牛",
+        "dummies": [
+          "豚",
+          "羊",
+          "馬"
+        ]
+      }
+    ],
+    "note": "暮らしや食文化との関係に注目する。",
+    "cloze_context": "ヒンドゥー教",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_f6a42e2da202",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候・宗教と暮らし",
+    "term": "乾季",
+    "term_dummies": [
+      "雨季",
+      "梅雨",
+      "台風の接近期"
+    ],
+    "explanation_template": "一年のうち、{{1}}の少ない時期。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "降水",
+        "dummies": [
+          "気温変化だけ",
+          "昼間だけ",
+          "風だけ"
+        ]
+      }
+    ],
+    "note": "雨季との違いを雨温図で読む。",
+    "cloze_context": "乾季",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_c6cf226d4b35",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候・宗教と暮らし",
+    "term": "雨季",
+    "term_dummies": [
+      "乾季",
+      "極夜",
+      "白夜"
+    ],
+    "explanation_template": "一年のうち、{{1}}の多い時期。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "降水",
+        "dummies": [
+          "積雪だけ",
+          "流氷",
+          "凍土"
+        ]
+      }
+    ],
+    "note": "乾季との違いを雨温図で読む。",
+    "cloze_context": "雨季",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_55d6d4023db9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候・宗教と暮らし",
+    "term": "高床式住居",
+    "term_dummies": [
+      "日干しれんがの住居",
+      "雪の住居",
+      "石造りの住居全般"
+    ],
+    "explanation_template": "熱帯で湿気や{{1}}に備え、床を高くした住居。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "洪水",
+        "dummies": [
+          "積雪",
+          "乾燥",
+          "凍土"
+        ]
+      }
+    ],
+    "note": "気候と住居の工夫を関連付ける。",
+    "cloze_context": "高床式住居",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_866fda35ad4a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球の動きと時差",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球が1時間に回転する角度は？",
+    "answer": "15度",
+    "dummies": [
+      "10度",
+      "30度",
+      "60度"
+    ],
+    "note": "360度を24時間で割る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_2b5fc5b8a22a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球の動きと時差",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東経135度と東経120度の時差は？",
+    "answer": "1時間",
+    "dummies": [
+      "2時間",
+      "8時間",
+      "9時間"
+    ],
+    "note": "経度差15度で1時間と考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5c60e4c309c5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球の動きと時差",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ日の東経120度が正午なら東経135度は？",
+    "answer": "13時",
+    "dummies": [
+      "11時",
+      "14時",
+      "21時"
+    ],
+    "note": "経度だけで考えると東側ほど時刻が進む。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4ab1e487c9c1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球の動きと時差",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "UTCが月曜18時なら、日本標準時は？",
+    "answer": "火曜3時",
+    "dummies": [
+      "月曜3時",
+      "月曜9時",
+      "火曜9時"
+    ],
+    "note": "UTCに9時間を足し、日付も確認。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_277b87108f95",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球の動きと時差",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本標準時が火曜6時ならUTCは？",
+    "answer": "月曜21時",
+    "dummies": [
+      "火曜15時",
+      "火曜21時",
+      "月曜15時"
+    ],
+    "note": "日本標準時から9時間を引く。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_446913388be4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球の動きと時差",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日付変更線を西から東へ越えると日付は？",
+    "answer": "1日戻す",
+    "dummies": [
+      "1日進める",
+      "必ず同じ",
+      "1か月戻す"
+    ],
+    "note": "線を越える向きで調整を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_302937c24701",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と季節",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北緯30度は赤道のどちら側？",
+    "answer": "北",
+    "dummies": [
+      "南",
+      "東",
+      "西"
+    ],
+    "note": "緯度は南北の位置を表す。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_f27d3bf2e825",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と季節",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "西経60度は本初子午線のどちら側？",
+    "answer": "西",
+    "dummies": [
+      "東",
+      "北",
+      "南"
+    ],
+    "note": "経度は東西の位置を表す。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c394500316a2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と季節",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本が夏のとき、南半球の豪州は一般に？",
+    "answer": "冬",
+    "dummies": [
+      "夏",
+      "必ず雨季",
+      "必ず乾季"
+    ],
+    "note": "南北の半球で季節が逆になる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1b55684570f2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "位置と季節",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "赤道を挟む同じ経度の二地点で主に異なるのは？",
+    "answer": "緯度",
+    "dummies": [
+      "経度",
+      "本初子午線の位置",
+      "地球の自転方向"
+    ],
+    "note": "緯度と経度の役割を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e7b780750857",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "領海とEEZの違いとして適切なのは？",
+    "answer": "EEZは資源等の権利が中心",
+    "dummies": [
+      "どちらも陸地だけを指す",
+      "どちらも全ての船を禁止する",
+      "EEZは領空を全て含む"
+    ],
+    "note": "EEZでは資源に関する権利等をもつ。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_491ae6188053",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "領海の幅を測る基準となるのは？",
+    "answer": "領海の基線",
+    "dummies": [
+      "県庁の位置",
+      "首都の位置",
+      "海底の最深点"
+    ],
+    "note": "一般に低潮線などが基線となる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_2468797fece1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "EEZの資源に関して沿岸国がもつのは？",
+    "answer": "探査・開発などの主権的権利",
+    "dummies": [
+      "全外国船の航行を禁じる権利",
+      "全上空を領空とする権利",
+      "他国の国籍を決める権利"
+    ],
+    "note": "領海での主権と区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a52779e23934",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の最西端の島は？",
+    "answer": "与那国島",
+    "dummies": [
+      "南鳥島",
+      "沖ノ鳥島",
+      "択捉島"
+    ],
+    "note": "日本の東西南北の端を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c4b8e6cf48f7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北方四島に含まれる島は？",
+    "answer": "国後島",
+    "dummies": [
+      "佐渡島",
+      "対馬",
+      "隠岐諸島"
+    ],
+    "note": "択捉・国後・色丹・歯舞を押さえる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_ba11f2137636",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "尖閣諸島について日本政府が示す立場は？",
+    "answer": "解決すべき領有権問題はない",
+    "dummies": [
+      "日本は領有権を放棄した",
+      "日本と中国の共同領土である",
+      "領有権を台湾に移した"
+    ],
+    "note": "日本政府の立場を問う設問。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_35f464d41d28",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球儀と世界地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球儀が平面地図より表しやすいのは？",
+    "answer": "地球上の形や位置の関係",
+    "dummies": [
+      "建物の部屋割り",
+      "日々の株価",
+      "個人の通勤時刻"
+    ],
+    "note": "球面を平面にすると何らかのひずみが出る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4968b0723b16",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球儀と世界地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "メルカトル図法で高緯度ほど大きく見えるのは？",
+    "answer": "面積",
+    "dummies": [
+      "地球上の実際の陸地",
+      "経度の実際の角度",
+      "一年の長さ"
+    ],
+    "note": "見かけの面積を実面積と混同しない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e7522e3eab02",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球儀と世界地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国の面積を地図上で比べるのに適するのは？",
+    "answer": "正積図法の地図",
+    "dummies": [
+      "面積のひずみが大きい地図",
+      "縮尺の違う地図を無調整で比較",
+      "方位だけが正しい地図"
+    ],
+    "note": "何を正しく表す図法か確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_f6b12e14d555",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球儀と世界地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "正距方位図法で確かめられるものは？",
+    "answer": "中心からの距離と方位",
+    "dummies": [
+      "全地点間の正しい距離",
+      "全地点間の正しい面積",
+      "全地点間の正しい角度"
+    ],
+    "note": "どこを中心にした地図か確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_ed501e303ee6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球儀と世界地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平面地図の上端を常に北と決めてよい？",
+    "answer": "方位の表示を確認する",
+    "dummies": [
+      "必ず北と決めてよい",
+      "必ず南と決めてよい",
+      "地名の字数で決める"
+    ],
+    "note": "地図は目的により向きが異なる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_7227f4167269",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "地球儀と世界地図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大陸の形を比べる前に地図で確認すべきなのは？",
+    "answer": "図法と縮尺",
+    "dummies": [
+      "印刷した年だけ",
+      "題名の文字数",
+      "紙の色だけ"
+    ],
+    "note": "比較の条件をそろえる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_2a94e6303a95",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "縮尺と方位",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "縮尺2万5千分の1の地図で4cmは実際に？",
+    "answer": "1km",
+    "dummies": [
+      "100m",
+      "10km",
+      "25km"
+    ],
+    "note": "4cm×25000＝100000cm。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_9a86acb50dc4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "縮尺と方位",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "縮尺5万分の1の地図で2cmは実際に？",
+    "answer": "1km",
+    "dummies": [
+      "100m",
+      "10km",
+      "5km"
+    ],
+    "note": "地図の距離と実距離の単位をそろえる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_666496ca4524",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "縮尺と方位",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ紙面で詳しく表せるのはどちら？",
+    "answer": "2万5千分の1",
+    "dummies": [
+      "20万分の1",
+      "100万分の1",
+      "1000万分の1"
+    ],
+    "note": "縮尺の分母が小さいほど大縮尺。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a76853fa39d1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "縮尺と方位",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "等高線の間隔が狭い場所の斜面は？",
+    "answer": "急",
+    "dummies": [
+      "緩やか",
+      "必ず水平",
+      "必ず海底"
+    ],
+    "note": "同じ等高線間隔の地図で比べる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_41bd6f98baa1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "縮尺と方位",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "尾根を見分けるときに確かめるのは？",
+    "answer": "高い所の連なり",
+    "dummies": [
+      "川の本数だけ",
+      "地名の長さ",
+      "道路の色だけ"
+    ],
+    "note": "谷は低い所の連なりとして読む。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4d828930730b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "縮尺と方位",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地図を北が上になるよう置くと、右は？",
+    "answer": "東",
+    "dummies": [
+      "西",
+      "南",
+      "北"
+    ],
+    "note": "北を上に置いて方位を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_be8c0a9b274b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "竹島について日本政府が主張しているのは？",
+    "answer": "日本固有の領土である",
+    "dummies": [
+      "日本は領有権を放棄した",
+      "日韓共同領土と条約で確定した",
+      "日本に領有権はない"
+    ],
+    "note": "日本政府の立場を問う設問。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_2550367bd2b3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "日本の領域",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北方四島の帰属問題で日本政府が求めるのは？",
+    "answer": "帰属問題の解決と平和条約締結",
+    "dummies": [
+      "四島を公海にすること",
+      "領有権を第三国へ移すこと",
+      "日本の主権を放棄すること"
+    ],
+    "note": "日本政府の基本方針を確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a255af30c9da",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "雨温図の着眼点",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1月より7月が暖かい地域は一般にどの半球？",
+    "answer": "北半球",
+    "dummies": [
+      "南半球",
+      "必ず赤道上",
+      "必ず南極圏"
+    ],
+    "note": "他の条件と合わせて季節を捉える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a4e41c9cd918",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "雨温図の着眼点",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "7月より1月が暖かい地域は一般にどの半球？",
+    "answer": "南半球",
+    "dummies": [
+      "北半球",
+      "必ず北極圏",
+      "必ず赤道上"
+    ],
+    "note": "月別の気温の変化を見る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_3246ffc2d33c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "雨温図の着眼点",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "最暖月の平均気温が8℃の地域の気候帯は？",
+    "answer": "寒帯",
+    "dummies": [
+      "熱帯",
+      "温帯",
+      "冷帯"
+    ],
+    "note": "寒帯の最暖月は平均10℃未満。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_db2c562fbd1d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "雨温図の着眼点",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "月別の降水量で雨季と乾季を見分ける着眼点は？",
+    "answer": "雨量の多い時期と少ない時期",
+    "dummies": [
+      "最高気温だけ",
+      "標高だけ",
+      "国境の形だけ"
+    ],
+    "note": "棒と線が何を表すかも確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a654c640072c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "雨温図の着眼点",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "年較差を求めるときに引き算するのは？",
+    "answer": "最暖月と最寒月の平均気温",
+    "dummies": [
+      "年間降水量と月降水量",
+      "最高標高と最低標高",
+      "緯度と経度"
+    ],
+    "note": "日較差とは区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_3b8af7468f2b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候と住まい",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "熱帯の高床式住居が備える問題は？",
+    "answer": "湿気や洪水",
+    "dummies": [
+      "永久凍土の凍結",
+      "冬の豪雪だけ",
+      "極夜だけ"
+    ],
+    "note": "通風や土地の条件も考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1e8072feaca0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候と住まい",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "乾燥地域で日干しれんがを使える条件は？",
+    "answer": "降水が少ない",
+    "dummies": [
+      "毎日豪雨が続く",
+      "一年中凍結する",
+      "常に地面が水没する"
+    ],
+    "note": "材料と自然環境の関係を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_bc40453c7e44",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候と住まい",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "高山で同じ緯度の平地より気温が低い主な理由は？",
+    "answer": "標高が高い",
+    "dummies": [
+      "経度が必ず大きい",
+      "一日の長さが必ず短い",
+      "海の塩分が低い"
+    ],
+    "note": "緯度と標高の影響を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_6929bec5ae23",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "気候と生活",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "乾季がある地域で農業を考える際に重要なのは？",
+    "answer": "水の確保と作付けの時期",
+    "dummies": [
+      "一年中同量の雨と仮定する",
+      "毎年の降水を無視する",
+      "全作物を同じ日に植える"
+    ],
+    "note": "季節の違いに対応して暮らす。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_8ac08cd270c1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の生活と宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "イスラム教の伝統で一般に避ける食材は？",
+    "answer": "豚肉",
+    "dummies": [
+      "羊肉",
+      "鶏肉",
+      "牛肉"
+    ],
+    "note": "実際の習慣は地域や個人でも異なる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_00c3d1c32d10",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の生活と宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "モスクと特に関係が深い宗教は？",
+    "answer": "イスラム教",
+    "dummies": [
+      "キリスト教",
+      "仏教",
+      "ヒンドゥー教"
+    ],
+    "note": "祈りの場と生活文化を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5622e913aa50",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の生活と宗教",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "教会と特に関係が深い宗教は？",
+    "answer": "キリスト教",
+    "dummies": [
+      "イスラム教",
+      "仏教",
+      "ヒンドゥー教"
+    ],
+    "note": "同じ国にも多様な信仰がある。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c9f3be741917",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "インドが含まれる地域区分は？",
+    "answer": "南アジア",
+    "dummies": [
+      "東南アジア",
+      "中央アジア",
+      "西アジア"
+    ],
+    "note": "地域区分と国の位置を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_08900efb4080",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "労働集約型の工場が立地を考える条件は？",
+    "answer": "労働力や賃金、市場への近さ",
+    "dummies": [
+      "永久凍土の広さだけ",
+      "山の標高だけ",
+      "極夜の長さだけ"
+    ],
+    "note": "複数の立地条件を比べる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_2be95cecec5e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アジア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "急速な工業化で対応が必要になる課題は？",
+    "answer": "大気や水の汚染への対策",
+    "dummies": [
+      "環境対策が全て不要になること",
+      "都市交通が全て消えること",
+      "人口移動が必ず止まること"
+    ],
+    "note": "経済成長と環境保全を両立する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_bb3406e36d2e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "EU加盟国とユーロ使用国の関係は？",
+    "answer": "全てが一致するわけではない",
+    "dummies": [
+      "必ず全て一致する",
+      "EU加盟国は全て使用禁止",
+      "ユーロはEUと無関係"
+    ],
+    "note": "加盟と共通通貨導入を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_58bf13e63e45",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アルプスの自然を観光に生かす際の課題は？",
+    "answer": "景観や生態系の保全",
+    "dummies": [
+      "観光客数だけで全て決める",
+      "交通の影響を全て無視する",
+      "全ての自然を人工物に置き換える"
+    ],
+    "note": "地域の生活と観光の両立を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_dcfcec22419a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "ヨーロッパ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "異なる国にまたがる大気汚染への対策は？",
+    "answer": "国境を越えた協力",
+    "dummies": [
+      "一国だけで全影響を防げる",
+      "風の影響を無視する",
+      "被害を必ず国境内に限る"
+    ],
+    "note": "環境問題の広がりと協力の範囲を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c7aacf6330d5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アフリカの国境を理解する際に重要な背景は？",
+    "answer": "植民地支配の歴史",
+    "dummies": [
+      "全て自然の境界に沿うこと",
+      "全て一民族一国家であること",
+      "国境は全て古代から不変ということ"
+    ],
+    "note": "国家の境界と民族の分布は必ず一致しない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1ca96a9e57b1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "カカオを国内で加工することが目指す効果は？",
+    "answer": "付加価値や雇用を生む",
+    "dummies": [
+      "原料生産を必ずなくす",
+      "国際価格と完全に無関係になる",
+      "全ての輸入を不要にする"
+    ],
+    "note": "一次産品の輸出だけとの違いを見る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_34fdd5e10cd5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "アフリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "内陸国の貿易で課題になりやすいのは？",
+    "answer": "港までの輸送路の確保",
+    "dummies": [
+      "海への出口が必ず多数ある",
+      "輸送費が必ず零になる",
+      "他国との協力が不要になる"
+    ],
+    "note": "道路・鉄道と周辺国の関係を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5616f76be9c5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "五大湖沿岸で工業が発達した条件は？",
+    "answer": "資源と湖を使う水運",
+    "dummies": [
+      "一年中の熱帯雨林",
+      "水運が全く使えないこと",
+      "農業人口の少なさだけ"
+    ],
+    "note": "原料や製品の輸送を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_92cd381009d0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "農業の種子・加工・販売などを企業が扱う仕組みは？",
+    "answer": "アグリビジネス",
+    "dummies": [
+      "自給的な農業だけ",
+      "伝統的な遊牧だけ",
+      "家内手工業だけ"
+    ],
+    "note": "農業と関連産業のつながりを捉える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_0a22b8ef626b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "北アメリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "米国でスペイン語が使われる背景の一つは？",
+    "answer": "中南米との歴史や移民",
+    "dummies": [
+      "全住民が同じ国の出身だから",
+      "国境を越える移動がないため",
+      "英語が全て禁止されたため"
+    ],
+    "note": "多様な文化的背景を理解する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_06e4fbc4f896",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大豆や牧場の開発と森林保全を比べる視点は？",
+    "answer": "収入と環境への影響",
+    "dummies": [
+      "収入だけで全て判断する",
+      "森林の働きを全て無視する",
+      "開発すれば必ず森林が増える"
+    ],
+    "note": "開発と持続可能性を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_d5b2a9321199",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "バイオ燃料の増産で考慮が必要なのは？",
+    "answer": "食料や土地利用との競合",
+    "dummies": [
+      "原料が全て無限に得られること",
+      "輸送が全て不要になること",
+      "農地を一切使わないこと"
+    ],
+    "note": "再生可能でも影響を多面的に見る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4724f2a80a55",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "南アメリカ州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ブラジリアへの遷都のねらいの一つは？",
+    "answer": "内陸地域の開発",
+    "dummies": [
+      "海岸だけへの一極集中",
+      "農業の全面廃止",
+      "全ての森林伐採の禁止"
+    ],
+    "note": "首都の立地と国土開発を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_5c38db9d4177",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "オセアニア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "豪州で先住民の文化を考える際の基本は？",
+    "answer": "歴史と権利を尊重する",
+    "dummies": [
+      "先住民の文化を全て過去とする",
+      "移民の文化だけを正しいとする",
+      "全ての住民の文化が同じとする"
+    ],
+    "note": "先住民と移民の共生を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_cf0206a75fb6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "オセアニア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "豪州とアジアの経済関係で重要な視点は？",
+    "answer": "資源や農産物の貿易の結び付き",
+    "dummies": [
+      "歴史上の相手だけを永久に固定",
+      "海を挟むと貿易できない",
+      "隣国以外とは取引しない"
+    ],
+    "note": "結び付きの変化を時期も踏まえて見る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_de7f380493b3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "オセアニア州",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "低い島国が気候変動で国際協力を求める理由は？",
+    "answer": "一国だけでは影響を防ぎにくい",
+    "dummies": [
+      "全ての原因が島国内にある",
+      "海面上昇は国境で止まる",
+      "協力は地理と無関係だから"
+    ],
+    "note": "地域の課題と世界的な取組を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_fb8339d009e6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "食料と資源",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "食料自給率を比較する前に確かめるのは？",
+    "answer": "算出基準と対象年",
+    "dummies": [
+      "数字の大きさだけ",
+      "国名の文字数",
+      "図の色だけ"
+    ],
+    "note": "カロリーと生産額などの基準がある。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_95b6936f859f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "食料と資源",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "カロリーベースの食料自給率が示すのは？",
+    "answer": "供給熱量に占める国産の割合",
+    "dummies": [
+      "全食品の品目数だけ",
+      "全農家の戸数だけ",
+      "全農地の面積だけ"
+    ],
+    "note": "何を分子・分母とするか確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_b64bb73f7a27",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "食料と資源",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "資源の輸入依存が高い国で重要な備えは？",
+    "answer": "調達先の分散や備蓄",
+    "dummies": [
+      "一つの相手だけに全量を依存",
+      "国際情勢の影響を無視する",
+      "全ての輸送を不要とする"
+    ],
+    "note": "安定供給と省資源の両方を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4316f9a4a12b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "発電とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "火力発電の燃料の代表例は？",
+    "answer": "石炭や天然ガス",
+    "dummies": [
+      "ウランだけ",
+      "太陽光だけ",
+      "水の流れだけ"
+    ],
+    "note": "燃料の確保や温室効果ガスも課題。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c73f4dc03698",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "発電とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の水力発電で生かされる自然条件は？",
+    "answer": "山地と豊富な降水",
+    "dummies": [
+      "広い砂漠だけ",
+      "一年中の凍土だけ",
+      "干ばつが続く平地だけ"
+    ],
+    "note": "水の落差や流量を利用する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_6bf619540ecb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "発電とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "太陽光や風力の発電量を考える際の課題は？",
+    "answer": "天候による変動への対応",
+    "dummies": [
+      "発電量が必ず一定であること",
+      "送電が全て不要になること",
+      "土地を全く使わないこと"
+    ],
+    "note": "蓄電や電力系統なども関わる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4c277a385a73",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "発電とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "原子力発電で考慮すべき課題は？",
+    "answer": "放射性廃棄物の管理",
+    "dummies": [
+      "燃料と廃棄物が存在しないこと",
+      "太陽光の強さだけへの依存",
+      "風が弱いと必ず停止すること"
+    ],
+    "note": "安全性と長期的な管理などを考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_ff8f05cd2a15",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と物流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "航空貨物に適した品物の例は？",
+    "answer": "軽量で価格が高い電子部品",
+    "dummies": [
+      "大量で安価な砂利だけ",
+      "大量の鉄鉱石だけ",
+      "大量の石炭だけ"
+    ],
+    "note": "重量・価格・時間の条件を比べる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_51214a686718",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と物流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "船で原料を大量に運ぶ利点は？",
+    "answer": "重量当たりの輸送費を抑えやすい",
+    "dummies": [
+      "全ての貨物を最速で運べる",
+      "内陸の全地点に直接着く",
+      "天候の影響を全く受けない"
+    ],
+    "note": "速さと費用は同じとは限らない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_9101f9e1fe82",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と物流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "輸入原料を使う工場の臨海立地の利点は？",
+    "answer": "港から原料を運びやすい",
+    "dummies": [
+      "地形や輸送と無関係になる",
+      "全ての原料が国内で採れる",
+      "製品の輸送が不要になる"
+    ],
+    "note": "原料と製品の移動を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_d10440e77191",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "交通と物流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "トラック輸送が生活を支える役割は？",
+    "answer": "細かな地点へ届けやすい",
+    "dummies": [
+      "全輸送で必ず最も安い",
+      "国境の手続きが全て不要",
+      "燃料を全く使わない"
+    ],
+    "note": "幹線輸送と末端の配送を組み合わせる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1731b60e2468",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "人口減少下で生活拠点を集める狙いは？",
+    "answer": "医療や交通を維持しやすくする",
+    "dummies": [
+      "住民の移動を全て禁じる",
+      "全ての集落を同じ面積にする",
+      "公共交通を必ず廃止する"
+    ],
+    "note": "費用と住民の暮らしを併せて考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_722ddaebf39f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "公共施設で段差をなくす取組の目的は？",
+    "answer": "移動や利用の障壁を減らす",
+    "dummies": [
+      "利用できる年齢を狭くする",
+      "全ての歩行を禁止する",
+      "施設の用途を一つにする"
+    ],
+    "note": "多様な人が利用できる条件を考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_66978a1cd463",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "過疎地域の交通計画で検討すべきなのは？",
+    "answer": "利用状況と生活上の必要性",
+    "dummies": [
+      "乗客数だけで一律に廃止",
+      "全路線を無条件で増便",
+      "住民の移動目的を確認しない"
+    ],
+    "note": "効率と公平なアクセスを考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e4854b254b33",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "人口と地域の将来",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "高齢化率を見る際の分母は？",
+    "answer": "総人口",
+    "dummies": [
+      "高齢者数だけ",
+      "世帯数だけ",
+      "出生数だけ"
+    ],
+    "note": "人数と割合を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_8a66db4bbf49",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災と地形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "台風時、低い沿岸部で特に注意する現象は？",
+    "answer": "高潮",
+    "dummies": [
+      "氷河の前進",
+      "永久凍土の形成",
+      "火山の隆起だけ"
+    ],
+    "note": "気圧や風による海面上昇に注意。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c28faeef363b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災と地形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大雨時の急な斜面で注意する災害は？",
+    "answer": "土砂災害",
+    "dummies": [
+      "流氷",
+      "高潮だけ",
+      "極夜"
+    ],
+    "note": "地形と災害の種類を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_245d083c5894",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災と地形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "河口の低い平地で洪水に備える理由は？",
+    "answer": "川の増水や浸水の危険がある",
+    "dummies": [
+      "標高が必ず全国最高だから",
+      "海が全て淡水になるから",
+      "川が全て地中に消えるから"
+    ],
+    "note": "土地の成り立ちと水の流れを考える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_ece8704fc9e4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災と地形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地震で液状化に注意が必要な地盤の例は？",
+    "answer": "水を多く含む緩い砂地盤",
+    "dummies": [
+      "硬い岩盤だけ",
+      "乾いた山頂だけ",
+      "永久凍土だけ"
+    ],
+    "note": "埋立地などでは地盤条件も確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_49d8a5143c81",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "防災と地形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "火山の近くで避難計画を立てる資料は？",
+    "answer": "噴火の危険範囲を示す地図",
+    "dummies": [
+      "人口総数だけの表",
+      "商品価格だけの表",
+      "他地域の観光写真だけ"
+    ],
+    "note": "災害の種類に合った資料を使う。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_6d1c3c03d185",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図記号と調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "郵便記号「〒」が示す施設は？",
+    "answer": "郵便局",
+    "dummies": [
+      "警察署",
+      "消防署",
+      "病院"
+    ],
+    "note": "郵便の記号と施設を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_573d015ede7d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図記号と調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地図記号の「卍」が示す施設は？",
+    "answer": "寺院",
+    "dummies": [
+      "神社",
+      "病院",
+      "消防署"
+    ],
+    "note": "記号と施設の種類を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_db0fdb31d1b7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図記号と調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地図記号の「文」が示す施設は？",
+    "answer": "小・中学校",
+    "dummies": [
+      "大学だけ",
+      "市役所",
+      "図書館"
+    ],
+    "note": "地図記号の意味を確かめる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a4c620a89d39",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地図記号と調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "観光客数を二つの地域で比較する際に必要なのは？",
+    "answer": "時期や集計方法をそろえる",
+    "dummies": [
+      "数値が大きい地域だけ見る",
+      "地域の面積を必ず同じとする",
+      "調査年を無視する"
+    ],
+    "note": "資料の条件をそろえて読み取る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_b200c14f3f2a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地域比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北海道と南九州の農業を比べる視点は？",
+    "answer": "気候・土地・作物の組合せ",
+    "dummies": [
+      "同じ国なので全て同じとする",
+      "気候だけで全て決める",
+      "交通を一切考慮しない"
+    ],
+    "note": "複数の自然・社会条件を関連付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_76247cad0da5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地域比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北陸と瀬戸内の水利用を比べる際の着眼点は？",
+    "answer": "降水と地形、ため池など",
+    "dummies": [
+      "緯度だけで全て決める",
+      "海の塩分だけを見る",
+      "産業の条件を一切見ない"
+    ],
+    "note": "地域ごとの水の確保の工夫を見る。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_a30f18cc2e41",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地域比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中央高地と沿岸部で気温が違う条件の一つは？",
+    "answer": "標高や海の影響",
+    "dummies": [
+      "同じ緯度なら必ず同温",
+      "同じ国なら季節差がない",
+      "地名の長さ"
+    ],
+    "note": "地域内の違いにも注目する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_cf7134a60ceb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地域比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ地方で産業が異なる理由を調べるには？",
+    "answer": "交通・資源・市場などを比べる",
+    "dummies": [
+      "地方名だけで産業を決める",
+      "全県を同じ条件とみなす",
+      "統計の対象年を見ない"
+    ],
+    "note": "一つの条件だけで決め付けない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1f664d38bcb9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "米国の北に接する国は？",
+    "answer": "カナダ",
+    "dummies": [
+      "メキシコ",
+      "ブラジル",
+      "キューバ"
+    ],
+    "note": "国境と位置関係を地図でも確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_56ccafd57d01",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "米国の南に接する国は？",
+    "answer": "メキシコ",
+    "dummies": [
+      "カナダ",
+      "ブラジル",
+      "アルゼンチン"
+    ],
+    "note": "北アメリカの国の位置を押さえる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_806bba87b47e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ブラジルが面する主な海洋は？",
+    "answer": "大西洋",
+    "dummies": [
+      "太平洋",
+      "インド洋",
+      "北極海"
+    ],
+    "note": "南米大陸と海洋の位置関係を捉える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_19e195ebce6f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "南米の太平洋側を細長く南北に延びる国は？",
+    "answer": "チリ",
+    "dummies": [
+      "ブラジル",
+      "ウルグアイ",
+      "アルゼンチン"
+    ],
+    "note": "アンデス山脈の西側に位置する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_b9838b356a6f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アンデスの東側にパンパが広がる国は？",
+    "answer": "アルゼンチン",
+    "dummies": [
+      "チリ",
+      "ペルー",
+      "エクアドル"
+    ],
+    "note": "地形や農牧業と国の位置を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_9b59794596d4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ブリテン島などからなる国は？",
+    "answer": "イギリス",
+    "dummies": [
+      "アイルランド",
+      "アイスランド",
+      "フランス"
+    ],
+    "note": "ヨーロッパ西部の島国。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_4b585e06200f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地中海と大西洋に面する西ヨーロッパの国は？",
+    "answer": "フランス",
+    "dummies": [
+      "ドイツ",
+      "イタリア",
+      "スイス"
+    ],
+    "note": "国の位置と接する海を確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_997e6c06d9b0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北海とバルト海の両方に面する国は？",
+    "answer": "ドイツ",
+    "dummies": [
+      "フランス",
+      "イタリア",
+      "スペイン"
+    ],
+    "note": "ヨーロッパの海と国の位置を捉える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_ceed3e5653dd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "長靴の形に例えられる地中海の半島の国は？",
+    "answer": "イタリア",
+    "dummies": [
+      "ギリシャ",
+      "スペイン",
+      "ポルトガル"
+    ],
+    "note": "半島と周辺の海の位置を確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_91d6c28a176c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "イベリア半島の大部分を占める国は？",
+    "answer": "スペイン",
+    "dummies": [
+      "ポルトガル",
+      "フランス",
+      "イタリア"
+    ],
+    "note": "半島の西部にはポルトガルがある。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_615b6dabdf0d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ナイル川の河口がある国は？",
+    "answer": "エジプト",
+    "dummies": [
+      "スーダン",
+      "ケニア",
+      "エチオピア"
+    ],
+    "note": "アフリカ北東部で地中海に面する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e798ef562427",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アフリカ大陸の南端に位置する国は？",
+    "answer": "南アフリカ共和国",
+    "dummies": [
+      "エジプト",
+      "ケニア",
+      "ナイジェリア"
+    ],
+    "note": "地図で大陸内の位置を確かめる。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_93c70d92e4da",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "インド洋側の東アフリカにある国は？",
+    "answer": "ケニア",
+    "dummies": [
+      "ガーナ",
+      "ナイジェリア",
+      "コートジボワール"
+    ],
+    "note": "アフリカの東西を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c836375c5af5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "西アフリカのギニア湾に面する国は？",
+    "answer": "ナイジェリア",
+    "dummies": [
+      "エジプト",
+      "ケニア",
+      "南アフリカ共和国"
+    ],
+    "note": "地域区分と海岸の位置を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_675999c922e0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アラビア半島の大部分を占める国は？",
+    "answer": "サウジアラビア",
+    "dummies": [
+      "イラン",
+      "イラク",
+      "トルコ"
+    ],
+    "note": "西アジアの国々の位置を捉える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_e5a7f428a640",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ペルシャ湾の東側に広く位置する国は？",
+    "answer": "イラン",
+    "dummies": [
+      "サウジアラビア",
+      "ヨルダン",
+      "エジプト"
+    ],
+    "note": "湾を挟む東西の国を区別する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_64f0580345c6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "赤道が通る東南アジアの島国は？",
+    "answer": "インドネシア",
+    "dummies": [
+      "フィリピン",
+      "日本",
+      "スリランカ"
+    ],
+    "note": "赤道と島々の位置関係を確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_18ba94333ba1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "バンコクを首都とする国は？",
+    "answer": "タイ",
+    "dummies": [
+      "ベトナム",
+      "ラオス",
+      "カンボジア"
+    ],
+    "note": "インドシナ半島の位置と結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_893ddf03854b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "インドシナ半島の東岸を南北に延びる国は？",
+    "answer": "ベトナム",
+    "dummies": [
+      "タイ",
+      "ラオス",
+      "カンボジア"
+    ],
+    "note": "半島の地形と国の位置を関連付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_f4fd7ab2d56b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "朝鮮半島の南部に位置する国は？",
+    "answer": "韓国",
+    "dummies": [
+      "北朝鮮",
+      "中国",
+      "日本"
+    ],
+    "note": "日本の周辺国の位置を確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_3f1c973426b3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "黄河と長江が流れる国は？",
+    "answer": "中国",
+    "dummies": [
+      "インド",
+      "日本",
+      "韓国"
+    ],
+    "note": "河川と国の位置を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_1f7a5ac17d49",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北にロシア、南に中国がある内陸国は？",
+    "answer": "モンゴル",
+    "dummies": [
+      "ネパール",
+      "ブータン",
+      "ラオス"
+    ],
+    "note": "アジアの内陸と周辺国の位置を捉える。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_fb1438fb4ae8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ヒマラヤ南側にある南アジアの内陸国は？",
+    "answer": "ネパール",
+    "dummies": [
+      "パキスタン",
+      "バングラデシュ",
+      "スリランカ"
+    ],
+    "note": "山地・国境・海との位置関係を確認する。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_bed8d1e98a48",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "主な国の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アジアとヨーロッパに領土がまたがる国は？",
+    "answer": "トルコ",
+    "dummies": [
+      "イラン",
+      "エジプト",
+      "サウジアラビア"
+    ],
+    "note": "地域区分と国境は必ず一致しない。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08"
+  },
+  {
+    "id": "jr_social_case_c2c2f4d3c0ee",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "青森県の県庁所在地は？",
+    "answer": "青森市",
+    "dummies": [
+      "弘前市",
+      "八戸市",
+      "十和田市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "青森県"
+  },
+  {
+    "id": "jr_social_case_36ed561c754d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "岩手県の県庁所在地は？",
+    "answer": "盛岡市",
+    "dummies": [
+      "花巻市",
+      "奥州市",
+      "一関市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "岩手県"
+  },
+  {
+    "id": "jr_social_case_94f317ae0cdd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "秋田県の県庁所在地は？",
+    "answer": "秋田市",
+    "dummies": [
+      "横手市",
+      "大館市",
+      "大仙市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "秋田県"
+  },
+  {
+    "id": "jr_social_case_25d4f457dd9d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "山形県の県庁所在地は？",
+    "answer": "山形市",
+    "dummies": [
+      "米沢市",
+      "鶴岡市",
+      "酒田市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "山形県"
+  },
+  {
+    "id": "jr_social_case_3316b0c1bd41",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "福島県の県庁所在地は？",
+    "answer": "福島市",
+    "dummies": [
+      "郡山市",
+      "いわき市",
+      "会津若松市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "福島県"
+  },
+  {
+    "id": "jr_social_case_5af508310ad2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "茨城県の県庁所在地は？",
+    "answer": "水戸市",
+    "dummies": [
+      "つくば市",
+      "日立市",
+      "土浦市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "茨城県"
+  },
+  {
+    "id": "jr_social_case_0daa5f2d8506",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "栃木県の県庁所在地は？",
+    "answer": "宇都宮市",
+    "dummies": [
+      "小山市",
+      "足利市",
+      "栃木市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "栃木県"
+  },
+  {
+    "id": "jr_social_case_f078d2a81328",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "群馬県の県庁所在地は？",
+    "answer": "前橋市",
+    "dummies": [
+      "高崎市",
+      "太田市",
+      "桐生市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "群馬県"
+  },
+  {
+    "id": "jr_social_case_2d872adc1b53",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "埼玉県の県庁所在地は？",
+    "answer": "さいたま市",
+    "dummies": [
+      "川越市",
+      "川口市",
+      "熊谷市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "埼玉県"
+  },
+  {
+    "id": "jr_social_case_c10405d3c9fa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "千葉県の県庁所在地は？",
+    "answer": "千葉市",
+    "dummies": [
+      "船橋市",
+      "柏市",
+      "松戸市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "千葉県"
+  },
+  {
+    "id": "jr_social_case_bb9ec31b05a6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東京都庁がある特別区は？",
+    "answer": "新宿区",
+    "dummies": [
+      "千代田区",
+      "中央区",
+      "港区"
+    ],
+    "note": "地図では「東京」とも表記。都庁は新宿区。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "東京都"
+  },
+  {
+    "id": "jr_social_case_4f0d225607ee",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "神奈川県の県庁所在地は？",
+    "answer": "横浜市",
+    "dummies": [
+      "川崎市",
+      "相模原市",
+      "横須賀市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "神奈川県"
+  },
+  {
+    "id": "jr_social_case_5ce9e8324c36",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "新潟県の県庁所在地は？",
+    "answer": "新潟市",
+    "dummies": [
+      "長岡市",
+      "上越市",
+      "三条市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "新潟県"
+  },
+  {
+    "id": "jr_social_case_26b78a81ca03",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "富山県の県庁所在地は？",
+    "answer": "富山市",
+    "dummies": [
+      "高岡市",
+      "射水市",
+      "魚津市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "富山県"
+  },
+  {
+    "id": "jr_social_case_918997113448",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "石川県の県庁所在地は？",
+    "answer": "金沢市",
+    "dummies": [
+      "小松市",
+      "白山市",
+      "加賀市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "石川県"
+  },
+  {
+    "id": "jr_social_case_8efdbd98e83f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "福井県の県庁所在地は？",
+    "answer": "福井市",
+    "dummies": [
+      "敦賀市",
+      "鯖江市",
+      "越前市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "福井県"
+  },
+  {
+    "id": "jr_social_case_331538a7f8c5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "山梨県の県庁所在地は？",
+    "answer": "甲府市",
+    "dummies": [
+      "富士吉田市",
+      "甲斐市",
+      "南アルプス市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "山梨県"
+  },
+  {
+    "id": "jr_social_case_a5bb374957e3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "長野県の県庁所在地は？",
+    "answer": "長野市",
+    "dummies": [
+      "松本市",
+      "上田市",
+      "飯田市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "長野県"
+  },
+  {
+    "id": "jr_social_case_d24ce0778009",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "岐阜県の県庁所在地は？",
+    "answer": "岐阜市",
+    "dummies": [
+      "大垣市",
+      "高山市",
+      "多治見市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "岐阜県"
+  },
+  {
+    "id": "jr_social_case_fd5cf4b9963f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "静岡県の県庁所在地は？",
+    "answer": "静岡市",
+    "dummies": [
+      "浜松市",
+      "沼津市",
+      "富士市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "静岡県"
+  },
+  {
+    "id": "jr_social_case_e1a084176ee3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "愛知県の県庁所在地は？",
+    "answer": "名古屋市",
+    "dummies": [
+      "豊田市",
+      "豊橋市",
+      "岡崎市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "愛知県"
+  },
+  {
+    "id": "jr_social_case_280fac4a54c1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三重県の県庁所在地は？",
+    "answer": "津市",
+    "dummies": [
+      "四日市市",
+      "伊勢市",
+      "松阪市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "三重県"
+  },
+  {
+    "id": "jr_social_case_dea15a5c8c1b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "滋賀県の県庁所在地は？",
+    "answer": "大津市",
+    "dummies": [
+      "彦根市",
+      "草津市",
+      "長浜市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "滋賀県"
+  },
+  {
+    "id": "jr_social_case_5f9799406071",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "京都府の府庁所在地は？",
+    "answer": "京都市",
+    "dummies": [
+      "宇治市",
+      "舞鶴市",
+      "福知山市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "京都府"
+  },
+  {
+    "id": "jr_social_case_5f96a19c957f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大阪府の府庁所在地は？",
+    "answer": "大阪市",
+    "dummies": [
+      "堺市",
+      "東大阪市",
+      "豊中市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "大阪府"
+  },
+  {
+    "id": "jr_social_case_89e69c292ce4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "兵庫県の県庁所在地は？",
+    "answer": "神戸市",
+    "dummies": [
+      "姫路市",
+      "西宮市",
+      "尼崎市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "兵庫県"
+  },
+  {
+    "id": "jr_social_case_b0ae6e2f75f1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "奈良県の県庁所在地は？",
+    "answer": "奈良市",
+    "dummies": [
+      "橿原市",
+      "生駒市",
+      "大和郡山市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "奈良県"
+  },
+  {
+    "id": "jr_social_case_6991fd629319",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "和歌山県の県庁所在地は？",
+    "answer": "和歌山市",
+    "dummies": [
+      "田辺市",
+      "橋本市",
+      "海南市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "和歌山県"
+  },
+  {
+    "id": "jr_social_case_2a301a62d66b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鳥取県の県庁所在地は？",
+    "answer": "鳥取市",
+    "dummies": [
+      "米子市",
+      "倉吉市",
+      "境港市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "鳥取県"
+  },
+  {
+    "id": "jr_social_case_382e815b5695",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "島根県の県庁所在地は？",
+    "answer": "松江市",
+    "dummies": [
+      "出雲市",
+      "浜田市",
+      "益田市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "島根県"
+  },
+  {
+    "id": "jr_social_case_810adc295d10",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "岡山県の県庁所在地は？",
+    "answer": "岡山市",
+    "dummies": [
+      "倉敷市",
+      "津山市",
+      "総社市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "岡山県"
+  },
+  {
+    "id": "jr_social_case_89fe07b70292",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "広島県の県庁所在地は？",
+    "answer": "広島市",
+    "dummies": [
+      "福山市",
+      "呉市",
+      "東広島市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "広島県"
+  },
+  {
+    "id": "jr_social_case_301d4ffeb230",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "山口県の県庁所在地は？",
+    "answer": "山口市",
+    "dummies": [
+      "下関市",
+      "宇部市",
+      "岩国市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "山口県"
+  },
+  {
+    "id": "jr_social_case_b96922e26546",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "徳島県の県庁所在地は？",
+    "answer": "徳島市",
+    "dummies": [
+      "鳴門市",
+      "阿南市",
+      "小松島市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "徳島県"
+  },
+  {
+    "id": "jr_social_case_d33550f3b3b0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "香川県の県庁所在地は？",
+    "answer": "高松市",
+    "dummies": [
+      "丸亀市",
+      "坂出市",
+      "観音寺市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "香川県"
+  },
+  {
+    "id": "jr_social_case_4f0f6169bd4e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "愛媛県の県庁所在地は？",
+    "answer": "松山市",
+    "dummies": [
+      "今治市",
+      "新居浜市",
+      "宇和島市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "愛媛県"
+  },
+  {
+    "id": "jr_social_case_992d09962a4e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "高知県の県庁所在地は？",
+    "answer": "高知市",
+    "dummies": [
+      "南国市",
+      "四万十市",
+      "宿毛市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "高知県"
+  },
+  {
+    "id": "jr_social_case_d81b04587c49",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "佐賀県の県庁所在地は？",
+    "answer": "佐賀市",
+    "dummies": [
+      "唐津市",
+      "鳥栖市",
+      "伊万里市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "佐賀県"
+  },
+  {
+    "id": "jr_social_case_b1eb445f2437",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "長崎県の県庁所在地は？",
+    "answer": "長崎市",
+    "dummies": [
+      "佐世保市",
+      "諫早市",
+      "大村市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "長崎県"
+  },
+  {
+    "id": "jr_social_case_5a94abaf8ee5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "熊本県の県庁所在地は？",
+    "answer": "熊本市",
+    "dummies": [
+      "八代市",
+      "玉名市",
+      "天草市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "熊本県"
+  },
+  {
+    "id": "jr_social_case_4ac2f66fa2ed",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大分県の県庁所在地は？",
+    "answer": "大分市",
+    "dummies": [
+      "別府市",
+      "中津市",
+      "佐伯市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "大分県"
+  },
+  {
+    "id": "jr_social_case_effcad04c098",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "宮崎県の県庁所在地は？",
+    "answer": "宮崎市",
+    "dummies": [
+      "都城市",
+      "延岡市",
+      "日南市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "宮崎県"
+  },
+  {
+    "id": "jr_social_case_0f816d7dc437",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鹿児島県の県庁所在地は？",
+    "answer": "鹿児島市",
+    "dummies": [
+      "霧島市",
+      "鹿屋市",
+      "薩摩川内市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "鹿児島県"
+  },
+  {
+    "id": "jr_social_case_e5b77ce3c16b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県と県庁所在地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "沖縄県の県庁所在地は？",
+    "answer": "那覇市",
+    "dummies": [
+      "沖縄市",
+      "浦添市",
+      "名護市"
+    ],
+    "note": "都道府県名と所在都市を結び付ける。",
+    "content_batch": "social-geography-20261108",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-08",
+    "capital_prefecture": "沖縄県"
   }
 ]

@@ -205,3 +205,7 @@ b2/c1/d1の保存4候補から3つ選ぶ4択を維持。例文・読み・熟語
 ## 社会の地域・文化・制度比較（v0.80.0）
 
 `junior_social.json` に240素材／400問を追加（用語160の両方向320問＋判断問題80問）。社会全体530素材／892問。作問元は `regions-terms.tsv` と `regions-choices.tsv`、明示的な学年・テーマ補正は `regions-overrides.json`。前回までの290素材は内容・IDを維持。文字量と構成は前回確認した上限内で、追加分のデータ確認のみ。[社会の現在地](../docs/content/social-progress.md)。
+
+## 地理の基礎事項の補強（v0.81.0）
+
+社会に地理224素材／292問を追加し、社会754素材／1,184問。作問元は `geography-terms.tsv`、`geography-choices.tsv`、`prefecture-capitals.tsv`。県庁所在地は既存3都市を再利用し44問だけ追加。既存530社会素材・他教科の内容とIDは維持。今回も確認済み文字量・構成内で、新規分のデータ確認のみ。[進捗](../docs/content/social-progress.md)・[公式参照記録](../docs/content/social-source/geography-references.json)。
