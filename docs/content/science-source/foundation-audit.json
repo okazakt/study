@@ -1,5 +1,5 @@
 {
-  "version": "0.85.0",
+  "version": "0.85.1",
   "date": "2026-11-09",
   "batch": "science-foundation-20261109",
   "newMaterials": 200,
@@ -54,7 +54,7 @@
   "boundaryDisplays": 10,
   "layoutScope": "Five generated text boundary questions × normal/focus at 320×844, actual HTML/CSS without game/audio. All nonempty text and four choices visible; trailing spacing scroll heights retained separately. Not a full question loop or device guarantee.",
   "references": "foundation-references.json",
-  "editorialReview": "Conditions for proportional relations, controlled comparisons and mass conservation; mass/weight, current/electron direction, arteries/venous blood, classification inclusion, total vs mechanical energy, dilute ethanol distillation and reef-building coral specified. New pressure content classified with grade-2 meteorology.",
+  "editorialReview": "Conditions for proportional relations, controlled comparisons and mass conservation; mass/weight, current/electron direction, arteries/venous blood, classification inclusion, total vs mechanical energy, dilute ethanol distillation and reef-building coral specified. New pressure content classified with grade-2 meteorology. Parent-child alternatives removed for chemical batteries/fuel cells, reflection/total reflection, and chemical change/subtypes. Fuel-cell external reactant supply specified.",
   "checks": "New JSON/IDs/required fields/four choices/direct literal theme hints/old-content preservation/text envelope; only selected out-of-envelope boundary displays. No full app test suite, all-question browser loop or five-minute simulation.",
   "completion": "Science remains in progress. Body functions, earth/weather/space, experimental and quantitative relations, science technology and final official-subitem review follow."
 }
