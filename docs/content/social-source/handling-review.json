@@ -1,0 +1,964 @@
+{
+  "version": "0.84.0",
+  "date": "2026-11-09",
+  "scope": "内容の取扱いのうち学習内容に関わる観点を編集用に統合した確認。行数は公式項目の分母ではない。授業時間・学校ごとの教材選択・活動実施は対象外。",
+  "rows": [
+    {
+      "field": "地理",
+      "officialLocator": "3(3)ア(ア)",
+      "point": "47都道府県の名称・位置と庁所在都市",
+      "selectors": [
+        "U:都道府県の位置",
+        "U:都道府県と県庁所在地"
+      ],
+      "sourceIds": [
+        "jr_social_case_00fe8c994ce7",
+        "jr_social_case_8de19874a543",
+        "jr_social_case_88981b1aebc1",
+        "jr_social_case_8ff27de11ae9",
+        "jr_social_case_c84ca849b6e1",
+        "jr_social_case_fbcdb03d482b",
+        "jr_social_case_12d444a8a427",
+        "jr_social_case_dda34fc3aa82",
+        "jr_social_case_7a03fb2385b8",
+        "jr_social_case_91cfc669e831",
+        "jr_social_case_abe55938d028",
+        "jr_social_case_8f254ecc3698",
+        "jr_social_case_f828627db9d5",
+        "jr_social_case_75a75bcac7fc",
+        "jr_social_case_1ac699505621",
+        "jr_social_case_90d02ad7fb45",
+        "jr_social_case_44cc2352706c",
+        "jr_social_case_134fc5be503b",
+        "jr_social_case_1f79b2718967",
+        "jr_social_case_20667c5f358b",
+        "jr_social_case_5dbcfcc207da",
+        "jr_social_case_4c4b42a0d2a8",
+        "jr_social_case_7cdff7e4402f",
+        "jr_social_case_f3045e0f04dd",
+        "jr_social_case_0df299bafac0",
+        "jr_social_case_c21d136b8306",
+        "jr_social_case_bbeb91b54217",
+        "jr_social_case_80d153875d7b",
+        "jr_social_case_e9b26325c0db",
+        "jr_social_case_77941fcd4761",
+        "jr_social_case_fe08306120e5",
+        "jr_social_case_a67aa3e35cd5",
+        "jr_social_case_ebf434ae64ec",
+        "jr_social_case_acf97b1a7a99",
+        "jr_social_case_451faf0adf82",
+        "jr_social_case_5c691837bd0d",
+        "jr_social_case_fcf13a51c6a8",
+        "jr_social_case_a76e8c5f12a5",
+        "jr_social_case_73f16d87d70f",
+        "jr_social_case_2405296247dd",
+        "jr_social_case_f31d8f0607cb",
+        "jr_social_case_53ac53349026",
+        "jr_social_case_3738f739aed0",
+        "jr_social_case_a0b6157e9752",
+        "jr_social_case_5cca914f83f9",
+        "jr_social_case_26feb8379fe6",
+        "jr_social_case_8d62dfe1826c",
+        "jr_social_case_c2c2f4d3c0ee",
+        "jr_social_case_36ed561c754d",
+        "jr_social_case_94f317ae0cdd",
+        "jr_social_case_25d4f457dd9d",
+        "jr_social_case_3316b0c1bd41",
+        "jr_social_case_5af508310ad2",
+        "jr_social_case_0daa5f2d8506",
+        "jr_social_case_f078d2a81328",
+        "jr_social_case_2d872adc1b53",
+        "jr_social_case_c10405d3c9fa",
+        "jr_social_case_bb9ec31b05a6",
+        "jr_social_case_4f0d225607ee",
+        "jr_social_case_5ce9e8324c36",
+        "jr_social_case_26b78a81ca03",
+        "jr_social_case_918997113448",
+        "jr_social_case_8efdbd98e83f",
+        "jr_social_case_331538a7f8c5",
+        "jr_social_case_a5bb374957e3",
+        "jr_social_case_d24ce0778009",
+        "jr_social_case_fd5cf4b9963f",
+        "jr_social_case_e1a084176ee3",
+        "jr_social_case_280fac4a54c1",
+        "jr_social_case_dea15a5c8c1b",
+        "jr_social_case_5f9799406071",
+        "jr_social_case_5f96a19c957f",
+        "jr_social_case_89e69c292ce4",
+        "jr_social_case_b0ae6e2f75f1",
+        "jr_social_case_6991fd629319",
+        "jr_social_case_2a301a62d66b",
+        "jr_social_case_382e815b5695",
+        "jr_social_case_810adc295d10",
+        "jr_social_case_89fe07b70292",
+        "jr_social_case_301d4ffeb230",
+        "jr_social_case_b96922e26546",
+        "jr_social_case_d33550f3b3b0",
+        "jr_social_case_4f0f6169bd4e",
+        "jr_social_case_992d09962a4e",
+        "jr_social_case_d81b04587c49",
+        "jr_social_case_b1eb445f2437",
+        "jr_social_case_5a94abaf8ee5",
+        "jr_social_case_4ac2f66fa2ed",
+        "jr_social_case_effcad04c098",
+        "jr_social_case_0f816d7dc437",
+        "jr_social_case_e5b77ce3c16b"
+      ],
+      "scope": "位置の短文47件と所在都市47件を別途対応。白地図の指示・作図は別。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(3)ア(イ)",
+      "point": "領域・海洋国家と北方領土・竹島・尖閣諸島",
+      "selectors": [
+        "U:日本の領域",
+        "T:領海",
+        "T:排他的経済水域"
+      ],
+      "sourceIds": [
+        "jr_social_13889371dcd2",
+        "jr_social_f4972cea1432",
+        "jr_social_68467ccd9176",
+        "jr_social_7d630f841ffa",
+        "jr_social_case_e7b780750857",
+        "jr_social_case_491ae6188053",
+        "jr_social_case_2468797fece1",
+        "jr_social_case_a52779e23934",
+        "jr_social_case_c4b8e6cf48f7",
+        "jr_social_case_ba11f2137636",
+        "jr_social_case_be8c0a9b274b",
+        "jr_social_case_2550367bd2b3"
+      ],
+      "scope": "政府の立場を問う主体を明示。地理の事実と区別。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(3)ア(ウ)",
+      "point": "地球儀・地図と大まかな世界図・日本図",
+      "selectors": [
+        "T:地球儀",
+        "T:メルカトル図法",
+        "U:主な国の位置"
+      ],
+      "sourceIds": [
+        "jr_social_9798aec81b82",
+        "jr_social_2f2159add4e9",
+        "jr_social_case_1f664d38bcb9",
+        "jr_social_case_56ccafd57d01",
+        "jr_social_case_806bba87b47e",
+        "jr_social_case_19e195ebce6f",
+        "jr_social_case_b9838b356a6f",
+        "jr_social_case_9b59794596d4",
+        "jr_social_case_4b585e06200f",
+        "jr_social_case_997e6c06d9b0",
+        "jr_social_case_ceed3e5653dd",
+        "jr_social_case_91d6c28a176c",
+        "jr_social_case_615b6dabdf0d",
+        "jr_social_case_e798ef562427",
+        "jr_social_case_93c70d92e4da",
+        "jr_social_case_c836375c5af5",
+        "jr_social_case_675999c922e0",
+        "jr_social_case_e5a7f428a640",
+        "jr_social_case_64f0580345c6",
+        "jr_social_case_18ba94333ba1",
+        "jr_social_case_893ddf03854b",
+        "jr_social_case_f4fd7ab2d56b",
+        "jr_social_case_3f1c973426b3",
+        "jr_social_case_1f7a5ac17d49",
+        "jr_social_case_fb1438fb4ae8",
+        "jr_social_case_bed8d1e98a48"
+      ],
+      "scope": "位置や図法の知識のみ。実際に描く技能は別。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(4)ア",
+      "point": "衣食住・生活と宗教、自然と社会の影響",
+      "selectors": [
+        "U:世界の生活と宗教",
+        "U:気候と住まい",
+        "U:生活の変化と地域課題"
+      ],
+      "sourceIds": [
+        "jr_social_case_5660b74085e3",
+        "jr_social_case_668a87e1c519",
+        "jr_social_case_8ac08cd270c1",
+        "jr_social_case_00c3d1c32d10",
+        "jr_social_case_5622e913aa50",
+        "jr_social_case_3b8af7468f2b",
+        "jr_social_case_1e8072feaca0",
+        "jr_social_case_bc40453c7e44",
+        "jr_social_case_812d4ad6431a",
+        "jr_social_case_2e5ef037ae44"
+      ],
+      "scope": "写真や実物の読取り、宗教分布図の実読取りは別。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(4)イ",
+      "point": "六州の生活と州ごとに異なる地球的課題",
+      "selectors": [
+        "U:世界の地域課題",
+        "U:オセアニア州"
+      ],
+      "sourceIds": [
+        "jr_social_case_2111c6ef9745",
+        "jr_social_case_0e3100da4e56",
+        "jr_social_case_6afef7df0066",
+        "jr_social_case_94092a0160d7",
+        "jr_social_case_d2612c4db7a8",
+        "jr_social_case_0489f1663656",
+        "jr_social_case_cb31fee06a6f",
+        "jr_social_case_29a248e47312",
+        "jr_social_case_0ea84f74ea9b",
+        "jr_social_5ab4ce928b44",
+        "jr_social_414e8556c29e",
+        "jr_social_ba60f0608316",
+        "jr_social_35a4fb3e6f6e",
+        "jr_social_case_74b14e6257e6",
+        "jr_social_case_01506cb21d2a",
+        "jr_social_case_0f9ca0635f14",
+        "jr_social_case_7b201018b102",
+        "jr_social_case_5c38db9d4177",
+        "jr_social_case_cf0206a75fb6",
+        "jr_social_case_de7f380493b3"
+      ],
+      "scope": "都市化・越境汚染・一次産品依存・水・森林・気候変動を比較。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(5)ア",
+      "point": "学校周辺の防災・人口・産業・交通等の地域調査",
+      "selectors": [
+        "U:地域調査",
+        "U:地図記号と調査"
+      ],
+      "sourceIds": [
+        "jr_social_case_10169a636580",
+        "jr_social_case_2eaacc1c08d2",
+        "jr_social_case_6d1c3c03d185",
+        "jr_social_case_573d015ede7d",
+        "jr_social_case_db0fdb31d1b7",
+        "jr_social_case_a4c620a89d39"
+      ],
+      "scope": "手法と資料条件の知識。学校ごとの実地調査は別。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(5)イ",
+      "point": "自然・人口・産業・交通に基づく地域区分",
+      "selectors": [
+        "U:日本の地域区分",
+        "U:日本の地域比較"
+      ],
+      "sourceIds": [
+        "jr_social_case_e119aad81ac0",
+        "jr_social_case_2170f1929c48",
+        "jr_social_case_b200c14f3f2a",
+        "jr_social_case_76247cad0da5",
+        "jr_social_case_a30f18cc2e41",
+        "jr_social_case_cf7134a60ceb"
+      ],
+      "scope": "資料の条件・区分基準の知識。作図の実践は別。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(5)ウ",
+      "point": "各地域と自然・人口・産業・交通を中核とする考察",
+      "selectors": [
+        "P:根釧台地で酪農が",
+        "P:東京への一極集中で",
+        "P:中京の自動車工業で",
+        "P:本州四国連絡橋の"
+      ],
+      "sourceIds": [
+        "jr_social_case_f76d8d9d3dd2",
+        "jr_social_case_a1439d31b65f",
+        "jr_social_case_514ff8bb96cf",
+        "jr_social_case_d10b9404b2fc"
+      ],
+      "scope": "四つの中核観点を少なくとも一度扱う。七地方の実数は別欄。"
+    },
+    {
+      "field": "地理",
+      "officialLocator": "3(5)エ",
+      "point": "他地域との比較・課題解決案の根拠と説明",
+      "selectors": [
+        "U:地域の在り方",
+        "U:地域の課題と提案"
+      ],
+      "sourceIds": [
+        "jr_social_case_1a4aac674874",
+        "jr_social_case_a57e900765cf",
+        "jr_social_case_8cf69b8bcd5b",
+        "jr_social_case_f3148df7b899"
+      ],
+      "scope": "比較の着眼点のみ。実際の地図・論述・意見交換は別。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(2)ア",
+      "point": "年代・時代区分を継続して学ぶ",
+      "selectors": [
+        "U:年代と時代の見方",
+        "P:紀元前の年代で",
+        "P:時代区分を考える"
+      ],
+      "sourceIds": [
+        "jr_social_case_0f00ce6deeae",
+        "jr_social_case_e2d31a51d5a4",
+        "jr_social_case_93f7903f20ac",
+        "jr_social_case_4c51d7660b88"
+      ],
+      "scope": "知識と並べ替え。長い年表や作品は別。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(2)イ",
+      "point": "地域の人物・文化財と資料館・人々の協力",
+      "selectors": [
+        "P:地域の昔の暮らしを",
+        "P:地域の人への歴史の聞き取り"
+      ],
+      "sourceIds": [
+        "jr_social_case_eff01d7ae1ed",
+        "jr_social_case_bf028f51b2fc"
+      ],
+      "scope": "学校所在地の現地調査は別。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(3)ア：古代文明",
+      "point": "人類の出現・生活技術・文字・国家、ギリシャ・ローマ",
+      "selectors": [
+        "T:打製石器",
+        "T:磨製石器",
+        "T:アテネ",
+        "T:共和政",
+        "P:猿人など初期の"
+      ],
+      "sourceIds": [
+        "jr_social_0cb0622d3365",
+        "jr_social_ff2ff1416735",
+        "jr_social_eb3e03991bfe",
+        "jr_social_0521a6aa0208",
+        "jr_social_case_17718d8a26f1"
+      ],
+      "scope": "大観する基礎。全遺跡・全人類学説を問うものではない。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(3)ア：国家形成",
+      "point": "農耕・古墳、大陸からの移住、神話・伝承・信仰",
+      "selectors": [
+        "T:渡来人",
+        "T:風土記",
+        "T:古事記",
+        "P:古事記や風土記の"
+      ],
+      "sourceIds": [
+        "jr_social_3afe6613063f",
+        "jr_social_35b13625921e",
+        "jr_social_65c754fa5562",
+        "jr_social_case_6298b3728389"
+      ],
+      "scope": "神話を全て実証済みの史実とは扱わない。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(3)ア：律令形成",
+      "point": "聖徳太子・改新・律令国家の大きな流れ",
+      "selectors": [
+        "T:聖徳太子",
+        "T:十七条の憲法",
+        "T:大化の改新",
+        "T:大宝律令",
+        "P:聖徳太子の史料上の"
+      ],
+      "sourceIds": [
+        "jr_social_93496e76a9d8",
+        "jr_social_da31b2632d02",
+        "jr_social_0b12f1d9272f",
+        "jr_social_6091a94ff38f",
+        "jr_social_case_977a1f94706e"
+      ],
+      "scope": "聖徳太子は後世の呼称。史料上の厩戸皇子等との関係は補記。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(3)イ",
+      "point": "モンゴルとユーラシア、琉球の役割と文化、中世と現代",
+      "selectors": [
+        "T:モンゴル帝国",
+        "T:中継貿易",
+        "P:琉球の文化に関わる",
+        "T:書院造",
+        "P:中世の文化が今の生活に"
+      ],
+      "sourceIds": [
+        "jr_social_b222b5c5259c",
+        "jr_social_308e1374fa39",
+        "jr_social_case_300cd841f7df",
+        "jr_social_bd991587f72d",
+        "jr_social_case_9f7fa6cd625d"
+      ],
+      "scope": "交易と文化の知識。琉球の文化の背景も短文で確認。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(3)ウ",
+      "point": "身分・差別、貿易統制、朝鮮・琉球・アイヌ",
+      "selectors": [
+        "U:近世の身分と支配",
+        "T:朝鮮通信使",
+        "T:琉球王国",
+        "P:近世のアイヌの"
+      ],
+      "sourceIds": [
+        "jr_social_case_e19c65720b21",
+        "jr_social_case_01defef7d148",
+        "jr_social_case_a40541155577",
+        "jr_social_case_321979d214b9",
+        "jr_social_c645b95f57ef",
+        "jr_social_267ea5036018",
+        "jr_social_case_0566d3e62758"
+      ],
+      "scope": "差別を正当化せず、支配と人々の暮らしへの影響を扱う。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(3)ウ",
+      "point": "藩校・寺子屋、生活文化、社会変動と改革",
+      "selectors": [
+        "T:藩校",
+        "T:寺子屋",
+        "T:大塩平八郎",
+        "U:近世の改革"
+      ],
+      "sourceIds": [
+        "jr_social_28495665246c",
+        "jr_social_18c760e818f6",
+        "jr_social_098776b8e30f",
+        "jr_social_case_e3a4cc9c5420",
+        "jr_social_case_71d54d221b1f",
+        "jr_social_case_6a591bd64748",
+        "jr_social_case_af5092cc6627"
+      ],
+      "scope": "地域独自の生活文化調査は別。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(4)ア：欧米とアジア",
+      "point": "革命と人権思想、欧米進出への対応と開国",
+      "selectors": [
+        "T:ロック",
+        "T:ルソー",
+        "T:モンテスキュー",
+        "T:アヘン戦争",
+        "T:辛亥革命"
+      ],
+      "sourceIds": [
+        "jr_social_4c58422e6cf4",
+        "jr_social_dab72c67edfd",
+        "jr_social_fb1f62244b23",
+        "jr_social_9f2c5c86a49d",
+        "jr_social_d38a69137b70"
+      ],
+      "scope": "全国家の通史を網羅するものではない。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(4)ア：維新と領域",
+      "point": "学制・兵制・税制・身分と近代の領域画定",
+      "selectors": [
+        "T:学制",
+        "T:徴兵令",
+        "T:地租改正",
+        "T:解放令",
+        "T:樺太・千島交換条約",
+        "T:琉球処分",
+        "P:尖閣諸島の沖縄県への",
+        "P:竹島を島根県へ"
+      ],
+      "sourceIds": [
+        "jr_social_6d137b00e41d",
+        "jr_social_73dfbeaa135b",
+        "jr_social_d6b589f8026a",
+        "jr_social_647654b939ba",
+        "jr_social_61fb772ec558",
+        "jr_social_90285e4bd83b",
+        "jr_social_case_80f5fd8e84e8",
+        "jr_social_case_762e41a7d96b"
+      ],
+      "scope": "領域の経緯は日本政府の公式説明を参照。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(4)ア：文化と大戦",
+      "point": "伝統と欧米文化、第一次大戦・ロシア革命・日本参戦",
+      "selectors": [
+        "T:夏目漱石",
+        "T:岡倉天心",
+        "T:北里柴三郎",
+        "T:ロシア革命",
+        "P:日本が第一次大戦に"
+      ],
+      "sourceIds": [
+        "jr_social_2ffeeb9a7c3f",
+        "jr_social_a19e124e67c5",
+        "jr_social_4f6a02ff9480",
+        "jr_social_01892bfd59b3",
+        "jr_social_case_f4ac14424a53"
+      ],
+      "scope": "文化の代表例と因果判断。作品読解は別。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(4)ア：政治参加と戦争",
+      "point": "政党政治・民主思想・社会運動と戦争の惨禍",
+      "selectors": [
+        "T:原敬",
+        "T:吉野作造",
+        "T:青鞜",
+        "T:全国水平社",
+        "U:戦時下の生活と被害"
+      ],
+      "sourceIds": [
+        "jr_social_21d5bfdf33ef",
+        "jr_social_1a1e1bf83313",
+        "jr_social_1a3bcbf4c26c",
+        "jr_social_a635467c86f4",
+        "jr_social_f98469b46965",
+        "jr_social_c6144a2083e0",
+        "jr_social_3eff4ca5cf6e",
+        "jr_social_dad81758285b"
+      ],
+      "scope": "戦争・支配による被害を含む。全史料の読解は別。"
+    },
+    {
+      "field": "歴史",
+      "officialLocator": "3(4)イ",
+      "point": "男女普通選挙・憲法、沖縄・日中・石油危機、現代課題",
+      "selectors": [
+        "T:女性参政権",
+        "T:日本国憲法",
+        "T:沖縄返還",
+        "T:日中共同声明",
+        "T:石油危機",
+        "P:冷戦後も国際協力が"
+      ],
+      "sourceIds": [
+        "jr_social_7c5320df9ae4",
+        "jr_social_b484dd9f600c",
+        "jr_social_78b333a2e3b4",
+        "jr_social_986528092257",
+        "jr_social_35eecbad7af9",
+        "jr_social_case_0c411cda9cc9"
+      ],
+      "scope": "最新時事や論述による構想は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(2)ア",
+      "point": "AIなどによる社会変化、防災情報、科学・芸術・宗教と文化継承",
+      "selectors": [
+        "P:AIの導入を",
+        "P:災害情報を使う",
+        "T:文化の多様性",
+        "U:文化と社会生活",
+        "P:伝統行事の担い手"
+      ],
+      "sourceIds": [
+        "jr_social_case_daa64bdce973",
+        "jr_social_case_0621ad3833eb",
+        "jr_social_d7e0e8d2d6fe",
+        "jr_social_case_55b835012063",
+        "jr_social_case_01a05511c7fb",
+        "jr_social_case_e14feaa59e59"
+      ],
+      "scope": "利点と問題の条件比較。文化活動や専門技術の実践は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(3)ア",
+      "point": "希少性・選択・貨幣、起業と金融、仕事生活の調和",
+      "selectors": [
+        "T:希少性",
+        "T:機会費用",
+        "T:通貨",
+        "T:起業",
+        "T:ワーク・ライフ・バランス"
+      ],
+      "sourceIds": [
+        "jr_social_65b5014bf24f",
+        "jr_social_54c86c96bba7",
+        "jr_social_28812469b422",
+        "jr_social_3426e5a120e5",
+        "jr_social_632a8e732b93"
+      ],
+      "scope": "生活上の判断点。実際の事業設計や投資判断は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(3)イ",
+      "point": "消費者の自立支援と財政の持続可能性",
+      "selectors": [
+        "T:消費生活センター",
+        "P:国債を発行する際に",
+        "P:高齢化で社会保障を"
+      ],
+      "sourceIds": [
+        "jr_social_af5f49071aa5",
+        "jr_social_case_87088b46e231",
+        "jr_social_case_41c0c421c3be"
+      ],
+      "scope": "相談先と給付・負担の比較。具体的な申告や申請は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(4)ア",
+      "point": "法に基づく公正な裁判と裁判員制度",
+      "selectors": [
+        "T:裁判員制度",
+        "T:無罪推定",
+        "T:適正手続"
+      ],
+      "sourceIds": [
+        "jr_social_e77daf6e993b",
+        "jr_social_9418cf7504c3",
+        "jr_social_9eeefbcbb676"
+      ],
+      "scope": "実際の評議や証拠評価は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(5)ア",
+      "point": "国旗・国歌の相互尊重、領域と平和的解決、国連とSDGs",
+      "selectors": [
+        "T:国旗",
+        "T:国歌",
+        "P:領域をめぐる対立を",
+        "T:持続可能な開発目標"
+      ],
+      "sourceIds": [
+        "jr_social_eddac58df3be",
+        "jr_social_36f84a538e0b",
+        "jr_social_case_19b0cbd23855",
+        "jr_social_0d74e6b3aa23"
+      ],
+      "scope": "領域の主張の主体を区別。最新外交情勢は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(5)ア",
+      "point": "核の脅威・平和協力、文化と宗教の多様性、日本の役割",
+      "selectors": [
+        "T:核拡散防止条約",
+        "T:専守防衛",
+        "P:自衛隊を民主政治の",
+        "P:文化や宗教の異なる",
+        "P:日本の防衛政策を"
+      ],
+      "sourceIds": [
+        "jr_social_e47def26b562",
+        "jr_social_e5720bad3fef",
+        "jr_social_case_79fd0d6f807c",
+        "jr_social_case_99ae3a5ea99a",
+        "jr_social_case_16cbbfe835a3"
+      ],
+      "scope": "防衛の基本姿勢を政府の説明に沿って問う。政策評価の討論は別。"
+    },
+    {
+      "field": "公民",
+      "officialLocator": "3(5)イ",
+      "point": "世界的な視野と地域的な視点による探究",
+      "selectors": [
+        "U:持続可能な社会の判断",
+        "P:社会問題への提案に",
+        "P:地域の課題で合意を"
+      ],
+      "sourceIds": [
+        "jr_social_case_2dbde44b5925",
+        "jr_social_case_99f388bc0f8a",
+        "jr_social_case_b424f2e7bd8c",
+        "jr_social_case_be2bd418332a",
+        "jr_social_case_ea327f5d8fea",
+        "jr_social_case_4862520e1f18",
+        "jr_social_case_91d9be45d985",
+        "jr_social_case_73a73e775df7",
+        "jr_social_case_f8bdf3129fc4",
+        "jr_social_case_c686df2d242b",
+        "jr_social_case_d5a491e59c2e",
+        "jr_social_case_6211e717508d",
+        "jr_social_case_c0515b6379f6"
+      ],
+      "scope": "提案の条件・方法の知識。実際の探究・論述・参画は別。"
+    }
+  ],
+  "regions": {
+    "北海道地方": [
+      "jr_social_case_e72bb7da3bfc",
+      "jr_social_5573e50ddbbc",
+      "jr_social_aeecbdf1822d",
+      "jr_social_c629a7cf3f48",
+      "jr_social_6db3611932fe",
+      "jr_social_case_f76d8d9d3dd2",
+      "jr_social_case_0345fbf5f16e",
+      "jr_social_case_3e13c1185f22"
+    ],
+    "東北地方": [
+      "jr_social_case_fb44547b0198",
+      "jr_social_3dc433d12789",
+      "jr_social_f9f50f97c134",
+      "jr_social_5f41b3801062",
+      "jr_social_4ca5e3464744",
+      "jr_social_case_90d46b49b491",
+      "jr_social_case_3fed964f0e62",
+      "jr_social_case_d680f138f467"
+    ],
+    "関東地方": [
+      "jr_social_case_79381e1f141c",
+      "jr_social_ba2af62da18d",
+      "jr_social_522c561c5299",
+      "jr_social_d01e70f90be5",
+      "jr_social_8c43816ea677",
+      "jr_social_case_0b60571d4c52",
+      "jr_social_case_9f2cafb01e10",
+      "jr_social_case_a1439d31b65f"
+    ],
+    "中部地方": [
+      "jr_social_case_177b3dda8b75",
+      "jr_social_eaa312779b5b",
+      "jr_social_346e997b3fed",
+      "jr_social_b13d8dada57c",
+      "jr_social_949896965309",
+      "jr_social_case_12b27166f316",
+      "jr_social_case_f12837a9781d",
+      "jr_social_case_514ff8bb96cf"
+    ],
+    "近畿地方": [
+      "jr_social_case_575424a6ebe8",
+      "jr_social_167c3285adbd",
+      "jr_social_1610ff7026db",
+      "jr_social_63b5b0ca8cb1",
+      "jr_social_44c6d309fe4c",
+      "jr_social_case_d954d2f1b25a",
+      "jr_social_case_e0ae35a0efd4",
+      "jr_social_case_20ff26a2f540"
+    ],
+    "中国・四国地方": [
+      "jr_social_case_b94911d58d39",
+      "jr_social_3a6df30cd046",
+      "jr_social_037bc68a51db",
+      "jr_social_471e070f6c1c",
+      "jr_social_b056c05ed80f",
+      "jr_social_case_7bb1ed83128f",
+      "jr_social_case_25a254dd160b",
+      "jr_social_case_d10b9404b2fc"
+    ],
+    "九州地方": [
+      "jr_social_case_b24e8113519d",
+      "jr_social_6b20ce102842",
+      "jr_social_70e5b29287d1",
+      "jr_social_1a1847881a24",
+      "jr_social_db4fe2f0a953",
+      "jr_social_case_5e81c6374dff",
+      "jr_social_case_8dba309008bb",
+      "jr_social_case_ee3482ccc8f1"
+    ],
+    "アジア州": [
+      "jr_social_12a3653f552f",
+      "jr_social_1ddb289b06bc",
+      "jr_social_d929fb59761e",
+      "jr_social_be4cc06e8d51",
+      "jr_social_4784eb11e802",
+      "jr_social_372c447e239c",
+      "jr_social_e34170f5cf82",
+      "jr_social_aec55a39278f",
+      "jr_social_case_d7270a9816c5",
+      "jr_social_case_735d8547aae2",
+      "jr_social_case_136ec4dc271f",
+      "jr_social_case_c9f3be741917",
+      "jr_social_case_08900efb4080",
+      "jr_social_case_2be95cecec5e"
+    ],
+    "ヨーロッパ州": [
+      "jr_social_d383ec2fc722",
+      "jr_social_ba204d15e016",
+      "jr_social_2642137761a6",
+      "jr_social_36599e81d1d5",
+      "jr_social_63cf531d4d42",
+      "jr_social_9016d0ad7b78",
+      "jr_social_900fc631a33c",
+      "jr_social_ca6319f9e463",
+      "jr_social_case_c2531e381562",
+      "jr_social_case_2f326218b3f4",
+      "jr_social_case_f8942028d4c1",
+      "jr_social_case_bb3406e36d2e",
+      "jr_social_case_58bf13e63e45",
+      "jr_social_case_dcfcec22419a"
+    ],
+    "アフリカ州": [
+      "jr_social_1da1c68b584a",
+      "jr_social_b653144e5225",
+      "jr_social_45241b6c3a87",
+      "jr_social_aab365f80662",
+      "jr_social_case_94b7ee3b1ad8",
+      "jr_social_case_964fb3bf6655",
+      "jr_social_case_9612bb7e824f",
+      "jr_social_0047e6ef2dd6",
+      "jr_social_4ca0341a9fb9",
+      "jr_social_5d69dd9250e4",
+      "jr_social_f930e1f620ba",
+      "jr_social_case_c7aacf6330d5",
+      "jr_social_case_1ca96a9e57b1",
+      "jr_social_case_34fdd5e10cd5"
+    ],
+    "北アメリカ州": [
+      "jr_social_3ff9d09a83ee",
+      "jr_social_a24d79fad276",
+      "jr_social_994058cae28c",
+      "jr_social_210898198bfa",
+      "jr_social_66bd6adaa2f6",
+      "jr_social_9fb6e99cc1af",
+      "jr_social_efa3bf1c0345",
+      "jr_social_b43a2df4a583",
+      "jr_social_case_76ea6119cb1d",
+      "jr_social_case_812cb50dff07",
+      "jr_social_case_ab28738845db",
+      "jr_social_00eb6a753f7a",
+      "jr_social_725b2924131d",
+      "jr_social_b5c2b83e655e",
+      "jr_social_7ee5a9c2ad20",
+      "jr_social_case_5616f76be9c5",
+      "jr_social_case_92cd381009d0",
+      "jr_social_case_0a22b8ef626b"
+    ],
+    "南アメリカ州": [
+      "jr_social_case_5040a376f578",
+      "jr_social_case_be0cbdb53277",
+      "jr_social_case_b587ef47a491",
+      "jr_social_c179b386955e",
+      "jr_social_e1c6fb2b10c0",
+      "jr_social_e079f37d0807",
+      "jr_social_2ccd7a40550b",
+      "jr_social_case_06e4fbc4f896",
+      "jr_social_case_d5b2a9321199",
+      "jr_social_case_4724f2a80a55"
+    ],
+    "オセアニア州": [
+      "jr_social_case_29a248e47312",
+      "jr_social_case_0ea84f74ea9b",
+      "jr_social_5ab4ce928b44",
+      "jr_social_414e8556c29e",
+      "jr_social_ba60f0608316",
+      "jr_social_35a4fb3e6f6e",
+      "jr_social_case_74b14e6257e6",
+      "jr_social_case_01506cb21d2a",
+      "jr_social_case_0f9ca0635f14",
+      "jr_social_case_7b201018b102",
+      "jr_social_case_5c38db9d4177",
+      "jr_social_case_cf0206a75fb6",
+      "jr_social_case_de7f380493b3"
+    ]
+  },
+  "prefecturePositions": {
+    "北海道": "jr_social_case_00fe8c994ce7",
+    "青森県": "jr_social_case_8de19874a543",
+    "岩手県": "jr_social_case_88981b1aebc1",
+    "秋田県": "jr_social_case_8ff27de11ae9",
+    "宮城県": "jr_social_case_c84ca849b6e1",
+    "山形県": "jr_social_case_fbcdb03d482b",
+    "福島県": "jr_social_case_12d444a8a427",
+    "茨城県": "jr_social_case_dda34fc3aa82",
+    "栃木県": "jr_social_case_7a03fb2385b8",
+    "群馬県": "jr_social_case_91cfc669e831",
+    "埼玉県": "jr_social_case_abe55938d028",
+    "千葉県": "jr_social_case_8f254ecc3698",
+    "東京都": "jr_social_case_f828627db9d5",
+    "神奈川県": "jr_social_case_75a75bcac7fc",
+    "新潟県": "jr_social_case_1ac699505621",
+    "富山県": "jr_social_case_90d02ad7fb45",
+    "石川県": "jr_social_case_44cc2352706c",
+    "福井県": "jr_social_case_134fc5be503b",
+    "山梨県": "jr_social_case_1f79b2718967",
+    "長野県": "jr_social_case_20667c5f358b",
+    "岐阜県": "jr_social_case_5dbcfcc207da",
+    "静岡県": "jr_social_case_4c4b42a0d2a8",
+    "愛知県": "jr_social_case_7cdff7e4402f",
+    "三重県": "jr_social_case_f3045e0f04dd",
+    "滋賀県": "jr_social_case_0df299bafac0",
+    "京都府": "jr_social_case_c21d136b8306",
+    "大阪府": "jr_social_case_bbeb91b54217",
+    "兵庫県": "jr_social_case_80d153875d7b",
+    "奈良県": "jr_social_case_e9b26325c0db",
+    "和歌山県": "jr_social_case_77941fcd4761",
+    "鳥取県": "jr_social_case_fe08306120e5",
+    "島根県": "jr_social_case_a67aa3e35cd5",
+    "岡山県": "jr_social_case_ebf434ae64ec",
+    "広島県": "jr_social_case_acf97b1a7a99",
+    "山口県": "jr_social_case_451faf0adf82",
+    "徳島県": "jr_social_case_5c691837bd0d",
+    "香川県": "jr_social_case_fcf13a51c6a8",
+    "愛媛県": "jr_social_case_a76e8c5f12a5",
+    "高知県": "jr_social_case_73f16d87d70f",
+    "福岡県": "jr_social_case_2405296247dd",
+    "佐賀県": "jr_social_case_f31d8f0607cb",
+    "長崎県": "jr_social_case_53ac53349026",
+    "熊本県": "jr_social_case_3738f739aed0",
+    "大分県": "jr_social_case_a0b6157e9752",
+    "宮崎県": "jr_social_case_5cca914f83f9",
+    "鹿児島県": "jr_social_case_26feb8379fe6",
+    "沖縄県": "jr_social_case_8d62dfe1826c"
+  },
+  "prefectureCapitals": {
+    "北海道": "jr_social_6db3611932fe",
+    "青森県": "jr_social_case_c2c2f4d3c0ee",
+    "岩手県": "jr_social_case_36ed561c754d",
+    "宮城県": "jr_social_5f41b3801062",
+    "秋田県": "jr_social_case_94f317ae0cdd",
+    "山形県": "jr_social_case_25d4f457dd9d",
+    "福島県": "jr_social_case_3316b0c1bd41",
+    "茨城県": "jr_social_case_5af508310ad2",
+    "栃木県": "jr_social_case_0daa5f2d8506",
+    "群馬県": "jr_social_case_f078d2a81328",
+    "埼玉県": "jr_social_case_2d872adc1b53",
+    "千葉県": "jr_social_case_c10405d3c9fa",
+    "東京都": "jr_social_case_bb9ec31b05a6",
+    "神奈川県": "jr_social_case_4f0d225607ee",
+    "新潟県": "jr_social_case_5ce9e8324c36",
+    "富山県": "jr_social_case_26b78a81ca03",
+    "石川県": "jr_social_case_918997113448",
+    "福井県": "jr_social_case_8efdbd98e83f",
+    "山梨県": "jr_social_case_331538a7f8c5",
+    "長野県": "jr_social_case_a5bb374957e3",
+    "岐阜県": "jr_social_case_d24ce0778009",
+    "静岡県": "jr_social_case_fd5cf4b9963f",
+    "愛知県": "jr_social_case_e1a084176ee3",
+    "三重県": "jr_social_case_280fac4a54c1",
+    "滋賀県": "jr_social_case_dea15a5c8c1b",
+    "京都府": "jr_social_case_5f9799406071",
+    "大阪府": "jr_social_case_5f96a19c957f",
+    "兵庫県": "jr_social_case_89e69c292ce4",
+    "奈良県": "jr_social_case_b0ae6e2f75f1",
+    "和歌山県": "jr_social_case_6991fd629319",
+    "鳥取県": "jr_social_case_2a301a62d66b",
+    "島根県": "jr_social_case_382e815b5695",
+    "岡山県": "jr_social_case_810adc295d10",
+    "広島県": "jr_social_case_89fe07b70292",
+    "山口県": "jr_social_case_301d4ffeb230",
+    "徳島県": "jr_social_case_b96922e26546",
+    "香川県": "jr_social_case_d33550f3b3b0",
+    "愛媛県": "jr_social_case_4f0f6169bd4e",
+    "高知県": "jr_social_case_992d09962a4e",
+    "福岡県": "jr_social_db4fe2f0a953",
+    "佐賀県": "jr_social_case_d81b04587c49",
+    "長崎県": "jr_social_case_b1eb445f2437",
+    "熊本県": "jr_social_case_5a94abaf8ee5",
+    "大分県": "jr_social_case_4ac2f66fa2ed",
+    "宮崎県": "jr_social_case_effcad04c098",
+    "鹿児島県": "jr_social_case_0f816d7dc437",
+    "沖縄県": "jr_social_case_e5b77ce3c16b"
+  },
+  "practicalBoundary": "位置の短文と所在都市の知識であり、地図上での指示・読図・作図技能の完了とは扱わない。"
+}

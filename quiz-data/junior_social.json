@@ -32340,5 +32340,4573 @@
       "civics-D2"
     ],
     "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_5581a9f39bd8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本付近の海流",
+    "term": "黒潮",
+    "term_dummies": [
+      "親潮",
+      "対馬海流",
+      "リマン海流"
+    ],
+    "explanation_template": "日本の{{1}}側を北上する暖流。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "太平洋",
+        "dummies": [
+          "日本海",
+          "オホーツク海",
+          "地中海"
+        ]
+      }
+    ],
+    "note": "日本海流とも呼ばれる。",
+    "cloze_context": "黒潮",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8421a3c7311b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本付近の海流",
+    "term": "親潮",
+    "term_dummies": [
+      "黒潮",
+      "対馬海流",
+      "リマン海流"
+    ],
+    "explanation_template": "{{1}}沖から日本の太平洋側へ南下する寒流。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "千島列島",
+        "dummies": [
+          "琉球列島",
+          "ハワイ諸島",
+          "小笠原諸島"
+        ]
+      }
+    ],
+    "note": "千島海流とも呼ばれる。",
+    "cloze_context": "親潮",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e48dcd342f82",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本付近の海流",
+    "term": "対馬海流",
+    "term_dummies": [
+      "黒潮",
+      "親潮",
+      "リマン海流"
+    ],
+    "explanation_template": "{{1}}を通って日本海へ流れ込む暖流。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "対馬海峡",
+        "dummies": [
+          "津軽海峡",
+          "宗谷海峡",
+          "関門海峡"
+        ]
+      }
+    ],
+    "note": "日本海沿岸の気候にも影響する。",
+    "cloze_context": "対馬海流",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2e6f5eaf5db9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本付近の海流",
+    "term": "リマン海流",
+    "term_dummies": [
+      "黒潮",
+      "親潮",
+      "対馬海流"
+    ],
+    "explanation_template": "ユーラシア大陸の日本海沿岸を{{1}}する寒流。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "南下",
+        "dummies": [
+          "北上",
+          "東進",
+          "西進"
+        ]
+      }
+    ],
+    "note": "親潮は太平洋側の寒流。",
+    "cloze_context": "リマン海流",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0cb0622d3365",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の生活と交流",
+    "term": "打製石器",
+    "term_dummies": [
+      "磨製石器",
+      "縄文土器",
+      "弥生土器"
+    ],
+    "explanation_template": "石を{{1}}作った石器。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "打ち欠いて",
+        "dummies": [
+          "磨き上げて",
+          "溶かして",
+          "焼き固めて"
+        ]
+      }
+    ],
+    "note": "旧石器時代から使われた。",
+    "cloze_context": "打製石器",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ff2ff1416735",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の生活と交流",
+    "term": "磨製石器",
+    "term_dummies": [
+      "打製石器",
+      "縄文土器",
+      "弥生土器"
+    ],
+    "explanation_template": "表面を{{1}}作った石器。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "磨いて",
+        "dummies": [
+          "溶かして",
+          "焼き固めて",
+          "鋳型に流して"
+        ]
+      }
+    ],
+    "note": "新石器時代に広く使われた。",
+    "cloze_context": "磨製石器",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3afe6613063f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の生活と交流",
+    "term": "渡来人",
+    "term_dummies": [
+      "防人",
+      "国司",
+      "郡司"
+    ],
+    "explanation_template": "大陸から日本列島へ移り、技術や{{1}}を伝えた人々。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "文化",
+        "dummies": [
+          "参勤交代",
+          "廃藩置県",
+          "国会選挙"
+        ]
+      }
+    ],
+    "note": "漢字や金属加工なども伝えた。",
+    "cloze_context": "渡来人",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_35b13625921e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の生活と交流",
+    "term": "風土記",
+    "term_dummies": [
+      "古事記",
+      "日本書紀",
+      "万葉集"
+    ],
+    "explanation_template": "奈良時代、国ごとの産物や地名の由来・{{1}}などを記した書。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "伝承",
+        "dummies": [
+          "選挙結果",
+          "幕府の法令",
+          "株価"
+        ]
+      }
+    ],
+    "note": "当時のものの見方も伝える。",
+    "cloze_context": "風土記",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_eb3e03991bfe",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代世界の政治と交流",
+    "term": "アテネ",
+    "term_dummies": [
+      "スパルタ",
+      "ローマ",
+      "長安"
+    ],
+    "explanation_template": "古代ギリシャの都市国家で、男性{{1}}による民主政が発達。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "市民",
+        "dummies": [
+          "奴隷",
+          "外国人",
+          "貴族だけ"
+        ]
+      }
+    ],
+    "note": "女性や奴隷などは参加できなかった。",
+    "cloze_context": "アテネ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0521a6aa0208",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代世界の政治と交流",
+    "term": "共和政",
+    "term_dummies": [
+      "帝政",
+      "絶対王政",
+      "封建制"
+    ],
+    "explanation_template": "君主を置かず、{{1}}などが政治を行う仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "市民やその代表",
+        "dummies": [
+          "世襲の王だけ",
+          "皇帝だけ",
+          "将軍一族だけ"
+        ]
+      }
+    ],
+    "note": "古代ローマの歴史にも見られる。",
+    "cloze_context": "共和政",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_12dc94a0c0ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代世界の政治と交流",
+    "term": "ローマ帝国",
+    "term_dummies": [
+      "アテネ",
+      "共和政",
+      "シルクロード"
+    ],
+    "explanation_template": "地中海を囲む広い領域を支配し、{{1}}が統治した国家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "皇帝",
+        "dummies": [
+          "執権",
+          "国司",
+          "大名"
+        ]
+      }
+    ],
+    "note": "共和政から政治の仕組みが変化した。",
+    "cloze_context": "ローマ帝国",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_5d158b5d6382",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代世界の政治と交流",
+    "term": "シルクロード",
+    "term_dummies": [
+      "大西洋航路",
+      "東海道",
+      "東廻り航路"
+    ],
+    "explanation_template": "中国と西方を結び、絹などとともに{{1}}も伝えた交易路。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "文化や宗教",
+        "dummies": [
+          "普通選挙",
+          "廃藩置県",
+          "地租改正"
+        ]
+      }
+    ],
+    "note": "東西交流を支えた道の総称。",
+    "cloze_context": "シルクロード",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_b222b5c5259c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "モンゴルと東アジアの交易",
+    "term": "モンゴル帝国",
+    "term_dummies": [
+      "ローマ帝国",
+      "オスマン帝国",
+      "大英帝国"
+    ],
+    "explanation_template": "13世紀に拡大し、{{1}}の東西の結び付きを強めた帝国。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ユーラシア",
+        "dummies": [
+          "アメリカ",
+          "オーストラリア",
+          "南極"
+        ]
+      }
+    ],
+    "note": "交通や交易も活発になった。",
+    "cloze_context": "モンゴル帝国",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c80e3da53e70",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "モンゴルと東アジアの交易",
+    "term": "チンギス・ハン",
+    "term_dummies": [
+      "フビライ・ハン",
+      "朱元璋",
+      "マルコ・ポーロ"
+    ],
+    "explanation_template": "13世紀初めに諸部族を統一し、{{1}}を築いた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "モンゴル帝国",
+        "dummies": [
+          "清",
+          "明",
+          "隋"
+        ]
+      }
+    ],
+    "note": "帝国拡大の基礎を築いた。",
+    "cloze_context": "チンギス・ハン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_98a376560568",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "モンゴルと東アジアの交易",
+    "term": "フビライ・ハン",
+    "term_dummies": [
+      "チンギス・ハン",
+      "朱元璋",
+      "ヌルハチ"
+    ],
+    "explanation_template": "国号を{{1}}と定め、日本にも服属を求めた君主。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "元",
+        "dummies": [
+          "明",
+          "清",
+          "宋"
+        ]
+      }
+    ],
+    "note": "元寇につながる東アジアの動き。",
+    "cloze_context": "フビライ・ハン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_308e1374fa39",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "モンゴルと東アジアの交易",
+    "term": "中継貿易",
+    "term_dummies": [
+      "加工貿易",
+      "自由貿易",
+      "保護貿易"
+    ],
+    "explanation_template": "他地域の商品を集め、{{1}}地域へ運んで売る貿易。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "別の",
+        "dummies": [
+          "産地と同じ",
+          "自家消費だけの",
+          "国内農村だけの"
+        ]
+      }
+    ],
+    "note": "琉球王国が東アジアで担った。",
+    "cloze_context": "中継貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_55ec2edd916e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世文化と現在の生活",
+    "term": "平家物語",
+    "term_dummies": [
+      "徒然草",
+      "茶の湯",
+      "枯山水"
+    ],
+    "explanation_template": "平氏の栄枯盛衰を描き、{{1}}によっても語られた軍記物語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "琵琶法師",
+        "dummies": [
+          "遣唐使",
+          "国司だけ",
+          "防人だけ"
+        ]
+      }
+    ],
+    "note": "武士の時代の文化を伝える。",
+    "cloze_context": "平家物語",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6f92377dd387",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世文化と現在の生活",
+    "term": "徒然草",
+    "term_dummies": [
+      "平家物語",
+      "茶の湯",
+      "枯山水"
+    ],
+    "explanation_template": "兼好法師が日常の見聞や考えを記した{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "随筆",
+        "dummies": [
+          "軍記物語",
+          "法律集",
+          "勅撰和歌集"
+        ]
+      }
+    ],
+    "note": "鎌倉時代末期ごろの作品。",
+    "cloze_context": "徒然草",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a24d2db63634",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世文化と現在の生活",
+    "term": "茶の湯",
+    "term_dummies": [
+      "平家物語",
+      "徒然草",
+      "枯山水"
+    ],
+    "explanation_template": "茶を点てて客をもてなし、近世初めに{{1}}が大成した文化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "千利休",
+        "dummies": [
+          "雪舟",
+          "世阿弥",
+          "本居宣長"
+        ]
+      }
+    ],
+    "note": "中世からの文化が受け継がれた。",
+    "cloze_context": "茶の湯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_204a762bad10",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世文化と現在の生活",
+    "term": "枯山水",
+    "term_dummies": [
+      "平家物語",
+      "徒然草",
+      "茶の湯"
+    ],
+    "explanation_template": "水を使わず、石や{{1}}などで山水を表す庭園様式。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "砂",
+        "dummies": [
+          "銅銭",
+          "絹布",
+          "漆"
+        ]
+      }
+    ],
+    "note": "禅の文化とも関わる。",
+    "cloze_context": "枯山水",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c645b95f57ef",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交流と学び",
+    "term": "朝鮮通信使",
+    "term_dummies": [
+      "藩校",
+      "解体新書",
+      "歌舞伎"
+    ],
+    "explanation_template": "江戸時代、将軍の代替わりの祝賀などで{{1}}から来た使節。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "朝鮮",
+        "dummies": [
+          "琉球",
+          "オランダ",
+          "清"
+        ]
+      }
+    ],
+    "note": "外交や文化交流が行われた。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_28495665246c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交流と学び",
+    "term": "藩校",
+    "term_dummies": [
+      "朝鮮通信使",
+      "解体新書",
+      "歌舞伎"
+    ],
+    "explanation_template": "江戸時代、主に{{1}}の子弟を教育するため藩が設けた学校。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "武士",
+        "dummies": [
+          "百姓",
+          "町人",
+          "外国人"
+        ]
+      }
+    ],
+    "note": "庶民の寺子屋と区別する。",
+    "cloze_context": "藩校",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6a6247967e59",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交流と学び",
+    "term": "解体新書",
+    "term_dummies": [
+      "朝鮮通信使",
+      "藩校",
+      "歌舞伎"
+    ],
+    "explanation_template": "杉田玄白らが{{1}}の医学書を翻訳して刊行した書。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "オランダ語",
+        "dummies": [
+          "英語",
+          "フランス語",
+          "ロシア語"
+        ]
+      }
+    ],
+    "note": "蘭学の発達に関わる。",
+    "cloze_context": "解体新書",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_99e3b2e61132",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交流と学び",
+    "term": "歌舞伎",
+    "term_dummies": [
+      "朝鮮通信使",
+      "藩校",
+      "解体新書"
+    ],
+    "explanation_template": "江戸時代に発展し、町人にも親しまれた{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "演劇",
+        "dummies": [
+          "和歌集",
+          "儒学",
+          "測量術"
+        ]
+      }
+    ],
+    "note": "地域や時代の文化の担い手を考える。",
+    "cloze_context": "歌舞伎",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_098776b8e30f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕府の行き詰まりと開国",
+    "term": "大塩平八郎",
+    "term_dummies": [
+      "水野忠邦",
+      "松平定信",
+      "田沼意次"
+    ],
+    "explanation_template": "1837年、飢饉下の{{1}}で救済を求めて反乱を起こした人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大坂",
+        "dummies": [
+          "長崎",
+          "江戸",
+          "松前"
+        ]
+      }
+    ],
+    "note": "幕府の支配が揺らいだ。",
+    "cloze_context": "大塩平八郎",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_5b6ef18320bc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕府の行き詰まりと開国",
+    "term": "ペリー",
+    "term_dummies": [
+      "ハリス",
+      "ラクスマン",
+      "レザノフ"
+    ],
+    "explanation_template": "1853年、艦隊を率いて来航し{{1}}を求めた米国の使節。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "開国",
+        "dummies": [
+          "鎖国の強化",
+          "徴兵令",
+          "廃藩置県"
+        ]
+      }
+    ],
+    "note": "翌年の日米和親条約につながる。",
+    "cloze_context": "ペリー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f746525a93c7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕府の行き詰まりと開国",
+    "term": "尊王攘夷",
+    "term_dummies": [
+      "公武合体",
+      "開国和親",
+      "富国強兵"
+    ],
+    "explanation_template": "天皇を尊び、{{1}}勢力を打ち払おうとする考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "外国",
+        "dummies": [
+          "朝廷の",
+          "農民の",
+          "寺院の"
+        ]
+      }
+    ],
+    "note": "幕末に広がった政治思想。",
+    "cloze_context": "尊王攘夷",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_828b4968afcd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕府の行き詰まりと開国",
+    "term": "薩長同盟",
+    "term_dummies": [
+      "大塩平八郎",
+      "ペリー",
+      "尊王攘夷"
+    ],
+    "explanation_template": "1866年、薩摩藩と{{1}}藩が結んだ同盟。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "長州",
+        "dummies": [
+          "会津",
+          "彦根",
+          "水戸"
+        ]
+      }
+    ],
+    "note": "倒幕に向けた協力につながった。",
+    "cloze_context": "薩長同盟",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9f2c5c86a49d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の進出とアジアの変化",
+    "term": "アヘン戦争",
+    "term_dummies": [
+      "太平天国の乱",
+      "辛亥革命",
+      "南北戦争"
+    ],
+    "explanation_template": "1840年に始まった、清と{{1}}の戦争。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "イギリス",
+        "dummies": [
+          "ロシア",
+          "アメリカ",
+          "日本"
+        ]
+      }
+    ],
+    "note": "南京条約で清に不利な条件を強いた。",
+    "cloze_context": "アヘン戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_69dbad4029f5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の進出とアジアの変化",
+    "term": "太平天国の乱",
+    "term_dummies": [
+      "アヘン戦争",
+      "辛亥革命",
+      "南北戦争"
+    ],
+    "explanation_template": "19世紀半ば、{{1}}を中心に清へ抵抗した大規模な反乱。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "洪秀全",
+        "dummies": [
+          "孫文",
+          "袁世凱",
+          "康有為"
+        ]
+      }
+    ],
+    "note": "清の支配が揺らいだ。",
+    "cloze_context": "太平天国の乱",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d38a69137b70",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の進出とアジアの変化",
+    "term": "辛亥革命",
+    "term_dummies": [
+      "アヘン戦争",
+      "太平天国の乱",
+      "南北戦争"
+    ],
+    "explanation_template": "1911年に始まり、{{1}}を倒して中華民国成立につながった革命。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "清",
+        "dummies": [
+          "明",
+          "元",
+          "唐"
+        ]
+      }
+    ],
+    "note": "孫文らの運動が背景にあった。",
+    "cloze_context": "辛亥革命",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_65b945e6a153",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "欧米の進出とアジアの変化",
+    "term": "南北戦争",
+    "term_dummies": [
+      "アヘン戦争",
+      "太平天国の乱",
+      "辛亥革命"
+    ],
+    "explanation_template": "19世紀の米国で、奴隷制などをめぐり{{1}}が争った内戦。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "北部と南部",
+        "dummies": [
+          "本国と植民地",
+          "日本と米国",
+          "米国と清"
+        ]
+      }
+    ],
+    "note": "北部が勝利し奴隷制は廃止された。",
+    "cloze_context": "南北戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4c58422e6cf4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民主主義思想の発達",
+    "term": "ロック",
+    "term_dummies": [
+      "ルソー",
+      "モンテスキュー",
+      "リンカン"
+    ],
+    "explanation_template": "政府が権利を侵す場合の{{1}}などを説いた英国の思想家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "抵抗権",
+        "dummies": [
+          "王権神授説",
+          "身分特権",
+          "皇帝独裁"
+        ]
+      }
+    ],
+    "note": "市民革命後の政治思想に影響。",
+    "cloze_context": "ロック",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_dab72c67edfd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民主主義思想の発達",
+    "term": "ルソー",
+    "term_dummies": [
+      "ロック",
+      "モンテスキュー",
+      "リンカン"
+    ],
+    "explanation_template": "社会契約論で{{1}}などを説いた思想家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "人民主権",
+        "dummies": [
+          "絶対王政",
+          "身分特権",
+          "王権神授説"
+        ]
+      }
+    ],
+    "note": "フランス革命にも影響を与えた。",
+    "cloze_context": "ルソー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fb1f62244b23",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民主主義思想の発達",
+    "term": "モンテスキュー",
+    "term_dummies": [
+      "ロック",
+      "ルソー",
+      "リンカン"
+    ],
+    "explanation_template": "法の精神で、権力を分ける{{1}}を説いた思想家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "三権分立",
+        "dummies": [
+          "絶対王政",
+          "植民地独裁",
+          "身分固定"
+        ]
+      }
+    ],
+    "note": "権力の集中を防ぐ考え。",
+    "cloze_context": "モンテスキュー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2066ae76f4c5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民主主義思想の発達",
+    "term": "リンカン",
+    "term_dummies": [
+      "ロック",
+      "ルソー",
+      "モンテスキュー"
+    ],
+    "explanation_template": "米国の南北戦争中に{{1}}を宣言した大統領。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "奴隷解放",
+        "dummies": [
+          "独立",
+          "核廃絶",
+          "鎖国"
+        ]
+      }
+    ],
+    "note": "民主政治についての演説でも知られる。",
+    "cloze_context": "リンカン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_61fb772ec558",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の領域と外交",
+    "term": "樺太・千島交換条約",
+    "term_dummies": [
+      "日清修好条規",
+      "琉球処分",
+      "北海道開拓"
+    ],
+    "explanation_template": "1875年、日本が樺太の権利を放棄し{{1}}全島を得た条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "千島列島",
+        "dummies": [
+          "台湾",
+          "朝鮮半島",
+          "南樺太"
+        ]
+      }
+    ],
+    "note": "ロシアとの間で結ばれた。",
+    "cloze_context": "樺太・千島交換条約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f13dc69b993f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の領域と外交",
+    "term": "日清修好条規",
+    "term_dummies": [
+      "樺太・千島交換条約",
+      "琉球処分",
+      "北海道開拓"
+    ],
+    "explanation_template": "1871年、日本と{{1}}が対等な形で結んだ条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "清",
+        "dummies": [
+          "朝鮮",
+          "ロシア",
+          "イギリス"
+        ]
+      }
+    ],
+    "note": "開国時の不平等条約と区別。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_90285e4bd83b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の領域と外交",
+    "term": "琉球処分",
+    "term_dummies": [
+      "樺太・千島交換条約",
+      "日清修好条規",
+      "北海道開拓"
+    ],
+    "explanation_template": "1879年、琉球藩を廃止して{{1}}県を置いたこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "沖縄",
+        "dummies": [
+          "鹿児島",
+          "長崎",
+          "宮崎"
+        ]
+      }
+    ],
+    "note": "琉球の人々の生活も変化した。",
+    "cloze_context": "琉球処分",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_de1283ce0eba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の領域と外交",
+    "term": "北海道開拓",
+    "term_dummies": [
+      "樺太・千島交換条約",
+      "日清修好条規",
+      "琉球処分"
+    ],
+    "explanation_template": "明治政府が{{1}}などを進めた、北方の土地の開発。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "移住と農地開発",
+        "dummies": [
+          "参勤交代",
+          "遣唐使派遣",
+          "楽市・楽座"
+        ]
+      }
+    ],
+    "note": "アイヌの生活や文化にも影響した。",
+    "cloze_context": "北海道開拓",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4f6a02ff9480",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の科学と文化",
+    "term": "北里柴三郎",
+    "term_dummies": [
+      "野口英世",
+      "緒方洪庵",
+      "福沢諭吉"
+    ],
+    "explanation_template": "細菌研究を進め、{{1}}などで成果を上げた医学者。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "血清療法",
+        "dummies": [
+          "種痘法",
+          "麻酔法",
+          "聴診器"
+        ]
+      }
+    ],
+    "note": "近代日本の医学の発展を示す。",
+    "cloze_context": "北里柴三郎",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2ffeeb9a7c3f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の科学と文化",
+    "term": "夏目漱石",
+    "term_dummies": [
+      "北里柴三郎",
+      "樋口一葉",
+      "岡倉天心"
+    ],
+    "explanation_template": "こころなどを著し、{{1}}の発展を担った作家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "近代文学",
+        "dummies": [
+          "国学",
+          "蘭学",
+          "軍記物語"
+        ]
+      }
+    ],
+    "note": "欧米との交流も文化に影響した。",
+    "cloze_context": "夏目漱石",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c9b3809f2c7a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の科学と文化",
+    "term": "樋口一葉",
+    "term_dummies": [
+      "北里柴三郎",
+      "夏目漱石",
+      "岡倉天心"
+    ],
+    "explanation_template": "たけくらべなどを著し、{{1}}期の人々を描いた作家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "明治",
+        "dummies": [
+          "平安",
+          "鎌倉",
+          "室町"
+        ]
+      }
+    ],
+    "note": "近代文学を担った女性の一人。",
+    "cloze_context": "樋口一葉",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a19e124e67c5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の科学と文化",
+    "term": "岡倉天心",
+    "term_dummies": [
+      "北里柴三郎",
+      "夏目漱石",
+      "樋口一葉"
+    ],
+    "explanation_template": "近代に{{1}}の振興に努め、日本美術院の創設に関わった人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "日本美術",
+        "dummies": [
+          "蒸気機関",
+          "西洋医学",
+          "近代法制"
+        ]
+      }
+    ],
+    "note": "伝統と新しい文化の関係を考える。",
+    "cloze_context": "岡倉天心",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_1a1e1bf83313",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "大衆社会と思想",
+    "term": "吉野作造",
+    "term_dummies": [
+      "美濃部達吉",
+      "福沢諭吉",
+      "中江兆民"
+    ],
+    "explanation_template": "大正期に{{1}}を唱え、政治の民主化を求めた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "民本主義",
+        "dummies": [
+          "帝国主義",
+          "王権神授説",
+          "ファシズム"
+        ]
+      }
+    ],
+    "note": "政治の目的を民衆の利益に置く。",
+    "cloze_context": "吉野作造",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0e6af18034fb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "大衆社会と思想",
+    "term": "民本主義",
+    "term_dummies": [
+      "吉野作造",
+      "青鞜",
+      "ラジオ放送"
+    ],
+    "explanation_template": "大正期、政治の目的を{{1}}の利益に置くとした思想。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "民衆",
+        "dummies": [
+          "天皇だけ",
+          "軍部だけ",
+          "華族だけ"
+        ]
+      }
+    ],
+    "note": "国民主権と同一の概念ではない。",
+    "cloze_context": "民本主義",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_1a3bcbf4c26c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "大衆社会と思想",
+    "term": "青鞜",
+    "term_dummies": [
+      "明星",
+      "白樺",
+      "ホトトギス"
+    ],
+    "explanation_template": "平塚らいてうらが創刊した、{{1}}の自覚や解放を訴えた雑誌。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "女性",
+        "dummies": [
+          "大名",
+          "国司",
+          "執権"
+        ]
+      }
+    ],
+    "note": "近代の女性の運動を示す。",
+    "cloze_context": "青鞜",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_518adbf50712",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "大衆社会と思想",
+    "term": "ラジオ放送",
+    "term_dummies": [
+      "映画",
+      "新聞",
+      "雑誌"
+    ],
+    "explanation_template": "1925年に日本で始まり、音声を{{1}}人々へ届けた放送。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "広い範囲の",
+        "dummies": [
+          "有料講演会内の",
+          "同じ教室内だけの",
+          "同じ船内だけの"
+        ]
+      }
+    ],
+    "note": "大衆文化の広がりに関わる。",
+    "cloze_context": "ラジオ放送",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e8680f5703bb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の発展と災害",
+    "term": "東京オリンピック",
+    "term_dummies": [
+      "東海道新幹線",
+      "大阪万博",
+      "東日本大震災"
+    ],
+    "explanation_template": "{{1}}年に東京で開かれ、高度成長期の日本を示す夏季大会。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1964",
+        "dummies": [
+          "1946",
+          "1972",
+          "1989"
+        ]
+      }
+    ],
+    "note": "2021年開催の大会とは区別する。",
+    "cloze_context": "東京オリンピック",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9571c2512fe3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の発展と災害",
+    "term": "東海道新幹線",
+    "term_dummies": [
+      "東京オリンピック",
+      "大阪万博",
+      "東日本大震災"
+    ],
+    "explanation_template": "1964年、東京と{{1}}を結んで開業した高速鉄道。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "新大阪",
+        "dummies": [
+          "博多",
+          "仙台",
+          "新潟"
+        ]
+      }
+    ],
+    "note": "交通と生活が大きく変化した。",
+    "cloze_context": "東海道新幹線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fdb926e8712d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の発展と災害",
+    "term": "大阪万博",
+    "term_dummies": [
+      "東京オリンピック",
+      "東海道新幹線",
+      "東日本大震災"
+    ],
+    "explanation_template": "高度成長期の{{1}}年、大阪で開かれた国際博覧会。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1970",
+        "dummies": [
+          "1964",
+          "1985",
+          "2005"
+        ]
+      }
+    ],
+    "note": "高度成長期の社会を考える。",
+    "cloze_context": "大阪万博",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c0cc1296ebfa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の発展と災害",
+    "term": "東日本大震災",
+    "term_dummies": [
+      "東京オリンピック",
+      "東海道新幹線",
+      "大阪万博"
+    ],
+    "explanation_template": "2011年、地震や津波、{{1}}事故などが重なった大災害。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "原子力発電所",
+        "dummies": [
+          "新幹線開業",
+          "条約締結",
+          "関税撤廃"
+        ]
+      }
+    ],
+    "note": "防災やエネルギー政策の課題となった。",
+    "cloze_context": "東日本大震災",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_65b5014bf24f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選択と経済活動",
+    "term": "希少性",
+    "term_dummies": [
+      "機会費用",
+      "交換",
+      "起業"
+    ],
+    "explanation_template": "人々の欲求に対して利用できる資源が{{1}}いること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "限られて",
+        "dummies": [
+          "無限に余って",
+          "均等に配られて",
+          "全て無料になって"
+        ]
+      }
+    ],
+    "note": "選択や資源配分が必要になる。",
+    "cloze_context": "希少性",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_54c86c96bba7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選択と経済活動",
+    "term": "機会費用",
+    "term_dummies": [
+      "希少性",
+      "交換",
+      "起業"
+    ],
+    "explanation_template": "ある選択のために諦めた、最もよい代替案から得られる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "利益",
+        "dummies": [
+          "現金支出だけ",
+          "税額だけ",
+          "借金だけ"
+        ]
+      }
+    ],
+    "note": "支払った金額だけとは限らない。",
+    "cloze_context": "機会費用",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_b29287ec907b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選択と経済活動",
+    "term": "交換",
+    "term_dummies": [
+      "希少性",
+      "機会費用",
+      "起業"
+    ],
+    "explanation_template": "互いの持つ財やサービスなどを{{1}}経済活動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "取り替える",
+        "dummies": [
+          "全て廃棄する",
+          "独占する",
+          "生産だけする"
+        ]
+      }
+    ],
+    "note": "貨幣は交換を容易にする。",
+    "cloze_context": "交換",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3426e5a120e5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選択と経済活動",
+    "term": "起業",
+    "term_dummies": [
+      "希少性",
+      "機会費用",
+      "交換"
+    ],
+    "explanation_template": "新たに{{1}}を始めること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "事業",
+        "dummies": [
+          "国会",
+          "裁判",
+          "課税"
+        ]
+      }
+    ],
+    "note": "資金や人材、事業計画が必要。",
+    "cloze_context": "起業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a9aece93558f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "景気と社会資本",
+    "term": "社会資本",
+    "term_dummies": [
+      "景気",
+      "好況",
+      "不況"
+    ],
+    "explanation_template": "道路や上下水道など、生活や生産の{{1}}となる施設。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "基盤",
+        "dummies": [
+          "税率",
+          "判例",
+          "株価"
+        ]
+      }
+    ],
+    "note": "公共財と全く同じ分類ではない。",
+    "cloze_context": "社会資本",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d84c9646cc19",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "景気と社会資本",
+    "term": "景気",
+    "term_dummies": [
+      "社会資本",
+      "好況",
+      "不況"
+    ],
+    "explanation_template": "生産や消費などの{{1}}の状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "経済活動",
+        "dummies": [
+          "国土面積",
+          "行政区域",
+          "選挙制度"
+        ]
+      }
+    ],
+    "note": "好況と不況などの変動がある。",
+    "cloze_context": "景気",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a9ad06e74394",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "景気と社会資本",
+    "term": "好況",
+    "term_dummies": [
+      "社会資本",
+      "景気",
+      "不況"
+    ],
+    "explanation_template": "生産や消費が活発で、景気が{{1}}状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "よい",
+        "dummies": [
+          "悪い",
+          "必ず停止する",
+          "全て国営になる"
+        ]
+      }
+    ],
+    "note": "物価上昇などへの注意も必要。",
+    "cloze_context": "好況",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9660d4974e1d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "景気と社会資本",
+    "term": "不況",
+    "term_dummies": [
+      "社会資本",
+      "景気",
+      "好況"
+    ],
+    "explanation_template": "生産や消費が停滞し、景気が{{1}}状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "悪い",
+        "dummies": [
+          "よい",
+          "必ず一定の",
+          "全て非営利になる"
+        ]
+      }
+    ],
+    "note": "失業などの課題が生じやすい。",
+    "cloze_context": "不況",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_66fb897dfed5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際的な儀礼",
+    "term": "自衛隊",
+    "term_dummies": [
+      "専守防衛",
+      "国旗",
+      "国歌"
+    ],
+    "explanation_template": "日本の平和と独立、安全を守るための{{1}}組織。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "防衛",
+        "dummies": [
+          "立法",
+          "司法",
+          "徴税"
+        ]
+      }
+    ],
+    "note": "災害派遣や国際協力も行う。",
+    "cloze_context": "自衛隊",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e5720bad3fef",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際的な儀礼",
+    "term": "専守防衛",
+    "term_dummies": [
+      "自衛隊",
+      "国旗",
+      "国歌"
+    ],
+    "explanation_template": "攻撃を受けて初めて防衛力を行使する、{{1}}的な防衛姿勢。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "受動",
+        "dummies": [
+          "侵略",
+          "植民",
+          "先制攻撃"
+        ]
+      }
+    ],
+    "note": "防衛力行使は必要最小限とする。",
+    "cloze_context": "専守防衛",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_eddac58df3be",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際的な儀礼",
+    "term": "国旗",
+    "term_dummies": [
+      "自衛隊",
+      "専守防衛",
+      "国歌"
+    ],
+    "explanation_template": "国家を{{1}}する旗。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "象徴",
+        "dummies": [
+          "統治",
+          "課税",
+          "裁判"
+        ]
+      }
+    ],
+    "note": "他国の国旗も相互に尊重する。",
+    "cloze_context": "国旗",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_36f84a538e0b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際的な儀礼",
+    "term": "国歌",
+    "term_dummies": [
+      "自衛隊",
+      "専守防衛",
+      "国旗"
+    ],
+    "explanation_template": "国家を{{1}}する歌。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "象徴",
+        "dummies": [
+          "統治",
+          "課税",
+          "裁判"
+        ]
+      }
+    ],
+    "note": "国際的な儀礼で尊重される。",
+    "cloze_context": "国歌",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_00fe8c994ce7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の主な四島で、最も北にある島は？",
+    "answer": "北海道",
+    "dummies": [
+      "本州",
+      "四国",
+      "九州"
+    ],
+    "note": "本州との間には津軽海峡がある。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8de19874a543",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "本州の北端に位置する県は？",
+    "answer": "青森県",
+    "dummies": [
+      "秋田県",
+      "岩手県",
+      "山形県"
+    ],
+    "note": "津軽半島や下北半島がある。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_88981b1aebc1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "本州北東部、盛岡市を県庁所在地とする県は？",
+    "answer": "岩手県",
+    "dummies": [
+      "青森県",
+      "秋田県",
+      "宮城県"
+    ],
+    "note": "太平洋側に三陸海岸が広がる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8ff27de11ae9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本海側にあり、八郎潟の干拓地がある県は？",
+    "answer": "秋田県",
+    "dummies": [
+      "岩手県",
+      "宮城県",
+      "福島県"
+    ],
+    "note": "東北地方の日本海側。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c84ca849b6e1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東北の太平洋側で、松島がある県は？",
+    "answer": "宮城県",
+    "dummies": [
+      "秋田県",
+      "山形県",
+      "青森県"
+    ],
+    "note": "仙台市が地方の中心となる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fbcdb03d482b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "最上川が流れ、庄内平野がある県は？",
+    "answer": "山形県",
+    "dummies": [
+      "岩手県",
+      "宮城県",
+      "青森県"
+    ],
+    "note": "日本海に面する東北の県。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_12d444a8a427",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東北地方の南部で、会津地方がある県は？",
+    "answer": "福島県",
+    "dummies": [
+      "山形県",
+      "秋田県",
+      "宮城県"
+    ],
+    "note": "浜通り・中通り・会津に分けられる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_dda34fc3aa82",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "関東地方の東部で、霞ヶ浦がある県は？",
+    "answer": "茨城県",
+    "dummies": [
+      "栃木県",
+      "群馬県",
+      "埼玉県"
+    ],
+    "note": "太平洋に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_7a03fb2385b8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "関東地方の内陸で、日光がある県は？",
+    "answer": "栃木県",
+    "dummies": [
+      "茨城県",
+      "千葉県",
+      "群馬県"
+    ],
+    "note": "宇都宮市が県庁所在地。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_91cfc669e831",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "関東地方の内陸で、草津温泉がある県は？",
+    "answer": "群馬県",
+    "dummies": [
+      "栃木県",
+      "茨城県",
+      "埼玉県"
+    ],
+    "note": "前橋市が県庁所在地。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_abe55938d028",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東京都の北に隣接し、秩父地方がある県は？",
+    "answer": "埼玉県",
+    "dummies": [
+      "千葉県",
+      "茨城県",
+      "神奈川県"
+    ],
+    "note": "海に面していない。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8f254ecc3698",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "房総半島がある県は？",
+    "answer": "千葉県",
+    "dummies": [
+      "神奈川県",
+      "茨城県",
+      "静岡県"
+    ],
+    "note": "東京湾の東側に位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f828627db9d5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "伊豆諸島や小笠原諸島を含むのは？",
+    "answer": "東京都",
+    "dummies": [
+      "静岡県",
+      "千葉県",
+      "神奈川県"
+    ],
+    "note": "本土から離れた島々も含む。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_75a75bcac7fc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三浦半島がある県は？",
+    "answer": "神奈川県",
+    "dummies": [
+      "千葉県",
+      "茨城県",
+      "静岡県"
+    ],
+    "note": "東京湾と相模湾の間に位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1ac699505621",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本海に浮かぶ佐渡島を含む県は？",
+    "answer": "新潟県",
+    "dummies": [
+      "富山県",
+      "石川県",
+      "山形県"
+    ],
+    "note": "越後平野が広がる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_90d02ad7fb45",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北陸地方で、立山連峰や黒部川がある県は？",
+    "answer": "富山県",
+    "dummies": [
+      "石川県",
+      "福井県",
+      "新潟県"
+    ],
+    "note": "北に富山湾が広がる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_44cc2352706c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本海へ突き出す能登半島がある県は？",
+    "answer": "石川県",
+    "dummies": [
+      "富山県",
+      "福井県",
+      "新潟県"
+    ],
+    "note": "金沢市が県庁所在地。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_134fc5be503b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北陸地方の西部で、若狭地方を含む県は？",
+    "answer": "福井県",
+    "dummies": [
+      "石川県",
+      "富山県",
+      "岐阜県"
+    ],
+    "note": "敦賀市や若狭湾沿岸を含む。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1f79b2718967",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "富士山の北側で、甲府盆地がある県は？",
+    "answer": "山梨県",
+    "dummies": [
+      "静岡県",
+      "長野県",
+      "岐阜県"
+    ],
+    "note": "内陸県で果樹栽培も盛ん。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_20667c5f358b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "松本盆地や善光寺平がある内陸県は？",
+    "answer": "長野県",
+    "dummies": [
+      "山梨県",
+      "岐阜県",
+      "群馬県"
+    ],
+    "note": "日本アルプスの山々が連なる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5dbcfcc207da",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "飛騨地方と美濃地方からなる県は？",
+    "answer": "岐阜県",
+    "dummies": [
+      "長野県",
+      "愛知県",
+      "富山県"
+    ],
+    "note": "中部地方の内陸県。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4c4b42a0d2a8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "富士山の南側で、駿河湾に面する県は？",
+    "answer": "静岡県",
+    "dummies": [
+      "山梨県",
+      "愛知県",
+      "神奈川県"
+    ],
+    "note": "茶や工業などが地域を支える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_7cdff7e4402f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "渥美半島や知多半島がある県は？",
+    "answer": "愛知県",
+    "dummies": [
+      "三重県",
+      "静岡県",
+      "岐阜県"
+    ],
+    "note": "伊勢湾や三河湾に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f3045e0f04dd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "志摩半島がある県は？",
+    "answer": "三重県",
+    "dummies": [
+      "愛知県",
+      "静岡県",
+      "和歌山県"
+    ],
+    "note": "伊勢湾の西側などに位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0df299bafac0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "琵琶湖がある県は？",
+    "answer": "滋賀県",
+    "dummies": [
+      "京都府",
+      "奈良県",
+      "三重県"
+    ],
+    "note": "近畿地方の内陸県。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c21d136b8306",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "丹後半島があるのは？",
+    "answer": "京都府",
+    "dummies": [
+      "大阪府",
+      "兵庫県",
+      "福井県"
+    ],
+    "note": "北は日本海に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_bbeb91b54217",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "淀川の河口がある都道府県は？",
+    "answer": "大阪府",
+    "dummies": [
+      "京都府",
+      "兵庫県",
+      "奈良県"
+    ],
+    "note": "大阪湾に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_80d153875d7b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "淡路島を含む県は？",
+    "answer": "兵庫県",
+    "dummies": [
+      "徳島県",
+      "香川県",
+      "和歌山県"
+    ],
+    "note": "本州では日本海にも面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e9b26325c0db",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "奈良盆地がある内陸県は？",
+    "answer": "奈良県",
+    "dummies": [
+      "滋賀県",
+      "三重県",
+      "和歌山県"
+    ],
+    "note": "古代の都の跡が残る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_77941fcd4761",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "紀伊半島の西側で、潮岬がある県は？",
+    "answer": "和歌山県",
+    "dummies": [
+      "三重県",
+      "大阪府",
+      "奈良県"
+    ],
+    "note": "黒潮の影響を受ける。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fe08306120e5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "因幡地方に砂丘が広がる中国地方の県は？",
+    "answer": "鳥取県",
+    "dummies": [
+      "島根県",
+      "岡山県",
+      "広島県"
+    ],
+    "note": "日本海に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a67aa3e35cd5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "隠岐諸島を含む県は？",
+    "answer": "島根県",
+    "dummies": [
+      "鳥取県",
+      "山口県",
+      "広島県"
+    ],
+    "note": "山陰地方に位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ebf434ae64ec",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中国地方南東部で、倉敷市がある県は？",
+    "answer": "岡山県",
+    "dummies": [
+      "広島県",
+      "鳥取県",
+      "山口県"
+    ],
+    "note": "瀬戸内海に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_acf97b1a7a99",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "瀬戸内海の宮島がある県は？",
+    "answer": "広島県",
+    "dummies": [
+      "岡山県",
+      "山口県",
+      "愛媛県"
+    ],
+    "note": "中国地方の南部に位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_451faf0adf82",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "本州の最も西に位置する県は？",
+    "answer": "山口県",
+    "dummies": [
+      "広島県",
+      "島根県",
+      "福岡県"
+    ],
+    "note": "関門海峡を隔て九州に向かい合う。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5c691837bd0d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "四国の東部で、吉野川下流の平野がある県は？",
+    "answer": "徳島県",
+    "dummies": [
+      "香川県",
+      "愛媛県",
+      "高知県"
+    ],
+    "note": "紀伊水道に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fcf13a51c6a8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "讃岐平野がある四国の県は？",
+    "answer": "香川県",
+    "dummies": [
+      "徳島県",
+      "愛媛県",
+      "高知県"
+    ],
+    "note": "北は瀬戸内海に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a76e8c5f12a5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "四国の北西部で、道後温泉がある県は？",
+    "answer": "愛媛県",
+    "dummies": [
+      "香川県",
+      "徳島県",
+      "高知県"
+    ],
+    "note": "松山市が県庁所在地。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_73f16d87d70f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "四国の南部で、土佐湾に面する県は？",
+    "answer": "高知県",
+    "dummies": [
+      "徳島県",
+      "愛媛県",
+      "香川県"
+    ],
+    "note": "太平洋側は降水量が多い。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2405296247dd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "九州北部で、北九州市がある県は？",
+    "answer": "福岡県",
+    "dummies": [
+      "佐賀県",
+      "長崎県",
+      "大分県"
+    ],
+    "note": "関門海峡に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f31d8f0607cb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "九州北西部で、陶磁器の産地の有田がある県は？",
+    "answer": "佐賀県",
+    "dummies": [
+      "福岡県",
+      "長崎県",
+      "熊本県"
+    ],
+    "note": "有明海や玄界灘に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_53ac53349026",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "対馬や五島列島を含む県は？",
+    "answer": "長崎県",
+    "dummies": [
+      "佐賀県",
+      "福岡県",
+      "熊本県"
+    ],
+    "note": "九州の西側に多くの島々がある。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_3738f739aed0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "阿蘇のカルデラがある県は？",
+    "answer": "熊本県",
+    "dummies": [
+      "大分県",
+      "宮崎県",
+      "鹿児島県"
+    ],
+    "note": "九州中央部に位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a0b6157e9752",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "九州北東部で、別府温泉がある県は？",
+    "answer": "大分県",
+    "dummies": [
+      "熊本県",
+      "宮崎県",
+      "福岡県"
+    ],
+    "note": "瀬戸内海側にも面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5cca914f83f9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "九州南東部で、宮崎平野がある県は？",
+    "answer": "宮崎県",
+    "dummies": [
+      "大分県",
+      "鹿児島県",
+      "熊本県"
+    ],
+    "note": "日向灘に面する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_26feb8379fe6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "薩摩半島と大隅半島がある県は？",
+    "answer": "鹿児島県",
+    "dummies": [
+      "宮崎県",
+      "熊本県",
+      "長崎県"
+    ],
+    "note": "九州の南端部に位置する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8d62dfe1826c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "都道府県の位置",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "宮古列島や八重山列島を含む県は？",
+    "answer": "沖縄県",
+    "dummies": [
+      "鹿児島県",
+      "長崎県",
+      "宮崎県"
+    ],
+    "note": "日本の南西に島々が連なる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_812d4ad6431a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "生活の変化と地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "寒冷地で断熱性の高い家を造る主な理由は？",
+    "answer": "室内の熱を逃がしにくくする",
+    "dummies": [
+      "降水を全て防ぐ",
+      "夏の日射を必ず増やす",
+      "風速を高める"
+    ],
+    "note": "自然環境に適応する暮らし。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2e5ef037ae44",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "生活の変化と地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "生活の変化を気候だけで説明できない理由は？",
+    "answer": "技術や交易なども影響する",
+    "dummies": [
+      "どの地域も同じ生活だから",
+      "宗教は常に気温で決まる",
+      "交通は生活に無関係だから"
+    ],
+    "note": "自然と社会の条件を関連付ける。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2111c6ef9745",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アジアの工業化と都市人口の増加で必要なのは？",
+    "answer": "住宅や交通網などの整備",
+    "dummies": [
+      "地方の生活を調べない",
+      "全都市で同じ政策を強制",
+      "人口増加と雇用を切り離す"
+    ],
+    "note": "都市化と生活環境を結び付ける。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0e3100da4e56",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "欧州の国境を越える河川の水質を守るには？",
+    "answer": "流域の国々が協力する",
+    "dummies": [
+      "下流国だけで全て決める",
+      "国境で水質は必ず回復する",
+      "上流の排水を検討しない"
+    ],
+    "note": "地域間の結び付きから考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6afef7df0066",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アフリカで換金作物依存を減らす取組は？",
+    "answer": "産業や輸出品を多様にする",
+    "dummies": [
+      "輸出品を一種類だけに固定",
+      "国内加工を全て禁止する",
+      "国際価格の変動を無視する"
+    ],
+    "note": "価格変動への弱さを減らす。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_94092a0160d7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "米国の大規模農業で地下水を多く使う際の課題は？",
+    "answer": "地下水の持続的な利用",
+    "dummies": [
+      "農地が必ず湿地に戻る",
+      "水資源は無限なので対策不要",
+      "降水量の違いは無関係"
+    ],
+    "note": "生産と水資源の両立を考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d2612c4db7a8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "南米の熱帯林の減少が世界にも影響する理由は？",
+    "answer": "気候や生物多様性と関わる",
+    "dummies": [
+      "森林は国境外に影響しない",
+      "農地は必ず元の森林に戻る",
+      "伐採量と生態系は無関係"
+    ],
+    "note": "地域課題と地球的課題を結ぶ。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0489f1663656",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "豪州の輸出先が欧州からアジアへ広がった背景は？",
+    "answer": "近いアジアの需要増大など",
+    "dummies": [
+      "アジアとの距離が急に縮んだ",
+      "欧州との貿易が法律で全廃",
+      "資源の輸送が不要になった"
+    ],
+    "note": "貿易相手は歴史的に変化する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1fa0c7825cb0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地理資料と地域区分",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "人口の増減を地図で比べる時にそろえるのは？",
+    "answer": "期間と集計区域",
+    "dummies": [
+      "地図の販売価格だけ",
+      "見出しの大きさだけ",
+      "調査者の人数だけ"
+    ],
+    "note": "区域変更や期間の違いに注意。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_66d1358832dd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地理資料と地域区分",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "調査結果を主題図にする際に必要なのは？",
+    "answer": "凡例と区分の基準を示す",
+    "dummies": [
+      "単位を全て省く",
+      "不明値を全てゼロにする",
+      "都合の悪い地域を消す"
+    ],
+    "note": "読み手が比較できる表現にする。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e119aad81ac0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地域区分",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気候と工業で地域区分が違ってよい理由は？",
+    "answer": "分ける基準が異なるため",
+    "dummies": [
+      "地域区分は全て誤りだから",
+      "県境は常に変わるから",
+      "同じ地域に産業がないから"
+    ],
+    "note": "目的に合う区分を使う。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2170f1929c48",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "日本の地域区分",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "割合と実数を地図で比べる際の注意は？",
+    "answer": "母数の大きさも確かめる",
+    "dummies": [
+      "割合最大なら実数も必ず最大",
+      "人口規模は常に同じと考える",
+      "単位や定義は確認しない"
+    ],
+    "note": "率と数を区別して読む。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f55e18b648d6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域のつながり",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地方の農産物が大都市へ届く条件の一つは？",
+    "answer": "輸送網と保冷技術",
+    "dummies": [
+      "産地と市場が同一であること",
+      "全て空輸に限ること",
+      "消費地の人口を無視すること"
+    ],
+    "note": "産業と交通の関連を見る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b470e5bf345f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域のつながり",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ地方の山地と平野で土地利用が違う理由は？",
+    "answer": "地形や交通などの条件差",
+    "dummies": [
+      "地方内では気候が必ず同じ",
+      "県境だけで全て決まる",
+      "土地利用は自然と無関係"
+    ],
+    "note": "一つの地方も多様な地域からなる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8cf69b8bcd5b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域の課題と提案",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の交通案を説明する際に示すべきなのは？",
+    "answer": "根拠・効果・費用や課題",
+    "dummies": [
+      "賛成者数だけ",
+      "他案の欠点だけ",
+      "調査しない理想だけ"
+    ],
+    "note": "代替案と比べて説明する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f3148df7b899",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地理",
+    "unit": "地域の課題と提案",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "住民への聞き取りで個人を特定できる情報は？",
+    "answer": "同意や目的に配慮して扱う",
+    "dummies": [
+      "無断で全て公開する",
+      "反対意見の人だけ公表する",
+      "聞き取り後は秘密で改変する"
+    ],
+    "note": "調査の安全と倫理を守る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-C4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_93f7903f20ac",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史の調べ方と表し方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "紀元前の年代で古い順に並ぶのは？",
+    "answer": "前5年→前3年→前1年",
+    "dummies": [
+      "前1年→前3年→前5年",
+      "前3年→前5年→前1年",
+      "前5年→前1年→前3年"
+    ],
+    "note": "紀元前は数字の大きい年が古い。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4c51d7660b88",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史の調べ方と表し方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "時代区分を考える際に着目するのは？",
+    "answer": "政治や社会の大きな変化",
+    "dummies": [
+      "十年ごとの機械的な区切りだけ",
+      "天気が変わった日だけ",
+      "現在の県境だけ"
+    ],
+    "note": "区分の目的や基準を考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_eff01d7ae1ed",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "地域の歴史の調べ方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の昔の暮らしを調べる場として適切なのは？",
+    "answer": "郷土資料館や博物館",
+    "dummies": [
+      "年代不明の広告だけ",
+      "現在の流行ランキングだけ",
+      "出所不明の投稿だけ"
+    ],
+    "note": "展示物の年代や説明も確かめる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_bf028f51b2fc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "地域の歴史の調べ方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の人への歴史の聞き取りで必要なのは？",
+    "answer": "記憶と他の資料を照合する",
+    "dummies": [
+      "記憶を全て厳密な年代とする",
+      "質問内容を記録しない",
+      "異なる証言を理由なく消す"
+    ],
+    "note": "聞いた時期や経験も記録する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8e710f188ebe",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の社会と交流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "農耕の広がりで生じた社会の変化は？",
+    "answer": "蓄えや土地をめぐる争い",
+    "dummies": [
+      "全ての身分差の即時消滅",
+      "集落の全面消滅",
+      "交易の永久停止"
+    ],
+    "note": "首長や国の形成にもつながった。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_119b3fbfae4a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の社会と交流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大陸からの渡来人が伝えたものは？",
+    "answer": "漢字や金属加工など",
+    "dummies": [
+      "普通選挙や国会",
+      "蒸気機関やラジオ",
+      "地租改正や徴兵令"
+    ],
+    "note": "人の移動と文化の交流を結ぶ。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6298b3728389",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の社会と交流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古事記や風土記の神話を読む際の注意は？",
+    "answer": "当時の信仰や見方も考える",
+    "dummies": [
+      "記述を全て実証済みとする",
+      "神話は当時の社会と無関係",
+      "成立した時代を確認しない"
+    ],
+    "note": "史実の確認と当時の認識を区別。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d747fd5fea0d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の東アジア",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "モンゴル帝国の拡大が交流に与えた影響は？",
+    "answer": "ユーラシアの往来が活発に",
+    "dummies": [
+      "東西の交通が全て消滅",
+      "全ての地域の宗教が統一",
+      "世界中の国境が消滅"
+    ],
+    "note": "帝国の広がりと交通を関連付ける。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0da49683976a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の東アジア",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中世の琉球が交易で栄えた条件は？",
+    "answer": "東アジアの海路を結ぶ位置",
+    "dummies": [
+      "大西洋の中央にある位置",
+      "全ての貿易を禁止した制度",
+      "鎖国で外国船を全て排除"
+    ],
+    "note": "各地の品物や文化を仲介した。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_9f7fa6cd625d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の東アジア",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中世の文化が今の生活につながる例は？",
+    "answer": "和室・茶・生け花など",
+    "dummies": [
+      "ラジオ・映画・新幹線",
+      "国会・内閣・政党",
+      "蒸気機関・工場制機械工業"
+    ],
+    "note": "成立した時代と継承を考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_79188bbcde98",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸時代に大きな戦乱が少なかった影響は？",
+    "answer": "交通や都市文化が発達",
+    "dummies": [
+      "全ての商業が消滅",
+      "庶民教育が一律に禁止",
+      "全国の農地が放棄された"
+    ],
+    "note": "幕藩体制の安定と社会の変化。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0566d3e62758",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "近世のアイヌの人々の暮らしを考える視点は？",
+    "answer": "交易と独自の文化の関係",
+    "dummies": [
+      "日本との交易が全くないとする",
+      "全員が稲作だけを行ったとする",
+      "文化の違いを優劣で判断する"
+    ],
+    "note": "北方との交易も行っていた。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a8e2ee868366",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "藩校と寺子屋に共通する歴史的な影響は？",
+    "answer": "教育や学びの広がり",
+    "dummies": [
+      "普通選挙の即時実現",
+      "全国一律の義務教育の完成",
+      "全ての身分差の解消"
+    ],
+    "note": "学ぶ対象や内容の違いも確認。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_14ef3552621a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "開国を世界の動きと関連付ける視点は？",
+    "answer": "欧米のアジア進出",
+    "dummies": [
+      "国際連盟の成立",
+      "冷戦の終結",
+      "EUの成立"
+    ],
+    "note": "アヘン戦争後の東アジアとも関連。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c9e303d7bfc5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1875年の樺太・千島交換条約の相手国は？",
+    "answer": "ロシア",
+    "dummies": [
+      "清",
+      "朝鮮",
+      "アメリカ"
+    ],
+    "note": "近代の領域画定を考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_80f5fd8e84e8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "尖閣諸島の沖縄県への編入を日本が決めた年は？",
+    "answer": "1895年",
+    "dummies": [
+      "1875年",
+      "1905年",
+      "1952年"
+    ],
+    "note": "日本政府の経緯説明による。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_762e41a7d96b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "竹島を島根県へ編入する閣議決定の年は？",
+    "answer": "1905年",
+    "dummies": [
+      "1875年",
+      "1895年",
+      "1956年"
+    ],
+    "note": "日本政府の経緯説明による。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_03641adbf50c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北海道の開拓がアイヌの人々に与えた影響は？",
+    "answer": "土地や生活文化への制約",
+    "dummies": [
+      "伝統的生活が全て無条件に保護",
+      "全ての人に同じ土地を保障",
+      "同化政策が一切なかった"
+    ],
+    "note": "開発の成果と人々への影響を見る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_33f384711028",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "明治の近代文化の特徴として適切なのは？",
+    "answer": "伝統と欧米文化の受容",
+    "dummies": [
+      "伝統文化が全て消滅",
+      "外国文化との交流が全くない",
+      "古代文化だけを無変化で継承"
+    ],
+    "note": "文学・美術・科学などが発展。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8a34d56702a8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "第一次大戦が世界規模に広がった背景の一つは？",
+    "answer": "同盟関係や植民地の広がり",
+    "dummies": [
+      "全国家が同じ議会を持った",
+      "国際連合の軍が開戦した",
+      "全世界で宗教が統一された"
+    ],
+    "note": "欧州の戦いと世界の結び付きを見る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f4ac14424a53",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本が第一次大戦に参戦した際に用いた同盟は？",
+    "answer": "日英同盟",
+    "dummies": [
+      "日独伊三国同盟",
+      "日米安全保障条約",
+      "日ソ中立条約"
+    ],
+    "note": "中国などで権益を広げた。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1c578cd6fe52",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代国家と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "近代に新聞・雑誌・ラジオが広まった影響は？",
+    "answer": "情報や大衆文化の拡大",
+    "dummies": [
+      "全ての人の意見が統一",
+      "情報格差の完全消滅",
+      "選挙の必要性の消滅"
+    ],
+    "note": "情報の発信と受信の変化。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0c411cda9cc9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "現代の世界と日本",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "冷戦後も国際協力が必要な理由の一つは？",
+    "answer": "民族・宗教対立や環境課題",
+    "dummies": [
+      "全ての紛争が完全消滅した",
+      "国境を越える問題がなくなった",
+      "貧困が全地域で解消した"
+    ],
+    "note": "現代の課題を歴史から考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2a30d47b807b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "現代の世界と日本",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "震災の経験を現代社会に生かす取組は？",
+    "answer": "防災とエネルギー政策の検討",
+    "dummies": [
+      "災害の記録を全て廃棄",
+      "被害の地域差を調べない",
+      "過去の対策を無条件に固定"
+    ],
+    "note": "記録や教訓を次世代へ伝える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_daa64bdce973",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と情報",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "AIの導入を考える際に必要な視点は？",
+    "answer": "効率と雇用・権利への影響",
+    "dummies": [
+      "出力は必ず正しいとする",
+      "全ての責任をAIだけに負わせる",
+      "個人情報の扱いを検討しない"
+    ],
+    "note": "利点と課題を合わせて考える。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0621ad3833eb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と情報",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "災害情報を使う際に確かめるのは？",
+    "answer": "発信元・対象地域・更新時刻",
+    "dummies": [
+      "共有回数だけ",
+      "投稿者の人気だけ",
+      "自分の期待と同じかだけ"
+    ],
+    "note": "避難情報などは最新の対象を確認。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e4ffbe6185f0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "経済の選択と起業",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "限られた時間で二つの活動から一つを選ぶ課題は？",
+    "answer": "希少性による選択",
+    "dummies": [
+      "資源が無限な状態",
+      "必ず金銭だけの問題",
+      "必ず契約違反となる問題"
+    ],
+    "note": "時間も限られた資源の一つ。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f84b90f93e58",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "経済の選択と起業",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "起業の計画で必要な検討は？",
+    "answer": "需要・費用・資金調達",
+    "dummies": [
+      "利益だけを根拠なく断定",
+      "競合や顧客を調べない",
+      "資金の返済条件を読まない"
+    ],
+    "note": "金融は事業を支える役割を持つ。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_16cbbfe835a3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の防衛政策を考える基本的な前提は？",
+    "answer": "憲法の平和主義と国民の安全",
+    "dummies": [
+      "武力による領土拡大",
+      "国際法を常に無視",
+      "外交的努力を全て否定"
+    ],
+    "note": "安全保障と国際協力を関連付ける。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_58354344cec9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "他国の国旗・国歌に対する国際的な儀礼は？",
+    "answer": "相互に尊重する",
+    "dummies": [
+      "国の大小で尊重を変える",
+      "文化が違えば侮辱してよい",
+      "相手国に一方的な変更を要求"
+    ],
+    "note": "国家間の主権の尊重と結び付く。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_19b0cbd23855",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "領域をめぐる対立を解決する基本は？",
+    "answer": "外交や国際法による平和的手段",
+    "dummies": [
+      "武力による一方的な変更",
+      "対話の全面拒否",
+      "相手国民の権利を否定"
+    ],
+    "note": "日本政府の取組も関連付ける。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_99ae3a5ea99a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と国際協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "文化や宗教の異なる人々の共存で必要なのは？",
+    "answer": "違いと人権の双方を尊重",
+    "dummies": [
+      "一つの信仰を全員に強制",
+      "違いだけで交流を拒否",
+      "少数者の権利を認めない"
+    ],
+    "note": "国際的な相互理解を深める。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_cb31fee06a6f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地理",
+    "unit": "世界の地域課題",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "西アジアの乾燥地域で重要な水利用の課題は？",
+    "answer": "生活・農業用水の確保",
+    "dummies": [
+      "大量の降雪への対策だけ",
+      "凍土の融解への対策だけ",
+      "年中の豪雨への対策だけ"
+    ],
+    "note": "産業や生活と水資源の関係を見る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "geo-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_17718d8a26f1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "人類の出現と生活",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "猿人など初期の人類が出現した大陸は？",
+    "answer": "アフリカ大陸",
+    "dummies": [
+      "南アメリカ大陸",
+      "オーストラリア大陸",
+      "南極大陸"
+    ],
+    "note": "直立二足歩行や道具の使用も学ぶ。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_977a1f94706e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の人物と史料",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "聖徳太子の史料上の別名の一つは？",
+    "answer": "厩戸皇子",
+    "dummies": [
+      "中大兄皇子",
+      "大海人皇子",
+      "大友皇子"
+    ],
+    "note": "聖徳太子は後世の呼称。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_300cd841f7df",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の琉球と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "琉球の文化に関わるものの組合せは？",
+    "answer": "グスク・三線",
+    "dummies": [
+      "金閣・能",
+      "東大寺・万葉集",
+      "法隆寺・飛鳥文化"
+    ],
+    "note": "東アジアとの交流も背景にある。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_55b835012063",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "文化と社会生活",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "科学技術が社会生活を変えた例は？",
+    "answer": "医療や通信の進歩",
+    "dummies": [
+      "国の主権の必然的消滅",
+      "情報の真偽の自動確定",
+      "天然資源の無限化"
+    ],
+    "note": "利点と社会的課題の両面を見る。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_01a05511c7fb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "文化と社会生活",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "芸術が社会生活で果たす役割の例は？",
+    "answer": "感性や表現を豊かにする",
+    "dummies": [
+      "全ての科学的事実を決定する",
+      "全ての法律の効力を決定する",
+      "全ての経済格差を解消する"
+    ],
+    "note": "文化的な生活や交流にも関わる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_36b2b08204ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治の基本",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "選ばれた代表者が議会で話し合う政治は？",
+    "answer": "議会制民主主義",
+    "dummies": [
+      "直接民主制",
+      "絶対王政",
+      "軍部独裁"
+    ],
+    "note": "間接民主制とも呼ばれる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0a90462ccafb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "職業と社会生活",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "職業が社会に果たす役割の例は？",
+    "answer": "必要な財やサービスを支える",
+    "dummies": [
+      "全員の所得を同額に固定する",
+      "労働者の権利を全て消す",
+      "社会の分業を全てなくす"
+    ],
+    "note": "生活を支え社会への貢献にもなる。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_79fd0d6f807c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "平和と民主的統制",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "自衛隊を民主政治の下で統制する原則は？",
+    "answer": "文民統制",
+    "dummies": [
+      "三権分立",
+      "地方自治",
+      "議院内閣制"
+    ],
+    "note": "国会や内閣が統制する。",
+    "content_batch": "social-completion-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
   }
 ]

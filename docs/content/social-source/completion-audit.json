@@ -1,0 +1,67 @@
+{
+  "version": "0.84.0",
+  "date": "2026-11-09",
+  "batch": "social-completion-20261109",
+  "newMaterials": 168,
+  "newGeneratedQuestions": 232,
+  "pairedTermMaterials": 64,
+  "choiceMaterials": 104,
+  "newPrefecturePositionChoices": 47,
+  "previousSocialMaterials": 1154,
+  "previousSocialGeneratedQuestions": 1800,
+  "totalMaterials": 1322,
+  "totalGeneratedQuestions": 2032,
+  "fields": {
+    "地理": {
+      "materials": 492,
+      "generated": 688
+    },
+    "歴史": {
+      "materials": 461,
+      "generated": 757
+    },
+    "公民": {
+      "materials": 369,
+      "generated": 587
+    }
+  },
+  "previousSocialContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "runtimeChanges": "Version URLs only; no gameplay or persistence logic changes.",
+  "reportChanges": "Official history A(1)/A(2) labels and mappings corrected with report-only overrides. No old quiz object changed.",
+  "curriculumReview": {
+    "total": 93,
+    "byField": {
+      "地理": 27,
+      "歴史": 35,
+      "公民": 31
+    },
+    "byCategory": {
+      "アの項目": 61,
+      "イの項目": 32
+    }
+  },
+  "handlingReviewRows": 29,
+  "officialCoverageRate": null,
+  "coverageCaution": "93 authored review rows are not a vocabulary denominator, official attainment rate or a guarantee of all exam content. Source-ID existence is not a judgement of practical skill mastery.",
+  "budget": {
+    "materials": 168,
+    "presentations": 232,
+    "maxima": {
+      "task": 21,
+      "prompt": 31,
+      "choice": 15,
+      "targetLabel": 21,
+      "note": 18,
+      "combined": 82
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "references": "completion-references.json",
+  "editorialReview": "Peer distractors for new historical figures and media; reign/era and dates, indirect vs direct democracy, NGO/civil control and defensive policy; geography clues tied to one correct prefecture reviewed. Chronology alternatives use short BC-year sequences. Osaka and Tokyo events explicitly limited to high-growth era. Territory chronology is attributed to Japanese government.",
+  "checks": "Changed JSON, IDs, required fields, four choices, direct literal theme hints, old-content preservation, authoring evidence references and measured text envelope only. No full app test suite, browser or five-minute simulation.",
+  "completion": "Junior social knowledge and short-choice baseline complete within defined scope. Maps/charts/primary-source reading, drawing, fieldwork, extended writing/debate and social participation require separate practice."
+}

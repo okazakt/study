@@ -1,0 +1,4882 @@
+{
+  "version": "0.84.0",
+  "date": "2026-11-09",
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 社会編",
+    "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_003.pdf",
+    "retrieved": "2026-11-08",
+    "sha256": "891755a617df844e4a4b4c748f81aa4de675bbe0a5cec48fc0de0ec1acb4a2d5",
+    "locator": "付録3 中学校学習指導要領 第2章第2節社会、各分野の2内容（印刷頁202以降）"
+  },
+  "scope": "付録3各分野「2 内容」のア・イの小項目を編集単位として照合。知識・方法の基礎と短文判断の出題先を示し、全語句・全入試・実技能の完全網羅や公式の達成率とはしない。",
+  "countingRule": "アの列挙項目とイの列挙項目を各一行とし、直接記述のイや探究のアも一行。下位の全語句・全指導例を独立計数したものではない。",
+  "rows": [
+    {
+      "id": "geo-A1.ア(ア)",
+      "field": "地理",
+      "block": "geo-A1",
+      "officialItem": "ア(ア)",
+      "point": "世界の地域構成、緯経度、大陸・海洋、主な国の名称と位置",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:緯度",
+          "sourceIds": [
+            "jr_social_adc0ed7be7ab"
+          ]
+        },
+        {
+          "selector": "T:経度",
+          "sourceIds": [
+            "jr_social_2b07a9717039"
+          ]
+        },
+        {
+          "selector": "U:大陸と海洋",
+          "sourceIds": [
+            "jr_social_439ecb1b03a6",
+            "jr_social_5c95e3e04c3a",
+            "jr_social_02e5a45fa01e",
+            "jr_social_015d085bda84"
+          ]
+        },
+        {
+          "selector": "U:主な国の位置",
+          "sourceIds": [
+            "jr_social_case_1f664d38bcb9",
+            "jr_social_case_56ccafd57d01",
+            "jr_social_case_806bba87b47e",
+            "jr_social_case_19e195ebce6f",
+            "jr_social_case_b9838b356a6f",
+            "jr_social_case_9b59794596d4",
+            "jr_social_case_4b585e06200f",
+            "jr_social_case_997e6c06d9b0",
+            "jr_social_case_ceed3e5653dd",
+            "jr_social_case_91d6c28a176c",
+            "jr_social_case_615b6dabdf0d",
+            "jr_social_case_e798ef562427",
+            "jr_social_case_93c70d92e4da",
+            "jr_social_case_c836375c5af5",
+            "jr_social_case_675999c922e0",
+            "jr_social_case_e5a7f428a640",
+            "jr_social_case_64f0580345c6",
+            "jr_social_case_18ba94333ba1",
+            "jr_social_case_893ddf03854b",
+            "jr_social_case_f4fd7ab2d56b",
+            "jr_social_case_3f1c973426b3",
+            "jr_social_case_1f7a5ac17d49",
+            "jr_social_case_fb1438fb4ae8",
+            "jr_social_case_bed8d1e98a48"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_adc0ed7be7ab",
+        "jr_social_2b07a9717039",
+        "jr_social_439ecb1b03a6",
+        "jr_social_5c95e3e04c3a",
+        "jr_social_02e5a45fa01e",
+        "jr_social_015d085bda84",
+        "jr_social_case_1f664d38bcb9",
+        "jr_social_case_56ccafd57d01",
+        "jr_social_case_806bba87b47e",
+        "jr_social_case_19e195ebce6f",
+        "jr_social_case_b9838b356a6f",
+        "jr_social_case_9b59794596d4",
+        "jr_social_case_4b585e06200f",
+        "jr_social_case_997e6c06d9b0",
+        "jr_social_case_ceed3e5653dd",
+        "jr_social_case_91d6c28a176c",
+        "jr_social_case_615b6dabdf0d",
+        "jr_social_case_e798ef562427",
+        "jr_social_case_93c70d92e4da",
+        "jr_social_case_c836375c5af5",
+        "jr_social_case_675999c922e0",
+        "jr_social_case_e5a7f428a640",
+        "jr_social_case_64f0580345c6",
+        "jr_social_case_18ba94333ba1",
+        "jr_social_case_893ddf03854b",
+        "jr_social_case_f4fd7ab2d56b",
+        "jr_social_case_3f1c973426b3",
+        "jr_social_case_1f7a5ac17d49",
+        "jr_social_case_fb1438fb4ae8",
+        "jr_social_case_bed8d1e98a48"
+      ],
+      "outsideGame": "地球儀・白地図で実際の位置を指す練習は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-A1.ア(イ)",
+      "field": "地理",
+      "block": "geo-A1",
+      "officialItem": "ア(イ)",
+      "point": "日本の位置・時差・領域の範囲と変化",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:日本の領域",
+          "sourceIds": [
+            "jr_social_13889371dcd2",
+            "jr_social_f4972cea1432",
+            "jr_social_68467ccd9176",
+            "jr_social_7d630f841ffa",
+            "jr_social_case_e7b780750857",
+            "jr_social_case_491ae6188053",
+            "jr_social_case_2468797fece1",
+            "jr_social_case_a52779e23934",
+            "jr_social_case_c4b8e6cf48f7",
+            "jr_social_case_ba11f2137636",
+            "jr_social_case_be8c0a9b274b",
+            "jr_social_case_2550367bd2b3"
+          ]
+        },
+        {
+          "selector": "U:都道府県の位置",
+          "sourceIds": [
+            "jr_social_case_00fe8c994ce7",
+            "jr_social_case_8de19874a543",
+            "jr_social_case_88981b1aebc1",
+            "jr_social_case_8ff27de11ae9",
+            "jr_social_case_c84ca849b6e1",
+            "jr_social_case_fbcdb03d482b",
+            "jr_social_case_12d444a8a427",
+            "jr_social_case_dda34fc3aa82",
+            "jr_social_case_7a03fb2385b8",
+            "jr_social_case_91cfc669e831",
+            "jr_social_case_abe55938d028",
+            "jr_social_case_8f254ecc3698",
+            "jr_social_case_f828627db9d5",
+            "jr_social_case_75a75bcac7fc",
+            "jr_social_case_1ac699505621",
+            "jr_social_case_90d02ad7fb45",
+            "jr_social_case_44cc2352706c",
+            "jr_social_case_134fc5be503b",
+            "jr_social_case_1f79b2718967",
+            "jr_social_case_20667c5f358b",
+            "jr_social_case_5dbcfcc207da",
+            "jr_social_case_4c4b42a0d2a8",
+            "jr_social_case_7cdff7e4402f",
+            "jr_social_case_f3045e0f04dd",
+            "jr_social_case_0df299bafac0",
+            "jr_social_case_c21d136b8306",
+            "jr_social_case_bbeb91b54217",
+            "jr_social_case_80d153875d7b",
+            "jr_social_case_e9b26325c0db",
+            "jr_social_case_77941fcd4761",
+            "jr_social_case_fe08306120e5",
+            "jr_social_case_a67aa3e35cd5",
+            "jr_social_case_ebf434ae64ec",
+            "jr_social_case_acf97b1a7a99",
+            "jr_social_case_451faf0adf82",
+            "jr_social_case_5c691837bd0d",
+            "jr_social_case_fcf13a51c6a8",
+            "jr_social_case_a76e8c5f12a5",
+            "jr_social_case_73f16d87d70f",
+            "jr_social_case_2405296247dd",
+            "jr_social_case_f31d8f0607cb",
+            "jr_social_case_53ac53349026",
+            "jr_social_case_3738f739aed0",
+            "jr_social_case_a0b6157e9752",
+            "jr_social_case_5cca914f83f9",
+            "jr_social_case_26feb8379fe6",
+            "jr_social_case_8d62dfe1826c"
+          ]
+        },
+        {
+          "selector": "T:日本標準時",
+          "sourceIds": [
+            "jr_social_ac3460b24861"
+          ]
+        },
+        {
+          "selector": "T:樺太・千島交換条約",
+          "sourceIds": [
+            "jr_social_61fb772ec558"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_13889371dcd2",
+        "jr_social_f4972cea1432",
+        "jr_social_68467ccd9176",
+        "jr_social_7d630f841ffa",
+        "jr_social_case_e7b780750857",
+        "jr_social_case_491ae6188053",
+        "jr_social_case_2468797fece1",
+        "jr_social_case_a52779e23934",
+        "jr_social_case_c4b8e6cf48f7",
+        "jr_social_case_ba11f2137636",
+        "jr_social_case_be8c0a9b274b",
+        "jr_social_case_2550367bd2b3",
+        "jr_social_case_00fe8c994ce7",
+        "jr_social_case_8de19874a543",
+        "jr_social_case_88981b1aebc1",
+        "jr_social_case_8ff27de11ae9",
+        "jr_social_case_c84ca849b6e1",
+        "jr_social_case_fbcdb03d482b",
+        "jr_social_case_12d444a8a427",
+        "jr_social_case_dda34fc3aa82",
+        "jr_social_case_7a03fb2385b8",
+        "jr_social_case_91cfc669e831",
+        "jr_social_case_abe55938d028",
+        "jr_social_case_8f254ecc3698",
+        "jr_social_case_f828627db9d5",
+        "jr_social_case_75a75bcac7fc",
+        "jr_social_case_1ac699505621",
+        "jr_social_case_90d02ad7fb45",
+        "jr_social_case_44cc2352706c",
+        "jr_social_case_134fc5be503b",
+        "jr_social_case_1f79b2718967",
+        "jr_social_case_20667c5f358b",
+        "jr_social_case_5dbcfcc207da",
+        "jr_social_case_4c4b42a0d2a8",
+        "jr_social_case_7cdff7e4402f",
+        "jr_social_case_f3045e0f04dd",
+        "jr_social_case_0df299bafac0",
+        "jr_social_case_c21d136b8306",
+        "jr_social_case_bbeb91b54217",
+        "jr_social_case_80d153875d7b",
+        "jr_social_case_e9b26325c0db",
+        "jr_social_case_77941fcd4761",
+        "jr_social_case_fe08306120e5",
+        "jr_social_case_a67aa3e35cd5",
+        "jr_social_case_ebf434ae64ec",
+        "jr_social_case_acf97b1a7a99",
+        "jr_social_case_451faf0adf82",
+        "jr_social_case_5c691837bd0d",
+        "jr_social_case_fcf13a51c6a8",
+        "jr_social_case_a76e8c5f12a5",
+        "jr_social_case_73f16d87d70f",
+        "jr_social_case_2405296247dd",
+        "jr_social_case_f31d8f0607cb",
+        "jr_social_case_53ac53349026",
+        "jr_social_case_3738f739aed0",
+        "jr_social_case_a0b6157e9752",
+        "jr_social_case_5cca914f83f9",
+        "jr_social_case_26feb8379fe6",
+        "jr_social_case_8d62dfe1826c",
+        "jr_social_ac3460b24861",
+        "jr_social_61fb772ec558"
+      ],
+      "outsideGame": "海洋・島々の実際の地図読取りは別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-B1.ア(ア)",
+      "field": "地理",
+      "block": "geo-B1",
+      "officialItem": "ア(ア)",
+      "point": "生活と自然・社会条件の相互の影響",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:気候と住まい",
+          "sourceIds": [
+            "jr_social_case_3b8af7468f2b",
+            "jr_social_case_1e8072feaca0",
+            "jr_social_case_bc40453c7e44"
+          ]
+        },
+        {
+          "selector": "U:生活の変化と地域課題",
+          "sourceIds": [
+            "jr_social_case_812d4ad6431a",
+            "jr_social_case_2e5ef037ae44"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_3b8af7468f2b",
+        "jr_social_case_1e8072feaca0",
+        "jr_social_case_bc40453c7e44",
+        "jr_social_case_812d4ad6431a",
+        "jr_social_case_2e5ef037ae44"
+      ],
+      "outsideGame": "実際の景観写真と生活資料の比較は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-B1.ア(イ)",
+      "field": "地理",
+      "block": "geo-B1",
+      "officialItem": "ア(イ)",
+      "point": "生活の変化と多様性、主な宗教の分布",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:世界の生活と宗教",
+          "sourceIds": [
+            "jr_social_case_5660b74085e3",
+            "jr_social_case_668a87e1c519",
+            "jr_social_case_8ac08cd270c1",
+            "jr_social_case_00c3d1c32d10",
+            "jr_social_case_5622e913aa50"
+          ]
+        },
+        {
+          "selector": "U:気候・宗教と暮らし",
+          "sourceIds": [
+            "jr_social_861c51457f3e",
+            "jr_social_f6a42e2da202",
+            "jr_social_c6cf226d4b35",
+            "jr_social_55d6d4023db9"
+          ]
+        },
+        {
+          "selector": "P:生活の変化を気候だけで",
+          "sourceIds": [
+            "jr_social_case_2e5ef037ae44"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_5660b74085e3",
+        "jr_social_case_668a87e1c519",
+        "jr_social_case_8ac08cd270c1",
+        "jr_social_case_00c3d1c32d10",
+        "jr_social_case_5622e913aa50",
+        "jr_social_861c51457f3e",
+        "jr_social_f6a42e2da202",
+        "jr_social_c6cf226d4b35",
+        "jr_social_55d6d4023db9",
+        "jr_social_case_2e5ef037ae44"
+      ],
+      "outsideGame": "宗教分布図の読取りは別。"
+    },
+    {
+      "id": "geo-B2.ア(ア)",
+      "field": "地理",
+      "block": "geo-B2",
+      "officialItem": "ア(ア)",
+      "point": "地域の特色により地球的課題の現れ方が異なること",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:世界の地域課題",
+          "sourceIds": [
+            "jr_social_case_2111c6ef9745",
+            "jr_social_case_0e3100da4e56",
+            "jr_social_case_6afef7df0066",
+            "jr_social_case_94092a0160d7",
+            "jr_social_case_d2612c4db7a8",
+            "jr_social_case_0489f1663656",
+            "jr_social_case_cb31fee06a6f"
+          ]
+        },
+        {
+          "selector": "P:太平洋の低い島々で",
+          "sourceIds": [
+            "jr_social_case_0f9ca0635f14"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_2111c6ef9745",
+        "jr_social_case_0e3100da4e56",
+        "jr_social_case_6afef7df0066",
+        "jr_social_case_94092a0160d7",
+        "jr_social_case_d2612c4db7a8",
+        "jr_social_case_0489f1663656",
+        "jr_social_case_cb31fee06a6f",
+        "jr_social_case_0f9ca0635f14"
+      ],
+      "outsideGame": "州ごとの資料・統計を比較する実作業は別。"
+    },
+    {
+      "id": "geo-B2.ア(イ)",
+      "field": "地理",
+      "block": "geo-B2",
+      "officialItem": "ア(イ)",
+      "point": "世界六州の生活と地域的特色",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:アジア州",
+          "sourceIds": [
+            "jr_social_12a3653f552f",
+            "jr_social_1ddb289b06bc",
+            "jr_social_d929fb59761e",
+            "jr_social_be4cc06e8d51",
+            "jr_social_4784eb11e802",
+            "jr_social_372c447e239c",
+            "jr_social_e34170f5cf82",
+            "jr_social_aec55a39278f",
+            "jr_social_case_d7270a9816c5",
+            "jr_social_case_735d8547aae2",
+            "jr_social_case_136ec4dc271f",
+            "jr_social_case_c9f3be741917",
+            "jr_social_case_08900efb4080",
+            "jr_social_case_2be95cecec5e"
+          ]
+        },
+        {
+          "selector": "U:ヨーロッパ州",
+          "sourceIds": [
+            "jr_social_d383ec2fc722",
+            "jr_social_ba204d15e016",
+            "jr_social_2642137761a6",
+            "jr_social_36599e81d1d5",
+            "jr_social_63cf531d4d42",
+            "jr_social_9016d0ad7b78",
+            "jr_social_900fc631a33c",
+            "jr_social_ca6319f9e463",
+            "jr_social_case_c2531e381562",
+            "jr_social_case_2f326218b3f4",
+            "jr_social_case_f8942028d4c1",
+            "jr_social_case_bb3406e36d2e",
+            "jr_social_case_58bf13e63e45",
+            "jr_social_case_dcfcec22419a"
+          ]
+        },
+        {
+          "selector": "U:アフリカ州",
+          "sourceIds": [
+            "jr_social_1da1c68b584a",
+            "jr_social_b653144e5225",
+            "jr_social_45241b6c3a87",
+            "jr_social_aab365f80662",
+            "jr_social_case_94b7ee3b1ad8",
+            "jr_social_case_964fb3bf6655",
+            "jr_social_case_9612bb7e824f",
+            "jr_social_0047e6ef2dd6",
+            "jr_social_4ca0341a9fb9",
+            "jr_social_5d69dd9250e4",
+            "jr_social_f930e1f620ba",
+            "jr_social_case_c7aacf6330d5",
+            "jr_social_case_1ca96a9e57b1",
+            "jr_social_case_34fdd5e10cd5"
+          ]
+        },
+        {
+          "selector": "U:北アメリカ州",
+          "sourceIds": [
+            "jr_social_3ff9d09a83ee",
+            "jr_social_a24d79fad276",
+            "jr_social_994058cae28c",
+            "jr_social_210898198bfa",
+            "jr_social_66bd6adaa2f6",
+            "jr_social_9fb6e99cc1af",
+            "jr_social_efa3bf1c0345",
+            "jr_social_b43a2df4a583",
+            "jr_social_case_76ea6119cb1d",
+            "jr_social_case_812cb50dff07",
+            "jr_social_case_ab28738845db",
+            "jr_social_00eb6a753f7a",
+            "jr_social_725b2924131d",
+            "jr_social_b5c2b83e655e",
+            "jr_social_7ee5a9c2ad20",
+            "jr_social_case_5616f76be9c5",
+            "jr_social_case_92cd381009d0",
+            "jr_social_case_0a22b8ef626b"
+          ]
+        },
+        {
+          "selector": "U:南アメリカ州",
+          "sourceIds": [
+            "jr_social_case_5040a376f578",
+            "jr_social_case_be0cbdb53277",
+            "jr_social_case_b587ef47a491",
+            "jr_social_c179b386955e",
+            "jr_social_e1c6fb2b10c0",
+            "jr_social_e079f37d0807",
+            "jr_social_2ccd7a40550b",
+            "jr_social_case_06e4fbc4f896",
+            "jr_social_case_d5b2a9321199",
+            "jr_social_case_4724f2a80a55"
+          ]
+        },
+        {
+          "selector": "U:オセアニア州",
+          "sourceIds": [
+            "jr_social_case_29a248e47312",
+            "jr_social_case_0ea84f74ea9b",
+            "jr_social_5ab4ce928b44",
+            "jr_social_414e8556c29e",
+            "jr_social_ba60f0608316",
+            "jr_social_35a4fb3e6f6e",
+            "jr_social_case_74b14e6257e6",
+            "jr_social_case_01506cb21d2a",
+            "jr_social_case_0f9ca0635f14",
+            "jr_social_case_7b201018b102",
+            "jr_social_case_5c38db9d4177",
+            "jr_social_case_cf0206a75fb6",
+            "jr_social_case_de7f380493b3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_12a3653f552f",
+        "jr_social_1ddb289b06bc",
+        "jr_social_d929fb59761e",
+        "jr_social_be4cc06e8d51",
+        "jr_social_4784eb11e802",
+        "jr_social_372c447e239c",
+        "jr_social_e34170f5cf82",
+        "jr_social_aec55a39278f",
+        "jr_social_case_d7270a9816c5",
+        "jr_social_case_735d8547aae2",
+        "jr_social_case_136ec4dc271f",
+        "jr_social_case_c9f3be741917",
+        "jr_social_case_08900efb4080",
+        "jr_social_case_2be95cecec5e",
+        "jr_social_d383ec2fc722",
+        "jr_social_ba204d15e016",
+        "jr_social_2642137761a6",
+        "jr_social_36599e81d1d5",
+        "jr_social_63cf531d4d42",
+        "jr_social_9016d0ad7b78",
+        "jr_social_900fc631a33c",
+        "jr_social_ca6319f9e463",
+        "jr_social_case_c2531e381562",
+        "jr_social_case_2f326218b3f4",
+        "jr_social_case_f8942028d4c1",
+        "jr_social_case_bb3406e36d2e",
+        "jr_social_case_58bf13e63e45",
+        "jr_social_case_dcfcec22419a",
+        "jr_social_1da1c68b584a",
+        "jr_social_b653144e5225",
+        "jr_social_45241b6c3a87",
+        "jr_social_aab365f80662",
+        "jr_social_case_94b7ee3b1ad8",
+        "jr_social_case_964fb3bf6655",
+        "jr_social_case_9612bb7e824f",
+        "jr_social_0047e6ef2dd6",
+        "jr_social_4ca0341a9fb9",
+        "jr_social_5d69dd9250e4",
+        "jr_social_f930e1f620ba",
+        "jr_social_case_c7aacf6330d5",
+        "jr_social_case_1ca96a9e57b1",
+        "jr_social_case_34fdd5e10cd5",
+        "jr_social_3ff9d09a83ee",
+        "jr_social_a24d79fad276",
+        "jr_social_994058cae28c",
+        "jr_social_210898198bfa",
+        "jr_social_66bd6adaa2f6",
+        "jr_social_9fb6e99cc1af",
+        "jr_social_efa3bf1c0345",
+        "jr_social_b43a2df4a583",
+        "jr_social_case_76ea6119cb1d",
+        "jr_social_case_812cb50dff07",
+        "jr_social_case_ab28738845db",
+        "jr_social_00eb6a753f7a",
+        "jr_social_725b2924131d",
+        "jr_social_b5c2b83e655e",
+        "jr_social_7ee5a9c2ad20",
+        "jr_social_case_5616f76be9c5",
+        "jr_social_case_92cd381009d0",
+        "jr_social_case_0a22b8ef626b",
+        "jr_social_case_5040a376f578",
+        "jr_social_case_be0cbdb53277",
+        "jr_social_case_b587ef47a491",
+        "jr_social_c179b386955e",
+        "jr_social_e1c6fb2b10c0",
+        "jr_social_e079f37d0807",
+        "jr_social_2ccd7a40550b",
+        "jr_social_case_06e4fbc4f896",
+        "jr_social_case_d5b2a9321199",
+        "jr_social_case_4724f2a80a55",
+        "jr_social_case_29a248e47312",
+        "jr_social_case_0ea84f74ea9b",
+        "jr_social_5ab4ce928b44",
+        "jr_social_414e8556c29e",
+        "jr_social_ba60f0608316",
+        "jr_social_35a4fb3e6f6e",
+        "jr_social_case_74b14e6257e6",
+        "jr_social_case_01506cb21d2a",
+        "jr_social_case_0f9ca0635f14",
+        "jr_social_case_7b201018b102",
+        "jr_social_case_5c38db9d4177",
+        "jr_social_case_cf0206a75fb6",
+        "jr_social_case_de7f380493b3"
+      ],
+      "outsideGame": "各州の全国家や全入試事例を網羅する意味ではない。"
+    },
+    {
+      "id": "geo-C1.ア(ア)",
+      "field": "地理",
+      "block": "geo-C1",
+      "officialItem": "ア(ア)",
+      "point": "観察・野外調査・文献調査と地理的なまとめ方",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:地域調査",
+          "sourceIds": [
+            "jr_social_case_10169a636580",
+            "jr_social_case_2eaacc1c08d2"
+          ]
+        },
+        {
+          "selector": "P:住民への聞き取りで",
+          "sourceIds": [
+            "jr_social_case_f3148df7b899"
+          ]
+        },
+        {
+          "selector": "P:調査結果を主題図に",
+          "sourceIds": [
+            "jr_social_case_66d1358832dd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_10169a636580",
+        "jr_social_case_2eaacc1c08d2",
+        "jr_social_case_f3148df7b899",
+        "jr_social_case_66d1358832dd"
+      ],
+      "outsideGame": "学校周辺の実地調査と発表は別。"
+    },
+    {
+      "id": "geo-C1.ア(イ)",
+      "field": "地理",
+      "block": "geo-C1",
+      "officialItem": "ア(イ)",
+      "point": "地形図・主題図の読図と目的に適した地図作成",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:等高線",
+          "sourceIds": [
+            "jr_social_81279fd367f2"
+          ]
+        },
+        {
+          "selector": "T:縮尺",
+          "sourceIds": [
+            "jr_social_b7a441376dae"
+          ]
+        },
+        {
+          "selector": "U:縮尺と方位",
+          "sourceIds": [
+            "jr_social_case_2a94e6303a95",
+            "jr_social_case_9a86acb50dc4",
+            "jr_social_case_666496ca4524",
+            "jr_social_case_a76853fa39d1",
+            "jr_social_case_41bd6f98baa1",
+            "jr_social_case_4d828930730b"
+          ]
+        },
+        {
+          "selector": "P:調査結果を主題図に",
+          "sourceIds": [
+            "jr_social_case_66d1358832dd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_81279fd367f2",
+        "jr_social_b7a441376dae",
+        "jr_social_case_2a94e6303a95",
+        "jr_social_case_9a86acb50dc4",
+        "jr_social_case_666496ca4524",
+        "jr_social_case_a76853fa39d1",
+        "jr_social_case_41bd6f98baa1",
+        "jr_social_case_4d828930730b",
+        "jr_social_case_66d1358832dd"
+      ],
+      "outsideGame": "実際の地図の読図・作図技能は方法知識のみ。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C2.ア(ア)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "ア(ア)",
+      "point": "日本の地形・気候・海洋・災害と防災",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:日本の地形",
+          "sourceIds": [
+            "jr_social_766b5b61f7e2",
+            "jr_social_7f39775f78c2",
+            "jr_social_d9cdaca30b63",
+            "jr_social_2e122b64a757"
+          ]
+        },
+        {
+          "selector": "U:日本の気候",
+          "sourceIds": [
+            "jr_social_4842078651c4",
+            "jr_social_52c54d564e66",
+            "jr_social_2b9ac2af88bb",
+            "jr_social_833e7d772e2f"
+          ]
+        },
+        {
+          "selector": "U:防災",
+          "sourceIds": [
+            "jr_social_1362a57918c6",
+            "jr_social_0e4eda2333db",
+            "jr_social_e9526c5989fb",
+            "jr_social_18f5feaa42ac",
+            "jr_social_core_hazard_map"
+          ]
+        },
+        {
+          "selector": "U:日本付近の海流",
+          "sourceIds": [
+            "jr_social_5581a9f39bd8",
+            "jr_social_8421a3c7311b",
+            "jr_social_e48dcd342f82",
+            "jr_social_2e6f5eaf5db9"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_766b5b61f7e2",
+        "jr_social_7f39775f78c2",
+        "jr_social_d9cdaca30b63",
+        "jr_social_2e122b64a757",
+        "jr_social_4842078651c4",
+        "jr_social_52c54d564e66",
+        "jr_social_2b9ac2af88bb",
+        "jr_social_833e7d772e2f",
+        "jr_social_1362a57918c6",
+        "jr_social_0e4eda2333db",
+        "jr_social_e9526c5989fb",
+        "jr_social_18f5feaa42ac",
+        "jr_social_core_hazard_map",
+        "jr_social_5581a9f39bd8",
+        "jr_social_8421a3c7311b",
+        "jr_social_e48dcd342f82",
+        "jr_social_2e6f5eaf5db9"
+      ],
+      "outsideGame": "現地の危険箇所確認や避難行動は別。"
+    },
+    {
+      "id": "geo-C2.ア(イ)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "ア(イ)",
+      "point": "人口分布、少子高齢化、過疎・過密",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:過疎",
+          "sourceIds": [
+            "jr_social_bc74f1c392b4"
+          ]
+        },
+        {
+          "selector": "T:過密",
+          "sourceIds": [
+            "jr_social_bcaf38257f1a"
+          ]
+        },
+        {
+          "selector": "T:人口ピラミッド",
+          "sourceIds": [
+            "jr_social_cdd93db76de0"
+          ]
+        },
+        {
+          "selector": "U:人口と地域の将来",
+          "sourceIds": [
+            "jr_social_2f7ef4bcc4e2",
+            "jr_social_1fdc96c54c9c",
+            "jr_social_6ae75c8ed292",
+            "jr_social_00e39e29082b",
+            "jr_social_case_1731b60e2468",
+            "jr_social_case_722ddaebf39f",
+            "jr_social_case_66978a1cd463",
+            "jr_social_case_e4854b254b33"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_bc74f1c392b4",
+        "jr_social_bcaf38257f1a",
+        "jr_social_cdd93db76de0",
+        "jr_social_2f7ef4bcc4e2",
+        "jr_social_1fdc96c54c9c",
+        "jr_social_6ae75c8ed292",
+        "jr_social_00e39e29082b",
+        "jr_social_case_1731b60e2468",
+        "jr_social_case_722ddaebf39f",
+        "jr_social_case_66978a1cd463",
+        "jr_social_case_e4854b254b33"
+      ],
+      "outsideGame": "実際の人口統計・人口ピラミッドの読取りは別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C2.ア(ウ)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "ア(ウ)",
+      "point": "資源・エネルギー利用、産業動向と環境課題",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:発電とエネルギー",
+          "sourceIds": [
+            "jr_social_case_4316f9a4a12b",
+            "jr_social_case_c73f4dc03698",
+            "jr_social_case_6bf619540ecb",
+            "jr_social_case_4c277a385a73"
+          ]
+        },
+        {
+          "selector": "U:食料と資源",
+          "sourceIds": [
+            "jr_social_case_fb8339d009e6",
+            "jr_social_case_95b6936f859f",
+            "jr_social_case_b64bb73f7a27"
+          ]
+        },
+        {
+          "selector": "U:工業と産業構造",
+          "sourceIds": [
+            "jr_social_ef3aa67f3e2c",
+            "jr_social_6ad15869deb3",
+            "jr_social_8bbb9e943ed2",
+            "jr_social_b76bf88b34d6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_4316f9a4a12b",
+        "jr_social_case_c73f4dc03698",
+        "jr_social_case_6bf619540ecb",
+        "jr_social_case_4c277a385a73",
+        "jr_social_case_fb8339d009e6",
+        "jr_social_case_95b6936f859f",
+        "jr_social_case_b64bb73f7a27",
+        "jr_social_ef3aa67f3e2c",
+        "jr_social_6ad15869deb3",
+        "jr_social_8bbb9e943ed2",
+        "jr_social_b76bf88b34d6"
+      ],
+      "outsideGame": "最新順位や数量を暗記させる構成ではない。"
+    },
+    {
+      "id": "geo-C2.ア(エ)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "ア(エ)",
+      "point": "交通・通信網、物流と国内外の結び付き",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:交通と物流",
+          "sourceIds": [
+            "jr_social_case_ff8f05cd2a15",
+            "jr_social_case_51214a686718",
+            "jr_social_case_9101f9e1fe82",
+            "jr_social_case_d10440e77191"
+          ]
+        },
+        {
+          "selector": "U:交通と産業",
+          "sourceIds": [
+            "jr_social_84ac49d6ec6f",
+            "jr_social_ad11cfb6d3db",
+            "jr_social_cbcc853922b2",
+            "jr_social_9db501197470"
+          ]
+        },
+        {
+          "selector": "P:地方の農産物が大都市へ",
+          "sourceIds": [
+            "jr_social_case_f55e18b648d6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_ff8f05cd2a15",
+        "jr_social_case_51214a686718",
+        "jr_social_case_9101f9e1fe82",
+        "jr_social_case_d10440e77191",
+        "jr_social_84ac49d6ec6f",
+        "jr_social_ad11cfb6d3db",
+        "jr_social_cbcc853922b2",
+        "jr_social_9db501197470",
+        "jr_social_case_f55e18b648d6"
+      ],
+      "outsideGame": "実際の路線図や流動図の読取りは別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C2.ア(オ)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "ア(オ)",
+      "point": "自然・人口・産業・交通に基づく日本の大観",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:日本の地域比較",
+          "sourceIds": [
+            "jr_social_case_b200c14f3f2a",
+            "jr_social_case_76247cad0da5",
+            "jr_social_case_a30f18cc2e41",
+            "jr_social_case_cf7134a60ceb"
+          ]
+        },
+        {
+          "selector": "U:日本の地域区分",
+          "sourceIds": [
+            "jr_social_case_e119aad81ac0",
+            "jr_social_case_2170f1929c48"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_b200c14f3f2a",
+        "jr_social_case_76247cad0da5",
+        "jr_social_case_a30f18cc2e41",
+        "jr_social_case_cf7134a60ceb",
+        "jr_social_case_e119aad81ac0",
+        "jr_social_case_2170f1929c48"
+      ],
+      "outsideGame": "複数主題図を重ねる実作業は別。"
+    },
+    {
+      "id": "geo-C2.ア(カ)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "ア(カ)",
+      "point": "主題図・資料による地域区分",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:気候と工業で地域区分が",
+          "sourceIds": [
+            "jr_social_case_e119aad81ac0"
+          ]
+        },
+        {
+          "selector": "P:割合と実数を地図で",
+          "sourceIds": [
+            "jr_social_case_2170f1929c48"
+          ]
+        },
+        {
+          "selector": "P:人口の増減を地図で",
+          "sourceIds": [
+            "jr_social_case_1fa0c7825cb0"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_e119aad81ac0",
+        "jr_social_case_2170f1929c48",
+        "jr_social_case_1fa0c7825cb0"
+      ],
+      "outsideGame": "区分の方法知識のみ。実際の作図は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C3.ア(ア)",
+      "field": "地理",
+      "block": "geo-C3",
+      "officialItem": "ア(ア)",
+      "point": "日本の各地域の特色と課題",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:北海道地方",
+          "sourceIds": [
+            "jr_social_case_e72bb7da3bfc",
+            "jr_social_5573e50ddbbc",
+            "jr_social_aeecbdf1822d",
+            "jr_social_c629a7cf3f48",
+            "jr_social_6db3611932fe",
+            "jr_social_case_f76d8d9d3dd2",
+            "jr_social_case_0345fbf5f16e",
+            "jr_social_case_3e13c1185f22"
+          ]
+        },
+        {
+          "selector": "U:東北地方",
+          "sourceIds": [
+            "jr_social_case_fb44547b0198",
+            "jr_social_3dc433d12789",
+            "jr_social_f9f50f97c134",
+            "jr_social_5f41b3801062",
+            "jr_social_4ca5e3464744",
+            "jr_social_case_90d46b49b491",
+            "jr_social_case_3fed964f0e62",
+            "jr_social_case_d680f138f467"
+          ]
+        },
+        {
+          "selector": "U:関東地方",
+          "sourceIds": [
+            "jr_social_case_79381e1f141c",
+            "jr_social_ba2af62da18d",
+            "jr_social_522c561c5299",
+            "jr_social_d01e70f90be5",
+            "jr_social_8c43816ea677",
+            "jr_social_case_0b60571d4c52",
+            "jr_social_case_9f2cafb01e10",
+            "jr_social_case_a1439d31b65f"
+          ]
+        },
+        {
+          "selector": "U:中部地方",
+          "sourceIds": [
+            "jr_social_case_177b3dda8b75",
+            "jr_social_eaa312779b5b",
+            "jr_social_346e997b3fed",
+            "jr_social_b13d8dada57c",
+            "jr_social_949896965309",
+            "jr_social_case_12b27166f316",
+            "jr_social_case_f12837a9781d",
+            "jr_social_case_514ff8bb96cf"
+          ]
+        },
+        {
+          "selector": "U:近畿地方",
+          "sourceIds": [
+            "jr_social_case_575424a6ebe8",
+            "jr_social_167c3285adbd",
+            "jr_social_1610ff7026db",
+            "jr_social_63b5b0ca8cb1",
+            "jr_social_44c6d309fe4c",
+            "jr_social_case_d954d2f1b25a",
+            "jr_social_case_e0ae35a0efd4",
+            "jr_social_case_20ff26a2f540"
+          ]
+        },
+        {
+          "selector": "U:中国・四国地方",
+          "sourceIds": [
+            "jr_social_case_b94911d58d39",
+            "jr_social_3a6df30cd046",
+            "jr_social_037bc68a51db",
+            "jr_social_471e070f6c1c",
+            "jr_social_b056c05ed80f",
+            "jr_social_case_7bb1ed83128f",
+            "jr_social_case_25a254dd160b",
+            "jr_social_case_d10b9404b2fc"
+          ]
+        },
+        {
+          "selector": "U:九州地方",
+          "sourceIds": [
+            "jr_social_case_b24e8113519d",
+            "jr_social_6b20ce102842",
+            "jr_social_70e5b29287d1",
+            "jr_social_1a1847881a24",
+            "jr_social_db4fe2f0a953",
+            "jr_social_case_5e81c6374dff",
+            "jr_social_case_8dba309008bb",
+            "jr_social_case_ee3482ccc8f1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_e72bb7da3bfc",
+        "jr_social_5573e50ddbbc",
+        "jr_social_aeecbdf1822d",
+        "jr_social_c629a7cf3f48",
+        "jr_social_6db3611932fe",
+        "jr_social_case_f76d8d9d3dd2",
+        "jr_social_case_0345fbf5f16e",
+        "jr_social_case_3e13c1185f22",
+        "jr_social_case_fb44547b0198",
+        "jr_social_3dc433d12789",
+        "jr_social_f9f50f97c134",
+        "jr_social_5f41b3801062",
+        "jr_social_4ca5e3464744",
+        "jr_social_case_90d46b49b491",
+        "jr_social_case_3fed964f0e62",
+        "jr_social_case_d680f138f467",
+        "jr_social_case_79381e1f141c",
+        "jr_social_ba2af62da18d",
+        "jr_social_522c561c5299",
+        "jr_social_d01e70f90be5",
+        "jr_social_8c43816ea677",
+        "jr_social_case_0b60571d4c52",
+        "jr_social_case_9f2cafb01e10",
+        "jr_social_case_a1439d31b65f",
+        "jr_social_case_177b3dda8b75",
+        "jr_social_eaa312779b5b",
+        "jr_social_346e997b3fed",
+        "jr_social_b13d8dada57c",
+        "jr_social_949896965309",
+        "jr_social_case_12b27166f316",
+        "jr_social_case_f12837a9781d",
+        "jr_social_case_514ff8bb96cf",
+        "jr_social_case_575424a6ebe8",
+        "jr_social_167c3285adbd",
+        "jr_social_1610ff7026db",
+        "jr_social_63b5b0ca8cb1",
+        "jr_social_44c6d309fe4c",
+        "jr_social_case_d954d2f1b25a",
+        "jr_social_case_e0ae35a0efd4",
+        "jr_social_case_20ff26a2f540",
+        "jr_social_case_b94911d58d39",
+        "jr_social_3a6df30cd046",
+        "jr_social_037bc68a51db",
+        "jr_social_471e070f6c1c",
+        "jr_social_b056c05ed80f",
+        "jr_social_case_7bb1ed83128f",
+        "jr_social_case_25a254dd160b",
+        "jr_social_case_d10b9404b2fc",
+        "jr_social_case_b24e8113519d",
+        "jr_social_6b20ce102842",
+        "jr_social_70e5b29287d1",
+        "jr_social_1a1847881a24",
+        "jr_social_db4fe2f0a953",
+        "jr_social_case_5e81c6374dff",
+        "jr_social_case_8dba309008bb",
+        "jr_social_case_ee3482ccc8f1"
+      ],
+      "outsideGame": "七地方は編集上の区分。地方の全事例を意味しない。"
+    },
+    {
+      "id": "geo-C3.ア(イ)",
+      "field": "地理",
+      "block": "geo-C3",
+      "officialItem": "ア(イ)",
+      "point": "中核事象と他事象・地域課題との関連",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:地域のつながり",
+          "sourceIds": [
+            "jr_social_case_f55e18b648d6",
+            "jr_social_case_b470e5bf345f"
+          ]
+        },
+        {
+          "selector": "U:日本の地域比較",
+          "sourceIds": [
+            "jr_social_case_b200c14f3f2a",
+            "jr_social_case_76247cad0da5",
+            "jr_social_case_a30f18cc2e41",
+            "jr_social_case_cf7134a60ceb"
+          ]
+        },
+        {
+          "selector": "U:交通と産業",
+          "sourceIds": [
+            "jr_social_84ac49d6ec6f",
+            "jr_social_ad11cfb6d3db",
+            "jr_social_cbcc853922b2",
+            "jr_social_9db501197470"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_f55e18b648d6",
+        "jr_social_case_b470e5bf345f",
+        "jr_social_case_b200c14f3f2a",
+        "jr_social_case_76247cad0da5",
+        "jr_social_case_a30f18cc2e41",
+        "jr_social_case_cf7134a60ceb",
+        "jr_social_84ac49d6ec6f",
+        "jr_social_ad11cfb6d3db",
+        "jr_social_cbcc853922b2",
+        "jr_social_9db501197470"
+      ],
+      "outsideGame": "自然・人口・産業・交通を関連付ける基礎。長文資料は別。"
+    },
+    {
+      "id": "geo-C4.ア(ア)",
+      "field": "地理",
+      "block": "geo-C4",
+      "officialItem": "ア(ア)",
+      "point": "地域の実態と課題解決への取組",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:地域の在り方",
+          "sourceIds": [
+            "jr_social_case_1a4aac674874",
+            "jr_social_case_a57e900765cf"
+          ]
+        },
+        {
+          "selector": "U:地域の課題と提案",
+          "sourceIds": [
+            "jr_social_case_8cf69b8bcd5b",
+            "jr_social_case_f3148df7b899"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_1a4aac674874",
+        "jr_social_case_a57e900765cf",
+        "jr_social_case_8cf69b8bcd5b",
+        "jr_social_case_f3148df7b899"
+      ],
+      "outsideGame": "自身の地域の実態調査は別。"
+    },
+    {
+      "id": "geo-C4.ア(イ)",
+      "field": "地理",
+      "block": "geo-C4",
+      "officialItem": "ア(イ)",
+      "point": "構想したことを説明・議論しまとめる手法",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:地域の交通案を説明する",
+          "sourceIds": [
+            "jr_social_case_8cf69b8bcd5b"
+          ]
+        },
+        {
+          "selector": "P:住民への聞き取りで",
+          "sourceIds": [
+            "jr_social_case_f3148df7b899"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_8cf69b8bcd5b",
+        "jr_social_case_f3148df7b899"
+      ],
+      "outsideGame": "実際の論述・議論・地域提案は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-A1.ア(ア)",
+      "field": "歴史",
+      "block": "hist-A1",
+      "officialItem": "ア(ア)",
+      "point": "年代の表し方と時代区分",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:年代と時代の見方",
+          "sourceIds": [
+            "jr_social_case_0f00ce6deeae",
+            "jr_social_case_e2d31a51d5a4"
+          ]
+        },
+        {
+          "selector": "P:1600年は",
+          "sourceIds": [
+            "jr_social_case_5bf58101fb18"
+          ]
+        },
+        {
+          "selector": "P:紀元前の年代で",
+          "sourceIds": [
+            "jr_social_case_93f7903f20ac"
+          ]
+        },
+        {
+          "selector": "P:時代区分を考える",
+          "sourceIds": [
+            "jr_social_case_4c51d7660b88"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_0f00ce6deeae",
+        "jr_social_case_e2d31a51d5a4",
+        "jr_social_case_5bf58101fb18",
+        "jr_social_case_93f7903f20ac",
+        "jr_social_case_4c51d7660b88"
+      ],
+      "outsideGame": "長い年表の作成は別。"
+    },
+    {
+      "id": "hist-A1.ア(イ)",
+      "field": "歴史",
+      "block": "hist-A1",
+      "officialItem": "ア(イ)",
+      "point": "史料の情報読取りと年表への整理",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:歴史資料の扱い",
+          "sourceIds": [
+            "jr_social_case_2c26bcbdc373",
+            "jr_social_case_02465250b2c8"
+          ]
+        },
+        {
+          "selector": "P:過去の出来事を資料から",
+          "sourceIds": [
+            "jr_social_case_e1935e3b51c6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_2c26bcbdc373",
+        "jr_social_case_02465250b2c8",
+        "jr_social_case_e1935e3b51c6"
+      ],
+      "outsideGame": "史料全文の読解と年表作成は方法知識のみ。"
+    },
+    {
+      "id": "hist-A2.ア(ア)",
+      "field": "歴史",
+      "block": "hist-A2",
+      "officialItem": "ア(ア)",
+      "point": "地域の文化・歴史を調べ、情報を整理する技能",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:地域の古い建物を",
+          "sourceIds": [
+            "jr_social_case_1d4e018e2cce"
+          ]
+        },
+        {
+          "selector": "P:地域の昔の暮らしを",
+          "sourceIds": [
+            "jr_social_case_eff01d7ae1ed"
+          ]
+        },
+        {
+          "selector": "P:地域の人への歴史の聞き取り",
+          "sourceIds": [
+            "jr_social_case_bf028f51b2fc"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_1d4e018e2cce",
+        "jr_social_case_eff01d7ae1ed",
+        "jr_social_case_bf028f51b2fc"
+      ],
+      "outsideGame": "地域の聞き取り・見学と年表化は別。"
+    },
+    {
+      "id": "hist-B1.ア(ア)",
+      "field": "歴史",
+      "block": "hist-B1",
+      "officialItem": "ア(ア)",
+      "point": "古代文明、宗教、ギリシャ・ローマの政治",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:世界の古代文明",
+          "sourceIds": [
+            "jr_social_563e2a596a3f",
+            "jr_social_84b00f4a38c3",
+            "jr_social_39dc1da52bda",
+            "jr_social_1cb466ef54da"
+          ]
+        },
+        {
+          "selector": "U:古代の宗教",
+          "sourceIds": [
+            "jr_social_case_5c4715e28a8d",
+            "jr_social_case_060df8cb1e88"
+          ]
+        },
+        {
+          "selector": "U:古代世界の政治と交流",
+          "sourceIds": [
+            "jr_social_eb3e03991bfe",
+            "jr_social_0521a6aa0208",
+            "jr_social_12dc94a0c0ba",
+            "jr_social_5d158b5d6382"
+          ]
+        },
+        {
+          "selector": "P:猿人など初期の",
+          "sourceIds": [
+            "jr_social_case_17718d8a26f1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_563e2a596a3f",
+        "jr_social_84b00f4a38c3",
+        "jr_social_39dc1da52bda",
+        "jr_social_1cb466ef54da",
+        "jr_social_case_5c4715e28a8d",
+        "jr_social_case_060df8cb1e88",
+        "jr_social_eb3e03991bfe",
+        "jr_social_0521a6aa0208",
+        "jr_social_12dc94a0c0ba",
+        "jr_social_5d158b5d6382",
+        "jr_social_case_17718d8a26f1"
+      ],
+      "outsideGame": "個別遺跡の全知識や原史料読解は別。"
+    },
+    {
+      "id": "hist-B1.ア(イ)",
+      "field": "歴史",
+      "block": "hist-B1",
+      "officialItem": "ア(イ)",
+      "point": "農耕・生活の変化、大和政権と東アジア",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:縄文時代",
+          "sourceIds": [
+            "jr_social_2aa73d15d716"
+          ]
+        },
+        {
+          "selector": "T:弥生時代",
+          "sourceIds": [
+            "jr_social_80c570412ba6"
+          ]
+        },
+        {
+          "selector": "T:大和政権",
+          "sourceIds": [
+            "jr_social_1d32ad72046a"
+          ]
+        },
+        {
+          "selector": "T:渡来人",
+          "sourceIds": [
+            "jr_social_3afe6613063f"
+          ]
+        },
+        {
+          "selector": "P:農耕の広がりで",
+          "sourceIds": [
+            "jr_social_case_8e710f188ebe"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_2aa73d15d716",
+        "jr_social_80c570412ba6",
+        "jr_social_1d32ad72046a",
+        "jr_social_3afe6613063f",
+        "jr_social_case_8e710f188ebe"
+      ],
+      "outsideGame": "遺物・遺跡の実物比較は別。"
+    },
+    {
+      "id": "hist-B1.ア(ウ)",
+      "field": "歴史",
+      "block": "hist-B1",
+      "officialItem": "ア(ウ)",
+      "point": "律令国家の形成と天皇・貴族の政治",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:大化の改新",
+          "sourceIds": [
+            "jr_social_0b12f1d9272f"
+          ]
+        },
+        {
+          "selector": "T:大宝律令",
+          "sourceIds": [
+            "jr_social_6091a94ff38f"
+          ]
+        },
+        {
+          "selector": "T:摂関政治",
+          "sourceIds": [
+            "jr_social_da0c7d4b44ca"
+          ]
+        },
+        {
+          "selector": "T:院政",
+          "sourceIds": [
+            "jr_social_5b2bdfa6b588"
+          ]
+        },
+        {
+          "selector": "U:古代の税制と土地",
+          "sourceIds": [
+            "jr_social_43446ed16584",
+            "jr_social_68120baa0a6a",
+            "jr_social_c7b2f3812528",
+            "jr_social_bfe548d5c108",
+            "jr_social_case_23871095c775",
+            "jr_social_case_d28e7b0c5e4f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_0b12f1d9272f",
+        "jr_social_6091a94ff38f",
+        "jr_social_da0c7d4b44ca",
+        "jr_social_5b2bdfa6b588",
+        "jr_social_43446ed16584",
+        "jr_social_68120baa0a6a",
+        "jr_social_c7b2f3812528",
+        "jr_social_bfe548d5c108",
+        "jr_social_case_23871095c775",
+        "jr_social_case_d28e7b0c5e4f"
+      ],
+      "outsideGame": "制度と社会変化の基礎。全官職は対象外。"
+    },
+    {
+      "id": "hist-B1.ア(エ)",
+      "field": "歴史",
+      "block": "hist-B1",
+      "officialItem": "ア(エ)",
+      "point": "仏教・仮名文字、国際交流と文化の国風化",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:飛鳥文化",
+          "sourceIds": [
+            "jr_social_85d7f653d078"
+          ]
+        },
+        {
+          "selector": "T:天平文化",
+          "sourceIds": [
+            "jr_social_ed727d3af441"
+          ]
+        },
+        {
+          "selector": "T:国風文化",
+          "sourceIds": [
+            "jr_social_97f2738b3f68"
+          ]
+        },
+        {
+          "selector": "T:鑑真",
+          "sourceIds": [
+            "jr_social_26fece73e429"
+          ]
+        },
+        {
+          "selector": "T:源氏物語",
+          "sourceIds": [
+            "jr_social_2b8865e56cc2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_85d7f653d078",
+        "jr_social_ed727d3af441",
+        "jr_social_97f2738b3f68",
+        "jr_social_26fece73e429",
+        "jr_social_2b8865e56cc2"
+      ],
+      "outsideGame": "建築・作品の実物や図版の鑑賞は別。"
+    },
+    {
+      "id": "hist-B2.ア(ア)",
+      "field": "歴史",
+      "block": "hist-B2",
+      "officialItem": "ア(ア)",
+      "point": "武家政治成立、主従関係、元寇とユーラシア",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:御恩",
+          "sourceIds": [
+            "jr_social_a1d825799d6d"
+          ]
+        },
+        {
+          "selector": "T:奉公",
+          "sourceIds": [
+            "jr_social_e0208424fbb5"
+          ]
+        },
+        {
+          "selector": "T:元寇",
+          "sourceIds": [
+            "jr_social_f257b2569c4d"
+          ]
+        },
+        {
+          "selector": "T:モンゴル帝国",
+          "sourceIds": [
+            "jr_social_b222b5c5259c"
+          ]
+        },
+        {
+          "selector": "P:元寇後、幕府が",
+          "sourceIds": [
+            "jr_social_case_5efe2fb05876"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_a1d825799d6d",
+        "jr_social_e0208424fbb5",
+        "jr_social_f257b2569c4d",
+        "jr_social_b222b5c5259c",
+        "jr_social_case_5efe2fb05876"
+      ],
+      "outsideGame": "世界地図で帝国の拡大を追う技能は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B2.ア(イ)",
+      "field": "歴史",
+      "block": "hist-B2",
+      "officialItem": "ア(イ)",
+      "point": "南北朝・室町幕府、日明貿易と琉球",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:南北朝",
+          "sourceIds": [
+            "jr_social_540aad31095d"
+          ]
+        },
+        {
+          "selector": "T:勘合貿易",
+          "sourceIds": [
+            "jr_social_45571ebcfec9"
+          ]
+        },
+        {
+          "selector": "T:中継貿易",
+          "sourceIds": [
+            "jr_social_308e1374fa39"
+          ]
+        },
+        {
+          "selector": "P:中世の琉球が",
+          "sourceIds": [
+            "jr_social_case_0da49683976a"
+          ]
+        },
+        {
+          "selector": "P:琉球の文化に関わる",
+          "sourceIds": [
+            "jr_social_case_300cd841f7df"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_540aad31095d",
+        "jr_social_45571ebcfec9",
+        "jr_social_308e1374fa39",
+        "jr_social_case_0da49683976a",
+        "jr_social_case_300cd841f7df"
+      ],
+      "outsideGame": "交易網の実際の地図化は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B2.ア(ウ)",
+      "field": "歴史",
+      "block": "hist-B2",
+      "officialItem": "ア(ウ)",
+      "point": "産業・自治・文化、応仁の乱後の社会変動",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:惣",
+          "sourceIds": [
+            "jr_social_b519c9176a48"
+          ]
+        },
+        {
+          "selector": "T:二毛作",
+          "sourceIds": [
+            "jr_social_7e1be1ac5846"
+          ]
+        },
+        {
+          "selector": "T:応仁の乱",
+          "sourceIds": [
+            "jr_social_65da8c28cce3"
+          ]
+        },
+        {
+          "selector": "T:下剋上",
+          "sourceIds": [
+            "jr_social_0e92042b75ed"
+          ]
+        },
+        {
+          "selector": "U:中世の芸能と美術",
+          "sourceIds": [
+            "jr_social_9b261a472131",
+            "jr_social_d8ab266c4de7",
+            "jr_social_d2dba0f2801b",
+            "jr_social_bd991587f72d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_b519c9176a48",
+        "jr_social_7e1be1ac5846",
+        "jr_social_65da8c28cce3",
+        "jr_social_0e92042b75ed",
+        "jr_social_9b261a472131",
+        "jr_social_d8ab266c4de7",
+        "jr_social_d2dba0f2801b",
+        "jr_social_bd991587f72d"
+      ],
+      "outsideGame": "地域ごとの自治史や全文化作品は対象外。"
+    },
+    {
+      "id": "hist-B3.ア(ア)",
+      "field": "歴史",
+      "block": "hist-B3",
+      "officialItem": "ア(ア)",
+      "point": "欧州来航と織田・豊臣の統一、対外関係と文化",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:南蛮貿易",
+          "sourceIds": [
+            "jr_social_98d64765d863"
+          ]
+        },
+        {
+          "selector": "T:楽市・楽座",
+          "sourceIds": [
+            "jr_social_fb151723e2c9"
+          ]
+        },
+        {
+          "selector": "T:刀狩",
+          "sourceIds": [
+            "jr_social_00f7402939fc"
+          ]
+        },
+        {
+          "selector": "T:桃山文化",
+          "sourceIds": [
+            "jr_social_1b1b58e0dd7d"
+          ]
+        },
+        {
+          "selector": "P:豊臣秀吉の朝鮮侵略",
+          "sourceIds": [
+            "jr_social_case_6af54dfea144"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_98d64765d863",
+        "jr_social_fb151723e2c9",
+        "jr_social_00f7402939fc",
+        "jr_social_1b1b58e0dd7d",
+        "jr_social_case_6af54dfea144"
+      ],
+      "outsideGame": "詳細な合戦史の網羅ではない。"
+    },
+    {
+      "id": "hist-B3.ア(イ)",
+      "field": "歴史",
+      "block": "hist-B3",
+      "officialItem": "ア(イ)",
+      "point": "江戸幕府、大名統制、身分と農村、対外関係",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:参勤交代",
+          "sourceIds": [
+            "jr_social_31cda006a195"
+          ]
+        },
+        {
+          "selector": "U:近世の村と年貢",
+          "sourceIds": [
+            "jr_social_ae08860c2ca3",
+            "jr_social_1cd4d7b79a23",
+            "jr_social_3b69dc14e4a6",
+            "jr_social_346c3eee3d9b"
+          ]
+        },
+        {
+          "selector": "U:近世の対外窓口",
+          "sourceIds": [
+            "jr_social_c59e2345348f",
+            "jr_social_267ea5036018",
+            "jr_social_8f945de2f677",
+            "jr_social_fe8eccf66345",
+            "jr_social_case_de977c5bdc23",
+            "jr_social_case_af6508b1108b",
+            "jr_social_case_dc1c483c0946",
+            "jr_social_case_63b47681e457"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_31cda006a195",
+        "jr_social_ae08860c2ca3",
+        "jr_social_1cd4d7b79a23",
+        "jr_social_3b69dc14e4a6",
+        "jr_social_346c3eee3d9b",
+        "jr_social_c59e2345348f",
+        "jr_social_267ea5036018",
+        "jr_social_8f945de2f677",
+        "jr_social_fe8eccf66345",
+        "jr_social_case_de977c5bdc23",
+        "jr_social_case_af6508b1108b",
+        "jr_social_case_dc1c483c0946",
+        "jr_social_case_63b47681e457"
+      ],
+      "outsideGame": "各藩の制度・地域差を全て問う構成ではない。"
+    },
+    {
+      "id": "hist-B3.ア(ウ)",
+      "field": "歴史",
+      "block": "hist-B3",
+      "officialItem": "ア(ウ)",
+      "point": "産業・交通・教育、町人文化と地方の文化",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:寺子屋",
+          "sourceIds": [
+            "jr_social_18c760e818f6"
+          ]
+        },
+        {
+          "selector": "T:藩校",
+          "sourceIds": [
+            "jr_social_28495665246c"
+          ]
+        },
+        {
+          "selector": "T:元禄文化",
+          "sourceIds": [
+            "jr_social_6fcd58e96f96"
+          ]
+        },
+        {
+          "selector": "T:化政文化",
+          "sourceIds": [
+            "jr_social_544c0b3f14bc"
+          ]
+        },
+        {
+          "selector": "U:近世の産業と文化",
+          "sourceIds": [
+            "jr_social_case_64da96a18823",
+            "jr_social_case_afc776d4eb62",
+            "jr_social_case_2ad3a8c57ba5",
+            "jr_social_case_53558a40d6fb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_18c760e818f6",
+        "jr_social_28495665246c",
+        "jr_social_6fcd58e96f96",
+        "jr_social_544c0b3f14bc",
+        "jr_social_case_64da96a18823",
+        "jr_social_case_afc776d4eb62",
+        "jr_social_case_2ad3a8c57ba5",
+        "jr_social_case_53558a40d6fb"
+      ],
+      "outsideGame": "自身の地域の文化調査は別。"
+    },
+    {
+      "id": "hist-B3.ア(エ)",
+      "field": "歴史",
+      "block": "hist-B3",
+      "officialItem": "ア(エ)",
+      "point": "社会変化・欧米接近と幕府の改革・学問",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:近世の改革",
+          "sourceIds": [
+            "jr_social_case_e3a4cc9c5420",
+            "jr_social_case_71d54d221b1f",
+            "jr_social_case_6a591bd64748",
+            "jr_social_case_af5092cc6627"
+          ]
+        },
+        {
+          "selector": "T:国学",
+          "sourceIds": [
+            "jr_social_f290cfa89dba"
+          ]
+        },
+        {
+          "selector": "T:蘭学",
+          "sourceIds": [
+            "jr_social_a9f88e69801e"
+          ]
+        },
+        {
+          "selector": "T:大塩平八郎",
+          "sourceIds": [
+            "jr_social_098776b8e30f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_e3a4cc9c5420",
+        "jr_social_case_71d54d221b1f",
+        "jr_social_case_6a591bd64748",
+        "jr_social_case_af5092cc6627",
+        "jr_social_f290cfa89dba",
+        "jr_social_a9f88e69801e",
+        "jr_social_098776b8e30f"
+      ],
+      "outsideGame": "全改革の全法令を網羅しない。"
+    },
+    {
+      "id": "hist-C1.ア(ア)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "ア(ア)",
+      "point": "市民革命・産業革命、欧米の進出とアジアの対応",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:産業革命",
+          "sourceIds": [
+            "jr_social_8f6b6d9f831e"
+          ]
+        },
+        {
+          "selector": "T:ロック",
+          "sourceIds": [
+            "jr_social_4c58422e6cf4"
+          ]
+        },
+        {
+          "selector": "T:ルソー",
+          "sourceIds": [
+            "jr_social_dab72c67edfd"
+          ]
+        },
+        {
+          "selector": "T:モンテスキュー",
+          "sourceIds": [
+            "jr_social_fb1f62244b23"
+          ]
+        },
+        {
+          "selector": "T:アヘン戦争",
+          "sourceIds": [
+            "jr_social_9f2c5c86a49d"
+          ]
+        },
+        {
+          "selector": "T:辛亥革命",
+          "sourceIds": [
+            "jr_social_d38a69137b70"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_8f6b6d9f831e",
+        "jr_social_4c58422e6cf4",
+        "jr_social_dab72c67edfd",
+        "jr_social_fb1f62244b23",
+        "jr_social_9f2c5c86a49d",
+        "jr_social_d38a69137b70"
+      ],
+      "outsideGame": "世界史の全国家・全事件の網羅ではない。"
+    },
+    {
+      "id": "hist-C1.ア(イ)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "ア(イ)",
+      "point": "開国、維新、富国強兵・殖産興業、生活と領域",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:ペリー",
+          "sourceIds": [
+            "jr_social_5b6ef18320bc"
+          ]
+        },
+        {
+          "selector": "T:廃藩置県",
+          "sourceIds": [
+            "jr_social_5ee1fc59561b"
+          ]
+        },
+        {
+          "selector": "T:学制",
+          "sourceIds": [
+            "jr_social_6d137b00e41d"
+          ]
+        },
+        {
+          "selector": "T:地租改正",
+          "sourceIds": [
+            "jr_social_d6b589f8026a"
+          ]
+        },
+        {
+          "selector": "T:樺太・千島交換条約",
+          "sourceIds": [
+            "jr_social_61fb772ec558"
+          ]
+        },
+        {
+          "selector": "T:琉球処分",
+          "sourceIds": [
+            "jr_social_90285e4bd83b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_5b6ef18320bc",
+        "jr_social_5ee1fc59561b",
+        "jr_social_6d137b00e41d",
+        "jr_social_d6b589f8026a",
+        "jr_social_61fb772ec558",
+        "jr_social_90285e4bd83b"
+      ],
+      "outsideGame": "領域は当時の変化と現在の政府の立場を区別。"
+    },
+    {
+      "id": "hist-C1.ア(ウ)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "ア(ウ)",
+      "point": "自由民権・憲法・議会、日清日露、条約改正",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:自由民権運動",
+          "sourceIds": [
+            "jr_social_f6a311da6896"
+          ]
+        },
+        {
+          "selector": "T:大日本帝国憲法",
+          "sourceIds": [
+            "jr_social_281ab504758f"
+          ]
+        },
+        {
+          "selector": "T:帝国議会",
+          "sourceIds": [
+            "jr_social_797d5c3c0b22"
+          ]
+        },
+        {
+          "selector": "T:日清戦争",
+          "sourceIds": [
+            "jr_social_2e8189ca96fd"
+          ]
+        },
+        {
+          "selector": "T:日露戦争",
+          "sourceIds": [
+            "jr_social_701bd5936d79"
+          ]
+        },
+        {
+          "selector": "T:条約改正",
+          "sourceIds": [
+            "jr_social_9da855a7364a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_f6a311da6896",
+        "jr_social_281ab504758f",
+        "jr_social_797d5c3c0b22",
+        "jr_social_2e8189ca96fd",
+        "jr_social_701bd5936d79",
+        "jr_social_9da855a7364a"
+      ],
+      "outsideGame": "条約全条文や全外交交渉の網羅ではない。"
+    },
+    {
+      "id": "hist-C1.ア(エ)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "ア(エ)",
+      "point": "近代産業、生活と学問・教育・科学・芸術",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:製糸業や紡績業が",
+          "sourceIds": [
+            "jr_social_case_d931460d3bcc"
+          ]
+        },
+        {
+          "selector": "T:文明開化",
+          "sourceIds": [
+            "jr_social_5e042270035b"
+          ]
+        },
+        {
+          "selector": "T:北里柴三郎",
+          "sourceIds": [
+            "jr_social_4f6a02ff9480"
+          ]
+        },
+        {
+          "selector": "T:夏目漱石",
+          "sourceIds": [
+            "jr_social_2ffeeb9a7c3f"
+          ]
+        },
+        {
+          "selector": "T:岡倉天心",
+          "sourceIds": [
+            "jr_social_a19e124e67c5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_d931460d3bcc",
+        "jr_social_5e042270035b",
+        "jr_social_4f6a02ff9480",
+        "jr_social_2ffeeb9a7c3f",
+        "jr_social_a19e124e67c5"
+      ],
+      "outsideGame": "実作品の読解・鑑賞や全人物は対象外。"
+    },
+    {
+      "id": "hist-C1.ア(オ)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "ア(オ)",
+      "point": "第一次大戦、民族運動・国際協調、政治参加と大衆化",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:第一次世界大戦",
+          "sourceIds": [
+            "jr_social_899306a1857b"
+          ]
+        },
+        {
+          "selector": "T:ロシア革命",
+          "sourceIds": [
+            "jr_social_01892bfd59b3"
+          ]
+        },
+        {
+          "selector": "T:国際連盟",
+          "sourceIds": [
+            "jr_social_35b306d7644a"
+          ]
+        },
+        {
+          "selector": "T:三・一独立運動",
+          "sourceIds": [
+            "jr_social_2cf2501349ba"
+          ]
+        },
+        {
+          "selector": "T:吉野作造",
+          "sourceIds": [
+            "jr_social_1a1e1bf83313"
+          ]
+        },
+        {
+          "selector": "T:青鞜",
+          "sourceIds": [
+            "jr_social_1a3bcbf4c26c"
+          ]
+        },
+        {
+          "selector": "T:ラジオ放送",
+          "sourceIds": [
+            "jr_social_518adbf50712"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_899306a1857b",
+        "jr_social_01892bfd59b3",
+        "jr_social_35b306d7644a",
+        "jr_social_2cf2501349ba",
+        "jr_social_1a1e1bf83313",
+        "jr_social_1a3bcbf4c26c",
+        "jr_social_518adbf50712"
+      ],
+      "outsideGame": "長い外交史料や統計の比較は別。"
+    },
+    {
+      "id": "hist-C1.ア(カ)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "ア(カ)",
+      "point": "恐慌、軍部、第二次大戦、アジアとの関係と戦時生活",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:世界恐慌",
+          "sourceIds": [
+            "jr_social_aba80d1fb43e"
+          ]
+        },
+        {
+          "selector": "T:ファシズム",
+          "sourceIds": [
+            "jr_social_490573206bcc"
+          ]
+        },
+        {
+          "selector": "T:日中戦争",
+          "sourceIds": [
+            "jr_social_815fc4cdb621"
+          ]
+        },
+        {
+          "selector": "T:太平洋戦争",
+          "sourceIds": [
+            "jr_social_ac6f908a0970"
+          ]
+        },
+        {
+          "selector": "U:戦時下の生活と被害",
+          "sourceIds": [
+            "jr_social_f98469b46965",
+            "jr_social_c6144a2083e0",
+            "jr_social_3eff4ca5cf6e",
+            "jr_social_dad81758285b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_aba80d1fb43e",
+        "jr_social_490573206bcc",
+        "jr_social_815fc4cdb621",
+        "jr_social_ac6f908a0970",
+        "jr_social_f98469b46965",
+        "jr_social_c6144a2083e0",
+        "jr_social_3eff4ca5cf6e",
+        "jr_social_dad81758285b"
+      ],
+      "outsideGame": "戦争被害の実資料の学習や証言読解は別。"
+    },
+    {
+      "id": "hist-C2.ア(ア)",
+      "field": "歴史",
+      "block": "hist-C2",
+      "officialItem": "ア(ア)",
+      "point": "民主化・再建、冷戦と国際社会への復帰",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:GHQ",
+          "sourceIds": [
+            "jr_social_8a5dce570767"
+          ]
+        },
+        {
+          "selector": "T:農地改革",
+          "sourceIds": [
+            "jr_social_04e2c187a5a9"
+          ]
+        },
+        {
+          "selector": "T:女性参政権",
+          "sourceIds": [
+            "jr_social_7c5320df9ae4"
+          ]
+        },
+        {
+          "selector": "T:日本国憲法",
+          "sourceIds": [
+            "jr_social_b484dd9f600c"
+          ]
+        },
+        {
+          "selector": "T:冷戦",
+          "sourceIds": [
+            "jr_social_d4dd0ec6bd38"
+          ]
+        },
+        {
+          "selector": "T:サンフランシスコ平和条約",
+          "sourceIds": [
+            "jr_social_05c6a813554a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_8a5dce570767",
+        "jr_social_04e2c187a5a9",
+        "jr_social_7c5320df9ae4",
+        "jr_social_b484dd9f600c",
+        "jr_social_d4dd0ec6bd38",
+        "jr_social_05c6a813554a"
+      ],
+      "outsideGame": "改革全法令や全復興政策は対象外。"
+    },
+    {
+      "id": "hist-C2.ア(イ)",
+      "field": "歴史",
+      "block": "hist-C2",
+      "officialItem": "ア(イ)",
+      "point": "経済・科学技術、国際社会、冷戦終結と現代課題",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:高度経済成長",
+          "sourceIds": [
+            "jr_social_0ae686b73581"
+          ]
+        },
+        {
+          "selector": "T:沖縄返還",
+          "sourceIds": [
+            "jr_social_78b333a2e3b4"
+          ]
+        },
+        {
+          "selector": "T:日中共同声明",
+          "sourceIds": [
+            "jr_social_986528092257"
+          ]
+        },
+        {
+          "selector": "T:石油危機",
+          "sourceIds": [
+            "jr_social_35eecbad7af9"
+          ]
+        },
+        {
+          "selector": "T:東西ドイツ統一",
+          "sourceIds": [
+            "jr_social_cc54379674d5"
+          ]
+        },
+        {
+          "selector": "T:東海道新幹線",
+          "sourceIds": [
+            "jr_social_9571c2512fe3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_0ae686b73581",
+        "jr_social_78b333a2e3b4",
+        "jr_social_986528092257",
+        "jr_social_35eecbad7af9",
+        "jr_social_cc54379674d5",
+        "jr_social_9571c2512fe3"
+      ],
+      "outsideGame": "時事の全件追跡や最新統計の網羅ではない。"
+    },
+    {
+      "id": "civics-A1.ア(ア)",
+      "field": "公民",
+      "block": "civics-A1",
+      "officialItem": "ア(ア)",
+      "point": "少子高齢化・情報化・グローバル化",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:少子化",
+          "sourceIds": [
+            "jr_social_e0bfc5253a84"
+          ]
+        },
+        {
+          "selector": "T:高齢化",
+          "sourceIds": [
+            "jr_social_c264c87a4fb4"
+          ]
+        },
+        {
+          "selector": "T:情報化",
+          "sourceIds": [
+            "jr_social_9c3ac1583e16"
+          ]
+        },
+        {
+          "selector": "T:グローバル化",
+          "sourceIds": [
+            "jr_social_7b0c40951b59"
+          ]
+        },
+        {
+          "selector": "P:AIの導入を",
+          "sourceIds": [
+            "jr_social_case_daa64bdce973"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_e0bfc5253a84",
+        "jr_social_c264c87a4fb4",
+        "jr_social_9c3ac1583e16",
+        "jr_social_7b0c40951b59",
+        "jr_social_case_daa64bdce973"
+      ],
+      "outsideGame": "変化する最新統計や全技術は対象外。"
+    },
+    {
+      "id": "civics-A1.ア(イ)",
+      "field": "公民",
+      "block": "civics-A1",
+      "officialItem": "ア(イ)",
+      "point": "科学・芸術・宗教など文化の意義と社会への影響",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:文化の多様性",
+          "sourceIds": [
+            "jr_social_d7e0e8d2d6fe"
+          ]
+        },
+        {
+          "selector": "T:文化財",
+          "sourceIds": [
+            "jr_social_fc43d8d9a0ba"
+          ]
+        },
+        {
+          "selector": "U:文化と社会生活",
+          "sourceIds": [
+            "jr_social_case_55b835012063",
+            "jr_social_case_01a05511c7fb"
+          ]
+        },
+        {
+          "selector": "P:異文化の習慣を",
+          "sourceIds": [
+            "jr_social_case_b6cff32bfb82"
+          ]
+        },
+        {
+          "selector": "P:伝統行事の担い手",
+          "sourceIds": [
+            "jr_social_case_e14feaa59e59"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_d7e0e8d2d6fe",
+        "jr_social_fc43d8d9a0ba",
+        "jr_social_case_55b835012063",
+        "jr_social_case_01a05511c7fb",
+        "jr_social_case_b6cff32bfb82",
+        "jr_social_case_e14feaa59e59"
+      ],
+      "outsideGame": "作品制作や地域の行事参加は別。"
+    },
+    {
+      "id": "civics-A2.ア(ア)",
+      "field": "公民",
+      "block": "civics-A2",
+      "officialItem": "ア(ア)",
+      "point": "対立と合意、効率と公正",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:対立",
+          "sourceIds": [
+            "jr_social_274baf701a57"
+          ]
+        },
+        {
+          "selector": "T:合意",
+          "sourceIds": [
+            "jr_social_5c034f61d4af"
+          ]
+        },
+        {
+          "selector": "T:効率",
+          "sourceIds": [
+            "jr_social_128b0256727b"
+          ]
+        },
+        {
+          "selector": "T:公正",
+          "sourceIds": [
+            "jr_social_f1786e99d172"
+          ]
+        },
+        {
+          "selector": "U:合意と公正の判断",
+          "sourceIds": [
+            "jr_social_case_ab6c20bed0a5",
+            "jr_social_case_4385af4571b0",
+            "jr_social_case_a75c0105f141",
+            "jr_social_case_f13204ae4115",
+            "jr_social_case_c7718fe6ae9f",
+            "jr_social_case_5cbfac7f325c",
+            "jr_social_case_93e8e7feac1f",
+            "jr_social_case_15e28243b568",
+            "jr_social_case_36553e1a59b2",
+            "jr_social_case_0658ddb54806",
+            "jr_social_case_eecb4515a82e",
+            "jr_social_case_b5e6edef3bca",
+            "jr_social_case_2befe90eaa2b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_274baf701a57",
+        "jr_social_5c034f61d4af",
+        "jr_social_128b0256727b",
+        "jr_social_f1786e99d172",
+        "jr_social_case_ab6c20bed0a5",
+        "jr_social_case_4385af4571b0",
+        "jr_social_case_a75c0105f141",
+        "jr_social_case_f13204ae4115",
+        "jr_social_case_c7718fe6ae9f",
+        "jr_social_case_5cbfac7f325c",
+        "jr_social_case_93e8e7feac1f",
+        "jr_social_case_15e28243b568",
+        "jr_social_case_36553e1a59b2",
+        "jr_social_case_0658ddb54806",
+        "jr_social_case_eecb4515a82e",
+        "jr_social_case_b5e6edef3bca",
+        "jr_social_case_2befe90eaa2b"
+      ],
+      "outsideGame": "実際の合意形成・討論は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-A2.ア(イ)",
+      "field": "公民",
+      "block": "civics-A2",
+      "officialItem": "ア(イ)",
+      "point": "社会的存在、尊厳・両性の平等、契約と責任",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:契約",
+          "sourceIds": [
+            "jr_social_ea23f314fc16"
+          ]
+        },
+        {
+          "selector": "T:責任",
+          "sourceIds": [
+            "jr_social_3600069fac3e"
+          ]
+        },
+        {
+          "selector": "T:法の下の平等",
+          "sourceIds": [
+            "jr_social_58950afb0fca"
+          ]
+        },
+        {
+          "selector": "T:男女雇用機会均等法",
+          "sourceIds": [
+            "jr_social_9ff034dd510d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_ea23f314fc16",
+        "jr_social_3600069fac3e",
+        "jr_social_58950afb0fca",
+        "jr_social_9ff034dd510d"
+      ],
+      "outsideGame": "自身の契約トラブルは専門窓口も利用する。"
+    },
+    {
+      "id": "civics-B1.ア(ア)",
+      "field": "公民",
+      "block": "civics-B1",
+      "officialItem": "ア(ア)",
+      "point": "消費生活を中心とした経済活動の意義",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:生産",
+          "sourceIds": [
+            "jr_social_ac1c168a1b13"
+          ]
+        },
+        {
+          "selector": "T:消費",
+          "sourceIds": [
+            "jr_social_8e6f5625c89e"
+          ]
+        },
+        {
+          "selector": "T:家計",
+          "sourceIds": [
+            "jr_social_5d85b4ddd170"
+          ]
+        },
+        {
+          "selector": "T:交換",
+          "sourceIds": [
+            "jr_social_b29287ec907b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_ac1c168a1b13",
+        "jr_social_8e6f5625c89e",
+        "jr_social_5d85b4ddd170",
+        "jr_social_b29287ec907b"
+      ],
+      "outsideGame": "家計調査や生活実践は別。"
+    },
+    {
+      "id": "civics-B1.ア(イ)",
+      "field": "公民",
+      "block": "civics-B1",
+      "officialItem": "ア(イ)",
+      "point": "市場価格と資源配分、希少性・選択・貨幣",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:需要",
+          "sourceIds": [
+            "jr_social_fb90d0faae84"
+          ]
+        },
+        {
+          "selector": "T:供給",
+          "sourceIds": [
+            "jr_social_568a2952e7eb"
+          ]
+        },
+        {
+          "selector": "T:市場価格",
+          "sourceIds": [
+            "jr_social_10a251cb560e"
+          ]
+        },
+        {
+          "selector": "T:希少性",
+          "sourceIds": [
+            "jr_social_65b5014bf24f"
+          ]
+        },
+        {
+          "selector": "T:機会費用",
+          "sourceIds": [
+            "jr_social_54c86c96bba7"
+          ]
+        },
+        {
+          "selector": "T:通貨",
+          "sourceIds": [
+            "jr_social_28812469b422"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_fb90d0faae84",
+        "jr_social_568a2952e7eb",
+        "jr_social_10a251cb560e",
+        "jr_social_65b5014bf24f",
+        "jr_social_54c86c96bba7",
+        "jr_social_28812469b422"
+      ],
+      "outsideGame": "実際の需給曲線や複雑な経済資料の読解は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B1.ア(ウ)",
+      "field": "公民",
+      "block": "civics-B1",
+      "officialItem": "ア(ウ)",
+      "point": "生産・企業・金融、起業を支える仕組み",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:株式会社",
+          "sourceIds": [
+            "jr_social_95410093acd0"
+          ]
+        },
+        {
+          "selector": "T:利潤",
+          "sourceIds": [
+            "jr_social_295cccfbb86c"
+          ]
+        },
+        {
+          "selector": "T:直接金融",
+          "sourceIds": [
+            "jr_social_6c2aaf79ba0a"
+          ]
+        },
+        {
+          "selector": "T:間接金融",
+          "sourceIds": [
+            "jr_social_6398b7828ad8"
+          ]
+        },
+        {
+          "selector": "T:起業",
+          "sourceIds": [
+            "jr_social_3426e5a120e5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_95410093acd0",
+        "jr_social_295cccfbb86c",
+        "jr_social_6c2aaf79ba0a",
+        "jr_social_6398b7828ad8",
+        "jr_social_3426e5a120e5"
+      ],
+      "outsideGame": "実際の事業計画・資金計算は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B1.ア(エ)",
+      "field": "公民",
+      "block": "civics-B1",
+      "officialItem": "ア(エ)",
+      "point": "勤労の権利と義務、組合、労働基準法",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:勤労の権利",
+          "sourceIds": [
+            "jr_social_6fb109f87829"
+          ]
+        },
+        {
+          "selector": "T:労働組合",
+          "sourceIds": [
+            "jr_social_d678e28ae313"
+          ]
+        },
+        {
+          "selector": "T:労働基準法",
+          "sourceIds": [
+            "jr_social_a0599328062a"
+          ]
+        },
+        {
+          "selector": "T:最低賃金",
+          "sourceIds": [
+            "jr_social_53d24ff63488"
+          ]
+        },
+        {
+          "selector": "P:職業が社会に",
+          "sourceIds": [
+            "jr_social_case_0a90462ccafb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_6fb109f87829",
+        "jr_social_d678e28ae313",
+        "jr_social_a0599328062a",
+        "jr_social_53d24ff63488",
+        "jr_social_case_0a90462ccafb"
+      ],
+      "outsideGame": "個別労働紛争の判断は専門窓口で確認。"
+    },
+    {
+      "id": "civics-B2.ア(ア)",
+      "field": "公民",
+      "block": "civics-B2",
+      "officialItem": "ア(ア)",
+      "point": "社会資本・環境保全・社会保障と消費者保護",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:社会資本",
+          "sourceIds": [
+            "jr_social_a9aece93558f"
+          ]
+        },
+        {
+          "selector": "T:外部不経済",
+          "sourceIds": [
+            "jr_social_feca524d5c38"
+          ]
+        },
+        {
+          "selector": "T:社会保障",
+          "sourceIds": [
+            "jr_social_ba80a45136b0"
+          ]
+        },
+        {
+          "selector": "T:消費生活センター",
+          "sourceIds": [
+            "jr_social_af5f49071aa5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_a9aece93558f",
+        "jr_social_feca524d5c38",
+        "jr_social_ba80a45136b0",
+        "jr_social_af5f49071aa5"
+      ],
+      "outsideGame": "実際の申請・制度利用や最新給付額は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B2.ア(イ)",
+      "field": "公民",
+      "block": "civics-B2",
+      "officialItem": "ア(イ)",
+      "point": "財政・租税と納税の義務",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:財政",
+          "sourceIds": [
+            "jr_social_92df12df4165"
+          ]
+        },
+        {
+          "selector": "T:租税法律主義",
+          "sourceIds": [
+            "jr_social_68c2fe842427"
+          ]
+        },
+        {
+          "selector": "T:所得税",
+          "sourceIds": [
+            "jr_social_ea226c6bb1f9"
+          ]
+        },
+        {
+          "selector": "T:消費税",
+          "sourceIds": [
+            "jr_social_e63f9ec251fa"
+          ]
+        },
+        {
+          "selector": "T:国民の三大義務",
+          "sourceIds": [
+            "jr_civics3_012"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_92df12df4165",
+        "jr_social_68c2fe842427",
+        "jr_social_ea226c6bb1f9",
+        "jr_social_e63f9ec251fa",
+        "jr_civics3_012"
+      ],
+      "outsideGame": "最新税率や具体的な申告は対象外。"
+    },
+    {
+      "id": "civics-C1.ア(ア)",
+      "field": "公民",
+      "block": "civics-C1",
+      "officialItem": "ア(ア)",
+      "point": "人間の尊重・基本的人権と法の意義",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:基本的人権",
+          "sourceIds": [
+            "jr_civics3_002"
+          ]
+        },
+        {
+          "selector": "T:公共の福祉",
+          "sourceIds": [
+            "jr_social_d80beb7bf191"
+          ]
+        },
+        {
+          "selector": "T:法の下の平等",
+          "sourceIds": [
+            "jr_social_58950afb0fca"
+          ]
+        },
+        {
+          "selector": "T:適正手続",
+          "sourceIds": [
+            "jr_social_9eeefbcbb676"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_civics3_002",
+        "jr_social_d80beb7bf191",
+        "jr_social_58950afb0fca",
+        "jr_social_9eeefbcbb676"
+      ],
+      "outsideGame": "個別事件の最終的な法律判断を代替しない。"
+    },
+    {
+      "id": "civics-C1.ア(イ)",
+      "field": "公民",
+      "block": "civics-C1",
+      "officialItem": "ア(イ)",
+      "point": "法に基づく民主政治",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:法の支配",
+          "sourceIds": [
+            "jr_social_523d1c05392a"
+          ]
+        },
+        {
+          "selector": "T:立憲主義",
+          "sourceIds": [
+            "jr_social_c70c8987b9b5"
+          ]
+        },
+        {
+          "selector": "T:憲法改正",
+          "sourceIds": [
+            "jr_social_ac0b3282896b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_523d1c05392a",
+        "jr_social_c70c8987b9b5",
+        "jr_social_ac0b3282896b"
+      ],
+      "outsideGame": "具体的な政治参加や討論は別。"
+    },
+    {
+      "id": "civics-C1.ア(ウ)",
+      "field": "公民",
+      "block": "civics-C1",
+      "officialItem": "ア(ウ)",
+      "point": "人権尊重・国民主権・平和主義",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:基本的人権",
+          "sourceIds": [
+            "jr_civics3_002"
+          ]
+        },
+        {
+          "selector": "T:国民主権",
+          "sourceIds": [
+            "jr_civics3_001"
+          ]
+        },
+        {
+          "selector": "T:平和主義",
+          "sourceIds": [
+            "jr_civics3_003"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_civics3_002",
+        "jr_civics3_001",
+        "jr_civics3_003"
+      ],
+      "outsideGame": "各条文の全文暗記を目標としない。"
+    },
+    {
+      "id": "civics-C1.ア(エ)",
+      "field": "公民",
+      "block": "civics-C1",
+      "officialItem": "ア(エ)",
+      "point": "象徴天皇と国事行為",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:象徴天皇制",
+          "sourceIds": [
+            "jr_social_3d0f5dfa8773"
+          ]
+        },
+        {
+          "selector": "P:天皇の国事行為に",
+          "sourceIds": [
+            "jr_social_case_86c1cdf84ab8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_3d0f5dfa8773",
+        "jr_social_case_86c1cdf84ab8"
+      ],
+      "outsideGame": "全ての国事行為の列挙ではない。"
+    },
+    {
+      "id": "civics-C2.ア(ア)",
+      "field": "公民",
+      "block": "civics-C2",
+      "officialItem": "ア(ア)",
+      "point": "国会中心の政治、政党の役割",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:国会",
+          "sourceIds": [
+            "jr_civics3_005"
+          ]
+        },
+        {
+          "selector": "T:内閣",
+          "sourceIds": [
+            "jr_civics3_006"
+          ]
+        },
+        {
+          "selector": "T:政党",
+          "sourceIds": [
+            "jr_social_17b92f3af442"
+          ]
+        },
+        {
+          "selector": "T:議院内閣制",
+          "sourceIds": [
+            "jr_social_00b920b8289b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_civics3_005",
+        "jr_civics3_006",
+        "jr_social_17b92f3af442",
+        "jr_social_00b920b8289b"
+      ],
+      "outsideGame": "最新の政党構成や議席数は対象外。"
+    },
+    {
+      "id": "civics-C2.ア(イ)",
+      "field": "公民",
+      "block": "civics-C2",
+      "officialItem": "ア(イ)",
+      "point": "議会制民主主義と多数決",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:多数決",
+          "sourceIds": [
+            "jr_social_a20aff4c64b1"
+          ]
+        },
+        {
+          "selector": "T:少数意見",
+          "sourceIds": [
+            "jr_social_60325370be99"
+          ]
+        },
+        {
+          "selector": "P:選ばれた代表者が",
+          "sourceIds": [
+            "jr_social_case_36b2b08204ba"
+          ]
+        },
+        {
+          "selector": "P:多数決をする前に",
+          "sourceIds": [
+            "jr_social_case_ab6c20bed0a5"
+          ]
+        },
+        {
+          "selector": "P:多数決で決まれば",
+          "sourceIds": [
+            "jr_social_case_4385af4571b0"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_a20aff4c64b1",
+        "jr_social_60325370be99",
+        "jr_social_case_36b2b08204ba",
+        "jr_social_case_ab6c20bed0a5",
+        "jr_social_case_4385af4571b0"
+      ],
+      "outsideGame": "模擬議会や議論の実践は別。"
+    },
+    {
+      "id": "civics-C2.ア(ウ)",
+      "field": "公民",
+      "block": "civics-C2",
+      "officialItem": "ア(ウ)",
+      "point": "法に基づく公正な裁判と裁判員制度",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:裁判所",
+          "sourceIds": [
+            "jr_civics3_007"
+          ]
+        },
+        {
+          "selector": "T:裁判員制度",
+          "sourceIds": [
+            "jr_social_e77daf6e993b"
+          ]
+        },
+        {
+          "selector": "T:三審制",
+          "sourceIds": [
+            "jr_social_d03218aa16af"
+          ]
+        },
+        {
+          "selector": "T:無罪推定",
+          "sourceIds": [
+            "jr_social_9418cf7504c3"
+          ]
+        },
+        {
+          "selector": "P:裁判官が独立して",
+          "sourceIds": [
+            "jr_social_case_9f2fe9790982"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_civics3_007",
+        "jr_social_e77daf6e993b",
+        "jr_social_d03218aa16af",
+        "jr_social_9418cf7504c3",
+        "jr_social_case_9f2fe9790982"
+      ],
+      "outsideGame": "実際の証拠評価や裁判実務は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-C2.ア(エ)",
+      "field": "公民",
+      "block": "civics-C2",
+      "officialItem": "ア(エ)",
+      "point": "地方自治、住民の権利義務",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:地方自治",
+          "sourceIds": [
+            "jr_civics3_009"
+          ]
+        },
+        {
+          "selector": "T:二元代表制",
+          "sourceIds": [
+            "jr_social_5fb2a236e7f2"
+          ]
+        },
+        {
+          "selector": "T:条例",
+          "sourceIds": [
+            "jr_social_29d19bbdba4f"
+          ]
+        },
+        {
+          "selector": "T:直接請求権",
+          "sourceIds": [
+            "jr_civics3_010"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_civics3_009",
+        "jr_social_5fb2a236e7f2",
+        "jr_social_29d19bbdba4f",
+        "jr_civics3_010"
+      ],
+      "outsideGame": "自身の地域の自治への参加は別。"
+    },
+    {
+      "id": "civics-D1.ア(ア)",
+      "field": "公民",
+      "block": "civics-D1",
+      "officialItem": "ア(ア)",
+      "point": "主権尊重・相互理解、領域、国際機構",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:主権国家",
+          "sourceIds": [
+            "jr_social_11860b93b5cf"
+          ]
+        },
+        {
+          "selector": "T:国際法",
+          "sourceIds": [
+            "jr_social_2d63560e2285"
+          ]
+        },
+        {
+          "selector": "T:国際連合",
+          "sourceIds": [
+            "jr_social_025f9edb7737"
+          ]
+        },
+        {
+          "selector": "T:安全保障理事会",
+          "sourceIds": [
+            "jr_social_ad8e6a20ab15"
+          ]
+        },
+        {
+          "selector": "P:他国の国旗・国歌",
+          "sourceIds": [
+            "jr_social_case_58354344cec9"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_11860b93b5cf",
+        "jr_social_2d63560e2285",
+        "jr_social_025f9edb7737",
+        "jr_social_ad8e6a20ab15",
+        "jr_social_case_58354344cec9"
+      ],
+      "outsideGame": "現実の紛争の全事情を網羅する意味ではない。"
+    },
+    {
+      "id": "civics-D1.ア(イ)",
+      "field": "公民",
+      "block": "civics-D1",
+      "officialItem": "ア(イ)",
+      "point": "環境・資源・貧困と経済的技術的協力",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:ODA",
+          "sourceIds": [
+            "jr_social_afcc7a6f3f14"
+          ]
+        },
+        {
+          "selector": "T:JICA",
+          "sourceIds": [
+            "jr_social_3198b686ec62"
+          ]
+        },
+        {
+          "selector": "T:持続可能な開発目標",
+          "sourceIds": [
+            "jr_social_0d74e6b3aa23"
+          ]
+        },
+        {
+          "selector": "T:人間の安全保障",
+          "sourceIds": [
+            "jr_social_8fdc74e51b65"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_afcc7a6f3f14",
+        "jr_social_3198b686ec62",
+        "jr_social_0d74e6b3aa23",
+        "jr_social_8fdc74e51b65"
+      ],
+      "outsideGame": "現地の調査や国際協力の実践は別。"
+    },
+    {
+      "id": "civics-D2.ア",
+      "field": "公民",
+      "block": "civics-D2",
+      "officialItem": "ア",
+      "point": "社会の課題を多面的に考察・構想し説明論述する",
+      "category": "アの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:持続可能な社会の判断",
+          "sourceIds": [
+            "jr_social_case_2dbde44b5925",
+            "jr_social_case_99f388bc0f8a",
+            "jr_social_case_b424f2e7bd8c",
+            "jr_social_case_be2bd418332a",
+            "jr_social_case_ea327f5d8fea",
+            "jr_social_case_4862520e1f18",
+            "jr_social_case_91d9be45d985",
+            "jr_social_case_73a73e775df7",
+            "jr_social_case_f8bdf3129fc4",
+            "jr_social_case_c686df2d242b",
+            "jr_social_case_d5a491e59c2e",
+            "jr_social_case_6211e717508d",
+            "jr_social_case_c0515b6379f6"
+          ]
+        },
+        {
+          "selector": "P:社会問題への提案に",
+          "sourceIds": [
+            "jr_social_case_f8bdf3129fc4"
+          ]
+        },
+        {
+          "selector": "P:政策の効果を事後に",
+          "sourceIds": [
+            "jr_social_case_c686df2d242b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_2dbde44b5925",
+        "jr_social_case_99f388bc0f8a",
+        "jr_social_case_b424f2e7bd8c",
+        "jr_social_case_be2bd418332a",
+        "jr_social_case_ea327f5d8fea",
+        "jr_social_case_4862520e1f18",
+        "jr_social_case_91d9be45d985",
+        "jr_social_case_73a73e775df7",
+        "jr_social_case_f8bdf3129fc4",
+        "jr_social_case_c686df2d242b",
+        "jr_social_case_d5a491e59c2e",
+        "jr_social_case_6211e717508d",
+        "jr_social_case_c0515b6379f6"
+      ],
+      "outsideGame": "探究の方法の知識と判断のみ。実際の論述・社会参画は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-A1.イ(ア)",
+      "field": "地理",
+      "block": "geo-A1",
+      "officialItem": "イ(ア)",
+      "point": "世界の地域構成を位置や緯経度から考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:主な国の位置",
+          "sourceIds": [
+            "jr_social_case_1f664d38bcb9",
+            "jr_social_case_56ccafd57d01",
+            "jr_social_case_806bba87b47e",
+            "jr_social_case_19e195ebce6f",
+            "jr_social_case_b9838b356a6f",
+            "jr_social_case_9b59794596d4",
+            "jr_social_case_4b585e06200f",
+            "jr_social_case_997e6c06d9b0",
+            "jr_social_case_ceed3e5653dd",
+            "jr_social_case_91d6c28a176c",
+            "jr_social_case_615b6dabdf0d",
+            "jr_social_case_e798ef562427",
+            "jr_social_case_93c70d92e4da",
+            "jr_social_case_c836375c5af5",
+            "jr_social_case_675999c922e0",
+            "jr_social_case_e5a7f428a640",
+            "jr_social_case_64f0580345c6",
+            "jr_social_case_18ba94333ba1",
+            "jr_social_case_893ddf03854b",
+            "jr_social_case_f4fd7ab2d56b",
+            "jr_social_case_3f1c973426b3",
+            "jr_social_case_1f7a5ac17d49",
+            "jr_social_case_fb1438fb4ae8",
+            "jr_social_case_bed8d1e98a48"
+          ]
+        },
+        {
+          "selector": "T:緯度",
+          "sourceIds": [
+            "jr_social_adc0ed7be7ab"
+          ]
+        },
+        {
+          "selector": "T:経度",
+          "sourceIds": [
+            "jr_social_2b07a9717039"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_1f664d38bcb9",
+        "jr_social_case_56ccafd57d01",
+        "jr_social_case_806bba87b47e",
+        "jr_social_case_19e195ebce6f",
+        "jr_social_case_b9838b356a6f",
+        "jr_social_case_9b59794596d4",
+        "jr_social_case_4b585e06200f",
+        "jr_social_case_997e6c06d9b0",
+        "jr_social_case_ceed3e5653dd",
+        "jr_social_case_91d6c28a176c",
+        "jr_social_case_615b6dabdf0d",
+        "jr_social_case_e798ef562427",
+        "jr_social_case_93c70d92e4da",
+        "jr_social_case_c836375c5af5",
+        "jr_social_case_675999c922e0",
+        "jr_social_case_e5a7f428a640",
+        "jr_social_case_64f0580345c6",
+        "jr_social_case_18ba94333ba1",
+        "jr_social_case_893ddf03854b",
+        "jr_social_case_f4fd7ab2d56b",
+        "jr_social_case_3f1c973426b3",
+        "jr_social_case_1f7a5ac17d49",
+        "jr_social_case_fb1438fb4ae8",
+        "jr_social_case_bed8d1e98a48",
+        "jr_social_adc0ed7be7ab",
+        "jr_social_2b07a9717039"
+      ],
+      "outsideGame": "位置の知識と着眼点のみ。地図による多面的説明は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-A1.イ(イ)",
+      "field": "地理",
+      "block": "geo-A1",
+      "officialItem": "イ(イ)",
+      "point": "海洋・島々の位置から日本の地域構成を考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:都道府県の位置",
+          "sourceIds": [
+            "jr_social_case_00fe8c994ce7",
+            "jr_social_case_8de19874a543",
+            "jr_social_case_88981b1aebc1",
+            "jr_social_case_8ff27de11ae9",
+            "jr_social_case_c84ca849b6e1",
+            "jr_social_case_fbcdb03d482b",
+            "jr_social_case_12d444a8a427",
+            "jr_social_case_dda34fc3aa82",
+            "jr_social_case_7a03fb2385b8",
+            "jr_social_case_91cfc669e831",
+            "jr_social_case_abe55938d028",
+            "jr_social_case_8f254ecc3698",
+            "jr_social_case_f828627db9d5",
+            "jr_social_case_75a75bcac7fc",
+            "jr_social_case_1ac699505621",
+            "jr_social_case_90d02ad7fb45",
+            "jr_social_case_44cc2352706c",
+            "jr_social_case_134fc5be503b",
+            "jr_social_case_1f79b2718967",
+            "jr_social_case_20667c5f358b",
+            "jr_social_case_5dbcfcc207da",
+            "jr_social_case_4c4b42a0d2a8",
+            "jr_social_case_7cdff7e4402f",
+            "jr_social_case_f3045e0f04dd",
+            "jr_social_case_0df299bafac0",
+            "jr_social_case_c21d136b8306",
+            "jr_social_case_bbeb91b54217",
+            "jr_social_case_80d153875d7b",
+            "jr_social_case_e9b26325c0db",
+            "jr_social_case_77941fcd4761",
+            "jr_social_case_fe08306120e5",
+            "jr_social_case_a67aa3e35cd5",
+            "jr_social_case_ebf434ae64ec",
+            "jr_social_case_acf97b1a7a99",
+            "jr_social_case_451faf0adf82",
+            "jr_social_case_5c691837bd0d",
+            "jr_social_case_fcf13a51c6a8",
+            "jr_social_case_a76e8c5f12a5",
+            "jr_social_case_73f16d87d70f",
+            "jr_social_case_2405296247dd",
+            "jr_social_case_f31d8f0607cb",
+            "jr_social_case_53ac53349026",
+            "jr_social_case_3738f739aed0",
+            "jr_social_case_a0b6157e9752",
+            "jr_social_case_5cca914f83f9",
+            "jr_social_case_26feb8379fe6",
+            "jr_social_case_8d62dfe1826c"
+          ]
+        },
+        {
+          "selector": "U:日本の領域",
+          "sourceIds": [
+            "jr_social_13889371dcd2",
+            "jr_social_f4972cea1432",
+            "jr_social_68467ccd9176",
+            "jr_social_7d630f841ffa",
+            "jr_social_case_e7b780750857",
+            "jr_social_case_491ae6188053",
+            "jr_social_case_2468797fece1",
+            "jr_social_case_a52779e23934",
+            "jr_social_case_c4b8e6cf48f7",
+            "jr_social_case_ba11f2137636",
+            "jr_social_case_be8c0a9b274b",
+            "jr_social_case_2550367bd2b3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_00fe8c994ce7",
+        "jr_social_case_8de19874a543",
+        "jr_social_case_88981b1aebc1",
+        "jr_social_case_8ff27de11ae9",
+        "jr_social_case_c84ca849b6e1",
+        "jr_social_case_fbcdb03d482b",
+        "jr_social_case_12d444a8a427",
+        "jr_social_case_dda34fc3aa82",
+        "jr_social_case_7a03fb2385b8",
+        "jr_social_case_91cfc669e831",
+        "jr_social_case_abe55938d028",
+        "jr_social_case_8f254ecc3698",
+        "jr_social_case_f828627db9d5",
+        "jr_social_case_75a75bcac7fc",
+        "jr_social_case_1ac699505621",
+        "jr_social_case_90d02ad7fb45",
+        "jr_social_case_44cc2352706c",
+        "jr_social_case_134fc5be503b",
+        "jr_social_case_1f79b2718967",
+        "jr_social_case_20667c5f358b",
+        "jr_social_case_5dbcfcc207da",
+        "jr_social_case_4c4b42a0d2a8",
+        "jr_social_case_7cdff7e4402f",
+        "jr_social_case_f3045e0f04dd",
+        "jr_social_case_0df299bafac0",
+        "jr_social_case_c21d136b8306",
+        "jr_social_case_bbeb91b54217",
+        "jr_social_case_80d153875d7b",
+        "jr_social_case_e9b26325c0db",
+        "jr_social_case_77941fcd4761",
+        "jr_social_case_fe08306120e5",
+        "jr_social_case_a67aa3e35cd5",
+        "jr_social_case_ebf434ae64ec",
+        "jr_social_case_acf97b1a7a99",
+        "jr_social_case_451faf0adf82",
+        "jr_social_case_5c691837bd0d",
+        "jr_social_case_fcf13a51c6a8",
+        "jr_social_case_a76e8c5f12a5",
+        "jr_social_case_73f16d87d70f",
+        "jr_social_case_2405296247dd",
+        "jr_social_case_f31d8f0607cb",
+        "jr_social_case_53ac53349026",
+        "jr_social_case_3738f739aed0",
+        "jr_social_case_a0b6157e9752",
+        "jr_social_case_5cca914f83f9",
+        "jr_social_case_26feb8379fe6",
+        "jr_social_case_8d62dfe1826c",
+        "jr_social_13889371dcd2",
+        "jr_social_f4972cea1432",
+        "jr_social_68467ccd9176",
+        "jr_social_7d630f841ffa",
+        "jr_social_case_e7b780750857",
+        "jr_social_case_491ae6188053",
+        "jr_social_case_2468797fece1",
+        "jr_social_case_a52779e23934",
+        "jr_social_case_c4b8e6cf48f7",
+        "jr_social_case_ba11f2137636",
+        "jr_social_case_be8c0a9b274b",
+        "jr_social_case_2550367bd2b3"
+      ],
+      "outsideGame": "実際の地図で島々の関係を説明する練習は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-B1.イ(ア)",
+      "field": "地理",
+      "block": "geo-B1",
+      "officialItem": "イ(ア)",
+      "point": "生活の特色・変化を自然と社会の条件から考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:生活の変化と地域課題",
+          "sourceIds": [
+            "jr_social_case_812d4ad6431a",
+            "jr_social_case_2e5ef037ae44"
+          ]
+        },
+        {
+          "selector": "U:気候と住まい",
+          "sourceIds": [
+            "jr_social_case_3b8af7468f2b",
+            "jr_social_case_1e8072feaca0",
+            "jr_social_case_bc40453c7e44"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_812d4ad6431a",
+        "jr_social_case_2e5ef037ae44",
+        "jr_social_case_3b8af7468f2b",
+        "jr_social_case_1e8072feaca0",
+        "jr_social_case_bc40453c7e44"
+      ],
+      "outsideGame": "実資料の比較と自由記述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-B2.イ(ア)",
+      "field": "地理",
+      "block": "geo-B2",
+      "officialItem": "イ(ア)",
+      "point": "世界各州の課題を地域の特色と結び付ける",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:世界の地域課題",
+          "sourceIds": [
+            "jr_social_case_2111c6ef9745",
+            "jr_social_case_0e3100da4e56",
+            "jr_social_case_6afef7df0066",
+            "jr_social_case_94092a0160d7",
+            "jr_social_case_d2612c4db7a8",
+            "jr_social_case_0489f1663656",
+            "jr_social_case_cb31fee06a6f"
+          ]
+        },
+        {
+          "selector": "P:低い島国が気候変動で",
+          "sourceIds": [
+            "jr_social_case_de7f380493b3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_2111c6ef9745",
+        "jr_social_case_0e3100da4e56",
+        "jr_social_case_6afef7df0066",
+        "jr_social_case_94092a0160d7",
+        "jr_social_case_d2612c4db7a8",
+        "jr_social_case_0489f1663656",
+        "jr_social_case_cb31fee06a6f",
+        "jr_social_case_de7f380493b3"
+      ],
+      "outsideGame": "六州の代表的な因果判断。資料に基づく論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C1.イ(ア)",
+      "field": "地理",
+      "block": "geo-C1",
+      "officialItem": "イ(ア)",
+      "point": "主題に合う地域調査とまとめ方を考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:地域調査",
+          "sourceIds": [
+            "jr_social_case_10169a636580",
+            "jr_social_case_2eaacc1c08d2"
+          ]
+        },
+        {
+          "selector": "P:調査結果を主題図に",
+          "sourceIds": [
+            "jr_social_case_66d1358832dd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_10169a636580",
+        "jr_social_case_2eaacc1c08d2",
+        "jr_social_case_66d1358832dd"
+      ],
+      "outsideGame": "実際の調査計画・作図・発表は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C2.イ(ア)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "イ(ア)",
+      "point": "共通点・差異・分布から地域区分を考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:日本の地域区分",
+          "sourceIds": [
+            "jr_social_case_e119aad81ac0",
+            "jr_social_case_2170f1929c48"
+          ]
+        },
+        {
+          "selector": "U:日本の地域比較",
+          "sourceIds": [
+            "jr_social_case_b200c14f3f2a",
+            "jr_social_case_76247cad0da5",
+            "jr_social_case_a30f18cc2e41",
+            "jr_social_case_cf7134a60ceb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_e119aad81ac0",
+        "jr_social_case_2170f1929c48",
+        "jr_social_case_b200c14f3f2a",
+        "jr_social_case_76247cad0da5",
+        "jr_social_case_a30f18cc2e41",
+        "jr_social_case_cf7134a60ceb"
+      ],
+      "outsideGame": "各資料での実際の区分作業は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C2.イ(イ)",
+      "field": "地理",
+      "block": "geo-C2",
+      "officialItem": "イ(イ)",
+      "point": "自然・人口・産業・交通を関連付け日本を大観する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:日本の地域比較",
+          "sourceIds": [
+            "jr_social_case_b200c14f3f2a",
+            "jr_social_case_76247cad0da5",
+            "jr_social_case_a30f18cc2e41",
+            "jr_social_case_cf7134a60ceb"
+          ]
+        },
+        {
+          "selector": "U:交通と産業",
+          "sourceIds": [
+            "jr_social_84ac49d6ec6f",
+            "jr_social_ad11cfb6d3db",
+            "jr_social_cbcc853922b2",
+            "jr_social_9db501197470"
+          ]
+        },
+        {
+          "selector": "U:人口と地域の将来",
+          "sourceIds": [
+            "jr_social_2f7ef4bcc4e2",
+            "jr_social_1fdc96c54c9c",
+            "jr_social_6ae75c8ed292",
+            "jr_social_00e39e29082b",
+            "jr_social_case_1731b60e2468",
+            "jr_social_case_722ddaebf39f",
+            "jr_social_case_66978a1cd463",
+            "jr_social_case_e4854b254b33"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_b200c14f3f2a",
+        "jr_social_case_76247cad0da5",
+        "jr_social_case_a30f18cc2e41",
+        "jr_social_case_cf7134a60ceb",
+        "jr_social_84ac49d6ec6f",
+        "jr_social_ad11cfb6d3db",
+        "jr_social_cbcc853922b2",
+        "jr_social_9db501197470",
+        "jr_social_2f7ef4bcc4e2",
+        "jr_social_1fdc96c54c9c",
+        "jr_social_6ae75c8ed292",
+        "jr_social_00e39e29082b",
+        "jr_social_case_1731b60e2468",
+        "jr_social_case_722ddaebf39f",
+        "jr_social_case_66978a1cd463",
+        "jr_social_case_e4854b254b33"
+      ],
+      "outsideGame": "複数資料の総合的な説明は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C3.イ(ア)",
+      "field": "地理",
+      "block": "geo-C3",
+      "officialItem": "イ(ア)",
+      "point": "中核事象の成立条件を地域のつながりから考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:地域のつながり",
+          "sourceIds": [
+            "jr_social_case_f55e18b648d6",
+            "jr_social_case_b470e5bf345f"
+          ]
+        },
+        {
+          "selector": "U:交通と産業",
+          "sourceIds": [
+            "jr_social_84ac49d6ec6f",
+            "jr_social_ad11cfb6d3db",
+            "jr_social_cbcc853922b2",
+            "jr_social_9db501197470"
+          ]
+        },
+        {
+          "selector": "U:北海道地方",
+          "sourceIds": [
+            "jr_social_case_e72bb7da3bfc",
+            "jr_social_5573e50ddbbc",
+            "jr_social_aeecbdf1822d",
+            "jr_social_c629a7cf3f48",
+            "jr_social_6db3611932fe",
+            "jr_social_case_f76d8d9d3dd2",
+            "jr_social_case_0345fbf5f16e",
+            "jr_social_case_3e13c1185f22"
+          ]
+        },
+        {
+          "selector": "U:九州地方",
+          "sourceIds": [
+            "jr_social_case_b24e8113519d",
+            "jr_social_6b20ce102842",
+            "jr_social_70e5b29287d1",
+            "jr_social_1a1847881a24",
+            "jr_social_db4fe2f0a953",
+            "jr_social_case_5e81c6374dff",
+            "jr_social_case_8dba309008bb",
+            "jr_social_case_ee3482ccc8f1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_f55e18b648d6",
+        "jr_social_case_b470e5bf345f",
+        "jr_social_84ac49d6ec6f",
+        "jr_social_ad11cfb6d3db",
+        "jr_social_cbcc853922b2",
+        "jr_social_9db501197470",
+        "jr_social_case_e72bb7da3bfc",
+        "jr_social_5573e50ddbbc",
+        "jr_social_aeecbdf1822d",
+        "jr_social_c629a7cf3f48",
+        "jr_social_6db3611932fe",
+        "jr_social_case_f76d8d9d3dd2",
+        "jr_social_case_0345fbf5f16e",
+        "jr_social_case_3e13c1185f22",
+        "jr_social_case_b24e8113519d",
+        "jr_social_6b20ce102842",
+        "jr_social_70e5b29287d1",
+        "jr_social_1a1847881a24",
+        "jr_social_db4fe2f0a953",
+        "jr_social_case_5e81c6374dff",
+        "jr_social_case_8dba309008bb",
+        "jr_social_case_ee3482ccc8f1"
+      ],
+      "outsideGame": "代表的な関連判断。地域調査を伴う論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "geo-C4.イ(ア)",
+      "field": "地理",
+      "block": "geo-C4",
+      "officialItem": "イ(ア)",
+      "point": "変容・結び付き・持続可能性から地域を構想する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:地域の在り方",
+          "sourceIds": [
+            "jr_social_case_1a4aac674874",
+            "jr_social_case_a57e900765cf"
+          ]
+        },
+        {
+          "selector": "U:地域の課題と提案",
+          "sourceIds": [
+            "jr_social_case_8cf69b8bcd5b",
+            "jr_social_case_f3148df7b899"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_1a4aac674874",
+        "jr_social_case_a57e900765cf",
+        "jr_social_case_8cf69b8bcd5b",
+        "jr_social_case_f3148df7b899"
+      ],
+      "outsideGame": "実際の構想・提案や住民との議論は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-A1.イ(ア)",
+      "field": "歴史",
+      "block": "hist-A1",
+      "officialItem": "イ(ア)",
+      "point": "人物・文化財・出来事と時代区分や現在との関係を考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:時代区分を考える",
+          "sourceIds": [
+            "jr_social_case_4c51d7660b88"
+          ]
+        },
+        {
+          "selector": "P:中世の文化が今の生活に",
+          "sourceIds": [
+            "jr_social_case_9f7fa6cd625d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_4c51d7660b88",
+        "jr_social_case_9f7fa6cd625d"
+      ],
+      "outsideGame": "実際の史料を用いた時代の説明は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-A2.イ(ア)",
+      "field": "歴史",
+      "block": "hist-A2",
+      "officialItem": "イ(ア)",
+      "point": "地域の文化財や資料から歴史の特色を考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:地域の古い建物を",
+          "sourceIds": [
+            "jr_social_case_1d4e018e2cce"
+          ]
+        },
+        {
+          "selector": "P:地域の人物の功績を",
+          "sourceIds": [
+            "jr_social_case_bf5c2caeae14"
+          ]
+        },
+        {
+          "selector": "P:地域の人への歴史の聞き取り",
+          "sourceIds": [
+            "jr_social_case_bf028f51b2fc"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_1d4e018e2cce",
+        "jr_social_case_bf5c2caeae14",
+        "jr_social_case_bf028f51b2fc"
+      ],
+      "outsideGame": "地域の実物調査と考察発表は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B1.イ(ア)",
+      "field": "歴史",
+      "block": "hist-B1",
+      "officialItem": "イ(ア)",
+      "point": "農耕・技術・東アジア交流と古代社会を関連付ける",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:農耕の広がりで",
+          "sourceIds": [
+            "jr_social_case_8e710f188ebe"
+          ]
+        },
+        {
+          "selector": "P:大陸からの渡来人が",
+          "sourceIds": [
+            "jr_social_case_119b3fbfae4a"
+          ]
+        },
+        {
+          "selector": "P:班田収授法と戸籍の",
+          "sourceIds": [
+            "jr_social_case_26bc62cdab10"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_8e710f188ebe",
+        "jr_social_case_119b3fbfae4a",
+        "jr_social_case_26bc62cdab10"
+      ],
+      "outsideGame": "短い因果の選択判断。複数資料の考察は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B1.イ(イ)",
+      "field": "歴史",
+      "block": "hist-B1",
+      "officialItem": "イ(イ)",
+      "point": "古代までの時代の特色を大観する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:大和政権",
+          "sourceIds": [
+            "jr_social_1d32ad72046a"
+          ]
+        },
+        {
+          "selector": "T:大宝律令",
+          "sourceIds": [
+            "jr_social_6091a94ff38f"
+          ]
+        },
+        {
+          "selector": "T:国風文化",
+          "sourceIds": [
+            "jr_social_97f2738b3f68"
+          ]
+        },
+        {
+          "selector": "U:古代の税制と土地",
+          "sourceIds": [
+            "jr_social_43446ed16584",
+            "jr_social_68120baa0a6a",
+            "jr_social_c7b2f3812528",
+            "jr_social_bfe548d5c108",
+            "jr_social_case_23871095c775",
+            "jr_social_case_d28e7b0c5e4f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_1d32ad72046a",
+        "jr_social_6091a94ff38f",
+        "jr_social_97f2738b3f68",
+        "jr_social_43446ed16584",
+        "jr_social_68120baa0a6a",
+        "jr_social_c7b2f3812528",
+        "jr_social_bfe548d5c108",
+        "jr_social_case_23871095c775",
+        "jr_social_case_d28e7b0c5e4f"
+      ],
+      "outsideGame": "時代の基礎知識と比較。自由な大観の論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B2.イ(ア)",
+      "field": "歴史",
+      "block": "hist-B2",
+      "officialItem": "イ(ア)",
+      "point": "武家政治・東アジア交流・産業を関連付ける",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:モンゴル帝国の拡大が",
+          "sourceIds": [
+            "jr_social_case_d747fd5fea0d"
+          ]
+        },
+        {
+          "selector": "P:承久の乱後、幕府が",
+          "sourceIds": [
+            "jr_social_case_670c7f235bbf"
+          ]
+        },
+        {
+          "selector": "P:中世の琉球が",
+          "sourceIds": [
+            "jr_social_case_0da49683976a"
+          ]
+        },
+        {
+          "selector": "P:琉球の文化に関わる",
+          "sourceIds": [
+            "jr_social_case_300cd841f7df"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_d747fd5fea0d",
+        "jr_social_case_670c7f235bbf",
+        "jr_social_case_0da49683976a",
+        "jr_social_case_300cd841f7df"
+      ],
+      "outsideGame": "代表的な因果判断。史料の総合読解は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B2.イ(イ)",
+      "field": "歴史",
+      "block": "hist-B2",
+      "officialItem": "イ(イ)",
+      "point": "中世の時代の特色を大観する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:御恩",
+          "sourceIds": [
+            "jr_social_a1d825799d6d"
+          ]
+        },
+        {
+          "selector": "T:奉公",
+          "sourceIds": [
+            "jr_social_e0208424fbb5"
+          ]
+        },
+        {
+          "selector": "T:惣",
+          "sourceIds": [
+            "jr_social_b519c9176a48"
+          ]
+        },
+        {
+          "selector": "T:下剋上",
+          "sourceIds": [
+            "jr_social_0e92042b75ed"
+          ]
+        },
+        {
+          "selector": "U:中世の芸能と美術",
+          "sourceIds": [
+            "jr_social_9b261a472131",
+            "jr_social_d8ab266c4de7",
+            "jr_social_d2dba0f2801b",
+            "jr_social_bd991587f72d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_a1d825799d6d",
+        "jr_social_e0208424fbb5",
+        "jr_social_b519c9176a48",
+        "jr_social_0e92042b75ed",
+        "jr_social_9b261a472131",
+        "jr_social_d8ab266c4de7",
+        "jr_social_d2dba0f2801b",
+        "jr_social_bd991587f72d"
+      ],
+      "outsideGame": "時代の基礎知識と比較。自由な大観の論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B3.イ(ア)",
+      "field": "歴史",
+      "block": "hist-B3",
+      "officialItem": "イ(ア)",
+      "point": "統一政策・産業・文化の担い手と幕府政策を関連付ける",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:江戸時代に大きな戦乱が",
+          "sourceIds": [
+            "jr_social_case_79188bbcde98"
+          ]
+        },
+        {
+          "selector": "P:問屋制家内工業で",
+          "sourceIds": [
+            "jr_social_case_afc776d4eb62"
+          ]
+        },
+        {
+          "selector": "U:近世の改革",
+          "sourceIds": [
+            "jr_social_case_e3a4cc9c5420",
+            "jr_social_case_71d54d221b1f",
+            "jr_social_case_6a591bd64748",
+            "jr_social_case_af5092cc6627"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_79188bbcde98",
+        "jr_social_case_afc776d4eb62",
+        "jr_social_case_e3a4cc9c5420",
+        "jr_social_case_71d54d221b1f",
+        "jr_social_case_6a591bd64748",
+        "jr_social_case_af5092cc6627"
+      ],
+      "outsideGame": "代表的な因果判断。複数資料の説明は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-B3.イ(イ)",
+      "field": "歴史",
+      "block": "hist-B3",
+      "officialItem": "イ(イ)",
+      "point": "近世の時代の特色を大観する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:参勤交代",
+          "sourceIds": [
+            "jr_social_31cda006a195"
+          ]
+        },
+        {
+          "selector": "T:村請制",
+          "sourceIds": [
+            "jr_social_346c3eee3d9b"
+          ]
+        },
+        {
+          "selector": "T:元禄文化",
+          "sourceIds": [
+            "jr_social_6fcd58e96f96"
+          ]
+        },
+        {
+          "selector": "T:寺子屋",
+          "sourceIds": [
+            "jr_social_18c760e818f6"
+          ]
+        },
+        {
+          "selector": "T:藩校",
+          "sourceIds": [
+            "jr_social_28495665246c"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_31cda006a195",
+        "jr_social_346c3eee3d9b",
+        "jr_social_6fcd58e96f96",
+        "jr_social_18c760e818f6",
+        "jr_social_28495665246c"
+      ],
+      "outsideGame": "時代の基礎知識と比較。自由な大観の論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-C1.イ(ア)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "イ(ア)",
+      "point": "工業化・政治社会・外交・文化・戦争を関連付ける",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:開国を世界の動きと",
+          "sourceIds": [
+            "jr_social_case_14ef3552621a"
+          ]
+        },
+        {
+          "selector": "P:第一次大戦が世界規模に",
+          "sourceIds": [
+            "jr_social_case_8a34d56702a8"
+          ]
+        },
+        {
+          "selector": "P:近代に新聞・雑誌・ラジオが",
+          "sourceIds": [
+            "jr_social_case_1c578cd6fe52"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_14ef3552621a",
+        "jr_social_case_8a34d56702a8",
+        "jr_social_case_1c578cd6fe52"
+      ],
+      "outsideGame": "因果判断の基礎。長い史料の比較や論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-C1.イ(イ)",
+      "field": "歴史",
+      "block": "hist-C1",
+      "officialItem": "イ(イ)",
+      "point": "近代の日本と世界の時代的特色を大観する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:明治維新",
+          "sourceIds": [
+            "jr_social_a1a90baf596b"
+          ]
+        },
+        {
+          "selector": "T:帝国主義",
+          "sourceIds": [
+            "jr_social_ecc0a0c0782e"
+          ]
+        },
+        {
+          "selector": "T:大正デモクラシー",
+          "sourceIds": [
+            "jr_social_b6b5a5975e2c"
+          ]
+        },
+        {
+          "selector": "T:世界恐慌",
+          "sourceIds": [
+            "jr_social_aba80d1fb43e"
+          ]
+        },
+        {
+          "selector": "T:太平洋戦争",
+          "sourceIds": [
+            "jr_social_ac6f908a0970"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_a1a90baf596b",
+        "jr_social_ecc0a0c0782e",
+        "jr_social_b6b5a5975e2c",
+        "jr_social_aba80d1fb43e",
+        "jr_social_ac6f908a0970"
+      ],
+      "outsideGame": "時代の基礎知識と比較。自由な大観の論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-C2.イ(ア)",
+      "field": "歴史",
+      "block": "hist-C2",
+      "officialItem": "イ(ア)",
+      "point": "戦後改革・国際社会・政治と生活を関連付ける",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:農地改革が自作農を",
+          "sourceIds": [
+            "jr_social_case_029579bb8e94"
+          ]
+        },
+        {
+          "selector": "P:高度成長期の公害問題が",
+          "sourceIds": [
+            "jr_social_case_eeccf5d0f9a0"
+          ]
+        },
+        {
+          "selector": "P:冷戦後も国際協力が",
+          "sourceIds": [
+            "jr_social_case_0c411cda9cc9"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_029579bb8e94",
+        "jr_social_case_eeccf5d0f9a0",
+        "jr_social_case_0c411cda9cc9"
+      ],
+      "outsideGame": "代表的な因果判断。多資料の総合説明は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-C2.イ(イ)",
+      "field": "歴史",
+      "block": "hist-C2",
+      "officialItem": "イ(イ)",
+      "point": "現代日本と世界の特色を大観する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:冷戦",
+          "sourceIds": [
+            "jr_social_d4dd0ec6bd38"
+          ]
+        },
+        {
+          "selector": "T:高度経済成長",
+          "sourceIds": [
+            "jr_social_0ae686b73581"
+          ]
+        },
+        {
+          "selector": "T:東西ドイツ統一",
+          "sourceIds": [
+            "jr_social_cc54379674d5"
+          ]
+        },
+        {
+          "selector": "T:東日本大震災",
+          "sourceIds": [
+            "jr_social_c0cc1296ebfa"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_d4dd0ec6bd38",
+        "jr_social_0ae686b73581",
+        "jr_social_cc54379674d5",
+        "jr_social_c0cc1296ebfa"
+      ],
+      "outsideGame": "時代の基礎知識と比較。自由な大観の論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "hist-C2.イ(ウ)",
+      "field": "歴史",
+      "block": "hist-C2",
+      "officialItem": "イ(ウ)",
+      "point": "歴史と現在・未来の日本や世界を結び付け構想する",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:冷戦後も国際協力が",
+          "sourceIds": [
+            "jr_social_case_0c411cda9cc9"
+          ]
+        },
+        {
+          "selector": "P:震災の経験を現代社会に",
+          "sourceIds": [
+            "jr_social_case_2a30d47b807b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_0c411cda9cc9",
+        "jr_social_case_2a30d47b807b"
+      ],
+      "outsideGame": "教訓や課題の選択判断。実際の構想・論述は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-A1.イ(ア)",
+      "field": "公民",
+      "block": "civics-A1",
+      "officialItem": "イ(ア)",
+      "point": "少子高齢化・情報化・国際化の現在と将来への影響",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:少子高齢化が進む社会で",
+          "sourceIds": [
+            "jr_social_case_f67505cf8c57"
+          ]
+        },
+        {
+          "selector": "P:AIの導入を",
+          "sourceIds": [
+            "jr_social_case_daa64bdce973"
+          ]
+        },
+        {
+          "selector": "P:デジタルデバイドへの",
+          "sourceIds": [
+            "jr_social_case_a6db99c72860"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_f67505cf8c57",
+        "jr_social_case_daa64bdce973",
+        "jr_social_case_a6db99c72860"
+      ],
+      "outsideGame": "代表的な課題判断。最新資料の読解・説明は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-A1.イ(イ)",
+      "field": "公民",
+      "block": "civics-A1",
+      "officialItem": "イ(イ)",
+      "point": "文化の継承と創造の意義",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:伝統行事の担い手",
+          "sourceIds": [
+            "jr_social_case_e14feaa59e59"
+          ]
+        },
+        {
+          "selector": "P:文化財の保存と活用を",
+          "sourceIds": [
+            "jr_social_case_1c42a69f43a6"
+          ]
+        },
+        {
+          "selector": "P:異文化の習慣を",
+          "sourceIds": [
+            "jr_social_case_b6cff32bfb82"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_e14feaa59e59",
+        "jr_social_case_1c42a69f43a6",
+        "jr_social_case_b6cff32bfb82"
+      ],
+      "outsideGame": "継承の方法を選ぶ知識。文化活動の実践は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-A2.イ",
+      "field": "公民",
+      "block": "civics-A2",
+      "officialItem": "イ",
+      "point": "意思決定・契約・きまりを多面的に考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "U:合意と公正の判断",
+          "sourceIds": [
+            "jr_social_case_ab6c20bed0a5",
+            "jr_social_case_4385af4571b0",
+            "jr_social_case_a75c0105f141",
+            "jr_social_case_f13204ae4115",
+            "jr_social_case_c7718fe6ae9f",
+            "jr_social_case_5cbfac7f325c",
+            "jr_social_case_93e8e7feac1f",
+            "jr_social_case_15e28243b568",
+            "jr_social_case_36553e1a59b2",
+            "jr_social_case_0658ddb54806",
+            "jr_social_case_eecb4515a82e",
+            "jr_social_case_b5e6edef3bca",
+            "jr_social_case_2befe90eaa2b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_ab6c20bed0a5",
+        "jr_social_case_4385af4571b0",
+        "jr_social_case_a75c0105f141",
+        "jr_social_case_f13204ae4115",
+        "jr_social_case_c7718fe6ae9f",
+        "jr_social_case_5cbfac7f325c",
+        "jr_social_case_93e8e7feac1f",
+        "jr_social_case_15e28243b568",
+        "jr_social_case_36553e1a59b2",
+        "jr_social_case_0658ddb54806",
+        "jr_social_case_eecb4515a82e",
+        "jr_social_case_b5e6edef3bca",
+        "jr_social_case_2befe90eaa2b"
+      ],
+      "outsideGame": "合意の着眼点の選択判断。実際の合意形成は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B1.イ(ア)",
+      "field": "公民",
+      "block": "civics-B1",
+      "officialItem": "イ(ア)",
+      "point": "家計・企業の役割と責任、起業と金融",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:企業の社会的責任に",
+          "sourceIds": [
+            "jr_social_case_9e587726e4d7"
+          ]
+        },
+        {
+          "selector": "P:起業の計画で",
+          "sourceIds": [
+            "jr_social_case_f84b90f93e58"
+          ]
+        },
+        {
+          "selector": "T:家計",
+          "sourceIds": [
+            "jr_social_5d85b4ddd170"
+          ]
+        },
+        {
+          "selector": "T:起業",
+          "sourceIds": [
+            "jr_social_3426e5a120e5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_9e587726e4d7",
+        "jr_social_case_f84b90f93e58",
+        "jr_social_5d85b4ddd170",
+        "jr_social_3426e5a120e5"
+      ],
+      "outsideGame": "事業計画や家計の実践的な作成は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B1.イ(イ)",
+      "field": "公民",
+      "block": "civics-B1",
+      "officialItem": "イ(イ)",
+      "point": "職業の役割、労働条件と仕事生活の調和",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:ワーク・ライフ・バランス",
+          "sourceIds": [
+            "jr_social_632a8e732b93"
+          ]
+        },
+        {
+          "selector": "T:労働基準法",
+          "sourceIds": [
+            "jr_social_a0599328062a"
+          ]
+        },
+        {
+          "selector": "P:労働者が労働条件を",
+          "sourceIds": [
+            "jr_social_case_ecb3de1fc3d4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_632a8e732b93",
+        "jr_social_a0599328062a",
+        "jr_social_case_ecb3de1fc3d4"
+      ],
+      "outsideGame": "職場体験や自分の進路検討は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B2.イ(ア)",
+      "field": "公民",
+      "block": "civics-B2",
+      "officialItem": "イ(ア)",
+      "point": "市場に委ねにくい問題と政府の役割",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:公共財",
+          "sourceIds": [
+            "jr_social_e58dd969ae4e"
+          ]
+        },
+        {
+          "selector": "T:外部不経済",
+          "sourceIds": [
+            "jr_social_feca524d5c38"
+          ]
+        },
+        {
+          "selector": "T:社会資本",
+          "sourceIds": [
+            "jr_social_a9aece93558f"
+          ]
+        },
+        {
+          "selector": "P:社会保険と公的扶助の",
+          "sourceIds": [
+            "jr_social_case_b9676574d7da"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_e58dd969ae4e",
+        "jr_social_feca524d5c38",
+        "jr_social_a9aece93558f",
+        "jr_social_case_b9676574d7da"
+      ],
+      "outsideGame": "代表的な制度判断。現実の施策の全効果を保証しない。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-B2.イ(イ)",
+      "field": "公民",
+      "block": "civics-B2",
+      "officialItem": "イ(イ)",
+      "point": "財政・租税の役割と持続可能性",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:国債を発行する際に",
+          "sourceIds": [
+            "jr_social_case_87088b46e231"
+          ]
+        },
+        {
+          "selector": "P:高齢化で社会保障を",
+          "sourceIds": [
+            "jr_social_case_41c0c421c3be"
+          ]
+        },
+        {
+          "selector": "U:財政・金融・社会保障",
+          "sourceIds": [
+            "jr_social_case_6dab747d5c58",
+            "jr_social_case_9193bd3069f2",
+            "jr_social_case_286a18189b6a",
+            "jr_social_case_55f386424b45",
+            "jr_social_case_676466679227",
+            "jr_social_case_6f4912fe3052",
+            "jr_social_case_80aa1fb971eb",
+            "jr_social_case_4eb2f2eec51a",
+            "jr_social_case_87088b46e231",
+            "jr_social_case_b9676574d7da",
+            "jr_social_case_e124bd838dc2",
+            "jr_social_case_41c0c421c3be",
+            "jr_social_case_b3b21b428a32"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_87088b46e231",
+        "jr_social_case_41c0c421c3be",
+        "jr_social_case_6dab747d5c58",
+        "jr_social_case_9193bd3069f2",
+        "jr_social_case_286a18189b6a",
+        "jr_social_case_55f386424b45",
+        "jr_social_case_676466679227",
+        "jr_social_case_6f4912fe3052",
+        "jr_social_case_80aa1fb971eb",
+        "jr_social_case_4eb2f2eec51a",
+        "jr_social_case_b9676574d7da",
+        "jr_social_case_e124bd838dc2",
+        "jr_social_case_b3b21b428a32"
+      ],
+      "outsideGame": "将来負担の着眼点。最新予算の詳細分析は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-C1.イ(ア)",
+      "field": "公民",
+      "block": "civics-C1",
+      "officialItem": "イ(ア)",
+      "point": "憲法に基づく政治の意義",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:立憲主義",
+          "sourceIds": [
+            "jr_social_c70c8987b9b5"
+          ]
+        },
+        {
+          "selector": "T:法の支配",
+          "sourceIds": [
+            "jr_social_523d1c05392a"
+          ]
+        },
+        {
+          "selector": "P:多数決で決まれば",
+          "sourceIds": [
+            "jr_social_case_4385af4571b0"
+          ]
+        },
+        {
+          "selector": "P:天皇の国事行為に",
+          "sourceIds": [
+            "jr_social_case_86c1cdf84ab8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_c70c8987b9b5",
+        "jr_social_523d1c05392a",
+        "jr_social_case_4385af4571b0",
+        "jr_social_case_86c1cdf84ab8"
+      ],
+      "outsideGame": "権力と人権の関係を選ぶ基礎。討論は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-C2.イ(ア)",
+      "field": "公民",
+      "block": "civics-C2",
+      "officialItem": "イ(ア)",
+      "point": "民主政治・世論・選挙と政治参加",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:政治について世論を",
+          "sourceIds": [
+            "jr_social_case_bb29011bccf7"
+          ]
+        },
+        {
+          "selector": "P:政治参加の方法",
+          "sourceIds": [
+            "jr_social_case_c3055e63f30d"
+          ]
+        },
+        {
+          "selector": "P:地方自治の住民自治に",
+          "sourceIds": [
+            "jr_social_case_ee3a38501314"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_case_bb29011bccf7",
+        "jr_social_case_c3055e63f30d",
+        "jr_social_case_ee3a38501314"
+      ],
+      "outsideGame": "実際の選挙・請願や地域参加は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    },
+    {
+      "id": "civics-D1.イ(ア)",
+      "field": "公民",
+      "block": "civics-D1",
+      "officialItem": "イ(ア)",
+      "point": "平和主義を基に安全・防衛と国際貢献を考える",
+      "category": "イの項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:自衛隊",
+          "sourceIds": [
+            "jr_social_66fb897dfed5"
+          ]
+        },
+        {
+          "selector": "T:専守防衛",
+          "sourceIds": [
+            "jr_social_e5720bad3fef"
+          ]
+        },
+        {
+          "selector": "P:日本の防衛政策を",
+          "sourceIds": [
+            "jr_social_case_16cbbfe835a3"
+          ]
+        },
+        {
+          "selector": "P:国際協力で現地の",
+          "sourceIds": [
+            "jr_social_case_3cefeafc9c59"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_social_66fb897dfed5",
+        "jr_social_e5720bad3fef",
+        "jr_social_case_16cbbfe835a3",
+        "jr_social_case_3cefeafc9c59"
+      ],
+      "outsideGame": "基本姿勢と着眼点の判断。最新情勢の討論は別。",
+      "practicalMastery": "出題先の存在は技能・論述・実践の達成を意味しない"
+    }
+  ],
+  "counts": {
+    "total": 93,
+    "byField": {
+      "地理": 27,
+      "歴史": 35,
+      "公民": 31
+    },
+    "byCategory": {
+      "アの項目": 61,
+      "イの項目": 32
+    }
+  },
+  "unresolvedSelectors": []
+}

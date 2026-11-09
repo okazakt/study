@@ -1,0 +1,42 @@
+{
+  "scope": "公式内容に合わせる進捗報告だけの補正。既存の問題JSON・ID・履歴は変更しない。",
+  "reason": "旧履歴A1/A2は年代・資料と地域史の割当が逆。大塩平八郎は近世末期の社会と幕府の行き詰まりの観点。",
+  "sourceBlocks": {
+    "jr_social_case_625eb09b59d9": [
+      "hist-A2"
+    ],
+    "jr_social_case_5bf58101fb18": [
+      "hist-A1"
+    ],
+    "jr_social_case_e1935e3b51c6": [
+      "hist-A1"
+    ],
+    "jr_social_case_1d4e018e2cce": [
+      "hist-A2"
+    ],
+    "jr_social_case_57d79a99cd9a": [
+      "hist-A2"
+    ],
+    "jr_social_case_0e1df6e98a0b": [
+      "hist-A2"
+    ],
+    "jr_social_case_bf5c2caeae14": [
+      "hist-A2"
+    ],
+    "jr_social_case_2c26bcbdc373": [
+      "hist-A1"
+    ],
+    "jr_social_case_02465250b2c8": [
+      "hist-A1"
+    ],
+    "jr_social_case_0f00ce6deeae": [
+      "hist-A1"
+    ],
+    "jr_social_case_e2d31a51d5a4": [
+      "hist-A1"
+    ],
+    "jr_social_098776b8e30f": [
+      "hist-B3"
+    ]
+  }
+}

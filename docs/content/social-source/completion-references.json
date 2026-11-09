@@ -1,0 +1,46 @@
+{
+  "checked": "2026-11-09",
+  "scope": "学習範囲と代表的な事実の照合。本文や図版は出題データへ転載しない。各問題の全事実を個別の一次史料に対応させたとの主張ではない。",
+  "sources": [
+    {
+      "title": "中学校学習指導要領（平成29年告示）解説 社会編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_003.pdf",
+      "retrieved": "2026-11-08",
+      "sha256": "891755a617df844e4a4b4c748f81aa4de675bbe0a5cec48fc0de0ec1acb4a2d5",
+      "locator": "付録3 中学校学習指導要領 第2章第2節社会、各分野の2内容（印刷頁202以降）",
+      "verification": "取得済みPDF本文を参照。付録3の各分野「2 内容」「3 内容の取扱い」印刷頁202–217を編集上の小項目と取扱い観点に整理。"
+    },
+    {
+      "title": "国土地理院・日本全図",
+      "url": "https://www.gsi.go.jp/common/000247485.pdf",
+      "sha256": "3b6fe3c79a50d263435aa99d90881040a5ef9f02d545508fdfc9072b10429784",
+      "verification": "PDFを取得し地形・都市・島々の配置を概観。詳細な全地名が記載される資料ではない。県庁所在地の対応は既存の地理院の所在都市図と併用。",
+      "usage": "日本の大まかな位置関係の補助参照。地図画像はアプリへ同梱しない。"
+    },
+    {
+      "title": "国土地理院・都道府県と都道府県庁所在地",
+      "url": "https://www.gsi.go.jp/common/000218164.pdf",
+      "verification": "前回の取得・確認記録geography-references.jsonとprefecture-capitals-review.jsonを再利用。",
+      "usage": "47都道府県の所在都市を指す既存素材のID照合。古い面積・市町村数順位は使用しない。"
+    },
+    {
+      "title": "外務省・尖閣諸島についての基本見解",
+      "url": "https://www.mofa.go.jp/mofaj/area/senkaku/kenkai.html",
+      "verification": "公式検索抜粋で1895年1月14日の閣議決定による編入の経緯を確認。通常本文取得は403。",
+      "usage": "日本政府の説明による歴史の経緯。現状の領有主張と地理の事実を区別。"
+    },
+    {
+      "title": "外務省・竹島の島根県編入",
+      "url": "https://www.mofa.go.jp/mofaj/area/takeshima/g_hennyu.html",
+      "verification": "公式検索抜粋で1905年1月閣議決定と同年2月島根県告示を区別して確認。通常本文取得は403。",
+      "usage": "日本政府の経緯説明に基づく年代。"
+    },
+    {
+      "title": "防衛省・令和6年版防衛白書 基本政策",
+      "url": "https://www.mod.go.jp/j/press/wp/wp2024/html/n210203000.html",
+      "verification": "公式検索抜粋で専守防衛の受動的姿勢・必要最小限、文民統制等を確認。通常本文取得は403。2025年白書の同趣旨の検索抜粋も参照。",
+      "usage": "防衛の基本姿勢の定義。変動する装備数・予算額は出題しない。"
+    }
+  ],
+  "limitations": "93小項目は学習指導要領の全語句や全指導事例を数えた分母ではない。教材・授業時間・実践の実施と達成は本確認の対象外。"
+}
