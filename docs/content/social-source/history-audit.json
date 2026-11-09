@@ -1,0 +1,50 @@
+{
+  "version": "0.82.0",
+  "date": "2026-11-09",
+  "batch": "social-history-20261109",
+  "newMaterials": 200,
+  "newGeneratedQuestions": 320,
+  "pairedTermMaterials": 120,
+  "choiceMaterials": 80,
+  "previousSocialMaterials": 754,
+  "previousSocialGeneratedQuestions": 1184,
+  "totalMaterials": 954,
+  "totalGeneratedQuestions": 1504,
+  "fields": {
+    "地理": {
+      "materials": 424,
+      "generated": 616
+    },
+    "歴史": {
+      "materials": 386,
+      "generated": 634
+    },
+    "公民": {
+      "materials": 144,
+      "generated": 254
+    }
+  },
+  "previousSocialContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "runtimeChanges": "Version URLs only; no gameplay or persistence logic changed.",
+  "budget": {
+    "materials": 200,
+    "presentations": 320,
+    "maxima": {
+      "task": 21,
+      "prompt": 31,
+      "choice": 15,
+      "targetLabel": 21,
+      "note": 19,
+      "combined": 87
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "references": "history-references.json",
+  "editorialReview": "Chronological boundaries, tax and office distinctions, relation of medieval rulers and society, unequal-treaty clauses, 1946 promulgation / 1947 enforcement, colonial rule and civilian suffering, enduring discrimination after emancipation reviewed. Explicit centuries use 710 / 645 / 894 / 1185 to avoid two valid eighth-century answers.",
+  "checks": "Changed JSON, IDs, required fields, four distinct choices, direct literal theme hints, official-block IDs and exact old-content preservation; no full suite, browser or five-minute simulation.",
+  "completion": "History strengthened; civics expansion and final official-subitem audit remain."
+}

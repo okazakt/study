@@ -1,0 +1,14 @@
+{
+  "checked": "2026-11-09",
+  "scope": "学習範囲は公式解説本文を参照。短文設問・候補・補足は独自作問。個別の全事実を公式PDFが列挙するとの主張ではない。",
+  "sources": [
+    {
+      "title": "文科省・中学校学習指導要領解説 社会編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_003.pdf",
+      "sha256": "891755a617df844e4a4b4c748f81aa4de675bbe0a5cec48fc0de0ec1acb4a2d5",
+      "verification": "PDF本文を取得し、付録3印刷頁207–210の歴史的分野「2 内容」を確認。",
+      "usage": "歴史の調査・古代・中世・近世・近代・現代の内容と、事象を関連付ける観点を整理。"
+    }
+  ],
+  "limitations": "年代・制度・因果の作問時確認は実施したが、各語に個別の一次史料を全件対応させたものではない。公式細目の最終照合は次段階。"
+}

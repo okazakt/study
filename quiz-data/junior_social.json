@@ -20764,5 +20764,5925 @@
     ],
     "content_reviewed": "2026-11-08",
     "capital_prefecture": "沖縄県"
+  },
+  {
+    "id": "jr_social_43446ed16584",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の税制と土地",
+    "term": "公地公民",
+    "term_dummies": [
+      "租",
+      "庸",
+      "調"
+    ],
+    "explanation_template": "大化の改新で目指した、土地と人民を{{1}}が支配する原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国家",
+        "dummies": [
+          "寺院",
+          "豪族個人",
+          "外国"
+        ]
+      }
+    ],
+    "note": "律令国家の土地・人民支配の原則。",
+    "cloze_context": "公地公民",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_68120baa0a6a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の税制と土地",
+    "term": "租",
+    "term_dummies": [
+      "公地公民",
+      "庸",
+      "調"
+    ],
+    "explanation_template": "律令制で、口分田の収穫の一部を{{1}}で納める税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "稲",
+        "dummies": [
+          "布",
+          "特産物",
+          "銅銭"
+        ]
+      }
+    ],
+    "note": "地方の財源にも用いられた。",
+    "cloze_context": "租",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c7b2f3812528",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の税制と土地",
+    "term": "庸",
+    "term_dummies": [
+      "公地公民",
+      "租",
+      "調"
+    ],
+    "explanation_template": "律令制で、都での労役の代わりに主に{{1}}を納める税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "布",
+        "dummies": [
+          "稲",
+          "武器",
+          "銅銭"
+        ]
+      }
+    ],
+    "note": "成人男子に課された負担。",
+    "cloze_context": "庸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_bfe548d5c108",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の税制と土地",
+    "term": "調",
+    "term_dummies": [
+      "公地公民",
+      "租",
+      "庸"
+    ],
+    "explanation_template": "律令制で、地方の{{1}}などを納める税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "特産物",
+        "dummies": [
+          "貨幣だけ",
+          "稲だけ",
+          "労役だけ"
+        ]
+      }
+    ],
+    "note": "運搬も農民の負担になった。",
+    "cloze_context": "調",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4c1905ee4d08",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家と東アジア",
+    "term": "遣隋使",
+    "term_dummies": [
+      "邪馬台国",
+      "大和政権",
+      "冊封"
+    ],
+    "explanation_template": "小野妹子らが{{1}}へ送られた使節。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "隋",
+        "dummies": [
+          "唐",
+          "明",
+          "元"
+        ]
+      }
+    ],
+    "note": "中国の制度や文化を学んだ。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8f3fd6c39dcf",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家と東アジア",
+    "term": "邪馬台国",
+    "term_dummies": [
+      "遣隋使",
+      "大和政権",
+      "冊封"
+    ],
+    "explanation_template": "卑弥呼が治め、{{1}}へ使いを送った国。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "魏",
+        "dummies": [
+          "隋",
+          "唐",
+          "明"
+        ]
+      }
+    ],
+    "note": "中国の歴史書に記録が残る。",
+    "cloze_context": "邪馬台国",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_1d32ad72046a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家と東アジア",
+    "term": "大和政権",
+    "term_dummies": [
+      "遣隋使",
+      "邪馬台国",
+      "冊封"
+    ],
+    "explanation_template": "古墳時代、{{1}}地方を中心に成立した政治連合。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "近畿",
+        "dummies": [
+          "東北",
+          "九州",
+          "関東"
+        ]
+      }
+    ],
+    "note": "各地の豪族と結び付いた。",
+    "cloze_context": "大和政権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d958867768ed",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家と東アジア",
+    "term": "冊封",
+    "term_dummies": [
+      "遣隋使",
+      "邪馬台国",
+      "大和政権"
+    ],
+    "explanation_template": "中国の皇帝が周辺の王に{{1}}を与える関係。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "称号",
+        "dummies": [
+          "年貢免除",
+          "土地所有権",
+          "兵役免除"
+        ]
+      }
+    ],
+    "note": "東アジアの国際関係を考える鍵。",
+    "cloze_context": "冊封",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ff82e324e99f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家の整備",
+    "term": "冠位十二階",
+    "term_dummies": [
+      "十七条の憲法",
+      "壬申の乱",
+      "平城京"
+    ],
+    "explanation_template": "家柄だけでなく{{1}}などを重視して役人の位を定めた制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "能力や功績",
+        "dummies": [
+          "年齢順",
+          "土地の広さ",
+          "出生地"
+        ]
+      }
+    ],
+    "note": "聖徳太子の時代に定められた。",
+    "cloze_context": "冠位十二階",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_da31b2632d02",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家の整備",
+    "term": "十七条の憲法",
+    "term_dummies": [
+      "冠位十二階",
+      "壬申の乱",
+      "平城京"
+    ],
+    "explanation_template": "聖徳太子の時代に、主に{{1}}の心構えを示したもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "役人",
+        "dummies": [
+          "商人",
+          "農民",
+          "僧侶"
+        ]
+      }
+    ],
+    "note": "現在の憲法とは性格が異なる。",
+    "cloze_context": "十七条の憲法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4f3902776aa1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家の整備",
+    "term": "壬申の乱",
+    "term_dummies": [
+      "冠位十二階",
+      "十七条の憲法",
+      "平城京"
+    ],
+    "explanation_template": "672年、皇位をめぐり大海人皇子と{{1}}皇子が争った内乱。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大友",
+        "dummies": [
+          "中大兄",
+          "厩戸",
+          "山背大兄"
+        ]
+      }
+    ],
+    "note": "大海人皇子が天武天皇となった。",
+    "cloze_context": "壬申の乱",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_bea611c3fa83",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家の整備",
+    "term": "平城京",
+    "term_dummies": [
+      "冠位十二階",
+      "十七条の憲法",
+      "壬申の乱"
+    ],
+    "explanation_template": "710年、現在の{{1}}市付近に置かれた都。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "奈良",
+        "dummies": [
+          "京都",
+          "大阪",
+          "大津"
+        ]
+      }
+    ],
+    "note": "唐の都にならう都市計画を採用。",
+    "cloze_context": "平城京",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a437e0fee990",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "律令制と荘園",
+    "term": "国司",
+    "term_dummies": [
+      "郡司",
+      "防人",
+      "荘園"
+    ],
+    "explanation_template": "律令制で、中央から派遣され{{1}}を治めた役人。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国",
+        "dummies": [
+          "郡",
+          "里",
+          "都の市場"
+        ]
+      }
+    ],
+    "note": "地方支配を担った。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f1cf6fa1eddd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "律令制と荘園",
+    "term": "郡司",
+    "term_dummies": [
+      "国司",
+      "防人",
+      "荘園"
+    ],
+    "explanation_template": "律令制で、地方の豪族から任じられ{{1}}を治めた役人。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "郡",
+        "dummies": [
+          "国",
+          "都",
+          "朝廷"
+        ]
+      }
+    ],
+    "note": "中央から派遣された国司と区別。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_329cbfebd644",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "律令制と荘園",
+    "term": "防人",
+    "term_dummies": [
+      "国司",
+      "郡司",
+      "荘園"
+    ],
+    "explanation_template": "律令制で、主に{{1}}沿岸の防衛に当たった兵士。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "北九州",
+        "dummies": [
+          "北海道",
+          "東北",
+          "北陸"
+        ]
+      }
+    ],
+    "note": "東国からも動員された。",
+    "cloze_context": "防人",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f956513c1f7c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "律令制と荘園",
+    "term": "荘園",
+    "term_dummies": [
+      "国司",
+      "郡司",
+      "防人"
+    ],
+    "explanation_template": "寺社や貴族などの{{1}}として広がった土地。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "私有地",
+        "dummies": [
+          "口分田",
+          "公領だけ",
+          "屯田のみ"
+        ]
+      }
+    ],
+    "note": "公地公民の原則が変化した。",
+    "cloze_context": "荘園",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_26fece73e429",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の仏教と文学者",
+    "term": "鑑真",
+    "term_dummies": [
+      "最澄",
+      "空海",
+      "紫式部"
+    ],
+    "explanation_template": "唐から渡来し、日本に正式な{{1}}を伝えた僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "戒律",
+        "dummies": [
+          "禅",
+          "浄土信仰",
+          "日蓮の教え"
+        ]
+      }
+    ],
+    "note": "唐招提寺を開いた。",
+    "cloze_context": "鑑真",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_66130da3a103",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の仏教と文学者",
+    "term": "最澄",
+    "term_dummies": [
+      "鑑真",
+      "空海",
+      "紫式部"
+    ],
+    "explanation_template": "比叡山延暦寺を拠点に{{1}}を広めた僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "天台宗",
+        "dummies": [
+          "真言宗",
+          "浄土宗",
+          "日蓮宗"
+        ]
+      }
+    ],
+    "note": "平安時代初期に活躍。",
+    "cloze_context": "最澄",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_78e32a87e952",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の仏教と文学者",
+    "term": "空海",
+    "term_dummies": [
+      "鑑真",
+      "最澄",
+      "紫式部"
+    ],
+    "explanation_template": "高野山金剛峯寺を拠点に{{1}}を広めた僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "真言宗",
+        "dummies": [
+          "天台宗",
+          "浄土宗",
+          "日蓮宗"
+        ]
+      }
+    ],
+    "note": "唐で学び密教を伝えた。",
+    "cloze_context": "空海",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ea6c9d38e3b1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の仏教と文学者",
+    "term": "紫式部",
+    "term_dummies": [
+      "鑑真",
+      "最澄",
+      "空海"
+    ],
+    "explanation_template": "平安時代に{{1}}を書いた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "源氏物語",
+        "dummies": [
+          "枕草子",
+          "土佐日記",
+          "徒然草"
+        ]
+      }
+    ],
+    "note": "宮廷生活を背景とする文学。",
+    "cloze_context": "紫式部",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3de38560298d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の文芸",
+    "term": "万葉集",
+    "term_dummies": [
+      "古事記",
+      "日本書紀",
+      "源氏物語"
+    ],
+    "explanation_template": "天皇や防人など、幅広い身分の歌を収めた{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "和歌集",
+        "dummies": [
+          "歴史書",
+          "法律集",
+          "地理書"
+        ]
+      }
+    ],
+    "note": "奈良時代までの歌を収める。",
+    "cloze_context": "万葉集",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_65c754fa5562",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の文芸",
+    "term": "古事記",
+    "term_dummies": [
+      "万葉集",
+      "日本書紀",
+      "源氏物語"
+    ],
+    "explanation_template": "712年に成立した、神話や天皇の系譜を記す{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "歴史書",
+        "dummies": [
+          "法律集",
+          "和歌集",
+          "日記"
+        ]
+      }
+    ],
+    "note": "日本書紀と成立年を区別する。",
+    "cloze_context": "古事記",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_298ec11861f6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の文芸",
+    "term": "日本書紀",
+    "term_dummies": [
+      "万葉集",
+      "古事記",
+      "源氏物語"
+    ],
+    "explanation_template": "{{1}}年に成立した、漢文で記す日本の歴史書。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "720",
+        "dummies": [
+          "710",
+          "794",
+          "894"
+        ]
+      }
+    ],
+    "note": "国家の歴史を編年体で記した。",
+    "cloze_context": "日本書紀",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2b8865e56cc2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の文芸",
+    "term": "源氏物語",
+    "term_dummies": [
+      "万葉集",
+      "古事記",
+      "日本書紀"
+    ],
+    "explanation_template": "紫式部が書いた、{{1}}を主人公とする物語。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "光源氏",
+        "dummies": [
+          "浦島太郎",
+          "平清盛",
+          "竹取の翁"
+        ]
+      }
+    ],
+    "note": "国風文化を代表する文学。",
+    "cloze_context": "源氏物語",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ef5a0f82f2a0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉幕府の政治と対外関係",
+    "term": "承久の乱",
+    "term_dummies": [
+      "執権政治",
+      "六波羅探題",
+      "元寇"
+    ],
+    "explanation_template": "1221年、{{1}}が鎌倉幕府を倒そうとした争い。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "後鳥羽上皇",
+        "dummies": [
+          "後醍醐天皇",
+          "白河上皇",
+          "聖武天皇"
+        ]
+      }
+    ],
+    "note": "幕府が勝利し朝廷への支配を強めた。",
+    "cloze_context": "承久の乱",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_106200a278a8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉幕府の政治と対外関係",
+    "term": "執権政治",
+    "term_dummies": [
+      "承久の乱",
+      "六波羅探題",
+      "元寇"
+    ],
+    "explanation_template": "鎌倉時代、将軍を補佐する{{1}}が実権を握った政治。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "北条氏",
+        "dummies": [
+          "藤原氏",
+          "足利氏",
+          "徳川氏"
+        ]
+      }
+    ],
+    "note": "将軍と執権の役割を区別。",
+    "cloze_context": "執権政治",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_bb07edf317e7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉幕府の政治と対外関係",
+    "term": "六波羅探題",
+    "term_dummies": [
+      "承久の乱",
+      "執権政治",
+      "元寇"
+    ],
+    "explanation_template": "承久の乱後、京都で{{1}}を監視した幕府の機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "朝廷",
+        "dummies": [
+          "長崎貿易",
+          "蝦夷地",
+          "江戸城"
+        ]
+      }
+    ],
+    "note": "西国の御家人も統括した。",
+    "cloze_context": "六波羅探題",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f257b2569c4d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉幕府の政治と対外関係",
+    "term": "元寇",
+    "term_dummies": [
+      "承久の乱",
+      "執権政治",
+      "六波羅探題"
+    ],
+    "explanation_template": "13世紀後半、{{1}}などの軍が日本へ攻めた出来事。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "元",
+        "dummies": [
+          "明",
+          "清",
+          "隋"
+        ]
+      }
+    ],
+    "note": "文永の役と弘安の役があった。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_540aad31095d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "term": "南北朝",
+    "term_dummies": [
+      "守護大名",
+      "分国法",
+      "下剋上"
+    ],
+    "explanation_template": "14世紀、{{1}}と京都に二つの朝廷が並び立った時代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "吉野",
+        "dummies": [
+          "鎌倉",
+          "平泉",
+          "博多"
+        ]
+      }
+    ],
+    "note": "室町幕府の成立期に当たる。",
+    "cloze_context": "南北朝",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6ff0027fbef0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "term": "守護大名",
+    "term_dummies": [
+      "南北朝",
+      "分国法",
+      "下剋上"
+    ],
+    "explanation_template": "室町時代、守護が{{1}}を強めて成長した大名。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "領国支配",
+        "dummies": [
+          "海外植民",
+          "議会運営",
+          "律令編纂"
+        ]
+      }
+    ],
+    "note": "鎌倉時代の守護から権限が拡大。",
+    "cloze_context": "守護大名",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_b9776349cb87",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "term": "分国法",
+    "term_dummies": [
+      "南北朝",
+      "守護大名",
+      "下剋上"
+    ],
+    "explanation_template": "戦国大名が{{1}}を治めるために定めた法律。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "領国",
+        "dummies": [
+          "幕府全体",
+          "朝廷",
+          "明の領土"
+        ]
+      }
+    ],
+    "note": "家臣や領民の秩序を定めた。",
+    "cloze_context": "分国法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0e92042b75ed",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "term": "下剋上",
+    "term_dummies": [
+      "南北朝",
+      "守護大名",
+      "分国法"
+    ],
+    "explanation_template": "下位の者が実力で{{1}}を倒す風潮。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "上位の者",
+        "dummies": [
+          "同格の大名",
+          "領民全員",
+          "商人全員"
+        ]
+      }
+    ],
+    "note": "戦国時代の社会変化を表す。",
+    "cloze_context": "下剋上",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_98399d99bd50",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉仏教の人物",
+    "term": "法然",
+    "term_dummies": [
+      "親鸞",
+      "日蓮",
+      "道元"
+    ],
+    "explanation_template": "専修念仏を説き、{{1}}を開いた僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "浄土宗",
+        "dummies": [
+          "浄土真宗",
+          "日蓮宗",
+          "曹洞宗"
+        ]
+      }
+    ],
+    "note": "念仏による救いを説いた。",
+    "cloze_context": "法然",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_17e9538b741f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉仏教の人物",
+    "term": "親鸞",
+    "term_dummies": [
+      "法然",
+      "日蓮",
+      "道元"
+    ],
+    "explanation_template": "法然に学び、その教えが{{1}}へ発展した僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "浄土真宗",
+        "dummies": [
+          "浄土宗",
+          "日蓮宗",
+          "曹洞宗"
+        ]
+      }
+    ],
+    "note": "鎌倉仏教の広がりを確認。",
+    "cloze_context": "親鸞",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_1d98628b4eb0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉仏教の人物",
+    "term": "日蓮",
+    "term_dummies": [
+      "法然",
+      "親鸞",
+      "道元"
+    ],
+    "explanation_template": "{{1}}を重視し、題目を唱える教えを説いた僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法華経",
+        "dummies": [
+          "古事記",
+          "論語",
+          "聖書"
+        ]
+      }
+    ],
+    "note": "日蓮宗の開祖。",
+    "cloze_context": "日蓮",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_eac3da21c04c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "鎌倉仏教の人物",
+    "term": "道元",
+    "term_dummies": [
+      "法然",
+      "親鸞",
+      "日蓮"
+    ],
+    "explanation_template": "宋で学び、{{1}}を重んじる曹洞宗を伝えた僧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "座禅",
+        "dummies": [
+          "念仏",
+          "題目",
+          "加持祈祷"
+        ]
+      }
+    ],
+    "note": "禅宗の一派を広めた。",
+    "cloze_context": "道元",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9b261a472131",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の芸能と美術",
+    "term": "能",
+    "term_dummies": [
+      "狂言",
+      "水墨画",
+      "書院造"
+    ],
+    "explanation_template": "観阿弥・世阿弥が大成した、歌と{{1}}による舞台芸能。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "舞",
+        "dummies": [
+          "銅版画",
+          "読経だけ",
+          "活字印刷"
+        ]
+      }
+    ],
+    "note": "将軍などの保護を受けた。",
+    "cloze_context": "能",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d8ab266c4de7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の芸能と美術",
+    "term": "狂言",
+    "term_dummies": [
+      "能",
+      "水墨画",
+      "書院造"
+    ],
+    "explanation_template": "中世に発達した、日常の人間を描く{{1}}の劇。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "滑稽",
+        "dummies": [
+          "悲壮一辺倒",
+          "記録映画",
+          "無言のみ"
+        ]
+      }
+    ],
+    "note": "能とともに演じられる。",
+    "cloze_context": "狂言",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d2dba0f2801b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の芸能と美術",
+    "term": "水墨画",
+    "term_dummies": [
+      "能",
+      "狂言",
+      "書院造"
+    ],
+    "explanation_template": "主に{{1}}の濃淡で表す絵画。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "墨",
+        "dummies": [
+          "油絵具",
+          "金箔",
+          "色ガラス"
+        ]
+      }
+    ],
+    "note": "雪舟が大成した。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_bd991587f72d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の芸能と美術",
+    "term": "書院造",
+    "term_dummies": [
+      "能",
+      "狂言",
+      "水墨画"
+    ],
+    "explanation_template": "床の間などを備え、{{1}}の原型となった住宅様式。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "和室",
+        "dummies": [
+          "寝殿造",
+          "南蛮寺",
+          "山城"
+        ]
+      }
+    ],
+    "note": "東山文化と結び付く。",
+    "cloze_context": "書院造",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_7e1be1ac5846",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "term": "二毛作",
+    "term_dummies": [
+      "徳政令",
+      "一向一揆",
+      "石山本願寺"
+    ],
+    "explanation_template": "同じ田畑で、一年に{{1}}など異なる作物を続けて作る。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "米と麦",
+        "dummies": [
+          "米だけ",
+          "麦だけ",
+          "稲だけ"
+        ]
+      }
+    ],
+    "note": "一年に二種類の作物を作る。",
+    "cloze_context": "二毛作",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_93b74060b4b0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "term": "徳政令",
+    "term_dummies": [
+      "二毛作",
+      "一向一揆",
+      "石山本願寺"
+    ],
+    "explanation_template": "借金の{{1}}などを命じる法令。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "帳消し",
+        "dummies": [
+          "倍増",
+          "世襲",
+          "永久固定"
+        ]
+      }
+    ],
+    "note": "土一揆の要求にもなった。",
+    "cloze_context": "徳政令",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_89088dbc6693",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "term": "一向一揆",
+    "term_dummies": [
+      "二毛作",
+      "徳政令",
+      "石山本願寺"
+    ],
+    "explanation_template": "浄土真宗の信仰で結ばれた{{1}}らによる一揆。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "門徒",
+        "dummies": [
+          "大名全員",
+          "国司だけ",
+          "外国商人"
+        ]
+      }
+    ],
+    "note": "加賀などで大きな勢力となった。",
+    "cloze_context": "一向一揆",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_05ba0eac3cf2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "term": "石山本願寺",
+    "term_dummies": [
+      "二毛作",
+      "徳政令",
+      "一向一揆"
+    ],
+    "explanation_template": "戦国時代、{{1}}に抵抗した一向一揆の拠点。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "織田信長",
+        "dummies": [
+          "源頼朝",
+          "徳川吉宗",
+          "伊藤博文"
+        ]
+      }
+    ],
+    "note": "現在の大阪にあった。",
+    "cloze_context": "石山本願寺",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2e43c4a1d51b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "天下統一と幕府の人物",
+    "term": "織田信長",
+    "term_dummies": [
+      "豊臣秀吉",
+      "徳川家康",
+      "徳川家光"
+    ],
+    "explanation_template": "尾張から勢力を広げ、{{1}}を追放して室町幕府を滅ぼした。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "足利義昭",
+        "dummies": [
+          "足利尊氏",
+          "源頼朝",
+          "北条時宗"
+        ]
+      }
+    ],
+    "note": "楽市・楽座も進めた。",
+    "cloze_context": "織田信長",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_cce312833f98",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "天下統一と幕府の人物",
+    "term": "豊臣秀吉",
+    "term_dummies": [
+      "織田信長",
+      "徳川家康",
+      "徳川家光"
+    ],
+    "explanation_template": "全国統一を進め、太閤検地や{{1}}を行った人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "刀狩",
+        "dummies": [
+          "参勤交代",
+          "地租改正",
+          "廃藩置県"
+        ]
+      }
+    ],
+    "note": "農民と武士の身分分離を進めた。",
+    "cloze_context": "豊臣秀吉",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e474ca38b1b5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "天下統一と幕府の人物",
+    "term": "徳川家康",
+    "term_dummies": [
+      "織田信長",
+      "豊臣秀吉",
+      "徳川家光"
+    ],
+    "explanation_template": "1603年に征夷大将軍となり{{1}}幕府を開いた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "江戸",
+        "dummies": [
+          "鎌倉",
+          "室町",
+          "奈良"
+        ]
+      }
+    ],
+    "note": "関ヶ原の戦い後に支配を固めた。",
+    "cloze_context": "徳川家康",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ed48a7537316",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "天下統一と幕府の人物",
+    "term": "徳川家光",
+    "term_dummies": [
+      "織田信長",
+      "豊臣秀吉",
+      "徳川家康"
+    ],
+    "explanation_template": "大名の{{1}}を制度化した江戸幕府の三代将軍。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "参勤交代",
+        "dummies": [
+          "廃藩置県",
+          "楽市・楽座",
+          "地租改正"
+        ]
+      }
+    ],
+    "note": "武家諸法度を改めた。",
+    "cloze_context": "徳川家光",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_421505793b71",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕藩体制の大名と役職",
+    "term": "親藩",
+    "term_dummies": [
+      "譜代大名",
+      "外様大名",
+      "大老"
+    ],
+    "explanation_template": "徳川氏の{{1}}に当たる大名。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一族",
+        "dummies": [
+          "旧敵",
+          "外国人",
+          "百姓"
+        ]
+      }
+    ],
+    "note": "尾張・紀伊・水戸など。",
+    "cloze_context": "親藩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8e642ff97d98",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕藩体制の大名と役職",
+    "term": "譜代大名",
+    "term_dummies": [
+      "親藩",
+      "外様大名",
+      "大老"
+    ],
+    "explanation_template": "関ヶ原の戦い以前から徳川氏に従った{{1}}の大名。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "家臣",
+        "dummies": [
+          "公家",
+          "僧侶",
+          "外国使節"
+        ]
+      }
+    ],
+    "note": "幕府の要職に就く者もいた。",
+    "cloze_context": "譜代大名",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_25ddb06cba45",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕藩体制の大名と役職",
+    "term": "外様大名",
+    "term_dummies": [
+      "親藩",
+      "譜代大名",
+      "大老"
+    ],
+    "explanation_template": "主に関ヶ原の戦い前後から徳川氏に従った{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大名",
+        "dummies": [
+          "公家",
+          "旗本",
+          "御家人"
+        ]
+      }
+    ],
+    "note": "加賀の前田氏など。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a10c242282d1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕藩体制の大名と役職",
+    "term": "大老",
+    "term_dummies": [
+      "親藩",
+      "譜代大名",
+      "外様大名"
+    ],
+    "explanation_template": "江戸幕府で、{{1}}の上に臨時に置かれた最高職。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "老中",
+        "dummies": [
+          "国司",
+          "地頭",
+          "関白"
+        ]
+      }
+    ],
+    "note": "井伊直弼などが就いた。",
+    "cloze_context": "大老",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ae08860c2ca3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の村と年貢",
+    "term": "本百姓",
+    "term_dummies": [
+      "水呑百姓",
+      "年貢",
+      "村請制"
+    ],
+    "explanation_template": "江戸時代、田畑や屋敷を持ち{{1}}を負担した百姓。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "年貢など",
+        "dummies": [
+          "関税のみ",
+          "地租のみ",
+          "所得税のみ"
+        ]
+      }
+    ],
+    "note": "村の運営にも関わった。",
+    "cloze_context": "本百姓",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_1cd4d7b79a23",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の村と年貢",
+    "term": "水呑百姓",
+    "term_dummies": [
+      "本百姓",
+      "年貢",
+      "村請制"
+    ],
+    "explanation_template": "江戸時代、自分の{{1}}を持たない百姓。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "田畑",
+        "dummies": [
+          "国籍",
+          "宗教",
+          "言語"
+        ]
+      }
+    ],
+    "note": "小作や日雇いなどで暮らした。",
+    "cloze_context": "水呑百姓",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3b69dc14e4a6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の村と年貢",
+    "term": "年貢",
+    "term_dummies": [
+      "本百姓",
+      "水呑百姓",
+      "村請制"
+    ],
+    "explanation_template": "江戸時代、百姓が領主へ主に{{1}}などで納めた税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "米",
+        "dummies": [
+          "株券",
+          "紙幣のみ",
+          "小判のみ"
+        ]
+      }
+    ],
+    "note": "土地の生産力が基準となった。",
+    "cloze_context": "年貢",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_346c3eee3d9b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の村と年貢",
+    "term": "村請制",
+    "term_dummies": [
+      "本百姓",
+      "水呑百姓",
+      "年貢"
+    ],
+    "explanation_template": "江戸時代、年貢を{{1}}全体で請け負う仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "村",
+        "dummies": [
+          "藩",
+          "全国",
+          "寺院のみ"
+        ]
+      }
+    ],
+    "note": "納税の責任を村が負った。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c59e2345348f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "term": "蝦夷地",
+    "term_dummies": [
+      "琉球王国",
+      "対馬藩",
+      "出島"
+    ],
+    "explanation_template": "江戸時代、松前藩が{{1}}の人々との交易に関わった地域。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アイヌ",
+        "dummies": [
+          "琉球",
+          "朝鮮",
+          "オランダ"
+        ]
+      }
+    ],
+    "note": "現在の北海道を中心とする。",
+    "cloze_context": "蝦夷地",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_267ea5036018",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "term": "琉球王国",
+    "term_dummies": [
+      "蝦夷地",
+      "対馬藩",
+      "出島"
+    ],
+    "explanation_template": "江戸時代、薩摩藩の支配を受けつつ{{1}}との関係も保った国。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中国",
+        "dummies": [
+          "イギリス",
+          "ロシア",
+          "フランス"
+        ]
+      }
+    ],
+    "note": "二つの相手との関係を考える。",
+    "cloze_context": "琉球王国",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8f945de2f677",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "term": "対馬藩",
+    "term_dummies": [
+      "蝦夷地",
+      "琉球王国",
+      "出島"
+    ],
+    "explanation_template": "江戸時代、{{1}}との外交や貿易の窓口を担った藩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "朝鮮",
+        "dummies": [
+          "オランダ",
+          "清",
+          "ロシア"
+        ]
+      }
+    ],
+    "note": "宗氏が治めた。",
+    "cloze_context": "対馬藩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fe8eccf66345",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "term": "出島",
+    "term_dummies": [
+      "蝦夷地",
+      "琉球王国",
+      "対馬藩"
+    ],
+    "explanation_template": "江戸時代、オランダ商館が置かれた{{1}}の人工島。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "長崎",
+        "dummies": [
+          "堺",
+          "横浜",
+          "新潟"
+        ]
+      }
+    ],
+    "note": "中国商人の居住地とは区別する。",
+    "cloze_context": "出島",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_18c760e818f6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の学問と教育",
+    "term": "寺子屋",
+    "term_dummies": [
+      "国学",
+      "本居宣長",
+      "伊能忠敬"
+    ],
+    "explanation_template": "江戸時代、庶民の子に読み書きや{{1}}を教えた学びの場。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "そろばん",
+        "dummies": [
+          "兵法だけ",
+          "和歌だけ",
+          "仏典だけ"
+        ]
+      }
+    ],
+    "note": "庶民教育の広がりを示す。",
+    "cloze_context": "寺子屋",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f290cfa89dba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の学問と教育",
+    "term": "国学",
+    "term_dummies": [
+      "寺子屋",
+      "本居宣長",
+      "伊能忠敬"
+    ],
+    "explanation_template": "古典を研究し、日本古来の{{1}}などを考えた学問。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "思想",
+        "dummies": [
+          "西洋医学",
+          "大砲の製法",
+          "朱子学"
+        ]
+      }
+    ],
+    "note": "本居宣長らが発展させた。",
+    "cloze_context": "国学",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8f5ff8658738",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の学問と教育",
+    "term": "本居宣長",
+    "term_dummies": [
+      "寺子屋",
+      "国学",
+      "伊能忠敬"
+    ],
+    "explanation_template": "古事記を研究し、{{1}}を大成した人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国学",
+        "dummies": [
+          "蘭学",
+          "朱子学",
+          "陽明学"
+        ]
+      }
+    ],
+    "note": "古事記伝を著した。",
+    "cloze_context": "本居宣長",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_75c95bf701a0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の学問と教育",
+    "term": "伊能忠敬",
+    "term_dummies": [
+      "寺子屋",
+      "国学",
+      "本居宣長"
+    ],
+    "explanation_template": "全国の沿岸などを{{1}}し、精密な日本地図作りを進めた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "測量",
+        "dummies": [
+          "検地だけ",
+          "開墾",
+          "植林"
+        ]
+      }
+    ],
+    "note": "実地調査と地図の結び付きを確認。",
+    "cloze_context": "伊能忠敬",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_98d64765d863",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交易と文化",
+    "term": "南蛮貿易",
+    "term_dummies": [
+      "鉄砲伝来",
+      "桃山文化",
+      "公事方御定書"
+    ],
+    "explanation_template": "16世紀、ポルトガル人や{{1}}人らとの貿易。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "スペイン",
+        "dummies": [
+          "ロシア",
+          "アメリカ",
+          "インド"
+        ]
+      }
+    ],
+    "note": "銀などが輸出された。",
+    "cloze_context": "南蛮貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_10cfc94f20e4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交易と文化",
+    "term": "鉄砲伝来",
+    "term_dummies": [
+      "南蛮貿易",
+      "桃山文化",
+      "公事方御定書"
+    ],
+    "explanation_template": "1543年、ポルトガル人を乗せた船が{{1}}に来た出来事。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "種子島",
+        "dummies": [
+          "出島",
+          "対馬",
+          "佐渡"
+        ]
+      }
+    ],
+    "note": "戦い方の変化につながった。",
+    "cloze_context": "鉄砲伝来",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_1b1b58e0dd7d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交易と文化",
+    "term": "桃山文化",
+    "term_dummies": [
+      "南蛮貿易",
+      "鉄砲伝来",
+      "公事方御定書"
+    ],
+    "explanation_template": "豪華で壮大な城や{{1}}画などに特色がある文化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "障壁",
+        "dummies": [
+          "浮世絵版",
+          "水彩風景",
+          "銅版地図"
+        ]
+      }
+    ],
+    "note": "大名や豪商が担い手となった。",
+    "cloze_context": "桃山文化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_14cb8b279a1b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の交易と文化",
+    "term": "公事方御定書",
+    "term_dummies": [
+      "南蛮貿易",
+      "鉄砲伝来",
+      "桃山文化"
+    ],
+    "explanation_template": "徳川吉宗の時代に整えられた{{1}}の基準。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "裁判",
+        "dummies": [
+          "貿易許可",
+          "天皇即位",
+          "徴兵"
+        ]
+      }
+    ],
+    "note": "享保の改革の一環。",
+    "cloze_context": "公事方御定書",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_084517546edb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕末と新政府",
+    "term": "大政奉還",
+    "term_dummies": [
+      "王政復古の大号令",
+      "五箇条の御誓文",
+      "戊辰戦争"
+    ],
+    "explanation_template": "1867年、徳川慶喜が{{1}}を朝廷に返したこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "政権",
+        "dummies": [
+          "幕府の借金",
+          "全藩の領地",
+          "条約締結権だけ"
+        ]
+      }
+    ],
+    "note": "幕府の政治権力返上。",
+    "cloze_context": "大政奉還",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6567027ec5b7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕末と新政府",
+    "term": "王政復古の大号令",
+    "term_dummies": [
+      "大政奉還",
+      "五箇条の御誓文",
+      "戊辰戦争"
+    ],
+    "explanation_template": "1867年、幕府を廃止し{{1}}の成立を宣言したもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "新政府",
+        "dummies": [
+          "帝国議会",
+          "国際連盟",
+          "鎌倉幕府"
+        ]
+      }
+    ],
+    "note": "大政奉還との違いを確認。",
+    "cloze_context": "王政復古の大号令",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_700aa441bf2b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕末と新政府",
+    "term": "五箇条の御誓文",
+    "term_dummies": [
+      "大政奉還",
+      "王政復古の大号令",
+      "戊辰戦争"
+    ],
+    "explanation_template": "1868年、新政府の{{1}}を示した誓い。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "基本方針",
+        "dummies": [
+          "刑罰一覧",
+          "関税率",
+          "選挙区"
+        ]
+      }
+    ],
+    "note": "広く会議を興すことなどを示す。",
+    "cloze_context": "五箇条の御誓文",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3d2995157688",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "幕末と新政府",
+    "term": "戊辰戦争",
+    "term_dummies": [
+      "大政奉還",
+      "王政復古の大号令",
+      "五箇条の御誓文"
+    ],
+    "explanation_template": "1868年から、新政府軍と{{1}}勢力が戦った内戦。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "旧幕府",
+        "dummies": [
+          "元",
+          "連合国",
+          "鎌倉幕府"
+        ]
+      }
+    ],
+    "note": "各地で戦闘が起こった。",
+    "cloze_context": "戊辰戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a1a90baf596b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治の制度と外交",
+    "term": "明治維新",
+    "term_dummies": [
+      "解放令",
+      "岩倉使節団",
+      "三国干渉"
+    ],
+    "explanation_template": "幕末から明治初期に進んだ{{1}}の大きな変革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "政治や社会",
+        "dummies": [
+          "朝廷儀礼だけ",
+          "衣服だけ",
+          "税率だけ"
+        ]
+      }
+    ],
+    "note": "近代国家づくりにつながった。",
+    "cloze_context": "明治維新",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_647654b939ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治の制度と外交",
+    "term": "解放令",
+    "term_dummies": [
+      "明治維新",
+      "岩倉使節団",
+      "三国干渉"
+    ],
+    "explanation_template": "1871年、えた・ひにんという{{1}}を廃止した布告。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "身分呼称",
+        "dummies": [
+          "租税全般",
+          "学校制度",
+          "選挙権"
+        ]
+      }
+    ],
+    "note": "その後も差別が残った。",
+    "cloze_context": "解放令",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_093140d927d7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治の制度と外交",
+    "term": "岩倉使節団",
+    "term_dummies": [
+      "明治維新",
+      "解放令",
+      "三国干渉"
+    ],
+    "explanation_template": "1871年に出発し、欧米視察と{{1}}の交渉を試みた使節団。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "条約改正",
+        "dummies": [
+          "日韓併合",
+          "軍縮",
+          "国連加盟"
+        ]
+      }
+    ],
+    "note": "岩倉具視が大使を務めた。",
+    "cloze_context": "岩倉使節団",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_54c0cbc0aa3f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "明治の制度と外交",
+    "term": "三国干渉",
+    "term_dummies": [
+      "明治維新",
+      "解放令",
+      "岩倉使節団"
+    ],
+    "explanation_template": "日清戦争後、三国が{{1}}半島の返還を日本に要求したこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "遼東",
+        "dummies": [
+          "朝鮮",
+          "伊豆",
+          "マレー"
+        ]
+      }
+    ],
+    "note": "ロシア・ドイツ・フランスが干渉。",
+    "cloze_context": "三国干渉",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0c50e2a7b3f4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の人物",
+    "term": "福沢諭吉",
+    "term_dummies": [
+      "板垣退助",
+      "大久保利通",
+      "伊藤博文"
+    ],
+    "explanation_template": "学問のすゝめで、{{1}}の大切さを説いた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "学問や独立",
+        "dummies": [
+          "鎖国",
+          "身分の固定",
+          "幕府への服従"
+        ]
+      }
+    ],
+    "note": "欧米の思想を紹介した。",
+    "cloze_context": "福沢諭吉",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0e7ae759c4fe",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の人物",
+    "term": "板垣退助",
+    "term_dummies": [
+      "福沢諭吉",
+      "大久保利通",
+      "伊藤博文"
+    ],
+    "explanation_template": "民撰議院設立建白書を提出し、{{1}}を進めた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自由民権運動",
+        "dummies": [
+          "鎖国",
+          "大化の改新",
+          "農地改革"
+        ]
+      }
+    ],
+    "note": "国会開設を求めた。",
+    "cloze_context": "板垣退助",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e0907b9e90bf",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の人物",
+    "term": "大久保利通",
+    "term_dummies": [
+      "福沢諭吉",
+      "板垣退助",
+      "伊藤博文"
+    ],
+    "explanation_template": "明治政府で、{{1}}政策などを推進した人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "殖産興業",
+        "dummies": [
+          "農地改革",
+          "財閥解体",
+          "自由民権運動"
+        ]
+      }
+    ],
+    "note": "官営工場の設立などを進めた。",
+    "cloze_context": "大久保利通",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_47eabde4d72f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代日本の人物",
+    "term": "伊藤博文",
+    "term_dummies": [
+      "福沢諭吉",
+      "板垣退助",
+      "大久保利通"
+    ],
+    "explanation_template": "初代内閣総理大臣となり、{{1}}の制定を進めた人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大日本帝国憲法",
+        "dummies": [
+          "日本国憲法",
+          "十七条の憲法",
+          "御成敗式目"
+        ]
+      }
+    ],
+    "note": "ドイツの制度などを参考にした。",
+    "cloze_context": "伊藤博文",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_877e5be1faa5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の欧米の変化",
+    "term": "ルネサンス",
+    "term_dummies": [
+      "宗教改革",
+      "大航海時代",
+      "市民革命"
+    ],
+    "explanation_template": "古代ギリシャ・ローマ文化を見直し、{{1}}を重視した動き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "人間性",
+        "dummies": [
+          "身分固定",
+          "鎖国",
+          "偶像禁止"
+        ]
+      }
+    ],
+    "note": "イタリアから各地へ広がった。",
+    "cloze_context": "ルネサンス",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_314e48585a6f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の欧米の変化",
+    "term": "宗教改革",
+    "term_dummies": [
+      "ルネサンス",
+      "大航海時代",
+      "市民革命"
+    ],
+    "explanation_template": "ルターらが{{1}}教会を批判して始めた改革。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "カトリック",
+        "dummies": [
+          "正教会",
+          "聖公会",
+          "仏教"
+        ]
+      }
+    ],
+    "note": "プロテスタントの成立につながる。",
+    "cloze_context": "宗教改革",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_363b6778fb9d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の欧米の変化",
+    "term": "大航海時代",
+    "term_dummies": [
+      "ルネサンス",
+      "宗教改革",
+      "市民革命"
+    ],
+    "explanation_template": "欧州の人々が新航路を開き、{{1}}へ進出した時代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アジアやアメリカ",
+        "dummies": [
+          "欧州内陸だけ",
+          "地中海沿岸だけ",
+          "北極海だけ"
+        ]
+      }
+    ],
+    "note": "植民地化や交易拡大が進んだ。",
+    "cloze_context": "大航海時代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fd8255076c21",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の欧米の変化",
+    "term": "市民革命",
+    "term_dummies": [
+      "ルネサンス",
+      "宗教改革",
+      "大航海時代"
+    ],
+    "explanation_template": "王の専制などを倒し、{{1}}の自由や権利を求めた革命。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "市民",
+        "dummies": [
+          "王族だけ",
+          "領主だけ",
+          "聖職者だけ"
+        ]
+      }
+    ],
+    "note": "イギリス・フランスなどで起こった。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f66909e0c59d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と独裁",
+    "term": "ニューディール政策",
+    "term_dummies": [
+      "ブロック経済",
+      "ファシズム",
+      "ナチス"
+    ],
+    "explanation_template": "世界恐慌に対し、米国が{{1}}を拡大した政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "公共事業",
+        "dummies": [
+          "鎖国",
+          "植民地独立禁止",
+          "軍部統治"
+        ]
+      }
+    ],
+    "note": "雇用と需要の回復を目指した。",
+    "cloze_context": "ニューディール政策",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3dbf9f3be869",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と独裁",
+    "term": "ブロック経済",
+    "term_dummies": [
+      "ニューディール政策",
+      "ファシズム",
+      "ナチス"
+    ],
+    "explanation_template": "本国と植民地などの間を優遇し、域外に{{1}}を設ける政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "高い関税",
+        "dummies": [
+          "普通選挙",
+          "無料通貨",
+          "土地配分"
+        ]
+      }
+    ],
+    "note": "世界貿易の縮小を招いた。",
+    "cloze_context": "ブロック経済",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_490573206bcc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と独裁",
+    "term": "ファシズム",
+    "term_dummies": [
+      "ニューディール政策",
+      "ブロック経済",
+      "ナチス"
+    ],
+    "explanation_template": "独裁と{{1}}を重視し、自由や民主主義を抑える思想・体制。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国家への服従",
+        "dummies": [
+          "議会の優越",
+          "個人の自由",
+          "政権交代"
+        ]
+      }
+    ],
+    "note": "イタリアなどで台頭した。",
+    "cloze_context": "ファシズム",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4fc11d53bb54",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と独裁",
+    "term": "ナチス",
+    "term_dummies": [
+      "ニューディール政策",
+      "ブロック経済",
+      "ファシズム"
+    ],
+    "explanation_template": "ヒトラーが率い、{{1}}で独裁を進めた政党。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ドイツ",
+        "dummies": [
+          "イタリア",
+          "ソ連",
+          "アメリカ"
+        ]
+      }
+    ],
+    "note": "ユダヤ人などを迫害した。",
+    "cloze_context": "ナチス",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ca60457acbbc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "政党政治と軍部",
+    "term": "米騒動",
+    "term_dummies": [
+      "原敬",
+      "五・一五事件",
+      "二・二六事件"
+    ],
+    "explanation_template": "1918年、{{1}}の高騰を背景に全国へ広がった民衆の動き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "米価",
+        "dummies": [
+          "原油価格",
+          "銀価格",
+          "地価"
+        ]
+      }
+    ],
+    "note": "本格的な政党内閣成立につながる。",
+    "cloze_context": "米騒動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_21d5bfdf33ef",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "政党政治と軍部",
+    "term": "原敬",
+    "term_dummies": [
+      "米騒動",
+      "五・一五事件",
+      "二・二六事件"
+    ],
+    "explanation_template": "1918年、{{1}}を基盤に本格的な政党内閣を組織した人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "立憲政友会",
+        "dummies": [
+          "自由民主党",
+          "日本社会党",
+          "ナチス"
+        ]
+      }
+    ],
+    "note": "米騒動後に首相となった。",
+    "cloze_context": "原敬",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_bb8cad8fc55c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "政党政治と軍部",
+    "term": "五・一五事件",
+    "term_dummies": [
+      "米騒動",
+      "原敬",
+      "二・二六事件"
+    ],
+    "explanation_template": "1932年、海軍青年将校らが{{1}}首相を殺害した事件。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "犬養毅",
+        "dummies": [
+          "原敬",
+          "伊藤博文",
+          "吉田茂"
+        ]
+      }
+    ],
+    "note": "政党内閣が途絶えた。",
+    "cloze_context": "五・一五事件",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4fbb7e4b3dd9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "政党政治と軍部",
+    "term": "二・二六事件",
+    "term_dummies": [
+      "米騒動",
+      "原敬",
+      "五・一五事件"
+    ],
+    "explanation_template": "1936年、{{1}}青年将校らが政府要人を襲った事件。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "陸軍",
+        "dummies": [
+          "海軍",
+          "警察",
+          "商船"
+        ]
+      }
+    ],
+    "note": "軍部の政治への影響が強まった。",
+    "cloze_context": "二・二六事件",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_815fc4cdb621",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦争の拡大",
+    "term": "日中戦争",
+    "term_dummies": [
+      "太平洋戦争",
+      "日独伊三国同盟",
+      "ポツダム宣言"
+    ],
+    "explanation_template": "1937年、{{1}}事件をきっかけに本格化した戦争。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "盧溝橋",
+        "dummies": [
+          "柳条湖",
+          "五・一五",
+          "二・二六"
+        ]
+      }
+    ],
+    "note": "中国との戦争が長期化した。",
+    "cloze_context": "日中戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ac6f908a0970",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦争の拡大",
+    "term": "太平洋戦争",
+    "term_dummies": [
+      "日中戦争",
+      "日独伊三国同盟",
+      "ポツダム宣言"
+    ],
+    "explanation_template": "1941年、日本が米英などと開戦し{{1}}年まで続いた戦争。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1945",
+        "dummies": [
+          "1918",
+          "1931",
+          "1951"
+        ]
+      }
+    ],
+    "note": "アジア・太平洋に戦禍が広がった。",
+    "cloze_context": "太平洋戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6996bc2c16d8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦争の拡大",
+    "term": "日独伊三国同盟",
+    "term_dummies": [
+      "日中戦争",
+      "太平洋戦争",
+      "ポツダム宣言"
+    ],
+    "explanation_template": "{{1}}年、日本・ドイツ・イタリアが結んだ軍事同盟。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1940",
+        "dummies": [
+          "1902",
+          "1919",
+          "1951"
+        ]
+      }
+    ],
+    "note": "米英との対立が深まった。",
+    "cloze_context": "日独伊三国同盟",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6efe400c65b1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦争の拡大",
+    "term": "ポツダム宣言",
+    "term_dummies": [
+      "日中戦争",
+      "太平洋戦争",
+      "日独伊三国同盟"
+    ],
+    "explanation_template": "1945年、日本に{{1}}を求めた宣言。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "降伏",
+        "dummies": [
+          "国連加盟",
+          "軍事同盟",
+          "植民地拡大"
+        ]
+      }
+    ],
+    "note": "日本は受諾して戦争を終えた。",
+    "cloze_context": "ポツダム宣言",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_290f8d56f69c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民族運動と植民地",
+    "term": "韓国併合",
+    "term_dummies": [
+      "三・一独立運動",
+      "ガンディー",
+      "民族自決"
+    ],
+    "explanation_template": "1910年、日本が韓国を{{1}}にしたこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "植民地",
+        "dummies": [
+          "対等な連邦国",
+          "独立共和国",
+          "対等な同盟国"
+        ]
+      }
+    ],
+    "note": "朝鮮の人々の抵抗を招いた。",
+    "cloze_context": "韓国併合",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2cf2501349ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民族運動と植民地",
+    "term": "三・一独立運動",
+    "term_dummies": [
+      "韓国併合",
+      "ガンディー",
+      "民族自決"
+    ],
+    "explanation_template": "1919年、{{1}}で日本からの独立を求めた運動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "朝鮮",
+        "dummies": [
+          "インド",
+          "中国",
+          "ベトナム"
+        ]
+      }
+    ],
+    "note": "日本の植民地支配下で起こった。",
+    "cloze_context": "三・一独立運動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d15bf64b2aab",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民族運動と植民地",
+    "term": "ガンディー",
+    "term_dummies": [
+      "韓国併合",
+      "三・一独立運動",
+      "民族自決"
+    ],
+    "explanation_template": "{{1}}・不服従によるインドの独立運動を指導した人物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "非暴力",
+        "dummies": [
+          "軍事独裁",
+          "植民地拡大",
+          "鎖国"
+        ]
+      }
+    ],
+    "note": "イギリスの支配に抵抗した。",
+    "cloze_context": "ガンディー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_747c36f8c43f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "民族運動と植民地",
+    "term": "民族自決",
+    "term_dummies": [
+      "韓国併合",
+      "三・一独立運動",
+      "ガンディー"
+    ],
+    "explanation_template": "各民族が自らの{{1}}を決めるべきだという考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "政治的なあり方",
+        "dummies": [
+          "他民族の運命",
+          "外国の税率",
+          "海流"
+        ]
+      }
+    ],
+    "note": "第一次大戦後も適用に限界があった。",
+    "cloze_context": "民族自決",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f98469b46965",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦時下の生活と被害",
+    "term": "関東大震災",
+    "term_dummies": [
+      "学徒出陣",
+      "集団疎開",
+      "東京大空襲"
+    ],
+    "explanation_template": "1923年、関東地方に大きな被害を与えた{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地震",
+        "dummies": [
+          "津波のみ",
+          "噴火",
+          "戦争"
+        ]
+      }
+    ],
+    "note": "流言による朝鮮人らへの虐殺も起きた。",
+    "cloze_context": "関東大震災",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c6144a2083e0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦時下の生活と被害",
+    "term": "学徒出陣",
+    "term_dummies": [
+      "関東大震災",
+      "集団疎開",
+      "東京大空襲"
+    ],
+    "explanation_template": "1943年、徴兵猶予の縮小で主に{{1}}系学生が出征したこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "文科",
+        "dummies": [
+          "理科",
+          "工科",
+          "医科"
+        ]
+      }
+    ],
+    "note": "戦争で動員が拡大した。",
+    "cloze_context": "学徒出陣",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3eff4ca5cf6e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦時下の生活と被害",
+    "term": "集団疎開",
+    "term_dummies": [
+      "関東大震災",
+      "学徒出陣",
+      "東京大空襲"
+    ],
+    "explanation_template": "空襲を避けるため、都市の{{1}}らが集団で地方へ移ったこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "学童",
+        "dummies": [
+          "大名",
+          "御家人",
+          "国司"
+        ]
+      }
+    ],
+    "note": "家族と離れた生活も強いられた。",
+    "cloze_context": "集団疎開",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_dad81758285b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "戦時下の生活と被害",
+    "term": "東京大空襲",
+    "term_dummies": [
+      "関東大震災",
+      "学徒出陣",
+      "集団疎開"
+    ],
+    "explanation_template": "1945年3月、東京が大規模な{{1}}を受けた出来事。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "空襲",
+        "dummies": [
+          "原爆投下",
+          "上陸戦",
+          "津波"
+        ]
+      }
+    ],
+    "note": "多くの民間人が犠牲になった。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_b484dd9f600c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "term": "日本国憲法",
+    "term_dummies": [
+      "女性参政権",
+      "象徴天皇制",
+      "労働三権"
+    ],
+    "explanation_template": "1947年施行、主権が{{1}}にあると定める憲法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国民",
+        "dummies": [
+          "天皇",
+          "軍部",
+          "貴族"
+        ]
+      }
+    ],
+    "note": "大日本帝国憲法との違いを確認。",
+    "cloze_context": "日本国憲法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_7c5320df9ae4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "term": "女性参政権",
+    "term_dummies": [
+      "日本国憲法",
+      "象徴天皇制",
+      "労働三権"
+    ],
+    "explanation_template": "戦後の改革で、女性にも{{1}}が認められたこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "選挙権など",
+        "dummies": [
+          "兵役義務",
+          "年貢免除",
+          "華族の身分"
+        ]
+      }
+    ],
+    "note": "1946年の総選挙で行使された。",
+    "cloze_context": "女性参政権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3d0f5dfa8773",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "term": "象徴天皇制",
+    "term_dummies": [
+      "日本国憲法",
+      "女性参政権",
+      "労働三権"
+    ],
+    "explanation_template": "日本国憲法で、天皇を日本国と国民統合の{{1}}とする制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "象徴",
+        "dummies": [
+          "主権者",
+          "立法者",
+          "統治者"
+        ]
+      }
+    ],
+    "note": "国政に関する権能を持たない。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6e370fcf2a22",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "term": "労働三権",
+    "term_dummies": [
+      "日本国憲法",
+      "女性参政権",
+      "象徴天皇制"
+    ],
+    "explanation_template": "団結権・団体交渉権・{{1}}の総称。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "団体行動権",
+        "dummies": [
+          "財産権",
+          "参政権",
+          "請求権"
+        ]
+      }
+    ],
+    "note": "戦後の労働者の権利保障を確認。",
+    "cloze_context": "労働三権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_78b333a2e3b4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後日本の外交",
+    "term": "沖縄返還",
+    "term_dummies": [
+      "日韓基本条約",
+      "日中平和友好条約",
+      "非核三原則"
+    ],
+    "explanation_template": "1972年、米国から日本へ沖縄の{{1}}が返還されたこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "施政権",
+        "dummies": [
+          "領事裁判権",
+          "関税自主権",
+          "参政権"
+        ]
+      }
+    ],
+    "note": "返還後も米軍基地が残った。",
+    "cloze_context": "沖縄返還",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_c450699294f2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後日本の外交",
+    "term": "日韓基本条約",
+    "term_dummies": [
+      "沖縄返還",
+      "日中平和友好条約",
+      "非核三原則"
+    ],
+    "explanation_template": "1965年、日本と{{1}}の国交正常化を定めた条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大韓民国",
+        "dummies": [
+          "朝鮮民主主義人民共和国",
+          "中華人民共和国",
+          "ソ連"
+        ]
+      }
+    ],
+    "note": "韓国との関係を確認する。",
+    "cloze_context": "日韓基本条約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6226a4f0d1f5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後日本の外交",
+    "term": "日中平和友好条約",
+    "term_dummies": [
+      "沖縄返還",
+      "日韓基本条約",
+      "非核三原則"
+    ],
+    "explanation_template": "1978年、日本と中国が平和と{{1}}を掲げて結んだ条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "友好",
+        "dummies": [
+          "共同統治",
+          "軍事占領",
+          "植民地支配"
+        ]
+      }
+    ],
+    "note": "国交正常化の共同声明とは別。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a57092e7322a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後日本の外交",
+    "term": "非核三原則",
+    "term_dummies": [
+      "沖縄返還",
+      "日韓基本条約",
+      "日中平和友好条約"
+    ],
+    "explanation_template": "核兵器を持たず、作らず、{{1}}という原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "持ち込ませず",
+        "dummies": [
+          "輸出せず",
+          "研究せず",
+          "使用せず"
+        ]
+      }
+    ],
+    "note": "日本の核兵器に関する基本方針。",
+    "cloze_context": "非核三原則",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_7f99947de4d5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界の変化",
+    "term": "ベトナム戦争",
+    "term_dummies": [
+      "東西ドイツ統一",
+      "ソ連解体",
+      "バンドン会議"
+    ],
+    "explanation_template": "ベトナムの分断下で拡大し、{{1}}が大規模に介入した戦争。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "アメリカ",
+        "dummies": [
+          "日本",
+          "イタリア",
+          "スペイン"
+        ]
+      }
+    ],
+    "note": "1975年に戦争が終わった。",
+    "cloze_context": "ベトナム戦争",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_cc54379674d5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界の変化",
+    "term": "東西ドイツ統一",
+    "term_dummies": [
+      "ベトナム戦争",
+      "ソ連解体",
+      "バンドン会議"
+    ],
+    "explanation_template": "1990年、冷戦で分断された{{1}}が統一された出来事。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ドイツ",
+        "dummies": [
+          "朝鮮",
+          "ベトナム",
+          "中国"
+        ]
+      }
+    ],
+    "note": "ベルリンの壁開放の翌年。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_cc8c5518b0d8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界の変化",
+    "term": "ソ連解体",
+    "term_dummies": [
+      "ベトナム戦争",
+      "東西ドイツ統一",
+      "バンドン会議"
+    ],
+    "explanation_template": "{{1}}年、ソビエト社会主義共和国連邦が解体した出来事。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1991",
+        "dummies": [
+          "1917",
+          "1945",
+          "1962"
+        ]
+      }
+    ],
+    "note": "冷戦後の国際秩序が変化した。",
+    "cloze_context": "ソ連解体",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_cb052eb133e5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界の変化",
+    "term": "バンドン会議",
+    "term_dummies": [
+      "ベトナム戦争",
+      "東西ドイツ統一",
+      "ソ連解体"
+    ],
+    "explanation_template": "1955年、アジア・アフリカ諸国が{{1}}などを掲げた会議。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "平和共存",
+        "dummies": [
+          "植民地拡大",
+          "核軍拡",
+          "人種隔離"
+        ]
+      }
+    ],
+    "note": "新しく独立した国々も参加した。",
+    "cloze_context": "バンドン会議",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_93fbfa55d51d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の社会と課題",
+    "term": "公害対策基本法",
+    "term_dummies": [
+      "男女雇用機会均等法",
+      "バブル経済",
+      "貿易摩擦"
+    ],
+    "explanation_template": "1967年、{{1}}への対策の基本を定めた法律。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "公害",
+        "dummies": [
+          "地租",
+          "学制",
+          "関税"
+        ]
+      }
+    ],
+    "note": "現在は環境基本法に引き継がれた。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9ff034dd510d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の社会と課題",
+    "term": "男女雇用機会均等法",
+    "term_dummies": [
+      "公害対策基本法",
+      "バブル経済",
+      "貿易摩擦"
+    ],
+    "explanation_template": "雇用での{{1}}の機会と待遇の均等を目指す法律。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "男女",
+        "dummies": [
+          "都市間",
+          "国家間",
+          "企業間"
+        ]
+      }
+    ],
+    "note": "1985年成立、翌年施行。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_687a3a9512f6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の社会と課題",
+    "term": "バブル経済",
+    "term_dummies": [
+      "公害対策基本法",
+      "男女雇用機会均等法",
+      "貿易摩擦"
+    ],
+    "explanation_template": "1980年代後半、株価や{{1}}が実体から離れて高騰した経済。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地価",
+        "dummies": [
+          "公定歩合",
+          "小作料",
+          "関税率"
+        ]
+      }
+    ],
+    "note": "その後、価格が下落した。",
+    "cloze_context": "バブル経済",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d4e5c078c870",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の社会と課題",
+    "term": "貿易摩擦",
+    "term_dummies": [
+      "公害対策基本法",
+      "男女雇用機会均等法",
+      "バブル経済"
+    ],
+    "explanation_template": "輸出入の偏りなどを背景に、国の間で{{1}}が起こること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "経済的な対立",
+        "dummies": [
+          "国境の消滅",
+          "通貨の統一",
+          "軍事的統合"
+        ]
+      }
+    ],
+    "note": "日本の輸出拡大でも問題となった。",
+    "cloze_context": "貿易摩擦",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1d4e018e2cce",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史の調べ方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の古い建物を調べる時、まず確かめたいのは？",
+    "answer": "建築時期と当時の用途",
+    "dummies": [
+      "今の人気だけ",
+      "外壁の色だけ",
+      "案内文の文字数だけ"
+    ],
+    "note": "建物の変化も資料と照合する。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_57d79a99cd9a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史の調べ方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の伝承を歴史の説明に使う時の注意は？",
+    "answer": "他の記録や遺物とも比べる",
+    "dummies": [
+      "全て事実と断定する",
+      "古ければ全て捨てる",
+      "伝えた人数だけで決める"
+    ],
+    "note": "伝承と確認できる事実を区別。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0e1df6e98a0b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史の調べ方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "昔と今の地域の地図を比べる主な目的は？",
+    "answer": "土地利用の変化を調べる",
+    "dummies": [
+      "昔の天気を断定する",
+      "住民の性格を決める",
+      "地図の価格だけを比べる"
+    ],
+    "note": "年代や縮尺の違いにも注意。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_bf5c2caeae14",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史の調べ方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の人物の功績を調べる際の基本は？",
+    "answer": "同時代の資料とも照合する",
+    "dummies": [
+      "伝記一冊だけを絶対視する",
+      "出身地だけで評価する",
+      "有名なら全て正しいとする"
+    ],
+    "note": "複数の立場から考える。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2c26bcbdc373",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史資料の扱い",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ戦いの記録で内容が違う時は？",
+    "answer": "書き手の立場や目的を比べる",
+    "dummies": [
+      "長い方を必ず正しいとする",
+      "新しい紙の方だけ信じる",
+      "多数派の記録だけ残す"
+    ],
+    "note": "資料の成立事情を確認する。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_02465250b2c8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "歴史資料の扱い",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "後世の歴史小説を史実と区別する理由は？",
+    "answer": "創作が含まれることがある",
+    "dummies": [
+      "古い出来事を扱えない",
+      "登場人物が全て実在する",
+      "書かれたことは全て事実"
+    ],
+    "note": "作品と同時代資料を区別。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0f00ce6deeae",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "年代と時代の見方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古い順に並んでいるのは？",
+    "answer": "縄文・弥生・古墳",
+    "dummies": [
+      "弥生・縄文・古墳",
+      "古墳・弥生・縄文",
+      "縄文・古墳・弥生"
+    ],
+    "note": "土器や墓の変化と結び付ける。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e2d31a51d5a4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "年代と時代の見方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "8世紀に含まれる年は？",
+    "answer": "710年",
+    "dummies": [
+      "645年",
+      "894年",
+      "1185年"
+    ],
+    "note": "8世紀は701年から800年。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6bf4cfaca5fb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代文明の特色",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古代エジプトで文字や測量が発達した背景は？",
+    "answer": "徴税や耕地管理の必要",
+    "dummies": [
+      "蒸気機関の普及",
+      "議会政治の確立",
+      "工場労働者の増加"
+    ],
+    "note": "ナイル川の増水と農業も関係。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_da091e0ea377",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代文明の特色",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "漢字のもととなる甲骨文字を使った王朝は？",
+    "answer": "殷",
+    "dummies": [
+      "秦",
+      "隋",
+      "唐"
+    ],
+    "note": "亀の甲や獣の骨などに刻まれた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_abd852ff5691",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代文明の特色",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "古代ギリシャのアテネの政治の特徴は？",
+    "answer": "男性市民による直接参加",
+    "dummies": [
+      "全住民の平等な選挙",
+      "天皇による任命",
+      "将軍の世襲"
+    ],
+    "note": "女性や奴隷らには参加権がなかった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5ab236ad641a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代文明の特色",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ローマ帝国の広がりの中心となった海は？",
+    "answer": "地中海",
+    "dummies": [
+      "日本海",
+      "カリブ海",
+      "南シナ海"
+    ],
+    "note": "道路網なども整備された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d60be231d141",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家の成立",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "前方後円墳が各地に広がったことから考えられるのは？",
+    "answer": "豪族と大和政権の結び付き",
+    "dummies": [
+      "全農民の土地私有",
+      "全国の郡司の廃止",
+      "武士の全国支配"
+    ],
+    "note": "墓の形と政治的関係を結び付ける。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0c65090f1eb0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代国家の成立",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "遣隋使と遣唐使に共通する目的の一つは？",
+    "answer": "中国の制度や文化を学ぶ",
+    "dummies": [
+      "中国に幕府を開く",
+      "米国との貿易を始める",
+      "参勤交代を実施する"
+    ],
+    "note": "使節や留学生が知識を持ち帰った。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_23871095c775",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の税制と土地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "律令制下の農民が税以外に負った負担は？",
+    "answer": "兵役や運搬など",
+    "dummies": [
+      "衆議院選挙への立候補",
+      "株式の購入",
+      "大名の参勤交代"
+    ],
+    "note": "庸・調の輸送も重い負担だった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d28e7b0c5e4f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の税制と土地",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "口分田を捨てて逃げる農民が出た背景は？",
+    "answer": "重い税や労役",
+    "dummies": [
+      "全国一律の免税",
+      "年貢制度の消滅",
+      "農地の完全な自由売買"
+    ],
+    "note": "戸籍による支配も揺らいだ。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_46123b9caf8f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の文化と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "聖武天皇が国分寺や東大寺を造った狙いは？",
+    "answer": "仏教で国を守る",
+    "dummies": [
+      "キリスト教を広める",
+      "武士の自治を認める",
+      "外国貿易を独占する"
+    ],
+    "note": "疫病や社会不安も背景にあった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5c557490723c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "古代の文化と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平安時代、地方で武士が成長した背景は？",
+    "answer": "土地や勢力を武力で守る必要",
+    "dummies": [
+      "全ての農民の徴兵免除",
+      "議会制度の開始",
+      "海外植民地の獲得"
+    ],
+    "note": "地方の争いや警護で力を伸ばした。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_670c7f235bbf",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "承久の乱後、幕府が西国にも支配を広げた理由は？",
+    "answer": "没収地に新たな地頭を置いた",
+    "dummies": [
+      "地頭を全て廃止した",
+      "朝廷に全国支配を返した",
+      "全荘園を外国へ渡した"
+    ],
+    "note": "朝廷側の所領が没収された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_8bf33eb9822c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "御成敗式目の判断基準として重視されたのは？",
+    "answer": "武士社会の慣習や道理",
+    "dummies": [
+      "全国一律の普通選挙",
+      "外国議会の判例のみ",
+      "明治の地租改正"
+    ],
+    "note": "武家のための法を整えた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5efe2fb05876",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "元寇後、幕府が十分な恩賞を出せなかった主因は？",
+    "answer": "新たな領地を得なかった",
+    "dummies": [
+      "武士が戦闘に参加しなかった",
+      "全国の土地が海に沈んだ",
+      "朝廷が全ての武士を雇った"
+    ],
+    "note": "防衛戦と領地拡大戦の違い。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_55e5d74baecc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世政治の変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "南北朝の統一を実現した室町幕府の将軍は？",
+    "answer": "足利義満",
+    "dummies": [
+      "足利尊氏",
+      "足利義政",
+      "足利義昭"
+    ],
+    "note": "1392年に南北朝が統一された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_7cf0f9339e44",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "二毛作が農業生産を高めた仕組みは？",
+    "answer": "同じ田畑を年に二度使う",
+    "dummies": [
+      "耕地を全て休ませる",
+      "米だけを数年おきに作る",
+      "田畑を牧草地に限る"
+    ],
+    "note": "米の収穫後に麦を作る例がある。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1b69133c5ea8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中世の牛馬や鉄製農具の利用がもたらしたのは？",
+    "answer": "耕作の効率や生産力の向上",
+    "dummies": [
+      "貨幣使用の全面停止",
+      "全ての農地の放棄",
+      "農業から狩猟への全面転換"
+    ],
+    "note": "農業技術の発達と結び付ける。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_69141beccaa3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "室町時代の土倉・酒屋が営んだ金融の仕事は？",
+    "answer": "利息を取って金を貸す",
+    "dummies": [
+      "幕府の将軍を選ぶ",
+      "外国通貨を全国で廃止する",
+      "全国の農地を直接耕す"
+    ],
+    "note": "商業の発達と金融の広がり。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_44d618effa2c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の産業と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "堺や博多で自治を担った有力な層は？",
+    "answer": "商人",
+    "dummies": [
+      "防人",
+      "国司",
+      "執権"
+    ],
+    "note": "貿易で栄えた都市の特色。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_283679881539",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鎌倉新仏教が広まった背景の一つは？",
+    "answer": "不安の中で救いを求める人々",
+    "dummies": [
+      "全ての寺院の消滅",
+      "仏教の伝来以前だったこと",
+      "神道の法律による廃止"
+    ],
+    "note": "武士や民衆にも教えが広がった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f374eef2e4dd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "中世の文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "東山文化に結び付く組合せは？",
+    "answer": "銀閣・書院造",
+    "dummies": [
+      "金閣・寝殿造のみ",
+      "東大寺・校倉造のみ",
+      "鹿鳴館・洋風建築"
+    ],
+    "note": "足利義政の時代の文化。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_66a32b5d6c17",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "近世の統一と交易",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鉄砲の普及が戦いにもたらした変化は？",
+    "answer": "集団戦法や城の構造の変化",
+    "dummies": [
+      "弓や槍の即時全面消滅",
+      "武士の戦争参加の禁止",
+      "全ての城の撤去"
+    ],
+    "note": "戦い方や防御が変わった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6af54dfea144",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "歴史",
+    "unit": "近世の統一と交易",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "豊臣秀吉の朝鮮侵略の結果として適切なのは？",
+    "answer": "朝鮮の人々に大きな被害",
+    "dummies": [
+      "朝鮮全土の恒久支配",
+      "明の滅亡",
+      "江戸幕府の即時成立"
+    ],
+    "note": "秀吉の死後、日本軍は撤退した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e19c65720b21",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の身分と支配",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸幕府が譜代大名を要地に配置した狙いは？",
+    "answer": "幕府の支配を固める",
+    "dummies": [
+      "大名領を全て廃止する",
+      "朝廷へ政権を返す",
+      "国会選挙を管理する"
+    ],
+    "note": "配置と政治・軍事上の狙いを確認。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_01defef7d148",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の身分と支配",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸時代の身分制度の説明で適切なのは？",
+    "answer": "身分に応じ役割や負担が違う",
+    "dummies": [
+      "全住民に平等な参政権",
+      "職業を全て自由に変更",
+      "全住民が武士になれる"
+    ],
+    "note": "差別を受けた人々もいた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a40541155577",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の身分と支配",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "村請制で凶作時にも問題となり得たのは？",
+    "answer": "村全体の年貢負担",
+    "dummies": [
+      "年貢の自動全面免除",
+      "全国一律の給料増加",
+      "関税収入の村への移転"
+    ],
+    "note": "村の相互関係と負担を考える。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_321979d214b9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の身分と支配",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸時代の百姓一揆でよく求められたのは？",
+    "answer": "年貢の軽減",
+    "dummies": [
+      "徴兵令の実施",
+      "帝国議会の解散",
+      "地租の現金納付"
+    ],
+    "note": "生活の負担や領主の政治に抗議。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_de977c5bdc23",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸時代の対外関係の説明で適切なのは？",
+    "answer": "窓口を限って交流を続けた",
+    "dummies": [
+      "全ての外国と交流がなかった",
+      "全ての港で自由貿易",
+      "全住民が海外渡航できた"
+    ],
+    "note": "長崎・対馬・薩摩・松前など。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_af6508b1108b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "朝鮮通信使が江戸へ来た主な目的は？",
+    "answer": "将軍の代替わりの祝賀など",
+    "dummies": [
+      "日本の植民地化",
+      "幕府の税を直接徴収",
+      "唐への留学生の送還"
+    ],
+    "note": "朝鮮との外交関係を示す。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_dc1c483c0946",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "松前藩との交易で不利を受けたアイヌの抵抗は？",
+    "answer": "シャクシャインの戦い",
+    "dummies": [
+      "島原・天草一揆",
+      "承久の乱",
+      "応仁の乱"
+    ],
+    "note": "17世紀の北海道で起こった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_63b47681e457",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の対外窓口",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "島原・天草一揆後、幕府が強めたのは？",
+    "answer": "キリスト教への禁制",
+    "dummies": [
+      "全ての年貢の廃止",
+      "全国の寺子屋の廃止",
+      "全外国船の自由入港"
+    ],
+    "note": "重税への不満も背景にあった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_64da96a18823",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の産業と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "江戸時代に河川や海上の輸送が発達した理由は？",
+    "answer": "米や商品を大量に運べる",
+    "dummies": [
+      "陸上交通が全くなかった",
+      "全ての船が無料だった",
+      "幕府が貨幣を廃止した"
+    ],
+    "note": "廻船が各地の市場を結んだ。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_afc776d4eb62",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の産業と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "問屋制家内工業で商人が担ったのは？",
+    "answer": "原料を渡し製品を買い集める",
+    "dummies": [
+      "農民の全農地を没収する",
+      "全職人を役人に任命する",
+      "大名に選挙権を与える"
+    ],
+    "note": "農村の手工業も発達した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2ad3a8c57ba5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の産業と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "元禄文化の主な担い手は？",
+    "answer": "上方の町人",
+    "dummies": [
+      "奈良の国司",
+      "鎌倉の執権",
+      "明治の官僚"
+    ],
+    "note": "井原西鶴や近松門左衛門が活躍。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_53558a40d6fb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の産業と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "化政文化の中心となった地域は？",
+    "answer": "江戸",
+    "dummies": [
+      "平城京",
+      "平泉",
+      "吉野"
+    ],
+    "note": "庶民文化が発達した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e3a4cc9c5420",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の改革",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "享保の改革で幕府収入を増やす政策は？",
+    "answer": "新田開発の奨励",
+    "dummies": [
+      "地租改正",
+      "廃藩置県",
+      "全国の年貢廃止"
+    ],
+    "note": "徳川吉宗の改革。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_71d54d221b1f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の改革",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "田沼意次の政治の特徴は？",
+    "answer": "商業を重視し運上・冥加を得る",
+    "dummies": [
+      "株仲間を全て解散する",
+      "米以外の商業を全て禁ずる",
+      "藩を廃止して県を置く"
+    ],
+    "note": "商業課税で財政を支えようとした。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6a591bd64748",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の改革",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "寛政の改革で松平定信が進めたのは？",
+    "answer": "倹約や農村の立て直し",
+    "dummies": [
+      "帝国議会の開設",
+      "領事裁判権の撤廃",
+      "普通選挙の実施"
+    ],
+    "note": "飢饉後の社会を立て直そうとした。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_af5092cc6627",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近世の改革",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "天保の改革で水野忠邦が解散を命じたのは？",
+    "answer": "株仲間",
+    "dummies": [
+      "帝国議会",
+      "国際連盟",
+      "地方議会"
+    ],
+    "note": "物価を下げようとした。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-B3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fb6e3d806bd7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の世界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "名誉革命後のイギリスで強まったのは？",
+    "answer": "議会の権限",
+    "dummies": [
+      "王の絶対的な権力",
+      "日本の幕府の権限",
+      "植民地の完全独立"
+    ],
+    "note": "権利章典が定められた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d02b38f9145c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の世界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アメリカ独立戦争で植民地側が反発したのは？",
+    "answer": "代表を送れない議会の課税",
+    "dummies": [
+      "フランス革命の人権宣言",
+      "日本の地租改正",
+      "ロシアの農奴解放"
+    ],
+    "note": "イギリス本国との対立が深まった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_29a8bf8db084",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の世界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "フランス革命の人権宣言が掲げたのは？",
+    "answer": "自由と平等など",
+    "dummies": [
+      "身分特権の永久固定",
+      "絶対王政の強化のみ",
+      "農奴制の新設"
+    ],
+    "note": "革命の理念と現実の差も考える。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4d2768be242d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の世界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "産業革命が最初に本格化した国は？",
+    "answer": "イギリス",
+    "dummies": [
+      "ドイツ",
+      "日本",
+      "ロシア"
+    ],
+    "note": "綿工業や蒸気機関が発展した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_73a2247fdf87",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の世界",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アヘン戦争後の南京条約で開港した一つは？",
+    "answer": "上海",
+    "dummies": [
+      "北京",
+      "西安",
+      "洛陽"
+    ],
+    "note": "清が不平等条約を結ばされた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2ccef49d3a1f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "開国と明治維新",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "幕末に薩長同盟を結んだ二つの藩は？",
+    "answer": "薩摩・長州",
+    "dummies": [
+      "薩摩・会津",
+      "長州・彦根",
+      "会津・彦根"
+    ],
+    "note": "倒幕へ向けた協力が進んだ。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b358db45c2a9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "開国と明治維新",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "廃藩置県で中央集権が進んだ理由は？",
+    "answer": "政府が地方官を任命した",
+    "dummies": [
+      "大名が地方官を世襲した",
+      "各藩が独立国になった",
+      "天皇の存在を廃止した"
+    ],
+    "note": "版籍奉還との違いも確認する。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5d08d7dc186e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "開国と明治維新",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "解放令後も課題として残ったのは？",
+    "answer": "差別の継続",
+    "dummies": [
+      "全ての身分呼称の復活",
+      "租庸調の再導入",
+      "全国の学校の廃止"
+    ],
+    "note": "法令だけで差別は解消しなかった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_04cbd2c9df73",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の国家と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大日本帝国憲法下で主権者とされたのは？",
+    "answer": "天皇",
+    "dummies": [
+      "国民",
+      "内閣総理大臣",
+      "帝国議会"
+    ],
+    "note": "日本国憲法との違い。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a85fc360c8aa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の国家と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "明治初期の自由民権運動と結び付く要求は？",
+    "answer": "憲法制定と国会開設",
+    "dummies": [
+      "参勤交代の復活",
+      "遣唐使の再開",
+      "班田収授法の実施"
+    ],
+    "note": "政府への批判や政治参加の要求。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_3264e1839a73",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の国家と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1894年の条約改正で撤廃が決まったのは？",
+    "answer": "領事裁判権",
+    "dummies": [
+      "日本の主権",
+      "全ての輸出関税",
+      "徴兵制度"
+    ],
+    "note": "関税自主権の回復は1911年。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d931460d3bcc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の国家と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "製糸業や紡績業が近代日本で果たした役割は？",
+    "answer": "輸出や工業化を支える",
+    "dummies": [
+      "全輸入を不要にする",
+      "農業を完全に消滅させる",
+      "工場労働をなくす"
+    ],
+    "note": "労働条件にも課題があった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_3b664862c632",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争と国際関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三国干渉で日本が返還したのは？",
+    "answer": "遼東半島",
+    "dummies": [
+      "台湾",
+      "南樺太",
+      "沖縄"
+    ],
+    "note": "下関条約後に返還を要求された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_540728f0e92c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争と国際関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日露戦争後のポーツマス条約の内容は？",
+    "answer": "南樺太の割譲",
+    "dummies": [
+      "遼東半島全土の割譲",
+      "ロシアから多額の賠償金",
+      "中国全土の割譲"
+    ],
+    "note": "日本は賠償金を得られなかった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b16bc55bcd0a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争と国際関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "第一次大戦中、日本が中国に出したのは？",
+    "answer": "二十一か条の要求",
+    "dummies": [
+      "ポツダム宣言",
+      "権利章典",
+      "南京条約"
+    ],
+    "note": "中国で反発が高まった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_20daf03802d4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "近代の戦争と国際関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "五・四運動が起こった国は？",
+    "answer": "中国",
+    "dummies": [
+      "朝鮮",
+      "インド",
+      "ドイツ"
+    ],
+    "note": "1919年の反帝国主義運動。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_768c0ba2a068",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "大正期の社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1925年の普通選挙法で残った制限は？",
+    "answer": "女性に選挙権がない",
+    "dummies": [
+      "全男性に納税額制限",
+      "全有権者に土地所有条件",
+      "全有権者に華族の条件"
+    ],
+    "note": "満25歳以上の男性に拡大された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4a518739bf85",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "大正期の社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "全国水平社が目指したのは？",
+    "answer": "部落差別からの解放",
+    "dummies": [
+      "植民地支配の拡大",
+      "身分差別の制度化",
+      "軍部独裁の確立"
+    ],
+    "note": "1922年に結成された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c3894bcc6f21",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ブロック経済が国際関係に与えた影響は？",
+    "answer": "経済的対立が深まった",
+    "dummies": [
+      "世界の関税が全てなくなった",
+      "植民地が全て独立した",
+      "全ての通貨が統一された"
+    ],
+    "note": "自国圏を優遇し他国を排除した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b84181f3fc5d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "満州事変のきっかけとなった事件は？",
+    "answer": "柳条湖事件",
+    "dummies": [
+      "盧溝橋事件",
+      "五・一五事件",
+      "二・二六事件"
+    ],
+    "note": "1931年、関東軍が行動を拡大。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_bb796d2b9b4f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本が1933年に国際連盟を脱退した背景は？",
+    "answer": "満州国をめぐる対立",
+    "dummies": [
+      "沖縄返還への反対",
+      "国連加盟の拒否",
+      "サンフランシスコ講和"
+    ],
+    "note": "国際的な孤立が進んだ。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a00681386192",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国家総動員法で政府が強めたのは？",
+    "answer": "人や物資の戦争への動員",
+    "dummies": [
+      "国民の自由な政権交代",
+      "軍部への統制を国会に限定",
+      "戦争関連の生産の全面禁止"
+    ],
+    "note": "1938年に制定された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d1327f14eab9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "戦時中の配給制の説明として適切なのは？",
+    "answer": "生活物資の購入量を統制",
+    "dummies": [
+      "物資を無制限に買える",
+      "全ての物資を輸入に限定",
+      "全国の商店が自由価格で販売"
+    ],
+    "note": "物資不足で生活も厳しくなった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b86384228b19",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1945年に原爆が投下された都市の組合せは？",
+    "answer": "広島・長崎",
+    "dummies": [
+      "東京・大阪",
+      "広島・神戸",
+      "長崎・横浜"
+    ],
+    "note": "甚大な被害が長く続いた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_091b640f6708",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "歴史",
+    "unit": "恐慌と戦争",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1945年の沖縄戦の特徴は？",
+    "answer": "住民も巻き込む激しい地上戦",
+    "dummies": [
+      "住民の被害がなかった海戦",
+      "日本軍の無血撤退",
+      "外国軍が上陸しなかった戦い"
+    ],
+    "note": "多くの住民が犠牲となった。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_029579bb8e94",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "農地改革が自作農を増やした仕組みは？",
+    "answer": "地主の小作地を買収し売渡す",
+    "dummies": [
+      "全ての農地を国有のままにする",
+      "小作料を全国で倍増する",
+      "農民の土地購入を禁止する"
+    ],
+    "note": "地主・小作関係が変化した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b769e7043a4b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "財閥解体が目指したことは？",
+    "answer": "経済力の集中を弱める",
+    "dummies": [
+      "一族への経済力の集中",
+      "全企業の永久国有化",
+      "全工場の廃止"
+    ],
+    "note": "経済の民主化の一環。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f323aa9a832c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後の民主化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本国憲法の公布と施行の正しい順は？",
+    "answer": "1946年公布・1947年施行",
+    "dummies": [
+      "1945年公布・1946年施行",
+      "1947年公布・1946年施行",
+      "1951年公布・1952年施行"
+    ],
+    "note": "公布は11月3日、施行は5月3日。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_db2bf55751eb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後日本の外交",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1956年に日本が国連加盟できた背景は？",
+    "answer": "日ソの国交回復",
+    "dummies": [
+      "沖縄返還の完了",
+      "日中平和友好条約",
+      "ソ連の解体"
+    ],
+    "note": "日ソ共同宣言と結び付ける。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6d0de11c78ee",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後日本の外交",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "沖縄返還後も残った課題の一つは？",
+    "answer": "米軍基地の集中",
+    "dummies": [
+      "江戸幕府の直轄支配",
+      "徴兵令による全国動員",
+      "中国による関税管理"
+    ],
+    "note": "返還で基地が全てなくなった訳ではない。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c48564b931dc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "戦後、アジア・アフリカで広がった動きは？",
+    "answer": "植民地からの独立",
+    "dummies": [
+      "欧州による全世界の再植民地化",
+      "全国家の単一国家化",
+      "全ての民族運動の消滅"
+    ],
+    "note": "独立後にも経済などの課題が残る。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c995bf5f3f95",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "1989年のベルリンの壁開放が象徴したのは？",
+    "answer": "東西冷戦の終わりへの変化",
+    "dummies": [
+      "第一次大戦の開戦",
+      "ドイツ帝国の成立",
+      "世界恐慌の開始"
+    ],
+    "note": "翌年に東西ドイツが統一された。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_eeccf5d0f9a0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "高度成長期の公害問題が示した課題は？",
+    "answer": "経済成長と健康・環境の両立",
+    "dummies": [
+      "工場生産の全面否定だけ",
+      "被害者の健康の軽視",
+      "企業活動の無制限な優先"
+    ],
+    "note": "被害の救済や予防が求められた。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0dd2c2cdd4ff",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "歴史",
+    "unit": "戦後世界と社会",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "戦後、西ヨーロッパで地域統合を進めた狙いは？",
+    "answer": "経済協力と平和の維持",
+    "dummies": [
+      "域内の戦争の拡大",
+      "全加盟国の即時消滅",
+      "植民地支配の永久固定"
+    ],
+    "note": "国境を越えた協力が発展した。",
+    "content_batch": "social-history-20261109",
+    "official_blocks": [
+      "hist-C2"
+    ],
+    "content_reviewed": "2026-11-09"
   }
 ]
