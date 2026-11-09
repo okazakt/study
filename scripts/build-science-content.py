@@ -3,7 +3,7 @@ import hashlib,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'docs/content/science-source'
-SOURCES=[('science-foundation-20261109','foundation'),('science-body-earth-20261109','body-earth')]
+SOURCES=[('science-foundation-20261109','foundation'),('science-body-earth-20261109','body-earth'),('science-energy-20261109','energy')]
 MANAGED={batch for batch,_ in SOURCES}
 path=ROOT/'quiz-data/junior_science.json'
 prior=json.loads(path.read_text())

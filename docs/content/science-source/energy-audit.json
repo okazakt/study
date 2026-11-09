@@ -1,0 +1,58 @@
+{
+  "version": "0.87.0",
+  "date": "2026-11-09",
+  "batch": "science-energy-20261109",
+  "newMaterials": 200,
+  "newGeneratedQuestions": 280,
+  "pairedTermMaterials": 80,
+  "choiceMaterials": 120,
+  "previousScienceMaterials": 557,
+  "previousScienceGeneratedQuestions": 894,
+  "totalMaterials": 757,
+  "totalGeneratedQuestions": 1174,
+  "fields": {
+    "物理": {
+      "materials": 166,
+      "generated": 241
+    },
+    "化学": {
+      "materials": 166,
+      "generated": 246
+    },
+    "生物": {
+      "materials": 216,
+      "generated": 377
+    },
+    "地学": {
+      "materials": 147,
+      "generated": 220
+    },
+    "環境": {
+      "materials": 62,
+      "generated": 90
+    }
+  },
+  "previousScienceContentsUnchanged": true,
+  "previousIdsPreserved": true,
+  "otherSubjectsUnchanged": true,
+  "budget": {
+    "materials": 200,
+    "presentations": 280,
+    "maxima": {
+      "task": 20,
+      "prompt": 25,
+      "choice": 11,
+      "targetLabel": 21,
+      "note": 18,
+      "combined": 62
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "reusedLayoutReview": "layout-review.json",
+  "references": "energy-references.json",
+  "checks": "New material data/IDs/required fields/four distinct options/direct hints/text envelope and old object preservation only. No app tests, browser or five-minute simulation.",
+  "editorialReview": "Parent/subtype alternatives excluded; electron and current, emission/activity/dose, coefficients and atom counts, closed-system mass, battery discharge polarity, neutralization concentrations, heat sources and resource cycling distinguished.",
+  "completion": "Official-subitem audit and gap completion next; estimate one further round subject to gaps found."
+}
