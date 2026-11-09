@@ -3007,5 +3007,5925 @@
     "note": "生物多様性の保全、資源の適切な利用、環境負荷の低減を、科学的な根拠と社会的な条件の両面から考える。",
     "cloze_context": "持続可能な社会",
     "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
+  },
+  {
+    "id": "jr_science_88d21695dbe0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "term": "光の反射",
+    "term_dummies": [
+      "光の屈折",
+      "全反射",
+      "焦点"
+    ],
+    "explanation_template": "光が物体の表面で{{1}}現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "はね返る",
+        "dummies": [
+          "折れ曲がって進む",
+          "すべて吸収される",
+          "音に変わる"
+        ]
+      }
+    ],
+    "note": "入射角と反射角は等しい。",
+    "cloze_context": "光の反射",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_152fab0f47c4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "term": "光の屈折",
+    "term_dummies": [
+      "光の反射",
+      "全反射",
+      "焦点"
+    ],
+    "explanation_template": "光が異なる物質へ進む際、境界で{{1}}現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "折れ曲がる",
+        "dummies": [
+          "はね返る",
+          "吸収される",
+          "発光する"
+        ]
+      }
+    ],
+    "note": "斜めに入る場合を考える。",
+    "cloze_context": "光の屈折",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_82971fb35700",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "term": "全反射",
+    "term_dummies": [
+      "光の反射",
+      "光の屈折",
+      "焦点"
+    ],
+    "explanation_template": "境界で光が全て{{1}}現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "反射する",
+        "dummies": [
+          "吸収される",
+          "透過する",
+          "発光する"
+        ]
+      }
+    ],
+    "note": "水から空気へ進む光などで起こる。",
+    "cloze_context": "全反射",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f928e758e66b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "term": "焦点",
+    "term_dummies": [
+      "光の反射",
+      "光の屈折",
+      "全反射"
+    ],
+    "explanation_template": "凸レンズで光軸に平行な光が{{1}}点。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "集まる",
+        "dummies": [
+          "発生する",
+          "消える",
+          "振動する"
+        ]
+      }
+    ],
+    "note": "光軸上にある。",
+    "cloze_context": "焦点",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_97aa67581262",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音",
+    "term": "振幅",
+    "term_dummies": [
+      "振動数",
+      "音源",
+      "音の速さ"
+    ],
+    "explanation_template": "振動の中心からの{{1}}の最大値。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "振れ幅",
+        "dummies": [
+          "振動回数",
+          "伝わる速さ",
+          "波の数"
+        ]
+      }
+    ],
+    "note": "大きいほど音は大きい。",
+    "cloze_context": "振幅",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4051216a3c40",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音",
+    "term": "振動数",
+    "term_dummies": [
+      "振幅",
+      "音源",
+      "音の速さ"
+    ],
+    "explanation_template": "1秒間に振動する{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "回数",
+        "dummies": [
+          "幅",
+          "速さ",
+          "距離"
+        ]
+      }
+    ],
+    "note": "多いほど音は高い。",
+    "cloze_context": "振動数",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5f070b5f1038",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音",
+    "term": "音源",
+    "term_dummies": [
+      "振幅",
+      "振動数",
+      "音の速さ"
+    ],
+    "explanation_template": "音を出す、{{1}}している物体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "振動",
+        "dummies": [
+          "蒸発",
+          "発光",
+          "帯電"
+        ]
+      }
+    ],
+    "note": "音は物質を通じて伝わる。",
+    "cloze_context": "音源",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c5d65eae30ad",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音",
+    "term": "音の速さ",
+    "term_dummies": [
+      "振幅",
+      "振動数",
+      "音源"
+    ],
+    "explanation_template": "音が単位{{1}}に進む距離。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "時間",
+        "dummies": [
+          "質量",
+          "体積",
+          "温度"
+        ]
+      }
+    ],
+    "note": "空気中の速さは温度でも変わる。",
+    "cloze_context": "音の速さ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_0304f9bac3d8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力",
+    "term": "重力",
+    "term_dummies": [
+      "弾性力",
+      "摩擦力",
+      "垂直抗力"
+    ],
+    "explanation_template": "地球が物体を{{1}}へ引く力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地球の中心",
+        "dummies": [
+          "真上",
+          "進行方向",
+          "水平右向き"
+        ]
+      }
+    ],
+    "note": "物体に働く重力が重さ。",
+    "cloze_context": "重力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5cc16c52d78f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力",
+    "term": "弾性力",
+    "term_dummies": [
+      "重力",
+      "摩擦力",
+      "垂直抗力"
+    ],
+    "explanation_template": "変形した物体が{{1}}とする力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "元に戻ろう",
+        "dummies": [
+          "伸び続けよう",
+          "回ろう",
+          "滑ろう"
+        ]
+      }
+    ],
+    "note": "ばねやゴムなどに見られる。",
+    "cloze_context": "弾性力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d0eea04e75f2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力",
+    "term": "摩擦力",
+    "term_dummies": [
+      "重力",
+      "弾性力",
+      "垂直抗力"
+    ],
+    "explanation_template": "接触面で、相対的な動きを{{1}}力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "妨げる",
+        "dummies": [
+          "速める",
+          "浮かせる",
+          "回転させる"
+        ]
+      }
+    ],
+    "note": "滑ろうとする動きにも逆らう。",
+    "cloze_context": "摩擦力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9efd99da943e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力",
+    "term": "垂直抗力",
+    "term_dummies": [
+      "重力",
+      "弾性力",
+      "摩擦力"
+    ],
+    "explanation_template": "接触面が物体を{{1}}に押す力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "面に垂直",
+        "dummies": [
+          "面に平行",
+          "必ず鉛直上",
+          "必ず水平方向"
+        ]
+      }
+    ],
+    "note": "面から受ける力の一つ。",
+    "cloze_context": "垂直抗力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a86144ff7426",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力と圧力",
+    "term": "フックの法則",
+    "term_dummies": [
+      "質量",
+      "重さ",
+      "圧力"
+    ],
+    "explanation_template": "比例する範囲で、ばねの伸びは力の{{1}}に比例する。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大きさ",
+        "dummies": [
+          "向きだけ",
+          "作用点だけ",
+          "単位名"
+        ]
+      }
+    ],
+    "note": "自然の長さからの伸びを使う。",
+    "cloze_context": "フックの法則",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_7e0644cb5c26",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力と圧力",
+    "term": "質量",
+    "term_dummies": [
+      "フックの法則",
+      "重さ",
+      "圧力"
+    ],
+    "explanation_template": "場所が変わっても変わらない物体そのものの{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "量",
+        "dummies": [
+          "重力",
+          "浮力",
+          "圧力"
+        ]
+      }
+    ],
+    "note": "単位はgやkg。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_2adec1ac8b24",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "力と圧力",
+    "term": "重さ",
+    "term_dummies": [
+      "フックの法則",
+      "質量",
+      "圧力"
+    ],
+    "explanation_template": "物体に働く{{1}}の大きさ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "重力",
+        "dummies": [
+          "摩擦力",
+          "浮力",
+          "垂直抗力"
+        ]
+      }
+    ],
+    "note": "単位はN。場所で変わり得る。",
+    "cloze_context": "重さ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b5ec50efd631",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と圧力",
+    "term": "圧力",
+    "term_dummies": [
+      "フックの法則",
+      "質量",
+      "重さ"
+    ],
+    "explanation_template": "面を垂直に押す力を面積で{{1}}値。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "割った",
+        "dummies": [
+          "掛けた",
+          "足した",
+          "引いた"
+        ]
+      }
+    ],
+    "note": "力が同じなら面積が小さいほど大。",
+    "cloze_context": "圧力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b47031e6d469",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と電圧",
+    "term": "電流",
+    "term_dummies": [
+      "電圧",
+      "電気抵抗",
+      "電力"
+    ],
+    "explanation_template": "電気の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "流れ",
+        "dummies": [
+          "流れにくさ",
+          "押し出す働き",
+          "消費した時間"
+        ]
+      }
+    ],
+    "note": "単位はA。",
+    "cloze_context": "電流",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b22c70c8f3bf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と電圧",
+    "term": "電圧",
+    "term_dummies": [
+      "電流",
+      "電気抵抗",
+      "電力"
+    ],
+    "explanation_template": "電流を流そうとする{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "働き",
+        "dummies": [
+          "流れにくさ",
+          "電気の量だけ",
+          "振動回数"
+        ]
+      }
+    ],
+    "note": "単位はV。",
+    "cloze_context": "電圧",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c26b11025f4d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と電圧",
+    "term": "電気抵抗",
+    "term_dummies": [
+      "電流",
+      "電圧",
+      "電力"
+    ],
+    "explanation_template": "電流の{{1}}を表す量。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "流れにくさ",
+        "dummies": [
+          "流れる向き",
+          "流れた時間",
+          "発熱の総量"
+        ]
+      }
+    ],
+    "note": "単位はΩ。",
+    "cloze_context": "電気抵抗",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a874bb4e87f6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と電圧",
+    "term": "電力",
+    "term_dummies": [
+      "電流",
+      "電圧",
+      "電気抵抗"
+    ],
+    "explanation_template": "1秒間に使う{{1}}の量。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "電気エネルギー",
+        "dummies": [
+          "電流",
+          "電圧",
+          "電気抵抗"
+        ]
+      }
+    ],
+    "note": "単位はW。",
+    "cloze_context": "電力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f8289b8d5a23",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気の正体と交流",
+    "term": "直流",
+    "term_dummies": [
+      "交流",
+      "静電気",
+      "放電"
+    ],
+    "explanation_template": "向きが{{1}}電流。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "変わらない",
+        "dummies": [
+          "周期的に逆転する",
+          "必ず円になる",
+          "必ず消える"
+        ]
+      }
+    ],
+    "note": "乾電池から流れる電流など。",
+    "cloze_context": "直流",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_46edeef4d6f4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気の正体と交流",
+    "term": "交流",
+    "term_dummies": [
+      "直流",
+      "静電気",
+      "放電"
+    ],
+    "explanation_template": "向きと大きさが{{1}}電流。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "周期的に変わる",
+        "dummies": [
+          "変わらない",
+          "常に増え続ける",
+          "常に減り続ける"
+        ]
+      }
+    ],
+    "note": "家庭のコンセントなど。",
+    "cloze_context": "交流",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_936f187fc586",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気の正体と交流",
+    "term": "静電気",
+    "term_dummies": [
+      "直流",
+      "交流",
+      "放電"
+    ],
+    "explanation_template": "物体に電気が{{1}}状態やその電気。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "たまった",
+        "dummies": [
+          "ない",
+          "流れ続ける",
+          "光に変わる"
+        ]
+      }
+    ],
+    "note": "異種の物体の摩擦などで生じる。",
+    "cloze_context": "静電気",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3c4edf4ec691",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気の正体と交流",
+    "term": "放電",
+    "term_dummies": [
+      "直流",
+      "交流",
+      "静電気"
+    ],
+    "explanation_template": "たまった電気が{{1}}現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "空間を移動する",
+        "dummies": [
+          "質量に変わる",
+          "必ず熱を吸収する",
+          "永久に止まる"
+        ]
+      }
+    ],
+    "note": "雷なども放電。",
+    "cloze_context": "放電",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c3c6c24537f3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界",
+    "term": "磁界",
+    "term_dummies": [
+      "電磁石",
+      "電磁誘導",
+      "誘導電流"
+    ],
+    "explanation_template": "磁石や電流による{{1}}が働く空間。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "磁力",
+        "dummies": [
+          "重力だけ",
+          "浮力だけ",
+          "摩擦力だけ"
+        ]
+      }
+    ],
+    "note": "磁針のN極が指す向きが磁界の向き。",
+    "cloze_context": "磁界",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6e2578f21d00",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界",
+    "term": "電磁石",
+    "term_dummies": [
+      "磁界",
+      "電磁誘導",
+      "誘導電流"
+    ],
+    "explanation_template": "コイルに{{1}}を流して磁石の働きを持たせたもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "電流",
+        "dummies": [
+          "空気だけ",
+          "水だけ",
+          "音だけ"
+        ]
+      }
+    ],
+    "note": "鉄心などを入れて強くできる。",
+    "cloze_context": "電磁石",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_665748f8a9be",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界",
+    "term": "電磁誘導",
+    "term_dummies": [
+      "磁界",
+      "電磁石",
+      "誘導電流"
+    ],
+    "explanation_template": "コイル内の磁界が変化して{{1}}が生じる現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "電圧",
+        "dummies": [
+          "質量",
+          "重力",
+          "浮力"
+        ]
+      }
+    ],
+    "note": "閉回路では電流が流れ得る。",
+    "cloze_context": "電磁誘導",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_132299bdaf4c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界",
+    "term": "誘導電流",
+    "term_dummies": [
+      "磁界",
+      "電磁石",
+      "電磁誘導"
+    ],
+    "explanation_template": "電磁誘導によって流れる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "電流",
+        "dummies": [
+          "空気",
+          "音",
+          "光"
+        ]
+      }
+    ],
+    "note": "磁界の変化の向きで向きが変わる。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_067a1a166342",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動と力",
+    "term": "等速直線運動",
+    "term_dummies": [
+      "慣性",
+      "作用・反作用",
+      "速さ"
+    ],
+    "explanation_template": "一直線上を{{1}}で進む運動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一定の速さ",
+        "dummies": [
+          "増える速さ",
+          "減る速さ",
+          "変わる向き"
+        ]
+      }
+    ],
+    "note": "力がつり合う物体の運動の一つ。",
+    "cloze_context": "等速直線運動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a0c0577898ac",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動と力",
+    "term": "慣性",
+    "term_dummies": [
+      "等速直線運動",
+      "作用・反作用",
+      "速さ"
+    ],
+    "explanation_template": "物体が今の{{1}}を保とうとする性質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "運動の状態",
+        "dummies": [
+          "温度だけ",
+          "電荷だけ",
+          "体積だけ"
+        ]
+      }
+    ],
+    "note": "静止や等速直線運動を保つ。",
+    "cloze_context": "慣性",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6a3a7a4a3eaa",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動と力",
+    "term": "作用・反作用",
+    "term_dummies": [
+      "等速直線運動",
+      "慣性",
+      "速さ"
+    ],
+    "explanation_template": "互いに力を及ぼす2物体に働く力は、大きさが{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "等しい",
+        "dummies": [
+          "必ず異なる",
+          "片方だけゼロ",
+          "質量比になる"
+        ]
+      }
+    ],
+    "note": "別々の物体に働く。",
+    "cloze_context": "作用・反作用",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_cc1064c0480e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動と力",
+    "term": "速さ",
+    "term_dummies": [
+      "等速直線運動",
+      "慣性",
+      "作用・反作用"
+    ],
+    "explanation_template": "移動距離をかかった{{1}}で割った量。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "時間",
+        "dummies": [
+          "質量",
+          "力",
+          "面積"
+        ]
+      }
+    ],
+    "note": "単位をそろえて求める。",
+    "cloze_context": "速さ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a9c2d194ceba",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "term": "仕事",
+    "term_dummies": [
+      "仕事率",
+      "位置エネルギー",
+      "運動エネルギー"
+    ],
+    "explanation_template": "力の大きさと、その向きの移動{{1}}の積。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "距離",
+        "dummies": [
+          "時間",
+          "速さ",
+          "質量"
+        ]
+      }
+    ],
+    "note": "単位はJ。",
+    "cloze_context": "仕事",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c63a8a0d0aea",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "term": "仕事率",
+    "term_dummies": [
+      "仕事",
+      "位置エネルギー",
+      "運動エネルギー"
+    ],
+    "explanation_template": "単位時間当たりの{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "仕事",
+        "dummies": [
+          "力",
+          "移動距離",
+          "質量"
+        ]
+      }
+    ],
+    "note": "仕事を時間で割る。単位はW。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5e6d4b058158",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "term": "位置エネルギー",
+    "term_dummies": [
+      "仕事",
+      "仕事率",
+      "運動エネルギー"
+    ],
+    "explanation_template": "重力による場合、物体の{{1}}が高いほど大きい。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "位置",
+        "dummies": [
+          "温度",
+          "電圧",
+          "振動数"
+        ]
+      }
+    ],
+    "note": "質量が同じ場合で比べる。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_14a9ee487c0d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "仕事とエネルギー",
+    "term": "運動エネルギー",
+    "term_dummies": [
+      "仕事",
+      "仕事率",
+      "位置エネルギー"
+    ],
+    "explanation_template": "物体の運動によるエネルギーで、速いほど{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "大きい",
+        "dummies": [
+          "小さい",
+          "必ずゼロ",
+          "必ず一定"
+        ]
+      }
+    ],
+    "note": "質量が同じ場合で比べる。",
+    "cloze_context": "運動エネルギー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_dde153b80321",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "力とエネルギーの保存",
+    "term": "力学的エネルギー",
+    "term_dummies": [
+      "位置エネルギー",
+      "運動エネルギー",
+      "電気エネルギー"
+    ],
+    "explanation_template": "位置と運動のエネルギーの{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "和",
+        "dummies": [
+          "差",
+          "積",
+          "比"
+        ]
+      }
+    ],
+    "note": "重力のみが仕事をする場合に保存。",
+    "cloze_context": "力学的エネルギー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_014be245f9bf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "エネルギーの変換と保存",
+    "term": "エネルギー保存則",
+    "term_dummies": [
+      "力学的エネルギー",
+      "仕事の原理",
+      "エネルギーの変換"
+    ],
+    "explanation_template": "変換してもエネルギーの総量は{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一定",
+        "dummies": [
+          "増え続ける",
+          "減り続ける",
+          "常にゼロ"
+        ]
+      }
+    ],
+    "note": "変換前後の全エネルギーで比べる。",
+    "cloze_context": "エネルギー保存則",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_fb44c0af0796",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "力とエネルギーの保存",
+    "term": "仕事の原理",
+    "term_dummies": [
+      "力学的エネルギー",
+      "エネルギー保存則",
+      "エネルギーの変換"
+    ],
+    "explanation_template": "摩擦等なしの同じ作業では仕事量は{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "変わらない",
+        "dummies": [
+          "必ず半分",
+          "必ず2倍",
+          "必ずゼロ"
+        ]
+      }
+    ],
+    "note": "力が減る分、動かす距離が増す。",
+    "cloze_context": "仕事の原理",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_23a2bec3470b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "力とエネルギーの保存",
+    "term": "エネルギーの変換",
+    "term_dummies": [
+      "力学的エネルギー",
+      "エネルギー保存則",
+      "仕事の原理"
+    ],
+    "explanation_template": "エネルギーが別の{{1}}に変わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "種類",
+        "dummies": [
+          "質量",
+          "単位",
+          "時間"
+        ]
+      }
+    ],
+    "note": "発電機は運動から電気へ変換。",
+    "cloze_context": "エネルギーの変換",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f873e3fb9e94",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の性質",
+    "term": "密度",
+    "term_dummies": [
+      "純物質",
+      "混合物",
+      "有機物"
+    ],
+    "explanation_template": "物質の単位{{1}}当たりの質量。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "体積",
+        "dummies": [
+          "面積",
+          "長さ",
+          "時間"
+        ]
+      }
+    ],
+    "note": "質量を体積で割る。",
+    "cloze_context": "密度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_df93b7952d77",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の性質",
+    "term": "純物質",
+    "term_dummies": [
+      "密度",
+      "混合物",
+      "有機物"
+    ],
+    "explanation_template": "{{1}}種類の物質からなるもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1",
+        "dummies": [
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "note": "酸素や純粋な水など。",
+    "cloze_context": "純物質",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ed1b02ceee03",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の性質",
+    "term": "混合物",
+    "term_dummies": [
+      "密度",
+      "純物質",
+      "有機物"
+    ],
+    "explanation_template": "{{1}}種類以上の物質が混ざったもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "1",
+          "0",
+          "0.5"
+        ]
+      }
+    ],
+    "note": "空気や食塩水など。",
+    "cloze_context": "混合物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ccd2655698c8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の性質",
+    "term": "有機物",
+    "term_dummies": [
+      "密度",
+      "純物質",
+      "混合物"
+    ],
+    "explanation_template": "炭素を含むが二酸化炭素等は{{1}}物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "含めない",
+        "dummies": [
+          "含める",
+          "必要とする",
+          "溶かす"
+        ]
+      }
+    ],
+    "note": "砂糖やエタノールなど。",
+    "cloze_context": "有機物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4728e97dbb08",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "水溶液",
+    "term": "溶質",
+    "term_dummies": [
+      "溶媒",
+      "溶液",
+      "溶解度"
+    ],
+    "explanation_template": "溶液に{{1}}いる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "溶けて",
+        "dummies": [
+          "溶かして",
+          "沈殿して",
+          "浮遊して"
+        ]
+      }
+    ],
+    "note": "食塩水では食塩。",
+    "cloze_context": "溶質",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_351156482e3a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "水溶液",
+    "term": "溶媒",
+    "term_dummies": [
+      "溶質",
+      "溶液",
+      "溶解度"
+    ],
+    "explanation_template": "溶質を{{1}}いる液体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "溶かして",
+        "dummies": [
+          "溶けて",
+          "沈殿させて",
+          "固体化させて"
+        ]
+      }
+    ],
+    "note": "水溶液では水。",
+    "cloze_context": "溶媒",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8c9c44845640",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "水溶液",
+    "term": "溶液",
+    "term_dummies": [
+      "溶質",
+      "溶媒",
+      "溶解度"
+    ],
+    "explanation_template": "溶質が溶媒に{{1}}に溶けた液。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "均一",
+        "dummies": [
+          "層状",
+          "固体状",
+          "粒状"
+        ]
+      }
+    ],
+    "note": "どの部分も同じ濃さになる。",
+    "cloze_context": "溶液",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9d2aca15429e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "水溶液",
+    "term": "溶解度",
+    "term_dummies": [
+      "溶質",
+      "溶媒",
+      "溶液"
+    ],
+    "explanation_template": "ある温度で水100gに溶ける物質の{{1}}質量。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "最大",
+        "dummies": [
+          "最小",
+          "平均",
+          "常に同じ"
+        ]
+      }
+    ],
+    "note": "温度や物質の種類で変わる。",
+    "cloze_context": "溶解度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f60e7eec3e76",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化と分離",
+    "term": "融点",
+    "term_dummies": [
+      "沸点",
+      "蒸留",
+      "再結晶"
+    ],
+    "explanation_template": "物質が固体から{{1}}になるときの温度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "液体",
+        "dummies": [
+          "気体",
+          "原子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "純物質では一定の条件で固有。",
+    "cloze_context": "融点",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_897a6795fc10",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化と分離",
+    "term": "沸点",
+    "term_dummies": [
+      "融点",
+      "蒸留",
+      "再結晶"
+    ],
+    "explanation_template": "液体が{{1}}するときの温度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "沸騰",
+        "dummies": [
+          "凝固",
+          "融解",
+          "凝結"
+        ]
+      }
+    ],
+    "note": "気圧によっても変わる。",
+    "cloze_context": "沸点",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_1bd482bbc00b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化と分離",
+    "term": "蒸留",
+    "term_dummies": [
+      "融点",
+      "沸点",
+      "再結晶"
+    ],
+    "explanation_template": "沸騰で出た蒸気を冷やし{{1}}で集める。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "液体",
+        "dummies": [
+          "気体",
+          "金属",
+          "粉末"
+        ]
+      }
+    ],
+    "note": "沸点の違いを利用して分ける。",
+    "cloze_context": "蒸留",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_fb2411606125",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化と分離",
+    "term": "再結晶",
+    "term_dummies": [
+      "融点",
+      "沸点",
+      "蒸留"
+    ],
+    "explanation_template": "溶かした物質を再び{{1}}として取り出す操作。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "結晶",
+        "dummies": [
+          "気体",
+          "原子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "温度による溶解度の違い等を利用。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_689f1ed768a0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "気体",
+    "term": "酸素",
+    "term_dummies": [
+      "二酸化炭素",
+      "水素",
+      "アンモニア"
+    ],
+    "explanation_template": "自らは燃えず、物が{{1}}のを助ける気体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "燃える",
+        "dummies": [
+          "凍る",
+          "溶ける",
+          "磁化する"
+        ]
+      }
+    ],
+    "note": "火のついた線香で調べる。",
+    "cloze_context": "酸素",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3f3102ad545d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "気体",
+    "term": "二酸化炭素",
+    "term_dummies": [
+      "酸素",
+      "水素",
+      "アンモニア"
+    ],
+    "explanation_template": "石灰水を{{1}}する気体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "白く濁らせる",
+        "dummies": [
+          "青くする",
+          "赤くする",
+          "黒くする"
+        ]
+      }
+    ],
+    "note": "少量ずつ通して調べる。",
+    "cloze_context": "二酸化炭素",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_17db889d9aa4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "気体",
+    "term": "水素",
+    "term_dummies": [
+      "酸素",
+      "二酸化炭素",
+      "アンモニア"
+    ],
+    "explanation_template": "燃えると{{1}}ができる気体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "水",
+        "dummies": [
+          "二酸化炭素",
+          "酸素",
+          "窒素"
+        ]
+      }
+    ],
+    "note": "点火前に十分な安全確認が必要。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_25e869b4ebc1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "気体",
+    "term": "アンモニア",
+    "term_dummies": [
+      "酸素",
+      "二酸化炭素",
+      "水素"
+    ],
+    "explanation_template": "刺激臭があり、水に{{1}}溶ける気体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "非常によく",
+        "dummies": [
+          "全く",
+          "少ししか",
+          "常に同量"
+        ]
+      }
+    ],
+    "note": "水溶液はアルカリ性。",
+    "cloze_context": "アンモニア",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_83407edb89a5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "原子と分子",
+    "term": "原子",
+    "term_dummies": [
+      "分子",
+      "元素",
+      "単体"
+    ],
+    "explanation_template": "化学変化でそれ以上分けられない、物質をつくる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "粒子",
+        "dummies": [
+          "細胞",
+          "器官",
+          "結晶全体"
+        ]
+      }
+    ],
+    "note": "化学変化で種類は変わらない。",
+    "cloze_context": "原子",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6bc0456013c9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "原子と分子",
+    "term": "分子",
+    "term_dummies": [
+      "原子",
+      "元素",
+      "単体"
+    ],
+    "explanation_template": "物質の性質を示す最小の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "粒子",
+        "dummies": [
+          "細胞",
+          "器官",
+          "結晶全体"
+        ]
+      }
+    ],
+    "note": "分子をつくらない物質もある。",
+    "cloze_context": "分子",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a12d483a61eb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "原子と分子",
+    "term": "元素",
+    "term_dummies": [
+      "原子",
+      "分子",
+      "単体"
+    ],
+    "explanation_template": "物質をつくる原子の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "種類",
+        "dummies": [
+          "個数",
+          "質量の総和",
+          "体積の総和"
+        ]
+      }
+    ],
+    "note": "元素記号で表す。",
+    "cloze_context": "元素",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d6a19f05372d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "原子と分子",
+    "term": "単体",
+    "term_dummies": [
+      "原子",
+      "分子",
+      "元素"
+    ],
+    "explanation_template": "水素のように1種類の{{1}}からなる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "元素",
+        "dummies": [
+          "分子",
+          "化合物",
+          "混合物"
+        ]
+      }
+    ],
+    "note": "分子の原子数とは区別する。",
+    "cloze_context": "単体",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_36063cec0840",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "term": "化合物",
+    "term_dummies": [
+      "化学変化",
+      "分解",
+      "化合"
+    ],
+    "explanation_template": "水のように2種類以上の{{1}}からなる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "元素",
+        "dummies": [
+          "分子",
+          "混合物",
+          "金属"
+        ]
+      }
+    ],
+    "note": "水や二酸化炭素など。",
+    "cloze_context": "化合物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_493e1ce5ec35",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "term": "化学変化",
+    "term_dummies": [
+      "化合物",
+      "分解",
+      "化合"
+    ],
+    "explanation_template": "もとの物質と{{1}}物質ができる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "異なる",
+        "dummies": [
+          "必ず同じ",
+          "同じ状態の",
+          "同じ温度の"
+        ]
+      }
+    ],
+    "note": "状態変化とは区別する。",
+    "cloze_context": "化学変化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b67a95e55b57",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "term": "分解",
+    "term_dummies": [
+      "化合物",
+      "化学変化",
+      "化合"
+    ],
+    "explanation_template": "1種類の物質から{{1}}種類以上の別物質ができる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "1",
+          "0",
+          "0.5"
+        ]
+      }
+    ],
+    "note": "加熱や電気で起こす例がある。",
+    "cloze_context": "分解",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_20eb3a5a579b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "term": "化合",
+    "term_dummies": [
+      "化合物",
+      "化学変化",
+      "分解"
+    ],
+    "explanation_template": "2種類以上から{{1}}種類の別物質ができる変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1",
+        "dummies": [
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "note": "鉄と硫黄の反応など。",
+    "cloze_context": "化合",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_35d4a4c44fa6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "酸化・還元と質量",
+    "term": "酸化",
+    "term_dummies": [
+      "還元",
+      "酸化物",
+      "質量保存の法則"
+    ],
+    "explanation_template": "物質が{{1}}と結び付く変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "酸素",
+        "dummies": [
+          "水素",
+          "窒素",
+          "二酸化炭素"
+        ]
+      }
+    ],
+    "note": "中学では酸素との関係で考える。",
+    "cloze_context": "酸化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_e11f392e082e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "酸化・還元と質量",
+    "term": "還元",
+    "term_dummies": [
+      "酸化",
+      "酸化物",
+      "質量保存の法則"
+    ],
+    "explanation_template": "酸化物から{{1}}を取り除く変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "酸素",
+        "dummies": [
+          "銅",
+          "水素",
+          "炭素"
+        ]
+      }
+    ],
+    "note": "酸化と同時に起こる。",
+    "cloze_context": "還元",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_62ebfc20d77b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "酸化・還元と質量",
+    "term": "酸化物",
+    "term_dummies": [
+      "酸化",
+      "還元",
+      "質量保存の法則"
+    ],
+    "explanation_template": "物質が{{1}}と結び付いてできた化合物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "酸素",
+        "dummies": [
+          "窒素",
+          "水素",
+          "硫黄"
+        ]
+      }
+    ],
+    "note": "酸化銅や酸化マグネシウムなど。",
+    "cloze_context": "酸化物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_48cd8c77ad72",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "酸化・還元と質量",
+    "term": "質量保存の法則",
+    "term_dummies": [
+      "酸化",
+      "還元",
+      "酸化物"
+    ],
+    "explanation_template": "化学変化の前後で、物質全体の質量は{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "変わらない",
+        "dummies": [
+          "増え続ける",
+          "減り続ける",
+          "ゼロになる"
+        ]
+      }
+    ],
+    "note": "出入りがない条件で比べる。",
+    "cloze_context": "質量保存の法則",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_e422209d07ae",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオン",
+    "term": "陽イオン",
+    "term_dummies": [
+      "陰イオン",
+      "電離",
+      "電解質"
+    ],
+    "explanation_template": "電子を{{1}}正の電気を帯びた粒子。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "失った",
+        "dummies": [
+          "受け取った",
+          "分解した",
+          "燃焼した"
+        ]
+      }
+    ],
+    "note": "陽子数は変わらない。",
+    "cloze_context": "陽イオン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_7acaf895bdb5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオン",
+    "term": "陰イオン",
+    "term_dummies": [
+      "陽イオン",
+      "電離",
+      "電解質"
+    ],
+    "explanation_template": "電子を{{1}}負の電気を帯びた粒子。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "受け取った",
+        "dummies": [
+          "失った",
+          "放出した",
+          "燃焼した"
+        ]
+      }
+    ],
+    "note": "電子は負の電気を持つ。",
+    "cloze_context": "陰イオン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9f59e3b9f6e3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオン",
+    "term": "電離",
+    "term_dummies": [
+      "陽イオン",
+      "陰イオン",
+      "電解質"
+    ],
+    "explanation_template": "物質が水に溶け、陽イオンと{{1}}に分かれること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "陰イオン",
+        "dummies": [
+          "原子核",
+          "分子だけ",
+          "電子だけ"
+        ]
+      }
+    ],
+    "note": "溶けることと必ずしも同じでない。",
+    "cloze_context": "電離",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_bcebb654daa7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオン",
+    "term": "電解質",
+    "term_dummies": [
+      "陽イオン",
+      "陰イオン",
+      "電離"
+    ],
+    "explanation_template": "水溶液にすると電流を{{1}}物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "通す",
+        "dummies": [
+          "通さない",
+          "半分にする",
+          "逆流させる"
+        ]
+      }
+    ],
+    "note": "水に溶けてイオンが生じる。",
+    "cloze_context": "電解質",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_69dbc607adf0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "酸・アルカリと中和",
+    "term": "酸",
+    "term_dummies": [
+      "アルカリ",
+      "中和",
+      "塩"
+    ],
+    "explanation_template": "水溶液で{{1}}を生じる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "水素イオン",
+        "dummies": [
+          "水酸化物イオン",
+          "ナトリウムイオン",
+          "塩化物イオン"
+        ]
+      }
+    ],
+    "note": "中学ではイオンで捉える。",
+    "cloze_context": "酸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6cd4aa78413e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "酸・アルカリと中和",
+    "term": "アルカリ",
+    "term_dummies": [
+      "酸",
+      "中和",
+      "塩"
+    ],
+    "explanation_template": "水溶液で{{1}}を生じる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "水酸化物イオン",
+        "dummies": [
+          "水素イオン",
+          "塩化物イオン",
+          "硝酸イオン"
+        ]
+      }
+    ],
+    "note": "水に溶けてアルカリ性を示す。",
+    "cloze_context": "アルカリ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_67264f52469c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "酸・アルカリと中和",
+    "term": "中和",
+    "term_dummies": [
+      "酸",
+      "アルカリ",
+      "塩"
+    ],
+    "explanation_template": "酸とアルカリが反応し、水と{{1}}ができる反応。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "塩",
+        "dummies": [
+          "酸素",
+          "水素",
+          "炭素"
+        ]
+      }
+    ],
+    "note": "両者の性質を打ち消し合う。",
+    "cloze_context": "中和",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8ee8f137c684",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "酸・アルカリと中和",
+    "term": "塩",
+    "term_dummies": [
+      "酸",
+      "アルカリ",
+      "中和"
+    ],
+    "explanation_template": "酸の陰イオンとアルカリの{{1}}からできる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "陽イオン",
+        "dummies": [
+          "陰イオン",
+          "電子",
+          "分子"
+        ]
+      }
+    ],
+    "note": "食塩だけを意味する語ではない。",
+    "cloze_context": "塩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a087ccbf0efe",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "電池と電気の粒子",
+    "term": "化学電池",
+    "term_dummies": [
+      "燃料電池",
+      "電子",
+      "非電解質"
+    ],
+    "explanation_template": "化学エネルギーを{{1}}エネルギーに変える装置。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "電気",
+        "dummies": [
+          "光",
+          "位置",
+          "音"
+        ]
+      }
+    ],
+    "note": "化学反応で電子が移動する。",
+    "cloze_context": "化学電池",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9f0dcbc49b77",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "電池と電気の粒子",
+    "term": "燃料電池",
+    "term_dummies": [
+      "化学電池",
+      "電子",
+      "非電解質"
+    ],
+    "explanation_template": "水素と酸素の反応などを利用して{{1}}する装置。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "発電",
+        "dummies": [
+          "蒸留",
+          "ろ過",
+          "再結晶"
+        ]
+      }
+    ],
+    "note": "水素と酸素の場合は水ができる。",
+    "cloze_context": "燃料電池",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_dc4116914dcc",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "電池と電気の粒子",
+    "term": "電子",
+    "term_dummies": [
+      "化学電池",
+      "燃料電池",
+      "非電解質"
+    ],
+    "explanation_template": "{{1}}の電気を持つ、原子を構成する粒子。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "負",
+        "dummies": [
+          "正",
+          "正負両方",
+          "電気を持たない"
+        ]
+      }
+    ],
+    "note": "金属中では電子の移動が電流に関係。",
+    "cloze_context": "電子",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d123ac4bb936",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "電池と電気の粒子",
+    "term": "非電解質",
+    "term_dummies": [
+      "化学電池",
+      "燃料電池",
+      "電子"
+    ],
+    "explanation_template": "水溶液にしても電流を{{1}}物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "通さない",
+        "dummies": [
+          "通す",
+          "増幅する",
+          "逆流させる"
+        ]
+      }
+    ],
+    "note": "砂糖やエタノールなど。",
+    "cloze_context": "非電解質",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4fedc1cf9c67",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山と岩石",
+    "term": "火山岩",
+    "term_dummies": [
+      "深成岩",
+      "斑状組織",
+      "等粒状組織"
+    ],
+    "explanation_template": "マグマが地表付近で{{1}}冷えてできた岩石。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "急に",
+        "dummies": [
+          "ゆっくり",
+          "温度一定で",
+          "冷えずに"
+        ]
+      }
+    ],
+    "note": "小さい結晶やガラス質が多い。",
+    "cloze_context": "火山岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_cb7fd6be6d36",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山と岩石",
+    "term": "深成岩",
+    "term_dummies": [
+      "火山岩",
+      "斑状組織",
+      "等粒状組織"
+    ],
+    "explanation_template": "マグマが地下深くで{{1}}冷えてできた岩石。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ゆっくり",
+        "dummies": [
+          "急に",
+          "温度一定で",
+          "冷えずに"
+        ]
+      }
+    ],
+    "note": "結晶が大きく育つ。",
+    "cloze_context": "深成岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b4fff6d49725",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山と岩石",
+    "term": "斑状組織",
+    "term_dummies": [
+      "火山岩",
+      "深成岩",
+      "等粒状組織"
+    ],
+    "explanation_template": "大きな結晶の{{1}}が細かい石基に囲まれたつくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "斑晶",
+        "dummies": [
+          "核",
+          "細胞",
+          "化石"
+        ]
+      }
+    ],
+    "note": "火山岩に多い。",
+    "cloze_context": "斑状組織",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8f4b3c532e43",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山と岩石",
+    "term": "等粒状組織",
+    "term_dummies": [
+      "火山岩",
+      "深成岩",
+      "斑状組織"
+    ],
+    "explanation_template": "比較的大きな{{1}}が組み合わさったつくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "結晶",
+        "dummies": [
+          "化石",
+          "気泡だけ",
+          "細胞"
+        ]
+      }
+    ],
+    "note": "深成岩に見られる。",
+    "cloze_context": "等粒状組織",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_2cafd49a873f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山の噴出物と堆積岩",
+    "term": "マグマ",
+    "term_dummies": [
+      "溶岩",
+      "火山灰",
+      "堆積岩"
+    ],
+    "explanation_template": "地下にある、高温で岩石が{{1}}もの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "溶けた",
+        "dummies": [
+          "砕けただけの",
+          "凍った",
+          "固結した"
+        ]
+      }
+    ],
+    "note": "地表へ出たものを溶岩という。",
+    "cloze_context": "マグマ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c3f099b93a6e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山の噴出物と堆積岩",
+    "term": "溶岩",
+    "term_dummies": [
+      "マグマ",
+      "火山灰",
+      "堆積岩"
+    ],
+    "explanation_template": "マグマが{{1}}へ出たもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地表",
+        "dummies": [
+          "地核",
+          "海溝の下だけ",
+          "マントル内部だけ"
+        ]
+      }
+    ],
+    "note": "冷えると固まる。",
+    "cloze_context": "溶岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_10b440211d71",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山の噴出物と堆積岩",
+    "term": "火山灰",
+    "term_dummies": [
+      "マグマ",
+      "溶岩",
+      "堆積岩"
+    ],
+    "explanation_template": "火山から出た直径{{1}}mm未満の細かい粒。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "20",
+          "64",
+          "100"
+        ]
+      }
+    ],
+    "note": "燃えかすとは限らない。",
+    "cloze_context": "火山灰",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_160ee1002536",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山の噴出物と堆積岩",
+    "term": "堆積岩",
+    "term_dummies": [
+      "マグマ",
+      "溶岩",
+      "火山灰"
+    ],
+    "explanation_template": "れきや砂などが堆積し、固まってできた{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "岩石",
+        "dummies": [
+          "マグマ",
+          "土壌生物",
+          "鉱物だけ"
+        ]
+      }
+    ],
+    "note": "化学的な沈殿等でできるものもある。",
+    "cloze_context": "堆積岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a95c15b2a07c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震",
+    "term": "P波",
+    "term_dummies": [
+      "S波",
+      "初期微動",
+      "主要動"
+    ],
+    "explanation_template": "S波より{{1}}地中を伝わる地震の波。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "速く",
+        "dummies": [
+          "遅く",
+          "同じ速さで",
+          "全く伝わらず"
+        ]
+      }
+    ],
+    "note": "初期微動を起こす。",
+    "cloze_context": "P波",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_fb4ac405dabf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震",
+    "term": "S波",
+    "term_dummies": [
+      "P波",
+      "初期微動",
+      "主要動"
+    ],
+    "explanation_template": "P波より{{1}}地中を伝わる地震の波。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "遅く",
+        "dummies": [
+          "速く",
+          "同じ速さで",
+          "全く伝わらず"
+        ]
+      }
+    ],
+    "note": "主要動を起こす。",
+    "cloze_context": "S波",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_dc4ff47b5e54",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震",
+    "term": "初期微動",
+    "term_dummies": [
+      "P波",
+      "S波",
+      "主要動"
+    ],
+    "explanation_template": "地震で先に届く{{1}}による小さな揺れ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "P波",
+        "dummies": [
+          "S波",
+          "表面波",
+          "津波"
+        ]
+      }
+    ],
+    "note": "主要動までの時間に着目する。",
+    "cloze_context": "初期微動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_09de8f7f0eba",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震",
+    "term": "主要動",
+    "term_dummies": [
+      "P波",
+      "S波",
+      "初期微動"
+    ],
+    "explanation_template": "地震で後に届く{{1}}による大きな揺れ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "S波",
+        "dummies": [
+          "P波",
+          "音波",
+          "津波"
+        ]
+      }
+    ],
+    "note": "震源が遠いほど到着は遅れる。",
+    "cloze_context": "主要動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_92ba595691ae",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水蒸気",
+    "term": "露点",
+    "term_dummies": [
+      "湿度",
+      "飽和水蒸気量",
+      "気圧"
+    ],
+    "explanation_template": "空気を冷やし、水蒸気が水滴になり始める{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "温度",
+        "dummies": [
+          "気圧",
+          "湿度の差",
+          "風速"
+        ]
+      }
+    ],
+    "note": "冷やす前の水蒸気量に関係する。",
+    "cloze_context": "露点",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_72c6873f12d1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水蒸気",
+    "term": "湿度",
+    "term_dummies": [
+      "露点",
+      "飽和水蒸気量",
+      "気圧"
+    ],
+    "explanation_template": "飽和水蒸気量に対する実際の水蒸気量の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "割合",
+        "dummies": [
+          "差",
+          "積",
+          "総和"
+        ]
+      }
+    ],
+    "note": "百分率で表す。",
+    "cloze_context": "湿度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ded668c60a40",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水蒸気",
+    "term": "飽和水蒸気量",
+    "term_dummies": [
+      "露点",
+      "湿度",
+      "気圧"
+    ],
+    "explanation_template": "ある温度で空気に含める水蒸気の{{1}}量。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "最大",
+        "dummies": [
+          "最小",
+          "平均",
+          "常に同じ"
+        ]
+      }
+    ],
+    "note": "同じ体積の空気で比べる。",
+    "cloze_context": "飽和水蒸気量",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ef5e2a4a9876",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水蒸気",
+    "term": "気圧",
+    "term_dummies": [
+      "露点",
+      "湿度",
+      "飽和水蒸気量"
+    ],
+    "explanation_template": "大気による{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "圧力",
+        "dummies": [
+          "電圧",
+          "浮力の向き",
+          "湿度"
+        ]
+      }
+    ],
+    "note": "単位はhPaなど。",
+    "cloze_context": "気圧",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_e978e76d0981",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気圧と前線",
+    "term": "高気圧",
+    "term_dummies": [
+      "低気圧",
+      "寒冷前線",
+      "温暖前線"
+    ],
+    "explanation_template": "周囲より気圧が{{1}}部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "高い",
+        "dummies": [
+          "低い",
+          "常に同じ",
+          "必ずゼロの"
+        ]
+      }
+    ],
+    "note": "北半球では風は時計回りに吹き出す。",
+    "cloze_context": "高気圧",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_288496ac7c66",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気圧と前線",
+    "term": "低気圧",
+    "term_dummies": [
+      "高気圧",
+      "寒冷前線",
+      "温暖前線"
+    ],
+    "explanation_template": "周囲より気圧が{{1}}部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "低い",
+        "dummies": [
+          "高い",
+          "常に同じ",
+          "必ずゼロの"
+        ]
+      }
+    ],
+    "note": "北半球では風は反時計回りに吹き込む。",
+    "cloze_context": "低気圧",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_52cc70eec58d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気圧と前線",
+    "term": "寒冷前線",
+    "term_dummies": [
+      "高気圧",
+      "低気圧",
+      "温暖前線"
+    ],
+    "explanation_template": "{{1}}が暖気の下へ潜り込み進む前線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "寒気",
+        "dummies": [
+          "暖気",
+          "海水",
+          "マグマ"
+        ]
+      }
+    ],
+    "note": "積乱雲ができやすい。",
+    "cloze_context": "寒冷前線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_85a1a72a2235",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気圧と前線",
+    "term": "温暖前線",
+    "term_dummies": [
+      "高気圧",
+      "低気圧",
+      "寒冷前線"
+    ],
+    "explanation_template": "{{1}}が寒気の上をはい上がって進む前線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "暖気",
+        "dummies": [
+          "寒気",
+          "海水",
+          "マグマ"
+        ]
+      }
+    ],
+    "note": "広い範囲に雲ができやすい。",
+    "cloze_context": "温暖前線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_002e45fcc49f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "地球の運動と天体",
+    "term": "自転",
+    "term_dummies": [
+      "公転",
+      "日周運動",
+      "年周運動"
+    ],
+    "explanation_template": "地球が{{1}}を軸に回る運動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地軸",
+        "dummies": [
+          "公転軌道",
+          "月の軌道",
+          "天の川"
+        ]
+      }
+    ],
+    "note": "約1日で1回転する。",
+    "cloze_context": "自転",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_72c5d8ae007e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "地球の運動と天体",
+    "term": "公転",
+    "term_dummies": [
+      "自転",
+      "日周運動",
+      "年周運動"
+    ],
+    "explanation_template": "地球が{{1}}の周りを回る運動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "太陽",
+        "dummies": [
+          "月",
+          "北極星",
+          "地軸"
+        ]
+      }
+    ],
+    "note": "約1年で1周する。",
+    "cloze_context": "公転",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_28bfe5426113",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "地球の運動と天体",
+    "term": "日周運動",
+    "term_dummies": [
+      "自転",
+      "公転",
+      "年周運動"
+    ],
+    "explanation_template": "地球の{{1}}で天体が1日周期で動いて見える現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自転",
+        "dummies": [
+          "公転",
+          "地軸の移動",
+          "月の満ち欠け"
+        ]
+      }
+    ],
+    "note": "天球上の見かけの動き。",
+    "cloze_context": "日周運動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_0a4cbf624bd6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "地球の運動と天体",
+    "term": "年周運動",
+    "term_dummies": [
+      "自転",
+      "公転",
+      "日周運動"
+    ],
+    "explanation_template": "地球の{{1}}で恒星が1年周期で動いて見える現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "公転",
+        "dummies": [
+          "自転",
+          "地軸の移動",
+          "月の満ち欠け"
+        ]
+      }
+    ],
+    "note": "同じ時刻の星の位置が季節で変わる。",
+    "cloze_context": "年周運動",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_69bf53452aec",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の分類",
+    "term": "被子植物",
+    "term_dummies": [
+      "裸子植物",
+      "シダ植物",
+      "コケ植物"
+    ],
+    "explanation_template": "{{1}}が子房に包まれている種子植物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "胚珠",
+        "dummies": [
+          "根",
+          "葉",
+          "花粉だけ"
+        ]
+      }
+    ],
+    "note": "受精後、子房は果実になる。",
+    "cloze_context": "被子植物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d6674de0ef07",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の分類",
+    "term": "裸子植物",
+    "term_dummies": [
+      "被子植物",
+      "シダ植物",
+      "コケ植物"
+    ],
+    "explanation_template": "胚珠がむき出しで{{1}}がない種子植物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "子房",
+        "dummies": [
+          "根",
+          "茎",
+          "葉"
+        ]
+      }
+    ],
+    "note": "マツやイチョウなど。",
+    "cloze_context": "裸子植物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f11a8d99b1f8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の分類",
+    "term": "単子葉類",
+    "term_dummies": [
+      "双子葉類",
+      "裸子植物",
+      "シダ植物"
+    ],
+    "explanation_template": "子葉が{{1}}枚の被子植物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1",
+        "dummies": [
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "note": "平行脈やひげ根が多い。",
+    "cloze_context": "単子葉類",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_88134809e899",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の分類",
+    "term": "双子葉類",
+    "term_dummies": [
+      "単子葉類",
+      "裸子植物",
+      "シダ植物"
+    ],
+    "explanation_template": "子葉が{{1}}枚の被子植物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "1",
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "note": "網状脈、主根と側根が多い。",
+    "cloze_context": "双子葉類",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c1e6c61f7fd3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "動物の分類",
+    "term": "節足動物",
+    "term_dummies": [
+      "軟体動物",
+      "環形動物",
+      "刺胞動物"
+    ],
+    "explanation_template": "体やあしに{{1}}があり、外骨格を持つ動物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "節",
+        "dummies": [
+          "背骨",
+          "羽毛",
+          "うろこだけ"
+        ]
+      }
+    ],
+    "note": "昆虫や甲殻類など。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_56d345632c81",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "動物の分類",
+    "term": "軟体動物",
+    "term_dummies": [
+      "節足動物",
+      "環形動物",
+      "棘皮動物"
+    ],
+    "explanation_template": "{{1}}があり、内臓がそれに包まれた動物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "外とう膜",
+        "dummies": [
+          "外骨格",
+          "羽毛",
+          "背骨"
+        ]
+      }
+    ],
+    "note": "アサリやイカなど。",
+    "cloze_context": "軟体動物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b6270bb51439",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "動物の分類",
+    "term": "脊椎動物",
+    "term_dummies": [
+      "軟体動物",
+      "節足動物",
+      "環形動物"
+    ],
+    "explanation_template": "体に{{1}}を持つ動物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "背骨",
+        "dummies": [
+          "外骨格",
+          "外とう膜",
+          "気門"
+        ]
+      }
+    ],
+    "note": "魚類・両生類・爬虫類など。",
+    "cloze_context": "脊椎動物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3b7a9baad9fd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "動物の分類",
+    "term": "無脊椎動物",
+    "term_dummies": [
+      "魚類",
+      "両生類",
+      "爬虫類"
+    ],
+    "explanation_template": "{{1}}を持たない動物の総称。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "背骨",
+        "dummies": [
+          "外骨格",
+          "外とう膜",
+          "気門"
+        ]
+      }
+    ],
+    "note": "体のつくりは多様。",
+    "cloze_context": "無脊椎動物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c99aa3911ce2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物と動物の生命活動",
+    "term": "光合成",
+    "term_dummies": [
+      "呼吸",
+      "蒸散",
+      "消化"
+    ],
+    "explanation_template": "二酸化炭素と水から光で{{1}}をつくる働き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "デンプン",
+        "dummies": [
+          "タンパク質",
+          "脂肪",
+          "無機塩類"
+        ]
+      }
+    ],
+    "note": "酸素も生じる。",
+    "cloze_context": "光合成",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_11bfe4376917",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物と動物の生命活動",
+    "term": "呼吸",
+    "term_dummies": [
+      "光合成",
+      "蒸散",
+      "消化"
+    ],
+    "explanation_template": "養分を分解し、生活に必要な{{1}}を取り出す働き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "エネルギー",
+        "dummies": [
+          "葉緑体",
+          "染色体",
+          "水素だけ"
+        ]
+      }
+    ],
+    "note": "植物も動物も行う。",
+    "cloze_context": "呼吸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d19a750ee3fa",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物と動物の生命活動",
+    "term": "蒸散",
+    "term_dummies": [
+      "光合成",
+      "呼吸",
+      "消化"
+    ],
+    "explanation_template": "植物体から主に気孔を通じ水が{{1}}として出る現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "水蒸気",
+        "dummies": [
+          "液滴だけ",
+          "酸素",
+          "二酸化炭素"
+        ]
+      }
+    ],
+    "note": "水の吸い上げにも関係する。",
+    "cloze_context": "蒸散",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_617c1e4e2670",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物と動物の生命活動",
+    "term": "消化",
+    "term_dummies": [
+      "光合成",
+      "呼吸",
+      "蒸散"
+    ],
+    "explanation_template": "養分を吸収しやすい{{1}}に分解すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "小さな物質",
+        "dummies": [
+          "大きな物質",
+          "不溶性の塊",
+          "細胞そのもの"
+        ]
+      }
+    ],
+    "note": "消化酵素が関わる。",
+    "cloze_context": "消化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_61f06455e9b9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液と循環",
+    "term": "動脈",
+    "term_dummies": [
+      "静脈",
+      "毛細血管",
+      "ヘモグロビン"
+    ],
+    "explanation_template": "心臓から血液が{{1}}血管。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "出ていく",
+        "dummies": [
+          "戻る",
+          "必ず停止する",
+          "全く流れない"
+        ]
+      }
+    ],
+    "note": "肺動脈には静脈血が流れる。",
+    "cloze_context": "動脈",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_057313b5da87",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液と循環",
+    "term": "静脈",
+    "term_dummies": [
+      "動脈",
+      "毛細血管",
+      "ヘモグロビン"
+    ],
+    "explanation_template": "心臓へ血液が{{1}}血管。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "戻る",
+        "dummies": [
+          "出ていく",
+          "必ず停止する",
+          "全く流れない"
+        ]
+      }
+    ],
+    "note": "肺静脈には動脈血が流れる。",
+    "cloze_context": "静脈",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ad1bc439cc23",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液と循環",
+    "term": "毛細血管",
+    "term_dummies": [
+      "動脈",
+      "静脈",
+      "ヘモグロビン"
+    ],
+    "explanation_template": "動脈と静脈をつなぐ、壁が{{1}}血管。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "薄い",
+        "dummies": [
+          "最も厚い",
+          "筋肉だけの",
+          "骨だけの"
+        ]
+      }
+    ],
+    "note": "物質の受渡しに適する。",
+    "cloze_context": "毛細血管",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6ca93ce2be2e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液と循環",
+    "term": "ヘモグロビン",
+    "term_dummies": [
+      "動脈",
+      "静脈",
+      "毛細血管"
+    ],
+    "explanation_template": "赤血球にあり、{{1}}と結び付く物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "酸素",
+        "dummies": [
+          "デンプン",
+          "脂肪",
+          "セルロース"
+        ]
+      }
+    ],
+    "note": "酸素の運搬に関わる。",
+    "cloze_context": "ヘモグロビン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_eb515d939491",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "入射角が30°なら反射角は？",
+    "answer": "30°",
+    "dummies": [
+      "60°",
+      "90°",
+      "15°"
+    ],
+    "note": "角度は面に垂直な線から測る。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_6fb59aaa9a03",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "空気から水へ斜めに入る光の屈折角は？",
+    "answer": "入射角より小さい",
+    "dummies": [
+      "入射角より大きい",
+      "必ず90°",
+      "必ず入射角と等しい"
+    ],
+    "note": "面に垂直な線を基準とする。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_42fc8f205ad8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズの実像を映せるものは？",
+    "answer": "スクリーン",
+    "dummies": [
+      "鏡の裏だけ",
+      "レンズの中だけ",
+      "目の網膜以外には不可"
+    ],
+    "note": "実際に光が集まってできる像。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_fd8f65730b23",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズの焦点内に物体を置くと見えるのは？",
+    "answer": "拡大した正立の虚像",
+    "dummies": [
+      "縮小した倒立の実像",
+      "同じ大きさの実像",
+      "必ず像が見えない"
+    ],
+    "note": "虫眼鏡として使う場合。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4f35281a352f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音と力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "弦の振幅だけを大きくすると音は？",
+    "answer": "大きくなる",
+    "dummies": [
+      "高くなる",
+      "低くなる",
+      "必ず小さくなる"
+    ],
+    "note": "音の高さは振動数で決まる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_3d532a9effce",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音と力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ弦を短くしてはじくと音は一般に？",
+    "answer": "高くなる",
+    "dummies": [
+      "低くなる",
+      "必ず小さくなる",
+      "音が伝わらなくなる"
+    ],
+    "note": "張り方など他の条件は同じ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_2a82b72f7fc8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音と力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "月へ持っていっても変わらないのは？",
+    "answer": "物体の質量",
+    "dummies": [
+      "物体の重さ",
+      "物体への重力",
+      "ばねばかりの値"
+    ],
+    "note": "地球と月では重力が異なる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_928025d717b6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "音と力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ばねの伸びを求めるのは？",
+    "answer": "全長から自然の長さを引く",
+    "dummies": [
+      "全長と自然の長さを足す",
+      "全長を力で割る",
+      "全長を質量で割る"
+    ],
+    "note": "自然の長さを基準にする。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e4661d46f777",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "電圧を測る電圧計のつなぎ方は？",
+    "answer": "測る部分と並列",
+    "dummies": [
+      "測る部分と直列",
+      "必ず電池と直列だけ",
+      "回路を切って単独で使用"
+    ],
+    "note": "電流計とはつなぎ方が異なる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_bb2aca49df65",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "抵抗一定で電圧を2倍にすると電流は？",
+    "answer": "2倍",
+    "dummies": [
+      "半分",
+      "4倍",
+      "変わらない"
+    ],
+    "note": "オームの法則を使う。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_1094e3c52245",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ電圧で抵抗を2倍にすると電流は？",
+    "answer": "半分",
+    "dummies": [
+      "2倍",
+      "4倍",
+      "変わらない"
+    ],
+    "note": "電流は抵抗に反比例。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_3ff7124ce294",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "直列回路の全体の抵抗は？",
+    "answer": "各抵抗の和",
+    "dummies": [
+      "各抵抗の積",
+      "最小の抵抗より小さい",
+      "必ず最大の抵抗と同じ"
+    ],
+    "note": "電流は各抵抗で等しい。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_c62ca2013586",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "並列回路の全電流は？",
+    "answer": "各枝の電流の和",
+    "dummies": [
+      "各枝の電流の差",
+      "必ずどの枝とも等しい",
+      "各枝の電流の積"
+    ],
+    "note": "枝分かれの前後で考える。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5301e9212356",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ時間なら電力が2倍の電力量は？",
+    "answer": "2倍",
+    "dummies": [
+      "半分",
+      "4倍",
+      "変わらない"
+    ],
+    "note": "電力量は電力と時間の積。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_781a71b6fd1f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "コイルと磁石を静止させたままなら誘導電流は？",
+    "answer": "流れない",
+    "dummies": [
+      "流れ続ける",
+      "必ず最大になる",
+      "周期的に増える"
+    ],
+    "note": "コイル内の磁界変化が必要。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8ad6aff447e0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "磁石を動かす向きを逆にすると誘導電流は？",
+    "answer": "向きが逆になる",
+    "dummies": [
+      "向きは必ず同じ",
+      "必ずゼロになる",
+      "必ず直流に変わる"
+    ],
+    "note": "他の条件は同じとする。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d2fb46a12ba7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "等速直線運動で働く力の合力は？",
+    "answer": "ゼロ",
+    "dummies": [
+      "進む向きに一定",
+      "逆向きに一定",
+      "速さに比例して増加"
+    ],
+    "note": "運動中でも合力ゼロの場合がある。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_40d2594bc26e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水平面を進む物体の速さを落とす力の例は？",
+    "answer": "摩擦力",
+    "dummies": [
+      "鉛直下向きの重力だけ",
+      "鉛直上向きの垂直抗力だけ",
+      "進む向きの押す力"
+    ],
+    "note": "運動に逆らう力を考える。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_84325f644836",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "物体が動かないとき加えた力の仕事は？",
+    "answer": "ゼロ",
+    "dummies": [
+      "力と同じ値",
+      "力と時間の積",
+      "質量と同じ値"
+    ],
+    "note": "力の向きの移動距離がゼロ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_7abc5efee1c2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ仕事を半分の時間ですると仕事率は？",
+    "answer": "2倍",
+    "dummies": [
+      "半分",
+      "4倍",
+      "変わらない"
+    ],
+    "note": "仕事を時間で割る。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e8cab30e6321",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "定滑車だけを使う主な利点は？",
+    "answer": "力の向きを変えられる",
+    "dummies": [
+      "必ず力が半分になる",
+      "仕事が必ずゼロになる",
+      "引く距離が必ず半分になる"
+    ],
+    "note": "摩擦などを無視して考える。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d243d1f4bffb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "自由落下で速さが増えるのは？",
+    "answer": "重力が働くため",
+    "dummies": [
+      "力が全くないため",
+      "質量が増えるため",
+      "重力が消えるため"
+    ],
+    "note": "空気抵抗を無視する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_592dec613c7e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "振り子の最下点で最大となるのは？",
+    "answer": "運動エネルギー",
+    "dummies": [
+      "位置エネルギー",
+      "質量",
+      "重力の大きさ"
+    ],
+    "note": "摩擦などを無視する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_cd14428a4b6d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "運動とエネルギー",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "摩擦で減った力学的エネルギーは主に？",
+    "answer": "熱などへ変わる",
+    "dummies": [
+      "完全に消滅する",
+      "全て質量へ変わる",
+      "必ず位置エネルギーに戻る"
+    ],
+    "note": "全エネルギーとしては保存される。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_9f9af2efe495",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "液体のメスシリンダーの目盛りを読む位置は？",
+    "answer": "液面と同じ高さ",
+    "dummies": [
+      "液面より上",
+      "液面より下",
+      "斜め上"
+    ],
+    "note": "水は液面の最も低い所を読む。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_121536205e3f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "固体の体積を水で測れる条件は？",
+    "answer": "水に溶けず水と反応しない",
+    "dummies": [
+      "必ず水に溶ける",
+      "水と激しく反応する",
+      "気体を発生し続ける"
+    ],
+    "note": "沈め方や気泡にも注意する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_fceb5b8ac05f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水上置換に向く気体の性質は？",
+    "answer": "水に溶けにくい",
+    "dummies": [
+      "水に非常によく溶ける",
+      "水と必ず反応する",
+      "必ず空気より重い"
+    ],
+    "note": "空気に対する密度だけでは決まらない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8f1cbe4f530c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アンモニアを集めるのに適する方法は？",
+    "answer": "上方置換",
+    "dummies": [
+      "下方置換",
+      "水上置換",
+      "水に直接吸収して気体を保存"
+    ],
+    "note": "水に溶けやすく空気より軽い。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4ac7f21ae8eb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "食塩水をろ過して食塩を分けられる？",
+    "answer": "溶けた食塩は分けられない",
+    "dummies": [
+      "食塩が全てろ紙に残る",
+      "水だけろ紙に残る",
+      "食塩が気体になる"
+    ],
+    "note": "溶けた粒子はろ紙を通る。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_a0f5619497ef",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "質量パーセント濃度の分母は？",
+    "answer": "溶液の質量",
+    "dummies": [
+      "溶媒の質量だけ",
+      "溶質の質量だけ",
+      "容器の質量"
+    ],
+    "note": "溶質の質量を割り100倍する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_75c1db14cf9d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "純粋な物質の融点を測る主な目的は？",
+    "answer": "物質を見分ける手掛かり",
+    "dummies": [
+      "質量を直接求める",
+      "体積を直接求める",
+      "電流を直接測る"
+    ],
+    "note": "一定の圧力などで比較する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_f13dfde701ee",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と実験操作",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "薄いエタノール水溶液の初めの留出液は？",
+    "answer": "元よりエタノール割合が高い",
+    "dummies": [
+      "必ず純粋な水",
+      "必ず純エタノール",
+      "エタノールを含まない"
+    ],
+    "note": "一度で完全に純粋になるとは限らない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8d5f466cca07",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "炭酸水素ナトリウムの加熱で出る気体は？",
+    "answer": "二酸化炭素",
+    "dummies": [
+      "酸素",
+      "水素",
+      "アンモニア"
+    ],
+    "note": "水も生じる分解反応。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_6ff6fdab31b4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸化銀を加熱して出る気体は？",
+    "answer": "酸素",
+    "dummies": [
+      "二酸化炭素",
+      "水素",
+      "窒素"
+    ],
+    "note": "銀も生じる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e98bdbfcdef4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水の電気分解で陰極に発生する気体は？",
+    "answer": "水素",
+    "dummies": [
+      "酸素",
+      "二酸化炭素",
+      "塩素"
+    ],
+    "note": "体積は陽極の気体の約2倍。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_976f765fabcf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "化学変化で保存されるものは？",
+    "answer": "原子の種類と個数",
+    "dummies": [
+      "分子の種類と個数が必ず同じ",
+      "物質の体積が必ず同じ",
+      "物質の状態が必ず同じ"
+    ],
+    "note": "原子の組合せが変わる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_b8c3910c92af",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鉄と硫黄を十分に反応させるとできるのは？",
+    "answer": "硫化鉄",
+    "dummies": [
+      "酸化鉄",
+      "硫酸",
+      "水酸化鉄"
+    ],
+    "note": "混合しただけの場合とは性質が違う。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_59bdeaa1e49b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "銅の酸化で空気中から結び付くものは？",
+    "answer": "酸素",
+    "dummies": [
+      "窒素",
+      "二酸化炭素",
+      "水素"
+    ],
+    "note": "増加質量は結び付いた酸素の質量。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_38604a9b08c3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "容器を開けて気体を逃がすと全質量の比較は？",
+    "answer": "系全体を含め直す必要",
+    "dummies": [
+      "質量保存が成立しなくなる",
+      "原子が消えたことになる",
+      "必ず容器内の質量は増える"
+    ],
+    "note": "出入りする物質も含める。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5962f389351c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "化学変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "反応する銅と酸素の質量比の特徴は？",
+    "answer": "一定の比になる",
+    "dummies": [
+      "銅の量で無制限に変わる",
+      "容器の色だけで変わる",
+      "気体の体積比と常に同じ"
+    ],
+    "note": "同じ化合物をつくる場合で比べる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_47e7fea83b19",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "食塩水に電流が流れる主な理由は？",
+    "answer": "移動できるイオンがある",
+    "dummies": [
+      "水中に金属線ができる",
+      "全ての水分子が金属になる",
+      "全ての粒子が静止している"
+    ],
+    "note": "イオンが電気を運ぶ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_7e65c810639b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "砂糖水が電流をほぼ通さない理由は？",
+    "answer": "砂糖が電離しない",
+    "dummies": [
+      "砂糖が水に溶けない",
+      "砂糖が金属になる",
+      "砂糖が沈殿する"
+    ],
+    "note": "溶解と電離は同じではない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_1703b3d1dcd4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "BTB溶液は酸性で何色？",
+    "answer": "黄色",
+    "dummies": [
+      "青色",
+      "緑色",
+      "紫色"
+    ],
+    "note": "中性は緑、アルカリ性は青。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_964e0059ebfa",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "pHが7より小さい水溶液は？",
+    "answer": "酸性",
+    "dummies": [
+      "中性",
+      "アルカリ性",
+      "必ず純粋な水"
+    ],
+    "note": "中学での標準的な条件で考える。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_008f226b18e8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中和後の液が必ず中性とは限らない理由は？",
+    "answer": "酸等が余る場合がある",
+    "dummies": [
+      "必ず水ができない",
+      "必ず塩が気体になる",
+      "必ず全イオンが消える"
+    ],
+    "note": "加える量や濃度に関係する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8b6ac4a02f6f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中和で生じた塩が水に溶ける場合は？",
+    "answer": "イオンが残り得る",
+    "dummies": [
+      "全粒子が必ず消える",
+      "必ずろ過で全て分かれる",
+      "必ず電流を通さなくなる"
+    ],
+    "note": "中性でも電流を通す液はある。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_62e3ae3a60b6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ダニエル電池で電子を放出する電極は？",
+    "answer": "亜鉛板",
+    "dummies": [
+      "銅板",
+      "両方が同時に同量放出",
+      "電解質の容器"
+    ],
+    "note": "亜鉛が陽イオンになる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_be062a3cdea1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと電池",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金属線を流れる電子の向きは電流と？",
+    "answer": "逆向き",
+    "dummies": [
+      "同じ向き",
+      "常に垂直",
+      "無関係で一定しない"
+    ],
+    "note": "電子は負の電気を持つ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_611c3b546094",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ルーペで手に持つ物を観察するとき動かすのは？",
+    "answer": "観察する物",
+    "dummies": [
+      "目とルーペの距離だけ",
+      "必ず両目の間隔",
+      "レンズの厚さ"
+    ],
+    "note": "ルーペは目に近付けて持つ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_1f61a5ce5097",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "顕微鏡で高倍率にすると見える範囲は？",
+    "answer": "狭くなる",
+    "dummies": [
+      "広くなる",
+      "必ず明るくなる",
+      "必ず変わらない"
+    ],
+    "note": "低倍率で対象を中心へ移しておく。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8d738ab3d604",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "マツとサクラの分類で異なる点は？",
+    "answer": "子房の有無",
+    "dummies": [
+      "根の有無",
+      "茎の有無",
+      "葉の有無"
+    ],
+    "note": "マツは裸子、サクラは被子植物。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d2bedd5b657a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "イネの葉脈や根の代表的な組合せは？",
+    "answer": "平行脈・ひげ根",
+    "dummies": [
+      "網状脈・主根側根",
+      "平行脈・主根側根",
+      "網状脈・ひげ根"
+    ],
+    "note": "イネは単子葉類。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8f1590aa7044",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "シダ植物が種子植物と異なる増え方は？",
+    "answer": "胞子で増える",
+    "dummies": [
+      "受精卵ができない",
+      "必ず分裂だけで増える",
+      "花粉だけで増える"
+    ],
+    "note": "根・茎・葉の区別はある。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d5762a0b5700",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "昆虫とクモを分ける基準の例は？",
+    "answer": "あしの数や体の区分",
+    "dummies": [
+      "背骨の有無だけ",
+      "羽の有無だけ",
+      "陸上生活かだけ"
+    ],
+    "note": "どちらも節足動物。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4175099bd51d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "イカとアサリに共通するつくりは？",
+    "answer": "外とう膜",
+    "dummies": [
+      "背骨",
+      "節のあるあし",
+      "羽毛"
+    ],
+    "note": "どちらも軟体動物。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_fd870443ea89",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と分類",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "両生類の成体の呼吸は一般に？",
+    "answer": "肺と皮膚",
+    "dummies": [
+      "えらだけ",
+      "気管だけ",
+      "肺だけで皮膚は無関係"
+    ],
+    "note": "幼生では主にえら呼吸。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_b51bff35365d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物細胞で光合成が行われる主な場所は？",
+    "answer": "葉緑体",
+    "dummies": [
+      "核",
+      "細胞壁",
+      "液胞"
+    ],
+    "note": "緑色の部分に多く見られる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d09c84bbe666",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "葉でつくられた養分を運ぶ主な管は？",
+    "answer": "師管",
+    "dummies": [
+      "道管",
+      "気孔",
+      "根毛"
+    ],
+    "note": "水などを運ぶ道管と区別。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_9ae62bc1178e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水や無機養分を根から運ぶ主な管は？",
+    "answer": "道管",
+    "dummies": [
+      "師管",
+      "気孔",
+      "葉緑体"
+    ],
+    "note": "根・茎・葉につながる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_44a481f3264b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "デンプンと唾液の実験の対照は？",
+    "answer": "唾液の代わりに水",
+    "dummies": [
+      "両方を倍にする",
+      "温度だけ変える",
+      "管の色だけ変える"
+    ],
+    "note": "温度や時間など他条件は同じ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_6ed567814d39",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "タンパク質の消化で最終的にできるものは？",
+    "answer": "アミノ酸",
+    "dummies": [
+      "ブドウ糖",
+      "脂肪酸だけ",
+      "グリセリンだけ"
+    ],
+    "note": "小腸などで吸収される。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e83d9f0ff544",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "肺から心臓へ血液を運ぶ血管は？",
+    "answer": "肺静脈",
+    "dummies": [
+      "肺動脈",
+      "大動脈",
+      "大静脈"
+    ],
+    "note": "酸素の多い動脈血が流れる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_82e2a83e6372",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "尿素などを尿として排出する器官は？",
+    "answer": "腎臓",
+    "dummies": [
+      "心臓",
+      "小腸",
+      "肺"
+    ],
+    "note": "血液をこし分けて尿をつくる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_bdeea271a295",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "体のつくりと働き",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "脳から筋肉へ命令を伝える神経は？",
+    "answer": "運動神経",
+    "dummies": [
+      "感覚神経",
+      "視神経",
+      "嗅神経"
+    ],
+    "note": "感覚器官からの情報の向きと区別。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_c8709368d093",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山・地震・地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "深成岩の結晶が大きい主な理由は？",
+    "answer": "ゆっくり冷えたため",
+    "dummies": [
+      "必ず地表で急冷したため",
+      "化石が成長したため",
+      "気体が全て消えたため"
+    ],
+    "note": "結晶が育つ時間が長い。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_fef30ebdb3aa",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山・地震・地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "マグマのねばりけが強い火山の噴火は一般に？",
+    "answer": "爆発的になりやすい",
+    "dummies": [
+      "必ず穏やか",
+      "必ず噴火しない",
+      "必ず海中だけで起こる"
+    ],
+    "note": "噴火の様子と地形に関係する。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_a8bc11828d2e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山・地震・地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "震源から遠いほど初期微動継続時間は？",
+    "answer": "長い",
+    "dummies": [
+      "短い",
+      "必ず同じ",
+      "必ずゼロ"
+    ],
+    "note": "P波とS波の速さの違いによる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_af3799bdbf2a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山・地震・地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地震の規模を表すのは？",
+    "answer": "マグニチュード",
+    "dummies": [
+      "震度",
+      "気圧",
+      "湿度"
+    ],
+    "note": "震度は各地点の揺れの強さ。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_895f118f4036",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山・地震・地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地層が逆転していないとき下の層は一般に？",
+    "answer": "古い",
+    "dummies": [
+      "新しい",
+      "必ず同時",
+      "年代は必ず決められない"
+    ],
+    "note": "堆積した順序を考える。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e9c0b9a4a9fd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火山・地震・地層",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "造礁サンゴの化石が示す堆積環境は？",
+    "answer": "暖かく浅い海",
+    "dummies": [
+      "寒い深海",
+      "乾燥した砂漠",
+      "氷河の底"
+    ],
+    "note": "示相化石として利用できる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4dbe8fbf801e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気温が下がると飽和水蒸気量は？",
+    "answer": "小さくなる",
+    "dummies": [
+      "大きくなる",
+      "常に同じ",
+      "必ずゼロになる"
+    ],
+    "note": "同じ体積の空気で比較。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_57f43efd7d2f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "露点に達する前に冷やすと湿度は？",
+    "answer": "上がる",
+    "dummies": [
+      "下がる",
+      "必ず変わらない",
+      "必ず100％を超える"
+    ],
+    "note": "水蒸気量は変わらない条件。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_96efac2ff8a2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "低気圧の中心付近で起こりやすい流れは？",
+    "answer": "上昇気流",
+    "dummies": [
+      "下降気流",
+      "常に水平だけ",
+      "空気の完全な静止"
+    ],
+    "note": "雲ができやすい。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d363dc8264c6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "寒冷前線付近で発達しやすい雲は？",
+    "answer": "積乱雲",
+    "dummies": [
+      "巻雲だけ",
+      "乱層雲だけ",
+      "雲はできない"
+    ],
+    "note": "強い雨が比較的短時間降りやすい。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_c260eb942319",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の夏に勢力を強める代表的な気団は？",
+    "answer": "小笠原気団",
+    "dummies": [
+      "シベリア気団",
+      "オホーツク海気団",
+      "揚子江気団"
+    ],
+    "note": "高温多湿の空気をもたらす。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_cb89a406b4ea",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "天気",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "冬に日本海側で雪が多い主な理由は？",
+    "answer": "季節風が海から水蒸気を得る",
+    "dummies": [
+      "太平洋からの風だけが強まる",
+      "冬に日本海が沸騰する",
+      "山地が水蒸気を全て消す"
+    ],
+    "note": "山地を上る空気で雲ができる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e388c3ea98e4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "太陽が東から西へ動いて見える原因は？",
+    "answer": "地球の西から東への自転",
+    "dummies": [
+      "地球の東から西への自転",
+      "太陽が毎日地球を公転",
+      "月が太陽を押すこと"
+    ],
+    "note": "地球の自転と逆向きに見える。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_11af7c96cf55",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北半球で夏の昼が長いことと関わるのは？",
+    "answer": "地軸の傾きと公転",
+    "dummies": [
+      "太陽の急な膨張",
+      "地球の自転の停止",
+      "月の公転速度だけ"
+    ],
+    "note": "太陽の通り道や南中高度も変わる。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d186190feb16",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "新月のときの太陽・月・地球の並びは？",
+    "answer": "太陽・月・地球",
+    "dummies": [
+      "太陽・地球・月",
+      "地球・太陽・月",
+      "必ず直角に並ぶ"
+    ],
+    "note": "毎回日食になるわけではない。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d392a9cfdb5c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "天体",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "月は恒星に対して日ごとにどちらへ移る？",
+    "answer": "東",
+    "dummies": [
+      "西",
+      "必ず北だけ",
+      "必ず南だけ"
+    ],
+    "note": "月の公転による見かけの変化。",
+    "content_batch": "science-foundation-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
   }
 ]

@@ -1,0 +1,110 @@
+{
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 理科編（令和3年8月一部改訂）",
+    "url": "https://www.mext.go.jp/content/20230522-mxt_kyoikujinzai02-000033060_04.pdf",
+    "retrieved": "2026-11-09",
+    "sha256": "e28b9d4778070496b350141c92d70061cb6f98e76ff6fc74ab88f79f972c7d24",
+    "locator": "付録3 中学校学習指導要領 第2章第4節理科。印刷頁150–166、対応する本文解説も参照。"
+  },
+  "countingRule": "公式の第1分野7・第2分野7の内容のまとまりを編集用に管理。14ブロックは全小項目・全語句の母数や網羅率ではない。",
+  "rows": [
+    {
+      "id": "p1",
+      "officialField": "第1分野",
+      "officialLabel": "身近な物理現象",
+      "remaining": "凸レンズの作図・光路、力の図示など、図を使う短い判断の不足",
+      "status": "補強中"
+    },
+    {
+      "id": "p2",
+      "officialField": "第1分野",
+      "officialLabel": "身の回りの物質",
+      "remaining": "金属の性質、物質の見分け、状態変化、気体の発生・捕集条件の補強",
+      "status": "補強中"
+    },
+    {
+      "id": "p3",
+      "officialField": "第1分野",
+      "officialLabel": "電流とその利用",
+      "remaining": "静電気と電子、発熱、電流の磁気作用、交流や放射線の基礎を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "p4",
+      "officialField": "第1分野",
+      "officialLabel": "化学変化と原子・分子",
+      "remaining": "化学式・反応式、熱の出入り、一定質量比の短い判断を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "p5",
+      "officialField": "第1分野",
+      "officialLabel": "運動とエネルギー",
+      "remaining": "水圧・浮力、合力と分力、速さの変化や記録の着眼点を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "p6",
+      "officialField": "第1分野",
+      "officialLabel": "化学変化とイオン",
+      "remaining": "電解・電池と電子の移動、酸アルカリの検出・中和の量的な関係を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "p7",
+      "officialField": "第1分野",
+      "officialLabel": "科学技術と人間",
+      "remaining": "エネルギー資源・放射線・材料・科学技術と生活、持続可能性を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "s1",
+      "officialField": "第2分野",
+      "officialLabel": "いろいろな生物とその共通点",
+      "remaining": "観察・植物と動物の共通点、花・種子、分類の条件を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "s2",
+      "officialField": "第2分野",
+      "officialLabel": "大地の成り立ちと変化",
+      "remaining": "鉱物・火成岩と堆積岩、地層・化石、プレートと災害・恵みを補強",
+      "status": "補強中"
+    },
+    {
+      "id": "s3",
+      "officialField": "第2分野",
+      "officialLabel": "生物の体のつくりと働き",
+      "remaining": "細胞・植物体、消化・循環・排出・感覚と運動をさらに補強",
+      "status": "補強中"
+    },
+    {
+      "id": "s4",
+      "officialField": "第2分野",
+      "officialLabel": "気象とその変化",
+      "remaining": "観測器具・気圧と風、雲・雨、前線・日本の気象・災害を補強",
+      "status": "補強中"
+    },
+    {
+      "id": "s5",
+      "officialField": "第2分野",
+      "officialLabel": "生命の連続性",
+      "remaining": "既存の生殖・遺伝・進化を公式の範囲と照合し、用語と候補の曖昧さを確認",
+      "status": "補強中"
+    },
+    {
+      "id": "s6",
+      "officialField": "第2分野",
+      "officialLabel": "地球と宇宙",
+      "remaining": "太陽・月・惑星・恒星、季節の変化、見かけの運動をさらに補強",
+      "status": "補強中"
+    },
+    {
+      "id": "s7",
+      "officialField": "第2分野",
+      "officialLabel": "自然と人間",
+      "remaining": "既存の生態系・環境を照合し、自然の恵み・災害と保全を補強",
+      "status": "補強中"
+    }
+  ]
+}

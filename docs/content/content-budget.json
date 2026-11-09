@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "baselineViewport": {
     "width": 320,
     "height": 844
@@ -72,6 +72,29 @@
       },
       "verified": "2026-11-08: 6 boundary examples × 320/390 × normal/focus = 24 fully revealed displays with real HTML/CSS in Chromium. Choice text fits in reviewed cases; maximum actual panel height 331px. Not a guarantee for every device or every text combination.",
       "reviewRecord": "social-source/layout-review.json"
+    },
+    {
+      "id": "science-foundation-text-20261109",
+      "subject": "理科",
+      "profiles": [
+        "text-four-choices",
+        "text-two-columns"
+      ],
+      "maxima": {
+        "task": 20,
+        "prompt": 26,
+        "choice": 13,
+        "targetLabel": 21,
+        "note": 18,
+        "combined": 75
+      },
+      "estimatedPanelHeightLimit": 330,
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "verified": "2026-11-09: five boundary questions × normal/focus = ten displays using actual app HTML/CSS. Nonempty question text and all choices visible without text overflow. Maximum panel height 340.27px. Trailing empty spacing scroll heights recorded separately.",
+      "reviewRecord": "science-source/layout-review.json"
     }
   ],
   "longDefinitionHeading": {

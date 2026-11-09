@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-09",
+  "method": "Actual app HTML/CSS without audio or game JavaScript; five fully revealed boundary questions, normal/focus at 320×844 with safe areas. No session simulation or all-question browser loop.",
+  "browser": "Chromium",
+  "cases": [
+    "jr_science_014be245f9bf",
+    "jr_science_014be245f9bf:blank:1",
+    "jr_science_e422209d07ae",
+    "jr_science_case_8f1cbe4f530c:choice",
+    "jr_science_11bfe4376917"
+  ],
+  "results": [
+    {
+      "id": "jr_science_014be245f9bf",
+      "focus": false,
+      "panelHeight": 327.53125,
+      "panelClientHeight": 326,
+      "panelScrollHeight": 326,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 445.96875,
+          "bottom": 533.53125,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 445.96875,
+          "bottom": 533.53125,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 445.96875,
+          "bottom": 533.53125,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 445.96875,
+          "bottom": 533.53125,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_014be245f9bf:blank:1",
+      "focus": false,
+      "panelHeight": 330.34375,
+      "panelClientHeight": 328,
+      "panelScrollHeight": 328,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 471.96875,
+          "bottom": 536.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 471.96875,
+          "bottom": 536.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 471.96875,
+          "bottom": 536.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 471.96875,
+          "bottom": 536.34375,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_e422209d07ae",
+      "focus": false,
+      "panelHeight": 304.34375,
+      "panelClientHeight": 302,
+      "panelScrollHeight": 302,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 445.96875,
+          "bottom": 510.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 445.96875,
+          "bottom": 510.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 445.96875,
+          "bottom": 510.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 445.96875,
+          "bottom": 510.34375,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_case_8f1cbe4f530c:choice",
+      "focus": false,
+      "panelHeight": 333.65625,
+      "panelClientHeight": 332,
+      "panelScrollHeight": 332,
+      "choices": [
+        {
+          "width": 128.5,
+          "height": 64.375,
+          "top": 416.28125,
+          "bottom": 480.65625,
+          "overflow": false
+        },
+        {
+          "width": 128.5,
+          "height": 64.375,
+          "top": 416.28125,
+          "bottom": 480.65625,
+          "overflow": false
+        },
+        {
+          "width": 128.5,
+          "height": 54,
+          "top": 485.65625,
+          "bottom": 539.65625,
+          "overflow": false
+        },
+        {
+          "width": 128.5,
+          "height": 54,
+          "top": 485.65625,
+          "bottom": 539.65625,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_11bfe4376917",
+      "focus": false,
+      "panelHeight": 340.265625,
+      "panelClientHeight": 338,
+      "panelScrollHeight": 338,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 482.265625,
+          "bottom": 546.265625,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 482.265625,
+          "bottom": 546.265625,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 482.265625,
+          "bottom": 546.265625,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 482.265625,
+          "bottom": 546.265625,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_014be245f9bf",
+      "focus": true,
+      "panelHeight": 311,
+      "panelClientHeight": 309,
+      "panelScrollHeight": 316,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 435.96875,
+          "bottom": 523.53125,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 435.96875,
+          "bottom": 523.53125,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 435.96875,
+          "bottom": 523.53125,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 87.5625,
+          "top": 435.96875,
+          "bottom": 523.53125,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_014be245f9bf:blank:1",
+      "focus": true,
+      "panelHeight": 311,
+      "panelClientHeight": 309,
+      "panelScrollHeight": 318,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 461.96875,
+          "bottom": 526.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 461.96875,
+          "bottom": 526.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 461.96875,
+          "bottom": 526.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 461.96875,
+          "bottom": 526.34375,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_e422209d07ae",
+      "focus": true,
+      "panelHeight": 294.34375,
+      "panelClientHeight": 292,
+      "panelScrollHeight": 292,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 435.96875,
+          "bottom": 500.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 435.96875,
+          "bottom": 500.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 435.96875,
+          "bottom": 500.34375,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64.375,
+          "top": 435.96875,
+          "bottom": 500.34375,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_case_8f1cbe4f530c:choice",
+      "focus": true,
+      "panelHeight": 311,
+      "panelClientHeight": 309,
+      "panelScrollHeight": 322,
+      "choices": [
+        {
+          "width": 128.5,
+          "height": 64.375,
+          "top": 406.28125,
+          "bottom": 470.65625,
+          "overflow": false
+        },
+        {
+          "width": 128.5,
+          "height": 64.375,
+          "top": 406.28125,
+          "bottom": 470.65625,
+          "overflow": false
+        },
+        {
+          "width": 128.5,
+          "height": 54,
+          "top": 475.65625,
+          "bottom": 529.65625,
+          "overflow": false
+        },
+        {
+          "width": 128.5,
+          "height": 54,
+          "top": 475.65625,
+          "bottom": 529.65625,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    },
+    {
+      "id": "jr_science_11bfe4376917",
+      "focus": true,
+      "panelHeight": 311,
+      "panelClientHeight": 309,
+      "panelScrollHeight": 328,
+      "choices": [
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 472.265625,
+          "bottom": 536.265625,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 472.265625,
+          "bottom": 536.265625,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 472.265625,
+          "bottom": 536.265625,
+          "overflow": false
+        },
+        {
+          "width": 61.75,
+          "height": 64,
+          "top": 472.265625,
+          "bottom": 536.265625,
+          "overflow": false
+        }
+      ],
+      "insidePanel": true,
+      "visibleText": true
+    }
+  ],
+  "maximumPanelHeight": 340.265625,
+  "limitations": "Layout of selected text states only; not a guarantee for all devices or gameplay timing. Scroll heights retained separately; trailing empty spacing can overflow while all nonempty text and choices remain visible."
+}

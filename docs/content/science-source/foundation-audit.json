@@ -1,0 +1,60 @@
+{
+  "version": "0.85.0",
+  "date": "2026-11-09",
+  "batch": "science-foundation-20261109",
+  "newMaterials": 200,
+  "newGeneratedQuestions": 320,
+  "pairedTermMaterials": 120,
+  "choiceMaterials": 80,
+  "previousScienceMaterials": 157,
+  "previousScienceGeneratedQuestions": 254,
+  "totalMaterials": 357,
+  "totalGeneratedQuestions": 574,
+  "fields": {
+    "物理": {
+      "materials": 86,
+      "generated": 125
+    },
+    "化学": {
+      "materials": 82,
+      "generated": 122
+    },
+    "生物": {
+      "materials": 132,
+      "generated": 245
+    },
+    "地学": {
+      "materials": 55,
+      "generated": 80
+    },
+    "環境": {
+      "materials": 2,
+      "generated": 2
+    }
+  },
+  "previousScienceContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "runtimeChanges": "Version URLs only; no gameplay or persistence logic changes.",
+  "budget": {
+    "materials": 200,
+    "presentations": 320,
+    "maxima": {
+      "task": 20,
+      "prompt": 26,
+      "choice": 13,
+      "targetLabel": 21,
+      "note": 18,
+      "combined": 75
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "layoutReview": "layout-review.json",
+  "boundaryDisplays": 10,
+  "layoutScope": "Five generated text boundary questions × normal/focus at 320×844, actual HTML/CSS without game/audio. All nonempty text and four choices visible; trailing spacing scroll heights retained separately. Not a full question loop or device guarantee.",
+  "references": "foundation-references.json",
+  "editorialReview": "Conditions for proportional relations, controlled comparisons and mass conservation; mass/weight, current/electron direction, arteries/venous blood, classification inclusion, total vs mechanical energy, dilute ethanol distillation and reef-building coral specified. New pressure content classified with grade-2 meteorology.",
+  "checks": "New JSON/IDs/required fields/four choices/direct literal theme hints/old-content preservation/text envelope; only selected out-of-envelope boundary displays. No full app test suite, all-question browser loop or five-minute simulation.",
+  "completion": "Science remains in progress. Body functions, earth/weather/space, experimental and quantitative relations, science technology and final official-subitem review follow."
+}
