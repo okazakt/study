@@ -1,0 +1,59 @@
+{
+  "version": "0.86.0",
+  "date": "2026-11-09",
+  "batch": "science-body-earth-20261109",
+  "newMaterials": 200,
+  "newGeneratedQuestions": 320,
+  "pairedTermMaterials": 120,
+  "choiceMaterials": 80,
+  "previousScienceMaterials": 357,
+  "previousScienceGeneratedQuestions": 574,
+  "totalMaterials": 557,
+  "totalGeneratedQuestions": 894,
+  "fields": {
+    "物理": {
+      "materials": 110,
+      "generated": 161
+    },
+    "化学": {
+      "materials": 106,
+      "generated": 158
+    },
+    "生物": {
+      "materials": 204,
+      "generated": 365
+    },
+    "地学": {
+      "materials": 135,
+      "generated": 208
+    },
+    "環境": {
+      "materials": 2,
+      "generated": 2
+    }
+  },
+  "previousScienceContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "runtimeChanges": "Version URLs only; no gameplay or persistence changes.",
+  "budget": {
+    "materials": 200,
+    "presentations": 320,
+    "maxima": {
+      "task": 20,
+      "prompt": 26,
+      "choice": 13,
+      "targetLabel": 21,
+      "note": 17,
+      "combined": 74
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "reusedLayoutReview": "layout-review.json",
+  "references": "body-earth-references.json",
+  "editorialReview": "Parent-child candidates and overlapping functions reviewed at authoring. Platelet fragments, nucleus vs plastids, organs/tissues, rock composition pairs, plate composition, portal transport, before/after faulting, stable volume/density for buoyancy, and moon phases/Japanese observing times distinguished. Cases emphasize experimental purpose, comparison or inference rather than restating term definitions.",
+  "checks": "New JSON/IDs/required fields/four choices/direct hints/exact old-content preservation/text envelope only; within prior science display bounds. No browser, full app suite or five-minute simulation.",
+  "completion": "Science remains in progress. Remaining physics/chemistry, science/technology and official-subitem audit estimated at 1–2 further rounds, subject to gaps found."
+}

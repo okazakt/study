@@ -8927,5 +8927,5925 @@
       "s6"
     ],
     "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3c0a34f368c0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞のつくり",
+    "term": "核",
+    "term_dummies": [
+      "細胞壁",
+      "細胞膜",
+      "液胞"
+    ],
+    "explanation_template": "細胞にあり、{{1}}を含むつくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "染色体",
+        "dummies": [
+          "消化液",
+          "血しょう",
+          "胆汁"
+        ]
+      }
+    ],
+    "note": "酢酸カーミン液などで染まりやすい。",
+    "cloze_context": "核",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ff1b5b12e37d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞のつくり",
+    "term": "細胞膜",
+    "term_dummies": [
+      "核",
+      "細胞壁",
+      "葉緑体"
+    ],
+    "explanation_template": "細胞の内外の物質の出入りを{{1}}する薄い膜。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "調節",
+        "dummies": [
+          "記録",
+          "増殖",
+          "分裂"
+        ]
+      }
+    ],
+    "note": "植物・動物の細胞にある。",
+    "cloze_context": "細胞膜",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_44bcad80fd32",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞のつくり",
+    "term": "細胞壁",
+    "term_dummies": [
+      "核",
+      "細胞膜",
+      "葉緑体"
+    ],
+    "explanation_template": "植物の細胞膜の外側で形を{{1}}つくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "保つ",
+        "dummies": [
+          "常に縮める",
+          "消す",
+          "溶かす"
+        ]
+      }
+    ],
+    "note": "動物細胞にはない。",
+    "cloze_context": "細胞壁",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4d6d5b102f8f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞のつくり",
+    "term": "葉緑体",
+    "term_dummies": [
+      "核",
+      "細胞膜",
+      "細胞壁"
+    ],
+    "explanation_template": "植物細胞で{{1}}が行われるつくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "光合成",
+        "dummies": [
+          "消化",
+          "ろ過",
+          "受精"
+        ]
+      }
+    ],
+    "note": "葉の緑色の部分などに多い。",
+    "cloze_context": "葉緑体",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_e1fc3c863b9d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物の運搬",
+    "term": "道管",
+    "term_dummies": [
+      "師管",
+      "維管束",
+      "根毛"
+    ],
+    "explanation_template": "根から吸った水や{{1}}を主に運ぶ管。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "無機養分",
+        "dummies": [
+          "デンプン粒",
+          "脂肪の塊",
+          "花粉"
+        ]
+      }
+    ],
+    "note": "茎や葉へつながる。",
+    "cloze_context": "道管",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b2a630f494ed",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物の運搬",
+    "term": "師管",
+    "term_dummies": [
+      "道管",
+      "維管束",
+      "根毛"
+    ],
+    "explanation_template": "葉でつくった{{1}}を主に運ぶ管。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "養分",
+        "dummies": [
+          "花粉",
+          "空気だけ",
+          "水だけ"
+        ]
+      }
+    ],
+    "note": "道管と区別する。",
+    "cloze_context": "師管",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4135b4b936ad",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物の運搬",
+    "term": "維管束",
+    "term_dummies": [
+      "道管",
+      "師管",
+      "根毛"
+    ],
+    "explanation_template": "道管と{{1}}などが集まった束。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "師管",
+        "dummies": [
+          "気孔",
+          "根毛",
+          "やく"
+        ]
+      }
+    ],
+    "note": "根・茎・葉をつなぐ。",
+    "cloze_context": "維管束",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_22595b98fcc1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "植物の運搬",
+    "term": "根毛",
+    "term_dummies": [
+      "道管",
+      "師管",
+      "維管束"
+    ],
+    "explanation_template": "根の表面で水を吸う{{1}}を大きくする細い突起。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "面積",
+        "dummies": [
+          "重力",
+          "電圧",
+          "気圧"
+        ]
+      }
+    ],
+    "note": "水や無機養分の吸収に役立つ。",
+    "cloze_context": "根毛",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8cbb539c45c4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花のつくり",
+    "term": "子房",
+    "term_dummies": [
+      "胚珠",
+      "やく",
+      "柱頭"
+    ],
+    "explanation_template": "被子植物で{{1}}を包む、めしべのもとの部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "胚珠",
+        "dummies": [
+          "花粉",
+          "根毛",
+          "葉緑体"
+        ]
+      }
+    ],
+    "note": "受精後、果実になる。",
+    "cloze_context": "子房",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f737a5245fd2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花のつくり",
+    "term": "胚珠",
+    "term_dummies": [
+      "子房",
+      "やく",
+      "柱頭"
+    ],
+    "explanation_template": "種子植物で、受精後に{{1}}になる部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "種子",
+        "dummies": [
+          "果実",
+          "花粉",
+          "やく"
+        ]
+      }
+    ],
+    "note": "被子植物では子房の中にある。",
+    "cloze_context": "胚珠",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_aca908fc0f49",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花のつくり",
+    "term": "やく",
+    "term_dummies": [
+      "子房",
+      "胚珠",
+      "柱頭"
+    ],
+    "explanation_template": "おしべの先端にある、{{1}}をつくる袋。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "花粉",
+        "dummies": [
+          "胚珠",
+          "種子",
+          "果実"
+        ]
+      }
+    ],
+    "note": "柱頭とは役割が違う。",
+    "cloze_context": "やく",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_19017403e68a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花のつくり",
+    "term": "柱頭",
+    "term_dummies": [
+      "子房",
+      "胚珠",
+      "やく"
+    ],
+    "explanation_template": "めしべの先端にある、{{1}}が付く部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "花粉",
+        "dummies": [
+          "根毛",
+          "種子",
+          "果実"
+        ]
+      }
+    ],
+    "note": "花粉が付くことを受粉という。",
+    "cloze_context": "柱頭",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8d3e09694161",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の仲間",
+    "term": "シダ植物",
+    "term_dummies": [
+      "コケ植物",
+      "裸子植物",
+      "被子植物"
+    ],
+    "explanation_template": "根・茎・葉を持ち、{{1}}で増える植物群。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "胞子",
+        "dummies": [
+          "種子",
+          "花粉だけ",
+          "果実"
+        ]
+      }
+    ],
+    "note": "維管束がある。",
+    "cloze_context": "シダ植物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9b7225555a25",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の仲間",
+    "term": "コケ植物",
+    "term_dummies": [
+      "シダ植物",
+      "裸子植物",
+      "被子植物"
+    ],
+    "explanation_template": "根・茎・葉の区別が明確でなく、{{1}}で増える植物群。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "胞子",
+        "dummies": [
+          "種子",
+          "花粉だけ",
+          "果実"
+        ]
+      }
+    ],
+    "note": "体の表面からも水を吸う。",
+    "cloze_context": "コケ植物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3f4ccebd48e8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の仲間",
+    "term": "種子植物",
+    "term_dummies": [
+      "シダ植物",
+      "コケ植物",
+      "藻類"
+    ],
+    "explanation_template": "{{1}}によって仲間を増やす植物の総称。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "種子",
+        "dummies": [
+          "胞子だけ",
+          "分裂だけ",
+          "出芽だけ"
+        ]
+      }
+    ],
+    "note": "被子植物と裸子植物に分ける。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_2405a9e9b8d7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "植物の仲間",
+    "term": "胞子",
+    "term_dummies": [
+      "種子",
+      "花粉",
+      "果実"
+    ],
+    "explanation_template": "シダやコケで、発芽して{{1}}になる小さな細胞。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "新しい個体",
+        "dummies": [
+          "果実だけ",
+          "種子だけ",
+          "花粉だけ"
+        ]
+      }
+    ],
+    "note": "種子とは異なるつくり。",
+    "cloze_context": "胞子",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_61a7ba9c644f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化液と酵素",
+    "term": "アミラーゼ",
+    "term_dummies": [
+      "ペプシン",
+      "リパーゼ",
+      "トリプシン"
+    ],
+    "explanation_template": "唾液などにあり、{{1}}を分解する酵素。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "デンプン",
+        "dummies": [
+          "タンパク質",
+          "脂肪",
+          "無機塩類"
+        ]
+      }
+    ],
+    "note": "糖へ分解する。",
+    "cloze_context": "アミラーゼ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_343ae512411e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化液と酵素",
+    "term": "ペプシン",
+    "term_dummies": [
+      "アミラーゼ",
+      "リパーゼ",
+      "マルターゼ"
+    ],
+    "explanation_template": "胃液に含まれ、{{1}}を分解する酵素。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "タンパク質",
+        "dummies": [
+          "デンプン",
+          "脂肪",
+          "ブドウ糖"
+        ]
+      }
+    ],
+    "note": "酸性で働く。",
+    "cloze_context": "ペプシン",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_924d74f88a8c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化液と酵素",
+    "term": "消化酵素",
+    "term_dummies": [
+      "ヘモグロビン",
+      "胆汁",
+      "色素"
+    ],
+    "explanation_template": "特定の養分を分解する{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "タンパク質",
+        "dummies": [
+          "脂肪",
+          "糖",
+          "無機塩類"
+        ]
+      }
+    ],
+    "note": "種類により働く養分が違う。",
+    "cloze_context": "消化酵素",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_05e5ed003456",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化液と酵素",
+    "term": "胆汁",
+    "term_dummies": [
+      "唾液",
+      "胃液",
+      "すい液"
+    ],
+    "explanation_template": "肝臓でつくられ、{{1}}の消化を助ける液。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "脂肪",
+        "dummies": [
+          "デンプンだけ",
+          "タンパク質だけ",
+          "無機塩類"
+        ]
+      }
+    ],
+    "note": "消化酵素は含まない。",
+    "cloze_context": "胆汁",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_cb58346c5271",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "生物の構成",
+    "term": "単細胞生物",
+    "term_dummies": [
+      "多細胞生物",
+      "群体",
+      "組織"
+    ],
+    "explanation_template": "1個の{{1}}で体ができている生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "細胞",
+        "dummies": [
+          "器官",
+          "組織",
+          "器官系"
+        ]
+      }
+    ],
+    "note": "ゾウリムシなど。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_e4dce5972d0f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "生物の構成",
+    "term": "多細胞生物",
+    "term_dummies": [
+      "単細胞生物",
+      "組織",
+      "器官"
+    ],
+    "explanation_template": "多くの{{1}}で体ができている生物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "細胞",
+        "dummies": [
+          "器官だけ",
+          "核だけ",
+          "染色体だけ"
+        ]
+      }
+    ],
+    "note": "細胞が役割を分担する。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b262d11655d2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "生物の構成",
+    "term": "組織",
+    "term_dummies": [
+      "細胞",
+      "器官",
+      "器官系"
+    ],
+    "explanation_template": "形や働きが似た{{1}}が集まったもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "細胞",
+        "dummies": [
+          "器官",
+          "個体",
+          "器官系"
+        ]
+      }
+    ],
+    "note": "筋組織などが例。",
+    "cloze_context": "組織",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_457f64da09a5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "生物の構成",
+    "term": "器官",
+    "term_dummies": [
+      "組織",
+      "細胞",
+      "細胞小器官"
+    ],
+    "explanation_template": "複数の組織が集まり、特定の{{1}}をするつくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "働き",
+        "dummies": [
+          "細胞分裂だけ",
+          "光合成だけ",
+          "受精だけ"
+        ]
+      }
+    ],
+    "note": "心臓や胃など。",
+    "cloze_context": "器官",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a22ec513c5c7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化と肝臓",
+    "term": "小腸",
+    "term_dummies": [
+      "大腸",
+      "胃",
+      "肝臓"
+    ],
+    "explanation_template": "消化が進み、養分を主に{{1}}する器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "吸収",
+        "dummies": [
+          "合成だけ",
+          "排出だけ",
+          "貯蔵だけ"
+        ]
+      }
+    ],
+    "note": "内側に柔毛が多い。",
+    "cloze_context": "小腸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5b19812ea5e5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化と肝臓",
+    "term": "大腸",
+    "term_dummies": [
+      "小腸",
+      "胃",
+      "肝臓"
+    ],
+    "explanation_template": "小腸の後で、残りの{{1}}を吸収する器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "水分",
+        "dummies": [
+          "タンパク質の塊",
+          "デンプン粒",
+          "脂肪の塊"
+        ]
+      }
+    ],
+    "note": "残ったものは便になる。",
+    "cloze_context": "大腸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_028e5120fff8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化と肝臓",
+    "term": "胃",
+    "term_dummies": [
+      "小腸",
+      "大腸",
+      "肝臓"
+    ],
+    "explanation_template": "食物を蓄え、胃液で{{1}}を消化する器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "タンパク質",
+        "dummies": [
+          "デンプン",
+          "脂肪だけ",
+          "ブドウ糖"
+        ]
+      }
+    ],
+    "note": "消化管の一部。",
+    "cloze_context": "胃",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_384dd0a1a30f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化と肝臓",
+    "term": "肝臓",
+    "term_dummies": [
+      "小腸",
+      "大腸",
+      "胃"
+    ],
+    "explanation_template": "胆汁や{{1}}をつくり、養分の量も調節する器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "尿素",
+        "dummies": [
+          "唾液",
+          "尿",
+          "胃液"
+        ]
+      }
+    ],
+    "note": "有害な物質の分解にも関わる。",
+    "cloze_context": "肝臓",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_2bf9597483ae",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液の成分",
+    "term": "赤血球",
+    "term_dummies": [
+      "白血球",
+      "血小板",
+      "血しょう"
+    ],
+    "explanation_template": "ヘモグロビンを含み、主に{{1}}を運ぶ血球。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "酸素",
+        "dummies": [
+          "デンプン粒",
+          "脂肪の塊",
+          "尿素だけ"
+        ]
+      }
+    ],
+    "note": "肺と全身の細胞を結ぶ。",
+    "cloze_context": "赤血球",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d76fd4c81be1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液の成分",
+    "term": "白血球",
+    "term_dummies": [
+      "赤血球",
+      "血小板",
+      "血しょう"
+    ],
+    "explanation_template": "体内に入った細菌などを{{1}}血球。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "取り除く",
+        "dummies": [
+          "つくる",
+          "運ぶだけの",
+          "増やす"
+        ]
+      }
+    ],
+    "note": "体を守る働き。",
+    "cloze_context": "白血球",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_1632fb37a778",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液の成分",
+    "term": "血小板",
+    "term_dummies": [
+      "赤血球",
+      "白血球",
+      "血しょう"
+    ],
+    "explanation_template": "細胞のかけらで、出血時に血液を{{1}}成分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "固める",
+        "dummies": [
+          "薄める",
+          "酸化する",
+          "蒸発させる"
+        ]
+      }
+    ],
+    "note": "傷口をふさぐのに関わる。",
+    "cloze_context": "血小板",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_7cb3e4aa9d97",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "血液の成分",
+    "term": "血しょう",
+    "term_dummies": [
+      "赤血球",
+      "白血球",
+      "血小板"
+    ],
+    "explanation_template": "血液の{{1}}成分で、養分などを運ぶ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "液体",
+        "dummies": [
+          "固体",
+          "気体",
+          "結晶"
+        ]
+      }
+    ],
+    "note": "組織液とのやり取りにも関わる。",
+    "cloze_context": "血しょう",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_1cbe736e63f3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "循環と吸収",
+    "term": "肺循環",
+    "term_dummies": [
+      "体循環",
+      "リンパの流れ",
+      "門脈の流れ"
+    ],
+    "explanation_template": "心臓から{{1}}を通り心臓へ戻る血液の流れ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "肺",
+        "dummies": [
+          "肝臓",
+          "小腸",
+          "腎臓"
+        ]
+      }
+    ],
+    "note": "肺で気体交換を行う。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b104ab2c1891",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "循環と吸収",
+    "term": "体循環",
+    "term_dummies": [
+      "肺循環",
+      "リンパの流れ",
+      "門脈の流れ"
+    ],
+    "explanation_template": "心臓から肺以外の{{1}}を通り心臓へ戻る流れ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "全身",
+        "dummies": [
+          "肺だけ",
+          "心臓内だけ",
+          "消化管内"
+        ]
+      }
+    ],
+    "note": "全身の細胞へ物質を運ぶ。",
+    "cloze_context": "体循環",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9b474fad40b0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "循環と吸収",
+    "term": "肺胞",
+    "term_dummies": [
+      "柔毛",
+      "気管",
+      "気管支"
+    ],
+    "explanation_template": "肺に多数あり、{{1}}を交換する小さな袋。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "気体",
+        "dummies": [
+          "食物の塊",
+          "便",
+          "デンプン粒"
+        ]
+      }
+    ],
+    "note": "毛細血管に囲まれる。",
+    "cloze_context": "肺胞",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a26cc90361d9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "循環と吸収",
+    "term": "柔毛",
+    "term_dummies": [
+      "肺胞",
+      "根毛",
+      "繊毛"
+    ],
+    "explanation_template": "小腸の内側で、養分を吸う{{1}}を広げる突起。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "面積",
+        "dummies": [
+          "重力",
+          "電圧",
+          "気圧"
+        ]
+      }
+    ],
+    "note": "毛細血管やリンパ管がある。",
+    "cloze_context": "柔毛",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b4f363c66c2a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "排出と反応",
+    "term": "腎臓",
+    "term_dummies": [
+      "肝臓",
+      "肺",
+      "小腸"
+    ],
+    "explanation_template": "血液をこし分け、{{1}}をつくる器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "尿",
+        "dummies": [
+          "胆汁",
+          "胃液",
+          "唾液"
+        ]
+      }
+    ],
+    "note": "余分な水分や尿素などを排出。",
+    "cloze_context": "腎臓",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_428167e785ea",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "排出と反応",
+    "term": "尿素",
+    "term_dummies": [
+      "アンモニア",
+      "二酸化炭素",
+      "胆汁"
+    ],
+    "explanation_template": "有害なアンモニアから主に{{1}}でつくられる物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "肝臓",
+        "dummies": [
+          "腎臓",
+          "胃",
+          "肺"
+        ]
+      }
+    ],
+    "note": "血液で運ばれ腎臓から排出。",
+    "cloze_context": "尿素",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_7710ad5d53a2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "排出と反応",
+    "term": "反射",
+    "term_dummies": [
+      "意識的な運動",
+      "光合成",
+      "細胞分裂"
+    ],
+    "explanation_template": "意識と無関係に神経を介して起こる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "反応",
+        "dummies": [
+          "光合成",
+          "消化だけ",
+          "呼吸だけ"
+        ]
+      }
+    ],
+    "note": "熱い物から手を引く例など。",
+    "cloze_context": "反射",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_77655bde58d7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "排出と反応",
+    "term": "感覚器官",
+    "term_dummies": [
+      "運動器官",
+      "消化器官",
+      "排出器官"
+    ],
+    "explanation_template": "外界からの{{1}}を受け取る器官。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "刺激",
+        "dummies": [
+          "命令だけ",
+          "尿",
+          "胆汁"
+        ]
+      }
+    ],
+    "note": "目・耳・皮膚など。",
+    "cloze_context": "感覚器官",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b2d0f8e384c6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "神経のつくり",
+    "term": "中枢神経",
+    "term_dummies": [
+      "末しょう神経",
+      "感覚器官",
+      "運動器官"
+    ],
+    "explanation_template": "脳と{{1}}からなる、情報処理の中心。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "脊髄",
+        "dummies": [
+          "運動神経",
+          "感覚神経",
+          "皮膚"
+        ]
+      }
+    ],
+    "note": "末しょう神経と区別する。",
+    "cloze_context": "中枢神経",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9988bfe1d253",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "神経のつくり",
+    "term": "末しょう神経",
+    "term_dummies": [
+      "中枢神経",
+      "感覚器官",
+      "運動器官"
+    ],
+    "explanation_template": "中枢神経と{{1}}をつなぐ神経。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "全身",
+        "dummies": [
+          "脳内だけ",
+          "脊髄内だけ",
+          "血管の中だけ"
+        ]
+      }
+    ],
+    "note": "感覚神経と運動神経などがある。",
+    "cloze_context": "末しょう神経",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c8f529ca0e40",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "神経のつくり",
+    "term": "感覚神経",
+    "term_dummies": [
+      "運動神経",
+      "大脳",
+      "脊髄"
+    ],
+    "explanation_template": "感覚器官から{{1}}へ情報を伝える神経。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中枢神経",
+        "dummies": [
+          "筋肉だけ",
+          "骨だけ",
+          "胃の中"
+        ]
+      }
+    ],
+    "note": "刺激の情報を伝える。",
+    "cloze_context": "感覚神経",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d56acfa7f354",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "神経のつくり",
+    "term": "運動神経",
+    "term_dummies": [
+      "感覚神経",
+      "大脳",
+      "脊髄"
+    ],
+    "explanation_template": "中枢神経から{{1}}などへ命令を伝える神経。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "筋肉",
+        "dummies": [
+          "水晶体だけ",
+          "外界",
+          "骨の内部だけ"
+        ]
+      }
+    ],
+    "note": "反応を起こす側へ伝える。",
+    "cloze_context": "運動神経",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8fdcfcd6f768",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "運動と中枢",
+    "term": "大脳",
+    "term_dummies": [
+      "脊髄",
+      "骨格",
+      "けん"
+    ],
+    "explanation_template": "感覚や、意識的な{{1}}などに関わる脳の部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "運動",
+        "dummies": [
+          "尿の生成",
+          "胆汁の生成",
+          "血液のろ過"
+        ]
+      }
+    ],
+    "note": "情報を判断して命令を出す。",
+    "cloze_context": "大脳",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c397d43b09fc",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "運動と中枢",
+    "term": "脊髄",
+    "term_dummies": [
+      "大脳",
+      "骨格",
+      "けん"
+    ],
+    "explanation_template": "脳につながり、{{1}}の中を通る中枢神経。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "背骨",
+        "dummies": [
+          "大動脈",
+          "気管",
+          "小腸"
+        ]
+      }
+    ],
+    "note": "反射の中枢にもなる。",
+    "cloze_context": "脊髄",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a4d0ad85c669",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "運動と中枢",
+    "term": "骨格",
+    "term_dummies": [
+      "大脳",
+      "脊髄",
+      "けん"
+    ],
+    "explanation_template": "ヒトの体を支える{{1}}の組合せ。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "骨",
+        "dummies": [
+          "神経",
+          "血液",
+          "皮膚"
+        ]
+      }
+    ],
+    "note": "筋肉とともに運動を支える。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_32932ddf159a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "運動と中枢",
+    "term": "けん",
+    "term_dummies": [
+      "大脳",
+      "脊髄",
+      "骨格"
+    ],
+    "explanation_template": "筋肉を{{1}}につなぐ丈夫なつくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "骨",
+        "dummies": [
+          "皮膚だけ",
+          "感覚神経だけ",
+          "血管だけ"
+        ]
+      }
+    ],
+    "note": "筋肉が縮む力を伝える。",
+    "cloze_context": "けん",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_cc9decf80998",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "造岩鉱物",
+    "term": "石英",
+    "term_dummies": [
+      "長石",
+      "黒雲母",
+      "カンラン石"
+    ],
+    "explanation_template": "無色鉱物で、決まった方向に{{1}}鉱物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "割れにくい",
+        "dummies": [
+          "はがれる",
+          "立方体になる",
+          "燃える"
+        ]
+      }
+    ],
+    "note": "不規則に割れる。",
+    "cloze_context": "石英",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_de8dd430adec",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "造岩鉱物",
+    "term": "長石",
+    "term_dummies": [
+      "石英",
+      "黒雲母",
+      "カンラン石"
+    ],
+    "explanation_template": "無色鉱物で、決まった方向に{{1}}鉱物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "割れやすい",
+        "dummies": [
+          "必ず燃える",
+          "水に溶ける",
+          "磁石に強く付く"
+        ]
+      }
+    ],
+    "note": "白色や淡い色のものが多い。",
+    "cloze_context": "長石",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6a855f063e3c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "造岩鉱物",
+    "term": "黒雲母",
+    "term_dummies": [
+      "石英",
+      "長石",
+      "カンラン石"
+    ],
+    "explanation_template": "黒っぽく、薄く{{1}}鉱物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "はがれる",
+        "dummies": [
+          "溶ける",
+          "燃える",
+          "気化する"
+        ]
+      }
+    ],
+    "note": "有色鉱物の一つ。",
+    "cloze_context": "黒雲母",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_94d0af7a3a35",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "造岩鉱物",
+    "term": "カンラン石",
+    "term_dummies": [
+      "石英",
+      "長石",
+      "黒雲母"
+    ],
+    "explanation_template": "黄緑色の粒が特徴的な{{1}}鉱物。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "有色",
+        "dummies": [
+          "無色",
+          "水溶性",
+          "金属光沢の"
+        ]
+      }
+    ],
+    "note": "玄武岩などに含まれる。",
+    "cloze_context": "カンラン石",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_fba4b129035a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火成岩の種類",
+    "term": "流紋岩",
+    "term_dummies": [
+      "安山岩",
+      "玄武岩",
+      "花こう岩"
+    ],
+    "explanation_template": "花こう岩と似た鉱物組成をもつ{{1}}岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "火山",
+        "dummies": [
+          "深成",
+          "堆積",
+          "変成"
+        ]
+      }
+    ],
+    "note": "細かい石基をもつことが多い。",
+    "cloze_context": "流紋岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_197f59d58fb5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火成岩の種類",
+    "term": "安山岩",
+    "term_dummies": [
+      "流紋岩",
+      "玄武岩",
+      "閃緑岩"
+    ],
+    "explanation_template": "流紋岩と玄武岩の{{1}}的な組成の火山岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中間",
+        "dummies": [
+          "必ず同一",
+          "常に最も黒色",
+          "常に最も白色"
+        ]
+      }
+    ],
+    "note": "灰色のものが多い。",
+    "cloze_context": "安山岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6565a1d72d0a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火成岩の種類",
+    "term": "玄武岩",
+    "term_dummies": [
+      "流紋岩",
+      "安山岩",
+      "斑れい岩"
+    ],
+    "explanation_template": "斑れい岩と似た鉱物組成をもつ{{1}}岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "火山",
+        "dummies": [
+          "深成",
+          "堆積",
+          "変成"
+        ]
+      }
+    ],
+    "note": "流紋岩などと比較する。",
+    "cloze_context": "玄武岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_39f96e26c8d7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "火成岩の種類",
+    "term": "花こう岩",
+    "term_dummies": [
+      "流紋岩",
+      "閃緑岩",
+      "斑れい岩"
+    ],
+    "explanation_template": "石英や長石が多く、結晶の大きい{{1}}岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "深成",
+        "dummies": [
+          "火山",
+          "堆積",
+          "変成"
+        ]
+      }
+    ],
+    "note": "石英や長石などを含む。",
+    "cloze_context": "花こう岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_7575e30c90fe",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "岩石の比較",
+    "term": "閃緑岩",
+    "term_dummies": [
+      "花こう岩",
+      "斑れい岩",
+      "安山岩"
+    ],
+    "explanation_template": "花こう岩と斑れい岩の{{1}}的な組成の深成岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中間",
+        "dummies": [
+          "必ず同一",
+          "常に最も黒色",
+          "常に最も白色"
+        ]
+      }
+    ],
+    "note": "等粒状組織をもつ。",
+    "cloze_context": "閃緑岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8f32fddde26e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "岩石の比較",
+    "term": "斑れい岩",
+    "term_dummies": [
+      "花こう岩",
+      "閃緑岩",
+      "玄武岩"
+    ],
+    "explanation_template": "玄武岩と似た鉱物組成をもつ{{1}}岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "深成",
+        "dummies": [
+          "火山",
+          "堆積",
+          "変成"
+        ]
+      }
+    ],
+    "note": "有色鉱物が比較的多い。",
+    "cloze_context": "斑れい岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3298e50f2099",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "岩石の比較",
+    "term": "れき岩",
+    "term_dummies": [
+      "閃緑岩",
+      "斑れい岩",
+      "砂岩"
+    ],
+    "explanation_template": "主に直径{{1}}mm以上の粒からできた堆積岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "2",
+        "dummies": [
+          "0.01",
+          "0.1",
+          "1"
+        ]
+      }
+    ],
+    "note": "粒の大きさで砂岩などと区別。",
+    "cloze_context": "れき岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_bfa3c347c4ab",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "岩石の比較",
+    "term": "砂岩",
+    "term_dummies": [
+      "閃緑岩",
+      "斑れい岩",
+      "れき岩"
+    ],
+    "explanation_template": "主に直径0.06〜2mmの{{1}}からできた堆積岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "砂",
+        "dummies": [
+          "れき",
+          "泥",
+          "火山灰"
+        ]
+      }
+    ],
+    "note": "粒の大きさに注目する。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_0280b6354181",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "堆積岩の種類",
+    "term": "泥岩",
+    "term_dummies": [
+      "凝灰岩",
+      "石灰岩",
+      "チャート"
+    ],
+    "explanation_template": "主に砂より{{1}}粒からできた堆積岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "細かい",
+        "dummies": [
+          "粗い",
+          "大きい",
+          "硬いだけの"
+        ]
+      }
+    ],
+    "note": "泥が固まったもの。",
+    "cloze_context": "泥岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9baa825d9847",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "堆積岩の種類",
+    "term": "凝灰岩",
+    "term_dummies": [
+      "泥岩",
+      "石灰岩",
+      "チャート"
+    ],
+    "explanation_template": "主に{{1}}などが積もってできた堆積岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "火山灰",
+        "dummies": [
+          "砂だけ",
+          "れきだけ",
+          "貝殻だけ"
+        ]
+      }
+    ],
+    "note": "火山活動の手掛かりにもなる。",
+    "cloze_context": "凝灰岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_349b24a732f2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "堆積岩の種類",
+    "term": "石灰岩",
+    "term_dummies": [
+      "泥岩",
+      "凝灰岩",
+      "チャート"
+    ],
+    "explanation_template": "うすい塩酸で{{1}}を出す堆積岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "二酸化炭素",
+        "dummies": [
+          "酸素",
+          "水素",
+          "窒素"
+        ]
+      }
+    ],
+    "note": "チャートと見分ける手掛かり。",
+    "cloze_context": "石灰岩",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_541b8c550f08",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "堆積岩の種類",
+    "term": "チャート",
+    "term_dummies": [
+      "泥岩",
+      "凝灰岩",
+      "石灰岩"
+    ],
+    "explanation_template": "主に{{1}}からなる硬い堆積岩。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "二酸化ケイ素",
+        "dummies": [
+          "食塩",
+          "鉄",
+          "炭素"
+        ]
+      }
+    ],
+    "note": "うすい塩酸で気体を出さない。",
+    "cloze_context": "チャート",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8ef0585a985c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "化石と地層の変形",
+    "term": "示準化石",
+    "term_dummies": [
+      "示相化石",
+      "しゅう曲",
+      "断層"
+    ],
+    "explanation_template": "地層ができた{{1}}を推定するのに役立つ化石。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "時代",
+        "dummies": [
+          "環境だけ",
+          "深さだけ",
+          "厚さだけ"
+        ]
+      }
+    ],
+    "note": "広く分布し生存期間の短い生物など。",
+    "cloze_context": "示準化石",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ec98d8212a8e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "化石と地層の変形",
+    "term": "示相化石",
+    "term_dummies": [
+      "示準化石",
+      "しゅう曲",
+      "断層"
+    ],
+    "explanation_template": "地層ができた当時の{{1}}を推定するのに役立つ化石。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "環境",
+        "dummies": [
+          "時代だけ",
+          "厚さだけ",
+          "重さだけ"
+        ]
+      }
+    ],
+    "note": "造礁サンゴなどが例。",
+    "cloze_context": "示相化石",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ce60fe5c7c7a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "化石と地層の変形",
+    "term": "しゅう曲",
+    "term_dummies": [
+      "示準化石",
+      "示相化石",
+      "断層"
+    ],
+    "explanation_template": "地層が押されて{{1}}変形。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "曲がる",
+        "dummies": [
+          "ずれるだけの",
+          "溶けるだけの",
+          "蒸発する"
+        ]
+      }
+    ],
+    "note": "地下の力と関連する。",
+    "cloze_context": "しゅう曲",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_75d183a83372",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "化石と地層の変形",
+    "term": "断層",
+    "term_dummies": [
+      "示準化石",
+      "示相化石",
+      "しゅう曲"
+    ],
+    "explanation_template": "地層や岩盤が割れて{{1}}つくり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ずれた",
+        "dummies": [
+          "曲がっただけの",
+          "溶けただけの",
+          "蒸発した"
+        ]
+      }
+    ],
+    "note": "地震と関わることがある。",
+    "cloze_context": "断層",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5d212c79303d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震の場所と強さ",
+    "term": "震源",
+    "term_dummies": [
+      "震央",
+      "震度",
+      "マグニチュード"
+    ],
+    "explanation_template": "地震の揺れが発生し始めた{{1}}の場所。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "地下",
+        "dummies": [
+          "地表",
+          "大気中",
+          "海面"
+        ]
+      }
+    ],
+    "note": "震央とは区別する。",
+    "cloze_context": "震源",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4809248d221e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震の場所と強さ",
+    "term": "震央",
+    "term_dummies": [
+      "震源",
+      "震度",
+      "マグニチュード"
+    ],
+    "explanation_template": "震源の{{1}}の地表の場所。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "真上",
+        "dummies": [
+          "真下",
+          "真横",
+          "最も遠く"
+        ]
+      }
+    ],
+    "note": "震源の深さとは異なる。",
+    "cloze_context": "震央",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6c86848fb740",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震の場所と強さ",
+    "term": "震度",
+    "term_dummies": [
+      "震源",
+      "震央",
+      "マグニチュード"
+    ],
+    "explanation_template": "ある場所の{{1}}の強さを表す。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "揺れ",
+        "dummies": [
+          "地震全体の規模",
+          "地震の回数",
+          "地層の厚さ"
+        ]
+      }
+    ],
+    "note": "同じ地震でも場所で違う。",
+    "cloze_context": "震度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_58e2037ec71f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地震の場所と強さ",
+    "term": "マグニチュード",
+    "term_dummies": [
+      "震源",
+      "震央",
+      "震度"
+    ],
+    "explanation_template": "地震そのものの{{1}}を表す値。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "規模",
+        "dummies": [
+          "各地の揺れ",
+          "震央の気温",
+          "発生時刻"
+        ]
+      }
+    ],
+    "note": "震度と区別する。",
+    "cloze_context": "マグニチュード",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4242c1847581",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "大地の変動",
+    "term": "プレート",
+    "term_dummies": [
+      "マントル",
+      "地殻",
+      "核"
+    ],
+    "explanation_template": "地殻とマントル最上部からなる硬い{{1}}状の部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "板",
+        "dummies": [
+          "気体",
+          "液体",
+          "雲"
+        ]
+      }
+    ],
+    "note": "ゆっくり動き地震等と関わる。",
+    "cloze_context": "プレート",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6757e35a7549",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "大地の変動",
+    "term": "海溝",
+    "term_dummies": [
+      "海嶺",
+      "海山",
+      "大陸棚"
+    ],
+    "explanation_template": "海洋プレートが{{1}}場所などにある深い溝。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "沈み込む",
+        "dummies": [
+          "全て溶け出す",
+          "空へ昇る",
+          "必ず停止する"
+        ]
+      }
+    ],
+    "note": "日本海溝など。",
+    "cloze_context": "海溝",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_31396e952bd3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "大地の変動",
+    "term": "隆起",
+    "term_dummies": [
+      "プレート",
+      "海溝",
+      "沈降"
+    ],
+    "explanation_template": "土地が周囲の海面に対して{{1}}変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "上がる",
+        "dummies": [
+          "下がる",
+          "必ず水平移動する",
+          "必ず溶ける"
+        ]
+      }
+    ],
+    "note": "海岸段丘などの形成に関わる。",
+    "cloze_context": "隆起",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_0c803e97b4ab",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "大地の変動",
+    "term": "沈降",
+    "term_dummies": [
+      "プレート",
+      "海溝",
+      "隆起"
+    ],
+    "explanation_template": "土地が周囲の海面に対して{{1}}変化。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "下がる",
+        "dummies": [
+          "上がる",
+          "必ず水平移動する",
+          "必ず溶ける"
+        ]
+      }
+    ],
+    "note": "海面の上昇とは区別する。",
+    "cloze_context": "沈降",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_b32c842c514d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "前線と低気圧",
+    "term": "停滞前線",
+    "term_dummies": [
+      "寒冷前線",
+      "温暖前線",
+      "閉塞前線"
+    ],
+    "explanation_template": "寒気と暖気の勢力がほぼ等しく、前線が{{1}}もの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "動きにくい",
+        "dummies": [
+          "高速で進む",
+          "消えている",
+          "鉛直に動く"
+        ]
+      }
+    ],
+    "note": "梅雨前線など。",
+    "cloze_context": "停滞前線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_2f9f6d4526ca",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "前線と低気圧",
+    "term": "閉塞前線",
+    "term_dummies": [
+      "寒冷前線",
+      "温暖前線",
+      "停滞前線"
+    ],
+    "explanation_template": "寒冷前線が{{1}}に追い付いてできる前線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "温暖前線",
+        "dummies": [
+          "停滞前線",
+          "海岸線",
+          "等高線"
+        ]
+      }
+    ],
+    "note": "発達した低気圧で見られる。",
+    "cloze_context": "閉塞前線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3af22b35ddd7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "前線と低気圧",
+    "term": "梅雨",
+    "term_dummies": [
+      "台風",
+      "冬の季節風",
+      "春の移動性高気圧"
+    ],
+    "explanation_template": "初夏、前線の影響で{{1}}日が多くなる時期。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "雨の",
+        "dummies": [
+          "快晴の",
+          "積雪の",
+          "乾燥だけの"
+        ]
+      }
+    ],
+    "note": "地域により時期などが違う。",
+    "cloze_context": "梅雨",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4e4014a0f9c8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "前線と低気圧",
+    "term": "台風",
+    "term_dummies": [
+      "温帯低気圧",
+      "高気圧",
+      "前線"
+    ],
+    "explanation_template": "北西太平洋等で発達し強い{{1}}を伴う熱帯低気圧。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "風雨",
+        "dummies": [
+          "降雪だけ",
+          "地震",
+          "噴火"
+        ]
+      }
+    ],
+    "note": "日本では最大風速などで区別。",
+    "cloze_context": "台風",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5fb12806e377",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "日本付近の気団",
+    "term": "シベリア気団",
+    "term_dummies": [
+      "小笠原気団",
+      "オホーツク海気団",
+      "揚子江気団"
+    ],
+    "explanation_template": "冬に日本へ影響する、低温で{{1}}した気団。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "乾燥",
+        "dummies": [
+          "湿潤",
+          "高温化",
+          "電離"
+        ]
+      }
+    ],
+    "note": "大陸上で発達する。",
+    "cloze_context": "シベリア気団",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_1c627b47cef0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "日本付近の気団",
+    "term": "小笠原気団",
+    "term_dummies": [
+      "シベリア気団",
+      "オホーツク海気団",
+      "揚子江気団"
+    ],
+    "explanation_template": "夏に日本へ影響する、高温で{{1}}な気団。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "多湿",
+        "dummies": [
+          "乾燥",
+          "低温",
+          "無風だけの"
+        ]
+      }
+    ],
+    "note": "太平洋上で発達する。",
+    "cloze_context": "小笠原気団",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4074e00c0421",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "日本付近の気団",
+    "term": "オホーツク海気団",
+    "term_dummies": [
+      "シベリア気団",
+      "小笠原気団",
+      "揚子江気団"
+    ],
+    "explanation_template": "日本の北東の海上で発達する、低温で{{1}}な気団。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "多湿",
+        "dummies": [
+          "乾燥",
+          "高温",
+          "無風だけの"
+        ]
+      }
+    ],
+    "note": "梅雨などに関係する。",
+    "cloze_context": "オホーツク海気団",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_67c575b053ca",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "日本付近の気団",
+    "term": "揚子江気団",
+    "term_dummies": [
+      "シベリア気団",
+      "小笠原気団",
+      "オホーツク海気団"
+    ],
+    "explanation_template": "春や秋に影響する、比較的温暖で{{1}}した気団。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "乾燥",
+        "dummies": [
+          "湿潤",
+          "凍結",
+          "電離"
+        ]
+      }
+    ],
+    "note": "移動性高気圧と関係する。",
+    "cloze_context": "揚子江気団",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_66f567d56aef",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と恒星",
+    "term": "恒星",
+    "term_dummies": [
+      "惑星",
+      "衛星",
+      "小惑星"
+    ],
+    "explanation_template": "太陽のように自ら{{1}}を出す天体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "光",
+        "dummies": [
+          "雨",
+          "雲だけ",
+          "岩石だけ"
+        ]
+      }
+    ],
+    "note": "夜空の星の多くが恒星。",
+    "cloze_context": "恒星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4a6681c17136",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と恒星",
+    "term": "惑星",
+    "term_dummies": [
+      "恒星",
+      "銀河系",
+      "星雲"
+    ],
+    "explanation_template": "太陽を公転し、自ら光を出さない{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "天体",
+        "dummies": [
+          "星座",
+          "銀河",
+          "彗星の尾"
+        ]
+      }
+    ],
+    "note": "地球や金星など。",
+    "cloze_context": "惑星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_bdd5c94d4085",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と恒星",
+    "term": "衛星",
+    "term_dummies": [
+      "恒星",
+      "惑星",
+      "小惑星"
+    ],
+    "explanation_template": "月のように{{1}}の周りを公転する天体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "惑星",
+        "dummies": [
+          "恒星だけ",
+          "銀河だけ",
+          "星座だけ"
+        ]
+      }
+    ],
+    "note": "月は地球の衛星。",
+    "cloze_context": "衛星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9ee1a03554f0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と恒星",
+    "term": "銀河系",
+    "term_dummies": [
+      "太陽系",
+      "星座",
+      "惑星"
+    ],
+    "explanation_template": "太陽系を含む、多数の{{1}}などの集まり。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "恒星",
+        "dummies": [
+          "大陸",
+          "島",
+          "プレート"
+        ]
+      }
+    ],
+    "note": "天の川として見える部分がある。",
+    "cloze_context": "銀河系",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_778eeaf926de",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽と食",
+    "term": "黒点",
+    "term_dummies": [
+      "南中高度",
+      "日食",
+      "月食"
+    ],
+    "explanation_template": "太陽表面で、周囲より温度が{{1}}部分。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "低い",
+        "dummies": [
+          "高い",
+          "常に同じ",
+          "必ずゼロの"
+        ]
+      }
+    ],
+    "note": "黒く見えるが光は出している。",
+    "cloze_context": "黒点",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_dcd2c6eb0f6b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽と食",
+    "term": "南中高度",
+    "term_dummies": [
+      "黒点",
+      "日食",
+      "月食"
+    ],
+    "explanation_template": "太陽などが南中したときの、地平線からの{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "角度",
+        "dummies": [
+          "距離",
+          "温度",
+          "時間"
+        ]
+      }
+    ],
+    "note": "太陽では季節や緯度で変わる。",
+    "cloze_context": "南中高度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3dc7f3b2176f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽と食",
+    "term": "日食",
+    "term_dummies": [
+      "黒点",
+      "南中高度",
+      "月食"
+    ],
+    "explanation_template": "月が太陽を{{1}}ために起こる現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "隠す",
+        "dummies": [
+          "照らす",
+          "冷やす",
+          "遠ざける"
+        ]
+      }
+    ],
+    "note": "新月のときに起こり得る。",
+    "cloze_context": "日食",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ad77d62bad73",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽と食",
+    "term": "月食",
+    "term_dummies": [
+      "黒点",
+      "南中高度",
+      "日食"
+    ],
+    "explanation_template": "月が地球の{{1}}に入る現象。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "影",
+        "dummies": [
+          "中心",
+          "大気内",
+          "海"
+        ]
+      }
+    ],
+    "note": "満月のときに起こり得る。",
+    "cloze_context": "月食",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_34341ff83260",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "月の満ち欠け",
+    "term": "新月",
+    "term_dummies": [
+      "満月",
+      "上弦",
+      "下弦"
+    ],
+    "explanation_template": "太陽とほぼ{{1}}方向に見える、月の満ち欠けの一段階。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "同じ",
+        "dummies": [
+          "反対の",
+          "北だけの",
+          "南だけの"
+        ]
+      }
+    ],
+    "note": "太陽側の面が地球から見えにくい。",
+    "cloze_context": "新月",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_d14453682d14",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "月の満ち欠け",
+    "term": "満月",
+    "term_dummies": [
+      "新月",
+      "上弦",
+      "下弦"
+    ],
+    "explanation_template": "太陽とほぼ{{1}}方向に見える、丸い月。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "反対の",
+        "dummies": [
+          "同じ",
+          "北だけの",
+          "南だけの"
+        ]
+      }
+    ],
+    "note": "日没ごろ東から昇る。",
+    "cloze_context": "満月",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_5814c5444c52",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "月の満ち欠け",
+    "term": "上弦",
+    "term_dummies": [
+      "新月",
+      "満月",
+      "下弦"
+    ],
+    "explanation_template": "日本で、夕方に南の空に見える{{1}}月。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "半",
+        "dummies": [
+          "満",
+          "新",
+          "三日"
+        ]
+      }
+    ],
+    "note": "右側が明るく見える。",
+    "cloze_context": "上弦",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_68cdf9305909",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "月の満ち欠け",
+    "term": "下弦",
+    "term_dummies": [
+      "新月",
+      "満月",
+      "上弦"
+    ],
+    "explanation_template": "日本で、明け方に南の空に見える{{1}}月。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "半",
+        "dummies": [
+          "満",
+          "新",
+          "三日"
+        ]
+      }
+    ],
+    "note": "左側が明るく見える。",
+    "cloze_context": "下弦",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_76bd46ce3a68",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水中の力と力の分解",
+    "term": "水圧",
+    "term_dummies": [
+      "浮力",
+      "合力",
+      "分力"
+    ],
+    "explanation_template": "水の{{1}}によって生じる圧力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "重さ",
+        "dummies": [
+          "温度だけ",
+          "色だけ",
+          "電流"
+        ]
+      }
+    ],
+    "note": "深いほど大きい。",
+    "cloze_context": "水圧",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4171f7dc5bbd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水中の力と力の分解",
+    "term": "浮力",
+    "term_dummies": [
+      "重力",
+      "摩擦力",
+      "弾性力"
+    ],
+    "explanation_template": "水などの流体から物体が受ける{{1}}向きの力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "上",
+        "dummies": [
+          "下",
+          "常に東",
+          "常に西"
+        ]
+      }
+    ],
+    "note": "水圧の差で生じる。",
+    "cloze_context": "浮力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_85641056b25e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水中の力と力の分解",
+    "term": "合力",
+    "term_dummies": [
+      "水圧",
+      "浮力",
+      "分力"
+    ],
+    "explanation_template": "複数の力と同じ働きをする{{1}}つの力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "1",
+        "dummies": [
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "note": "同じ物体に働く力を考える。",
+    "cloze_context": "合力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_75b3824f116d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水中の力と力の分解",
+    "term": "分力",
+    "term_dummies": [
+      "水圧",
+      "浮力",
+      "合力"
+    ],
+    "explanation_template": "一つの力を分解してできる{{1}}の力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "それぞれ",
+        "dummies": [
+          "無関係",
+          "重力だけ",
+          "摩擦力だけ"
+        ]
+      }
+    ],
+    "note": "もとの力と同じ働きをする。",
+    "cloze_context": "分力",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ec50682cc0c9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "像と反射",
+    "term": "実像",
+    "term_dummies": [
+      "虚像",
+      "焦点",
+      "影"
+    ],
+    "explanation_template": "光が実際に{{1}}できる像。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "集まって",
+        "dummies": [
+          "発生して",
+          "全て消えて",
+          "音に変わって"
+        ]
+      }
+    ],
+    "note": "スクリーンに映せる。",
+    "cloze_context": "実像",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_775db40541f4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "像と反射",
+    "term": "虚像",
+    "term_dummies": [
+      "実像",
+      "焦点",
+      "影"
+    ],
+    "explanation_template": "光がそこから出るように{{1}}像。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "見える",
+        "dummies": [
+          "実際に発光する",
+          "必ず集まる",
+          "必ず消える"
+        ]
+      }
+    ],
+    "note": "スクリーンには映せない。",
+    "cloze_context": "虚像",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_a435d460f86b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "像と反射",
+    "term": "入射角",
+    "term_dummies": [
+      "実像",
+      "虚像",
+      "反射角"
+    ],
+    "explanation_template": "入射光と、面に{{1}}な線のなす角。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "垂直",
+        "dummies": [
+          "平行",
+          "必ず水平",
+          "必ず鉛直"
+        ]
+      }
+    ],
+    "note": "鏡面そのものとの角でない。",
+    "cloze_context": "入射角",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_ad5703ec6492",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "像と反射",
+    "term": "反射角",
+    "term_dummies": [
+      "実像",
+      "虚像",
+      "入射角"
+    ],
+    "explanation_template": "反射光と、面に{{1}}な線のなす角。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "垂直",
+        "dummies": [
+          "平行",
+          "必ず水平",
+          "必ず鉛直"
+        ]
+      }
+    ],
+    "note": "入射角と等しい。",
+    "cloze_context": "反射角",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_8454c487765e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気とエネルギー",
+    "term": "電力量",
+    "term_dummies": [
+      "ジュール熱",
+      "抵抗器",
+      "磁力線"
+    ],
+    "explanation_template": "電力と使用{{1}}の積。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "時間",
+        "dummies": [
+          "電流",
+          "抵抗",
+          "質量"
+        ]
+      }
+    ],
+    "note": "JやWhなどで表す。",
+    "cloze_context": "電力量",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_1132ab624f0e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気とエネルギー",
+    "term": "ジュール熱",
+    "term_dummies": [
+      "電力量",
+      "抵抗器",
+      "磁力線"
+    ],
+    "explanation_template": "電流が流れて抵抗で生じる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱",
+        "dummies": [
+          "音だけ",
+          "磁力だけ",
+          "浮力"
+        ]
+      }
+    ],
+    "note": "電気エネルギーから変換される。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_7585a2bd347e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気とエネルギー",
+    "term": "抵抗器",
+    "term_dummies": [
+      "電力量",
+      "ジュール熱",
+      "磁力線"
+    ],
+    "explanation_template": "電流を{{1}}する部品。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "流れにくく",
+        "dummies": [
+          "必ず増幅",
+          "必ず発光",
+          "必ず逆流"
+        ]
+      }
+    ],
+    "note": "決められた抵抗値をもつ。",
+    "cloze_context": "抵抗器",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_48287fd8e80b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電気とエネルギー",
+    "term": "磁力線",
+    "term_dummies": [
+      "電力量",
+      "ジュール熱",
+      "抵抗器"
+    ],
+    "explanation_template": "磁界の向きを示し、N極から{{1}}極へ向かう線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "S",
+        "dummies": [
+          "N",
+          "E",
+          "W"
+        ]
+      }
+    ],
+    "note": "磁石の外側での向き。",
+    "cloze_context": "磁力線",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_61c8d5c87228",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類",
+    "term": "金属",
+    "term_dummies": [
+      "非金属",
+      "有機物",
+      "ガラス"
+    ],
+    "explanation_template": "電気を通し、たたくと{{1}}性質がある物質群。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "広がる",
+        "dummies": [
+          "粉になる",
+          "溶ける",
+          "蒸発する"
+        ]
+      }
+    ],
+    "note": "たたくと広がる性質などもある。",
+    "cloze_context": "金属",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_4ae87f1f52d5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類",
+    "term": "非金属",
+    "term_dummies": [
+      "金属",
+      "合金",
+      "銅"
+    ],
+    "explanation_template": "物質のうち{{1}}に分類されないもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "金属",
+        "dummies": [
+          "有機物",
+          "無機物",
+          "固体"
+        ]
+      }
+    ],
+    "note": "炭素などの単体にも使う分類。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_860f54dc7443",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類",
+    "term": "無機物",
+    "term_dummies": [
+      "有機物",
+      "タンパク質",
+      "脂肪"
+    ],
+    "explanation_template": "有機物{{1}}の物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "以外",
+        "dummies": [
+          "だけ",
+          "と全く同じ",
+          "を含む全て"
+        ]
+      }
+    ],
+    "note": "二酸化炭素なども含む。",
+    "cloze_context": "無機物",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_571def8776c6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類",
+    "term": "濃度",
+    "term_dummies": [
+      "密度",
+      "溶解度",
+      "沸点"
+    ],
+    "explanation_template": "溶液に含まれる{{1}}の割合。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "溶質",
+        "dummies": [
+          "容器",
+          "溶媒だけ",
+          "気体だけ"
+        ]
+      }
+    ],
+    "note": "質量パーセントなどで表す。",
+    "cloze_context": "濃度",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_6a187d1b283b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化",
+    "term": "融解",
+    "term_dummies": [
+      "凝固",
+      "気化",
+      "液化"
+    ],
+    "explanation_template": "物質が固体から{{1}}へ変わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "液体",
+        "dummies": [
+          "気体",
+          "原子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "凝固と逆の変化。",
+    "cloze_context": "融解",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_0a00fd2c0243",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化",
+    "term": "凝固",
+    "term_dummies": [
+      "融解",
+      "気化",
+      "液化"
+    ],
+    "explanation_template": "物質が液体から{{1}}へ変わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "固体",
+        "dummies": [
+          "気体",
+          "原子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "融解と逆の変化。",
+    "cloze_context": "凝固",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_3bad00dc53e4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化",
+    "term": "気化",
+    "term_dummies": [
+      "凝固",
+      "融解",
+      "液化"
+    ],
+    "explanation_template": "物質が液体から{{1}}へ変わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "気体",
+        "dummies": [
+          "固体",
+          "原子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "蒸発と沸騰を含む。",
+    "cloze_context": "気化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_0e3945a3fa82",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "状態変化",
+    "term": "液化",
+    "term_dummies": [
+      "凝固",
+      "融解",
+      "気化"
+    ],
+    "explanation_template": "物質が気体から{{1}}へ変わること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "液体",
+        "dummies": [
+          "固体",
+          "原子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "凝結ともいう。",
+    "cloze_context": "液化",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_baf8a43b95d8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と熱・触媒",
+    "term": "発熱反応",
+    "term_dummies": [
+      "吸熱反応",
+      "触媒",
+      "沈殿"
+    ],
+    "explanation_template": "周囲へ{{1}}を出す化学反応。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱",
+        "dummies": [
+          "物質だけ",
+          "光だけ",
+          "電気だけ"
+        ]
+      }
+    ],
+    "note": "周囲の温度が上がる場合がある。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f8efd81ba843",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と熱・触媒",
+    "term": "吸熱反応",
+    "term_dummies": [
+      "発熱反応",
+      "触媒",
+      "沈殿"
+    ],
+    "explanation_template": "周囲から{{1}}を吸収する化学反応。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "熱",
+        "dummies": [
+          "物質だけ",
+          "光だけ",
+          "電気だけ"
+        ]
+      }
+    ],
+    "note": "周囲の温度が下がる場合がある。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_9a25ee627e5e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と熱・触媒",
+    "term": "触媒",
+    "term_dummies": [
+      "反応物",
+      "生成物",
+      "燃料"
+    ],
+    "explanation_template": "反応を促進し、自身は反応の前後で{{1}}物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "変化しない",
+        "dummies": [
+          "必ず消える",
+          "別元素になる",
+          "分解し尽くす"
+        ]
+      }
+    ],
+    "note": "二酸化マンガンなど。",
+    "cloze_context": "触媒",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_f40b7d44fc55",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と熱・触媒",
+    "term": "沈殿",
+    "term_dummies": [
+      "気泡",
+      "溶液",
+      "溶媒"
+    ],
+    "explanation_template": "水溶液中で生じた、溶けにくい{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "固体",
+        "dummies": [
+          "気体",
+          "液体",
+          "電子"
+        ]
+      }
+    ],
+    "note": "硫酸バリウムなど。",
+    "cloze_context": "沈殿",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_da90d48bc694",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "果実に種子が多数ある花の子房には？",
+    "answer": "胚珠が多数あった",
+    "dummies": [
+      "胚珠がなかった",
+      "胚珠は必ず一つ",
+      "やくだけがあった"
+    ],
+    "note": "胚珠が種子になる関係で考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5647af2360cf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "受粉と交配実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "花粉が出る前におしべを除く目的は？",
+    "answer": "自家受粉を防ぐ",
+    "dummies": [
+      "子房をなくす",
+      "種子の発芽を早める",
+      "他家受粉を防ぐ"
+    ],
+    "note": "交配実験で行う操作。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_24db10906623",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "シダとコケに共通する増え方は？",
+    "answer": "胞子で増える",
+    "dummies": [
+      "種子だけで増える",
+      "花粉だけで増える",
+      "果実だけで増える"
+    ],
+    "note": "どちらも種子をつくらない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_eb8182f31953",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "シダにありコケでは明確でないものは？",
+    "answer": "根・茎・葉の区別",
+    "dummies": [
+      "細胞",
+      "呼吸",
+      "光合成"
+    ],
+    "note": "体のつくりを比べる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_75e8a581735e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "マツの種子のでき方の特徴は？",
+    "answer": "子房に包まれない",
+    "dummies": [
+      "必ず果実の中にできる",
+      "胞子だけで増える",
+      "花粉をつくらない"
+    ],
+    "note": "裸子植物の特徴。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_34cc1d3ac0dd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "双子葉類の根の代表的なつくりは？",
+    "answer": "主根と側根",
+    "dummies": [
+      "ひげ根だけ",
+      "仮根だけ",
+      "根はない"
+    ],
+    "note": "単子葉類との比較。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4e69a4dc56d3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "昆虫の成体の体の区分は？",
+    "answer": "頭・胸・腹",
+    "dummies": [
+      "頭胸部・腹",
+      "頭・尾だけ",
+      "節の区別がない"
+    ],
+    "note": "あしは胸に付く。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_0ead77f024f9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "花と分類の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "魚類が水中で主に呼吸する器官は？",
+    "answer": "えら",
+    "dummies": [
+      "肺だけ",
+      "気管",
+      "外とう膜"
+    ],
+    "note": "魚類は脊椎動物。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_13ae7ccc0825",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "顕微鏡で対物レンズを近付けるときは？",
+    "answer": "横から見て操作する",
+    "dummies": [
+      "接眼を見て押し込む",
+      "必ず目を閉じて操作",
+      "プレパラートを押し付ける"
+    ],
+    "note": "ぶつけないようにする。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_aca3d4da6997",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物と動物の細胞に共通するつくりは？",
+    "answer": "細胞膜",
+    "dummies": [
+      "細胞壁",
+      "葉緑体",
+      "維管束"
+    ],
+    "note": "核を持つ細胞を比較する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_f70270920a5e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "光合成の実験で葉の一部を覆う目的は？",
+    "answer": "光の必要性を調べる",
+    "dummies": [
+      "酸素の必要性だけ調べる",
+      "水の量だけ変える",
+      "葉緑体の数だけ変える"
+    ],
+    "note": "他の条件をそろえる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d8bf9b51c6fd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "光合成の実験前に植物を暗所に置く目的は？",
+    "answer": "葉のデンプンを減らす",
+    "dummies": [
+      "葉緑体を全てなくす",
+      "葉の呼吸を止める",
+      "水の吸収を止める"
+    ],
+    "note": "元からあるデンプンの影響を減らす。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_9d5348ff82d3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "蒸散の実験で水面を油で覆う目的は？",
+    "answer": "水面からの蒸発を防ぐ",
+    "dummies": [
+      "気孔を必ず開く",
+      "水の吸収を全て止める",
+      "呼吸を完全に止める"
+    ],
+    "note": "植物から出た水分量を調べる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_3d270c7b1591",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物が呼吸を行う時間は？",
+    "answer": "昼も夜も",
+    "dummies": [
+      "夜だけ",
+      "昼だけ",
+      "発芽の時だけ"
+    ],
+    "note": "光合成をしていても呼吸する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_0801bcb7158b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "葉の両面にワセリンを塗ると主に減るのは？",
+    "answer": "蒸散",
+    "dummies": [
+      "重力",
+      "細胞の数",
+      "維管束の数"
+    ],
+    "note": "気孔などからの水の放出を妨げる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_67e519fd8914",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "細胞と植物の実験",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "色水を吸わせ茎を切る実験の目的は？",
+    "answer": "水の通り道を調べる",
+    "dummies": [
+      "気孔の位置だけ調べる",
+      "花粉の数だけ調べる",
+      "呼吸を止める"
+    ],
+    "note": "水の運搬経路を追う。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_20bbaf7a8923",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "胆汁と胃液の違いは？",
+    "answer": "胆汁に消化酵素はない",
+    "dummies": [
+      "胃液に消化酵素はない",
+      "どちらも酵素を含まない",
+      "どちらも血液そのもの"
+    ],
+    "note": "胆汁は脂肪の消化を助ける。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4a0a679e1a7c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "脂肪の消化で生じる組合せは？",
+    "answer": "脂肪酸とモノグリセリド",
+    "dummies": [
+      "ブドウ糖とアミノ酸",
+      "尿素とアンモニア",
+      "デンプンとグリコーゲン"
+    ],
+    "note": "小腸で吸収される形になる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_cd82617a4003",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "肺動脈を流れる血液の特徴は？",
+    "answer": "酸素が比較的少ない",
+    "dummies": [
+      "酸素が最も多い",
+      "血球を含まない",
+      "必ず養分を含まない"
+    ],
+    "note": "血管名は心臓からの向きで決まる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_6711a9c3df48",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "尿素をつくる器官と排出する器官は？",
+    "answer": "肝臓・腎臓",
+    "dummies": [
+      "腎臓・肝臓",
+      "胃・肺",
+      "肺・小腸"
+    ],
+    "note": "つくる場所と尿をつくる場所を区別。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_defb1a25771c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "出血時に傷口をふさぐのに関わる成分は？",
+    "answer": "血小板",
+    "dummies": [
+      "赤血球",
+      "ヘモグロビン",
+      "胆汁"
+    ],
+    "note": "血液が固まる働き。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_a918cec779a5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "熱い物から手を引く主な反射経路は？",
+    "answer": "感覚神経→脊髄→運動神経",
+    "dummies": [
+      "運動神経→脊髄→感覚神経",
+      "感覚神経→筋肉→大脳",
+      "筋肉→感覚神経→皮膚"
+    ],
+    "note": "意識的な判断より先に反応する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_90f0fba0a43d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "うでを曲げるときの筋肉の働きは？",
+    "answer": "片方が縮み他方が緩む",
+    "dummies": [
+      "両側が常に同じだけ縮む",
+      "筋肉が自ら伸びて骨を押す",
+      "骨が縮んで筋肉を押す"
+    ],
+    "note": "筋肉は骨を引く。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_eb703543a2ff",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "消化・循環・神経の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "小腸から吸収されたブドウ糖の多くはまず？",
+    "answer": "肝臓へ運ばれる",
+    "dummies": [
+      "尿管へ直接入る",
+      "気管へ直接入る",
+      "体外へ全て出る"
+    ],
+    "note": "血液で運ばれ肝臓で量が調節される。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_c617d3b9e6f6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "石英と黒雲母を見分ける着眼点は？",
+    "answer": "色や割れ方",
+    "dummies": [
+      "生物の細胞数",
+      "燃えた時間だけ",
+      "天気の記号"
+    ],
+    "note": "一つだけでなく特徴を組み合わせる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_b910081afc25",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "花こう岩と鉱物組成が似た火山岩は？",
+    "answer": "流紋岩",
+    "dummies": [
+      "安山岩",
+      "玄武岩",
+      "斑れい岩"
+    ],
+    "note": "冷え方によりつくりが異なる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_143a50a1dd52",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "斑れい岩と鉱物組成が似た火山岩は？",
+    "answer": "玄武岩",
+    "dummies": [
+      "流紋岩",
+      "安山岩",
+      "花こう岩"
+    ],
+    "note": "組成と結晶のつくりを比べる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_737bf4705c07",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鉱物の結晶が大きく育つ条件は？",
+    "answer": "ゆっくり冷える",
+    "dummies": [
+      "必ず急冷する",
+      "必ず粉砕する",
+      "水に完全に溶かす"
+    ],
+    "note": "深成岩のつくりと関係。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_f39f69f29091",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "石灰岩とチャートを見分ける実験は？",
+    "answer": "塩酸で気体発生を調べる",
+    "dummies": [
+      "水だけで重さを比べる",
+      "磁石に付くかだけ調べる",
+      "ろ過だけをする"
+    ],
+    "note": "複数の特徴も合わせて見る。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d6537e0906b5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "砂岩とれき岩を分ける主な基準は？",
+    "answer": "粒の大きさ",
+    "dummies": [
+      "生物の種類",
+      "岩石の重さだけ",
+      "地層の厚さだけ"
+    ],
+    "note": "粒の種類だけでなく大きさを見る。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_29d0e5177ea5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "火山活動の時期の対比に役立つ層は？",
+    "answer": "特徴的な火山灰層",
+    "dummies": [
+      "全て同じ色の砂層",
+      "必ず最新の泥層だけ",
+      "現在の土の表面だけ"
+    ],
+    "note": "広い地域に堆積した特徴を生かす。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_81f486a8040a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "鉱物と岩石の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "河口から沖へ運ばれ遠くに堆積しやすい粒は？",
+    "answer": "細かい泥",
+    "dummies": [
+      "大きなれき",
+      "最も重い岩塊",
+      "全て同じ距離"
+    ],
+    "note": "粒が細かいほど流されやすい。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_dbfa78082a51",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "しゅう曲した地層に働いた力の例は？",
+    "answer": "左右から押す力",
+    "dummies": [
+      "風が吹く力だけ",
+      "光を反射する力",
+      "磁石の力だけ"
+    ],
+    "note": "地層の曲がり方と力を関連付ける。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_0864c1d17375",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地層を切る断層のずれが起きた順は？",
+    "answer": "地層の堆積より後",
+    "dummies": [
+      "必ず地層の堆積より前",
+      "必ず地層の堆積と同時",
+      "全く判断できない"
+    ],
+    "note": "切られた関係から前後を考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_9e69b8040344",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "示準化石に適する生物の条件は？",
+    "answer": "広く分布し生存期間が短い",
+    "dummies": [
+      "分布が狭く長期間生存",
+      "必ず現生の生物だけ",
+      "必ず一地域の大型生物だけ"
+    ],
+    "note": "時代を比べる手掛かり。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d97b280cea5a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "造礁サンゴとシジミの化石で分かるのは？",
+    "answer": "当時の環境の違い",
+    "dummies": [
+      "必ず同じ年代",
+      "現在の震度",
+      "岩石の硬さだけ"
+    ],
+    "note": "生物の生息条件に注目する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_2e233af28477",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ地震でも震度が場所で違う理由は？",
+    "answer": "距離や地盤などが違う",
+    "dummies": [
+      "各地で別の地震になる",
+      "震源の時刻が場所で変わる",
+      "全地点の規模が別々になる"
+    ],
+    "note": "規模と揺れの強さを分ける。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_3a22ad85c1ad",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "海溝の近くで海洋プレートは一般に？",
+    "answer": "他のプレート下へ沈み込む",
+    "dummies": [
+      "大気中へ昇る",
+      "必ず動かなくなる",
+      "必ず全て海面へ出る"
+    ],
+    "note": "日本付近の地震等に関係する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_564fa83485e2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "海底の大きな上下変動で起こり得るのは？",
+    "answer": "津波",
+    "dummies": [
+      "竜巻",
+      "台風",
+      "噴火だけ"
+    ],
+    "note": "海水が広い範囲で動かされる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_3a5c62649c3e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層・地震・プレート",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地震の被害を考える際に必要なのは？",
+    "answer": "揺れと地盤・建物の条件",
+    "dummies": [
+      "規模の数値だけ",
+      "震央の天気だけ",
+      "発生日の曜日だけ"
+    ],
+    "note": "同規模でも被害は同じとは限らない。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_377698f7a0be",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "風向「北」はどちらから吹く風？",
+    "answer": "北から",
+    "dummies": [
+      "南から",
+      "東から",
+      "西から"
+    ],
+    "note": "風が来る向きで表す。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_c103e7ccb101",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "湿球温度が乾球温度より低い主因は？",
+    "answer": "水の蒸発が熱を奪う",
+    "dummies": [
+      "水が燃える",
+      "電流が流れる",
+      "太陽が必ず当たる"
+    ],
+    "note": "湿度を測る仕組み。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_c7ef15fb21bf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ気温で水蒸気が多い空気の露点は？",
+    "answer": "高い",
+    "dummies": [
+      "低い",
+      "必ず同じ",
+      "常に0℃"
+    ],
+    "note": "水滴ができ始める温度で比べる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8232f2eab843",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本付近の温帯低気圧が東へ進む主な原因は？",
+    "answer": "上空の偏西風",
+    "dummies": [
+      "貿易風だけ",
+      "地球の公転だけ",
+      "月の引力だけ"
+    ],
+    "note": "日本の天気が西から変わる理由。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_65e33ea02ced",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "停滞前線が同じ地域に続くと注意するのは？",
+    "answer": "長雨による災害",
+    "dummies": [
+      "地震の必発",
+      "火山噴火の必発",
+      "毎日必ず晴天"
+    ],
+    "note": "前線の停滞と降水を関連付ける。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_70aa3616afb6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "閉塞前線付近の暖気は一般に？",
+    "answer": "上に押し上げられる",
+    "dummies": [
+      "必ず地表に残る",
+      "寒気の下へ沈む",
+      "必ず消滅する"
+    ],
+    "note": "寒冷前線が温暖前線に追い付く。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_57fd72d7daf3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "やませが東北にもたらしやすいのは？",
+    "answer": "低温による冷害",
+    "dummies": [
+      "常に高温乾燥",
+      "火山灰の堆積",
+      "地震の増加"
+    ],
+    "note": "オホーツク海気団が関係する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_7075a79180f1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "気象の観測と変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気象災害への備えで重要な情報は？",
+    "answer": "地域や時刻を確かめた警報等",
+    "dummies": [
+      "発信元不明のうわさだけ",
+      "過去の晴天の記録だけ",
+      "遠い地域の気温だけ"
+    ],
+    "note": "最新の対象地域を確認する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_fec3ac4c7a76",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "黒点が周囲より暗く見える主因は？",
+    "answer": "周囲より温度が低い",
+    "dummies": [
+      "光を全く出さない",
+      "太陽の穴だから",
+      "地球の影だから"
+    ],
+    "note": "黒点も光を出している。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_b89b219c55ca",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "黒点の移動から分かる太陽の運動は？",
+    "answer": "自転",
+    "dummies": [
+      "地球の周りの日周公転",
+      "必ず月の周りの公転",
+      "自転の完全な停止"
+    ],
+    "note": "太陽表面の模様を追う。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_240bb96a9318",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "太陽の表面温度はおよそ？",
+    "answer": "6000℃",
+    "dummies": [
+      "100℃",
+      "1000℃",
+      "100万℃"
+    ],
+    "note": "中心部の温度とは異なる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_2cae4b419b10",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "恒星と惑星の見え方の主な違いは？",
+    "answer": "恒星は自ら光を出す",
+    "dummies": [
+      "惑星は必ず光を出して光る",
+      "恒星は全て太陽を公転",
+      "惑星は全て地球を公転"
+    ],
+    "note": "惑星は主に太陽光を反射する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_745ceb954031",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金星の見かけが大きいときの明るい部分は？",
+    "answer": "細く見えやすい",
+    "dummies": [
+      "常に全面が明るい",
+      "必ず満月のように丸い",
+      "常に変わらない"
+    ],
+    "note": "地球との位置関係で考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_4b06a84b9e6a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "南の空の星は同時刻の1か月後に？",
+    "answer": "西へ移る",
+    "dummies": [
+      "東へ移る",
+      "必ず北だけへ移る",
+      "必ず南だけへ移る"
+    ],
+    "note": "地球の公転に関係する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_9381b7d7fcb4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "上弦の月が沈むのはおよそいつ？",
+    "answer": "真夜中ごろ",
+    "dummies": [
+      "正午ごろ",
+      "日の出ごろ",
+      "必ず夕方だけ"
+    ],
+    "note": "日本での標準的な見え方。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d74ee47f5e81",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽・月・惑星の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "下弦の月が昇るのはおよそいつ？",
+    "answer": "真夜中ごろ",
+    "dummies": [
+      "正午ごろ",
+      "日没ごろ",
+      "必ず明け方だけ"
+    ],
+    "note": "日本での標準的な見え方。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d37919023abb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と像",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズで実像ができる物体の位置は？",
+    "answer": "焦点より外側",
+    "dummies": [
+      "焦点より内側",
+      "必ず焦点上だけ",
+      "レンズの中だけ"
+    ],
+    "note": "物体とレンズの距離で考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_d8bf9d310b90",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と像",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズの物体を焦点へ近付けると実像は？",
+    "answer": "大きくなり遠ざかる",
+    "dummies": [
+      "小さくなり近付く",
+      "必ず同じ大きさ",
+      "必ず正立に変わる"
+    ],
+    "note": "焦点の外側から近付ける場合。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_77bbbbe48f71",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と像",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平面鏡の虚像の位置は？",
+    "answer": "鏡から物体と同じ距離の奥",
+    "dummies": [
+      "必ず鏡面上",
+      "必ず物体の手前",
+      "必ず焦点上"
+    ],
+    "note": "光の直進と反射で考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5074e82d11e3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と像",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "反射の作図で最初に引く基準線は？",
+    "answer": "入射点で面に垂直な線",
+    "dummies": [
+      "面に沿う線だけ",
+      "必ず水平な線",
+      "必ず鉛直な線"
+    ],
+    "note": "法線を基準に角を測る。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_0cf5e817a3c4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水圧・浮力と合力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水中で深くなるほど水圧は？",
+    "answer": "大きくなる",
+    "dummies": [
+      "小さくなる",
+      "必ず変わらない",
+      "必ずゼロになる"
+    ],
+    "note": "水の重さに関係する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_6fea30b826b0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水圧・浮力と合力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "物体を全て沈めたまま深くすると浮力は？",
+    "answer": "ほぼ変わらない",
+    "dummies": [
+      "深さに比例して増え続ける",
+      "必ずゼロになる",
+      "深さに比例して減り続ける"
+    ],
+    "note": "水の密度と物体の体積は同じ。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_a1a4d3bb5255",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水圧・浮力と合力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同方向の2力の合力の大きさは？",
+    "answer": "2力の和",
+    "dummies": [
+      "2力の差",
+      "必ず大きい方と同じ",
+      "必ずゼロ"
+    ],
+    "note": "同じ物体に働く2力を考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_2ee8cd07dff8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "水圧・浮力と合力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "逆向きで同一直線上の2力の合力は？",
+    "answer": "大きさの差",
+    "dummies": [
+      "大きさの和",
+      "必ず小さい方と同じ",
+      "必ずゼロ"
+    ],
+    "note": "大きさが異なれば大きい力の側。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_db2cd7f0e246",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流・抵抗と熱",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ抵抗に流す電流を2倍にすると電力は？",
+    "answer": "4倍",
+    "dummies": [
+      "2倍",
+      "半分",
+      "変わらない"
+    ],
+    "note": "電力は抵抗と電流の2乗の積。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_81140d7178b7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流・抵抗と熱",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ電力を使う時間を2倍にすると電力量は？",
+    "answer": "2倍",
+    "dummies": [
+      "4倍",
+      "半分",
+      "変わらない"
+    ],
+    "note": "電力量は電力と時間の積。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_b82e2debe34e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流・抵抗と熱",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "磁力線が密な部分の磁界は？",
+    "answer": "強い",
+    "dummies": [
+      "弱い",
+      "必ずゼロ",
+      "必ず逆向き"
+    ],
+    "note": "線の向きと強さを区別する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_11f33a225694",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流・抵抗と熱",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "電熱線による水の温度変化を比べる条件は？",
+    "answer": "水の量や加熱時間をそろえる",
+    "dummies": [
+      "容器の色だけそろえる",
+      "水の量だけ毎回変える",
+      "温度を測らず印象で決める"
+    ],
+    "note": "一つの条件の影響を調べる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_9f3b7fb4b08b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類と状態",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金属のあたたまり方の特徴は？",
+    "answer": "熱を伝えやすい",
+    "dummies": [
+      "必ず熱を通さない",
+      "必ず気体になる",
+      "必ず燃える"
+    ],
+    "note": "電気や熱を伝えやすい。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_8147f6843708",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類と状態",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "黒鉛が電気を通しても金属でない理由は？",
+    "answer": "電気以外の性質も見るため",
+    "dummies": [
+      "電気を通す物は全て金属",
+      "必ず液体だから",
+      "必ず水に溶けるから"
+    ],
+    "note": "複数の性質から分類する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_e60c79b75fa7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類と状態",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水が氷になるときの質量は？",
+    "answer": "出入りがなければ同じ",
+    "dummies": [
+      "必ず増える",
+      "必ず減る",
+      "必ずゼロになる"
+    ],
+    "note": "体積の変化とは別に考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_079d65afa78c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質の分類と状態",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "液面から気体へ変わる蒸発の特徴は？",
+    "answer": "沸点未満でも起こる",
+    "dummies": [
+      "沸点でしか起こらない",
+      "液体内部でだけ起こる",
+      "固体でしか起こらない"
+    ],
+    "note": "沸騰との違い。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_458607067c72",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と温度変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "化学反応で周囲の温度が上がる場合は？",
+    "answer": "熱を周囲へ放出する",
+    "dummies": [
+      "熱を周囲から吸収する",
+      "原子の種類が変わる",
+      "質量保存が成立しない"
+    ],
+    "note": "発熱反応として捉える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_493aecb4f429",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と温度変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "吸熱反応中、熱はどちらへ移る？",
+    "answer": "周囲から反応系へ",
+    "dummies": [
+      "反応系から周囲へ",
+      "必ず全て消滅する",
+      "一切移動しない"
+    ],
+    "note": "化学変化と熱の向きを対応させる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_3b8d5e097f5f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と温度変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸素発生で使う二酸化マンガンの役割は？",
+    "answer": "反応を速める触媒",
+    "dummies": [
+      "発生する酸素の全原料",
+      "必ず水素へ変わる物質",
+      "必ず全量燃える燃料"
+    ],
+    "note": "過酸化水素の分解を考える。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5cfa99fb23a1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "反応と温度変化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "反応の温度変化を比べる条件は？",
+    "answer": "量と初めの温度をそろえる",
+    "dummies": [
+      "毎回違う量を使う",
+      "温度計を使わない",
+      "反応前の温度を記録しない"
+    ],
+    "note": "条件をそろえて比較する。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5866dbbfd2b1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "分離操作と粒子",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ろ過でろうとに注ぐとき使うのは？",
+    "answer": "ガラス棒",
+    "dummies": [
+      "温度計の先端",
+      "試験管ばさみ",
+      "ピンセットの先端"
+    ],
+    "note": "液を伝わせて静かに注ぐ。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_a062a585ae64",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "分離操作と粒子",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ろうとの管の先を受ける容器の壁に付けるのは？",
+    "answer": "液が静かに流れるようにする",
+    "dummies": [
+      "必ず気体を発生させる",
+      "必ず液を加熱する",
+      "必ず溶質を分解する"
+    ],
+    "note": "飛び散りを防ぐ。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_2d4e378fdb82",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "分離操作と粒子",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気体が液体に変わると粒子そのものの大きさは？",
+    "answer": "変わらない",
+    "dummies": [
+      "必ず大きくなる",
+      "必ず小さくなる",
+      "必ずゼロになる"
+    ],
+    "note": "粒子間の距離や並びが変わる。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_case_5969bca31ea6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "分離操作と粒子",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "一定温度の飽和食塩水に食塩を加えると？",
+    "answer": "溶け残る",
+    "dummies": [
+      "全て無限に溶ける",
+      "必ず水が全て蒸発する",
+      "必ず気体が発生する"
+    ],
+    "note": "溶ける量の限度がある。",
+    "content_batch": "science-body-earth-20261109",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-09"
   }
 ]
