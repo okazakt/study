@@ -26684,5 +26684,5661 @@
       "hist-C2"
     ],
     "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4708f036eab9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代の家族と文化",
+    "term": "核家族",
+    "term_dummies": [
+      "単独世帯",
+      "文化の多様性",
+      "文化財"
+    ],
+    "explanation_template": "夫婦だけ、または夫婦と{{1}}などからなる家族。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "未婚の子",
+        "dummies": [
+          "祖父母全員",
+          "地域の住民",
+          "職場の同僚"
+        ]
+      }
+    ],
+    "note": "家族の形は多様になっている。",
+    "cloze_context": "核家族",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e4833624d78f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代の家族と文化",
+    "term": "単独世帯",
+    "term_dummies": [
+      "核家族",
+      "文化の多様性",
+      "文化財"
+    ],
+    "explanation_template": "{{1}}で暮らす世帯。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一人",
+        "dummies": [
+          "夫婦だけ",
+          "親子三人",
+          "三世代"
+        ]
+      }
+    ],
+    "note": "高齢者以外にも見られる。",
+    "cloze_context": "単独世帯",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d7e0e8d2d6fe",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代の家族と文化",
+    "term": "文化の多様性",
+    "term_dummies": [
+      "核家族",
+      "単独世帯",
+      "文化財"
+    ],
+    "explanation_template": "言語や習慣などに{{1}}があること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "様々な違い",
+        "dummies": [
+          "優劣の固定",
+          "単一の形",
+          "法律の不在"
+        ]
+      }
+    ],
+    "note": "違いを尊重して共に暮らす。",
+    "cloze_context": "文化の多様性",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fc43d8d9a0ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代の家族と文化",
+    "term": "文化財",
+    "term_dummies": [
+      "核家族",
+      "単独世帯",
+      "文化の多様性"
+    ],
+    "explanation_template": "歴史や芸術などの面で価値を持つ{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "文化的な遺産",
+        "dummies": [
+          "全ての商品",
+          "全ての流行語",
+          "全ての法律"
+        ]
+      }
+    ],
+    "note": "有形と無形のものがある。",
+    "cloze_context": "文化財",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_abb21dcb21c3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "情報社会の判断",
+    "term": "情報リテラシー",
+    "term_dummies": [
+      "メディア",
+      "デジタルデバイド",
+      "著作権"
+    ],
+    "explanation_template": "情報を読み解き、{{1}}に活用する力。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "適切",
+        "dummies": [
+          "無条件",
+          "無断",
+          "無検証"
+        ]
+      }
+    ],
+    "note": "発信元や根拠も確認する。",
+    "cloze_context": "情報リテラシー",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_5b6d422f920f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "情報社会の判断",
+    "term": "メディア",
+    "term_dummies": [
+      "情報リテラシー",
+      "デジタルデバイド",
+      "著作権"
+    ],
+    "explanation_template": "情報を人々へ伝える{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "媒体",
+        "dummies": [
+          "税金",
+          "裁判",
+          "契約"
+        ]
+      }
+    ],
+    "note": "新聞・放送・インターネットなど。",
+    "cloze_context": "メディア",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fd91c085503a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "情報社会の判断",
+    "term": "デジタルデバイド",
+    "term_dummies": [
+      "情報リテラシー",
+      "メディア",
+      "著作権"
+    ],
+    "explanation_template": "情報通信技術を利用できるかによる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "格差",
+        "dummies": [
+          "多数決",
+          "物価上昇",
+          "権力分立"
+        ]
+      }
+    ],
+    "note": "年齢や地域などにも関係する。",
+    "cloze_context": "デジタルデバイド",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8975a9304e95",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "情報社会の判断",
+    "term": "著作権",
+    "term_dummies": [
+      "情報リテラシー",
+      "メディア",
+      "デジタルデバイド"
+    ],
+    "explanation_template": "文章や音楽などの{{1}}を保護する権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "創作物",
+        "dummies": [
+          "発見済みの事実だけ",
+          "土地所有だけ",
+          "納税記録だけ"
+        ]
+      }
+    ],
+    "note": "無断利用が認められない場合がある。",
+    "cloze_context": "著作権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e59ab1b876f5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "集団の合意と分業",
+    "term": "合意形成",
+    "term_dummies": [
+      "多数決",
+      "少数意見",
+      "分業"
+    ],
+    "explanation_template": "異なる意見を調整し、共に受け入れる{{1}}を探ること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "結論",
+        "dummies": [
+          "命令のみ",
+          "罰則のみ",
+          "勝者のみ"
+        ]
+      }
+    ],
+    "note": "理由や条件を話し合う。",
+    "cloze_context": "合意形成",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a20aff4c64b1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "集団の合意と分業",
+    "term": "多数決",
+    "term_dummies": [
+      "合意形成",
+      "少数意見",
+      "分業"
+    ],
+    "explanation_template": "複数案から、賛成する人の{{1}}で決める方法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "数",
+        "dummies": [
+          "年齢",
+          "財産",
+          "身長"
+        ]
+      }
+    ],
+    "note": "少数意見の尊重も必要。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_60325370be99",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "集団の合意と分業",
+    "term": "少数意見",
+    "term_dummies": [
+      "合意形成",
+      "多数決",
+      "分業"
+    ],
+    "explanation_template": "集団で支持する人が{{1}}側の意見。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "少ない",
+        "dummies": [
+          "最年長の",
+          "最も富裕な",
+          "最も著名な"
+        ]
+      }
+    ],
+    "note": "多数決の前後も尊重する。",
+    "cloze_context": "少数意見",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_7c95f32cba00",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "集団の合意と分業",
+    "term": "分業",
+    "term_dummies": [
+      "合意形成",
+      "多数決",
+      "少数意見"
+    ],
+    "explanation_template": "仕事を{{1}}して担当すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "分担",
+        "dummies": [
+          "独占",
+          "廃止",
+          "隠蔽"
+        ]
+      }
+    ],
+    "note": "相互の協力が必要になる。",
+    "cloze_context": "分業",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_02a7a414519e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会生活のきまり",
+    "term": "きまり",
+    "term_dummies": [
+      "責任",
+      "権利",
+      "義務"
+    ],
+    "explanation_template": "集団生活を円滑にするため共有する{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "行動の基準",
+        "dummies": [
+          "個人の好みだけ",
+          "売上額だけ",
+          "血縁関係だけ"
+        ]
+      }
+    ],
+    "note": "目的と負担の公正さを考える。",
+    "cloze_context": "きまり",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3600069fac3e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会生活のきまり",
+    "term": "責任",
+    "term_dummies": [
+      "きまり",
+      "権利",
+      "義務"
+    ],
+    "explanation_template": "自分の役割や行為について果たすべき{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "務め",
+        "dummies": [
+          "特権のみ",
+          "利益のみ",
+          "自由時間のみ"
+        ]
+      }
+    ],
+    "note": "権利とともに社会生活を支える。",
+    "cloze_context": "責任",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3b6a54951109",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会生活のきまり",
+    "term": "権利",
+    "term_dummies": [
+      "きまり",
+      "責任",
+      "義務"
+    ],
+    "explanation_template": "社会で正当に主張し保障を求められる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "資格や利益",
+        "dummies": [
+          "無制限の命令",
+          "全員への罰",
+          "他人の支配"
+        ]
+      }
+    ],
+    "note": "相互の尊重が必要。",
+    "cloze_context": "権利",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f37b34c04b12",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会生活のきまり",
+    "term": "義務",
+    "term_dummies": [
+      "きまり",
+      "責任",
+      "権利"
+    ],
+    "explanation_template": "法や社会のきまりなどによって求められる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "行為や負担",
+        "dummies": [
+          "個人の趣味だけ",
+          "任意の利益だけ",
+          "世襲の特権だけ"
+        ]
+      }
+    ],
+    "note": "権利と区別して捉える。",
+    "cloze_context": "義務",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a00074e7977c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業と市場の課題",
+    "term": "寡占",
+    "term_dummies": [
+      "カルテル",
+      "企業の社会的責任",
+      "利潤"
+    ],
+    "explanation_template": "少数の企業が市場の大部分を{{1}}する状態。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "支配",
+        "dummies": [
+          "放棄",
+          "輸入",
+          "国有化"
+        ]
+      }
+    ],
+    "note": "価格競争が弱まる場合がある。",
+    "cloze_context": "寡占",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_06df4c83525a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業と市場の課題",
+    "term": "カルテル",
+    "term_dummies": [
+      "寡占",
+      "企業の社会的責任",
+      "利潤"
+    ],
+    "explanation_template": "企業同士が価格などを{{1}}、競争を制限すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "申し合わせ",
+        "dummies": [
+          "自由に競い",
+          "公開投票で決め",
+          "政府に全て委ね"
+        ]
+      }
+    ],
+    "note": "独占禁止法で原則禁止される。",
+    "cloze_context": "カルテル",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3b21f2cfaea2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業と市場の課題",
+    "term": "企業の社会的責任",
+    "term_dummies": [
+      "寡占",
+      "カルテル",
+      "利潤"
+    ],
+    "explanation_template": "企業が利益だけでなく、{{1}}にも責任を持つという考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "社会や環境",
+        "dummies": [
+          "株価だけ",
+          "社名だけ",
+          "経営者の趣味だけ"
+        ]
+      }
+    ],
+    "note": "人権や労働環境も含む。",
+    "cloze_context": "企業の社会的責任",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_295cccfbb86c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "企業と市場の課題",
+    "term": "利潤",
+    "term_dummies": [
+      "寡占",
+      "カルテル",
+      "企業の社会的責任"
+    ],
+    "explanation_template": "企業の売上などの収入から{{1}}を差し引いた利益。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "費用",
+        "dummies": [
+          "従業員数",
+          "生産量",
+          "株式数"
+        ]
+      }
+    ],
+    "note": "収入と利益を区別する。",
+    "cloze_context": "利潤",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ac1c168a1b13",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生産と企業の仕組み",
+    "term": "生産",
+    "term_dummies": [
+      "消費",
+      "家計",
+      "生産の三要素"
+    ],
+    "explanation_template": "財や{{1}}を生み出す経済活動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "サービス",
+        "dummies": [
+          "議席",
+          "裁判権",
+          "選挙権"
+        ]
+      }
+    ],
+    "note": "ものづくり以外も含む。",
+    "cloze_context": "生産",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8e6f5625c89e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生産と企業の仕組み",
+    "term": "消費",
+    "term_dummies": [
+      "生産",
+      "家計",
+      "生産の三要素"
+    ],
+    "explanation_template": "生活のために財やサービスを{{1}}すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "利用",
+        "dummies": [
+          "生産だけ",
+          "輸出だけ",
+          "課税"
+        ]
+      }
+    ],
+    "note": "家計の経済活動の一つ。",
+    "cloze_context": "消費",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_5d85b4ddd170",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生産と企業の仕組み",
+    "term": "家計",
+    "term_dummies": [
+      "生産",
+      "消費",
+      "生産の三要素"
+    ],
+    "explanation_template": "消費などを行う、個人や家族の{{1}}単位。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "経済",
+        "dummies": [
+          "司法",
+          "立法",
+          "外交"
+        ]
+      }
+    ],
+    "note": "企業・政府と結び付く。",
+    "cloze_context": "家計",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6148277021ba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生産と企業の仕組み",
+    "term": "生産の三要素",
+    "term_dummies": [
+      "生産",
+      "消費",
+      "家計"
+    ],
+    "explanation_template": "土地・資本・{{1}}という生産に必要な要素。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "労働",
+        "dummies": [
+          "税率",
+          "議席",
+          "為替"
+        ]
+      }
+    ],
+    "note": "資本は機械や設備などを指す。",
+    "cloze_context": "生産の三要素",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4313ce3fc411",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費者と契約",
+    "term": "消費者基本法",
+    "term_dummies": [
+      "消費生活センター",
+      "成年年齢",
+      "悪質商法"
+    ],
+    "explanation_template": "消費者の権利の尊重と{{1}}支援などを掲げる法律。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自立",
+        "dummies": [
+          "独占",
+          "軍事",
+          "徴税"
+        ]
+      }
+    ],
+    "note": "消費者政策の基本を定める。",
+    "cloze_context": "消費者基本法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_af5f49071aa5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費者と契約",
+    "term": "消費生活センター",
+    "term_dummies": [
+      "消費者基本法",
+      "成年年齢",
+      "悪質商法"
+    ],
+    "explanation_template": "商品や契約などの{{1}}を受ける地域の機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "相談",
+        "dummies": [
+          "刑事裁判",
+          "紙幣発行",
+          "国政選挙"
+        ]
+      }
+    ],
+    "note": "トラブルの際の相談先。",
+    "cloze_context": "消費生活センター",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6a17c96ed737",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費者と契約",
+    "term": "成年年齢",
+    "term_dummies": [
+      "消費者基本法",
+      "消費生活センター",
+      "悪質商法"
+    ],
+    "explanation_template": "民法上、原則一人で契約できる成年となる{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "18歳",
+        "dummies": [
+          "16歳",
+          "20歳",
+          "25歳"
+        ]
+      }
+    ],
+    "note": "飲酒・喫煙は20歳から。",
+    "cloze_context": "成年年齢",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_30a8da61a9ae",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "消費者と契約",
+    "term": "悪質商法",
+    "term_dummies": [
+      "消費者基本法",
+      "消費生活センター",
+      "成年年齢"
+    ],
+    "explanation_template": "虚偽の説明などで消費者に{{1}}を与える商法。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "被害",
+        "dummies": [
+          "選挙権",
+          "司法権",
+          "国籍"
+        ]
+      }
+    ],
+    "note": "契約前に条件を確かめる。",
+    "cloze_context": "悪質商法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_53d24ff63488",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働者の保護",
+    "term": "最低賃金",
+    "term_dummies": [
+      "労働契約",
+      "労働時間",
+      "ワーク・ライフ・バランス"
+    ],
+    "explanation_template": "使用者が支払う賃金の{{1}}を法で定める制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "最低額",
+        "dummies": [
+          "最高額",
+          "平均額",
+          "中央値"
+        ]
+      }
+    ],
+    "note": "地域や産業などで異なる。",
+    "cloze_context": "最低賃金",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d8b9f2284570",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働者の保護",
+    "term": "労働契約",
+    "term_dummies": [
+      "最低賃金",
+      "労働時間",
+      "ワーク・ライフ・バランス"
+    ],
+    "explanation_template": "労働者が働き、使用者が{{1}}を支払う契約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "賃金",
+        "dummies": [
+          "配当だけ",
+          "税金だけ",
+          "借金だけ"
+        ]
+      }
+    ],
+    "note": "労働条件を確認する。",
+    "cloze_context": "労働契約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4a1a1087a6a7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働者の保護",
+    "term": "労働時間",
+    "term_dummies": [
+      "最低賃金",
+      "労働契約",
+      "ワーク・ライフ・バランス"
+    ],
+    "explanation_template": "労働者が使用者の{{1}}に置かれる時間。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "指揮命令下",
+        "dummies": [
+          "株式保有下",
+          "選挙管理下",
+          "納税管理下"
+        ]
+      }
+    ],
+    "note": "法令による規制がある。",
+    "cloze_context": "労働時間",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_632a8e732b93",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "労働者の保護",
+    "term": "ワーク・ライフ・バランス",
+    "term_dummies": [
+      "最低賃金",
+      "労働契約",
+      "労働時間"
+    ],
+    "explanation_template": "仕事と{{1}}の調和を目指す考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生活",
+        "dummies": [
+          "関税",
+          "国債",
+          "議席"
+        ]
+      }
+    ],
+    "note": "育児や介護などとの両立も含む。",
+    "cloze_context": "ワーク・ライフ・バランス",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e58dd969ae4e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場だけでは解決しにくい課題",
+    "term": "公共財",
+    "term_dummies": [
+      "外部不経済",
+      "市場の失敗",
+      "NPO"
+    ],
+    "explanation_template": "利用者を排除しにくく、一人の利用が他人の利用を{{1}}財。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "妨げにくい",
+        "dummies": [
+          "必ず禁止する",
+          "必ず有料にする",
+          "独占する"
+        ]
+      }
+    ],
+    "note": "国防などが例。全公共施設と同義でない。",
+    "cloze_context": "公共財",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_feca524d5c38",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場だけでは解決しにくい課題",
+    "term": "外部不経済",
+    "term_dummies": [
+      "公共財",
+      "市場の失敗",
+      "NPO"
+    ],
+    "explanation_template": "取引の当事者以外に、補償されない{{1}}を与えること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "不利益",
+        "dummies": [
+          "選挙権",
+          "税の還付",
+          "利潤の分配"
+        ]
+      }
+    ],
+    "note": "公害などが例になる。",
+    "cloze_context": "外部不経済",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8e978f88f3b7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場だけでは解決しにくい課題",
+    "term": "市場の失敗",
+    "term_dummies": [
+      "公共財",
+      "外部不経済",
+      "NPO"
+    ],
+    "explanation_template": "市場に任せるだけでは資源配分が{{1}}にならないこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "効率的",
+        "dummies": [
+          "計画的",
+          "国営",
+          "世襲"
+        ]
+      }
+    ],
+    "note": "政府の対応が必要な場合がある。",
+    "cloze_context": "市場の失敗",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a3a0b2e5188d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場だけでは解決しにくい課題",
+    "term": "NPO",
+    "term_dummies": [
+      "公共財",
+      "外部不経済",
+      "市場の失敗"
+    ],
+    "explanation_template": "利益の分配を目的とせず、社会的な活動を行う{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "民間組織",
+        "dummies": [
+          "中央銀行",
+          "裁判所",
+          "国際議会"
+        ]
+      }
+    ],
+    "note": "非営利でも収益事業は行い得る。",
+    "cloze_context": "NPO",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_92df12df4165",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政府の財政",
+    "term": "財政",
+    "term_dummies": [
+      "歳入",
+      "歳出",
+      "財政政策"
+    ],
+    "explanation_template": "政府が{{1}}と支出を通じて行う経済活動。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "収入",
+        "dummies": [
+          "人口",
+          "面積",
+          "議席"
+        ]
+      }
+    ],
+    "note": "税や国債を財源として使う。",
+    "cloze_context": "財政",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_45860bc9e57d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政府の財政",
+    "term": "歳入",
+    "term_dummies": [
+      "財政",
+      "歳出",
+      "財政政策"
+    ],
+    "explanation_template": "国や地方公共団体の、一会計年度の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "収入",
+        "dummies": [
+          "支出",
+          "借金残高",
+          "人口増加"
+        ]
+      }
+    ],
+    "note": "歳出と対にして覚える。",
+    "cloze_context": "歳入",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_64ccad93164c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政府の財政",
+    "term": "歳出",
+    "term_dummies": [
+      "財政",
+      "歳入",
+      "財政政策"
+    ],
+    "explanation_template": "国や地方公共団体の、一会計年度の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "支出",
+        "dummies": [
+          "収入",
+          "税率",
+          "国債残高"
+        ]
+      }
+    ],
+    "note": "教育や社会保障などに使う。",
+    "cloze_context": "歳出",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d90df41fe7a0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政府の財政",
+    "term": "財政政策",
+    "term_dummies": [
+      "財政",
+      "歳入",
+      "歳出"
+    ],
+    "explanation_template": "政府が税や{{1}}を調整し景気などに働きかける政策。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "支出",
+        "dummies": [
+          "紙幣の図柄",
+          "選挙区",
+          "裁判手続"
+        ]
+      }
+    ],
+    "note": "中央銀行の金融政策と区別。",
+    "cloze_context": "財政政策",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ea226c6bb1f9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "租税と負担",
+    "term": "所得税",
+    "term_dummies": [
+      "法人税",
+      "消費税",
+      "租税法律主義"
+    ],
+    "explanation_template": "個人の{{1}}に対して課される国税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "所得",
+        "dummies": [
+          "消費額だけ",
+          "所有土地だけ",
+          "相続財産だけ"
+        ]
+      }
+    ],
+    "note": "直接税の一つ。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a6f2b6ca97b7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "租税と負担",
+    "term": "法人税",
+    "term_dummies": [
+      "所得税",
+      "消費税",
+      "租税法律主義"
+    ],
+    "explanation_template": "{{1}}の所得に対して課される国税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法人",
+        "dummies": [
+          "全世帯",
+          "個人だけ",
+          "未成年だけ"
+        ]
+      }
+    ],
+    "note": "企業などが納める。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e63f9ec251fa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "租税と負担",
+    "term": "消費税",
+    "term_dummies": [
+      "所得税",
+      "法人税",
+      "租税法律主義"
+    ],
+    "explanation_template": "商品やサービスの{{1}}に広く課される税。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "消費",
+        "dummies": [
+          "相続",
+          "土地の保有",
+          "個人の所得"
+        ]
+      }
+    ],
+    "note": "間接税の一つ。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_68c2fe842427",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "租税と負担",
+    "term": "租税法律主義",
+    "term_dummies": [
+      "所得税",
+      "法人税",
+      "消費税"
+    ],
+    "explanation_template": "新たな課税などには{{1}}が必要だとする原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法律",
+        "dummies": [
+          "首相個人の命令だけ",
+          "新聞の賛成だけ",
+          "企業の合意だけ"
+        ]
+      }
+    ],
+    "note": "憲法84条が定める。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ba80a45136b0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障の仕組み",
+    "term": "社会保障",
+    "term_dummies": [
+      "公的年金",
+      "生活保護",
+      "介護保険"
+    ],
+    "explanation_template": "病気や老齢など生活上の不安に対し、{{1}}で支える仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "社会全体",
+        "dummies": [
+          "家族だけ",
+          "企業だけ",
+          "寄付だけ"
+        ]
+      }
+    ],
+    "note": "社会保険・公的扶助などがある。",
+    "cloze_context": "社会保障",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_28c3fe3eb037",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障の仕組み",
+    "term": "公的年金",
+    "term_dummies": [
+      "社会保障",
+      "生活保護",
+      "介護保険"
+    ],
+    "explanation_template": "老齢・障害・死亡などに際し{{1}}を支給する公的制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "年金",
+        "dummies": [
+          "株式",
+          "国籍",
+          "議席"
+        ]
+      }
+    ],
+    "note": "老後だけの制度ではない。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_58bd91194a7d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障の仕組み",
+    "term": "生活保護",
+    "term_dummies": [
+      "社会保障",
+      "公的年金",
+      "介護保険"
+    ],
+    "explanation_template": "生活に困窮する人に最低限度の生活を保障し{{1}}を助ける制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自立",
+        "dummies": [
+          "株式投資",
+          "海外移住",
+          "相続拡大"
+        ]
+      }
+    ],
+    "note": "公的扶助の中心となる制度。",
+    "cloze_context": "生活保護",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_dff40620cba0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "社会保障の仕組み",
+    "term": "介護保険",
+    "term_dummies": [
+      "社会保障",
+      "公的年金",
+      "生活保護"
+    ],
+    "explanation_template": "介護が必要な人を{{1}}で支える社会保険制度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "社会全体",
+        "dummies": [
+          "家族だけ",
+          "自治会だけ",
+          "勤務先だけ"
+        ]
+      }
+    ],
+    "note": "保険料や税などで支える。",
+    "cloze_context": "介護保険",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_7c4da7588af0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融と通貨",
+    "term": "預金",
+    "term_dummies": [
+      "貸出",
+      "金利",
+      "通貨"
+    ],
+    "explanation_template": "銀行などの金融機関に{{1}}を預けること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "お金",
+        "dummies": [
+          "議席",
+          "選挙権",
+          "国籍"
+        ]
+      }
+    ],
+    "note": "金融機関は貸出などに活用する。",
+    "cloze_context": "預金",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_12aaafa64505",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融と通貨",
+    "term": "貸出",
+    "term_dummies": [
+      "預金",
+      "金利",
+      "通貨"
+    ],
+    "explanation_template": "銀行などが、企業や個人へ{{1}}を貸すこと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "資金",
+        "dummies": [
+          "労働者だけ",
+          "選挙権",
+          "国籍"
+        ]
+      }
+    ],
+    "note": "貸す側から見た呼び名。",
+    "cloze_context": "貸出",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_b7640b9f74f2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融と通貨",
+    "term": "金利",
+    "term_dummies": [
+      "預金",
+      "貸出",
+      "通貨"
+    ],
+    "explanation_template": "借りた元金などに対する{{1}}の割合。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "利子",
+        "dummies": [
+          "税金",
+          "配当総額",
+          "売上"
+        ]
+      }
+    ],
+    "note": "期間などの条件をそろえて比べる。",
+    "cloze_context": "金利",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_28812469b422",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "金融と通貨",
+    "term": "通貨",
+    "term_dummies": [
+      "預金",
+      "貸出",
+      "金利"
+    ],
+    "explanation_template": "現金や預金通貨など、{{1}}に使うもの。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "支払い",
+        "dummies": [
+          "国会議決",
+          "司法判断",
+          "国籍決定"
+        ]
+      }
+    ],
+    "note": "日本の通貨単位は円。",
+    "cloze_context": "通貨",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ac0b3282896b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法と権利の保障",
+    "term": "憲法改正",
+    "term_dummies": [
+      "国民投票",
+      "公共の福祉",
+      "法の下の平等"
+    ],
+    "explanation_template": "憲法の条文を、定められた{{1}}で変更すること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "手続",
+        "dummies": [
+          "首相の独断",
+          "裁判官の独断",
+          "条例だけ"
+        ]
+      }
+    ],
+    "note": "法律の改正手続とは異なる。",
+    "cloze_context": "憲法改正",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_bc3d07666bb2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法と権利の保障",
+    "term": "国民投票",
+    "term_dummies": [
+      "憲法改正",
+      "公共の福祉",
+      "法の下の平等"
+    ],
+    "explanation_template": "特定の課題の賛否を、国民が{{1}}投票で示す仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "直接",
+        "dummies": [
+          "議員を介する",
+          "大臣を介する",
+          "裁判官を介する"
+        ]
+      }
+    ],
+    "note": "日本の憲法改正手続にもある。",
+    "cloze_context": "国民投票",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d80beb7bf191",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法と権利の保障",
+    "term": "公共の福祉",
+    "term_dummies": [
+      "憲法改正",
+      "国民投票",
+      "法の下の平等"
+    ],
+    "explanation_template": "人権を相互に{{1}}し、共に保障するための考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "調整",
+        "dummies": [
+          "廃止",
+          "序列化",
+          "世襲化"
+        ]
+      }
+    ],
+    "note": "多数派の都合だけで制限しない。",
+    "cloze_context": "公共の福祉",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_58950afb0fca",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法と権利の保障",
+    "term": "法の下の平等",
+    "term_dummies": [
+      "憲法改正",
+      "国民投票",
+      "公共の福祉"
+    ],
+    "explanation_template": "法の適用で、合理的理由のない{{1}}を認めない原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "差別",
+        "dummies": [
+          "配慮",
+          "手続",
+          "救済"
+        ]
+      }
+    ],
+    "note": "必要な配慮まで一律に禁じない。",
+    "cloze_context": "法の下の平等",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9eeefbcbb676",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "身体の自由と裁判",
+    "term": "適正手続",
+    "term_dummies": [
+      "無罪推定",
+      "黙秘権",
+      "国家賠償請求権"
+    ],
+    "explanation_template": "刑罰などを科す際、法に定める{{1}}によるという保障。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "適正な手続",
+        "dummies": [
+          "世論の多数だけ",
+          "行政の都合だけ",
+          "被害者の命令だけ"
+        ]
+      }
+    ],
+    "note": "憲法31条などに結び付く。",
+    "cloze_context": "適正手続",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9418cf7504c3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "身体の自由と裁判",
+    "term": "無罪推定",
+    "term_dummies": [
+      "適正手続",
+      "黙秘権",
+      "国家賠償請求権"
+    ],
+    "explanation_template": "有罪が確定するまで{{1}}として扱う原則。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "無罪",
+        "dummies": [
+          "有罪",
+          "公民権停止",
+          "受刑者"
+        ]
+      }
+    ],
+    "note": "疑われただけで犯人扱いしない。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_85659ff38d56",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "身体の自由と裁判",
+    "term": "黙秘権",
+    "term_dummies": [
+      "適正手続",
+      "無罪推定",
+      "国家賠償請求権"
+    ],
+    "explanation_template": "自分に不利益な{{1}}を強要されない権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "供述",
+        "dummies": [
+          "税の納付",
+          "裁判への出席全般",
+          "契約の履行全般"
+        ]
+      }
+    ],
+    "note": "憲法38条に結び付く。",
+    "cloze_context": "黙秘権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_0ecbf162edb3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "身体の自由と裁判",
+    "term": "国家賠償請求権",
+    "term_dummies": [
+      "適正手続",
+      "無罪推定",
+      "黙秘権"
+    ],
+    "explanation_template": "公務員の職務上の不法行為で国などに{{1}}を求める権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "賠償",
+        "dummies": [
+          "立法権",
+          "国籍",
+          "徴税権"
+        ]
+      }
+    ],
+    "note": "請求権の一つ。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e160af825e19",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生活と自由の権利",
+    "term": "教育を受ける権利",
+    "term_dummies": [
+      "勤労の権利",
+      "財産権",
+      "表現の自由"
+    ],
+    "explanation_template": "能力に応じて、ひとしく{{1}}を受ける権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "教育",
+        "dummies": [
+          "同額の所得",
+          "同じ職業",
+          "同じ相続"
+        ]
+      }
+    ],
+    "note": "教育を受けさせる義務と区別。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_6fb109f87829",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生活と自由の権利",
+    "term": "勤労の権利",
+    "term_dummies": [
+      "教育を受ける権利",
+      "財産権",
+      "表現の自由"
+    ],
+    "explanation_template": "働くことを通じ生活を営むための{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "権利",
+        "dummies": [
+          "財産税",
+          "刑罰",
+          "免許"
+        ]
+      }
+    ],
+    "note": "憲法27条に定められる。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_b59895746468",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生活と自由の権利",
+    "term": "財産権",
+    "term_dummies": [
+      "教育を受ける権利",
+      "勤労の権利",
+      "表現の自由"
+    ],
+    "explanation_template": "自分の{{1}}を持ち利用する権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "財産",
+        "dummies": [
+          "裁判権",
+          "徴税権",
+          "統治権"
+        ]
+      }
+    ],
+    "note": "公共の福祉に適合するよう定める。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_634d021a12fa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "生活と自由の権利",
+    "term": "表現の自由",
+    "term_dummies": [
+      "教育を受ける権利",
+      "勤労の権利",
+      "財産権"
+    ],
+    "explanation_template": "意見や考えを{{1}}する自由。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "発表",
+        "dummies": [
+          "他人に強制",
+          "他人から没収",
+          "国家で統一"
+        ]
+      }
+    ],
+    "note": "出版や報道などにも関係する。",
+    "cloze_context": "表現の自由",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_16ec4a566d6c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国会と内閣の仕事",
+    "term": "法律",
+    "term_dummies": [
+      "予算",
+      "条約の承認",
+      "政令"
+    ],
+    "explanation_template": "国会の議決などを経て制定される国の{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法の形式",
+        "dummies": [
+          "予算額",
+          "裁判記録",
+          "選挙結果"
+        ]
+      }
+    ],
+    "note": "憲法に反する内容は認められない。",
+    "cloze_context": "法律",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2ee8b8d4ad2b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国会と内閣の仕事",
+    "term": "予算",
+    "term_dummies": [
+      "法律",
+      "条約の承認",
+      "政令"
+    ],
+    "explanation_template": "一定期間の収入と{{1}}の見積り。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "支出",
+        "dummies": [
+          "国境",
+          "人口",
+          "議席"
+        ]
+      }
+    ],
+    "note": "国の予算は内閣が作り国会が議決。",
+    "cloze_context": "予算",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_4e72718a96c5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国会と内閣の仕事",
+    "term": "条約の承認",
+    "term_dummies": [
+      "法律",
+      "予算",
+      "政令"
+    ],
+    "explanation_template": "内閣が締結する条約に対し、{{1}}が行う承認。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国会",
+        "dummies": [
+          "最高裁判所",
+          "会計検査院",
+          "日本銀行"
+        ]
+      }
+    ],
+    "note": "外交の民主的統制に関わる。",
+    "cloze_context": "条約の承認",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_be25d6c26aec",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国会と内閣の仕事",
+    "term": "政令",
+    "term_dummies": [
+      "法律",
+      "予算",
+      "条約の承認"
+    ],
+    "explanation_template": "内閣が憲法や{{1}}を実施するために制定する命令。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法律",
+        "dummies": [
+          "世論調査",
+          "党の公約",
+          "判決文のみ"
+        ]
+      }
+    ],
+    "note": "法律に反する内容は定められない。",
+    "cloze_context": "政令",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_29d19bbdba4f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治の仕組み",
+    "term": "条例",
+    "term_dummies": [
+      "二元代表制",
+      "首長",
+      "地方議会"
+    ],
+    "explanation_template": "地方公共団体が法律の範囲内で定める{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法規",
+        "dummies": [
+          "条約",
+          "憲法",
+          "判決"
+        ]
+      }
+    ],
+    "note": "地方議会の議決で制定される。",
+    "cloze_context": "条例",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_5fb2a236e7f2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治の仕組み",
+    "term": "二元代表制",
+    "term_dummies": [
+      "条例",
+      "首長",
+      "地方議会"
+    ],
+    "explanation_template": "地方で、首長と{{1}}の両方を住民が直接選ぶ仕組み。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "議会の議員",
+        "dummies": [
+          "国務大臣",
+          "裁判官",
+          "日本銀行総裁"
+        ]
+      }
+    ],
+    "note": "地方の議院内閣制ではない。",
+    "cloze_context": "二元代表制",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d31eb56a7337",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治の仕組み",
+    "term": "首長",
+    "term_dummies": [
+      "条例",
+      "二元代表制",
+      "地方議会"
+    ],
+    "explanation_template": "都道府県知事や{{1}}など、地方の行政の長。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "市町村長",
+        "dummies": [
+          "衆議院議長",
+          "最高裁長官",
+          "参議院議員"
+        ]
+      }
+    ],
+    "note": "住民の選挙で選ばれる。",
+    "cloze_context": "首長",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_a03344403495",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "地方自治の仕組み",
+    "term": "地方議会",
+    "term_dummies": [
+      "条例",
+      "二元代表制",
+      "首長"
+    ],
+    "explanation_template": "住民の代表として条例や{{1}}などを議決する機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "予算",
+        "dummies": [
+          "国の憲法",
+          "国際条約",
+          "国の法律"
+        ]
+      }
+    ],
+    "note": "首長の仕事も監視する。",
+    "cloze_context": "地方議会",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_f15931cdfa26",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙と政治参加",
+    "term": "選挙権",
+    "term_dummies": [
+      "被選挙権",
+      "選挙区",
+      "一票の格差"
+    ],
+    "explanation_template": "代表者などを{{1}}権利。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "選ぶ",
+        "dummies": [
+          "裁く",
+          "任命だけで決める",
+          "罷免だけをする"
+        ]
+      }
+    ],
+    "note": "日本の公職選挙は18歳から。",
+    "cloze_context": "選挙権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_baa6249c61ad",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙と政治参加",
+    "term": "被選挙権",
+    "term_dummies": [
+      "選挙権",
+      "選挙区",
+      "一票の格差"
+    ],
+    "explanation_template": "公職選挙に立候補し、{{1}}資格。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "選ばれる",
+        "dummies": [
+          "投票だけする",
+          "裁判する",
+          "紙幣を発行する"
+        ]
+      }
+    ],
+    "note": "選挙権とは年齢要件が異なる。",
+    "cloze_context": "被選挙権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_d30ec6a61d2b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙と政治参加",
+    "term": "選挙区",
+    "term_dummies": [
+      "選挙権",
+      "被選挙権",
+      "一票の格差"
+    ],
+    "explanation_template": "議員の選挙のために区分した{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "区域",
+        "dummies": [
+          "職業",
+          "税率",
+          "宗教"
+        ]
+      }
+    ],
+    "note": "制度によって区分方法が異なる。",
+    "cloze_context": "選挙区",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_cae5378689ed",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "選挙と政治参加",
+    "term": "一票の格差",
+    "term_dummies": [
+      "選挙権",
+      "被選挙権",
+      "選挙区"
+    ],
+    "explanation_template": "選挙区間で、一票の持つ{{1}}に差があること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "重み",
+        "dummies": [
+          "記入時間",
+          "秘密性の有無",
+          "紙の色"
+        ]
+      }
+    ],
+    "note": "議員一人当たりの有権者数などで比べる。",
+    "cloze_context": "一票の格差",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e28186c24dfa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治の説明と統制",
+    "term": "マスメディア",
+    "term_dummies": [
+      "説明責任",
+      "行政",
+      "司法"
+    ],
+    "explanation_template": "不特定多数へ大量の{{1}}を伝える媒体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "情報",
+        "dummies": [
+          "税金",
+          "議席",
+          "補助金"
+        ]
+      }
+    ],
+    "note": "政治を監視する役割もある。",
+    "cloze_context": "マスメディア",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_298ff5b7a7d4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治の説明と統制",
+    "term": "説明責任",
+    "term_dummies": [
+      "マスメディア",
+      "行政",
+      "司法"
+    ],
+    "explanation_template": "権限を持つ者などが判断の理由や結果を{{1}}する責任。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "説明",
+        "dummies": [
+          "隠蔽",
+          "独占",
+          "世襲"
+        ]
+      }
+    ],
+    "note": "情報公開と結び付く。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_eae59242b0a8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治の説明と統制",
+    "term": "行政",
+    "term_dummies": [
+      "マスメディア",
+      "説明責任",
+      "司法"
+    ],
+    "explanation_template": "法律や予算に基づき、政策を{{1}}する国などの働き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "実行",
+        "dummies": [
+          "最終判決",
+          "憲法改正の発議",
+          "法律の議決"
+        ]
+      }
+    ],
+    "note": "国では内閣が行政権を担う。",
+    "cloze_context": "行政",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_93bb5a205feb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "政治の説明と統制",
+    "term": "司法",
+    "term_dummies": [
+      "マスメディア",
+      "説明責任",
+      "行政"
+    ],
+    "explanation_template": "具体的な争いに法を適用し{{1}}する働き。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "裁判",
+        "dummies": [
+          "徴税",
+          "外交交渉",
+          "法律の制定"
+        ]
+      }
+    ],
+    "note": "裁判所が担う。",
+    "cloze_context": "司法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_11860b93b5cf",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国家と国際法",
+    "term": "主権国家",
+    "term_dummies": [
+      "国際法",
+      "条約",
+      "国際慣習法"
+    ],
+    "explanation_template": "領域・国民と、他国に支配されない{{1}}を持つ国家。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "主権",
+        "dummies": [
+          "同一の宗教",
+          "同一の通貨",
+          "植民地"
+        ]
+      }
+    ],
+    "note": "国家の三要素と結び付ける。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_2d63560e2285",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国家と国際法",
+    "term": "国際法",
+    "term_dummies": [
+      "主権国家",
+      "条約",
+      "国際慣習法"
+    ],
+    "explanation_template": "国家間の関係などを規律する{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "法",
+        "dummies": [
+          "国内の条例",
+          "家族の約束",
+          "企業の就業規則"
+        ]
+      }
+    ],
+    "note": "条約や国際慣習法などがある。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fcdd029b3991",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国家と国際法",
+    "term": "条約",
+    "term_dummies": [
+      "主権国家",
+      "国際法",
+      "国際慣習法"
+    ],
+    "explanation_template": "国家などの間で文書により結ばれる国際的な{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "合意",
+        "dummies": [
+          "国内の法律",
+          "地方条例",
+          "個人間の契約"
+        ]
+      }
+    ],
+    "note": "国際法上の権利や義務を定める。",
+    "cloze_context": "条約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_85b6990fc1da",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国家と国際法",
+    "term": "国際慣習法",
+    "term_dummies": [
+      "主権国家",
+      "国際法",
+      "条約"
+    ],
+    "explanation_template": "国家の慣行が、法的に義務だとの認識を伴って成立する{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国際法",
+        "dummies": [
+          "国内条例",
+          "企業内規",
+          "私人間契約"
+        ]
+      }
+    ],
+    "note": "条約のような文書がなくても成立。",
+    "cloze_context": "国際慣習法",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_22f7232d4f53",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国連の機関と活動",
+    "term": "国連総会",
+    "term_dummies": [
+      "拒否権",
+      "UNHCR",
+      "国際連合事務総長"
+    ],
+    "explanation_template": "全加盟国で構成され、原則一国{{1}}票で議決する国連の機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "一",
+        "dummies": [
+          "二",
+          "三",
+          "五"
+        ]
+      }
+    ],
+    "note": "安保理との役割の違いを確認。",
+    "cloze_context": "国連総会",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_717c31ebf9e8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国連の機関と活動",
+    "term": "拒否権",
+    "term_dummies": [
+      "国連総会",
+      "UNHCR",
+      "国際連合事務総長"
+    ],
+    "explanation_template": "安保理の常任理事国が、実質事項の決議を{{1}}できる権限。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "阻止",
+        "dummies": [
+          "単独で可決",
+          "単独で執行",
+          "国内法へ変更"
+        ]
+      }
+    ],
+    "note": "手続事項とは区別される。",
+    "cloze_context": "拒否権",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fb4d127e1150",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国連の機関と活動",
+    "term": "UNHCR",
+    "term_dummies": [
+      "国連総会",
+      "拒否権",
+      "国際連合事務総長"
+    ],
+    "explanation_template": "難民などへの{{1}}を担う国連の機関。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "保護や支援",
+        "dummies": [
+          "通貨発行",
+          "軍備管理だけ",
+          "世界遺産登録"
+        ]
+      }
+    ],
+    "note": "国連難民高等弁務官事務所。",
+    "cloze_context": "UNHCR",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_9f03a4f12114",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国連の機関と活動",
+    "term": "国際連合事務総長",
+    "term_dummies": [
+      "国連総会",
+      "拒否権",
+      "UNHCR"
+    ],
+    "explanation_template": "国連の{{1}}の長で、国際紛争の仲介なども担う。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "事務局",
+        "dummies": [
+          "国際司法裁判所",
+          "総会の議長団",
+          "世界銀行"
+        ]
+      }
+    ],
+    "note": "安保理の勧告で総会が任命する。",
+    "cloze_context": "国際連合事務総長",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8835b5f1d258",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際経済と人権",
+    "term": "難民",
+    "term_dummies": [
+      "世界人権宣言",
+      "自由貿易",
+      "保護貿易"
+    ],
+    "explanation_template": "迫害のおそれなどにより自国を離れ、{{1}}を必要とする人。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国際的な保護",
+        "dummies": [
+          "観光案内だけ",
+          "輸出許可だけ",
+          "企業の株式"
+        ]
+      }
+    ],
+    "note": "条約などに基づく保護がある。",
+    "cloze_context": "難民",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_fd6c3a742eba",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際経済と人権",
+    "term": "世界人権宣言",
+    "term_dummies": [
+      "難民",
+      "自由貿易",
+      "保護貿易"
+    ],
+    "explanation_template": "1948年、国連総会が採択した{{1}}の共通基準。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "人権",
+        "dummies": [
+          "為替",
+          "関税",
+          "軍備"
+        ]
+      }
+    ],
+    "note": "人権保障の国際的な基礎。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_473692b507ff",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際経済と人権",
+    "term": "自由貿易",
+    "term_dummies": [
+      "難民",
+      "世界人権宣言",
+      "保護貿易"
+    ],
+    "explanation_template": "関税などの障壁を減らし、貿易を{{1}}行う考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "自由に",
+        "dummies": [
+          "国営だけで",
+          "一国だけで",
+          "植民地内だけで"
+        ]
+      }
+    ],
+    "note": "国内産業への影響も検討する。",
+    "cloze_context": "自由貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_ae0ec9bee89a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際経済と人権",
+    "term": "保護貿易",
+    "term_dummies": [
+      "難民",
+      "世界人権宣言",
+      "自由貿易"
+    ],
+    "explanation_template": "関税などによって{{1}}産業を保護する考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国内",
+        "dummies": [
+          "他国だけの",
+          "植民地だけの",
+          "海外だけの"
+        ]
+      }
+    ],
+    "note": "自由貿易と対比する。",
+    "cloze_context": "保護貿易",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_039db7b7f17a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際協力の担い手",
+    "term": "NGO",
+    "term_dummies": [
+      "JICA",
+      "核拡散防止条約",
+      "人間の安全保障"
+    ],
+    "explanation_template": "国際協力などに取り組む、政府によらない{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "民間組織",
+        "dummies": [
+          "国連の総会",
+          "中央銀行",
+          "行政機関"
+        ]
+      }
+    ],
+    "note": "非政府組織。NPOと重なる場合も。",
+    "cloze_context": "NGO",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_3198b686ec62",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際協力の担い手",
+    "term": "JICA",
+    "term_dummies": [
+      "NGO",
+      "核拡散防止条約",
+      "人間の安全保障"
+    ],
+    "explanation_template": "日本の{{1}}協力などを担う独立行政法人。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "国際",
+        "dummies": [
+          "地方選挙",
+          "憲法審査",
+          "司法"
+        ]
+      }
+    ],
+    "note": "国際協力機構。",
+    "cloze_context": "JICA",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_e47def26b562",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際協力の担い手",
+    "term": "核拡散防止条約",
+    "term_dummies": [
+      "NGO",
+      "JICA",
+      "人間の安全保障"
+    ],
+    "explanation_template": "核兵器の拡散防止や{{1}}などを目的とする条約。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "核軍縮",
+        "dummies": [
+          "核保有国の無制限増加",
+          "核実験の義務化",
+          "核兵器輸出の自由化"
+        ]
+      }
+    ],
+    "note": "NPTとも呼ばれる。",
+    "cloze_context": "核拡散防止条約",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_8fdc74e51b65",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際協力の担い手",
+    "term": "人間の安全保障",
+    "term_dummies": [
+      "NGO",
+      "JICA",
+      "核拡散防止条約"
+    ],
+    "explanation_template": "国家だけでなく、一人一人の{{1}}にも着目する考え。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "生存や尊厳",
+        "dummies": [
+          "国籍の統一",
+          "軍事力だけ",
+          "関税率だけ"
+        ]
+      }
+    ],
+    "note": "貧困や感染症なども対象となる。",
+    "cloze_context": "人間の安全保障",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f67505cf8c57",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "少子高齢化が進む社会で必要な対応は？",
+    "answer": "子育てと高齢者支援の両立",
+    "dummies": [
+      "子育て支援だけを全て廃止",
+      "高齢者の権利を一律に制限",
+      "全世代に同じ支援だけを行う"
+    ],
+    "note": "世代ごとの必要と負担を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b6cff32bfb82",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "異文化の習慣を知った時に大切なのは？",
+    "answer": "背景を理解し相互に尊重",
+    "dummies": [
+      "自分の慣習だけを絶対視",
+      "違いを理由に参加を拒否",
+      "全員の習慣を強制的に統一"
+    ],
+    "note": "人権も踏まえて共に暮らす。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e14feaa59e59",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "伝統行事の担い手不足に対する案として適切なのは？",
+    "answer": "負担を見直し参加を広げる",
+    "dummies": [
+      "少人数に負担を永久固定",
+      "理由を聞かず参加を強制",
+      "収支や安全の検討をしない"
+    ],
+    "note": "継承方法も話し合って改善できる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_60809e4f09f7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "外国人住民への行政案内で有効なのは？",
+    "answer": "多言語ややさしい日本語",
+    "dummies": [
+      "難解な表現に統一",
+      "国籍だけで案内対象から除外",
+      "日本語以外の相談を禁止"
+    ],
+    "note": "必要な情報へのアクセスを支える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_62694844a1a6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ネットの情報を広める前に確認するのは？",
+    "answer": "発信元・根拠・日時",
+    "dummies": [
+      "賛同した人数だけ",
+      "見出しの強さだけ",
+      "自分に都合がよいかだけ"
+    ],
+    "note": "古い情報や切り取りにも注意。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e1e5f26fd3a1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じニュースでも報道が違う時は？",
+    "answer": "複数の情報源を比べる",
+    "dummies": [
+      "最初に見た報道だけ信じる",
+      "短い記事だけ正しいとする",
+      "広告の多い媒体だけ信じる"
+    ],
+    "note": "事実と意見を区別する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c0b61d79a4dd",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "他人の写真をネットに載せる際の基本は？",
+    "answer": "本人の意向や権利を確認",
+    "dummies": [
+      "撮影できれば無条件に掲載",
+      "友人なら無断掲載でよい",
+      "削除依頼には必ず応じない"
+    ],
+    "note": "肖像やプライバシーに配慮。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_761422b6a669",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "他人の文章を自作として発表する行為の問題は？",
+    "answer": "著作権などを侵害し得る",
+    "dummies": [
+      "出典を消せば問題ない",
+      "無料で読めれば自由に盗用",
+      "短い作品は必ず保護対象外"
+    ],
+    "note": "引用にも条件がある。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a6db99c72860",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "デジタルデバイドへの対策になるのは？",
+    "answer": "利用支援や代替窓口を用意",
+    "dummies": [
+      "全手続を説明なくネット限定",
+      "使えない人を全て自己責任に",
+      "端末を持つ人だけに情報提供"
+    ],
+    "note": "利用しにくい人への配慮が必要。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fae98642218c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "SNSで好みに合う意見だけ見る際の注意は？",
+    "answer": "異なる意見を見落としやすい",
+    "dummies": [
+      "社会全体の意見と必ず一致",
+      "情報の真偽が自動的に確定",
+      "少数意見が全て表示される"
+    ],
+    "note": "情報の偏りに気付くことが大切。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f711fea6c4f0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "個人情報を集めるサービスで確認するのは？",
+    "answer": "利用目的と提供範囲",
+    "dummies": [
+      "画面の色だけ",
+      "会社名の文字数だけ",
+      "登録者の年齢だけ"
+    ],
+    "note": "必要性と取扱いを確かめる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ccacbf93f211",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "感染症などのデマが広まった時は？",
+    "answer": "公的情報などで根拠を確かめる",
+    "dummies": [
+      "不安が大きいほど無検証で拡散",
+      "匿名なら必ず真実と考える",
+      "訂正情報を見ず元情報だけ共有"
+    ],
+    "note": "不確かな情報を広めない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1c42a69f43a6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "現代社会と文化",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "文化財の保存と活用を考える際に必要なのは？",
+    "answer": "価値・費用・保存への影響",
+    "dummies": [
+      "来訪者数だけを最優先",
+      "古ければ保存不要と断定",
+      "収入があれば損傷を無視"
+    ],
+    "note": "複数の観点を比べる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ab6c20bed0a5",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "多数決をする前に必要なことは？",
+    "answer": "意見と理由を十分話し合う",
+    "dummies": [
+      "反対意見を発言させない",
+      "賛成者だけに情報を渡す",
+      "採決結果を先に固定する"
+    ],
+    "note": "少数意見も検討する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4385af4571b0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "多数決で決まれば何でも認められる？",
+    "answer": "人権を侵す決定は許されない",
+    "dummies": [
+      "少数者の権利は全て失われる",
+      "憲法に反しても常に有効",
+      "理由の説明は常に不要"
+    ],
+    "note": "多数決にも限界がある。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a75c0105f141",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "全員同じ負担が必ず公正とは限らない理由は？",
+    "answer": "必要や条件に違いがある",
+    "dummies": [
+      "声の大きい人が常に正しい",
+      "全員の権利が異なるから",
+      "公正と平等は無関係だから"
+    ],
+    "note": "事情に応じた配慮も考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f13204ae4115",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "係の分担の効率と公正を両立する案は？",
+    "answer": "得意分野と負担量を調整",
+    "dummies": [
+      "一人に全てを固定",
+      "希望を聞かず抽選だけで固定",
+      "担当を決めず放置"
+    ],
+    "note": "役割と負担を見直せるようにする。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c7718fe6ae9f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "施設利用のルールを見直す際の基本は？",
+    "answer": "目的と実際の効果を確認",
+    "dummies": [
+      "一度決めたら検討を禁止",
+      "管理者の好みだけで変更",
+      "困る人の意見は除外"
+    ],
+    "note": "きまりは改善できる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5cbfac7f325c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "交渉で双方の要求が対立した時は？",
+    "answer": "共通目的と譲れる条件を探る",
+    "dummies": [
+      "相手の理由を聞かない",
+      "相手を排除する案だけ選ぶ",
+      "情報を隠して署名を迫る"
+    ],
+    "note": "対立から合意へ進む方法。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_93e8e7feac1f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じサービスを少ない費用で実現する観点は？",
+    "answer": "効率",
+    "dummies": [
+      "多数決",
+      "秘密投票",
+      "権力分立"
+    ],
+    "note": "費用と得られる成果を比べる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_15e28243b568",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "施設の利用機会が偏っていないか見る観点は？",
+    "answer": "公正",
+    "dummies": [
+      "利潤",
+      "物価",
+      "為替"
+    ],
+    "note": "手続と分配の両面を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_36553e1a59b2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "話合いで少数意見を記録する意義は？",
+    "answer": "改善や再検討に生かせる",
+    "dummies": [
+      "多数決の結果が必ず無効になる",
+      "少数側が常に決定権を持つ",
+      "多数側の権利が消える"
+    ],
+    "note": "決定後も意見を尊重する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0658ddb54806",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "契約を結ぶ時に必要な基本は？",
+    "answer": "内容を理解して合意する",
+    "dummies": [
+      "内容を見ず署名を急ぐ",
+      "口約束なら必ず無効と考える",
+      "不利な条件は読まなくてよい"
+    ],
+    "note": "契約には権利と義務が伴う。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_eecb4515a82e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "分業の利点と必要条件の組合せは？",
+    "answer": "効率向上・相互の協力",
+    "dummies": [
+      "効率向上・連絡の全面禁止",
+      "全員同一作業・役割の固定",
+      "負担消滅・他者への無関心"
+    ],
+    "note": "各担当がつながって働く。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b5e6edef3bca",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "きまりの変更で特定の人だけ困る時は？",
+    "answer": "不利益と代替案も検討",
+    "dummies": [
+      "少数なら事情を聞かない",
+      "全員に同じ事情と決め付ける",
+      "反対者の利用権を全て奪う"
+    ],
+    "note": "合理的な理由の有無を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2befe90eaa2b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "合意と公正の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "合意の内容を文書で残す利点は？",
+    "answer": "役割や条件を確かめられる",
+    "dummies": [
+      "後から一切変更できなくなる",
+      "法律より常に優先される",
+      "説明責任が完全になくなる"
+    ],
+    "note": "認識のずれを防ぐ。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-A2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5158bb038741",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "市場で企業間の競争が果たす役割は？",
+    "answer": "価格や品質の改善を促す",
+    "dummies": [
+      "全商品の価格を永久固定",
+      "企業の工夫を一律に禁止",
+      "消費者の選択を全てなくす"
+    ],
+    "note": "競争が働くためのルールも必要。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5efeac05c6e8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "企業が同業他社と価格を申し合わせる問題は？",
+    "answer": "公正な競争を妨げる",
+    "dummies": [
+      "消費者の選択肢が必ず増える",
+      "全商品の品質を必ず高める",
+      "新規参入を必ず容易にする"
+    ],
+    "note": "カルテルは原則禁止。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_81e167b278ab",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "公害で取引外の住民に被害が出ることは？",
+    "answer": "外部不経済",
+    "dummies": [
+      "配当",
+      "直接金融",
+      "累進課税"
+    ],
+    "note": "市場の失敗の一例。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_091d8c22f747",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国防のような公共財を市場だけで供給しにくい理由は？",
+    "answer": "費用を払わず利用し得る",
+    "dummies": [
+      "一人の利用で必ず消滅する",
+      "利用者を常に完全排除できる",
+      "購入者だけにしか効果がない"
+    ],
+    "note": "ただ乗りが起こり得る。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f852c98df513",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "売上が増えても利潤が減ることはある？",
+    "answer": "費用がより増えればある",
+    "dummies": [
+      "売上と利潤は常に同額",
+      "費用は利潤に影響しない",
+      "売上が増えれば必ず利潤増"
+    ],
+    "note": "利潤は収入から費用を引く。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_9e587726e4d7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "企業の社会的責任に当たる取組は？",
+    "answer": "労働安全と環境への配慮",
+    "dummies": [
+      "利益のため法令を無視",
+      "取引先に虚偽を強要",
+      "事故情報を理由なく隠蔽"
+    ],
+    "note": "利益追求と社会への責任を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_90880d81ac28",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "株主が一般に負う出資上の責任は？",
+    "answer": "出資額の範囲",
+    "dummies": [
+      "会社の全借金を個人で負担",
+      "他の株主の損失も全て補償",
+      "全従業員の生活費を無期限負担"
+    ],
+    "note": "株式会社では有限責任が原則。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0d690ca2ea51",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "未成年者が法定代理人の同意なく結んだ契約は？",
+    "answer": "原則として取り消せる",
+    "dummies": [
+      "全て常に取り消せない",
+      "必ず刑罰が科される",
+      "契約した瞬間に成人になる"
+    ],
+    "note": "例外もあるので相談先を確認。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_894f2dc0995f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "18歳になって契約する際の注意は？",
+    "answer": "未成年者取消しが使えなくなる",
+    "dummies": [
+      "飲酒も同時に自由になる",
+      "全契約を無条件で撤回できる",
+      "支払義務が一律になくなる"
+    ],
+    "note": "成年になっても慎重に確認する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fbde63959533",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "通信販売で返品する際の基本は？",
+    "answer": "返品特約などを確認",
+    "dummies": [
+      "必ずクーリング・オフできる",
+      "全商品を無期限で返品できる",
+      "代金を払えば契約は存在しない"
+    ],
+    "note": "訪問販売とは制度が異なる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_56d77b02be75",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "契約トラブルを一人で解決できない時は？",
+    "answer": "消費生活センター等へ相談",
+    "dummies": [
+      "相手の請求を無検証で払う",
+      "個人情報を無制限に渡す",
+      "追加契約で必ず解決と考える"
+    ],
+    "note": "消費者ホットラインは188。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_182376e244b3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "最低賃金を下回る賃金で合意した部分は？",
+    "answer": "無効で最低賃金額が適用",
+    "dummies": [
+      "本人同意なら必ず有効",
+      "雇用契約全体が常に消滅",
+      "使用者に支払義務がなくなる"
+    ],
+    "note": "最低賃金法の保護を受ける。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ecb3de1fc3d4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "市場・消費者・労働",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "労働者が労働条件を集団で交渉する権利は？",
+    "answer": "団体交渉権",
+    "dummies": [
+      "団体行動権",
+      "財産権",
+      "請求権"
+    ],
+    "note": "団結して使用者と交渉する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6dab747d5c58",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国の予算案を作成して国会へ提出するのは？",
+    "answer": "内閣",
+    "dummies": [
+      "最高裁判所",
+      "会計検査院",
+      "日本銀行"
+    ],
+    "note": "国会が審議して議決する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_9193bd3069f2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国の決算を検査する機関は？",
+    "answer": "会計検査院",
+    "dummies": [
+      "日本銀行",
+      "最高裁判所",
+      "内閣法制局"
+    ],
+    "note": "予算の使用結果を確認する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_286a18189b6a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "不況時の財政政策として一般的なのは？",
+    "answer": "公共投資を増やす",
+    "dummies": [
+      "公共投資を減らす",
+      "所得税を一律増税",
+      "給付を一律削減"
+    ],
+    "note": "需要を支える方向の政策。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_55f386424b45",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "景気過熱を抑える財政政策の方向は？",
+    "answer": "政府支出を抑える",
+    "dummies": [
+      "公共投資を大幅に増やす",
+      "全ての税を同時に減らす",
+      "給付を一律に増やす"
+    ],
+    "note": "需要を抑える方向を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_676466679227",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "不況時、金融を緩和する狙いは？",
+    "answer": "借入や投資を促す",
+    "dummies": [
+      "借入費用を必ず引き上げる",
+      "通貨の流通を全て禁止",
+      "国会の議席を増やす"
+    ],
+    "note": "金利や資金供給に働きかける。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6f4912fe3052",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金利が上がると借り手の負担は一般に？",
+    "answer": "増える",
+    "dummies": [
+      "減る",
+      "常にゼロになる",
+      "元金と無関係になる"
+    ],
+    "note": "元金や期間が同じ場合で比べる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_80aa1fb971eb",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "所得が高いほど高い税率を適用する方式は？",
+    "answer": "累進課税",
+    "dummies": [
+      "一律定額課税",
+      "比例税率",
+      "免税"
+    ],
+    "note": "所得税などで採用される。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4eb2f2eec51a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "消費税の負担を所得に対する割合で比べると？",
+    "answer": "低所得者で重くなりやすい",
+    "dummies": [
+      "全所得層で必ず同じ",
+      "高所得者は必ず納税しない",
+      "低所得者は全員自動免税"
+    ],
+    "note": "逆進性と呼ばれる課題。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_87088b46e231",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国債を発行する際に考えるべき課題は？",
+    "answer": "将来の返済や利払い",
+    "dummies": [
+      "発行時点で税が全て消える",
+      "返済は一切不要",
+      "国会審議が常に不要になる"
+    ],
+    "note": "将来世代の負担にも関係する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b9676574d7da",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "社会保険と公的扶助の主な違いは？",
+    "answer": "保険料負担の仕組みの有無",
+    "dummies": [
+      "前者は全て寄付だけで運営",
+      "後者は全て個人貯蓄だけ",
+      "どちらも国は関わらない"
+    ],
+    "note": "公的扶助は税を財源とする。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e124bd838dc2",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "公的年金が老齢以外に対応するのは？",
+    "answer": "障害や死亡",
+    "dummies": [
+      "株価の下落だけ",
+      "住宅の値下がりだけ",
+      "旅行のキャンセルだけ"
+    ],
+    "note": "障害年金や遺族年金がある。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_41c0c421c3be",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "高齢化で社会保障を考える際の課題は？",
+    "answer": "給付と負担の持続可能性",
+    "dummies": [
+      "高齢者全員の権利を廃止",
+      "若者だけ給付を全て廃止",
+      "財源を検討せず給付だけ決定"
+    ],
+    "note": "世代間と世代内の公正も考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b3b21b428a32",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "財政・金融・社会保障",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "円安が輸出企業に有利になり得る理由は？",
+    "answer": "外貨価格を下げやすい",
+    "dummies": [
+      "輸入原料代が必ず下がる",
+      "海外需要が必ず増える",
+      "全ての生産費がゼロになる"
+    ],
+    "note": "他の条件が同じ場合の一般論。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-B2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_95648869f0a4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本国憲法の三大原則の組合せは？",
+    "answer": "国民主権・人権尊重・平和主義",
+    "dummies": [
+      "天皇主権・人権尊重・平和主義",
+      "国民主権・身分制・平和主義",
+      "国民主権・人権尊重・軍国主義"
+    ],
+    "note": "基本的人権の尊重が原則。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4615455dcb20",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "憲法改正の国会発議に必要な賛成は？",
+    "answer": "各議院の総議員の三分の二以上",
+    "dummies": [
+      "各議院の出席議員の過半数",
+      "衆議院の総議員の過半数だけ",
+      "参議院の出席議員の三分の一"
+    ],
+    "note": "発議後に国民の承認が必要。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1396bfc5325b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "憲法改正の発議後に必要なのは？",
+    "answer": "国民投票等で過半数の賛成",
+    "dummies": [
+      "内閣総理大臣一人の承認",
+      "最高裁判所全員の承認だけ",
+      "都道府県知事全員の承認だけ"
+    ],
+    "note": "憲法96条の手続。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_86c1cdf84ab8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "天皇の国事行為に必要なのは？",
+    "answer": "内閣の助言と承認",
+    "dummies": [
+      "最高裁だけの命令",
+      "天皇の単独判断",
+      "外国政府の承認"
+    ],
+    "note": "責任は内閣が負う。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_1b4df1e5806e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "表現の自由が保障されても許されない例は？",
+    "answer": "他人の名誉や権利の侵害",
+    "dummies": [
+      "政府への政策批判",
+      "新聞への意見投稿",
+      "平和的な集会での発言"
+    ],
+    "note": "他人の権利との調整が必要。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a0287f21d1b8",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "障害に応じ必要な配慮をする目的は？",
+    "answer": "実質的な機会を保障する",
+    "dummies": [
+      "特定の人の人権をなくす",
+      "全員を同じ方法に限定する",
+      "本人の参加を全面禁止する"
+    ],
+    "note": "形式的な同一扱いだけで考えない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ed23d8935172",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "疑われた人を有罪確定前から犯人扱いする問題は？",
+    "answer": "無罪推定に反する",
+    "dummies": [
+      "国民主権を直接実現する",
+      "秘密選挙に必要",
+      "財産権の行使に必須"
+    ],
+    "note": "報道や社会生活でも配慮する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c417b40bde14",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "自白だけで有罪にできる？",
+    "answer": "本人の自白のみではできない",
+    "dummies": [
+      "自白があれば証拠は不要",
+      "捜査機関が望めば常にできる",
+      "世論が賛成すればできる"
+    ],
+    "note": "憲法38条の保障。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_fe1f2572654b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "拷問によって得た自白の扱いは？",
+    "answer": "証拠にできない",
+    "dummies": [
+      "内容が詳しければ必ず採用",
+      "裁判なしで刑罰を確定",
+      "報道されたら必ず採用"
+    ],
+    "note": "強要された自白も同様に制限。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_502791e070dc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "生存権が保障する生活の基準は？",
+    "answer": "健康で文化的な最低限度",
+    "dummies": [
+      "全員同じ高額所得",
+      "働かず必ず同じ財産",
+      "全ての希望を無条件に実現"
+    ],
+    "note": "憲法25条に結び付く。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f97ca7973d65",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "義務教育を受けさせる義務を負うのは？",
+    "answer": "保護する子がいる国民",
+    "dummies": [
+      "子供本人だけ",
+      "学校の校長だけ",
+      "地方議員だけ"
+    ],
+    "note": "子の教育を受ける権利を支える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0e94670d4437",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "財産権の制約を考える際の基本は？",
+    "answer": "公共の福祉に適合させる",
+    "dummies": [
+      "所有者の利益だけを絶対視",
+      "多数派なら無理由で没収",
+      "政府の都合だけで全て制限"
+    ],
+    "note": "憲法29条の保障と調整。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_16d42d58c641",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "憲法・人権の適用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "公務員の違法行為で損害を受けた時の権利は？",
+    "answer": "国家賠償請求権",
+    "dummies": [
+      "団体交渉権",
+      "選挙権",
+      "国政調査権"
+    ],
+    "note": "国などに賠償を求める。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_e1e223a3f1f1",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "衆議院と参議院で内閣総理大臣の指名が異なると？",
+    "answer": "一定の手続後は衆議院が優越",
+    "dummies": [
+      "常に参議院の指名が優越",
+      "最高裁が独自に首相を選ぶ",
+      "天皇が自由に首相を決める"
+    ],
+    "note": "両院協議会などの手続がある。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_737da52dfb9d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "法律案が参議院で否決された時の再可決要件は？",
+    "answer": "衆院出席議員の三分の二以上",
+    "dummies": [
+      "衆院総議員の過半数だけ",
+      "参院出席議員の過半数だけ",
+      "内閣全員の賛成だけ"
+    ],
+    "note": "通常の法律案の衆議院再議決。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_63ad295a8585",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "衆議院の優越が認められる理由の一つは？",
+    "answer": "任期が短く解散もある",
+    "dummies": [
+      "参議院より任期が長い",
+      "衆議院だけ選挙がない",
+      "衆議院だけ世襲される"
+    ],
+    "note": "民意を反映しやすいと考えられる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_71609e9b7fb0",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "内閣が国会に対して負うのは？",
+    "answer": "連帯して責任",
+    "dummies": [
+      "首相だけの私的責任",
+      "各大臣が国会と無関係な責任",
+      "裁判所を介した責任だけ"
+    ],
+    "note": "議院内閣制の基本。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_9f2fe9790982",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "裁判官が独立して従うのは？",
+    "answer": "良心・憲法・法律",
+    "dummies": [
+      "内閣の個別命令",
+      "政党の指示だけ",
+      "世論調査の多数だけ"
+    ],
+    "note": "司法権の独立。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_037b18372866",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地方議会と首長の関係で適切なのは？",
+    "answer": "互いに抑制し均衡を保つ",
+    "dummies": [
+      "議会が首長を必ず任命する",
+      "首長が議員を自由に解任",
+      "議会は予算に関われない"
+    ],
+    "note": "二元代表制の下で監視し合う。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ee3a38501314",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地方自治の住民自治に当たるのは？",
+    "answer": "住民が地域の政治に参加",
+    "dummies": [
+      "国が地方の全てを決定",
+      "地方議員を内閣が任命",
+      "住民の意見を全て排除"
+    ],
+    "note": "団体自治と併せて考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_45b076207b5d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国が使い道を特定せず地方に配る財源は？",
+    "answer": "地方交付税交付金",
+    "dummies": [
+      "国庫支出金",
+      "地方債",
+      "固定資産税"
+    ],
+    "note": "地方間の財源の不均衡を調整。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c414d56ce430",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国庫支出金の特徴は？",
+    "answer": "使い道などを国が指定",
+    "dummies": [
+      "全て使途自由",
+      "地方が発行する借金",
+      "地方が直接徴収する税"
+    ],
+    "note": "地方交付税との違い。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_9209ccb9c662",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "住民の直接請求に含まれるものは？",
+    "answer": "条例の制定・改廃の請求",
+    "dummies": [
+      "国の憲法の単独改正",
+      "裁判官への判決命令",
+      "国際条約の単独締結"
+    ],
+    "note": "署名など法律上の要件がある。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_018c7b8ed3cc",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "選挙区で議員一人当たりの有権者数が違う問題は？",
+    "answer": "一票の格差",
+    "dummies": [
+      "秘密選挙",
+      "普通選挙",
+      "二元代表制"
+    ],
+    "note": "投票価値の平等が課題。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_bb29011bccf7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "政治について世論を判断する時の注意は？",
+    "answer": "調査方法や対象を確認",
+    "dummies": [
+      "一つの投稿を全国民の意見とする",
+      "声の大きさだけで判断",
+      "賛同数だけで真偽も確定"
+    ],
+    "note": "標本の偏りにも注意する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c3055e63f30d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "民主政治と地方自治",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "政治参加の方法として適切なのは？",
+    "answer": "投票や請願・意見の発信",
+    "dummies": [
+      "選挙以外の発言は全て禁止",
+      "成人は政治の情報を見ない",
+      "反対者の投票を妨げる"
+    ],
+    "note": "日常の地域参加も含む。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-C2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_7564c0a38613",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国家の三要素の組合せは？",
+    "answer": "領域・国民・主権",
+    "dummies": [
+      "領域・議会・同じ宗教",
+      "国民・通貨・核兵器",
+      "主権・軍隊・同じ言語"
+    ],
+    "note": "同じ宗教や言語は必須ではない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_de81a4370411",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国際司法裁判所と国内の裁判所の違いは？",
+    "answer": "主に国家間の紛争を扱う",
+    "dummies": [
+      "個人の窃盗を全て裁く",
+      "全ての国の議会を代行",
+      "国際通貨を発行する"
+    ],
+    "note": "国連の主要な司法機関。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_837ab3f30e80",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "安保理の常任理事国の組合せは？",
+    "answer": "米・英・仏・露・中",
+    "dummies": [
+      "米・英・独・日・中",
+      "米・仏・印・露・中",
+      "英・仏・独・日・露"
+    ],
+    "note": "五か国が常任理事国。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_5c2cd6b86aaa",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "安保理の実質事項で常任理事国一国が反対すると？",
+    "answer": "拒否権で決議が成立しない",
+    "dummies": [
+      "その国を自動的に除名",
+      "総会の議決が常に不要になる",
+      "反対国の票だけ二票になる"
+    ],
+    "note": "棄権は反対と同じではない。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_a6dbef2aacc3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国連総会の議決の基本は？",
+    "answer": "原則一国一票",
+    "dummies": [
+      "人口に比例した票",
+      "国連分担金に比例した票",
+      "常任理事国だけが投票"
+    ],
+    "note": "案件で必要な多数は異なる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_872c1cbb8c8e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "難民支援の中心的な国連機関は？",
+    "answer": "UNHCR",
+    "dummies": [
+      "UNESCO",
+      "WHO",
+      "WTO"
+    ],
+    "note": "難民の保護や支援を行う。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d280eb2cdf0f",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "ODAの実施主体となるのは？",
+    "answer": "政府や政府関係機関",
+    "dummies": [
+      "必ず民間の寄付者だけ",
+      "必ず国連総会だけ",
+      "必ず多国籍企業だけ"
+    ],
+    "note": "政府開発援助。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_0870cba51672",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "NGOとNPOの関係として適切なのは？",
+    "answer": "同じ組織が両方に当たり得る",
+    "dummies": [
+      "必ず相互に排他的",
+      "両方とも国の行政機関",
+      "両方とも利益分配が主目的"
+    ],
+    "note": "非政府と非営利は異なる観点。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6d1d940426d3",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "貿易自由化を考える際に必要な視点は？",
+    "answer": "利益と国内産業への影響",
+    "dummies": [
+      "輸入品は全て有害と断定",
+      "国境が必ず消えると考える",
+      "関税を下げれば全員必ず得"
+    ],
+    "note": "消費者と生産者の両面を見る。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_331fbbd64599",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "人間の安全保障の対象となる課題は？",
+    "answer": "貧困や感染症など",
+    "dummies": [
+      "国境の軍備だけ",
+      "通貨の図柄だけ",
+      "議席数の調整だけ"
+    ],
+    "note": "一人一人の生存や尊厳を重視。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ddb9dacc63d4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "核拡散防止条約の目的に含まれるのは？",
+    "answer": "核軍縮と核拡散の防止",
+    "dummies": [
+      "核兵器の自由な輸出",
+      "全加盟国の核武装義務",
+      "核実験の定期的実施義務"
+    ],
+    "note": "原子力の平和利用も柱。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_51cbb2bac8d9",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "領土問題について資料を読む際の基本は？",
+    "answer": "各国の主張と根拠を区別",
+    "dummies": [
+      "主張の主体を確認しない",
+      "発信者の国籍だけで全て決定",
+      "立場の違いを全て無視"
+    ],
+    "note": "事実と政府の立場を分けて読む。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_3cefeafc9c59",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "国際社会と協力",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "国際協力で現地の人の意見を聞く意義は？",
+    "answer": "必要に合う持続的な支援に",
+    "dummies": [
+      "支援側の都合だけを優先",
+      "現地の自立を必ず妨げる",
+      "一度の寄付だけで全課題解決"
+    ],
+    "note": "対等な協力を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D1"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_2dbde44b5925",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "再生可能エネルギーを増やす案の比較で必要なのは？",
+    "answer": "環境・費用・安定供給",
+    "dummies": [
+      "発電時の排出だけ",
+      "設置費用だけ",
+      "発電量の最大値だけ"
+    ],
+    "note": "複数条件と地域への影響を比べる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_99f388bc0f8a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "温暖化対策で世代間の公正を考えるのは？",
+    "answer": "将来の被害や負担も考慮",
+    "dummies": [
+      "今の利益だけで決定",
+      "将来世代は一切考慮しない",
+      "費用を全て後世に送る"
+    ],
+    "note": "持続可能性と結び付く。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_b424f2e7bd8c",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "少子化対策の案を比べる際の基本は？",
+    "answer": "育児費用や働き方などを検討",
+    "dummies": [
+      "出産を一律に強制",
+      "子育て家庭だけに全負担",
+      "数値目標だけで効果と断定"
+    ],
+    "note": "個人の権利も尊重する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_be2bd418332a",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "貧困対策で教育への支援が重要な理由は？",
+    "answer": "将来の選択肢を広げる",
+    "dummies": [
+      "所得格差を必ず即時解消",
+      "本人の努力を不要にする",
+      "教育費を全て自己責任にする"
+    ],
+    "note": "機会の保障につながる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_ea327f5d8fea",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "災害に備える地域の案で適切なのは？",
+    "answer": "支援が必要な人も想定する",
+    "dummies": [
+      "平均的な住民だけを想定",
+      "避難できない人を除外",
+      "災害後まで情報共有しない"
+    ],
+    "note": "多様な条件を踏まえる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_4862520e1f18",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "環境への負担が小さい商品を選ぶ意味は？",
+    "answer": "消費を通じ企業に働きかける",
+    "dummies": [
+      "企業の責任が全て消える",
+      "価格以外の影響は全くない",
+      "全商品の安全性が自動確定"
+    ],
+    "note": "消費者も社会の一員として関わる。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_91d9be45d985",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "食品ロスを減らすための行動は？",
+    "answer": "必要な量を計画して買う",
+    "dummies": [
+      "安ければ使えなくても大量購入",
+      "期限表示を全て無視",
+      "未開封品を常に即廃棄"
+    ],
+    "note": "生産・流通・消費で工夫する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_73a73e775df7",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の公共交通の縮小案で検討すべきなのは？",
+    "answer": "収支と移動の機会の確保",
+    "dummies": [
+      "収支だけで全て即廃止",
+      "利用者の事情を調べない",
+      "自家用車が全員にあると仮定"
+    ],
+    "note": "代替手段や負担も検討する。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_f8bdf3129fc4",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "社会問題への提案に根拠として適切なのは？",
+    "answer": "条件を確認した資料とデータ",
+    "dummies": [
+      "賛成者だけの感想",
+      "出所不明の数値だけ",
+      "結論に合わない資料の隠蔽"
+    ],
+    "note": "比較条件と限界も示す。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c686df2d242b",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "政策の効果を事後に確かめる方法は？",
+    "answer": "目標と実際の結果を比較",
+    "dummies": [
+      "実施しただけで成功と断定",
+      "都合のよい事例だけ残す",
+      "費用や副作用を記録しない"
+    ],
+    "note": "結果に応じ見直す。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_d5a491e59c2e",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "資源を次世代にも残すために重要なのは？",
+    "answer": "再利用と使用量の削減",
+    "dummies": [
+      "使い捨てを常に増やす",
+      "再生速度を無視して採取",
+      "将来の供給を無条件に楽観"
+    ],
+    "note": "有限性や再生可能性を考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_6211e717508d",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の課題で合意を目指す手順は？",
+    "answer": "資料収集・比較・話合い",
+    "dummies": [
+      "結論固定・反対排除・強制",
+      "多数派確認だけで調査終了",
+      "専門家一人の好みだけ採用"
+    ],
+    "note": "異なる立場を踏まえて考える。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_social_case_c0515b6379f6",
+    "subject": "社会",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "公民",
+    "unit": "持続可能な社会の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "SDGsの達成を考える時に必要な視点は？",
+    "answer": "複数目標のつながりを考える",
+    "dummies": [
+      "一つの目標なら他は無視",
+      "経済と環境は必ず無関係",
+      "国際協力は一切不要"
+    ],
+    "note": "社会・経済・環境を関連付ける。",
+    "content_batch": "social-civics-20261109",
+    "official_blocks": [
+      "civics-D2"
+    ],
+    "content_reviewed": "2026-11-09"
   }
 ]

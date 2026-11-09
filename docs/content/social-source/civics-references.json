@@ -1,0 +1,44 @@
+{
+  "checked": "2026-11-09",
+  "scope": "公式内容・制度の確認に使用。設問や候補は独自作問で、原資料本文や図版の複製ではない。",
+  "sources": [
+    {
+      "title": "文科省・中学校学習指導要領解説 社会編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_003.pdf",
+      "sha256": "891755a617df844e4a4b4c748f81aa4de675bbe0a5cec48fc0de0ec1acb4a2d5",
+      "verification": "取得済みPDFの付録3印刷頁213–215、公民的分野「2 内容」を確認。学習範囲の照合に使用。"
+    },
+    {
+      "title": "衆議院・日本国憲法",
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm",
+      "sha256": "fe95823dbb9bc022b04dcb815267c82f68c484b6db21814b20d92d91aac547bb",
+      "verification": "本文の第3・25–31・38・59–61・67・73・84・86・90・96条等。憲法手続と人権・統治の基礎。"
+    },
+    {
+      "title": "消費者庁・18歳から大人 特設ページ",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/lower_the_age_of_adulthood/introduction",
+      "sha256": "06e785978d0d26093d24c1bc8fd565346898f43617e4afafb2856e2bd0c4b5f7",
+      "verification": "本文で成年年齢18歳、保護者同意のない契約、未成年者取消権の変更を確認。"
+    },
+    {
+      "title": "国民生活センター・クーリング・オフ",
+      "url": "https://www.kokusen.go.jp/soudan_now/data/coolingoff.html",
+      "sha256": "8320bf6f809f45308a86ddb2aca88b8854a0882830ecc472d0ffe6d5ec2abba4",
+      "verification": "本文で通信販売には制度がなく、返品特約などによることを確認。"
+    },
+    {
+      "title": "厚生労働省・最低賃金制度とは",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/chingin/newpage_43880.html",
+      "sha256": "dc3fa77776ba6ccd42a55988c7ddf79a61f8ea03e27fd441af111d3771f56485",
+      "verification": "移転先の本文で最低賃金未満の合意は当該部分が無効となり最低賃金額の定めとなることを確認。"
+    }
+  ],
+  "additionalChecks": [
+    {
+      "title": "法務省・高校生向けリーフレット確認テスト",
+      "url": "https://www.moj.go.jp/housei/shihouseido/houkyouiku_seinennenrei_00001.html",
+      "verification": "公開検索抜粋で18歳成年と未成年者取消しの原則を補助照合。別の法務省Q&Aへの直接アクセスは403のため、成年年齢の本文確認は消費者庁を使用。"
+    }
+  ],
+  "limitations": "各設問の全事実について個別一次史料を網羅的に割り当てたものではない。変動する税率・賃金額・現職者名は追加しない。公式細目との最終照合を次段階とする。"
+}

@@ -1,0 +1,50 @@
+{
+  "version": "0.83.0",
+  "date": "2026-11-09",
+  "batch": "social-civics-20261109",
+  "newMaterials": 200,
+  "newGeneratedQuestions": 296,
+  "pairedTermMaterials": 96,
+  "choiceMaterials": 104,
+  "previousSocialMaterials": 954,
+  "previousSocialGeneratedQuestions": 1504,
+  "totalMaterials": 1154,
+  "totalGeneratedQuestions": 1800,
+  "fields": {
+    "地理": {
+      "materials": 424,
+      "generated": 616
+    },
+    "歴史": {
+      "materials": 386,
+      "generated": 634
+    },
+    "公民": {
+      "materials": 344,
+      "generated": 550
+    }
+  },
+  "previousSocialContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "runtimeChanges": "Version URLs only; no gameplay or persistence logic changes.",
+  "budget": {
+    "materials": 200,
+    "presentations": 296,
+    "maxima": {
+      "task": 24,
+      "prompt": 31,
+      "choice": 15,
+      "targetLabel": 21,
+      "note": 19,
+      "combined": 83
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "references": "civics-references.json",
+  "editorialReview": "Constitutional amendment vs ordinary law voting thresholds; national/local branches; consumer contract exceptions; adulthood vs drinking/smoking; public goods vs all public facilities; NGO/NPO overlap; family diversity and substantive equality; monetary/fiscal policy conditions reviewed. No current official names, tax rates or wage amounts introduced.",
+  "checks": "New JSON/IDs/required fields/four choices/direct hints/official-block references/exact old-content preservation and measured text envelope only; no full app suite, browser or five-minute simulation.",
+  "completion": "All three social fields expanded; official subitems and knowledge gaps remain for final audit. Estimated 1 further round, or 2 if significant gaps are found."
+}
