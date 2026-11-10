@@ -1,4 +1,4 @@
-import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.88.0';
+import {Game,RULES,SCORE,revealPlan,timingError} from './game.js?v=0.89.0';
 
 // The chart's main beats are timing opportunities, without visible/moving notes.
 export function focusReveal(question,speed){
@@ -8,7 +8,7 @@ export function focusReveal(question,speed){
   const fadeSeconds=Math.min(.35,charSeconds*2);let cursor=0;
   const part=text=>{const start=cursor;cursor+=Array.from(text||'').length*charSeconds;return {start,end:cursor};};
   const context=question.continuation?{start:0,end:0}:part(question.context?question.task:'');
-  const prompt=question.continuation?{start:0,end:0}:part(question.prompt);
+  const prompt=question.continuation&&!question.refreshPrompt?{start:0,end:0}:part(question.prompt);
   const choices=question.choices.map(part);
   return {...base,context,prompt,choices,charSeconds,fadeSeconds,instant:false,revealEnd:cursor,duration:cursor+fadeSeconds,liftStart:0,liftSeconds:0};
 }

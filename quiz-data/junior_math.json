@@ -403,5 +403,1913 @@
     "note": "対角線は互いを二等分する。長さが等しいことや、垂直に交わることは一般には成り立たない。",
     "cloze_context": "平行四辺形の対角線の性質",
     "cloze_context_reason": "テーマは出題対象の明確化に必要なため表示する。正答そのものの記載はない。"
+  },
+  {
+    "id": "jr_math_sequence_signed",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "math_sequence",
+    "title": "負の数の減法と加法",
+    "sequence_generator": "signed",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "−2−(−2)＋2",
+        "answer": "−2＋2＋2",
+        "dummies": [
+          "−2−2＋2",
+          "2＋2＋2",
+          "−2＋2＋3"
+        ],
+        "note": "負の数を引くと加法になる。",
+        "skill": "負の数の減法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "−2＋2＋2",
+        "answer": "2",
+        "dummies": [
+          "3",
+          "1",
+          "4"
+        ],
+        "note": "符号に注意して足し合わせる。",
+        "skill": "正負の加法",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_distribute",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "文字式",
+    "kind": "math_sequence",
+    "title": "分配と同類項の整理",
+    "sequence_generator": "distribute",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "2(x＋3)−x",
+        "answer": "2x＋6−x",
+        "dummies": [
+          "2x＋3−x",
+          "2x−6−x",
+          "2x＋5−x"
+        ],
+        "note": "括弧内の両項に係数を掛ける。",
+        "skill": "分配法則",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2x＋6−x",
+        "answer": "x＋6",
+        "dummies": [
+          "3x＋6",
+          "x−6",
+          "2x＋5"
+        ],
+        "note": "文字の項どうしをまとめる。",
+        "skill": "同類項の整理",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_linear",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "一次方程式",
+    "kind": "math_sequence",
+    "title": "括弧を含む一次方程式",
+    "sequence_generator": "linear",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "2(x＋2)＋1＝1",
+        "answer": "2x＋4＋1＝1",
+        "dummies": [
+          "2x＋2＋1＝1",
+          "2x−4＋1＝1",
+          "2x＋4＋2＝1"
+        ],
+        "note": "括弧内の両項に係数を掛ける。",
+        "skill": "分配法則",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2x＋4＋1＝1",
+        "answer": "2x＝−4",
+        "dummies": [
+          "2x＝6",
+          "2x＝−2",
+          "2x＝4"
+        ],
+        "note": "定数を整理し両辺から引く。",
+        "skill": "移項と整理",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2x＝−4",
+        "answer": "x＝−2",
+        "dummies": [
+          "x＝2",
+          "x＝−8",
+          "x＝−1"
+        ],
+        "note": "両辺を文字の係数で割る。",
+        "skill": "係数による除法",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_fraction_equation",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "一次方程式",
+    "kind": "math_sequence",
+    "title": "分数を含む一次方程式",
+    "sequence_generator": "fraction_equation",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "x/2＋1＝2",
+        "answer": "x＋2＝4",
+        "dummies": [
+          "x＋1＝4",
+          "x＋2＝2",
+          "2x＋2＝4"
+        ],
+        "note": "分母を払うとき全項に掛ける。",
+        "skill": "分母払い",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＋2＝4",
+        "answer": "x＝2",
+        "dummies": [
+          "x＝6",
+          "x＝1",
+          "x＝-2"
+        ],
+        "note": "両辺から定数の項を引く。",
+        "skill": "等式の性質",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_proportion",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "関数",
+    "unit": "比例と反比例",
+    "kind": "math_sequence",
+    "title": "比例の式と代入",
+    "sequence_generator": "proportion",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "yはxに比例。x＝2でy＝4",
+        "answer": "y＝2x",
+        "dummies": [
+          "y＝4x",
+          "y＝x＋2",
+          "y＝2/x"
+        ],
+        "note": "yをxで割り比例定数を求める。",
+        "skill": "比例の立式",
+        "task": "関係を式で表そう"
+      },
+      {
+        "prompt": "y＝2x，x＝4のときyは？",
+        "answer": "8",
+        "dummies": [
+          "9",
+          "7",
+          "10"
+        ],
+        "note": "xの値を式へ代入する。",
+        "skill": "代入",
+        "task": "値を求めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_inverse",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "関数",
+    "unit": "比例と反比例",
+    "kind": "math_sequence",
+    "title": "反比例の式と代入",
+    "sequence_generator": "inverse",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "yはxに反比例。x＝2でy＝6",
+        "answer": "y＝12/x",
+        "dummies": [
+          "y＝6/x",
+          "y＝12x",
+          "y＝14/x"
+        ],
+        "note": "xとyの積が比例定数になる。",
+        "skill": "反比例の立式",
+        "task": "関係を式で表そう"
+      },
+      {
+        "prompt": "y＝12/x，x＝6のときyは？",
+        "answer": "2",
+        "dummies": [
+          "3",
+          "1",
+          "4"
+        ],
+        "note": "分母のxへ値を代入する。",
+        "skill": "反比例の代入",
+        "task": "値を求めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_mean",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "データの活用",
+    "unit": "データの活用",
+    "kind": "math_sequence",
+    "title": "合計から平均値へ",
+    "sequence_generator": "mean",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "データ2，3，4の合計は？",
+        "answer": "9",
+        "dummies": [
+          "10",
+          "8",
+          "11"
+        ],
+        "note": "全ての値を足す。",
+        "skill": "データの合計",
+        "task": "値を求めよう"
+      },
+      {
+        "prompt": "データ3個，合計9。平均値は？",
+        "answer": "3",
+        "dummies": [
+          "4",
+          "2",
+          "5"
+        ],
+        "note": "合計をデータ数で割る。",
+        "skill": "平均値",
+        "task": "値を求めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_monomial",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "式の計算",
+    "kind": "math_sequence",
+    "title": "単項式の乗法と除法",
+    "sequence_generator": "monomial",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "2a×3a÷(2a)",
+        "answer": "6a²÷(2a)",
+        "dummies": [
+          "5a²÷(2a)",
+          "6a÷(2a)",
+          "-1a²÷(2a)"
+        ],
+        "note": "係数と文字をそれぞれ掛ける。",
+        "skill": "単項式の乗法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "6a²÷(2a)（a≠0）",
+        "answer": "3a",
+        "dummies": [
+          "3a²",
+          "6a",
+          "6a²"
+        ],
+        "note": "係数も文字も割って整理する。",
+        "skill": "単項式の除法",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_elimination",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "連立方程式",
+    "kind": "math_sequence",
+    "title": "加減法から解の確認へ",
+    "sequence_generator": "elimination",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "2x＋y＝4\nx−y＝−1",
+        "answer": "3x＝3",
+        "dummies": [
+          "x＝3",
+          "3x＝5",
+          "3x＝4"
+        ],
+        "note": "両式を足すとyの項が消える。",
+        "skill": "加減法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "3x＝3",
+        "answer": "x＝1",
+        "dummies": [
+          "x＝-1",
+          "x＝2",
+          "x＝9"
+        ],
+        "note": "両辺をxの係数で割る。",
+        "skill": "係数による除法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＝1，x−y＝−1",
+        "answer": "(x,y)＝(1,2)",
+        "dummies": [
+          "(x,y)＝(1,−2)",
+          "(x,y)＝(1,3)",
+          "(x,y)＝(−1,2)"
+        ],
+        "note": "求めたxを元の式へ代入する。",
+        "skill": "連立の解の確定",
+        "task": "解を求めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_substitution",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "連立方程式",
+    "kind": "math_sequence",
+    "title": "代入法から解の確認へ",
+    "sequence_generator": "substitution",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "y＝2x＋1\nx＋y＝7",
+        "answer": "x＋(2x＋1)＝7",
+        "dummies": [
+          "x＋(2x−1)＝7",
+          "2x＝7",
+          "x＋1＝7"
+        ],
+        "note": "yを等しい式で置き換える。",
+        "skill": "代入法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＋(2x＋1)＝7",
+        "answer": "3x＝6",
+        "dummies": [
+          "x＝6",
+          "3x＝8",
+          "3x＝7"
+        ],
+        "note": "同類項をまとめ定数を移す。",
+        "skill": "同類項と移項",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "3x＝6",
+        "answer": "x＝2",
+        "dummies": [
+          "x＝-2",
+          "x＝3",
+          "x＝6"
+        ],
+        "note": "両辺を文字の係数で割る。",
+        "skill": "係数による除法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＝2，y＝2x＋1",
+        "answer": "(x,y)＝(2,5)",
+        "dummies": [
+          "(x,y)＝(−2,5)",
+          "(x,y)＝(2,4)",
+          "(x,y)＝(2,−5)"
+        ],
+        "note": "xを元の式へ代入してyを求める。",
+        "skill": "連立の解の確定",
+        "task": "解を求めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_function",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "math_sequence",
+    "title": "二点から一次関数へ",
+    "sequence_generator": "function",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "直線が(0,1)，(2,5)を通る。傾きは？",
+        "answer": "2",
+        "dummies": [
+          "3",
+          "1",
+          "4"
+        ],
+        "note": "yの増加量をxの増加量で割る。",
+        "skill": "変化の割合",
+        "task": "値を求めよう"
+      },
+      {
+        "prompt": "傾き2で(0,1)を通る直線",
+        "answer": "y＝2x＋1",
+        "dummies": [
+          "y＝x＋2",
+          "y＝2x−1",
+          "y＝2x"
+        ],
+        "note": "xが0のときのyが切片になる。",
+        "skill": "一次関数の決定",
+        "task": "関係を式で表そう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_intersection",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "math_sequence",
+    "title": "直線の交点を求める",
+    "sequence_generator": "intersection",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "y＝2x＋1\ny＝x＋3",
+        "answer": "2x＋1＝x＋3",
+        "dummies": [
+          "2x−1＝x＋3",
+          "2x＋1＝x−3",
+          "2x＋1＝3"
+        ],
+        "note": "交点では両式のyが等しい。",
+        "skill": "交点の立式",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2x＋1＝x＋3",
+        "answer": "x＝2",
+        "dummies": [
+          "x＝-2",
+          "x＝3",
+          "x＝4"
+        ],
+        "note": "xの項と定数を整理する。",
+        "skill": "交点のx座標",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＝2，y＝2x＋1",
+        "answer": "(2,5)",
+        "dummies": [
+          "(5,2)",
+          "(2,-5)",
+          "(3,5)"
+        ],
+        "note": "xを代入してyも求める。",
+        "skill": "交点の座標",
+        "task": "交点の座標を選ぼう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_probability",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "確率",
+    "kind": "math_sequence",
+    "title": "場合の数から確率へ",
+    "sequence_generator": "probability",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "1〜6のカード1枚。2以下は何枚？",
+        "answer": "2",
+        "dummies": [
+          "3",
+          "1",
+          "4"
+        ],
+        "note": "条件に合うカードを数える。",
+        "skill": "場合の数",
+        "task": "枚数を求めよう"
+      },
+      {
+        "prompt": "全6通り，条件に合うのは2通り",
+        "answer": "2/6",
+        "dummies": [
+          "3/6",
+          "2/5",
+          "1/6"
+        ],
+        "note": "同様に確からしい場合で比べる。",
+        "skill": "確率の比",
+        "task": "確率を選ぼう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_expansion",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "math_sequence",
+    "title": "二つの括弧の展開と整理",
+    "sequence_generator": "expansion",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "(x＋1)(x＋3)",
+        "answer": "x²＋3x＋1x＋3",
+        "dummies": [
+          "x²＋3x＋1x＋4",
+          "x²−3x＋1x＋3",
+          "x²＋3x−1x＋3"
+        ],
+        "note": "それぞれの項を掛け合わせる。",
+        "skill": "多項式の乗法",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x²＋3x＋1x＋3",
+        "answer": "x²＋4x＋3",
+        "dummies": [
+          "x²＋3x＋3",
+          "x²＋4x＋4",
+          "x²−4x＋3"
+        ],
+        "note": "xの項をまとめる。",
+        "skill": "展開後の整理",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_factor",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "math_sequence",
+    "title": "共通因数から因数分解へ",
+    "sequence_generator": "factor",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "2x²＋8x＋6",
+        "answer": "2(x²＋4x＋3)",
+        "dummies": [
+          "2(x²＋8x＋3)",
+          "2(x²＋4x−3)",
+          "2(x²−4x＋3)"
+        ],
+        "note": "全項の共通因数をくくる。",
+        "skill": "共通因数",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2(x²＋4x＋3)",
+        "answer": "2(x＋1)(x＋3)",
+        "dummies": [
+          "2(x−1)(x−3)",
+          "2(x＋1)(x−3)",
+          "2(x＋4)(x＋3)"
+        ],
+        "note": "和と積が合う2数を探す。",
+        "skill": "二次式の因数分解",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_difference",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "math_sequence",
+    "title": "平方の差から方程式へ",
+    "sequence_generator": "difference",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "x²−4＝0",
+        "answer": "(x＋2)(x−2)＝0",
+        "dummies": [
+          "(x−2)²＝0",
+          "(x＋2)²＝0",
+          "(x＋4)(x−4)＝0"
+        ],
+        "note": "二乗の差の形を見分ける。",
+        "skill": "平方の差",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "(x＋2)(x−2)＝0",
+        "answer": "x＝−2，2",
+        "dummies": [
+          "x＝0，2",
+          "x＝−2，0",
+          "x＝−4，4"
+        ],
+        "note": "どちらかの因数が0になる。",
+        "skill": "積が0の性質",
+        "task": "解を求めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_radical",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "math_sequence",
+    "title": "根号の整理から加法へ",
+    "sequence_generator": "radical",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "√8＋√2",
+        "answer": "2√2＋√2",
+        "dummies": [
+          "4√2＋√2",
+          "2√3＋√2",
+          "2√2−√2"
+        ],
+        "note": "平方数の因数を根号の外へ出す。",
+        "skill": "平方根の簡単化",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2√2＋√2",
+        "answer": "3√2",
+        "dummies": [
+          "2√4",
+          "4√2",
+          "1√2"
+        ],
+        "note": "同じ根号の係数を足す。",
+        "skill": "平方根の加法",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_rationalize",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "math_sequence",
+    "title": "有理化と根号の積",
+    "sequence_generator": "rationalize",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "2/√2",
+        "answer": "2√2/(√2×√2)",
+        "dummies": [
+          "2/(√2×√2)",
+          "2√2/(2＋1)",
+          "2√2/(2×2)"
+        ],
+        "note": "分子と分母に同じ根号を掛ける。",
+        "skill": "分母の有理化",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "2√2/(√2×√2)",
+        "answer": "2√2/2",
+        "dummies": [
+          "2√2",
+          "2/2",
+          "2/(2√2)"
+        ],
+        "note": "分母の根号の積を計算する。",
+        "skill": "平方根の乗法",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_quadratic_factor",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "二次方程式",
+    "kind": "math_sequence",
+    "title": "因数分解から二次方程式の解へ",
+    "sequence_generator": "quadratic_factor",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "x²−4x＋3＝0",
+        "answer": "(x−1)(x−3)＝0",
+        "dummies": [
+          "(x＋1)(x＋3)＝0",
+          "(x＋1)(x−3)＝0",
+          "(x−4)(x−3)＝0"
+        ],
+        "note": "和と積を見て因数分解する。",
+        "skill": "二次方程式の因数分解",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "(x−1)(x−3)＝0",
+        "answer": "x＝1，3",
+        "dummies": [
+          "x＝−3，−1",
+          "x＝−1，3",
+          "x＝1，4"
+        ],
+        "note": "各因数が0になる場合を考える。",
+        "skill": "二次方程式の解",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_quadratic_square",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "二次方程式",
+    "kind": "math_sequence",
+    "title": "平方完成から二つの解へ",
+    "sequence_generator": "quadratic_square",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "x²＋2x＝3",
+        "answer": "(x＋1)²＝4",
+        "dummies": [
+          "(x＋1)²＝3",
+          "(x＋1)²＝5",
+          "(x−1)²＝4"
+        ],
+        "note": "係数の半分の二乗を両辺に加える。",
+        "skill": "平方完成",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "(x＋1)²＝4",
+        "answer": "x＋1＝±2",
+        "dummies": [
+          "x＋1＝2",
+          "x＋1＝±4",
+          "x−1＝±2"
+        ],
+        "note": "正と負の平方根を考える。",
+        "skill": "平方根からの解",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＋1＝±2",
+        "answer": "x＝−3，1",
+        "dummies": [
+          "x＝−1，3",
+          "x＝−3，2",
+          "x＝−4，1"
+        ],
+        "note": "両方の場合で定数を移す。",
+        "skill": "二つの解の整理",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_similarity",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "相似",
+    "kind": "math_sequence",
+    "title": "相似比から長さへ",
+    "sequence_generator": "similarity",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "相似比1：2。辺の比4：x",
+        "answer": "x＝2×4",
+        "dummies": [
+          "x＝4/2",
+          "x＝2＋4",
+          "x＝9"
+        ],
+        "note": "対応する辺を同じ順に比べる。",
+        "skill": "相似比の立式",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＝2×4",
+        "answer": "8",
+        "dummies": [
+          "9",
+          "7",
+          "10"
+        ],
+        "note": "対応する長さの倍率を使う。",
+        "skill": "相似の長さ",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_pythagoras",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "三平方の定理",
+    "kind": "math_sequence",
+    "title": "直角三角形の斜辺を求める",
+    "sequence_generator": "pythagoras",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "直角を挟む辺が3，4。斜辺はx",
+        "answer": "x²＝3²＋4²",
+        "dummies": [
+          "x²＝4²−3²",
+          "x＝3＋4",
+          "x²＝3²×4²"
+        ],
+        "note": "斜辺の二乗は他の二辺の二乗の和。",
+        "skill": "三平方の立式",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x²＝3²＋4²",
+        "answer": "x²＝25",
+        "dummies": [
+          "x²＝26",
+          "x²＝7",
+          "x²＝49"
+        ],
+        "note": "それぞれ二乗して足す。",
+        "skill": "平方の計算",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x²＝25，xは長さ",
+        "answer": "x＝5",
+        "dummies": [
+          "x＝-5",
+          "x＝25",
+          "x＝6"
+        ],
+        "note": "長さなので正の値を選ぶ。",
+        "skill": "長さと平方根",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_angle",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "円",
+    "kind": "math_sequence",
+    "title": "円周角から中心角へ",
+    "sequence_generator": "angle",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "同じ弧の円周角が30°。中心角はx°",
+        "answer": "x＝2×30",
+        "dummies": [
+          "x＝30/2",
+          "x＝360−30",
+          "x＝30"
+        ],
+        "note": "同じ弧の中心角は円周角の2倍。",
+        "skill": "円周角の定理",
+        "task": "この式を適切に進めよう"
+      },
+      {
+        "prompt": "x＝2×30",
+        "answer": "60",
+        "dummies": [
+          "61",
+          "59",
+          "62"
+        ],
+        "note": "式を計算して角度を求める。",
+        "skill": "角度の計算",
+        "task": "この式を適切に進めよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_sequence_sampling",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "データの活用",
+    "unit": "標本調査",
+    "kind": "math_sequence",
+    "title": "標本の割合から母集団へ",
+    "sequence_generator": "sampling",
+    "content_batch": "math-sequences-20261110",
+    "steps": [
+      {
+        "prompt": "無作為標本10人中2人が該当。割合は？",
+        "answer": "2/10",
+        "dummies": [
+          "3/10",
+          "2/9",
+          "1/10"
+        ],
+        "note": "標本の該当数を標本数で割る。",
+        "skill": "標本の割合",
+        "task": "割合を選ぼう"
+      },
+      {
+        "prompt": "標本割合2/10，母集団100人。推定は？",
+        "answer": "20",
+        "dummies": [
+          "21",
+          "19",
+          "22"
+        ],
+        "note": "標本の割合を母集団へ当てはめる。",
+        "skill": "母集団の推定",
+        "task": "人数を推定しよう"
+      }
+    ]
+  },
+  {
+    "id": "jr_math_judgment_78fad8d8bf3c",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "−4と3の距離を数直線で表すと？",
+    "answer": "7",
+    "dummies": [
+      "1",
+      "−1",
+      "−7"
+    ],
+    "note": "符号でなく隔たりを考える。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_7f730e5cb6bd",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "0でない数を0で割る計算は？",
+    "answer": "定義されない",
+    "dummies": [
+      "必ず0",
+      "必ず1",
+      "必ず元の数"
+    ],
+    "note": "0で割ることはできない。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_16692fcf8cea",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "正負の数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "−2³の値は？",
+    "answer": "−8",
+    "dummies": [
+      "8",
+      "−6",
+      "6"
+    ],
+    "note": "累乗してから負号を付ける。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_95f17338f25f",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "文字式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "a×b×bを省略した式は？",
+    "answer": "ab²",
+    "dummies": [
+      "(ab)²",
+      "a²b",
+      "ab"
+    ],
+    "note": "bだけが2回掛けられている。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_ce72c7c73726",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "文字式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "a÷(b×c)を分数で表すと？",
+    "answer": "a/(bc)",
+    "dummies": [
+      "ac/b",
+      "ab/c",
+      "bc/a"
+    ],
+    "note": "割る数全体が分母になる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_62104dac6371",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "数と式",
+    "unit": "一次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "方程式の解を確かめるには？",
+    "answer": "元の式へ代入",
+    "dummies": [
+      "答えの符号だけ見る",
+      "係数だけ足す",
+      "両辺を必ず0にする"
+    ],
+    "note": "元の等式を満たすか確かめる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_2fd5f378932e",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "関数",
+    "unit": "比例と反比例",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "反比例のグラフでx＝0の点は？",
+    "answer": "含まれない",
+    "dummies": [
+      "必ず原点",
+      "必ず(0,1)",
+      "全てのyが入る"
+    ],
+    "note": "比例定数が0でない場合。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_6dd5523732b6",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "関数",
+    "unit": "比例と反比例",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝−2xでxが増えるとyは？",
+    "answer": "減る",
+    "dummies": [
+      "増える",
+      "常に同じ",
+      "常に0"
+    ],
+    "note": "比例定数の符号を見る。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_9a9a627f39d0",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "平行移動で変わらない組合せは？",
+    "answer": "長さと角度",
+    "dummies": [
+      "長さだけで角度は変化",
+      "角度だけで長さは変化",
+      "長さも角度も変化"
+    ],
+    "note": "向きや対応も確認する。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_3f1271612c9a",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "対称移動の対応点を結ぶ線分と対称軸は？",
+    "answer": "垂直に交わる",
+    "dummies": [
+      "必ず平行",
+      "必ず重なる",
+      "必ず交わらない"
+    ],
+    "note": "軸はその線分を二等分する。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_06f293aeb84e",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "半径3の円の周の長さは？",
+    "answer": "6π",
+    "dummies": [
+      "3π",
+      "9π",
+      "12π"
+    ],
+    "note": "直径×円周率。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_4af33245e007",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "図形",
+    "unit": "平面図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "中心角90°の扇形は同じ円の何分の一？",
+    "answer": "4分の1",
+    "dummies": [
+      "2分の1",
+      "3分の1",
+      "8分の1"
+    ],
+    "note": "中心角を360°で割る。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_6241b68889f8",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "図形",
+    "unit": "空間図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "円柱の側面を開いた長方形の横の長さは？",
+    "answer": "底面の円周",
+    "dummies": [
+      "底面の半径",
+      "底面の直径",
+      "底面の面積"
+    ],
+    "note": "円周が一周分つながる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_684e2dfb57f7",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "図形",
+    "unit": "空間図形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ底面積・高さの錐体と柱体の体積比は？",
+    "answer": "1：3",
+    "dummies": [
+      "1：2",
+      "1：1",
+      "3：1"
+    ],
+    "note": "錐体の体積は柱体の3分の1。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_b57d5c1056c2",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "データの活用",
+    "unit": "データの活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "3,4,4,7,9の最頻値は？",
+    "answer": "4",
+    "dummies": [
+      "3",
+      "7",
+      "9"
+    ],
+    "note": "最も多く現れる値。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_1bc3832a4560",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "データの活用",
+    "unit": "データの活用",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "比較する集団の人数が違う。使うとよいのは？",
+    "answer": "相対度数",
+    "dummies": [
+      "人数だけ",
+      "最大値だけ",
+      "合計だけ"
+    ],
+    "note": "全体に対する割合で比べる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_fa32a668c47d",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "式の計算",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "a²×a³を計算すると？",
+    "answer": "a⁵",
+    "dummies": [
+      "a⁶",
+      "a⁹",
+      "2a⁵"
+    ],
+    "note": "同じ文字の積は指数を足す。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_4056154ba446",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "式の計算",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2(x−y)−(x＋y)を整理すると？",
+    "answer": "x−3y",
+    "dummies": [
+      "x−y",
+      "3x−y",
+      "x＋3y"
+    ],
+    "note": "括弧の前の負号に注意。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_cb3c95b3fcac",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "連立方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2x＋3yと4x−y。x消去の準備は？",
+    "answer": "第1式を2倍",
+    "dummies": [
+      "第1式を3倍",
+      "第2式を3倍",
+      "両式を2倍"
+    ],
+    "note": "同じ文字の係数をそろえる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_c6ae3b5311df",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "数と式",
+    "unit": "連立方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "連立方程式の解が満たす条件は？",
+    "answer": "両方の式が成立",
+    "dummies": [
+      "片方だけでよい",
+      "係数が全て同じ",
+      "必ず整数になる"
+    ],
+    "note": "二つの条件を同時に満たす。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_3915d6d66376",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝−3x＋2のxが1増えるとyは？",
+    "answer": "3減る",
+    "dummies": [
+      "3増える",
+      "2増える",
+      "2減る"
+    ],
+    "note": "傾きはyの増加量を示す。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_f3cf11714be5",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "関数",
+    "unit": "一次関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝2x＋4のx軸との交点は？",
+    "answer": "(−2,0)",
+    "dummies": [
+      "(2,0)",
+      "(0,4)",
+      "(0,−2)"
+    ],
+    "note": "x軸上ではyが0になる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_093a6a926cac",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "証明の進め方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "合同条件で2辺と組にする角は？",
+    "answer": "その2辺の間の角",
+    "dummies": [
+      "任意の角",
+      "外角だけ",
+      "最大の角だけ"
+    ],
+    "note": "間の角という条件が必要。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_8752f727b5be",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "証明の進め方",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "証明で合同と結論する直前に必要なのは？",
+    "answer": "合同条件の確認",
+    "dummies": [
+      "図の見た目だけ",
+      "辺の長さの予想",
+      "結論の書き写し"
+    ],
+    "note": "等しい辺や角の根拠をそろえる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_47106be0dc39",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "平行四辺形",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "四角形の対角線が互いに二等分。言えるのは？",
+    "answer": "平行四辺形",
+    "dummies": [
+      "必ず正方形",
+      "必ず長方形",
+      "必ずひし形"
+    ],
+    "note": "成立する条件を区別。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_ee5a217d894b",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "図形",
+    "unit": "三角形の性質",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三角形の2角が等しい。対応する辺は？",
+    "answer": "向かい合う2辺が等しい",
+    "dummies": [
+      "必ず3辺全て等しい",
+      "必ず垂直",
+      "必ず平行"
+    ],
+    "note": "二等辺三角形の性質の逆。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_2230de8ae8de",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "確率",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "赤玉2個・白玉3個から1個。赤の確率は？",
+    "answer": "2/5",
+    "dummies": [
+      "3/5",
+      "2/3",
+      "1/5"
+    ],
+    "note": "各玉が同様に取り出される場合。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_6ee1ef849dcb",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "確率",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ硬貨を2回。表裏と裏表の扱いは？",
+    "answer": "別の場合",
+    "dummies": [
+      "同じ場合",
+      "両方除く",
+      "片方だけ数える"
+    ],
+    "note": "順番を区別して数える。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_fbd9a8727e63",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "確率",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "さいころで偶数が出る確率は？",
+    "answer": "1/2",
+    "dummies": [
+      "1/3",
+      "1/6",
+      "2/3"
+    ],
+    "note": "1から6が同様に確からしい。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_4d3845c33017",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "箱ひげ図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "第1四分位数2、第3四分位数7。四分位範囲は？",
+    "answer": "5",
+    "dummies": [
+      "9",
+      "2",
+      "7"
+    ],
+    "note": "第3から第1四分位数を引く。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_2c25120b16d7",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "箱ひげ図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "箱ひげ図だけでは特定できないものは？",
+    "answer": "平均値",
+    "dummies": [
+      "中央値",
+      "第1四分位数",
+      "第3四分位数"
+    ],
+    "note": "中央値と平均値を区別。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_f1ca655bb111",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "データの活用",
+    "unit": "箱ひげ図",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "箱の中に含まれるデータの割合の目安は？",
+    "answer": "中央の約半分",
+    "dummies": [
+      "全て",
+      "約4分の1",
+      "両端の半分"
+    ],
+    "note": "四分位数の位置を考える。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_37b245fb71d9",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "√49と方程式x²＝49の解の違いは？",
+    "answer": "7と±7",
+    "dummies": [
+      "±7と7",
+      "両方7だけ",
+      "両方−7だけ"
+    ],
+    "note": "根号の値と方程式の解は別。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_3c2edf828e11",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "平方根",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "√2＋√3を√5にできる？",
+    "answer": "できない",
+    "dummies": [
+      "常にできる",
+      "符号だけ逆なら可",
+      "両辺を2倍すれば可"
+    ],
+    "note": "根号の中はそのまま足せない。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_e6f9c9d7325e",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "展開と因数分解",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x²−6x＋9の因数分解は？",
+    "answer": "(x−3)²",
+    "dummies": [
+      "(x＋3)²",
+      "(x−9)²",
+      "(x−3)(x＋3)"
+    ],
+    "note": "平方の公式の形を見る。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_d6ab44106c6b",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "二次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x²＝3xをxで割ると失う解は？",
+    "answer": "x＝0",
+    "dummies": [
+      "x＝1",
+      "x＝3",
+      "x＝−3"
+    ],
+    "note": "xが0の場合を除いてしまう。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_29e255471d49",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "二次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "x²＝5の解は？",
+    "answer": "±√5",
+    "dummies": [
+      "√5だけ",
+      "−√5だけ",
+      "±5"
+    ],
+    "note": "正負の両方を考える。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_8e1e426b0328",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "関数",
+    "unit": "二乗に比例する関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝2x²でxが−3から−1。yの変化は？",
+    "answer": "16減る",
+    "dummies": [
+      "16増える",
+      "8減る",
+      "8増える"
+    ],
+    "note": "端の値18と2を比べる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_d03a50f2ee30",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "関数",
+    "unit": "二乗に比例する関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝x²で−2≦x≦1。yの最小値は？",
+    "answer": "0",
+    "dummies": [
+      "1",
+      "4",
+      "−2"
+    ],
+    "note": "範囲にx＝0が含まれる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_cd72f0299bbd",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "関数",
+    "unit": "二乗に比例する関数",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "y＝ax²のグラフの対称軸は？",
+    "answer": "y軸",
+    "dummies": [
+      "x軸",
+      "y＝x",
+      "y＝−x"
+    ],
+    "note": "xと−xでyが同じになる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_04360918c2fc",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "相似",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "相似比2：3。面積4の図形に対応する面積は？",
+    "answer": "9",
+    "dummies": [
+      "6",
+      "8",
+      "12"
+    ],
+    "note": "面積比は相似比の二乗。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_30a99620f0b7",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "相似",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "相似比1：2。体積5の立体に対応する体積は？",
+    "answer": "40",
+    "dummies": [
+      "10",
+      "20",
+      "25"
+    ],
+    "note": "体積比は相似比の三乗。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_0f3705bad02b",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "相似",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三角形の2組の角が等しい。必ず言えるのは？",
+    "answer": "相似",
+    "dummies": [
+      "合同",
+      "正三角形",
+      "直角三角形"
+    ],
+    "note": "大きさまで等しいとは限らない。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_fe257bf75763",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "円",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "円周角が直径を見込む。頂点の角は？",
+    "answer": "90°",
+    "dummies": [
+      "45°",
+      "60°",
+      "180°"
+    ],
+    "note": "半円に対する円周角。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_74b21da9c464",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "図形",
+    "unit": "三平方の定理",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "直角を挟む辺が5と12。斜辺の二乗は？",
+    "answer": "169",
+    "dummies": [
+      "119",
+      "17",
+      "144"
+    ],
+    "note": "5²＋12²で求める。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_be18690fe928",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "データの活用",
+    "unit": "標本調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "希望者だけを標本にする際の問題は？",
+    "answer": "偏りが生じやすい",
+    "dummies": [
+      "必ず無作為になる",
+      "必ず全数調査",
+      "人数だけで偏りは消える"
+    ],
+    "note": "抽出方法が代表性に関わる。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_9e59fdcc0f98",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "データの活用",
+    "unit": "標本調査",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "無作為標本を増やしても残る注意は？",
+    "answer": "推定には誤差がある",
+    "dummies": [
+      "必ず誤差ゼロ",
+      "母集団が必ず変わる",
+      "抽出方法は無関係"
+    ],
+    "note": "標本の値は毎回変わり得る。",
+    "content_batch": "math-sequences-20261110"
+  },
+  {
+    "id": "jr_math_judgment_d4defa910f2c",
+    "subject": "数学",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "数と式",
+    "unit": "二次方程式",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "長さをxとしてx²＝16。適切な解は？",
+    "answer": "x＝4",
+    "dummies": [
+      "x＝−4",
+      "x＝±4",
+      "x＝16"
+    ],
+    "note": "問題の条件で解を選び直す。",
+    "content_batch": "math-sequences-20261110"
   }
 ]

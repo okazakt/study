@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.88.0';
-import { ScreenWakeLock } from './wake-lock.js?v=0.88.0';
-import { MusicPlayer } from './music-player.js?v=0.88.0';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.88.0';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.88.0';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.88.0';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.88.0';
-const VERSION = '0.88.0';
+import {FocusGame} from './focus-game.js?v=0.89.0';
+import { ScreenWakeLock } from './wake-lock.js?v=0.89.0';
+import { MusicPlayer } from './music-player.js?v=0.89.0';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.89.0';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.89.0';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.89.0';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.89.0';
+const VERSION = '0.89.0';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -803,7 +803,7 @@ function render() {
   $('question-number').textContent = ['intro', 'rhythm', 'outro'].includes(game.phase) ? (game.focus?'拍に合わせてタップ':'白ノーツのレーンをタップ') : `Q ${game.questionIndex + 1} · ${q.grade} ${q.subject} / ${q.field}`;
   $('instruction').textContent = game.message;
   for (const character of characters) {
-    const opacity = game.phase === 'read' && !game.reveal.instant && (!game.reveal.continuation || character.choice) ? Math.max(0, Math.min(1, (elapsed - character.start) / game.reveal.fadeSeconds)) : 1;
+    const opacity = game.phase === 'read' && !game.reveal.instant && (!game.reveal.continuation || game.reveal.refreshPrompt || character.choice) ? Math.max(0, Math.min(1, (elapsed - character.start) / game.reveal.fadeSeconds)) : 1;
     character.element.style.opacity = reducedMotion.matches ? Number(opacity > 0) : opacity;
   }
   choiceElements.forEach(({element, start}, i) => {
@@ -824,7 +824,7 @@ function render() {
     element.style.color = Math.max(darkContrast, lightContrast) < 4.5 ? '#000000' : darkContrast >= lightContrast ? '#101a2a' : '#ffffff';
   });
   $('explanation').textContent = game.phase === 'feedback'
-    ? q.blankPosition < q.blankTotal ? `正解：${q.answer}` : `正解：${q.answer} · ${q.note}`
+    ? q.blankPosition < q.blankTotal && q.mode !== 'math_sequence' ? `正解：${q.answer}` : `正解：${q.answer} · ${q.note}`
     : '';
   const result = game.quizResult;
   const resultVisible = result && (game.phase === 'feedback' || game.time - result.time < RULES.wrongResultSeconds);

@@ -1,5 +1,6 @@
-import { materializeChoiceItem } from './choice-variants.js?v=0.88.0';
-import { materializeMathItem } from './math-variants.js?v=0.88.0';
+import { makeMathSequenceQuestions } from './math-sequences.js?v=0.89.0';
+import { materializeChoiceItem } from './choice-variants.js?v=0.89.0';
+import { materializeMathItem } from './math-variants.js?v=0.89.0';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -85,6 +86,7 @@ export function makeQuestionQueue(items, random = Math.random, acceptQuestion = 
   const ordered = [];
   for (let i = 0; i < Math.max(0, ...decks.map(deck => deck.length)); i++) for (const deck of decks) if (deck[i]) ordered.push(deck[i]);
   const groups = ordered.map(item => {
+    if (item.kind === 'math_sequence') return [makeMathSequenceQuestions(item, random)];
     if (item.kind === 'choice') return [[makeChoiceQuestion(item, random)]];
     if (item.subject === '国語') {
       const questions = makeJapaneseQuestions(item, random);
@@ -294,11 +296,11 @@ export function revealPlan(question,speed='slow') {
   };
   const context = !continuation && question.context ? segment(question.task || question.context) : { start: 0, end: 0 };
   if (!continuation && question.context) cursor += RULES.choiceGapSeconds;
-  const prompt = continuation ? { start: 0, end: 0 } : segment(question.prompt);
+  const prompt = continuation && !question.refreshPrompt ? { start: 0, end: 0 } : segment(question.prompt);
   const choices = question.choices.map(text => { cursor += RULES.choiceGapSeconds; return segment(text); });
   const liftStart = cursor + RULES.readHoldSeconds;
   const slowDuration=liftStart+(continuation?0:RULES.liftSeconds);
-  const base={continuation,context,prompt,choices,revealEnd:cursor,liftStart,duration:slowDuration,
+  const base={continuation,refreshPrompt:!!question.refreshPrompt,context,prompt,choices,revealEnd:cursor,liftStart,duration:slowDuration,
     charSeconds:RULES.charSeconds,fadeSeconds:RULES.fadeSeconds,liftSeconds:RULES.liftSeconds,instant:false};
   if(speed==='slow'||!Object.hasOwn(SPEEDS,speed))return base;
   const characters=Array.from((question.task||'')+question.prompt+question.choices.join('')).length;

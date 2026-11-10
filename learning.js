@@ -2,7 +2,7 @@ export const SCHOOLS = ['中学', '高校'];
 const subjects = { 中学: ['国語', '英語', '数学', '理科', '社会'], 高校: ['国語', '英語', '数学', '理科', '地歴・公民'] };
 export const sectionKey = item => JSON.stringify([item.field, item.unit]);
 export function choiceColumns(question) {
-  return question.mode !== 'kanji_component' && question.choices.some(text => Array.from(text).length > 12 || /[A-Za-z]{8,}/.test(text)) ? 2 : 4;
+  return question.mode !== 'kanji_component' && question.choices.some(text => Array.from(text).length > (question.mode === 'math_sequence' ? 8 : 12) || /[A-Za-z]{8,}/.test(text)) ? 2 : 4;
 }
 export function practiceTypes(subject) {
   const options = subject === '国語' ? [['kanji_write','漢字書き'],['kanji_read','漢字読み'],['idiom','熟語'],['modern','現代文法'],['reading','読解のポイント'],['classical','古文'],['kanbun','漢文']]

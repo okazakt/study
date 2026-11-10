@@ -3,6 +3,7 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {makeQuestionQueue} from '../game.js';
 import {buildCatalog} from '../learning.js';
 import {mathVariantParameters} from '../math-variants.js';
+import {mathSequenceParameters} from '../math-sequences.js';
 const files=['junior_japanese','junior_japanese_kanji','junior_japanese_extended','junior_english','junior_math','junior_science','junior_social','junior_expansion','junior_english_supplement','junior_english_vocabulary2','junior_english_core','junior_english_application','junior_english_extended','junior_english_new_horizon'];
 const stored=files.flatMap(file=>JSON.parse(readFileSync(new URL(`../quiz-data/${file}.json`,import.meta.url))));
 const items=stored.filter(q=>q.school_level==='中学');
@@ -12,5 +13,9 @@ for(const c of catalog){const selected=items.filter(q=>c.ids.includes(q.id));lin
 lines.push('',`合計：${items.length}素材、${makeQuestionQueue(items,()=>.5).length}生成問題。`,'','今後の充足・未充足の管理は [拡充計画](junior-plan.md) を参照。教科書別選択は廃止。NEW HORIZON公開本文Word Listを対応母数として共通分類へ収録。本文の全用法・英語全技能対応とは区別する。','');
 const numeric=items.filter(item=>item.numeric_generator);
 lines.push(`数学の数値変更対応：${numeric.length}学習ポイント、${numeric.reduce((sum,item)=>sum+mathVariantParameters(item.numeric_generator).length,0)}通り。数値パターンは素材数・生成問題数に加算しない。`,'');
-writeFileSync(new URL('../docs/content/junior-inventory.md',import.meta.url),lines.join('\n'));
+
 console.log(`Inventory: ${items.length} materials, ${makeQuestionQueue(items,()=>.5).length} generated questions`);
+
+const chains=items.filter(item=>item.kind==='math_sequence');
+lines.push(`数学の連続解法：${chains.length}素材、${chains.reduce((n,q)=>n+q.steps.length,0)}回答段階、${chains.reduce((n,q)=>n+mathSequenceParameters(q.sequence_generator).length,0)}通りの数値パターン。数値違いは同じ学習ポイントとして管理する。`,'');
+writeFileSync(new URL('../docs/content/junior-inventory.md',import.meta.url),lines.join('\n'));

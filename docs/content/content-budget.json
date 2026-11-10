@@ -95,6 +95,29 @@
       },
       "verified": "2026-11-09: five boundary questions × normal/focus = ten displays using actual app HTML/CSS. Nonempty question text and all choices visible without text overflow. Maximum panel height 340.27px. Trailing empty spacing scroll heights recorded separately.",
       "reviewRecord": "science-source/layout-review.json"
+    },
+    {
+      "id": "math-sequences-text-20261110",
+      "subject": "数学",
+      "profiles": [
+        "text-four-choices",
+        "text-two-columns"
+      ],
+      "maxima": {
+        "task": 11,
+        "prompt": 23,
+        "choice": 14,
+        "targetLabel": 15,
+        "note": 16,
+        "combined": 68
+      },
+      "estimatedPanelHeightLimit": 365,
+      "baselineViewport": {
+        "width": 320,
+        "height": 844
+      },
+      "verified": "2026-11-10: five boundary stages × 320/390 × normal/focus, actual app rendering functions and CSS in Chromium. No panel or choice text overflow; maximum measured panel height 312.984375px. Long sequence expressions use two columns.",
+      "reviewRecord": "math-source/layout-review.json"
     }
   ],
   "longDefinitionHeading": {

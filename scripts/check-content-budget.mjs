@@ -2,6 +2,7 @@
 import {readFileSync} from 'node:fs';
 import {makeQuestionQueue,makeChoiceQuestion} from '../game.js';
 import {choicePresentations} from '../choice-variants.js';
+import {mathSequenceParameters,makeMathSequenceQuestions} from '../math-sequences.js';
 import {choiceColumns} from '../learning.js';
 const args=process.argv.slice(2),value=flag=>args[args.indexOf(flag)+1];
 if(!args.includes('--file'))throw new Error('Usage: node scripts/check-content-budget.mjs --file <JSON> [--batch <content_batch>]');
@@ -57,7 +58,7 @@ for(const item of items){
   if([item.character,...(pool||[])].some(c=>visible.includes(c)))errors.push({id:item.id,reason:'whole-writing-answer-or-distractor-leaked'});
  }
  let qs;
- try{qs=item.kind==='choice'?choicePresentations(item).map((_,i,ps)=>makeChoiceQuestion(item,()=>(i+.5)/ps.length)):makeQuestionQueue([item],()=>.5);}
+ try{qs=item.kind==='math_sequence'?mathSequenceParameters(item.sequence_generator).flatMap((_,i,ps)=>makeMathSequenceQuestions(item,()=>(i+.1)/ps.length)):item.kind==='choice'?choicePresentations(item).map((_,i,ps)=>makeChoiceQuestion(item,()=>(i+.5)/ps.length)):makeQuestionQueue([item],()=>.5);}
  catch(e){errors.push({id:item.id,reason:e.message});continue;}
  if(!qs.length)errors.push({id:item.id,reason:'no-generated-questions'});
  for(const q of qs){

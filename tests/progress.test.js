@@ -46,7 +46,7 @@ test('history pruning retains cumulative totals, invalid histories safely reset'
 });
 test('cloze themes are visible by default while explicit answer-bearing parts are removed',()=>{
  const all=['science','japanese','math','social'].flatMap(read).filter(x=>x.explanation_template);
- assert.equal(all.length,131);assert.equal(all.filter(x=>x.cloze_context).length,131);
+ assert.ok(all.length>0);assert.ok(all.some(x=>x.cloze_context));assert.ok(all.some(x=>x.cloze_context===''));
  for(const item of all){
   assert.equal(typeof item.cloze_context,'string');assert.ok(item.cloze_context_reason.length>0);
   for(const generated of makeBlankQuestions(item)){

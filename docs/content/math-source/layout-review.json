@@ -1,0 +1,882 @@
+{
+  "date": "2026-11-10",
+  "method": "Actual app HTML/CSS and renderQuestion/positionQuestion functions in Chromium; fully revealed boundary examples only, no audio/session playback. Initial audio output dialog dismissed before inspection.",
+  "browser": "Chromium",
+  "cases": [
+    {
+      "id": "jr_math_sequence_function:step:1",
+      "prompt": "直線が(0,2)，(3,11)を通る。傾きは？",
+      "choices": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "jr_math_sequence_rationalize:step:1",
+      "prompt": "2/√2",
+      "choices": [
+        "2/(√2×√2)",
+        "2√2/(2＋1)",
+        "2√2/(2×2)",
+        "2√2/(√2×√2)"
+      ]
+    },
+    {
+      "id": "jr_math_sequence_substitution:step:3",
+      "prompt": "3x＝6",
+      "choices": [
+        "x＝-2",
+        "x＝3",
+        "x＝6",
+        "x＝2"
+      ]
+    },
+    {
+      "id": "jr_math_sequence_elimination:step:1",
+      "prompt": "2x＋y＝4\nx−y＝−1",
+      "choices": [
+        "x＝3",
+        "3x＝5",
+        "3x＝4",
+        "3x＝3"
+      ]
+    },
+    {
+      "id": "jr_math_sequence_quadratic_factor:step:1",
+      "prompt": "x²−6x＋8＝0",
+      "choices": [
+        "(x−2)(x−4)＝0",
+        "(x＋2)(x＋4)＝0",
+        "(x＋2)(x−4)＝0",
+        "(x−6)(x−8)＝0"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "panelHeight": 300.28125,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "直線が(0,2)，(3,11)を通る。傾きは？",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "4",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "2",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "5",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 320,
+      "focus": false,
+      "id": "jr_math_sequence_function:step:1"
+    },
+    {
+      "panelHeight": 312.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "2/√2",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "2/(√2×√2)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2＋1)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2×2)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(√2×√2)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 320,
+      "focus": false,
+      "id": "jr_math_sequence_rationalize:step:1"
+    },
+    {
+      "panelHeight": 263.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "3x＝6",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "x＝-2",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝6",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝2",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 320,
+      "focus": false,
+      "id": "jr_math_sequence_substitution:step:3"
+    },
+    {
+      "panelHeight": 263.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "2x＋y＝4\nx−y＝−1",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "x＝3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝5",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝4",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 320,
+      "focus": false,
+      "id": "jr_math_sequence_elimination:step:1"
+    },
+    {
+      "panelHeight": 312.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "x²−6x＋8＝0",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "(x−2)(x−4)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x＋4)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x−4)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x−6)(x−8)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 320,
+      "focus": false,
+      "id": "jr_math_sequence_quadratic_factor:step:1"
+    },
+    {
+      "panelHeight": 290.28125,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "直線が(0,2)，(3,11)を通る。傾きは？",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "4",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "2",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "5",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 320,
+      "focus": true,
+      "id": "jr_math_sequence_function:step:1"
+    },
+    {
+      "panelHeight": 302.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "2/√2",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "2/(√2×√2)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2＋1)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2×2)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(√2×√2)",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 320,
+      "focus": true,
+      "id": "jr_math_sequence_rationalize:step:1"
+    },
+    {
+      "panelHeight": 253.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "3x＝6",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "x＝-2",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝6",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝2",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 320,
+      "focus": true,
+      "id": "jr_math_sequence_substitution:step:3"
+    },
+    {
+      "panelHeight": 253.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "2x＋y＝4\nx−y＝−1",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "x＝3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝5",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝4",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝3",
+          "width": 60,
+          "scrollWidth": 60,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 320,
+      "focus": true,
+      "id": "jr_math_sequence_elimination:step:1"
+    },
+    {
+      "panelHeight": 302.984375,
+      "panelWidth": 286,
+      "panelScrollWidth": 286,
+      "prompt": "x²−6x＋8＝0",
+      "promptWidth": 262,
+      "promptScrollWidth": 262,
+      "choices": [
+        {
+          "text": "(x−2)(x−4)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x＋4)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x−4)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x−6)(x−8)＝0",
+          "width": 127,
+          "scrollWidth": 127,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 320,
+      "focus": true,
+      "id": "jr_math_sequence_quadratic_factor:step:1"
+    },
+    {
+      "panelHeight": 300.28125,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "直線が(0,2)，(3,11)を通る。傾きは？",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "4",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "2",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "5",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 390,
+      "focus": false,
+      "id": "jr_math_sequence_function:step:1"
+    },
+    {
+      "panelHeight": 312.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "2/√2",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "2/(√2×√2)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2＋1)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2×2)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(√2×√2)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 390,
+      "focus": false,
+      "id": "jr_math_sequence_rationalize:step:1"
+    },
+    {
+      "panelHeight": 263.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "3x＝6",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "x＝-2",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝6",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝2",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 390,
+      "focus": false,
+      "id": "jr_math_sequence_substitution:step:3"
+    },
+    {
+      "panelHeight": 263.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "2x＋y＝4\nx−y＝−1",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "x＝3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝5",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝4",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 390,
+      "focus": false,
+      "id": "jr_math_sequence_elimination:step:1"
+    },
+    {
+      "panelHeight": 312.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "x²−6x＋8＝0",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "(x−2)(x−4)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x＋4)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x−4)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x−6)(x−8)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 390,
+      "focus": false,
+      "id": "jr_math_sequence_quadratic_factor:step:1"
+    },
+    {
+      "panelHeight": 290.28125,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "直線が(0,2)，(3,11)を通る。傾きは？",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "4",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "2",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "5",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 390,
+      "focus": true,
+      "id": "jr_math_sequence_function:step:1"
+    },
+    {
+      "panelHeight": 302.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "2/√2",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "2/(√2×√2)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2＋1)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(2×2)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "2√2/(√2×√2)",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 390,
+      "focus": true,
+      "id": "jr_math_sequence_rationalize:step:1"
+    },
+    {
+      "panelHeight": 253.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "3x＝6",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "x＝-2",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝6",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "x＝2",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 390,
+      "focus": true,
+      "id": "jr_math_sequence_substitution:step:3"
+    },
+    {
+      "panelHeight": 253.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "2x＋y＝4\nx−y＝−1",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "x＝3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝5",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝4",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        },
+        {
+          "text": "3x＝3",
+          "width": 77,
+          "scrollWidth": 77,
+          "height": 62,
+          "scrollHeight": 62
+        }
+      ],
+      "width": 390,
+      "focus": true,
+      "id": "jr_math_sequence_elimination:step:1"
+    },
+    {
+      "panelHeight": 302.984375,
+      "panelWidth": 356,
+      "panelScrollWidth": 356,
+      "prompt": "x²−6x＋8＝0",
+      "promptWidth": 332,
+      "promptScrollWidth": 332,
+      "choices": [
+        {
+          "text": "(x−2)(x−4)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x＋4)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x＋2)(x−4)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        },
+        {
+          "text": "(x−6)(x−8)＝0",
+          "width": 162,
+          "scrollWidth": 162,
+          "height": 52,
+          "scrollHeight": 52
+        }
+      ],
+      "width": 390,
+      "focus": true,
+      "id": "jr_math_sequence_quadratic_factor:step:1"
+    }
+  ],
+  "maxPanelHeight": 312.984375,
+  "overflow": false,
+  "note": "Long math formulas were changed from four to two columns after visual inspection showed awkward internal wrapping. Screenshots inspected at 320px. No change to other subjects."
+}

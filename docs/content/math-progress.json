@@ -1,0 +1,345 @@
+{
+  "version": "0.89.0",
+  "date": "2026-11-10",
+  "materials": 144,
+  "generated": 176,
+  "scope": "短い連続解法を主軸にする実装の第1弾。公式小項目の最終照合や全単元の完了判断は未実施。",
+  "grades": {
+    "中1": {
+      "materials": 45,
+      "generated": 53
+    },
+    "中2": {
+      "materials": 52,
+      "generated": 63
+    },
+    "中3": {
+      "materials": 47,
+      "generated": 60
+    }
+  },
+  "sequences": [
+    {
+      "id": "jr_math_sequence_signed",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "正負の数",
+      "title": "負の数の減法と加法",
+      "stages": 2,
+      "skills": [
+        "負の数の減法",
+        "正負の加法"
+      ],
+      "numericalVariants": 16
+    },
+    {
+      "id": "jr_math_sequence_distribute",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "文字式",
+      "title": "分配と同類項の整理",
+      "stages": 2,
+      "skills": [
+        "分配法則",
+        "同類項の整理"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_linear",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "一次方程式",
+      "title": "括弧を含む一次方程式",
+      "stages": 3,
+      "skills": [
+        "分配法則",
+        "移項と整理",
+        "係数による除法"
+      ],
+      "numericalVariants": 18
+    },
+    {
+      "id": "jr_math_sequence_fraction_equation",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "一次方程式",
+      "title": "分数を含む一次方程式",
+      "stages": 2,
+      "skills": [
+        "分母払い",
+        "等式の性質"
+      ],
+      "numericalVariants": 9
+    },
+    {
+      "id": "jr_math_sequence_proportion",
+      "grade": "中1",
+      "field": "関数",
+      "unit": "比例と反比例",
+      "title": "比例の式と代入",
+      "stages": 2,
+      "skills": [
+        "比例の立式",
+        "代入"
+      ],
+      "numericalVariants": 12
+    },
+    {
+      "id": "jr_math_sequence_inverse",
+      "grade": "中1",
+      "field": "関数",
+      "unit": "比例と反比例",
+      "title": "反比例の式と代入",
+      "stages": 2,
+      "skills": [
+        "反比例の立式",
+        "反比例の代入"
+      ],
+      "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_mean",
+      "grade": "中1",
+      "field": "データの活用",
+      "unit": "データの活用",
+      "title": "合計から平均値へ",
+      "stages": 2,
+      "skills": [
+        "データの合計",
+        "平均値"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_monomial",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "式の計算",
+      "title": "単項式の乗法と除法",
+      "stages": 2,
+      "skills": [
+        "単項式の乗法",
+        "単項式の除法"
+      ],
+      "numericalVariants": 5
+    },
+    {
+      "id": "jr_math_sequence_elimination",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "連立方程式",
+      "title": "加減法から解の確認へ",
+      "stages": 3,
+      "skills": [
+        "加減法",
+        "係数による除法",
+        "連立の解の確定"
+      ],
+      "numericalVariants": 5
+    },
+    {
+      "id": "jr_math_sequence_substitution",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "連立方程式",
+      "title": "代入法から解の確認へ",
+      "stages": 4,
+      "skills": [
+        "代入法",
+        "同類項と移項",
+        "係数による除法",
+        "連立の解の確定"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_function",
+      "grade": "中2",
+      "field": "関数",
+      "unit": "一次関数",
+      "title": "二点から一次関数へ",
+      "stages": 2,
+      "skills": [
+        "変化の割合",
+        "一次関数の決定"
+      ],
+      "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_intersection",
+      "grade": "中2",
+      "field": "関数",
+      "unit": "一次関数",
+      "title": "直線の交点を求める",
+      "stages": 3,
+      "skills": [
+        "交点の立式",
+        "交点のx座標",
+        "交点の座標"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_probability",
+      "grade": "中2",
+      "field": "データの活用",
+      "unit": "確率",
+      "title": "場合の数から確率へ",
+      "stages": 2,
+      "skills": [
+        "場合の数",
+        "確率の比"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_expansion",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "二つの括弧の展開と整理",
+      "stages": 2,
+      "skills": [
+        "多項式の乗法",
+        "展開後の整理"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_factor",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "共通因数から因数分解へ",
+      "stages": 2,
+      "skills": [
+        "共通因数",
+        "二次式の因数分解"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_difference",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "平方の差から方程式へ",
+      "stages": 2,
+      "skills": [
+        "平方の差",
+        "積が0の性質"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_radical",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "平方根",
+      "title": "根号の整理から加法へ",
+      "stages": 2,
+      "skills": [
+        "平方根の簡単化",
+        "平方根の加法"
+      ],
+      "numericalVariants": 9
+    },
+    {
+      "id": "jr_math_sequence_rationalize",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "平方根",
+      "title": "有理化と根号の積",
+      "stages": 2,
+      "skills": [
+        "分母の有理化",
+        "平方根の乗法"
+      ],
+      "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_quadratic_factor",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "二次方程式",
+      "title": "因数分解から二次方程式の解へ",
+      "stages": 2,
+      "skills": [
+        "二次方程式の因数分解",
+        "二次方程式の解"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_quadratic_square",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "二次方程式",
+      "title": "平方完成から二つの解へ",
+      "stages": 3,
+      "skills": [
+        "平方完成",
+        "平方根からの解",
+        "二つの解の整理"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_similarity",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "相似",
+      "title": "相似比から長さへ",
+      "stages": 2,
+      "skills": [
+        "相似比の立式",
+        "相似の長さ"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_pythagoras",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "三平方の定理",
+      "title": "直角三角形の斜辺を求める",
+      "stages": 3,
+      "skills": [
+        "三平方の立式",
+        "平方の計算",
+        "長さと平方根"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_angle",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "円",
+      "title": "円周角から中心角へ",
+      "stages": 2,
+      "skills": [
+        "円周角の定理",
+        "角度の計算"
+      ],
+      "numericalVariants": 5
+    },
+    {
+      "id": "jr_math_sequence_sampling",
+      "grade": "中3",
+      "field": "データの活用",
+      "unit": "標本調査",
+      "title": "標本の割合から母集団へ",
+      "stages": 2,
+      "skills": [
+        "標本の割合",
+        "母集団の推定"
+      ],
+      "numericalVariants": 6
+    }
+  ],
+  "sequenceMaterials": 24,
+  "sequenceStages": 55,
+  "numericalVariants": 165
+}

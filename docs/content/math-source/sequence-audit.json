@@ -1,0 +1,44 @@
+{
+  "version": "0.89.0",
+  "date": "2026-11-10",
+  "batch": "math-sequences-20261110",
+  "newMaterials": 72,
+  "newGeneratedQuestions": 103,
+  "sequenceMaterials": 24,
+  "sequenceStages": 55,
+  "individualQuestions": 48,
+  "mathMaterials": 144,
+  "mathGeneratedQuestions": 176,
+  "numericalVariants": 165,
+  "symbolicStageChecks": 384,
+  "symbolicReport": {
+    "variants": 165,
+    "stages": 384,
+    "errors": []
+  },
+  "budget": {
+    "materials": 72,
+    "presentations": 432,
+    "maxima": {
+      "task": 11,
+      "prompt": 23,
+      "choice": 14,
+      "targetLabel": 15,
+      "note": 16,
+      "combined": 68
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "existingMathContentsUnchanged": true,
+  "otherSubjectContentsUnchanged": true,
+  "runtimeChanges": [
+    "New finite sequence generator and atomic unit materialization",
+    "Updated prompt reading/reveal for math continuations only",
+    "Per-stage feedback explanation and long formula columns",
+    "New pure module registered for offline cache"
+  ],
+  "focusedChecks": "Nine new sequence tests; existing numerical/history/cache checks passed, excluding five-minute reference simulation. Obsolete fixed inventory assertion in one history test replaced with semantic checks. No full app suite or five-minute simulation.",
+  "layoutReview": "layout-review.json",
+  "status": "Math expansion continues; official-subitem audit not yet completed."
+}

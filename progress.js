@@ -1,5 +1,6 @@
-import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.88.0';
-import { materializeMathItem } from './math-variants.js?v=0.88.0';
+import { makeMathSequenceQuestions } from './math-sequences.js?v=0.89.0';
+import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.89.0';
+import { materializeMathItem } from './math-variants.js?v=0.89.0';
 // Local learning history. Practice and music-play records stay distinct.
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
@@ -197,6 +198,13 @@ export function createAdaptivePicker(questions, getHistory, random=Math.random, 
     const unit=tied[Math.floor(random()*tied.length)].unit;
     if(getSessionResults)for(const q of unit)seen.add(questionKey(q));
     recentSources.push(unit[0].sourceId);if(recentSources.length>3)recentSources.shift();
+    // Materialize the entire chain once: rematerializing each step mixes numbers.
+    if(unit[0].mode==='math_sequence'){
+      const first=unit[0],key=questionKey(first),previous=lastVariants.get(key)||index.state.questions[key]?.variant?.signature;
+      const chain=makeMathSequenceQuestions(first.sequenceSource,random,previous);
+      lastVariants.set(key,chain[0].variant.signature);
+      return chain;
+    }
     // Keep stable identities but shuffle the color positions on every appearance.
     return unit.map(q=>{
       if(q.numeric_generator || q.presentations?.length){
