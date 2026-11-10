@@ -1,0 +1,53 @@
+{
+  "version": "0.91.0",
+  "date": "2026-11-10",
+  "batch": "math-completion-20261110",
+  "newMaterials": 115,
+  "newGeneratedQuestions": 134,
+  "sequenceMaterials": 16,
+  "sequenceStages": 35,
+  "individualQuestions": 99,
+  "mathMaterials": 323,
+  "mathGeneratedQuestions": 405,
+  "allSequenceMaterials": 64,
+  "allSequenceStages": 145,
+  "allNumericalVariants": 388,
+  "newNumericalVariants": 76,
+  "symbolicStageChecks": 173,
+  "symbolicReport": {
+    "variants": 76,
+    "stages": 173,
+    "errors": []
+  },
+  "budget": {
+    "materials": 115,
+    "presentations": 272,
+    "maxima": {
+      "task": 11,
+      "prompt": 23,
+      "choice": 13,
+      "targetLabel": 15,
+      "note": 16,
+      "combined": 67
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "existingMathContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "newLayoutReviewNeeded": false,
+  "reusedLayoutReview": "layout-review.json",
+  "runtimeChanges": "Additional finite generator definitions only; progression, scoring, persistence and layout unchanged. Version URLs aligned.",
+  "curriculumReview": {
+    "total": 107,
+    "knowledgeAndSkills": 55,
+    "thinkingJudgmentExpression": 43,
+    "mathematicalActivities": 9,
+    "handling": 11,
+    "terminologyGroups": 10,
+    "unresolvedSelectors": []
+  },
+  "focusedChecks": "New JSON/IDs/required fields/four choices/conditions/text envelope and finite numerical algebra plus old-object preservation and authored curriculum evidence only. No browser, full app tests or five-minute simulation.",
+  "references": "completion-references.json",
+  "completion": "Basic memory, short sequential techniques and judgment complete as an authoring milestone. All-exam coverage and practical skills excluded."
+}

@@ -1,21 +1,21 @@
 {
-  "version": "0.90.0",
+  "version": "0.91.0",
   "date": "2026-11-10",
-  "materials": 208,
-  "generated": 271,
-  "scope": "短い連続解法の補強段階。公式の23区分で残作業を整理済み。公式小項目の最終照合と全体の完了判断は次段階。",
+  "materials": 323,
+  "generated": 405,
+  "scope": "公式内容と取扱いの照合を終え、暗記・短い連続解法・判断の基礎版整備を一区切り。全入試や実技能の網羅とは区別する。",
   "grades": {
     "中1": {
-      "materials": 67,
-      "generated": 84
+      "materials": 119,
+      "generated": 146
     },
     "中2": {
-      "materials": 71,
-      "generated": 91
+      "materials": 102,
+      "generated": 124
     },
     "中3": {
-      "materials": 70,
-      "generated": 96
+      "materials": 102,
+      "generated": 135
     }
   },
   "sequences": [
@@ -656,9 +656,220 @@
         "長さの解の選択"
       ],
       "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_prime_factorization",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "正負の数",
+      "title": "自然数を素因数分解する",
+      "stages": 3,
+      "skills": [
+        "素因数分解の開始",
+        "素因数の取り出し",
+        "素因数分解の完了"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_proportional_equation",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "一次方程式",
+      "title": "比例式から解へ",
+      "stages": 2,
+      "skills": [
+        "比例式の分母払い",
+        "比例式の解"
+      ],
+      "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_linear_word_model",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "一次方程式",
+      "title": "文章から方程式を立てて解く",
+      "stages": 3,
+      "skills": [
+        "文章から一次方程式へ",
+        "文章題の方程式の整理",
+        "文章題の解"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_sector_area",
+      "grade": "中1",
+      "field": "図形",
+      "unit": "平面図形",
+      "title": "扇形の面積を求める",
+      "stages": 2,
+      "skills": [
+        "扇形の面積の立式",
+        "扇形の面積の計算"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_sphere_area",
+      "grade": "中1",
+      "field": "図形",
+      "unit": "空間図形",
+      "title": "球の表面積を求める",
+      "stages": 2,
+      "skills": [
+        "球の表面積の立式",
+        "球の表面積の計算"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_sphere_volume",
+      "grade": "中1",
+      "field": "図形",
+      "unit": "空間図形",
+      "title": "球の体積を求める",
+      "stages": 2,
+      "skills": [
+        "球の体積の立式",
+        "球の体積の計算"
+      ],
+      "numericalVariants": 2
+    },
+    {
+      "id": "jr_math_sequence_cumulative_frequency",
+      "grade": "中1",
+      "field": "データの活用",
+      "unit": "データの活用",
+      "title": "累積度数から累積相対度数へ",
+      "stages": 2,
+      "skills": [
+        "累積度数",
+        "累積相対度数"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_experiment_probability",
+      "grade": "中1",
+      "field": "データの活用",
+      "unit": "実験的確率",
+      "title": "試行の回数から確率の目安へ",
+      "stages": 2,
+      "skills": [
+        "実験的確率の見積り",
+        "実験的確率と相対度数"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_integer_proof",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "式の計算",
+      "title": "文字式から整数の性質を説明",
+      "stages": 2,
+      "skills": [
+        "文字による整数の説明",
+        "整数の性質の結論"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_quartiles",
+      "grade": "中2",
+      "field": "データの活用",
+      "unit": "箱ひげ図",
+      "title": "四分位数から四分位範囲へ",
+      "stages": 2,
+      "skills": [
+        "四分位数の位置",
+        "四分位範囲"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_polynomial_divide",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "多項式を単項式で割る",
+      "stages": 2,
+      "skills": [
+        "多項式の除法",
+        "多項式の除法の整理"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_monomial_distribute",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "単項式と多項式の積を整理",
+      "stages": 2,
+      "skills": [
+        "単項式と多項式の積",
+        "展開後の同類項"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_irrational_quadratic",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "二次方程式",
+      "title": "根号が残る二次方程式",
+      "stages": 3,
+      "skills": [
+        "根号が残る平方完成",
+        "無理数の二つの解",
+        "根号を含む解の整理"
+      ],
+      "numericalVariants": 10
+    },
+    {
+      "id": "jr_math_sequence_similarity_area",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "相似",
+      "title": "相似比から面積へ",
+      "stages": 2,
+      "skills": [
+        "相似比から面積の立式",
+        "相似な図形の面積"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_similarity_volume",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "相似",
+      "title": "相似比から体積へ",
+      "stages": 2,
+      "skills": [
+        "相似比から体積の立式",
+        "相似な立体の体積"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_midsegment",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "相似",
+      "title": "中点を結ぶ線分の長さ",
+      "stages": 2,
+      "skills": [
+        "中点連結定理の立式",
+        "中点連結線の長さ"
+      ],
+      "numericalVariants": 3
     }
   ],
-  "sequenceMaterials": 48,
-  "sequenceStages": 110,
-  "numericalVariants": 312
+  "sequenceMaterials": 64,
+  "sequenceStages": 145,
+  "numericalVariants": 388
 }

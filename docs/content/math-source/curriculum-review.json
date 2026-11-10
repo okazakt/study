@@ -1,0 +1,3349 @@
+{
+  "version": "0.91.0",
+  "date": "2026-11-10",
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+    "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+    "retrieved": "2026-11-10",
+    "sha256": "849e254fd907721f069ae601e18db0c44ae5b79a5ea8394675f18f867d9d237e",
+    "locator": "付録3、第2 各学年の目標及び内容。印刷頁190〜198。",
+    "verification": "取得したPDF本文の各学年の内容・用語記号・取扱い・数学的活動を読み、編集用の要約と代表出題IDを対応。",
+    "reviewed": "2026-11-10"
+  },
+  "scope": "各学年「2 内容」の知識技能・思考判断表現の最下位項目と数学的活動を編集単位として照合。出題先の存在は全語句・全入試や実技能の網羅・習得を表さない。",
+  "countingRule": "知識技能55・思考判断表現43の98小項目と数学的活動9の計107編集行。下位の全語句・指導例の母数や公式の達成率ではない。",
+  "counts": {
+    "total": 107,
+    "byGrade": {
+      "中1": 37,
+      "中2": 33,
+      "中3": 37
+    },
+    "byCategory": {
+      "知識・技能": 55,
+      "思考・判断・表現": 43,
+      "数学的活動": 9
+    }
+  },
+  "rows": [
+    {
+      "id": "中1.A1.ア-ア",
+      "grade": "中1",
+      "block": "A1",
+      "officialItem": "ア-ア",
+      "point": "正負の数の必要性と意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:自然数から整数へ",
+          "sourceIds": [
+            "jr_math_judgment_322bd4b26b8b"
+          ]
+        },
+        {
+          "selector": "P:絶対値が3の数",
+          "sourceIds": [
+            "jr_math_judgment_873f18074303"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_322bd4b26b8b",
+        "jr_math_judgment_873f18074303"
+      ],
+      "outsideGame": "数直線や具体物での表現"
+    },
+    {
+      "id": "中1.A1.ア-イ",
+      "grade": "中1",
+      "block": "A1",
+      "officialItem": "ア-イ",
+      "point": "正負の数の四則計算",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:signed",
+          "sourceIds": [
+            "jr_math_sequence_signed"
+          ]
+        },
+        {
+          "selector": "P:計算の結果が正",
+          "sourceIds": [
+            "jr_math_judgment_63c31efa39a4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_signed",
+        "jr_math_judgment_63c31efa39a4"
+      ],
+      "outsideGame": "自力の四則計算"
+    },
+    {
+      "id": "中1.A1.ア-ウ",
+      "grade": "中1",
+      "block": "A1",
+      "officialItem": "ア-ウ",
+      "point": "具体場面で正負の数を使う",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:標高の基準値",
+          "sourceIds": [
+            "jr_math_judgment_e79c4ca26aa7"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_e79c4ca26aa7"
+      ],
+      "outsideGame": "実場面の数量を自分で数式化"
+    },
+    {
+      "id": "中1.A1.イ-ア",
+      "grade": "中1",
+      "block": "A1",
+      "officialItem": "イ-ア",
+      "point": "既習計算と結び付け方法を考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:signed",
+          "sourceIds": [
+            "jr_math_sequence_signed"
+          ]
+        },
+        {
+          "selector": "P:a−(−b)",
+          "sourceIds": [
+            "jr_math_core_subtract_negative"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_signed",
+        "jr_math_core_subtract_negative"
+      ],
+      "outsideGame": "計算方法の自由な説明"
+    },
+    {
+      "id": "中1.A1.イ-イ",
+      "grade": "中1",
+      "block": "A1",
+      "officialItem": "イ-イ",
+      "point": "正負の数の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:標高の基準値",
+          "sourceIds": [
+            "jr_math_judgment_e79c4ca26aa7"
+          ]
+        },
+        {
+          "selector": "P:−4と3の距離",
+          "sourceIds": [
+            "jr_math_judgment_78fad8d8bf3c"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_e79c4ca26aa7",
+        "jr_math_judgment_78fad8d8bf3c"
+      ],
+      "outsideGame": "新しい場面での立式と検討"
+    },
+    {
+      "id": "中1.A2.ア-ア",
+      "grade": "中1",
+      "block": "A2",
+      "officialItem": "ア-ア",
+      "point": "文字式の必要性と意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:文字で数量を表す利点",
+          "sourceIds": [
+            "jr_math_judgment_99933620db4d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_99933620db4d"
+      ],
+      "outsideGame": "数量関係の一般化と説明"
+    },
+    {
+      "id": "中1.A2.ア-イ",
+      "grade": "中1",
+      "block": "A2",
+      "officialItem": "ア-イ",
+      "point": "文字式の乗除の表し方",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:a×b×b",
+          "sourceIds": [
+            "jr_math_judgment_95f17338f25f"
+          ]
+        },
+        {
+          "selector": "P:a÷(b×c)",
+          "sourceIds": [
+            "jr_math_judgment_ce72c7c73726"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_95f17338f25f",
+        "jr_math_judgment_ce72c7c73726"
+      ],
+      "outsideGame": "式を自分で書く練習"
+    },
+    {
+      "id": "中1.A2.ア-ウ",
+      "grade": "中1",
+      "block": "A2",
+      "officialItem": "ア-ウ",
+      "point": "簡単な一次式の加減",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:distribute",
+          "sourceIds": [
+            "jr_math_sequence_distribute"
+          ]
+        },
+        {
+          "selector": "S:fraction_add",
+          "sourceIds": [
+            "jr_math_sequence_fraction_add"
+          ]
+        },
+        {
+          "selector": "S:fraction_subtract",
+          "sourceIds": [
+            "jr_math_sequence_fraction_subtract"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_distribute",
+        "jr_math_sequence_fraction_add",
+        "jr_math_sequence_fraction_subtract"
+      ],
+      "outsideGame": "自力の式の計算"
+    },
+    {
+      "id": "中1.A2.ア-エ",
+      "grade": "中1",
+      "block": "A2",
+      "officialItem": "ア-エ",
+      "point": "関係を式に表し読み取る",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:定価x円",
+          "sourceIds": [
+            "jr_math_judgment_b0a9ab232d95"
+          ]
+        },
+        {
+          "selector": "P:x円の品物を買い",
+          "sourceIds": [
+            "jr_math_judgment_bf8048bc9da1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_b0a9ab232d95",
+        "jr_math_judgment_bf8048bc9da1"
+      ],
+      "outsideGame": "様々な文脈の立式と読解"
+    },
+    {
+      "id": "中1.A2.イ-ア",
+      "grade": "中1",
+      "block": "A2",
+      "officialItem": "イ-ア",
+      "point": "一次式の加減の方法を考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:distribute",
+          "sourceIds": [
+            "jr_math_sequence_distribute"
+          ]
+        },
+        {
+          "selector": "S:evaluate_negative",
+          "sourceIds": [
+            "jr_math_sequence_evaluate_negative"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_distribute",
+        "jr_math_sequence_evaluate_negative"
+      ],
+      "outsideGame": "計算の根拠を説明する活動"
+    },
+    {
+      "id": "中1.A3.ア-ア",
+      "grade": "中1",
+      "block": "A3",
+      "officialItem": "ア-ア",
+      "point": "方程式・文字・解の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:方程式と恒等式",
+          "sourceIds": [
+            "jr_math_judgment_d41150d877a1"
+          ]
+        },
+        {
+          "selector": "P:方程式の解を確かめる",
+          "sourceIds": [
+            "jr_math_judgment_62104dac6371"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_d41150d877a1",
+        "jr_math_judgment_62104dac6371"
+      ],
+      "outsideGame": "解の意味の自分の言葉での説明"
+    },
+    {
+      "id": "中1.A3.ア-イ",
+      "grade": "中1",
+      "block": "A3",
+      "officialItem": "ア-イ",
+      "point": "一元一次方程式を解く",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:linear",
+          "sourceIds": [
+            "jr_math_sequence_linear"
+          ]
+        },
+        {
+          "selector": "S:decimal_equation",
+          "sourceIds": [
+            "jr_math_sequence_decimal_equation"
+          ]
+        },
+        {
+          "selector": "S:proportional_equation",
+          "sourceIds": [
+            "jr_math_sequence_proportional_equation"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_linear",
+        "jr_math_sequence_decimal_equation",
+        "jr_math_sequence_proportional_equation"
+      ],
+      "outsideGame": "方程式の自力完答"
+    },
+    {
+      "id": "中1.A3.イ-ア",
+      "grade": "中1",
+      "block": "A3",
+      "officialItem": "イ-ア",
+      "point": "等式の性質による解法の考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:fraction_equation",
+          "sourceIds": [
+            "jr_math_sequence_fraction_equation"
+          ]
+        },
+        {
+          "selector": "S:equation_two_sides",
+          "sourceIds": [
+            "jr_math_sequence_equation_two_sides"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_fraction_equation",
+        "jr_math_sequence_equation_two_sides"
+      ],
+      "outsideGame": "式変形の根拠を自由に説明"
+    },
+    {
+      "id": "中1.A3.イ-イ",
+      "grade": "中1",
+      "block": "A3",
+      "officialItem": "イ-イ",
+      "point": "一元一次方程式の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:linear_word_model",
+          "sourceIds": [
+            "jr_math_sequence_linear_word_model"
+          ]
+        },
+        {
+          "selector": "P:人数の解が−2",
+          "sourceIds": [
+            "jr_math_judgment_394e6b1e5f93"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_linear_word_model",
+        "jr_math_judgment_394e6b1e5f93"
+      ],
+      "outsideGame": "未知の文章題の立式と条件確認"
+    },
+    {
+      "id": "中1.B1.ア-ア",
+      "grade": "中1",
+      "block": "B1",
+      "officialItem": "ア-ア",
+      "point": "基本作図の方法",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:垂直二等分線を作図",
+          "sourceIds": [
+            "jr_math_judgment_12224e169edb"
+          ]
+        },
+        {
+          "selector": "P:角の二等分線の作図",
+          "sourceIds": [
+            "jr_math_judgment_5eacf97f4578"
+          ]
+        },
+        {
+          "selector": "P:直線上の点に垂線",
+          "sourceIds": [
+            "jr_math_judgment_849a9f720b6e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_12224e169edb",
+        "jr_math_judgment_5eacf97f4578",
+        "jr_math_judgment_849a9f720b6e"
+      ],
+      "outsideGame": "コンパス・定規による実作図"
+    },
+    {
+      "id": "中1.B1.ア-イ",
+      "grade": "中1",
+      "block": "B1",
+      "officialItem": "ア-イ",
+      "point": "平行・対称・回転移動",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:平行移動で変わらない",
+          "sourceIds": [
+            "jr_math_judgment_9a9a627f39d0"
+          ]
+        },
+        {
+          "selector": "P:対称移動の対応点から",
+          "sourceIds": [
+            "jr_math_judgment_b6f95087f92c"
+          ]
+        },
+        {
+          "selector": "P:回転移動で対応点",
+          "sourceIds": [
+            "jr_math_judgment_ef521b6150cf"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_9a9a627f39d0",
+        "jr_math_judgment_b6f95087f92c",
+        "jr_math_judgment_ef521b6150cf"
+      ],
+      "outsideGame": "実際の図形移動と作図"
+    },
+    {
+      "id": "中1.B1.イ-ア",
+      "grade": "中1",
+      "block": "B1",
+      "officialItem": "イ-ア",
+      "point": "図形の性質から作図方法を考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:垂直二等分線の円弧",
+          "sourceIds": [
+            "jr_math_judgment_5c7b6302c85e"
+          ]
+        },
+        {
+          "selector": "P:直線上の点に垂線",
+          "sourceIds": [
+            "jr_math_judgment_849a9f720b6e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_5c7b6302c85e",
+        "jr_math_judgment_849a9f720b6e"
+      ],
+      "outsideGame": "作図が成立する理由の説明"
+    },
+    {
+      "id": "中1.B1.イ-イ",
+      "grade": "中1",
+      "block": "B1",
+      "officialItem": "イ-イ",
+      "point": "移動で図形の関係を考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:対称移動の対応点から",
+          "sourceIds": [
+            "jr_math_judgment_b6f95087f92c"
+          ]
+        },
+        {
+          "selector": "P:回転移動で対応点",
+          "sourceIds": [
+            "jr_math_judgment_ef521b6150cf"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_b6f95087f92c",
+        "jr_math_judgment_ef521b6150cf"
+      ],
+      "outsideGame": "複数図形の実比較と作図"
+    },
+    {
+      "id": "中1.B1.イ-ウ",
+      "grade": "中1",
+      "block": "B1",
+      "officialItem": "イ-ウ",
+      "point": "作図と移動の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:円の接線と接点",
+          "sourceIds": [
+            "jr_math_judgment_5bec627ab18b"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_perpendicular_bisector",
+          "sourceIds": [
+            "jr_math_core_perpendicular_bisector"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_5bec627ab18b",
+        "jr_math_core_perpendicular_bisector"
+      ],
+      "outsideGame": "現実の配置問題・作図"
+    },
+    {
+      "id": "中1.B2.ア-ア",
+      "grade": "中1",
+      "block": "B2",
+      "officialItem": "ア-ア",
+      "point": "空間の直線・平面の位置関係",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:ねじれの位置に",
+          "sourceIds": [
+            "jr_math_judgment_c5381e462997"
+          ]
+        },
+        {
+          "selector": "P:平面に垂直な直線",
+          "sourceIds": [
+            "jr_math_judgment_29856cf69aab"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_c5381e462997",
+        "jr_math_judgment_29856cf69aab"
+      ],
+      "outsideGame": "立体模型や空間図の実読取り"
+    },
+    {
+      "id": "中1.B2.ア-イ",
+      "grade": "中1",
+      "block": "B2",
+      "officialItem": "ア-イ",
+      "point": "扇形・柱体・錐体・球の計量",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:sector_area",
+          "sourceIds": [
+            "jr_math_sequence_sector_area"
+          ]
+        },
+        {
+          "selector": "S:sector_arc",
+          "sourceIds": [
+            "jr_math_sequence_sector_arc"
+          ]
+        },
+        {
+          "selector": "S:cylinder_volume",
+          "sourceIds": [
+            "jr_math_sequence_cylinder_volume"
+          ]
+        },
+        {
+          "selector": "S:cone_volume",
+          "sourceIds": [
+            "jr_math_sequence_cone_volume"
+          ]
+        },
+        {
+          "selector": "S:sphere_area",
+          "sourceIds": [
+            "jr_math_sequence_sphere_area"
+          ]
+        },
+        {
+          "selector": "S:sphere_volume",
+          "sourceIds": [
+            "jr_math_sequence_sphere_volume"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_sector_area",
+        "jr_math_sequence_sector_arc",
+        "jr_math_sequence_cylinder_volume",
+        "jr_math_sequence_cone_volume",
+        "jr_math_sequence_sphere_area",
+        "jr_math_sequence_sphere_volume"
+      ],
+      "outsideGame": "複合図形の自力計算"
+    },
+    {
+      "id": "中1.B2.イ-ア",
+      "grade": "中1",
+      "block": "B2",
+      "officialItem": "イ-ア",
+      "point": "運動による立体構成と平面上の表現",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:平面図形を面に垂直",
+          "sourceIds": [
+            "jr_math_judgment_4e0de1a75436"
+          ]
+        },
+        {
+          "selector": "P:半円をその直径",
+          "sourceIds": [
+            "jr_math_judgment_8f3d91d45027"
+          ]
+        },
+        {
+          "selector": "P:投影図の平面図",
+          "sourceIds": [
+            "jr_math_judgment_a8f40504283e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_4e0de1a75436",
+        "jr_math_judgment_8f3d91d45027",
+        "jr_math_judgment_a8f40504283e"
+      ],
+      "outsideGame": "見取図・展開図・投影図の作成"
+    },
+    {
+      "id": "中1.B2.イ-イ",
+      "grade": "中1",
+      "block": "B2",
+      "officialItem": "イ-イ",
+      "point": "立体の表面積・体積の求め方",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:立体の表面積を考える",
+          "sourceIds": [
+            "jr_math_judgment_0375a9f42c7a"
+          ]
+        },
+        {
+          "selector": "S:sphere_volume",
+          "sourceIds": [
+            "jr_math_sequence_sphere_volume"
+          ]
+        },
+        {
+          "selector": "P:半径r・高さhの円柱",
+          "sourceIds": [
+            "jr_math_judgment_dfdf7f83a94a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_0375a9f42c7a",
+        "jr_math_sequence_sphere_volume",
+        "jr_math_judgment_dfdf7f83a94a"
+      ],
+      "outsideGame": "展開図や分割からの説明"
+    },
+    {
+      "id": "中1.C1.ア-ア",
+      "grade": "中1",
+      "block": "C1",
+      "officialItem": "ア-ア",
+      "point": "関数関係の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:同じxに異なるy",
+          "sourceIds": [
+            "jr_math_judgment_5a9a185227ce"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_5a9a185227ce"
+      ],
+      "outsideGame": "様々な対応を自分で調べる"
+    },
+    {
+      "id": "中1.C1.ア-イ",
+      "grade": "中1",
+      "block": "C1",
+      "officialItem": "ア-イ",
+      "point": "比例と反比例",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:proportion",
+          "sourceIds": [
+            "jr_math_sequence_proportion"
+          ]
+        },
+        {
+          "selector": "S:inverse",
+          "sourceIds": [
+            "jr_math_sequence_inverse"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_proportion",
+        "jr_math_sequence_inverse"
+      ],
+      "outsideGame": "表・グラフによる関係の実比較"
+    },
+    {
+      "id": "中1.C1.ア-ウ",
+      "grade": "中1",
+      "block": "C1",
+      "officialItem": "ア-ウ",
+      "point": "座標の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:点(2,−3)",
+          "sourceIds": [
+            "jr_math_judgment_40559335e91f"
+          ]
+        },
+        {
+          "selector": "P:点(−2,3)",
+          "sourceIds": [
+            "jr_math_judgment_5165ca14440b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_40559335e91f",
+        "jr_math_judgment_5165ca14440b"
+      ],
+      "outsideGame": "座標平面への点の記入"
+    },
+    {
+      "id": "中1.C1.ア-エ",
+      "grade": "中1",
+      "block": "C1",
+      "officialItem": "ア-エ",
+      "point": "比例反比例を表式グラフに表す",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:proportion",
+          "sourceIds": [
+            "jr_math_sequence_proportion"
+          ]
+        },
+        {
+          "selector": "S:inverse",
+          "sourceIds": [
+            "jr_math_sequence_inverse"
+          ]
+        },
+        {
+          "selector": "P:反比例のグラフで",
+          "sourceIds": [
+            "jr_math_judgment_2fd5f378932e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_proportion",
+        "jr_math_sequence_inverse",
+        "jr_math_judgment_2fd5f378932e"
+      ],
+      "outsideGame": "表とグラフの作成"
+    },
+    {
+      "id": "中1.C1.イ-ア",
+      "grade": "中1",
+      "block": "C1",
+      "officialItem": "イ-ア",
+      "point": "変化と対応の特徴を見いだす",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:y＝6/xで",
+          "sourceIds": [
+            "jr_math_judgment_12b576a14ae7"
+          ]
+        },
+        {
+          "selector": "P:y＝−2xで",
+          "sourceIds": [
+            "jr_math_judgment_6dd5523732b6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_12b576a14ae7",
+        "jr_math_judgment_6dd5523732b6"
+      ],
+      "outsideGame": "表・式・グラフを結び付けた考察"
+    },
+    {
+      "id": "中1.C1.イ-イ",
+      "grade": "中1",
+      "block": "C1",
+      "officialItem": "イ-イ",
+      "point": "比例反比例の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:proportion",
+          "sourceIds": [
+            "jr_math_sequence_proportion"
+          ]
+        },
+        {
+          "selector": "P:同距離を進む速さ",
+          "sourceIds": [
+            "jr_math_judgment_0ca2d1991dea"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_proportion",
+        "jr_math_judgment_0ca2d1991dea"
+      ],
+      "outsideGame": "未知の生活場面の数学化"
+    },
+    {
+      "id": "中1.D1.ア-ア",
+      "grade": "中1",
+      "block": "D1",
+      "officialItem": "ア-ア",
+      "point": "ヒストグラム・相対度数の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "I:jr_math_core_histogram",
+          "sourceIds": [
+            "jr_math_core_histogram"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_relative_frequency",
+          "sourceIds": [
+            "jr_math_core_relative_frequency"
+          ]
+        },
+        {
+          "selector": "S:cumulative_frequency",
+          "sourceIds": [
+            "jr_math_sequence_cumulative_frequency"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_core_histogram",
+        "jr_math_core_relative_frequency",
+        "jr_math_sequence_cumulative_frequency"
+      ],
+      "outsideGame": "実際の分布図の読取り"
+    },
+    {
+      "id": "中1.D1.ア-イ",
+      "grade": "中1",
+      "block": "D1",
+      "officialItem": "ア-イ",
+      "point": "情報手段等で表やグラフに整理",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:度数分布表の階級",
+          "sourceIds": [
+            "jr_math_judgment_4aec3eb1cd1e"
+          ]
+        },
+        {
+          "selector": "S:cumulative_frequency",
+          "sourceIds": [
+            "jr_math_sequence_cumulative_frequency"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_4aec3eb1cd1e",
+        "jr_math_sequence_cumulative_frequency"
+      ],
+      "outsideGame": "表計算等の操作とグラフ作成"
+    },
+    {
+      "id": "中1.D1.イ-ア",
+      "grade": "中1",
+      "block": "D1",
+      "officialItem": "イ-ア",
+      "point": "データを収集分析し批判的に判断",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:平均だけで分布",
+          "sourceIds": [
+            "jr_math_judgment_2e8e1fbb5805"
+          ]
+        },
+        {
+          "selector": "P:割合で比較する理由",
+          "sourceIds": [
+            "jr_math_judgment_7cf7be5c6387"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_2e8e1fbb5805",
+        "jr_math_judgment_7cf7be5c6387"
+      ],
+      "outsideGame": "実データ収集・分析と説明"
+    },
+    {
+      "id": "中1.D2.ア-ア",
+      "grade": "中1",
+      "block": "D2",
+      "officialItem": "ア-ア",
+      "point": "多数回の試行による確率の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:experiment_probability",
+          "sourceIds": [
+            "jr_math_sequence_experiment_probability"
+          ]
+        },
+        {
+          "selector": "P:多数回試行した",
+          "sourceIds": [
+            "jr_math_judgment_a20a786fc316"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_experiment_probability",
+        "jr_math_judgment_a20a786fc316"
+      ],
+      "outsideGame": "実際の試行と記録"
+    },
+    {
+      "id": "中1.D2.イ-ア",
+      "grade": "中1",
+      "block": "D2",
+      "officialItem": "イ-ア",
+      "point": "試行結果から傾向を読み取る",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:試行回数を増やすと",
+          "sourceIds": [
+            "jr_math_judgment_0ec80114f69c"
+          ]
+        },
+        {
+          "selector": "P:200回中108回",
+          "sourceIds": [
+            "jr_math_judgment_e7b37c7fcccb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_0ec80114f69c",
+        "jr_math_judgment_e7b37c7fcccb"
+      ],
+      "outsideGame": "試行結果の図表整理と説明"
+    },
+    {
+      "id": "中1.X1.活動-ア",
+      "grade": "中1",
+      "block": "X1",
+      "officialItem": "活動-ア",
+      "point": "日常の数学化・解決過程の振返り",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:linear_word_model",
+          "sourceIds": [
+            "jr_math_sequence_linear_word_model"
+          ]
+        },
+        {
+          "selector": "P:人数の解が−2",
+          "sourceIds": [
+            "jr_math_judgment_394e6b1e5f93"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_linear_word_model",
+        "jr_math_judgment_394e6b1e5f93"
+      ],
+      "outsideGame": "実際の問題発見・解決・振返り"
+    },
+    {
+      "id": "中1.X1.活動-イ",
+      "grade": "中1",
+      "block": "X1",
+      "officialItem": "活動-イ",
+      "point": "数学の問題発見と統合発展",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:prime_factorization",
+          "sourceIds": [
+            "jr_math_sequence_prime_factorization"
+          ]
+        },
+        {
+          "selector": "S:distribute",
+          "sourceIds": [
+            "jr_math_sequence_distribute"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_prime_factorization",
+        "jr_math_sequence_distribute"
+      ],
+      "outsideGame": "自分で問題を見いだす活動"
+    },
+    {
+      "id": "中1.X1.活動-ウ",
+      "grade": "中1",
+      "block": "X1",
+      "officialItem": "活動-ウ",
+      "point": "筋道立てた説明と伝達",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:文字で数量を表す利点",
+          "sourceIds": [
+            "jr_math_judgment_99933620db4d"
+          ]
+        },
+        {
+          "selector": "P:計算の結果が正",
+          "sourceIds": [
+            "jr_math_judgment_63c31efa39a4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_99933620db4d",
+        "jr_math_judgment_63c31efa39a4"
+      ],
+      "outsideGame": "自分の考えの記述と伝え合い"
+    },
+    {
+      "id": "中2.A1.ア-ア",
+      "grade": "中2",
+      "block": "A1",
+      "officialItem": "ア-ア",
+      "point": "整式の加減・単項式の乗除",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:monomial",
+          "sourceIds": [
+            "jr_math_sequence_monomial"
+          ]
+        },
+        {
+          "selector": "P:2(x−y)−(x＋y)",
+          "sourceIds": [
+            "jr_math_judgment_4056154ba446"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_monomial",
+        "jr_math_judgment_4056154ba446"
+      ],
+      "outsideGame": "自力の式の計算"
+    },
+    {
+      "id": "中2.A1.ア-イ",
+      "grade": "中2",
+      "block": "A1",
+      "officialItem": "ア-イ",
+      "point": "数量関係の式の表現と読取り",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:単価100円と200円",
+          "sourceIds": [
+            "jr_math_judgment_64be46b154cc"
+          ]
+        },
+        {
+          "selector": "S:literal_formula",
+          "sourceIds": [
+            "jr_math_sequence_literal_formula"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_64be46b154cc",
+        "jr_math_sequence_literal_formula"
+      ],
+      "outsideGame": "未知の文脈の式化と読解"
+    },
+    {
+      "id": "中2.A1.ア-ウ",
+      "grade": "中2",
+      "block": "A1",
+      "officialItem": "ア-ウ",
+      "point": "文字式で数量関係を説明",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:integer_proof",
+          "sourceIds": [
+            "jr_math_sequence_integer_proof"
+          ]
+        },
+        {
+          "selector": "P:文字式で性質を説明",
+          "sourceIds": [
+            "jr_math_judgment_998aed449044"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_integer_proof",
+        "jr_math_judgment_998aed449044"
+      ],
+      "outsideGame": "一般的な説明の記述"
+    },
+    {
+      "id": "中2.A1.ア-エ",
+      "grade": "中2",
+      "block": "A1",
+      "officialItem": "ア-エ",
+      "point": "目的に応じた等式変形",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:literal_formula",
+          "sourceIds": [
+            "jr_math_sequence_literal_formula"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_isolate_variable",
+          "sourceIds": [
+            "jr_math_core_isolate_variable"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_literal_formula",
+        "jr_math_core_isolate_variable"
+      ],
+      "outsideGame": "複数文字の式の自力変形"
+    },
+    {
+      "id": "中2.A1.イ-ア",
+      "grade": "中2",
+      "block": "A1",
+      "officialItem": "イ-ア",
+      "point": "既習計算に基づく方法の考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:monomial",
+          "sourceIds": [
+            "jr_math_sequence_monomial"
+          ]
+        },
+        {
+          "selector": "P:a²×a³",
+          "sourceIds": [
+            "jr_math_judgment_fa32a668c47d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_monomial",
+        "jr_math_judgment_fa32a668c47d"
+      ],
+      "outsideGame": "計算根拠の自由な説明"
+    },
+    {
+      "id": "中2.A1.イ-イ",
+      "grade": "中2",
+      "block": "A1",
+      "officialItem": "イ-イ",
+      "point": "文字式の具体的活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:integer_proof",
+          "sourceIds": [
+            "jr_math_sequence_integer_proof"
+          ]
+        },
+        {
+          "selector": "P:連続する2整数",
+          "sourceIds": [
+            "jr_math_judgment_fc525af4708c"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_integer_proof",
+        "jr_math_judgment_fc525af4708c"
+      ],
+      "outsideGame": "数の性質の自力の説明"
+    },
+    {
+      "id": "中2.A2.ア-ア",
+      "grade": "中2",
+      "block": "A2",
+      "officialItem": "ア-ア",
+      "point": "二元一次方程式と解の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:2品の個数を",
+          "sourceIds": [
+            "jr_math_judgment_4d35fb8c351d"
+          ]
+        },
+        {
+          "selector": "P:連立方程式の解が",
+          "sourceIds": [
+            "jr_math_judgment_c6ae3b5311df"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_4d35fb8c351d",
+        "jr_math_judgment_c6ae3b5311df"
+      ],
+      "outsideGame": "二元の解を式や図で表す"
+    },
+    {
+      "id": "中2.A2.ア-イ",
+      "grade": "中2",
+      "block": "A2",
+      "officialItem": "ア-イ",
+      "point": "連立方程式の必要性と意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:条件が個数と代金",
+          "sourceIds": [
+            "jr_math_judgment_2f13fef2004d"
+          ]
+        },
+        {
+          "selector": "P:連立方程式の解が",
+          "sourceIds": [
+            "jr_math_judgment_c6ae3b5311df"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_2f13fef2004d",
+        "jr_math_judgment_c6ae3b5311df"
+      ],
+      "outsideGame": "二条件の意味の説明"
+    },
+    {
+      "id": "中2.A2.ア-ウ",
+      "grade": "中2",
+      "block": "A2",
+      "officialItem": "ア-ウ",
+      "point": "連立二元一次方程式を解く",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:elimination",
+          "sourceIds": [
+            "jr_math_sequence_elimination"
+          ]
+        },
+        {
+          "selector": "S:elimination_scale",
+          "sourceIds": [
+            "jr_math_sequence_elimination_scale"
+          ]
+        },
+        {
+          "selector": "S:substitution",
+          "sourceIds": [
+            "jr_math_sequence_substitution"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_elimination",
+        "jr_math_sequence_elimination_scale",
+        "jr_math_sequence_substitution"
+      ],
+      "outsideGame": "連立方程式の自力完答"
+    },
+    {
+      "id": "中2.A2.イ-ア",
+      "grade": "中2",
+      "block": "A2",
+      "officialItem": "イ-ア",
+      "point": "一元一次方程式と結び付けた解法",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:elimination_scale",
+          "sourceIds": [
+            "jr_math_sequence_elimination_scale"
+          ]
+        },
+        {
+          "selector": "S:elimination_subtract",
+          "sourceIds": [
+            "jr_math_sequence_elimination_subtract"
+          ]
+        },
+        {
+          "selector": "S:substitution",
+          "sourceIds": [
+            "jr_math_sequence_substitution"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_elimination_scale",
+        "jr_math_sequence_elimination_subtract",
+        "jr_math_sequence_substitution"
+      ],
+      "outsideGame": "加減・代入の理由の説明"
+    },
+    {
+      "id": "中2.A2.イ-イ",
+      "grade": "中2",
+      "block": "A2",
+      "officialItem": "イ-イ",
+      "point": "連立方程式の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:2品の個数を",
+          "sourceIds": [
+            "jr_math_judgment_4d35fb8c351d"
+          ]
+        },
+        {
+          "selector": "P:単価100円と200円",
+          "sourceIds": [
+            "jr_math_judgment_64be46b154cc"
+          ]
+        },
+        {
+          "selector": "P:条件が個数と代金",
+          "sourceIds": [
+            "jr_math_judgment_2f13fef2004d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_4d35fb8c351d",
+        "jr_math_judgment_64be46b154cc",
+        "jr_math_judgment_2f13fef2004d"
+      ],
+      "outsideGame": "文章題の自力立式と検討"
+    },
+    {
+      "id": "中2.B1.ア-ア",
+      "grade": "中2",
+      "block": "B1",
+      "officialItem": "ア-ア",
+      "point": "平行線や角の性質",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "I:jr_math2_008",
+          "sourceIds": [
+            "jr_math2_008"
+          ]
+        },
+        {
+          "selector": "I:jr_math2_009",
+          "sourceIds": [
+            "jr_math2_009"
+          ]
+        },
+        {
+          "selector": "P:対頂角どうし",
+          "sourceIds": [
+            "jr_math_judgment_2c958573963a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math2_008",
+        "jr_math2_009",
+        "jr_math_judgment_2c958573963a"
+      ],
+      "outsideGame": "実際の図で角を読む"
+    },
+    {
+      "id": "中2.B1.ア-イ",
+      "grade": "中2",
+      "block": "B1",
+      "officialItem": "ア-イ",
+      "point": "多角形の角の性質",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "I:jr_math2_006",
+          "sourceIds": [
+            "jr_math2_006"
+          ]
+        },
+        {
+          "selector": "I:jr_math2_007",
+          "sourceIds": [
+            "jr_math2_007"
+          ]
+        },
+        {
+          "selector": "P:多角形の内角の和を",
+          "sourceIds": [
+            "jr_math_judgment_2a7e6135a5fa"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math2_006",
+        "jr_math2_007",
+        "jr_math_judgment_2a7e6135a5fa"
+      ],
+      "outsideGame": "分割図からの導出"
+    },
+    {
+      "id": "中2.B1.イ-ア",
+      "grade": "中2",
+      "block": "B1",
+      "officialItem": "イ-ア",
+      "point": "平行線や角を根拠に性質を説明",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:多角形の内角の和を",
+          "sourceIds": [
+            "jr_math_judgment_2a7e6135a5fa"
+          ]
+        },
+        {
+          "selector": "P:五角形の内角",
+          "sourceIds": [
+            "jr_math_judgment_e9976cb2a5a3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_2a7e6135a5fa",
+        "jr_math_judgment_e9976cb2a5a3"
+      ],
+      "outsideGame": "補助線・図を使った論証"
+    },
+    {
+      "id": "中2.B2.ア-ア",
+      "grade": "中2",
+      "block": "B2",
+      "officialItem": "ア-ア",
+      "point": "合同の意味と三角形の合同条件",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "I:jr_math2_001",
+          "sourceIds": [
+            "jr_math2_001"
+          ]
+        },
+        {
+          "selector": "I:jr_math2_002",
+          "sourceIds": [
+            "jr_math2_002"
+          ]
+        },
+        {
+          "selector": "I:jr_math2_003",
+          "sourceIds": [
+            "jr_math2_003"
+          ]
+        },
+        {
+          "selector": "P:三角形の合同を表す",
+          "sourceIds": [
+            "jr_math_judgment_cc534b954798"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math2_001",
+        "jr_math2_002",
+        "jr_math2_003",
+        "jr_math_judgment_cc534b954798"
+      ],
+      "outsideGame": "実物比較と図による判断"
+    },
+    {
+      "id": "中2.B2.ア-イ",
+      "grade": "中2",
+      "block": "B2",
+      "officialItem": "ア-イ",
+      "point": "証明の必要性・意味・方法",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:仮定と結論を分ける",
+          "sourceIds": [
+            "jr_math_judgment_3b48d95e293f"
+          ]
+        },
+        {
+          "selector": "P:図で等しく見える",
+          "sourceIds": [
+            "jr_math_judgment_c8fd49dc7968"
+          ]
+        },
+        {
+          "selector": "P:証明で補助線",
+          "sourceIds": [
+            "jr_math_judgment_9cc39a1802cc"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_3b48d95e293f",
+        "jr_math_judgment_c8fd49dc7968",
+        "jr_math_judgment_9cc39a1802cc"
+      ],
+      "outsideGame": "証明の自力記述"
+    },
+    {
+      "id": "中2.B2.イ-ア",
+      "grade": "中2",
+      "block": "B2",
+      "officialItem": "イ-ア",
+      "point": "合同条件で性質を確かめ新たな性質へ",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:合同が示せた後",
+          "sourceIds": [
+            "jr_math_judgment_740989d22e44"
+          ]
+        },
+        {
+          "selector": "P:証明で「仮定」",
+          "sourceIds": [
+            "jr_math_core_proof_reason"
+          ]
+        },
+        {
+          "selector": "P:ある性質の逆",
+          "sourceIds": [
+            "jr_math_judgment_7a13c9f88bcb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_740989d22e44",
+        "jr_math_core_proof_reason",
+        "jr_math_judgment_7a13c9f88bcb"
+      ],
+      "outsideGame": "証明文の実読解と論証"
+    },
+    {
+      "id": "中2.B2.イ-イ",
+      "grade": "中2",
+      "block": "B2",
+      "officialItem": "イ-イ",
+      "point": "三角形・四角形の性質の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:二等辺三角形の頂角",
+          "sourceIds": [
+            "jr_math_judgment_bcabc5ed1cb7"
+          ]
+        },
+        {
+          "selector": "P:ひし形の対角線",
+          "sourceIds": [
+            "jr_math_judgment_c14bbdcce65e"
+          ]
+        },
+        {
+          "selector": "P:正方形が長方形",
+          "sourceIds": [
+            "jr_math_judgment_4bbf04b87396"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_bcabc5ed1cb7",
+        "jr_math_judgment_c14bbdcce65e",
+        "jr_math_judgment_4bbf04b87396"
+      ],
+      "outsideGame": "図形問題への自力適用"
+    },
+    {
+      "id": "中2.C1.ア-ア",
+      "grade": "中2",
+      "block": "C1",
+      "officialItem": "ア-ア",
+      "point": "一次関数の理解",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:function",
+          "sourceIds": [
+            "jr_math_sequence_function"
+          ]
+        },
+        {
+          "selector": "S:linear_intercept",
+          "sourceIds": [
+            "jr_math_sequence_linear_intercept"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_slope",
+          "sourceIds": [
+            "jr_math_core_slope"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_function",
+        "jr_math_sequence_linear_intercept",
+        "jr_math_core_slope"
+      ],
+      "outsideGame": "表・式・グラフの相互表現"
+    },
+    {
+      "id": "中2.C1.ア-イ",
+      "grade": "中2",
+      "block": "C1",
+      "officialItem": "ア-イ",
+      "point": "事象を一次関数として捉える",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:基本料金と使用量比例",
+          "sourceIds": [
+            "jr_math_judgment_8c419cb964f6"
+          ]
+        },
+        {
+          "selector": "S:linear_word_model",
+          "sourceIds": [
+            "jr_math_sequence_linear_word_model"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_8c419cb964f6",
+        "jr_math_sequence_linear_word_model"
+      ],
+      "outsideGame": "実生活の変化の分析"
+    },
+    {
+      "id": "中2.C1.ア-ウ",
+      "grade": "中2",
+      "block": "C1",
+      "officialItem": "ア-ウ",
+      "point": "二元一次方程式を関数の式とみる",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:2x＋y＝6",
+          "sourceIds": [
+            "jr_math_judgment_6a17b696319b"
+          ]
+        },
+        {
+          "selector": "P:x＝3のグラフ",
+          "sourceIds": [
+            "jr_math_judgment_edaeb1680a11"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_6a17b696319b",
+        "jr_math_judgment_edaeb1680a11"
+      ],
+      "outsideGame": "方程式のグラフ作成"
+    },
+    {
+      "id": "中2.C1.イ-ア",
+      "grade": "中2",
+      "block": "C1",
+      "officialItem": "イ-ア",
+      "point": "変化対応を表式グラフで考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:linear_interval",
+          "sourceIds": [
+            "jr_math_sequence_linear_interval"
+          ]
+        },
+        {
+          "selector": "S:intersection",
+          "sourceIds": [
+            "jr_math_sequence_intersection"
+          ]
+        },
+        {
+          "selector": "P:一次関数の傾きが負",
+          "sourceIds": [
+            "jr_math_judgment_80998bf0b927"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_linear_interval",
+        "jr_math_sequence_intersection",
+        "jr_math_judgment_80998bf0b927"
+      ],
+      "outsideGame": "実データの表式グラフの比較"
+    },
+    {
+      "id": "中2.C1.イ-イ",
+      "grade": "中2",
+      "block": "C1",
+      "officialItem": "イ-イ",
+      "point": "一次関数の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:基本料金と使用量比例",
+          "sourceIds": [
+            "jr_math_judgment_8c419cb964f6"
+          ]
+        },
+        {
+          "selector": "S:intersection",
+          "sourceIds": [
+            "jr_math_sequence_intersection"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_8c419cb964f6",
+        "jr_math_sequence_intersection"
+      ],
+      "outsideGame": "利用場面の立式と解釈"
+    },
+    {
+      "id": "中2.D1.ア-ア",
+      "grade": "中2",
+      "block": "D1",
+      "officialItem": "ア-ア",
+      "point": "四分位範囲・箱ひげ図の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:quartiles",
+          "sourceIds": [
+            "jr_math_sequence_quartiles"
+          ]
+        },
+        {
+          "selector": "P:箱ひげ図だけでは",
+          "sourceIds": [
+            "jr_math_judgment_2c25120b16d7"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_quartiles",
+        "jr_math_judgment_2c25120b16d7"
+      ],
+      "outsideGame": "図の実読取り"
+    },
+    {
+      "id": "中2.D1.ア-イ",
+      "grade": "中2",
+      "block": "D1",
+      "officialItem": "ア-イ",
+      "point": "情報手段等で整理し箱ひげ図に表す",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:箱ひげ図を作る前",
+          "sourceIds": [
+            "jr_math_judgment_3d0abac41cea"
+          ]
+        },
+        {
+          "selector": "S:quartiles",
+          "sourceIds": [
+            "jr_math_sequence_quartiles"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_3d0abac41cea",
+        "jr_math_sequence_quartiles"
+      ],
+      "outsideGame": "表計算等の実操作と作図"
+    },
+    {
+      "id": "中2.D1.イ-ア",
+      "grade": "中2",
+      "block": "D1",
+      "officialItem": "イ-ア",
+      "point": "分布を比較し批判的に判断",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:同じ中央値でも",
+          "sourceIds": [
+            "jr_math_judgment_b3e40734cc43"
+          ]
+        },
+        {
+          "selector": "P:四分位範囲が小さい",
+          "sourceIds": [
+            "jr_math_judgment_d7e9c0b71b9d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_b3e40734cc43",
+        "jr_math_judgment_d7e9c0b71b9d"
+      ],
+      "outsideGame": "複数の実図表を比較し説明"
+    },
+    {
+      "id": "中2.D2.ア-ア",
+      "grade": "中2",
+      "block": "D2",
+      "officialItem": "ア-ア",
+      "point": "試行と場合の数による確率の意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:experiment_probability",
+          "sourceIds": [
+            "jr_math_sequence_experiment_probability"
+          ]
+        },
+        {
+          "selector": "S:probability",
+          "sourceIds": [
+            "jr_math_sequence_probability"
+          ]
+        },
+        {
+          "selector": "P:同様に確からしくない",
+          "sourceIds": [
+            "jr_math_judgment_9ca52a853885"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_experiment_probability",
+        "jr_math_sequence_probability",
+        "jr_math_judgment_9ca52a853885"
+      ],
+      "outsideGame": "実験と理論の比較・説明"
+    },
+    {
+      "id": "中2.D2.ア-イ",
+      "grade": "中2",
+      "block": "D2",
+      "officialItem": "ア-イ",
+      "point": "簡単な場合の確率を求める",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:probability",
+          "sourceIds": [
+            "jr_math_sequence_probability"
+          ]
+        },
+        {
+          "selector": "S:probability_complement",
+          "sourceIds": [
+            "jr_math_sequence_probability_complement"
+          ]
+        },
+        {
+          "selector": "P:赤玉2個・白玉3個",
+          "sourceIds": [
+            "jr_math_judgment_2230de8ae8de"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_probability",
+        "jr_math_sequence_probability_complement",
+        "jr_math_judgment_2230de8ae8de"
+      ],
+      "outsideGame": "樹形図や表による自力計算"
+    },
+    {
+      "id": "中2.D2.イ-ア",
+      "grade": "中2",
+      "block": "D2",
+      "officialItem": "イ-ア",
+      "point": "同様に確からしい場合の数え方",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:同様に確からしくない",
+          "sourceIds": [
+            "jr_math_judgment_9ca52a853885"
+          ]
+        },
+        {
+          "selector": "P:同じ硬貨を2回",
+          "sourceIds": [
+            "jr_math_judgment_6ee1ef849dcb"
+          ]
+        },
+        {
+          "selector": "P:樹形図で確認",
+          "sourceIds": [
+            "jr_math_judgment_4727e79fe832"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_9ca52a853885",
+        "jr_math_judgment_6ee1ef849dcb",
+        "jr_math_judgment_4727e79fe832"
+      ],
+      "outsideGame": "漏れや重複のない図表作成"
+    },
+    {
+      "id": "中2.D2.イ-イ",
+      "grade": "中2",
+      "block": "D2",
+      "officialItem": "イ-イ",
+      "point": "確率の活用と判断",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:赤2個・白3個を1個",
+          "sourceIds": [
+            "jr_math_judgment_6b3867375681"
+          ]
+        },
+        {
+          "selector": "P:確率が0.8",
+          "sourceIds": [
+            "jr_math_judgment_5e077de0ed38"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_6b3867375681",
+        "jr_math_judgment_5e077de0ed38"
+      ],
+      "outsideGame": "未知の試行のモデル化と判断"
+    },
+    {
+      "id": "中2.X1.活動-ア",
+      "grade": "中2",
+      "block": "X1",
+      "officialItem": "活動-ア",
+      "point": "日常社会の数学化と評価改善",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:条件が個数と代金",
+          "sourceIds": [
+            "jr_math_judgment_2f13fef2004d"
+          ]
+        },
+        {
+          "selector": "S:linear_intercept",
+          "sourceIds": [
+            "jr_math_sequence_linear_intercept"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_2f13fef2004d",
+        "jr_math_sequence_linear_intercept"
+      ],
+      "outsideGame": "現実の問題の設定と評価改善"
+    },
+    {
+      "id": "中2.X1.活動-イ",
+      "grade": "中2",
+      "block": "X1",
+      "officialItem": "活動-イ",
+      "point": "見通しある問題発見と統合発展",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:elimination_scale",
+          "sourceIds": [
+            "jr_math_sequence_elimination_scale"
+          ]
+        },
+        {
+          "selector": "S:substitution",
+          "sourceIds": [
+            "jr_math_sequence_substitution"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_elimination_scale",
+        "jr_math_sequence_substitution"
+      ],
+      "outsideGame": "複数解法の比較と新問題の発見"
+    },
+    {
+      "id": "中2.X1.活動-ウ",
+      "grade": "中2",
+      "block": "X1",
+      "officialItem": "活動-ウ",
+      "point": "論理的な説明と伝達",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:integer_proof",
+          "sourceIds": [
+            "jr_math_sequence_integer_proof"
+          ]
+        },
+        {
+          "selector": "P:仮定と結論を分ける",
+          "sourceIds": [
+            "jr_math_judgment_3b48d95e293f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_integer_proof",
+        "jr_math_judgment_3b48d95e293f"
+      ],
+      "outsideGame": "記述・発表・他者との検討"
+    },
+    {
+      "id": "中3.A1.ア-ア",
+      "grade": "中3",
+      "block": "A1",
+      "officialItem": "ア-ア",
+      "point": "平方根の必要性と意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:√49と方程式",
+          "sourceIds": [
+            "jr_math_judgment_37b245fb71d9"
+          ]
+        },
+        {
+          "selector": "P:一辺1の正方形",
+          "sourceIds": [
+            "jr_math_judgment_c0b2f940402f"
+          ]
+        },
+        {
+          "selector": "P:有理数の例",
+          "sourceIds": [
+            "jr_math_judgment_5022eb5f98bf"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_37b245fb71d9",
+        "jr_math_judgment_c0b2f940402f",
+        "jr_math_judgment_5022eb5f98bf"
+      ],
+      "outsideGame": "数直線や面積による理解"
+    },
+    {
+      "id": "中3.A1.ア-イ",
+      "grade": "中3",
+      "block": "A1",
+      "officialItem": "ア-イ",
+      "point": "平方根を含む簡単な計算",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:radical",
+          "sourceIds": [
+            "jr_math_sequence_radical"
+          ]
+        },
+        {
+          "selector": "S:roots_product",
+          "sourceIds": [
+            "jr_math_sequence_roots_product"
+          ]
+        },
+        {
+          "selector": "S:root_quotient",
+          "sourceIds": [
+            "jr_math_sequence_root_quotient"
+          ]
+        },
+        {
+          "selector": "S:rationalize",
+          "sourceIds": [
+            "jr_math_sequence_rationalize"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_radical",
+        "jr_math_sequence_roots_product",
+        "jr_math_sequence_root_quotient",
+        "jr_math_sequence_rationalize"
+      ],
+      "outsideGame": "平方根の式の自力計算"
+    },
+    {
+      "id": "中3.A1.ア-ウ",
+      "grade": "中3",
+      "block": "A1",
+      "officialItem": "ア-ウ",
+      "point": "具体場面で平方根を使う",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:一辺1の正方形",
+          "sourceIds": [
+            "jr_math_judgment_c0b2f940402f"
+          ]
+        },
+        {
+          "selector": "S:irrational_quadratic",
+          "sourceIds": [
+            "jr_math_sequence_irrational_quadratic"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_c0b2f940402f",
+        "jr_math_sequence_irrational_quadratic"
+      ],
+      "outsideGame": "未知の計量問題への自力適用"
+    },
+    {
+      "id": "中3.A1.イ-ア",
+      "grade": "中3",
+      "block": "A1",
+      "officialItem": "イ-ア",
+      "point": "既習計算と平方根の計算方法",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:roots_difference",
+          "sourceIds": [
+            "jr_math_sequence_roots_difference"
+          ]
+        },
+        {
+          "selector": "S:rationalize",
+          "sourceIds": [
+            "jr_math_sequence_rationalize"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_roots_difference",
+        "jr_math_sequence_rationalize"
+      ],
+      "outsideGame": "計算の根拠の説明"
+    },
+    {
+      "id": "中3.A1.イ-イ",
+      "grade": "中3",
+      "block": "A1",
+      "officialItem": "イ-イ",
+      "point": "平方根の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:一辺1の正方形",
+          "sourceIds": [
+            "jr_math_judgment_c0b2f940402f"
+          ]
+        },
+        {
+          "selector": "P:√2の大小",
+          "sourceIds": [
+            "jr_math_judgment_f54e307e85d7"
+          ]
+        },
+        {
+          "selector": "P:近似値2.3",
+          "sourceIds": [
+            "jr_math_judgment_25765f1f1ff0"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_c0b2f940402f",
+        "jr_math_judgment_f54e307e85d7",
+        "jr_math_judgment_25765f1f1ff0"
+      ],
+      "outsideGame": "数値の見積りと現実の計量"
+    },
+    {
+      "id": "中3.A2.ア-ア",
+      "grade": "中3",
+      "block": "A2",
+      "officialItem": "ア-ア",
+      "point": "単項式と多項式の乗除",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:polynomial_divide",
+          "sourceIds": [
+            "jr_math_sequence_polynomial_divide"
+          ]
+        },
+        {
+          "selector": "S:monomial_distribute",
+          "sourceIds": [
+            "jr_math_sequence_monomial_distribute"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_polynomial_divide",
+        "jr_math_sequence_monomial_distribute"
+      ],
+      "outsideGame": "自力の多項式計算"
+    },
+    {
+      "id": "中3.A2.ア-イ",
+      "grade": "中3",
+      "block": "A2",
+      "officialItem": "ア-イ",
+      "point": "一次式の積・四公式の展開と因数分解",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:expansion",
+          "sourceIds": [
+            "jr_math_sequence_expansion"
+          ]
+        },
+        {
+          "selector": "S:square_expansion",
+          "sourceIds": [
+            "jr_math_sequence_square_expansion"
+          ]
+        },
+        {
+          "selector": "S:difference",
+          "sourceIds": [
+            "jr_math_sequence_difference"
+          ]
+        },
+        {
+          "selector": "S:factor",
+          "sourceIds": [
+            "jr_math_sequence_factor"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_square_expansion",
+          "sourceIds": [
+            "jr_math_core_square_expansion"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_expansion",
+        "jr_math_sequence_square_expansion",
+        "jr_math_sequence_difference",
+        "jr_math_sequence_factor",
+        "jr_math_core_square_expansion"
+      ],
+      "outsideGame": "公式の導出と自力計算"
+    },
+    {
+      "id": "中3.A2.イ-ア",
+      "grade": "中3",
+      "block": "A2",
+      "officialItem": "イ-ア",
+      "point": "既習と結び付け展開因数分解を考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:factor_negative",
+          "sourceIds": [
+            "jr_math_sequence_factor_negative"
+          ]
+        },
+        {
+          "selector": "S:factor",
+          "sourceIds": [
+            "jr_math_sequence_factor"
+          ]
+        },
+        {
+          "selector": "P:因数分解した式を",
+          "sourceIds": [
+            "jr_math_judgment_67139a039ee8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_factor_negative",
+        "jr_math_sequence_factor",
+        "jr_math_judgment_67139a039ee8"
+      ],
+      "outsideGame": "別解比較と理由の記述"
+    },
+    {
+      "id": "中3.A2.イ-イ",
+      "grade": "中3",
+      "block": "A2",
+      "officialItem": "イ-イ",
+      "point": "文字式による数量関係の説明",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:integer_proof",
+          "sourceIds": [
+            "jr_math_sequence_integer_proof"
+          ]
+        },
+        {
+          "selector": "P:文字式で一般的な説明",
+          "sourceIds": [
+            "jr_math_judgment_21683cc32605"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_integer_proof",
+        "jr_math_judgment_21683cc32605"
+      ],
+      "outsideGame": "一般的な説明の自力記述"
+    },
+    {
+      "id": "中3.A3.ア-ア",
+      "grade": "中3",
+      "block": "A3",
+      "officialItem": "ア-ア",
+      "point": "二次方程式の必要性・意味と解",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:長方形の辺がxとx＋2",
+          "sourceIds": [
+            "jr_math_judgment_8520744432dc"
+          ]
+        },
+        {
+          "selector": "P:二次方程式の解を文章題",
+          "sourceIds": [
+            "jr_math_judgment_b98237742a9b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_8520744432dc",
+        "jr_math_judgment_b98237742a9b"
+      ],
+      "outsideGame": "二次の関係の自力立式"
+    },
+    {
+      "id": "中3.A3.ア-イ",
+      "grade": "中3",
+      "block": "A3",
+      "officialItem": "ア-イ",
+      "point": "因数分解・平方の形による解法",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:quadratic_factor",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_factor"
+          ]
+        },
+        {
+          "selector": "S:quadratic_square",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_square"
+          ]
+        },
+        {
+          "selector": "S:irrational_quadratic",
+          "sourceIds": [
+            "jr_math_sequence_irrational_quadratic"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_quadratic_factor",
+        "jr_math_sequence_quadratic_square",
+        "jr_math_sequence_irrational_quadratic"
+      ],
+      "outsideGame": "二次方程式の自力完答"
+    },
+    {
+      "id": "中3.A3.ア-ウ",
+      "grade": "中3",
+      "block": "A3",
+      "officialItem": "ア-ウ",
+      "point": "解の公式と適用",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:quadratic_formula",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_formula"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_quadratic_formula_denominator",
+          "sourceIds": [
+            "jr_math_core_quadratic_formula_denominator"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_quadratic_formula",
+        "jr_math_core_quadratic_formula_denominator"
+      ],
+      "outsideGame": "公式の導出と自力適用"
+    },
+    {
+      "id": "中3.A3.イ-ア",
+      "grade": "中3",
+      "block": "A3",
+      "officialItem": "イ-ア",
+      "point": "因数分解・平方根から解法を考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:quadratic_factor",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_factor"
+          ]
+        },
+        {
+          "selector": "S:irrational_quadratic",
+          "sourceIds": [
+            "jr_math_sequence_irrational_quadratic"
+          ]
+        },
+        {
+          "selector": "P:x²＝3x",
+          "sourceIds": [
+            "jr_math_judgment_d6ab44106c6b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_quadratic_factor",
+        "jr_math_sequence_irrational_quadratic",
+        "jr_math_judgment_d6ab44106c6b"
+      ],
+      "outsideGame": "解法比較と解の漏れの検討"
+    },
+    {
+      "id": "中3.A3.イ-イ",
+      "grade": "中3",
+      "block": "A3",
+      "officialItem": "イ-イ",
+      "point": "二次方程式の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:長方形の辺がxとx＋2",
+          "sourceIds": [
+            "jr_math_judgment_8520744432dc"
+          ]
+        },
+        {
+          "selector": "P:長さをxとして",
+          "sourceIds": [
+            "jr_math_judgment_d4defa910f2c"
+          ]
+        },
+        {
+          "selector": "P:二次方程式の解を文章題",
+          "sourceIds": [
+            "jr_math_judgment_b98237742a9b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_8520744432dc",
+        "jr_math_judgment_d4defa910f2c",
+        "jr_math_judgment_b98237742a9b"
+      ],
+      "outsideGame": "文章題の自力立式・解釈"
+    },
+    {
+      "id": "中3.B1.ア-ア",
+      "grade": "中3",
+      "block": "B1",
+      "officialItem": "ア-ア",
+      "point": "相似と三角形の相似条件",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:三角形の相似条件で",
+          "sourceIds": [
+            "jr_math_judgment_41ac5f9935a2"
+          ]
+        },
+        {
+          "selector": "P:2組の辺の比と",
+          "sourceIds": [
+            "jr_math_judgment_337a15575422"
+          ]
+        },
+        {
+          "selector": "P:三角形の2組の角",
+          "sourceIds": [
+            "jr_math_judgment_0f3705bad02b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_41ac5f9935a2",
+        "jr_math_judgment_337a15575422",
+        "jr_math_judgment_0f3705bad02b"
+      ],
+      "outsideGame": "図からの条件の読み取り"
+    },
+    {
+      "id": "中3.B1.ア-イ",
+      "grade": "中3",
+      "block": "B1",
+      "officialItem": "ア-イ",
+      "point": "立体の相似・面積比と体積比",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:similarity_area",
+          "sourceIds": [
+            "jr_math_sequence_similarity_area"
+          ]
+        },
+        {
+          "selector": "S:similarity_volume",
+          "sourceIds": [
+            "jr_math_sequence_similarity_volume"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_similar_volume",
+          "sourceIds": [
+            "jr_math_core_similar_volume"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_similarity_area",
+        "jr_math_sequence_similarity_volume",
+        "jr_math_core_similar_volume"
+      ],
+      "outsideGame": "立体の比較と理由の記述"
+    },
+    {
+      "id": "中3.B1.イ-ア",
+      "grade": "中3",
+      "block": "B1",
+      "officialItem": "イ-ア",
+      "point": "相似条件から性質を論理的に確認",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:三角形の1辺に平行",
+          "sourceIds": [
+            "jr_math_judgment_07498b56d433"
+          ]
+        },
+        {
+          "selector": "P:△ABC∽△DEF",
+          "sourceIds": [
+            "jr_math_judgment_d22723c21adb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_07498b56d433",
+        "jr_math_judgment_d22723c21adb"
+      ],
+      "outsideGame": "相似の証明の記述"
+    },
+    {
+      "id": "中3.B1.イ-イ",
+      "grade": "中3",
+      "block": "B1",
+      "officialItem": "イ-イ",
+      "point": "平行線と線分比の性質",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:midsegment",
+          "sourceIds": [
+            "jr_math_sequence_midsegment"
+          ]
+        },
+        {
+          "selector": "P:中点連結定理で",
+          "sourceIds": [
+            "jr_math_judgment_42b877445d4b"
+          ]
+        },
+        {
+          "selector": "P:平行線と線分の比で",
+          "sourceIds": [
+            "jr_math_judgment_d462a366254e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_midsegment",
+        "jr_math_judgment_42b877445d4b",
+        "jr_math_judgment_d462a366254e"
+      ],
+      "outsideGame": "補助線・図からの導出と証明"
+    },
+    {
+      "id": "中3.B1.イ-ウ",
+      "grade": "中3",
+      "block": "B1",
+      "officialItem": "イ-ウ",
+      "point": "相似の性質の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:similarity",
+          "sourceIds": [
+            "jr_math_sequence_similarity"
+          ]
+        },
+        {
+          "selector": "S:similarity_area",
+          "sourceIds": [
+            "jr_math_sequence_similarity_area"
+          ]
+        },
+        {
+          "selector": "S:similarity_volume",
+          "sourceIds": [
+            "jr_math_sequence_similarity_volume"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_similarity",
+        "jr_math_sequence_similarity_area",
+        "jr_math_sequence_similarity_volume"
+      ],
+      "outsideGame": "測量等の図形モデルへの適用"
+    },
+    {
+      "id": "中3.B2.ア-ア",
+      "grade": "中3",
+      "block": "B2",
+      "officialItem": "ア-ア",
+      "point": "円周角と中心角の関係と証明",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:angle",
+          "sourceIds": [
+            "jr_math_sequence_angle"
+          ]
+        },
+        {
+          "selector": "P:円周角と中心角の証明",
+          "sourceIds": [
+            "jr_math_judgment_e0202d650688"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_angle",
+        "jr_math_judgment_e0202d650688"
+      ],
+      "outsideGame": "実際の図による証明"
+    },
+    {
+      "id": "中3.B2.イ-ア",
+      "grade": "中3",
+      "block": "B2",
+      "officialItem": "イ-ア",
+      "point": "円周角と中心角の関係を見いだす",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:円周角と中心角の証明",
+          "sourceIds": [
+            "jr_math_judgment_e0202d650688"
+          ]
+        },
+        {
+          "selector": "P:同じ弦を見込む",
+          "sourceIds": [
+            "jr_math_judgment_c56f42f7ee90"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_e0202d650688",
+        "jr_math_judgment_c56f42f7ee90"
+      ],
+      "outsideGame": "図を動かした実観察と考察"
+    },
+    {
+      "id": "中3.B2.イ-イ",
+      "grade": "中3",
+      "block": "B2",
+      "officialItem": "イ-イ",
+      "point": "円周角と中心角の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:angle",
+          "sourceIds": [
+            "jr_math_sequence_angle"
+          ]
+        },
+        {
+          "selector": "P:同じ線分を同じ側",
+          "sourceIds": [
+            "jr_math_judgment_2011ed0e29e9"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_semicircle_angle",
+          "sourceIds": [
+            "jr_math_core_semicircle_angle"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_angle",
+        "jr_math_judgment_2011ed0e29e9",
+        "jr_math_core_semicircle_angle"
+      ],
+      "outsideGame": "未知の図から条件を判断"
+    },
+    {
+      "id": "中3.B3.ア-ア",
+      "grade": "中3",
+      "block": "B3",
+      "officialItem": "ア-ア",
+      "point": "三平方の定理と証明",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:pythagoras",
+          "sourceIds": [
+            "jr_math_sequence_pythagoras"
+          ]
+        },
+        {
+          "selector": "S:pythagorean_leg",
+          "sourceIds": [
+            "jr_math_sequence_pythagorean_leg"
+          ]
+        },
+        {
+          "selector": "P:三平方の定理の証明",
+          "sourceIds": [
+            "jr_math_judgment_01c8efd505eb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_pythagoras",
+        "jr_math_sequence_pythagorean_leg",
+        "jr_math_judgment_01c8efd505eb"
+      ],
+      "outsideGame": "面積図等を用いた自力の証明"
+    },
+    {
+      "id": "中3.B3.イ-ア",
+      "grade": "中3",
+      "block": "B3",
+      "officialItem": "イ-ア",
+      "point": "三平方の定理を見いだす",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:三平方の定理の証明",
+          "sourceIds": [
+            "jr_math_judgment_01c8efd505eb"
+          ]
+        },
+        {
+          "selector": "P:三平方の定理を使う前",
+          "sourceIds": [
+            "jr_math_judgment_825aba11c40d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_01c8efd505eb",
+        "jr_math_judgment_825aba11c40d"
+      ],
+      "outsideGame": "実験や図の操作からの考察"
+    },
+    {
+      "id": "中3.B3.イ-イ",
+      "grade": "中3",
+      "block": "B3",
+      "officialItem": "イ-イ",
+      "point": "三平方の定理の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:pythagorean_leg",
+          "sourceIds": [
+            "jr_math_sequence_pythagorean_leg"
+          ]
+        },
+        {
+          "selector": "P:直方体の対角線",
+          "sourceIds": [
+            "jr_math_judgment_5f5450a461d4"
+          ]
+        },
+        {
+          "selector": "P:長方形の対角線",
+          "sourceIds": [
+            "jr_math_judgment_21a63ce34a83"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_pythagorean_leg",
+        "jr_math_judgment_5f5450a461d4",
+        "jr_math_judgment_21a63ce34a83"
+      ],
+      "outsideGame": "複合図形の計量の自力実行"
+    },
+    {
+      "id": "中3.C1.ア-ア",
+      "grade": "中3",
+      "block": "C1",
+      "officialItem": "ア-ア",
+      "point": "二乗に比例する関数の理解",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:quadratic_coefficient",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_coefficient"
+          ]
+        },
+        {
+          "selector": "S:quadratic_rate",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_rate"
+          ]
+        },
+        {
+          "selector": "S:quadratic_range",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_range"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_quadratic_coefficient",
+        "jr_math_sequence_quadratic_rate",
+        "jr_math_sequence_quadratic_range"
+      ],
+      "outsideGame": "表・グラフの自力作成"
+    },
+    {
+      "id": "中3.C1.ア-イ",
+      "grade": "中3",
+      "block": "C1",
+      "officialItem": "ア-イ",
+      "point": "二乗比例で捉えられる事象",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:正方形の辺xと面積",
+          "sourceIds": [
+            "jr_math_judgment_f281866fda2f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_f281866fda2f"
+      ],
+      "outsideGame": "実生活の数量関係の分析"
+    },
+    {
+      "id": "中3.C1.ア-ウ",
+      "grade": "中3",
+      "block": "C1",
+      "officialItem": "ア-ウ",
+      "point": "様々な関数関係",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:同距離を進む速さ",
+          "sourceIds": [
+            "jr_math_judgment_0ca2d1991dea"
+          ]
+        },
+        {
+          "selector": "P:基本料金と使用量比例",
+          "sourceIds": [
+            "jr_math_judgment_8c419cb964f6"
+          ]
+        },
+        {
+          "selector": "P:正方形の辺xと面積",
+          "sourceIds": [
+            "jr_math_judgment_f281866fda2f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_0ca2d1991dea",
+        "jr_math_judgment_8c419cb964f6",
+        "jr_math_judgment_f281866fda2f"
+      ],
+      "outsideGame": "複数の事象のモデル化"
+    },
+    {
+      "id": "中3.C1.イ-ア",
+      "grade": "中3",
+      "block": "C1",
+      "officialItem": "イ-ア",
+      "point": "変化対応を表式グラフで考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:quadratic_rate",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_rate"
+          ]
+        },
+        {
+          "selector": "S:quadratic_range",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_range"
+          ]
+        },
+        {
+          "selector": "P:二乗比例を表から",
+          "sourceIds": [
+            "jr_math_judgment_781bbb019d9b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_quadratic_rate",
+        "jr_math_sequence_quadratic_range",
+        "jr_math_judgment_781bbb019d9b"
+      ],
+      "outsideGame": "実際の表やグラフを使う考察"
+    },
+    {
+      "id": "中3.C1.イ-イ",
+      "grade": "中3",
+      "block": "C1",
+      "officialItem": "イ-イ",
+      "point": "二乗比例の活用",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:正方形の辺xと面積",
+          "sourceIds": [
+            "jr_math_judgment_f281866fda2f"
+          ]
+        },
+        {
+          "selector": "S:quadratic_range",
+          "sourceIds": [
+            "jr_math_sequence_quadratic_range"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_f281866fda2f",
+        "jr_math_sequence_quadratic_range"
+      ],
+      "outsideGame": "実場面の関数モデルの活用"
+    },
+    {
+      "id": "中3.D1.ア-ア",
+      "grade": "中3",
+      "block": "D1",
+      "officialItem": "ア-ア",
+      "point": "標本調査の必要性と意味",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:試したら壊れる",
+          "sourceIds": [
+            "jr_math_judgment_f43a2707e6ba"
+          ]
+        },
+        {
+          "selector": "P:全数調査と標本調査",
+          "sourceIds": [
+            "jr_math_judgment_74d517f725ff"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_f43a2707e6ba",
+        "jr_math_judgment_74d517f725ff"
+      ],
+      "outsideGame": "調査計画の具体的な設計"
+    },
+    {
+      "id": "中3.D1.ア-イ",
+      "grade": "中3",
+      "block": "D1",
+      "officialItem": "ア-イ",
+      "point": "情報手段等で無作為に抽出整理",
+      "category": "知識・技能",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:無作為抽出の具体例",
+          "sourceIds": [
+            "jr_math_judgment_e4b2adcdf6e9"
+          ]
+        },
+        {
+          "selector": "P:無作為に抽出する",
+          "sourceIds": [
+            "jr_math_judgment_e8fc29fab029"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_e4b2adcdf6e9",
+        "jr_math_judgment_e8fc29fab029"
+      ],
+      "outsideGame": "乱数・表計算等による実際の抽出"
+    },
+    {
+      "id": "中3.D1.イ-ア",
+      "grade": "中3",
+      "block": "D1",
+      "officialItem": "イ-ア",
+      "point": "方法や結果を批判的に考察",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:希望者だけを標本",
+          "sourceIds": [
+            "jr_math_judgment_be18690fe928"
+          ]
+        },
+        {
+          "selector": "P:標本の割合が違う",
+          "sourceIds": [
+            "jr_math_judgment_41ba26172b98"
+          ]
+        },
+        {
+          "selector": "P:無作為標本を増やしても",
+          "sourceIds": [
+            "jr_math_judgment_9e59fdcc0f98"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_be18690fe928",
+        "jr_math_judgment_41ba26172b98",
+        "jr_math_judgment_9e59fdcc0f98"
+      ],
+      "outsideGame": "実際の調査の偏りと誤差の評価"
+    },
+    {
+      "id": "中3.D1.イ-イ",
+      "grade": "中3",
+      "block": "D1",
+      "officialItem": "イ-イ",
+      "point": "簡単な標本調査と母集団推定",
+      "category": "思考・判断・表現",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:sampling",
+          "sourceIds": [
+            "jr_math_sequence_sampling"
+          ]
+        },
+        {
+          "selector": "I:jr_math_core_sample_estimate",
+          "sourceIds": [
+            "jr_math_core_sample_estimate"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_sampling",
+        "jr_math_core_sample_estimate"
+      ],
+      "outsideGame": "標本の実抽出・整理・推定"
+    },
+    {
+      "id": "中3.X1.活動-ア",
+      "grade": "中3",
+      "block": "X1",
+      "officialItem": "活動-ア",
+      "point": "日常社会の数学化と評価改善",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:二次方程式の解を文章題",
+          "sourceIds": [
+            "jr_math_judgment_b98237742a9b"
+          ]
+        },
+        {
+          "selector": "S:sampling",
+          "sourceIds": [
+            "jr_math_sequence_sampling"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_b98237742a9b",
+        "jr_math_sequence_sampling"
+      ],
+      "outsideGame": "実際の課題設定・解決・評価改善"
+    },
+    {
+      "id": "中3.X1.活動-イ",
+      "grade": "中3",
+      "block": "X1",
+      "officialItem": "活動-イ",
+      "point": "見通しある問題発見と統合発展",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "S:irrational_quadratic",
+          "sourceIds": [
+            "jr_math_sequence_irrational_quadratic"
+          ]
+        },
+        {
+          "selector": "S:similarity_area",
+          "sourceIds": [
+            "jr_math_sequence_similarity_area"
+          ]
+        },
+        {
+          "selector": "S:polynomial_divide",
+          "sourceIds": [
+            "jr_math_sequence_polynomial_divide"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_sequence_irrational_quadratic",
+        "jr_math_sequence_similarity_area",
+        "jr_math_sequence_polynomial_divide"
+      ],
+      "outsideGame": "解法の統合・発展と問題発見"
+    },
+    {
+      "id": "中3.X1.活動-ウ",
+      "grade": "中3",
+      "block": "X1",
+      "officialItem": "活動-ウ",
+      "point": "論理的な説明と伝達",
+      "category": "数学的活動",
+      "status": "基礎知識・解法の一手・判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:文字式で一般的な説明",
+          "sourceIds": [
+            "jr_math_judgment_21683cc32605"
+          ]
+        },
+        {
+          "selector": "P:三平方の定理の証明",
+          "sourceIds": [
+            "jr_math_judgment_01c8efd505eb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_math_judgment_21683cc32605",
+        "jr_math_judgment_01c8efd505eb"
+      ],
+      "outsideGame": "自由な説明・証明・伝え合い"
+    }
+  ],
+  "unresolvedSelectors": []
+}

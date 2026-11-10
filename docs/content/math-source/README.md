@@ -1,6 +1,6 @@
 # 数学の連続解法：作問・管理
 
-2026-11-10 / v0.90.0。連続解法を補強済み。公式の23区分で残作業を整理し、小項目の最終照合は次段階。
+2026-11-10 / v0.91.0。公式内容と取扱いの照合を終え、暗記・短い連続解法・判断の基礎版は一区切り。[完了範囲](../math-completion.md)。
 
 - `sequences.tsv`：学年・分野・単元・生成器ID・管理用タイトル。生成器本体は `math-sequences.js`。数値の許容範囲と各段階の式・四択・短い解説を保持。
 - `individual-choices.tsv`：連続化に向かない個別の判断問題。
@@ -22,3 +22,11 @@
 新規分の文字量は `node scripts/check-content-budget.mjs --file quiz-data/junior_math.json --batch math-advanced-20261110` で確認。全体テスト・5分検証・ブラウザ再確認は行わない。
 
 文科省数学編付録3の大分類は `curriculum-outline.tsv/json` と [残作業表](../math-curriculum-plan.md) で管理。これは小項目の最終照合表ではない。学年別の下位項目・取扱い・数学的活動の着眼点を照合してから完了を判断する。
+
+## v0.91.0：公式小項目との照合と不足補完
+
+`completion-sequences.tsv` の16連続素材・35段階、`completion-choices.tsv` の99個別問、計115素材・134問を追加。新規バッチは `math-completion-20261110`。既存208素材の内容・IDを保持。進行・採点・保存・表示は変更しない。
+
+`curriculum-review.tsv` へ知識技能55・思考判断表現43・数学的活動9の107編集行、`handling-review.tsv` へ取扱い11項目・用語記号10グループを登録。`python scripts/build-math-curriculum-review.py` で実際の出題IDを解決し、小項目の照合表と23区分の概要を生成する。各行の出題先の存在は、実技能や自由な表現の達成ではない。
+
+新規76数値パターン・173段階は独立した数式処理で確認。文字量は `node scripts/check-content-budget.mjs --file quiz-data/junior_math.json --batch math-completion-20261110` で272表示を確認し、既存範囲内に収めた。ブラウザ・全体テスト・5分検証は行わない。[照合](../math-curriculum-review.md)・[差分](completion-audit.json)。

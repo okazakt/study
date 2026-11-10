@@ -5,13 +5,13 @@ Authoring check only; no playback or app tests. Uses installed SymPy.
 import json,re,sys
 import sympy as sp
 from sympy.parsing.sympy_parser import parse_expr,standard_transformations,implicit_multiplication_application,convert_xor,rationalize
-x,a_symbol,y,b_symbol,h,S=sp.symbols('x a y b h S',real=True)
+x,a_symbol,y,b_symbol,h,S,V=sp.symbols('x a y b h S V',real=True)
 transforms=standard_transformations+(implicit_multiplication_application,convert_xor,rationalize)
 def expr(s):
  s=s.replace('π','pi').replace('−','-').replace('＋','+').replace('×','*').replace('÷','/').replace('²','^2').replace('³','^3')
  s=re.sub(r'√(\d+)',r'sqrt(\1)',s)
- assert re.fullmatch(r'[0-9xaybhSpi\s+\-*/()^sqrt.]+',s),s
- return parse_expr(s,local_dict={'x':x,'a':a_symbol,'y':y,'b':b_symbol,'h':h,'S':S,'sqrt':sp.sqrt,'pi':sp.pi},transformations=transforms)
+ assert re.fullmatch(r'[0-9xaybhSVpi\s+\-*/()^sqrt.]+',s),s
+ return parse_expr(s,local_dict={'x':x,'a':a_symbol,'y':y,'b':b_symbol,'h':h,'S':S,'V':V,'sqrt':sp.sqrt,'pi':sp.pi},transformations=transforms)
 def solutions(s,positive=False,variable=x):
  if '，' in s and s.startswith('x＝'):
   return frozenset(expr(v) for v in s[2:].split('，'))
@@ -26,6 +26,22 @@ def coord(s):
 def expected(g,p,i):
  # Values here are derived independently from the numerical problem conditions.
  a=p.get('a');b=p.get('b');k=p.get('k');d=p.get('d')
+ if g=='prime_factorization':return 'expr',p['N']
+ if g=='proportional_equation':return 'roots',frozenset([sp.Integer(a*k)])
+ if g=='sphere_area':return 'expr',4*p['r']**2*sp.pi
+ if g=='sphere_volume':return 'expr',sp.Rational(4*p['r']**3,3)*sp.pi
+ if g=='polynomial_divide':return 'expr',x*x+b*x
+ if g=='monomial_distribute':return 'expr',a*x*(x+b)-x*x
+ if g=='irrational_quadratic':return 'roots',frozenset([-a-sp.sqrt(d),-a+sp.sqrt(d)])
+ if g=='similarity_area':return ('roots_S',frozenset([sp.Integer(9*k)])) if i==0 else ('expr',9*k)
+ if g=='similarity_volume':return ('roots_V',frozenset([sp.Integer(k*b**3)])) if i==0 else ('expr',k*b**3)
+ if g=='midsegment':return ('roots',frozenset([sp.Rational(b,2)])) if i==0 else ('expr',sp.Rational(b,2))
+ if g=='experiment_probability':return 'expr',sp.Rational(p['M'],p['N'])
+ if g=='cumulative_frequency':return 'expr',a+b if i==0 else sp.Rational(a+b,a+b+p['c'])
+ if g=='quartiles':return ('pair',(sp.Integer(a+d),sp.Integer(a+4*d))) if i==0 else ('expr',3*d)
+ if g=='sector_area':return 'expr',sp.Rational(p['r']**2,4)*sp.pi
+ if g=='integer_proof':return ('expr',2*x+k) if i==0 else ('parity','奇数' if k%2 else '偶数')
+ if g=='linear_word_model':return 'roots',frozenset([sp.Integer(k)])
  if g=='fraction_add':return 'expr',x/sp.Integer(d)+x/sp.Integer(p['e'])
  if g=='fraction_subtract':return 'expr',x/sp.Integer(d)-x/sp.Integer(p['e'])
  if g in ['decimal_equation','equation_two_sides']:return 'roots',frozenset([sp.Integer(p['x'])])
@@ -78,9 +94,10 @@ def expected(g,p,i):
  raise ValueError(g)
 def normalized(s,kind):
  if kind in ['roots','positive_roots']:return solutions(s,kind=='positive_roots')
+ if kind=='parity':return s
  if kind=='pair':return coord(s)
- if kind in ['roots_y','roots_b','roots_a','formula_h']:
-  return solutions(s,variable={'roots_y':y,'roots_b':b_symbol,'roots_a':a_symbol,'formula_h':h}[kind])
+ if kind in ['roots_y','roots_b','roots_a','roots_S','roots_V','formula_h']:
+  return solutions(s,variable={'roots_y':y,'roots_b':b_symbol,'roots_a':a_symbol,'roots_S':S,'roots_V':V,'formula_h':h}[kind])
  if kind=='linear_form':
   lhs,rhs=s.split('＝');return sp.Poly(expr(lhs)-expr(rhs),x,y).monic().as_expr()
  return sp.simplify(expr(s.split('＝')[-1]))

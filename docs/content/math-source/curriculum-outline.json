@@ -1,5 +1,5 @@
 {
-  "version": "0.90.0",
+  "version": "0.91.0",
   "date": "2026-11-10",
   "source": {
     "title": "中学校学習指導要領（平成29年告示）解説 数学編",
@@ -7,7 +7,8 @@
     "retrieved": "2026-11-10",
     "sha256": "849e254fd907721f069ae601e18db0c44ae5b79a5ea8394675f18f867d9d237e",
     "locator": "付録3、第2 各学年の目標及び内容。印刷頁190〜198。",
-    "verification": "取得したPDF本文の各学年の内容・取扱いを読み、残作業の大分類を整理。全小項目の最終照合は未実施。"
+    "verification": "取得したPDF本文の各学年の内容・用語記号・取扱い・数学的活動を読み、編集用の要約と代表出題IDを対応。",
+    "reviewed": "2026-11-10"
   },
   "countingRule": "学年別A〜Dの番号付きまとまり23区分。下位の知識・思考判断表現・数学的活動・全語句の母数や網羅率ではない。",
   "rows": [
@@ -17,11 +18,16 @@
       "officialGroup": "A1",
       "title": "正の数と負の数",
       "sourceIds": [
+        "jr_math_judgment_322bd4b26b8b",
+        "jr_math_judgment_873f18074303",
         "jr_math_sequence_signed",
-        "jr_math_judgment_873f18074303"
+        "jr_math_judgment_63c31efa39a4",
+        "jr_math_judgment_e79c4ca26aa7",
+        "jr_math_core_subtract_negative",
+        "jr_math_judgment_78fad8d8bf3c"
       ],
-      "pending": "自然数と素数・素因数分解、数の集合と演算の範囲",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.A2",
@@ -29,12 +35,18 @@
       "officialGroup": "A2",
       "title": "文字を用いた式",
       "sourceIds": [
+        "jr_math_judgment_99933620db4d",
+        "jr_math_judgment_95f17338f25f",
+        "jr_math_judgment_ce72c7c73726",
         "jr_math_sequence_distribute",
         "jr_math_sequence_fraction_add",
+        "jr_math_sequence_fraction_subtract",
+        "jr_math_judgment_b0a9ab232d95",
+        "jr_math_judgment_bf8048bc9da1",
         "jr_math_sequence_evaluate_negative"
       ],
-      "pending": "不等式による数量関係、式の意味の読み取り",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.A3",
@@ -42,12 +54,18 @@
       "officialGroup": "A3",
       "title": "一元一次方程式",
       "sourceIds": [
+        "jr_math_judgment_d41150d877a1",
+        "jr_math_judgment_62104dac6371",
         "jr_math_sequence_linear",
         "jr_math_sequence_decimal_equation",
-        "jr_math_sequence_equation_two_sides"
+        "jr_math_sequence_proportional_equation",
+        "jr_math_sequence_fraction_equation",
+        "jr_math_sequence_equation_two_sides",
+        "jr_math_sequence_linear_word_model",
+        "jr_math_judgment_394e6b1e5f93"
       ],
-      "pending": "比例式、文章からの立式と条件確認",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.B1",
@@ -55,11 +73,18 @@
       "officialGroup": "B1",
       "title": "平面図形",
       "sourceIds": [
-        "jr_math_core_perpendicular_bisector",
-        "jr_math_judgment_03db3971869e"
+        "jr_math_judgment_12224e169edb",
+        "jr_math_judgment_5eacf97f4578",
+        "jr_math_judgment_849a9f720b6e",
+        "jr_math_judgment_9a9a627f39d0",
+        "jr_math_judgment_b6f95087f92c",
+        "jr_math_judgment_ef521b6150cf",
+        "jr_math_judgment_5c7b6302c85e",
+        "jr_math_judgment_5bec627ab18b",
+        "jr_math_core_perpendicular_bisector"
       ],
-      "pending": "基本作図の手順、接線と半径の関係",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.B2",
@@ -67,12 +92,22 @@
       "officialGroup": "B2",
       "title": "空間図形",
       "sourceIds": [
+        "jr_math_judgment_c5381e462997",
+        "jr_math_judgment_29856cf69aab",
+        "jr_math_sequence_sector_area",
         "jr_math_sequence_sector_arc",
         "jr_math_sequence_cylinder_volume",
-        "jr_math_sequence_cone_volume"
+        "jr_math_sequence_cone_volume",
+        "jr_math_sequence_sphere_area",
+        "jr_math_sequence_sphere_volume",
+        "jr_math_judgment_4e0de1a75436",
+        "jr_math_judgment_8f3d91d45027",
+        "jr_math_judgment_a8f40504283e",
+        "jr_math_judgment_0375a9f42c7a",
+        "jr_math_judgment_dfdf7f83a94a"
       ],
-      "pending": "空間の位置関係、見取図・展開図・投影図、球と表面積",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.C1",
@@ -80,11 +115,18 @@
       "officialGroup": "C1",
       "title": "比例・反比例",
       "sourceIds": [
+        "jr_math_judgment_5a9a185227ce",
         "jr_math_sequence_proportion",
-        "jr_math_sequence_inverse"
+        "jr_math_sequence_inverse",
+        "jr_math_judgment_40559335e91f",
+        "jr_math_judgment_5165ca14440b",
+        "jr_math_judgment_2fd5f378932e",
+        "jr_math_judgment_12b576a14ae7",
+        "jr_math_judgment_6dd5523732b6",
+        "jr_math_judgment_0ca2d1991dea"
       ],
-      "pending": "関数・座標・変域、表式グラフと実生活の関連",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.D1",
@@ -92,20 +134,29 @@
       "officialGroup": "D1",
       "title": "データの分布",
       "sourceIds": [
-        "jr_math_sequence_mean",
-        "jr_math_core_relative_frequency"
+        "jr_math_core_histogram",
+        "jr_math_core_relative_frequency",
+        "jr_math_sequence_cumulative_frequency",
+        "jr_math_judgment_4aec3eb1cd1e",
+        "jr_math_judgment_2e8e1fbb5805",
+        "jr_math_judgment_7cf7be5c6387"
       ],
-      "pending": "累積度数、目的に合う集計と分布の判断",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中1.D2",
       "grade": "中1",
       "officialGroup": "D2",
       "title": "多数回の試行による確率",
-      "sourceIds": [],
-      "pending": "実験的確率と相対度数、試行回数との関係を補完",
-      "status": "未補完"
+      "sourceIds": [
+        "jr_math_sequence_experiment_probability",
+        "jr_math_judgment_a20a786fc316",
+        "jr_math_judgment_0ec80114f69c",
+        "jr_math_judgment_e7b37c7fcccb"
+      ],
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.A1",
@@ -114,10 +165,17 @@
       "title": "文字を用いた式",
       "sourceIds": [
         "jr_math_sequence_monomial",
-        "jr_math_sequence_literal_formula"
+        "jr_math_judgment_4056154ba446",
+        "jr_math_judgment_64be46b154cc",
+        "jr_math_sequence_literal_formula",
+        "jr_math_sequence_integer_proof",
+        "jr_math_judgment_998aed449044",
+        "jr_math_core_isolate_variable",
+        "jr_math_judgment_fa32a668c47d",
+        "jr_math_judgment_fc525af4708c"
       ],
-      "pending": "整数の性質の説明、数量関係の一般化",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.A2",
@@ -125,12 +183,17 @@
       "officialGroup": "A2",
       "title": "連立二元一次方程式",
       "sourceIds": [
+        "jr_math_judgment_4d35fb8c351d",
+        "jr_math_judgment_c6ae3b5311df",
+        "jr_math_judgment_2f13fef2004d",
         "jr_math_sequence_elimination",
         "jr_math_sequence_elimination_scale",
-        "jr_math_sequence_substitution"
+        "jr_math_sequence_substitution",
+        "jr_math_sequence_elimination_subtract",
+        "jr_math_judgment_64be46b154cc"
       ],
-      "pending": "文章題から二つの条件を立式する判断",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.B1",
@@ -138,12 +201,16 @@
       "officialGroup": "B1",
       "title": "平面図形の性質",
       "sourceIds": [
-        "jr_math2_004",
-        "jr_math2_005",
-        "jr_math2_008"
+        "jr_math2_008",
+        "jr_math2_009",
+        "jr_math_judgment_2c958573963a",
+        "jr_math2_006",
+        "jr_math2_007",
+        "jr_math_judgment_2a7e6135a5fa",
+        "jr_math_judgment_e9976cb2a5a3"
       ],
-      "pending": "対頂角、補助線と根拠のつながり",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.B2",
@@ -154,10 +221,19 @@
         "jr_math2_001",
         "jr_math2_002",
         "jr_math2_003",
-        "jr_math_judgment_5e7cf2347fea"
+        "jr_math_judgment_cc534b954798",
+        "jr_math_judgment_3b48d95e293f",
+        "jr_math_judgment_c8fd49dc7968",
+        "jr_math_judgment_9cc39a1802cc",
+        "jr_math_judgment_740989d22e44",
+        "jr_math_core_proof_reason",
+        "jr_math_judgment_7a13c9f88bcb",
+        "jr_math_judgment_bcabc5ed1cb7",
+        "jr_math_judgment_c14bbdcce65e",
+        "jr_math_judgment_4bbf04b87396"
       ],
-      "pending": "合同の根拠をつなぐ判断、四角形の包含関係",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.C1",
@@ -167,11 +243,17 @@
       "sourceIds": [
         "jr_math_sequence_function",
         "jr_math_sequence_linear_intercept",
+        "jr_math_core_slope",
+        "jr_math_judgment_8c419cb964f6",
+        "jr_math_sequence_linear_word_model",
+        "jr_math_judgment_6a17b696319b",
+        "jr_math_judgment_edaeb1680a11",
         "jr_math_sequence_linear_interval",
-        "jr_math_sequence_intersection"
+        "jr_math_sequence_intersection",
+        "jr_math_judgment_80998bf0b927"
       ],
-      "pending": "二元一次方程式とグラフ、実生活の一次関係",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.D1",
@@ -179,11 +261,14 @@
       "officialGroup": "D1",
       "title": "四分位範囲・箱ひげ図",
       "sourceIds": [
-        "jr_math_core_quartile_range",
-        "jr_math_judgment_2c25120b16d7"
+        "jr_math_sequence_quartiles",
+        "jr_math_judgment_2c25120b16d7",
+        "jr_math_judgment_3d0abac41cea",
+        "jr_math_judgment_b3e40734cc43",
+        "jr_math_judgment_d7e9c0b71b9d"
       ],
-      "pending": "小さいデータの四分位数計算、分布比較の判断",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中2.D2",
@@ -191,11 +276,18 @@
       "officialGroup": "D2",
       "title": "場合の数に基づく確率",
       "sourceIds": [
+        "jr_math_sequence_experiment_probability",
         "jr_math_sequence_probability",
-        "jr_math_sequence_probability_complement"
+        "jr_math_judgment_9ca52a853885",
+        "jr_math_sequence_probability_complement",
+        "jr_math_judgment_2230de8ae8de",
+        "jr_math_judgment_6ee1ef849dcb",
+        "jr_math_judgment_4727e79fe832",
+        "jr_math_judgment_6b3867375681",
+        "jr_math_judgment_5e077de0ed38"
       ],
-      "pending": "順序・重複・取り出し方を踏まえる数え方",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.A1",
@@ -203,13 +295,20 @@
       "officialGroup": "A1",
       "title": "平方根",
       "sourceIds": [
+        "jr_math_judgment_37b245fb71d9",
+        "jr_math_judgment_c0b2f940402f",
+        "jr_math_judgment_5022eb5f98bf",
         "jr_math_sequence_radical",
-        "jr_math_sequence_rationalize",
         "jr_math_sequence_roots_product",
-        "jr_math_sequence_roots_difference"
+        "jr_math_sequence_root_quotient",
+        "jr_math_sequence_rationalize",
+        "jr_math_sequence_irrational_quadratic",
+        "jr_math_sequence_roots_difference",
+        "jr_math_judgment_f54e307e85d7",
+        "jr_math_judgment_25765f1f1ff0"
       ],
-      "pending": "有理数と無理数、近似値と誤差、科学的な数の表し方",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.A2",
@@ -217,13 +316,20 @@
       "officialGroup": "A2",
       "title": "多項式",
       "sourceIds": [
+        "jr_math_sequence_polynomial_divide",
+        "jr_math_sequence_monomial_distribute",
         "jr_math_sequence_expansion",
+        "jr_math_sequence_square_expansion",
+        "jr_math_sequence_difference",
         "jr_math_sequence_factor",
+        "jr_math_core_square_expansion",
         "jr_math_sequence_factor_negative",
-        "jr_math_sequence_square_expansion"
+        "jr_math_judgment_67139a039ee8",
+        "jr_math_sequence_integer_proof",
+        "jr_math_judgment_21683cc32605"
       ],
-      "pending": "多項式と単項式の乗除、文字式による説明",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.A3",
@@ -231,12 +337,18 @@
       "officialGroup": "A3",
       "title": "二次方程式",
       "sourceIds": [
+        "jr_math_judgment_8520744432dc",
+        "jr_math_judgment_b98237742a9b",
         "jr_math_sequence_quadratic_factor",
         "jr_math_sequence_quadratic_square",
-        "jr_math_sequence_quadratic_formula"
+        "jr_math_sequence_irrational_quadratic",
+        "jr_math_sequence_quadratic_formula",
+        "jr_math_core_quadratic_formula_denominator",
+        "jr_math_judgment_d6ab44106c6b",
+        "jr_math_judgment_d4defa910f2c"
       ],
-      "pending": "根号が残る解、文章題の立式と解の適否",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.B1",
@@ -244,12 +356,21 @@
       "officialGroup": "B1",
       "title": "図形の相似",
       "sourceIds": [
-        "jr_math_sequence_similarity",
-        "jr_math_core_area_ratio",
-        "jr_math_core_similar_volume"
+        "jr_math_judgment_41ac5f9935a2",
+        "jr_math_judgment_337a15575422",
+        "jr_math_judgment_0f3705bad02b",
+        "jr_math_sequence_similarity_area",
+        "jr_math_sequence_similarity_volume",
+        "jr_math_core_similar_volume",
+        "jr_math_judgment_07498b56d433",
+        "jr_math_judgment_d22723c21adb",
+        "jr_math_sequence_midsegment",
+        "jr_math_judgment_42b877445d4b",
+        "jr_math_judgment_d462a366254e",
+        "jr_math_sequence_similarity"
       ],
-      "pending": "残る相似条件、平行線と線分比・中点の関係",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.B2",
@@ -258,10 +379,13 @@
       "title": "円周角と中心角",
       "sourceIds": [
         "jr_math_sequence_angle",
-        "jr_math_judgment_c56f42f7ee90"
+        "jr_math_judgment_e0202d650688",
+        "jr_math_judgment_c56f42f7ee90",
+        "jr_math_judgment_2011ed0e29e9",
+        "jr_math_core_semicircle_angle"
       ],
-      "pending": "円周角の定理の逆、成立条件を使う判断",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.B3",
@@ -270,10 +394,14 @@
       "title": "三平方の定理",
       "sourceIds": [
         "jr_math_sequence_pythagoras",
-        "jr_math_sequence_pythagorean_leg"
+        "jr_math_sequence_pythagorean_leg",
+        "jr_math_judgment_01c8efd505eb",
+        "jr_math_judgment_825aba11c40d",
+        "jr_math_judgment_5f5450a461d4",
+        "jr_math_judgment_21a63ce34a83"
       ],
-      "pending": "立体等への適用の着眼点、定理の根拠",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.C1",
@@ -283,10 +411,14 @@
       "sourceIds": [
         "jr_math_sequence_quadratic_coefficient",
         "jr_math_sequence_quadratic_rate",
-        "jr_math_sequence_quadratic_range"
+        "jr_math_sequence_quadratic_range",
+        "jr_math_judgment_f281866fda2f",
+        "jr_math_judgment_0ca2d1991dea",
+        "jr_math_judgment_8c419cb964f6",
+        "jr_math_judgment_781bbb019d9b"
       ],
-      "pending": "具体的な二乗比例と他の関数関係の見分け",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     },
     {
       "id": "中3.D1",
@@ -294,14 +426,21 @@
       "officialGroup": "D1",
       "title": "標本調査",
       "sourceIds": [
+        "jr_math_judgment_f43a2707e6ba",
+        "jr_math_judgment_74d517f725ff",
+        "jr_math_judgment_e4b2adcdf6e9",
+        "jr_math_judgment_e8fc29fab029",
+        "jr_math_judgment_be18690fe928",
+        "jr_math_judgment_41ba26172b98",
+        "jr_math_judgment_9e59fdcc0f98",
         "jr_math_sequence_sampling",
-        "jr_math_core_sampling",
-        "jr_math_judgment_74d517f725ff"
+        "jr_math_core_sample_estimate"
       ],
-      "pending": "抽出方法の具体例、推定結果の解釈と公式小項目の照合",
-      "status": "代表出題先あり・細目の照合は未完了"
+      "status": "基礎版の小項目対応を照合済み",
+      "outsideGame": "実技能・自由な説明等は別練習。詳細は小項目照合表。"
     }
   ],
-  "completion": false,
-  "estimate": "今回の補強後、公式小項目・取扱いとの最終照合と不足補完を目安あと1回。照合で発見する不足により見直す。"
+  "completion": true,
+  "estimate": "暗記・解法ポイントの基礎版は一区切り。次の拡張は応用・別表現・図資料等の任意枠。",
+  "completionScope": "暗記・短い解法・判断の基礎版。全語句・全入試や実技能の達成ではない。"
 }
