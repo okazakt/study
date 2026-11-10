@@ -1,0 +1,44 @@
+{
+  "version": "0.90.0",
+  "date": "2026-11-10",
+  "batch": "math-advanced-20261110",
+  "newMaterials": 64,
+  "newGeneratedQuestions": 95,
+  "sequenceMaterials": 24,
+  "sequenceStages": 55,
+  "individualQuestions": 40,
+  "mathMaterials": 208,
+  "mathGeneratedQuestions": 271,
+  "allSequenceMaterials": 48,
+  "allSequenceStages": 110,
+  "allNumericalVariants": 312,
+  "newNumericalVariants": 147,
+  "symbolicStageChecks": 361,
+  "symbolicReport": {
+    "variants": 147,
+    "stages": 361,
+    "errors": []
+  },
+  "budget": {
+    "materials": 64,
+    "presentations": 401,
+    "maxima": {
+      "task": 11,
+      "prompt": 22,
+      "choice": 13,
+      "targetLabel": 15,
+      "note": 16,
+      "combined": 68
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "existingMathContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "newLayoutReviewNeeded": false,
+  "reusedLayoutReview": "layout-review.json",
+  "runtimeChanges": "Additional finite generator definitions only. Progression, grading, persistence and layout unchanged; published version URLs aligned.",
+  "focusedChecks": "New finite numeric presentations and nine sequence-generation/integration guards only. No full app suite, browser or five-minute session simulation.",
+  "references": "advanced-references.json",
+  "completion": "Official 23-group outline prepared. Remaining official-subitem audit and gap completion estimated at one further round, subject to findings."
+}

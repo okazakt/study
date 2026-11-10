@@ -1,0 +1,307 @@
+{
+  "version": "0.90.0",
+  "date": "2026-11-10",
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+    "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+    "retrieved": "2026-11-10",
+    "sha256": "849e254fd907721f069ae601e18db0c44ae5b79a5ea8394675f18f867d9d237e",
+    "locator": "付録3、第2 各学年の目標及び内容。印刷頁190〜198。",
+    "verification": "取得したPDF本文の各学年の内容・取扱いを読み、残作業の大分類を整理。全小項目の最終照合は未実施。"
+  },
+  "countingRule": "学年別A〜Dの番号付きまとまり23区分。下位の知識・思考判断表現・数学的活動・全語句の母数や網羅率ではない。",
+  "rows": [
+    {
+      "id": "中1.A1",
+      "grade": "中1",
+      "officialGroup": "A1",
+      "title": "正の数と負の数",
+      "sourceIds": [
+        "jr_math_sequence_signed",
+        "jr_math_judgment_873f18074303"
+      ],
+      "pending": "自然数と素数・素因数分解、数の集合と演算の範囲",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.A2",
+      "grade": "中1",
+      "officialGroup": "A2",
+      "title": "文字を用いた式",
+      "sourceIds": [
+        "jr_math_sequence_distribute",
+        "jr_math_sequence_fraction_add",
+        "jr_math_sequence_evaluate_negative"
+      ],
+      "pending": "不等式による数量関係、式の意味の読み取り",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.A3",
+      "grade": "中1",
+      "officialGroup": "A3",
+      "title": "一元一次方程式",
+      "sourceIds": [
+        "jr_math_sequence_linear",
+        "jr_math_sequence_decimal_equation",
+        "jr_math_sequence_equation_two_sides"
+      ],
+      "pending": "比例式、文章からの立式と条件確認",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.B1",
+      "grade": "中1",
+      "officialGroup": "B1",
+      "title": "平面図形",
+      "sourceIds": [
+        "jr_math_core_perpendicular_bisector",
+        "jr_math_judgment_03db3971869e"
+      ],
+      "pending": "基本作図の手順、接線と半径の関係",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.B2",
+      "grade": "中1",
+      "officialGroup": "B2",
+      "title": "空間図形",
+      "sourceIds": [
+        "jr_math_sequence_sector_arc",
+        "jr_math_sequence_cylinder_volume",
+        "jr_math_sequence_cone_volume"
+      ],
+      "pending": "空間の位置関係、見取図・展開図・投影図、球と表面積",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.C1",
+      "grade": "中1",
+      "officialGroup": "C1",
+      "title": "比例・反比例",
+      "sourceIds": [
+        "jr_math_sequence_proportion",
+        "jr_math_sequence_inverse"
+      ],
+      "pending": "関数・座標・変域、表式グラフと実生活の関連",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.D1",
+      "grade": "中1",
+      "officialGroup": "D1",
+      "title": "データの分布",
+      "sourceIds": [
+        "jr_math_sequence_mean",
+        "jr_math_core_relative_frequency"
+      ],
+      "pending": "累積度数、目的に合う集計と分布の判断",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中1.D2",
+      "grade": "中1",
+      "officialGroup": "D2",
+      "title": "多数回の試行による確率",
+      "sourceIds": [],
+      "pending": "実験的確率と相対度数、試行回数との関係を補完",
+      "status": "未補完"
+    },
+    {
+      "id": "中2.A1",
+      "grade": "中2",
+      "officialGroup": "A1",
+      "title": "文字を用いた式",
+      "sourceIds": [
+        "jr_math_sequence_monomial",
+        "jr_math_sequence_literal_formula"
+      ],
+      "pending": "整数の性質の説明、数量関係の一般化",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中2.A2",
+      "grade": "中2",
+      "officialGroup": "A2",
+      "title": "連立二元一次方程式",
+      "sourceIds": [
+        "jr_math_sequence_elimination",
+        "jr_math_sequence_elimination_scale",
+        "jr_math_sequence_substitution"
+      ],
+      "pending": "文章題から二つの条件を立式する判断",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中2.B1",
+      "grade": "中2",
+      "officialGroup": "B1",
+      "title": "平面図形の性質",
+      "sourceIds": [
+        "jr_math2_004",
+        "jr_math2_005",
+        "jr_math2_008"
+      ],
+      "pending": "対頂角、補助線と根拠のつながり",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中2.B2",
+      "grade": "中2",
+      "officialGroup": "B2",
+      "title": "図形の合同",
+      "sourceIds": [
+        "jr_math2_001",
+        "jr_math2_002",
+        "jr_math2_003",
+        "jr_math_judgment_5e7cf2347fea"
+      ],
+      "pending": "合同の根拠をつなぐ判断、四角形の包含関係",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中2.C1",
+      "grade": "中2",
+      "officialGroup": "C1",
+      "title": "一次関数",
+      "sourceIds": [
+        "jr_math_sequence_function",
+        "jr_math_sequence_linear_intercept",
+        "jr_math_sequence_linear_interval",
+        "jr_math_sequence_intersection"
+      ],
+      "pending": "二元一次方程式とグラフ、実生活の一次関係",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中2.D1",
+      "grade": "中2",
+      "officialGroup": "D1",
+      "title": "四分位範囲・箱ひげ図",
+      "sourceIds": [
+        "jr_math_core_quartile_range",
+        "jr_math_judgment_2c25120b16d7"
+      ],
+      "pending": "小さいデータの四分位数計算、分布比較の判断",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中2.D2",
+      "grade": "中2",
+      "officialGroup": "D2",
+      "title": "場合の数に基づく確率",
+      "sourceIds": [
+        "jr_math_sequence_probability",
+        "jr_math_sequence_probability_complement"
+      ],
+      "pending": "順序・重複・取り出し方を踏まえる数え方",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.A1",
+      "grade": "中3",
+      "officialGroup": "A1",
+      "title": "平方根",
+      "sourceIds": [
+        "jr_math_sequence_radical",
+        "jr_math_sequence_rationalize",
+        "jr_math_sequence_roots_product",
+        "jr_math_sequence_roots_difference"
+      ],
+      "pending": "有理数と無理数、近似値と誤差、科学的な数の表し方",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.A2",
+      "grade": "中3",
+      "officialGroup": "A2",
+      "title": "多項式",
+      "sourceIds": [
+        "jr_math_sequence_expansion",
+        "jr_math_sequence_factor",
+        "jr_math_sequence_factor_negative",
+        "jr_math_sequence_square_expansion"
+      ],
+      "pending": "多項式と単項式の乗除、文字式による説明",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.A3",
+      "grade": "中3",
+      "officialGroup": "A3",
+      "title": "二次方程式",
+      "sourceIds": [
+        "jr_math_sequence_quadratic_factor",
+        "jr_math_sequence_quadratic_square",
+        "jr_math_sequence_quadratic_formula"
+      ],
+      "pending": "根号が残る解、文章題の立式と解の適否",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.B1",
+      "grade": "中3",
+      "officialGroup": "B1",
+      "title": "図形の相似",
+      "sourceIds": [
+        "jr_math_sequence_similarity",
+        "jr_math_core_area_ratio",
+        "jr_math_core_similar_volume"
+      ],
+      "pending": "残る相似条件、平行線と線分比・中点の関係",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.B2",
+      "grade": "中3",
+      "officialGroup": "B2",
+      "title": "円周角と中心角",
+      "sourceIds": [
+        "jr_math_sequence_angle",
+        "jr_math_judgment_c56f42f7ee90"
+      ],
+      "pending": "円周角の定理の逆、成立条件を使う判断",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.B3",
+      "grade": "中3",
+      "officialGroup": "B3",
+      "title": "三平方の定理",
+      "sourceIds": [
+        "jr_math_sequence_pythagoras",
+        "jr_math_sequence_pythagorean_leg"
+      ],
+      "pending": "立体等への適用の着眼点、定理の根拠",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.C1",
+      "grade": "中3",
+      "officialGroup": "C1",
+      "title": "二乗に比例する関数等",
+      "sourceIds": [
+        "jr_math_sequence_quadratic_coefficient",
+        "jr_math_sequence_quadratic_rate",
+        "jr_math_sequence_quadratic_range"
+      ],
+      "pending": "具体的な二乗比例と他の関数関係の見分け",
+      "status": "代表出題先あり・細目の照合は未完了"
+    },
+    {
+      "id": "中3.D1",
+      "grade": "中3",
+      "officialGroup": "D1",
+      "title": "標本調査",
+      "sourceIds": [
+        "jr_math_sequence_sampling",
+        "jr_math_core_sampling",
+        "jr_math_judgment_74d517f725ff"
+      ],
+      "pending": "抽出方法の具体例、推定結果の解釈と公式小項目の照合",
+      "status": "代表出題先あり・細目の照合は未完了"
+    }
+  ],
+  "completion": false,
+  "estimate": "今回の補強後、公式小項目・取扱いとの最終照合と不足補完を目安あと1回。照合で発見する不足により見直す。"
+}

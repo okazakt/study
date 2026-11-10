@@ -4,21 +4,21 @@ Authoring check only; no playback or app tests. Uses installed SymPy.
 """
 import json,re,sys
 import sympy as sp
-from sympy.parsing.sympy_parser import parse_expr,standard_transformations,implicit_multiplication_application,convert_xor
-x,a_symbol,y=sp.symbols('x a y',real=True)
-transforms=standard_transformations+(implicit_multiplication_application,convert_xor)
+from sympy.parsing.sympy_parser import parse_expr,standard_transformations,implicit_multiplication_application,convert_xor,rationalize
+x,a_symbol,y,b_symbol,h,S=sp.symbols('x a y b h S',real=True)
+transforms=standard_transformations+(implicit_multiplication_application,convert_xor,rationalize)
 def expr(s):
- s=s.replace('−','-').replace('＋','+').replace('×','*').replace('÷','/').replace('²','^2').replace('³','^3')
+ s=s.replace('π','pi').replace('−','-').replace('＋','+').replace('×','*').replace('÷','/').replace('²','^2').replace('³','^3')
  s=re.sub(r'√(\d+)',r'sqrt(\1)',s)
- assert re.fullmatch(r'[0-9xay\s+\-*/()^sqrt.]+',s),s
- return parse_expr(s,local_dict={'x':x,'a':a_symbol,'y':y,'sqrt':sp.sqrt},transformations=transforms)
-def solutions(s,positive=False):
+ assert re.fullmatch(r'[0-9xaybhSpi\s+\-*/()^sqrt.]+',s),s
+ return parse_expr(s,local_dict={'x':x,'a':a_symbol,'y':y,'b':b_symbol,'h':h,'S':S,'sqrt':sp.sqrt,'pi':sp.pi},transformations=transforms)
+def solutions(s,positive=False,variable=x):
  if '，' in s and s.startswith('x＝'):
   return frozenset(expr(v) for v in s[2:].split('，'))
  result=set()
  for sign in [1,-1] if '±' in s else [1]:
-  candidate=s.replace('±','' if sign==1 else '−');lhs,rhs=candidate.split('＝')
-  result.update(sp.solve(expr(lhs)-expr(rhs),x))
+  candidate=s.replace('±','＋' if sign==1 else '−');lhs,rhs=candidate.split('＝')
+  result.update(sp.solve(expr(lhs)-expr(rhs),variable))
  return frozenset(v for v in result if not positive or v>0)
 def coord(s):
  v=s.split('＝')[-1].strip('()').split(',')
@@ -26,6 +26,32 @@ def coord(s):
 def expected(g,p,i):
  # Values here are derived independently from the numerical problem conditions.
  a=p.get('a');b=p.get('b');k=p.get('k');d=p.get('d')
+ if g=='fraction_add':return 'expr',x/sp.Integer(d)+x/sp.Integer(p['e'])
+ if g=='fraction_subtract':return 'expr',x/sp.Integer(d)-x/sp.Integer(p['e'])
+ if g in ['decimal_equation','equation_two_sides']:return 'roots',frozenset([sp.Integer(p['x'])])
+ if g=='evaluate_negative':return 'expr',-a*k+b
+ if g=='literal_formula':return 'formula_h',frozenset([k*S/a_symbol])
+ if g=='elimination_scale':
+  if i==0:return 'linear_form',x+y-p['d']
+  if i<3:return 'roots_y',frozenset([sp.Integer(p['y'])])
+  return 'pair',(sp.Integer(p['x']),sp.Integer(p['y']))
+ if g=='elimination_subtract':return ('pair',(sp.Integer(p['x']),sp.Integer(p['y']))) if i==2 else ('roots',frozenset([sp.Integer(p['x'])]))
+ if g=='linear_intercept':return ('roots_b',frozenset([sp.Integer(b)])) if i==0 else ('expr',b)
+ if g=='linear_interval':return ('pair',(sp.Integer(a*p['p']+b),sp.Integer(a*p['q']+b))) if i==0 else ('expr',a)
+ if g=='quadratic_coefficient':return ('roots_a',frozenset([sp.Integer(a)])) if i==0 else ('expr',a)
+ if g=='quadratic_rate':return ('pair',(sp.Integer(a*p['p']**2),sp.Integer(a*p['q']**2))) if i==0 else ('expr',a*(p['p']+p['q']))
+ if g=='quadratic_range':return ('roots',frozenset([-sp.Integer(k)])) if i==0 else ('expr',a*k*k)
+ if g=='quadratic_formula':return 'roots',frozenset([sp.Integer(p['u']),sp.Integer(p['v'])])
+ if g=='roots_product':return 'expr',k*d
+ if g=='roots_difference':return 'expr',sp.sqrt(d)
+ if g=='root_quotient':return 'expr',k
+ if g=='factor_negative':return 'expr',-(x+p['u'])*(x+p['v'])
+ if g=='square_expansion':return 'expr',(x-a)**2
+ if g=='sector_arc':return 'expr',sp.Rational(p['r'],2)*sp.pi
+ if g=='cylinder_volume':return 'expr',p['r']**2*p['h']*sp.pi
+ if g=='cone_volume':return 'expr',sp.Rational(p['r']**2*p['h'],3)*sp.pi
+ if g=='pythagorean_leg':return 'positive_roots',frozenset([sp.Integer(a)])
+ if g=='probability_complement':return 'expr',sp.Rational(1,2**k) if i==0 else sp.Rational(2**k-1,2**k)
  if g=='signed':return 'expr',-a+b+2
  if g=='distribute':return 'expr',a*(x+b)-x
  if g in ['linear','fraction_equation']:return 'roots',frozenset([sp.Integer(p['x'])])
@@ -53,6 +79,10 @@ def expected(g,p,i):
 def normalized(s,kind):
  if kind in ['roots','positive_roots']:return solutions(s,kind=='positive_roots')
  if kind=='pair':return coord(s)
+ if kind in ['roots_y','roots_b','roots_a','formula_h']:
+  return solutions(s,variable={'roots_y':y,'roots_b':b_symbol,'roots_a':a_symbol,'formula_h':h}[kind])
+ if kind=='linear_form':
+  lhs,rhs=s.split('＝');return sp.Poly(expr(lhs)-expr(rhs),x,y).monic().as_expr()
  return sp.simplify(expr(s.split('＝')[-1]))
 errors=[];stages=0
 for row in json.load(open(sys.argv[1])):

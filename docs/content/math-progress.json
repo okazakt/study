@@ -1,21 +1,21 @@
 {
-  "version": "0.89.0",
+  "version": "0.90.0",
   "date": "2026-11-10",
-  "materials": 144,
-  "generated": 176,
-  "scope": "短い連続解法を主軸にする実装の第1弾。公式小項目の最終照合や全単元の完了判断は未実施。",
+  "materials": 208,
+  "generated": 271,
+  "scope": "短い連続解法の補強段階。公式の23区分で残作業を整理済み。公式小項目の最終照合と全体の完了判断は次段階。",
   "grades": {
     "中1": {
-      "materials": 45,
-      "generated": 53
+      "materials": 67,
+      "generated": 84
     },
     "中2": {
-      "materials": 52,
-      "generated": 63
+      "materials": 71,
+      "generated": 91
     },
     "中3": {
-      "materials": 47,
-      "generated": 60
+      "materials": 70,
+      "generated": 96
     }
   },
   "sequences": [
@@ -337,9 +337,328 @@
         "母集団の推定"
       ],
       "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_fraction_add",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "文字式",
+      "title": "文字を含む分数の加法",
+      "stages": 2,
+      "skills": [
+        "文字式の通分",
+        "分数式の加法"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_fraction_subtract",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "文字式",
+      "title": "文字を含む分数の減法",
+      "stages": 2,
+      "skills": [
+        "減法の通分",
+        "分数式の減法"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_decimal_equation",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "一次方程式",
+      "title": "小数を含む一次方程式",
+      "stages": 3,
+      "skills": [
+        "小数を含む方程式",
+        "移項",
+        "係数による除法"
+      ],
+      "numericalVariants": 12
+    },
+    {
+      "id": "jr_math_sequence_equation_two_sides",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "一次方程式",
+      "title": "両辺に文字のある方程式",
+      "stages": 2,
+      "skills": [
+        "両辺に文字のある方程式",
+        "方程式の解"
+      ],
+      "numericalVariants": 16
+    },
+    {
+      "id": "jr_math_sequence_evaluate_negative",
+      "grade": "中1",
+      "field": "数と式",
+      "unit": "文字式",
+      "title": "負の値の代入と式の値",
+      "stages": 2,
+      "skills": [
+        "負の数の代入",
+        "式の値"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_sector_arc",
+      "grade": "中1",
+      "field": "図形",
+      "unit": "平面図形",
+      "title": "扇形の弧の長さを求める",
+      "stages": 2,
+      "skills": [
+        "扇形の弧の立式",
+        "扇形の弧の計算"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_cylinder_volume",
+      "grade": "中1",
+      "field": "図形",
+      "unit": "空間図形",
+      "title": "円柱の体積を求める",
+      "stages": 2,
+      "skills": [
+        "円柱の体積の立式",
+        "円柱の体積の計算"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_cone_volume",
+      "grade": "中1",
+      "field": "図形",
+      "unit": "空間図形",
+      "title": "円錐の体積を求める",
+      "stages": 2,
+      "skills": [
+        "円錐の体積の立式",
+        "円錐の体積の計算"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_literal_formula",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "式の計算",
+      "title": "文字を含む等式変形",
+      "stages": 2,
+      "skills": [
+        "文字式の分母払い",
+        "文字について解く"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_elimination_scale",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "連立方程式",
+      "title": "係数合わせから加減法へ",
+      "stages": 4,
+      "skills": [
+        "加減法の係数合わせ",
+        "連立方程式の消去",
+        "消去後の方程式",
+        "連立の解の確定"
+      ],
+      "numericalVariants": 12
+    },
+    {
+      "id": "jr_math_sequence_elimination_subtract",
+      "grade": "中2",
+      "field": "数と式",
+      "unit": "連立方程式",
+      "title": "同じ係数の文字を引いて消す",
+      "stages": 3,
+      "skills": [
+        "減法による消去",
+        "消去後の解",
+        "連立の解の確認"
+      ],
+      "numericalVariants": 16
+    },
+    {
+      "id": "jr_math_sequence_linear_intercept",
+      "grade": "中2",
+      "field": "関数",
+      "unit": "一次関数",
+      "title": "傾きと一点から切片へ",
+      "stages": 2,
+      "skills": [
+        "一次関数の条件式",
+        "切片の決定"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_linear_interval",
+      "grade": "中2",
+      "field": "関数",
+      "unit": "一次関数",
+      "title": "区間の両端から変化の割合へ",
+      "stages": 2,
+      "skills": [
+        "一次関数の両端の値",
+        "一次関数の変化の割合"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_probability_complement",
+      "grade": "中2",
+      "field": "データの活用",
+      "unit": "確率",
+      "title": "余事象から確率へ",
+      "stages": 2,
+      "skills": [
+        "余事象の確率",
+        "余事象の利用"
+      ],
+      "numericalVariants": 2
+    },
+    {
+      "id": "jr_math_sequence_quadratic_coefficient",
+      "grade": "中3",
+      "field": "関数",
+      "unit": "二乗に比例する関数",
+      "title": "二乗比例の比例定数を求める",
+      "stages": 2,
+      "skills": [
+        "二乗比例の比例定数",
+        "比例定数の計算"
+      ],
+      "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_quadratic_rate",
+      "grade": "中3",
+      "field": "関数",
+      "unit": "二乗に比例する関数",
+      "title": "二乗比例の変化の割合",
+      "stages": 3,
+      "skills": [
+        "二乗比例の両端の値",
+        "二乗比例の変化の割合",
+        "変化の割合の計算"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_quadratic_range",
+      "grade": "中3",
+      "field": "関数",
+      "unit": "二乗に比例する関数",
+      "title": "二乗比例の最大値を求める",
+      "stages": 2,
+      "skills": [
+        "二乗比例の最大値の位置",
+        "二乗比例の最大値"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_quadratic_formula",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "二次方程式",
+      "title": "解の公式から二つの解へ",
+      "stages": 3,
+      "skills": [
+        "解の公式の適用",
+        "解の公式の根号整理",
+        "解の公式から二解へ"
+      ],
+      "numericalVariants": 8
+    },
+    {
+      "id": "jr_math_sequence_roots_product",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "平方根",
+      "title": "根号の積から平方数へ",
+      "stages": 2,
+      "skills": [
+        "平方根の乗法",
+        "平方根の値"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_roots_difference",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "平方根",
+      "title": "根号の整理から減法へ",
+      "stages": 2,
+      "skills": [
+        "平方根の減法の準備",
+        "平方根の減法"
+      ],
+      "numericalVariants": 6
+    },
+    {
+      "id": "jr_math_sequence_root_quotient",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "平方根",
+      "title": "根号の商と簡単化",
+      "stages": 2,
+      "skills": [
+        "平方根の除法",
+        "平方根の簡単化"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_factor_negative",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "負の因数をくくって因数分解",
+      "stages": 2,
+      "skills": [
+        "負の共通因数",
+        "負の因数と二次式"
+      ],
+      "numericalVariants": 4
+    },
+    {
+      "id": "jr_math_sequence_square_expansion",
+      "grade": "中3",
+      "field": "数と式",
+      "unit": "展開と因数分解",
+      "title": "差の平方を展開して整理",
+      "stages": 2,
+      "skills": [
+        "差の平方の展開",
+        "差の平方の整理"
+      ],
+      "numericalVariants": 3
+    },
+    {
+      "id": "jr_math_sequence_pythagorean_leg",
+      "grade": "中3",
+      "field": "図形",
+      "unit": "三平方の定理",
+      "title": "斜辺以外の長さを求める",
+      "stages": 3,
+      "skills": [
+        "三平方で短い辺を求める",
+        "二乗の差の計算",
+        "長さの解の選択"
+      ],
+      "numericalVariants": 3
     }
   ],
-  "sequenceMaterials": 24,
-  "sequenceStages": 55,
-  "numericalVariants": 165
+  "sequenceMaterials": 48,
+  "sequenceStages": 110,
+  "numericalVariants": 312
 }
