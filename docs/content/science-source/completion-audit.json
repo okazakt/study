@@ -1,0 +1,67 @@
+{
+  "version": "0.88.0",
+  "date": "2026-11-10",
+  "batch": "science-completion-20261110",
+  "newMaterials": 164,
+  "newGeneratedQuestions": 200,
+  "pairedTermMaterials": 36,
+  "choiceMaterials": 128,
+  "previousScienceMaterials": 757,
+  "previousScienceGeneratedQuestions": 1174,
+  "totalMaterials": 921,
+  "totalGeneratedQuestions": 1374,
+  "fields": {
+    "物理": {
+      "materials": 198,
+      "generated": 281
+    },
+    "化学": {
+      "materials": 198,
+      "generated": 286
+    },
+    "生物": {
+      "materials": 244,
+      "generated": 409
+    },
+    "地学": {
+      "materials": 195,
+      "generated": 280
+    },
+    "環境": {
+      "materials": 86,
+      "generated": 118
+    }
+  },
+  "previousScienceContentsUnchanged": true,
+  "otherSubjectsUnchanged": true,
+  "previousIdsPreserved": true,
+  "runtimeChanges": "Version URLs only; no gameplay or persistence changes.",
+  "budget": {
+    "materials": 164,
+    "presentations": 200,
+    "maxima": {
+      "task": 19,
+      "prompt": 26,
+      "choice": 12,
+      "targetLabel": 21,
+      "note": 16,
+      "combined": 67
+    },
+    "errors": [],
+    "reviewRequired": []
+  },
+  "newLayoutReviewNeeded": false,
+  "reusedLayoutReview": "layout-review.json",
+  "references": "completion-references.json",
+  "curriculumReview": {
+    "file": "curriculum-review.json",
+    "knowledgeRows": 71,
+    "thinkingRows": 14,
+    "total": 85,
+    "handlingFile": "handling-review.json",
+    "handlingRows": 59,
+    "unresolvedSelectors": []
+  },
+  "checks": "New JSON/IDs/required fields/four distinct choices/direct hints/text envelope/old-object preservation and editorial source references only. No app tests, browser or five-minute simulation.",
+  "completion": "Basic memory/short reasoning/experimental viewpoints complete as an authoring milestone; practical activity and all-exam coverage excluded."
+}

@@ -3,7 +3,7 @@ import hashlib,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'docs/content/science-source'
-SOURCES=[('science-foundation-20261109','foundation'),('science-body-earth-20261109','body-earth'),('science-energy-20261109','energy')]
+SOURCES=[('science-foundation-20261109','foundation'),('science-body-earth-20261109','body-earth'),('science-energy-20261109','energy'),('science-completion-20261110','completion')]
 MANAGED={batch for batch,_ in SOURCES}
 path=ROOT/'quiz-data/junior_science.json'
 prior=json.loads(path.read_text())
@@ -21,7 +21,7 @@ def emit():
   assert template.count('{{1}}')==1 and '{{2}}' not in template,term
   assert len(set([answer]+dummies.split(',')))==4,term
   hint=answer in term
-  q=dict(id='jr_science_'+hashlib.sha256((field+'|'+term).encode()).hexdigest()[:12],subject='理科',school_level='中学',grade=grade,field=field,unit=unit,term=term,term_dummies=others,explanation_template=template,blanks=[dict(index=1,answer=answer,dummies=dummies.split(','))],note=note,cloze_context='' if hint else term,cloze_context_reason='用語に穴の正答そのものが含まれるため省略。' if hint else '用語は説明の対象を特定するために表示。穴の正答の直接記載はない。',content_batch=BATCH,official_blocks=[official],content_reviewed='2026-11-09')
+  q=dict(id='jr_science_'+hashlib.sha256((field+'|'+term).encode()).hexdigest()[:12],subject='理科',school_level='中学',grade=grade,field=field,unit=unit,term=term,term_dummies=others,explanation_template=template,blanks=[dict(index=1,answer=answer,dummies=dummies.split(','))],note=note,cloze_context='' if hint else term,cloze_context_reason='用語に穴の正答そのものが含まれるため省略。' if hint else '用語は説明の対象を特定するために表示。穴の正答の直接記載はない。',content_batch=BATCH,official_blocks=[official],content_reviewed='2026-11-10' if BATCH=='science-completion-20261110' else '2026-11-09')
   override=overrides.get(term,{})
   assert set(override)<= {'grade','field','unit','official_blocks','cloze_context','cloze_context_reason'}
   q.update(override)
@@ -40,7 +40,7 @@ for BATCH,prefix in SOURCES:
   r=line.split('|');assert len(r)==10,(n,r)
   grade,field,unit,official,prompt,answer,a,b,c,note=r
   assert len(set([answer,a,b,c]))==4,(n,prompt)
-  added.append(dict(id='jr_science_case_'+hashlib.sha256((field+'|'+prompt).encode()).hexdigest()[:12],subject='理科',school_level='中学',grade=grade,field=field,unit=unit,kind='choice',task='適切なものを選ぼう',prompt=prompt,answer=answer,dummies=[a,b,c],note=note,content_batch=BATCH,official_blocks=[official],content_reviewed='2026-11-09'))
+  added.append(dict(id='jr_science_case_'+hashlib.sha256((field+'|'+prompt).encode()).hexdigest()[:12],subject='理科',school_level='中学',grade=grade,field=field,unit=unit,kind='choice',task='適切なものを選ぼう',prompt=prompt,answer=answer,dummies=[a,b,c],note=note,content_batch=BATCH,official_blocks=[official],content_reviewed='2026-11-10' if BATCH=='science-completion-20261110' else '2026-11-09'))
 assert not ({q['id'] for q in bank}&{q['id'] for q in added})
 assert len({q['id'] for q in added})==len(added)
 assert len({q['term'] for q in bank+added if 'term' in q})==sum('term' in q for q in bank+added),'duplicate term'

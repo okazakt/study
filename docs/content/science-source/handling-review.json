@@ -1,0 +1,1862 @@
+{
+  "version": "0.88.0",
+  "date": "2026-11-10",
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 理科編（令和3年8月一部改訂）",
+    "url": "https://www.mext.go.jp/content/20230522-mxt_kyoikujinzai02-000033060_04.pdf",
+    "retrieved": "2026-11-09",
+    "sha256": "e28b9d4778070496b350141c92d70061cb6f98e76ff6fc74ab88f79f972c7d24",
+    "locator": "付録3 中学校学習指導要領 第2章第4節理科。印刷頁150–166、対応する本文解説も参照。"
+  },
+  "scope": "内容の取扱いのうち学習内容を指定する項目を要約して照合。各分野の配当学年・授業の実施方法等は別記し、行数を網羅率としない。",
+  "rows": [
+    {
+      "field": "第1分野",
+      "block": "p1",
+      "officialLocator": "3(3)ア",
+      "point": "全反射・屈折角・白色光の分散",
+      "evidence": [
+        {
+          "selector": "T:全反射",
+          "sourceIds": [
+            "jr_science_82971fb35700"
+          ]
+        },
+        {
+          "selector": "T:光の分散",
+          "sourceIds": [
+            "jr_science_c9e6bb974bb5"
+          ]
+        },
+        {
+          "selector": "P:空気から水へ斜め",
+          "sourceIds": [
+            "jr_science_case_6fb59aaa9a03"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_82971fb35700",
+        "jr_science_c9e6bb974bb5",
+        "jr_science_case_6fb59aaa9a03"
+      ],
+      "outsideGame": "屈折光路の実作図"
+    },
+    {
+      "field": "第1分野",
+      "block": "p1",
+      "officialLocator": "3(3)イ",
+      "point": "凸レンズの位置・像の大きさ・実像虚像",
+      "evidence": [
+        {
+          "selector": "T:実像",
+          "sourceIds": [
+            "jr_science_ec50682cc0c9"
+          ]
+        },
+        {
+          "selector": "T:虚像",
+          "sourceIds": [
+            "jr_science_775db40541f4"
+          ]
+        },
+        {
+          "selector": "P:凸レンズの物体を焦点",
+          "sourceIds": [
+            "jr_science_case_d8bf9d310b90"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ec50682cc0c9",
+        "jr_science_775db40541f4",
+        "jr_science_case_d8bf9d310b90"
+      ],
+      "outsideGame": "実物の像測定"
+    },
+    {
+      "field": "第1分野",
+      "block": "p1",
+      "officialLocator": "3(3)ウ",
+      "point": "空気中の音のおよその速さ",
+      "evidence": [
+        {
+          "selector": "T:音の速さ",
+          "sourceIds": [
+            "jr_science_c5d65eae30ad"
+          ]
+        },
+        {
+          "selector": "P:光の後に雷鳴",
+          "sourceIds": [
+            "jr_science_case_9e2e55550f6e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_c5d65eae30ad",
+        "jr_science_case_9e2e55550f6e"
+      ],
+      "outsideGame": "時間差の実測"
+    },
+    {
+      "field": "第1分野",
+      "block": "p1",
+      "officialLocator": "3(3)エ",
+      "point": "ばね・重さと質量・ニュートン",
+      "evidence": [
+        {
+          "selector": "T:フックの法則",
+          "sourceIds": [
+            "jr_science_a86144ff7426"
+          ]
+        },
+        {
+          "selector": "T:重さ",
+          "sourceIds": [
+            "jr_science_2adec1ac8b24"
+          ]
+        },
+        {
+          "selector": "T:質量",
+          "sourceIds": [
+            "jr_science_7e0644cb5c26"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_a86144ff7426",
+        "jr_science_2adec1ac8b24",
+        "jr_science_7e0644cb5c26"
+      ],
+      "outsideGame": "ばねの測定と力の図示"
+    },
+    {
+      "field": "第1分野",
+      "block": "p2",
+      "officialLocator": "3(4)ア",
+      "point": "有機物無機物・金属非金属",
+      "evidence": [
+        {
+          "selector": "T:有機物",
+          "sourceIds": [
+            "jr_science_ccd2655698c8"
+          ]
+        },
+        {
+          "selector": "T:無機物",
+          "sourceIds": [
+            "jr_science_860f54dc7443"
+          ]
+        },
+        {
+          "selector": "T:金属",
+          "sourceIds": [
+            "jr_science_61c8d5c87228"
+          ]
+        },
+        {
+          "selector": "T:非金属",
+          "sourceIds": [
+            "jr_science_4ae87f1f52d5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ccd2655698c8",
+        "jr_science_860f54dc7443",
+        "jr_science_61c8d5c87228",
+        "jr_science_4ae87f1f52d5"
+      ],
+      "outsideGame": "性質比較の実験"
+    },
+    {
+      "field": "第1分野",
+      "block": "p2",
+      "officialLocator": "3(4)イ",
+      "point": "異なる方法で同じ気体を得る",
+      "evidence": [
+        {
+          "selector": "P:同じ気体を別の方法",
+          "sourceIds": [
+            "jr_science_case_c3c0110f7593"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_c3c0110f7593"
+      ],
+      "outsideGame": "複数の発生実験と確認"
+    },
+    {
+      "field": "第1分野",
+      "block": "p2",
+      "officialLocator": "3(4)ウ",
+      "point": "粒子モデル・質量％濃度・溶解度曲線",
+      "evidence": [
+        {
+          "selector": "P:水90gに食塩10g",
+          "sourceIds": [
+            "jr_science_case_506b7271486e"
+          ]
+        },
+        {
+          "selector": "P:溶解度曲線で比べる",
+          "sourceIds": [
+            "jr_science_case_4e2467a43763"
+          ]
+        },
+        {
+          "selector": "T:溶質",
+          "sourceIds": [
+            "jr_science_4728e97dbb08"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_506b7271486e",
+        "jr_science_case_4e2467a43763",
+        "jr_science_4728e97dbb08"
+      ],
+      "outsideGame": "曲線の実読取り・粒子表現"
+    },
+    {
+      "field": "第1分野",
+      "block": "p2",
+      "officialLocator": "3(4)エ",
+      "point": "状態変化と粒子の運動",
+      "evidence": [
+        {
+          "selector": "P:状態変化の粒子モデル",
+          "sourceIds": [
+            "jr_science_case_51e8879234de"
+          ]
+        },
+        {
+          "selector": "P:気体が液体に変わる",
+          "sourceIds": [
+            "jr_science_case_2d4e378fdb82"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_51e8879234de",
+        "jr_science_case_2d4e378fdb82"
+      ],
+      "outsideGame": "モデル作成と説明"
+    },
+    {
+      "field": "第1分野",
+      "block": "p3",
+      "officialLocator": "3(5)ア",
+      "point": "二抵抗の直列並列回路",
+      "evidence": [
+        {
+          "selector": "T:直列回路",
+          "sourceIds": [
+            "jr_science_d082aaabdf9b"
+          ]
+        },
+        {
+          "selector": "T:並列回路",
+          "sourceIds": [
+            "jr_science_9db6d000eaf8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_d082aaabdf9b",
+        "jr_science_9db6d000eaf8"
+      ],
+      "outsideGame": "実配線と回路図"
+    },
+    {
+      "field": "第1分野",
+      "block": "p3",
+      "officialLocator": "3(5)イ",
+      "point": "物質による抵抗と合成抵抗",
+      "evidence": [
+        {
+          "selector": "T:電気抵抗",
+          "sourceIds": [
+            "jr_science_c26b11025f4d"
+          ]
+        },
+        {
+          "selector": "P:同じ抵抗2個を並列",
+          "sourceIds": [
+            "jr_science_case_66165593895f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_c26b11025f4d",
+        "jr_science_case_66165593895f"
+      ],
+      "outsideGame": "合成抵抗の測定"
+    },
+    {
+      "field": "第1分野",
+      "block": "p3",
+      "officialLocator": "3(5)ウ",
+      "point": "電力量と熱量",
+      "evidence": [
+        {
+          "selector": "T:電力量",
+          "sourceIds": [
+            "jr_science_8454c487765e"
+          ]
+        },
+        {
+          "selector": "T:ジュール熱",
+          "sourceIds": [
+            "jr_science_1132ab624f0e"
+          ]
+        },
+        {
+          "selector": "P:20Wの器具",
+          "sourceIds": [
+            "jr_science_case_12ade5e23bb1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_8454c487765e",
+        "jr_science_1132ab624f0e",
+        "jr_science_case_12ade5e23bb1"
+      ],
+      "outsideGame": "発熱の実測"
+    },
+    {
+      "field": "第1分野",
+      "block": "p3",
+      "officialLocator": "3(5)エ",
+      "point": "電子・真空放電・放射線の性質利用",
+      "evidence": [
+        {
+          "selector": "T:電子",
+          "sourceIds": [
+            "jr_science_dc4116914dcc"
+          ]
+        },
+        {
+          "selector": "T:クルックス管",
+          "sourceIds": [
+            "jr_science_229ffe64cfca"
+          ]
+        },
+        {
+          "selector": "T:放射線",
+          "sourceIds": [
+            "jr_science_b3959f080036"
+          ]
+        },
+        {
+          "selector": "P:放射線で製品内部",
+          "sourceIds": [
+            "jr_science_case_ab80d78967c5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_dc4116914dcc",
+        "jr_science_229ffe64cfca",
+        "jr_science_b3959f080036",
+        "jr_science_case_ab80d78967c5"
+      ],
+      "outsideGame": "放電の観察と測定の体験"
+    },
+    {
+      "field": "第1分野",
+      "block": "p3",
+      "officialLocator": "3(5)オ",
+      "point": "電流磁界の向きと力の向き",
+      "evidence": [
+        {
+          "selector": "P:磁界の向きだけ逆",
+          "sourceIds": [
+            "jr_science_case_3a026e7ef631"
+          ]
+        },
+        {
+          "selector": "P:電動機の電流だけ",
+          "sourceIds": [
+            "jr_science_case_5d000c40b5cc"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_3a026e7ef631",
+        "jr_science_case_5d000c40b5cc"
+      ],
+      "outsideGame": "力の向きの図示と実験"
+    },
+    {
+      "field": "第1分野",
+      "block": "p3",
+      "officialLocator": "3(5)カ",
+      "point": "磁石コイルの動く向きと誘導電流",
+      "evidence": [
+        {
+          "selector": "P:磁石を動かす向きを逆",
+          "sourceIds": [
+            "jr_science_case_8ad6aff447e0"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_8ad6aff447e0"
+      ],
+      "outsideGame": "誘導電流の実測"
+    },
+    {
+      "field": "第1分野",
+      "block": "p4",
+      "officialLocator": "3(6)ア",
+      "point": "元素・元素記号・周期表",
+      "evidence": [
+        {
+          "selector": "T:元素",
+          "sourceIds": [
+            "jr_science_a12d483a61eb"
+          ]
+        },
+        {
+          "selector": "T:元素記号",
+          "sourceIds": [
+            "jr_science_ef4a0e212e8f"
+          ]
+        },
+        {
+          "selector": "T:周期表",
+          "sourceIds": [
+            "jr_science_757a560c30ad"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_a12d483a61eb",
+        "jr_science_ef4a0e212e8f",
+        "jr_science_757a560c30ad"
+      ],
+      "outsideGame": "周期表の実読取り"
+    },
+    {
+      "field": "第1分野",
+      "block": "p4",
+      "officialLocator": "3(6)イ",
+      "point": "簡単な化学式と反応式",
+      "evidence": [
+        {
+          "selector": "T:化学式",
+          "sourceIds": [
+            "jr_science_407ef40f1e8c"
+          ]
+        },
+        {
+          "selector": "P:2H₂＋O₂",
+          "sourceIds": [
+            "jr_science_case_d25953e63959"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_407ef40f1e8c",
+        "jr_science_case_d25953e63959"
+      ],
+      "outsideGame": "反応式の自力作成"
+    },
+    {
+      "field": "第1分野",
+      "block": "p4",
+      "officialLocator": "3(6)ウ",
+      "point": "簡単な酸化還元",
+      "evidence": [
+        {
+          "selector": "T:酸化",
+          "sourceIds": [
+            "jr_science_35d4a4c44fa6"
+          ]
+        },
+        {
+          "selector": "T:還元",
+          "sourceIds": [
+            "jr_science_e11f392e082e"
+          ]
+        },
+        {
+          "selector": "P:酸化銅と炭素",
+          "sourceIds": [
+            "jr_science_case_cf0a69fb8db8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_35d4a4c44fa6",
+        "jr_science_e11f392e082e",
+        "jr_science_case_cf0a69fb8db8"
+      ],
+      "outsideGame": "実際の反応とモデル説明"
+    },
+    {
+      "field": "第1分野",
+      "block": "p5",
+      "officialLocator": "3(7)ア",
+      "point": "全方向の水圧・水圧と浮力",
+      "evidence": [
+        {
+          "selector": "T:水圧",
+          "sourceIds": [
+            "jr_science_76bd46ce3a68"
+          ]
+        },
+        {
+          "selector": "T:浮力",
+          "sourceIds": [
+            "jr_science_4171f7dc5bbd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_76bd46ce3a68",
+        "jr_science_4171f7dc5bbd"
+      ],
+      "outsideGame": "圧力分布の図示・実測"
+    },
+    {
+      "field": "第1分野",
+      "block": "p5",
+      "officialLocator": "3(7)イ",
+      "point": "作用反作用",
+      "evidence": [
+        {
+          "selector": "T:作用・反作用",
+          "sourceIds": [
+            "jr_science_6a3a7a4a3eaa"
+          ]
+        },
+        {
+          "selector": "P:作用・反作用の2力",
+          "sourceIds": [
+            "jr_science_core_action_reaction"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_6a3a7a4a3eaa",
+        "jr_science_core_action_reaction"
+      ],
+      "outsideGame": "二物体への力の図示"
+    },
+    {
+      "field": "第1分野",
+      "block": "p5",
+      "officialLocator": "3(7)ウ",
+      "point": "斜面運動・自由落下・速さ変化は定性的",
+      "evidence": [
+        {
+          "selector": "T:自由落下",
+          "sourceIds": [
+            "jr_science_0455c7a565b8"
+          ]
+        },
+        {
+          "selector": "P:斜面に沿って下る",
+          "sourceIds": [
+            "jr_science_case_097804f9dbd0"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_0455c7a565b8",
+        "jr_science_case_097804f9dbd0"
+      ],
+      "outsideGame": "台車記録とグラフ化"
+    },
+    {
+      "field": "第1分野",
+      "block": "p5",
+      "officialLocator": "3(7)エ",
+      "point": "仕事の原理",
+      "evidence": [
+        {
+          "selector": "T:仕事の原理",
+          "sourceIds": [
+            "jr_science_fb44c0af0796"
+          ]
+        },
+        {
+          "selector": "P:滑車で引く力が半分",
+          "sourceIds": [
+            "jr_science_case_cd19398ba04d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_fb44c0af0796",
+        "jr_science_case_cd19398ba04d"
+      ],
+      "outsideGame": "滑車等の実験"
+    },
+    {
+      "field": "第1分野",
+      "block": "p5",
+      "officialLocator": "3(7)オ",
+      "point": "摩擦と力学的エネルギー",
+      "evidence": [
+        {
+          "selector": "T:摩擦力",
+          "sourceIds": [
+            "jr_science_d0eea04e75f2"
+          ]
+        },
+        {
+          "selector": "P:摩擦で減った力学的",
+          "sourceIds": [
+            "jr_science_case_cd14428a4b6d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_d0eea04e75f2",
+        "jr_science_case_cd14428a4b6d"
+      ],
+      "outsideGame": "エネルギー損失の実測"
+    },
+    {
+      "field": "第1分野",
+      "block": "p6",
+      "officialLocator": "3(8)ア",
+      "point": "電子・原子核・陽子中性子・同位体・イオン式",
+      "evidence": [
+        {
+          "selector": "T:原子核",
+          "sourceIds": [
+            "jr_science_64c9a1bc89be"
+          ]
+        },
+        {
+          "selector": "T:陽子",
+          "sourceIds": [
+            "jr_science_bbfdcf9a6f9b"
+          ]
+        },
+        {
+          "selector": "T:中性子",
+          "sourceIds": [
+            "jr_science_7707f8a45fdc"
+          ]
+        },
+        {
+          "selector": "T:同位体",
+          "sourceIds": [
+            "jr_science_eb19b8ab5721"
+          ]
+        },
+        {
+          "selector": "T:イオン式",
+          "sourceIds": [
+            "jr_science_185bfe601076"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_64c9a1bc89be",
+        "jr_science_bbfdcf9a6f9b",
+        "jr_science_7707f8a45fdc",
+        "jr_science_eb19b8ab5721",
+        "jr_science_185bfe601076"
+      ],
+      "outsideGame": "粒子モデル作成と説明"
+    },
+    {
+      "field": "第1分野",
+      "block": "p6",
+      "officialLocator": "3(8)イ",
+      "point": "pH",
+      "evidence": [
+        {
+          "selector": "T:pH",
+          "sourceIds": [
+            "jr_science_0beb05af4c02"
+          ]
+        },
+        {
+          "selector": "P:pH3とpH5",
+          "sourceIds": [
+            "jr_science_case_1a1dfc0d95e0"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_0beb05af4c02",
+        "jr_science_case_1a1dfc0d95e0"
+      ],
+      "outsideGame": "測定器・指示薬の実使用"
+    },
+    {
+      "field": "第1分野",
+      "block": "p6",
+      "officialLocator": "3(8)ウ",
+      "point": "水に溶ける塩・溶けない塩",
+      "evidence": [
+        {
+          "selector": "P:中和後の食塩水",
+          "sourceIds": [
+            "jr_science_case_9382f6fa96ca"
+          ]
+        },
+        {
+          "selector": "P:硫酸と水酸化Ba",
+          "sourceIds": [
+            "jr_science_case_1256e2e47d98"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_9382f6fa96ca",
+        "jr_science_case_1256e2e47d98"
+      ],
+      "outsideGame": "沈殿実験と観察"
+    },
+    {
+      "field": "第1分野",
+      "block": "p6",
+      "officialLocator": "3(8)エ",
+      "point": "基礎的な金属イオン",
+      "evidence": [
+        {
+          "selector": "P:亜鉛・鉄・銅で",
+          "sourceIds": [
+            "jr_science_case_c572dace4297"
+          ]
+        },
+        {
+          "selector": "P:亜鉛を硫酸銅",
+          "sourceIds": [
+            "jr_science_case_fee46a55658d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_c572dace4297",
+        "jr_science_case_fee46a55658d"
+      ],
+      "outsideGame": "析出等の実験"
+    },
+    {
+      "field": "第1分野",
+      "block": "p6",
+      "officialLocator": "3(8)オ",
+      "point": "ダニエル電池・電極モデル・生活の電池",
+      "evidence": [
+        {
+          "selector": "T:ダニエル電池",
+          "sourceIds": [
+            "jr_science_b0771010d758"
+          ]
+        },
+        {
+          "selector": "T:乾電池",
+          "sourceIds": [
+            "jr_science_973919c78365"
+          ]
+        },
+        {
+          "selector": "T:二次電池",
+          "sourceIds": [
+            "jr_science_730908960c1f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_b0771010d758",
+        "jr_science_973919c78365",
+        "jr_science_730908960c1f"
+      ],
+      "outsideGame": "電池組立て・電極の実観察"
+    },
+    {
+      "field": "第1分野",
+      "block": "p7",
+      "officialLocator": "3(9)ア",
+      "point": "熱の伝達・放射線・エネルギー保存と効率",
+      "evidence": [
+        {
+          "selector": "T:熱伝導",
+          "sourceIds": [
+            "jr_science_dbcb7755ab5b"
+          ]
+        },
+        {
+          "selector": "T:対流",
+          "sourceIds": [
+            "jr_science_319c8f4a48d0"
+          ]
+        },
+        {
+          "selector": "T:熱放射",
+          "sourceIds": [
+            "jr_science_7b1c3721dd4c"
+          ]
+        },
+        {
+          "selector": "T:エネルギー効率",
+          "sourceIds": [
+            "jr_science_86b8c877fa0c"
+          ]
+        },
+        {
+          "selector": "T:放射線",
+          "sourceIds": [
+            "jr_science_b3959f080036"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_dbcb7755ab5b",
+        "jr_science_319c8f4a48d0",
+        "jr_science_7b1c3721dd4c",
+        "jr_science_86b8c877fa0c",
+        "jr_science_b3959f080036"
+      ],
+      "outsideGame": "熱量等の実測と資料の読取り"
+    },
+    {
+      "field": "第1分野",
+      "block": "p7",
+      "officialLocator": "3(9)イ",
+      "point": "天然人工の代表材料・プラスチック",
+      "evidence": [
+        {
+          "selector": "T:プラスチック",
+          "sourceIds": [
+            "jr_science_ab554735bf81"
+          ]
+        },
+        {
+          "selector": "P:天然素材と人工素材",
+          "sourceIds": [
+            "jr_science_case_4cfcbced5f20"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ab554735bf81",
+        "jr_science_case_4cfcbced5f20"
+      ],
+      "outsideGame": "実物材料の比較"
+    },
+    {
+      "field": "第1分野",
+      "block": "p7",
+      "officialLocator": "3(9)ウ",
+      "point": "両分野を統合した環境と科学技術の考察",
+      "evidence": [
+        {
+          "selector": "P:製品の環境負荷を比較",
+          "sourceIds": [
+            "jr_science_case_70a8ad66dcf9"
+          ]
+        },
+        {
+          "selector": "P:主張の根拠として",
+          "sourceIds": [
+            "jr_science_case_b309d742d88f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_70a8ad66dcf9",
+        "jr_science_case_b309d742d88f"
+      ],
+      "outsideGame": "総合調査と自由な提案・討論"
+    },
+    {
+      "field": "第2分野",
+      "block": "s1",
+      "officialLocator": "3(3)ア",
+      "point": "外見観察・ルーペと双眼実体顕微鏡",
+      "evidence": [
+        {
+          "selector": "T:ルーペ",
+          "sourceIds": [
+            "jr_science_ed2f97b2faa2"
+          ]
+        },
+        {
+          "selector": "T:双眼実体顕微鏡",
+          "sourceIds": [
+            "jr_science_be917eebff72"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ed2f97b2faa2",
+        "jr_science_be917eebff72"
+      ],
+      "outsideGame": "実物の観察とスケッチ"
+    },
+    {
+      "field": "第2分野",
+      "block": "s1",
+      "officialLocator": "3(3)イ",
+      "point": "花・胚珠種子・被子裸子・葉による分類・胞子",
+      "evidence": [
+        {
+          "selector": "T:胚珠",
+          "sourceIds": [
+            "jr_science_f737a5245fd2"
+          ]
+        },
+        {
+          "selector": "T:被子植物",
+          "sourceIds": [
+            "jr_science_69bf53452aec"
+          ]
+        },
+        {
+          "selector": "T:裸子植物",
+          "sourceIds": [
+            "jr_science_d6674de0ef07"
+          ]
+        },
+        {
+          "selector": "T:単子葉類",
+          "sourceIds": [
+            "jr_science_f11a8d99b1f8"
+          ]
+        },
+        {
+          "selector": "T:胞子",
+          "sourceIds": [
+            "jr_science_2405a9e9b8d7"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_f737a5245fd2",
+        "jr_science_69bf53452aec",
+        "jr_science_d6674de0ef07",
+        "jr_science_f11a8d99b1f8",
+        "jr_science_2405a9e9b8d7"
+      ],
+      "outsideGame": "花葉の実物比較"
+    },
+    {
+      "field": "第2分野",
+      "block": "s1",
+      "officialLocator": "3(3)ウ",
+      "point": "背骨・体表呼吸による分類・節足軟体の比較",
+      "evidence": [
+        {
+          "selector": "T:脊椎動物",
+          "sourceIds": [
+            "jr_science_b6270bb51439"
+          ]
+        },
+        {
+          "selector": "T:節足動物",
+          "sourceIds": [
+            "jr_science_c1e6c61f7fd3"
+          ]
+        },
+        {
+          "selector": "T:軟体動物",
+          "sourceIds": [
+            "jr_science_56d345632c81"
+          ]
+        },
+        {
+          "selector": "P:エビとイカ",
+          "sourceIds": [
+            "jr_science_case_cdb4a68d0bbe"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_b6270bb51439",
+        "jr_science_c1e6c61f7fd3",
+        "jr_science_56d345632c81",
+        "jr_science_case_cdb4a68d0bbe"
+      ],
+      "outsideGame": "未見の動物の観察と比較"
+    },
+    {
+      "field": "第2分野",
+      "block": "s2",
+      "officialLocator": "3(4)ア",
+      "point": "学校内外の地形地層岩石の観察",
+      "evidence": [
+        {
+          "selector": "P:同じ地層を調べるとき",
+          "sourceIds": [
+            "jr_science_case_225ea28760be"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_225ea28760be"
+      ],
+      "outsideGame": "現地での観察自体"
+    },
+    {
+      "field": "第2分野",
+      "block": "s2",
+      "officialLocator": "3(4)イ",
+      "point": "堆積岩・断層褶曲・化石・三地質年代",
+      "evidence": [
+        {
+          "selector": "T:堆積岩",
+          "sourceIds": [
+            "jr_science_160ee1002536"
+          ]
+        },
+        {
+          "selector": "T:しゅう曲",
+          "sourceIds": [
+            "jr_science_ce60fe5c7c7a"
+          ]
+        },
+        {
+          "selector": "T:示準化石",
+          "sourceIds": [
+            "jr_science_8ef0585a985c"
+          ]
+        },
+        {
+          "selector": "T:古生代",
+          "sourceIds": [
+            "jr_science_c6a6cc135e6a"
+          ]
+        },
+        {
+          "selector": "T:中生代",
+          "sourceIds": [
+            "jr_science_cc62d7acac8d"
+          ]
+        },
+        {
+          "selector": "T:新生代",
+          "sourceIds": [
+            "jr_science_28a4fe03efb7"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_160ee1002536",
+        "jr_science_ce60fe5c7c7a",
+        "jr_science_8ef0585a985c",
+        "jr_science_c6a6cc135e6a",
+        "jr_science_cc62d7acac8d",
+        "jr_science_28a4fe03efb7"
+      ],
+      "outsideGame": "柱状図・写真・実物化石の読取り"
+    },
+    {
+      "field": "第2分野",
+      "block": "s2",
+      "officialLocator": "3(4)ウ",
+      "point": "粘性・代表火山岩深成岩・造岩鉱物",
+      "evidence": [
+        {
+          "selector": "T:流紋岩",
+          "sourceIds": [
+            "jr_science_fba4b129035a"
+          ]
+        },
+        {
+          "selector": "T:玄武岩",
+          "sourceIds": [
+            "jr_science_6565a1d72d0a"
+          ]
+        },
+        {
+          "selector": "T:花こう岩",
+          "sourceIds": [
+            "jr_science_39f96e26c8d7"
+          ]
+        },
+        {
+          "selector": "T:石英",
+          "sourceIds": [
+            "jr_science_cc9decf80998"
+          ]
+        },
+        {
+          "selector": "P:マグマの粘りけが弱い",
+          "sourceIds": [
+            "jr_science_case_671f9391fecb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_fba4b129035a",
+        "jr_science_6565a1d72d0a",
+        "jr_science_39f96e26c8d7",
+        "jr_science_cc9decf80998",
+        "jr_science_case_671f9391fecb"
+      ],
+      "outsideGame": "実物の識別と火山形の資料読取り"
+    },
+    {
+      "field": "第2分野",
+      "block": "s2",
+      "officialLocator": "3(4)エ",
+      "point": "初期微動時間と距離・プレート・津波",
+      "evidence": [
+        {
+          "selector": "T:プレート",
+          "sourceIds": [
+            "jr_science_4242c1847581"
+          ]
+        },
+        {
+          "selector": "P:P波到着からS波",
+          "sourceIds": [
+            "jr_science_case_65ddb16b1b3e"
+          ]
+        },
+        {
+          "selector": "P:海底の急な変動",
+          "sourceIds": [
+            "jr_science_case_b047c23dcbaa"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_4242c1847581",
+        "jr_science_case_65ddb16b1b3e",
+        "jr_science_case_b047c23dcbaa"
+      ],
+      "outsideGame": "地震記録と地図の実読取り"
+    },
+    {
+      "field": "第2分野",
+      "block": "s2",
+      "officialLocator": "3(4)オ",
+      "point": "火山地震災害の記録資料",
+      "evidence": [
+        {
+          "selector": "P:火山活動がもたらす恵み",
+          "sourceIds": [
+            "jr_science_case_21b5a1ad3657"
+          ]
+        },
+        {
+          "selector": "P:地震の被害を考える",
+          "sourceIds": [
+            "jr_science_case_3a5c62649c3e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_21b5a1ad3657",
+        "jr_science_case_3a5c62649c3e"
+      ],
+      "outsideGame": "地域固有の資料調査"
+    },
+    {
+      "field": "第2分野",
+      "block": "s3",
+      "officialLocator": "3(5)ア",
+      "point": "細胞の共通相違・細胞呼吸・単細胞生物",
+      "evidence": [
+        {
+          "selector": "T:細胞膜",
+          "sourceIds": [
+            "jr_science_ff1b5b12e37d"
+          ]
+        },
+        {
+          "selector": "T:細胞壁",
+          "sourceIds": [
+            "jr_science_44bcad80fd32"
+          ]
+        },
+        {
+          "selector": "T:呼吸",
+          "sourceIds": [
+            "jr_science_11bfe4376917"
+          ]
+        },
+        {
+          "selector": "T:単細胞生物",
+          "sourceIds": [
+            "jr_science_cb58346c5271"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ff1b5b12e37d",
+        "jr_science_44bcad80fd32",
+        "jr_science_11bfe4376917",
+        "jr_science_cb58346c5271"
+      ],
+      "outsideGame": "標本作成・実観察"
+    },
+    {
+      "field": "第2分野",
+      "block": "s3",
+      "officialLocator": "3(5)イ",
+      "point": "葉緑体・葉茎根の相互関係",
+      "evidence": [
+        {
+          "selector": "T:葉緑体",
+          "sourceIds": [
+            "jr_science_4d6d5b102f8f"
+          ]
+        },
+        {
+          "selector": "T:道管",
+          "sourceIds": [
+            "jr_science_e1fc3c863b9d"
+          ]
+        },
+        {
+          "selector": "T:師管",
+          "sourceIds": [
+            "jr_science_b2a630f494ed"
+          ]
+        },
+        {
+          "selector": "T:根毛",
+          "sourceIds": [
+            "jr_science_22595b98fcc1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_4d6d5b102f8f",
+        "jr_science_e1fc3c863b9d",
+        "jr_science_b2a630f494ed",
+        "jr_science_22595b98fcc1"
+      ],
+      "outsideGame": "構造と働きの実験・観察"
+    },
+    {
+      "field": "第2分野",
+      "block": "s3",
+      "officialLocator": "3(5)ウ",
+      "point": "消化酵素・吸収物質・血液成分・肝腎",
+      "evidence": [
+        {
+          "selector": "T:アミラーゼ",
+          "sourceIds": [
+            "jr_science_61a7ba9c644f"
+          ]
+        },
+        {
+          "selector": "T:赤血球",
+          "sourceIds": [
+            "jr_science_2bf9597483ae"
+          ]
+        },
+        {
+          "selector": "T:肝臓",
+          "sourceIds": [
+            "jr_science_384dd0a1a30f"
+          ]
+        },
+        {
+          "selector": "T:腎臓",
+          "sourceIds": [
+            "jr_science_b4f363c66c2a"
+          ]
+        },
+        {
+          "selector": "P:脂肪の主な消化",
+          "sourceIds": [
+            "jr_science_case_7119b0d0bec5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_61a7ba9c644f",
+        "jr_science_2bf9597483ae",
+        "jr_science_384dd0a1a30f",
+        "jr_science_b4f363c66c2a",
+        "jr_science_case_7119b0d0bec5"
+      ],
+      "outsideGame": "実験・器官の観察"
+    },
+    {
+      "field": "第2分野",
+      "block": "s3",
+      "officialLocator": "3(5)エ",
+      "point": "刺激反応に関わる各器官の働き",
+      "evidence": [
+        {
+          "selector": "T:感覚器官",
+          "sourceIds": [
+            "jr_science_77655bde58d7"
+          ]
+        },
+        {
+          "selector": "T:中枢神経",
+          "sourceIds": [
+            "jr_science_b2d0f8e384c6"
+          ]
+        },
+        {
+          "selector": "T:骨格",
+          "sourceIds": [
+            "jr_science_a4d0ad85c669"
+          ]
+        },
+        {
+          "selector": "T:けん",
+          "sourceIds": [
+            "jr_science_32932ddf159a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_77655bde58d7",
+        "jr_science_b2d0f8e384c6",
+        "jr_science_a4d0ad85c669",
+        "jr_science_32932ddf159a"
+      ],
+      "outsideGame": "反応測定と経路の図示"
+    },
+    {
+      "field": "第2分野",
+      "block": "s4",
+      "officialLocator": "3(6)ア",
+      "point": "全方向の大気圧",
+      "evidence": [
+        {
+          "selector": "P:大気圧が物体",
+          "sourceIds": [
+            "jr_science_case_18052b91f12a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_18052b91f12a"
+      ],
+      "outsideGame": "圧力実験の実施"
+    },
+    {
+      "field": "第2分野",
+      "block": "s4",
+      "officialLocator": "3(6)イ",
+      "point": "気温・飽和水蒸気量・湿度凝結・水循環",
+      "evidence": [
+        {
+          "selector": "T:飽和水蒸気量",
+          "sourceIds": [
+            "jr_science_ded668c60a40"
+          ]
+        },
+        {
+          "selector": "T:水の循環",
+          "sourceIds": [
+            "jr_science_406b98d0436c"
+          ]
+        },
+        {
+          "selector": "P:海面から蒸発した水",
+          "sourceIds": [
+            "jr_science_case_f95122aa09a6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ded668c60a40",
+        "jr_science_406b98d0436c",
+        "jr_science_case_f95122aa09a6"
+      ],
+      "outsideGame": "曲線・観測資料の読取り"
+    },
+    {
+      "field": "第2分野",
+      "block": "s4",
+      "officialLocator": "3(6)ウ",
+      "point": "前線に伴う風の吹き方",
+      "evidence": [
+        {
+          "selector": "P:前線通過の記録",
+          "sourceIds": [
+            "jr_science_case_88264bfac817"
+          ]
+        },
+        {
+          "selector": "P:寒冷前線では",
+          "sourceIds": [
+            "jr_science_core_front"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_88264bfac817",
+        "jr_science_core_front"
+      ],
+      "outsideGame": "実記録の比較"
+    },
+    {
+      "field": "第2分野",
+      "block": "s4",
+      "officialLocator": "3(6)エ",
+      "point": "全球大気・地球の大きさと大気の厚さ",
+      "evidence": [
+        {
+          "selector": "T:偏西風",
+          "sourceIds": [
+            "jr_science_3455b5979716"
+          ]
+        },
+        {
+          "selector": "T:季節風",
+          "sourceIds": [
+            "jr_science_1c164214a507"
+          ]
+        },
+        {
+          "selector": "P:地球の半径に比べ",
+          "sourceIds": [
+            "jr_science_case_76c22ba579d8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_3455b5979716",
+        "jr_science_1c164214a507",
+        "jr_science_case_76c22ba579d8"
+      ],
+      "outsideGame": "大気循環図・規模資料の読取り"
+    },
+    {
+      "field": "第2分野",
+      "block": "s4",
+      "officialLocator": "3(6)オ",
+      "point": "気象災害の記録資料",
+      "evidence": [
+        {
+          "selector": "T:台風",
+          "sourceIds": [
+            "jr_science_4e4014a0f9c8"
+          ]
+        },
+        {
+          "selector": "P:気象災害への備え",
+          "sourceIds": [
+            "jr_science_case_7075a79180f1"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_4e4014a0f9c8",
+        "jr_science_case_7075a79180f1"
+      ],
+      "outsideGame": "地域記録と災害資料の調査"
+    },
+    {
+      "field": "第2分野",
+      "block": "s5",
+      "officialLocator": "3(7)ア",
+      "point": "分裂前の染色体複製",
+      "evidence": [
+        {
+          "selector": "P:体細胞分裂の前に",
+          "sourceIds": [
+            "jr_science_case_4139c88cef83"
+          ]
+        },
+        {
+          "selector": "T:染色体",
+          "sourceIds": [
+            "jr_bio_003"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_4139c88cef83",
+        "jr_bio_003"
+      ],
+      "outsideGame": "分裂像の観察"
+    },
+    {
+      "field": "第2分野",
+      "block": "s5",
+      "officialLocator": "3(7)イ",
+      "point": "減数分裂・単細胞分裂・栄養生殖",
+      "evidence": [
+        {
+          "selector": "T:減数分裂",
+          "sourceIds": [
+            "jr_bio_019"
+          ]
+        },
+        {
+          "selector": "T:分裂による生殖",
+          "sourceIds": [
+            "jr_bio_014"
+          ]
+        },
+        {
+          "selector": "T:栄養生殖",
+          "sourceIds": [
+            "jr_bio_016"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_019",
+        "jr_bio_014",
+        "jr_bio_016"
+      ],
+      "outsideGame": "生殖の実観察"
+    },
+    {
+      "field": "第2分野",
+      "block": "s5",
+      "officialLocator": "3(7)ウ",
+      "point": "分離の法則とDNA",
+      "evidence": [
+        {
+          "selector": "T:分離の法則",
+          "sourceIds": [
+            "jr_bio_038"
+          ]
+        },
+        {
+          "selector": "T:DNA",
+          "sourceIds": [
+            "jr_bio_031"
+          ]
+        },
+        {
+          "selector": "P:Aaがつくる",
+          "sourceIds": [
+            "jr_science_case_f28b9cadbf75"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_038",
+        "jr_bio_031",
+        "jr_science_case_f28b9cadbf75"
+      ],
+      "outsideGame": "遺伝モデルと交配表の作成"
+    },
+    {
+      "field": "第2分野",
+      "block": "s5",
+      "officialLocator": "3(7)エ",
+      "point": "進化の証拠・適応・遺伝子変化",
+      "evidence": [
+        {
+          "selector": "T:相同器官",
+          "sourceIds": [
+            "jr_bio_049"
+          ]
+        },
+        {
+          "selector": "T:始祖鳥",
+          "sourceIds": [
+            "jr_bio_052"
+          ]
+        },
+        {
+          "selector": "T:変異",
+          "sourceIds": [
+            "jr_bio_057"
+          ]
+        },
+        {
+          "selector": "P:耐性を持つ細菌",
+          "sourceIds": [
+            "jr_science_case_b5e0846fa4d2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_049",
+        "jr_bio_052",
+        "jr_bio_057",
+        "jr_science_case_b5e0846fa4d2"
+      ],
+      "outsideGame": "化石・比較資料からの考察"
+    },
+    {
+      "field": "第2分野",
+      "block": "s6",
+      "officialLocator": "3(8)ア",
+      "point": "南中高度と昼夜の長さ・気温",
+      "evidence": [
+        {
+          "selector": "T:南中高度",
+          "sourceIds": [
+            "jr_science_dcd2c6eb0f6b"
+          ]
+        },
+        {
+          "selector": "P:北半球の夏、昼",
+          "sourceIds": [
+            "jr_science_case_7ca375f92207"
+          ]
+        },
+        {
+          "selector": "P:日本の夏に地表",
+          "sourceIds": [
+            "jr_science_case_bbf803cc8b93"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_dcd2c6eb0f6b",
+        "jr_science_case_7ca375f92207",
+        "jr_science_case_bbf803cc8b93"
+      ],
+      "outsideGame": "同地点の季節比較と観測"
+    },
+    {
+      "field": "第2分野",
+      "block": "s6",
+      "officialLocator": "3(8)イ",
+      "point": "太陽の形大きさ表面・エネルギーの地表影響",
+      "evidence": [
+        {
+          "selector": "T:黒点",
+          "sourceIds": [
+            "jr_science_778eeaf926de"
+          ]
+        },
+        {
+          "selector": "P:太陽の直径と",
+          "sourceIds": [
+            "jr_science_case_4f025b881dc7"
+          ]
+        },
+        {
+          "selector": "P:大気の主な熱源",
+          "sourceIds": [
+            "jr_science_case_fcebe78e0c4c"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_778eeaf926de",
+        "jr_science_case_4f025b881dc7",
+        "jr_science_case_fcebe78e0c4c"
+      ],
+      "outsideGame": "投影観察と資料比較"
+    },
+    {
+      "field": "第2分野",
+      "block": "s6",
+      "officialLocator": "3(8)ウ",
+      "point": "惑星の大小大気温度衛星・生命条件・恒星銀河・小天体",
+      "evidence": [
+        {
+          "selector": "T:地球型惑星",
+          "sourceIds": [
+            "jr_science_681086ccc0a3"
+          ]
+        },
+        {
+          "selector": "T:木星型惑星",
+          "sourceIds": [
+            "jr_science_97a7421e49ed"
+          ]
+        },
+        {
+          "selector": "T:銀河系",
+          "sourceIds": [
+            "jr_science_9ee1a03554f0"
+          ]
+        },
+        {
+          "selector": "T:彗星",
+          "sourceIds": [
+            "jr_science_5f68cf1249cb"
+          ]
+        },
+        {
+          "selector": "P:金星の大気",
+          "sourceIds": [
+            "jr_science_case_dce17b650ed2"
+          ]
+        },
+        {
+          "selector": "P:金星の表面が高温",
+          "sourceIds": [
+            "jr_science_case_4586f7d00e40"
+          ]
+        },
+        {
+          "selector": "P:地球で液体",
+          "sourceIds": [
+            "jr_science_case_d29d3b3469dd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_681086ccc0a3",
+        "jr_science_97a7421e49ed",
+        "jr_science_9ee1a03554f0",
+        "jr_science_5f68cf1249cb",
+        "jr_science_case_dce17b650ed2",
+        "jr_science_case_4586f7d00e40",
+        "jr_science_case_d29d3b3469dd"
+      ],
+      "outsideGame": "数値表・画像・軌道図の実読取り"
+    },
+    {
+      "field": "第2分野",
+      "block": "s6",
+      "officialLocator": "3(8)エ",
+      "point": "月の満ち欠け・食・金星の満ち欠けと大きさ",
+      "evidence": [
+        {
+          "selector": "T:日食",
+          "sourceIds": [
+            "jr_science_3dc7f3b2176f"
+          ]
+        },
+        {
+          "selector": "T:月食",
+          "sourceIds": [
+            "jr_science_ad77d62bad73"
+          ]
+        },
+        {
+          "selector": "P:金星の見かけが大きい",
+          "sourceIds": [
+            "jr_science_case_745ceb954031"
+          ]
+        },
+        {
+          "selector": "P:地球から見た金星",
+          "sourceIds": [
+            "jr_science_case_9415731729cb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_3dc7f3b2176f",
+        "jr_science_ad77d62bad73",
+        "jr_science_case_745ceb954031",
+        "jr_science_case_9415731729cb"
+      ],
+      "outsideGame": "位置関係図と観測記録の比較"
+    },
+    {
+      "field": "第2分野",
+      "block": "s7",
+      "officialLocator": "3(9)ア",
+      "point": "生産消費分解者と土壌動物",
+      "evidence": [
+        {
+          "selector": "T:生産者",
+          "sourceIds": [
+            "jr_bio_061"
+          ]
+        },
+        {
+          "selector": "T:消費者",
+          "sourceIds": [
+            "jr_bio_062"
+          ]
+        },
+        {
+          "selector": "T:分解者",
+          "sourceIds": [
+            "jr_bio_063"
+          ]
+        },
+        {
+          "selector": "T:土壌動物",
+          "sourceIds": [
+            "jr_bio_066"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_061",
+        "jr_bio_062",
+        "jr_bio_063",
+        "jr_bio_066"
+      ],
+      "outsideGame": "微生物実験・生物採集と記録"
+    },
+    {
+      "field": "第2分野",
+      "block": "s7",
+      "officialLocator": "3(9)イ",
+      "point": "環境の直接資料調査・気候変動・外来生物",
+      "evidence": [
+        {
+          "selector": "T:外来種",
+          "sourceIds": [
+            "jr_bio_082"
+          ]
+        },
+        {
+          "selector": "P:気候変動が生物",
+          "sourceIds": [
+            "jr_science_case_a58b37bcd386"
+          ]
+        },
+        {
+          "selector": "P:水質を指標生物で比較",
+          "sourceIds": [
+            "jr_science_case_badd734e4dd9"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_082",
+        "jr_science_case_a58b37bcd386",
+        "jr_science_case_badd734e4dd9"
+      ],
+      "outsideGame": "現地調査・継続資料の分析"
+    },
+    {
+      "field": "第2分野",
+      "block": "s7",
+      "officialLocator": "3(9)ウ",
+      "point": "地域災害の直接資料調査",
+      "evidence": [
+        {
+          "selector": "P:地域の災害を調べる",
+          "sourceIds": [
+            "jr_science_case_e6c7e337179e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_e6c7e337179e"
+      ],
+      "outsideGame": "地域固有の記録・現地調査"
+    },
+    {
+      "field": "第2分野",
+      "block": "s7",
+      "officialLocator": "3(9)エ",
+      "point": "両分野を統合した保全と技術利用",
+      "evidence": [
+        {
+          "selector": "T:持続可能な社会",
+          "sourceIds": [
+            "jr_bio_089"
+          ]
+        },
+        {
+          "selector": "P:材料を選ぶとき",
+          "sourceIds": [
+            "jr_science_case_e0c31da76ee2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_089",
+        "jr_science_case_e0c31da76ee2"
+      ],
+      "outsideGame": "総合調査・討論と提案の実践"
+    }
+  ],
+  "gradeAllocation": "各分野(1)(2)は中1、(3)(4)は中2、(5)〜(7)は中3。既存の暫定配当は変更しない。",
+  "practicalBoundary": "実験・観察・作図・自由な表現の実施と達成はゲームの短文選択とは別練習。"
+}

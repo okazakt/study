@@ -20327,5 +20327,4173 @@
       "s6"
     ],
     "content_reviewed": "2026-11-09"
+  },
+  {
+    "id": "jr_science_c9e6bb974bb5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と色の比較",
+    "term": "光の分散",
+    "term_dummies": [
+      "全反射",
+      "光の反射",
+      "光の直進"
+    ],
+    "explanation_template": "白色光がプリズムなどで様々な{{1}}に分かれること。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "色",
+        "dummies": [
+          "音",
+          "電荷",
+          "質量"
+        ]
+      }
+    ],
+    "note": "光の色で屈折の仕方が異なる。",
+    "cloze_context": "光の分散",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_8be0a70ef4ed",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と色の比較",
+    "term": "プリズム",
+    "term_dummies": [
+      "平面鏡",
+      "ろ紙",
+      "ばねばかり"
+    ],
+    "explanation_template": "白色光を色に分ける観察に使う、三角柱形の{{1}}など。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ガラス",
+        "dummies": [
+          "ろ紙",
+          "金属板",
+          "磁石"
+        ]
+      }
+    ],
+    "note": "屈折の違いを利用する。",
+    "cloze_context": "プリズム",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_ad6f231f377e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と色の比較",
+    "term": "光軸",
+    "term_dummies": [
+      "焦点",
+      "法線",
+      "焦点距離"
+    ],
+    "explanation_template": "凸レンズの中心を通り、面に{{1}}な基準線。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "垂直",
+        "dummies": [
+          "平行",
+          "接する",
+          "沿う"
+        ]
+      }
+    ],
+    "note": "光の進み方を考える基準。",
+    "cloze_context": "光軸",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_8e7a8aa52cf3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光路と色の比較",
+    "term": "焦点距離",
+    "term_dummies": [
+      "物体距離",
+      "像距離",
+      "光軸"
+    ],
+    "explanation_template": "凸レンズの中心から{{1}}までの距離。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "焦点",
+        "dummies": [
+          "物体",
+          "実像",
+          "スクリーン"
+        ]
+      }
+    ],
+    "note": "同じレンズで一定。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_d082aaabdf9b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "回路と測定器",
+    "term": "直列回路",
+    "term_dummies": [
+      "並列回路",
+      "開回路",
+      "短絡回路"
+    ],
+    "explanation_template": "電流の道が{{1}}回路。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "枝分かれしない",
+        "dummies": [
+          "枝分かれする",
+          "必ず切れる",
+          "必ず交差する"
+        ]
+      }
+    ],
+    "note": "各部を流れる電流は同じ。",
+    "cloze_context": "直列回路",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_9db6d000eaf8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "回路と測定器",
+    "term": "並列回路",
+    "term_dummies": [
+      "直列回路",
+      "開回路",
+      "短絡回路"
+    ],
+    "explanation_template": "電流の通り道が{{1}}回路。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "枝分かれする",
+        "dummies": [
+          "一本だけの",
+          "必ず切れた",
+          "全て絶縁された"
+        ]
+      }
+    ],
+    "note": "各枝の両端電圧が等しい。",
+    "cloze_context": "並列回路",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_19033683ba76",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "回路と測定器",
+    "term": "電流計",
+    "term_dummies": [
+      "電圧計",
+      "抵抗器",
+      "検電器"
+    ],
+    "explanation_template": "測定する部分へ{{1}}につないで電流を測る器具。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "直列",
+        "dummies": [
+          "並列",
+          "逆向きだけ",
+          "接続せず"
+        ]
+      }
+    ],
+    "note": "適切な端子と範囲を選ぶ。",
+    "cloze_context": "電流計",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_32aa95d4ecc3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "回路と測定器",
+    "term": "電圧計",
+    "term_dummies": [
+      "電流計",
+      "抵抗器",
+      "検電器"
+    ],
+    "explanation_template": "測定する部分の両端へ{{1}}につなぐ器具。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "並列",
+        "dummies": [
+          "直列",
+          "逆向きだけ",
+          "接続せず"
+        ]
+      }
+    ],
+    "note": "両端の電圧を測る。",
+    "cloze_context": "電圧計",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_eb19b8ab5721",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "原子とイオンの比較",
+    "term": "同位体",
+    "term_dummies": [
+      "陽イオン",
+      "陰イオン",
+      "分子"
+    ],
+    "explanation_template": "同じ元素で{{1}}の数が異なる原子どうし。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中性子",
+        "dummies": [
+          "陽子",
+          "原子核",
+          "元素"
+        ]
+      }
+    ],
+    "note": "陽子の数は同じ。",
+    "cloze_context": "同位体",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_757a560c30ad",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "原子とイオンの比較",
+    "term": "周期表",
+    "term_dummies": [
+      "溶解度曲線",
+      "天気図",
+      "回路図"
+    ],
+    "explanation_template": "元素を{{1}}の数の順などに並べた表。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "陽子",
+        "dummies": [
+          "中性子",
+          "分子",
+          "イオン"
+        ]
+      }
+    ],
+    "note": "元素の性質にも規則性がある。",
+    "cloze_context": "周期表",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_185bfe601076",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "原子とイオンの比較",
+    "term": "イオン式",
+    "term_dummies": [
+      "化学反応式",
+      "質量比",
+      "元素記号"
+    ],
+    "explanation_template": "イオンを元素記号と{{1}}などで表した式。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "電荷",
+        "dummies": [
+          "温度",
+          "速さ",
+          "密度"
+        ]
+      }
+    ],
+    "note": "Na⁺やCl⁻など。",
+    "cloze_context": "イオン式",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_0c3bab4eb208",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "原子とイオンの比較",
+    "term": "イオン化傾向",
+    "term_dummies": [
+      "電気抵抗",
+      "密度",
+      "溶解度"
+    ],
+    "explanation_template": "金属が電子を失い、{{1}}になりやすい程度。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "陽イオン",
+        "dummies": [
+          "陰イオン",
+          "中性子",
+          "分子"
+        ]
+      }
+    ],
+    "note": "金属ごとに異なる。",
+    "cloze_context": "イオン化傾向",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_973919c78365",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "生活に使われる電池",
+    "term": "乾電池",
+    "term_dummies": [
+      "太陽電池",
+      "燃料電池",
+      "鉛蓄電池"
+    ],
+    "explanation_template": "電解液をペースト状などにした{{1}}の一種。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "化学電池",
+        "dummies": [
+          "太陽電池",
+          "発電機",
+          "電動機"
+        ]
+      }
+    ],
+    "note": "マンガン乾電池など。",
+    "cloze_context": "乾電池",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_e3d6dafe10a5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "生活に使われる電池",
+    "term": "蓄電池",
+    "term_dummies": [
+      "乾電池",
+      "太陽電池",
+      "燃料電池"
+    ],
+    "explanation_template": "充電で{{1}}を蓄える電池。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "化学エネルギー",
+        "dummies": [
+          "音だけ",
+          "光だけ",
+          "運動だけ"
+        ]
+      }
+    ],
+    "note": "電気を化学エネルギーへ変える。",
+    "cloze_context": "蓄電池",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_70451ddf6803",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "生活に使われる電池",
+    "term": "一次電池",
+    "term_dummies": [
+      "二次電池",
+      "太陽電池",
+      "発電機"
+    ],
+    "explanation_template": "基本的に充電して再使用しない{{1}}の電池。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "使い切り",
+        "dummies": [
+          "充電用",
+          "発電機用だけ",
+          "光発電用"
+        ]
+      }
+    ],
+    "note": "指定外の充電はしない。",
+    "cloze_context": "一次電池",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_730908960c1f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "生活に使われる電池",
+    "term": "二次電池",
+    "term_dummies": [
+      "一次電池",
+      "太陽電池",
+      "燃料電池"
+    ],
+    "explanation_template": "充電と放電を{{1}}使う化学電池。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "繰り返して",
+        "dummies": [
+          "一度だけ",
+          "光だけで",
+          "振動だけで"
+        ]
+      }
+    ],
+    "note": "リチウムイオン電池など。",
+    "cloze_context": "二次電池",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_ed2f97b2faa2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と条件の設定",
+    "term": "ルーペ",
+    "term_dummies": [
+      "双眼実体顕微鏡",
+      "光学顕微鏡",
+      "望遠鏡"
+    ],
+    "explanation_template": "小さい物を拡大して見るための{{1}}。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "凸レンズ",
+        "dummies": [
+          "凹レンズ",
+          "平面鏡",
+          "磁石"
+        ]
+      }
+    ],
+    "note": "目に近付けて使う。",
+    "cloze_context": "ルーペ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_be917eebff72",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と条件の設定",
+    "term": "双眼実体顕微鏡",
+    "term_dummies": [
+      "ルーペ",
+      "望遠鏡",
+      "電子顕微鏡"
+    ],
+    "explanation_template": "低倍率で物体を{{1}}に見る器具。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "立体的",
+        "dummies": [
+          "必ず切片状",
+          "透過光だけ",
+          "音だけ"
+        ]
+      }
+    ],
+    "note": "外からのつくりを調べる。",
+    "cloze_context": "双眼実体顕微鏡",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_b67b8059f0e5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と条件の設定",
+    "term": "光学顕微鏡",
+    "term_dummies": [
+      "電子顕微鏡",
+      "望遠鏡",
+      "ばねばかり"
+    ],
+    "explanation_template": "光と{{1}}を使って微細なつくりを観察する器具。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "レンズ",
+        "dummies": [
+          "磁石",
+          "ばね",
+          "電極だけ"
+        ]
+      }
+    ],
+    "note": "薄い試料の観察など。",
+    "cloze_context": "光学顕微鏡",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_d327528bfe1e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "観察と条件の設定",
+    "term": "対照実験",
+    "term_dummies": [
+      "予備調査",
+      "定点観測",
+      "野外観察"
+    ],
+    "explanation_template": "調べる条件だけを変え、他の条件を{{1}}実験。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "そろえる",
+        "dummies": [
+          "全て変える",
+          "記録しない",
+          "必ず増やす"
+        ]
+      }
+    ],
+    "note": "結果の違いの原因を考える。",
+    "cloze_context": "対照実験",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_c6a6cc135e6a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地質年代と地層の境界",
+    "term": "古生代",
+    "term_dummies": [
+      "中生代",
+      "新生代",
+      "不整合"
+    ],
+    "explanation_template": "中生代より{{1}}地質年代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "古い",
+        "dummies": [
+          "新しい",
+          "必ず短い",
+          "必ず長い"
+        ]
+      }
+    ],
+    "note": "三葉虫などが代表例。",
+    "cloze_context": "古生代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_cc62d7acac8d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地質年代と地層の境界",
+    "term": "中生代",
+    "term_dummies": [
+      "古生代",
+      "新生代",
+      "不整合"
+    ],
+    "explanation_template": "古生代と{{1}}の間の地質年代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "新生代",
+        "dummies": [
+          "原生代",
+          "第四紀",
+          "現在だけ"
+        ]
+      }
+    ],
+    "note": "恐竜やアンモナイトなど。",
+    "cloze_context": "中生代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_28a4fe03efb7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地質年代と地層の境界",
+    "term": "新生代",
+    "term_dummies": [
+      "古生代",
+      "中生代",
+      "不整合"
+    ],
+    "explanation_template": "中生代より{{1}}地質年代。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "新しい",
+        "dummies": [
+          "古い",
+          "必ず短い",
+          "必ず長い"
+        ]
+      }
+    ],
+    "note": "哺乳類が多様化した。",
+    "cloze_context": "新生代",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_2c153d4af6f5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地質年代と地層の境界",
+    "term": "不整合",
+    "term_dummies": [
+      "整合",
+      "断層",
+      "しゅう曲"
+    ],
+    "explanation_template": "地層の堆積に大きな{{1}}がある境界。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "時間の隔たり",
+        "dummies": [
+          "温度差だけ",
+          "色の差だけ",
+          "粒の差だけ"
+        ]
+      }
+    ],
+    "note": "侵食などの後に再び堆積。",
+    "cloze_context": "不整合",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_406b98d0436c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水の循環",
+    "term": "水の循環",
+    "term_dummies": [
+      "炭素の循環",
+      "食物連鎖",
+      "地層の堆積"
+    ],
+    "explanation_template": "水が海・大気・陸などを{{1}}こと。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "巡る",
+        "dummies": [
+          "消滅する",
+          "発生し続ける",
+          "宇宙へ逃げる"
+        ]
+      }
+    ],
+    "note": "蒸発・凝結・降水などを含む。",
+    "cloze_context": "水の循環",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_3455b5979716",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水の循環",
+    "term": "偏西風",
+    "term_dummies": [
+      "貿易風",
+      "季節風",
+      "海陸風"
+    ],
+    "explanation_template": "中緯度の上空を主に{{1}}へ吹く風。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "西から東",
+        "dummies": [
+          "東から西",
+          "北から南だけ",
+          "南から北だけ"
+        ]
+      }
+    ],
+    "note": "日本付近の天気の移動に関係。",
+    "cloze_context": "偏西風",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_1c164214a507",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水の循環",
+    "term": "季節風",
+    "term_dummies": [
+      "偏西風",
+      "海陸風",
+      "貿易風"
+    ],
+    "explanation_template": "季節によって主な風向が{{1}}風。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "変わる",
+        "dummies": [
+          "必ず同じ",
+          "毎分逆転する",
+          "必ず止まる"
+        ]
+      }
+    ],
+    "note": "大陸と海洋の温まり方などが関係。",
+    "cloze_context": "季節風",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_a4b75c3db635",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "大気と水の循環",
+    "term": "海陸風",
+    "term_dummies": [
+      "季節風",
+      "偏西風",
+      "貿易風"
+    ],
+    "explanation_template": "海岸付近で{{1}}に応じて風向が変わる風。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "昼夜",
+        "dummies": [
+          "地質年代",
+          "月齢だけ",
+          "星座だけ"
+        ]
+      }
+    ],
+    "note": "海と陸の温まり方の差。",
+    "cloze_context": "海陸風",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_681086ccc0a3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系の比較",
+    "term": "地球型惑星",
+    "term_dummies": [
+      "木星型惑星",
+      "恒星",
+      "衛星"
+    ],
+    "explanation_template": "主に{{1}}からなり、密度が大きい惑星の群。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "岩石など",
+        "dummies": [
+          "水素だけ",
+          "氷だけ",
+          "水蒸気だけ"
+        ]
+      }
+    ],
+    "note": "水星・金星・地球・火星。",
+    "cloze_context": "地球型惑星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_97a7421e49ed",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系の比較",
+    "term": "木星型惑星",
+    "term_dummies": [
+      "地球型惑星",
+      "恒星",
+      "小惑星"
+    ],
+    "explanation_template": "主に{{1}}からなる、木星や土星の惑星群。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "ガス",
+        "dummies": [
+          "岩石だけ",
+          "鉄だけ",
+          "水蒸気だけ"
+        ]
+      }
+    ],
+    "note": "外側の巨大惑星の比較に使う。",
+    "cloze_context": "木星型惑星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_e8f8d0c342cd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系の比較",
+    "term": "小惑星",
+    "term_dummies": [
+      "恒星",
+      "衛星",
+      "彗星"
+    ],
+    "explanation_template": "火星と木星の間等に多い{{1}}天体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "小さな",
+        "dummies": [
+          "自ら発光する",
+          "必ず巨大な",
+          "地球だけ回る"
+        ]
+      }
+    ],
+    "note": "太陽系には惑星以外もある。",
+    "cloze_context": "小惑星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_5f68cf1249cb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系の比較",
+    "term": "彗星",
+    "term_dummies": [
+      "恒星",
+      "衛星",
+      "小惑星"
+    ],
+    "explanation_template": "氷等を含み太陽に近づくと{{1}}が見える天体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "尾など",
+        "dummies": [
+          "輪だけ",
+          "海だけ",
+          "森だけ"
+        ]
+      }
+    ],
+    "note": "太陽の周りを公転する。",
+    "cloze_context": "彗星",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_e8c4aaff8467",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術の進歩",
+    "term": "真空管",
+    "term_dummies": [
+      "トランジスタ",
+      "光ファイバー",
+      "抵抗器"
+    ],
+    "explanation_template": "真空中の電子を利用し、電流を{{1}}素子。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "制御する",
+        "dummies": [
+          "必ず遮断する",
+          "必ず消す",
+          "水に変える"
+        ]
+      }
+    ],
+    "note": "増幅などに使われた。",
+    "cloze_context": "真空管",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_448c22b1b102",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術の進歩",
+    "term": "トランジスタ",
+    "term_dummies": [
+      "真空管",
+      "光ファイバー",
+      "抵抗器"
+    ],
+    "explanation_template": "半導体を利用して、電気信号を{{1}}する素子。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "増幅など",
+        "dummies": [
+          "必ず消滅",
+          "熱だけに変換",
+          "音だけに変換"
+        ]
+      }
+    ],
+    "note": "電子機器の小型化に寄与。",
+    "cloze_context": "トランジスタ",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_5b7e78e8e40e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術の進歩",
+    "term": "半導体",
+    "term_dummies": [
+      "導体",
+      "不導体",
+      "超伝導体"
+    ],
+    "explanation_template": "電気の通しやすさが導体と不導体の{{1}}の物質。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "中間",
+        "dummies": [
+          "必ず同じ",
+          "常にゼロ",
+          "常に最大"
+        ]
+      }
+    ],
+    "note": "ケイ素など。",
+    "cloze_context": "半導体",
+    "cloze_context_reason": "用語は説明の対象を特定するために表示。穴の正答の直接記載はない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_33d453bc04a4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術の進歩",
+    "term": "光ファイバー",
+    "term_dummies": [
+      "金属導線",
+      "真空管",
+      "トランジスタ"
+    ],
+    "explanation_template": "細いガラスなどの中へ{{1}}を通す通信の媒体。",
+    "blanks": [
+      {
+        "index": 1,
+        "answer": "光",
+        "dummies": [
+          "水流",
+          "音だけ",
+          "蒸気"
+        ]
+      }
+    ],
+    "note": "全反射などを利用する。",
+    "cloze_context": "",
+    "cloze_context_reason": "用語に穴の正答そのものが含まれるため省略。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_6f15cb76053c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "白色光をプリズムに通すと分かれるのは？",
+    "answer": "様々な色の光",
+    "dummies": [
+      "様々な音",
+      "全て同じ色だけ",
+      "光と水"
+    ],
+    "note": "白色光は複数の色を含む。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b4793d3e0bf5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "屈折の作図。入射角を測る基準は？",
+    "answer": "境界面の法線",
+    "dummies": [
+      "境界面そのもの",
+      "水面の端",
+      "光源の高さ"
+    ],
+    "note": "境界に垂直な線から測る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f7292e6941de",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "全反射の観察。水から空気へ角度を増すと？",
+    "answer": "全て反射する場合がある",
+    "dummies": [
+      "必ず全て通る",
+      "全て吸収される",
+      "音に変わる"
+    ],
+    "note": "斜めに進む光で観察する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_253a850a45e4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズの中心を通る光の作図では？",
+    "answer": "そのまま直進させる",
+    "dummies": [
+      "必ず焦点へ曲げる",
+      "必ず逆戻り",
+      "レンズ面に沿わせる"
+    ],
+    "note": "薄いレンズの近似で扱う。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_18739cb7c6af",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "実像と同じ大きさの物体。レンズからの距離は？",
+    "answer": "焦点距離の2倍",
+    "dummies": [
+      "焦点上",
+      "焦点距離の半分",
+      "必ず無限遠"
+    ],
+    "note": "物体と実像が等大の場合。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_287f185c215a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "凸レンズの焦点距離を調べる光は？",
+    "answer": "光軸に平行な光",
+    "dummies": [
+      "全て斜めの光だけ",
+      "音波",
+      "水流"
+    ],
+    "note": "集まる位置を調べる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_450076221ed3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "音が真空中を伝わりにくい理由は？",
+    "answer": "振動を伝える物質がない",
+    "dummies": [
+      "光がない",
+      "重力がない",
+      "温度が必ず0℃"
+    ],
+    "note": "音は物質の振動で伝わる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_9e2e55550f6e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "物理",
+    "unit": "光と音の観察判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "光の後に雷鳴が聞こえる主な理由は？",
+    "answer": "音が光より遅い",
+    "dummies": [
+      "音が光より速い",
+      "必ず別の雷だから",
+      "音は空気を通れない"
+    ],
+    "note": "同じ雷で比較する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_510c2422a41d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "一定向きに流れる電流の種類は？",
+    "answer": "直流",
+    "dummies": [
+      "交流",
+      "静電気だけ",
+      "磁力線"
+    ],
+    "note": "時間による向きの変化で区別。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_19b99e8d0fde",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "家庭用電源の電流の向きは？",
+    "answer": "周期的に変わる",
+    "dummies": [
+      "常に同じ",
+      "流れない",
+      "地球の自転ごとに変化"
+    ],
+    "note": "交流の特徴。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_289578782220",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "摩擦で帯電する主な原因は？",
+    "answer": "電子の移動",
+    "dummies": [
+      "陽子の大量移動",
+      "原子核の消滅",
+      "新たな原子の生成"
+    ],
+    "note": "電荷の偏りが生じる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_1391daad5c77",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ種類の電気を帯びた物体同士は？",
+    "answer": "反発し合う",
+    "dummies": [
+      "引き合う",
+      "必ず無反応",
+      "必ず融解する"
+    ],
+    "note": "正同士・負同士の場合。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_a2f28ad176fa",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "異なる種類の電気を帯びた物体同士は？",
+    "answer": "引き合う",
+    "dummies": [
+      "反発する",
+      "必ず無反応",
+      "必ず燃える"
+    ],
+    "note": "正と負の場合。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_88d8f9a8c9cd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "コイルの電流だけ逆向きに。磁界の向きは？",
+    "answer": "逆になる",
+    "dummies": [
+      "変わらない",
+      "必ずゼロ",
+      "2倍の向き"
+    ],
+    "note": "巻き方などは変えない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_3a026e7ef631",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "磁界の向きだけ逆に。電流が受ける力は？",
+    "answer": "逆向きになる",
+    "dummies": [
+      "変わらない",
+      "必ずなくなる",
+      "質量に変わる"
+    ],
+    "note": "電流の向きは同じ。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_e3f010ea962a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "物理",
+    "unit": "電流と磁界の条件判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "電熱線の発熱比較。水量をそろえる理由は？",
+    "answer": "温度変化を比べるため",
+    "dummies": [
+      "抵抗をなくすため",
+      "電圧を必ず倍にする",
+      "水を導体に変える"
+    ],
+    "note": "他の条件もそろえる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_22a46d7786f2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "2力の合成。平行四辺形で合力を示すのは？",
+    "answer": "作用点からの対角線",
+    "dummies": [
+      "周の長さ",
+      "面積",
+      "短い辺だけ"
+    ],
+    "note": "2辺をもとの2力とする。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_afacffb94d54",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "重力を斜面に平行・垂直に分ける目的は？",
+    "answer": "運動を方向別に考える",
+    "dummies": [
+      "重力を消す",
+      "質量を増す",
+      "力を必ず半分にする"
+    ],
+    "note": "元の力と同じ働きに分ける。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_2c3858469788",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ物体で斜面を急にする。斜面方向の重力は？",
+    "answer": "大きくなる",
+    "dummies": [
+      "小さくなる",
+      "同じ",
+      "必ずゼロ"
+    ],
+    "note": "摩擦なしで比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_097804f9dbd0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "斜面に沿って下る台車。摩擦なしで速さは？",
+    "answer": "増す",
+    "dummies": [
+      "一定",
+      "減る",
+      "必ずゼロ"
+    ],
+    "note": "斜面方向に合力がある。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4329db66f07d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "一定速度で水平に荷物を運ぶ。重力の仕事は？",
+    "answer": "0J",
+    "dummies": [
+      "必ず正",
+      "必ず負",
+      "質量と同じ"
+    ],
+    "note": "移動方向が重力と垂直。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_6ca333730eaf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "落下中の球が床に仕事をできる理由は？",
+    "answer": "エネルギーを持つ",
+    "dummies": [
+      "質量が消える",
+      "重力がなくなる",
+      "仕事は必ずできない"
+    ],
+    "note": "他の物体へ働きかけられる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_dfad07be40bf",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "力学的エネルギー保存の実験。減らすべき影響は？",
+    "answer": "摩擦や空気抵抗",
+    "dummies": [
+      "重力",
+      "物体の高さ全て",
+      "物体の運動全て"
+    ],
+    "note": "熱などへの変換を抑える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b254e13ecde6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "物理",
+    "unit": "合力と運動の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "実験結果が予想と違う。まず考えるのは？",
+    "answer": "条件や測定の見直し",
+    "dummies": [
+      "値を予想に書き換え",
+      "都合の悪い値を削除",
+      "理由なく結論を固定"
+    ],
+    "note": "方法と結果を振り返る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_c3c0110f7593",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ気体を別の方法で発生。確認するのは？",
+    "answer": "共通する性質",
+    "dummies": [
+      "発生法の名前だけ",
+      "容器の色だけ",
+      "実験した曜日だけ"
+    ],
+    "note": "発生法だけで種類を決めない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_55a37a474a05",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸素の発生に使う組合せは？",
+    "answer": "過酸化水素水と触媒",
+    "dummies": [
+      "石灰石と塩酸",
+      "亜鉛と塩酸",
+      "食塩水と砂"
+    ],
+    "note": "二酸化マンガン等を使う。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b315bce412c6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "二酸化炭素の発生に使う組合せは？",
+    "answer": "石灰石と塩酸",
+    "dummies": [
+      "亜鉛と塩酸",
+      "過酸化水素水と触媒",
+      "銅と水"
+    ],
+    "note": "気体の確認も合わせて行う。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_ec0872e825a1",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水素の発生に使う組合せは？",
+    "answer": "亜鉛と塩酸",
+    "dummies": [
+      "石灰石と塩酸",
+      "食塩と水",
+      "過酸化水素水と触媒"
+    ],
+    "note": "金属の種類にも注意。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_506b7271486e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水90gに食塩10g。質量パーセント濃度は？",
+    "answer": "10％",
+    "dummies": [
+      "9％",
+      "11.1％",
+      "90％"
+    ],
+    "note": "溶液の質量は100g。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4e2467a43763",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "溶解度曲線で比べる基準の水の質量は？",
+    "answer": "100g",
+    "dummies": [
+      "1g",
+      "10g",
+      "1000g"
+    ],
+    "note": "その温度で溶ける最大量。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b95499544138",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "融解中の純物質を加熱。温度が一定の間は？",
+    "answer": "状態変化に熱を使う",
+    "dummies": [
+      "熱を受けていない",
+      "物質が消える",
+      "加熱が必ず停止"
+    ],
+    "note": "一定圧力下で考える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_51e8879234de",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "化学",
+    "unit": "物質と気体の実験判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "状態変化の粒子モデルで変わる主なものは？",
+    "answer": "配置や運動",
+    "dummies": [
+      "粒子の種類",
+      "原子の種類",
+      "粒子自体の質量"
+    ],
+    "note": "化学変化とは区別する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_1fceb2f818a5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸化銀の熱分解後に残る金属は？",
+    "answer": "銀",
+    "dummies": [
+      "銅",
+      "鉄",
+      "亜鉛"
+    ],
+    "note": "酸素も発生する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_c8a317a8e5d7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "炭酸水素Naの加熱。水以外の生成物は？",
+    "answer": "炭酸Naと二酸化炭素",
+    "dummies": [
+      "食塩と酸素",
+      "銅と水素",
+      "鉄と窒素"
+    ],
+    "note": "Naはナトリウムの略記。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_a729fd6e9617",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水の電気分解。酸素が生じるのは？",
+    "answer": "陽極",
+    "dummies": [
+      "陰極",
+      "両極で同量",
+      "どちらにも生じない"
+    ],
+    "note": "陰極では水素が生じる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_aafe27855616",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "鉄と硫黄の混合物と硫化鉄。違うのは？",
+    "answer": "物質の性質",
+    "dummies": [
+      "鉄原子の種類",
+      "硫黄原子の種類",
+      "原子核の数だけ"
+    ],
+    "note": "反応後は別の物質。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_cf0a69fb8db8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸化銅と炭素の反応。炭素の役割は？",
+    "answer": "酸素と結び付く",
+    "dummies": [
+      "銅を新たにつくる",
+      "原子を消す",
+      "銅を蒸発させる"
+    ],
+    "note": "酸化銅は還元される。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_11cf29ffcc8d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "酸化銅の還元と同時に炭素側で起こるのは？",
+    "answer": "酸化",
+    "dummies": [
+      "凝固",
+      "蒸留",
+      "再結晶"
+    ],
+    "note": "酸素が一方から他方へ移る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4c1d5a3e6819",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "使い捨てカイロで温かくなる主な反応は？",
+    "answer": "鉄の酸化",
+    "dummies": [
+      "食塩の融解",
+      "水の凝固",
+      "酸素の還元だけ"
+    ],
+    "note": "化学変化で熱を取り出す。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_e705a8b62de2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "化学",
+    "unit": "分解と酸化還元の判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "吸熱反応で周囲が冷える理由は？",
+    "answer": "周囲から熱を受け取る",
+    "dummies": [
+      "冷たさが発生する",
+      "熱が必ず消える",
+      "温度計が全て故障"
+    ],
+    "note": "反応系と周囲を区別。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_943a1bf2a67a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ元素で中性子数だけ違う原子どうしは？",
+    "answer": "同位体",
+    "dummies": [
+      "同じ分子",
+      "正負のイオン",
+      "別元素"
+    ],
+    "note": "陽子の数は同じ。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_6f289913e5e3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Na⁺の＋が示すのは？",
+    "answer": "正の電荷",
+    "dummies": [
+      "陽子がない",
+      "中性子がない",
+      "質量が1g"
+    ],
+    "note": "電荷を表す記号。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f7f3129e7120",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "塩化物イオンの式は？",
+    "answer": "Cl⁻",
+    "dummies": [
+      "Cl⁺",
+      "Ca²⁺",
+      "Na⁺"
+    ],
+    "note": "塩素原子が電子を受け取る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_fee46a55658d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "亜鉛を硫酸銅水溶液へ。起きる変化は？",
+    "answer": "銅が析出する",
+    "dummies": [
+      "亜鉛が析出するだけ",
+      "酸素だけ生じる",
+      "必ず無反応"
+    ],
+    "note": "亜鉛がイオンになりやすい。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_c572dace4297",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "亜鉛・鉄・銅でイオンになりやすい順は？",
+    "answer": "亜鉛→鉄→銅",
+    "dummies": [
+      "銅→鉄→亜鉛",
+      "鉄→銅→亜鉛",
+      "銅→亜鉛→鉄"
+    ],
+    "note": "基礎的な金属の比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_1256e2e47d98",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "硫酸と水酸化Ba水溶液の中和。白い固体は？",
+    "answer": "硫酸バリウム",
+    "dummies": [
+      "塩化ナトリウム",
+      "銅",
+      "酸化銀"
+    ],
+    "note": "水に溶けにくい塩ができる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_ff9906f97f3a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "充電池の充電。主なエネルギー変換は？",
+    "answer": "電気→化学",
+    "dummies": [
+      "化学→電気",
+      "光→音",
+      "熱→核"
+    ],
+    "note": "放電の逆の向きに蓄える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_1948393e29fe",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "化学",
+    "unit": "イオンと金属の比較判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "乾電池と太陽電池。化学反応を使うのは？",
+    "answer": "乾電池",
+    "dummies": [
+      "太陽電池",
+      "両方とも光だけ",
+      "どちらも使わない"
+    ],
+    "note": "名前だけで同じ仕組みにしない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f86e70794616",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "生物の分類で基準に適するのは？",
+    "answer": "体の共通点と相違点",
+    "dummies": [
+      "見付けた順だけ",
+      "好き嫌いだけ",
+      "名前の字数"
+    ],
+    "note": "根拠をそろえて比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_c66628699a40",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物をルーペで見る。ルーペはどこへ？",
+    "answer": "目に近付ける",
+    "dummies": [
+      "腕の先へ固定",
+      "地面に置く",
+      "裏返して遠ざける"
+    ],
+    "note": "対象との距離を調節。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_ab1d4ab8b208",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "顕微鏡で高倍率へ。見える範囲は一般に？",
+    "answer": "狭くなる",
+    "dummies": [
+      "広くなる",
+      "常に同じ",
+      "試料が大きく育つ"
+    ],
+    "note": "低倍率で対象を探す。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_29926d417cc4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "高倍率で細胞を見付ける前に行うのは？",
+    "answer": "低倍率で位置を探す",
+    "dummies": [
+      "最初から最大倍率",
+      "試料を厚く重ねる",
+      "記録を消す"
+    ],
+    "note": "中央へ合わせてから変更。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_3704b6ab7f74",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "スケッチに残す情報として適切なのは？",
+    "answer": "倍率や観察日時",
+    "dummies": [
+      "想像した色だけ",
+      "好きな形への修正",
+      "観察者の好みだけ"
+    ],
+    "note": "事実と解釈を区別する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_2dcb059279e8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "マツとサクラ。胚珠が子房に包まれるのは？",
+    "answer": "サクラ",
+    "dummies": [
+      "マツ",
+      "両方",
+      "どちらもない"
+    ],
+    "note": "被子植物と裸子植物を比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_bbcfa880fe2e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "単子葉類と双子葉類の比較に使う葉の特徴は？",
+    "answer": "葉脈",
+    "dummies": [
+      "葉の枚数だけ",
+      "枯れた時の色だけ",
+      "葉の向きだけ"
+    ],
+    "note": "平行脈や網状脈を調べる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_cdb4a68d0bbe",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "生物",
+    "unit": "分類と観察の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "エビとイカ。節のある外骨格を持つのは？",
+    "answer": "エビ",
+    "dummies": [
+      "イカ",
+      "両方",
+      "どちらもない"
+    ],
+    "note": "節足動物と軟体動物を比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s1"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_c05b755ec8eb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "植物と動物の細胞。共通してあるのは？",
+    "answer": "細胞膜",
+    "dummies": [
+      "細胞壁",
+      "葉緑体",
+      "大きな液胞だけ"
+    ],
+    "note": "基本的なつくりを比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_2bc2096804e9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "単細胞生物の生命活動を行う単位は？",
+    "answer": "一つの細胞",
+    "dummies": [
+      "必ず多数の器官",
+      "骨格",
+      "血液だけ"
+    ],
+    "note": "一つの細胞で生活する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_5421de1966de",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "葉の緑色部分だけにデンプン。関係するのは？",
+    "answer": "葉緑体",
+    "dummies": [
+      "根毛",
+      "やく",
+      "柱頭"
+    ],
+    "note": "光などの条件もそろえる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_c7e355f70d8f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水に入れた茎の切り口から色水が上がる道は？",
+    "answer": "道管",
+    "dummies": [
+      "師管",
+      "気孔",
+      "花粉管"
+    ],
+    "note": "水を運ぶ組織。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_8b8c2657cb9b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "だ液の実験。加熱して酵素を失活させた液は？",
+    "answer": "対照に使える",
+    "dummies": [
+      "必ず同じ働き",
+      "デンプンそのもの",
+      "酸素だけになる"
+    ],
+    "note": "温度などをそろえて比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_7119b0d0bec5",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "脂肪の主な消化生成物は？",
+    "answer": "脂肪酸とモノグリセリド",
+    "dummies": [
+      "アミノ酸だけ",
+      "ブドウ糖だけ",
+      "デンプン"
+    ],
+    "note": "小腸から吸収される。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_90d371b7fe1d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "腕を曲げる筋肉が縮むと伸ばす側は？",
+    "answer": "緩む",
+    "dummies": [
+      "同時に最大収縮",
+      "骨になる",
+      "けんになる"
+    ],
+    "note": "筋肉は組になって働く。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_e3fc48332e18",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "生物",
+    "unit": "器官と実験結果の関係",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "感覚神経と運動神経。中枢から筋肉へ伝えるのは？",
+    "answer": "運動神経",
+    "dummies": [
+      "感覚神経",
+      "両方常に同じ",
+      "どちらでもない"
+    ],
+    "note": "信号の向きと役割を区別。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s3"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4139c88cef83",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "体細胞分裂の前に染色体で起こることは？",
+    "answer": "複製",
+    "dummies": [
+      "必ず半減",
+      "消滅",
+      "別元素への変化"
+    ],
+    "note": "分裂後も同数を保つ。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_3c55ceba98f8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "成長で体が大きくなる仕組みは？",
+    "answer": "細胞数と細胞の大きさ",
+    "dummies": [
+      "細胞数だけ常に減る",
+      "細胞が全て融合",
+      "細胞が全てなくなる"
+    ],
+    "note": "分裂後の細胞も成長。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_fc18e55669cb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "減数分裂で染色体数が半分になる利点は？",
+    "answer": "受精後に元の数へ戻る",
+    "dummies": [
+      "遺伝子を全て消す",
+      "細胞を必ず大きくする",
+      "受精を不要にする"
+    ],
+    "note": "生殖細胞の形成に関係。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f28b9cadbf75",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Aaがつくる生殖細胞の遺伝子は？",
+    "answer": "Aかa",
+    "dummies": [
+      "Aaだけ",
+      "AAだけ",
+      "aaだけ"
+    ],
+    "note": "対の遺伝子が分かれる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_9588b1fa24e6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "Aa同士の交配でaaとなる確率は？",
+    "answer": "4分の1",
+    "dummies": [
+      "2分の1",
+      "4分の3",
+      "必ずゼロ"
+    ],
+    "note": "一対の遺伝子で考える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_318e6b2c93ab",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "顕性形質は必ず生存に有利という意味？",
+    "answer": "そうではない",
+    "dummies": [
+      "必ず有利",
+      "必ず多い",
+      "必ず新しい"
+    ],
+    "note": "現れ方と有利不利は別。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_0ff2140c1290",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "クジラのひれとヒトの腕の基本構造が似る根拠は？",
+    "answer": "共通の祖先",
+    "dummies": [
+      "同じ場所だけで生活",
+      "必要から突然同形",
+      "全く無関係"
+    ],
+    "note": "相同器官と進化を考える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b5e0846fa4d2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "生物",
+    "unit": "遺伝と進化の読み取り",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "耐性を持つ細菌が増える説明として適切なのは？",
+    "answer": "耐性個体が生き残る",
+    "dummies": [
+      "全個体が望んで変化",
+      "薬が遺伝子を選んで作る",
+      "細菌が全て消滅"
+    ],
+    "note": "変異と選択を区別する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s5"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_69f4068f752d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地質年代を古い順に並べると？",
+    "answer": "古生代→中生代→新生代",
+    "dummies": [
+      "新生代→中生代→古生代",
+      "中生代→古生代→新生代",
+      "古生代→新生代→中生代"
+    ],
+    "note": "代表的な三つの区分。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_57185fa5dd67",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "アンモナイトを含む地層の代表的な時代は？",
+    "answer": "中生代",
+    "dummies": [
+      "新生代だけ",
+      "現在だけ",
+      "将来"
+    ],
+    "note": "示準化石の例。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_db5440cacaf4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "三葉虫を含む地層の代表的な時代は？",
+    "answer": "古生代",
+    "dummies": [
+      "新生代",
+      "現在",
+      "将来"
+    ],
+    "note": "生存した時代を利用。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4b314b082792",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "侵食面の上に新しい地層。境界から分かるのは？",
+    "answer": "堆積の時間的な隔たり",
+    "dummies": [
+      "全て同時に堆積",
+      "必ず同じ岩石",
+      "地層が全て消滅"
+    ],
+    "note": "不整合の観点。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_21b5a1ad3657",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "火山活動がもたらす恵みの例は？",
+    "answer": "温泉や地熱",
+    "dummies": [
+      "全ての津波",
+      "必ず全域の洪水",
+      "全ての冷害"
+    ],
+    "note": "災害と恵みの両面を見る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_671f9391fecb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "マグマの粘りけが弱い火山の傾斜は一般に？",
+    "answer": "緩やか",
+    "dummies": [
+      "必ず垂直",
+      "必ず急",
+      "粘りけと無関係"
+    ],
+    "note": "溶岩が流れ広がりやすい。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_225ea28760be",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ地層を調べるとき記録する位置情報は？",
+    "answer": "方位や高さ",
+    "dummies": [
+      "観察者の好み",
+      "曜日だけ",
+      "岩石の呼び名だけ"
+    ],
+    "note": "離れた地点の比較に使う。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_dd2609fd7f88",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中1",
+    "field": "地学",
+    "unit": "地層と自然の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本付近の地震を広く考える手掛かりは？",
+    "answer": "プレートの動き",
+    "dummies": [
+      "月の満ち欠けだけ",
+      "曜日",
+      "潮の色だけ"
+    ],
+    "note": "境界と内部で起こる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s2"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f95122aa09a6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "海面から蒸発した水が雨になる間に起こるのは？",
+    "answer": "水蒸気の凝結",
+    "dummies": [
+      "水分子の消滅",
+      "酸素への分解",
+      "岩石への変化"
+    ],
+    "note": "雲の水滴などになる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_96c364a1ea8a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "降水が海へ戻る経路の例は？",
+    "answer": "河川や地下水",
+    "dummies": [
+      "宇宙空間だけ",
+      "全てその場で消滅",
+      "光だけ"
+    ],
+    "note": "陸と海を水が巡る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_fcebe78e0c4c",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大気の主な熱源として地表を温めるのは？",
+    "answer": "太陽のエネルギー",
+    "dummies": [
+      "月の発光",
+      "地球の自転だけ",
+      "星座の名前"
+    ],
+    "note": "地表と大気が熱を交換。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_7abe36f468ea",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ力で押す面積を2倍に。圧力は？",
+    "answer": "半分",
+    "dummies": [
+      "2倍",
+      "同じ",
+      "4倍"
+    ],
+    "note": "圧力＝力÷面積。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_18052b91f12a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "大気圧が物体に働く向きは？",
+    "answer": "あらゆる向き",
+    "dummies": [
+      "上からだけ",
+      "下からだけ",
+      "東からだけ"
+    ],
+    "note": "空気の重さなどに関係。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_515f7fbfd583",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "海岸で夜に吹きやすい局地風は？",
+    "answer": "陸から海",
+    "dummies": [
+      "海から陸",
+      "必ず無風",
+      "常に北風"
+    ],
+    "note": "晴れて一般風が弱い場合。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_79ad70d136dd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本付近の天気が西から東へ移りやすいのは？",
+    "answer": "偏西風の影響",
+    "dummies": [
+      "貿易風だけ",
+      "地球が西へ自転",
+      "月の公転だけ"
+    ],
+    "note": "中緯度上空の大気の流れ。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_8cfb57b704c9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の冬の季節風が日本海で受け取るのは？",
+    "answer": "水蒸気と熱",
+    "dummies": [
+      "砂漠の砂だけ",
+      "酸素だけ",
+      "地震の力"
+    ],
+    "note": "日本海側の雪に関係。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_d5b546fc5c50",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "夏の南東季節風が運ぶ空気は一般に？",
+    "answer": "暖かく湿る",
+    "dummies": [
+      "冷たく乾く",
+      "必ず乾燥",
+      "水蒸気を含まない"
+    ],
+    "note": "太平洋側から吹く場合。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_76c22ba579d8",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球の半径に比べ、天気が変わる大気層は？",
+    "answer": "ごく薄い",
+    "dummies": [
+      "同じ厚さ",
+      "数十倍厚い",
+      "存在しない"
+    ],
+    "note": "地表付近の大気で考える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_88264bfac817",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "前線通過の記録で合わせて見る要素は？",
+    "answer": "気温・風向・気圧",
+    "dummies": [
+      "気温だけで必ず断定",
+      "曜日だけ",
+      "測器の色だけ"
+    ],
+    "note": "複数の変化を関連付ける。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_8b1924d55df0",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水の循環と大気の比較",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気象観測を毎回ほぼ同じ場所と時刻にするのは？",
+    "answer": "条件をそろえるため",
+    "dummies": [
+      "変化を消すため",
+      "温度を固定するため",
+      "気圧をなくすため"
+    ],
+    "note": "継続的な比較の基本。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_5a690a1fef1f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "惑星を太陽に近い順に比べる基準は？",
+    "answer": "公転軌道",
+    "dummies": [
+      "見かけの明るさだけ",
+      "名前の長さ",
+      "衛星数だけ"
+    ],
+    "note": "太陽系の構造を見る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_6f61cf6de698",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水星・金星・地球・火星の共通点は？",
+    "answer": "岩石質の惑星",
+    "dummies": [
+      "全て恒星",
+      "全て地球の衛星",
+      "全て同じ大気"
+    ],
+    "note": "地球型惑星の比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_132690cd5325",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "木星と土星を地球と比べた特徴は？",
+    "answer": "大きく平均密度が小さい",
+    "dummies": [
+      "必ず小さい",
+      "全て岩石だけ",
+      "自ら恒星として発光"
+    ],
+    "note": "主にガスからなる巨大惑星。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_dce17b650ed2",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金星の大気に多い気体は？",
+    "answer": "二酸化炭素",
+    "dummies": [
+      "酸素",
+      "水素",
+      "ヘリウム"
+    ],
+    "note": "地球との大気の違い。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_d29d3b3469dd",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球で液体の水が存在できる条件の一つは？",
+    "answer": "適度な温度と気圧",
+    "dummies": [
+      "必ず真空",
+      "常に極低温",
+      "太陽光が全くない"
+    ],
+    "note": "生命を支える条件。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_83569dee1587",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球の大気で最も多い気体は？",
+    "answer": "窒素",
+    "dummies": [
+      "酸素",
+      "二酸化炭素",
+      "水素"
+    ],
+    "note": "乾燥した大気の体積比。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_34b60a83ad63",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "太陽系の衛星が主に回る相手は？",
+    "answer": "惑星など",
+    "dummies": [
+      "恒星の中心だけ",
+      "銀河の外だけ",
+      "必ず地球だけ"
+    ],
+    "note": "月は地球の衛星。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_9415731729cb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地球から見た金星の太陽からの離れ方は？",
+    "answer": "大きくは離れない",
+    "dummies": [
+      "常に反対側",
+      "必ず真夜中に南中",
+      "全方向に自由"
+    ],
+    "note": "地球より内側を公転。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_976888b022d3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北半球の夏、同じ地点で太陽の南中高度は？",
+    "answer": "冬より高い",
+    "dummies": [
+      "冬より低い",
+      "常に同じ",
+      "必ず90度"
+    ],
+    "note": "日本の中緯度で比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_7ca375f92207",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "北半球の夏、昼の長さは一般に？",
+    "answer": "冬より長い",
+    "dummies": [
+      "冬より短い",
+      "常に12時間",
+      "常に0時間"
+    ],
+    "note": "日本の同じ地点で比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4f025b881dc7",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "太陽の直径と地球の直径を比べると？",
+    "answer": "太陽の方が大きい",
+    "dummies": [
+      "地球の方が大きい",
+      "同じ",
+      "測定の概念がない"
+    ],
+    "note": "太陽は巨大な恒星。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_ee5357a539a4",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "銀河系には太陽のほかにも何がある？",
+    "answer": "多数の恒星",
+    "dummies": [
+      "太陽だけ",
+      "地球だけ",
+      "月だけ"
+    ],
+    "note": "太陽系は銀河系の一部。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_7ba342161ed6",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "真空管から半導体素子の利用へ。利点の例は？",
+    "answer": "小型化や省電力",
+    "dummies": [
+      "必ず巨大化",
+      "全て発電不要",
+      "資源が全て不要"
+    ],
+    "note": "技術の進歩と生活を関連。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_455fe4ec7839",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "通信に光を使う技術の例は？",
+    "answer": "光ファイバー",
+    "dummies": [
+      "水道管",
+      "金属ばね",
+      "ろ紙"
+    ],
+    "note": "光の性質を利用する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f789746048b9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "化学繊維など人工材料を開発する狙いは？",
+    "answer": "用途に合う性質",
+    "dummies": [
+      "全ての自然を消す",
+      "必ず使い捨て",
+      "価格だけを上げる"
+    ],
+    "note": "強度や軽さ等を工夫。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_46587174286d",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "科学技術の利便性と同時に考えるのは？",
+    "answer": "安全性や環境影響",
+    "dummies": [
+      "利点だけ",
+      "名前の新しさだけ",
+      "人気だけ"
+    ],
+    "note": "根拠に基づき総合的に判断。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_70a8ad66dcf9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "製品の環境負荷を比較。見る範囲は？",
+    "answer": "製造から廃棄まで",
+    "dummies": [
+      "使う瞬間だけ",
+      "箱の色だけ",
+      "売り場の広さだけ"
+    ],
+    "note": "原料や輸送も含める。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_f4383ade9738",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "発電方法を一つの長所だけで決めにくい理由は？",
+    "answer": "条件ごとに利点欠点がある",
+    "dummies": [
+      "全て同じ仕組み",
+      "資料が全て不要",
+      "必ず一種類で足りる"
+    ],
+    "note": "安定供給や環境負荷を比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_9423761c8bbb",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "限りある金属資源を長く使う工夫は？",
+    "answer": "回収と再生利用",
+    "dummies": [
+      "全て捨てる",
+      "全て海へ流す",
+      "使用量を無制限に増す"
+    ],
+    "note": "有効利用の考え方。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4cfcbced5f20",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "天然素材と人工素材。性質の判断は？",
+    "answer": "用途と根拠で比較",
+    "dummies": [
+      "天然なら常に安全",
+      "人工なら全て有害",
+      "名前だけで決定"
+    ],
+    "note": "由来だけでは決まらない。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_851f9114518a",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "同じ量の湯を沸かす。比較すべき条件は？",
+    "answer": "水の初温など",
+    "dummies": [
+      "鍋の色だけ",
+      "測定日だけ",
+      "人の好みだけ"
+    ],
+    "note": "エネルギーの比較条件。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_ef559c20ce91",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "再使用可能な製品でも環境負荷の検討は？",
+    "answer": "必要",
+    "dummies": [
+      "常に不要",
+      "必ずゼロ",
+      "一回使えば不明でよい"
+    ],
+    "note": "洗浄や使用回数なども関係。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b309d742d88f",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "主張の根拠として優先するのは？",
+    "answer": "測定条件のあるデータ",
+    "dummies": [
+      "広告の大きさ",
+      "人数の多さだけ",
+      "好みだけ"
+    ],
+    "note": "比較できる資料を用いる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_29859ef38c51",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "科学技術と判断の基準",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "技術の結果に不確かさがあるときは？",
+    "answer": "限界も示して判断",
+    "dummies": [
+      "確実と偽る",
+      "都合の悪い結果を隠す",
+      "検討を全てやめる"
+    ],
+    "note": "科学的な判断を続ける。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "p7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4e9ec9629891",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "土の微生物の分解を比較。対照に使う土は？",
+    "answer": "加熱処理した土",
+    "dummies": [
+      "全く別の山の土",
+      "量だけ倍の土",
+      "水を入れない土だけ"
+    ],
+    "note": "他条件をそろえる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_657ea81b0c31",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "生産者が生態系へ取り入れる主なエネルギーは？",
+    "answer": "太陽の光",
+    "dummies": [
+      "重力だけ",
+      "地震だけ",
+      "音だけ"
+    ],
+    "note": "光合成をする生産者の場合。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_b2a692ad9187",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "分解者の働きで植物が再利用できるものは？",
+    "answer": "無機物",
+    "dummies": [
+      "光そのもの",
+      "食べた動物の形",
+      "遺伝子だけ"
+    ],
+    "note": "物質が循環する。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_95c83bf5db8b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "食物連鎖の変化を考える際に必要なのは？",
+    "answer": "複数のつながり",
+    "dummies": [
+      "一つの関係だけで断定",
+      "個体数は無関係",
+      "観察なしで決定"
+    ],
+    "note": "食物網として見る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_badd734e4dd9",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "水質を指標生物で比較。そろえるべきなのは？",
+    "answer": "採集方法や範囲",
+    "dummies": [
+      "川の名前の長さ",
+      "曜日だけ",
+      "写真の色だけ"
+    ],
+    "note": "季節や環境条件も記録。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_5935b270b32b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "外来生物なら全て同じ影響を持つ？",
+    "answer": "種類や環境で異なる",
+    "dummies": [
+      "必ず同じ",
+      "必ず無害",
+      "必ず絶滅を起こす"
+    ],
+    "note": "調査資料を基に考える。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_a58b37bcd386",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "気候変動が生物へ及ぼす影響の例は？",
+    "answer": "分布や繁殖時期の変化",
+    "dummies": [
+      "全ての生物が不変",
+      "全て同時に絶滅",
+      "遺伝が全て止まる"
+    ],
+    "note": "観測の積み重ねが必要。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_e6c7e337179e",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "環境",
+    "unit": "自然環境の調査判断",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "地域の災害を調べる。組み合わせる資料は？",
+    "answer": "地形・地質・過去の記録",
+    "dummies": [
+      "星座と血液型だけ",
+      "地名の字数だけ",
+      "気温一回だけ"
+    ],
+    "note": "地域の自然と人の暮らしを見る。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s7"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_9467bf21805b",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中2",
+    "field": "地学",
+    "unit": "水と気象の恵み",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "適度な降水が暮らしにもたらす恵みの例は？",
+    "answer": "農業用水の供給",
+    "dummies": [
+      "必ず河川の氾濫",
+      "全ての地震",
+      "必ず塩害"
+    ],
+    "note": "同じ水が災害にも関わる。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s4"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_4586f7d00e40",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "金星の表面が高温な主な理由の一つは？",
+    "answer": "強い温室効果",
+    "dummies": [
+      "太陽より高温だから",
+      "大気が全くない",
+      "地球の熱を受けるだけ"
+    ],
+    "note": "厚い大気の影響。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_73245c5c73c3",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "太陽の全体の形はおよそ？",
+    "answer": "球形",
+    "dummies": [
+      "円盤状",
+      "立方体",
+      "三角柱"
+    ],
+    "note": "自ら光を放つ天体。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
+  },
+  {
+    "id": "jr_science_case_bbf803cc8b93",
+    "subject": "理科",
+    "school_level": "中学",
+    "grade": "中3",
+    "field": "地学",
+    "unit": "太陽系と地球の条件",
+    "kind": "choice",
+    "task": "適切なものを選ぼう",
+    "prompt": "日本の夏に地表が暖まりやすい理由は？",
+    "answer": "高い太陽高度と長い昼",
+    "dummies": [
+      "太陽との距離だけ",
+      "自転が止まる",
+      "月が発光する"
+    ],
+    "note": "同じ地点の季節比較。",
+    "content_batch": "science-completion-20261110",
+    "official_blocks": [
+      "s6"
+    ],
+    "content_reviewed": "2026-11-10"
   }
 ]

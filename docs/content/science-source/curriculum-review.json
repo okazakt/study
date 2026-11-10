@@ -1,0 +1,2869 @@
+{
+  "version": "0.88.0",
+  "date": "2026-11-10",
+  "source": {
+    "title": "中学校学習指導要領（平成29年告示）解説 理科編（令和3年8月一部改訂）",
+    "url": "https://www.mext.go.jp/content/20230522-mxt_kyoikujinzai02-000033060_04.pdf",
+    "retrieved": "2026-11-09",
+    "sha256": "e28b9d4778070496b350141c92d70061cb6f98e76ff6fc74ab88f79f972c7d24",
+    "locator": "付録3 中学校学習指導要領 第2章第4節理科。印刷頁150–166、対応する本文解説も参照。"
+  },
+  "scope": "付録3「2 内容」のアの丸印付き最下位項目と各ブロックのイを編集単位として照合。出題例の存在は全語句・全入試・実技能の網羅や習得を意味しない。",
+  "countingRule": "アの最下位項目71行とイ14行。行数は編集用の照合単位であり公式の網羅率の分母ではない。",
+  "counts": {
+    "total": 85,
+    "byField": {
+      "第1分野": 45,
+      "第2分野": 40
+    },
+    "byCategory": {
+      "知識の項目": 71,
+      "思考・判断・表現の項目": 14
+    }
+  },
+  "rows": [
+    {
+      "id": "p1.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p1",
+      "officialItem": "ア(ア)ア",
+      "point": "光の反射・屈折",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:光の反射",
+          "sourceIds": [
+            "jr_science_88d21695dbe0"
+          ]
+        },
+        {
+          "selector": "T:光の屈折",
+          "sourceIds": [
+            "jr_science_152fab0f47c4"
+          ]
+        },
+        {
+          "selector": "T:全反射",
+          "sourceIds": [
+            "jr_science_82971fb35700"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_88d21695dbe0",
+        "jr_science_152fab0f47c4",
+        "jr_science_82971fb35700"
+      ],
+      "outsideGame": "光路の実作図や屈折の実験"
+    },
+    {
+      "id": "p1.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p1",
+      "officialItem": "ア(ア)イ",
+      "point": "凸レンズの働き",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:実像",
+          "sourceIds": [
+            "jr_science_ec50682cc0c9"
+          ]
+        },
+        {
+          "selector": "T:虚像",
+          "sourceIds": [
+            "jr_science_775db40541f4"
+          ]
+        },
+        {
+          "selector": "P:実像と同じ大きさの物体",
+          "sourceIds": [
+            "jr_science_case_18739cb7c6af"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ec50682cc0c9",
+        "jr_science_775db40541f4",
+        "jr_science_case_18739cb7c6af"
+      ],
+      "outsideGame": "像の実測・光路の作図"
+    },
+    {
+      "id": "p1.ア(ア)ウ",
+      "field": "第1分野",
+      "block": "p1",
+      "officialItem": "ア(ア)ウ",
+      "point": "音の性質",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:振幅",
+          "sourceIds": [
+            "jr_science_97aa67581262"
+          ]
+        },
+        {
+          "selector": "T:振動数",
+          "sourceIds": [
+            "jr_science_4051216a3c40"
+          ]
+        },
+        {
+          "selector": "P:音が真空中",
+          "sourceIds": [
+            "jr_science_case_450076221ed3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_97aa67581262",
+        "jr_science_4051216a3c40",
+        "jr_science_case_450076221ed3"
+      ],
+      "outsideGame": "発音・振動の観察と波形読取り"
+    },
+    {
+      "id": "p1.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p1",
+      "officialItem": "ア(イ)ア",
+      "point": "力の働き・二力のつり合い",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:フックの法則",
+          "sourceIds": [
+            "jr_science_a86144ff7426"
+          ]
+        },
+        {
+          "selector": "P:物体に働く2力がつり合う条件",
+          "sourceIds": [
+            "jr_science_core_equilibrium"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_a86144ff7426",
+        "jr_science_core_equilibrium"
+      ],
+      "outsideGame": "力の図示と実測"
+    },
+    {
+      "id": "p1.イ",
+      "field": "第1分野",
+      "block": "p1",
+      "officialItem": "イ",
+      "point": "規則性を見いだし表現する探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:屈折の作図。",
+          "sourceIds": [
+            "jr_science_case_b4793d3e0bf5"
+          ]
+        },
+        {
+          "selector": "P:凸レンズの焦点距離を調べる",
+          "sourceIds": [
+            "jr_science_case_287f185c215a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_b4793d3e0bf5",
+        "jr_science_case_287f185c215a"
+      ],
+      "outsideGame": "計画・実施・分析結果の自由な説明"
+    },
+    {
+      "id": "p2.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p2",
+      "officialItem": "ア(ア)ア",
+      "point": "物質の性質・実験器具と記録",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:密度",
+          "sourceIds": [
+            "jr_science_f873e3fb9e94"
+          ]
+        },
+        {
+          "selector": "T:金属",
+          "sourceIds": [
+            "jr_science_61c8d5c87228"
+          ]
+        },
+        {
+          "selector": "P:液体のメスシリンダー",
+          "sourceIds": [
+            "jr_science_case_9f9af2efe495"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_f873e3fb9e94",
+        "jr_science_61c8d5c87228",
+        "jr_science_case_9f9af2efe495"
+      ],
+      "outsideGame": "実物の測定・器具操作・記録"
+    },
+    {
+      "id": "p2.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p2",
+      "officialItem": "ア(ア)イ",
+      "point": "気体の発生と性質",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:酸素",
+          "sourceIds": [
+            "jr_science_689f1ed768a0"
+          ]
+        },
+        {
+          "selector": "T:アンモニア",
+          "sourceIds": [
+            "jr_science_25e869b4ebc1"
+          ]
+        },
+        {
+          "selector": "P:同じ気体を別の方法",
+          "sourceIds": [
+            "jr_science_case_c3c0110f7593"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_689f1ed768a0",
+        "jr_science_25e869b4ebc1",
+        "jr_science_case_c3c0110f7593"
+      ],
+      "outsideGame": "実際の発生・捕集・確認操作"
+    },
+    {
+      "id": "p2.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p2",
+      "officialItem": "ア(イ)ア",
+      "point": "水溶液と溶解度",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:溶解度",
+          "sourceIds": [
+            "jr_science_9d2aca15429e"
+          ]
+        },
+        {
+          "selector": "T:再結晶",
+          "sourceIds": [
+            "jr_science_fb2411606125"
+          ]
+        },
+        {
+          "selector": "P:水90gに食塩10g",
+          "sourceIds": [
+            "jr_science_case_506b7271486e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_9d2aca15429e",
+        "jr_science_fb2411606125",
+        "jr_science_case_506b7271486e"
+      ],
+      "outsideGame": "溶解度曲線の実読取りと実験"
+    },
+    {
+      "id": "p2.ア(ウ)ア",
+      "field": "第1分野",
+      "block": "p2",
+      "officialItem": "ア(ウ)ア",
+      "point": "状態変化と熱",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:融解",
+          "sourceIds": [
+            "jr_science_6a187d1b283b"
+          ]
+        },
+        {
+          "selector": "P:状態変化の粒子モデル",
+          "sourceIds": [
+            "jr_science_case_51e8879234de"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_6a187d1b283b",
+        "jr_science_case_51e8879234de"
+      ],
+      "outsideGame": "粒子モデルの作成・実験"
+    },
+    {
+      "id": "p2.ア(ウ)イ",
+      "field": "第1分野",
+      "block": "p2",
+      "officialItem": "ア(ウ)イ",
+      "point": "融点・沸点と分離",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:融点",
+          "sourceIds": [
+            "jr_science_f60e7eec3e76"
+          ]
+        },
+        {
+          "selector": "T:沸点",
+          "sourceIds": [
+            "jr_science_897a6795fc10"
+          ]
+        },
+        {
+          "selector": "T:蒸留",
+          "sourceIds": [
+            "jr_science_1bd482bbc00b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_f60e7eec3e76",
+        "jr_science_897a6795fc10",
+        "jr_science_1bd482bbc00b"
+      ],
+      "outsideGame": "加熱曲線の実読取り・蒸留"
+    },
+    {
+      "id": "p2.イ",
+      "field": "第1分野",
+      "block": "p2",
+      "officialItem": "イ",
+      "point": "物質の性質の規則性を見いだす探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:溶解度曲線で比べる",
+          "sourceIds": [
+            "jr_science_case_4e2467a43763"
+          ]
+        },
+        {
+          "selector": "P:同じ気体を別の方法",
+          "sourceIds": [
+            "jr_science_case_c3c0110f7593"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_4e2467a43763",
+        "jr_science_case_c3c0110f7593"
+      ],
+      "outsideGame": "実験計画・実施・データ分析と表現"
+    },
+    {
+      "id": "p3.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(ア)ア",
+      "point": "回路の電流と電圧",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:直列回路",
+          "sourceIds": [
+            "jr_science_d082aaabdf9b"
+          ]
+        },
+        {
+          "selector": "T:並列回路",
+          "sourceIds": [
+            "jr_science_9db6d000eaf8"
+          ]
+        },
+        {
+          "selector": "T:電流計",
+          "sourceIds": [
+            "jr_science_19033683ba76"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_d082aaabdf9b",
+        "jr_science_9db6d000eaf8",
+        "jr_science_19033683ba76"
+      ],
+      "outsideGame": "実際の配線・回路図の作成"
+    },
+    {
+      "id": "p3.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(ア)イ",
+      "point": "電流・電圧と抵抗",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:オームの法則",
+          "sourceIds": [
+            "jr_science_6ee3f11f53c9"
+          ]
+        },
+        {
+          "selector": "T:電気抵抗",
+          "sourceIds": [
+            "jr_science_c26b11025f4d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_6ee3f11f53c9",
+        "jr_science_c26b11025f4d"
+      ],
+      "outsideGame": "電流電圧グラフと測定"
+    },
+    {
+      "id": "p3.ア(ア)ウ",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(ア)ウ",
+      "point": "電気とそのエネルギー",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:電力",
+          "sourceIds": [
+            "jr_science_a874bb4e87f6"
+          ]
+        },
+        {
+          "selector": "T:電力量",
+          "sourceIds": [
+            "jr_science_8454c487765e"
+          ]
+        },
+        {
+          "selector": "P:電熱線の発熱比較",
+          "sourceIds": [
+            "jr_science_case_e3f010ea962a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_a874bb4e87f6",
+        "jr_science_8454c487765e",
+        "jr_science_case_e3f010ea962a"
+      ],
+      "outsideGame": "発熱実験・測定誤差の検討"
+    },
+    {
+      "id": "p3.ア(ア)エ",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(ア)エ",
+      "point": "静電気と電流",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:静電気",
+          "sourceIds": [
+            "jr_science_936f187fc586"
+          ]
+        },
+        {
+          "selector": "T:電子",
+          "sourceIds": [
+            "jr_science_dc4116914dcc"
+          ]
+        },
+        {
+          "selector": "P:摩擦で帯電する",
+          "sourceIds": [
+            "jr_science_case_289578782220"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_936f187fc586",
+        "jr_science_dc4116914dcc",
+        "jr_science_case_289578782220"
+      ],
+      "outsideGame": "帯電・放電の観察"
+    },
+    {
+      "id": "p3.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(イ)ア",
+      "point": "電流がつくる磁界",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:磁力線",
+          "sourceIds": [
+            "jr_science_48287fd8e80b"
+          ]
+        },
+        {
+          "selector": "T:電磁石",
+          "sourceIds": [
+            "jr_science_6e2578f21d00"
+          ]
+        },
+        {
+          "selector": "P:コイルの電流だけ",
+          "sourceIds": [
+            "jr_science_case_88d8f9a8c9cd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_48287fd8e80b",
+        "jr_science_6e2578f21d00",
+        "jr_science_case_88d8f9a8c9cd"
+      ],
+      "outsideGame": "実測と磁力線の図示"
+    },
+    {
+      "id": "p3.ア(イ)イ",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(イ)イ",
+      "point": "磁界中の電流が受ける力",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:電磁力",
+          "sourceIds": [
+            "jr_science_e1c67e643c4f"
+          ]
+        },
+        {
+          "selector": "P:磁界の向きだけ逆",
+          "sourceIds": [
+            "jr_science_case_3a026e7ef631"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_e1c67e643c4f",
+        "jr_science_case_3a026e7ef631"
+      ],
+      "outsideGame": "装置の組立て・力の向きの図示"
+    },
+    {
+      "id": "p3.ア(イ)ウ",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "ア(イ)ウ",
+      "point": "電磁誘導・発電と直流交流",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:電磁誘導",
+          "sourceIds": [
+            "jr_science_665748f8a9be"
+          ]
+        },
+        {
+          "selector": "T:直流",
+          "sourceIds": [
+            "jr_science_f8289b8d5a23"
+          ]
+        },
+        {
+          "selector": "T:交流",
+          "sourceIds": [
+            "jr_science_46edeef4d6f4"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_665748f8a9be",
+        "jr_science_f8289b8d5a23",
+        "jr_science_46edeef4d6f4"
+      ],
+      "outsideGame": "誘導電流の測定・波形読取り"
+    },
+    {
+      "id": "p3.イ",
+      "field": "第1分野",
+      "block": "p3",
+      "officialItem": "イ",
+      "point": "電流と磁界の規則性を調べる探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:電熱線の発熱比較",
+          "sourceIds": [
+            "jr_science_case_e3f010ea962a"
+          ]
+        },
+        {
+          "selector": "P:電流計の針が逆へ",
+          "sourceIds": [
+            "jr_science_case_a0dab33a6505"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_e3f010ea962a",
+        "jr_science_case_a0dab33a6505"
+      ],
+      "outsideGame": "実験立案・実施・測定結果の表現"
+    },
+    {
+      "id": "p4.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(ア)ア",
+      "point": "物質の分解",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:分解",
+          "sourceIds": [
+            "jr_science_b67a95e55b57"
+          ]
+        },
+        {
+          "selector": "P:酸化銀の熱分解後",
+          "sourceIds": [
+            "jr_science_case_1fceb2f818a5"
+          ]
+        },
+        {
+          "selector": "P:水の電気分解。酸素",
+          "sourceIds": [
+            "jr_science_case_a729fd6e9617"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_b67a95e55b57",
+        "jr_science_case_1fceb2f818a5",
+        "jr_science_case_a729fd6e9617"
+      ],
+      "outsideGame": "実際の分解実験と気体確認"
+    },
+    {
+      "id": "p4.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(ア)イ",
+      "point": "原子・分子と元素記号",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:原子",
+          "sourceIds": [
+            "jr_science_83407edb89a5"
+          ]
+        },
+        {
+          "selector": "T:分子",
+          "sourceIds": [
+            "jr_science_6bc0456013c9"
+          ]
+        },
+        {
+          "selector": "T:元素記号",
+          "sourceIds": [
+            "jr_science_ef4a0e212e8f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_83407edb89a5",
+        "jr_science_6bc0456013c9",
+        "jr_science_ef4a0e212e8f"
+      ],
+      "outsideGame": "粒子モデルの作成・表現"
+    },
+    {
+      "id": "p4.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(イ)ア",
+      "point": "化学変化と化学式・反応式",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:化学変化",
+          "sourceIds": [
+            "jr_science_493e1ce5ec35"
+          ]
+        },
+        {
+          "selector": "T:化学式",
+          "sourceIds": [
+            "jr_science_407ef40f1e8c"
+          ]
+        },
+        {
+          "selector": "T:化学反応式",
+          "sourceIds": [
+            "jr_science_4e880bea4072"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_493e1ce5ec35",
+        "jr_science_407ef40f1e8c",
+        "jr_science_4e880bea4072"
+      ],
+      "outsideGame": "未見の反応式作成と実験"
+    },
+    {
+      "id": "p4.ア(イ)イ",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(イ)イ",
+      "point": "酸化と還元",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:酸化",
+          "sourceIds": [
+            "jr_science_35d4a4c44fa6"
+          ]
+        },
+        {
+          "selector": "T:還元",
+          "sourceIds": [
+            "jr_science_e11f392e082e"
+          ]
+        },
+        {
+          "selector": "P:酸化銅の還元と同時",
+          "sourceIds": [
+            "jr_science_case_11cf29ffcc8d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_35d4a4c44fa6",
+        "jr_science_e11f392e082e",
+        "jr_science_case_11cf29ffcc8d"
+      ],
+      "outsideGame": "酸化還元の実験とモデル説明"
+    },
+    {
+      "id": "p4.ア(イ)ウ",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(イ)ウ",
+      "point": "化学変化と熱",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:発熱反応",
+          "sourceIds": [
+            "jr_science_baf8a43b95d8"
+          ]
+        },
+        {
+          "selector": "T:吸熱反応",
+          "sourceIds": [
+            "jr_science_f8efd81ba843"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_baf8a43b95d8",
+        "jr_science_f8efd81ba843"
+      ],
+      "outsideGame": "熱の出入りの実測"
+    },
+    {
+      "id": "p4.ア(ウ)ア",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(ウ)ア",
+      "point": "化学変化と質量保存",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:質量保存の法則",
+          "sourceIds": [
+            "jr_science_48cd8c77ad72"
+          ]
+        },
+        {
+          "selector": "P:密閉容器内で気体",
+          "sourceIds": [
+            "jr_science_case_40ef1b199c82"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_48cd8c77ad72",
+        "jr_science_case_40ef1b199c82"
+      ],
+      "outsideGame": "実測・測定誤差の分析"
+    },
+    {
+      "id": "p4.ア(ウ)イ",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "ア(ウ)イ",
+      "point": "反応する質量の規則性",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:銅：酸素＝4：1。銅8g",
+          "sourceIds": [
+            "jr_science_case_c5c00e2ccc3a"
+          ]
+        },
+        {
+          "selector": "P:Mg：酸素＝3：2",
+          "sourceIds": [
+            "jr_science_case_32e6c0db7f18"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_c5c00e2ccc3a",
+        "jr_science_case_32e6c0db7f18"
+      ],
+      "outsideGame": "グラフの実読取りと比例の説明"
+    },
+    {
+      "id": "p4.イ",
+      "field": "第1分野",
+      "block": "p4",
+      "officialItem": "イ",
+      "point": "原子分子モデルと量的関係の探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:反応式を整えるとき",
+          "sourceIds": [
+            "jr_science_case_bcc03737621b"
+          ]
+        },
+        {
+          "selector": "P:銅：酸素＝4：1。銅4g",
+          "sourceIds": [
+            "jr_science_case_41dca6c585b6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_bcc03737621b",
+        "jr_science_case_41dca6c585b6"
+      ],
+      "outsideGame": "実験立案・モデル作成・結果の表現"
+    },
+    {
+      "id": "p5.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "ア(ア)ア",
+      "point": "水圧と浮力",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:水圧",
+          "sourceIds": [
+            "jr_science_76bd46ce3a68"
+          ]
+        },
+        {
+          "selector": "T:浮力",
+          "sourceIds": [
+            "jr_science_4171f7dc5bbd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_76bd46ce3a68",
+        "jr_science_4171f7dc5bbd"
+      ],
+      "outsideGame": "水圧の測定・圧力の図示"
+    },
+    {
+      "id": "p5.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "ア(ア)イ",
+      "point": "力の合成・分解",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:合力",
+          "sourceIds": [
+            "jr_science_85641056b25e"
+          ]
+        },
+        {
+          "selector": "T:分力",
+          "sourceIds": [
+            "jr_science_75b3824f116d"
+          ]
+        },
+        {
+          "selector": "P:2力の合成。",
+          "sourceIds": [
+            "jr_science_case_22a46d7786f2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_85641056b25e",
+        "jr_science_75b3824f116d",
+        "jr_science_case_22a46d7786f2"
+      ],
+      "outsideGame": "作図と力の合成分解の実験"
+    },
+    {
+      "id": "p5.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "ア(イ)ア",
+      "point": "運動の速さと向き",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:速さ",
+          "sourceIds": [
+            "jr_science_cc1064c0480e"
+          ]
+        },
+        {
+          "selector": "T:作用・反作用",
+          "sourceIds": [
+            "jr_science_6a3a7a4a3eaa"
+          ]
+        },
+        {
+          "selector": "T:平均の速さ",
+          "sourceIds": [
+            "jr_science_3eb46a6cdd5a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_cc1064c0480e",
+        "jr_science_6a3a7a4a3eaa",
+        "jr_science_3eb46a6cdd5a"
+      ],
+      "outsideGame": "運動の記録と速さのグラフ"
+    },
+    {
+      "id": "p5.ア(イ)イ",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "ア(イ)イ",
+      "point": "力と運動",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:等速直線運動",
+          "sourceIds": [
+            "jr_science_067a1a166342"
+          ]
+        },
+        {
+          "selector": "P:同じ物体で斜面を急に",
+          "sourceIds": [
+            "jr_science_case_2c3858469788"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_067a1a166342",
+        "jr_science_case_2c3858469788"
+      ],
+      "outsideGame": "台車実験・力と速さの図示"
+    },
+    {
+      "id": "p5.ア(ウ)ア",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "ア(ウ)ア",
+      "point": "仕事・仕事率とエネルギー",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:仕事",
+          "sourceIds": [
+            "jr_science_a9c2d194ceba"
+          ]
+        },
+        {
+          "selector": "T:仕事率",
+          "sourceIds": [
+            "jr_science_c63a8a0d0aea"
+          ]
+        },
+        {
+          "selector": "P:落下中の球が床に仕事",
+          "sourceIds": [
+            "jr_science_case_6ca333730eaf"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_a9c2d194ceba",
+        "jr_science_c63a8a0d0aea",
+        "jr_science_case_6ca333730eaf"
+      ],
+      "outsideGame": "衝突実験・仕事量の測定"
+    },
+    {
+      "id": "p5.ア(ウ)イ",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "ア(ウ)イ",
+      "point": "力学的エネルギーの保存",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:力学的エネルギー",
+          "sourceIds": [
+            "jr_science_dde153b80321"
+          ]
+        },
+        {
+          "selector": "P:力学的エネルギー保存の実験",
+          "sourceIds": [
+            "jr_science_case_dfad07be40bf"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_dde153b80321",
+        "jr_science_case_dfad07be40bf"
+      ],
+      "outsideGame": "振り子等の測定・グラフと誤差"
+    },
+    {
+      "id": "p5.イ",
+      "field": "第1分野",
+      "block": "p5",
+      "officialItem": "イ",
+      "point": "運動とエネルギーの探究と振返り",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:実験結果が予想と違う",
+          "sourceIds": [
+            "jr_science_case_b254e13ecde6"
+          ]
+        },
+        {
+          "selector": "T:記録タイマー",
+          "sourceIds": [
+            "jr_science_c129e2a57f0a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_b254e13ecde6",
+        "jr_science_c129e2a57f0a"
+      ],
+      "outsideGame": "探究の実施・振返りと自由な説明"
+    },
+    {
+      "id": "p6.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p6",
+      "officialItem": "ア(ア)ア",
+      "point": "原子の成り立ちとイオン",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:原子核",
+          "sourceIds": [
+            "jr_science_64c9a1bc89be"
+          ]
+        },
+        {
+          "selector": "T:陽イオン",
+          "sourceIds": [
+            "jr_science_e422209d07ae"
+          ]
+        },
+        {
+          "selector": "T:陰イオン",
+          "sourceIds": [
+            "jr_science_7acaf895bdb5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_64c9a1bc89be",
+        "jr_science_e422209d07ae",
+        "jr_science_7acaf895bdb5"
+      ],
+      "outsideGame": "電解の実施とモデル表現"
+    },
+    {
+      "id": "p6.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p6",
+      "officialItem": "ア(ア)イ",
+      "point": "酸とアルカリ",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:酸",
+          "sourceIds": [
+            "jr_science_69dbc607adf0"
+          ]
+        },
+        {
+          "selector": "T:アルカリ",
+          "sourceIds": [
+            "jr_science_6cd4aa78413e"
+          ]
+        },
+        {
+          "selector": "T:pH",
+          "sourceIds": [
+            "jr_science_0beb05af4c02"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_69dbc607adf0",
+        "jr_science_6cd4aa78413e",
+        "jr_science_0beb05af4c02"
+      ],
+      "outsideGame": "イオン移動の実験・指示薬の操作"
+    },
+    {
+      "id": "p6.ア(ア)ウ",
+      "field": "第1分野",
+      "block": "p6",
+      "officialItem": "ア(ア)ウ",
+      "point": "中和と塩",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:中和",
+          "sourceIds": [
+            "jr_science_67264f52469c"
+          ]
+        },
+        {
+          "selector": "T:塩",
+          "sourceIds": [
+            "jr_science_8ee8f137c684"
+          ]
+        },
+        {
+          "selector": "P:硫酸と水酸化Ba",
+          "sourceIds": [
+            "jr_science_case_1256e2e47d98"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_67264f52469c",
+        "jr_science_8ee8f137c684",
+        "jr_science_case_1256e2e47d98"
+      ],
+      "outsideGame": "中和・滴定の実験と反応の説明"
+    },
+    {
+      "id": "p6.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p6",
+      "officialItem": "ア(イ)ア",
+      "point": "金属イオンへのなりやすさ",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:イオン化傾向",
+          "sourceIds": [
+            "jr_science_0c3bab4eb208"
+          ]
+        },
+        {
+          "selector": "P:亜鉛を硫酸銅",
+          "sourceIds": [
+            "jr_science_case_fee46a55658d"
+          ]
+        },
+        {
+          "selector": "P:亜鉛・鉄・銅で",
+          "sourceIds": [
+            "jr_science_case_c572dace4297"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_0c3bab4eb208",
+        "jr_science_case_fee46a55658d",
+        "jr_science_case_c572dace4297"
+      ],
+      "outsideGame": "金属間の反応比較の実験"
+    },
+    {
+      "id": "p6.ア(イ)イ",
+      "field": "第1分野",
+      "block": "p6",
+      "officialItem": "ア(イ)イ",
+      "point": "化学変化と電池",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:ダニエル電池",
+          "sourceIds": [
+            "jr_science_b0771010d758"
+          ]
+        },
+        {
+          "selector": "P:充電池の充電",
+          "sourceIds": [
+            "jr_science_case_ff9906f97f3a"
+          ]
+        },
+        {
+          "selector": "T:化学電池",
+          "sourceIds": [
+            "jr_science_a087ccbf0efe"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_b0771010d758",
+        "jr_science_case_ff9906f97f3a",
+        "jr_science_a087ccbf0efe"
+      ],
+      "outsideGame": "電池作成・測定・電極モデル"
+    },
+    {
+      "id": "p6.イ",
+      "field": "第1分野",
+      "block": "p6",
+      "officialItem": "イ",
+      "point": "イオンモデルでの探究と振返り",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:亜鉛を硫酸銅",
+          "sourceIds": [
+            "jr_science_case_fee46a55658d"
+          ]
+        },
+        {
+          "selector": "P:中和後の食塩水",
+          "sourceIds": [
+            "jr_science_case_9382f6fa96ca"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_fee46a55658d",
+        "jr_science_case_9382f6fa96ca"
+      ],
+      "outsideGame": "実験計画・データ分析・モデル表現"
+    },
+    {
+      "id": "p7.ア(ア)ア",
+      "field": "第1分野",
+      "block": "p7",
+      "officialItem": "ア(ア)ア",
+      "point": "エネルギー変換と資源",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:エネルギー保存則",
+          "sourceIds": [
+            "jr_science_014be245f9bf"
+          ]
+        },
+        {
+          "selector": "T:エネルギー効率",
+          "sourceIds": [
+            "jr_science_86b8c877fa0c"
+          ]
+        },
+        {
+          "selector": "T:火力発電",
+          "sourceIds": [
+            "jr_science_e4fa25f528ba"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_014be245f9bf",
+        "jr_science_86b8c877fa0c",
+        "jr_science_e4fa25f528ba"
+      ],
+      "outsideGame": "変換効率の実測と複数資料の比較"
+    },
+    {
+      "id": "p7.ア(ア)イ",
+      "field": "第1分野",
+      "block": "p7",
+      "officialItem": "ア(ア)イ",
+      "point": "様々な物質と利用",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:プラスチック",
+          "sourceIds": [
+            "jr_science_ab554735bf81"
+          ]
+        },
+        {
+          "selector": "T:合金",
+          "sourceIds": [
+            "jr_science_1cd53860d199"
+          ]
+        },
+        {
+          "selector": "P:天然素材と人工素材",
+          "sourceIds": [
+            "jr_science_case_4cfcbced5f20"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ab554735bf81",
+        "jr_science_1cd53860d199",
+        "jr_science_case_4cfcbced5f20"
+      ],
+      "outsideGame": "材料の実験と製品設計"
+    },
+    {
+      "id": "p7.ア(ア)ウ",
+      "field": "第1分野",
+      "block": "p7",
+      "officialItem": "ア(ア)ウ",
+      "point": "科学技術の発展と生活",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:トランジスタ",
+          "sourceIds": [
+            "jr_science_448c22b1b102"
+          ]
+        },
+        {
+          "selector": "T:光ファイバー",
+          "sourceIds": [
+            "jr_science_33d453bc04a4"
+          ]
+        },
+        {
+          "selector": "P:真空管から半導体",
+          "sourceIds": [
+            "jr_science_case_7ba342161ed6"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_448c22b1b102",
+        "jr_science_33d453bc04a4",
+        "jr_science_case_7ba342161ed6"
+      ],
+      "outsideGame": "発展史の調査・複数資料の説明"
+    },
+    {
+      "id": "p7.ア(イ)ア",
+      "field": "第1分野",
+      "block": "p7",
+      "officialItem": "ア(イ)ア",
+      "point": "環境保全と科学技術・持続可能性",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:循環型社会",
+          "sourceIds": [
+            "jr_science_cbd948ee9e13"
+          ]
+        },
+        {
+          "selector": "T:持続可能な社会",
+          "sourceIds": [
+            "jr_bio_089"
+          ]
+        },
+        {
+          "selector": "P:製品の環境負荷を比較",
+          "sourceIds": [
+            "jr_science_case_70a8ad66dcf9"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_cbd948ee9e13",
+        "jr_bio_089",
+        "jr_science_case_70a8ad66dcf9"
+      ],
+      "outsideGame": "調査・討論・提案の実践"
+    },
+    {
+      "id": "p7.イ",
+      "field": "第1分野",
+      "block": "p7",
+      "officialItem": "イ",
+      "point": "エネルギーと物質を調べ科学的に判断",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:主張の根拠として",
+          "sourceIds": [
+            "jr_science_case_b309d742d88f"
+          ]
+        },
+        {
+          "selector": "P:技術の結果に不確かさ",
+          "sourceIds": [
+            "jr_science_case_29859ef38c51"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_b309d742d88f",
+        "jr_science_case_29859ef38c51"
+      ],
+      "outsideGame": "実測・調査・多面的な論述と判断"
+    },
+    {
+      "id": "s1.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s1",
+      "officialItem": "ア(ア)ア",
+      "point": "生物の観察と記録",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:ルーペ",
+          "sourceIds": [
+            "jr_science_ed2f97b2faa2"
+          ]
+        },
+        {
+          "selector": "T:双眼実体顕微鏡",
+          "sourceIds": [
+            "jr_science_be917eebff72"
+          ]
+        },
+        {
+          "selector": "P:スケッチに残す情報",
+          "sourceIds": [
+            "jr_science_case_3704b6ab7f74"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ed2f97b2faa2",
+        "jr_science_be917eebff72",
+        "jr_science_case_3704b6ab7f74"
+      ],
+      "outsideGame": "実物観察・スケッチ・器具操作"
+    },
+    {
+      "id": "s1.ア(ア)イ",
+      "field": "第2分野",
+      "block": "s1",
+      "officialItem": "ア(ア)イ",
+      "point": "生物の特徴と分類の仕方",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:生物の分類で基準",
+          "sourceIds": [
+            "jr_science_case_f86e70794616"
+          ]
+        },
+        {
+          "selector": "T:脊椎動物",
+          "sourceIds": [
+            "jr_science_b6270bb51439"
+          ]
+        },
+        {
+          "selector": "T:無脊椎動物",
+          "sourceIds": [
+            "jr_science_3b7a9baad9fd"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_f86e70794616",
+        "jr_science_b6270bb51439",
+        "jr_science_3b7a9baad9fd"
+      ],
+      "outsideGame": "未見の生物の比較と分類"
+    },
+    {
+      "id": "s1.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s1",
+      "officialItem": "ア(イ)ア",
+      "point": "植物の体の共通点・相違点",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:被子植物",
+          "sourceIds": [
+            "jr_science_69bf53452aec"
+          ]
+        },
+        {
+          "selector": "T:裸子植物",
+          "sourceIds": [
+            "jr_science_d6674de0ef07"
+          ]
+        },
+        {
+          "selector": "T:単子葉類",
+          "sourceIds": [
+            "jr_science_f11a8d99b1f8"
+          ]
+        },
+        {
+          "selector": "T:胞子",
+          "sourceIds": [
+            "jr_science_2405a9e9b8d7"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_69bf53452aec",
+        "jr_science_d6674de0ef07",
+        "jr_science_f11a8d99b1f8",
+        "jr_science_2405a9e9b8d7"
+      ],
+      "outsideGame": "花・葉等の実物観察"
+    },
+    {
+      "id": "s1.ア(イ)イ",
+      "field": "第2分野",
+      "block": "s1",
+      "officialItem": "ア(イ)イ",
+      "point": "動物の体の共通点・相違点",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:節足動物",
+          "sourceIds": [
+            "jr_science_c1e6c61f7fd3"
+          ]
+        },
+        {
+          "selector": "T:軟体動物",
+          "sourceIds": [
+            "jr_science_56d345632c81"
+          ]
+        },
+        {
+          "selector": "P:エビとイカ",
+          "sourceIds": [
+            "jr_science_case_cdb4a68d0bbe"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_c1e6c61f7fd3",
+        "jr_science_56d345632c81",
+        "jr_science_case_cdb4a68d0bbe"
+      ],
+      "outsideGame": "外部形態の観察・比較"
+    },
+    {
+      "id": "s1.イ",
+      "field": "第2分野",
+      "block": "s1",
+      "officialItem": "イ",
+      "point": "分類の観点や基準を見いだす探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:生物の分類で基準",
+          "sourceIds": [
+            "jr_science_case_f86e70794616"
+          ]
+        },
+        {
+          "selector": "P:単子葉類と双子葉類の比較",
+          "sourceIds": [
+            "jr_science_case_bbcfa880fe2e"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_f86e70794616",
+        "jr_science_case_bbcfa880fe2e"
+      ],
+      "outsideGame": "観察から基準を作り説明する活動"
+    },
+    {
+      "id": "s2.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s2",
+      "officialItem": "ア(ア)ア",
+      "point": "身近な地形・地層・岩石の観察",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:同じ地層を調べるとき",
+          "sourceIds": [
+            "jr_science_case_225ea28760be"
+          ]
+        },
+        {
+          "selector": "T:堆積岩",
+          "sourceIds": [
+            "jr_science_160ee1002536"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_225ea28760be",
+        "jr_science_160ee1002536"
+      ],
+      "outsideGame": "学校内外の野外観察・位置の記録"
+    },
+    {
+      "id": "s2.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s2",
+      "officialItem": "ア(イ)ア",
+      "point": "地層と過去の環境・地質年代",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:示準化石",
+          "sourceIds": [
+            "jr_science_8ef0585a985c"
+          ]
+        },
+        {
+          "selector": "T:示相化石",
+          "sourceIds": [
+            "jr_science_ec98d8212a8e"
+          ]
+        },
+        {
+          "selector": "T:古生代",
+          "sourceIds": [
+            "jr_science_c6a6cc135e6a"
+          ]
+        },
+        {
+          "selector": "T:断層",
+          "sourceIds": [
+            "jr_science_75d183a83372"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_8ef0585a985c",
+        "jr_science_ec98d8212a8e",
+        "jr_science_c6a6cc135e6a",
+        "jr_science_75d183a83372"
+      ],
+      "outsideGame": "柱状図の作成・地層写真の実読取り"
+    },
+    {
+      "id": "s2.ア(ウ)ア",
+      "field": "第2分野",
+      "block": "s2",
+      "officialItem": "ア(ウ)ア",
+      "point": "火山活動と火成岩",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:マグマ",
+          "sourceIds": [
+            "jr_science_2cafd49a873f"
+          ]
+        },
+        {
+          "selector": "T:火山岩",
+          "sourceIds": [
+            "jr_science_4fedc1cf9c67"
+          ]
+        },
+        {
+          "selector": "T:深成岩",
+          "sourceIds": [
+            "jr_science_cb7fd6be6d36"
+          ]
+        },
+        {
+          "selector": "T:石英",
+          "sourceIds": [
+            "jr_science_cc9decf80998"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_2cafd49a873f",
+        "jr_science_4fedc1cf9c67",
+        "jr_science_cb7fd6be6d36",
+        "jr_science_cc9decf80998"
+      ],
+      "outsideGame": "岩石・鉱物の実物観察と比較"
+    },
+    {
+      "id": "s2.ア(ウ)イ",
+      "field": "第2分野",
+      "block": "s2",
+      "officialItem": "ア(ウ)イ",
+      "point": "地震の伝わり方と地球内部",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:P波",
+          "sourceIds": [
+            "jr_science_a95c15b2a07c"
+          ]
+        },
+        {
+          "selector": "T:S波",
+          "sourceIds": [
+            "jr_science_fb4ac405dabf"
+          ]
+        },
+        {
+          "selector": "T:プレート",
+          "sourceIds": [
+            "jr_science_4242c1847581"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_a95c15b2a07c",
+        "jr_science_fb4ac405dabf",
+        "jr_science_4242c1847581"
+      ],
+      "outsideGame": "地震記録と地図の実読取り"
+    },
+    {
+      "id": "s2.ア(エ)ア",
+      "field": "第2分野",
+      "block": "s2",
+      "officialItem": "ア(エ)ア",
+      "point": "自然の恵みと火山・地震災害",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:火山活動がもたらす恵み",
+          "sourceIds": [
+            "jr_science_case_21b5a1ad3657"
+          ]
+        },
+        {
+          "selector": "P:海底の急な変動",
+          "sourceIds": [
+            "jr_science_case_b047c23dcbaa"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_21b5a1ad3657",
+        "jr_science_case_b047c23dcbaa"
+      ],
+      "outsideGame": "地域資料・防災計画の調査"
+    },
+    {
+      "id": "s2.イ",
+      "field": "第2分野",
+      "block": "s2",
+      "officialItem": "イ",
+      "point": "大地の規則性や関係性を見いだす探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:同じ火山灰層を離れた",
+          "sourceIds": [
+            "jr_science_case_b48ec65679b5"
+          ]
+        },
+        {
+          "selector": "P:マグマの粘りけが弱い",
+          "sourceIds": [
+            "jr_science_case_671f9391fecb"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_b48ec65679b5",
+        "jr_science_case_671f9391fecb"
+      ],
+      "outsideGame": "野外観察・比較資料からの自由な説明"
+    },
+    {
+      "id": "s3.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s3",
+      "officialItem": "ア(ア)ア",
+      "point": "生物と細胞",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:細胞膜",
+          "sourceIds": [
+            "jr_science_ff1b5b12e37d"
+          ]
+        },
+        {
+          "selector": "T:細胞壁",
+          "sourceIds": [
+            "jr_science_44bcad80fd32"
+          ]
+        },
+        {
+          "selector": "T:単細胞生物",
+          "sourceIds": [
+            "jr_science_cb58346c5271"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ff1b5b12e37d",
+        "jr_science_44bcad80fd32",
+        "jr_science_cb58346c5271"
+      ],
+      "outsideGame": "標本作成・染色・顕微鏡観察"
+    },
+    {
+      "id": "s3.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s3",
+      "officialItem": "ア(イ)ア",
+      "point": "葉・茎・根と光合成・呼吸・蒸散",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:光合成",
+          "sourceIds": [
+            "jr_science_c99aa3911ce2"
+          ]
+        },
+        {
+          "selector": "T:道管",
+          "sourceIds": [
+            "jr_science_e1fc3c863b9d"
+          ]
+        },
+        {
+          "selector": "T:根毛",
+          "sourceIds": [
+            "jr_science_22595b98fcc1"
+          ]
+        },
+        {
+          "selector": "T:蒸散",
+          "sourceIds": [
+            "jr_science_d19a750ee3fa"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_c99aa3911ce2",
+        "jr_science_e1fc3c863b9d",
+        "jr_science_22595b98fcc1",
+        "jr_science_d19a750ee3fa"
+      ],
+      "outsideGame": "植物の構造観察と実験"
+    },
+    {
+      "id": "s3.ア(ウ)ア",
+      "field": "第2分野",
+      "block": "s3",
+      "officialItem": "ア(ウ)ア",
+      "point": "消化・呼吸・循環・排出",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:消化",
+          "sourceIds": [
+            "jr_science_617c1e4e2670"
+          ]
+        },
+        {
+          "selector": "T:肺胞",
+          "sourceIds": [
+            "jr_science_9b474fad40b0"
+          ]
+        },
+        {
+          "selector": "T:腎臓",
+          "sourceIds": [
+            "jr_science_b4f363c66c2a"
+          ]
+        },
+        {
+          "selector": "P:脂肪の主な消化生成物",
+          "sourceIds": [
+            "jr_science_case_7119b0d0bec5"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_617c1e4e2670",
+        "jr_science_9b474fad40b0",
+        "jr_science_b4f363c66c2a",
+        "jr_science_case_7119b0d0bec5"
+      ],
+      "outsideGame": "器官の観察と消化等の実験"
+    },
+    {
+      "id": "s3.ア(ウ)イ",
+      "field": "第2分野",
+      "block": "s3",
+      "officialItem": "ア(ウ)イ",
+      "point": "刺激と反応",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:反射",
+          "sourceIds": [
+            "jr_science_7710ad5d53a2"
+          ]
+        },
+        {
+          "selector": "T:感覚神経",
+          "sourceIds": [
+            "jr_science_c8f529ca0e40"
+          ]
+        },
+        {
+          "selector": "T:運動神経",
+          "sourceIds": [
+            "jr_science_d56acfa7f354"
+          ]
+        },
+        {
+          "selector": "P:腕を曲げる筋肉",
+          "sourceIds": [
+            "jr_science_case_90d371b7fe1d"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_7710ad5d53a2",
+        "jr_science_c8f529ca0e40",
+        "jr_science_d56acfa7f354",
+        "jr_science_case_90d371b7fe1d"
+      ],
+      "outsideGame": "反応の測定と経路の図示"
+    },
+    {
+      "id": "s3.イ",
+      "field": "第2分野",
+      "block": "s3",
+      "officialItem": "イ",
+      "point": "体のつくりと働きを調べる探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:対照実験",
+          "sourceIds": [
+            "jr_science_d327528bfe1e"
+          ]
+        },
+        {
+          "selector": "P:だ液の実験。",
+          "sourceIds": [
+            "jr_science_case_8b8c2657cb9b"
+          ]
+        },
+        {
+          "selector": "P:葉の緑色部分だけ",
+          "sourceIds": [
+            "jr_science_case_5421de1966de"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_d327528bfe1e",
+        "jr_science_case_8b8c2657cb9b",
+        "jr_science_case_5421de1966de"
+      ],
+      "outsideGame": "条件設定・実験・分析と表現"
+    },
+    {
+      "id": "s4.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(ア)ア",
+      "point": "気象要素・圧力・大気圧",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:気圧",
+          "sourceIds": [
+            "jr_science_ef5e2a4a9876"
+          ]
+        },
+        {
+          "selector": "T:圧力",
+          "sourceIds": [
+            "jr_science_b5ec50efd631"
+          ]
+        },
+        {
+          "selector": "T:湿度",
+          "sourceIds": [
+            "jr_science_72c6873f12d1"
+          ]
+        },
+        {
+          "selector": "P:大気圧が物体",
+          "sourceIds": [
+            "jr_science_case_18052b91f12a"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_ef5e2a4a9876",
+        "jr_science_b5ec50efd631",
+        "jr_science_72c6873f12d1",
+        "jr_science_case_18052b91f12a"
+      ],
+      "outsideGame": "各気象要素の実測"
+    },
+    {
+      "id": "s4.ア(ア)イ",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(ア)イ",
+      "point": "気象観測と記録",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:気象観測を毎回",
+          "sourceIds": [
+            "jr_science_case_8b1924d55df0"
+          ]
+        },
+        {
+          "selector": "P:風向「北」",
+          "sourceIds": [
+            "jr_science_case_377698f7a0be"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_8b1924d55df0",
+        "jr_science_case_377698f7a0be"
+      ],
+      "outsideGame": "継続観測と天気図・記号の記録"
+    },
+    {
+      "id": "s4.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(イ)ア",
+      "point": "霧・雲の発生",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:露点",
+          "sourceIds": [
+            "jr_science_92ba595691ae"
+          ]
+        },
+        {
+          "selector": "T:飽和水蒸気量",
+          "sourceIds": [
+            "jr_science_ded668c60a40"
+          ]
+        },
+        {
+          "selector": "T:水の循環",
+          "sourceIds": [
+            "jr_science_406b98d0436c"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_92ba595691ae",
+        "jr_science_ded668c60a40",
+        "jr_science_406b98d0436c"
+      ],
+      "outsideGame": "雲生成の実験と湿度計算"
+    },
+    {
+      "id": "s4.ア(イ)イ",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(イ)イ",
+      "point": "前線通過と天気",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:寒冷前線",
+          "sourceIds": [
+            "jr_science_52cc70eec58d"
+          ]
+        },
+        {
+          "selector": "T:温暖前線",
+          "sourceIds": [
+            "jr_science_85a1a72a2235"
+          ]
+        },
+        {
+          "selector": "P:前線通過の記録",
+          "sourceIds": [
+            "jr_science_case_88264bfac817"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_52cc70eec58d",
+        "jr_science_85a1a72a2235",
+        "jr_science_case_88264bfac817"
+      ],
+      "outsideGame": "天気図・気象記録の実読取り"
+    },
+    {
+      "id": "s4.ア(ウ)ア",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(ウ)ア",
+      "point": "日本の天気と気団",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:シベリア気団",
+          "sourceIds": [
+            "jr_science_5fb12806e377"
+          ]
+        },
+        {
+          "selector": "T:小笠原気団",
+          "sourceIds": [
+            "jr_science_1c627b47cef0"
+          ]
+        },
+        {
+          "selector": "T:梅雨",
+          "sourceIds": [
+            "jr_science_3af22b35ddd7"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_5fb12806e377",
+        "jr_science_1c627b47cef0",
+        "jr_science_3af22b35ddd7"
+      ],
+      "outsideGame": "季節ごとの天気図・衛星画像読取り"
+    },
+    {
+      "id": "s4.ア(ウ)イ",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(ウ)イ",
+      "point": "大気の動きと海洋の影響",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:偏西風",
+          "sourceIds": [
+            "jr_science_3455b5979716"
+          ]
+        },
+        {
+          "selector": "T:季節風",
+          "sourceIds": [
+            "jr_science_1c164214a507"
+          ]
+        },
+        {
+          "selector": "T:海陸風",
+          "sourceIds": [
+            "jr_science_a4b75c3db635"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_3455b5979716",
+        "jr_science_1c164214a507",
+        "jr_science_a4b75c3db635"
+      ],
+      "outsideGame": "地球規模の大気資料の比較"
+    },
+    {
+      "id": "s4.ア(エ)ア",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "ア(エ)ア",
+      "point": "気象の恵みと災害",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:台風",
+          "sourceIds": [
+            "jr_science_4e4014a0f9c8"
+          ]
+        },
+        {
+          "selector": "T:洪水",
+          "sourceIds": [
+            "jr_science_468ca4cea212"
+          ]
+        },
+        {
+          "selector": "P:適度な降水",
+          "sourceIds": [
+            "jr_science_case_9467bf21805b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_4e4014a0f9c8",
+        "jr_science_468ca4cea212",
+        "jr_science_case_9467bf21805b"
+      ],
+      "outsideGame": "地域の水資源・気象災害の調査"
+    },
+    {
+      "id": "s4.イ",
+      "field": "第2分野",
+      "block": "s4",
+      "officialItem": "イ",
+      "point": "天気や日本の気象の規則性を探究",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:前線通過の記録",
+          "sourceIds": [
+            "jr_science_case_88264bfac817"
+          ]
+        },
+        {
+          "selector": "P:冬に日本海側で雪",
+          "sourceIds": [
+            "jr_science_case_cb89a406b4ea"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_88264bfac817",
+        "jr_science_case_cb89a406b4ea"
+      ],
+      "outsideGame": "継続観測・実験・資料比較の説明"
+    },
+    {
+      "id": "s5.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s5",
+      "officialItem": "ア(ア)ア",
+      "point": "細胞分裂と成長",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:体細胞分裂",
+          "sourceIds": [
+            "jr_bio_002"
+          ]
+        },
+        {
+          "selector": "P:体細胞分裂の前に",
+          "sourceIds": [
+            "jr_science_case_4139c88cef83"
+          ]
+        },
+        {
+          "selector": "P:成長で体が大きく",
+          "sourceIds": [
+            "jr_science_case_3c55ceba98f8"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_002",
+        "jr_science_case_4139c88cef83",
+        "jr_science_case_3c55ceba98f8"
+      ],
+      "outsideGame": "分裂像の観察・順序の表現"
+    },
+    {
+      "id": "s5.ア(ア)イ",
+      "field": "第2分野",
+      "block": "s5",
+      "officialItem": "ア(ア)イ",
+      "point": "生物の殖え方と親子の形質",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:有性生殖",
+          "sourceIds": [
+            "jr_bio_017"
+          ]
+        },
+        {
+          "selector": "T:無性生殖",
+          "sourceIds": [
+            "jr_bio_013"
+          ]
+        },
+        {
+          "selector": "T:減数分裂",
+          "sourceIds": [
+            "jr_bio_019"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_017",
+        "jr_bio_013",
+        "jr_bio_019"
+      ],
+      "outsideGame": "生殖の観察・発生の記録"
+    },
+    {
+      "id": "s5.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s5",
+      "officialItem": "ア(イ)ア",
+      "point": "遺伝の規則性と遺伝子",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:分離の法則",
+          "sourceIds": [
+            "jr_bio_038"
+          ]
+        },
+        {
+          "selector": "T:DNA",
+          "sourceIds": [
+            "jr_bio_031"
+          ]
+        },
+        {
+          "selector": "P:Aaがつくる",
+          "sourceIds": [
+            "jr_science_case_f28b9cadbf75"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_038",
+        "jr_bio_031",
+        "jr_science_case_f28b9cadbf75"
+      ],
+      "outsideGame": "交配結果の表・遺伝モデルの作成"
+    },
+    {
+      "id": "s5.ア(ウ)ア",
+      "field": "第2分野",
+      "block": "s5",
+      "officialItem": "ア(ウ)ア",
+      "point": "多様性と進化",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:進化",
+          "sourceIds": [
+            "jr_bio_047"
+          ]
+        },
+        {
+          "selector": "T:相同器官",
+          "sourceIds": [
+            "jr_bio_049"
+          ]
+        },
+        {
+          "selector": "T:変異",
+          "sourceIds": [
+            "jr_bio_057"
+          ]
+        },
+        {
+          "selector": "P:耐性を持つ細菌",
+          "sourceIds": [
+            "jr_science_case_b5e0846fa4d2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_047",
+        "jr_bio_049",
+        "jr_bio_057",
+        "jr_science_case_b5e0846fa4d2"
+      ],
+      "outsideGame": "化石や形態資料の比較と考察"
+    },
+    {
+      "id": "s5.イ",
+      "field": "第2分野",
+      "block": "s5",
+      "officialItem": "イ",
+      "point": "生命の連続性の解釈と探究の振返り",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:Aa同士の交配",
+          "sourceIds": [
+            "jr_science_case_9588b1fa24e6"
+          ]
+        },
+        {
+          "selector": "P:顕性形質は必ず",
+          "sourceIds": [
+            "jr_science_case_318e6b2c93ab"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_9588b1fa24e6",
+        "jr_science_case_318e6b2c93ab"
+      ],
+      "outsideGame": "観察・実験・確率モデルの説明"
+    },
+    {
+      "id": "s6.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s6",
+      "officialItem": "ア(ア)ア",
+      "point": "日周運動と自転",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:日周運動",
+          "sourceIds": [
+            "jr_science_28bfe5426113"
+          ]
+        },
+        {
+          "selector": "T:自転",
+          "sourceIds": [
+            "jr_science_002e45fcc49f"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_28bfe5426113",
+        "jr_science_002e45fcc49f"
+      ],
+      "outsideGame": "天体の継続観測・透明半球記録"
+    },
+    {
+      "id": "s6.ア(ア)イ",
+      "field": "第2分野",
+      "block": "s6",
+      "officialItem": "ア(ア)イ",
+      "point": "年周運動・公転と季節",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:年周運動",
+          "sourceIds": [
+            "jr_science_0a4cbf624bd6"
+          ]
+        },
+        {
+          "selector": "T:南中高度",
+          "sourceIds": [
+            "jr_science_dcd2c6eb0f6b"
+          ]
+        },
+        {
+          "selector": "P:北半球の夏、昼",
+          "sourceIds": [
+            "jr_science_case_7ca375f92207"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_0a4cbf624bd6",
+        "jr_science_dcd2c6eb0f6b",
+        "jr_science_case_7ca375f92207"
+      ],
+      "outsideGame": "星座・太陽高度の実観測"
+    },
+    {
+      "id": "s6.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s6",
+      "officialItem": "ア(イ)ア",
+      "point": "太陽の特徴",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:黒点",
+          "sourceIds": [
+            "jr_science_778eeaf926de"
+          ]
+        },
+        {
+          "selector": "P:太陽の直径と",
+          "sourceIds": [
+            "jr_science_case_4f025b881dc7"
+          ]
+        },
+        {
+          "selector": "P:太陽の全体の形",
+          "sourceIds": [
+            "jr_science_case_73245c5c73c3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_778eeaf926de",
+        "jr_science_case_4f025b881dc7",
+        "jr_science_case_73245c5c73c3"
+      ],
+      "outsideGame": "投影による安全な観察と資料比較"
+    },
+    {
+      "id": "s6.ア(イ)イ",
+      "field": "第2分野",
+      "block": "s6",
+      "officialItem": "ア(イ)イ",
+      "point": "惑星・恒星と太陽系",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:恒星",
+          "sourceIds": [
+            "jr_science_66f567d56aef"
+          ]
+        },
+        {
+          "selector": "T:惑星",
+          "sourceIds": [
+            "jr_science_4a6681c17136"
+          ]
+        },
+        {
+          "selector": "T:銀河系",
+          "sourceIds": [
+            "jr_science_9ee1a03554f0"
+          ]
+        },
+        {
+          "selector": "T:地球型惑星",
+          "sourceIds": [
+            "jr_science_681086ccc0a3"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_66f567d56aef",
+        "jr_science_4a6681c17136",
+        "jr_science_9ee1a03554f0",
+        "jr_science_681086ccc0a3"
+      ],
+      "outsideGame": "数値・写真・軌道図の読取り"
+    },
+    {
+      "id": "s6.ア(イ)ウ",
+      "field": "第2分野",
+      "block": "s6",
+      "officialItem": "ア(イ)ウ",
+      "point": "月・金星の運動と見え方",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:日食",
+          "sourceIds": [
+            "jr_science_3dc7f3b2176f"
+          ]
+        },
+        {
+          "selector": "T:月食",
+          "sourceIds": [
+            "jr_science_ad77d62bad73"
+          ]
+        },
+        {
+          "selector": "P:金星の見かけが大きい",
+          "sourceIds": [
+            "jr_science_case_745ceb954031"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_3dc7f3b2176f",
+        "jr_science_ad77d62bad73",
+        "jr_science_case_745ceb954031"
+      ],
+      "outsideGame": "位置関係図・観測記録の実読取り"
+    },
+    {
+      "id": "s6.イ",
+      "field": "第2分野",
+      "block": "s6",
+      "officialItem": "イ",
+      "point": "天体の運動と見え方の解釈と振返り",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:地球から見た金星",
+          "sourceIds": [
+            "jr_science_case_9415731729cb"
+          ]
+        },
+        {
+          "selector": "P:月が満ち欠けして",
+          "sourceIds": [
+            "jr_science_core_moon"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_9415731729cb",
+        "jr_science_core_moon"
+      ],
+      "outsideGame": "観察計画・模型実験・結果の説明"
+    },
+    {
+      "id": "s7.ア(ア)ア",
+      "field": "第2分野",
+      "block": "s7",
+      "officialItem": "ア(ア)ア",
+      "point": "自然界のつり合い",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:生産者",
+          "sourceIds": [
+            "jr_bio_061"
+          ]
+        },
+        {
+          "selector": "T:分解者",
+          "sourceIds": [
+            "jr_bio_063"
+          ]
+        },
+        {
+          "selector": "T:食物網",
+          "sourceIds": [
+            "jr_bio_060"
+          ]
+        },
+        {
+          "selector": "T:土壌動物",
+          "sourceIds": [
+            "jr_bio_066"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_061",
+        "jr_bio_063",
+        "jr_bio_060",
+        "jr_bio_066"
+      ],
+      "outsideGame": "微生物実験・個体数調査"
+    },
+    {
+      "id": "s7.ア(ア)イ",
+      "field": "第2分野",
+      "block": "s7",
+      "officialItem": "ア(ア)イ",
+      "point": "自然環境の調査と保全",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:指標生物",
+          "sourceIds": [
+            "jr_bio_079"
+          ]
+        },
+        {
+          "selector": "T:外来種",
+          "sourceIds": [
+            "jr_bio_082"
+          ]
+        },
+        {
+          "selector": "P:気候変動が生物",
+          "sourceIds": [
+            "jr_science_case_a58b37bcd386"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_079",
+        "jr_bio_082",
+        "jr_science_case_a58b37bcd386"
+      ],
+      "outsideGame": "現地調査と継続記録"
+    },
+    {
+      "id": "s7.ア(ア)ウ",
+      "field": "第2分野",
+      "block": "s7",
+      "officialItem": "ア(ア)ウ",
+      "point": "地域の自然災害",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:地域の災害を調べる",
+          "sourceIds": [
+            "jr_science_case_e6c7e337179e"
+          ]
+        },
+        {
+          "selector": "T:液状化",
+          "sourceIds": [
+            "jr_science_4a7ab3766493"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_e6c7e337179e",
+        "jr_science_4a7ab3766493"
+      ],
+      "outsideGame": "地域資料・現地調査と防災活動"
+    },
+    {
+      "id": "s7.ア(イ)ア",
+      "field": "第2分野",
+      "block": "s7",
+      "officialItem": "ア(イ)ア",
+      "point": "環境保全と科学技術・持続可能性",
+      "category": "知識の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "T:持続可能な社会",
+          "sourceIds": [
+            "jr_bio_089"
+          ]
+        },
+        {
+          "selector": "P:材料を選ぶとき",
+          "sourceIds": [
+            "jr_science_case_e0c31da76ee2"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_bio_089",
+        "jr_science_case_e0c31da76ee2"
+      ],
+      "outsideGame": "複数資料での論述・討論・実践"
+    },
+    {
+      "id": "s7.イ",
+      "field": "第2分野",
+      "block": "s7",
+      "officialItem": "イ",
+      "point": "自然環境・災害を調べ科学的に判断",
+      "category": "思考・判断・表現の項目",
+      "status": "基礎知識・短文判断の出題先あり",
+      "evidence": [
+        {
+          "selector": "P:水質を指標生物で比較",
+          "sourceIds": [
+            "jr_science_case_badd734e4dd9"
+          ]
+        },
+        {
+          "selector": "P:食物連鎖の変化",
+          "sourceIds": [
+            "jr_science_case_95c83bf5db8b"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "jr_science_case_badd734e4dd9",
+        "jr_science_case_95c83bf5db8b"
+      ],
+      "outsideGame": "調査・分析・多面的な考察と表現"
+    }
+  ],
+  "unresolvedSelectors": []
+}
