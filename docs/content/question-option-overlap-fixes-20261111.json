@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "jr_jp_core_8422ac7dcfd2",
+    "file": "quiz-data/junior_japanese_extended.json",
+    "term": "付属語",
+    "before": [
+      "自立語",
+      "体言",
+      "用言"
+    ],
+    "after": [
+      "体言",
+      "用言",
+      "連体詞"
+    ]
+  },
+  {
+    "id": "jr_bio_013",
+    "file": "quiz-data/junior_science.json",
+    "term": "無性生殖",
+    "before": [
+      "有性生殖",
+      "受精",
+      "交配"
+    ],
+    "after": [
+      "有性生殖",
+      "自家受粉",
+      "他家受粉"
+    ]
+  },
+  {
+    "id": "jr_bio_021",
+    "file": "quiz-data/junior_science.json",
+    "term": "受精卵",
+    "before": [
+      "未受精卵",
+      "精細胞",
+      "体細胞"
+    ],
+    "after": [
+      "未受精卵",
+      "精細胞",
+      "卵細胞"
+    ]
+  },
+  {
+    "id": "jr_bio_022",
+    "file": "quiz-data/junior_science.json",
+    "term": "発生",
+    "before": [
+      "進化",
+      "受精",
+      "変態"
+    ],
+    "after": [
+      "進化",
+      "変態",
+      "成長"
+    ]
+  },
+  {
+    "id": "jr_bio_030",
+    "file": "quiz-data/junior_science.json",
+    "term": "遺伝子",
+    "before": [
+      "DNA",
+      "染色体",
+      "対立形質"
+    ],
+    "after": [
+      "DNA",
+      "対立形質",
+      "ゲノム"
+    ]
+  },
+  {
+    "id": "jr_bio_057",
+    "file": "quiz-data/junior_science.json",
+    "term": "変異",
+    "before": [
+      "進化",
+      "適応",
+      "遺伝"
+    ],
+    "after": [
+      "適応",
+      "自然選択",
+      "隔離"
+    ]
+  },
+  {
+    "id": "jr_bio_060",
+    "file": "quiz-data/junior_science.json",
+    "term": "食物網",
+    "before": [
+      "食物連鎖",
+      "生態ピラミッド",
+      "系統樹"
+    ],
+    "after": [
+      "生態ピラミッド",
+      "系統樹",
+      "生物濃縮"
+    ]
+  },
+  {
+    "id": "jr_bio_070",
+    "file": "quiz-data/junior_science.json",
+    "term": "生態ピラミッド",
+    "before": [
+      "食物網",
+      "食物連鎖",
+      "系統樹"
+    ],
+    "after": [
+      "食物網",
+      "系統樹",
+      "生物濃縮"
+    ]
+  },
+  {
+    "id": "jr_bio_084",
+    "file": "quiz-data/junior_science.json",
+    "term": "生物多様性",
+    "before": [
+      "種の多様性",
+      "遺伝子の多様性",
+      "生態系の多様性"
+    ],
+    "after": [
+      "生物濃縮",
+      "生態系サービス",
+      "自然選択"
+    ]
+  },
+  {
+    "id": "jr_science_b22c70c8f3bf",
+    "file": "quiz-data/junior_science.json",
+    "term": "電圧",
+    "before": [
+      "電流",
+      "電気抵抗",
+      "電力"
+    ],
+    "after": [
+      "電力量",
+      "電気抵抗",
+      "電力"
+    ]
+  },
+  {
+    "id": "jr_science_c26b11025f4d",
+    "file": "quiz-data/junior_science.json",
+    "term": "電気抵抗",
+    "before": [
+      "電流",
+      "電圧",
+      "電力"
+    ],
+    "after": [
+      "電力量",
+      "電圧",
+      "電力"
+    ]
+  },
+  {
+    "id": "jr_science_665748f8a9be",
+    "file": "quiz-data/junior_science.json",
+    "term": "電磁誘導",
+    "before": [
+      "磁界",
+      "電磁石",
+      "誘導電流"
+    ],
+    "after": [
+      "静電誘導",
+      "電磁石",
+      "誘導電流"
+    ]
+  },
+  {
+    "id": "jr_science_132299bdaf4c",
+    "file": "quiz-data/junior_science.json",
+    "term": "誘導電流",
+    "before": [
+      "磁界",
+      "電磁石",
+      "電磁誘導"
+    ],
+    "after": [
+      "熱電流",
+      "放電",
+      "光電流"
+    ]
+  },
+  {
+    "id": "jr_science_067a1a166342",
+    "file": "quiz-data/junior_science.json",
+    "term": "等速直線運動",
+    "before": [
+      "慣性",
+      "作用・反作用",
+      "速さ"
+    ],
+    "after": [
+      "慣性",
+      "作用・反作用",
+      "自由落下"
+    ]
+  },
+  {
+    "id": "jr_science_c63a8a0d0aea",
+    "file": "quiz-data/junior_science.json",
+    "term": "仕事率",
+    "before": [
+      "仕事",
+      "位置エネルギー",
+      "運動エネルギー"
+    ],
+    "after": [
+      "電力",
+      "位置エネルギー",
+      "運動エネルギー"
+    ]
+  },
+  {
+    "id": "jr_science_4728e97dbb08",
+    "file": "quiz-data/junior_science.json",
+    "term": "溶質",
+    "before": [
+      "溶媒",
+      "溶液",
+      "溶解度"
+    ],
+    "after": [
+      "溶媒",
+      "溶解度",
+      "飽和水溶液"
+    ]
+  },
+  {
+    "id": "jr_science_351156482e3a",
+    "file": "quiz-data/junior_science.json",
+    "term": "溶媒",
+    "before": [
+      "溶質",
+      "溶液",
+      "溶解度"
+    ],
+    "after": [
+      "溶液",
+      "溶解度",
+      "飽和水溶液"
+    ]
+  },
+  {
+    "id": "jr_science_8c9c44845640",
+    "file": "quiz-data/junior_science.json",
+    "term": "溶液",
+    "before": [
+      "溶質",
+      "溶媒",
+      "溶解度"
+    ],
+    "after": [
+      "懸濁液",
+      "乳濁液",
+      "純物質"
+    ]
+  },
+  {
+    "id": "jr_science_a12d483a61eb",
+    "file": "quiz-data/junior_science.json",
+    "term": "元素",
+    "before": [
+      "原子",
+      "分子",
+      "単体"
+    ],
+    "after": [
+      "分子",
+      "単体",
+      "化合物"
+    ]
+  },
+  {
+    "id": "jr_science_d6a19f05372d",
+    "file": "quiz-data/junior_science.json",
+    "term": "単体",
+    "before": [
+      "原子",
+      "分子",
+      "元素"
+    ],
+    "after": [
+      "原子",
+      "分子",
+      "化合物"
+    ]
+  },
+  {
+    "id": "jr_science_e11f392e082e",
+    "file": "quiz-data/junior_science.json",
+    "term": "還元",
+    "before": [
+      "酸化",
+      "酸化物",
+      "質量保存の法則"
+    ],
+    "after": [
+      "燃焼",
+      "分解",
+      "中和"
+    ]
+  },
+  {
+    "id": "jr_science_9f59e3b9f6e3",
+    "file": "quiz-data/junior_science.json",
+    "term": "電離",
+    "before": [
+      "陽イオン",
+      "陰イオン",
+      "電解質"
+    ],
+    "after": [
+      "電解質",
+      "電気分解",
+      "中和"
+    ]
+  },
+  {
+    "id": "jr_science_67264f52469c",
+    "file": "quiz-data/junior_science.json",
+    "term": "中和",
+    "before": [
+      "酸",
+      "アルカリ",
+      "塩"
+    ],
+    "after": [
+      "電気分解",
+      "酸化",
+      "還元"
+    ]
+  },
+  {
+    "id": "jr_science_8ee8f137c684",
+    "file": "quiz-data/junior_science.json",
+    "term": "塩",
+    "before": [
+      "酸",
+      "アルカリ",
+      "中和"
+    ],
+    "after": [
+      "単体",
+      "電解質",
+      "非電解質"
+    ]
+  },
+  {
+    "id": "jr_science_c3f099b93a6e",
+    "file": "quiz-data/junior_science.json",
+    "term": "溶岩",
+    "before": [
+      "マグマ",
+      "火山灰",
+      "堆積岩"
+    ],
+    "after": [
+      "火山岩",
+      "火山灰",
+      "堆積岩"
+    ]
+  },
+  {
+    "id": "jr_science_a95c15b2a07c",
+    "file": "quiz-data/junior_science.json",
+    "term": "P波",
+    "before": [
+      "S波",
+      "初期微動",
+      "主要動"
+    ],
+    "after": [
+      "表面波",
+      "初期微動",
+      "主要動"
+    ]
+  },
+  {
+    "id": "jr_science_fb4ac405dabf",
+    "file": "quiz-data/junior_science.json",
+    "term": "S波",
+    "before": [
+      "P波",
+      "初期微動",
+      "主要動"
+    ],
+    "after": [
+      "表面波",
+      "初期微動",
+      "主要動"
+    ]
+  },
+  {
+    "id": "jr_science_dc4ff47b5e54",
+    "file": "quiz-data/junior_science.json",
+    "term": "初期微動",
+    "before": [
+      "P波",
+      "S波",
+      "主要動"
+    ],
+    "after": [
+      "震度",
+      "震源",
+      "主要動"
+    ]
+  },
+  {
+    "id": "jr_science_09de8f7f0eba",
+    "file": "quiz-data/junior_science.json",
+    "term": "主要動",
+    "before": [
+      "P波",
+      "S波",
+      "初期微動"
+    ],
+    "after": [
+      "震度",
+      "震源",
+      "初期微動"
+    ]
+  },
+  {
+    "id": "jr_science_72c6873f12d1",
+    "file": "quiz-data/junior_science.json",
+    "term": "湿度",
+    "before": [
+      "露点",
+      "飽和水蒸気量",
+      "気圧"
+    ],
+    "after": [
+      "露点",
+      "雲量",
+      "気圧"
+    ]
+  },
+  {
+    "id": "jr_science_28bfe5426113",
+    "file": "quiz-data/junior_science.json",
+    "term": "日周運動",
+    "before": [
+      "自転",
+      "公転",
+      "年周運動"
+    ],
+    "after": [
+      "南中",
+      "月の満ち欠け",
+      "年周運動"
+    ]
+  },
+  {
+    "id": "jr_science_0a4cbf624bd6",
+    "file": "quiz-data/junior_science.json",
+    "term": "年周運動",
+    "before": [
+      "自転",
+      "公転",
+      "日周運動"
+    ],
+    "after": [
+      "南中",
+      "月の満ち欠け",
+      "日周運動"
+    ]
+  },
+  {
+    "id": "jr_science_ad1bc439cc23",
+    "file": "quiz-data/junior_science.json",
+    "term": "毛細血管",
+    "before": [
+      "動脈",
+      "静脈",
+      "ヘモグロビン"
+    ],
+    "after": [
+      "リンパ管",
+      "気管支",
+      "尿管"
+    ]
+  },
+  {
+    "id": "jr_science_44bcad80fd32",
+    "file": "quiz-data/junior_science.json",
+    "term": "細胞壁",
+    "before": [
+      "核",
+      "細胞膜",
+      "葉緑体"
+    ],
+    "after": [
+      "核",
+      "液胞",
+      "葉緑体"
+    ]
+  },
+  {
+    "id": "jr_science_4135b4b936ad",
+    "file": "quiz-data/junior_science.json",
+    "term": "維管束",
+    "before": [
+      "道管",
+      "師管",
+      "根毛"
+    ],
+    "after": [
+      "形成層",
+      "気孔",
+      "根毛"
+    ]
+  },
+  {
+    "id": "jr_science_8cbb539c45c4",
+    "file": "quiz-data/junior_science.json",
+    "term": "子房",
+    "before": [
+      "胚珠",
+      "やく",
+      "柱頭"
+    ],
+    "after": [
+      "花弁",
+      "やく",
+      "柱頭"
+    ]
+  },
+  {
+    "id": "jr_science_b262d11655d2",
+    "file": "quiz-data/junior_science.json",
+    "term": "組織",
+    "before": [
+      "細胞",
+      "器官",
+      "器官系"
+    ],
+    "after": [
+      "個体",
+      "器官",
+      "器官系"
+    ]
+  },
+  {
+    "id": "jr_science_457f64da09a5",
+    "file": "quiz-data/junior_science.json",
+    "term": "器官",
+    "before": [
+      "組織",
+      "細胞",
+      "細胞小器官"
+    ],
+    "after": [
+      "個体",
+      "細胞",
+      "細胞小器官"
+    ]
+  },
+  {
+    "id": "jr_science_5b19812ea5e5",
+    "file": "quiz-data/junior_science.json",
+    "term": "大腸",
+    "before": [
+      "小腸",
+      "胃",
+      "肝臓"
+    ],
+    "after": [
+      "すい臓",
+      "胃",
+      "肝臓"
+    ]
+  },
+  {
+    "id": "jr_science_428167e785ea",
+    "file": "quiz-data/junior_science.json",
+    "term": "尿素",
+    "before": [
+      "アンモニア",
+      "二酸化炭素",
+      "胆汁"
+    ],
+    "after": [
+      "グリコーゲン",
+      "二酸化炭素",
+      "胆汁"
+    ]
+  },
+  {
+    "id": "jr_science_9988bfe1d253",
+    "file": "quiz-data/junior_science.json",
+    "term": "末しょう神経",
+    "before": [
+      "中枢神経",
+      "感覚器官",
+      "運動器官"
+    ],
+    "after": [
+      "感覚器官",
+      "運動器官",
+      "ホルモン"
+    ]
+  },
+  {
+    "id": "jr_science_fba4b129035a",
+    "file": "quiz-data/junior_science.json",
+    "term": "流紋岩",
+    "before": [
+      "安山岩",
+      "玄武岩",
+      "花こう岩"
+    ],
+    "after": [
+      "安山岩",
+      "玄武岩",
+      "凝灰岩"
+    ]
+  },
+  {
+    "id": "jr_science_197f59d58fb5",
+    "file": "quiz-data/junior_science.json",
+    "term": "安山岩",
+    "before": [
+      "流紋岩",
+      "玄武岩",
+      "閃緑岩"
+    ],
+    "after": [
+      "花こう岩",
+      "斑れい岩",
+      "閃緑岩"
+    ]
+  },
+  {
+    "id": "jr_science_6565a1d72d0a",
+    "file": "quiz-data/junior_science.json",
+    "term": "玄武岩",
+    "before": [
+      "流紋岩",
+      "安山岩",
+      "斑れい岩"
+    ],
+    "after": [
+      "流紋岩",
+      "安山岩",
+      "凝灰岩"
+    ]
+  },
+  {
+    "id": "jr_science_7575e30c90fe",
+    "file": "quiz-data/junior_science.json",
+    "term": "閃緑岩",
+    "before": [
+      "花こう岩",
+      "斑れい岩",
+      "安山岩"
+    ],
+    "after": [
+      "流紋岩",
+      "玄武岩",
+      "安山岩"
+    ]
+  },
+  {
+    "id": "jr_science_8f32fddde26e",
+    "file": "quiz-data/junior_science.json",
+    "term": "斑れい岩",
+    "before": [
+      "花こう岩",
+      "閃緑岩",
+      "玄武岩"
+    ],
+    "after": [
+      "花こう岩",
+      "閃緑岩",
+      "凝灰岩"
+    ]
+  },
+  {
+    "id": "jr_science_4809248d221e",
+    "file": "quiz-data/junior_science.json",
+    "term": "震央",
+    "before": [
+      "震源",
+      "震度",
+      "マグニチュード"
+    ],
+    "after": [
+      "震度",
+      "震源距離",
+      "マグニチュード"
+    ]
+  },
+  {
+    "id": "jr_science_4242c1847581",
+    "file": "quiz-data/junior_science.json",
+    "term": "プレート",
+    "before": [
+      "マントル",
+      "地殻",
+      "核"
+    ],
+    "after": [
+      "核",
+      "海溝",
+      "海嶺"
+    ]
+  },
+  {
+    "id": "jr_science_2f9f6d4526ca",
+    "file": "quiz-data/junior_science.json",
+    "term": "閉塞前線",
+    "before": [
+      "寒冷前線",
+      "温暖前線",
+      "停滞前線"
+    ],
+    "after": [
+      "停滞前線",
+      "梅雨前線",
+      "寒帯前線"
+    ]
+  },
+  {
+    "id": "jr_science_bdd5c94d4085",
+    "file": "quiz-data/junior_science.json",
+    "term": "衛星",
+    "before": [
+      "恒星",
+      "惑星",
+      "小惑星"
+    ],
+    "after": [
+      "恒星",
+      "小惑星",
+      "すい星"
+    ]
+  },
+  {
+    "id": "jr_science_9ee1a03554f0",
+    "file": "quiz-data/junior_science.json",
+    "term": "銀河系",
+    "before": [
+      "太陽系",
+      "星座",
+      "惑星"
+    ],
+    "after": [
+      "星座",
+      "星団",
+      "星雲"
+    ]
+  },
+  {
+    "id": "jr_science_4ae87f1f52d5",
+    "file": "quiz-data/junior_science.json",
+    "term": "非金属",
+    "before": [
+      "金属",
+      "合金",
+      "銅"
+    ],
+    "after": [
+      "合金",
+      "純金属",
+      "銅"
+    ]
+  },
+  {
+    "id": "jr_science_860f54dc7443",
+    "file": "quiz-data/junior_science.json",
+    "term": "無機物",
+    "before": [
+      "有機物",
+      "タンパク質",
+      "脂肪"
+    ],
+    "after": [
+      "タンパク質",
+      "脂肪",
+      "デンプン"
+    ]
+  },
+  {
+    "id": "jr_science_f40b7d44fc55",
+    "file": "quiz-data/junior_science.json",
+    "term": "沈殿",
+    "before": [
+      "気泡",
+      "溶液",
+      "溶媒"
+    ],
+    "after": [
+      "気泡",
+      "結晶水",
+      "溶媒"
+    ]
+  },
+  {
+    "id": "jr_science_3eb46a6cdd5a",
+    "file": "quiz-data/junior_science.json",
+    "term": "平均の速さ",
+    "before": [
+      "瞬間の速さ",
+      "加速度",
+      "移動距離"
+    ],
+    "after": [
+      "瞬間の速さ",
+      "加速度",
+      "変位"
+    ]
+  },
+  {
+    "id": "jr_science_a5e56edd28f7",
+    "file": "quiz-data/junior_science.json",
+    "term": "放射能",
+    "before": [
+      "放射線",
+      "電流",
+      "磁界"
+    ],
+    "after": [
+      "電流",
+      "磁界",
+      "線量"
+    ]
+  },
+  {
+    "id": "jr_science_9ac929a7bc28",
+    "file": "quiz-data/junior_science.json",
+    "term": "放射性物質",
+    "before": [
+      "放射線",
+      "放射能",
+      "線量"
+    ],
+    "after": [
+      "放射能",
+      "線量",
+      "同位体"
+    ]
+  },
+  {
+    "id": "jr_science_bbfdcf9a6f9b",
+    "file": "quiz-data/junior_science.json",
+    "term": "陽子",
+    "before": [
+      "原子核",
+      "中性子",
+      "元素記号"
+    ],
+    "after": [
+      "中性子",
+      "電子",
+      "元素記号"
+    ]
+  },
+  {
+    "id": "jr_science_7707f8a45fdc",
+    "file": "quiz-data/junior_science.json",
+    "term": "中性子",
+    "before": [
+      "原子核",
+      "陽子",
+      "元素記号"
+    ],
+    "after": [
+      "陽子",
+      "電子",
+      "元素記号"
+    ]
+  },
+  {
+    "id": "jr_science_407ef40f1e8c",
+    "file": "quiz-data/junior_science.json",
+    "term": "化学式",
+    "before": [
+      "化学反応式",
+      "元素記号",
+      "質量比"
+    ],
+    "after": [
+      "化学反応式",
+      "組成比",
+      "質量比"
+    ]
+  },
+  {
+    "id": "jr_science_4e880bea4072",
+    "file": "quiz-data/junior_science.json",
+    "term": "化学反応式",
+    "before": [
+      "化学式",
+      "元素記号",
+      "質量比"
+    ],
+    "after": [
+      "元素記号",
+      "状態変化",
+      "質量比"
+    ]
+  },
+  {
+    "id": "jr_science_796dfd853bcd",
+    "file": "quiz-data/junior_science.json",
+    "term": "電極",
+    "before": [
+      "電解質",
+      "絶縁体",
+      "容器"
+    ],
+    "after": [
+      "絶縁体",
+      "容器",
+      "導線"
+    ]
+  },
+  {
+    "id": "jr_science_a76e79f09a01",
+    "file": "quiz-data/junior_science.json",
+    "term": "バイオマス",
+    "before": [
+      "化石燃料",
+      "核燃料",
+      "鉱石"
+    ],
+    "after": [
+      "核燃料",
+      "鉱石",
+      "地熱"
+    ]
+  },
+  {
+    "id": "jr_science_9fa4288cdd4a",
+    "file": "quiz-data/junior_science.json",
+    "term": "リデュース",
+    "before": [
+      "リユース",
+      "リサイクル",
+      "廃棄"
+    ],
+    "after": [
+      "リユース",
+      "リサイクル",
+      "リフューズ"
+    ]
+  },
+  {
+    "id": "jr_science_185bfe601076",
+    "file": "quiz-data/junior_science.json",
+    "term": "イオン式",
+    "before": [
+      "化学反応式",
+      "質量比",
+      "元素記号"
+    ],
+    "after": [
+      "化学反応式",
+      "質量比",
+      "化学式"
+    ]
+  },
+  {
+    "id": "jr_science_c6a6cc135e6a",
+    "file": "quiz-data/junior_science.json",
+    "term": "古生代",
+    "before": [
+      "中生代",
+      "新生代",
+      "不整合"
+    ],
+    "after": [
+      "新生代",
+      "先カンブリア時代",
+      "不整合"
+    ]
+  },
+  {
+    "id": "jr_science_cc62d7acac8d",
+    "file": "quiz-data/junior_science.json",
+    "term": "中生代",
+    "before": [
+      "古生代",
+      "新生代",
+      "不整合"
+    ],
+    "after": [
+      "先カンブリア時代",
+      "第四紀",
+      "不整合"
+    ]
+  },
+  {
+    "id": "jr_science_28a4fe03efb7",
+    "file": "quiz-data/junior_science.json",
+    "term": "新生代",
+    "before": [
+      "古生代",
+      "中生代",
+      "不整合"
+    ],
+    "after": [
+      "古生代",
+      "先カンブリア時代",
+      "不整合"
+    ]
+  },
+  {
+    "id": "jr_science_5b7e78e8e40e",
+    "file": "quiz-data/junior_science.json",
+    "term": "半導体",
+    "before": [
+      "導体",
+      "不導体",
+      "超伝導体"
+    ],
+    "after": [
+      "超伝導体",
+      "絶縁体",
+      "電解質"
+    ]
+  },
+  {
+    "id": "jr_social_483cf57a2c5d",
+    "file": "quiz-data/junior_social.json",
+    "term": "北緯",
+    "before": [
+      "赤道",
+      "本初子午線",
+      "南緯"
+    ],
+    "after": [
+      "経度",
+      "本初子午線",
+      "南緯"
+    ]
+  },
+  {
+    "id": "jr_social_ee03921aba65",
+    "file": "quiz-data/junior_social.json",
+    "term": "南緯",
+    "before": [
+      "赤道",
+      "本初子午線",
+      "北緯"
+    ],
+    "after": [
+      "経度",
+      "本初子午線",
+      "北緯"
+    ]
+  },
+  {
+    "id": "jr_social_3712c37018cb",
+    "file": "quiz-data/junior_social.json",
+    "term": "比例代表制",
+    "before": [
+      "小選挙区制",
+      "世論",
+      "政党"
+    ],
+    "after": [
+      "小選挙区制",
+      "世論",
+      "大選挙区制"
+    ]
+  },
+  {
+    "id": "jr_social_a8965c260250",
+    "file": "quiz-data/junior_social.json",
+    "term": "独占",
+    "before": [
+      "需要",
+      "供給",
+      "市場価格"
+    ],
+    "after": [
+      "需要",
+      "寡占",
+      "市場価格"
+    ]
+  },
+  {
+    "id": "jr_social_95410093acd0",
+    "file": "quiz-data/junior_social.json",
+    "term": "株式会社",
+    "before": [
+      "株式",
+      "配当",
+      "有限責任"
+    ],
+    "after": [
+      "配当",
+      "有限責任",
+      "個人企業"
+    ]
+  },
+  {
+    "id": "jr_social_4d3a012df108",
+    "file": "quiz-data/junior_social.json",
+    "term": "クーリング・オフ",
+    "before": [
+      "契約",
+      "消費者主権",
+      "製造物責任法"
+    ],
+    "after": [
+      "消費者主権",
+      "製造物責任法",
+      "リコール"
+    ]
+  },
+  {
+    "id": "jr_social_d0e08911ccf3",
+    "file": "quiz-data/junior_social.json",
+    "term": "団結権",
+    "before": [
+      "労働組合",
+      "団体交渉権",
+      "団体行動権"
+    ],
+    "after": [
+      "団体交渉権",
+      "団体行動権",
+      "勤労の権利"
+    ]
+  },
+  {
+    "id": "jr_social_ad8e6a20ab15",
+    "file": "quiz-data/junior_social.json",
+    "term": "安全保障理事会",
+    "before": [
+      "国際連合",
+      "国際司法裁判所",
+      "持続可能な開発目標"
+    ],
+    "after": [
+      "総会",
+      "国際司法裁判所",
+      "経済社会理事会"
+    ]
+  },
+  {
+    "id": "jr_social_e77daf6e993b",
+    "file": "quiz-data/junior_social.json",
+    "term": "裁判員制度",
+    "before": [
+      "民事裁判",
+      "刑事裁判",
+      "三審制"
+    ],
+    "after": [
+      "民事裁判",
+      "三審制",
+      "国民審査"
+    ]
+  },
+  {
+    "id": "jr_social_68467ccd9176",
+    "file": "quiz-data/junior_social.json",
+    "term": "領空",
+    "before": [
+      "領土",
+      "領海",
+      "排他的経済水域"
+    ],
+    "after": [
+      "公海",
+      "接続水域",
+      "排他的経済水域"
+    ]
+  },
+  {
+    "id": "jr_social_ac3460b24861",
+    "file": "quiz-data/junior_social.json",
+    "term": "日本標準時",
+    "before": [
+      "協定世界時",
+      "グリニッジ標準時",
+      "国際原子時"
+    ],
+    "after": [
+      "グリニッジ標準時",
+      "国際原子時",
+      "世界各地の地方時"
+    ]
+  },
+  {
+    "id": "jr_social_bb07edf317e7",
+    "file": "quiz-data/junior_social.json",
+    "term": "六波羅探題",
+    "before": [
+      "承久の乱",
+      "執権政治",
+      "元寇"
+    ],
+    "after": [
+      "執権政治",
+      "元寇",
+      "鎮西探題"
+    ]
+  },
+  {
+    "id": "jr_social_17e9538b741f",
+    "file": "quiz-data/junior_social.json",
+    "term": "親鸞",
+    "before": [
+      "法然",
+      "日蓮",
+      "道元"
+    ],
+    "after": [
+      "空海",
+      "日蓮",
+      "道元"
+    ]
+  },
+  {
+    "id": "jr_social_05ba0eac3cf2",
+    "file": "quiz-data/junior_social.json",
+    "term": "石山本願寺",
+    "before": [
+      "二毛作",
+      "徳政令",
+      "一向一揆"
+    ],
+    "after": [
+      "二条城",
+      "安土城",
+      "大坂城"
+    ]
+  },
+  {
+    "id": "jr_social_ae08860c2ca3",
+    "file": "quiz-data/junior_social.json",
+    "term": "本百姓",
+    "before": [
+      "水呑百姓",
+      "年貢",
+      "村請制"
+    ],
+    "after": [
+      "水呑百姓",
+      "町人",
+      "村請制"
+    ]
+  },
+  {
+    "id": "jr_social_346c3eee3d9b",
+    "file": "quiz-data/junior_social.json",
+    "term": "村請制",
+    "before": [
+      "本百姓",
+      "水呑百姓",
+      "年貢"
+    ],
+    "after": [
+      "本百姓",
+      "水呑百姓",
+      "五人組"
+    ]
+  },
+  {
+    "id": "jr_social_8f5ff8658738",
+    "file": "quiz-data/junior_social.json",
+    "term": "本居宣長",
+    "before": [
+      "寺子屋",
+      "国学",
+      "伊能忠敬"
+    ],
+    "after": [
+      "賀茂真淵",
+      "平田篤胤",
+      "伊能忠敬"
+    ]
+  },
+  {
+    "id": "jr_social_3d0f5dfa8773",
+    "file": "quiz-data/junior_social.json",
+    "term": "象徴天皇制",
+    "before": [
+      "日本国憲法",
+      "女性参政権",
+      "労働三権"
+    ],
+    "after": [
+      "女性参政権",
+      "労働三権",
+      "国民主権"
+    ]
+  },
+  {
+    "id": "jr_social_f37b34c04b12",
+    "file": "quiz-data/junior_social.json",
+    "term": "義務",
+    "before": [
+      "きまり",
+      "責任",
+      "権利"
+    ],
+    "after": [
+      "責任",
+      "権利",
+      "自由"
+    ]
+  },
+  {
+    "id": "jr_social_5d85b4ddd170",
+    "file": "quiz-data/junior_social.json",
+    "term": "家計",
+    "before": [
+      "生産",
+      "消費",
+      "生産の三要素"
+    ],
+    "after": [
+      "企業",
+      "政府",
+      "金融機関"
+    ]
+  },
+  {
+    "id": "jr_social_6148277021ba",
+    "file": "quiz-data/junior_social.json",
+    "term": "生産の三要素",
+    "before": [
+      "生産",
+      "消費",
+      "家計"
+    ],
+    "after": [
+      "家計",
+      "公共財",
+      "社会資本"
+    ]
+  },
+  {
+    "id": "jr_social_28812469b422",
+    "file": "quiz-data/junior_social.json",
+    "term": "通貨",
+    "before": [
+      "預金",
+      "貸出",
+      "金利"
+    ],
+    "after": [
+      "貸出",
+      "金利",
+      "有価証券"
+    ]
+  },
+  {
+    "id": "jr_social_be25d6c26aec",
+    "file": "quiz-data/junior_social.json",
+    "term": "政令",
+    "before": [
+      "法律",
+      "予算",
+      "条約の承認"
+    ],
+    "after": [
+      "予算",
+      "条約",
+      "条例"
+    ]
+  },
+  {
+    "id": "jr_social_5fb2a236e7f2",
+    "file": "quiz-data/junior_social.json",
+    "term": "二元代表制",
+    "before": [
+      "条例",
+      "首長",
+      "地方議会"
+    ],
+    "after": [
+      "条例",
+      "直接請求",
+      "住民投票"
+    ]
+  },
+  {
+    "id": "jr_social_a03344403495",
+    "file": "quiz-data/junior_social.json",
+    "term": "地方議会",
+    "before": [
+      "条例",
+      "二元代表制",
+      "首長"
+    ],
+    "after": [
+      "二元代表制",
+      "直接請求",
+      "住民投票"
+    ]
+  },
+  {
+    "id": "jr_social_cae5378689ed",
+    "file": "quiz-data/junior_social.json",
+    "term": "一票の格差",
+    "before": [
+      "選挙権",
+      "被選挙権",
+      "選挙区"
+    ],
+    "after": [
+      "選挙権",
+      "被選挙権",
+      "小選挙区制"
+    ]
+  },
+  {
+    "id": "jr_social_85b6990fc1da",
+    "file": "quiz-data/junior_social.json",
+    "term": "国際慣習法",
+    "before": [
+      "主権国家",
+      "国際法",
+      "条約"
+    ],
+    "after": [
+      "主権国家",
+      "条約",
+      "国際世論"
+    ]
+  },
+  {
+    "id": "jr_social_a9ad06e74394",
+    "file": "quiz-data/junior_social.json",
+    "term": "好況",
+    "before": [
+      "社会資本",
+      "景気",
+      "不況"
+    ],
+    "after": [
+      "社会資本",
+      "不況",
+      "デフレーション"
+    ]
+  },
+  {
+    "id": "jr_social_9660d4974e1d",
+    "file": "quiz-data/junior_social.json",
+    "term": "不況",
+    "before": [
+      "社会資本",
+      "景気",
+      "好況"
+    ],
+    "after": [
+      "社会資本",
+      "好況",
+      "インフレーション"
+    ]
+  },
+  {
+    "id": "jr_jp3_033",
+    "file": "quiz-data/junior_japanese.json",
+    "term": "レ点",
+    "before_template": "漢文でレ点があると、すぐ{{1}}の字を先に読み、元の字に返って読む。",
+    "after_template": "漢文で、すぐ{{1}}の字を先に読み、元の字に返って読むことを示す返り点。"
+  },
+  {
+    "id": "jr_science_c6f3d5f28b21",
+    "file": "quiz-data/junior_science.json",
+    "term": "瞬間の速さ",
+    "before_template": "ごく短い{{1}}で考えた、その瞬間の速さ。",
+    "after_template": "ごく短い{{1}}の移動距離から求める速さ。"
+  },
+  {
+    "id": "jr_science_37c2c9e5c1e2",
+    "file": "quiz-data/junior_science.json",
+    "term": "酸化銅",
+    "before_template": "中学で扱う黒色の酸化銅の化学式は{{1}}。",
+    "after_template": "銅が酸素と結び付いた黒色の物質。化学式は{{1}}。"
+  },
+  {
+    "id": "jr_civics3_012",
+    "file": "quiz-data/junior_social.json",
+    "term": "国民の三大義務",
+    "before_template": "日本国憲法に定める国民の三大義務は、子に{{1}}義務、{{2}}の義務、{{3}}の義務である。",
+    "after_template": "憲法が定める、子に{{1}}義務、{{2}}の義務、{{3}}の義務の総称。"
+  },
+  {
+    "id": "jr_social_e160af825e19",
+    "file": "quiz-data/junior_social.json",
+    "term": "教育を受ける権利",
+    "before_template": "能力に応じて、ひとしく{{1}}を受ける権利。",
+    "after_template": "能力に応じて、ひとしく{{1}}の機会が保障される社会権。"
+  },
+  {
+    "id": "jr_science_c6f3d5f28b21",
+    "file": "quiz-data/junior_science.json",
+    "term": "瞬間の速さ",
+    "before": [
+      "平均の速さ",
+      "加速度",
+      "移動距離"
+    ],
+    "after": [
+      "平均の速さ",
+      "加速度",
+      "変位"
+    ]
+  }
+]

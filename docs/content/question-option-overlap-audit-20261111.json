@@ -1,0 +1,1709 @@
+{
+  "date": "2026-11-11",
+  "status": "fixed_in_0.91.1",
+  "scope": {
+    "school_level": "中学",
+    "active_materials": 8243,
+    "definition_questions": 1372,
+    "definition_overlap_candidates": 98,
+    "by_subject": {
+      "国語": 1,
+      "理科": 68,
+      "社会": 29
+    }
+  },
+  "limitations": [
+    "文字列一致は出題不備の確定ではない。語の一部、比較・否定に必要な言及を含む。",
+    "2文字以上の候補を抽出。候補プール全体を確認し、実際の出題ではその中から3つが選ばれる。",
+    "その他の形式も機械抽出したが、意味上の妥当性を全問保証する監査ではない。"
+  ],
+  "definition_overlap_candidates": [
+    {
+      "file": "junior_japanese_extended",
+      "id": "jr_jp_core_8422ac7dcfd2",
+      "subject": "国語",
+      "term": "付属語",
+      "prompt": "それだけでは文節を作れず、自立語に付く単語。",
+      "answer": "付属語",
+      "dummies": [
+        "自立語",
+        "体言",
+        "用言"
+      ],
+      "matches": [
+        "自立語"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_013",
+      "subject": "理科",
+      "term": "無性生殖",
+      "prompt": "受精を行わずに新しい個体をつくる生殖。",
+      "answer": "無性生殖",
+      "dummies": [
+        "有性生殖",
+        "受精",
+        "交配"
+      ],
+      "matches": [
+        "受精"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_021",
+      "subject": "理科",
+      "term": "受精卵",
+      "prompt": "受精によってできた細胞で、体細胞分裂を繰り返して新しい個体へと成長する。",
+      "answer": "受精卵",
+      "dummies": [
+        "未受精卵",
+        "精細胞",
+        "体細胞"
+      ],
+      "matches": [
+        "体細胞"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_022",
+      "subject": "理科",
+      "term": "発生",
+      "prompt": "受精卵が細胞分裂を繰り返し、体のつくりを整えていく過程。",
+      "answer": "発生",
+      "dummies": [
+        "進化",
+        "受精",
+        "変態"
+      ],
+      "matches": [
+        "受精"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_030",
+      "subject": "理科",
+      "term": "遺伝子",
+      "prompt": "形質に関わる遺伝情報の単位で、染色体上にあるもの。",
+      "answer": "遺伝子",
+      "dummies": [
+        "DNA",
+        "染色体",
+        "対立形質"
+      ],
+      "matches": [
+        "染色体"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_057",
+      "subject": "理科",
+      "term": "変異",
+      "prompt": "同じ種の個体間に見られる形質の違い。進化を考えるときは、その違いが遺伝するかどうかが重要になる。",
+      "answer": "変異",
+      "dummies": [
+        "進化",
+        "適応",
+        "遺伝"
+      ],
+      "matches": [
+        "進化",
+        "遺伝"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_060",
+      "subject": "理科",
+      "term": "食物網",
+      "prompt": "複数の食物連鎖が複雑に結びつき、網の目のようになった食う・食われる関係。",
+      "answer": "食物網",
+      "dummies": [
+        "食物連鎖",
+        "生態ピラミッド",
+        "系統樹"
+      ],
+      "matches": [
+        "食物連鎖"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_070",
+      "subject": "理科",
+      "term": "生態ピラミッド",
+      "prompt": "食物連鎖の各段階の量を積み重ねて表す図で、一般に上位の消費者ほど、利用できるエネルギーが少なくなる。",
+      "answer": "生態ピラミッド",
+      "dummies": [
+        "食物網",
+        "食物連鎖",
+        "系統樹"
+      ],
+      "matches": [
+        "食物連鎖"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_bio_084",
+      "subject": "理科",
+      "term": "生物多様性",
+      "prompt": "生態系の多様性、種の多様性、同じ種の中の遺伝子の多様性などを含む、生物のさまざまな違い。",
+      "answer": "生物多様性",
+      "dummies": [
+        "種の多様性",
+        "遺伝子の多様性",
+        "生態系の多様性"
+      ],
+      "matches": [
+        "種の多様性",
+        "遺伝子の多様性",
+        "生態系の多様性"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_b22c70c8f3bf",
+      "subject": "理科",
+      "term": "電圧",
+      "prompt": "電流を流そうとする働き。",
+      "answer": "電圧",
+      "dummies": [
+        "電流",
+        "電気抵抗",
+        "電力"
+      ],
+      "matches": [
+        "電流"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_c26b11025f4d",
+      "subject": "理科",
+      "term": "電気抵抗",
+      "prompt": "電流の流れにくさを表す量。",
+      "answer": "電気抵抗",
+      "dummies": [
+        "電流",
+        "電圧",
+        "電力"
+      ],
+      "matches": [
+        "電流"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_665748f8a9be",
+      "subject": "理科",
+      "term": "電磁誘導",
+      "prompt": "コイル内の磁界が変化して電圧が生じる現象。",
+      "answer": "電磁誘導",
+      "dummies": [
+        "磁界",
+        "電磁石",
+        "誘導電流"
+      ],
+      "matches": [
+        "磁界"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_132299bdaf4c",
+      "subject": "理科",
+      "term": "誘導電流",
+      "prompt": "電磁誘導によって流れる電流。",
+      "answer": "誘導電流",
+      "dummies": [
+        "磁界",
+        "電磁石",
+        "電磁誘導"
+      ],
+      "matches": [
+        "電磁誘導"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_067a1a166342",
+      "subject": "理科",
+      "term": "等速直線運動",
+      "prompt": "一直線上を一定の速さで進む運動。",
+      "answer": "等速直線運動",
+      "dummies": [
+        "慣性",
+        "作用・反作用",
+        "速さ"
+      ],
+      "matches": [
+        "速さ"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_c63a8a0d0aea",
+      "subject": "理科",
+      "term": "仕事率",
+      "prompt": "単位時間当たりの仕事。",
+      "answer": "仕事率",
+      "dummies": [
+        "仕事",
+        "位置エネルギー",
+        "運動エネルギー"
+      ],
+      "matches": [
+        "仕事"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_4728e97dbb08",
+      "subject": "理科",
+      "term": "溶質",
+      "prompt": "溶液に溶けている物質。",
+      "answer": "溶質",
+      "dummies": [
+        "溶媒",
+        "溶液",
+        "溶解度"
+      ],
+      "matches": [
+        "溶液"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_351156482e3a",
+      "subject": "理科",
+      "term": "溶媒",
+      "prompt": "溶質を溶かしている液体。",
+      "answer": "溶媒",
+      "dummies": [
+        "溶質",
+        "溶液",
+        "溶解度"
+      ],
+      "matches": [
+        "溶質"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_8c9c44845640",
+      "subject": "理科",
+      "term": "溶液",
+      "prompt": "溶質が溶媒に均一に溶けた液。",
+      "answer": "溶液",
+      "dummies": [
+        "溶質",
+        "溶媒",
+        "溶解度"
+      ],
+      "matches": [
+        "溶質",
+        "溶媒"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_a12d483a61eb",
+      "subject": "理科",
+      "term": "元素",
+      "prompt": "物質をつくる原子の種類。",
+      "answer": "元素",
+      "dummies": [
+        "原子",
+        "分子",
+        "単体"
+      ],
+      "matches": [
+        "原子"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_d6a19f05372d",
+      "subject": "理科",
+      "term": "単体",
+      "prompt": "水素のように1種類の元素からなる物質。",
+      "answer": "単体",
+      "dummies": [
+        "原子",
+        "分子",
+        "元素"
+      ],
+      "matches": [
+        "元素"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_e11f392e082e",
+      "subject": "理科",
+      "term": "還元",
+      "prompt": "酸化物から酸素を取り除く変化。",
+      "answer": "還元",
+      "dummies": [
+        "酸化",
+        "酸化物",
+        "質量保存の法則"
+      ],
+      "matches": [
+        "酸化",
+        "酸化物"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_9f59e3b9f6e3",
+      "subject": "理科",
+      "term": "電離",
+      "prompt": "物質が水に溶け、陽イオンと陰イオンに分かれること。",
+      "answer": "電離",
+      "dummies": [
+        "陽イオン",
+        "陰イオン",
+        "電解質"
+      ],
+      "matches": [
+        "陽イオン",
+        "陰イオン"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_67264f52469c",
+      "subject": "理科",
+      "term": "中和",
+      "prompt": "酸とアルカリが反応し、水と塩ができる反応。",
+      "answer": "中和",
+      "dummies": [
+        "酸",
+        "アルカリ",
+        "塩"
+      ],
+      "matches": [
+        "アルカリ"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_8ee8f137c684",
+      "subject": "理科",
+      "term": "塩",
+      "prompt": "酸の陰イオンとアルカリの陽イオンからできる物質。",
+      "answer": "塩",
+      "dummies": [
+        "酸",
+        "アルカリ",
+        "中和"
+      ],
+      "matches": [
+        "アルカリ"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_c3f099b93a6e",
+      "subject": "理科",
+      "term": "溶岩",
+      "prompt": "マグマが地表へ出たもの。",
+      "answer": "溶岩",
+      "dummies": [
+        "マグマ",
+        "火山灰",
+        "堆積岩"
+      ],
+      "matches": [
+        "マグマ"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_a95c15b2a07c",
+      "subject": "理科",
+      "term": "P波",
+      "prompt": "S波より速く地中を伝わる地震の波。",
+      "answer": "P波",
+      "dummies": [
+        "S波",
+        "初期微動",
+        "主要動"
+      ],
+      "matches": [
+        "S波"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_fb4ac405dabf",
+      "subject": "理科",
+      "term": "S波",
+      "prompt": "P波より遅く地中を伝わる地震の波。",
+      "answer": "S波",
+      "dummies": [
+        "P波",
+        "初期微動",
+        "主要動"
+      ],
+      "matches": [
+        "P波"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_dc4ff47b5e54",
+      "subject": "理科",
+      "term": "初期微動",
+      "prompt": "地震で先に届くP波による小さな揺れ。",
+      "answer": "初期微動",
+      "dummies": [
+        "P波",
+        "S波",
+        "主要動"
+      ],
+      "matches": [
+        "P波"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_09de8f7f0eba",
+      "subject": "理科",
+      "term": "主要動",
+      "prompt": "地震で後に届くS波による大きな揺れ。",
+      "answer": "主要動",
+      "dummies": [
+        "P波",
+        "S波",
+        "初期微動"
+      ],
+      "matches": [
+        "S波"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_72c6873f12d1",
+      "subject": "理科",
+      "term": "湿度",
+      "prompt": "飽和水蒸気量に対する実際の水蒸気量の割合。",
+      "answer": "湿度",
+      "dummies": [
+        "露点",
+        "飽和水蒸気量",
+        "気圧"
+      ],
+      "matches": [
+        "飽和水蒸気量"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_28bfe5426113",
+      "subject": "理科",
+      "term": "日周運動",
+      "prompt": "地球の自転で天体が1日周期で動いて見える現象。",
+      "answer": "日周運動",
+      "dummies": [
+        "自転",
+        "公転",
+        "年周運動"
+      ],
+      "matches": [
+        "自転"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_0a4cbf624bd6",
+      "subject": "理科",
+      "term": "年周運動",
+      "prompt": "地球の公転で恒星が1年周期で動いて見える現象。",
+      "answer": "年周運動",
+      "dummies": [
+        "自転",
+        "公転",
+        "日周運動"
+      ],
+      "matches": [
+        "公転"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_ad1bc439cc23",
+      "subject": "理科",
+      "term": "毛細血管",
+      "prompt": "動脈と静脈をつなぐ、壁が薄い血管。",
+      "answer": "毛細血管",
+      "dummies": [
+        "動脈",
+        "静脈",
+        "ヘモグロビン"
+      ],
+      "matches": [
+        "動脈",
+        "静脈"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_44bcad80fd32",
+      "subject": "理科",
+      "term": "細胞壁",
+      "prompt": "植物の細胞膜の外側で形を保つつくり。",
+      "answer": "細胞壁",
+      "dummies": [
+        "核",
+        "細胞膜",
+        "葉緑体"
+      ],
+      "matches": [
+        "細胞膜"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_4135b4b936ad",
+      "subject": "理科",
+      "term": "維管束",
+      "prompt": "道管と師管などが集まった束。",
+      "answer": "維管束",
+      "dummies": [
+        "道管",
+        "師管",
+        "根毛"
+      ],
+      "matches": [
+        "道管",
+        "師管"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_8cbb539c45c4",
+      "subject": "理科",
+      "term": "子房",
+      "prompt": "被子植物で胚珠を包む、めしべのもとの部分。",
+      "answer": "子房",
+      "dummies": [
+        "胚珠",
+        "やく",
+        "柱頭"
+      ],
+      "matches": [
+        "胚珠"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_b262d11655d2",
+      "subject": "理科",
+      "term": "組織",
+      "prompt": "形や働きが似た細胞が集まったもの。",
+      "answer": "組織",
+      "dummies": [
+        "細胞",
+        "器官",
+        "器官系"
+      ],
+      "matches": [
+        "細胞"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_457f64da09a5",
+      "subject": "理科",
+      "term": "器官",
+      "prompt": "複数の組織が集まり、特定の働きをするつくり。",
+      "answer": "器官",
+      "dummies": [
+        "組織",
+        "細胞",
+        "細胞小器官"
+      ],
+      "matches": [
+        "組織"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_5b19812ea5e5",
+      "subject": "理科",
+      "term": "大腸",
+      "prompt": "小腸の後で、残りの水分を吸収する器官。",
+      "answer": "大腸",
+      "dummies": [
+        "小腸",
+        "胃",
+        "肝臓"
+      ],
+      "matches": [
+        "小腸"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_428167e785ea",
+      "subject": "理科",
+      "term": "尿素",
+      "prompt": "有害なアンモニアから主に肝臓でつくられる物質。",
+      "answer": "尿素",
+      "dummies": [
+        "アンモニア",
+        "二酸化炭素",
+        "胆汁"
+      ],
+      "matches": [
+        "アンモニア"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_9988bfe1d253",
+      "subject": "理科",
+      "term": "末しょう神経",
+      "prompt": "中枢神経と全身をつなぐ神経。",
+      "answer": "末しょう神経",
+      "dummies": [
+        "中枢神経",
+        "感覚器官",
+        "運動器官"
+      ],
+      "matches": [
+        "中枢神経"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_fba4b129035a",
+      "subject": "理科",
+      "term": "流紋岩",
+      "prompt": "花こう岩と似た鉱物組成をもつ火山岩。",
+      "answer": "流紋岩",
+      "dummies": [
+        "安山岩",
+        "玄武岩",
+        "花こう岩"
+      ],
+      "matches": [
+        "花こう岩"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_197f59d58fb5",
+      "subject": "理科",
+      "term": "安山岩",
+      "prompt": "流紋岩と玄武岩の中間的な組成の火山岩。",
+      "answer": "安山岩",
+      "dummies": [
+        "流紋岩",
+        "玄武岩",
+        "閃緑岩"
+      ],
+      "matches": [
+        "流紋岩",
+        "玄武岩"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_6565a1d72d0a",
+      "subject": "理科",
+      "term": "玄武岩",
+      "prompt": "斑れい岩と似た鉱物組成をもつ火山岩。",
+      "answer": "玄武岩",
+      "dummies": [
+        "流紋岩",
+        "安山岩",
+        "斑れい岩"
+      ],
+      "matches": [
+        "斑れい岩"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_7575e30c90fe",
+      "subject": "理科",
+      "term": "閃緑岩",
+      "prompt": "花こう岩と斑れい岩の中間的な組成の深成岩。",
+      "answer": "閃緑岩",
+      "dummies": [
+        "花こう岩",
+        "斑れい岩",
+        "安山岩"
+      ],
+      "matches": [
+        "花こう岩",
+        "斑れい岩"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_8f32fddde26e",
+      "subject": "理科",
+      "term": "斑れい岩",
+      "prompt": "玄武岩と似た鉱物組成をもつ深成岩。",
+      "answer": "斑れい岩",
+      "dummies": [
+        "花こう岩",
+        "閃緑岩",
+        "玄武岩"
+      ],
+      "matches": [
+        "玄武岩"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_4809248d221e",
+      "subject": "理科",
+      "term": "震央",
+      "prompt": "震源の真上の地表の場所。",
+      "answer": "震央",
+      "dummies": [
+        "震源",
+        "震度",
+        "マグニチュード"
+      ],
+      "matches": [
+        "震源"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_4242c1847581",
+      "subject": "理科",
+      "term": "プレート",
+      "prompt": "地殻とマントル最上部からなる硬い板状の部分。",
+      "answer": "プレート",
+      "dummies": [
+        "マントル",
+        "地殻",
+        "核"
+      ],
+      "matches": [
+        "マントル",
+        "地殻"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_2f9f6d4526ca",
+      "subject": "理科",
+      "term": "閉塞前線",
+      "prompt": "寒冷前線が温暖前線に追い付いてできる前線。",
+      "answer": "閉塞前線",
+      "dummies": [
+        "寒冷前線",
+        "温暖前線",
+        "停滞前線"
+      ],
+      "matches": [
+        "寒冷前線",
+        "温暖前線"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_bdd5c94d4085",
+      "subject": "理科",
+      "term": "衛星",
+      "prompt": "月のように惑星の周りを公転する天体。",
+      "answer": "衛星",
+      "dummies": [
+        "恒星",
+        "惑星",
+        "小惑星"
+      ],
+      "matches": [
+        "惑星"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_9ee1a03554f0",
+      "subject": "理科",
+      "term": "銀河系",
+      "prompt": "太陽系を含む、多数の恒星などの集まり。",
+      "answer": "銀河系",
+      "dummies": [
+        "太陽系",
+        "星座",
+        "惑星"
+      ],
+      "matches": [
+        "太陽系"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_4ae87f1f52d5",
+      "subject": "理科",
+      "term": "非金属",
+      "prompt": "物質のうち金属に分類されないもの。",
+      "answer": "非金属",
+      "dummies": [
+        "金属",
+        "合金",
+        "銅"
+      ],
+      "matches": [
+        "金属"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_860f54dc7443",
+      "subject": "理科",
+      "term": "無機物",
+      "prompt": "有機物以外の物質。",
+      "answer": "無機物",
+      "dummies": [
+        "有機物",
+        "タンパク質",
+        "脂肪"
+      ],
+      "matches": [
+        "有機物"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_f40b7d44fc55",
+      "subject": "理科",
+      "term": "沈殿",
+      "prompt": "水溶液中で生じた、溶けにくい固体。",
+      "answer": "沈殿",
+      "dummies": [
+        "気泡",
+        "溶液",
+        "溶媒"
+      ],
+      "matches": [
+        "溶液"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_3eb46a6cdd5a",
+      "subject": "理科",
+      "term": "平均の速さ",
+      "prompt": "移動距離全体を、かかった時間全体で割った速さ。",
+      "answer": "平均の速さ",
+      "dummies": [
+        "瞬間の速さ",
+        "加速度",
+        "移動距離"
+      ],
+      "matches": [
+        "移動距離"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_a5e56edd28f7",
+      "subject": "理科",
+      "term": "放射能",
+      "prompt": "放射性物質が放射線を出す能力。",
+      "answer": "放射能",
+      "dummies": [
+        "放射線",
+        "電流",
+        "磁界"
+      ],
+      "matches": [
+        "放射線"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_9ac929a7bc28",
+      "subject": "理科",
+      "term": "放射性物質",
+      "prompt": "放射線を出す能力を持つ物質。",
+      "answer": "放射性物質",
+      "dummies": [
+        "放射線",
+        "放射能",
+        "線量"
+      ],
+      "matches": [
+        "放射線"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_bbfdcf9a6f9b",
+      "subject": "理科",
+      "term": "陽子",
+      "prompt": "原子核にあり、正の電気を持つ粒子。",
+      "answer": "陽子",
+      "dummies": [
+        "原子核",
+        "中性子",
+        "元素記号"
+      ],
+      "matches": [
+        "原子核"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_7707f8a45fdc",
+      "subject": "理科",
+      "term": "中性子",
+      "prompt": "原子核にあり、電気を持たない粒子。",
+      "answer": "中性子",
+      "dummies": [
+        "原子核",
+        "陽子",
+        "元素記号"
+      ],
+      "matches": [
+        "原子核"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_407ef40f1e8c",
+      "subject": "理科",
+      "term": "化学式",
+      "prompt": "物質の組成を元素記号で表した式。",
+      "answer": "化学式",
+      "dummies": [
+        "化学反応式",
+        "元素記号",
+        "質量比"
+      ],
+      "matches": [
+        "元素記号"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_4e880bea4072",
+      "subject": "理科",
+      "term": "化学反応式",
+      "prompt": "化学変化を物質の化学式で表した式。",
+      "answer": "化学反応式",
+      "dummies": [
+        "化学式",
+        "元素記号",
+        "質量比"
+      ],
+      "matches": [
+        "化学式"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_796dfd853bcd",
+      "subject": "理科",
+      "term": "電極",
+      "prompt": "外部回路と電解質の間で電子を受け渡しする部分。",
+      "answer": "電極",
+      "dummies": [
+        "電解質",
+        "絶縁体",
+        "容器"
+      ],
+      "matches": [
+        "電解質"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_a76e79f09a01",
+      "subject": "理科",
+      "term": "バイオマス",
+      "prompt": "生物に由来する、化石燃料を除いた資源。",
+      "answer": "バイオマス",
+      "dummies": [
+        "化石燃料",
+        "核燃料",
+        "鉱石"
+      ],
+      "matches": [
+        "化石燃料"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_9fa4288cdd4a",
+      "subject": "理科",
+      "term": "リデュース",
+      "prompt": "資源の使用や廃棄物の発生を減らすこと。",
+      "answer": "リデュース",
+      "dummies": [
+        "リユース",
+        "リサイクル",
+        "廃棄"
+      ],
+      "matches": [
+        "廃棄"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_185bfe601076",
+      "subject": "理科",
+      "term": "イオン式",
+      "prompt": "イオンを元素記号と電荷などで表した式。",
+      "answer": "イオン式",
+      "dummies": [
+        "化学反応式",
+        "質量比",
+        "元素記号"
+      ],
+      "matches": [
+        "元素記号"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_c6a6cc135e6a",
+      "subject": "理科",
+      "term": "古生代",
+      "prompt": "中生代より古い地質年代。",
+      "answer": "古生代",
+      "dummies": [
+        "中生代",
+        "新生代",
+        "不整合"
+      ],
+      "matches": [
+        "中生代"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_cc62d7acac8d",
+      "subject": "理科",
+      "term": "中生代",
+      "prompt": "古生代と新生代の間の地質年代。",
+      "answer": "中生代",
+      "dummies": [
+        "古生代",
+        "新生代",
+        "不整合"
+      ],
+      "matches": [
+        "古生代",
+        "新生代"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_28a4fe03efb7",
+      "subject": "理科",
+      "term": "新生代",
+      "prompt": "中生代より新しい地質年代。",
+      "answer": "新生代",
+      "dummies": [
+        "古生代",
+        "中生代",
+        "不整合"
+      ],
+      "matches": [
+        "中生代"
+      ]
+    },
+    {
+      "file": "junior_science",
+      "id": "jr_science_5b7e78e8e40e",
+      "subject": "理科",
+      "term": "半導体",
+      "prompt": "電気の通しやすさが導体と不導体の中間の物質。",
+      "answer": "半導体",
+      "dummies": [
+        "導体",
+        "不導体",
+        "超伝導体"
+      ],
+      "matches": [
+        "導体",
+        "不導体"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_483cf57a2c5d",
+      "subject": "社会",
+      "term": "北緯",
+      "prompt": "赤道より北側の0度〜90度の緯度。",
+      "answer": "北緯",
+      "dummies": [
+        "赤道",
+        "本初子午線",
+        "南緯"
+      ],
+      "matches": [
+        "赤道"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_ee03921aba65",
+      "subject": "社会",
+      "term": "南緯",
+      "prompt": "赤道より南側の0度〜90度の緯度。",
+      "answer": "南緯",
+      "dummies": [
+        "赤道",
+        "本初子午線",
+        "北緯"
+      ],
+      "matches": [
+        "赤道"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_3712c37018cb",
+      "subject": "社会",
+      "term": "比例代表制",
+      "prompt": "政党などの得票に応じて議席を配分する制度。",
+      "answer": "比例代表制",
+      "dummies": [
+        "小選挙区制",
+        "世論",
+        "政党"
+      ],
+      "matches": [
+        "政党"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_a8965c260250",
+      "subject": "社会",
+      "term": "独占",
+      "prompt": "一社がある商品の供給をほぼ支配する状態。",
+      "answer": "独占",
+      "dummies": [
+        "需要",
+        "供給",
+        "市場価格"
+      ],
+      "matches": [
+        "供給"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_95410093acd0",
+      "subject": "社会",
+      "term": "株式会社",
+      "prompt": "株式を発行して資金を集める会社。",
+      "answer": "株式会社",
+      "dummies": [
+        "株式",
+        "配当",
+        "有限責任"
+      ],
+      "matches": [
+        "株式"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_4d3a012df108",
+      "subject": "社会",
+      "term": "クーリング・オフ",
+      "prompt": "一定の取引で、期間内に契約を無条件で解除できる制度。",
+      "answer": "クーリング・オフ",
+      "dummies": [
+        "契約",
+        "消費者主権",
+        "製造物責任法"
+      ],
+      "matches": [
+        "契約"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_d0e08911ccf3",
+      "subject": "社会",
+      "term": "団結権",
+      "prompt": "労働者が労働組合などを作る権利。",
+      "answer": "団結権",
+      "dummies": [
+        "労働組合",
+        "団体交渉権",
+        "団体行動権"
+      ],
+      "matches": [
+        "労働組合"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_ad8e6a20ab15",
+      "subject": "社会",
+      "term": "安全保障理事会",
+      "prompt": "国際連合で、国際の平和と安全に主な責任をもつ機関。",
+      "answer": "安全保障理事会",
+      "dummies": [
+        "国際連合",
+        "国際司法裁判所",
+        "持続可能な開発目標"
+      ],
+      "matches": [
+        "国際連合"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_e77daf6e993b",
+      "subject": "社会",
+      "term": "裁判員制度",
+      "prompt": "国民が裁判官と共に一部の刑事裁判に参加する制度。",
+      "answer": "裁判員制度",
+      "dummies": [
+        "民事裁判",
+        "刑事裁判",
+        "三審制"
+      ],
+      "matches": [
+        "刑事裁判"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_68467ccd9176",
+      "subject": "社会",
+      "term": "領空",
+      "prompt": "国家の領土と領海の上空。",
+      "answer": "領空",
+      "dummies": [
+        "領土",
+        "領海",
+        "排他的経済水域"
+      ],
+      "matches": [
+        "領土",
+        "領海"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_ac3460b24861",
+      "subject": "社会",
+      "term": "日本標準時",
+      "prompt": "協定世界時より9時間進んだ日本の標準時。",
+      "answer": "日本標準時",
+      "dummies": [
+        "協定世界時",
+        "グリニッジ標準時",
+        "国際原子時"
+      ],
+      "matches": [
+        "協定世界時"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_bb07edf317e7",
+      "subject": "社会",
+      "term": "六波羅探題",
+      "prompt": "承久の乱後、京都で朝廷を監視した幕府の機関。",
+      "answer": "六波羅探題",
+      "dummies": [
+        "承久の乱",
+        "執権政治",
+        "元寇"
+      ],
+      "matches": [
+        "承久の乱"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_17e9538b741f",
+      "subject": "社会",
+      "term": "親鸞",
+      "prompt": "法然に学び、その教えが浄土真宗へ発展した僧。",
+      "answer": "親鸞",
+      "dummies": [
+        "法然",
+        "日蓮",
+        "道元"
+      ],
+      "matches": [
+        "法然"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_05ba0eac3cf2",
+      "subject": "社会",
+      "term": "石山本願寺",
+      "prompt": "戦国時代、織田信長に抵抗した一向一揆の拠点。",
+      "answer": "石山本願寺",
+      "dummies": [
+        "二毛作",
+        "徳政令",
+        "一向一揆"
+      ],
+      "matches": [
+        "一向一揆"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_ae08860c2ca3",
+      "subject": "社会",
+      "term": "本百姓",
+      "prompt": "江戸時代、田畑や屋敷を持ち年貢などを負担した百姓。",
+      "answer": "本百姓",
+      "dummies": [
+        "水呑百姓",
+        "年貢",
+        "村請制"
+      ],
+      "matches": [
+        "年貢"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_346c3eee3d9b",
+      "subject": "社会",
+      "term": "村請制",
+      "prompt": "江戸時代、年貢を村全体で請け負う仕組み。",
+      "answer": "村請制",
+      "dummies": [
+        "本百姓",
+        "水呑百姓",
+        "年貢"
+      ],
+      "matches": [
+        "年貢"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_8f5ff8658738",
+      "subject": "社会",
+      "term": "本居宣長",
+      "prompt": "古事記を研究し、国学を大成した人物。",
+      "answer": "本居宣長",
+      "dummies": [
+        "寺子屋",
+        "国学",
+        "伊能忠敬"
+      ],
+      "matches": [
+        "国学"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_3d0f5dfa8773",
+      "subject": "社会",
+      "term": "象徴天皇制",
+      "prompt": "日本国憲法で、天皇を日本国と国民統合の象徴とする制度。",
+      "answer": "象徴天皇制",
+      "dummies": [
+        "日本国憲法",
+        "女性参政権",
+        "労働三権"
+      ],
+      "matches": [
+        "日本国憲法"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_f37b34c04b12",
+      "subject": "社会",
+      "term": "義務",
+      "prompt": "法や社会のきまりなどによって求められる行為や負担。",
+      "answer": "義務",
+      "dummies": [
+        "きまり",
+        "責任",
+        "権利"
+      ],
+      "matches": [
+        "きまり"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_5d85b4ddd170",
+      "subject": "社会",
+      "term": "家計",
+      "prompt": "消費などを行う、個人や家族の経済単位。",
+      "answer": "家計",
+      "dummies": [
+        "生産",
+        "消費",
+        "生産の三要素"
+      ],
+      "matches": [
+        "消費"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_6148277021ba",
+      "subject": "社会",
+      "term": "生産の三要素",
+      "prompt": "土地・資本・労働という生産に必要な要素。",
+      "answer": "生産の三要素",
+      "dummies": [
+        "生産",
+        "消費",
+        "家計"
+      ],
+      "matches": [
+        "生産"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_28812469b422",
+      "subject": "社会",
+      "term": "通貨",
+      "prompt": "現金や預金通貨など、支払いに使うもの。",
+      "answer": "通貨",
+      "dummies": [
+        "預金",
+        "貸出",
+        "金利"
+      ],
+      "matches": [
+        "預金"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_be25d6c26aec",
+      "subject": "社会",
+      "term": "政令",
+      "prompt": "内閣が憲法や法律を実施するために制定する命令。",
+      "answer": "政令",
+      "dummies": [
+        "法律",
+        "予算",
+        "条約の承認"
+      ],
+      "matches": [
+        "法律"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_5fb2a236e7f2",
+      "subject": "社会",
+      "term": "二元代表制",
+      "prompt": "地方で、首長と議会の議員の両方を住民が直接選ぶ仕組み。",
+      "answer": "二元代表制",
+      "dummies": [
+        "条例",
+        "首長",
+        "地方議会"
+      ],
+      "matches": [
+        "首長"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_a03344403495",
+      "subject": "社会",
+      "term": "地方議会",
+      "prompt": "住民の代表として条例や予算などを議決する機関。",
+      "answer": "地方議会",
+      "dummies": [
+        "条例",
+        "二元代表制",
+        "首長"
+      ],
+      "matches": [
+        "条例"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_cae5378689ed",
+      "subject": "社会",
+      "term": "一票の格差",
+      "prompt": "選挙区間で、一票の持つ重みに差があること。",
+      "answer": "一票の格差",
+      "dummies": [
+        "選挙権",
+        "被選挙権",
+        "選挙区"
+      ],
+      "matches": [
+        "選挙区"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_85b6990fc1da",
+      "subject": "社会",
+      "term": "国際慣習法",
+      "prompt": "国家の慣行が、法的に義務だとの認識を伴って成立する国際法。",
+      "answer": "国際慣習法",
+      "dummies": [
+        "主権国家",
+        "国際法",
+        "条約"
+      ],
+      "matches": [
+        "国際法"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_a9ad06e74394",
+      "subject": "社会",
+      "term": "好況",
+      "prompt": "生産や消費が活発で、景気がよい状態。",
+      "answer": "好況",
+      "dummies": [
+        "社会資本",
+        "景気",
+        "不況"
+      ],
+      "matches": [
+        "景気"
+      ]
+    },
+    {
+      "file": "junior_social",
+      "id": "jr_social_9660d4974e1d",
+      "subject": "社会",
+      "term": "不況",
+      "prompt": "生産や消費が停滞し、景気が悪い状態。",
+      "answer": "不況",
+      "dummies": [
+        "社会資本",
+        "景気",
+        "好況"
+      ],
+      "matches": [
+        "景気"
+      ]
+    }
+  ],
+  "direct_answer_leaks": [
+    {
+      "file": "quiz-data/junior_japanese.json",
+      "sourceId": "jr_jp3_033",
+      "questionId": "jr_jp3_033",
+      "subject": "国語",
+      "mode": "explanation_to_term",
+      "label": "レ点",
+      "prompt": "漢文でレ点があると、すぐ下の字を先に読み、元の字に返って読む。",
+      "context": "",
+      "answer": "レ点",
+      "dummies": [
+        "一二点",
+        "送り仮名",
+        "句読点"
+      ],
+      "matches": [
+        "レ点"
+      ],
+      "contextMatches": []
+    },
+    {
+      "file": "quiz-data/junior_science.json",
+      "sourceId": "jr_science_c6f3d5f28b21",
+      "questionId": "jr_science_c6f3d5f28b21",
+      "subject": "理科",
+      "mode": "explanation_to_term",
+      "label": "瞬間の速さ",
+      "prompt": "ごく短い時間で考えた、その瞬間の速さ。",
+      "context": "",
+      "answer": "瞬間の速さ",
+      "dummies": [
+        "平均の速さ",
+        "加速度",
+        "移動距離"
+      ],
+      "matches": [
+        "瞬間の速さ"
+      ],
+      "contextMatches": []
+    },
+    {
+      "file": "quiz-data/junior_science.json",
+      "sourceId": "jr_science_37c2c9e5c1e2",
+      "questionId": "jr_science_37c2c9e5c1e2",
+      "subject": "理科",
+      "mode": "explanation_to_term",
+      "label": "酸化銅",
+      "prompt": "中学で扱う黒色の酸化銅の化学式はCuO。",
+      "context": "",
+      "answer": "酸化銅",
+      "dummies": [
+        "酸化マグネシウム",
+        "硫化鉄",
+        "塩化ナトリウム"
+      ],
+      "matches": [
+        "酸化銅"
+      ],
+      "contextMatches": []
+    },
+    {
+      "file": "quiz-data/junior_social.json",
+      "sourceId": "jr_civics3_012",
+      "questionId": "jr_civics3_012",
+      "subject": "社会",
+      "mode": "explanation_to_term",
+      "label": "国民の三大義務",
+      "prompt": "日本国憲法に定める国民の三大義務は、子に普通教育を受けさせる義務、勤労の義務、納税の義務である。",
+      "context": "",
+      "answer": "国民の三大義務",
+      "dummies": [
+        "日本国憲法の三大原則",
+        "労働三権",
+        "国の三権"
+      ],
+      "matches": [
+        "国民の三大義務"
+      ],
+      "contextMatches": []
+    },
+    {
+      "file": "quiz-data/junior_social.json",
+      "sourceId": "jr_social_e160af825e19",
+      "questionId": "jr_social_e160af825e19",
+      "subject": "社会",
+      "mode": "explanation_to_term",
+      "label": "教育を受ける権利",
+      "prompt": "能力に応じて、ひとしく教育を受ける権利。",
+      "context": "",
+      "answer": "教育を受ける権利",
+      "dummies": [
+        "勤労の権利",
+        "財産権",
+        "表現の自由"
+      ],
+      "matches": [
+        "教育を受ける権利"
+      ],
+      "contextMatches": []
+    }
+  ],
+  "fixes": "question-option-overlap-fixes-20261111.json",
+  "post_fix_definition_overlap_count": 0
+}

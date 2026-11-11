@@ -289,9 +289,9 @@
     "content_batch": "japanese-core-20261107",
     "term": "付属語",
     "term_dummies": [
-      "自立語",
       "体言",
-      "用言"
+      "用言",
+      "連体詞"
     ],
     "explanation_template": "それだけでは文節を作れず、{{1}}に付く単語。",
     "blanks": [

@@ -1,6 +1,6 @@
-import { makeMathSequenceQuestions } from './math-sequences.js?v=0.91.0';
-import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.91.0';
-import { materializeMathItem } from './math-variants.js?v=0.91.0';
+import { makeMathSequenceQuestions } from './math-sequences.js?v=0.91.1';
+import { materializeChoiceItem, normalizePatternUsage } from './choice-variants.js?v=0.91.1';
+import { materializeMathItem } from './math-variants.js?v=0.91.1';
 // Local learning history. Practice and music-play records stay distinct.
 export const HISTORY_KEY = 'study-beat-history-v1';
 export const questionKey = q => JSON.stringify([q.sourceId || q.id, q.mode, q.blankIndex || 0]);
