@@ -88,5 +88,107 @@
     "focusRhythm": {
       "beatDivisor": 2
     }
+  },
+  "0003": {
+    "title": "301 Song for Run",
+    "creator": "TOONE",
+    "durationSeconds": 123.264,
+    "baseBpm": 141.0954,
+    "files": {
+      "audio": "0003/tooone-301-song-for-run-389052.mp3",
+      "chart": "0003/tooone_301_rhythm_beat2.json"
+    },
+    "timing": {
+      "recommendedChartFormat": "json",
+      "timeReference": "decoded_audio_start",
+      "unit": "milliseconds",
+      "chartToAudioOffsetMs": 0,
+      "chartToAudioOffsetStatus": "provisional_from_chart_metadata_not_independently_audio_verified",
+      "chartToAudioOffsetAppliesTo": [
+        "chart"
+      ],
+      "offsetConvention": "targetAudioTimeSeconds = eventTimeSeconds + chartToAudioOffsetMs / 1000; positive values delay the chart",
+      "deviceCalibrationOffsetMs": null,
+      "deviceCalibrationStatus": "requires_runtime_calibration_per_device_and_audio_output",
+      "verification": {
+        "eventCount": 519,
+        "mp3StartTimeSeconds": 0,
+        "mp3SampleRateHz": 48000,
+        "audioBeatAlignmentIndependentlyVerified": false
+      }
+    },
+    "playback": {
+      "startSeconds": 0,
+      "endSeconds": 123.264,
+      "analysis": "ffmpeg silencedetect -50dB, 0.15s: no leading or trailing silence detected"
+    }
+  },
+  "0004": {
+    "title": "Chill Beat",
+    "creator": "Kulakovka",
+    "durationSeconds": 120.764062,
+    "baseBpm": 81.997,
+    "files": {
+      "audio": "0004/kulakovka-chill-beat-295913.mp3",
+      "chart": "0004/kulakovka_chill_rhythm_beat2.json"
+    },
+    "timing": {
+      "recommendedChartFormat": "json",
+      "timeReference": "decoded_audio_start",
+      "unit": "milliseconds",
+      "chartToAudioOffsetMs": 0,
+      "chartToAudioOffsetStatus": "provisional_from_chart_metadata_not_independently_audio_verified",
+      "chartToAudioOffsetAppliesTo": [
+        "chart"
+      ],
+      "offsetConvention": "targetAudioTimeSeconds = eventTimeSeconds + chartToAudioOffsetMs / 1000; positive values delay the chart",
+      "deviceCalibrationOffsetMs": null,
+      "deviceCalibrationStatus": "requires_runtime_calibration_per_device_and_audio_output",
+      "verification": {
+        "eventCount": 261,
+        "mp3StartTimeSeconds": 0,
+        "mp3SampleRateHz": 44100,
+        "audioBeatAlignmentIndependentlyVerified": false
+      }
+    },
+    "playback": {
+      "startSeconds": 0,
+      "endSeconds": 117.4,
+      "analysis": "ffmpeg silencedetect -50dB, 0.15s: trailing silence starts 117.342222s; about 55ms margin retained"
+    }
+  },
+  "0005": {
+    "title": "Morning Funny Beat",
+    "creator": "",
+    "durationSeconds": 224.809781,
+    "baseBpm": 102.0022,
+    "files": {
+      "audio": "0005/23117649-morning-funny-beat-7741.mp3",
+      "chart": "0005/morning_funny_rhythm_beat2.json"
+    },
+    "timing": {
+      "recommendedChartFormat": "json",
+      "timeReference": "decoded_audio_start",
+      "unit": "milliseconds",
+      "chartToAudioOffsetMs": 0,
+      "chartToAudioOffsetStatus": "provisional_from_chart_metadata_not_independently_audio_verified",
+      "chartToAudioOffsetAppliesTo": [
+        "chart"
+      ],
+      "offsetConvention": "targetAudioTimeSeconds = eventTimeSeconds + chartToAudioOffsetMs / 1000; positive values delay the chart",
+      "deviceCalibrationOffsetMs": null,
+      "deviceCalibrationStatus": "requires_runtime_calibration_per_device_and_audio_output",
+      "verification": {
+        "eventCount": 690,
+        "mp3StartTimeSeconds": 0,
+        "mp3SampleRateHz": 44100,
+        "audioBeatAlignmentIndependentlyVerified": false
+      }
+    },
+    "playback": {
+      "startSeconds": 0,
+      "endSeconds": 224.42,
+      "analysis": "ffmpeg silencedetect -50dB, 0.15s: trailing silence starts 224.363696s; about 55ms margin retained"
+    }
   }
 }

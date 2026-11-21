@@ -1,11 +1,11 @@
-import {FocusGame} from './focus-game.js?v=0.91.1';
-import { ScreenWakeLock } from './wake-lock.js?v=0.91.1';
-import { MusicPlayer } from './music-player.js?v=0.91.1';
-import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.91.1';
-import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.91.1';
-import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.91.1';
-import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.91.1';
-const VERSION = '0.91.1';
+import {FocusGame} from './focus-game.js?v=0.91.2';
+import { ScreenWakeLock } from './wake-lock.js?v=0.91.2';
+import { MusicPlayer } from './music-player.js?v=0.91.2';
+import { TIMING_KEY, OUTPUTS, defaultTimingOffset, normalizeTiming, effectiveOffset, clampOffset, TimingCalibrator, calibrationPattern, matchCalibrationBeat, timingReport } from './calibration.js?v=0.91.2';
+import { HISTORY_KEY, normalizeHistory, recordAnswer, learningLevel, missedQuestions, BEST_KEY, SCORE_BEST_KEY, normalizeBests, updateBests, createAdaptivePicker, questionCoverage } from './progress.js?v=0.91.2';
+import { Game, RULES, COLORS, SPEEDS, RHYTHMS, DURATIONS, BALANCES, appendRandomTrack, normalizeGameplayOptions, answerProgress, makePlaylist, sessionMusic, normalizeMusicSelection, musicTitle, musicCredit, makeQuestionQueue, sessionPlan, sessionGain, SESSION, seededRandom, perfectReference } from './game.js?v=0.91.2';
+import { buildCatalog, normalizePreferences, selectQuestions, practiceTypes, matchesPracticeItem, matchesPracticeQuestion, sectionKey, choiceColumns } from './learning.js?v=0.91.2';
+const VERSION = '0.91.2';
 const $ = id => document.getElementById(id);
 const audio = $('audio');
 const screenWakeLock=new ScreenWakeLock(navigator.wakeLock,()=>!document.hidden);
@@ -452,11 +452,15 @@ function extendEndless(now){
   }
 }
 const playbackTime = () => screen==='play'&&musicPlayer ? musicPlayer.time : track.start + audio.currentTime-(track.mediaStart||0);
-function selectTrack(index, tuning=false) {
-  trackIndex = index; track = (tuning ? tuningTracks : playlist.tracks)[index];
-  audio.src = `./music-data/${track.files.audio}`;
+function renderTrack(position) {
   $('track-title').textContent = track.title;
-  $('track-credit').textContent = !tuning&&gameplayOptions.duration==='endless'?`${index+1}曲目 · ${track.creator}`:`${index + 1} / ${playlist.tracks.length} · ${track.creator}`;
+  $('track-credit').textContent = track.creator ? `${position} · ${track.creator}` : position;
+}
+function selectTrack(index, tuning=false) {
+  const tracks = tuning ? tuningTracks : playlist.tracks;
+  trackIndex = index; track = tracks[index];
+  audio.src = `./music-data/${track.files.audio}`;
+  renderTrack(!tuning&&gameplayOptions.duration==='endless' ? `${index+1}曲目` : `${index + 1} / ${tracks.length}`);
 }
 async function load() {
   try {
@@ -468,7 +472,7 @@ async function load() {
     selectedMusic=normalizeMusicSelection(selectedMusic,entries.map(e=>e.id));
     for(const {id,track:song} of entries){
       const label=document.createElement('label'),input=document.createElement('input'),text=document.createElement('span');
-      input.type='checkbox';input.value=id;text.textContent=`${song.title} / ${song.creator}`;
+      input.type='checkbox';input.value=id;text.textContent=musicTitle(song);
       label.append(input,text);$('music-list').append(label);
     }
     renderMusicSelection();saveMusicSelection();
@@ -889,7 +893,7 @@ function loop() {
   if(musicPlayer){
     while(trackIndex+1<playlist.tracks.length && now>=playlist.tracks[trackIndex+1].start){
       track=playlist.tracks[++trackIndex];recordPlayedTrack(track);
-      $('track-title').textContent=track.title;$('track-credit').textContent=session.endless?`${track.playNumber}曲目 · ${track.creator}`:`${trackIndex+1} / ${playlist.tracks.length} · ${track.creator}`;
+      renderTrack(session.endless ? `${track.playNumber}曲目` : `${trackIndex+1} / ${playlist.tracks.length}`);
     }
   }
   if(session.endless&&trackIndex>0){playlist.tracks.splice(0,trackIndex);trackIndex=0;playlist.events=playlist.events.filter(e=>e.time>=now-3);}
@@ -999,8 +1003,13 @@ function finish(completed, reason=null) {
   const seenMusic=new Set();
   for(const song of playedTracks){
     if(seenMusic.has(song.id))continue;seenMusic.add(song.id);
-    const item=document.createElement('li'),title=document.createElement('strong'),credit=document.createElement('p');
-    title.textContent=song.title;credit.textContent=musicCredit(song);item.append(title,credit);$('result-music-list').append(item);
+    const item=document.createElement('li'),title=document.createElement('strong');
+    title.textContent=song.title;item.append(title);
+    const creditText=musicCredit(song);
+    if(creditText!==song.title){
+      const credit=document.createElement('p');credit.textContent=creditText;item.append(credit);
+    }
+    $('result-music-list').append(item);
   }
   $('result-music').hidden=!seenMusic.size;
   $('result-rhythm').textContent=RHYTHMS[game.options.rhythm].label;

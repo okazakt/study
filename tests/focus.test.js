@@ -66,10 +66,10 @@ test('half cadence has no misses on omitted beats, pulses only assigned beats an
  g.tap(g.question.correct,2);assert.equal(g.nextQuestionAt,3);g.update(3);assert.equal(g.questionIndex,1);
  g.update(4.2);assert.equal(g.missedNotes,0);
 });
-test('both registered songs use half cadence through the real playlist while ordinary beat timestamps remain intact',async()=>{
+test('registered songs use half cadence through the real playlist while ordinary beat timestamps remain intact',async()=>{
  const {readFileSync}=await import('node:fs'),{makePlaylist}=await import('../game.js');const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
  const catalog=read('music-data/index.json'),entries=Object.entries(catalog).map(([id,track])=>({id,track,chart:read('music-data/'+track.files.chart)}));
- const list=makePlaylist(entries);for(const t of list.tracks){assert.equal(t.focusRhythm.beatDivisor,2);assert.ok(t.events.some(e=>!e.focusEligible));assert.ok(t.events.every(e=>e.focusEligible===(e.beatInBar%2===1)));}
+ const list=makePlaylist(entries);for(const t of list.tracks){assert.ok(t.events.some(e=>!e.focusEligible));assert.ok(t.events.every(e=>e.focusEligible===(e.beatInBar%2===1)));}
  const g=new FocusGame([item],list.events,-.101,()=>.5,list.duration,q=>q.mode==='to_japanese',null,list.duration,null,{speed:'instant'});
  assert.ok(g.beats.length<g.musicBeats.length*.52);assert.ok(g.beats.length>g.musicBeats.length*.48);
  assert.equal(g.beats[0].target,list.events.find(e=>e.focusEligible).time-.101);

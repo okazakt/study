@@ -22,6 +22,7 @@ test('fixed music repeats to five minutes and missing saved songs fall back to r
 });
 test('credit instructions are preserved verbatim; unspecified or blank credits show title and creator',()=>{
  const track={title:'Song',creator:'Artist'};
+ assert.equal(musicCredit({...track,creator:''}),'Song');
  assert.equal(musicCredit(track),'Song / Artist');assert.equal(musicCredit({...track,creditText:'  '}),'Song / Artist');
  assert.equal(musicCredit({...track,creditText:'Song by Artist\nLicense: supplied text'}),'Song by Artist\nLicense: supplied text');
 });

@@ -1,6 +1,6 @@
-import { makeMathSequenceQuestions } from './math-sequences.js?v=0.91.1';
-import { materializeChoiceItem } from './choice-variants.js?v=0.91.1';
-import { materializeMathItem } from './math-variants.js?v=0.91.1';
+import { makeMathSequenceQuestions } from './math-sequences.js?v=0.91.2';
+import { materializeChoiceItem } from './choice-variants.js?v=0.91.2';
+import { materializeMathItem } from './math-variants.js?v=0.91.2';
 export const RULES = Object.freeze({ lanes: 4, tapsToAnswer: 3, introSeconds: 8, rhythmNotes: 8,
   charSeconds: 0.18, fadeSeconds: 0.65, choiceGapSeconds: 1.2, readHoldSeconds: 2.5, liftSeconds: 0.65,
   feedbackSeconds: 2.5, judgmentSeconds: 0.9, wrongResultSeconds: 1.5, travelSeconds: 1.8, perfectWindow: 0.08, goodWindow: 0.16, judgmentOffsetSeconds: 0 });
@@ -251,8 +251,11 @@ export function appendRandomTrack(playlist,entries,selection=null,random=Math.ra
   playlist.tracks.push(track);playlist.events.push(...track.events);playlist.duration+=addition.duration;
   return track;
 }
+export function musicTitle(track) {
+  return track.creator ? `${track.title} / ${track.creator}` : track.title;
+}
 export function musicCredit(track) {
-  return typeof track.creditText==='string'&&track.creditText.trim() ? track.creditText : `${track.title} / ${track.creator}`;
+  return typeof track.creditText==='string'&&track.creditText.trim() ? track.creditText : musicTitle(track);
 }
 
 // Keep the score/judgment grid on source timestamps; only choose which beats are required.
